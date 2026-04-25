@@ -1,7 +1,5 @@
 # Watchlist
-
-One ticker per line. Comments after # are ignored.
-Keep this under 25 tickers to control token usage.
+# One ticker per line. Section headers and comments are ignored. Keep under 25.
 
 ## Core holdings
 AAPL

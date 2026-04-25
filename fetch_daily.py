@@ -44,7 +44,8 @@ def read_watchlist():
             if not line or line.startswith("#"):
                 continue
             symbol = line.split("#")[0].strip().upper()
-            if symbol:
+            # Valid tickers: 1-6 chars, letters/digits/hyphens only, no spaces
+            if symbol and len(symbol) <= 6 and symbol.replace("-", "").replace(".", "").isalnum():
                 tickers.append(symbol)
     return tickers
 
