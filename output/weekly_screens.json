@@ -1,808 +1,1104 @@
 {
-  "last_updated": "2026-04-24T13:22:53Z",
-  "universe": "S&P 500 (503 fetched)",
-  "screens_run": [
-    "graham",
-    "magic_formula",
-    "piotroski",
-    "garp",
-    "quality",
-    "momentum",
-    "dividend"
-  ],
+  "last_updated": "2026-04-25T07:00:11Z",
+  "universe": "Russell mid+small (2329 sourced, 906 fetched, 302 survived gates)",
+  "scoring": {
+    "weights": {
+      "quality": 0.2,
+      "valuation": 0.2,
+      "profitability": 0.15,
+      "risk": 0.1,
+      "recurring": 0.15,
+      "ai_exposure": 0.2
+    },
+    "hard_gates": {
+      "market_cap_band": [
+        300000000,
+        10000000000
+      ],
+      "min_current_ratio": 1.0,
+      "max_debt_to_ebitda": 5.0,
+      "max_short_pct_float": 20.0,
+      "must_generate_cash": true
+    },
+    "ai_exposure_method": "Industry score (0-40) + summary keyword matches (capped 60)",
+    "recurring_method": "Sub-industry whitelist proxy (v1)",
+    "proxies_used": {
+      "roic_proxy": "ROE (yfinance ROIC unavailable)",
+      "earnings_yield_proxy": "1 / EV_EBITDA",
+      "recurring": "Sub-industry heuristic, not actual subscription % of revenue"
+    }
+  },
   "top_conviction": [
     {
-      "symbol": "NVDA",
-      "company": "NVIDIA Corporation",
+      "symbol": "QLYS",
+      "name": "Qualys, Inc.",
       "sector": "Technology",
-      "price": 199.64,
-      "screens_passed": [
-        "piotroski",
-        "garp",
-        "quality",
-        "momentum",
-        "dividend"
-      ],
-      "score": 5,
-      "metrics": {
-        "pe": 40.83,
-        "pb": 30.85,
-        "peg": 0.71,
-        "roe": 101.48,
-        "gross_margin": 71.07,
-        "fcf_margin": 26.92,
-        "debt_equity": 0.07,
-        "div_yield": 2.0,
-        "ret_12m": 87.62,
-        "rsi": null
+      "industry": "Software - Infrastructure",
+      "price": 84.34,
+      "market_cap": 2976354048,
+      "summary": "Qualys, Inc. provides cloud-based platform delivering information technology (IT), security, and compliance solutions in the United States and internationally. The company provides Qualys Cloud Apps, which include cybersecurity asset management; enterprise TruRisk management; vulnerability management, detection, and response; total application security; patch management; custom assessment and remediation; multi-vector endpoint detection and response; policy audit; and file integrity monitoring. It offers TotalCloud, a cloud-native application protection platform, which include cloud workload p",
+      "factors": {
+        "quality": 86.3,
+        "valuation": 58.1,
+        "profitability": 85.2,
+        "risk": 72.4,
+        "recurring": 45.0,
+        "ai_exposure": 10
       },
-      "one_line_thesis": "improving fundamentals (Piotroski) \u00b7 EPS growth 94.5%, PEG 0.71, ROE 101.48% \u00b7 ROIC 101.48%, gross margin 71.07%, FCF margin 26.92% \u00b7 12M return 87.62%, above 50d + 200d MA \u00b7 2.0% yield, payout 0.82%, FCF positive"
+      "composite_score": 57.7,
+      "ai_evidence": [
+        "kw:cloud infrastructure"
+      ],
+      "metrics": {
+        "pe": 15.5,
+        "forward_pe": 10.57,
+        "ev_ebitda": 11.06,
+        "ev_sales": 3.91,
+        "fcf_yield": 8.71,
+        "fcf_margin": 38.73,
+        "gross_margin": 82.85,
+        "op_margin": 33.57,
+        "roic_proxy": 38.2,
+        "debt_to_ebitda": 0.22,
+        "debt_equity": 0.09,
+        "current_ratio": 1.41,
+        "rev_growth": 10.1,
+        "eps_growth": 20.9,
+        "ret_12m": -33.46,
+        "div_yield": null
+      },
+      "proxy_notes": [
+        "earnings_yield_proxy=1/EV_EBITDA",
+        "roic_proxy=ROE"
+      ],
+      "data_status": "ok"
     },
     {
-      "symbol": "APA",
-      "company": "APA Corporation",
-      "sector": "Energy",
-      "price": 38.66,
-      "screens_passed": [
-        "magic_formula",
-        "piotroski",
-        "quality",
-        "momentum"
-      ],
-      "score": 4,
-      "metrics": {
-        "pe": 9.69,
-        "pb": 2.24,
-        "peg": 1.09,
-        "roe": 25.32,
-        "gross_margin": 68.01,
-        "fcf_margin": 22.58,
-        "debt_equity": 0.69,
-        "div_yield": 259.0,
-        "ret_12m": 147.66,
-        "rsi": null
-      },
-      "one_line_thesis": "high earnings yield + ROIC combo \u00b7 improving fundamentals (Piotroski) \u00b7 ROIC 25.32%, gross margin 68.01%, FCF margin 22.58% \u00b7 12M return 147.66%, above 50d + 200d MA"
-    },
-    {
-      "symbol": "ADBE",
-      "company": "Adobe Inc.",
-      "sector": "Technology",
-      "price": 238.98,
-      "screens_passed": [
-        "magic_formula",
-        "piotroski",
-        "quality"
-      ],
-      "score": 3,
-      "metrics": {
-        "pe": 13.93,
-        "pb": 8.49,
-        "peg": 0.68,
-        "roe": 58.77,
-        "gross_margin": 89.4,
-        "fcf_margin": 38.12,
-        "debt_equity": 0.58,
-        "div_yield": null,
-        "ret_12m": -33.78,
-        "rsi": null
-      },
-      "one_line_thesis": "high earnings yield + ROIC combo \u00b7 improving fundamentals (Piotroski) \u00b7 ROIC 58.77%, gross margin 89.4%, FCF margin 38.12%"
-    },
-    {
-      "symbol": "ALL",
-      "company": "The Allstate Corporation",
+      "symbol": "AII",
+      "name": "American Integrity Insurance Group, Inc.",
       "sector": "Financial Services",
-      "price": 216.56,
-      "screens_passed": [
-        "magic_formula",
-        "piotroski",
-        "garp"
-      ],
-      "score": 3,
-      "metrics": {
-        "pe": 5.69,
-        "pb": 1.97,
-        "peg": 0.47,
-        "roe": 39.52,
-        "gross_margin": 31.3,
-        "fcf_margin": 13.19,
-        "debt_equity": 0.25,
-        "div_yield": 199.0,
-        "ret_12m": 13.32,
-        "rsi": null
+      "industry": "Insurance - Property & Casualty",
+      "price": 19.67,
+      "market_cap": 385165024,
+      "summary": "American Integrity Insurance Group, Inc., together with its subsidiaries, operates as an insurance company in the United States. The company offers personal residential property insurance for single-family homeowners and condominium owners, as well as coverage for vacant dwellings and investment properties. It also provides manufactured home, commercial residential, dwelling property, and specialty insurance products. In addition, the company offers optional endorsements that provide higher levels of standard coverage and optional coverage, such as personal injury, animal liability, identity r",
+      "factors": {
+        "quality": 77.4,
+        "valuation": 76.7,
+        "profitability": 90.6,
+        "risk": 74.6,
+        "recurring": 35.0,
+        "ai_exposure": 0
       },
-      "one_line_thesis": "high earnings yield + ROIC combo \u00b7 improving fundamentals (Piotroski) \u00b7 EPS growth 98.8%, PEG 0.47, ROE 39.52%"
+      "composite_score": 57.1,
+      "ai_evidence": [],
+      "metrics": {
+        "pe": 3.48,
+        "forward_pe": 6.51,
+        "ev_ebitda": 1.4,
+        "ev_sales": 0.59,
+        "fcf_yield": 77.19,
+        "fcf_margin": 107.54,
+        "gross_margin": 56.79,
+        "op_margin": 43.01,
+        "roic_proxy": 39.9,
+        "debt_to_ebitda": 0.01,
+        "debt_equity": 0.0,
+        "current_ratio": 1.48,
+        "rev_growth": 1.4,
+        "eps_growth": 148.5,
+        "ret_12m": 22.87,
+        "div_yield": null
+      },
+      "proxy_notes": [
+        "earnings_yield_proxy=1/EV_EBITDA",
+        "roic_proxy=ROE"
+      ],
+      "data_status": "ok"
     },
     {
-      "symbol": "AMAT",
-      "company": "Applied Materials, Inc.",
-      "sector": "Technology",
-      "price": 403.91,
-      "screens_passed": [
-        "piotroski",
-        "quality",
-        "momentum"
-      ],
-      "score": 3,
-      "metrics": {
-        "pe": 41.51,
-        "pb": 14.76,
-        "peg": 1.92,
-        "roe": 38.86,
-        "gross_margin": 48.72,
-        "fcf_margin": 15.39,
-        "debt_equity": 0.33,
-        "div_yield": 52.0,
-        "ret_12m": 171.37,
-        "rsi": null
-      },
-      "one_line_thesis": "improving fundamentals (Piotroski) \u00b7 ROIC 38.86%, gross margin 48.72%, FCF margin 15.39% \u00b7 12M return 171.37%, above 50d + 200d MA"
-    },
-    {
-      "symbol": "ANET",
-      "company": "Arista Networks, Inc.",
-      "sector": "Technology",
-      "price": 172.55,
-      "screens_passed": [
-        "piotroski",
-        "quality",
-        "momentum"
-      ],
-      "score": 3,
-      "metrics": {
-        "pe": 62.97,
-        "pb": 17.53,
-        "peg": 2.4,
-        "roe": 31.4,
-        "gross_margin": 64.06,
-        "fcf_margin": 37.62,
-        "debt_equity": 0.01,
-        "div_yield": null,
-        "ret_12m": 129.18,
-        "rsi": null
-      },
-      "one_line_thesis": "improving fundamentals (Piotroski) \u00b7 ROIC 31.4%, gross margin 64.06%, FCF margin 37.62% \u00b7 12M return 129.18%, above 50d + 200d MA"
-    },
-    {
-      "symbol": "ADP",
-      "company": "Automatic Data Processing, Inc.",
-      "sector": "Technology",
-      "price": 198.53,
-      "screens_passed": [
-        "magic_formula",
-        "piotroski",
-        "quality"
-      ],
-      "score": 3,
-      "metrics": {
-        "pe": 19.09,
-        "pb": 12.51,
-        "peg": 2.54,
-        "roe": 73.84,
-        "gross_margin": 48.35,
-        "fcf_margin": 16.3,
-        "debt_equity": 0.7,
-        "div_yield": 343.0,
-        "ret_12m": -30.9,
-        "rsi": null
-      },
-      "one_line_thesis": "high earnings yield + ROIC combo \u00b7 improving fundamentals (Piotroski) \u00b7 ROIC 73.84%, gross margin 48.35%, FCF margin 16.3%"
-    },
-    {
-      "symbol": "AVGO",
-      "company": "Broadcom Inc.",
-      "sector": "Technology",
-      "price": 419.94,
-      "screens_passed": [
-        "piotroski",
-        "quality",
-        "momentum"
-      ],
-      "score": 3,
-      "metrics": {
-        "pe": 82.02,
-        "pb": 24.9,
-        "peg": 0.91,
-        "roe": 33.37,
-        "gross_margin": 76.73,
-        "fcf_margin": 37.35,
-        "debt_equity": 0.83,
-        "div_yield": 62.0,
-        "ret_12m": 125.0,
-        "rsi": null
-      },
-      "one_line_thesis": "improving fundamentals (Piotroski) \u00b7 ROIC 33.37%, gross margin 76.73%, FCF margin 37.35% \u00b7 12M return 125.0%, above 50d + 200d MA"
-    },
-    {
-      "symbol": "CBOE",
-      "company": "Cboe Global Markets, Inc.",
+      "symbol": "ACT",
+      "name": "Enact Holdings, Inc.",
       "sector": "Financial Services",
-      "price": 300.12,
-      "screens_passed": [
-        "piotroski",
-        "quality",
-        "momentum"
-      ],
-      "score": 3,
-      "metrics": {
-        "pe": 28.83,
-        "pb": 6.11,
-        "peg": 3.79,
-        "roe": 23.36,
-        "gross_margin": 51.53,
-        "fcf_margin": 26.85,
-        "debt_equity": 0.31,
-        "div_yield": 93.0,
-        "ret_12m": 41.86,
-        "rsi": null
+      "industry": "Insurance - Specialty",
+      "price": 43.84,
+      "market_cap": 6189625344,
+      "summary": "Enact Holdings, Inc. operates as a private mortgage insurance company in the United States. The company engages in writing and assuming residential mortgage guaranty insurance. It also offers private mortgage insurance products insuring prime-based, individually underwritten residential mortgage loans; pool mortgage insurance; contract underwriting services; and mortgage-related reinsurance products. The company serves large money center banks, non-bank lenders, national and local mortgage bankers, community banks, and credit unions. The company was formerly known as Genworth Mortgage Holdings",
+      "factors": {
+        "quality": 66.2,
+        "valuation": 71.6,
+        "profitability": 97.1,
+        "risk": 58.3,
+        "recurring": 45.0,
+        "ai_exposure": 0
       },
-      "one_line_thesis": "improving fundamentals (Piotroski) \u00b7 ROIC 23.36%, gross margin 51.53%, FCF margin 26.85% \u00b7 12M return 41.86%, above 50d + 200d MA"
+      "composite_score": 54.7,
+      "ai_evidence": [],
+      "metrics": {
+        "pe": 9.7,
+        "forward_pe": 8.67,
+        "ev_ebitda": null,
+        "ev_sales": 5.16,
+        "fcf_yield": 17.9,
+        "fcf_margin": 89.68,
+        "gross_margin": 73.6,
+        "op_margin": 75.33,
+        "roic_proxy": 13.03,
+        "debt_to_ebitda": null,
+        "debt_equity": 0.14,
+        "current_ratio": 1.02,
+        "rev_growth": 3.6,
+        "eps_growth": 8.9,
+        "ret_12m": 28.54,
+        "div_yield": 192.0
+      },
+      "proxy_notes": [
+        "roic_proxy=ROE"
+      ],
+      "data_status": "partial"
     },
     {
-      "symbol": "CSCO",
-      "company": "Cisco Systems, Inc.",
-      "sector": "Technology",
-      "price": 88.59,
-      "screens_passed": [
-        "piotroski",
-        "quality",
-        "momentum"
-      ],
-      "score": 3,
-      "metrics": {
-        "pe": 31.87,
-        "pb": 7.33,
-        "peg": 1.37,
-        "roe": 23.75,
-        "gross_margin": 64.81,
-        "fcf_margin": 17.15,
-        "debt_equity": 0.67,
-        "div_yield": 190.0,
-        "ret_12m": 61.0,
-        "rsi": null
-      },
-      "one_line_thesis": "improving fundamentals (Piotroski) \u00b7 ROIC 23.75%, gross margin 64.81%, FCF margin 17.15% \u00b7 12M return 61.0%, above 50d + 200d MA"
-    },
-    {
-      "symbol": "FIX",
-      "company": "Comfort Systems USA, Inc.",
-      "sector": "Industrials",
-      "price": 1773.91,
-      "screens_passed": [
-        "piotroski",
-        "garp",
-        "momentum"
-      ],
-      "score": 3,
-      "metrics": {
-        "pe": 61.36,
-        "pb": 96.64,
-        "peg": 1.44,
-        "roe": 49.24,
-        "gross_margin": 24.13,
-        "fcf_margin": 8.51,
-        "debt_equity": 0.45,
-        "div_yield": 13.0,
-        "ret_12m": 372.85,
-        "rsi": null
-      },
-      "one_line_thesis": "improving fundamentals (Piotroski) \u00b7 EPS growth 38.2%, PEG 1.44, ROE 49.24% \u00b7 12M return 372.85%, above 50d + 200d MA"
-    },
-    {
-      "symbol": "DECK",
-      "company": "Deckers Outdoor Corporation",
-      "sector": "Consumer Cyclical",
-      "price": 107.71,
-      "screens_passed": [
-        "magic_formula",
-        "piotroski",
-        "quality"
-      ],
-      "score": 3,
-      "metrics": {
-        "pe": 15.3,
-        "pb": 5.87,
-        "peg": 1.46,
-        "roe": 39.69,
-        "gross_margin": 57.55,
-        "fcf_margin": 14.12,
-        "debt_equity": 0.13,
-        "div_yield": null,
-        "ret_12m": -2.66,
-        "rsi": null
-      },
-      "one_line_thesis": "high earnings yield + ROIC combo \u00b7 improving fundamentals (Piotroski) \u00b7 ROIC 39.69%, gross margin 57.55%, FCF margin 14.12%"
-    },
-    {
-      "symbol": "DVN",
-      "company": "Devon Energy Corporation",
-      "sector": "Energy",
-      "price": 48.15,
-      "screens_passed": [
-        "piotroski",
-        "quality",
-        "momentum"
-      ],
-      "score": 3,
-      "metrics": {
-        "pe": 11.55,
-        "pb": 1.93,
-        "peg": 2.85,
-        "roe": 17.74,
-        "gross_margin": 47.7,
-        "fcf_margin": 13.23,
-        "debt_equity": 0.56,
-        "div_yield": 199.0,
-        "ret_12m": 56.97,
-        "rsi": null
-      },
-      "one_line_thesis": "improving fundamentals (Piotroski) \u00b7 ROIC 17.74%, gross margin 47.7%, FCF margin 13.23% \u00b7 12M return 56.97%, above 50d + 200d MA"
-    },
-    {
-      "symbol": "EME",
-      "company": "EMCOR Group, Inc.",
-      "sector": "Industrials",
-      "price": 873.11,
-      "screens_passed": [
-        "piotroski",
-        "garp",
-        "momentum"
-      ],
-      "score": 3,
-      "metrics": {
-        "pe": 30.96,
-        "pb": 10.58,
-        "peg": 1.08,
-        "roe": 38.49,
-        "gross_margin": 19.33,
-        "fcf_margin": 5.83,
-        "debt_equity": 0.13,
-        "div_yield": 15.0,
-        "ret_12m": 118.36,
-        "rsi": null
-      },
-      "one_line_thesis": "improving fundamentals (Piotroski) \u00b7 EPS growth 48.8%, PEG 1.08, ROE 38.49% \u00b7 12M return 118.36%, above 50d + 200d MA"
-    },
-    {
-      "symbol": "FSLR",
-      "company": "First Solar, Inc.",
-      "sector": "Technology",
-      "price": 196.19,
-      "screens_passed": [
-        "piotroski",
-        "garp",
-        "quality"
-      ],
-      "score": 3,
-      "metrics": {
-        "pe": 13.82,
-        "pb": 2.21,
-        "peg": 0.5,
-        "roe": 17.45,
-        "gross_margin": 40.62,
-        "fcf_margin": 18.47,
-        "debt_equity": 0.07,
-        "div_yield": null,
-        "ret_12m": 43.79,
-        "rsi": null
-      },
-      "one_line_thesis": "improving fundamentals (Piotroski) \u00b7 EPS growth 32.5%, PEG 0.5, ROE 17.45% \u00b7 ROIC 17.45%, gross margin 40.62%, FCF margin 18.47%"
-    },
-    {
-      "symbol": "GRMN",
-      "company": "Garmin Ltd.",
-      "sector": "Technology",
-      "price": 260.8,
-      "screens_passed": [
-        "piotroski",
-        "quality",
-        "momentum"
-      ],
-      "score": 3,
-      "metrics": {
-        "pe": 30.4,
-        "pb": 5.6,
-        "peg": 3.38,
-        "roe": 19.78,
-        "gross_margin": 58.74,
-        "fcf_margin": 10.92,
-        "debt_equity": 0.02,
-        "div_yield": 161.0,
-        "ret_12m": 33.14,
-        "rsi": null
-      },
-      "one_line_thesis": "improving fundamentals (Piotroski) \u00b7 ROIC 19.78%, gross margin 58.74%, FCF margin 10.92% \u00b7 12M return 33.14%, above 50d + 200d MA"
-    },
-    {
-      "symbol": "INCY",
-      "company": "Incyte Corporation",
+      "symbol": "AUPH",
+      "name": "Aurinia Pharmaceuticals Inc.",
       "sector": "Healthcare",
-      "price": 95.47,
-      "screens_passed": [
-        "piotroski",
-        "garp",
-        "quality"
-      ],
-      "score": 3,
-      "metrics": {
-        "pe": 14.89,
-        "pb": 3.67,
-        "peg": 0.35,
-        "roe": 29.87,
-        "gross_margin": 52.88,
-        "fcf_margin": 11.86,
-        "debt_equity": 0.01,
-        "div_yield": null,
-        "ret_12m": 61.9,
-        "rsi": null
+      "industry": "Biotechnology",
+      "price": 15.98,
+      "market_cap": 2076414336,
+      "summary": "Aurinia Pharmaceuticals Inc., a biopharmaceutical company, engages in delivering therapies to people living with autoimmune diseases with high unmet medical needs in the United States and Japan. The company offers LUPKYNIS (voclosporin), an oral therapy for the treatment of adult patients with active lupus nephritis. It also develops aritinercept, a dual inhibitor of B cell-activating factor and proliferation-inducing ligand for the potential treatment of autoimmune diseases. The company was founded in 1993 and is headquartered in Edmonton, Canada.",
+      "factors": {
+        "quality": 85.2,
+        "valuation": 45.2,
+        "profitability": 97.1,
+        "risk": 69.5,
+        "recurring": 45.0,
+        "ai_exposure": 0
       },
-      "one_line_thesis": "improving fundamentals (Piotroski) \u00b7 EPS growth 48.7%, PEG 0.35, ROE 29.87% \u00b7 ROIC 29.87%, gross margin 52.88%, FCF margin 11.86%"
+      "composite_score": 54.3,
+      "ai_evidence": [],
+      "metrics": {
+        "pe": 7.72,
+        "forward_pe": 19.49,
+        "ev_ebitda": 13.28,
+        "ev_sales": 6.37,
+        "fcf_yield": 4.4,
+        "fcf_margin": 32.29,
+        "gross_margin": 76.98,
+        "op_margin": 55.68,
+        "roic_proxy": 59.91,
+        "debt_to_ebitda": 0.55,
+        "debt_equity": 0.13,
+        "current_ratio": 5.25,
+        "rev_growth": 28.8,
+        "eps_growth": 14651.2,
+        "ret_12m": 95.35,
+        "div_yield": null
+      },
+      "proxy_notes": [
+        "earnings_yield_proxy=1/EV_EBITDA",
+        "roic_proxy=ROE"
+      ],
+      "data_status": "ok"
     },
     {
-      "symbol": "INTU",
-      "company": "Intuit Inc.",
-      "sector": "Technology",
-      "price": 383.3,
-      "screens_passed": [
-        "piotroski",
-        "garp",
-        "quality"
-      ],
-      "score": 3,
-      "metrics": {
-        "pe": 24.94,
-        "pb": 5.58,
-        "peg": 0.98,
-        "roe": 23.46,
-        "gross_margin": 80.9,
-        "fcf_margin": 26.35,
-        "debt_equity": 0.36,
-        "div_yield": 121.0,
-        "ret_12m": -37.15,
-        "rsi": null
+      "symbol": "WTM",
+      "name": "White Mountains Insurance Group, Ltd.",
+      "sector": "Financial Services",
+      "industry": "Insurance - Property & Casualty",
+      "price": 2259.27,
+      "market_cap": 5595466240,
+      "summary": "White Mountains Insurance Group, Ltd. provides insurance services in the United States, the United Kingdom, Bermuda, and internationally. It operates through Ark/WM Outrigger, HG Global, Kudu, Distinguished, and Other Operations segments. The company offers property insurance and reinsurance; specialty insurance and reinsurance consisting of aviation, contingency, cyber, fine art and specie, mortgage, nuclear, political and credit, space, surety, and terrorism and political violence; marine and energy insurance and reinsurance; casualty insurance and reinsurance, such as medical malpractice, a",
+      "factors": {
+        "quality": 67.3,
+        "valuation": 62.4,
+        "profitability": 97.1,
+        "risk": 69.3,
+        "recurring": 45.0,
+        "ai_exposure": 0
       },
-      "one_line_thesis": "improving fundamentals (Piotroski) \u00b7 EPS growth 47.1%, PEG 0.98, ROE 23.46% \u00b7 ROIC 23.46%, gross margin 80.9%, FCF margin 26.35%"
+      "composite_score": 54.2,
+      "ai_evidence": [],
+      "metrics": {
+        "pe": 5.25,
+        "forward_pe": 25.1,
+        "ev_ebitda": 3.23,
+        "ev_sales": 1.38,
+        "fcf_yield": 22.98,
+        "fcf_margin": 34.43,
+        "gross_margin": 62.61,
+        "op_margin": 64.32,
+        "roic_proxy": 21.11,
+        "debt_to_ebitda": 0.56,
+        "debt_equity": 0.14,
+        "current_ratio": 1.4,
+        "rev_growth": 348.0,
+        "eps_growth": null,
+        "ret_12m": 29.67,
+        "div_yield": 4.0
+      },
+      "proxy_notes": [
+        "earnings_yield_proxy=1/EV_EBITDA",
+        "roic_proxy=ROE"
+      ],
+      "data_status": "ok"
     },
     {
-      "symbol": "KEYS",
-      "company": "Keysight Technologies, Inc.",
-      "sector": "Technology",
-      "price": 346.53,
-      "screens_passed": [
-        "piotroski",
-        "quality",
-        "momentum"
-      ],
-      "score": 3,
-      "metrics": {
-        "pe": 61.01,
-        "pb": 9.58,
-        "peg": 2.06,
-        "roe": 17.22,
-        "gross_margin": 61.86,
-        "fcf_margin": 18.98,
-        "debt_equity": 0.45,
-        "div_yield": null,
-        "ret_12m": 141.0,
-        "rsi": null
+      "symbol": "CARG",
+      "name": "CarGurus, Inc.",
+      "sector": "Consumer Cyclical",
+      "industry": "Auto & Truck Dealerships",
+      "price": 37.62,
+      "market_cap": 3392829184,
+      "summary": "CarGurus, Inc. operates an online automotive platform for buying and selling vehicles in the United States and internationally. The company offers dealer subscription fees, advertising from auto manufacturers and other brand advertisers, and partnerships with financing services companies. It provides an online automotive marketplace that connects large audience of car shoppers with extensive network of dealers, anchoring integrated suite of products. It also offers Digital Deal which allows consumers the option to start their vehicle purchase process online for eligible listings; Dealership Mo",
+      "factors": {
+        "quality": 88.9,
+        "valuation": 52.5,
+        "profitability": 73.9,
+        "risk": 61.5,
+        "recurring": 45.0,
+        "ai_exposure": 8
       },
-      "one_line_thesis": "improving fundamentals (Piotroski) \u00b7 ROIC 17.22%, gross margin 61.86%, FCF margin 18.98% \u00b7 12M return 141.0%, above 50d + 200d MA"
+      "composite_score": 53.9,
+      "ai_evidence": [
+        "kw:machine learning"
+      ],
+      "metrics": {
+        "pe": 19.19,
+        "forward_pe": 12.91,
+        "ev_ebitda": 13.8,
+        "ev_sales": 3.95,
+        "fcf_yield": 6.47,
+        "fcf_margin": 24.19,
+        "gross_margin": 92.78,
+        "op_margin": 28.67,
+        "roic_proxy": 42.96,
+        "debt_to_ebitda": 0.74,
+        "debt_equity": 0.51,
+        "current_ratio": 2.81,
+        "rev_growth": 5.5,
+        "eps_growth": 8.5,
+        "ret_12m": 32.05,
+        "div_yield": null
+      },
+      "proxy_notes": [
+        "earnings_yield_proxy=1/EV_EBITDA",
+        "roic_proxy=ROE"
+      ],
+      "data_status": "ok"
     },
     {
-      "symbol": "LRCX",
-      "company": "Lam Research Corporation",
-      "sector": "Technology",
-      "price": 258.56,
-      "screens_passed": [
-        "piotroski",
-        "quality",
-        "momentum"
-      ],
-      "score": 3,
-      "metrics": {
-        "pe": 48.78,
-        "pb": 31.89,
-        "peg": 1.86,
-        "roe": 66.76,
-        "gross_margin": 49.98,
-        "fcf_margin": 20.04,
-        "debt_equity": 0.35,
-        "div_yield": 40.0,
-        "ret_12m": 267.35,
-        "rsi": null
+      "symbol": "CPRX",
+      "name": "Catalyst Pharmaceuticals, Inc.",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "price": 27.37,
+      "market_cap": 3342530816,
+      "summary": "Catalyst Pharmaceuticals, Inc., a commercial-stage biopharmaceutical company, focuses on developing and commercializing medicines for patients living with rare diseases in the United States. It offers Firdapse for the treatment of patients with lambert-eaton myasthenic syndrome (LEMS); Fycompa, a novel non-competitive selective antagonist at the postsynaptic ionotropic alpha-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid glutamate receptor that is used to treat focal onset seizures, as well as tonic-clonic seizure; and AGAMREE, a corticosteroid for the treatment of duchenne muscular dystro",
+      "factors": {
+        "quality": 78.1,
+        "valuation": 55.6,
+        "profitability": 85.8,
+        "risk": 74.6,
+        "recurring": 45.0,
+        "ai_exposure": 0
       },
-      "one_line_thesis": "improving fundamentals (Piotroski) \u00b7 ROIC 66.76%, gross margin 49.98%, FCF margin 20.04% \u00b7 12M return 267.35%, above 50d + 200d MA"
+      "composite_score": 53.8,
+      "ai_evidence": [],
+      "metrics": {
+        "pe": 16.29,
+        "forward_pe": 8.78,
+        "ev_ebitda": 8.92,
+        "ev_sales": 4.48,
+        "fcf_yield": 5.13,
+        "fcf_margin": 29.09,
+        "gross_margin": 83.03,
+        "op_margin": 40.52,
+        "roic_proxy": 25.49,
+        "debt_to_ebitda": 0.01,
+        "debt_equity": 0.0,
+        "current_ratio": 6.08,
+        "rev_growth": 7.6,
+        "eps_growth": -5.8,
+        "ret_12m": 16.72,
+        "div_yield": null
+      },
+      "proxy_notes": [
+        "earnings_yield_proxy=1/EV_EBITDA",
+        "roic_proxy=ROE"
+      ],
+      "data_status": "ok"
+    },
+    {
+      "symbol": "PRI",
+      "name": "Primerica, Inc.",
+      "sector": "Financial Services",
+      "industry": "Insurance - Life",
+      "price": 279.97,
+      "market_cap": 8863823872,
+      "summary": "Primerica, Inc., together with its subsidiaries, provides financial products and services to middle-income households in the United States and Canada. It operates in three segments: Term Life Insurance; Investment and Savings Products; and Corporate and Other Distributed Products. The Term Life Insurance segment underwrites individual term life insurance products. The Investment and Savings Products segment provides mutual funds and various retirement plans, managed investments, variable and fixed annuities, and fixed indexed annuities; and offers segregated funds. The Corporate and Other Dist",
+      "factors": {
+        "quality": 77.6,
+        "valuation": 63.9,
+        "profitability": 83.6,
+        "risk": 49.9,
+        "recurring": 45.0,
+        "ai_exposure": 0
+      },
+      "composite_score": 52.6,
+      "ai_evidence": [],
+      "metrics": {
+        "pe": 12.23,
+        "forward_pe": 10.7,
+        "ev_ebitda": 9.3,
+        "ev_sales": 2.98,
+        "fcf_yield": 12.74,
+        "fcf_margin": 33.72,
+        "gross_margin": 70.91,
+        "op_margin": 30.8,
+        "roic_proxy": 31.93,
+        "debt_to_ebitda": 1.77,
+        "debt_equity": 0.78,
+        "current_ratio": 3.54,
+        "rev_growth": 8.0,
+        "eps_growth": 17.9,
+        "ret_12m": 8.8,
+        "div_yield": 154.0
+      },
+      "proxy_notes": [
+        "earnings_yield_proxy=1/EV_EBITDA",
+        "roic_proxy=ROE"
+      ],
+      "data_status": "ok"
+    },
+    {
+      "symbol": "APAM",
+      "name": "Artisan Partners Asset Management Inc.",
+      "sector": "Financial Services",
+      "industry": "Asset Management",
+      "price": 37.78,
+      "market_cap": 2682125056,
+      "summary": "Artisan Partners Asset Management Inc. is publicly owned investment manager. It provides its services to pension and profit sharing plans, trusts, endowments, foundations, charitable organizations, government entities, private funds and non-U.S. funds, as well as mutual funds, non-U.S. funds and collective trusts. It manages separate client-focused equity and fixed income portfolios. The firm invests in the public equity and fixed income markets across the globe. It invests in growth and value stocks of companies across all market capitalization. For fixed income component of its portfolio the",
+      "factors": {
+        "quality": 73.1,
+        "valuation": 58.4,
+        "profitability": 71.4,
+        "risk": 63.3,
+        "recurring": 60.0,
+        "ai_exposure": 0
+      },
+      "composite_score": 52.3,
+      "ai_evidence": [],
+      "metrics": {
+        "pe": 9.42,
+        "forward_pe": 9.39,
+        "ev_ebitda": 7.49,
+        "ev_sales": 2.56,
+        "fcf_yield": 7.2,
+        "fcf_margin": 16.14,
+        "gross_margin": 45.75,
+        "op_margin": 39.2,
+        "roic_proxy": 49.32,
+        "debt_to_ebitda": 0.76,
+        "debt_equity": 0.4,
+        "current_ratio": 3.24,
+        "rev_growth": 12.9,
+        "eps_growth": 36.0,
+        "ret_12m": 11.35,
+        "div_yield": 873.0
+      },
+      "proxy_notes": [
+        "earnings_yield_proxy=1/EV_EBITDA",
+        "roic_proxy=ROE"
+      ],
+      "data_status": "ok"
+    },
+    {
+      "symbol": "BCRX",
+      "name": "BioCryst Pharmaceuticals, Inc.",
+      "sector": "Healthcare",
+      "industry": "Drug Manufacturers - Specialty & Generic",
+      "price": 8.94,
+      "market_cap": 2271706624,
+      "summary": "BioCryst Pharmaceuticals, Inc., a biotechnology company, developing and commercializing medicines for hereditary angioedema (HAE) and other rare diseases. The company markets peramivir injection, an intravenous neuraminidase inhibitor for the treatment of acute uncomplicated and seasonal influenza under the RAPIVAB, RAPIACTA, and PERAMIFLU names; and ORLADEYO, an oral serine protease inhibitor to treat HAE. It is also developing BCX17725, a protein therapeutic for netherton syndrome which is in phase 1; Avoralstat, an ocular plasma kallikrein inhibitor for diabetic macular edema that is in Pha",
+      "factors": {
+        "quality": 65.9,
+        "valuation": 62.6,
+        "profitability": 94.0,
+        "risk": 55.6,
+        "recurring": 45.0,
+        "ai_exposure": 0
+      },
+      "composite_score": 52.1,
+      "ai_evidence": [],
+      "metrics": {
+        "pe": 7.39,
+        "forward_pe": 11.15,
+        "ev_ebitda": 6.97,
+        "ev_sales": 2.79,
+        "fcf_yield": 11.29,
+        "fcf_margin": 29.31,
+        "gross_margin": 79.06,
+        "op_margin": 65.6,
+        "roic_proxy": null,
+        "debt_to_ebitda": 1.36,
+        "debt_equity": null,
+        "current_ratio": 2.06,
+        "rev_growth": 209.1,
+        "eps_growth": null,
+        "ret_12m": 6.56,
+        "div_yield": null
+      },
+      "proxy_notes": [
+        "earnings_yield_proxy=1/EV_EBITDA"
+      ],
+      "data_status": "ok"
+    },
+    {
+      "symbol": "RHLD",
+      "name": "Resolute Holdings Management, Inc.",
+      "sector": "Industrials",
+      "industry": "Specialty Business Services",
+      "price": 138.46,
+      "market_cap": 1177006208,
+      "summary": "Resolute Holdings Management, Inc. operates as an alternative asset management platform. It focuses on providing operating management services, including oversight of capital allocation strategy, operational practices, and M&A sourcing and execution at GPGI, Inc. and other managed businesses. The company was incorporated in 2024 and is based in New York, New York.",
+      "factors": {
+        "quality": 77.2,
+        "valuation": 58.9,
+        "profitability": 80.2,
+        "risk": 31.1,
+        "recurring": 65.0,
+        "ai_exposure": 0
+      },
+      "composite_score": 52.1,
+      "ai_evidence": [],
+      "metrics": {
+        "pe": null,
+        "forward_pe": null,
+        "ev_ebitda": 8.13,
+        "ev_sales": 2.67,
+        "fcf_yield": 11.53,
+        "fcf_margin": 29.37,
+        "gross_margin": 56.32,
+        "op_margin": 30.2,
+        "roic_proxy": 651.59,
+        "debt_to_ebitda": 1.29,
+        "debt_equity": 2.51,
+        "current_ratio": 3.84,
+        "rev_growth": 16.7,
+        "eps_growth": null,
+        "ret_12m": 440.65,
+        "div_yield": null
+      },
+      "proxy_notes": [
+        "earnings_yield_proxy=1/EV_EBITDA",
+        "roic_proxy=ROE"
+      ],
+      "data_status": "ok"
+    },
+    {
+      "symbol": "ACIC",
+      "name": "American Coastal Insurance Corporation",
+      "sector": "Financial Services",
+      "industry": "Insurance - Property & Casualty",
+      "price": 12.02,
+      "market_cap": 581080640,
+      "summary": "American Coastal Insurance Corporation, through its subsidiaries, primarily engages in the commercial and personal property and casualty insurance business in the United States. The company provides structure, content, and liability coverage for standard single-family homeowners, renters, and condominium unit owners. It also offers commercial multi-peril property insurance for residential condominium associations and apartments, as well as coverage to policyholders for loss or damage to buildings, inventory, and equipment caused by fire, wind, hail, water, theft, and vandalism. In addition, th",
+      "factors": {
+        "quality": 76.6,
+        "valuation": 66.8,
+        "profitability": 79.5,
+        "risk": 60.3,
+        "recurring": 35.0,
+        "ai_exposure": 0
+      },
+      "composite_score": 51.9,
+      "ai_evidence": [],
+      "metrics": {
+        "pe": 5.59,
+        "forward_pe": 7.78,
+        "ev_ebitda": 3.34,
+        "ev_sales": 1.52,
+        "fcf_yield": 11.55,
+        "fcf_margin": 20.0,
+        "gross_margin": 57.11,
+        "op_margin": 46.23,
+        "roic_proxy": 38.61,
+        "debt_to_ebitda": 1.0,
+        "debt_equity": 0.48,
+        "current_ratio": 1.05,
+        "rev_growth": 9.0,
+        "eps_growth": 437.1,
+        "ret_12m": 14.3,
+        "div_yield": null
+      },
+      "proxy_notes": [
+        "earnings_yield_proxy=1/EV_EBITDA",
+        "roic_proxy=ROE"
+      ],
+      "data_status": "ok"
+    },
+    {
+      "symbol": "PEGA",
+      "name": "Pegasystems Inc.",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "price": 37.33,
+      "market_cap": 6310402048,
+      "summary": "Pegasystems Inc. develops, markets, licenses, hosts, and supports enterprise software in the United States, rest of the Americas, the United Kingdom, rest of Europe, the Middle East, Africa, and the Asia-Pacific. It provides Pega Infinity, a software portfolio comprising of Pega Customer Decision Hub, a real-time AI-powered decision engine, which can predict a customer's behavior and recommend the next best action to take across channels in real-time; Pega Customer Service to anticipate customer needs, connect customers to people and systems, and automate customer interactions to evolve the cu",
+      "factors": {
+        "quality": 84.4,
+        "valuation": 50.0,
+        "profitability": 69.9,
+        "risk": 71.4,
+        "recurring": 45.0,
+        "ai_exposure": 0
+      },
+      "composite_score": 51.3,
+      "ai_evidence": [],
+      "metrics": {
+        "pe": 20.18,
+        "forward_pe": 12.27,
+        "ev_ebitda": 28.17,
+        "ev_sales": 3.44,
+        "fcf_yield": 8.45,
+        "fcf_margin": 31.37,
+        "gross_margin": 74.96,
+        "op_margin": 8.6,
+        "roic_proxy": 51.74,
+        "debt_to_ebitda": 0.35,
+        "debt_equity": 0.1,
+        "current_ratio": 1.22,
+        "rev_growth": -9.6,
+        "eps_growth": -61.6,
+        "ret_12m": -18.39,
+        "div_yield": 32.0
+      },
+      "proxy_notes": [
+        "earnings_yield_proxy=1/EV_EBITDA",
+        "roic_proxy=ROE"
+      ],
+      "data_status": "ok"
+    },
+    {
+      "symbol": "ADEA",
+      "name": "Adeia Inc.",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "price": 30.32,
+      "market_cap": 3355429888,
+      "summary": "Adeia Inc., together with its subsidiaries, operates as a media and semiconductor intellectual property licensing platform company in the United States, Asia, Canada, Europe, the Middle East, and internationally. The company licenses its patent portfolios across various markets, including multichannel video programming distributors comprising cable, satellite, and telecommunications television providers that aggregate and distribute linear content over networks, as well as television providers that aggregate and stream linear content over broadband networks; over-the-top video service provider",
+      "factors": {
+        "quality": 79.4,
+        "valuation": 45.4,
+        "profitability": 97.1,
+        "risk": 48.7,
+        "recurring": 45.0,
+        "ai_exposure": 0
+      },
+      "composite_score": 51.1,
+      "ai_evidence": [],
+      "metrics": {
+        "pe": 30.62,
+        "forward_pe": 20.25,
+        "ev_ebitda": 13.92,
+        "ev_sales": 8.11,
+        "fcf_yield": 5.21,
+        "fcf_margin": 39.44,
+        "gross_margin": 100.0,
+        "op_margin": 63.1,
+        "roic_proxy": 25.33,
+        "debt_to_ebitda": 1.66,
+        "debt_equity": 0.89,
+        "current_ratio": 3.81,
+        "rev_growth": 53.3,
+        "eps_growth": 104.6,
+        "ret_12m": 147.45,
+        "div_yield": 66.0
+      },
+      "proxy_notes": [
+        "earnings_yield_proxy=1/EV_EBITDA",
+        "roic_proxy=ROE"
+      ],
+      "data_status": "ok"
+    },
+    {
+      "symbol": "PLTK",
+      "name": "Playtika Holding Corp.",
+      "sector": "Communication Services",
+      "industry": "Electronic Gaming & Multimedia",
+      "price": 3.4,
+      "market_cap": 1289736704,
+      "summary": "Playtika Holding Corp., together with its subsidiaries, develops mobile games in the United States, Europe, the Middle East, Africa, the Asia Pacific, and internationally. The company owns a portfolio of casual and social casino-themed games. It distributes its games to the end customer through various web and mobile platforms and direct-to-consumer platforms. The company was founded in 2010 and is headquartered in Herzliya Pituach, Israel. Playtika Holding Corp. operates as a subsidiary of Playtika Holding UK II Limited.",
+      "factors": {
+        "quality": 63.3,
+        "valuation": 76.6,
+        "profitability": 78.8,
+        "risk": 38.2,
+        "recurring": 45.0,
+        "ai_exposure": 0
+      },
+      "composite_score": 50.4,
+      "ai_evidence": [],
+      "metrics": {
+        "pe": null,
+        "forward_pe": 3.45,
+        "ev_ebitda": 4.71,
+        "ev_sales": 1.09,
+        "fcf_yield": 68.08,
+        "fcf_margin": 31.87,
+        "gross_margin": 72.47,
+        "op_margin": 23.14,
+        "roic_proxy": null,
+        "debt_to_ebitda": 3.98,
+        "debt_equity": null,
+        "current_ratio": 1.1,
+        "rev_growth": 4.4,
+        "eps_growth": null,
+        "ret_12m": -30.1,
+        "div_yield": 1176.0
+      },
+      "proxy_notes": [
+        "earnings_yield_proxy=1/EV_EBITDA"
+      ],
+      "data_status": "ok"
+    },
+    {
+      "symbol": "CCSI",
+      "name": "Consensus Cloud Solutions, Inc.",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "price": 26.72,
+      "market_cap": 507834336,
+      "summary": "Consensus Cloud Solutions, Inc., together with its subsidiaries, provides information delivery services with a software-as-a-service platform in the United States, Canada, Ireland, and internationally. The company offers eFax Corporate, a digital cloud fax technology; ECFax for use by public sector customers with extremely high security demands; and eFax Unite, a single platform that allows the user to choose between various protocols to send and receive healthcare information in an environment that can integrate into an existing electronic health record system or stand-alone if no electronic ",
+      "factors": {
+        "quality": 66.2,
+        "valuation": 72.3,
+        "profitability": 78.3,
+        "risk": 17.2,
+        "recurring": 45.0,
+        "ai_exposure": 12
+      },
+      "composite_score": 50.3,
+      "ai_evidence": [
+        "kw:artificial intelligence"
+      ],
+      "metrics": {
+        "pe": 6.14,
+        "forward_pe": 4.53,
+        "ev_ebitda": 5.92,
+        "ev_sales": 2.86,
+        "fcf_yield": 14.91,
+        "fcf_margin": 21.66,
+        "gross_margin": 79.81,
+        "op_margin": 41.07,
+        "roic_proxy": null,
+        "debt_to_ebitda": 3.38,
+        "debt_equity": 41.44,
+        "current_ratio": 1.79,
+        "rev_growth": 0.1,
+        "eps_growth": 13.5,
+        "ret_12m": 37.73,
+        "div_yield": null
+      },
+      "proxy_notes": [
+        "earnings_yield_proxy=1/EV_EBITDA"
+      ],
+      "data_status": "ok"
+    },
+    {
+      "symbol": "CRCT",
+      "name": "Cricut, Inc.",
+      "sector": "Technology",
+      "industry": "Computer Hardware",
+      "price": 4.45,
+      "market_cap": 942426624,
+      "summary": "Cricut, Inc. engages in the design, marketing, and distribution of a creativity platform that enables users to turn ideas into professional-looking handmade goods in the United States, Canada, the United Kingdom, Ireland, Australia, New Zealand, Western Europe, the Middle East, Latin America, South Africa, and Asia. It operates through Platform and Products segments. The company offers connected machines, accessories, and materials for users to create personalized birthday cards, mugs, T-shirts, and large-scale interior decorations. Its connected machines, which are used to cut, write, score, ",
+      "factors": {
+        "quality": 63.0,
+        "valuation": 53.6,
+        "profitability": 55.7,
+        "risk": 74.2,
+        "recurring": 35.0,
+        "ai_exposure": 30
+      },
+      "composite_score": 50.3,
+      "ai_evidence": [
+        "industry:Computer Hardware"
+      ],
+      "metrics": {
+        "pe": 12.71,
+        "forward_pe": 28.53,
+        "ev_ebitda": 6.7,
+        "ev_sales": 0.96,
+        "fcf_yield": 14.03,
+        "fcf_margin": 18.66,
+        "gross_margin": 55.18,
+        "op_margin": 7.16,
+        "roic_proxy": 18.93,
+        "debt_to_ebitda": 0.11,
+        "debt_equity": 0.03,
+        "current_ratio": 2.26,
+        "rev_growth": -2.7,
+        "eps_growth": -34.7,
+        "ret_12m": 9.08,
+        "div_yield": 449.0
+      },
+      "proxy_notes": [
+        "earnings_yield_proxy=1/EV_EBITDA",
+        "roic_proxy=ROE"
+      ],
+      "data_status": "ok"
+    },
+    {
+      "symbol": "PAYC",
+      "name": "Paycom Software, Inc.",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "price": 123.72,
+      "market_cap": 6714914816,
+      "summary": "Paycom Software, Inc. provides cloud-based human capital management (HCM) solution delivered as software-as-a-service for small to mid-sized companies in the United States. The company offers functionality and data analytics that businesses need to manage the employment life cycle from recruitment to retirement. The company's HCM solution offers payroll applications comprising better employee transaction interface, payroll and payroll tax management, payroll card, Everyday, Paycom pay, Client Action Center, expense management, garnishment administration, and GL concierge applications; talent a",
+      "factors": {
+        "quality": 80.7,
+        "valuation": 52.3,
+        "profitability": 61.9,
+        "risk": 73.7,
+        "recurring": 45.0,
+        "ai_exposure": 0
+      },
+      "composite_score": 50.0,
+      "ai_evidence": [],
+      "metrics": {
+        "pe": 15.31,
+        "forward_pe": 10.62,
+        "ev_ebitda": 9.93,
+        "ev_sales": 3.07,
+        "fcf_yield": 3.89,
+        "fcf_margin": 12.72,
+        "gross_margin": 87.18,
+        "op_margin": 28.86,
+        "roic_proxy": 27.42,
+        "debt_to_ebitda": 0.14,
+        "debt_equity": 0.05,
+        "current_ratio": 1.09,
+        "rev_growth": 10.2,
+        "eps_growth": 0.2,
+        "ret_12m": -45.2,
+        "div_yield": 121.0
+      },
+      "proxy_notes": [
+        "earnings_yield_proxy=1/EV_EBITDA",
+        "roic_proxy=ROE"
+      ],
+      "data_status": "ok"
+    },
+    {
+      "symbol": "BKTI",
+      "name": "BK Technologies Corporation",
+      "sector": "Technology",
+      "industry": "Communication Equipment",
+      "price": 93.13,
+      "market_cap": 348692768,
+      "summary": "BK Technologies Corporation, through its subsidiary, BK Technologies, Inc., engages in the design, manufacture, and marketing of wireless communications products in the United States and internationally. It offers two-way land mobile radios (LMR) that are hand-held (portable) or installed in vehicles (mobile). The company offers KNG Series and BKR Series radios that operate in the P25 digital and analog modes, which are used primarily in government, public safety, military, and state and municipal government agencies, as well as various industrial and commercial enterprises; and BK radio produ",
+      "factors": {
+        "quality": 71.9,
+        "valuation": 39.7,
+        "profitability": 57.7,
+        "risk": 74.1,
+        "recurring": 35.0,
+        "ai_exposure": 30
+      },
+      "composite_score": 49.6,
+      "ai_evidence": [
+        "industry:Communication Equipment"
+      ],
+      "metrics": {
+        "pe": 27.07,
+        "forward_pe": 22.5,
+        "ev_ebitda": 18.65,
+        "ev_sales": 3.85,
+        "fcf_yield": 3.4,
+        "fcf_margin": 13.78,
+        "gross_margin": 48.79,
+        "op_margin": 19.66,
+        "roic_proxy": 36.32,
+        "debt_to_ebitda": 0.09,
+        "debt_equity": 0.04,
+        "current_ratio": 4.21,
+        "rev_growth": 20.0,
+        "eps_growth": 15.6,
+        "ret_12m": 113.5,
+        "div_yield": null
+      },
+      "proxy_notes": [
+        "earnings_yield_proxy=1/EV_EBITDA",
+        "roic_proxy=ROE"
+      ],
+      "data_status": "ok"
+    },
+    {
+      "symbol": "PRDO",
+      "name": "Perdoceo Education Corporation",
+      "sector": "Consumer Defensive",
+      "industry": "Education & Training Services",
+      "price": 32.35,
+      "market_cap": 2028390272,
+      "summary": "Perdoceo Education Corporation provides postsecondary education through online, campus-based, and blended learning programs in the United States. It operates through three segments: Colorado Technical University (CTU), The American InterContinental University System (AIUS), and University of St. Augustine for Health Sciences (USAHS). The CTU segment offers academic programs in the career-oriented disciplines of business and management, nursing, healthcare management, computer science, engineering, information systems and technology, project management, cybersecurity, and criminal justice. Its ",
+      "factors": {
+        "quality": 70.9,
+        "valuation": 59.8,
+        "profitability": 64.1,
+        "risk": 70.0,
+        "recurring": 45.0,
+        "ai_exposure": 0
+      },
+      "composite_score": 49.5,
+      "ai_evidence": [],
+      "metrics": {
+        "pe": 13.37,
+        "forward_pe": 9.89,
+        "ev_ebitda": 6.38,
+        "ev_sales": 1.79,
+        "fcf_yield": 8.24,
+        "fcf_margin": 19.76,
+        "gross_margin": 79.55,
+        "op_margin": 19.81,
+        "roic_proxy": 16.56,
+        "debt_to_ebitda": 0.5,
+        "debt_equity": 0.12,
+        "current_ratio": 5.06,
+        "rev_growth": 20.0,
+        "eps_growth": 12.3,
+        "ret_12m": 32.23,
+        "div_yield": 185.0
+      },
+      "proxy_notes": [
+        "earnings_yield_proxy=1/EV_EBITDA",
+        "roic_proxy=ROE"
+      ],
+      "data_status": "ok"
+    },
+    {
+      "symbol": "PBYI",
+      "name": "Puma Biotechnology, Inc.",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "price": 7.54,
+      "market_cap": 383608704,
+      "summary": "Puma Biotechnology, Inc., a biopharmaceutical company, focuses on the development and commercialization of products to enhance cancer care in the United States and internationally. It offers NERLYNX, an oral version of neratinib that is used to treat adult patients with early stage HER2-overexpressed/amplified breast cancer; and advanced or metastatic HER2-positive breast cancer when combined with capecitabine. The company also develops alisertib, a small molecule inhibitor of aurora kinase A for the treatment of hormone receptor positive breast cancer, triple negative breast cancer, small cel",
+      "factors": {
+        "quality": 76.4,
+        "valuation": 58.1,
+        "profitability": 59.1,
+        "risk": 67.6,
+        "recurring": 45.0,
+        "ai_exposure": 0
+      },
+      "composite_score": 49.3,
+      "ai_evidence": [],
+      "metrics": {
+        "pe": 12.36,
+        "forward_pe": 11.6,
+        "ev_ebitda": 6.63,
+        "ev_sales": 1.38,
+        "fcf_yield": 8.0,
+        "fcf_margin": 13.44,
+        "gross_margin": 74.53,
+        "op_margin": 22.67,
+        "roic_proxy": 27.97,
+        "debt_to_ebitda": 0.6,
+        "debt_equity": 0.22,
+        "current_ratio": 2.0,
+        "rev_growth": 27.7,
+        "eps_growth": -30.4,
+        "ret_12m": 151.33,
+        "div_yield": null
+      },
+      "proxy_notes": [
+        "earnings_yield_proxy=1/EV_EBITDA",
+        "roic_proxy=ROE"
+      ],
+      "data_status": "ok"
+    },
+    {
+      "symbol": "AGM",
+      "name": "Federal Agricultural Mortgage Corporation",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "price": 173.26,
+      "market_cap": 1881080448,
+      "summary": "Federal Agricultural Mortgage Corporation provides a secondary market for various loans made to borrowers in the United States. It operates through seven segments: Farm & Ranch, Corporate AgFinance, Power & Utilities, Broadband Infrastructure, Renewable Energy, Funding, and Investments. The Farm & Ranch segment includes the USDA Securities portfolio, Farm & Ranch loans, and AgVantage securities secured by Farm & Ranch loans. The Corporate AgFinance segment includes loans and AgVantage securities to larger and more complex farming operations, agribusinesses focused on food and fiber processing,",
+      "factors": {
+        "quality": 71.2,
+        "valuation": 55.6,
+        "profitability": 73.1,
+        "risk": 25.0,
+        "recurring": 45.0,
+        "ai_exposure": 18
+      },
+      "composite_score": 49.2,
+      "ai_evidence": [
+        "kw:data center",
+        "kw:fiber"
+      ],
+      "metrics": {
+        "pe": 10.42,
+        "forward_pe": 8.3,
+        "ev_ebitda": null,
+        "ev_sales": 93.05,
+        "fcf_yield": null,
+        "fcf_margin": null,
+        "gross_margin": 100.0,
+        "op_margin": 65.51,
+        "roic_proxy": 12.93,
+        "debt_to_ebitda": null,
+        "debt_equity": 19.32,
+        "current_ratio": 1.55,
+        "rev_growth": -5.8,
+        "eps_growth": -15.2,
+        "ret_12m": 2.72,
+        "div_yield": 352.0
+      },
+      "proxy_notes": [
+        "roic_proxy=ROE"
+      ],
+      "data_status": "partial"
+    },
+    {
+      "symbol": "ZD",
+      "name": "Ziff Davis, Inc.",
+      "sector": "Communication Services",
+      "industry": "Advertising Agencies",
+      "price": 46.54,
+      "market_cap": 1760936832,
+      "summary": "Ziff Davis, Inc., together with its subsidiaries, operates as a digital media and internet company in the United States and internationally. It offers online resources for laboratory-based product reviews, technology news, buying guides, and research papers under the PCMag and CNET brands; Mashable for publishing technology and culture content; Spiceworks provides digital content of IT products and services; RetailMeNot, a savings destination platform; VoucherCodes; Offers.com, a coupon and deals website; and event based properties, includes BlackFriday.com, TheBlackFriday.com, BestBlackFriday",
+      "factors": {
+        "quality": 64.2,
+        "valuation": 72.4,
+        "profitability": 65.2,
+        "risk": 52.5,
+        "recurring": 45.0,
+        "ai_exposure": 0
+      },
+      "composite_score": 49.1,
+      "ai_evidence": [],
+      "metrics": {
+        "pe": 40.47,
+        "forward_pe": 8.14,
+        "ev_ebitda": 4.78,
+        "ev_sales": 1.4,
+        "fcf_yield": 16.49,
+        "fcf_margin": 20.01,
+        "gross_margin": 85.76,
+        "op_margin": 21.16,
+        "roic_proxy": 2.66,
+        "debt_to_ebitda": 2.09,
+        "debt_equity": 0.51,
+        "current_ratio": 1.27,
+        "rev_growth": -1.5,
+        "eps_growth": -99.4,
+        "ret_12m": 50.37,
+        "div_yield": null
+      },
+      "proxy_notes": [
+        "earnings_yield_proxy=1/EV_EBITDA",
+        "roic_proxy=ROE"
+      ],
+      "data_status": "ok"
+    },
+    {
+      "symbol": "YOU",
+      "name": "Clear Secure, Inc.",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "price": 54.81,
+      "market_cap": 5522889216,
+      "summary": "Clear Secure, Inc. operates a secure identity platform under the CLEAR brand name primarily in the United States. It provides secure identity platform, a multi-layered infrastructure consisting of front-end, including enrollment, verification, and linking, as well as back-end. The company also offers CLEAR Plus, a consumer aviation subscription service, which enables access to predictable entry lanes in airport security checkpoints, as well as access to broader network; and CLEAR mobile app, which is used to enroll new members and improve the experience for existing members. In addition, it pr",
+      "factors": {
+        "quality": 80.3,
+        "valuation": 41.9,
+        "profitability": 76.0,
+        "risk": 62.2,
+        "recurring": 45.0,
+        "ai_exposure": 0
+      },
+      "composite_score": 48.8,
+      "ai_evidence": [],
+      "metrics": {
+        "pe": 48.94,
+        "forward_pe": 19.52,
+        "ev_ebitda": 23.43,
+        "ev_sales": 5.42,
+        "fcf_yield": 4.83,
+        "fcf_margin": 29.6,
+        "gross_margin": 64.42,
+        "op_margin": 22.39,
+        "roic_proxy": 76.03,
+        "debt_to_ebitda": 0.54,
+        "debt_equity": 0.55,
+        "current_ratio": 1.01,
+        "rev_growth": 16.7,
+        "eps_growth": -70.2,
+        "ret_12m": 120.78,
+        "div_yield": 109.0
+      },
+      "proxy_notes": [
+        "earnings_yield_proxy=1/EV_EBITDA",
+        "roic_proxy=ROE"
+      ],
+      "data_status": "ok"
+    },
+    {
+      "symbol": "AMBA",
+      "name": "Ambarella, Inc.",
+      "sector": "Technology",
+      "industry": "Semiconductor Equipment & Materials",
+      "price": 66.87,
+      "market_cap": 2928162560,
+      "summary": "Ambarella, Inc. develops low-power system-on-a-chip, semiconductors, and software for edge and physical artificial intelligence, applications, and intelligent automation. The company's system-on-a-chip (SOC) integrates third generation CVflow technology with advanced video processing, image signal processing, audio processing, and system control functions on a single chip. It also offers central domain controllers, CVflow SoCs, AI neural processors, vision processor SoCs, high-definition radars, and serializer/deserializers, as well as licenses software modules. The company's solutions are use",
+      "factors": {
+        "quality": 43.5,
+        "valuation": 47.4,
+        "profitability": 47.5,
+        "risk": 60.4,
+        "recurring": 35.0,
+        "ai_exposure": 60
+      },
+      "composite_score": 48.6,
+      "ai_evidence": [
+        "industry:Semiconductor Equipment & Materials",
+        "kw:artificial intelligence",
+        "kw:ai"
+      ],
+      "metrics": {
+        "pe": null,
+        "forward_pe": 61.56,
+        "ev_ebitda": -37.97,
+        "ev_sales": 6.73,
+        "fcf_yield": 2.97,
+        "fcf_margin": 22.24,
+        "gross_margin": 59.19,
+        "op_margin": -18.27,
+        "roic_proxy": -13.12,
+        "debt_to_ebitda": null,
+        "debt_equity": 0.02,
+        "current_ratio": 2.31,
+        "rev_growth": 20.1,
+        "eps_growth": null,
+        "ret_12m": 40.57,
+        "div_yield": null
+      },
+      "proxy_notes": [
+        "roic_proxy=ROE"
+      ],
+      "data_status": "ok"
     }
   ],
-  "by_screen": {
-    "graham": [
-      {
-        "symbol": "LEN",
-        "company": "Lennar Corporation",
-        "sector": "Consumer Cyclical"
-      },
-      {
-        "symbol": "VICI",
-        "company": "VICI Properties Inc.",
-        "sector": "Real Estate"
-      }
-    ],
-    "magic_formula": [
-      {
-        "symbol": "APA",
-        "company": "APA Corporation",
-        "sector": "Energy"
-      },
-      {
-        "symbol": "ADBE",
-        "company": "Adobe Inc.",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "ALL",
-        "company": "The Allstate Corporation",
-        "sector": "Financial Services"
-      },
-      {
-        "symbol": "ADP",
-        "company": "Automatic Data Processing, Inc.",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "DECK",
-        "company": "Deckers Outdoor Corporation",
-        "sector": "Consumer Cyclical"
-      },
-      {
-        "symbol": "MRK",
-        "company": "Merck & Co., Inc.",
-        "sector": "Healthcare"
-      },
-      {
-        "symbol": "MMM",
-        "company": "3M Company",
-        "sector": "Industrials"
-      },
-      {
-        "symbol": "BMY",
-        "company": "Bristol-Myers Squibb Company",
-        "sector": "Healthcare"
-      },
-      {
-        "symbol": "CCL",
-        "company": "Carnival Corporation & plc",
-        "sector": "Consumer Cyclical"
-      },
-      {
-        "symbol": "CHTR",
-        "company": "Charter Communications, Inc.",
-        "sector": "Communication Services"
-      }
-    ],
-    "piotroski": [
-      {
-        "symbol": "NVDA",
-        "company": "NVIDIA Corporation",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "APA",
-        "company": "APA Corporation",
-        "sector": "Energy"
-      },
-      {
-        "symbol": "ADBE",
-        "company": "Adobe Inc.",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "ALL",
-        "company": "The Allstate Corporation",
-        "sector": "Financial Services"
-      },
-      {
-        "symbol": "AMAT",
-        "company": "Applied Materials, Inc.",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "ANET",
-        "company": "Arista Networks, Inc.",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "ADP",
-        "company": "Automatic Data Processing, Inc.",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "AVGO",
-        "company": "Broadcom Inc.",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "CBOE",
-        "company": "Cboe Global Markets, Inc.",
-        "sector": "Financial Services"
-      },
-      {
-        "symbol": "CSCO",
-        "company": "Cisco Systems, Inc.",
-        "sector": "Technology"
-      }
-    ],
-    "garp": [
-      {
-        "symbol": "NVDA",
-        "company": "NVIDIA Corporation",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "ALL",
-        "company": "The Allstate Corporation",
-        "sector": "Financial Services"
-      },
-      {
-        "symbol": "FIX",
-        "company": "Comfort Systems USA, Inc.",
-        "sector": "Industrials"
-      },
-      {
-        "symbol": "EME",
-        "company": "EMCOR Group, Inc.",
-        "sector": "Industrials"
-      },
-      {
-        "symbol": "FSLR",
-        "company": "First Solar, Inc.",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "INCY",
-        "company": "Incyte Corporation",
-        "sector": "Healthcare"
-      },
-      {
-        "symbol": "INTU",
-        "company": "Intuit Inc.",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "MU",
-        "company": "Micron Technology, Inc.",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "MSFT",
-        "company": "Microsoft Corporation",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "PTC",
-        "company": "PTC Inc.",
-        "sector": "Technology"
-      }
-    ],
-    "quality": [
-      {
-        "symbol": "NVDA",
-        "company": "NVIDIA Corporation",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "APA",
-        "company": "APA Corporation",
-        "sector": "Energy"
-      },
-      {
-        "symbol": "ADBE",
-        "company": "Adobe Inc.",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "AMAT",
-        "company": "Applied Materials, Inc.",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "ANET",
-        "company": "Arista Networks, Inc.",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "ADP",
-        "company": "Automatic Data Processing, Inc.",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "AVGO",
-        "company": "Broadcom Inc.",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "CBOE",
-        "company": "Cboe Global Markets, Inc.",
-        "sector": "Financial Services"
-      },
-      {
-        "symbol": "CSCO",
-        "company": "Cisco Systems, Inc.",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "DECK",
-        "company": "Deckers Outdoor Corporation",
-        "sector": "Consumer Cyclical"
-      }
-    ],
-    "momentum": [
-      {
-        "symbol": "NVDA",
-        "company": "NVIDIA Corporation",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "APA",
-        "company": "APA Corporation",
-        "sector": "Energy"
-      },
-      {
-        "symbol": "AMAT",
-        "company": "Applied Materials, Inc.",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "ANET",
-        "company": "Arista Networks, Inc.",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "AVGO",
-        "company": "Broadcom Inc.",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "CBOE",
-        "company": "Cboe Global Markets, Inc.",
-        "sector": "Financial Services"
-      },
-      {
-        "symbol": "CSCO",
-        "company": "Cisco Systems, Inc.",
-        "sector": "Technology"
-      },
-      {
-        "symbol": "FIX",
-        "company": "Comfort Systems USA, Inc.",
-        "sector": "Industrials"
-      },
-      {
-        "symbol": "DVN",
-        "company": "Devon Energy Corporation",
-        "sector": "Energy"
-      },
-      {
-        "symbol": "EME",
-        "company": "EMCOR Group, Inc.",
-        "sector": "Industrials"
-      }
-    ],
-    "dividend": [
-      {
-        "symbol": "NVDA",
-        "company": "NVIDIA Corporation",
-        "sector": "Technology"
-      }
-    ]
-  },
-  "sector_mix_top20": {
-    "Technology": 12,
-    "Energy": 2,
-    "Financial Services": 2,
-    "Industrials": 2,
+  "sector_mix_top25": {
+    "Technology": 9,
+    "Financial Services": 7,
+    "Healthcare": 4,
     "Consumer Cyclical": 1,
-    "Healthcare": 1
+    "Industrials": 1,
+    "Communication Services": 2,
+    "Consumer Defensive": 1
   },
-  "total_passes": 441
+  "total_passes": 302
 }

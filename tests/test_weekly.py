@@ -1,4 +1,5 @@
-"""Validate the weekly_screens.json output is healthy."""
+"""Validate the weekly_screens.json output is healthy under the new
+composite-scoring pipeline."""
 import json
 import os
 import sys
@@ -15,39 +16,38 @@ class TestWeeklyOutput:
     @pytest.fixture
     def data(self):
         path = os.path.join(ROOT, "output", "weekly_screens.json")
-        assert os.path.exists(path), "weekly_screens.json missing"
+        assert os.path.exists(path), "weekly_screens.json missing — run python fetch_weekly.py"
         with open(path) as f:
             return json.load(f)
 
     def test_has_required_keys(self, data):
-        for key in ["last_updated", "universe", "screens_run",
-                    "top_conviction", "by_screen"]:
+        for key in ["last_updated", "universe", "scoring", "top_conviction"]:
             assert key in data
 
-    def test_top_conviction_is_list(self, data):
-        assert isinstance(data["top_conviction"], list)
-
     def test_top_conviction_non_empty(self, data):
-        # If this fails, the screener returned no picks → likely bad data
+        assert isinstance(data["top_conviction"], list)
         assert len(data["top_conviction"]) > 0, \
-            "top_conviction is empty — yfinance likely rate-limited"
+            "top_conviction is empty — yfinance likely throttled the run"
 
-    def test_screen_names_canonical(self, data):
-        canonical = {"graham", "magic_formula", "piotroski", "garp",
-                     "quality", "momentum", "dividend"}
+    def test_factor_keys_canonical(self, data):
+        canonical = {"quality", "valuation", "profitability",
+                     "risk", "recurring", "ai_exposure"}
         for stock in data["top_conviction"]:
-            for s in stock["screens_passed"]:
-                assert s in canonical, f"Unknown screen: {s}"
+            assert set(stock["factors"].keys()) == canonical
 
-    def test_score_matches_screens_passed_count(self, data):
+    def test_composite_score_in_range(self, data):
         for stock in data["top_conviction"]:
-            assert stock["score"] == len(stock["screens_passed"])
+            assert 0 <= stock["composite_score"] <= 100
 
-    def test_universe_size_reasonable(self, data):
-        # Should fetch 400+ S&P 500 stocks; flag if much lower
-        # universe is a string like "S&P 500 (487 fetched)"
-        import re
-        m = re.search(r"\((\d+)\s+fetched\)", data["universe"])
-        if m:
-            n = int(m.group(1))
-            assert n >= 100, f"Universe too small: {n} stocks fetched"
+    def test_factor_scores_in_range(self, data):
+        for stock in data["top_conviction"]:
+            for factor, score in stock["factors"].items():
+                assert 0 <= score <= 100, f"{stock['symbol']} {factor}={score} out of range"
+
+    def test_proxies_disclosed(self, data):
+        # The new pipeline must explicitly label its proxy approximations.
+        assert "proxies_used" in data["scoring"]
+
+    def test_results_sorted_desc(self, data):
+        scores = [s["composite_score"] for s in data["top_conviction"]]
+        assert scores == sorted(scores, reverse=True)

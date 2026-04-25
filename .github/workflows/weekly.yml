@@ -21,21 +21,24 @@ jobs:
           cache: 'pip'
 
       - name: Install dependencies
-        run: pip install yfinance==0.2.51 pandas requests lxml jsonschema tenacity
+        run: pip install yfinance==0.2.51 pandas requests jsonschema tenacity
 
-      - name: Run screener
+      - name: Run pipeline (universe → fundamentals → composite)
         run: python fetch_weekly.py
 
       - name: Validate output JSON
         run: python tests/validate_output.py weekly
 
       - name: Smoke test
-        run: python -m pytest tests/test_weekly.py -v
+        run: python -m pytest tests/test_weekly.py tests/test_composite.py -v
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Auto: weekly screening run"
-          file_pattern: output/weekly_screens.json
+          commit_message: "Auto: weekly composite run"
+          file_pattern: |
+            output/weekly_screens.json
+            data/universe.json
+            data/fundamentals.json
 
       - name: Open issue on failure
         if: failure()

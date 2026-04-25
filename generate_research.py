@@ -1,177 +1,298 @@
 #!/usr/bin/env python3
 """
-generate_research.py — AI Research Briefs for Top Stock Picks
+generate_research.py — AI Research Briefs for TickRun's Top Picks
 
-Reads output/weekly_screens.json, takes the top 5 conviction picks,
-calls the Claude API for a structured research brief on each, and writes
-output/research_briefs.json.
+Reads output/weekly_screens.json (the composite-ranked top conviction
+list), and for each pick calls the Claude API to produce a structured
+research brief that highlights the **indirect AI / data-center / power
+exposure narrative** alongside the traditional thesis/catalyst/bear
+case framing.
+
+Hardening since v1:
+- Strict response-schema validation; retries on JSON parse failures
+- Bounded exponential backoff on API errors
+- Tone tuned toward "specific & honest about uncertainty," not
+  "no hedging" (the old prompt pushed the model toward overconfidence)
+- Records partial success per pick — one bad response no longer drops
+  the entire run
 
 Usage:
-    ANTHROPIC_API_KEY=sk-... python3 generate_research.py
+    ANTHROPIC_API_KEY=sk-... python3 generate_research.py [--top N]
 
 Requirements:
-    pip3 install anthropic
-
-Runtime: ~30 seconds for 5 picks.
+    pip3 install anthropic tenacity
 """
 
+import argparse
 import json
 import os
+import re
 import sys
+import time
 from datetime import datetime, timezone
 
 try:
     import anthropic
 except ImportError:
-    print("Missing dependency. Run: pip3 install anthropic")
+    print("Missing dependency: pip3 install anthropic")
     sys.exit(1)
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+try:
+    from tenacity import retry, stop_after_attempt, wait_exponential
+    _HAS_TENACITY = True
+except ImportError:
+    _HAS_TENACITY = False
+
+SCRIPT_DIR  = os.path.dirname(os.path.abspath(__file__))
 WEEKLY_PATH = os.path.join(SCRIPT_DIR, "output", "weekly_screens.json")
 OUTPUT_PATH = os.path.join(SCRIPT_DIR, "output", "research_briefs.json")
-TOP_N = 5
 
-SCREEN_LABELS = {
-    "graham":        "Graham Defensive (cheap + safe)",
-    "magic_formula": "Magic Formula (cheap + high ROIC)",
-    "piotroski":     "Piotroski (improving fundamentals)",
-    "garp":          "GARP (growth at a reasonable price)",
-    "quality":       "Quality (high-return business)",
-    "momentum":      "Momentum (trending up with support)",
-    "dividend":      "Dividend Quality (safe, growing income)",
-}
+MODEL_ID = "claude-opus-4-7"
+MAX_TOKENS = 700
 
-
-def load_top_picks():
-    with open(WEEKLY_PATH) as f:
-        data = json.load(f)
-    picks = data.get("top_conviction", [])[:TOP_N]
-    screens_updated = data.get("last_updated", "unknown")
-    return picks, screens_updated
+REQUIRED_FIELDS = (
+    "one_line_thesis",
+    "ai_exposure_narrative",
+    "why_it_screened",
+    "valuation_note",
+    "bear_case",
+    "research_focus",
+)
 
 
-def screen_descriptions(screens_passed):
-    return [SCREEN_LABELS.get(s, s) for s in screens_passed]
+# ── Prompt construction ──────────────────────────────────────
 
+def build_prompt(pick: dict) -> str:
+    sym       = pick["symbol"]
+    name      = pick.get("name", sym)
+    sector    = pick.get("sector", "Unknown")
+    industry  = pick.get("industry", "Unknown")
+    price     = pick.get("price", "—")
+    mcap      = pick.get("market_cap")
+    mcap_str  = f"${mcap/1e9:.1f}B" if mcap else "n/a"
+    composite = pick.get("composite_score", 0.0)
+    factors   = pick.get("factors", {})
+    metrics   = pick.get("metrics", {})
+    summary   = pick.get("summary", "")
+    ai_evidence = pick.get("ai_evidence", [])
+    proxy_notes = pick.get("proxy_notes", [])
 
-def build_prompt(pick):
-    sym = pick["symbol"]
-    company = pick["company"]
-    sector = pick["sector"]
-    price = pick.get("price", "unknown")
-    score = pick["score"]
-    screens = screen_descriptions(pick["screens_passed"])
-    thesis = pick.get("one_line_thesis", "")
-    metrics = pick.get("metrics", {})
+    factor_lines = "\n".join(
+        f"  - {k}: {v}/100"
+        for k, v in factors.items()
+    )
 
-    m_lines = []
-    if metrics.get("pe"):      m_lines.append(f"P/E: {metrics['pe']}")
-    if metrics.get("pb"):      m_lines.append(f"P/B: {metrics['pb']}")
-    if metrics.get("peg"):     m_lines.append(f"PEG: {metrics['peg']}")
-    if metrics.get("roe"):     m_lines.append(f"ROE: {metrics['roe']}%")
-    if metrics.get("div_yield"): m_lines.append(f"Div yield: {metrics['div_yield']}%")
-    if metrics.get("ret_12m"): m_lines.append(f"12M return: {metrics['ret_12m']}%")
-    if metrics.get("gross_margin"): m_lines.append(f"Gross margin: {metrics['gross_margin']}%")
-    if metrics.get("fcf_margin"):   m_lines.append(f"FCF margin: {metrics['fcf_margin']}%")
-    if metrics.get("debt_equity"):  m_lines.append(f"Debt/equity: {metrics['debt_equity']}")
+    metric_lines = []
+    for label, key, suffix in [
+        ("EV/EBITDA", "ev_ebitda", "x"), ("Forward P/E", "forward_pe", "x"),
+        ("FCF yield", "fcf_yield", "%"), ("FCF margin", "fcf_margin", "%"),
+        ("Gross margin", "gross_margin", "%"), ("Op margin", "op_margin", "%"),
+        ("ROIC*", "roic_proxy", "%"), ("Debt/EBITDA", "debt_to_ebitda", "x"),
+        ("Rev growth", "rev_growth", "%"), ("12M return", "ret_12m", "%"),
+    ]:
+        v = metrics.get(key)
+        if v is not None:
+            metric_lines.append(f"  - {label}: {v}{suffix}")
+    metrics_str = "\n".join(metric_lines) if metric_lines else "  (limited metrics available)"
 
-    metrics_str = " · ".join(m_lines) if m_lines else "metrics unavailable"
+    proxy_str = ""
+    if proxy_notes:
+        proxy_str = (
+            "\n\n[Note: ROIC* is a ROE-based proxy because true ROIC is not in "
+            "the data source. Treat as approximate.]"
+        )
 
-    return f"""You are a clear-eyed fundamental equity analyst writing for a retail investor running a long-term Roth IRA.
+    ai_evidence_str = (
+        ", ".join(ai_evidence) if ai_evidence else "no direct industry/keyword match"
+    )
 
-Stock: {sym} ({company}) — {sector}
-Current price: ${price}
-Screens passed ({score}/7): {", ".join(screens)}
-Key metrics: {metrics_str}
-Screener thesis: {thesis}
+    return f"""You are an experienced fundamental equity analyst writing for a retail investor running a long-term Roth IRA. You favor mid- and small-cap companies that sell into durable enterprise spending trends — especially the AI / data-center / power / networking buildout. You are honest about what you don't know.
 
-Write a brief research summary in JSON format. Be direct. No hedging phrases like "may" or "could" — state what the numbers actually say. Assume the reader is intelligent but not a finance professional.
+## Stock under review
 
-Return ONLY a JSON object with exactly these fields:
+- Symbol: {sym}
+- Name: {name}
+- Sector / industry: {sector} / {industry}
+- Market cap: {mcap_str} (current price ${price})
+
+## Why our screener surfaced it (composite score: {composite}/100)
+
+Factor sub-scores (z-scored within Russell mid+small universe):
+{factor_lines}
+
+Quantitative snapshot:
+{metrics_str}{proxy_str}
+
+AI-exposure evidence found in the business summary / industry mapping:
+  {ai_evidence_str}
+
+Business description (verbatim from issuer / data provider):
+\"\"\"
+{summary[:1200]}
+\"\"\"
+
+## Your task
+
+Produce a research brief in the JSON schema below. Be specific and concrete; cite numbers from the snapshot above when they support a point. When data is missing or the relationship is unclear, say so explicitly — uncertainty is information. Avoid generic platitudes ("strong management team", "well-positioned for growth") unless you can back them with a number.
+
+The "ai_exposure_narrative" field is the most important one: explain in plain English what this company actually sells (or builds, or operates) that benefits from AI / data-center / hyperscaler / enterprise-software / power-grid spending. If the AI tie is weak or speculative, say so.
+
+Return ONLY a JSON object — no markdown fences, no preamble, no commentary — with these exact fields:
+
 {{
-  "one_line_thesis": "One punchy sentence: what kind of company this is and why it appears cheap/quality/growing. Max 20 words.",
-  "why_screened": "1-2 sentences explaining which specific screens it passed and what that combination means about the stock's character.",
-  "recent_catalyst": "1 sentence on the most likely current catalyst or reason for attention. If nothing notable, say 'No obvious catalyst — steady business'.",
-  "bear_case": "1-2 sentences on the single biggest risk or reason this could be a value trap. Be specific.",
-  "research_focus": ["3 specific things to research before buying — not generic advice, but things specific to this company and its current situation"]
-}}
+  "one_line_thesis": "One punchy sentence: what this company is and why it might be undervalued. Max 25 words.",
+  "ai_exposure_narrative": "2-3 sentences in plain English: what they sell into the AI/data-center/power/enterprise-software thesis, who their customers are, and how durable that demand looks. If the AI exposure is weak or indirect, state that honestly.",
+  "why_it_screened": "1-2 sentences explaining which factors drove the composite (look at the factor sub-scores) and what that combination implies about the stock's character.",
+  "valuation_note": "1 sentence on valuation: is it cheap relative to its growth and quality, or just cheap because something is broken? Cite the specific multiple if helpful.",
+  "bear_case": "1-2 sentences on the single biggest specific risk. Concrete and falsifiable, not generic.",
+  "research_focus": ["3 specific things to verify before buying — not generic advice; things specific to this company's situation, customers, or balance sheet"]
+}}"""
 
-Return only the JSON, no markdown fences, no explanation."""
+
+# ── Robust parsing ───────────────────────────────────────────
+
+def extract_json(text: str) -> dict:
+    """Pull a JSON object out of an LLM response, tolerating fences /
+    leading prose. Raises ValueError if nothing parses."""
+    s = text.strip()
+    # Strip ``` fences if present
+    if s.startswith("```"):
+        s = re.sub(r"^```(?:json)?\s*", "", s)
+        s = re.sub(r"\s*```\s*$", "", s)
+    # Try direct parse first
+    try:
+        return json.loads(s)
+    except json.JSONDecodeError:
+        pass
+    # Fall back to first top-level {...} match
+    match = re.search(r"\{.*\}", s, re.DOTALL)
+    if match:
+        return json.loads(match.group(0))
+    raise ValueError("no JSON object found in response")
 
 
-def generate_brief(client, pick):
-    prompt = build_prompt(pick)
-    message = client.messages.create(
-        model="claude-opus-4-7",
-        max_tokens=600,
+def validate_brief(obj: dict) -> tuple[bool, list[str]]:
+    errors: list[str] = []
+    for f in REQUIRED_FIELDS:
+        if f not in obj:
+            errors.append(f"missing:{f}")
+        elif obj[f] is None or obj[f] == "":
+            errors.append(f"empty:{f}")
+    rf = obj.get("research_focus")
+    if not isinstance(rf, list) or len(rf) < 1:
+        errors.append("research_focus_not_list_or_empty")
+    return (len(errors) == 0), errors
+
+
+# ── API call with retries ────────────────────────────────────
+
+def _call_claude(client, prompt: str) -> str:
+    msg = client.messages.create(
+        model=MODEL_ID,
+        max_tokens=MAX_TOKENS,
         messages=[{"role": "user", "content": prompt}],
     )
-    raw = message.content[0].text.strip()
-    # Strip markdown fences if model adds them anyway
-    if raw.startswith("```"):
-        raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
-    return json.loads(raw)
+    return msg.content[0].text
 
+
+if _HAS_TENACITY:
+    _call_claude = retry(
+        stop=stop_after_attempt(3),
+        wait=wait_exponential(multiplier=1, min=2, max=10),
+        reraise=True,
+    )(_call_claude)
+
+
+def generate_brief(client, pick: dict, max_retries: int = 2) -> dict:
+    prompt = build_prompt(pick)
+    last_err = None
+    for attempt in range(max_retries + 1):
+        try:
+            raw = _call_claude(client, prompt)
+            obj = extract_json(raw)
+            ok, errors = validate_brief(obj)
+            if ok:
+                return obj
+            last_err = f"validation: {errors}"
+            # Repair attempt — append corrective instruction and retry
+            prompt = (
+                build_prompt(pick)
+                + f"\n\nIMPORTANT: your previous response was missing fields: {errors}. "
+                "Return ONLY a complete JSON object with all required fields filled."
+            )
+        except Exception as exc:
+            last_err = str(exc)
+        time.sleep(1.5 * (attempt + 1))
+    raise RuntimeError(last_err or "unknown failure")
+
+
+# ── Main entry point ─────────────────────────────────────────
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--top", type=int, default=5,
+                        help="Number of picks to generate briefs for")
+    args = parser.parse_args()
+
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
-        print("Error: ANTHROPIC_API_KEY environment variable not set.")
-        print("Run: export ANTHROPIC_API_KEY=your-key-here")
+        print("Error: ANTHROPIC_API_KEY not set. Run: export ANTHROPIC_API_KEY=...")
         sys.exit(1)
 
     print("🧠 TickRun Research Brief Generator")
     print(f"   Output: {OUTPUT_PATH}\n")
 
-    picks, screens_updated = load_top_picks()
+    with open(WEEKLY_PATH) as f:
+        weekly = json.load(f)
+    picks = weekly.get("top_conviction", [])[: args.top]
     if not picks:
-        print("No picks found in weekly_screens.json")
+        print("No picks in weekly_screens.json — run fetch_weekly.py first.")
         sys.exit(1)
 
-    print(f"Generating briefs for top {len(picks)} picks (screens from {screens_updated})...\n")
+    print(f"Generating briefs for top {len(picks)} picks "
+          f"(screens from {weekly.get('last_updated', '?')})…\n")
 
     client = anthropic.Anthropic(api_key=api_key)
-    briefs = []
-    errors = []
+    briefs: list[dict] = []
+    errors: list[tuple[str, str]] = []
 
     for i, pick in enumerate(picks, 1):
         sym = pick["symbol"]
-        print(f"  [{i}/{len(picks)}] {sym} ({pick['company']})...", end=" ", flush=True)
+        print(f"  [{i}/{len(picks)}] {sym} ({pick.get('name', sym)})…", end=" ", flush=True)
         try:
             brief = generate_brief(client, pick)
             entry = {
-                "symbol":         sym,
-                "company":        pick["company"],
-                "sector":         pick["sector"],
-                "price":          pick.get("price"),
-                "score":          pick["score"],
-                "screens_passed": pick["screens_passed"],
-                "next_earnings":  pick.get("next_earnings"),
-                "one_line_thesis":  brief.get("one_line_thesis", ""),
-                "why_screened":     brief.get("why_screened", ""),
-                "recent_catalyst":  brief.get("recent_catalyst", ""),
-                "bear_case":        brief.get("bear_case", ""),
-                "research_focus":   brief.get("research_focus", []),
+                "symbol":    sym,
+                "name":      pick.get("name"),
+                "sector":    pick.get("sector"),
+                "industry":  pick.get("industry"),
+                "price":     pick.get("price"),
+                "market_cap": pick.get("market_cap"),
+                "composite_score": pick.get("composite_score"),
+                "factors":   pick.get("factors"),
+                "ai_evidence": pick.get("ai_evidence", []),
+                **brief,
             }
             briefs.append(entry)
             print("✓")
-        except Exception as e:
-            errors.append((sym, str(e)))
-            print(f"✗ ({e})")
+        except Exception as exc:
+            errors.append((sym, str(exc)))
+            print(f"✗ ({exc})")
 
     output = {
         "last_updated":    datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "screens_updated": screens_updated,
-        "model":           "claude-opus-4-7",
+        "screens_updated": weekly.get("last_updated"),
+        "model":           MODEL_ID,
         "picks":           briefs,
+        "errors":          [{"symbol": s, "error": e} for s, e in errors],
     }
 
     with open(OUTPUT_PATH, "w") as f:
         json.dump(output, f, indent=2)
 
-    print(f"\n✅ Done. {len(briefs)} briefs written to {OUTPUT_PATH}")
+    print(f"\n✅ Wrote {len(briefs)} briefs ({len(errors)} failed) → {OUTPUT_PATH}")
     if errors:
-        print(f"\n⚠ {len(errors)} failed:")
+        print("\n⚠ Failures:")
         for sym, err in errors:
             print(f"   {sym}: {err}")
 

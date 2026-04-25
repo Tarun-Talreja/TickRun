@@ -7,3 +7,7 @@ holdings.md
 venv/
 *.egg-info/
 .coverage
+# Per-ticker yfinance cache; CI rebuilds it weekly
+data/cache/
+# Universe + fundamentals are committed (small, useful for reproducibility)
+# but the cache directory holds 2k+ small files and bloats git history.
