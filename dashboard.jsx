@@ -220,34 +220,30 @@ const SectorBar = ({ sectors }) => {
   );
 };
 
-const ConfigPanel = ({ config, setConfig, setDaily, setWeekly }) => {
+const ConfigPanel = ({ setDaily, setWeekly }) => {
   const [dailyText, setDailyText] = useState("");
   const [weeklyText, setWeeklyText] = useState("");
   const [error, setError] = useState("");
 
   const pasteDaily = () => {
-    try { setDaily(JSON.parse(dailyText)); setError(""); }
+    try { setDaily(JSON.parse(dailyText)); setDailyText(""); setError(""); }
     catch (e) { setError("Daily JSON invalid: " + e.message); }
   };
   const pasteWeekly = () => {
-    try { setWeekly(JSON.parse(weeklyText)); setError(""); }
+    try { setWeekly(JSON.parse(weeklyText)); setWeeklyText(""); setError(""); }
     catch (e) { setError("Weekly JSON invalid: " + e.message); }
   };
 
   return (
     <div className="space-y-4">
       <div className="border border-zinc-800 rounded-lg bg-zinc-950 p-4">
-        <div className="text-[10px] tracking-[0.2em] text-zinc-500 font-medium mb-3">DATA SOURCES</div>
-        <label className="block text-xs text-zinc-400 mb-1">Daily JSON URL (GitHub raw)</label>
-        <input value={config.dailyUrl} onChange={e => setConfig({...config, dailyUrl: e.target.value})}
-               placeholder="https://raw.githubusercontent.com/Tarun-Talreja/TickRun/main/output/..."
-               className="w-full bg-black border border-zinc-800 rounded px-3 py-2 text-sm font-mono text-zinc-200 focus:border-zinc-600 focus:outline-none" />
-        <label className="block text-xs text-zinc-400 mb-1 mt-3">Weekly Screens JSON URL</label>
-        <input value={config.weeklyUrl} onChange={e => setConfig({...config, weeklyUrl: e.target.value})}
-               placeholder="https://raw.githubusercontent.com/Tarun-Talreja/TickRun/main/output/..."
-               className="w-full bg-black border border-zinc-800 rounded px-3 py-2 text-sm font-mono text-zinc-200 focus:border-zinc-600 focus:outline-none" />
-        <div className="text-[11px] text-zinc-500 mt-3 leading-relaxed">
-          URLs auto-populated from TickRun repo. Paste JSON manually below as a fallback.
+        <div className="text-[10px] tracking-[0.2em] text-zinc-500 font-medium mb-3">DATA SOURCE</div>
+        <div className="text-xs text-zinc-400 mb-1">Daily</div>
+        <div className="font-mono text-[11px] text-zinc-500 break-all">{DAILY_URL}</div>
+        <div className="text-xs text-zinc-400 mt-3 mb-1">Weekly Screens</div>
+        <div className="font-mono text-[11px] text-zinc-500 break-all">{SCREENS_URL}</div>
+        <div className="text-[11px] text-zinc-600 mt-3">
+          Auto-fetches on load and every 5 minutes. Use manual paste below if GitHub is unreachable.
         </div>
       </div>
 
@@ -277,9 +273,10 @@ const ConfigPanel = ({ config, setConfig, setDaily, setWeekly }) => {
 const DAILY_URL = "https://raw.githubusercontent.com/Tarun-Talreja/TickRun/main/output/daily.json";
 const SCREENS_URL = "https://raw.githubusercontent.com/Tarun-Talreja/TickRun/main/output/weekly_screens.json";
 
+const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
+
 export default function Dashboard() {
   const [tab, setTab] = useState("today");
-  const [config, setConfig] = useState({ dailyUrl: DAILY_URL, weeklyUrl: SCREENS_URL });
   const [daily, setDaily] = useState(SAMPLE_DAILY);
   const [weekly, setWeekly] = useState(SAMPLE_WEEKLY);
   const [loading, setLoading] = useState(false);
@@ -302,7 +299,11 @@ export default function Dashboard() {
     setLoading(false);
   };
 
-  useEffect(() => { refresh(); /* eslint-disable-next-line */ }, []);
+  useEffect(() => {
+    refresh();
+    const id = setInterval(refresh, REFRESH_INTERVAL_MS);
+    return () => clearInterval(id);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const usingSample = daily === SAMPLE_DAILY || weekly === SAMPLE_WEEKLY;
 
@@ -448,7 +449,7 @@ export default function Dashboard() {
         )}
 
         {tab === "config" && (
-          <ConfigPanel config={config} setConfig={setConfig} setDaily={setDaily} setWeekly={setWeekly} />
+          <ConfigPanel setDaily={setDaily} setWeekly={setWeekly} />
         )}
       </main>
 
