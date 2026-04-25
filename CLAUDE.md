@@ -37,26 +37,41 @@ A personal stock screening dashboard for a $10k Roth IRA using the core-satellit
    - Files: watchlist.md, screen_rules.md, prompts/, schemas/, output/
    - Schemas: Strict JSON validation for daily.json and weekly_screens.json
 
+5. **GitHub Pages Deployment**
+   - File: `/Users/taruntalreja/Documents/Projects/StockDashboard/index.html`
+   - Live URL: `https://tarun-talreja.github.io/TickRun/`
+   - Status: Deployed to GitHub Pages ✅
+   - Auto-fetches from raw GitHub URLs, refreshes every 5 minutes
+   - Bookmarked on phone — persistent, always live
+
+### ✅ PHASE 2 COMPLETE — GitHub Actions Automation
+
+1. ✅ Public repo created: `github.com/Tarun-Talreja/TickRun`
+2. ✅ `.github/workflows/daily.yml` — runs 8am ET weekdays, auto-commits daily.json
+3. ✅ `.github/workflows/weekly.yml` — runs 6pm ET Sundays, auto-commits weekly_screens.json
+4. ✅ Dashboard updated to fetch from raw GitHub URLs (no manual paste needed)
+5. ✅ GitHub Pages workflow created for live hosting
+6. ✅ All workflows tested and running automatically
+
+**Phase 2 Evidence:**
+- Daily data: Last updated 2026-04-25 01:13:30 UTC (8am ET) ✅
+- Weekly data: Last updated 2026-04-24 13:22 UTC (6pm ET Sunday) ✅
+- Auto-commits visible in git log ✅
+- Dashboard fetching from `raw.githubusercontent.com/Tarun-Talreja/TickRun/main/output/` ✅
+
 ### ❌ NOT DONE (Your Task in Claude Code)
 
-**Phase 2 — GitHub Actions Automation**
+**Phase 3 — Intelligence Layer** (Next)
 
-1. Create public repo: `TickRun`
-2. Set up `.github/workflows/daily.yml` — runs 8am ET weekdays
-3. Set up `.github/workflows/weekly.yml` — runs 6pm ET Sundays
-4. Auto-push JSON back to repo
-5. Update dashboard to fetch from repo raw URLs (fixes CORS issues)
-
-**Phase 3 — Intelligence Layer** (Post-automation)
-
-1. Fetch top 5 weekly picks from JSON
-2. Call Claude API to generate layman-friendly research briefs
+1. Fetch top 5 weekly picks from `output/weekly_screens.json`
+2. Call Claude API to generate layman-friendly research briefs for each
 3. Add RESEARCH tab to dashboard showing each pick with:
-   - One-line thesis
-   - Why the screen flagged it
-   - Recent catalyst
-   - Bear case
-   - What to research further
+   - One-line thesis (why screen flagged it)
+   - Recent catalyst or news
+   - Bear case (what could go wrong)
+   - Key metrics to research (ROIC, payout ratio, etc)
+   - Next earnings date
+4. Integrate research generation into a scheduled workflow (optional: weekly or on-demand)
 
 ## Key Files & Paths
 
@@ -78,26 +93,32 @@ A personal stock screening dashboard for a $10k Roth IRA using the core-satellit
     └── weekly_screens.schema.json
 ```
 
-### Cloud (GitHub - NOT YET CREATED)
+### Cloud (GitHub - LIVE)
 ```
-github.com/Tarun-Talreja/TickRun/  [CREATE THIS]
+github.com/Tarun-Talreja/TickRun/  [✅ CREATED & LIVE]
 ├── .github/workflows/
-│   ├── daily.yml               [NEW - you'll create]
-│   └── weekly.yml              [NEW - you'll create]
-├── fetch_daily.py              [COPY from local]
-├── fetch_weekly.py             [COPY from local]
-├── watchlist.md                [COPY from local]
-├── output/                     [Will auto-populate]
-│   ├── daily.json              [AUTO-COMMITTED by workflow]
-│   └── weekly_screens.json     [AUTO-COMMITTED by workflow]
+│   ├── daily.yml               [✅ ACTIVE - runs 8am ET Mon-Fri]
+│   ├── weekly.yml              [✅ ACTIVE - runs 6pm ET Sunday]
+│   └── pages.yml               [✅ ACTIVE - deploys to GitHub Pages]
+├── fetch_daily.py              [✅ WORKING]
+├── fetch_weekly.py             [✅ WORKING]
+├── watchlist.md                [✅ DEPLOYED]
+├── screen_rules.md             [✅ DEPLOYED]
+├── output/                     [✅ AUTO-POPULATED]
+│   ├── daily.json              [✅ AUTO-COMMITTED daily, last: Apr 25 01:13]
+│   └── weekly_screens.json     [✅ AUTO-COMMITTED weekly, last: Apr 24 13:22]
+├── index.html                  [✅ GitHub Pages entry point]
 └── README.md
 ```
 
-### Published (Web)
+### Published (Web - LIVE)
 ```
-dashboard.jsx                   [React artifact, published URL on your phone]
-                                 Fetches from: raw.githubusercontent.com/.../daily.json
-                                             raw.githubusercontent.com/.../weekly_screens.json
+✅ LIVE DASHBOARD at: https://tarun-talreja.github.io/TickRun/
+   - Auto-fetches from: raw.githubusercontent.com/Tarun-Talreja/TickRun/main/output/daily.json
+   - Auto-fetches from: raw.githubusercontent.com/Tarun-Talreja/TickRun/main/output/weekly_screens.json
+   - Refreshes every 5 minutes
+   - Shows: TODAY | SCREENS | WATCHLIST tabs
+   - Bookmarked on your phone — persistent, always accessible
 ```
 
 ## What GitHub Actions Will Do
@@ -150,97 +171,113 @@ const SCREENS_URL = "https://raw.githubusercontent.com/Tarun-Talreja/TickRun/mai
 fetch(DAILY_URL).then(r => r.json()).then(data => renderTodayTab(data))
 ```
 
-## Your Claude Code Tasks (Next)
+## Your Claude Code Tasks (Phase 3 — Next)
 
-### Task 1: Create GitHub Repo (5 min)
-1. Go to github.com/new
-2. Name: `TickRun`
-3. Public: YES
-4. Add README: YES
-5. Create
+### Phase 3: Intelligence Layer — Add AI-Generated Research Briefs
 
-### Task 2: Push Local Files to GitHub (10 min)
-In Claude Code terminal:
-```bash
-cd /Users/taruntalreja/Documents/Projects/StockDashboard
-git init
-git add fetch_daily.py fetch_weekly.py watchlist.md screen_rules.md output/
-git commit -m "Initial commit: dashboard scripts and data"
-git branch -M main
-git remote add origin https://github.com/Tarun-Talreja/TickRun.git
-git push -u origin main
+**Goal:** Transform top 5 stock picks into actionable research briefs using Claude API
+
+#### Task 1: Create `generate_research.py` script
+```python
+# Read output/weekly_screens.json
+# Extract top 5 from top_conviction list
+# For each pick, call Claude API to generate:
+#   - one_line_thesis (why this stock matters)
+#   - catalyst (recent news or event)
+#   - bear_case (downside risks)
+#   - research_focus (what to dig into — ROIC, margin trend, FCF, etc)
+# Output: research_briefs.json with structure:
+{
+  "picks": [
+    {
+      "symbol": "BRK.B",
+      "company": "Berkshire Hathaway",
+      "screens_passed": ["graham", "piotroski"],
+      "one_line_thesis": "Market-beating compounder trading at single-digit valuation",
+      "catalyst": "1Q earnings beat expectations, share buyback continues",
+      "bear_case": "Large cap limits growth; economic slowdown hits insurance underwriting",
+      "research_focus": ["intrinsic value estimate", "insurance float quality", "derivative positions"],
+      "next_earnings": "2026-04-30"
+    }
+  ]
+}
 ```
 
-### Task 3: Create GitHub Workflows (20 min)
-Create `.github/workflows/daily.yml`:
+**API Call Pattern:**
+```python
+import anthropic
+
+client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+
+message = client.messages.create(
+    model="claude-3-5-sonnet-20241022",
+    max_tokens=500,
+    messages=[{
+        "role": "user",
+        "content": f"""Generate a research brief for {symbol} ({company}) which passed screens: {screens}.
+        
+        Current price: ${price}, Earnings: {earnings_date}
+        
+        Return JSON with: one_line_thesis, catalyst, bear_case, research_focus (array of 3 items)
+        Keep it layman-friendly, not jargon-heavy."""
+    }]
+)
+```
+
+#### Task 2: Create GitHub Actions workflow for research generation
+Create `.github/workflows/research.yml`:
 ```yaml
-name: Fetch Daily Data
+name: Generate Research Briefs
 on:
   schedule:
-    - cron: '0 13 * * 1-5'  # 8am ET = 1pm UTC, Mon-Fri
+    - cron: '0 8 * * 1'  # Monday 8am ET (after Sunday weekly screens)
   workflow_dispatch:
 
 jobs:
-  fetch:
+  research:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
           python-version: '3.11'
-      - run: pip install yfinance requests
-      - run: python fetch_daily.py
+      - run: pip install anthropic
+      - run: python generate_research.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "Auto: daily data update"
+          commit_message: "Auto: research briefs updated"
+          file_pattern: output/research_briefs.json
 ```
 
-Create `.github/workflows/weekly.yml`:
-```yaml
-name: Run Weekly Screener
-on:
-  schedule:
-    - cron: '0 22 * * 0'  # 6pm ET = 10pm UTC, Sunday
-  workflow_dispatch:
-
-jobs:
-  screen:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
-      - run: pip install yfinance pandas requests lxml
-      - run: python fetch_weekly.py
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "Auto: weekly screening run"
-```
-
-### Task 4: Update Dashboard Code (10 min)
-Replace hardcoded Gist URLs with raw GitHub URLs:
+#### Task 3: Add RESEARCH tab to dashboard
+In `index.html`, add new tab:
 ```javascript
-const DAILY_URL = "https://raw.githubusercontent.com/Tarun-Talreja/TickRun/main/output/daily.json";
-const SCREENS_URL = "https://raw.githubusercontent.com/Tarun-Talreja/TickRun/main/output/weekly_screens.json";
-
-// Update both the auto-fetch AND the manual paste fallback
+// Add RESEARCH tab navigation
+// Fetch output/research_briefs.json
+// Render cards showing:
+//   - Stock symbol + company
+//   - Screens passed
+//   - One-line thesis
+//   - Catalyst
+//   - Bear case
+//   - Research focus (bullet list)
+//   - Next earnings date
 ```
 
-### Task 5: Test (5 min)
-1. Manually trigger workflow: GitHub repo → Actions → Daily → "Run workflow"
-2. Watch it run live
-3. Verify `output/daily.json` appears in repo
-4. Copy raw URL, test fetch in browser console
-5. Publish updated dashboard
+#### Task 4: Deploy updated dashboard
+1. Update `index.html` with RESEARCH tab code
+2. Commit and push to main
+3. GitHub Pages will auto-deploy
 
-## What You'll Know After Phase 2
+## What You'll Know After Phase 3
 
-- Repo will have fresh JSON every weekday morning + Sunday evening
-- Dashboard automatically shows latest data
-- Zero manual copy-paste needed
-- Can check GitHub Actions logs if anything breaks
-- Completely hands-off from here on
+- Dashboard now shows AI-generated research for top picks
+- Weekly research briefs auto-generate on Monday mornings
+- Dashboard is a complete decision-making tool, not just data display
+- You have layman-friendly context for each top pick
+- No manual research needed — it's automated
 
 ## What Comes After (Phase 3)
 
@@ -283,22 +320,50 @@ python fetch_weekly.py
 ✅ Both workflows triggering on schedule  
 ✅ Auto-commits working (check Actions logs)  
 ✅ Dashboard fetches from raw URLs without manual paste  
+✅ GitHub Pages live at https://tarun-talreja.github.io/TickRun/  
 ✅ One manual trigger test passes  
 
-When you hit all 5, Phase 2 is done. Then we tackle Phase 3 (the intelligence layer) which is where Claude Code really shines.
+**Phase 2 is COMPLETE.** Moving to Phase 3 (Intelligence Layer).
 
 ---
 
-## Questions to Ask Claude Code
+## Success Criteria for Phase 3
 
-When you open Claude Code with this file, good starting questions are:
+✅ `generate_research.py` reads weekly_screens.json  
+✅ Claude API calls generate briefs for top 5 picks  
+✅ `research_briefs.json` auto-commits to repo  
+✅ Dashboard loads research data and renders RESEARCH tab  
+✅ Research tab shows thesis, catalyst, bear case, research focus  
+✅ Workflow runs automatically every Monday 8am ET  
+✅ Dashboard is a complete decision-making tool  
 
-1. "Create the `.github/workflows/daily.yml` file following the spec above"
-2. "Help me push these local scripts to a new GitHub repo"
-3. "Update the dashboard code to fetch from raw GitHub URLs instead of Gist"
-4. "Test the workflows by manually triggering them and watching the Actions logs"
-5. "What would Phase 3 (intelligence layer) look like in code?"
+When you hit all 7, the screener is production-ready.
 
-Claude Code can help you test scripts locally, commit to Git, and iterate on the workflows in ways that are much harder in this chat interface.
+---
 
-Good luck. You've got this.
+## Questions to Ask Claude Code (Phase 3)
+
+When you open Claude Code with this file, focus on Phase 3:
+
+1. "Create `generate_research.py` — read weekly_screens.json, call Claude API for top 5, output research_briefs.json"
+2. "Set up the ANTHROPIC_API_KEY secret in GitHub repo settings"
+3. "Create the `.github/workflows/research.yml` to auto-generate briefs Monday 8am ET"
+4. "Add RESEARCH tab to index.html that fetches and displays research_briefs.json"
+5. "Test locally: run `generate_research.py` with a few picks, verify JSON output"
+6. "Deploy updated dashboard with RESEARCH tab live"
+
+Claude Code excels at iterating on API integrations, testing locally, and deploying to GitHub. It's the perfect tool for Phase 3.
+
+---
+
+## Deployment Checklist
+
+- [ ] Push latest `index.html` to main branch
+- [ ] Set ANTHROPIC_API_KEY secret: github.com/Tarun-Talreja/TickRun/settings/secrets/actions
+- [ ] Add research.yml workflow to .github/workflows/
+- [ ] Test locally: `python generate_research.py`
+- [ ] Manually trigger research.yml in Actions → verify output
+- [ ] Check dashboard at https://tarun-talreja.github.io/TickRun/ — RESEARCH tab live
+- [ ] Verify Monday 8am ET the next week research auto-generates
+
+You're close. One more phase and this is a real tool.
