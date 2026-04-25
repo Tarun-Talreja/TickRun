@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TickRun — Personal Stock Screener</title>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+    * { margin: 0; padding: 0; }
+    html, body { height: 100%; width: 100%; }
+    body { font-family: 'Space Grotesk', system-ui, sans-serif; background: #000; }
+    #root { display: block; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; font-feature-settings: "tnum"; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    const { useState, useEffect, createElement: h } = React;
+
+    const SAMPLE_DAILY = {
+      last_updated: "2026-04-25T01:13:30Z",
+      market_context: {
+        spy_price: 713.94, spy_change_pct: 0.77,
+        qqq_price: 663.88, qqq_change_pct: 1.91,
+        vix: 18.71, ten_year_yield: 4.28
+      },
+      tickers: [
+        { symbol: "AAPL", price: 221.40, change_pct_1d: -1.2, change_pct_5d: 2.1, change_pct_ytd: -4.3, range_52w_low: 169.21, range_52w_high: 237.49, pe: 33.1, forward_pe: 28.4, rsi_14: 52, ma_50: 218.50, ma_200: 210.33, next_earnings: "2026-05-01", news_titles_24h: ["Services growth", "iPad launch"] },
+        { symbol: "MSFT", price: 412.80, change_pct_1d: 0.8, change_pct_5d: 3.2, change_pct_ytd: 1.8, range_52w_low: 362.90, range_52w_high: 468.35, pe: 34.9, forward_pe: 30.1, rsi_14: 58, ma_50: 408.12, ma_200: 405.77, next_earnings: "2026-04-28", news_titles_24h: ["Azure strong"] },
+        { symbol: "NVDA", price: 118.70, change_pct_1d: 3.4, change_pct_5d: 8.2, change_pct_ytd: 22.1, range_52w_low: 75.61, range_52w_high: 140.76, pe: 62.3, forward_pe: 38.9, rsi_14: 74, ma_50: 112.40, ma_200: 105.22, next_earnings: "2026-05-22", news_titles_24h: ["Blackwell up"] }
+      ],
+      flags: [
+        { symbol: "NVDA", type: "rsi_extreme", detail: "RSI 74" },
+        { symbol: "MSFT", type: "earnings_soon", detail: "4 days" }
+      ]
+    };
+
+    const SAMPLE_WEEKLY = {
+      last_updated: "2026-04-24T18:00:00Z",
+      top_conviction: [
+        { symbol: "BRK.B", company: "Berkshire", sector: "Financials", price: 441.20, screens_passed: ["graham", "piotroski"], score: 2, one_line_thesis: "P/E 9.8, strong fundamentals" },
+        { symbol: "UNH", company: "UnitedHealth", sector: "Healthcare", price: 492.10, screens_passed: ["garp", "quality"], score: 2, one_line_thesis: "15% EPS growth, clean sheet" }
+      ],
+      sector_mix_top20: { Technology: 3, Financials: 2, Healthcare: 3 }
+    };
+
+    const fmt = (n, d = 2) => n == null ? "—" : Number(n).toFixed(d);
+    const fmtPct = (n) => n == null ? "—" : `${n >= 0 ? '+' : ''}${Number(n).toFixed(2)}%`;
+    const pctColor = (n) => n == null ? "text-zinc-500" : n > 0 ? "text-emerald-400" : n < 0 ? "text-rose-400" : "text-zinc-300";
+    const timeAgo = (iso) => {
+      if (!iso) return "never";
+      const diff = (Date.now() - new Date(iso).getTime()) / 1000;
+      if (diff < 60) return "just now";
+      if (diff < 3600) return `${Math.floor(diff/60)}m ago`;
+      if (diff < 86400) return `${Math.floor(diff/3600)}h ago`;
+      return `${Math.floor(diff/86400)}d ago`;
+    };
+
+    const FLAG_LABEL = { earnings_soon: "EARNINGS", big_move: "MOVE", rsi_extreme: "", ma_cross: "MA CROSS" };
+    const FLAG_COLOR = {
+      earnings_soon: "bg-amber-500/20 text-amber-300 border-amber-500/40",
+      big_move: "bg-sky-500/20 text-sky-300 border-sky-500/40",
+      rsi_extreme: "bg-fuchsia-500/20 text-fuchsia-300 border-fuchsia-500/40",
+      ma_cross: "bg-teal-500/20 text-teal-300 border-teal-500/40"
+    };
+
+    const MarketStrip = ({ ctx }) => h('div', { className: "grid grid-cols-4 gap-px bg-zinc-800 border border-zinc-800 rounded-lg overflow-hidden" },
+      [{ label: "SPY", price: ctx.spy_price, pct: ctx.spy_change_pct },
+       { label: "QQQ", price: ctx.qqq_price, pct: ctx.qqq_change_pct },
+       { label: "VIX", price: ctx.vix, pct: null },
+       { label: "10Y", price: ctx.ten_year_yield, pct: null, suffix: "%" }]
+        .map(it => h('div', { key: it.label, className: "bg-zinc-950 px-3 py-2.5" },
+          h('div', { className: "text-[10px] tracking-[0.2em] text-zinc-500 font-medium" }, it.label),
+          h('div', { className: "font-mono text-base text-zinc-100 mt-0.5" }, fmt(it.price) + (it.suffix || "")),
+          it.pct != null && h('div', { className: `font-mono text-xs ${pctColor(it.pct)}` }, fmtPct(it.pct))
+        ))
+    );
+
+    const TickerCard = ({ t, flags }) => {
+      const rangePos = t.range_52w_high && t.range_52w_low ? ((t.price - t.range_52w_low) / (t.range_52w_high - t.range_52w_low)) * 100 : 50;
+      const tickerFlags = flags.filter(f => f.symbol === t.symbol);
+      return h('div', { className: "border border-zinc-800 rounded-lg bg-zinc-950 p-4 hover:border-zinc-700 transition-colors" },
+        h('div', { className: "flex items-baseline justify-between mb-3" },
+          h('div', { className: "flex items-baseline gap-2" },
+            h('span', { className: "font-bold text-zinc-100 tracking-tight text-lg" }, t.symbol),
+            tickerFlags.map((f, i) => h('span', { key: i, className: `text-[9px] px-1.5 py-0.5 rounded border font-mono ${FLAG_COLOR[f.type]}` }, FLAG_LABEL[f.type]))
+          ),
+          h('div', { className: "text-right" },
+            h('div', { className: "font-mono text-zinc-100 text-base" }, "$" + fmt(t.price)),
+            h('div', { className: `font-mono text-xs ${pctColor(t.change_pct_1d)}` }, fmtPct(t.change_pct_1d))
+          )
+        ),
+        h('div', { className: "grid grid-cols-3 gap-2 text-xs mb-3" },
+          h('div', null, h('div', { className: "text-zinc-500 text-[10px] tracking-wider" }, "5D"), h('div', { className: `font-mono ${pctColor(t.change_pct_5d)}` }, fmtPct(t.change_pct_5d))),
+          h('div', null, h('div', { className: "text-zinc-500 text-[10px] tracking-wider" }, "YTD"), h('div', { className: `font-mono ${pctColor(t.change_pct_ytd)}` }, fmtPct(t.change_pct_ytd))),
+          h('div', null, h('div', { className: "text-zinc-500 text-[10px] tracking-wider" }, "RSI"), h('div', { className: `font-mono ${t.rsi_14 > 70 ? "text-rose-400" : t.rsi_14 < 30 ? "text-emerald-400" : "text-zinc-300"}` }, fmt(t.rsi_14, 0))),
+          h('div', null, h('div', { className: "text-zinc-500 text-[10px] tracking-wider" }, "P/E"), h('div', { className: "font-mono text-zinc-300" }, fmt(t.pe, 1))),
+          h('div', null, h('div', { className: "text-zinc-500 text-[10px] tracking-wider" }, "FWD P/E"), h('div', { className: "font-mono text-zinc-300" }, fmt(t.forward_pe, 1))),
+          h('div', null, h('div', { className: "text-zinc-500 text-[10px] tracking-wider" }, "ERNG"), h('div', { className: "font-mono text-zinc-300 text-[11px]" }, t.next_earnings || "—"))
+        ),
+        h('div', { className: "mb-1" },
+          h('div', { className: "flex justify-between text-[10px] text-zinc-500 mb-1 font-mono" },
+            h('span', null, fmt(t.range_52w_low)),
+            h('span', { className: "text-zinc-600" }, "52W"),
+            h('span', null, fmt(t.range_52w_high))
+          ),
+          h('div', { className: "h-1 bg-zinc-800 rounded-full relative" },
+            h('div', { className: "h-full bg-zinc-600 rounded-full", style: { width: `${Math.max(0, Math.min(100, rangePos))}%` } }),
+            h('div', { className: "absolute top-1/2 w-1.5 h-3 bg-zinc-100 rounded-sm", style: { left: `${Math.max(0, Math.min(100, rangePos))}%`, transform: "translate(-50%, -50%)" } })
+          )
+        )
+      );
+    };
+
+    const ConvictionRow = ({ stock }) => h('div', { className: "border border-zinc-800 rounded-lg bg-zinc-950 p-4" },
+      h('div', { className: "flex items-baseline justify-between mb-2" },
+        h('div', { className: "flex items-baseline gap-3" },
+          h('span', { className: "font-bold text-zinc-100 text-lg" }, stock.symbol),
+          h('span', { className: "text-zinc-400 text-sm" }, stock.company),
+          h('span', { className: "text-zinc-600 text-[10px] tracking-widest uppercase" }, stock.sector)
+        ),
+        h('div', { className: "flex items-center gap-3" },
+          h('span', { className: "font-mono text-zinc-100" }, "$" + fmt(stock.price)),
+          h('span', { className: "font-mono text-[10px] px-2 py-1 rounded-md bg-emerald-500/20 text-emerald-300 border border-emerald-500/40" }, stock.score + "× PASS")
+        )
+      ),
+      h('div', { className: "flex gap-1.5 mb-2 flex-wrap" },
+        stock.screens_passed.map(s => h('span', { key: s, className: "text-[10px] font-mono px-2 py-0.5 bg-zinc-900 text-zinc-400 border border-zinc-800 rounded tracking-wider uppercase" }, s))
+      ),
+      h('div', { className: "text-sm text-zinc-300 leading-relaxed" }, stock.one_line_thesis)
+    );
+
+    const DAILY_URL = "https://raw.githubusercontent.com/Tarun-Talreja/TickRun/main/output/daily.json";
+    const SCREENS_URL = "https://raw.githubusercontent.com/Tarun-Talreja/TickRun/main/output/weekly_screens.json";
+
+    function Dashboard() {
+      const [tab, setTab] = useState("today");
+      const [daily, setDaily] = useState(SAMPLE_DAILY);
+      const [weekly, setWeekly] = useState(SAMPLE_WEEKLY);
+      const [loading, setLoading] = useState(true);
+      const [liveFetched, setLiveFetched] = useState(false);
+
+      const refresh = async () => {
+        setLoading(true);
+        try {
+          const [dailyRes, weeklyRes] = await Promise.all([
+            fetch(DAILY_URL),
+            fetch(SCREENS_URL),
+          ]);
+          if (!dailyRes.ok) throw new Error(`Daily HTTP ${dailyRes.status}`);
+          if (!weeklyRes.ok) throw new Error(`Weekly HTTP ${weeklyRes.status}`);
+          setDaily(await dailyRes.json());
+          setWeekly(await weeklyRes.json());
+          setLiveFetched(true);
+        } catch (e) {
+          console.log("Fetch failed:", e.message);
+        }
+        setLoading(false);
+      };
+
+      useEffect(() => {
+        refresh();
+        const id = setInterval(refresh, 5 * 60 * 1000);
+        return () => clearInterval(id);
+      }, []);
+
+      const usingSample = !liveFetched;
+
+      return h('div', { className: "min-h-screen bg-black text-zinc-200", style: { fontFamily: "'Space Grotesk', system-ui, sans-serif" } },
+        h('header', { className: "border-b border-zinc-900 sticky top-0 bg-black/95 backdrop-blur z-10" },
+          h('div', { className: "max-w-6xl mx-auto px-4 py-3" },
+            h('div', { className: "flex items-center justify-between" },
+              h('div', { className: "flex items-center gap-2.5" },
+                h('svg', { width: "28", height: "28", viewBox: "0 0 28 28", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                  h('rect', { width: "28", height: "28", rx: "6", fill: "#18181b" }),
+                  h('polyline', { points: "4,20 10,13 15,17 24,7", stroke: "#34d399", strokeWidth: "2.2", strokeLinecap: "round", strokeLinejoin: "round", fill: "none" }),
+                  h('circle', { cx: "24", cy: "7", r: "2", fill: "#34d399" })
+                ),
+                h('span', { className: "font-bold text-xl tracking-tight text-zinc-100" }, "TickRun"),
+                h('span', { className: "text-[10px] tracking-[0.18em] text-zinc-600 font-medium hidden sm:block" }, "PERSONAL SCREENER")
+              ),
+              h('button', { onClick: refresh, disabled: loading, className: "text-[11px] font-mono tracking-wider text-zinc-400 hover:text-zinc-200 disabled:opacity-50" },
+                loading ? "LOADING…" : "↻ REFRESH"
+              )
+            ),
+            h('nav', { className: "flex gap-1 mt-3" },
+              [{ id: "today", label: "TODAY" }, { id: "screens", label: "SCREENS" }, { id: "watchlist", label: "WATCHLIST" }]
+                .map(t => h('button', { key: t.id, onClick: () => setTab(t.id), className: `px-3 py-1.5 text-[11px] tracking-[0.15em] font-medium rounded transition-colors ${tab === t.id ? "bg-zinc-100 text-black" : "text-zinc-500 hover:text-zinc-300"}` }, t.label))
+            )
+          )
+        ),
+        usingSample && h('div', { className: "bg-amber-500/10 border-b border-amber-500/30 text-amber-200 text-xs px-4 py-2 text-center font-mono" }, "SAMPLE DATA · Live data loads from TickRun repo"),
+        h('main', { className: "max-w-6xl mx-auto px-4 py-6" },
+          tab === "today" && h('div', { className: "space-y-5" },
+            h('div', null,
+              h('div', { className: "flex items-baseline justify-between mb-3" },
+                h('div', { className: "text-[10px] tracking-[0.2em] text-zinc-500 font-medium" }, "MARKET"),
+                h('div', { className: "text-[10px] text-zinc-600 font-mono" }, "updated " + timeAgo(daily.last_updated))
+              ),
+              MarketStrip({ ctx: daily.market_context })
+            ),
+            daily.flags && daily.flags.length > 0 && h('div', null,
+              h('div', { className: "text-[10px] tracking-[0.2em] text-zinc-500 font-medium mb-3" }, "FLAGS · " + daily.flags.length),
+              h('div', { className: "flex flex-wrap gap-2" },
+                daily.flags.map((f, i) => h('div', { key: i, className: `inline-flex items-center gap-1.5 px-2 py-1 rounded-md border text-[10px] font-mono tracking-wider ${FLAG_COLOR[f.type]}` },
+                  h('span', { className: "font-bold" }, f.symbol),
+                  FLAG_LABEL[f.type] && h('span', null, FLAG_LABEL[f.type]),
+                  h('span', { className: "opacity-70" }, f.detail)
+                ))
+              )
+            ),
+            h('div', null,
+              h('div', { className: "text-[10px] tracking-[0.2em] text-zinc-500 font-medium mb-3" }, "WATCHLIST · " + daily.tickers.length),
+              h('div', { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3" },
+                daily.tickers.map(t => TickerCard({ key: t.symbol, t, flags: daily.flags || [] }))
+              )
+            )
+          ),
+          tab === "screens" && h('div', { className: "space-y-5" },
+            h('div', { className: "flex items-baseline justify-between" },
+              h('div', { className: "text-[10px] tracking-[0.2em] text-zinc-500 font-medium" }, "TOP CONVICTION · MULTI-SCREEN PASSES"),
+              h('div', { className: "text-[10px] text-zinc-600 font-mono" }, "screens refreshed " + timeAgo(weekly.last_updated))
+            ),
+            h('div', { className: "space-y-2" },
+              weekly.top_conviction.map(s => ConvictionRow({ key: s.symbol, stock: s }))
+            )
+          ),
+          tab === "watchlist" && h('div', { className: "space-y-5" },
+            h('div', { className: "text-[10px] tracking-[0.2em] text-zinc-500 font-medium" }, "YOUR TICKERS · SCREEN STATUS"),
+            h('div', { className: "space-y-2" },
+              daily.tickers.map(t => {
+                const passes = weekly.top_conviction.find(c => c.symbol === t.symbol);
+                return h('div', { key: t.symbol, className: "border border-zinc-800 rounded-lg bg-zinc-950 p-3 flex items-center justify-between" },
+                  h('div', { className: "flex items-baseline gap-3" },
+                    h('span', { className: "font-bold text-zinc-100" }, t.symbol),
+                    h('span', { className: "font-mono text-sm text-zinc-300" }, "$" + fmt(t.price)),
+                    h('span', { className: `font-mono text-xs ${pctColor(t.change_pct_1d)}` }, fmtPct(t.change_pct_1d))
+                  ),
+                  h('div', null,
+                    passes ? h('div', { className: "flex gap-1" },
+                      passes.screens_passed.map(s => h('span', { key: s, className: "text-[9px] font-mono px-1.5 py-0.5 bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 rounded tracking-wider uppercase" }, s))
+                    ) : h('span', { className: "text-[10px] text-zinc-600 font-mono tracking-wider" }, "NO PASSES")
+                  )
+                );
+              })
+            )
+          )
+        ),
+        h('footer', { className: "max-w-6xl mx-auto px-4 py-8 text-center" },
+          h('div', { className: "flex items-center justify-center gap-2" },
+            h('svg', { width: "14", height: "14", viewBox: "0 0 28 28", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+              h('polyline', { points: "4,20 10,13 15,17 24,7", stroke: "#52525b", strokeWidth: "2.5", strokeLinecap: "round", strokeLinejoin: "round", fill: "none" })
+            ),
+            h('span', { className: "text-[10px] text-zinc-700 tracking-[0.15em]" }, "TICKRUN · PERSONAL USE · NOT FINANCIAL ADVICE")
+          )
+        )
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(React.createElement(Dashboard));
+  </script>
+</body>
+</html>
