@@ -308,19 +308,26 @@ export default function Dashboard() {
   const usingSample = daily === SAMPLE_DAILY || weekly === SAMPLE_WEEKLY;
 
   return (
-    <div className="min-h-screen bg-black text-zinc-200" style={{ fontFamily: "'Inter Tight', system-ui, sans-serif" }}>
+    <div className="min-h-screen bg-black text-zinc-200" style={{ fontFamily: "'Space Grotesk', system-ui, sans-serif" }}>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
         .font-mono { font-family: 'JetBrains Mono', monospace; font-feature-settings: "tnum"; }
+        .font-brand { font-family: 'Space Grotesk', system-ui, sans-serif; }
       `}</style>
 
       {/* Header */}
       <header className="border-b border-zinc-900 sticky top-0 bg-black/95 backdrop-blur z-10">
         <div className="max-w-6xl mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
-            <div className="flex items-baseline gap-3">
-              <div className="font-bold tracking-tight text-zinc-100">TT</div>
-              <div className="text-[10px] tracking-[0.2em] text-zinc-600">PERSONAL SCREENER</div>
+            <div className="flex items-center gap-2.5">
+              {/* Logo mark */}
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="28" height="28" rx="6" fill="#18181b"/>
+                <polyline points="4,20 10,13 15,17 24,7" stroke="#34d399" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+                <circle cx="24" cy="7" r="2" fill="#34d399"/>
+              </svg>
+              <span className="font-brand font-bold text-xl tracking-tight text-zinc-100">TickRun</span>
+              <span className="text-[10px] tracking-[0.18em] text-zinc-600 font-medium hidden sm:block">PERSONAL SCREENER</span>
             </div>
             <button onClick={refresh} disabled={loading}
                     className="text-[11px] font-mono tracking-wider text-zinc-400 hover:text-zinc-200 disabled:opacity-50">
@@ -454,7 +461,12 @@ export default function Dashboard() {
       </main>
 
       <footer className="max-w-6xl mx-auto px-4 py-8 text-center">
-        <div className="text-[10px] text-zinc-700 tracking-[0.2em]">TT · PERSONAL USE · NOT FINANCIAL ADVICE</div>
+        <div className="flex items-center justify-center gap-2">
+          <svg width="14" height="14" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polyline points="4,20 10,13 15,17 24,7" stroke="#52525b" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+          </svg>
+          <span className="font-brand text-[10px] text-zinc-700 tracking-[0.15em]">TICKRUN · PERSONAL USE · NOT FINANCIAL ADVICE</span>
+        </div>
       </footer>
     </div>
   );
