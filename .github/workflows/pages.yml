@@ -1,12 +1,23 @@
 name: Deploy to GitHub Pages
+
 on:
   push:
-    branches: [ main ]
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'output/**'
+      - '.github/workflows/pages.yml'
   workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
   deploy:
     environment:
@@ -14,10 +25,18 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/configure-pages@v3
-      - uses: actions/upload-pages-artifact@v1
+      - uses: actions/checkout@v4
+
+      - name: Stage site files only
+        run: |
+          mkdir -p _site/output
+          cp index.html _site/index.html
+          cp output/daily.json _site/output/daily.json
+          cp output/weekly_screens.json _site/output/weekly_screens.json
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: '_site'
       - id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4

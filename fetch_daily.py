@@ -27,6 +27,8 @@ except ImportError:
     print("  pip3 install yfinance")
     sys.exit(1)
 
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
 # ── Paths ────────────────────────────────────────────────────
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 WATCHLIST_PATH = os.path.join(SCRIPT_DIR, "watchlist.md")
@@ -57,7 +59,7 @@ def fetch_ticker(symbol):
             raise ValueError("No history")
 
         price       = round(float(info.get("currentPrice") or info.get("regularMarketPrice") or hist["Close"].iloc[-1]), 2)
-        prev_close  = float(info.get("previousClose") or hist["Close"].iloc[-2] if len(hist) > 1 else price)
+        prev_close  = float(info.get("previousClose") or (hist["Close"].iloc[-2] if len(hist) > 1 else price))
         open_week   = float(hist["Close"].iloc[-6]) if len(hist) >= 6 else prev_close
         open_year   = float(hist["Close"].iloc[0])
 
@@ -85,13 +87,21 @@ def fetch_ticker(symbol):
         ma_50  = round(float(closes.rolling(50).mean().iloc[-1]), 2)  if len(closes) >= 50  else None
         ma_200 = round(float(closes.rolling(200).mean().iloc[-1]), 2) if len(closes) >= 200 else None
 
-        # Next earnings
+        # Next earnings — handle both old (DataFrame) and new (dict) yfinance APIs
+        earnings_date = None
         try:
             cal = t.calendar
-            if cal is not None and not cal.empty:
-                earnings_date = str(cal.columns[0].date()) if hasattr(cal.columns[0], "date") else None
-            else:
-                earnings_date = None
+            if isinstance(cal, dict):
+                ed = cal.get("Earnings Date") or cal.get("earnings_date")
+                if isinstance(ed, list) and ed:
+                    ed = ed[0]
+                if hasattr(ed, "date"):
+                    earnings_date = ed.date().isoformat()
+                elif ed:
+                    earnings_date = str(ed)[:10]
+            elif cal is not None and hasattr(cal, "empty") and not cal.empty:
+                col0 = cal.columns[0]
+                earnings_date = col0.date().isoformat() if hasattr(col0, "date") else None
         except Exception:
             earnings_date = None
 
@@ -196,11 +206,16 @@ def main():
     market_ctx = fetch_market_context()
     print(f"  SPY: {market_ctx['spy_price']}  QQQ: {market_ctx['qqq_price']}  VIX: {market_ctx['vix']}")
 
-    print(f"\nFetching {len(tickers)} tickers...")
-    tickers_data = []
-    for i, sym in enumerate(tickers, 1):
-        print(f"  [{i}/{len(tickers)}] {sym}...")
-        tickers_data.append(fetch_ticker(sym))
+    print(f"\nFetching {len(tickers)} tickers (parallel, max 5 workers)...")
+    tickers_data = [None] * len(tickers)
+    with ThreadPoolExecutor(max_workers=5) as ex:
+        futures = {ex.submit(fetch_ticker, sym): i for i, sym in enumerate(tickers)}
+        done = 0
+        for fut in as_completed(futures):
+            i = futures[fut]
+            tickers_data[i] = fut.result()
+            done += 1
+            print(f"  [{done}/{len(tickers)}] {tickers[i]} done")
 
     flags = compute_flags(tickers_data)
 

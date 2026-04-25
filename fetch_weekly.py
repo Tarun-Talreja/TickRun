@@ -26,8 +26,14 @@ try:
     import requests
 except ImportError as e:
     print(f"Missing dependency: {e}")
-    print("Run: pip3 install yfinance pandas requests lxml")
+    print("Run: pip3 install yfinance pandas requests lxml tenacity")
     sys.exit(1)
+
+try:
+    from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
+    _HAS_TENACITY = True
+except ImportError:
+    _HAS_TENACITY = False
 
 # ── Paths ────────────────────────────────────────────────────
 SCRIPT_DIR   = os.path.dirname(os.path.abspath(__file__))
@@ -59,28 +65,63 @@ def get_sp500_tickers():
         print("  Falling back to top 100 well-known tickers...")
         return FALLBACK_100
 
-# ── Fallback list if Wikipedia fetch fails ───────────────────
+# ── Fallback list (sector-balanced top 100 by market cap) ────
+# Used only if the Wikipedia fetch fails. Replaces the prior utility-heavy
+# list which would have skewed the dividend screen badly.
 FALLBACK_100 = [
-    "AAPL","MSFT","NVDA","AMZN","GOOGL","META","TSLA","AVGO","LLY","UNH",
-    "V","XOM","JPM","MA","PG","COST","HD","MRK","ABBV","CVX","PEP","KO",
-    "WMT","BAC","ADBE","TMO","CRM","ACN","MCD","CSCO","ABT","WFC","TXN",
-    "DHR","NEE","ORCL","PM","IBM","CAT","AMGN","INTU","QCOM","GE","RTX",
-    "LOW","SPGI","AMAT","NOW","BKNG","SYK","GS","AXP","BLK","MS","MDT",
-    "ADI","GILD","PLD","T","VZ","C","MDLZ","CI","ADP","USB","MMC","DE",
-    "COP","EOG","SLB","PSA","TGT","CME","ZTS","F","GM","FDX","DUK","SO",
-    "D","EXC","PEG","XEL","WEC","ED","ETR","FE","PPL","ES","AEE","LNT",
-    "EVRG","NI","CMS","NRG","AES","PNW","OTTR","AVA","NWE","POR"
+    # Tech (20)
+    "AAPL","MSFT","NVDA","AVGO","ORCL","CRM","ADBE","CSCO","ACN","AMD",
+    "INTC","INTU","QCOM","TXN","NOW","IBM","AMAT","ADI","LRCX","KLAC",
+    # Communication / Internet (8)
+    "GOOGL","META","NFLX","DIS","CMCSA","TMUS","T","VZ",
+    # Consumer Discretionary (10)
+    "AMZN","TSLA","HD","MCD","NKE","SBUX","LOW","BKNG","TJX","CMG",
+    # Consumer Staples (8)
+    "WMT","COST","PG","KO","PEP","MDLZ","CL","MO",
+    # Healthcare (12)
+    "LLY","UNH","JNJ","MRK","ABBV","TMO","ABT","DHR","PFE","AMGN","BMY","CI",
+    # Financials (12)
+    "JPM","BAC","WFC","MA","V","GS","MS","AXP","C","BLK","SPGI","SCHW",
+    # Industrials (10)
+    "GE","CAT","RTX","HON","UNP","BA","DE","LMT","UPS","ETN",
+    # Energy (5)
+    "XOM","CVX","COP","EOG","SLB",
+    # Materials / Real Estate / Utilities (10)
+    "LIN","SHW","FCX","PLD","AMT","EQIX","NEE","SO","DUK","AEP",
+    # Auto / Other (5)
+    "F","GM","BRK-B","JCI","ECL",
 ]
+
+# Fields whose absence = "info call was rate-limited / empty"
+_INFO_REQUIRED_FIELDS = ("marketCap", "sector")
+
+
+def _fetch_yf(symbol):
+    """Single attempt — raises on rate-limit / empty info."""
+    t    = yf.Ticker(symbol)
+    info = t.info or {}
+    hist = t.history(period="1y")
+    if hist.empty:
+        raise ValueError("empty history")
+    # If info is missing core fields, treat as transient failure (likely rate limit)
+    if not any(info.get(f) for f in _INFO_REQUIRED_FIELDS):
+        raise ValueError("empty info (rate-limited?)")
+    return t, info, hist
+
+
+if _HAS_TENACITY:
+    _fetch_yf = retry(
+        stop=stop_after_attempt(3),
+        wait=wait_exponential(multiplier=1, min=2, max=10),
+        retry=retry_if_exception_type((ValueError, Exception)),
+        reraise=True,
+    )(_fetch_yf)
+
 
 # ── Fetch fundamentals for one ticker ────────────────────────
 def fetch_fundamentals(symbol):
     try:
-        t    = yf.Ticker(symbol)
-        info = t.info
-        hist = t.history(period="1y")
-
-        if hist.empty or not info:
-            return None
+        t, info, hist = _fetch_yf(symbol)
 
         closes = hist["Close"]
         price  = float(closes.iloc[-1])
@@ -180,9 +221,10 @@ def fetch_fundamentals(symbol):
             "ret_12m":         round(ret_12m, 2)       if ret_12m      else None,
             "ma_50":           round(ma_50, 2)          if ma_50        else None,
             "ma_200":          round(ma_200, 2)         if ma_200       else None,
-        }
+        }, None
     except Exception as e:
-        return None
+        # Caller logs error; we return None to skip this ticker.
+        return None, str(e)
 
 # ── Apply screens ─────────────────────────────────────────────
 def apply_screens(stocks, all_ret12m):
@@ -331,18 +373,27 @@ def main():
 
     print(f"Fetching fundamentals for {total} tickers (this takes 15-20 min)...\n")
 
+    error_log = []
     for i, sym in enumerate(tickers, 1):
         print(f"  [{i:3d}/{total}] {sym:<8}", end=" ", flush=True)
-        data = fetch_fundamentals(sym)
+        data, err = fetch_fundamentals(sym)
         if data:
             stocks.append(data)
             print("✓")
         else:
             errors += 1
-            print("✗ skipped")
+            error_log.append((sym, err or "unknown"))
+            print(f"✗ skipped ({err})")
         # Be polite to Yahoo Finance — small delay every 10 tickers
         if i % 10 == 0:
             time.sleep(1)
+
+    if error_log:
+        print(f"\n⚠ {len(error_log)} tickers failed:")
+        for sym, err in error_log[:10]:
+            print(f"   {sym}: {err}")
+        if len(error_log) > 10:
+            print(f"   ... and {len(error_log) - 10} more")
 
     print(f"\nFetched {len(stocks)} stocks ({errors} skipped)")
     print("Running screens...")

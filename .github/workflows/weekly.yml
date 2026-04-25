@@ -1,20 +1,51 @@
 name: Run Weekly Screener
+
 on:
   schedule:
-    - cron: '0 22 * * 0'  # 6pm ET = 10pm UTC, Sunday
+    - cron: '0 22 * * 0'  # 6pm ET (EDT) / 5pm ET (EST), Sunday
   workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
 
 jobs:
   screen:
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install yfinance pandas requests lxml
-      - run: python fetch_weekly.py
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install yfinance==0.2.51 pandas requests lxml jsonschema tenacity
+
+      - name: Run screener
+        run: python fetch_weekly.py
+
+      - name: Validate output JSON
+        run: python tests/validate_output.py weekly
+
+      - name: Smoke test
+        run: python -m pytest tests/test_weekly.py -v
+
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Auto: weekly screening run"
           file_pattern: output/weekly_screens.json
+
+      - name: Open issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Weekly screener failed — ${new Date().toISOString().slice(0,10)}`,
+              body: `Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              labels: ['automation-failure', 'weekly']
+            })
