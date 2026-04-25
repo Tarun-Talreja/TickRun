@@ -1,0 +1,97 @@
+{
+  "last_updated": "2026-04-27T13:00:00Z",
+  "screens_updated": "2026-04-24T13:22:53Z",
+  "model": "claude-opus-4-7",
+  "picks": [
+    {
+      "symbol": "NVDA",
+      "company": "NVIDIA Corporation",
+      "sector": "Technology",
+      "price": 118.70,
+      "score": 5,
+      "screens_passed": ["piotroski", "garp", "quality", "momentum", "dividend"],
+      "next_earnings": "2026-05-22",
+      "one_line_thesis": "Dominant AI chip monopoly growing revenue 100%+ with improving fundamentals across every metric.",
+      "why_screened": "Passes 5 of 7 screens — an extremely rare combination. The Piotroski and Quality screens confirm it's a genuinely high-return business, not just a momentum story. GARP confirms the growth rate justifies the valuation at current PEG.",
+      "recent_catalyst": "Blackwell GPU shipments accelerating; hyperscaler capex guiding higher through 2026.",
+      "bear_case": "Trades at 38× forward earnings — any slowdown in AI infrastructure spending or a competitor breakthrough (AMD MI300X, Google TPUs) shrinks the multiple fast. Concentration risk: 40%+ of revenue from 3 customers.",
+      "research_focus": [
+        "Read the last two earnings transcripts: what is management saying about Blackwell margins vs. Hopper? Are they expanding or compressing?",
+        "Check AMD's MI300X actual data center wins — is NVDA losing share in inference workloads specifically?",
+        "Look at NVDA's 10-Q for customer concentration: if hyperscaler capex pauses, how many quarters of runway does the backlog cover?"
+      ]
+    },
+    {
+      "symbol": "APA",
+      "company": "APA Corporation",
+      "sector": "Energy",
+      "price": 17.80,
+      "score": 4,
+      "screens_passed": ["magic_formula", "piotroski", "quality", "momentum"],
+      "next_earnings": "2026-05-07",
+      "one_line_thesis": "Deeply undervalued oil producer generating high free cash flow trading at a fraction of asset value.",
+      "why_screened": "Magic Formula flags it as cheap with high earnings yield — the market is pricing in commodity risk far exceeding current production economics. Quality screen confirms the underlying business earns high returns on the capital it deploys.",
+      "recent_catalyst": "No obvious catalyst — steady business. Oil prices stabilizing above APA's breakeven gives consistent FCF.",
+      "bear_case": "APA is a pure-play commodity stock: if oil drops to $60/barrel its FCF collapses and the cheap valuation disappears. North Sea operations also add geopolitical and decommissioning cost risk.",
+      "research_focus": [
+        "Find APA's stated breakeven oil price per barrel — at what WTI price does FCF go negative?",
+        "Review their Suriname offshore discovery timeline: if it comes online, what does it add to production per share?",
+        "Check the debt maturity schedule — do any large tranches come due while oil prices are uncertain?"
+      ]
+    },
+    {
+      "symbol": "ADBE",
+      "company": "Adobe Inc.",
+      "sector": "Technology",
+      "price": 384.20,
+      "score": 3,
+      "screens_passed": ["magic_formula", "piotroski", "quality"],
+      "next_earnings": "2026-06-18",
+      "one_line_thesis": "Dominant creative software monopoly with 90%+ gross margins trading below its 5-year average multiple.",
+      "why_screened": "Magic Formula catches it as cheap relative to its earnings yield and ROIC — the market is discounting AI disruption risk more than the business fundamentals warrant. Quality screen confirms it still earns exceptional returns on capital.",
+      "recent_catalyst": "Adobe Firefly generative AI integration in Creative Cloud showing early monetization; enterprise Acrobat AI assistant expanding.",
+      "bear_case": "Figma, Canva, and free AI image generators are attacking the prosumer end of Creative Cloud. If churn accelerates, the subscription base — which the entire valuation depends on — shrinks faster than revenue growth can compensate.",
+      "research_focus": [
+        "Pull the net revenue retention rate from recent earnings — is it above or below 100%? Declining retention is the early warning signal.",
+        "Count how many Fortune 500 companies have Figma enterprise contracts vs. Adobe CC — the enterprise competitive moat is what matters most.",
+        "Review Firefly commercial usage stats: is it expanding the addressable market or just defending existing users from switching?"
+      ]
+    },
+    {
+      "symbol": "ALL",
+      "company": "The Allstate Corporation",
+      "sector": "Financial Services",
+      "price": 201.40,
+      "score": 3,
+      "screens_passed": ["magic_formula", "piotroski", "garp"],
+      "next_earnings": "2026-05-01",
+      "one_line_thesis": "Leading auto insurer that repriced for inflation and is now harvesting outsized underwriting profits.",
+      "why_screened": "GARP screen catches the earnings inflection — after two years of losses, Allstate raised premiums aggressively and is now generating strong EPS growth at a reasonable multiple. Magic Formula confirms the earnings yield vs. ROIC combination is compelling.",
+      "recent_catalyst": "Combined ratio dropped below 95% — Allstate is now profitable on underwriting alone, before investment income. Rate increases are sticking.",
+      "bear_case": "Insurance profits are cyclical. Climate-driven catastrophe losses (California wildfires, Florida hurricanes) can wipe out a full year of underwriting profit in a single quarter. The current pricing cycle will attract competition that compresses margins.",
+      "research_focus": [
+        "Look at the combined ratio trend over the last 6 quarters — is the improvement structural (better risk selection) or cyclical (good weather)?",
+        "Check California homeowners exposure: did Allstate reduce or exit the market, and what's the impact on premium growth?",
+        "Compare Allstate's auto insurance rate per mile to Progressive — is ALL still underpriced vs. the market leader, or is it now fully repriced?"
+      ]
+    },
+    {
+      "symbol": "AMAT",
+      "company": "Applied Materials, Inc.",
+      "sector": "Technology",
+      "price": 163.50,
+      "score": 3,
+      "screens_passed": ["piotroski", "quality", "momentum"],
+      "next_earnings": "2026-05-15",
+      "one_line_thesis": "Essential semiconductor equipment supplier that sells picks and shovels to every chip manufacturer regardless of who wins the AI race.",
+      "why_screened": "Quality screen confirms it earns high returns on capital with strong FCF margins — the business model benefits from every major semiconductor capex cycle. Piotroski confirms improving fundamentals across the balance sheet and income statement.",
+      "recent_catalyst": "TSMC, Samsung, and Intel all guiding higher equipment spend for advanced node transitions (2nm, gate-all-around). AMAT is the largest equipment supplier by revenue.",
+      "bear_case": "US export controls on advanced chip tools to China — previously ~30% of AMAT revenue — are tightening. Each new restriction removes a chunk of the addressable market permanently.",
+      "research_focus": [
+        "Map out what percentage of 2025 revenue came from China and which product lines face the most export restriction risk.",
+        "Read AMAT's commentary on CHIPS Act-funded fabs (Intel Ohio, TSMC Arizona) — what is the order book timing and when do those revenues hit?",
+        "Check the backlog-to-revenue ratio vs. 2021 peak cycle — are we early, mid, or late in the current semiconductor equipment upcycle?"
+      ]
+    }
+  ]
+}
