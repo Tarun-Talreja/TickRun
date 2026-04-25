@@ -1,0 +1,39 @@
+{
+  "_comment": "Schema for weekly_screens.json. Updated Sundays only.",
+  "last_updated": "ISO-8601 timestamp",
+  "universe": "S&P 500",
+  "screens_run": ["graham", "magic_formula", "piotroski", "garp", "quality", "momentum", "dividend"],
+  "top_conviction": [
+    {
+      "symbol": "XYZ",
+      "company": "Company Name",
+      "sector": "Technology",
+      "price": 0,
+      "screens_passed": ["graham", "piotroski", "garp"],
+      "score": 3,
+      "one_line_thesis": "One sentence. No hedging. No 'could be' — just what the numbers say."
+    }
+  ],
+  "by_screen": {
+    "graham": [{"symbol": "ABC", "company": "...", "sector": "..."}],
+    "magic_formula": [],
+    "piotroski": [],
+    "garp": [],
+    "quality": [],
+    "momentum": [],
+    "dividend": []
+  },
+  "sector_mix_top20": {
+    "Technology": 0,
+    "Financials": 0,
+    "Healthcare": 0,
+    "ConsumerDiscretionary": 0,
+    "ConsumerStaples": 0,
+    "Energy": 0,
+    "Industrials": 0,
+    "Materials": 0,
+    "RealEstate": 0,
+    "Utilities": 0,
+    "Communication": 0
+  }
+}

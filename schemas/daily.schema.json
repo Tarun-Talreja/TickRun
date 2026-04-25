@@ -1,0 +1,37 @@
+{
+  "_comment": "Schema for daily.json. Cowork must match this shape exactly. No extra fields, no narrative, no commentary.",
+  "last_updated": "ISO-8601 timestamp",
+  "market_context": {
+    "spy_price": 0,
+    "spy_change_pct": 0,
+    "qqq_price": 0,
+    "qqq_change_pct": 0,
+    "vix": 0,
+    "ten_year_yield": 0
+  },
+  "tickers": [
+    {
+      "symbol": "AAPL",
+      "price": 0,
+      "change_pct_1d": 0,
+      "change_pct_5d": 0,
+      "change_pct_ytd": 0,
+      "range_52w_low": 0,
+      "range_52w_high": 0,
+      "pe": 0,
+      "forward_pe": 0,
+      "rsi_14": 0,
+      "ma_50": 0,
+      "ma_200": 0,
+      "next_earnings": "YYYY-MM-DD or null",
+      "news_titles_24h": ["title 1", "title 2"]
+    }
+  ],
+  "flags": [
+    {
+      "symbol": "AAPL",
+      "type": "earnings_soon | big_move | rsi_extreme | ma_cross",
+      "detail": "one short phrase, no explanation"
+    }
+  ]
+}

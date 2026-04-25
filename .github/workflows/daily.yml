@@ -1,0 +1,20 @@
+name: Fetch Daily Data
+on:
+  schedule:
+    - cron: '0 13 * * 1-5'  # 8am ET = 1pm UTC, Mon-Fri
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install yfinance requests
+      - run: python fetch_daily.py
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto: daily data update"
+          file_pattern: output/daily.json
