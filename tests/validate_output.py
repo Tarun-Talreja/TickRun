@@ -75,30 +75,45 @@ DAILY_SCHEMA = {
 WEEKLY_SCHEMA = {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "type": "object",
-    "required": ["last_updated", "universe", "screens_run", "top_conviction", "by_screen"],
+    "required": ["last_updated", "universe", "scoring", "top_conviction"],
     "properties": {
         "last_updated": {"type": "string", "pattern": r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$"},
-        "universe": {"type": "string"},
-        "screens_run": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "universe":     {"type": "string"},
         "total_passes": {"type": ["integer", "null"]},
+        "scoring": {
+            "type": "object",
+            "required": ["weights", "hard_gates"],
+            "properties": {
+                "weights":    {"type": "object"},
+                "hard_gates": {"type": "object"},
+            },
+        },
         "top_conviction": {
             "type": "array",
             "items": {
                 "type": "object",
-                "required": ["symbol", "company", "sector", "price", "screens_passed", "score"],
+                "required": ["symbol", "name", "sector", "price", "composite_score", "factors"],
                 "properties": {
-                    "symbol": {"type": "string"},
-                    "company": {"type": "string"},
-                    "sector": {"type": "string"},
-                    "price": {"type": ["number", "null"]},
-                    "screens_passed": {"type": "array", "items": {"type": "string"}},
-                    "score": {"type": "integer", "minimum": 1},
-                    "one_line_thesis": {"type": "string"},
+                    "symbol":         {"type": "string"},
+                    "name":           {"type": "string"},
+                    "sector":         {"type": "string"},
+                    "industry":       {"type": "string"},
+                    "price":          {"type": ["number", "null"]},
+                    "market_cap":     {"type": ["number", "null"]},
+                    "composite_score": {"type": "number"},
+                    "factors": {
+                        "type": "object",
+                        "required": ["quality", "valuation", "profitability",
+                                     "risk", "recurring", "ai_exposure"],
+                    },
+                    "ai_evidence":  {"type": "array", "items": {"type": "string"}},
+                    "metrics":      {"type": "object"},
+                    "proxy_notes":  {"type": "array", "items": {"type": "string"}},
+                    "data_status":  {"type": "string"},
                 },
             },
         },
-        "by_screen": {"type": "object"},
-        "sector_mix_top20": {"type": "object"},
+        "sector_mix_top25": {"type": "object"},
     },
 }
 

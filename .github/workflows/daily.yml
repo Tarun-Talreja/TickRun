@@ -1,8 +1,8 @@
-name: Fetch Daily Data
+name: Daily Quote Refresh + Alerts
 
 on:
   schedule:
-    - cron: '0 13 * * 1-5'  # 8am ET (EDT) / 9am ET (EST), Mon-Fri
+    - cron: '0 22 * * 1-5'  # 6pm ET on weekdays
   workflow_dispatch:
 
 permissions:
@@ -10,8 +10,9 @@ permissions:
   issues: write
 
 jobs:
-  fetch:
+  refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -20,21 +21,28 @@ jobs:
           cache: 'pip'
 
       - name: Install dependencies
-        run: pip install yfinance==0.2.51 requests jsonschema tenacity
+        run: pip install yfinance tenacity
 
-      - name: Fetch daily data
-        run: python fetch_daily.py
+      - name: Refresh quotes (portfolio + watchlist only)
+        run: python scripts/refresh_quotes.py
 
-      - name: Validate output JSON
-        run: python tests/validate_output.py daily
+      - name: Generate pullback alerts
+        run: python scripts/pullback_alerts.py
 
-      - name: Smoke test
-        run: python -m pytest tests/test_daily.py -v
+      - name: Update earnings calendar
+        run: python scripts/earnings_calendar.py
+
+      - name: Assemble dashboard.json
+        run: python scripts/build_dashboard.py
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Auto: daily data update"
-          file_pattern: output/daily.json
+          commit_message: "Auto: daily quote refresh"
+          file_pattern: |
+            data/quotes_cache.json
+            output/dashboard.json
+            output/alerts.json
+            output/earnings_calendar.json
 
       - name: Open issue on failure
         if: failure()
@@ -44,7 +52,7 @@ jobs:
             github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `Daily fetch failed — ${new Date().toISOString().slice(0,10)}`,
+              title: `Daily refresh failed — ${new Date().toISOString().slice(0,10)}`,
               body: `Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
-              labels: ['automation-failure', 'daily']
+              labels: ['automation-failure']
             })

@@ -1,8 +1,8 @@
-name: Run Weekly Screener
+name: Weekly Dashboard Rebuild
 
 on:
   schedule:
-    - cron: '0 22 * * 0'  # 6pm ET (EDT) / 5pm ET (EST), Sunday
+    - cron: '0 22 * * 0'  # 6pm ET Sunday
   workflow_dispatch:
 
 permissions:
@@ -10,9 +10,9 @@ permissions:
   issues: write
 
 jobs:
-  screen:
+  rebuild:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -21,21 +21,28 @@ jobs:
           cache: 'pip'
 
       - name: Install dependencies
-        run: pip install yfinance==0.2.51 pandas requests lxml jsonschema tenacity
+        run: pip install yfinance tenacity
 
-      - name: Run screener
-        run: python fetch_weekly.py
+      - name: Refresh all quotes
+        run: python scripts/refresh_quotes.py
 
-      - name: Validate output JSON
-        run: python tests/validate_output.py weekly
+      - name: Generate pullback alerts
+        run: python scripts/pullback_alerts.py
 
-      - name: Smoke test
-        run: python -m pytest tests/test_weekly.py -v
+      - name: Update earnings calendar
+        run: python scripts/earnings_calendar.py
+
+      - name: Assemble dashboard.json
+        run: python scripts/build_dashboard.py
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Auto: weekly screening run"
-          file_pattern: output/weekly_screens.json
+          commit_message: "Auto: weekly dashboard rebuild"
+          file_pattern: |
+            data/quotes_cache.json
+            output/dashboard.json
+            output/alerts.json
+            output/earnings_calendar.json
 
       - name: Open issue on failure
         if: failure()
@@ -45,7 +52,7 @@ jobs:
             github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `Weekly screener failed — ${new Date().toISOString().slice(0,10)}`,
+              title: `Weekly rebuild failed — ${new Date().toISOString().slice(0,10)}`,
               body: `Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
               labels: ['automation-failure', 'weekly']
             })

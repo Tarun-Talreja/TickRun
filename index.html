@@ -40,12 +40,28 @@
     };
 
     const SAMPLE_WEEKLY = {
-      last_updated: "2026-04-24T18:00:00Z",
+      last_updated: "2026-04-25T06:00:00Z",
+      universe: "Russell mid+small (sample)",
+      scoring: {},
       top_conviction: [
-        { symbol: "BRK.B", company: "Berkshire", sector: "Financials", price: 441.20, screens_passed: ["graham", "piotroski"], score: 2, one_line_thesis: "P/E 9.8, strong fundamentals" },
-        { symbol: "UNH", company: "UnitedHealth", sector: "Healthcare", price: 492.10, screens_passed: ["garp", "quality"], score: 2, one_line_thesis: "15% EPS growth, clean sheet" }
+        {
+          symbol: "ACLS", name: "Axcelis Technologies", sector: "Technology",
+          industry: "Semiconductor Equipment & Materials", price: 78.4,
+          market_cap: 2_400_000_000, composite_score: 64.2,
+          factors: { quality: 58, valuation: 71, profitability: 62, risk: 67, recurring: 45, ai_exposure: 78 },
+          ai_evidence: ["industry:Semiconductor Equipment & Materials", "kw:gpu", "kw:hyperscale"],
+          metrics: { ev_ebitda: 8.2, forward_pe: 12.4, fcf_yield: 8.1, gross_margin: 44, op_margin: 26 }
+        },
+        {
+          symbol: "VRT", name: "Vertiv Holdings", sector: "Industrials",
+          industry: "Electrical Equipment & Parts", price: 88.5,
+          market_cap: 9_200_000_000, composite_score: 71.5,
+          factors: { quality: 62, valuation: 51, profitability: 70, risk: 60, recurring: 55, ai_exposure: 92 },
+          ai_evidence: ["industry:Electrical Equipment & Parts", "kw:liquid cooling", "kw:data center", "kw:thermal management"],
+          metrics: { ev_ebitda: 18.4, forward_pe: 24.1, fcf_yield: 4.2, gross_margin: 35, op_margin: 16 }
+        }
       ],
-      sector_mix_top20: { Technology: 3, Financials: 2, Healthcare: 3 }
+      sector_mix_top25: { Technology: 8, Industrials: 7, "Financial Services": 4, "Real Estate": 3, Utilities: 3 }
     };
 
     const fmt = (n, d = 2) => n == null ? "—" : Number(n).toFixed(d);
@@ -116,23 +132,58 @@
       );
     };
 
-    const ConvictionRow = ({ stock }) => h('div', { className: "border border-zinc-800 rounded-lg bg-zinc-950 p-4" },
-      h('div', { className: "flex items-baseline justify-between mb-2" },
-        h('div', { className: "flex items-baseline gap-3" },
-          h('span', { className: "font-bold text-zinc-100 text-lg" }, stock.symbol),
-          h('span', { className: "text-zinc-400 text-sm" }, stock.company),
-          h('span', { className: "text-zinc-600 text-[10px] tracking-widest uppercase" }, stock.sector)
-        ),
-        h('div', { className: "flex items-center gap-3" },
-          h('span', { className: "font-mono text-zinc-100" }, "$" + fmt(stock.price)),
-          h('span', { className: "font-mono text-[10px] px-2 py-1 rounded-md bg-emerald-500/20 text-emerald-300 border border-emerald-500/40" }, stock.score + "× PASS")
-        )
+    const FACTOR_LABELS = {
+      quality: "Q", valuation: "V", profitability: "P",
+      risk: "R", recurring: "REC", ai_exposure: "AI"
+    };
+    const FACTOR_COLORS = {
+      quality:       "bg-teal-400",
+      valuation:     "bg-sky-400",
+      profitability: "bg-emerald-400",
+      risk:          "bg-amber-400",
+      recurring:     "bg-violet-400",
+      ai_exposure:   "bg-rose-400",
+    };
+
+    const FactorBar = ({ name, value }) => h('div', { className: "flex items-center gap-2" },
+      h('span', { className: "text-[10px] font-mono text-zinc-500 w-8" }, FACTOR_LABELS[name]),
+      h('div', { className: "flex-1 h-1.5 bg-zinc-900 rounded-full overflow-hidden" },
+        h('div', { className: `h-full ${FACTOR_COLORS[name]}/70`, style: { width: `${value}%` } })
       ),
-      h('div', { className: "flex gap-1.5 mb-2 flex-wrap" },
-        stock.screens_passed.map(s => h('span', { key: s, className: "text-[10px] font-mono px-2 py-0.5 bg-zinc-900 text-zinc-400 border border-zinc-800 rounded tracking-wider uppercase" }, s))
-      ),
-      h('div', { className: "text-sm text-zinc-300 leading-relaxed" }, stock.one_line_thesis)
+      h('span', { className: "font-mono text-[10px] text-zinc-400 w-7 text-right" }, fmt(value, 0))
     );
+
+    const ConvictionRow = ({ stock }) => {
+      const mcap = stock.market_cap ? "$" + (stock.market_cap / 1e9).toFixed(1) + "B" : "";
+      const aiEvidence = (stock.ai_evidence || []).slice(0, 4);
+      return h('div', { className: "border border-zinc-800 rounded-lg bg-zinc-950 p-4" },
+        h('div', { className: "flex items-baseline justify-between mb-3 gap-3 flex-wrap" },
+          h('div', { className: "flex items-baseline gap-2.5 flex-wrap" },
+            h('span', { className: "font-bold text-zinc-100 text-lg" }, stock.symbol),
+            h('span', { className: "text-zinc-400 text-sm" }, stock.name || stock.company),
+            h('span', { className: "text-zinc-600 text-[10px] tracking-widest uppercase hidden sm:inline" }, stock.industry || stock.sector)
+          ),
+          h('div', { className: "flex items-center gap-2 shrink-0" },
+            mcap && h('span', { className: "font-mono text-[10px] text-zinc-500" }, mcap),
+            h('span', { className: "font-mono text-zinc-100 text-sm" }, "$" + fmt(stock.price)),
+            h('span', { className: "font-mono text-[11px] px-2 py-1 rounded-md bg-emerald-500/20 text-emerald-300 border border-emerald-500/40" },
+              fmt(stock.composite_score, 0) + " / 100"
+            )
+          )
+        ),
+        h('div', { className: "grid grid-cols-2 gap-x-4 gap-y-1.5 mb-3" },
+          Object.entries(stock.factors || {}).map(([name, value]) =>
+            h(FactorBar, { key: name, name, value })
+          )
+        ),
+        aiEvidence.length > 0 && h('div', { className: "flex gap-1 flex-wrap" },
+          aiEvidence.map((e, i) => h('span', {
+            key: i,
+            className: "text-[9px] font-mono px-1.5 py-0.5 bg-rose-500/10 text-rose-300/90 border border-rose-500/20 rounded tracking-wide"
+          }, e.replace("kw:", "").replace("industry:", "")))
+        )
+      );
+    };
 
     const DAILY_URL    = "https://raw.githubusercontent.com/Tarun-Talreja/TickRun/main/output/daily.json";
     const SCREENS_URL  = "https://raw.githubusercontent.com/Tarun-Talreja/TickRun/main/output/weekly_screens.json";
@@ -185,15 +236,19 @@
           )
         ),
         open && h('div', { className: "border-t border-zinc-800/70 px-4 pb-4 pt-3 space-y-4" },
-          h('div', null,
-            h('div', { className: "text-[10px] tracking-[0.18em] text-zinc-500 font-medium mb-1.5" }, "WHY IT SCREENED"),
-            h('p', { className: "text-sm text-zinc-300 leading-relaxed" }, pick.why_screened)
+          pick.ai_exposure_narrative && h('div', null,
+            h('div', { className: "text-[10px] tracking-[0.18em] text-rose-400 font-medium mb-1.5" }, "AI / DATA-CENTER EXPOSURE"),
+            h('p', { className: "text-sm text-zinc-200 leading-relaxed" }, pick.ai_exposure_narrative)
           ),
-          h('div', null,
-            h('div', { className: "text-[10px] tracking-[0.18em] text-zinc-500 font-medium mb-1.5" }, "RECENT CATALYST"),
-            h('p', { className: "text-sm text-zinc-300 leading-relaxed" }, pick.recent_catalyst)
+          (pick.why_it_screened || pick.why_screened) && h('div', null,
+            h('div', { className: "text-[10px] tracking-[0.18em] text-zinc-500 font-medium mb-1.5" }, "WHY IT RANKED"),
+            h('p', { className: "text-sm text-zinc-300 leading-relaxed" }, pick.why_it_screened || pick.why_screened)
           ),
-          h('div', null,
+          (pick.valuation_note || pick.recent_catalyst) && h('div', null,
+            h('div', { className: "text-[10px] tracking-[0.18em] text-zinc-500 font-medium mb-1.5" }, pick.valuation_note ? "VALUATION" : "RECENT CATALYST"),
+            h('p', { className: "text-sm text-zinc-300 leading-relaxed" }, pick.valuation_note || pick.recent_catalyst)
+          ),
+          pick.bear_case && h('div', null,
             h('div', { className: "text-[10px] tracking-[0.18em] text-rose-500 font-medium mb-1.5" }, "BEAR CASE"),
             h('p', { className: "text-sm text-rose-300/80 leading-relaxed" }, pick.bear_case)
           ),
@@ -322,10 +377,10 @@
                 )
           ),
           tab === "watchlist" && h('div', { className: "space-y-5" },
-            h('div', { className: "text-[10px] tracking-[0.2em] text-zinc-500 font-medium" }, "YOUR TICKERS · SCREEN STATUS"),
+            h('div', { className: "text-[10px] tracking-[0.2em] text-zinc-500 font-medium" }, "YOUR TICKERS · COMPOSITE STATUS"),
             h('div', { className: "space-y-2" },
               daily.tickers.map(t => {
-                const passes = weekly.top_conviction.find(c => c.symbol === t.symbol);
+                const inUniverse = (weekly.top_conviction || []).find(c => c.symbol === t.symbol);
                 return h('div', { key: t.symbol, className: "border border-zinc-800 rounded-lg bg-zinc-950 p-3 flex items-center justify-between" },
                   h('div', { className: "flex items-baseline gap-3" },
                     h('span', { className: "font-bold text-zinc-100" }, t.symbol),
@@ -333,9 +388,10 @@
                     h('span', { className: `font-mono text-xs ${pctColor(t.change_pct_1d)}` }, fmtPct(t.change_pct_1d))
                   ),
                   h('div', null,
-                    passes ? h('div', { className: "flex gap-1" },
-                      passes.screens_passed.map(s => h('span', { key: s, className: "text-[9px] font-mono px-1.5 py-0.5 bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 rounded tracking-wider uppercase" }, s))
-                    ) : h('span', { className: "text-[10px] text-zinc-600 font-mono tracking-wider" }, "NO PASSES")
+                    inUniverse
+                      ? h('span', { className: "font-mono text-[11px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 tracking-wider" },
+                          "TOP " + (weekly.top_conviction.indexOf(inUniverse) + 1) + " · " + fmt(inUniverse.composite_score, 0))
+                      : h('span', { className: "text-[10px] text-zinc-600 font-mono tracking-wider" }, "OUTSIDE UNIVERSE")
                   )
                 );
               })
