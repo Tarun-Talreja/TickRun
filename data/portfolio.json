@@ -1,0 +1,28 @@
+{
+  "last_updated": null,
+  "core": [
+    {
+      "ticker": "VTI",
+      "name": "Vanguard Total Stock Market ETF",
+      "shares": 0,
+      "cost_basis_per_share": 0,
+      "purchased": null,
+      "notes": "Core anchor — 60% of portfolio target"
+    }
+  ],
+  "thematic": [],
+  "target_allocation": {
+    "core_pct": 60,
+    "thematic_pct": 35,
+    "international_pct": 5
+  },
+  "rules": {
+    "max_single_position_pct": 15,
+    "trim_trigger_pct": 20,
+    "stop_loss_pct": 30,
+    "min_hold_years": 3,
+    "no_options": true,
+    "no_margin": true,
+    "no_leveraged_etfs": true
+  }
+}

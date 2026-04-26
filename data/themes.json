@@ -1,0 +1,46 @@
+{
+  "themes": {
+    "power_grid": {
+      "name": "Power Grid / Electrification",
+      "description": "Data center power demand exploding; transformers/switchgear in shortage; 10-year infrastructure build cycle",
+      "example_tickers": ["POWL", "ATKR", "NVT", "EMR", "ETN"],
+      "color": "#f59e0b"
+    },
+    "nuclear_smr": {
+      "name": "Small Modular Nuclear / Uranium",
+      "description": "First commercial SMRs deploying 2027-2030; AI data centers need carbon-free baseload power",
+      "example_tickers": ["BWXT", "SMR", "LEU", "CCJ", "UEC"],
+      "color": "#10b981"
+    },
+    "edge_ai_silicon": {
+      "name": "Edge AI / Specialty Silicon",
+      "description": "AI inference moving to edge; connectivity chips for data centers; semiconductor equipment for advanced nodes",
+      "example_tickers": ["ALAB", "ONTO", "AMBA", "ACLS", "FORM"],
+      "color": "#6366f1"
+    },
+    "cybersecurity": {
+      "name": "Cybersecurity (AI Era)",
+      "description": "Agentic AI creates new attack surface; identity, data security, and vulnerability management growing",
+      "example_tickers": ["QLYS", "TENB", "VRNS", "RBRK", "CYBR"],
+      "color": "#ef4444"
+    },
+    "robotics_automation": {
+      "name": "Robotics / Industrial Automation",
+      "description": "Reshoring + labor shortages + AI-enabled robotics; warehouse and manufacturing automation",
+      "example_tickers": ["SYM", "BRZE", "AZTA", "KRNT"],
+      "color": "#8b5cf6"
+    },
+    "defense_tech": {
+      "name": "Defense Tech / Drones",
+      "description": "Geopolitical spending cycle; software-defined warfare; drone manufacturing and autonomy",
+      "example_tickers": ["KTOS", "RCAT", "PLTR", "ACHR"],
+      "color": "#64748b"
+    },
+    "networking_infra": {
+      "name": "Networking / Fiber Infrastructure",
+      "description": "AI workload traffic driving network upgrades; fiber build-out for data center interconnect",
+      "example_tickers": ["CIEN", "ADTN", "CALX", "AAOI"],
+      "color": "#0ea5e9"
+    }
+  }
+}

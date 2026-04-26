@@ -1,0 +1,144 @@
+#!/usr/bin/env python3
+"""
+scripts/refresh_quotes.py — Fetch current quotes for portfolio + watchlist.
+
+Reads data/portfolio.json and data/watchlist.json, fetches current
+price/fundamentals for each ticker via yfinance, and writes the results
+to data/quotes_cache.json.
+
+Runs in ~30 seconds for a 30-ticker watchlist (vs 25+ minutes for the
+old 906-ticker universe screener).
+
+Usage:
+    python3 scripts/refresh_quotes.py
+
+Requirements:
+    pip install yfinance tenacity
+"""
+
+import json
+import os
+import sys
+import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime, timezone
+
+try:
+    import yfinance as yf
+except ImportError:
+    print("Missing dependency: pip install yfinance")
+    sys.exit(1)
+
+SCRIPT_DIR     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PORTFOLIO_PATH = os.path.join(SCRIPT_DIR, "data", "portfolio.json")
+WATCHLIST_PATH = os.path.join(SCRIPT_DIR, "data", "watchlist.json")
+OUTPUT_PATH    = os.path.join(SCRIPT_DIR, "data", "quotes_cache.json")
+
+MAX_WORKERS = 8
+
+
+def _collect_tickers() -> list[str]:
+    tickers = set()
+    with open(PORTFOLIO_PATH) as f:
+        port = json.load(f)
+    for item in port.get("core", []):
+        tickers.add(item["ticker"])
+    for item in port.get("thematic", []):
+        tickers.add(item["ticker"])
+
+    with open(WATCHLIST_PATH) as f:
+        wl = json.load(f)
+    for item in wl.get("candidates", []):
+        tickers.add(item["ticker"])
+
+    return sorted(tickers)
+
+
+def _fetch_one(ticker: str) -> dict:
+    try:
+        t = yf.Ticker(ticker)
+        info = t.info or {}
+
+        hist = t.history(period="1y")
+        price = float(info.get("currentPrice") or info.get("regularMarketPrice") or 0)
+        high_52w = float(info.get("fiftyTwoWeekHigh") or (hist["Close"].max() if not hist.empty else 0))
+        low_52w  = float(info.get("fiftyTwoWeekLow")  or (hist["Close"].min() if not hist.empty else 0))
+        drawdown_from_high = round((price - high_52w) / high_52w * 100, 1) if high_52w else None
+
+        # Units fix: yfinance returns div yield as decimal (0.019 = 1.9%)
+        raw_yield = info.get("dividendYield")
+        div_yield_pct = round(raw_yield * 100, 2) if raw_yield and raw_yield < 1 else raw_yield
+
+        return {
+            "ticker":             ticker,
+            "name":               info.get("longName") or info.get("shortName", ticker),
+            "price":              price,
+            "market_cap":         info.get("marketCap"),
+            "sector":             info.get("sector"),
+            "industry":           info.get("industry"),
+            "high_52w":           high_52w,
+            "low_52w":            low_52w,
+            "drawdown_from_high": drawdown_from_high,
+            "pe":                 info.get("trailingPE"),
+            "forward_pe":         info.get("forwardPE"),
+            "ev_ebitda":          info.get("enterpriseToEbitda"),
+            "ev_sales":           info.get("enterpriseToRevenue"),
+            "revenue_ttm":        info.get("totalRevenue"),
+            "revenue_growth":     round(info.get("revenueGrowth", 0) * 100, 1) if info.get("revenueGrowth") else None,
+            "gross_margin":       round(info.get("grossMargins", 0) * 100, 1) if info.get("grossMargins") else None,
+            "op_margin":          round(info.get("operatingMargins", 0) * 100, 1) if info.get("operatingMargins") else None,
+            "fcf_ttm":            info.get("freeCashflow"),
+            "total_cash":         info.get("totalCash"),
+            "total_debt":         info.get("totalDebt"),
+            "div_yield_pct":      div_yield_pct,
+            "next_earnings":      info.get("earningsTimestamp"),
+            "shares_outstanding": info.get("sharesOutstanding"),
+            "fetched_at":         datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "status":             "ok",
+            "errors":             [],
+        }
+    except Exception as exc:
+        return {
+            "ticker":   ticker,
+            "status":   "error",
+            "errors":   [str(exc)],
+            "fetched_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        }
+
+
+def main():
+    tickers = _collect_tickers()
+    if not tickers:
+        print("No tickers found in portfolio.json or watchlist.json.")
+        sys.exit(0)
+
+    print(f"Refreshing quotes for {len(tickers)} tickers: {', '.join(tickers)}")
+    results = {}
+    errors = []
+
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
+        futures = {pool.submit(_fetch_one, t): t for t in tickers}
+        for i, future in enumerate(as_completed(futures), 1):
+            ticker = futures[future]
+            rec = future.result()
+            results[ticker] = rec
+            status = "✓" if rec["status"] == "ok" else "✗"
+            print(f"  [{i:2d}/{len(tickers)}] {ticker} {status}")
+            if rec["status"] != "ok":
+                errors.append(ticker)
+            time.sleep(0.1)
+
+    output = {
+        "last_updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "tickers":      results,
+    }
+    with open(OUTPUT_PATH, "w") as f:
+        json.dump(output, f, indent=2)
+
+    print(f"\n✅ Wrote quotes for {len(results) - len(errors)} tickers → {OUTPUT_PATH}")
+    if errors:
+        print(f"⚠ Errors on: {', '.join(errors)}")
+
+
+if __name__ == "__main__":
+    main()
