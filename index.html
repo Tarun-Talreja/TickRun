@@ -204,7 +204,8 @@ const WatchlistView = ({ data }) => {
   const [filter, setFilter] = useState("all");
   const counts = data.watchlist.counts || {};
   const all = data.watchlist.all || [];
-  const filtered = filter === "all" ? all : all.filter(c => c.verdict === filter.toUpperCase().replace("-", " "));
+  const FILTER_TO_VERDICT = { "research-worthy": "RESEARCH-WORTHY", "watchlist": "WATCHLIST", "pass": "PASS", "red-flag": "RED FLAG" };
+  const filtered = filter === "all" ? all : all.filter(c => c.verdict === FILTER_TO_VERDICT[filter]);
   const themes = data.themes || {};
 
   const tabs = [
