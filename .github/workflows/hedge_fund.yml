@@ -1,8 +1,13 @@
-name: Weekly Dashboard Rebuild
+name: Quarterly Hedge Fund Signal
+
+# 13F filings due 45 days after each quarter end:
+#   Q4 (Dec 31) → due Feb 14  | Q1 (Mar 31) → due May 15
+#   Q2 (Jun 30) → due Aug 14  | Q3 (Sep 30) → due Nov 14
+# Run on the 15th of Feb / May / Aug / Nov at 2pm UTC.
 
 on:
   schedule:
-    - cron: '0 22 * * 0'  # 6pm ET Sunday
+    - cron: '0 14 15 2,5,8,11 *'
   workflow_dispatch:
 
 permissions:
@@ -13,9 +18,9 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
-  rebuild:
+  hedge-fund:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -26,30 +31,19 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Refresh all quotes
-        run: python scripts/refresh_quotes.py
+      - name: Fetch hedge fund / institutional holder signals
+        run: python scripts/hedge_fund_signal.py
 
-      - name: Check insider activity
-        run: python scripts/insider_check.py
-
-      - name: Generate pullback alerts
-        run: python scripts/pullback_alerts.py
-
-      - name: Update earnings calendar
-        run: python scripts/earnings_calendar.py
-
-      - name: Assemble dashboard.json
+      - name: Rebuild dashboard with new signals
         run: python scripts/build_dashboard.py
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Auto: weekly dashboard rebuild"
+          commit_message: "Auto: quarterly hedge fund signal refresh"
           file_pattern: |
-            data/quotes_cache.json
-            data/insider_signals.json
+            data/hedge_fund_signals.json
+            data/hedge_fund_snapshot.json
             output/dashboard.json
-            output/alerts.json
-            output/earnings_calendar.json
 
       - name: Open issue on failure
         if: failure()
@@ -59,7 +53,7 @@ jobs:
             github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `Weekly rebuild failed — ${new Date().toISOString().slice(0,10)}`,
+              title: `Hedge fund signal failed — ${new Date().toISOString().slice(0,10)}`,
               body: `Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
-              labels: ['automation-failure', 'weekly']
+              labels: ['automation-failure']
             })

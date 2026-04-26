@@ -86,8 +86,20 @@ def _build_prompt(ticker: str, quotes: dict) -> str:
     else:
         net_str = "unverified"
 
+    # 52-week high gate warning
+    high_gate_warning = ""
+    drawdown = q.get("drawdown_from_high")
+    if drawdown is not None and drawdown > -10:
+        high_gate_warning = (
+            f"\n⚠ 52-WEEK HIGH GATE: {ticker} is only {abs(drawdown):.1f}% below its "
+            f"52-week high of ${_format_metric(q.get('high_52w'))}. "
+            f"Per investment policy, stocks within 10% of their 52-week high MUST be assigned "
+            f"WATCHLIST (not RESEARCH-WORTHY). Include 'WAIT for pullback — near 52-week high' "
+            f"in the next_action. Do not assign RESEARCH-WORTHY regardless of fundamentals.\n"
+        )
+
     context = f"""
-[Current data from quotes cache — as of {q.get('fetched_at', 'unknown')}]
+{high_gate_warning}[Current data from quotes cache — as of {q.get('fetched_at', 'unknown')}]
 - Ticker: {ticker}
 - Name: {q.get('name', ticker)}
 - Price: ${_format_metric(q.get('price'))}
