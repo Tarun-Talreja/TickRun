@@ -21,7 +21,7 @@ jobs:
           cache: 'pip'
 
       - name: Install dependencies
-        run: pip install yfinance tenacity
+        run: pip install -r requirements.txt
 
       - name: Refresh quotes (portfolio + watchlist only)
         run: python scripts/refresh_quotes.py
