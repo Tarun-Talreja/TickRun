@@ -31,8 +31,7 @@ jobs:
         run: |
           mkdir -p _site/output
           cp index.html _site/index.html
-          cp output/daily.json _site/output/daily.json
-          cp output/weekly_screens.json _site/output/weekly_screens.json
+          cp output/dashboard.json _site/output/dashboard.json 2>/dev/null || echo "dashboard.json not yet generated — site will show sample data"
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
