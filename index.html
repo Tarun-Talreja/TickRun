@@ -3,414 +3,383 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TickRun — Personal Stock Screener</title>
+  <title>TickRun — Conviction Portfolio</title>
   <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
     * { margin: 0; padding: 0; }
     html, body { height: 100%; width: 100%; }
     body { font-family: 'Space Grotesk', system-ui, sans-serif; background: #000; }
-    #root { display: block; }
-    .font-mono { font-family: 'JetBrains Mono', monospace; font-feature-settings: "tnum"; }
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+    .mono { font-family: 'JetBrains Mono', monospace; font-feature-settings: "tnum"; }
   </style>
 </head>
 <body>
-  <div id="root"></div>
-  <script>
-    const { useState, useEffect, createElement: h } = React;
+<div id="root"></div>
+<script>
+const { useState, useEffect, createElement: h } = React;
 
-    const SAMPLE_DAILY = {
-      last_updated: "2026-04-25T01:13:30Z",
-      market_context: {
-        spy_price: 713.94, spy_change_pct: 0.77,
-        qqq_price: 663.88, qqq_change_pct: 1.91,
-        vix: 18.71, ten_year_yield: 4.28
-      },
-      tickers: [
-        { symbol: "AAPL", price: 221.40, change_pct_1d: -1.2, change_pct_5d: 2.1, change_pct_ytd: -4.3, range_52w_low: 169.21, range_52w_high: 237.49, pe: 33.1, forward_pe: 28.4, rsi_14: 52, ma_50: 218.50, ma_200: 210.33, next_earnings: "2026-05-01", news_titles_24h: ["Services growth", "iPad launch"] },
-        { symbol: "MSFT", price: 412.80, change_pct_1d: 0.8, change_pct_5d: 3.2, change_pct_ytd: 1.8, range_52w_low: 362.90, range_52w_high: 468.35, pe: 34.9, forward_pe: 30.1, rsi_14: 58, ma_50: 408.12, ma_200: 405.77, next_earnings: "2026-04-28", news_titles_24h: ["Azure strong"] },
-        { symbol: "NVDA", price: 118.70, change_pct_1d: 3.4, change_pct_5d: 8.2, change_pct_ytd: 22.1, range_52w_low: 75.61, range_52w_high: 140.76, pe: 62.3, forward_pe: 38.9, rsi_14: 74, ma_50: 112.40, ma_200: 105.22, next_earnings: "2026-05-22", news_titles_24h: ["Blackwell up"] }
-      ],
-      flags: [
-        { symbol: "NVDA", type: "rsi_extreme", detail: "RSI 74" },
-        { symbol: "MSFT", type: "earnings_soon", detail: "4 days" }
-      ]
-    };
+const DASHBOARD_URL = "https://raw.githubusercontent.com/Tarun-Talreja/TickRun/main/output/dashboard.json";
 
-    const SAMPLE_WEEKLY = {
-      last_updated: "2026-04-25T06:00:00Z",
-      universe: "Russell mid+small (sample)",
-      scoring: {},
-      top_conviction: [
-        {
-          symbol: "ACLS", name: "Axcelis Technologies", sector: "Technology",
-          industry: "Semiconductor Equipment & Materials", price: 78.4,
-          market_cap: 2_400_000_000, composite_score: 64.2,
-          factors: { quality: 58, valuation: 71, profitability: 62, risk: 67, recurring: 45, ai_exposure: 78 },
-          ai_evidence: ["industry:Semiconductor Equipment & Materials", "kw:gpu", "kw:hyperscale"],
-          metrics: { ev_ebitda: 8.2, forward_pe: 12.4, fcf_yield: 8.1, gross_margin: 44, op_margin: 26 }
-        },
-        {
-          symbol: "VRT", name: "Vertiv Holdings", sector: "Industrials",
-          industry: "Electrical Equipment & Parts", price: 88.5,
-          market_cap: 9_200_000_000, composite_score: 71.5,
-          factors: { quality: 62, valuation: 51, profitability: 70, risk: 60, recurring: 55, ai_exposure: 92 },
-          ai_evidence: ["industry:Electrical Equipment & Parts", "kw:liquid cooling", "kw:data center", "kw:thermal management"],
-          metrics: { ev_ebitda: 18.4, forward_pe: 24.1, fcf_yield: 4.2, gross_margin: 35, op_margin: 16 }
-        }
-      ],
-      sector_mix_top25: { Technology: 8, Industrials: 7, "Financial Services": 4, "Real Estate": 3, Utilities: 3 }
-    };
+const SAMPLE = {
+  last_built: null,
+  quotes_updated: null,
+  portfolio: {
+    total_value: 0,
+    core: [{ ticker: "VTI", name: "Vanguard Total Stock Market ETF", shares: 0, cost_basis_per_share: 0, current_price: null, market_value: null, pnl: null, pnl_pct: null, notes: "Core anchor — 60% of portfolio target" }],
+    thematic: [],
+    target_allocation: { core_pct: 60, thematic_pct: 35, international_pct: 5 }
+  },
+  watchlist: {
+    all: [
+      { ticker: "POWL", name: "Powell Industries", theme: "power_grid", verdict: "RESEARCH-WORTHY", thesis: "Switchgear for data centers. Benefits from AI-driven power buildout.", price: null, drawdown_from_high: null, next_action: "Verify customer concentration in 10-K Item 1" },
+      { ticker: "ALAB", name: "Astera Labs", theme: "edge_ai_silicon", verdict: "RESEARCH-WORTHY", thesis: "Connectivity chips (PCIe, CXL) for AI data centers.", price: null, drawdown_from_high: null, next_action: "Verify hyperscaler customer concentration" },
+      { ticker: "BWXT", name: "BWX Technologies", theme: "nuclear_smr", verdict: "WATCHLIST", thesis: "Naval nuclear + SMR components. Profitable defense contractor.", price: null, drawdown_from_high: null, next_action: "Check SMR contract pipeline" },
+      { ticker: "ONTO", name: "Onto Innovation", theme: "edge_ai_silicon", verdict: "RESEARCH-WORTHY", thesis: "Semiconductor metrology for advanced node transitions.", price: null, drawdown_from_high: null, next_action: "Check China revenue exposure" },
+      { ticker: "QLYS", name: "Qualys", theme: "cybersecurity", verdict: "RESEARCH-WORTHY", thesis: "Cloud-native vulnerability management SaaS.", price: null, drawdown_from_high: null, next_action: "Verify net revenue retention rate" }
+    ],
+    counts: { total: 5, research_worthy: 4, watchlist: 1, pass: 0, red_flag: 0 }
+  },
+  themes: {
+    power_grid:       { name: "Power Grid / Electrification", color: "#f59e0b" },
+    nuclear_smr:      { name: "SMR / Uranium", color: "#10b981" },
+    edge_ai_silicon:  { name: "Edge AI / Silicon", color: "#6366f1" },
+    cybersecurity:    { name: "Cybersecurity", color: "#ef4444" },
+    robotics_automation: { name: "Robotics / Automation", color: "#8b5cf6" },
+    defense_tech:     { name: "Defense Tech", color: "#64748b" },
+    networking_infra: { name: "Networking / Fiber", color: "#0ea5e9" }
+  },
+  signals: { pullback_alerts: [], stale_research: [], upcoming_earnings: [] }
+};
 
-    const fmt = (n, d = 2) => n == null ? "—" : Number(n).toFixed(d);
-    const fmtPct = (n) => n == null ? "—" : `${n >= 0 ? '+' : ''}${Number(n).toFixed(2)}%`;
-    const pctColor = (n) => n == null ? "text-zinc-500" : n > 0 ? "text-emerald-400" : n < 0 ? "text-rose-400" : "text-zinc-300";
-    const timeAgo = (iso) => {
-      if (!iso) return "never";
-      const diff = (Date.now() - new Date(iso).getTime()) / 1000;
-      if (diff < 60) return "just now";
-      if (diff < 3600) return `${Math.floor(diff/60)}m ago`;
-      if (diff < 86400) return `${Math.floor(diff/3600)}h ago`;
-      return `${Math.floor(diff/86400)}d ago`;
-    };
+// ── utils ──────────────────────────────────────────────────────────────────
+const fmt = (n, d = 2) => n == null ? "—" : Number(n).toFixed(d);
+const fmtUSD = (n) => n == null ? "—" : "$" + Number(n).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const fmtPct = (n) => n == null ? "—" : `${n >= 0 ? "+" : ""}${Number(n).toFixed(1)}%`;
+const pctColor = (n) => n == null ? "text-zinc-500" : n > 0 ? "text-emerald-400" : n < 0 ? "text-rose-400" : "text-zinc-300";
+const timeAgo = (iso) => {
+  if (!iso) return "never";
+  const diff = (Date.now() - new Date(iso).getTime()) / 1000;
+  if (diff < 60) return "just now";
+  if (diff < 3600) return `${Math.floor(diff / 60)}m ago`;
+  if (diff < 86400) return `${Math.floor(diff / 3600)}h ago`;
+  return `${Math.floor(diff / 86400)}d ago`;
+};
 
-    const FLAG_LABEL = { earnings_soon: "EARNINGS", big_move: "MOVE", rsi_extreme: "", ma_cross: "MA CROSS" };
-    const FLAG_COLOR = {
-      earnings_soon: "bg-amber-500/20 text-amber-300 border-amber-500/40",
-      big_move: "bg-sky-500/20 text-sky-300 border-sky-500/40",
-      rsi_extreme: "bg-fuchsia-500/20 text-fuchsia-300 border-fuchsia-500/40",
-      ma_cross: "bg-teal-500/20 text-teal-300 border-teal-500/40"
-    };
+const VERDICT_STYLE = {
+  "RESEARCH-WORTHY": "bg-emerald-500/20 text-emerald-300 border-emerald-500/40",
+  "WATCHLIST":        "bg-amber-500/20 text-amber-300 border-amber-500/40",
+  "PASS":             "bg-zinc-700/40 text-zinc-500 border-zinc-600/30",
+  "RED FLAG":         "bg-rose-500/20 text-rose-300 border-rose-500/40",
+};
 
-    const MarketStrip = ({ ctx }) => h('div', { className: "grid grid-cols-4 gap-px bg-zinc-800 border border-zinc-800 rounded-lg overflow-hidden" },
-      [{ label: "SPY", price: ctx.spy_price, pct: ctx.spy_change_pct },
-       { label: "QQQ", price: ctx.qqq_price, pct: ctx.qqq_change_pct },
-       { label: "VIX", price: ctx.vix, pct: null },
-       { label: "10Y", price: ctx.ten_year_yield, pct: null, suffix: "%" }]
-        .map(it => h('div', { key: it.label, className: "bg-zinc-950 px-3 py-2.5" },
-          h('div', { className: "text-[10px] tracking-[0.2em] text-zinc-500 font-medium" }, it.label),
-          h('div', { className: "font-mono text-base text-zinc-100 mt-0.5" }, fmt(it.price) + (it.suffix || "")),
-          it.pct != null && h('div', { className: `font-mono text-xs ${pctColor(it.pct)}` }, fmtPct(it.pct))
-        ))
-    );
+// ── PortfolioView ──────────────────────────────────────────────────────────
+const HoldingRow = ({ h: holding, isCore }) => {
+  const empty = !holding.shares || holding.shares === 0;
+  return h('tr', { className: "border-t border-zinc-900 hover:bg-zinc-950/50" },
+    h('td', { className: "py-3 pr-4" },
+      h('div', { className: "font-bold text-zinc-100 text-sm" }, holding.ticker),
+      h('div', { className: "text-zinc-500 text-[10px] mt-0.5 max-w-[160px] truncate" }, holding.name || "")
+    ),
+    h('td', { className: "py-3 pr-4 mono text-xs text-zinc-400" }, empty ? "—" : holding.shares),
+    h('td', { className: "py-3 pr-4 mono text-xs text-zinc-400" }, empty ? "—" : fmtUSD(holding.cost_basis_per_share)),
+    h('td', { className: "py-3 pr-4 mono text-xs text-zinc-300" }, holding.current_price ? fmtUSD(holding.current_price) : "—"),
+    h('td', { className: "py-3 pr-4 mono text-xs text-zinc-300" }, holding.market_value ? fmtUSD(holding.market_value) : "—"),
+    h('td', { className: `py-3 mono text-xs ${pctColor(holding.pnl_pct)}` }, holding.pnl_pct != null ? fmtPct(holding.pnl_pct) : "—")
+  );
+};
 
-    const TickerCard = ({ t, flags }) => {
-      const rangePos = t.range_52w_high && t.range_52w_low ? ((t.price - t.range_52w_low) / (t.range_52w_high - t.range_52w_low)) * 100 : 50;
-      const tickerFlags = flags.filter(f => f.symbol === t.symbol);
-      return h('div', { className: "border border-zinc-800 rounded-lg bg-zinc-950 p-4 hover:border-zinc-700 transition-colors" },
-        h('div', { className: "flex items-baseline justify-between mb-3" },
-          h('div', { className: "flex items-baseline gap-2" },
-            h('span', { className: "font-bold text-zinc-100 tracking-tight text-lg" }, t.symbol),
-            tickerFlags.map((f, i) => h('span', { key: i, className: `text-[9px] px-1.5 py-0.5 rounded border font-mono ${FLAG_COLOR[f.type]}` }, FLAG_LABEL[f.type]))
-          ),
-          h('div', { className: "text-right" },
-            h('div', { className: "font-mono text-zinc-100 text-base" }, "$" + fmt(t.price)),
-            h('div', { className: `font-mono text-xs ${pctColor(t.change_pct_1d)}` }, fmtPct(t.change_pct_1d))
-          )
-        ),
-        h('div', { className: "grid grid-cols-3 gap-2 text-xs mb-3" },
-          h('div', null, h('div', { className: "text-zinc-500 text-[10px] tracking-wider" }, "5D"), h('div', { className: `font-mono ${pctColor(t.change_pct_5d)}` }, fmtPct(t.change_pct_5d))),
-          h('div', null, h('div', { className: "text-zinc-500 text-[10px] tracking-wider" }, "YTD"), h('div', { className: `font-mono ${pctColor(t.change_pct_ytd)}` }, fmtPct(t.change_pct_ytd))),
-          h('div', null, h('div', { className: "text-zinc-500 text-[10px] tracking-wider" }, "RSI"), h('div', { className: `font-mono ${t.rsi_14 > 70 ? "text-rose-400" : t.rsi_14 < 30 ? "text-emerald-400" : "text-zinc-300"}` }, fmt(t.rsi_14, 0))),
-          h('div', null, h('div', { className: "text-zinc-500 text-[10px] tracking-wider" }, "P/E"), h('div', { className: "font-mono text-zinc-300" }, fmt(t.pe, 1))),
-          h('div', null, h('div', { className: "text-zinc-500 text-[10px] tracking-wider" }, "FWD P/E"), h('div', { className: "font-mono text-zinc-300" }, fmt(t.forward_pe, 1))),
-          h('div', null, h('div', { className: "text-zinc-500 text-[10px] tracking-wider" }, "ERNG"), h('div', { className: "font-mono text-zinc-300 text-[11px]" }, t.next_earnings || "—"))
-        ),
-        h('div', { className: "mb-1" },
-          h('div', { className: "flex justify-between text-[10px] text-zinc-500 mb-1 font-mono" },
-            h('span', null, fmt(t.range_52w_low)),
-            h('span', { className: "text-zinc-600" }, "52W"),
-            h('span', null, fmt(t.range_52w_high))
-          ),
-          h('div', { className: "h-1 bg-zinc-800 rounded-full relative" },
-            h('div', { className: "h-full bg-zinc-600 rounded-full", style: { width: `${Math.max(0, Math.min(100, rangePos))}%` } }),
-            h('div', { className: "absolute top-1/2 w-1.5 h-3 bg-zinc-100 rounded-sm", style: { left: `${Math.max(0, Math.min(100, rangePos))}%`, transform: "translate(-50%, -50%)" } })
-          )
-        )
-      );
-    };
+const PortfolioView = ({ data }) => {
+  const port = data.portfolio;
+  const allHoldings = [...(port.core || []), ...(port.thematic || [])];
+  const hasHoldings = allHoldings.some(h => h.shares && h.shares > 0);
+  const target = port.target_allocation || {};
 
-    const FACTOR_LABELS = {
-      quality: "Q", valuation: "V", profitability: "P",
-      risk: "R", recurring: "REC", ai_exposure: "AI"
-    };
-    const FACTOR_COLORS = {
-      quality:       "bg-teal-400",
-      valuation:     "bg-sky-400",
-      profitability: "bg-emerald-400",
-      risk:          "bg-amber-400",
-      recurring:     "bg-violet-400",
-      ai_exposure:   "bg-rose-400",
-    };
-
-    const FactorBar = ({ name, value }) => h('div', { className: "flex items-center gap-2" },
-      h('span', { className: "text-[10px] font-mono text-zinc-500 w-8" }, FACTOR_LABELS[name]),
-      h('div', { className: "flex-1 h-1.5 bg-zinc-900 rounded-full overflow-hidden" },
-        h('div', { className: `h-full ${FACTOR_COLORS[name]}/70`, style: { width: `${value}%` } })
+  return h('div', { className: "space-y-6" },
+    h('div', { className: "grid grid-cols-3 gap-3" },
+      h('div', { className: "border border-zinc-800 rounded-lg bg-zinc-950 p-4" },
+        h('div', { className: "text-[10px] tracking-[0.18em] text-zinc-500 font-medium mb-2" }, "TOTAL VALUE"),
+        h('div', { className: "mono text-2xl text-zinc-100" }, port.total_value > 0 ? fmtUSD(port.total_value) : "—"),
+        h('div', { className: "text-[10px] text-zinc-600 mt-1" }, "updated " + timeAgo(data.quotes_updated))
       ),
-      h('span', { className: "font-mono text-[10px] text-zinc-400 w-7 text-right" }, fmt(value, 0))
-    );
-
-    const ConvictionRow = ({ stock }) => {
-      const mcap = stock.market_cap ? "$" + (stock.market_cap / 1e9).toFixed(1) + "B" : "";
-      const aiEvidence = (stock.ai_evidence || []).slice(0, 4);
-      return h('div', { className: "border border-zinc-800 rounded-lg bg-zinc-950 p-4" },
-        h('div', { className: "flex items-baseline justify-between mb-3 gap-3 flex-wrap" },
-          h('div', { className: "flex items-baseline gap-2.5 flex-wrap" },
-            h('span', { className: "font-bold text-zinc-100 text-lg" }, stock.symbol),
-            h('span', { className: "text-zinc-400 text-sm" }, stock.name || stock.company),
-            h('span', { className: "text-zinc-600 text-[10px] tracking-widest uppercase hidden sm:inline" }, stock.industry || stock.sector)
-          ),
-          h('div', { className: "flex items-center gap-2 shrink-0" },
-            mcap && h('span', { className: "font-mono text-[10px] text-zinc-500" }, mcap),
-            h('span', { className: "font-mono text-zinc-100 text-sm" }, "$" + fmt(stock.price)),
-            h('span', { className: "font-mono text-[11px] px-2 py-1 rounded-md bg-emerald-500/20 text-emerald-300 border border-emerald-500/40" },
-              fmt(stock.composite_score, 0) + " / 100"
-            )
-          )
-        ),
-        h('div', { className: "grid grid-cols-2 gap-x-4 gap-y-1.5 mb-3" },
-          Object.entries(stock.factors || {}).map(([name, value]) =>
-            h(FactorBar, { key: name, name, value })
-          )
-        ),
-        aiEvidence.length > 0 && h('div', { className: "flex gap-1 flex-wrap" },
-          aiEvidence.map((e, i) => h('span', {
-            key: i,
-            className: "text-[9px] font-mono px-1.5 py-0.5 bg-rose-500/10 text-rose-300/90 border border-rose-500/20 rounded tracking-wide"
-          }, e.replace("kw:", "").replace("industry:", "")))
-        )
-      );
-    };
-
-    const DAILY_URL    = "https://raw.githubusercontent.com/Tarun-Talreja/TickRun/main/output/daily.json";
-    const SCREENS_URL  = "https://raw.githubusercontent.com/Tarun-Talreja/TickRun/main/output/weekly_screens.json";
-    const RESEARCH_URL = "https://raw.githubusercontent.com/Tarun-Talreja/TickRun/main/output/research_briefs.json";
-
-    const SAMPLE_RESEARCH = {
-      last_updated: null,
-      picks: []
-    };
-
-    const SCREEN_COLOR = {
-      graham:        "bg-sky-500/15 text-sky-300 border-sky-500/30",
-      magic_formula: "bg-violet-500/15 text-violet-300 border-violet-500/30",
-      piotroski:     "bg-amber-500/15 text-amber-300 border-amber-500/30",
-      garp:          "bg-emerald-500/15 text-emerald-300 border-emerald-500/30",
-      quality:       "bg-teal-500/15 text-teal-300 border-teal-500/30",
-      momentum:      "bg-rose-500/15 text-rose-300 border-rose-500/30",
-      dividend:      "bg-lime-500/15 text-lime-300 border-lime-500/30",
-    };
-
-    const ResearchCard = ({ pick }) => {
-      const [open, setOpen] = useState(false);
-      return h('div', {
-        className: "border border-zinc-800 rounded-xl bg-zinc-950 overflow-hidden hover:border-zinc-700 transition-colors cursor-pointer",
-        onClick: () => setOpen(o => !o)
-      },
-        h('div', { className: "p-4" },
-          h('div', { className: "flex items-start justify-between gap-4 mb-3" },
-            h('div', { className: "flex items-baseline gap-2.5 flex-wrap" },
-              h('span', { className: "font-bold text-zinc-100 text-xl tracking-tight" }, pick.symbol),
-              h('span', { className: "text-zinc-400 text-sm" }, pick.company),
-              h('span', { className: "text-zinc-600 text-[10px] tracking-widest uppercase hidden sm:inline" }, pick.sector)
-            ),
-            h('div', { className: "flex items-center gap-2 shrink-0" },
-              h('span', { className: "font-mono text-zinc-300 text-sm" }, pick.price ? "$" + fmt(pick.price) : ""),
-              h('span', { className: "font-mono text-[10px] px-2 py-1 rounded-md bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 whitespace-nowrap" },
-                pick.score + "× PASS"
-              )
-            )
-          ),
-          h('div', { className: "flex gap-1.5 mb-3 flex-wrap" },
-            pick.screens_passed.map(s => h('span', {
-              key: s,
-              className: `text-[9px] font-mono px-2 py-0.5 rounded border tracking-wider uppercase ${SCREEN_COLOR[s] || "bg-zinc-800 text-zinc-400 border-zinc-700"}`
-            }, s.replace("_", " ")))
-          ),
-          h('p', { className: "text-sm text-zinc-200 leading-relaxed font-medium" }, pick.one_line_thesis),
-          pick.next_earnings && h('div', { className: "mt-2 text-[10px] font-mono text-zinc-600" },
-            "EARNINGS: " + pick.next_earnings
-          )
-        ),
-        open && h('div', { className: "border-t border-zinc-800/70 px-4 pb-4 pt-3 space-y-4" },
-          pick.ai_exposure_narrative && h('div', null,
-            h('div', { className: "text-[10px] tracking-[0.18em] text-rose-400 font-medium mb-1.5" }, "AI / DATA-CENTER EXPOSURE"),
-            h('p', { className: "text-sm text-zinc-200 leading-relaxed" }, pick.ai_exposure_narrative)
-          ),
-          (pick.why_it_screened || pick.why_screened) && h('div', null,
-            h('div', { className: "text-[10px] tracking-[0.18em] text-zinc-500 font-medium mb-1.5" }, "WHY IT RANKED"),
-            h('p', { className: "text-sm text-zinc-300 leading-relaxed" }, pick.why_it_screened || pick.why_screened)
-          ),
-          (pick.valuation_note || pick.recent_catalyst) && h('div', null,
-            h('div', { className: "text-[10px] tracking-[0.18em] text-zinc-500 font-medium mb-1.5" }, pick.valuation_note ? "VALUATION" : "RECENT CATALYST"),
-            h('p', { className: "text-sm text-zinc-300 leading-relaxed" }, pick.valuation_note || pick.recent_catalyst)
-          ),
-          pick.bear_case && h('div', null,
-            h('div', { className: "text-[10px] tracking-[0.18em] text-rose-500 font-medium mb-1.5" }, "BEAR CASE"),
-            h('p', { className: "text-sm text-rose-300/80 leading-relaxed" }, pick.bear_case)
-          ),
-          pick.research_focus && pick.research_focus.length > 0 && h('div', null,
-            h('div', { className: "text-[10px] tracking-[0.18em] text-zinc-500 font-medium mb-2" }, "BEFORE YOU BUY"),
-            h('ol', { className: "space-y-2" },
-              pick.research_focus.map((item, i) => h('li', { key: i, className: "flex gap-2.5" },
-                h('span', { className: "font-mono text-[10px] text-zinc-600 mt-0.5 shrink-0" }, `${i + 1}.`),
-                h('span', { className: "text-sm text-zinc-400 leading-relaxed" }, item)
-              ))
+      h('div', { className: "border border-zinc-800 rounded-lg bg-zinc-950 p-4" },
+        h('div', { className: "text-[10px] tracking-[0.18em] text-zinc-500 font-medium mb-2" }, "TARGET ALLOCATION"),
+        h('div', { className: "space-y-1.5" },
+          [["Core (VTI/VOO)", target.core_pct, "bg-emerald-400"],
+           ["Thematic picks", target.thematic_pct, "bg-violet-400"],
+           ["International", target.international_pct, "bg-sky-400"]]
+          .map(([label, pct, color]) =>
+            h('div', { key: label, className: "flex items-center gap-2" },
+              h('div', { className: `h-1.5 rounded-full ${color}/60`, style: { width: `${pct}%` } }),
+              h('span', { className: "mono text-[10px] text-zinc-500" }, `${pct}% ${label}`)
             )
           )
         )
-      );
-    };
+      ),
+      h('div', { className: "border border-zinc-800 rounded-lg bg-zinc-950 p-4" },
+        h('div', { className: "text-[10px] tracking-[0.18em] text-zinc-500 font-medium mb-2" }, "RULES"),
+        h('div', { className: "space-y-1" },
+          ["No options", "No margin", "No leveraged ETFs", "Max 15% per position", "Hold 3-5 years min"]
+          .map(r => h('div', { key: r, className: "text-[10px] text-zinc-500 flex items-center gap-1.5" },
+            h('span', { className: "text-emerald-500" }, "✓"),
+            r
+          ))
+        )
+      )
+    ),
 
-    function Dashboard() {
-      const [tab, setTab] = useState("today");
-      const [daily, setDaily] = useState(SAMPLE_DAILY);
-      const [weekly, setWeekly] = useState(SAMPLE_WEEKLY);
-      const [research, setResearch] = useState(SAMPLE_RESEARCH);
-      const [loading, setLoading] = useState(true);
-      const [liveFetched, setLiveFetched] = useState(false);
+    !hasHoldings && h('div', { className: "border border-zinc-800 border-dashed rounded-xl p-8 text-center" },
+      h('div', { className: "text-zinc-500 text-sm mb-2" }, "No holdings recorded yet"),
+      h('div', { className: "mono text-[11px] text-zinc-600" }, "Edit data/portfolio.json to add your positions")
+    ),
 
-      const refresh = async () => {
-        setLoading(true);
-        try {
-          const [dailyRes, weeklyRes, researchRes] = await Promise.all([
-            fetch(DAILY_URL),
-            fetch(SCREENS_URL),
-            fetch(RESEARCH_URL),
-          ]);
-          if (!dailyRes.ok) throw new Error(`Daily HTTP ${dailyRes.status}`);
-          if (!weeklyRes.ok) throw new Error(`Weekly HTTP ${weeklyRes.status}`);
-          setDaily(await dailyRes.json());
-          setWeekly(await weeklyRes.json());
-          if (researchRes.ok) setResearch(await researchRes.json());
-          setLiveFetched(true);
-        } catch (e) {
-          console.log("Fetch failed:", e.message);
-        }
-        setLoading(false);
-      };
-
-      useEffect(() => {
-        refresh();
-        const id = setInterval(refresh, 5 * 60 * 1000);
-        return () => clearInterval(id);
-      }, []);
-
-      const usingSample = !liveFetched;
-
-      return h('div', { className: "min-h-screen bg-black text-zinc-200", style: { fontFamily: "'Space Grotesk', system-ui, sans-serif" } },
-        h('header', { className: "border-b border-zinc-900 sticky top-0 bg-black/95 backdrop-blur z-10" },
-          h('div', { className: "max-w-6xl mx-auto px-4 py-3" },
-            h('div', { className: "flex items-center justify-between" },
-              h('div', { className: "flex items-center gap-2.5" },
-                h('svg', { width: "28", height: "28", viewBox: "0 0 28 28", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-                  h('rect', { width: "28", height: "28", rx: "6", fill: "#18181b" }),
-                  h('polyline', { points: "4,20 10,13 15,17 24,7", stroke: "#34d399", strokeWidth: "2.2", strokeLinecap: "round", strokeLinejoin: "round", fill: "none" }),
-                  h('circle', { cx: "24", cy: "7", r: "2", fill: "#34d399" })
-                ),
-                h('span', { className: "font-bold text-xl tracking-tight text-zinc-100" }, "TickRun"),
-                h('span', { className: "text-[10px] tracking-[0.18em] text-zinc-600 font-medium hidden sm:block" }, "PERSONAL SCREENER")
-              ),
-              h('button', { onClick: refresh, disabled: loading, className: "text-[11px] font-mono tracking-wider text-zinc-400 hover:text-zinc-200 disabled:opacity-50" },
-                loading ? "LOADING…" : "↻ REFRESH"
-              )
-            ),
-            h('nav', { className: "flex gap-1 mt-3" },
-              [{ id: "today", label: "TODAY" }, { id: "screens", label: "SCREENS" }, { id: "watchlist", label: "WATCHLIST" }, { id: "research", label: "RESEARCH" }]
-                .map(t => h('button', { key: t.id, onClick: () => setTab(t.id), className: `px-3 py-1.5 text-[11px] tracking-[0.15em] font-medium rounded transition-colors ${tab === t.id ? "bg-zinc-100 text-black" : "text-zinc-500 hover:text-zinc-300"}` }, t.label))
-            )
-          )
-        ),
-        usingSample && h('div', { className: "bg-amber-500/10 border-b border-amber-500/30 text-amber-200 text-xs px-4 py-2 text-center font-mono" }, "SAMPLE DATA · Live data loads from TickRun repo"),
-        h('main', { className: "max-w-6xl mx-auto px-4 py-6" },
-          tab === "today" && h('div', { className: "space-y-5" },
-            h('div', null,
-              h('div', { className: "flex items-baseline justify-between mb-3" },
-                h('div', { className: "text-[10px] tracking-[0.2em] text-zinc-500 font-medium" }, "MARKET"),
-                h('div', { className: "text-[10px] text-zinc-600 font-mono" }, "updated " + timeAgo(daily.last_updated))
-              ),
-              MarketStrip({ ctx: daily.market_context })
-            ),
-            daily.flags && daily.flags.length > 0 && h('div', null,
-              h('div', { className: "text-[10px] tracking-[0.2em] text-zinc-500 font-medium mb-3" }, "FLAGS · " + daily.flags.length),
-              h('div', { className: "flex flex-wrap gap-2" },
-                daily.flags.map((f, i) => h('div', { key: i, className: `inline-flex items-center gap-1.5 px-2 py-1 rounded-md border text-[10px] font-mono tracking-wider ${FLAG_COLOR[f.type]}` },
-                  h('span', { className: "font-bold" }, f.symbol),
-                  FLAG_LABEL[f.type] && h('span', null, FLAG_LABEL[f.type]),
-                  h('span', { className: "opacity-70" }, f.detail)
-                ))
-              )
-            ),
-            h('div', null,
-              h('div', { className: "text-[10px] tracking-[0.2em] text-zinc-500 font-medium mb-3" }, "WATCHLIST · " + daily.tickers.length),
-              h('div', { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3" },
-                daily.tickers.map(t => TickerCard({ key: t.symbol, t, flags: daily.flags || [] }))
+    hasHoldings && h('div', { className: "border border-zinc-800 rounded-lg overflow-hidden" },
+      h('div', { className: "bg-zinc-900/50 px-4 py-2.5 text-[10px] tracking-[0.18em] text-zinc-500 font-medium" }, "HOLDINGS"),
+      h('div', { className: "overflow-x-auto" },
+        h('table', { className: "w-full" },
+          h('thead', null,
+            h('tr', null,
+              ["TICKER", "SHARES", "COST", "PRICE", "VALUE", "P&L"].map(col =>
+                h('th', { key: col, className: "text-left py-2 px-0 pr-4 text-[9px] tracking-[0.18em] text-zinc-600 font-medium first:pl-4" }, col)
               )
             )
           ),
-          tab === "screens" && h('div', { className: "space-y-5" },
-            h('div', { className: "flex items-baseline justify-between" },
-              h('div', { className: "text-[10px] tracking-[0.2em] text-zinc-500 font-medium" }, "TOP CONVICTION · MULTI-SCREEN PASSES"),
-              h('div', { className: "text-[10px] text-zinc-600 font-mono" }, "screens refreshed " + timeAgo(weekly.last_updated))
+          h('tbody', { className: "divide-y divide-zinc-900" },
+            (port.core || []).map(holding => h(HoldingRow, { key: holding.ticker, h, holding, isCore: true })),
+            (port.thematic || []).length > 0 && h('tr', { className: "border-t border-zinc-800" },
+              h('td', { colSpan: 6, className: "py-2 pl-4 text-[9px] tracking-[0.18em] text-zinc-600 font-medium" }, "THEMATIC PICKS")
             ),
-            h('div', { className: "space-y-2" },
-              weekly.top_conviction.map(s => ConvictionRow({ key: s.symbol, stock: s }))
-            )
-          ),
-          tab === "research" && h('div', { className: "space-y-4" },
-            h('div', { className: "flex items-baseline justify-between" },
-              h('div', null,
-                h('div', { className: "text-[10px] tracking-[0.2em] text-zinc-500 font-medium" }, "AI RESEARCH BRIEFS · TOP 5 PICKS"),
-                h('div', { className: "text-[10px] text-zinc-600 font-mono mt-1" }, "Generated by Claude · updated " + timeAgo(research.last_updated))
-              )
-            ),
-            research.picks && research.picks.length > 0
-              ? h('div', { className: "space-y-3" },
-                  research.picks.map(pick => h(ResearchCard, { key: pick.symbol, pick }))
-                )
-              : h('div', { className: "border border-zinc-800 rounded-xl bg-zinc-950 p-8 text-center" },
-                  h('div', { className: "text-zinc-600 text-sm font-mono tracking-wider mb-2" }, "NO BRIEFS YET"),
-                  h('div', { className: "text-zinc-700 text-xs" }, "Run generate_research.py or wait for Monday's workflow")
-                )
-          ),
-          tab === "watchlist" && h('div', { className: "space-y-5" },
-            h('div', { className: "text-[10px] tracking-[0.2em] text-zinc-500 font-medium" }, "YOUR TICKERS · COMPOSITE STATUS"),
-            h('div', { className: "space-y-2" },
-              daily.tickers.map(t => {
-                const inUniverse = (weekly.top_conviction || []).find(c => c.symbol === t.symbol);
-                return h('div', { key: t.symbol, className: "border border-zinc-800 rounded-lg bg-zinc-950 p-3 flex items-center justify-between" },
-                  h('div', { className: "flex items-baseline gap-3" },
-                    h('span', { className: "font-bold text-zinc-100" }, t.symbol),
-                    h('span', { className: "font-mono text-sm text-zinc-300" }, "$" + fmt(t.price)),
-                    h('span', { className: `font-mono text-xs ${pctColor(t.change_pct_1d)}` }, fmtPct(t.change_pct_1d))
-                  ),
-                  h('div', null,
-                    inUniverse
-                      ? h('span', { className: "font-mono text-[11px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 tracking-wider" },
-                          "TOP " + (weekly.top_conviction.indexOf(inUniverse) + 1) + " · " + fmt(inUniverse.composite_score, 0))
-                      : h('span', { className: "text-[10px] text-zinc-600 font-mono tracking-wider" }, "OUTSIDE UNIVERSE")
-                  )
-                );
-              })
-            )
-          )
-        ),
-        h('footer', { className: "max-w-6xl mx-auto px-4 py-8 text-center" },
-          h('div', { className: "flex items-center justify-center gap-2" },
-            h('svg', { width: "14", height: "14", viewBox: "0 0 28 28", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-              h('polyline', { points: "4,20 10,13 15,17 24,7", stroke: "#52525b", strokeWidth: "2.5", strokeLinecap: "round", strokeLinejoin: "round", fill: "none" })
-            ),
-            h('span', { className: "text-[10px] text-zinc-700 tracking-[0.15em]" }, "TICKRUN · PERSONAL USE · NOT FINANCIAL ADVICE")
+            (port.thematic || []).map(holding => h(HoldingRow, { key: holding.ticker, h, holding, isCore: false }))
           )
         )
-      );
+      )
+    )
+  );
+};
+
+// ── WatchlistView ──────────────────────────────────────────────────────────
+const CandidateCard = ({ c, themes }) => {
+  const [open, setOpen] = useState(false);
+  const theme = themes[c.theme] || {};
+  const verdictStyle = VERDICT_STYLE[c.verdict] || VERDICT_STYLE["PASS"];
+
+  return h('div', {
+    className: "border border-zinc-800 rounded-xl bg-zinc-950 overflow-hidden hover:border-zinc-700 transition-colors cursor-pointer",
+    onClick: () => setOpen(o => !o)
+  },
+    h('div', { className: "p-4" },
+      h('div', { className: "flex items-start justify-between gap-3 mb-2" },
+        h('div', null,
+          h('div', { className: "flex items-baseline gap-2 flex-wrap" },
+            h('span', { className: "font-bold text-zinc-100 text-lg" }, c.ticker),
+            h('span', { className: "text-zinc-400 text-sm" }, c.name)
+          ),
+          theme.name && h('div', { className: "text-[10px] mono mt-0.5", style: { color: theme.color || "#71717a" } }, theme.name.toUpperCase())
+        ),
+        h('div', { className: "flex flex-col items-end gap-1.5 shrink-0" },
+          h('span', { className: `text-[9px] mono px-2 py-0.5 rounded border font-medium tracking-wider ${verdictStyle}` }, c.verdict || "UNKNOWN"),
+          c.price && h('span', { className: "mono text-xs text-zinc-300" }, "$" + fmt(c.price)),
+          c.drawdown_from_high != null && c.drawdown_from_high <= -20 &&
+            h('span', { className: "mono text-[10px] text-amber-400" }, fmtPct(c.drawdown_from_high) + " from high")
+        )
+      ),
+      c.thesis && h('p', { className: "text-xs text-zinc-400 leading-relaxed line-clamp-2" }, c.thesis)
+    ),
+    open && h('div', { className: "border-t border-zinc-800 px-4 py-3 space-y-3 bg-zinc-900/30" },
+      c.thesis && h('div', null,
+        h('div', { className: "text-[9px] tracking-[0.18em] text-zinc-500 font-medium mb-1" }, "THESIS"),
+        h('p', { className: "text-xs text-zinc-300 leading-relaxed" }, c.thesis)
+      ),
+      c.next_action && h('div', null,
+        h('div', { className: "text-[9px] tracking-[0.18em] text-amber-500 font-medium mb-1" }, "NEXT ACTION"),
+        h('p', { className: "text-xs text-amber-300/80 leading-relaxed" }, c.next_action)
+      ),
+      c.last_researched && h('div', { className: "mono text-[10px] text-zinc-600" }, "Last researched: " + c.last_researched)
+    )
+  );
+};
+
+const WatchlistView = ({ data }) => {
+  const [filter, setFilter] = useState("all");
+  const counts = data.watchlist.counts || {};
+  const all = data.watchlist.all || [];
+  const filtered = filter === "all" ? all : all.filter(c => c.verdict === filter.toUpperCase().replace("-", " "));
+  const themes = data.themes || {};
+
+  const tabs = [
+    { id: "all", label: "ALL", count: counts.total },
+    { id: "research-worthy", label: "RESEARCH-WORTHY", count: counts.research_worthy },
+    { id: "watchlist", label: "WATCHLIST", count: counts.watchlist },
+    { id: "pass", label: "PASS", count: counts.pass },
+  ].filter(t => t.id === "all" || t.count > 0);
+
+  return h('div', { className: "space-y-4" },
+    h('div', { className: "flex gap-1 flex-wrap" },
+      tabs.map(t => h('button', {
+        key: t.id,
+        onClick: () => setFilter(t.id),
+        className: `px-3 py-1.5 text-[10px] tracking-[0.12em] font-medium rounded transition-colors ${filter === t.id ? "bg-zinc-100 text-black" : "text-zinc-500 hover:text-zinc-300 border border-zinc-800"}`
+      }, `${t.label} ${t.count != null ? "(" + t.count + ")" : ""}`)
+      )
+    ),
+    filtered.length === 0
+      ? h('div', { className: "border border-zinc-800 border-dashed rounded-xl p-8 text-center text-zinc-600 text-sm" }, "No candidates in this category")
+      : h('div', { className: "grid grid-cols-1 md:grid-cols-2 gap-3" },
+          filtered.map(c => h(CandidateCard, { key: c.ticker, c, themes }))
+        )
+  );
+};
+
+// ── SignalsView ────────────────────────────────────────────────────────────
+const SignalsView = ({ data }) => {
+  const signals = data.signals || {};
+  const pullbacks = signals.pullback_alerts || [];
+  const earnings = signals.upcoming_earnings || [];
+  const stale = signals.stale_research || [];
+  const total = pullbacks.length + earnings.length + stale.length;
+
+  return h('div', { className: "space-y-6" },
+    total === 0 && h('div', { className: "border border-zinc-800 border-dashed rounded-xl p-8 text-center" },
+      h('div', { className: "text-zinc-500 text-sm mb-1" }, "No signals today"),
+      h('div', { className: "mono text-[11px] text-zinc-600" }, "Pullback alerts and earnings will appear here once quotes are refreshed")
+    ),
+
+    pullbacks.length > 0 && h('div', null,
+      h('div', { className: "text-[10px] tracking-[0.18em] text-zinc-500 font-medium mb-3" }, `PULLBACK ALERTS · ${pullbacks.length}`),
+      h('div', { className: "space-y-2" },
+        pullbacks.map(a => h('div', { key: a.ticker, className: "border border-zinc-800 rounded-lg bg-zinc-950 p-4 flex items-start justify-between gap-4" },
+          h('div', null,
+            h('div', { className: "flex items-baseline gap-2 mb-1" },
+              h('span', { className: "font-bold text-zinc-100" }, a.ticker),
+              h('span', { className: "text-zinc-400 text-sm" }, a.name),
+              h('span', { className: `text-[9px] mono px-1.5 py-0.5 rounded border ${a.severity === "STRONG" ? "bg-rose-500/20 text-rose-300 border-rose-500/40" : "bg-amber-500/20 text-amber-300 border-amber-500/40"}` }, a.severity)
+            ),
+            a.thesis && h('p', { className: "text-xs text-zinc-500 leading-relaxed" }, a.thesis),
+            h('p', { className: "text-[10px] text-amber-400/70 mt-1.5" }, a.action)
+          ),
+          h('div', { className: "text-right shrink-0" },
+            h('div', { className: "mono text-rose-400 text-sm font-medium" }, fmtPct(a.drawdown_pct)),
+            h('div', { className: "mono text-[10px] text-zinc-500" }, "from 52w high"),
+            a.price && h('div', { className: "mono text-xs text-zinc-300 mt-1" }, "$" + fmt(a.price))
+          )
+        ))
+      )
+    ),
+
+    earnings.length > 0 && h('div', null,
+      h('div', { className: "text-[10px] tracking-[0.18em] text-zinc-500 font-medium mb-3" }, `UPCOMING EARNINGS · ${earnings.length}`),
+      h('div', { className: "space-y-2" },
+        earnings.map(e => h('div', { key: e.ticker, className: "border border-zinc-800 rounded-lg bg-zinc-950 p-4 flex items-center justify-between gap-4" },
+          h('div', null,
+            h('div', { className: "flex items-baseline gap-2 mb-0.5" },
+              h('span', { className: "font-bold text-zinc-100" }, e.ticker),
+              h('span', { className: "text-zinc-400 text-sm" }, e.name),
+              h('span', { className: `text-[9px] mono px-1.5 py-0.5 rounded border ${VERDICT_STYLE[e.verdict] || "bg-zinc-800 text-zinc-500 border-zinc-700"}` }, e.verdict)
+            ),
+            h('p', { className: "text-[10px] text-amber-400/70" }, e.action)
+          ),
+          h('div', { className: "text-right shrink-0 mono" },
+            h('div', { className: "text-zinc-100 text-sm" }, e.date),
+            h('div', { className: "text-zinc-500 text-[10px]" }, `in ${e.days_until}d`)
+          )
+        ))
+      )
+    ),
+
+    stale.length > 0 && h('div', null,
+      h('div', { className: "text-[10px] tracking-[0.18em] text-zinc-500 font-medium mb-3" }, `STALE RESEARCH · ${stale.length}`),
+      h('div', { className: "space-y-2" },
+        stale.map(s => h('div', { key: s.ticker, className: "border border-zinc-800 rounded-lg bg-zinc-950 p-3 flex items-center justify-between gap-4" },
+          h('span', { className: "text-zinc-300 text-sm" }, s.ticker + " — research is " + s.days_since + " days old"),
+          h('span', { className: "mono text-[10px] text-zinc-500" }, s.action)
+        ))
+      )
+    )
+  );
+};
+
+// ── App ────────────────────────────────────────────────────────────────────
+function App() {
+  const [tab, setTab] = useState("watchlist");
+  const [data, setData] = useState(SAMPLE);
+  const [loading, setLoading] = useState(true);
+  const [live, setLive] = useState(false);
+
+  const load = async () => {
+    setLoading(true);
+    try {
+      const res = await fetch(DASHBOARD_URL + "?t=" + Date.now());
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      setData(await res.json());
+      setLive(true);
+    } catch (e) {
+      console.log("Using sample data:", e.message);
     }
+    setLoading(false);
+  };
 
-    const root = ReactDOM.createRoot(document.getElementById('root'));
-    root.render(React.createElement(Dashboard));
-  </script>
+  useEffect(() => { load(); }, []);
+
+  const TABS = [
+    { id: "watchlist", label: "WATCHLIST" },
+    { id: "portfolio", label: "PORTFOLIO" },
+    { id: "signals",   label: "SIGNALS" },
+  ];
+
+  const counts = data.watchlist.counts || {};
+  const signals = data.signals || {};
+  const alertCount = (signals.pullback_alerts || []).length + (signals.upcoming_earnings || []).length;
+
+  return h('div', { className: "min-h-screen bg-black text-zinc-200" },
+    h('header', { className: "border-b border-zinc-900 sticky top-0 bg-black/95 backdrop-blur z-10" },
+      h('div', { className: "max-w-5xl mx-auto px-4 py-3" },
+        h('div', { className: "flex items-center justify-between mb-3" },
+          h('div', { className: "flex items-center gap-2.5" },
+            h('svg', { width: "26", height: "26", viewBox: "0 0 28 28", fill: "none" },
+              h('rect', { width: "28", height: "28", rx: "6", fill: "#18181b" }),
+              h('polyline', { points: "4,20 10,13 15,17 24,7", stroke: "#34d399", strokeWidth: "2.2", strokeLinecap: "round", strokeLinejoin: "round", fill: "none" }),
+              h('circle', { cx: "24", cy: "7", r: "2", fill: "#34d399" })
+            ),
+            h('span', { className: "font-bold text-lg text-zinc-100 tracking-tight" }, "TickRun"),
+            h('span', { className: "text-[10px] tracking-[0.2em] text-zinc-600 font-medium hidden sm:block" }, "CONVICTION PORTFOLIO")
+          ),
+          h('div', { className: "flex items-center gap-3" },
+            data.quotes_updated && h('span', { className: "mono text-[10px] text-zinc-600 hidden sm:block" }, "quotes " + timeAgo(data.quotes_updated)),
+            h('button', {
+              onClick: load, disabled: loading,
+              className: "mono text-[11px] tracking-wider text-zinc-400 hover:text-zinc-200 disabled:opacity-40"
+            }, loading ? "LOADING…" : "↻ REFRESH")
+          )
+        ),
+        h('nav', { className: "flex gap-1" },
+          TABS.map(t => {
+            const badge = t.id === "watchlist" ? counts.research_worthy : t.id === "signals" ? alertCount : null;
+            return h('button', {
+              key: t.id, onClick: () => setTab(t.id),
+              className: `px-3 py-1.5 text-[11px] tracking-[0.15em] font-medium rounded transition-colors flex items-center gap-1.5 ${tab === t.id ? "bg-zinc-100 text-black" : "text-zinc-500 hover:text-zinc-300"}`
+            },
+              t.label,
+              badge > 0 && h('span', { className: `text-[9px] px-1.5 py-0.5 rounded-full ${tab === t.id ? "bg-black/20 text-black/60" : "bg-zinc-700 text-zinc-300"}` }, badge)
+            );
+          })
+        )
+      )
+    ),
+
+    !live && h('div', { className: "bg-amber-500/10 border-b border-amber-500/20 text-amber-300/80 text-[11px] px-4 py-1.5 text-center mono" },
+      "SAMPLE DATA — live data loads from output/dashboard.json once GitHub Actions runs"
+    ),
+
+    h('main', { className: "max-w-5xl mx-auto px-4 py-6" },
+      tab === "portfolio" && h(PortfolioView, { data }),
+      tab === "watchlist" && h(WatchlistView, { data }),
+      tab === "signals"   && h(SignalsView, { data })
+    )
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script>
 </body>
 </html>
