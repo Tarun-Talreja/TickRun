@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-05-01T03:37:13Z",
+  "lookahead_days": 30,
+  "upcoming_earnings": [
+    {
+      "ticker": "BWXT",
+      "name": "BWX Technologies, Inc.",
+      "date": "2026-05-04",
+      "days_until": 3,
+      "theme": "nuclear_smr",
+      "verdict": "WATCHLIST",
+      "thesis": "Naval nuclear + SMR components. Profitable defense contractor with SMR optionality. Needs deeper research to validate current entry.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py BWXT after."
+    },
+    {
+      "ticker": "POWL",
+      "name": "Powell Industries, Inc.",
+      "date": "2026-05-04",
+      "days_until": 3,
+      "theme": "power_grid",
+      "verdict": "WATCHLIST",
+      "thesis": "DEMOTED: Stock at $254 (5x in 18 months), market cap $9.25B (graduated from mid-cap), revenue growth decelerated 50%+ \u2192 9%. Short interest +199% in 2 weeks. Smart money exiting.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py POWL after."
+    },
+    {
+      "ticker": "ONTO",
+      "name": "Onto Innovation Inc.",
+      "date": "2026-05-05",
+      "days_until": 4,
+      "theme": "edge_ai_silicon",
+      "verdict": "WATCHLIST",
+      "thesis": "DEMOTED: Trading at $292 vs $301 52-week high (3% off ATH). Real business with HBM contract through 2027 + 30% advanced packaging growth, but entry price is terrible. Wait for pullback.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py ONTO after."
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "date": "2026-05-05",
+      "days_until": 4,
+      "theme": "edge_ai_silicon",
+      "verdict": "WATCHLIST",
+      "thesis": "DEMOTED: 151 insider sells, 0 buys in past 6 months. CEO sold $122M personally. Market cap $36B (large-cap, not mid-cap). Sequential growth slowing 92% YoY \u2192 6-10% Q/Q.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py ALAB after."
+    },
+    {
+      "ticker": "QLYS",
+      "name": "Qualys, Inc.",
+      "date": "2026-05-05",
+      "days_until": 4,
+      "theme": "cybersecurity",
+      "verdict": "PASS",
+      "thesis": "PASS: NDR confirmed 103% (down from 104%) \u2014 at value-trap threshold. Revenue growth decelerating 10% \u2192 7-8% guide. CrowdStrike Falcon Exposure Management bundling vulnerability scanning is direct existential threat. Cheap for documented competitive reasons.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py QLYS after."
+    },
+    {
+      "ticker": "UBER",
+      "name": "Uber Technologies, Inc.",
+      "date": "2026-05-06",
+      "days_until": 5,
+      "theme": "platform_network",
+      "verdict": "RESEARCH-WORTHY",
+      "thesis": "Bill Ackman's #1 position (18.5% of $11.9B Pershing Square). Target $105 (more than double in 3-4 years). 22.5% net margin, $160B annual gross bookings, global network effect. Autonomous vehicle FUD overdone \u2014 50% of bookings are delivery (insulated).",
+      "action": "Review thesis before earnings. Re-run research_ticker.py UBER after."
+    }
+  ]
+}

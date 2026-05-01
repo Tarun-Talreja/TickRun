@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-05-01T03:37:13Z",
+  "pullback_alerts": [
+    {
+      "ticker": "UBER",
+      "name": "Uber Technologies, Inc.",
+      "theme": "platform_network",
+      "verdict": "RESEARCH-WORTHY",
+      "price": 74.61,
+      "high_52w": 101.99,
+      "drawdown_pct": -26.8,
+      "severity": "MODERATE",
+      "thesis": "Bill Ackman's #1 position (18.5% of $11.9B Pershing Square). Target $105 (more than double in 3-4 years). 22.5% net margin, $160B annual gross bookings, global network effect. Autonomous vehicle FUD overdone \u2014 50% of bookings are delivery (insulated).",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft Corporation",
+      "theme": "mega_cap_ai",
+      "verdict": "RESEARCH-WORTHY",
+      "price": 407.78,
+      "high_52w": 555.45,
+      "drawdown_pct": -26.6,
+      "severity": "MODERATE",
+      "thesis": "Premier AI/cloud platform. Currently $423.88 vs $539.83 ATH (Oct 2025) = -21.5% from peak \u2014 rare entry. Azure + Copilot + OpenAI partnership = AI infrastructure leader. $3.04T market cap = bedrock holding.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs, Inc.",
+      "theme": "edge_ai_silicon",
+      "verdict": "WATCHLIST",
+      "price": 194.74,
+      "high_52w": 262.9,
+      "drawdown_pct": -25.9,
+      "severity": "MODERATE",
+      "thesis": "DEMOTED: 151 insider sells, 0 buys in past 6 months. CEO sold $122M personally. Market cap $36B (large-cap, not mid-cap). Sequential growth slowing 92% YoY \u2192 6-10% Q/Q.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "theme": "mega_cap_ai",
+      "verdict": "WATCHLIST",
+      "price": 611.91,
+      "high_52w": 796.25,
+      "drawdown_pct": -23.2,
+      "severity": "MODERATE",
+      "thesis": "Down 25% from $800 high, forward P/E 18x \u2014 cheapest since early 2023. AI semiconductor division at $34B annualized. $115-135B capex on AI. Valuation reset overdone given fundamentals intact.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    }
+  ],
+  "stale_research": []
+}
