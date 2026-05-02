@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-05-01T03:37:13Z",
-  "quotes_updated": "2026-05-01T03:37:05Z",
+  "last_built": "2026-05-02T23:12:48Z",
+  "quotes_updated": "2026-05-01T04:11:54Z",
   "portfolio": {
     "total_value": 0,
     "core": [
@@ -38,6 +38,26 @@
   },
   "watchlist": {
     "all": [
+      {
+        "ticker": "NVDA",
+        "name": "NVIDIA Corporation",
+        "theme": "mega_cap_ai",
+        "status": "monitoring",
+        "thesis": "Best-in-class AI infrastructure \u2014 GPUs power every major AI training and inference workload. $5T market cap, guided +77% revenue growth Q1 FY2027. DoD AI contract. Near ATH at ~$198; at a 25%+ pullback becomes the highest-quality entry in the AI theme.",
+        "added": "2026-05-01",
+        "verdict": "WATCHLIST",
+        "buy_target": 160,
+        "current_price": 198.45,
+        "next_action": "WAIT \u2014 monitor May 20 earnings. Buy ONLY on 25%+ pullback to ~$160. 52w high gate active at $216 ATH.",
+        "research_file": null,
+        "last_researched": "2026-05-01",
+        "price": null,
+        "drawdown_from_high": null,
+        "cap_tier": "unknown",
+        "short_percent_float": null,
+        "short_ratio": null,
+        "high_proximity_warning": false
+      },
       {
         "ticker": "GOOGL",
         "name": "Alphabet Inc.",
@@ -271,6 +291,26 @@
     ],
     "by_verdict": {
       "WATCHLIST": [
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA Corporation",
+          "theme": "mega_cap_ai",
+          "status": "monitoring",
+          "thesis": "Best-in-class AI infrastructure \u2014 GPUs power every major AI training and inference workload. $5T market cap, guided +77% revenue growth Q1 FY2027. DoD AI contract. Near ATH at ~$198; at a 25%+ pullback becomes the highest-quality entry in the AI theme.",
+          "added": "2026-05-01",
+          "verdict": "WATCHLIST",
+          "buy_target": 160,
+          "current_price": 198.45,
+          "next_action": "WAIT \u2014 monitor May 20 earnings. Buy ONLY on 25%+ pullback to ~$160. 52w high gate active at $216 ATH.",
+          "research_file": null,
+          "last_researched": "2026-05-01",
+          "price": null,
+          "drawdown_from_high": null,
+          "cap_tier": "unknown",
+          "short_percent_float": null,
+          "short_ratio": null,
+          "high_proximity_warning": false
+        },
         {
           "ticker": "GOOGL",
           "name": "Alphabet Inc.",
@@ -509,6 +549,26 @@
     },
     "by_theme": {
       "mega_cap_ai": [
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA Corporation",
+          "theme": "mega_cap_ai",
+          "status": "monitoring",
+          "thesis": "Best-in-class AI infrastructure \u2014 GPUs power every major AI training and inference workload. $5T market cap, guided +77% revenue growth Q1 FY2027. DoD AI contract. Near ATH at ~$198; at a 25%+ pullback becomes the highest-quality entry in the AI theme.",
+          "added": "2026-05-01",
+          "verdict": "WATCHLIST",
+          "buy_target": 160,
+          "current_price": 198.45,
+          "next_action": "WAIT \u2014 monitor May 20 earnings. Buy ONLY on 25%+ pullback to ~$160. 52w high gate active at $216 ATH.",
+          "research_file": null,
+          "last_researched": "2026-05-01",
+          "price": null,
+          "drawdown_from_high": null,
+          "cap_tier": "unknown",
+          "short_percent_float": null,
+          "short_ratio": null,
+          "high_proximity_warning": false
+        },
         {
           "ticker": "GOOGL",
           "name": "Alphabet Inc.",
@@ -752,9 +812,9 @@
       ]
     },
     "counts": {
-      "total": 9,
+      "total": 10,
       "research_worthy": 2,
-      "watchlist": 6,
+      "watchlist": 7,
       "pass": 1,
       "red_flag": 0
     }
