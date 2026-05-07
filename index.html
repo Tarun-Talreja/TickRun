@@ -1488,10 +1488,13 @@ runIntro();
 
 // ── LIVE PRICES via Yahoo Finance v8 chart endpoint (no auth required) ──────
 const liveCache = {};
+// allorigins/raw is our most reliable free CORS proxy.
+// corsproxy.io became paid-only in 2026 (returns {"error":"..."} on free tier).
+// Order matters: try the proxy that actually works first.
 const PROXIES = [
-  u => `https://corsproxy.io/?${encodeURIComponent(u)}`,
   u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
-  u => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(u)}`,
+  u => `https://corsproxy.io/?${encodeURIComponent(u)}`,
+  u => `https://api.codetabs.com/v1/proxy/?quest=${encodeURIComponent(u)}`,
 ];
 
 async function fetchOneTicker(ticker){
@@ -1501,7 +1504,13 @@ async function fetchOneTicker(ticker){
     try {
       const res = await fetch(proxy(yahooUrl), { cache: 'no-store' });
       if (!res.ok) continue;
-      const data = await res.json();
+      const text = await res.text();
+      // Some proxies return HTML error pages or JSON error envelopes — bail before parsing
+      if (!text || text[0] !== '{') continue;
+      let data;
+      try { data = JSON.parse(text); } catch { continue; }
+      // corsproxy.io paywall returns { error: "..." } with HTTP 200
+      if (data.error) continue;
       const result = data?.chart?.result?.[0];
       if (!result) continue;
       const meta = result.meta || {};
@@ -1513,6 +1522,7 @@ async function fetchOneTicker(ticker){
       return { symbol: ticker, price, change, pct };
     } catch(e) { /* try next proxy */ }
   }
+  console.warn(`[live] All proxies failed for ${ticker}`);
   return null;
 }
 
