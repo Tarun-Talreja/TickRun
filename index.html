@@ -34,8 +34,100 @@ a { color: inherit; text-decoration: none; }
 .app {
   position: fixed; inset: 0;
   display: flex; flex-direction: column;
-  max-width: 600px; margin: 0 auto;
   overflow: hidden;
+}
+
+/* ── Desktop layout (≥900px): sidebar nav + wide content ── */
+@media (min-width: 900px) {
+  :root { --nav-h: 0px; }
+
+  .app {
+    flex-direction: row;
+  }
+
+  /* Sidebar replaces bottom nav */
+  .bottom-nav {
+    width: 220px;
+    height: 100%;
+    flex-direction: column;
+    border-top: none;
+    border-right: 1px solid var(--border);
+    justify-content: flex-start;
+    padding: 32px 0 24px;
+    gap: 4px;
+    flex-shrink: 0;
+  }
+  .bn-item {
+    flex: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 12px 20px;
+    gap: 12px;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    border-radius: 10px;
+    margin: 0 10px;
+    width: calc(100% - 20px);
+  }
+  .bn-item .bn-icon { font-size: 18px; }
+  .bn-badge {
+    position: static;
+    margin-left: auto;
+    top: auto; right: auto;
+  }
+  /* Sidebar header */
+  .bottom-nav::before {
+    content: 'TickRun';
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text0);
+    padding: 0 20px 20px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 12px;
+    width: 100%;
+  }
+
+  /* Content area fills the rest */
+  .screens-wrap {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .screen {
+    bottom: 0;
+    padding: 32px 40px;
+  }
+
+  /* Stock detail still full-height on desktop */
+  #screen-stock { bottom: 0; }
+
+  /* Drawer hidden on desktop */
+  .drawer-overlay, .side-drawer, .hamburger-btn { display: none !important; }
+
+  /* Home layout: 2-col grid for stat tiles + wider focus cards */
+  .stat-row { grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .stat-tile { padding: 16px 12px; }
+  .stat-tile-val { font-size: 32px; }
+
+  .focus-card { min-width: 240px; max-width: 280px; }
+
+  /* Watchlist: 2-col card grid */
+  .wl-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .wl-card { margin: 0; }
+
+  /* Signals: wider signal rows */
+  .sig-row { max-width: 700px; }
+
+  /* Home headline larger */
+  .home-headline { font-size: 28px; }
+  .home-hero { padding: 28px 0 20px; }
+
+  /* Screen header style on desktop */
+  .screen-header { padding-bottom: 24px; }
+  .sh-title { font-size: 20px; }
 }
 
 /* ── Screens ── */
@@ -368,7 +460,8 @@ a { color: inherit; text-decoration: none; }
     </div>
   </div>
 
-  <!-- Screens -->
+  <!-- Screens wrap (used for desktop flex layout) -->
+  <div class="screens-wrap" id="screensWrap">
   <div class="screen" id="screen-home">
     <div class="home-hero">
       <div class="home-hero-left">
@@ -422,7 +515,9 @@ a { color: inherit; text-decoration: none; }
     <div id="stockDetailContent"></div>
   </div>
 
-  <!-- Bottom nav -->
+  </div><!-- /screens-wrap -->
+
+  <!-- Bottom nav (mobile) / Sidebar (desktop) -->
   <nav class="bottom-nav" id="bottomNav">
     <button class="bn-item active" data-screen="home" onclick="navigateTo('home')">
       <span class="bn-icon">🏠</span>
