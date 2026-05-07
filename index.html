@@ -1326,10 +1326,11 @@ function renderResearch(data){
     .filter(s => s.last_researched && !staleTickers.has(s.ticker))
     .sort((a,b) => (b.last_researched||'').localeCompare(a.last_researched||''));
 
-  const card = (s, sub, accent) => {
+  const card = (s, sub, accent, expanded=false) => {
     const t = tc(s.theme);
     const v = vbadge(s.verdict);
     const accentBar = accent ? `style="border-left:3px solid ${accent}"` : '';
+    const price = s.current_price ?? s.price;
     return `<div class="rsearch-card s-anim" ${accentBar} onclick='openStock(${JSON.stringify(s).replace(/'/g,"&#39;")})'>
       <div class="rs-card-top">
         <span class="rs-dot" style="background:${t.color}"></span>
@@ -1339,10 +1340,28 @@ function renderResearch(data){
         </div>
         ${v}
       </div>
+      ${expanded ? `
+      <div class="rs-card-body">
+        ${s.thesis ? `
+          <div class="rs-block">
+            <div class="rs-block-label">THESIS</div>
+            <div class="rs-block-text">${esc(s.thesis)}</div>
+          </div>` : ''}
+        ${s.next_action ? `
+          <div class="rs-block">
+            <div class="rs-block-label" style="color:var(--amber)">NEXT ACTION</div>
+            <div class="rs-block-text" style="color:var(--text1)">${esc(s.next_action)}</div>
+          </div>` : ''}
+        <div class="rs-meta">
+          ${price ? `<span class="rs-meta-item">Price: <strong>${fp(price)}</strong></span>` : ''}
+          ${s.buy_target ? `<span class="rs-meta-item">Target: <strong style="color:var(--green)">${fp(s.buy_target)}</strong></span>` : ''}
+          ${s.last_researched ? `<span class="rs-meta-item">Researched: <strong>${esc(s.last_researched)}</strong></span>` : ''}
+        </div>
+      </div>` : ''}
     </div>`;
   };
 
-  const sect = (label, arr, empty, accent, subFn) => `
+  const sect = (label, arr, empty, accent, subFn, expanded=false) => `
     <div class="rs-section">
       <div class="rs-sec-head">
         <span class="rs-sec-label" ${accent?`style="color:${accent}"`:''}>${label}</span>
@@ -1350,7 +1369,7 @@ function renderResearch(data){
       </div>
       ${arr.length === 0
         ? `<div class="rs-empty">${empty}</div>`
-        : arr.map((s)=>card(s, subFn?subFn(s):label.toLowerCase(), accent)).join('')}
+        : arr.map((s)=>card(s, subFn?subFn(s):label.toLowerCase(), accent, expanded)).join('')}
     </div>`;
 
   let html = `
@@ -1363,8 +1382,11 @@ function renderResearch(data){
       ${sect('Needs Research', needs,    'All active candidates have research notes ✓')}
       ${sect('In Progress',    progress, 'Nothing in flight right now')}
       ${sect('Stale — Refresh Recommended', stale, 'No stale research', 'var(--amber)',
-             (s) => s._stale_days ? `${s._stale_days} days old · ${s._stale_action||'rerun research_ticker.py'}` : 'stale')}
-      ${sect('Completed',      done.slice(0,15), 'No completed research yet')}
+             (s) => s._stale_days ? `${s._stale_days} days old · ${s._stale_action||'rerun research_ticker.py'}` : 'stale',
+             true)}
+      ${sect('Completed', done, 'No completed research yet', null,
+             (s) => s.last_researched ? `Researched ${s.last_researched}` : '',
+             true)}
     </div>
 
     <style>
@@ -1381,6 +1403,12 @@ function renderResearch(data){
       .rs-card-tk { font-size: 13px; font-weight: 700; color: var(--text0); }
       .rs-card-nm { font-weight: 400; color: var(--text2); font-size: 12px; }
       .rs-card-sub { font-size: 10px; color: var(--text2); margin-top: 2px; text-transform: capitalize; }
+      .rs-card-body { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: 10px; }
+      .rs-block-label { font-size: 9px; font-weight: 700; color: var(--text2); letter-spacing: 0.08em; margin-bottom: 4px; }
+      .rs-block-text { font-size: 12px; color: var(--text1); line-height: 1.5; }
+      .rs-meta { display: flex; flex-wrap: wrap; gap: 12px; padding-top: 8px; border-top: 1px dashed var(--border); }
+      .rs-meta-item { font-size: 10px; color: var(--text2); }
+      .rs-meta-item strong { color: var(--text0); font-weight: 600; }
     </style>
   `;
 
