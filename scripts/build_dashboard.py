@@ -94,6 +94,11 @@ def _enrich_candidate(candidate: dict, quotes: dict, insider_signals: dict, hedg
 
         enriched.update({
             "price":               q.get("price"),
+            # Always overwrite current_price with the live yfinance value.
+            # watchlist.json may carry a stale current_price (or a buy_target accidentally
+            # set there during research). The frontend prefers current_price first, so
+            # this single field needs to be authoritative.
+            "current_price":       q.get("price"),
             "market_cap":          mcap,
             "cap_tier":            tier,
             "drawdown_from_high":  drawdown,
