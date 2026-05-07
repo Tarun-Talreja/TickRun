@@ -1310,15 +1310,27 @@ function renderPortfolio(data){
 // ── RENDER RESEARCH ───────────────────────────────────────────────────────────
 function renderResearch(data){
   const all = data.watchlist.all || [];
-  // Buckets: needs research, in progress, completed
+  const staleAlerts = (data.signals && data.signals.stale_research) || [];
+  const staleTickers = new Set(staleAlerts.map(s => s.ticker));
+
+  // Buckets: needs research, in progress, stale, completed
   const needs    = all.filter(s => !s.last_researched && s.verdict !== 'PASS');
   const progress = all.filter(s => s.status === 'researching' || s.status === 'pending');
-  const done     = all.filter(s => s.last_researched).sort((a,b) => (b.last_researched||'').localeCompare(a.last_researched||''));
+  // Stale = research older than ~90 days (from signals.stale_research join)
+  const stale    = all.filter(s => staleTickers.has(s.ticker)).map(s => {
+    const alert = staleAlerts.find(a => a.ticker === s.ticker);
+    return { ...s, _stale_days: alert ? alert.days_since : null, _stale_action: alert ? alert.action : null };
+  });
+  // Completed = has research and not stale
+  const done     = all
+    .filter(s => s.last_researched && !staleTickers.has(s.ticker))
+    .sort((a,b) => (b.last_researched||'').localeCompare(a.last_researched||''));
 
-  const card = (s, sub) => {
+  const card = (s, sub, accent) => {
     const t = tc(s.theme);
     const v = vbadge(s.verdict);
-    return `<div class="rsearch-card s-anim" onclick='openStock(${JSON.stringify(s).replace(/'/g,"&#39;")})'>
+    const accentBar = accent ? `style="border-left:3px solid ${accent}"` : '';
+    return `<div class="rsearch-card s-anim" ${accentBar} onclick='openStock(${JSON.stringify(s).replace(/'/g,"&#39;")})'>
       <div class="rs-card-top">
         <span class="rs-dot" style="background:${t.color}"></span>
         <div class="rs-card-info">
@@ -1330,15 +1342,15 @@ function renderResearch(data){
     </div>`;
   };
 
-  const sect = (label, arr, empty) => `
+  const sect = (label, arr, empty, accent, subFn) => `
     <div class="rs-section">
       <div class="rs-sec-head">
-        <span class="rs-sec-label">${label}</span>
+        <span class="rs-sec-label" ${accent?`style="color:${accent}"`:''}>${label}</span>
         <span class="rs-sec-count">${arr.length}</span>
       </div>
       ${arr.length === 0
         ? `<div class="rs-empty">${empty}</div>`
-        : arr.map((s,i)=>card(s, i===0?label.toLowerCase():'')).join('')}
+        : arr.map((s)=>card(s, subFn?subFn(s):label.toLowerCase(), accent)).join('')}
     </div>`;
 
   let html = `
@@ -1350,6 +1362,8 @@ function renderResearch(data){
 
       ${sect('Needs Research', needs,    'All active candidates have research notes ✓')}
       ${sect('In Progress',    progress, 'Nothing in flight right now')}
+      ${sect('Stale — Refresh Recommended', stale, 'No stale research', 'var(--amber)',
+             (s) => s._stale_days ? `${s._stale_days} days old · ${s._stale_action||'rerun research_ticker.py'}` : 'stale')}
       ${sect('Completed',      done.slice(0,15), 'No completed research yet')}
     </div>
 
