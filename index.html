@@ -808,6 +808,15 @@ function navigateTo(screen, data=null, pushHistory=true){
   if(screen==='stock' && data){
     selectedStock = data;
     renderStockDetail(data);
+    // Kick off an immediate live-price fetch for this single ticker — don't wait 60s
+    fetchOneTicker(data.ticker).then(q => {
+      if (q) {
+        liveCache[q.symbol] = { price: q.price, change: q.change, pct: q.pct };
+        selectedStock.current_price = q.price;
+        const el = document.querySelector('.detail-price');
+        if (el) el.textContent = '$' + q.price.toFixed(2);
+      }
+    }).catch(()=>{});
   }
 
   // Scroll to top
@@ -983,7 +992,7 @@ function renderWatchlist(data){
       const ddColor=dd&&Math.abs(dd)>=20?'var(--green)':dd&&Math.abs(dd)>=10?'var(--amber)':'var(--text2)';
       const t=tc(s.theme);
       const ac=acClass(s.next_action||'');
-      html+=`<div class="wl-card s-anim" style="animation-delay:${i*.04}s" onclick="openStock(${JSON.stringify(s).replace(/"/g,'&quot;')})">
+      html+=`<div class="wl-card s-anim" data-live="${esc(s.ticker)}" style="animation-delay:${i*.04}s" onclick="openStock(${JSON.stringify(s).replace(/"/g,'&quot;')})">
         <div class="wl-card-top">
           <div>
             <div style="display:flex;align-items:center;gap:7px;margin-bottom:3px">
@@ -994,7 +1003,7 @@ function renderWatchlist(data){
             <div class="wl-card-name">${esc(s.name)}</div>
           </div>
           <div class="wl-card-badges">
-            <span style="font-size:17px;font-weight:300;color:var(--text0)">${fp(price)}</span>
+            <span class="lp" style="font-size:17px;font-weight:300;color:var(--text0)">${fp(price)}</span>
             ${dd!=null?`<span style="font-size:10px;color:${ddColor};font-weight:500">${fpct(dd,1)} ATH</span>`:''}
           </div>
         </div>
@@ -1532,6 +1541,7 @@ async function fetchLivePrices(tickers){
 }
 
 function updateLivePricesInUI(){
+  // Patch every element with data-live="TICKER" — covers home rows + watchlist cards
   document.querySelectorAll('[data-live]').forEach(el=>{
     const ticker = el.dataset.live;
     const q = liveCache[ticker];
@@ -1550,10 +1560,13 @@ function updateLivePricesInUI(){
     setTimeout(()=>el.style.background='', 700);
   });
 
-  // Also update open stock detail if visible
+  // Also update open stock detail if visible — re-render fully so all references
+  // (price, % from ATH, metrics) stay consistent
   if(currentScreen==='stock' && selectedStock){
     const q = liveCache[selectedStock.ticker];
     if(q){
+      // Mutate selectedStock with the live price so the next render pass uses it
+      selectedStock.current_price = q.price;
       const el = document.querySelector('.detail-price');
       if(el) el.textContent = '$'+q.price.toFixed(2);
     }
