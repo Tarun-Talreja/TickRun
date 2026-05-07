@@ -1475,28 +1475,58 @@ runIntro();
   }
 })();
 
-// ── LIVE PRICES via Yahoo Finance (free, no API key) ─────────────────────────
+// ── LIVE PRICES via Yahoo Finance v8 chart endpoint (no auth required) ──────
 const liveCache = {};
+const PROXIES = [
+  u => `https://corsproxy.io/?${encodeURIComponent(u)}`,
+  u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
+  u => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(u)}`,
+];
+
+async function fetchOneTicker(ticker){
+  // v8/finance/chart works without crumb auth, unlike v7/finance/quote
+  const yahooUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${ticker}?interval=1d&range=1d`;
+  for (const proxy of PROXIES) {
+    try {
+      const res = await fetch(proxy(yahooUrl), { cache: 'no-store' });
+      if (!res.ok) continue;
+      const data = await res.json();
+      const result = data?.chart?.result?.[0];
+      if (!result) continue;
+      const meta = result.meta || {};
+      const price = meta.regularMarketPrice;
+      const prevClose = meta.chartPreviousClose ?? meta.previousClose;
+      if (price == null) continue;
+      const change = prevClose ? price - prevClose : 0;
+      const pct = prevClose ? (change / prevClose) * 100 : 0;
+      return { symbol: ticker, price, change, pct };
+    } catch(e) { /* try next proxy */ }
+  }
+  return null;
+}
 
 async function fetchLivePrices(tickers){
-  const symbols = tickers.join(',');
-  const yahooUrl = `https://query1.finance.yahoo.com/v7/finance/quote?symbols=${symbols}&fields=regularMarketPrice,regularMarketChange,regularMarketChangePercent`;
-  try{
-    // allorigins.win is a free CORS proxy — no key needed
-    const res = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(yahooUrl)}`);
-    if(!res.ok) throw new Error('proxy error');
-    const wrapper = await res.json();
-    const data = JSON.parse(wrapper.contents);
-    const quotes = data?.quoteResponse?.result || [];
-    quotes.forEach(q=>{
-      liveCache[q.symbol]={price:q.regularMarketPrice,change:q.regularMarketChange,pct:q.regularMarketChangePercent};
-    });
-    updateLivePricesInUI();
-    // Update header dot green = market data fresh
-    document.querySelector('.pulse').style.background='var(--green)';
-  } catch(e){
-    console.warn('Live prices unavailable:', e.message);
+  const dot = document.querySelector('.pulse');
+  if (dot) dot.style.background = 'var(--amber)'; // amber while fetching
+
+  const results = await Promise.all(tickers.map(fetchOneTicker));
+  let okCount = 0;
+  results.forEach(q => {
+    if (q) {
+      liveCache[q.symbol] = { price: q.price, change: q.change, pct: q.pct };
+      okCount++;
+    }
+  });
+  updateLivePricesInUI();
+
+  if (dot) {
+    if (okCount === tickers.length) dot.style.background = 'var(--green)';
+    else if (okCount > 0)            dot.style.background = 'var(--amber)';
+    else                              dot.style.background = 'var(--red)';
+    dot.title = `${okCount}/${tickers.length} live · last ${new Date().toLocaleTimeString()}`;
   }
+
+  if (okCount === 0) console.warn('All live price proxies failed');
 }
 
 function updateLivePricesInUI(){
