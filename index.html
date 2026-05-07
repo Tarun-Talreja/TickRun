@@ -1032,7 +1032,9 @@ function openStock(s){
 }
 
 function renderStockDetail(s){
-  const price = s.current_price ?? s.price;
+  // Prefer live price from Yahoo cache (most recent) over snapshot from quotes_cache.json
+  const liveQ = liveCache[s.ticker];
+  const price = (liveQ && liveQ.price != null) ? liveQ.price : (s.current_price ?? s.price);
   const dd = s.drawdown_from_high;
   const t = tc(s.theme);
   const ac = acClass(s.next_action||'');
