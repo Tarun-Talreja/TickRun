@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="fg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"></stop>
+      <stop offset="100%" stop-color="#3ecf8e"></stop>
+    </linearGradient>
+  </defs>
+  
+  <rect width="32" height="32" rx="6" fill="#111418"></rect>
+  
+  <polygon points="16,3 24,7.5 24,16.5 16,21 8,16.5 8,7.5" fill="none" stroke="url(#fg)" stroke-width="1.5" opacity="0.6"></polygon>
+  
+  <polyline points="10,14 14,19 22,9" fill="none" stroke="url(#fg)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></polyline>
+  
+  <text x="16" y="29" font-family="&#39;IBM Plex Mono&#39;,monospace" font-size="6" font-weight="600" text-anchor="middle" letter-spacing="1" fill="#06b6d4">TJ</text>
+</svg>
