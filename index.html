@@ -1430,9 +1430,11 @@ function renderResearch(data){
 runIntro();
 
 (async()=>{
-  const URL='https://raw.githubusercontent.com/Tarun-Talreja/TickRun/main/output/dashboard.json';
+  // Cache-bust by minute — ensures we never see >60s-old dashboard.json from GitHub Pages CDN
+  const minute = Math.floor(Date.now() / 60000);
+  const URL='https://raw.githubusercontent.com/Tarun-Talreja/TickRun/main/output/dashboard.json?t='+minute;
   try{
-    const res=await fetch(URL);
+    const res=await fetch(URL, { cache: 'no-store' });
     if(!res.ok)throw new Error('HTTP '+res.status);
     DB=await res.json();
 
@@ -1461,11 +1463,27 @@ runIntro();
     $('dn-watchlist').textContent=wlCount;
     $('dn-watchlist').style.display=wlCount>0?'flex':'none';
 
-    // Fetch live prices for all watchlist tickers
+    // Fetch live prices for all watchlist tickers — kick off immediately, don't wait
     const tickers = DB.watchlist.all.map(s=>s.ticker).filter(Boolean);
     fetchLivePrices(tickers);
-    // Refresh every 60 seconds
-    setInterval(()=>fetchLivePrices(tickers), 60000);
+    // Refresh every 30 seconds (was 60) for snappier feel
+    setInterval(()=>fetchLivePrices(tickers), 30000);
+    // Also re-fetch dashboard.json every 5 minutes to pick up GitHub Action commits
+    setInterval(async () => {
+      try {
+        const m = Math.floor(Date.now() / 60000);
+        const r = await fetch('https://raw.githubusercontent.com/Tarun-Talreja/TickRun/main/output/dashboard.json?t='+m, { cache:'no-store' });
+        if (r.ok) {
+          const fresh = await r.json();
+          if (fresh.last_built !== DB.last_built) {
+            DB = fresh;
+            console.log('[refresh] dashboard.json updated, re-rendering');
+            renderHome(DB); renderWatchlist(DB); renderSignals(DB); renderPortfolio(DB); renderResearch(DB);
+            updateLivePricesInUI(); // re-apply live cache to fresh DOM
+          }
+        }
+      } catch(e){}
+    }, 5 * 60 * 1000);
 
     // Show app after intro
     setTimeout(()=>{
