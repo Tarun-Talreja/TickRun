@@ -1307,6 +1307,72 @@ function renderPortfolio(data){
   $('screen-portfolio').innerHTML = html;
 }
 
+// ── RENDER RESEARCH ───────────────────────────────────────────────────────────
+function renderResearch(data){
+  const all = data.watchlist.all || [];
+  // Buckets: needs research, in progress, completed
+  const needs    = all.filter(s => !s.last_researched && s.verdict !== 'PASS');
+  const progress = all.filter(s => s.status === 'researching' || s.status === 'pending');
+  const done     = all.filter(s => s.last_researched).sort((a,b) => (b.last_researched||'').localeCompare(a.last_researched||''));
+
+  const card = (s, sub) => {
+    const t = tc(s.theme);
+    const v = vbadge(s.verdict);
+    return `<div class="rsearch-card s-anim" onclick='openStock(${JSON.stringify(s).replace(/'/g,"&#39;")})'>
+      <div class="rs-card-top">
+        <span class="rs-dot" style="background:${t.color}"></span>
+        <div class="rs-card-info">
+          <div class="rs-card-tk">${esc(s.ticker)} <span class="rs-card-nm">· ${esc(s.name||'')}</span></div>
+          <div class="rs-card-sub">${sub}</div>
+        </div>
+        ${v}
+      </div>
+    </div>`;
+  };
+
+  const sect = (label, arr, empty) => `
+    <div class="rs-section">
+      <div class="rs-sec-head">
+        <span class="rs-sec-label">${label}</span>
+        <span class="rs-sec-count">${arr.length}</span>
+      </div>
+      ${arr.length === 0
+        ? `<div class="rs-empty">${empty}</div>`
+        : arr.map((s,i)=>card(s, i===0?label.toLowerCase():'')).join('')}
+    </div>`;
+
+  let html = `
+    <div class="screen-pad">
+      <div class="screen-title-block s-anim">
+        <div class="screen-title">Research</div>
+        <div class="screen-sub">Track research progress across the watchlist</div>
+      </div>
+
+      ${sect('Needs Research', needs,    'All active candidates have research notes ✓')}
+      ${sect('In Progress',    progress, 'Nothing in flight right now')}
+      ${sect('Completed',      done.slice(0,15), 'No completed research yet')}
+    </div>
+
+    <style>
+      .rs-section { margin-bottom: 24px; }
+      .rs-sec-head { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; padding: 0 4px; }
+      .rs-sec-label { font-size: 11px; font-weight: 700; color: var(--text1); letter-spacing: 0.06em; text-transform: uppercase; }
+      .rs-sec-count { font-size: 10px; color: var(--text2); padding: 1px 7px; background: var(--bg2); border-radius: 8px; }
+      .rs-empty { font-size: 12px; color: var(--text2); padding: 12px; background: var(--bg1); border: 1px dashed var(--border); border-radius: 10px; text-align: center; }
+      .rsearch-card { padding: 12px; background: var(--bg1); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 8px; cursor: pointer; transition: border-color .15s, transform .15s; }
+      .rsearch-card:hover { border-color: var(--border-h, #3a3a3a); transform: translateY(-1px); }
+      .rs-card-top { display: flex; align-items: center; gap: 10px; }
+      .rs-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+      .rs-card-info { flex: 1; min-width: 0; }
+      .rs-card-tk { font-size: 13px; font-weight: 700; color: var(--text0); }
+      .rs-card-nm { font-weight: 400; color: var(--text2); font-size: 12px; }
+      .rs-card-sub { font-size: 10px; color: var(--text2); margin-top: 2px; text-transform: capitalize; }
+    </style>
+  `;
+
+  $('screen-research').innerHTML = html;
+}
+
 // ── MAIN ──────────────────────────────────────────────────────────────────────
 runIntro();
 
