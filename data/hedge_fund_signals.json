@@ -1,0 +1,907 @@
+{
+  "last_updated": "2026-05-15T15:53:38Z",
+  "first_run": true,
+  "tickers": {
+    "NVDA": {
+      "ticker": "NVDA",
+      "status": "ok",
+      "top_holders": [
+        {
+          "holder": "Blackrock Inc.",
+          "shares": 1925533174,
+          "pct_out": null,
+          "value_usd": 438828822314.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Vanguard Capital Management LLC",
+          "shares": 1538550382,
+          "pct_out": null,
+          "value_usd": 350635481808.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "State Street Corporation",
+          "shares": 991480489,
+          "pct_out": null,
+          "value_usd": 225958306618.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "FMR, LLC",
+          "shares": 971063283,
+          "pct_out": null,
+          "value_usd": 221305227365.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Geode Capital Management, LLC",
+          "shares": 588803093,
+          "pct_out": null,
+          "value_usd": 134188167394.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Vanguard Portfolio Management LLC",
+          "shares": 510126721,
+          "pct_out": null,
+          "value_usd": 116257829898.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "JPMORGAN CHASE & CO",
+          "shares": 447798884,
+          "pct_out": null,
+          "value_usd": 102053321933.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Price (T.Rowe) Associates Inc",
+          "shares": 373187926,
+          "pct_out": null,
+          "value_usd": 85049491891.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Morgan Stanley",
+          "shares": 323733984,
+          "pct_out": null,
+          "value_usd": 73778943338.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Northern Trust Corporation",
+          "shares": 252741836,
+          "pct_out": null,
+          "value_usd": 57599839742.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        }
+      ],
+      "conviction_holders": [],
+      "fetched_at": "2026-05-15T15:53:33Z",
+      "new_positions": []
+    },
+    "GOOGL": {
+      "ticker": "GOOGL",
+      "status": "ok",
+      "top_holders": [
+        {
+          "holder": "Blackrock Inc.",
+          "shares": 446980992,
+          "pct_out": null,
+          "value_usd": 176780982336.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Vanguard Capital Management LLC",
+          "shares": 378261579,
+          "pct_out": null,
+          "value_usd": 149602454494.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "FMR, LLC",
+          "shares": 231778122,
+          "pct_out": null,
+          "value_usd": 91668247251.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "State Street Corporation",
+          "shares": 228296955,
+          "pct_out": null,
+          "value_usd": 90291445702.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Geode Capital Management, LLC",
+          "shares": 146193037,
+          "pct_out": null,
+          "value_usd": 57819346133.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Morgan Stanley",
+          "shares": 121794366,
+          "pct_out": null,
+          "value_usd": 48169671753.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Vanguard Portfolio Management LLC",
+          "shares": 96536714,
+          "pct_out": null,
+          "value_usd": 38180270387.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Price (T.Rowe) Associates Inc",
+          "shares": 83963036,
+          "pct_out": null,
+          "value_usd": 33207380738.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "JPMORGAN CHASE & CO",
+          "shares": 70925551,
+          "pct_out": null,
+          "value_usd": 28051055420.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Bank of America Corporation",
+          "shares": 69108183,
+          "pct_out": null,
+          "value_usd": 27332286376.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        }
+      ],
+      "conviction_holders": [],
+      "fetched_at": "2026-05-15T15:53:33Z",
+      "new_positions": []
+    },
+    "MSFT": {
+      "ticker": "MSFT",
+      "status": "ok",
+      "top_holders": [
+        {
+          "holder": "Blackrock Inc.",
+          "shares": 593328571,
+          "pct_out": null,
+          "value_usd": 249610367522.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Vanguard Capital Management LLC",
+          "shares": 482558086,
+          "pct_out": null,
+          "value_usd": 203009777524.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "State Street Corporation",
+          "shares": 306150608,
+          "pct_out": null,
+          "value_usd": 128796032274.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "FMR, LLC",
+          "shares": 200948745,
+          "pct_out": null,
+          "value_usd": 84538133749.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Geode Capital Management, LLC",
+          "shares": 182618400,
+          "pct_out": null,
+          "value_usd": 76826649125.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Vanguard Portfolio Management LLC",
+          "shares": 167490848,
+          "pct_out": null,
+          "value_usd": 70462563526.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "JPMORGAN CHASE & CO",
+          "shares": 127128999,
+          "pct_out": null,
+          "value_usd": 53482535165.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Price (T.Rowe) Associates Inc",
+          "shares": 125709121,
+          "pct_out": null,
+          "value_usd": 52885199579.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Morgan Stanley",
+          "shares": 121220561,
+          "pct_out": null,
+          "value_usd": 50996884797.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Capital Research Global Investors",
+          "shares": 96093061,
+          "pct_out": null,
+          "value_usd": 40425871001.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        }
+      ],
+      "conviction_holders": [],
+      "fetched_at": "2026-05-15T15:53:34Z",
+      "new_positions": []
+    },
+    "META": {
+      "ticker": "META",
+      "status": "ok",
+      "top_holders": [
+        {
+          "holder": "Blackrock Inc.",
+          "shares": 168843283,
+          "pct_out": null,
+          "value_usd": 103339684258.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Vanguard Capital Management LLC",
+          "shares": 142138157,
+          "pct_out": null,
+          "value_usd": 86994945871.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "FMR, LLC",
+          "shares": 122341612,
+          "pct_out": null,
+          "value_usd": 74878569825.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "State Street Corporation",
+          "shares": 90841345,
+          "pct_out": null,
+          "value_usd": 55598989448.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Geode Capital Management, LLC",
+          "shares": 52806712,
+          "pct_out": null,
+          "value_usd": 32320083143.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "JPMORGAN CHASE & CO",
+          "shares": 50180811,
+          "pct_out": null,
+          "value_usd": 30712913610.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Capital World Investors",
+          "shares": 41055422,
+          "pct_out": null,
+          "value_usd": 25127765056.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Vanguard Portfolio Management LLC",
+          "shares": 37856635,
+          "pct_out": null,
+          "value_usd": 23169963521.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Morgan Stanley",
+          "shares": 37553102,
+          "pct_out": null,
+          "value_usd": 22984187671.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Price (T.Rowe) Associates Inc",
+          "shares": 35112531,
+          "pct_out": null,
+          "value_usd": 21490448435.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        }
+      ],
+      "conviction_holders": [],
+      "fetched_at": "2026-05-15T15:53:34Z",
+      "new_positions": []
+    },
+    "UBER": {
+      "ticker": "UBER",
+      "status": "ok",
+      "top_holders": [
+        {
+          "holder": "Blackrock Inc.",
+          "shares": 150987293,
+          "pct_out": null,
+          "value_usd": 11232699155.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Vanguard Capital Management LLC",
+          "shares": 133712560,
+          "pct_out": null,
+          "value_usd": 9947545452.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Capital Research Global Investors",
+          "shares": 116339639,
+          "pct_out": null,
+          "value_usd": 8655087052.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "State Street Corporation",
+          "shares": 90908749,
+          "pct_out": null,
+          "value_usd": 6763156076.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Morgan Stanley",
+          "shares": 80196924,
+          "pct_out": null,
+          "value_usd": 5966249891.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Public Investment Fund",
+          "shares": 72840541,
+          "pct_out": null,
+          "value_usd": 5418971803.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Geode Capital Management, LLC",
+          "shares": 47936203,
+          "pct_out": null,
+          "value_usd": 3566213661.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Vanguard Portfolio Management LLC",
+          "shares": 38112387,
+          "pct_out": null,
+          "value_usd": 2835370902.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "FMR, LLC",
+          "shares": 31563923,
+          "pct_out": null,
+          "value_usd": 2348197945.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Pershing Square Capital Management, L.P.",
+          "shares": 30207734,
+          "pct_out": null,
+          "value_usd": 2247304269.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": true,
+          "manager": "Bill Ackman"
+        }
+      ],
+      "conviction_holders": [
+        {
+          "holder": "Pershing Square Capital Management, L.P.",
+          "shares": 30207734,
+          "pct_out": null,
+          "value_usd": 2247304269.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": true,
+          "manager": "Bill Ackman"
+        }
+      ],
+      "fetched_at": "2026-05-15T15:53:35Z",
+      "new_positions": []
+    },
+    "POWL": {
+      "ticker": "POWL",
+      "status": "ok",
+      "top_holders": [
+        {
+          "holder": "Blackrock Inc.",
+          "shares": 4218219,
+          "pct_out": null,
+          "value_usd": 1211430324.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "First Trust Advisors LP",
+          "shares": 1549653,
+          "pct_out": null,
+          "value_usd": 445044848.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Vanguard Capital Management LLC",
+          "shares": 1273827,
+          "pct_out": null,
+          "value_usd": 365830379.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Vanguard Portfolio Management LLC",
+          "shares": 1150797,
+          "pct_out": null,
+          "value_usd": 330497393.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "State Street Corporation",
+          "shares": 1057455,
+          "pct_out": null,
+          "value_usd": 303690504.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Voss Capital, LP",
+          "shares": 1050000,
+          "pct_out": null,
+          "value_usd": 301549502.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Dimensional Fund Advisors LP",
+          "shares": 970785,
+          "pct_out": null,
+          "value_usd": 278799746.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Fisher Asset Management, LLC",
+          "shares": 770745,
+          "pct_out": null,
+          "value_usd": 221350258.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Invesco Ltd.",
+          "shares": 725424,
+          "pct_out": null,
+          "value_usd": 208334520.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Geode Capital Management, LLC",
+          "shares": 717282,
+          "pct_out": null,
+          "value_usd": 205996219.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        }
+      ],
+      "conviction_holders": [],
+      "fetched_at": "2026-05-15T15:53:36Z",
+      "new_positions": []
+    },
+    "ALAB": {
+      "ticker": "ALAB",
+      "status": "ok",
+      "top_holders": [
+        {
+          "holder": "FMR, LLC",
+          "shares": 25334941,
+          "pct_out": null,
+          "value_usd": 5782193476.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Blackrock Inc.",
+          "shares": 11449769,
+          "pct_out": null,
+          "value_usd": 2613180729.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Vanguard Portfolio Management LLC",
+          "shares": 7309778,
+          "pct_out": null,
+          "value_usd": 1668310601.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Vanguard Capital Management LLC",
+          "shares": 6340732,
+          "pct_out": null,
+          "value_usd": 1447145237.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "State Street Corporation",
+          "shares": 3099809,
+          "pct_out": null,
+          "value_usd": 707469394.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Shaw D.E. & Co., Inc.",
+          "shares": 2452380,
+          "pct_out": null,
+          "value_usd": 559706676.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Geode Capital Management, LLC",
+          "shares": 2429078,
+          "pct_out": null,
+          "value_usd": 554388461.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Alliancebernstein L.P.",
+          "shares": 2177795,
+          "pct_out": null,
+          "value_usd": 497038143.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Morgan Stanley",
+          "shares": 1934467,
+          "pct_out": null,
+          "value_usd": 441503395.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Fred Alger Management, LLC",
+          "shares": 1934688,
+          "pct_out": null,
+          "value_usd": 441553833.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        }
+      ],
+      "conviction_holders": [],
+      "fetched_at": "2026-05-15T15:53:36Z",
+      "new_positions": []
+    },
+    "ONTO": {
+      "ticker": "ONTO",
+      "status": "ok",
+      "top_holders": [
+        {
+          "holder": "Blackrock Inc.",
+          "shares": 5534265,
+          "pct_out": null,
+          "value_usd": 1504406878.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Vanguard Portfolio Management LLC",
+          "shares": 2743019,
+          "pct_out": null,
+          "value_usd": 745648546.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Vanguard Capital Management LLC",
+          "shares": 2222852,
+          "pct_out": null,
+          "value_usd": 604248954.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "State Street Corporation",
+          "shares": 1459278,
+          "pct_out": null,
+          "value_usd": 396682822.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Wellington Management Group, LLP",
+          "shares": 1218548,
+          "pct_out": null,
+          "value_usd": 331243985.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Geode Capital Management, LLC",
+          "shares": 1127532,
+          "pct_out": null,
+          "value_usd": 306502651.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Paradigm Capital Management",
+          "shares": 1102438,
+          "pct_out": null,
+          "value_usd": 299681224.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "William Blair Investment Management, LLC",
+          "shares": 964213,
+          "pct_out": null,
+          "value_usd": 262106832.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Voya Investment Management LLC",
+          "shares": 917155,
+          "pct_out": null,
+          "value_usd": 249314821.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Thrivent Financial For Lutherans",
+          "shares": 739292,
+          "pct_out": null,
+          "value_usd": 200965434.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        }
+      ],
+      "conviction_holders": [],
+      "fetched_at": "2026-05-15T15:53:37Z",
+      "new_positions": []
+    },
+    "BWXT": {
+      "ticker": "BWXT",
+      "status": "ok",
+      "top_holders": [
+        {
+          "holder": "Blackrock Inc.",
+          "shares": 12487506,
+          "pct_out": null,
+          "value_usd": 2547888332.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Vanguard Portfolio Management LLC",
+          "shares": 4891237,
+          "pct_out": null,
+          "value_usd": 997983559.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Vanguard Capital Management LLC",
+          "shares": 4094093,
+          "pct_out": null,
+          "value_usd": 835338280.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "State Street Corporation",
+          "shares": 3598185,
+          "pct_out": null,
+          "value_usd": 734155689.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "JPMORGAN CHASE & CO",
+          "shares": 2572811,
+          "pct_out": null,
+          "value_usd": 524943501.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Invesco Ltd.",
+          "shares": 2522532,
+          "pct_out": null,
+          "value_usd": 514684825.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "T. Rowe Price Investment Management, Inc.",
+          "shares": 1914049,
+          "pct_out": null,
+          "value_usd": 390532994.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Franklin Resources, Inc.",
+          "shares": 1901316,
+          "pct_out": null,
+          "value_usd": 387935017.0,
+          "date_reported": "2026-03-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Geode Capital Management, LLC",
+          "shares": 1857716,
+          "pct_out": null,
+          "value_usd": 379039090.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        },
+        {
+          "holder": "Alkeon Capital Management LLC",
+          "shares": 1580848,
+          "pct_out": null,
+          "value_usd": 322548327.0,
+          "date_reported": "2025-12-31 00:00:00",
+          "is_conviction_fund": false,
+          "manager": null
+        }
+      ],
+      "conviction_holders": [],
+      "fetched_at": "2026-05-15T15:53:37Z",
+      "new_positions": []
+    }
+  }
+}
