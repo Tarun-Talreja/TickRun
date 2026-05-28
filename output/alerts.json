@@ -1,16 +1,28 @@
 {
-  "generated_at": "2026-05-28T04:28:55Z",
+  "generated_at": "2026-05-28T04:40:41Z",
   "pullback_alerts": [
     {
       "ticker": "NOW",
       "name": "ServiceNow, Inc.",
-      "theme": "uncategorized",
+      "theme": "cybersecurity",
       "verdict": "WATCHLIST",
       "price": 102.12,
       "high_52w": 211.478,
       "drawdown_pct": -51.7,
       "severity": "STRONG",
-      "thesis": "",
+      "thesis": "Enterprise AI workflow platform (Now Assist). 22.1% revenue growth, 76.6% gross margin. DATA QUALITY WARNING: yfinance reports $102 price vs actual market price ~$1,000. The -51.7% drawdown signal is unreliable. Do not act on any alerts for this ticker until price data is verified.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "RDDT",
+      "name": "Reddit, Inc.",
+      "theme": "platform_network",
+      "verdict": "RESEARCH-WORTHY",
+      "price": 154.19,
+      "high_52w": 282.95,
+      "drawdown_pct": -45.5,
+      "severity": "STRONG",
+      "thesis": "World's largest forum network. Revenue grew 69% YoY with 91.4% gross margin and 27.6% op margin. $0.56B FCF. 17.4x forward PE \u2014 cheapest in this batch relative to growth (PEG <0.3). AI data licensing (Google $60M/yr, OpenAI deal) is a new high-margin revenue layer. -45.5% from $282 ATH at $154 makes the entry compelling. International expansion (historically English-only) is untapped.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -23,6 +35,18 @@
       "drawdown_pct": -25.7,
       "severity": "MODERATE",
       "thesis": "Premier AI/cloud platform. Currently $423.88 vs $539.83 ATH (Oct 2025) = -21.5% from peak \u2014 rare entry. Azure + Copilot + OpenAI partnership = AI infrastructure leader. $3.04T market cap = bedrock holding.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "AAOI",
+      "name": "Applied Optoelectronics, Inc.",
+      "theme": "networking_infra",
+      "verdict": "WATCHLIST",
+      "price": 179.83,
+      "high_52w": 233.67,
+      "drawdown_pct": -23.0,
+      "severity": "MODERATE",
+      "thesis": "Makes 100G/400G/800G optical transceiver modules for AWS and Microsoft AI datacenter builds. Revenue grew 51.4% YoY as hyperscalers upgrade interconnects. 29.6% gross margin (improving), -8.6% op margin (still unprofitable). $14.4B market cap on $0.5B revenue = 28x P/S. -23% from $233 ATH. Path to profitability is the key question.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {

@@ -19,6 +19,10 @@ ASML
 TSM
 NOW
 AMD
+NBIS
+LITE
+AAOI
+RDDT
 
 ## Index benchmarks (always include)
 SPY
