@@ -56,13 +56,14 @@ def _enrich_holding(holding: dict, quotes: dict) -> dict:
 
     return {
         **holding,
-        "current_price": price,
-        "market_value":  market_value,
-        "pnl":           pnl,
-        "pnl_pct":       pnl_pct,
+        "current_price":  price,
+        "market_value":   market_value,
+        "pnl":            pnl,
+        "pnl_pct":        pnl_pct,
+        "pct_change_1d":  q.get("pct_change_1d"),
         "drawdown_from_high": q.get("drawdown_from_high"),
-        "pe":            q.get("pe"),
-        "forward_pe":    q.get("forward_pe"),
+        "pe":             q.get("pe"),
+        "forward_pe":     q.get("forward_pe"),
     }
 
 
@@ -99,6 +100,7 @@ def _enrich_candidate(candidate: dict, quotes: dict, insider_signals: dict, hedg
             # set there during research). The frontend prefers current_price first, so
             # this single field needs to be authoritative.
             "current_price":       q.get("price"),
+            "pct_change_1d":       q.get("pct_change_1d"),
             "market_cap":          mcap,
             "cap_tier":            tier,
             "drawdown_from_high":  drawdown,

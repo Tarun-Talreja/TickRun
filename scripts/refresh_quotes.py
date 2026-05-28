@@ -78,6 +78,9 @@ def _fetch_with_retry(ticker: str) -> dict:
     low_52w  = float(info.get("fiftyTwoWeekLow")  or (hist["Close"].min() if not hist.empty else 0))
     drawdown_from_high = round((price - high_52w) / high_52w * 100, 1) if high_52w else None
 
+    prev_close = float(info.get("regularMarketPreviousClose") or info.get("previousClose") or 0)
+    pct_change_1d = round((price - prev_close) / prev_close * 100, 2) if prev_close else None
+
     raw_yield = info.get("dividendYield")
     div_yield_pct = round(raw_yield * 100, 2) if raw_yield and raw_yield < 1 else raw_yield
 
@@ -85,6 +88,7 @@ def _fetch_with_retry(ticker: str) -> dict:
         "ticker":               ticker,
         "name":                 info.get("longName") or info.get("shortName", ticker),
         "price":                price,
+        "pct_change_1d":        pct_change_1d,
         "market_cap":           info.get("marketCap"),
         "sector":               info.get("sector"),
         "industry":             info.get("industry"),
