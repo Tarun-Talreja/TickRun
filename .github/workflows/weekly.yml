@@ -44,8 +44,7 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Auto: weekly dashboard rebuild"
-          file_pattern: |
-            data/quotes_cache.json
+          file_pattern: >-
             data/insider_signals.json
             output/dashboard.json
             output/alerts.json
