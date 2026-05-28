@@ -26,6 +26,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Sync watchlist.md → data/watchlist.json
+        run: python scripts/sync_watchlist.py
+
       - name: Refresh all quotes
         run: python scripts/refresh_quotes.py
 
@@ -45,6 +48,7 @@ jobs:
         with:
           commit_message: "Auto: weekly dashboard rebuild"
           file_pattern: >-
+            data/watchlist.json
             data/insider_signals.json
             output/dashboard.json
             output/alerts.json

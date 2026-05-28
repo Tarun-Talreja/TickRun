@@ -30,6 +30,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Sync watchlist.md → data/watchlist.json
+        run: python scripts/sync_watchlist.py
+
       - name: Refresh quotes (portfolio + watchlist only)
         run: python scripts/refresh_quotes.py
 
@@ -46,6 +49,7 @@ jobs:
         with:
           commit_message: "Auto: daily quote refresh"
           file_pattern: >-
+            data/watchlist.json
             output/dashboard.json
             output/alerts.json
             output/earnings_calendar.json

@@ -23,5 +23,4 @@ AMD
 ## Index benchmarks (always include)
 SPY
 QQQ
-VIX
 ^TNX
