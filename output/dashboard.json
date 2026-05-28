@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-05-28T04:27:41Z",
-  "quotes_updated": "2026-05-28T04:27:37Z",
+  "last_built": "2026-05-28T04:28:55Z",
+  "quotes_updated": "2026-05-28T04:28:55Z",
   "portfolio": {
     "total_value": 0,
     "core": [
@@ -505,26 +505,6 @@
         "high_proximity_note": "Only 0.5% from 52-week high \u2014 entry timing risk"
       },
       {
-        "ticker": "VIX",
-        "name": "VIX",
-        "theme": "uncategorized",
-        "status": "monitoring",
-        "thesis": "",
-        "added": "2026-05-28",
-        "verdict": "WATCHLIST",
-        "buy_target": null,
-        "current_price": null,
-        "next_action": "Run research_ticker.py to generate thesis and verdict.",
-        "research_file": null,
-        "last_researched": null,
-        "price": null,
-        "drawdown_from_high": null,
-        "cap_tier": "unknown",
-        "short_percent_float": null,
-        "short_ratio": null,
-        "high_proximity_warning": false
-      },
-      {
         "ticker": "^TNX",
         "name": "^TNX",
         "theme": "uncategorized",
@@ -990,26 +970,6 @@
           "short_ratio": null,
           "high_proximity_warning": true,
           "high_proximity_note": "Only 0.5% from 52-week high \u2014 entry timing risk"
-        },
-        {
-          "ticker": "VIX",
-          "name": "VIX",
-          "theme": "uncategorized",
-          "status": "monitoring",
-          "thesis": "",
-          "added": "2026-05-28",
-          "verdict": "WATCHLIST",
-          "buy_target": null,
-          "current_price": null,
-          "next_action": "Run research_ticker.py to generate thesis and verdict.",
-          "research_file": null,
-          "last_researched": null,
-          "price": null,
-          "drawdown_from_high": null,
-          "cap_tier": "unknown",
-          "short_percent_float": null,
-          "short_ratio": null,
-          "high_proximity_warning": false
         },
         {
           "ticker": "^TNX",
@@ -1542,26 +1502,6 @@
           "high_proximity_note": "Only 0.5% from 52-week high \u2014 entry timing risk"
         },
         {
-          "ticker": "VIX",
-          "name": "VIX",
-          "theme": "uncategorized",
-          "status": "monitoring",
-          "thesis": "",
-          "added": "2026-05-28",
-          "verdict": "WATCHLIST",
-          "buy_target": null,
-          "current_price": null,
-          "next_action": "Run research_ticker.py to generate thesis and verdict.",
-          "research_file": null,
-          "last_researched": null,
-          "price": null,
-          "drawdown_from_high": null,
-          "cap_tier": "unknown",
-          "short_percent_float": null,
-          "short_ratio": null,
-          "high_proximity_warning": false
-        },
-        {
           "ticker": "^TNX",
           "name": "^TNX",
           "theme": "uncategorized",
@@ -1591,9 +1531,9 @@
       ]
     },
     "counts": {
-      "total": 19,
+      "total": 18,
       "research_worthy": 1,
-      "watchlist": 18,
+      "watchlist": 17,
       "pass": 0,
       "red_flag": 0
     }
