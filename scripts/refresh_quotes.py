@@ -6,9 +6,6 @@ Reads data/portfolio.json and data/watchlist.json, fetches current
 price/fundamentals for each ticker via yfinance, and writes the results
 to data/quotes_cache.json.
 
-Runs in ~30 seconds for a 30-ticker watchlist (vs 25+ minutes for the
-old 906-ticker universe screener).
-
 Usage:
     python3 scripts/refresh_quotes.py
 
@@ -29,12 +26,21 @@ except ImportError:
     print("Missing dependency: pip install yfinance")
     sys.exit(1)
 
+try:
+    from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
+except ImportError:
+    print("Missing dependency: pip install tenacity")
+    sys.exit(1)
+
 SCRIPT_DIR     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PORTFOLIO_PATH = os.path.join(SCRIPT_DIR, "data", "portfolio.json")
 WATCHLIST_PATH = os.path.join(SCRIPT_DIR, "data", "watchlist.json")
 OUTPUT_PATH    = os.path.join(SCRIPT_DIR, "data", "quotes_cache.json")
 
-MAX_WORKERS = 8
+# 3 workers avoids Yahoo Finance rate-limit throttling
+MAX_WORKERS = 3
+# Fail the workflow if more than half the tickers error out
+FAILURE_THRESHOLD = 0.5
 
 
 def _collect_tickers() -> list[str]:
@@ -54,56 +60,67 @@ def _collect_tickers() -> list[str]:
     return sorted(tickers)
 
 
+@retry(
+    retry=retry_if_exception_type(Exception),
+    stop=stop_after_attempt(3),
+    wait=wait_exponential(multiplier=1, min=2, max=15),
+    reraise=True,
+)
+def _fetch_with_retry(ticker: str) -> dict:
+    t = yf.Ticker(ticker)
+    info = t.info or {}
+    if not info or not info.get("regularMarketPrice") and not info.get("currentPrice"):
+        raise ValueError(f"{ticker}: empty info from yfinance")
+
+    hist = t.history(period="1y")
+    price    = float(info.get("currentPrice") or info.get("regularMarketPrice") or 0)
+    high_52w = float(info.get("fiftyTwoWeekHigh") or (hist["Close"].max() if not hist.empty else 0))
+    low_52w  = float(info.get("fiftyTwoWeekLow")  or (hist["Close"].min() if not hist.empty else 0))
+    drawdown_from_high = round((price - high_52w) / high_52w * 100, 1) if high_52w else None
+
+    raw_yield = info.get("dividendYield")
+    div_yield_pct = round(raw_yield * 100, 2) if raw_yield and raw_yield < 1 else raw_yield
+
+    return {
+        "ticker":               ticker,
+        "name":                 info.get("longName") or info.get("shortName", ticker),
+        "price":                price,
+        "market_cap":           info.get("marketCap"),
+        "sector":               info.get("sector"),
+        "industry":             info.get("industry"),
+        "high_52w":             high_52w,
+        "low_52w":              low_52w,
+        "drawdown_from_high":   drawdown_from_high,
+        "pe":                   info.get("trailingPE"),
+        "forward_pe":           info.get("forwardPE"),
+        "ev_ebitda":            info.get("enterpriseToEbitda"),
+        "ev_sales":             info.get("enterpriseToRevenue"),
+        "revenue_ttm":          info.get("totalRevenue"),
+        "revenue_growth":       round(info.get("revenueGrowth", 0) * 100, 1) if info.get("revenueGrowth") else None,
+        "gross_margin":         round(info.get("grossMargins", 0) * 100, 1) if info.get("grossMargins") else None,
+        "op_margin":            round(info.get("operatingMargins", 0) * 100, 1) if info.get("operatingMargins") else None,
+        "fcf_ttm":              info.get("freeCashflow"),
+        "total_cash":           info.get("totalCash"),
+        "total_debt":           info.get("totalDebt"),
+        "div_yield_pct":        div_yield_pct,
+        "short_percent_float":  round(info.get("shortPercentOfFloat", 0) * 100, 2) if info.get("shortPercentOfFloat") else None,
+        "short_ratio":          round(info.get("shortRatio", 0), 1) if info.get("shortRatio") else None,
+        "next_earnings":        info.get("earningsTimestamp"),
+        "shares_outstanding":   info.get("sharesOutstanding"),
+        "fetched_at":           datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "status":               "ok",
+        "errors":               [],
+    }
+
+
 def _fetch_one(ticker: str) -> dict:
     try:
-        t = yf.Ticker(ticker)
-        info = t.info or {}
-
-        hist = t.history(period="1y")
-        price = float(info.get("currentPrice") or info.get("regularMarketPrice") or 0)
-        high_52w = float(info.get("fiftyTwoWeekHigh") or (hist["Close"].max() if not hist.empty else 0))
-        low_52w  = float(info.get("fiftyTwoWeekLow")  or (hist["Close"].min() if not hist.empty else 0))
-        drawdown_from_high = round((price - high_52w) / high_52w * 100, 1) if high_52w else None
-
-        # Units fix: yfinance returns div yield as decimal (0.019 = 1.9%)
-        raw_yield = info.get("dividendYield")
-        div_yield_pct = round(raw_yield * 100, 2) if raw_yield and raw_yield < 1 else raw_yield
-
-        return {
-            "ticker":             ticker,
-            "name":               info.get("longName") or info.get("shortName", ticker),
-            "price":              price,
-            "market_cap":         info.get("marketCap"),
-            "sector":             info.get("sector"),
-            "industry":           info.get("industry"),
-            "high_52w":           high_52w,
-            "low_52w":            low_52w,
-            "drawdown_from_high": drawdown_from_high,
-            "pe":                 info.get("trailingPE"),
-            "forward_pe":         info.get("forwardPE"),
-            "ev_ebitda":          info.get("enterpriseToEbitda"),
-            "ev_sales":           info.get("enterpriseToRevenue"),
-            "revenue_ttm":        info.get("totalRevenue"),
-            "revenue_growth":     round(info.get("revenueGrowth", 0) * 100, 1) if info.get("revenueGrowth") else None,
-            "gross_margin":       round(info.get("grossMargins", 0) * 100, 1) if info.get("grossMargins") else None,
-            "op_margin":          round(info.get("operatingMargins", 0) * 100, 1) if info.get("operatingMargins") else None,
-            "fcf_ttm":            info.get("freeCashflow"),
-            "total_cash":         info.get("totalCash"),
-            "total_debt":         info.get("totalDebt"),
-            "div_yield_pct":        div_yield_pct,
-            "short_percent_float":  round(info.get("shortPercentOfFloat", 0) * 100, 2) if info.get("shortPercentOfFloat") else None,
-            "short_ratio":          round(info.get("shortRatio", 0), 1) if info.get("shortRatio") else None,
-            "next_earnings":        info.get("earningsTimestamp"),
-            "shares_outstanding":   info.get("sharesOutstanding"),
-            "fetched_at":         datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "status":             "ok",
-            "errors":             [],
-        }
+        return _fetch_with_retry(ticker)
     except Exception as exc:
         return {
-            "ticker":   ticker,
-            "status":   "error",
-            "errors":   [str(exc)],
+            "ticker":     ticker,
+            "status":     "error",
+            "errors":     [str(exc)],
             "fetched_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         }
 
@@ -128,7 +145,7 @@ def main():
             print(f"  [{i:2d}/{len(tickers)}] {ticker} {status}")
             if rec["status"] != "ok":
                 errors.append(ticker)
-            time.sleep(0.1)
+            time.sleep(0.3)
 
     output = {
         "last_updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -137,9 +154,14 @@ def main():
     with open(OUTPUT_PATH, "w") as f:
         json.dump(output, f, indent=2)
 
-    print(f"\n✅ Wrote quotes for {len(results) - len(errors)} tickers → {OUTPUT_PATH}")
+    ok_count = len(results) - len(errors)
+    print(f"\n✅ Wrote quotes for {ok_count}/{len(tickers)} tickers → {OUTPUT_PATH}")
     if errors:
         print(f"⚠ Errors on: {', '.join(errors)}")
+
+    if len(errors) / len(tickers) > FAILURE_THRESHOLD:
+        print(f"\nERROR: {len(errors)}/{len(tickers)} tickers failed — exceeds {FAILURE_THRESHOLD*100:.0f}% threshold.")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
