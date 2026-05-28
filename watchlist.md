@@ -24,6 +24,14 @@ LITE
 AAOI
 RDDT
 
+## Energy / AI power theme
+CEG
+VST
+VRT
+GEV
+ETN
+OKLO
+
 ## Index benchmarks (always include)
 SPY
 QQQ

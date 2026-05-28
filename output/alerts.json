@@ -1,6 +1,18 @@
 {
-  "generated_at": "2026-05-28T04:40:41Z",
+  "generated_at": "2026-05-28T04:45:16Z",
   "pullback_alerts": [
+    {
+      "ticker": "OKLO",
+      "name": "Oklo Inc.",
+      "theme": "nuclear_smr",
+      "verdict": "WATCHLIST",
+      "price": 67.82,
+      "high_52w": 193.84,
+      "drawdown_pct": -65.0,
+      "severity": "STRONG",
+      "thesis": "Sam Altman-backed advanced nuclear startup. Building Aurora microreactors (1-50MW). DOE site use permit secured at Idaho National Lab. Pre-revenue \u2014 pure speculation on the long-term SMR thesis. -65% from $193 ATH at $67. If advanced nuclear succeeds, Oklo is the pure-play but it's a 5-10 year story with binary risk.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
     {
       "ticker": "NOW",
       "name": "ServiceNow, Inc.",
@@ -23,6 +35,30 @@
       "drawdown_pct": -45.5,
       "severity": "STRONG",
       "thesis": "World's largest forum network. Revenue grew 69% YoY with 91.4% gross margin and 27.6% op margin. $0.56B FCF. 17.4x forward PE \u2014 cheapest in this batch relative to growth (PEG <0.3). AI data licensing (Google $60M/yr, OpenAI deal) is a new high-margin revenue layer. -45.5% from $282 ATH at $154 makes the entry compelling. International expansion (historically English-only) is untapped.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy Corporation",
+      "theme": "nuclear_smr",
+      "verdict": "RESEARCH-WORTHY",
+      "price": 288.68,
+      "high_52w": 412.7,
+      "drawdown_pct": -30.1,
+      "severity": "MODERATE",
+      "thesis": "Largest US nuclear operator (21 reactors). Signed 20-year PPA with Microsoft to restart Three Mile Island for AI datacenter power \u2014 the blueprint every hyperscaler is now copying. 64% revenue growth, 21.2x forward PE, -30% from ATH. Google/Oracle/Meta in active nuclear PPA negotiations. CEG is the only investable pure-play: you cannot build new baseload nuclear in under 10 years.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "VST",
+      "name": "Vistra Corp.",
+      "theme": "nuclear_smr",
+      "verdict": "RESEARCH-WORTHY",
+      "price": 160.15,
+      "high_52w": 219.82,
+      "drawdown_pct": -27.1,
+      "severity": "MODERATE",
+      "thesis": "Nuclear + gas power generator. 14.6x forward PE for 43% growth \u2014 cheapest AI power play in the market. Just closed Energy Harbor acquisition adding 4 nuclear plants. Illinois nuclear plants (Clinton, Quad Cities) are in direct crosshairs of AI datacenter power demand. Wholesale power prices in Texas and PJM rising structurally. -27% from $219 ATH.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
