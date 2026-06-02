@@ -1,28 +1,16 @@
 {
-  "generated_at": "2026-06-02T18:07:35Z",
+  "generated_at": "2026-06-02T21:33:50Z",
   "pullback_alerts": [
     {
       "ticker": "OKLO",
       "name": "Oklo Inc.",
       "theme": "nuclear_smr",
       "verdict": "WATCHLIST",
-      "price": 72.15,
+      "price": 73.47,
       "high_52w": 193.84,
-      "drawdown_pct": -62.8,
+      "drawdown_pct": -62.1,
       "severity": "STRONG",
       "thesis": "Sam Altman-backed advanced nuclear startup. Building Aurora microreactors (1-50MW). DOE site use permit secured at Idaho National Lab. Pre-revenue \u2014 pure speculation on the long-term SMR thesis. -65% from $193 ATH at $67. If advanced nuclear succeeds, Oklo is the pure-play but it's a 5-10 year story with binary risk.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "theme": "cybersecurity",
-      "verdict": "WATCHLIST",
-      "price": 126.27,
-      "high_52w": 211.478,
-      "drawdown_pct": -40.3,
-      "severity": "STRONG",
-      "thesis": "Enterprise AI workflow platform (Now Assist). 22.1% revenue growth, 76.6% gross margin. DATA QUALITY WARNING: yfinance reports $102 price vs actual market price ~$1,000. The -51.7% drawdown signal is unreliable. Do not act on any alerts for this ticker until price data is verified.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -30,11 +18,23 @@
       "name": "Reddit, Inc.",
       "theme": "platform_network",
       "verdict": "RESEARCH-WORTHY",
-      "price": 169.46,
+      "price": 169.13,
       "high_52w": 282.95,
-      "drawdown_pct": -40.1,
+      "drawdown_pct": -40.2,
       "severity": "STRONG",
       "thesis": "World's largest forum network. Revenue grew 69% YoY with 91.4% gross margin and 27.6% op margin. $0.56B FCF. 17.4x forward PE \u2014 cheapest in this batch relative to growth (PEG <0.3). AI data licensing (Google $60M/yr, OpenAI deal) is a new high-margin revenue layer. -45.5% from $282 ATH at $154 makes the entry compelling. International expansion (historically English-only) is untapped.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "theme": "cybersecurity",
+      "verdict": "WATCHLIST",
+      "price": 127.65,
+      "high_52w": 211.478,
+      "drawdown_pct": -39.6,
+      "severity": "STRONG",
+      "thesis": "Enterprise AI workflow platform (Now Assist). 22.1% revenue growth, 76.6% gross margin. DATA QUALITY WARNING: yfinance reports $102 price vs actual market price ~$1,000. The -51.7% drawdown signal is unreliable. Do not act on any alerts for this ticker until price data is verified.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -42,9 +42,9 @@
       "name": "Constellation Energy Corporation",
       "theme": "nuclear_smr",
       "verdict": "RESEARCH-WORTHY",
-      "price": 274.395,
+      "price": 272.65,
       "high_52w": 412.7,
-      "drawdown_pct": -33.5,
+      "drawdown_pct": -33.9,
       "severity": "MODERATE",
       "thesis": "Largest US nuclear operator (21 reactors). Signed 20-year PPA with Microsoft to restart Three Mile Island for AI datacenter power \u2014 the blueprint every hyperscaler is now copying. 64% revenue growth, 21.2x forward PE, -30% from ATH. Google/Oracle/Meta in active nuclear PPA negotiations. CEG is the only investable pure-play: you cannot build new baseload nuclear in under 10 years.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -54,9 +54,9 @@
       "name": "Vistra Corp.",
       "theme": "nuclear_smr",
       "verdict": "RESEARCH-WORTHY",
-      "price": 158.71,
+      "price": 157.97,
       "high_52w": 219.82,
-      "drawdown_pct": -27.8,
+      "drawdown_pct": -28.1,
       "severity": "MODERATE",
       "thesis": "Nuclear + gas power generator. 14.6x forward PE for 43% growth \u2014 cheapest AI power play in the market. Just closed Energy Harbor acquisition adding 4 nuclear plants. Illinois nuclear plants (Clinton, Quad Cities) are in direct crosshairs of AI datacenter power demand. Wholesale power prices in Texas and PJM rising structurally. -27% from $219 ATH.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -66,9 +66,9 @@
       "name": "Meta Platforms, Inc.",
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "price": 605.34,
+      "price": 597.63,
       "high_52w": 796.25,
-      "drawdown_pct": -24.0,
+      "drawdown_pct": -24.9,
       "severity": "MODERATE",
       "thesis": "Down 25% from $800 high, forward P/E 18x \u2014 cheapest since early 2023. AI semiconductor division at $34B annualized. $115-135B capex on AI. Valuation reset overdone given fundamentals intact.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -78,9 +78,9 @@
       "name": "Microsoft Corporation",
       "theme": "mega_cap_ai",
       "verdict": "RESEARCH-WORTHY",
-      "price": 442.6951,
+      "price": 441.31,
       "high_52w": 555.45,
-      "drawdown_pct": -20.3,
+      "drawdown_pct": -20.5,
       "severity": "MODERATE",
       "thesis": "Premier AI/cloud platform. Currently $423.88 vs $539.83 ATH (Oct 2025) = -21.5% from peak \u2014 rare entry. Azure + Copilot + OpenAI partnership = AI infrastructure leader. $3.04T market cap = bedrock holding.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
