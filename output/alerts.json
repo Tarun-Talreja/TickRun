@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-04T23:05:26Z",
+  "generated_at": "2026-06-05T16:32:36Z",
   "pullback_alerts": [
     {
       "ticker": "OKLO",
       "name": "Oklo Inc.",
       "theme": "nuclear_smr",
       "verdict": "WATCHLIST",
-      "price": 65.39,
+      "price": 58.78,
       "high_52w": 193.84,
-      "drawdown_pct": -66.3,
+      "drawdown_pct": -69.7,
       "severity": "STRONG",
       "thesis": "Sam Altman-backed advanced nuclear startup. Building Aurora microreactors (1-50MW). DOE site use permit secured at Idaho National Lab. Pre-revenue \u2014 pure speculation on the long-term SMR thesis. -65% from $193 ATH at $67. If advanced nuclear succeeds, Oklo is the pure-play but it's a 5-10 year story with binary risk.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -18,23 +18,11 @@
       "name": "ServiceNow, Inc.",
       "theme": "cybersecurity",
       "verdict": "WATCHLIST",
-      "price": 119.36,
+      "price": 113.39,
       "high_52w": 211.478,
-      "drawdown_pct": -43.6,
+      "drawdown_pct": -46.4,
       "severity": "STRONG",
       "thesis": "Enterprise AI workflow platform (Now Assist). 22.1% revenue growth, 76.6% gross margin. DATA QUALITY WARNING: yfinance reports $102 price vs actual market price ~$1,000. The -51.7% drawdown signal is unreliable. Do not act on any alerts for this ticker until price data is verified.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "CEG",
-      "name": "Constellation Energy Corporation",
-      "theme": "nuclear_smr",
-      "verdict": "RESEARCH-WORTHY",
-      "price": 264.59,
-      "high_52w": 412.7,
-      "drawdown_pct": -35.9,
-      "severity": "STRONG",
-      "thesis": "Largest US nuclear operator (21 reactors). Signed 20-year PPA with Microsoft to restart Three Mile Island for AI datacenter power \u2014 the blueprint every hyperscaler is now copying. 64% revenue growth, 21.2x forward PE, -30% from ATH. Google/Oracle/Meta in active nuclear PPA negotiations. CEG is the only investable pure-play: you cannot build new baseload nuclear in under 10 years.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -42,11 +30,23 @@
       "name": "Reddit, Inc.",
       "theme": "platform_network",
       "verdict": "RESEARCH-WORTHY",
-      "price": 183.91,
+      "price": 171.14,
       "high_52w": 282.95,
-      "drawdown_pct": -35.0,
+      "drawdown_pct": -39.5,
       "severity": "STRONG",
       "thesis": "World's largest forum network. Revenue grew 69% YoY with 91.4% gross margin and 27.6% op margin. $0.56B FCF. 17.4x forward PE \u2014 cheapest in this batch relative to growth (PEG <0.3). AI data licensing (Google $60M/yr, OpenAI deal) is a new high-margin revenue layer. -45.5% from $282 ATH at $154 makes the entry compelling. International expansion (historically English-only) is untapped.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy Corporation",
+      "theme": "nuclear_smr",
+      "verdict": "RESEARCH-WORTHY",
+      "price": 256.65,
+      "high_52w": 412.7,
+      "drawdown_pct": -37.8,
+      "severity": "STRONG",
+      "thesis": "Largest US nuclear operator (21 reactors). Signed 20-year PPA with Microsoft to restart Three Mile Island for AI datacenter power \u2014 the blueprint every hyperscaler is now copying. 64% revenue growth, 21.2x forward PE, -30% from ATH. Google/Oracle/Meta in active nuclear PPA negotiations. CEG is the only investable pure-play: you cannot build new baseload nuclear in under 10 years.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -54,9 +54,9 @@
       "name": "Vistra Corp.",
       "theme": "nuclear_smr",
       "verdict": "RESEARCH-WORTHY",
-      "price": 153.7,
+      "price": 148.94,
       "high_52w": 219.82,
-      "drawdown_pct": -30.1,
+      "drawdown_pct": -32.2,
       "severity": "MODERATE",
       "thesis": "Nuclear + gas power generator. 14.6x forward PE for 43% growth \u2014 cheapest AI power play in the market. Just closed Energy Harbor acquisition adding 4 nuclear plants. Illinois nuclear plants (Clinton, Quad Cities) are in direct crosshairs of AI datacenter power demand. Wholesale power prices in Texas and PJM rising structurally. -27% from $219 ATH.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -66,9 +66,9 @@
       "name": "Microsoft Corporation",
       "theme": "mega_cap_ai",
       "verdict": "RESEARCH-WORTHY",
-      "price": 428.05,
+      "price": 419.445,
       "high_52w": 555.45,
-      "drawdown_pct": -22.9,
+      "drawdown_pct": -24.5,
       "severity": "MODERATE",
       "thesis": "Premier AI/cloud platform. Currently $423.88 vs $539.83 ATH (Oct 2025) = -21.5% from peak \u2014 rare entry. Azure + Copilot + OpenAI partnership = AI infrastructure leader. $3.04T market cap = bedrock holding.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -78,11 +78,35 @@
       "name": "Meta Platforms, Inc.",
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "price": 627.57,
+      "price": 609.5,
       "high_52w": 796.25,
-      "drawdown_pct": -21.2,
+      "drawdown_pct": -23.5,
       "severity": "MODERATE",
       "thesis": "Down 25% from $800 high, forward P/E 18x \u2014 cheapest since early 2023. AI semiconductor division at $34B annualized. $115-135B capex on AI. Valuation reset overdone given fundamentals intact.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "theme": "edge_ai_silicon",
+      "verdict": "RESEARCH-WORTHY",
+      "price": 393.14,
+      "high_52w": 495.0,
+      "drawdown_pct": -20.6,
+      "severity": "MODERATE",
+      "thesis": "Second-largest AI chip company by revenue. Designs custom XPU accelerators for Google (TPU) and Meta (MTIA) \u2014 both committed to $1B+ AVGO roadmaps through 2027. VMware integration completing, op margin should expand from 45% to 55%+. Networking silicon (Tomahawk switches) is a winner-take-most market for AI cluster fabric. 29.5% revenue growth, 23x forward PE.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "GEV",
+      "name": "GE Vernova Inc.",
+      "theme": "power_grid",
+      "verdict": "WATCHLIST",
+      "price": 943.02,
+      "high_52w": 1181.95,
+      "drawdown_pct": -20.2,
+      "severity": "MODERATE",
+      "thesis": "Makes HA-class gas turbines (most efficient in existence), wind, and grid equipment. Hyperscalers ordering GE turbines to build dedicated AI datacenter power plants. One of only 3 companies globally that can make utility-scale gas turbines. $9.32B FCF. Grid equipment (transformers, switchgear) sold out through 2027. 42.1x forward PE, -12.7% from $1,181 ATH.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     }
   ],
