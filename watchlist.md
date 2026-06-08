@@ -23,6 +23,10 @@ NBIS
 LITE
 AAOI
 RDDT
+MU
+MRVL
+IBM
+COHR
 
 ## Energy / AI power theme
 CEG

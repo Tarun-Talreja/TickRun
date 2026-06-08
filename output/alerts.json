@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T02:57:40Z",
+  "generated_at": "2026-06-08T03:06:33Z",
   "pullback_alerts": [
     {
       "ticker": "OKLO",
@@ -131,6 +131,18 @@
       "drawdown_pct": -20.9,
       "severity": "MODERATE",
       "thesis": "Makes power and cooling infrastructure for AI datacenters \u2014 UPS systems, power distribution units, liquid cooling. AI GPU racks run at 40-100kW vs 5kW traditional; liquid cooling is mandatory at that density. Vertiv is the sole at-scale provider. Backlog +100% YoY. $1.96B FCF. Microsoft, Google, Meta cited as sole-source supplier. 36.2x forward PE, -15.8% from $379 ATH.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "theme": "edge_ai_silicon",
+      "verdict": "RESEARCH-WORTHY",
+      "price": 864.01,
+      "high_52w": 1089.29,
+      "drawdown_pct": -20.7,
+      "severity": "MODERATE",
+      "thesis": "Only US-based HBM3E manufacturer \u2014 every NVIDIA H100/H200/B200 GPU requires High Bandwidth Memory stacked on the die. Samsung and SK Hynix dominate HBM but Micron has a geopolitical moat as the only American supplier. 196% revenue growth YoY (coming off cyclical trough), 8.2x forward PE. DATA QUALITY WARNING: yfinance shows $864 price \u2014 verify on Fidelity before acting. Memory is cyclical; this growth rate will moderate but AI demand provides a structural floor.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
