@@ -35,7 +35,7 @@ jobs:
 
       - name: Run daily LLM research (NVIDIA NIM, free)
         env:
-          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API }}
         run: python scripts/research_batch.py --max 6
 
       - name: Check SEC filings
