@@ -43,7 +43,7 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # NVIDIA NIM settings
 NVIDIA_BASE_URL = "https://integrate.api.nvidia.com/v1"
-NVIDIA_MODEL    = "meta/llama-3.1-405b-instruct"   # Best free model for financial reasoning
+NVIDIA_MODEL    = "nvidia/llama-3.1-nemotron-ultra-253b-v1"   # 253B reasoning flagship — best free heavy model
 
 # Anthropic fallback settings
 ANTHROPIC_MODEL = "claude-opus-4-7"
