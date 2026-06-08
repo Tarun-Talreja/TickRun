@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-08T20:32:21Z",
-  "universe": "AAPL,JPM,COST,WMT,KO,HD,ORCL,CRM,ADBE,TXN,ISRG,ABT,PG,PEP,MCD,ACN,LIN,HON",
-  "scanned": 18,
-  "qualified": 16,
+  "generated_at": "2026-06-08T20:35:16Z",
+  "universe": "sp500",
+  "scanned": 52,
+  "qualified": 48,
   "discovered": [
     {
       "ticker": "ADBE",
@@ -26,6 +26,102 @@
       "drawdown_pct": -41.9
     },
     {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sector": "Technology",
+      "score": 68.6,
+      "quality": 32.0,
+      "value": 18.3,
+      "growth": 7.0,
+      "health": 11.4,
+      "passes_screens": [
+        "Quality",
+        "GARP"
+      ],
+      "market_cap": 83568287744,
+      "price": 305.51,
+      "forward_pe": 11.175594,
+      "rev_growth": 0.104,
+      "roe": 0.22496,
+      "drawdown_pct": -62.5
+    },
+    {
+      "ticker": "ADI",
+      "name": "Analog Devices, Inc.",
+      "sector": "Technology",
+      "score": 66.9,
+      "quality": 26.9,
+      "value": 7.4,
+      "growth": 20,
+      "health": 12.7,
+      "passes_screens": [
+        "GARP"
+      ],
+      "market_cap": 196729585664,
+      "price": 403.89,
+      "forward_pe": 27.339132,
+      "rev_growth": 0.372,
+      "roe": 0.09639,
+      "drawdown_pct": -8.1
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "sector": "Technology",
+      "score": 66.1,
+      "quality": 33.3,
+      "value": 2.3,
+      "growth": 17.5,
+      "health": 12.9,
+      "passes_screens": [
+        "Quality"
+      ],
+      "market_cap": 405747793920,
+      "price": 324.45,
+      "forward_pe": 40.850735,
+      "rev_growth": 0.238,
+      "roe": 0.66762,
+      "drawdown_pct": -6.3
+    },
+    {
+      "ticker": "ANET",
+      "name": "Arista Networks, Inc.",
+      "sector": "Technology",
+      "score": 65.8,
+      "quality": 35,
+      "value": 1.7,
+      "growth": 18.7,
+      "health": 10.5,
+      "passes_screens": [
+        "Quality"
+      ],
+      "market_cap": 196934090752,
+      "price": 156.4,
+      "forward_pe": 35.14883,
+      "rev_growth": 0.351,
+      "roe": 0.31520998,
+      "drawdown_pct": -13.0
+    },
+    {
+      "ticker": "VRTX",
+      "name": "Vertex Pharmaceuticals Incorporated",
+      "sector": "Healthcare",
+      "score": 65.6,
+      "quality": 31.7,
+      "value": 8.3,
+      "growth": 11.1,
+      "health": 14.4,
+      "passes_screens": [
+        "Quality"
+      ],
+      "market_cap": 112425648128,
+      "price": 442.96,
+      "forward_pe": 20.629906,
+      "rev_growth": 0.078,
+      "roe": 0.24197,
+      "drawdown_pct": -12.8
+    },
+    {
       "ticker": "TXN",
       "name": "Texas Instruments Incorporated",
       "sector": "Technology",
@@ -44,6 +140,44 @@
       "rev_growth": 0.186,
       "roe": 0.32347,
       "drawdown_pct": -12.3
+    },
+    {
+      "ticker": "QCOM",
+      "name": "QUALCOMM Incorporated",
+      "sector": "Technology",
+      "score": 63.5,
+      "quality": 31.2,
+      "value": 12.6,
+      "growth": 8,
+      "health": 11.6,
+      "passes_screens": [
+        "Quality"
+      ],
+      "market_cap": 229529583616,
+      "price": 217.77,
+      "forward_pe": 20.414993,
+      "rev_growth": -0.035,
+      "roe": 0.36083,
+      "drawdown_pct": -16.2
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "sector": "Technology",
+      "score": 62.6,
+      "quality": 32.4,
+      "value": 4.4,
+      "growth": 12.6,
+      "health": 13.2,
+      "passes_screens": [
+        "Quality"
+      ],
+      "market_cap": 390763020288,
+      "price": 492.17,
+      "forward_pe": 30.437834,
+      "rev_growth": 0.114,
+      "roe": 0.39692003,
+      "drawdown_pct": -3.2
     },
     {
       "ticker": "CRM",
@@ -66,6 +200,44 @@
       "drawdown_pct": -34.0
     },
     {
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
+      "sector": "Technology",
+      "score": 58.8,
+      "quality": 34.2,
+      "value": 0,
+      "growth": 15.7,
+      "health": 9.0,
+      "passes_screens": [
+        "Quality"
+      ],
+      "market_cap": 104798019584,
+      "price": 143.04,
+      "forward_pe": 41.752407,
+      "rev_growth": 0.201,
+      "roe": 1.32392,
+      "drawdown_pct": -4.0
+    },
+    {
+      "ticker": "WDAY",
+      "name": "Workday, Inc.",
+      "sector": "Technology",
+      "score": 58.2,
+      "quality": 22.4,
+      "value": 13.8,
+      "growth": 13.4,
+      "health": 8.6,
+      "passes_screens": [
+        "GARP"
+      ],
+      "market_cap": 35504906240,
+      "price": 143.76,
+      "forward_pe": 11.373238,
+      "rev_growth": 0.135,
+      "roe": 0.10858,
+      "drawdown_pct": -44.1
+    },
+    {
       "ticker": "PEP",
       "name": "PepsiCo, Inc.",
       "sector": "Consumer Defensive",
@@ -83,26 +255,6 @@
       "rev_growth": 0.085,
       "roe": 0.43879002,
       "drawdown_pct": -18.0
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Technology",
-      "score": 57.8,
-      "quality": 23.4,
-      "value": 18.5,
-      "growth": 4.4,
-      "health": 11.5,
-      "passes_screens": [
-        "Magic Formula",
-        "Dividend Quality"
-      ],
-      "market_cap": 107350343680,
-      "price": 174.43,
-      "forward_pe": 11.723218,
-      "rev_growth": 0.083,
-      "roe": 0.24763,
-      "drawdown_pct": -45.8
     },
     {
       "ticker": "KO",
@@ -141,64 +293,6 @@
       "rev_growth": 0.23,
       "roe": 0.17232999,
       "drawdown_pct": -30.7
-    },
-    {
-      "ticker": "PG",
-      "name": "The Procter & Gamble Company",
-      "sector": "Consumer Defensive",
-      "score": 51.5,
-      "quality": 30.8,
-      "value": 9.1,
-      "growth": 4.5,
-      "health": 7.1,
-      "passes_screens": [
-        "Quality",
-        "Dividend Quality"
-      ],
-      "market_cap": 337879728128,
-      "price": 145.1,
-      "forward_pe": 20.477373,
-      "rev_growth": 0.074,
-      "roe": 0.31112,
-      "drawdown_pct": -13.2
-    },
-    {
-      "ticker": "ABT",
-      "name": "Abbott Laboratories",
-      "sector": "Healthcare",
-      "score": 48.6,
-      "quality": 22.4,
-      "value": 13.8,
-      "growth": 3.1,
-      "health": 9.3,
-      "passes_screens": [
-        "Dividend Quality"
-      ],
-      "market_cap": 157634084864,
-      "price": 90.5,
-      "forward_pe": 14.929509,
-      "rev_growth": 0.078,
-      "roe": 0.123339996,
-      "drawdown_pct": -34.9
-    },
-    {
-      "ticker": "LIN",
-      "name": "Linde plc",
-      "sector": "Basic Materials",
-      "score": 47.4,
-      "quality": 26.9,
-      "value": 6.0,
-      "growth": 6.9,
-      "health": 7.5,
-      "passes_screens": [
-        "Quality"
-      ],
-      "market_cap": 232061353984,
-      "price": 501.92,
-      "forward_pe": 25.465248,
-      "rev_growth": 0.082,
-      "roe": 0.18229,
-      "drawdown_pct": -3.7
     }
   ]
 }
