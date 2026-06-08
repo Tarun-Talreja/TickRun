@@ -54,7 +54,7 @@ NVIDIA_MODEL = NVIDIA_MODEL_CHAIN[0]   # may be overridden by --model
 # Anthropic fallback settings
 ANTHROPIC_MODEL = "claude-opus-4-7"
 
-MAX_TOKENS = 1500
+MAX_TOKENS = 4000   # 8-section structured prompt needs room to reach the verdict (section 8)
 
 VERDICT_STRINGS = ["RESEARCH-WORTHY", "WATCHLIST", "PASS", "RED FLAG"]
 
