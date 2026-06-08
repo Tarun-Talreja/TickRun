@@ -57,6 +57,10 @@ jobs:
         run: python scripts/move_explainer.py
         continue-on-error: true
 
+      - name: Data sanity check
+        run: python scripts/data_sanity.py
+        continue-on-error: true
+
       - name: Assemble dashboard.json
         run: python scripts/build_dashboard.py
 
@@ -69,6 +73,7 @@ jobs:
             data/news_cache.json
             data/movers.json
             data/price_snapshot.json
+            data/data_quality.json
             output/dashboard.json
             output/alerts.json
             output/earnings_calendar.json

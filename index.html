@@ -268,6 +268,7 @@ html,body{
 .mover-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:12px 14px}
 .mover-pct{font-size:15px;font-weight:700}
 .mover-reason{font-size:13px;line-height:1.4;color:var(--text0);margin-top:6px}
+.data-warn{font-size:9px;font-weight:700;padding:2px 6px;border-radius:4px;background:#ff445522;color:#ff6677;letter-spacing:.04em;cursor:help}
 .focus-card::after{
   content:'';position:absolute;right:16px;top:50%;transform:translateY(-50%);
   width:6px;height:10px;
@@ -1042,6 +1043,7 @@ function renderWatchlist(data){
               <span style="width:8px;height:8px;border-radius:50%;background:${t.color};display:inline-block;flex-shrink:0"></span>
               <span class="wl-card-ticker">${esc(s.ticker)}</span>
               ${vbadge(s.verdict)}
+              ${s.data_ok===false?`<span class="data-warn" title="${esc((s.data_flags||[]).map(f=>f.msg).join(' · '))}">⚠ DATA</span>`:''}
             </div>
             <div class="wl-card-name">${esc(s.name)}</div>
           </div>

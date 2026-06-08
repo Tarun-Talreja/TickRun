@@ -33,6 +33,7 @@ EARNINGS_PATH       = os.path.join(SCRIPT_DIR, "output", "earnings_calendar.json
 SEC_FILINGS_PATH    = os.path.join(SCRIPT_DIR, "data", "sec_filings.json")
 NEWS_PATH           = os.path.join(SCRIPT_DIR, "data", "news_cache.json")
 MOVERS_PATH         = os.path.join(SCRIPT_DIR, "data", "movers.json")
+DATA_QUALITY_PATH   = os.path.join(SCRIPT_DIR, "data", "data_quality.json")
 OUTPUT_PATH         = os.path.join(SCRIPT_DIR, "output", "dashboard.json")
 os.makedirs(os.path.join(SCRIPT_DIR, "output"), exist_ok=True)
 
@@ -200,6 +201,7 @@ def main():
     sec       = _load(SEC_FILINGS_PATH)
     news      = _load(NEWS_PATH)
     movers    = _load(MOVERS_PATH)
+    dquality  = _load(DATA_QUALITY_PATH)
 
     # Enrich portfolio holdings with current prices + P&L
     core_enriched = [_enrich_holding(h, quotes) for h in portfolio.get("core", [])]
@@ -216,6 +218,13 @@ def main():
         _enrich_candidate(c, quotes, insider, hedge_fund)
         for c in watchlist.get("candidates", [])
     ]
+
+    # Attach data-quality flags so the UI can warn on unreliable data
+    quality_map = dquality.get("quality", {})
+    for c in candidates_enriched:
+        qd = quality_map.get(c["ticker"], {})
+        c["data_ok"]    = qd.get("ok", True)
+        c["data_flags"] = qd.get("flags", [])
 
     # Group watchlist by verdict
     by_verdict = {}
