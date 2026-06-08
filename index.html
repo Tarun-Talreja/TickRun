@@ -261,6 +261,10 @@ html,body{
 .news-date{margin-left:auto;font-size:11px;color:var(--text2)}
 .news-title{font-size:14px;line-height:1.35;color:var(--text0);font-weight:500}
 .news-pub{font-size:11px;color:var(--text2);margin-top:6px}
+.report-link{display:inline-block;margin-top:8px;font-size:12px;color:var(--accent,#00f082);text-decoration:none;font-weight:600}
+.report-link:hover{text-decoration:underline}
+.sec-form{font-size:10px;font-weight:700;padding:2px 6px;border-radius:4px;background:var(--bg3);color:var(--text1)}
+.sec-form.sec-stake{background:#00f08222;color:#00f082}
 .focus-card::after{
   content:'';position:absolute;right:16px;top:50%;transform:translateY(-50%);
   width:6px;height:10px;
@@ -1155,6 +1159,7 @@ function renderSignals(data){
           <span class="scb-val ${e.days_until<=3?'lo':e.days_until<=5?'mid':''}">${fDate(e.date)} · <strong>${e.days_until}d away</strong></span>
         </div>
         <div class="scb-action">${esc(e.action)}</div>
+        <a class="report-link" href="https://finance.yahoo.com/quote/${esc(e.ticker)}/press-releases" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">📄 Read earnings reports ↗</a>
       </div>
     </div>`;
   });
@@ -1232,6 +1237,29 @@ function renderSignals(data){
   });
 
   html+=`</div>`;
+
+  // ── SEC filings (clickable EDGAR links) ──────────────────────────────────
+  const stakes = sig.sec_ownership_stakes||[];
+  const events = sig.sec_material_events||[];
+  const secAll = [...stakes, ...events];
+  if(secAll.length){
+    html+=`<div class="sig-section-title" style="margin-top:20px">🏛️ SEC Filings</div>`;
+    html+=`<div class="news-list">`;
+    secAll.slice(0,20).forEach((f,i)=>{
+      const safeUrl=(f.url||'').startsWith('http')?f.url:'#';
+      const isStake=(f.form||'').startsWith('SC 13');
+      html+=`<a class="news-card s-anim" href="${esc(safeUrl)}" target="_blank" rel="noopener noreferrer" style="animation-delay:${Math.min(i*0.02,0.4)}s;${isStake?'border-color:#00f08244':''}">
+        <div class="news-head">
+          <span class="news-ticker">${esc(f.ticker)}</span>
+          <span class="sec-form ${isStake?'sec-stake':''}">${esc(f.label||f.form)}</span>
+          <span class="news-date">${esc(f.filed_date||'')}</span>
+        </div>
+        <div class="news-title">${esc(f.meaning||f.form)}</div>
+        <div class="news-pub">SEC EDGAR · ${esc(f.form)} ↗</div>
+      </a>`;
+    });
+    html+=`</div>`;
+  }
 
   // ── News feed (clickable, opens in new tab) ──────────────────────────────
   const newsItems = sig.news||[];
