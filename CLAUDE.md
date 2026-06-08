@@ -7,6 +7,10 @@ no day trading, no options/margin). The system screens for U.S. stocks that are 
 growing, especially indirect AI/data-center/infrastructure beneficiaries, and produces a curated
 watchlist with automated smart-money signals.
 
+**Brokerage:** Robinhood Roth IRA
+**Key benefits:** No capital gains tax ever. No PDT rule (Roth IRA exempt). Tax-free compounding.
+**2026 contribution limit:** $7,000/year max across all Roth accounts.
+
 **Live dashboard:** https://tarun-talreja.github.io/TickRun/
 
 ---

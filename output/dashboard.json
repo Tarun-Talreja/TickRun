@@ -1,5 +1,5 @@
 {
-  "last_built": "2026-06-08T03:06:33Z",
+  "last_built": "2026-06-08T03:18:13Z",
   "quotes_updated": "2026-06-08T03:06:33Z",
   "portfolio": {
     "total_value": 0,
@@ -10,7 +10,8 @@
         "shares": 0,
         "cost_basis_per_share": 0,
         "purchased": null,
-        "notes": "Core anchor \u2014 60% of portfolio target",
+        "notes": "Core anchor \u2014 60% target = $8,400. Buy first before any thematic picks.",
+        "target_dollars": 8400,
         "current_price": 363.38,
         "market_value": null,
         "pnl": null,
@@ -21,7 +22,76 @@
         "forward_pe": null
       }
     ],
-    "thematic": [],
+    "thematic": [
+      {
+        "ticker": "VST",
+        "name": "Vistra Corp.",
+        "shares": 0,
+        "cost_basis_per_share": 0,
+        "purchased": null,
+        "notes": "AI nuclear power \u2014 14.6x fwd PE for 43% growth. Deploy $1,500.",
+        "target_dollars": 1500,
+        "current_price": 148.76,
+        "market_value": null,
+        "pnl": null,
+        "pnl_pct": null,
+        "pct_change_1d": -3.21,
+        "drawdown_from_high": -32.3,
+        "pe": 24.876253,
+        "forward_pe": 13.576399
+      },
+      {
+        "ticker": "CEG",
+        "name": "Constellation Energy Corporation",
+        "shares": 0,
+        "cost_basis_per_share": 0,
+        "purchased": null,
+        "notes": "Nuclear monopoly, 20yr Microsoft PPA. Deploy $1,500.",
+        "target_dollars": 1500,
+        "current_price": 254.83,
+        "market_value": null,
+        "pnl": null,
+        "pnl_pct": null,
+        "pct_change_1d": -3.69,
+        "drawdown_from_high": -38.3,
+        "pe": 22.120659,
+        "forward_pe": 18.718975
+      },
+      {
+        "ticker": "MSFT",
+        "name": "Microsoft Corporation",
+        "shares": 0,
+        "cost_basis_per_share": 0,
+        "purchased": null,
+        "notes": "AI/cloud anchor. Deploy $1,200 at current levels.",
+        "target_dollars": 1200,
+        "current_price": 416.67,
+        "market_value": null,
+        "pnl": null,
+        "pnl_pct": null,
+        "pct_change_1d": -2.66,
+        "drawdown_from_high": -25.0,
+        "pe": 24.816557,
+        "forward_pe": 21.53399
+      },
+      {
+        "ticker": "RDDT",
+        "name": "Reddit, Inc.",
+        "shares": 0,
+        "cost_basis_per_share": 0,
+        "purchased": null,
+        "notes": "AI data licensing + platform. 17x fwd PE for 69% growth. Deploy $700.",
+        "target_dollars": 700,
+        "current_price": 173.45,
+        "market_value": null,
+        "pnl": null,
+        "pnl_pct": null,
+        "pct_change_1d": -5.69,
+        "drawdown_from_high": -38.7,
+        "pe": 49.55714,
+        "forward_pe": 19.64008
+      }
+    ],
     "target_allocation": {
       "core_pct": 60,
       "thematic_pct": 35,
@@ -34,7 +104,10 @@
       "min_hold_years": 3,
       "no_options": true,
       "no_margin": true,
-      "no_leveraged_etfs": true
+      "no_leveraged_etfs": true,
+      "max_trades_per_week": 2,
+      "account_type": "Roth IRA",
+      "tax_treatment": "Tax-free growth and withdrawals"
     }
   },
   "watchlist": {

@@ -1,5 +1,7 @@
 {
-  "last_updated": null,
+  "last_updated": "2026-06-08",
+  "brokerage": "Robinhood Roth IRA",
+  "total_cash": 14000,
   "core": [
     {
       "ticker": "VTI",
@@ -7,14 +9,92 @@
       "shares": 0,
       "cost_basis_per_share": 0,
       "purchased": null,
-      "notes": "Core anchor — 60% of portfolio target"
+      "notes": "Core anchor — 60% target = $8,400. Buy first before any thematic picks.",
+      "target_dollars": 8400
     }
   ],
-  "thematic": [],
+  "thematic": [
+    {
+      "ticker": "VST",
+      "name": "Vistra Corp.",
+      "shares": 0,
+      "cost_basis_per_share": 0,
+      "purchased": null,
+      "notes": "AI nuclear power — 14.6x fwd PE for 43% growth. Deploy $1,500.",
+      "target_dollars": 1500
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy Corporation",
+      "shares": 0,
+      "cost_basis_per_share": 0,
+      "purchased": null,
+      "notes": "Nuclear monopoly, 20yr Microsoft PPA. Deploy $1,500.",
+      "target_dollars": 1500
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft Corporation",
+      "shares": 0,
+      "cost_basis_per_share": 0,
+      "purchased": null,
+      "notes": "AI/cloud anchor. Deploy $1,200 at current levels.",
+      "target_dollars": 1200
+    },
+    {
+      "ticker": "RDDT",
+      "name": "Reddit, Inc.",
+      "shares": 0,
+      "cost_basis_per_share": 0,
+      "purchased": null,
+      "notes": "AI data licensing + platform. 17x fwd PE for 69% growth. Deploy $700.",
+      "target_dollars": 700
+    }
+  ],
   "target_allocation": {
     "core_pct": 60,
     "thematic_pct": 35,
     "international_pct": 5
+  },
+  "deployment_plan": {
+    "total": 14000,
+    "core_target": 8400,
+    "thematic_target": 4900,
+    "cash_reserve": 700,
+    "stages": [
+      {
+        "stage": 1,
+        "week": "This week",
+        "action": "BUY VTI $8,400",
+        "rationale": "Core anchor first — always. Sets the 60% foundation.",
+        "tickers": ["VTI"],
+        "amount": 8400
+      },
+      {
+        "stage": 2,
+        "week": "This week (2 trades max)",
+        "action": "BUY VST $1,500 + CEG $1,500",
+        "rationale": "AI power dip — both at or below buy targets today.",
+        "tickers": ["VST", "CEG"],
+        "amount": 3000
+      },
+      {
+        "stage": 3,
+        "week": "Next week",
+        "action": "BUY MSFT $1,200",
+        "rationale": "-25% from ATH, RESEARCH-WORTHY, deploy after stage 2 settles.",
+        "tickers": ["MSFT"],
+        "amount": 1200
+      },
+      {
+        "stage": 4,
+        "week": "Week after",
+        "action": "BUY RDDT $700",
+        "rationale": "Highest growth/value ratio in watchlist. Last tranche.",
+        "tickers": ["RDDT"],
+        "amount": 700
+      }
+    ]
   },
   "rules": {
     "max_single_position_pct": 15,
@@ -23,6 +103,9 @@
     "min_hold_years": 3,
     "no_options": true,
     "no_margin": true,
-    "no_leveraged_etfs": true
+    "no_leveraged_etfs": true,
+    "max_trades_per_week": 2,
+    "account_type": "Roth IRA",
+    "tax_treatment": "Tax-free growth and withdrawals"
   }
 }
