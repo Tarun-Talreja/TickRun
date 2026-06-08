@@ -1198,7 +1198,7 @@ function renderSignals(data){
   // ── Buy-target hits: the most actionable signal, shown first ──────────────
   const tgtHits = sig.target_hits||[];
   if(tgtHits.length){
-    html+=`<div class="sig-section-title">🎯 At Buy Target</div>`;
+    html+=`<div class="sig-section-title">🎯 At Research Target <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text2);font-size:10px">· app-suggested, not yours</span></div>`;
     html+=`<div class="news-list">`;
     tgtHits.forEach((h,i)=>{
       const below = h.gap_pct<=0;
@@ -1209,7 +1209,7 @@ function renderSignals(data){
           ${h.confidence?`<span class="conf-badge conf-${esc((h.confidence||'').toLowerCase())}">${esc(h.confidence)}</span>`:''}
           <span class="mover-pct" style="color:var(--green);margin-left:auto">${fp(h.price)} ${below?'≤':'≈'} ${fp(h.buy_target)}</span>
         </div>
-        <div class="mover-reason">${below?`<strong>${Math.abs(h.gap_pct)}% below your target</strong> — `:'At your target — '}${esc((h.next_action||'').substring(0,110))}</div>
+        <div class="mover-reason">${below?`<strong>${Math.abs(h.gap_pct)}% below the research target</strong> — `:'At the research target — '}${esc((h.next_action||'').substring(0,110))}</div>
       </div>`;
     });
     html+=`</div>`;
