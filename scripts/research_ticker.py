@@ -107,11 +107,19 @@ def _call_llm(provider: str, api_key: str, prompt: str) -> str:
         # override), then any remaining fallbacks in the chain.
         attempts = [NVIDIA_MODEL] + [m for m in NVIDIA_MODEL_CHAIN if m != NVIDIA_MODEL]
         last_err = None
+        sysmsg = (
+            "detailed thinking off. You are a disciplined equity analyst. Follow the "
+            "requested output structure exactly and ALWAYS end with the mandated "
+            "VERDICT: and CONFIDENCE: lines."
+        )
         for model in attempts:
             try:
                 response = client.chat.completions.create(
                     model=model,
-                    messages=[{"role": "user", "content": prompt}],
+                    messages=[
+                        {"role": "system", "content": sysmsg},
+                        {"role": "user", "content": prompt},
+                    ],
                     max_tokens=MAX_TOKENS,
                     temperature=0.3,
                 )
@@ -224,6 +232,11 @@ IMPORTANT GROUNDING RULES:
 - For any claim NOT supported by the data or headlines above (specific contract values,
   management quotes, customer names, analyst targets), write "unverified" — do NOT invent it.
 - Distinguish clearly between facts from the provided data vs. your general knowledge.
+
+MANDATORY OUTPUT FORMAT — your response MUST end with these two lines, EXACTLY,
+as the very last lines, with nothing after them:
+VERDICT: <one of: RESEARCH-WORTHY | WATCHLIST | PASS | RED FLAG>
+CONFIDENCE: <one of: HIGH | MEDIUM | LOW>
 """
     return template.replace("TICKER: {{TICKER}}", f"TICKER: {ticker}") + "\n" + context
 
@@ -231,6 +244,11 @@ IMPORTANT GROUNDING RULES:
 # ── Verdict extraction + watchlist update ────────────────────────────────────
 
 def _extract_verdict(text: str) -> str | None:
+    # Prefer the explicit "VERDICT: X" line (forced format)
+    m = re.search(r"VERDICT:\s*(RESEARCH-WORTHY|WATCHLIST|PASS|RED FLAG)", text, re.IGNORECASE)
+    if m:
+        return m.group(1).upper()
+    # Fallback: any verdict string appearing in the text
     for v in VERDICT_STRINGS:
         if v in text.upper():
             return v
