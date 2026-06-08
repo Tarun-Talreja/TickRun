@@ -249,6 +249,18 @@ html,body{
   position:relative;overflow:hidden;
   display:flex;align-items:center;gap:14px;
 }
+.news-list{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+.news-card{
+  display:block;text-decoration:none;
+  background:var(--bg2);border:1px solid var(--border);border-radius:10px;
+  padding:12px 14px;transition:transform .15s,border-color .15s;
+}
+.news-card:hover{transform:translateY(-1px);border-color:var(--border-hi)}
+.news-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.news-ticker{font-size:13px;font-weight:700;color:var(--text0)}
+.news-date{margin-left:auto;font-size:11px;color:var(--text2)}
+.news-title{font-size:14px;line-height:1.35;color:var(--text0);font-weight:500}
+.news-pub{font-size:11px;color:var(--text2);margin-top:6px}
 .focus-card::after{
   content:'';position:absolute;right:16px;top:50%;transform:translateY(-50%);
   width:6px;height:10px;
@@ -1220,6 +1232,27 @@ function renderSignals(data){
   });
 
   html+=`</div>`;
+
+  // ── News feed (clickable, opens in new tab) ──────────────────────────────
+  const newsItems = sig.news||[];
+  if(newsItems.length){
+    html+=`<div class="sig-section-title" style="margin-top:20px">📰 Latest News</div>`;
+    html+=`<div class="news-list">`;
+    newsItems.forEach((n,i)=>{
+      const safeUrl = (n.url||'').startsWith('http') ? n.url : '#';
+      html+=`<a class="news-card s-anim" href="${esc(safeUrl)}" target="_blank" rel="noopener noreferrer" style="animation-delay:${Math.min(i*0.02,0.5)}s">
+        <div class="news-head">
+          <span class="news-ticker">${esc(n.ticker)}</span>
+          ${vbadge(n.verdict)}
+          <span class="news-date">${esc(n.date||'')}</span>
+        </div>
+        <div class="news-title">${esc(n.title||'')}</div>
+        <div class="news-pub">${esc(n.publisher||'')} ↗</div>
+      </a>`;
+    });
+    html+=`</div>`;
+  }
+
   $('screen-signals').innerHTML = html;
 }
 

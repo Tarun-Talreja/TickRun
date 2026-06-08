@@ -46,6 +46,10 @@ jobs:
         run: python scripts/sec_filings.py
         continue-on-error: true
 
+      - name: Cache ticker news
+        run: python scripts/news_feed.py
+        continue-on-error: true
+
       - name: Assemble dashboard.json
         run: python scripts/build_dashboard.py
 
@@ -55,6 +59,7 @@ jobs:
           file_pattern: >-
             data/watchlist.json
             data/sec_filings.json
+            data/news_cache.json
             output/dashboard.json
             output/alerts.json
             output/earnings_calendar.json

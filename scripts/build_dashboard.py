@@ -31,6 +31,7 @@ HEDGE_FUND_PATH     = os.path.join(SCRIPT_DIR, "data", "hedge_fund_signals.json"
 ALERTS_PATH         = os.path.join(SCRIPT_DIR, "output", "alerts.json")
 EARNINGS_PATH       = os.path.join(SCRIPT_DIR, "output", "earnings_calendar.json")
 SEC_FILINGS_PATH    = os.path.join(SCRIPT_DIR, "data", "sec_filings.json")
+NEWS_PATH           = os.path.join(SCRIPT_DIR, "data", "news_cache.json")
 OUTPUT_PATH         = os.path.join(SCRIPT_DIR, "output", "dashboard.json")
 os.makedirs(os.path.join(SCRIPT_DIR, "output"), exist_ok=True)
 
@@ -158,6 +159,34 @@ def _enrich_candidate(candidate: dict, quotes: dict, insider_signals: dict, hedg
     return enriched
 
 
+def _build_news_feed(news: dict, candidates: list) -> list:
+    """Flatten per-ticker news into a single feed, prioritizing actionable names."""
+    # Verdict priority for ordering the feed
+    verdict_rank = {"RESEARCH-WORTHY": 0, "WATCHLIST": 1, "PASS": 3}
+    verdict_by_ticker = {c["ticker"]: c.get("verdict", "WATCHLIST") for c in candidates}
+
+    by_ticker = news.get("news", {})
+    feed = []
+    for ticker, items in by_ticker.items():
+        verdict = verdict_by_ticker.get(ticker, "WATCHLIST")
+        for n in items:
+            if not n.get("title"):
+                continue
+            feed.append({
+                "ticker":    ticker,
+                "verdict":   verdict,
+                "title":     n.get("title"),
+                "publisher": n.get("publisher", ""),
+                "date":      n.get("date", ""),
+                "url":       n.get("url", ""),
+            })
+
+    # Sort: newest first, then by verdict priority
+    feed.sort(key=lambda x: x.get("date", ""), reverse=True)
+    feed.sort(key=lambda x: verdict_rank.get(x["verdict"], 2))
+    return feed[:50]   # cap the feed size
+
+
 def main():
     portfolio = _load(PORTFOLIO_PATH)
     watchlist = _load(WATCHLIST_PATH)
@@ -168,6 +197,7 @@ def main():
     alerts     = _load(ALERTS_PATH)
     earnings  = _load(EARNINGS_PATH)
     sec       = _load(SEC_FILINGS_PATH)
+    news      = _load(NEWS_PATH)
 
     # Enrich portfolio holdings with current prices + P&L
     core_enriched = [_enrich_holding(h, quotes) for h in portfolio.get("core", [])]
@@ -232,6 +262,7 @@ def main():
                 f for f in sec.get("filings", [])
                 if f.get("form") == "8-K"
             ],
+            "news": _build_news_feed(news, candidates_enriched),
             "insider_alerts": [
                 {
                     "ticker":  c["ticker"],
