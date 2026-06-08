@@ -243,7 +243,24 @@ def _extract_confidence(text: str) -> str | None:
     return m.group(1).upper() if m else None
 
 
-def _update_watchlist(ticker: str, verdict: str, output_file: str, confidence: str | None = None):
+def _bear_check(provider, api_key, ticker, bull_text, news_block) -> str | None:
+    """Devil's-advocate second pass: argue AGAINST the buy to surface blind spots."""
+    prompt = (
+        f"Below is a bullish research note that concluded {ticker} is worth buying. "
+        f"You are a skeptical short-seller. In 2-3 sentences, give the STRONGEST "
+        f"specific argument AGAINST buying {ticker} right now — the thing the bull "
+        f"case is most likely underweighting. Base it ONLY on the note and these "
+        f"headlines; if you have no real counter-argument, say 'No strong bear case "
+        f"from available data.' Then end with: 'CHANGES VERDICT: YES' or "
+        f"'CHANGES VERDICT: NO'.\n\nHeadlines:\n{news_block}\n\nBullish note:\n{bull_text[:2500]}"
+    )
+    try:
+        return _call_llm(provider, api_key, prompt)
+    except Exception:
+        return None
+
+
+def _update_watchlist(ticker: str, verdict: str, output_file: str, confidence: str | None = None, bear: str | None = None):
     with open(WATCHLIST_PATH) as f:
         wl = json.load(f)
 
@@ -257,6 +274,8 @@ def _update_watchlist(ticker: str, verdict: str, output_file: str, confidence: s
             candidate["status"]         = "research_complete"
             if confidence:
                 candidate["confidence"] = confidence
+            if bear:
+                candidate["bear_check"] = bear.strip()
             updated = True
             break
 
@@ -326,11 +345,22 @@ def main():
 
     verdict = _extract_verdict(text)
     confidence = _extract_confidence(text)
+
+    # Devil's-advocate pass only for buy-ready names — surfaces blind spots
+    bear = None
+    if verdict == "RESEARCH-WORTHY":
+        print("🐻  Running bear-case check...")
+        bear = _bear_check(provider, api_key, ticker, text, _recent_news(ticker))
+        if bear:
+            with open(out_path, "a") as f:
+                f.write(f"\n\n---\n\n## Bear-Case Check (devil's advocate)\n\n{bear}\n")
+            print(f"\n{bear}\n")
+
     if verdict:
         conf_str = f" (confidence: {confidence})" if confidence else ""
         print(f"✅  Verdict: {verdict}{conf_str}")
         if not args.save_only:
-            _update_watchlist(ticker, verdict, f"output/research/{filename}", confidence)
+            _update_watchlist(ticker, verdict, f"output/research/{filename}", confidence, bear)
             print(f"📝  Updated watchlist.json → {ticker} = {verdict}{conf_str}")
     else:
         print("⚠   Could not extract a clear verdict from the response.")

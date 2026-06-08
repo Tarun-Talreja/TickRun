@@ -1159,8 +1159,13 @@ function renderStockDetail(s){
   <div class="detail-section">
     <div class="ds-title">Investment Thesis</div>
     <div class="thesis-box">${esc(s.thesis||'No thesis recorded yet.')}</div>
-    ${s.last_researched?`<div style="margin-top:8px;font-size:9px;color:var(--text2)">Last researched: ${fDate(s.last_researched)}</div>`:''}
-  </div>`;
+    ${s.last_researched?`<div style="margin-top:8px;font-size:9px;color:var(--text2)">Last researched: ${fDate(s.last_researched)}${s.confidence?` · Confidence: ${esc(s.confidence)}`:''}</div>`:''}
+  </div>
+  ${s.bear_check?`<div class="detail-section">
+    <div class="ds-title">🐻 Bear-Case Check</div>
+    <div class="thesis-box" style="border-left:3px solid var(--red)">${esc(s.bear_check)}</div>
+    <div style="margin-top:6px;font-size:9px;color:var(--text2)">Auto-generated counter-argument — what the bull case might be missing.</div>
+  </div>`:''}`;
 
   $('screen-stock').innerHTML = html;
 }
