@@ -43,7 +43,7 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # NVIDIA NIM settings
 NVIDIA_BASE_URL = "https://integrate.api.nvidia.com/v1"
-NVIDIA_MODEL    = "meta/llama-3.3-70b-instruct"
+NVIDIA_MODEL    = "meta/llama-3.1-405b-instruct"   # Best free model for financial reasoning
 
 # Anthropic fallback settings
 ANTHROPIC_MODEL = "claude-opus-4-7"
@@ -241,10 +241,20 @@ def main():
     parser.add_argument("ticker", type=str, help="Ticker symbol (e.g. AAPL)")
     parser.add_argument("--save-only", action="store_true",
                         help="Save output but don't update watchlist.json")
+    parser.add_argument("--model", type=str, default=None,
+                        help="Override model (e.g. meta/llama-3.3-70b-instruct for faster results)")
     args = parser.parse_args()
 
     ticker   = args.ticker.upper()
     provider, api_key = _detect_provider()
+
+    # Allow model override
+    if args.model:
+        global NVIDIA_MODEL, ANTHROPIC_MODEL
+        if provider == "nvidia":
+            NVIDIA_MODEL = args.model
+        else:
+            ANTHROPIC_MODEL = args.model
 
     if not os.path.exists(QUOTES_PATH):
         print("No quotes cache. Run: python3 scripts/refresh_quotes.py")
