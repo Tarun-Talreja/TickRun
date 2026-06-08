@@ -283,6 +283,18 @@ html,body{
 .track-val{font-size:18px;font-weight:600;font-family:'IBM Plex Mono',monospace;color:var(--text0)}
 .track-val.green{color:var(--green)}.track-val.red{color:var(--red)}
 .track-lbl{font-size:9px;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-top:3px}
+.disc-wrap{padding:12px 0 4px}
+.disc-head{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);padding:0 16px 8px}
+.disc-note{font-weight:400;text-transform:none;letter-spacing:0;color:var(--text2);font-size:9px}
+.disc-scroll{display:flex;gap:8px;overflow-x:auto;padding:0 16px 4px;scrollbar-width:none}
+.disc-scroll::-webkit-scrollbar{display:none}
+.disc-card{flex-shrink:0;width:130px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:10px}
+.disc-card-top{display:flex;justify-content:space-between;align-items:center}
+.disc-tk{font-size:14px;font-weight:700;color:var(--text0)}
+.disc-score{font-size:13px;font-weight:700;font-family:'IBM Plex Mono',monospace;color:var(--cyan)}
+.disc-nm{font-size:10px;color:var(--text2);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.disc-screens{font-size:9px;color:var(--green);margin-top:6px;line-height:1.3}
+.disc-metrics{font-size:9px;color:var(--text2);margin-top:4px}
 .focus-card::after{
   content:'';position:absolute;right:16px;top:50%;transform:translateY(-50%);
   width:6px;height:10px;
@@ -1011,6 +1023,27 @@ function renderHome(data){
 }
 
 // ── RENDER WATCHLIST ──────────────────────────────────────────────────────────
+function renderDiscovered(data){
+  const disc = (data.discovered||{}).discovered||[];
+  if(!disc.length) return '';
+  let h=`<div class="disc-wrap"><div class="disc-head">🔍 Discovered — professional screen suggestions <span class="disc-note">review &amp; tell the app to add</span></div><div class="disc-scroll">`;
+  disc.slice(0,12).forEach(d=>{
+    const screens=(d.passes_screens||[]).join(' · ')||'composite';
+    const rg=d.rev_growth!=null?`${(d.rev_growth*100).toFixed(0)}%`:'—';
+    h+=`<div class="disc-card">
+      <div class="disc-card-top">
+        <span class="disc-tk">${esc(d.ticker)}</span>
+        <span class="disc-score">${d.score}</span>
+      </div>
+      <div class="disc-nm">${esc((d.name||'').substring(0,22))}</div>
+      <div class="disc-screens">${esc(screens)}</div>
+      <div class="disc-metrics">${d.forward_pe?`${d.forward_pe.toFixed(0)}× fwd`:''} ${rg!=='—'?`· ${rg} grw`:''}</div>
+    </div>`;
+  });
+  h+=`</div></div>`;
+  return h;
+}
+
 function renderWatchlist(data){
   const all = data.watchlist.all;
   let activeFilter = 'all';
@@ -1047,6 +1080,7 @@ function renderWatchlist(data){
       <span class="filter-chip theme-chip ${theme==='all'?'active':''}" onclick="setTheme('all')">All Themes</span>
       ${themeKeys.map(t=>`<span class="filter-chip theme-chip ${theme===t?'active':''}" onclick="setTheme('${t}')" style="${theme===t?`background:${tc(t).color};border-color:${tc(t).color}`:`border-color:${tc(t).color}66`}"><span style="width:7px;height:7px;border-radius:50%;background:${tc(t).color};display:inline-block;margin-right:5px"></span>${esc(tc(t).label)} ${themeCounts[t]}</span>`).join('')}
     </div>
+    ${(filter==='all'&&theme==='all'&&searchQ==='')?renderDiscovered(data):''}
     <div class="wl-list">`;
 
     stocks.forEach((s,i)=>{

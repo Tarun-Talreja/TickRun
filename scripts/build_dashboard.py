@@ -38,6 +38,7 @@ DIGEST_PATH         = os.path.join(SCRIPT_DIR, "output", "weekly_digest.json")
 ANALYTICS_PATH      = os.path.join(SCRIPT_DIR, "output", "portfolio_analytics.json")
 TARGET_ALERTS_PATH  = os.path.join(SCRIPT_DIR, "data", "target_alerts.json")
 TRACK_RECORD_PATH   = os.path.join(SCRIPT_DIR, "output", "track_record.json")
+DISCOVERED_PATH     = os.path.join(SCRIPT_DIR, "data", "discovered.json")
 OUTPUT_PATH         = os.path.join(SCRIPT_DIR, "output", "dashboard.json")
 os.makedirs(os.path.join(SCRIPT_DIR, "output"), exist_ok=True)
 
@@ -271,6 +272,7 @@ def main():
         "digest":          _load(DIGEST_PATH),
         "analytics":       analytics,
         "track_record":    track_rec,
+        "discovered":      _load(DISCOVERED_PATH),
         "signals": {
             "pullback_alerts":    alerts.get("pullback_alerts", []),
             "stale_research":     alerts.get("stale_research", []),
