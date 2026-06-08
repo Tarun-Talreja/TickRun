@@ -43,7 +43,13 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # NVIDIA NIM settings
 NVIDIA_BASE_URL = "https://integrate.api.nvidia.com/v1"
-NVIDIA_MODEL    = "nvidia/llama-3.1-nemotron-ultra-253b-v1"   # 253B reasoning flagship — best free heavy model
+# Preferred → fallback. Heavy models may not be provisioned on free tier (404
+# "Function not found for account"); we fall back to the universally-free 70B.
+NVIDIA_MODEL_CHAIN = [
+    "nvidia/llama-3.1-nemotron-ultra-253b-v1",   # 253B reasoning flagship (if account has access)
+    "meta/llama-3.3-70b-instruct",                # reliable free-tier default
+]
+NVIDIA_MODEL = NVIDIA_MODEL_CHAIN[0]   # may be overridden by --model
 
 # Anthropic fallback settings
 ANTHROPIC_MODEL = "claude-opus-4-7"
@@ -82,19 +88,33 @@ def _detect_provider() -> tuple[str, str]:
 def _call_llm(provider: str, api_key: str, prompt: str) -> str:
     if provider == "nvidia":
         try:
-            from openai import OpenAI
+            from openai import OpenAI, NotFoundError
         except ImportError:
             print("Missing dependency: pip install openai")
             sys.exit(1)
 
         client = OpenAI(base_url=NVIDIA_BASE_URL, api_key=api_key)
-        response = client.chat.completions.create(
-            model=NVIDIA_MODEL,
-            messages=[{"role": "user", "content": prompt}],
-            max_tokens=MAX_TOKENS,
-            temperature=0.3,
-        )
-        return response.choices[0].message.content
+
+        # Build the model attempt list: explicit NVIDIA_MODEL first (covers --model
+        # override), then any remaining fallbacks in the chain.
+        attempts = [NVIDIA_MODEL] + [m for m in NVIDIA_MODEL_CHAIN if m != NVIDIA_MODEL]
+        last_err = None
+        for model in attempts:
+            try:
+                response = client.chat.completions.create(
+                    model=model,
+                    messages=[{"role": "user", "content": prompt}],
+                    max_tokens=MAX_TOKENS,
+                    temperature=0.3,
+                )
+                if model != attempts[0]:
+                    print(f"   (fell back to {model})")
+                return response.choices[0].message.content
+            except NotFoundError as exc:
+                last_err = exc
+                print(f"   {model} unavailable for this account — trying next...")
+                continue
+        raise RuntimeError(f"All NVIDIA models failed. Last error: {last_err}")
 
     elif provider == "anthropic":
         try:
