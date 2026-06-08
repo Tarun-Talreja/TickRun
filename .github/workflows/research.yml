@@ -1,12 +1,9 @@
-name: Quote Refresh + Alerts
+name: Daily LLM Research
 
 on:
   schedule:
-    # Every 30 minutes during US market hours (9:30am-4pm ET = 13:30-20:00 UTC weekdays)
-    # Note: cron in GitHub Actions runs in UTC, no DST adjustment.
-    - cron: '0,30 14-20 * * 1-5'
-    # Plus end-of-day final at 6pm ET (22:00 UTC)
-    - cron: '0 22 * * 1-5'
+    # 7am ET weekdays (11:00 UTC) — before market open, after overnight news
+    - cron: '0 11 * * 1-5'
   workflow_dispatch:
 
 permissions:
@@ -17,9 +14,9 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
-  refresh:
+  research:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -30,34 +27,32 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Sync watchlist.md → data/watchlist.json
+      - name: Sync watchlist.md
         run: python scripts/sync_watchlist.py
 
-      - name: Refresh quotes (portfolio + watchlist only)
+      - name: Refresh quotes
         run: python scripts/refresh_quotes.py
 
-      - name: Generate pullback alerts
-        run: python scripts/pullback_alerts.py
+      - name: Run daily LLM research (NVIDIA NIM, free)
+        env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+        run: python scripts/research_batch.py --max 6
 
-      - name: Update earnings calendar
-        run: python scripts/earnings_calendar.py
-
-      - name: Check SEC EDGAR filings (early smart-money signal)
+      - name: Check SEC filings
         run: python scripts/sec_filings.py
         continue-on-error: true
 
-      - name: Assemble dashboard.json
+      - name: Rebuild dashboard
         run: python scripts/build_dashboard.py
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Auto: daily quote refresh"
+          commit_message: "Auto: daily LLM research + SEC filings"
           file_pattern: >-
             data/watchlist.json
             data/sec_filings.json
+            output/research/*.md
             output/dashboard.json
-            output/alerts.json
-            output/earnings_calendar.json
 
       - name: Open issue on failure
         if: failure()
@@ -67,7 +62,7 @@ jobs:
             github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `Daily refresh failed — ${new Date().toISOString().slice(0,10)}`,
+              title: `Daily research failed — ${new Date().toISOString().slice(0,10)}`,
               body: `Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
-              labels: ['automation-failure']
+              labels: ['automation-failure', 'research']
             })

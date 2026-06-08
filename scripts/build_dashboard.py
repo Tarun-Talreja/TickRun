@@ -30,6 +30,7 @@ INSIDER_PATH        = os.path.join(SCRIPT_DIR, "data", "insider_signals.json")
 HEDGE_FUND_PATH     = os.path.join(SCRIPT_DIR, "data", "hedge_fund_signals.json")
 ALERTS_PATH         = os.path.join(SCRIPT_DIR, "output", "alerts.json")
 EARNINGS_PATH       = os.path.join(SCRIPT_DIR, "output", "earnings_calendar.json")
+SEC_FILINGS_PATH    = os.path.join(SCRIPT_DIR, "data", "sec_filings.json")
 OUTPUT_PATH         = os.path.join(SCRIPT_DIR, "output", "dashboard.json")
 os.makedirs(os.path.join(SCRIPT_DIR, "output"), exist_ok=True)
 
@@ -166,6 +167,7 @@ def main():
     hedge_fund = _load(HEDGE_FUND_PATH)
     alerts     = _load(ALERTS_PATH)
     earnings  = _load(EARNINGS_PATH)
+    sec       = _load(SEC_FILINGS_PATH)
 
     # Enrich portfolio holdings with current prices + P&L
     core_enriched = [_enrich_holding(h, quotes) for h in portfolio.get("core", [])]
@@ -222,6 +224,14 @@ def main():
             "pullback_alerts":    alerts.get("pullback_alerts", []),
             "stale_research":     alerts.get("stale_research", []),
             "upcoming_earnings":  earnings.get("upcoming_earnings", []),
+            "sec_ownership_stakes": [
+                f for f in sec.get("filings", [])
+                if f.get("form", "").startswith("SC 13")
+            ],
+            "sec_material_events": [
+                f for f in sec.get("filings", [])
+                if f.get("form") == "8-K"
+            ],
             "insider_alerts": [
                 {
                     "ticker":  c["ticker"],
@@ -285,6 +295,8 @@ def main():
     print(f"   Research-worthy:  {dashboard['watchlist']['counts']['research_worthy']}")
     print(f"   Pullback alerts:   {len(dashboard['signals']['pullback_alerts'])}")
     print(f"   Upcoming earnings: {len(dashboard['signals']['upcoming_earnings'])}")
+    print(f"   SEC 5% stakes:     {len(dashboard['signals']['sec_ownership_stakes'])}")
+    print(f"   SEC 8-K events:    {len(dashboard['signals']['sec_material_events'])}")
     print(f"   Mega-cap on sale:  {len(dashboard['signals']['mega_cap_on_sale'])}")
 
 
