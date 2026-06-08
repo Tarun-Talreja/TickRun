@@ -41,6 +41,14 @@ PROMPT_PATH    = os.path.join(SCRIPT_DIR, "prompts", "stock_research.md")
 OUTPUT_DIR     = os.path.join(SCRIPT_DIR, "output", "research")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
+# Real-news grounding (free, via yfinance) — keeps the LLM from hallucinating.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+try:
+    from news_feed import get_recent_news as _recent_news
+except Exception:
+    def _recent_news(ticker: str) -> str:  # graceful fallback
+        return "No recent news available."
+
 # NVIDIA NIM settings
 NVIDIA_BASE_URL = "https://integrate.api.nvidia.com/v1"
 # Preferred → fallback. Heavy models may not be provisioned on free tier (404
@@ -207,6 +215,15 @@ def _build_prompt(ticker: str, quotes: dict) -> str:
 - 52-week high: ${_fmt(q.get('high_52w'))} | Drawdown from high: {_fmt(drawdown, suffix='%')}
 
 Note: Data from yfinance, may lag 1-7 days. Cross-check with company IR or SEC filings.
+
+[Recent news headlines — {datetime.now(timezone.utc).strftime('%Y-%m-%d')}]
+{_recent_news(ticker)}
+
+IMPORTANT GROUNDING RULES:
+- Base your analysis ONLY on the fundamentals and news headlines above.
+- For any claim NOT supported by the data or headlines above (specific contract values,
+  management quotes, customer names, analyst targets), write "unverified" — do NOT invent it.
+- Distinguish clearly between facts from the provided data vs. your general knowledge.
 """
     return template.replace("TICKER: {{TICKER}}", f"TICKER: {ticker}") + "\n" + context
 
