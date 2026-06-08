@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<!-- Open every external link in a new tab by default (works even where per-link
+     target gets sandboxed, e.g. the published artifact iframe). Internal nav uses
+     JS onclick handlers, not <a href>, so this only affects real links. -->
+<base target="_blank">
 <title>Tickreja</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <style>
