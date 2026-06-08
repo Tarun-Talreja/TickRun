@@ -35,6 +35,9 @@ NEWS_PATH           = os.path.join(SCRIPT_DIR, "data", "news_cache.json")
 MOVERS_PATH         = os.path.join(SCRIPT_DIR, "data", "movers.json")
 DATA_QUALITY_PATH   = os.path.join(SCRIPT_DIR, "data", "data_quality.json")
 DIGEST_PATH         = os.path.join(SCRIPT_DIR, "output", "weekly_digest.json")
+ANALYTICS_PATH      = os.path.join(SCRIPT_DIR, "output", "portfolio_analytics.json")
+TARGET_ALERTS_PATH  = os.path.join(SCRIPT_DIR, "data", "target_alerts.json")
+TRACK_RECORD_PATH   = os.path.join(SCRIPT_DIR, "output", "track_record.json")
 OUTPUT_PATH         = os.path.join(SCRIPT_DIR, "output", "dashboard.json")
 os.makedirs(os.path.join(SCRIPT_DIR, "output"), exist_ok=True)
 
@@ -203,6 +206,9 @@ def main():
     news      = _load(NEWS_PATH)
     movers    = _load(MOVERS_PATH)
     dquality  = _load(DATA_QUALITY_PATH)
+    analytics = _load(ANALYTICS_PATH)
+    tgt_alerts = _load(TARGET_ALERTS_PATH)
+    track_rec = _load(TRACK_RECORD_PATH)
 
     # Enrich portfolio holdings with current prices + P&L
     core_enriched = [_enrich_holding(h, quotes) for h in portfolio.get("core", [])]
@@ -263,6 +269,8 @@ def main():
         },
         "themes":          themes.get("themes", {}),
         "digest":          _load(DIGEST_PATH),
+        "analytics":       analytics,
+        "track_record":    track_rec,
         "signals": {
             "pullback_alerts":    alerts.get("pullback_alerts", []),
             "stale_research":     alerts.get("stale_research", []),
@@ -277,6 +285,8 @@ def main():
             ],
             "price_movers": movers.get("movers", []),
             "movers_updated": movers.get("generated_at"),
+            "target_hits": tgt_alerts.get("hits", []),
+            "target_approaching": tgt_alerts.get("approaching", []),
             "news": _build_news_feed(news, candidates_enriched),
             "insider_alerts": [
                 {

@@ -276,6 +276,13 @@ html,body{
 .digest-card{margin:0 16px 14px;padding:14px 16px;background:linear-gradient(135deg,var(--bg2),#0a1420);border:1px solid var(--border);border-radius:12px}
 .digest-label{font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--cyan);text-transform:uppercase;margin-bottom:7px}
 .digest-text{font-size:13px;line-height:1.5;color:var(--text0)}
+.conc-warn{margin:0 16px 12px;padding:10px 14px;background:#ffaa0015;border:1px solid #ffaa0033;border-radius:8px;font-size:12px;color:#ffaa00}
+.track-card{margin:0 16px 16px;padding:14px 16px;background:var(--bg2);border:1px solid var(--border);border-radius:12px}
+.track-row{display:flex;gap:10px;margin-top:10px}
+.track-stat{flex:1;text-align:center;padding:8px;background:var(--bg3);border-radius:8px}
+.track-val{font-size:18px;font-weight:600;font-family:'IBM Plex Mono',monospace;color:var(--text0)}
+.track-val.green{color:var(--green)}.track-val.red{color:var(--red)}
+.track-lbl{font-size:9px;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-top:3px}
 .focus-card::after{
   content:'';position:absolute;right:16px;top:50%;transform:translateY(-50%);
   width:6px;height:10px;
@@ -1173,7 +1180,7 @@ function renderStockDetail(s){
 // ── RENDER SIGNALS ────────────────────────────────────────────────────────────
 function renderSignals(data){
   const sig = data.signals;
-  const urgent = (sig.upcoming_earnings||[]).filter(e=>e.days_until<=3).length + (sig.pullback_alerts||[]).length + (sig.price_movers||[]).length;
+  const urgent = (sig.upcoming_earnings||[]).filter(e=>e.days_until<=3).length + (sig.pullback_alerts||[]).length + (sig.price_movers||[]).length + (sig.target_hits||[]).length;
 
   $('nb-signals').textContent = urgent;
   $('nb-signals').style.display = urgent>0?'flex':'none';
@@ -1187,6 +1194,26 @@ function renderSignals(data){
     <div class="sh-sub">${urgent} urgent items</div>
   </div>
   <div class="sig-feed">`;
+
+  // ── Buy-target hits: the most actionable signal, shown first ──────────────
+  const tgtHits = sig.target_hits||[];
+  if(tgtHits.length){
+    html+=`<div class="sig-section-title">🎯 At Buy Target</div>`;
+    html+=`<div class="news-list">`;
+    tgtHits.forEach((h,i)=>{
+      const below = h.gap_pct<=0;
+      html+=`<div class="mover-card s-anim" style="animation-delay:${i*0.03}s;border-left:3px solid var(--green)" onclick="openStock(${JSON.stringify(h).replace(/"/g,'&quot;')})">
+        <div class="news-head">
+          <span class="news-ticker">${esc(h.ticker)}</span>
+          ${vbadge(h.verdict)}
+          ${h.confidence?`<span class="conf-badge conf-${esc((h.confidence||'').toLowerCase())}">${esc(h.confidence)}</span>`:''}
+          <span class="mover-pct" style="color:var(--green);margin-left:auto">${fp(h.price)} ${below?'≤':'≈'} ${fp(h.buy_target)}</span>
+        </div>
+        <div class="mover-reason">${below?`<strong>${Math.abs(h.gap_pct)}% below your target</strong> — `:'At your target — '}${esc((h.next_action||'').substring(0,110))}</div>
+      </div>`;
+    });
+    html+=`</div>`;
+  }
 
   // ── Movers: why something jumped/dropped (most timely, shown first) ───────
   const movers = sig.price_movers||[];
@@ -1376,20 +1403,42 @@ function renderPortfolio(data){
     off+=dash;
   });
 
+  const an = data.analytics||{};
+  const funded = an.funded;
+  const tr = (data.track_record||{}).scoreboard||{};
+
   let html=`
   <div class="screen-header">
     <button class="sh-back" onclick="goBack()">← Back</button>
     <div class="sh-title">Portfolio</div>
-    <div class="sh-sub">Build mode</div>
+    <div class="sh-sub">${funded?'Live':'Build mode'}</div>
   </div>
 
-  <div class="port-hero">
+  ${funded?`<div class="port-hero">
     <div class="ph-left">
       <div class="ph-label">Total Value</div>
-      <div class="ph-val">${port.total_value?'$'+Number(port.total_value).toLocaleString():'$0'}</div>
-      <div class="ph-sub">Paper portfolio — deploy capital to activate</div>
+      <div class="ph-val">$${Number(an.total_value).toLocaleString()}</div>
+      <div class="ph-sub" style="color:${an.total_pnl>=0?'var(--green)':'var(--red)'}">${an.total_pnl>=0?'▲':'▼'} $${Math.abs(an.total_pnl).toLocaleString()} (${an.total_pnl_pct>0?'+':''}${an.total_pnl_pct}%) total</div>
+      ${an.annual_dividends>0?`<div class="ph-sub" style="color:var(--text2);margin-top:4px">💰 ~$${Number(an.annual_dividends).toLocaleString()}/yr dividends (tax-free)</div>`:''}
     </div>
   </div>
+  ${(an.concentration_warnings||[]).length?`<div class="conc-warn">⚠ ${an.concentration_warnings.map(c=>`${tc(c.theme).label} is ${c.pct}% of portfolio`).join(' · ')}</div>`:''}`
+  :`<div class="port-hero">
+    <div class="ph-left">
+      <div class="ph-label">Total Value</div>
+      <div class="ph-val">$0</div>
+      <div class="ph-sub">Paper portfolio — deploy capital to activate</div>
+    </div>
+  </div>`}
+
+  ${(tr['RESEARCH-WORTHY']&&tr['RESEARCH-WORTHY'].count)?`<div class="track-card">
+    <div class="digest-label">📈 App Track Record (since ${esc((data.track_record||{}).tracked_since||'')})</div>
+    <div class="track-row">
+      <div class="track-stat"><div class="track-val ${tr['RESEARCH-WORTHY'].avg_return>=0?'green':'red'}">${tr['RESEARCH-WORTHY'].avg_return>0?'+':''}${tr['RESEARCH-WORTHY'].avg_return}%</div><div class="track-lbl">Buy-ready avg</div></div>
+      <div class="track-stat"><div class="track-val">${tr['RESEARCH-WORTHY'].win_rate}%</div><div class="track-lbl">Win rate</div></div>
+      <div class="track-stat"><div class="track-val">${tr['RESEARCH-WORTHY'].count}</div><div class="track-lbl">Calls tracked</div></div>
+    </div>
+  </div>`:''}
 
   <div class="alloc-section">
     <div class="sec-head-label" style="font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--text2);margin-bottom:14px">Target Allocation</div>
