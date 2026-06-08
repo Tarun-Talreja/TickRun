@@ -237,7 +237,13 @@ def _extract_verdict(text: str) -> str | None:
     return None
 
 
-def _update_watchlist(ticker: str, verdict: str, output_file: str):
+def _extract_confidence(text: str) -> str | None:
+    """Pull the CONFIDENCE: HIGH|MEDIUM|LOW line."""
+    m = re.search(r"CONFIDENCE:\s*(HIGH|MEDIUM|LOW)", text, re.IGNORECASE)
+    return m.group(1).upper() if m else None
+
+
+def _update_watchlist(ticker: str, verdict: str, output_file: str, confidence: str | None = None):
     with open(WATCHLIST_PATH) as f:
         wl = json.load(f)
 
@@ -249,6 +255,8 @@ def _update_watchlist(ticker: str, verdict: str, output_file: str):
             candidate["research_file"]  = output_file
             candidate["last_researched"] = today
             candidate["status"]         = "research_complete"
+            if confidence:
+                candidate["confidence"] = confidence
             updated = True
             break
 
@@ -317,11 +325,13 @@ def main():
     print(f"\n{text}\n")
 
     verdict = _extract_verdict(text)
+    confidence = _extract_confidence(text)
     if verdict:
-        print(f"✅  Verdict: {verdict}")
+        conf_str = f" (confidence: {confidence})" if confidence else ""
+        print(f"✅  Verdict: {verdict}{conf_str}")
         if not args.save_only:
-            _update_watchlist(ticker, verdict, f"output/research/{filename}")
-            print(f"📝  Updated watchlist.json → {ticker} = {verdict}")
+            _update_watchlist(ticker, verdict, f"output/research/{filename}", confidence)
+            print(f"📝  Updated watchlist.json → {ticker} = {verdict}{conf_str}")
     else:
         print("⚠   Could not extract a clear verdict from the response.")
 

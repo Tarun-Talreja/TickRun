@@ -57,6 +57,14 @@ ONE of these four exact strings:
 
 Provide ONE sentence supporting the verdict. No hedging.
 
+## 9. Confidence
+Output EXACTLY one line in this format:
+`CONFIDENCE: HIGH|MEDIUM|LOW — <reason>`
+- HIGH: the verdict rests on the provided fundamentals + recent headlines; little guesswork.
+- MEDIUM: verdict is reasonable but depends on claims you couldn't fully verify from the data.
+- LOW: key facts are missing or the data looks suspect; treat this as a starting point only.
+State which specific claims in your analysis are NOT supported by the provided data/headlines.
+
 ---
 
 Be honest about uncertainty. If you don't have current data, say so. If the company is borderline, say borderline — don't manufacture conviction. I would rather get 5 honest "PASS" verdicts than 1 fake "RESEARCH-WORTHY."

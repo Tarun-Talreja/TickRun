@@ -34,6 +34,7 @@ SEC_FILINGS_PATH    = os.path.join(SCRIPT_DIR, "data", "sec_filings.json")
 NEWS_PATH           = os.path.join(SCRIPT_DIR, "data", "news_cache.json")
 MOVERS_PATH         = os.path.join(SCRIPT_DIR, "data", "movers.json")
 DATA_QUALITY_PATH   = os.path.join(SCRIPT_DIR, "data", "data_quality.json")
+DIGEST_PATH         = os.path.join(SCRIPT_DIR, "output", "weekly_digest.json")
 OUTPUT_PATH         = os.path.join(SCRIPT_DIR, "output", "dashboard.json")
 os.makedirs(os.path.join(SCRIPT_DIR, "output"), exist_ok=True)
 
@@ -261,6 +262,7 @@ def main():
             },
         },
         "themes":          themes.get("themes", {}),
+        "digest":          _load(DIGEST_PATH),
         "signals": {
             "pullback_alerts":    alerts.get("pullback_alerts", []),
             "stale_research":     alerts.get("stale_research", []),

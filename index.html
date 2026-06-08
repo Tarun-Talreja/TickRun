@@ -269,6 +269,13 @@ html,body{
 .mover-pct{font-size:15px;font-weight:700}
 .mover-reason{font-size:13px;line-height:1.4;color:var(--text0);margin-top:6px}
 .data-warn{font-size:9px;font-weight:700;padding:2px 6px;border-radius:4px;background:#ff445522;color:#ff6677;letter-spacing:.04em;cursor:help}
+.conf-badge{font-size:8px;font-weight:700;padding:2px 5px;border-radius:4px;letter-spacing:.05em}
+.conf-high{background:#00f08222;color:#00f082}
+.conf-medium{background:#ffaa0022;color:#ffaa00}
+.conf-low{background:#ff445522;color:#ff6677}
+.digest-card{margin:0 16px 14px;padding:14px 16px;background:linear-gradient(135deg,var(--bg2),#0a1420);border:1px solid var(--border);border-radius:12px}
+.digest-label{font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--cyan);text-transform:uppercase;margin-bottom:7px}
+.digest-text{font-size:13px;line-height:1.5;color:var(--text0)}
 .focus-card::after{
   content:'';position:absolute;right:16px;top:50%;transform:translateY(-50%);
   width:6px;height:10px;
@@ -882,12 +889,17 @@ function renderHome(data){
   const hour = now.getHours();
   const greet = hour<12?'Good morning':hour<17?'Good afternoon':'Good evening';
 
+  const digest = data.digest||{};
   let html = `
   <div class="home-hero s-anim" style="animation-delay:.05s">
     <div class="home-greeting">${greet}, Tarun</div>
     <div class="home-headline">Here's what needs<br>your attention today.</div>
     <div class="home-sub" id="homeTs">—</div>
   </div>
+  ${digest.narrative?`<div class="digest-card s-anim" style="animation-delay:.07s">
+    <div class="digest-label">📋 This Week</div>
+    <div class="digest-text">${esc(digest.narrative)}</div>
+  </div>`:''}
 
   <!-- Stat tiles -->
   <div class="stat-row">
@@ -1043,6 +1055,7 @@ function renderWatchlist(data){
               <span style="width:8px;height:8px;border-radius:50%;background:${t.color};display:inline-block;flex-shrink:0"></span>
               <span class="wl-card-ticker">${esc(s.ticker)}</span>
               ${vbadge(s.verdict)}
+              ${s.confidence?`<span class="conf-badge conf-${esc((s.confidence||'').toLowerCase())}">${esc(s.confidence)}</span>`:''}
               ${s.data_ok===false?`<span class="data-warn" title="${esc((s.data_flags||[]).map(f=>f.msg).join(' · '))}">⚠ DATA</span>`:''}
             </div>
             <div class="wl-card-name">${esc(s.name)}</div>

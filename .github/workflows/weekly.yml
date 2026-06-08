@@ -41,16 +41,31 @@ jobs:
       - name: Update earnings calendar
         run: python scripts/earnings_calendar.py
 
+      - name: Data sanity check
+        run: python scripts/data_sanity.py
+        continue-on-error: true
+
       - name: Assemble dashboard.json
+        run: python scripts/build_dashboard.py
+
+      - name: Weekly plain-English digest
+        env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API }}
+        run: python scripts/weekly_digest.py
+        continue-on-error: true
+
+      - name: Re-assemble dashboard with digest embedded
         run: python scripts/build_dashboard.py
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Auto: weekly dashboard rebuild"
+          commit_message: "Auto: weekly dashboard rebuild + digest"
           file_pattern: >-
             data/watchlist.json
             data/insider_signals.json
+            data/data_quality.json
             output/dashboard.json
+            output/weekly_digest.json
             output/alerts.json
             output/earnings_calendar.json
 
