@@ -62,10 +62,13 @@ HEADERS = {"User-Agent": "TickRun Screener tarun888099@gmail.com"}
 def _sp500_universe() -> list[str]:
     """S&P 500 constituents from Wikipedia (free, reliable)."""
     try:
+        import io
         import pandas as pd
         url = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
         html = requests.get(url, headers=HEADERS, timeout=30).text
-        tables = pd.read_html(html)
+        # pandas 2.x: must wrap a literal HTML string in StringIO (raw string
+        # is treated as a file path otherwise)
+        tables = pd.read_html(io.StringIO(html))
         syms = tables[0]["Symbol"].tolist()
         return [s.replace(".", "-") for s in syms]
     except Exception as e:
