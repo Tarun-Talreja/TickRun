@@ -32,6 +32,7 @@ ALERTS_PATH         = os.path.join(SCRIPT_DIR, "output", "alerts.json")
 EARNINGS_PATH       = os.path.join(SCRIPT_DIR, "output", "earnings_calendar.json")
 SEC_FILINGS_PATH    = os.path.join(SCRIPT_DIR, "data", "sec_filings.json")
 NEWS_PATH           = os.path.join(SCRIPT_DIR, "data", "news_cache.json")
+MOVERS_PATH         = os.path.join(SCRIPT_DIR, "data", "movers.json")
 OUTPUT_PATH         = os.path.join(SCRIPT_DIR, "output", "dashboard.json")
 os.makedirs(os.path.join(SCRIPT_DIR, "output"), exist_ok=True)
 
@@ -198,6 +199,7 @@ def main():
     earnings  = _load(EARNINGS_PATH)
     sec       = _load(SEC_FILINGS_PATH)
     news      = _load(NEWS_PATH)
+    movers    = _load(MOVERS_PATH)
 
     # Enrich portfolio holdings with current prices + P&L
     core_enriched = [_enrich_holding(h, quotes) for h in portfolio.get("core", [])]
@@ -262,6 +264,8 @@ def main():
                 f for f in sec.get("filings", [])
                 if f.get("form") == "8-K"
             ],
+            "price_movers": movers.get("movers", []),
+            "movers_updated": movers.get("generated_at"),
             "news": _build_news_feed(news, candidates_enriched),
             "insider_alerts": [
                 {

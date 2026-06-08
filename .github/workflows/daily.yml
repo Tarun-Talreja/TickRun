@@ -2,9 +2,10 @@ name: Quote Refresh + Alerts
 
 on:
   schedule:
-    # Every 30 minutes during US market hours (9:30am-4pm ET = 13:30-20:00 UTC weekdays)
-    # Note: cron in GitHub Actions runs in UTC, no DST adjustment.
-    - cron: '0,30 14-20 * * 1-5'
+    # Every 30 min during US market hours. Cron is UTC (no DST), and the US is
+    # on EDT (UTC-4) most of the trading year, so 13:30 UTC = 9:30am ET open.
+    # 13:00-20:00 covers the full session incl. the open (was 14:00 — missed first 30m).
+    - cron: '0,30 13-20 * * 1-5'
     # Plus end-of-day final at 6pm ET (22:00 UTC)
     - cron: '0 22 * * 1-5'
   workflow_dispatch:
@@ -50,6 +51,12 @@ jobs:
         run: python scripts/news_feed.py
         continue-on-error: true
 
+      - name: Detect + explain price movers
+        env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API }}
+        run: python scripts/move_explainer.py
+        continue-on-error: true
+
       - name: Assemble dashboard.json
         run: python scripts/build_dashboard.py
 
@@ -60,6 +67,8 @@ jobs:
             data/watchlist.json
             data/sec_filings.json
             data/news_cache.json
+            data/movers.json
+            data/price_snapshot.json
             output/dashboard.json
             output/alerts.json
             output/earnings_calendar.json

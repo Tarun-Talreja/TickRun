@@ -265,6 +265,9 @@ html,body{
 .report-link:hover{text-decoration:underline}
 .sec-form{font-size:10px;font-weight:700;padding:2px 6px;border-radius:4px;background:var(--bg3);color:var(--text1)}
 .sec-form.sec-stake{background:#00f08222;color:#00f082}
+.mover-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:12px 14px}
+.mover-pct{font-size:15px;font-weight:700}
+.mover-reason{font-size:13px;line-height:1.4;color:var(--text0);margin-top:6px}
 .focus-card::after{
   content:'';position:absolute;right:16px;top:50%;transform:translateY(-50%);
   width:6px;height:10px;
@@ -1150,7 +1153,7 @@ function renderStockDetail(s){
 // ── RENDER SIGNALS ────────────────────────────────────────────────────────────
 function renderSignals(data){
   const sig = data.signals;
-  const urgent = (sig.upcoming_earnings||[]).filter(e=>e.days_until<=3).length + (sig.pullback_alerts||[]).length;
+  const urgent = (sig.upcoming_earnings||[]).filter(e=>e.days_until<=3).length + (sig.pullback_alerts||[]).length + (sig.price_movers||[]).length;
 
   $('nb-signals').textContent = urgent;
   $('nb-signals').style.display = urgent>0?'flex':'none';
@@ -1164,6 +1167,30 @@ function renderSignals(data){
     <div class="sh-sub">${urgent} urgent items</div>
   </div>
   <div class="sig-feed">`;
+
+  // ── Movers: why something jumped/dropped (most timely, shown first) ───────
+  const movers = sig.price_movers||[];
+  if(movers.length){
+    html+=`<div class="sig-section-title">⚡ Movers — Why It Moved</div>`;
+    html+=`<div class="news-list">`;
+    movers.forEach((m,i)=>{
+      const up = m.direction==='up';
+      const pct = m.pct_day!=null?m.pct_day:m.pct_since;
+      const col = up?'var(--green)':'var(--red)';
+      const news0 = (m.news&&m.news[0])||{};
+      const safeUrl=(news0.url||'').startsWith('http')?news0.url:'';
+      html+=`<div class="mover-card s-anim" style="animation-delay:${i*0.03}s;border-left:3px solid ${col}">
+        <div class="news-head">
+          <span class="news-ticker">${esc(m.ticker)}</span>
+          ${vbadge(m.verdict)}
+          <span class="mover-pct" style="color:${col};margin-left:auto">${up?'▲':'▼'} ${pct>0?'+':''}${fn(pct,1)}%</span>
+        </div>
+        <div class="mover-reason">${esc(m.reason||'')}</div>
+        ${safeUrl?`<a class="report-link" href="${esc(safeUrl)}" target="_blank" rel="noopener noreferrer">${esc(news0.title||'Read more')} ↗</a>`:''}
+      </div>`;
+    });
+    html+=`</div>`;
+  }
 
   // Earnings
   (sig.upcoming_earnings||[]).forEach((e,i)=>{
