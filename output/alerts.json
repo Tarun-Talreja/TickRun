@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T21:45:16Z",
+  "generated_at": "2026-06-08T23:10:06Z",
   "pullback_alerts": [
     {
       "ticker": "OKLO",
@@ -98,18 +98,6 @@
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
-      "ticker": "PAYX",
-      "name": "Paychex, Inc.",
-      "theme": "quality_compounder",
-      "verdict": "RESEARCH-WORTHY",
-      "price": 98.92,
-      "high_52w": 161.24,
-      "drawdown_pct": -38.7,
-      "severity": "STRONG",
-      "thesis": "Payroll for SMBs \u2014 44% op margin, 20% growth, 4.7% dividend yield, 16.8x fwd PE. -38.6% from ATH. High-quality at a genuinely cheap multiple with strong income.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
       "ticker": "CBRS",
       "name": "Cerebras Systems Inc.",
       "theme": "edge_ai_silicon",
@@ -134,13 +122,25 @@
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
+      "ticker": "PAYX",
+      "name": "Paychex, Inc.",
+      "theme": "quality_compounder",
+      "verdict": "RESEARCH-WORTHY",
+      "price": 98.92,
+      "high_52w": 159.38,
+      "drawdown_pct": -37.9,
+      "severity": "STRONG",
+      "thesis": "Payroll for SMBs \u2014 44% op margin, 20% growth, 4.7% dividend yield, 16.8x fwd PE. -38.6% from ATH. High-quality at a genuinely cheap multiple with strong income.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
       "ticker": "CPB",
       "name": "The Campbell's Company",
       "theme": "defensive_income",
       "verdict": "WATCHLIST",
       "price": 21.49,
-      "high_52w": 34.66,
-      "drawdown_pct": -38.0,
+      "high_52w": 34.56,
+      "drawdown_pct": -37.8,
       "severity": "STRONG",
       "thesis": "Campbell's \u2014 soup + snacks. 7.2% dividend, 10.3x fwd PE, -38% from ATH, -4% growth. Defensive income but declining packaged-food category.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -187,8 +187,8 @@
       "theme": "quality_compounder",
       "verdict": "RESEARCH-WORTHY",
       "price": 229.075,
-      "high_52w": 329.93,
-      "drawdown_pct": -30.6,
+      "high_52w": 325.84,
+      "drawdown_pct": -29.7,
       "severity": "MODERATE",
       "thesis": "Payroll + HR outsourcing \u2014 30% op margin, sticky multi-year contracts, 2.9% dividend, 18.8x fwd PE. -30% from ATH. Recession-resilient cash compounder.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
