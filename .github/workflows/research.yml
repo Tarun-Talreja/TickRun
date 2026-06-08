@@ -51,7 +51,7 @@ jobs:
           file_pattern: >-
             data/watchlist.json
             data/sec_filings.json
-            output/research/*.md
+            output/research/
             output/dashboard.json
 
       - name: Open issue on failure
