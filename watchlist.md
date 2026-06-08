@@ -1,5 +1,6 @@
 # Watchlist
-# One ticker per line. Section headers and comments are ignored. Keep under 25.
+# One ticker per line. Section headers and comments are ignored.
+# Diversified across themes — use the app's theme filter to focus.
 
 ## Core holdings
 AAPL
@@ -35,6 +36,39 @@ VRT
 GEV
 ETN
 OKLO
+
+## Quality compounders
+MA
+ADP
+PAYX
+DHR
+
+## Defensive / dividend income
+DEO
+GIS
+STZ
+CPB
+
+## Healthcare innovation
+GEHC
+ZBH
+
+## Financials / capital markets
+MKTX
+LPLA
+
+## Real estate / REITs
+INVH
+
+## Consumer / media / entertainment
+NFLX
+FLUT
+CMCSA
+
+## Data center infrastructure + utilities
+LMB
+EIX
+CBRS
 
 ## Index benchmarks (always include)
 SPY

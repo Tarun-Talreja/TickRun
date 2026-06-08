@@ -3,56 +3,174 @@
     "power_grid": {
       "name": "Power Grid / Electrification",
       "description": "Data center power demand exploding; transformers/switchgear in shortage; 10-year infrastructure build cycle",
-      "example_tickers": ["POWL", "ATKR", "NVT", "EMR", "ETN"],
+      "example_tickers": [
+        "POWL",
+        "ATKR",
+        "NVT",
+        "EMR",
+        "ETN"
+      ],
       "color": "#f59e0b"
     },
     "nuclear_smr": {
       "name": "Small Modular Nuclear / Uranium",
       "description": "First commercial SMRs deploying 2027-2030; AI data centers need carbon-free baseload power",
-      "example_tickers": ["BWXT", "SMR", "LEU", "CCJ", "UEC"],
+      "example_tickers": [
+        "BWXT",
+        "SMR",
+        "LEU",
+        "CCJ",
+        "UEC"
+      ],
       "color": "#10b981"
     },
     "edge_ai_silicon": {
       "name": "Edge AI / Specialty Silicon",
       "description": "AI inference moving to edge; connectivity chips for data centers; semiconductor equipment for advanced nodes",
-      "example_tickers": ["ALAB", "ONTO", "AMBA", "ACLS", "FORM"],
+      "example_tickers": [
+        "ALAB",
+        "ONTO",
+        "AMBA",
+        "ACLS",
+        "FORM"
+      ],
       "color": "#6366f1"
     },
     "cybersecurity": {
       "name": "Cybersecurity (AI Era)",
       "description": "Agentic AI creates new attack surface; identity, data security, and vulnerability management growing",
-      "example_tickers": ["QLYS", "TENB", "VRNS", "RBRK", "CYBR"],
+      "example_tickers": [
+        "QLYS",
+        "TENB",
+        "VRNS",
+        "RBRK",
+        "CYBR"
+      ],
       "color": "#ef4444"
     },
     "robotics_automation": {
       "name": "Robotics / Industrial Automation",
       "description": "Reshoring + labor shortages + AI-enabled robotics; warehouse and manufacturing automation",
-      "example_tickers": ["SYM", "BRZE", "AZTA", "KRNT"],
+      "example_tickers": [
+        "SYM",
+        "BRZE",
+        "AZTA",
+        "KRNT"
+      ],
       "color": "#8b5cf6"
     },
     "defense_tech": {
       "name": "Defense Tech / Drones",
       "description": "Geopolitical spending cycle; software-defined warfare; drone manufacturing and autonomy",
-      "example_tickers": ["KTOS", "RCAT", "PLTR", "ACHR"],
+      "example_tickers": [
+        "KTOS",
+        "RCAT",
+        "PLTR",
+        "ACHR"
+      ],
       "color": "#64748b"
     },
     "networking_infra": {
       "name": "Networking / Fiber Infrastructure",
       "description": "AI workload traffic driving network upgrades; fiber build-out for data center interconnect",
-      "example_tickers": ["CIEN", "ADTN", "CALX", "AAOI"],
+      "example_tickers": [
+        "CIEN",
+        "ADTN",
+        "CALX",
+        "AAOI"
+      ],
       "color": "#0ea5e9"
     },
     "mega_cap_ai": {
       "name": "Mega-Cap AI Infrastructure",
       "description": "$1T+ tech leaders building/spending on AI infrastructure (Azure, Cloud, ad-targeting AI). Best risk-adjusted way to play AI thesis with margin of safety.",
-      "example_tickers": ["GOOGL", "MSFT", "META", "AMZN", "AVGO"],
+      "example_tickers": [
+        "GOOGL",
+        "MSFT",
+        "META",
+        "AMZN",
+        "AVGO"
+      ],
       "color": "#06b6d4"
     },
     "platform_network": {
       "name": "Platform / Network Effect",
       "description": "Two-sided marketplaces with compounding network effects (mobility, payments, marketplaces). Non-AI diversifier with hedge fund conviction signals.",
-      "example_tickers": ["UBER", "V", "MA", "SPOT"],
+      "example_tickers": [
+        "UBER",
+        "V",
+        "MA",
+        "SPOT"
+      ],
       "color": "#a855f7"
+    },
+    "quality_compounder": {
+      "name": "Quality Compounders",
+      "description": "High-ROIC, wide-moat businesses with durable pricing power \u2014 buy-and-hold for decades regardless of cycle",
+      "example_tickers": [
+        "MA",
+        "V",
+        "ADP",
+        "PAYX",
+        "DHR"
+      ],
+      "color": "#0ea5e9"
+    },
+    "defensive_income": {
+      "name": "Defensive / Dividend Income",
+      "description": "Consumer staples and steady dividend payers \u2014 stability, downside protection, income in a tax-free Roth",
+      "example_tickers": [
+        "DEO",
+        "GIS",
+        "STZ",
+        "CPB"
+      ],
+      "color": "#84cc16"
+    },
+    "healthcare_innovation": {
+      "name": "Healthcare Innovation",
+      "description": "Medical devices, diagnostics, and life-science tools riding aging demographics and AI-assisted diagnostics",
+      "example_tickers": [
+        "GEHC",
+        "DHR",
+        "ZBH"
+      ],
+      "color": "#ec4899"
+    },
+    "financials": {
+      "name": "Financials / Capital Markets",
+      "description": "Exchanges, broker-dealers, and capital-market platforms with network effects and recurring fee revenue",
+      "example_tickers": [
+        "MKTX",
+        "LPLA"
+      ],
+      "color": "#14b8a6"
+    },
+    "real_estate": {
+      "name": "Real Estate / REITs",
+      "description": "Income-producing real estate \u2014 residential, data center, and infrastructure REITs",
+      "example_tickers": [
+        "INVH"
+      ],
+      "color": "#a3a3a3"
+    },
+    "consumer_media": {
+      "name": "Consumer / Media / Entertainment",
+      "description": "Streaming, gaming, and consumer platforms with subscription or recurring engagement revenue",
+      "example_tickers": [
+        "NFLX",
+        "FLUT",
+        "CMCSA"
+      ],
+      "color": "#f43f5e"
+    },
+    "datacenter_infra": {
+      "name": "Data Center Infrastructure",
+      "description": "Mechanical, electrical, and building systems contractors that physically build and service AI data centers",
+      "example_tickers": [
+        "LMB"
+      ],
+      "color": "#f97316"
     }
   }
 }

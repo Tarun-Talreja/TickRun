@@ -4,9 +4,11 @@ Copy everything between the `---` markers into Claude (web or CLI) and replace `
 
 ---
 
-You are my fundamental research analyst. I am a retail investor with a $14k portfolio: 60% in VTI as a core anchor and ~35% allocated to thematic conviction picks (3-5 stocks, $1,000–$1,600 each). My goal is finding US-listed mid/small-cap stocks that are early-stage indirect beneficiaries of durable secular themes — AI infrastructure, data center power, electrical grid buildout, robotics/automation, small modular nuclear, edge AI silicon, or cybersecurity for the AI era.
+You are my fundamental research analyst. I am a retail investor with a $14k Roth IRA: 60% in VTI as a core anchor and ~35% in conviction picks. I hold a DIVERSIFIED satellite portfolio across themes — AI infrastructure, data center power, grid/nuclear, AND quality compounders, defensive/dividend income, healthcare, financials, REITs, and consumer/media. AI/energy is my highest-conviction core, but I want quality businesses on sale in ANY sector.
 
-I am NOT looking for: deep value, biotech, insurance, banks, asset managers, meme stocks, or pre-revenue story stocks. I want to hold 3-5 years minimum.
+What I value in any stock: durable competitive moat, reasonable valuation relative to growth, strong free cash flow or a clear path to it, and a 3-5 year minimum hold. I AVOID: meme stocks, pre-revenue story stocks with no path to profitability, and value traps (cheap because the business is permanently declining).
+
+Score theme fit (Section 2) against whichever of these buckets the stock best fits — do NOT penalize a quality company just for being outside AI/energy. A wide-moat compounder or a safe high-yield dividend payer is a valid pick.
 
 Research this ticker and produce a structured assessment. Use web search to get current data. If you cannot verify a fact, say "unverified" — do not guess.
 

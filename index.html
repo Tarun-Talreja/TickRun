@@ -356,6 +356,9 @@ html,body{
   cursor:pointer;transition:all .12s;flex-shrink:0;
 }
 .filter-chip.active{background:var(--cyan-d);border-color:var(--cyan);color:var(--cyan)}
+.theme-row{padding-top:8px}
+.theme-chip{display:inline-flex;align-items:center;text-transform:none;letter-spacing:.02em;font-size:10px}
+.theme-chip.active{color:#06121f;font-weight:700}
 
 /* Search bar */
 .search-wrap{
@@ -766,6 +769,16 @@ const THEME={
   edge_ai_silicon:{color:'#6366f1',label:'Edge AI'},
   cybersecurity:{color:'#ff4455',label:'Cybersec'},
   nuclear_smr:{color:'#00f082',label:'Nuclear SMR'},
+  robotics_automation:{color:'#22d3ee',label:'Robotics'},
+  defense_tech:{color:'#94a3b8',label:'Defense'},
+  networking_infra:{color:'#38bdf8',label:'Networking'},
+  quality_compounder:{color:'#0ea5e9',label:'Quality'},
+  defensive_income:{color:'#84cc16',label:'Defensive'},
+  healthcare_innovation:{color:'#ec4899',label:'Healthcare'},
+  financials:{color:'#14b8a6',label:'Financials'},
+  real_estate:{color:'#a3a3a3',label:'REITs'},
+  consumer_media:{color:'#f43f5e',label:'Consumer/Media'},
+  datacenter_infra:{color:'#f97316',label:'DC Infra'},
 };
 const tc=k=>THEME[k]||{color:'#7a9ab8',label:k||'—'};
 
@@ -978,9 +991,16 @@ function renderHome(data){
 function renderWatchlist(data){
   const all = data.watchlist.all;
   let activeFilter = 'all';
+  let activeTheme = 'all';
 
-  function build(filter, searchQ=''){
+  // Themes present in the data, with counts, sorted by count desc
+  const themeCounts = {};
+  all.forEach(s=>{ const t=s.theme||'unknown'; themeCounts[t]=(themeCounts[t]||0)+1; });
+  const themeKeys = Object.keys(themeCounts).filter(t=>t!=='unknown').sort((a,b)=>themeCounts[b]-themeCounts[a]);
+
+  function build(filter, searchQ='', theme='all'){
     let base = filter==='all' ? all : filter==='buy' ? (data.watchlist.by_verdict['RESEARCH-WORTHY']||[]) : filter==='watch' ? (data.watchlist.by_verdict['WATCHLIST']||[]) : (data.watchlist.by_verdict['PASS']||[]);
+    if(theme!=='all') base = base.filter(s=>(s.theme||'')===theme);
     const q = searchQ.trim().toLowerCase();
     let stocks = q ? base.filter(s=>(s.ticker||'').toLowerCase().includes(q)||(s.name||'').toLowerCase().includes(q)||(s.theme||'').toLowerCase().includes(q)) : base;
 
@@ -999,6 +1019,10 @@ function renderWatchlist(data){
       <span class="filter-chip ${filter==='buy'?'active':''}" onclick="setFilter('buy')">Buy-Ready ${(data.watchlist.by_verdict['RESEARCH-WORTHY']||[]).length}</span>
       <span class="filter-chip ${filter==='watch'?'active':''}" onclick="setFilter('watch')">Watching ${(data.watchlist.by_verdict['WATCHLIST']||[]).length}</span>
       <span class="filter-chip ${filter==='pass'?'active':''}" onclick="setFilter('pass')">Pass ${(data.watchlist.by_verdict['PASS']||[]).length}</span>
+    </div>
+    <div class="filter-row theme-row">
+      <span class="filter-chip theme-chip ${theme==='all'?'active':''}" onclick="setTheme('all')">All Themes</span>
+      ${themeKeys.map(t=>`<span class="filter-chip theme-chip ${theme===t?'active':''}" onclick="setTheme('${t}')" style="${theme===t?`background:${tc(t).color};border-color:${tc(t).color}`:`border-color:${tc(t).color}66`}"><span style="width:7px;height:7px;border-radius:50%;background:${tc(t).color};display:inline-block;margin-right:5px"></span>${esc(tc(t).label)} ${themeCounts[t]}</span>`).join('')}
     </div>
     <div class="wl-list">`;
 
@@ -1044,9 +1068,10 @@ function renderWatchlist(data){
   }
 
   let searchQuery = '';
-  window.setFilter = f => { activeFilter=f; build(f, searchQuery); };
-  window.handleSearch = q => { searchQuery=q; build(activeFilter, q); };
-  build('all');
+  window.setFilter = f => { activeFilter=f; build(f, searchQuery, activeTheme); };
+  window.setTheme  = t => { activeTheme=t; build(activeFilter, searchQuery, t); };
+  window.handleSearch = q => { searchQuery=q; build(activeFilter, q, activeTheme); };
+  build('all', '', 'all');
 }
 
 // ── RENDER STOCK DETAIL ───────────────────────────────────────────────────────

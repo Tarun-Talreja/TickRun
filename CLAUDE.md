@@ -3,9 +3,14 @@
 ## What This Is
 
 A personal stock research dashboard for a $14k Roth IRA (F-1 STEM OPT — passive investing only,
-no day trading, no options/margin). The system screens for U.S. stocks that are undervalued but
-growing, especially indirect AI/data-center/infrastructure beneficiaries, and produces a curated
-watchlist with automated smart-money signals.
+no day trading, no options/margin). The system screens for quality U.S. stocks that are
+undervalued but growing, and produces a curated watchlist with automated smart-money signals.
+
+**Universe (broadened 2026-06-08):** No longer limited to AI/energy. The portfolio is now
+diversified across themes — AI infrastructure, power/nuclear, plus quality compounders,
+defensive/dividend income, healthcare, financials, REITs, and consumer/media. Use the app's
+**theme filter** (Watchlist screen) to focus on any bucket. AI/data-center/energy remains the
+highest-conviction core, but quality businesses on sale in any sector are now in-mandate.
 
 **Brokerage:** Robinhood Roth IRA
 **Key benefits:** No capital gains tax ever. No PDT rule (Roth IRA exempt). Tax-free compounding.
