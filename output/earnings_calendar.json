@@ -1,16 +1,26 @@
 {
-  "generated_at": "2026-06-10T19:12:59Z",
+  "generated_at": "2026-06-10T21:34:02Z",
   "lookahead_days": 30,
   "upcoming_earnings": [
     {
       "ticker": "CBRS",
       "name": "Cerebras Systems Inc.",
       "date": "2026-06-23",
-      "days_until": 13,
+      "days_until": 12,
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
       "thesis": "Cerebras \u2014 wafer-scale AI processors (largest chip ever made) for AI training/inference. 1474% revenue growth but -31% op margin (unprofitable), 287x fwd PE, -37% from ATH. Direct NVIDIA challenger \u2014 pure speculation at this valuation.",
       "action": "Review thesis before earnings. Re-run research_ticker.py CBRS after."
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "date": "2026-06-24",
+      "days_until": 13,
+      "theme": "edge_ai_silicon",
+      "verdict": "RESEARCH-WORTHY",
+      "thesis": "Only US-based HBM3E manufacturer \u2014 every NVIDIA H100/H200/B200 GPU requires High Bandwidth Memory stacked on the die. Samsung and SK Hynix dominate HBM but Micron has a geopolitical moat as the only American supplier. 196% revenue growth YoY (coming off cyclical trough), 8.2x forward PE. DATA QUALITY WARNING: yfinance shows $864 price \u2014 verify on Fidelity before acting. Memory is cyclical; this growth rate will moderate but AI demand provides a structural floor.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py MU after."
     },
     {
       "ticker": "PAYX",
@@ -23,14 +33,14 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py PAYX after."
     },
     {
-      "ticker": "MU",
-      "name": "Micron Technology, Inc.",
-      "date": "2026-06-24",
-      "days_until": 14,
-      "theme": "edge_ai_silicon",
-      "verdict": "RESEARCH-WORTHY",
-      "thesis": "Only US-based HBM3E manufacturer \u2014 every NVIDIA H100/H200/B200 GPU requires High Bandwidth Memory stacked on the die. Samsung and SK Hynix dominate HBM but Micron has a geopolitical moat as the only American supplier. 196% revenue growth YoY (coming off cyclical trough), 8.2x forward PE. DATA QUALITY WARNING: yfinance shows $864 price \u2014 verify on Fidelity before acting. Memory is cyclical; this growth rate will moderate but AI demand provides a structural floor.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py MU after."
+      "ticker": "STZ",
+      "name": "Constellation Brands, Inc.",
+      "date": "2026-06-30",
+      "days_until": 19,
+      "theme": "defensive_income",
+      "verdict": "WATCHLIST",
+      "thesis": "Constellation Brands \u2014 beer (Modelo, Corona) + wine. 27% op margin but -11% revenue growth. 11.4x fwd PE, -20% from ATH. Cheap but shrinking \u2014 needs a turnaround thesis.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py STZ after."
     },
     {
       "ticker": "GIS",
@@ -41,16 +51,6 @@
       "verdict": "WATCHLIST",
       "thesis": "General Mills \u2014 packaged foods. 7.4% dividend yield(!), 10.5x fwd PE, -40% from ATH. Deep value but only 2% growth. Verify dividend payout safety before chasing the yield.",
       "action": "Review thesis before earnings. Re-run research_ticker.py GIS after."
-    },
-    {
-      "ticker": "STZ",
-      "name": "Constellation Brands, Inc.",
-      "date": "2026-06-30",
-      "days_until": 20,
-      "theme": "defensive_income",
-      "verdict": "WATCHLIST",
-      "thesis": "Constellation Brands \u2014 beer (Modelo, Corona) + wine. 27% op margin but -11% revenue growth. 11.4x fwd PE, -20% from ATH. Cheap but shrinking \u2014 needs a turnaround thesis.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py STZ after."
     }
   ]
 }
