@@ -1,19 +1,51 @@
 {
-  "generated_at": "2026-06-12T16:13:27Z",
+  "generated_at": "2026-06-12T18:23:34Z",
   "movers": [
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "verdict": "WATCHLIST",
+      "price": 238.3399,
+      "pct_day": 7.24,
+      "pct_since": 2.5,
+      "direction": "up",
+      "triggers": [
+        "+7.2% on the day"
+      ],
+      "reason": "NBIS added to Nasdaq-100 index.",
+      "news": [
+        {
+          "title": "Jim Cramer on Nebius: \u201cLet It Come Down\u201d",
+          "publisher": "Insider Monkey",
+          "date": "2026-06-12",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-nebius-let-come-144522077.html"
+        },
+        {
+          "title": "Rocket Lab, CoreWeave, and 3 More Stocks That Are Joining the Nasdaq 100",
+          "publisher": "Barrons.com",
+          "date": "2026-06-12",
+          "url": "https://www.barrons.com/articles/rocket-lab-stock-nasdaq-join-coreweave-058ed32f?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "title": "This AI Stock Is Australia\u2019s Answer to CoreWeave. It Just Notched a Deal With Nvidia.",
+          "publisher": "Barrons.com",
+          "date": "2026-06-12",
+          "url": "https://www.barrons.com/articles/sharonai-stock-nvidia-ai-acf75e4e?siteid=yhoof2&yptr=yahoo"
+        }
+      ]
+    },
     {
       "ticker": "COHR",
       "name": "Coherent Corp.",
       "verdict": "WATCHLIST",
-      "price": 390.4899,
-      "pct_day": 7.4,
-      "pct_since": 7.4,
+      "price": 387.86,
+      "pct_day": 6.68,
+      "pct_since": -0.67,
       "direction": "up",
       "triggers": [
-        "+7.4% since last check",
-        "+7.4% on the day"
+        "+6.7% on the day"
       ],
-      "reason": "J.P. Morgan recommends buying the dip.",
+      "reason": "JPMorgan recommends buying the dip in COHR.",
       "news": [
         {
           "title": "Lumentum Strengthens Liquidity Position: Is Long-Term Growth Safer?",
@@ -39,15 +71,14 @@
       "ticker": "CBRS",
       "name": "Cerebras Systems Inc.",
       "verdict": "WATCHLIST",
-      "price": 210.79,
-      "pct_day": -6.96,
-      "pct_since": -6.96,
+      "price": 213.44,
+      "pct_day": -5.79,
+      "pct_since": 1.26,
       "direction": "down",
       "triggers": [
-        "-7.0% since last check",
-        "-7.0% on the day"
+        "-5.8% on the day"
       ],
-      "reason": "Chip stocks, including Cerebras, are tumbling.",
+      "reason": "Chip stocks are tumbling.",
       "news": [
         {
           "title": "Why Cerebras Stock Is Rising This Week",
@@ -73,16 +104,21 @@
       "ticker": "RDDT",
       "name": "Reddit, Inc.",
       "verdict": "RESEARCH-WORTHY",
-      "price": 161.3872,
-      "pct_day": -6.85,
-      "pct_since": -6.85,
+      "price": 163.29,
+      "pct_day": -5.75,
+      "pct_since": 1.18,
       "direction": "down",
       "triggers": [
-        "-6.8% since last check",
-        "-6.8% on the day"
+        "-5.8% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
+        {
+          "title": "Reddit International Growth And Licensing Upside Create Valuation Gap",
+          "publisher": "Simply Wall St.",
+          "date": "2026-06-12",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/reddit-international-growth-licensing-upside-170648024.html"
+        },
         {
           "title": "Wall Street Analysts Think Reddit Inc. (RDDT) Is a Good Investment: Is It?",
           "publisher": "Zacks",
@@ -94,111 +130,6 @@
           "publisher": "24/7 Wall St.",
           "date": "2026-06-12",
           "url": "https://247wallst.com/personal-finance/2026/06/12/a-2024-asset-sale-could-spike-your-2026-medicare-premium-by-hundreds-a-month/"
-        },
-        {
-          "title": "RDDT Rides on Strong International Expansion: A Sign for More Upside?",
-          "publisher": "Zacks",
-          "date": "2026-06-11",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/rddt-rides-strong-international-expansion-165700512.html"
-        }
-      ]
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "verdict": "WATCHLIST",
-      "price": 232.525,
-      "pct_day": 4.63,
-      "pct_since": 4.63,
-      "direction": "up",
-      "triggers": [
-        "+4.6% since last check"
-      ],
-      "reason": "Added to Nasdaq-100 index.",
-      "news": [
-        {
-          "title": "Jim Cramer on Nebius: \u201cLet It Come Down\u201d",
-          "publisher": "Insider Monkey",
-          "date": "2026-06-12",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-nebius-let-come-144522077.html"
-        },
-        {
-          "title": "Rocket Lab, CoreWeave, and 3 More Stocks That Are Joining the Nasdaq 100",
-          "publisher": "Barrons.com",
-          "date": "2026-06-12",
-          "url": "https://www.barrons.com/articles/rocket-lab-stock-nasdaq-join-coreweave-058ed32f?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "title": "This AI Stock Is Australia\u2019s Answer to CoreWeave. It Just Notched a Deal With Nvidia.",
-          "publisher": "Barrons.com",
-          "date": "2026-06-12",
-          "url": "https://www.barrons.com/articles/sharonai-stock-nvidia-ai-acf75e4e?siteid=yhoof2&yptr=yahoo"
-        }
-      ]
-    },
-    {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "verdict": "WATCHLIST",
-      "price": 509.6233,
-      "pct_day": 4.33,
-      "pct_since": 4.33,
-      "direction": "up",
-      "triggers": [
-        "+4.3% since last check"
-      ],
-      "reason": "AMD upgraded to Buy on GPU upside.",
-      "news": [
-        {
-          "title": "CPU market to grow 5x by 2030, BofA says",
-          "publisher": "Yahoo Finance",
-          "date": "2026-06-11",
-          "url": "https://finance.yahoo.com/sectors/technology/article/cpu-market-to-grow-5x-by-2030-bofa-says-180454617.html"
-        },
-        {
-          "title": "Stock Market Today: Dow Rises On Iran Peace Deal Hopes; SpaceX Shares To Launch (Live Coverage)",
-          "publisher": "Investor's Business Daily",
-          "date": "2026-06-12",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-iran-deal-spacex-ipo-spcx-stock/?src=A00220&yptr=yahoo"
-        },
-        {
-          "title": "What A Patient Investor Really Pays For Broadcom Stock",
-          "publisher": "Trefis",
-          "date": "2026-06-12",
-          "url": "https://www.trefis.com/articles/602708/what-a-patient-investor-really-pays-for-broadcom-stock/2026-06-12"
-        }
-      ]
-    },
-    {
-      "ticker": "LPLA",
-      "name": "LPL Financial Holdings Inc.",
-      "verdict": "RESEARCH-WORTHY",
-      "price": 295.0,
-      "pct_day": 3.35,
-      "pct_since": 3.35,
-      "direction": "up",
-      "triggers": [
-        "+3.4% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "\u2018Mansplaining\u2019 Hasn\u2019t Gone Away. Plus, Women on the Move.",
-          "publisher": "Barrons.com",
-          "date": "2026-06-11",
-          "url": "https://www.barrons.com/advisor/articles/advisor-womens-edition-mansplaining-8fc6916f?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "title": "Is It Time To Reassess LPL Financial Holdings (LPLA) After Its Recent Share Price Slide?",
-          "publisher": "Simply Wall St.",
-          "date": "2026-06-07",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/time-reassess-lpl-financial-holdings-001803609.html"
-        },
-        {
-          "title": "Week\u2019s Best: Early Retirement Is Often Unintended",
-          "publisher": "Barrons.com",
-          "date": "2026-06-05",
-          "url": "https://www.barrons.com/advisor/articles/weeks-best-early-retirement-is-often-unintended-61b2cc43?siteid=yhoof2&yptr=yahoo"
         }
       ]
     }
