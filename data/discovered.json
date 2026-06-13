@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T20:37:26Z",
+  "generated_at": "2026-06-13T13:18:58Z",
   "universe": "sp500",
   "scanned": 503,
   "qualified": 411,
@@ -8,29 +8,29 @@
       "ticker": "NEM",
       "name": "Newmont Corporation",
       "sector": "Basic Materials",
-      "score": 83.9,
+      "score": 83.8,
       "quality": 33.3,
-      "value": 16.5,
+      "value": 16.4,
       "growth": 20,
       "health": 14.1,
       "passes_screens": [
         "Quality",
         "Magic Formula"
       ],
-      "market_cap": 105677045760,
-      "price": 98.99,
-      "forward_pe": 8.6976,
+      "market_cap": 107000815616,
+      "price": 100.23,
+      "forward_pe": 8.795925,
       "rev_growth": 0.458,
       "roe": 0.25832,
-      "drawdown_pct": -26.6
+      "drawdown_pct": -25.7
     },
     {
       "ticker": "INCY",
       "name": "Incyte Corporation",
       "sector": "Healthcare",
-      "score": 83.5,
+      "score": 82.9,
       "quality": 31.6,
-      "value": 20.6,
+      "value": 20.0,
       "growth": 16.4,
       "health": 15.0,
       "passes_screens": [
@@ -38,20 +38,41 @@
         "GARP",
         "Magic Formula"
       ],
-      "market_cap": 20106076160,
-      "price": 100.64,
-      "forward_pe": 11.098894,
+      "market_cap": 21682358272,
+      "price": 108.53,
+      "forward_pe": 11.843042,
       "rev_growth": 0.209,
       "roe": 0.30823,
-      "drawdown_pct": -10.4
+      "drawdown_pct": -3.3
+    },
+    {
+      "ticker": "PTC",
+      "name": "PTC Inc.",
+      "sector": "Technology",
+      "score": 80.4,
+      "quality": 35,
+      "value": 18.1,
+      "growth": 16.7,
+      "health": 10.6,
+      "passes_screens": [
+        "Quality",
+        "GARP",
+        "Magic Formula"
+      ],
+      "market_cap": 13130698752,
+      "price": 113.68,
+      "forward_pe": 13.150436,
+      "rev_growth": 0.217,
+      "roe": 0.344,
+      "drawdown_pct": -48.3
     },
     {
       "ticker": "EOG",
       "name": "EOG Resources, Inc.",
       "sector": "Energy",
-      "score": 77.9,
+      "score": 78.0,
       "quality": 30.3,
-      "value": 20.8,
+      "value": 20.9,
       "growth": 14.2,
       "health": 12.5,
       "passes_screens": [
@@ -60,68 +81,66 @@
         "Magic Formula",
         "Dividend Quality"
       ],
-      "market_cap": 74647887872,
-      "price": 140.15,
-      "forward_pe": 9.458896,
+      "market_cap": 72783683584,
+      "price": 136.65,
+      "forward_pe": 9.222676,
       "rev_growth": 0.156,
       "roe": 0.18195,
-      "drawdown_pct": -7.7
-    },
-    {
-      "ticker": "PTC",
-      "name": "PTC Inc.",
-      "sector": "Technology",
-      "score": 77.5,
-      "quality": 35,
-      "value": 15.3,
-      "growth": 16.7,
-      "health": 10.6,
-      "passes_screens": [
-        "Quality",
-        "GARP"
-      ],
-      "market_cap": 15716874240,
-      "price": 136.07,
-      "forward_pe": 15.7404995,
-      "rev_growth": 0.217,
-      "roe": 0.344,
-      "drawdown_pct": -38.1
+      "drawdown_pct": -10.0
     },
     {
       "ticker": "FSLR",
       "name": "First Solar, Inc.",
       "sector": "Technology",
-      "score": 77.3,
+      "score": 77.8,
       "quality": 26.9,
-      "value": 18.4,
+      "value": 18.8,
       "growth": 17.4,
       "health": 14.6,
       "passes_screens": [
         "Quality",
-        "GARP"
+        "GARP",
+        "Magic Formula"
       ],
-      "market_cap": 29591582720,
-      "price": 275.39,
-      "forward_pe": 11.754493,
+      "market_cap": 28723357696,
+      "price": 267.31,
+      "forward_pe": 11.409613,
       "rev_growth": 0.236,
       "roe": 0.18436001,
-      "drawdown_pct": -14.2
+      "drawdown_pct": -16.7
+    },
+    {
+      "ticker": "EQT",
+      "name": "EQT Corporation",
+      "sector": "Energy",
+      "score": 74.7,
+      "quality": 28.4,
+      "value": 16.6,
+      "growth": 20,
+      "health": 9.7,
+      "passes_screens": [],
+      "market_cap": 32487327744,
+      "price": 51.94,
+      "forward_pe": 11.208556,
+      "rev_growth": 0.499,
+      "roe": 0.13402,
+      "drawdown_pct": -23.9
     },
     {
       "ticker": "CF",
       "name": "CF Industries Holdings, Inc.",
       "sector": "Basic Materials",
-      "score": 74.5,
+      "score": 74.6,
       "quality": 30.1,
-      "value": 16.2,
+      "value": 16.3,
       "growth": 15.8,
       "health": 12.4,
       "passes_screens": [
         "Magic Formula"
       ],
-      "market_cap": 16814724096,
-      "price": 109.45,
-      "forward_pe": 9.462394,
+      "market_cap": 16819334144,
+      "price": 109.48,
+      "forward_pe": 9.464988,
       "rev_growth": 0.194,
       "roe": 0.273,
       "drawdown_pct": -22.9
@@ -130,46 +149,29 @@
       "ticker": "CPAY",
       "name": "Corpay, Inc.",
       "sector": "Technology",
-      "score": 74.3,
+      "score": 74.1,
       "quality": 35,
-      "value": 18.2,
+      "value": 18.0,
       "growth": 18.2,
       "health": 2.9,
       "passes_screens": [
         "Quality",
         "GARP"
       ],
-      "market_cap": 22811963392,
-      "price": 349.01,
-      "forward_pe": 11.403305,
+      "market_cap": 23276032000,
+      "price": 356.11,
+      "forward_pe": 11.635285,
       "rev_growth": 0.254,
       "roe": 0.32124,
-      "drawdown_pct": -5.0
-    },
-    {
-      "ticker": "EQT",
-      "name": "EQT Corporation",
-      "sector": "Energy",
-      "score": 74.3,
-      "quality": 28.4,
-      "value": 16.2,
-      "growth": 20,
-      "health": 9.7,
-      "passes_screens": [],
-      "market_cap": 33137825792,
-      "price": 52.98,
-      "forward_pe": 11.432986,
-      "rev_growth": 0.499,
-      "roe": 0.13402,
-      "drawdown_pct": -22.4
+      "drawdown_pct": -3.1
     },
     {
       "ticker": "APA",
       "name": "APA Corporation",
       "sector": "Energy",
-      "score": 73.3,
+      "score": 73.5,
       "quality": 33.5,
-      "value": 23.7,
+      "value": 23.9,
       "growth": 8,
       "health": 8.1,
       "passes_screens": [
@@ -177,111 +179,111 @@
         "Magic Formula",
         "Dividend Quality"
       ],
-      "market_cap": 13311688704,
-      "price": 37.66,
-      "forward_pe": 8.8503275,
+      "market_cap": 13085468672,
+      "price": 37.02,
+      "forward_pe": 8.552004,
       "rev_growth": -0.119,
       "roe": 0.26217,
-      "drawdown_pct": -17.5
+      "drawdown_pct": -18.9
     },
     {
       "ticker": "WDC",
       "name": "Western Digital Corporation",
       "sector": "Technology",
-      "score": 73.0,
+      "score": 72.4,
       "quality": 32.6,
-      "value": 8.1,
+      "value": 7.4,
       "growth": 20,
       "health": 12.4,
       "passes_screens": [
         "Quality",
         "GARP"
       ],
-      "market_cap": 181623357440,
-      "price": 526.93,
-      "forward_pe": 29.610643,
+      "market_cap": 194030190592,
+      "price": 562.925,
+      "forward_pe": 31.410051,
       "rev_growth": 0.455,
       "roe": 0.85920995,
-      "drawdown_pct": -12.5
-    },
-    {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
-      "sector": "Technology",
-      "score": 72.6,
-      "quality": 34.3,
-      "value": 3.5,
-      "growth": 20,
-      "health": 14.8,
-      "passes_screens": [
-        "Quality",
-        "GARP"
-      ],
-      "market_cap": 58654781440,
-      "price": 374.69,
-      "forward_pe": 39.427315,
-      "rev_growth": 0.87,
-      "roe": 0.2875,
-      "drawdown_pct": -11.2
-    },
-    {
-      "ticker": "BLK",
-      "name": "BlackRock, Inc.",
-      "sector": "Financial Services",
-      "score": 71.7,
-      "quality": 25.6,
-      "value": 13.7,
-      "growth": 18.8,
-      "health": 13.6,
-      "passes_screens": [
-        "GARP",
-        "Dividend Quality"
-      ],
-      "market_cap": 161996816384,
-      "price": 994.77,
-      "forward_pe": 16.403105,
-      "rev_growth": 0.27,
-      "roe": 0.118990004,
-      "drawdown_pct": -18.5
+      "drawdown_pct": -6.6
     },
     {
       "ticker": "PLTR",
       "name": "Palantir Technologies Inc.",
       "sector": "Technology",
-      "score": 71.6,
+      "score": 72.0,
       "quality": 35,
-      "value": 1.8,
+      "value": 2.1,
       "growth": 20,
       "health": 14.9,
       "passes_screens": [
         "Quality"
       ],
-      "market_cap": 327161184256,
-      "price": 136.47,
-      "forward_pe": 65.791504,
+      "market_cap": 306831949824,
+      "price": 127.99,
+      "forward_pe": 61.703335,
       "rev_growth": 0.847,
       "roe": 0.32587,
-      "drawdown_pct": -34.2
+      "drawdown_pct": -38.3
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
+      "sector": "Technology",
+      "score": 72.0,
+      "quality": 34.3,
+      "value": 2.9,
+      "growth": 20,
+      "health": 14.8,
+      "passes_screens": [
+        "Quality"
+      ],
+      "market_cap": 63117799424,
+      "price": 403.2,
+      "forward_pe": 42.427322,
+      "rev_growth": 0.87,
+      "roe": 0.2875,
+      "drawdown_pct": -4.5
     },
     {
       "ticker": "GOOG",
       "name": "Alphabet Inc.",
       "sector": "Communication Services",
-      "score": 71.5,
+      "score": 71.7,
       "quality": 35,
-      "value": 6.3,
+      "value": 6.4,
       "growth": 16.7,
       "health": 13.6,
       "passes_screens": [
         "Quality",
         "GARP"
       ],
-      "market_cap": 4404444921856,
-      "price": 361.17,
-      "forward_pe": 24.97545,
+      "market_cap": 4367737946112,
+      "price": 358.16,
+      "forward_pe": 24.733765,
       "rev_growth": 0.218,
       "roe": 0.38884997,
-      "drawdown_pct": -10.7
+      "drawdown_pct": -11.4
+    },
+    {
+      "ticker": "ADBE",
+      "name": "Adobe Inc.",
+      "sector": "Technology",
+      "score": 71.3,
+      "quality": 34.7,
+      "value": 21.8,
+      "growth": 7.2,
+      "health": 7.6,
+      "passes_screens": [
+        "Quality",
+        "GARP",
+        "Magic Formula"
+      ],
+      "market_cap": 82464882688,
+      "price": 204.02,
+      "forward_pe": 7.456013,
+      "rev_growth": 0.127,
+      "roe": 0.62953997,
+      "drawdown_pct": -49.6
     },
     {
       "ticker": "HIG",
@@ -295,12 +297,12 @@
       "passes_screens": [
         "Magic Formula"
       ],
-      "market_cap": 34976350208,
-      "price": 127.59,
-      "forward_pe": 8.9385605,
+      "market_cap": 35532836864,
+      "price": 129.62,
+      "forward_pe": 9.159259,
       "rev_growth": 0.061,
       "roe": 0.22735001,
-      "drawdown_pct": -11.7
+      "drawdown_pct": -10.3
     }
   ]
 }
