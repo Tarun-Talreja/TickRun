@@ -1,102 +1,57 @@
 {
-  "generated_at": "2026-06-08T19:48:52Z",
-  "narrative": null,
+  "generated_at": "2026-06-14T22:58:40Z",
+  "narrative": "This week, several stocks experienced significant movements, including COHR with a 5.9% gain and RDDT with a 6.44% decline. It's essential to consider the upcoming earnings reports, particularly for CBRS on June 23, as well as MU and PAYX on June 24, which may impact their stock prices. Additionally, keep an eye on the \"buy ready at target\" list, which includes AVGO, VST, ADP, and GEHC, as these stocks may be poised for potential buying opportunities. Reviewing these stocks and their respective earnings reports can help inform investment decisions.",
   "buy_ready": [
-    {
-      "ticker": "MSFT",
-      "name": "Microsoft Corporation",
-      "price": 412.37,
-      "buy_target": 425,
-      "at_or_below_target": true,
-      "confidence": null,
-      "theme": "mega_cap_ai"
-    },
     {
       "ticker": "AVGO",
       "name": "Broadcom Inc.",
-      "price": 396.195,
+      "price": 382.07,
       "buy_target": 400,
       "at_or_below_target": true,
-      "confidence": null,
+      "confidence": "MEDIUM",
       "theme": "edge_ai_silicon"
-    },
-    {
-      "ticker": "CEG",
-      "name": "Constellation Energy Corporation",
-      "price": 252.12,
-      "buy_target": 290,
-      "at_or_below_target": true,
-      "confidence": null,
-      "theme": "nuclear_smr"
     },
     {
       "ticker": "VST",
       "name": "Vistra Corp.",
-      "price": 147.14,
+      "price": 148.02,
       "buy_target": 160,
       "at_or_below_target": true,
-      "confidence": null,
+      "confidence": "MEDIUM",
       "theme": "nuclear_smr"
+    },
+    {
+      "ticker": "ADP",
+      "name": "ADP",
+      "price": 226.21,
+      "buy_target": 220,
+      "at_or_below_target": true,
+      "confidence": "MEDIUM",
+      "theme": "quality_compounder"
     },
     {
       "ticker": "GEHC",
       "name": "GEHC",
-      "price": 64.5,
+      "price": 65.18,
       "buy_target": 64,
       "at_or_below_target": true,
-      "confidence": null,
+      "confidence": "MEDIUM",
       "theme": "healthcare_innovation"
-    },
-    {
-      "ticker": "MKTX",
-      "name": "MKTX",
-      "price": 114.64,
-      "buy_target": 115,
-      "at_or_below_target": true,
-      "confidence": null,
-      "theme": "financials"
-    },
-    {
-      "ticker": "LPLA",
-      "name": "LPLA",
-      "price": 285.55,
-      "buy_target": 285,
-      "at_or_below_target": true,
-      "confidence": null,
-      "theme": "financials"
-    },
-    {
-      "ticker": "NFLX",
-      "name": "NFLX",
-      "price": 82.5499,
-      "buy_target": 82,
-      "at_or_below_target": true,
-      "confidence": null,
-      "theme": "consumer_media"
     },
     {
       "ticker": "RDDT",
       "name": "Reddit, Inc.",
-      "price": 171.1868,
+      "price": 162.1,
       "buy_target": 154,
       "at_or_below_target": false,
-      "confidence": null,
+      "confidence": "MEDIUM",
       "theme": "platform_network"
     },
     {
       "ticker": "MA",
       "name": "MA",
-      "price": 485.13,
+      "price": 489.98,
       "buy_target": 455,
-      "at_or_below_target": false,
-      "confidence": null,
-      "theme": "quality_compounder"
-    },
-    {
-      "ticker": "ADP",
-      "name": "ADP",
-      "price": 229.14,
-      "buy_target": 220,
       "at_or_below_target": false,
       "confidence": null,
       "theme": "quality_compounder"
@@ -104,60 +59,73 @@
     {
       "ticker": "PAYX",
       "name": "PAYX",
-      "price": 99.04,
+      "price": 100.63,
       "buy_target": 95,
       "at_or_below_target": false,
-      "confidence": null,
+      "confidence": "MEDIUM",
       "theme": "quality_compounder"
+    },
+    {
+      "ticker": "MKTX",
+      "name": "MKTX",
+      "price": 120.89,
+      "buy_target": 115,
+      "at_or_below_target": false,
+      "confidence": "MEDIUM",
+      "theme": "financials"
+    },
+    {
+      "ticker": "LPLA",
+      "name": "LPLA",
+      "price": 295.66,
+      "buy_target": 285,
+      "at_or_below_target": false,
+      "confidence": "MEDIUM",
+      "theme": "financials"
     }
   ],
   "movers": [
     {
-      "ticker": "CBRS",
-      "pct": 21.04,
-      "reason": "Reason pending \u2014 see headlines."
-    },
-    {
-      "ticker": "MRVL",
-      "pct": 11.86,
-      "reason": "Reason pending \u2014 see headlines."
-    },
-    {
-      "ticker": "AAOI",
-      "pct": 11.56,
-      "reason": "Reason pending \u2014 see headlines."
-    },
-    {
-      "ticker": "MU",
-      "pct": 8.56,
-      "reason": "Reason pending \u2014 see headlines."
+      "ticker": "RDDT",
+      "pct": -6.44,
+      "reason": "No clear catalyst in current news."
     },
     {
       "ticker": "COHR",
-      "pct": 6.53,
-      "reason": "Reason pending \u2014 see headlines."
+      "pct": 5.9,
+      "reason": "COHR's 87% YTD return may be driving valuation reassessment."
     },
     {
-      "ticker": "ASML",
-      "pct": 6.45,
-      "reason": "Reason pending \u2014 see headlines."
+      "ticker": "CBRS",
+      "pct": -5.54,
+      "reason": "Chip stocks are tumbling, likely affecting CBRS."
     }
   ],
   "upcoming_earnings": [
     {
-      "ticker": "MU",
-      "date": "2026-06-24",
-      "days_until": 16
+      "ticker": "CBRS",
+      "date": "2026-06-23",
+      "days_until": 8
     },
     {
-      "ticker": "GIS",
-      "date": "2026-07-01",
-      "days_until": 22
+      "ticker": "MU",
+      "date": "2026-06-24",
+      "days_until": 9
+    },
+    {
+      "ticker": "PAYX",
+      "date": "2026-06-24",
+      "days_until": 9
     },
     {
       "ticker": "STZ",
       "date": "2026-06-30",
-      "days_until": 22
+      "days_until": 15
+    },
+    {
+      "ticker": "GIS",
+      "date": "2026-07-01",
+      "days_until": 16
     }
   ],
   "sec_stakes": [],
