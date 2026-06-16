@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T23:42:57Z",
+  "generated_at": "2026-06-16T17:55:38Z",
   "lookahead_days": 30,
   "upcoming_earnings": [
     {
@@ -13,6 +13,16 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py CBRS after."
     },
     {
+      "ticker": "PAYX",
+      "name": "Paychex, Inc.",
+      "date": "2026-06-24",
+      "days_until": 7,
+      "theme": "quality_compounder",
+      "verdict": "RESEARCH-WORTHY",
+      "thesis": "Payroll for SMBs \u2014 44% op margin, 20% growth, 4.7% dividend yield, 16.8x fwd PE. -38.6% from ATH. High-quality at a genuinely cheap multiple with strong income.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py PAYX after."
+    },
+    {
       "ticker": "MU",
       "name": "Micron Technology, Inc.",
       "date": "2026-06-24",
@@ -23,14 +33,14 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py MU after."
     },
     {
-      "ticker": "PAYX",
-      "name": "Paychex, Inc.",
-      "date": "2026-06-24",
-      "days_until": 8,
-      "theme": "quality_compounder",
-      "verdict": "RESEARCH-WORTHY",
-      "thesis": "Payroll for SMBs \u2014 44% op margin, 20% growth, 4.7% dividend yield, 16.8x fwd PE. -38.6% from ATH. High-quality at a genuinely cheap multiple with strong income.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py PAYX after."
+      "ticker": "GIS",
+      "name": "General Mills, Inc.",
+      "date": "2026-07-01",
+      "days_until": 14,
+      "theme": "defensive_income",
+      "verdict": "WATCHLIST",
+      "thesis": "General Mills \u2014 packaged foods. 7.4% dividend yield(!), 10.5x fwd PE, -40% from ATH. Deep value but only 2% growth. Verify dividend payout safety before chasing the yield.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py GIS after."
     },
     {
       "ticker": "STZ",
@@ -43,24 +53,24 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py STZ after."
     },
     {
-      "ticker": "GIS",
-      "name": "General Mills, Inc.",
-      "date": "2026-07-01",
-      "days_until": 15,
-      "theme": "defensive_income",
-      "verdict": "WATCHLIST",
-      "thesis": "General Mills \u2014 packaged foods. 7.4% dividend yield(!), 10.5x fwd PE, -40% from ATH. Deep value but only 2% growth. Verify dividend payout safety before chasing the yield.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py GIS after."
-    },
-    {
       "ticker": "ASML",
       "name": "ASML Holding N.V.",
       "date": "2026-07-15",
-      "days_until": 29,
+      "days_until": 28,
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
       "thesis": "World's only EUV lithography manufacturer \u2014 the absolute bottleneck for advanced chip production. Every NVIDIA GPU, every Apple chip, every AI accelerator runs through ASML machines. $36B+ backlog. High-NA EUV (next gen, \u20ac350M/unit) booked through 2028. China export restrictions are suppressing near-term growth (13% YoY vs 50%+ in 2023) \u2014 the headwind is known and finite.",
       "action": "Review thesis before earnings. Re-run research_ticker.py ASML after."
+    },
+    {
+      "ticker": "UNH",
+      "name": "UnitedHealth Group Incorporated",
+      "date": "2026-07-16",
+      "days_until": 29,
+      "theme": "uncategorized",
+      "verdict": "PASS",
+      "thesis": "Largest US health insurer. 2% revenue growth, 8% op margin. DOJ investigation ongoing. No AI infrastructure exposure.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py UNH after."
     }
   ]
 }
