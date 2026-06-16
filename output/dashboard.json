@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-06-16T20:39:39Z",
-  "quotes_updated": "2026-06-16T20:38:48Z",
+  "last_built": "2026-06-16T23:20:59Z",
+  "quotes_updated": "2026-06-16T23:20:11Z",
   "portfolio": {
     "total_value": 0,
     "core": [
@@ -463,7 +463,7 @@
         "revenue_growth": 13.2,
         "op_margin": 36.0,
         "pe": 60.33077,
-        "forward_pe": 37.47763,
+        "forward_pe": 37.51837,
         "short_percent_float": 0.27,
         "short_ratio": 0.7,
         "high_proximity_warning": true,
@@ -1836,7 +1836,7 @@
           "revenue_growth": 13.2,
           "op_margin": 36.0,
           "pe": 60.33077,
-          "forward_pe": 37.47763,
+          "forward_pe": 37.51837,
           "short_percent_float": 0.27,
           "short_ratio": 0.7,
           "high_proximity_warning": true,
@@ -3394,7 +3394,7 @@
           "revenue_growth": 13.2,
           "op_margin": 36.0,
           "pe": 60.33077,
-          "forward_pe": 37.47763,
+          "forward_pe": 37.51837,
           "short_percent_float": 0.27,
           "short_ratio": 0.7,
           "high_proximity_warning": true,
@@ -4933,7 +4933,7 @@
     "data_warnings": []
   },
   "analytics": {
-    "generated_at": "2026-06-16T20:39:39Z",
+    "generated_at": "2026-06-16T23:20:59Z",
     "funded": false,
     "total_value": 0.0,
     "total_invested": 0.0,
@@ -5030,7 +5030,7 @@
     "concentration_warnings": []
   },
   "track_record": {
-    "generated_at": "2026-06-16T20:39:39Z",
+    "generated_at": "2026-06-16T23:20:59Z",
     "tracked_since": "2026-04-25",
     "scoreboard": {
       "RESEARCH-WORTHY": {
@@ -6524,6 +6524,14 @@
     "sec_ownership_stakes": [],
     "sec_material_events": [
       {
+        "ticker": "AAOI",
+        "form": "8-K",
+        "label": "MATERIAL EVENT",
+        "meaning": "Corporate event: M&A, guidance, exec change",
+        "filed_date": "2026-06-16",
+        "url": "https://www.sec.gov/Archives/edgar/data/1158114/000168316826004885/aaoi_8k.htm"
+      },
+      {
         "ticker": "AMZN",
         "form": "8-K",
         "label": "MATERIAL EVENT",
@@ -6739,10 +6747,9 @@
         "verdict": "WATCHLIST",
         "price": 170.81,
         "pct_day": -10.83,
-        "pct_since": -3.16,
+        "pct_since": 0.0,
         "direction": "down",
         "triggers": [
-          "-3.2% since last check",
           "-10.8% on the day"
         ],
         "reason": "No clear catalyst in current news.",
@@ -6773,13 +6780,12 @@
         "verdict": "WATCHLIST",
         "price": 278.67,
         "pct_day": -9.78,
-        "pct_since": -5.51,
+        "pct_since": 0.0,
         "direction": "down",
         "triggers": [
-          "-5.5% since last check",
           "-9.8% on the day"
         ],
-        "reason": "Tech stock sell-off likely caused MRVL's decline.",
+        "reason": "Tech stock sell-off likely caused the decline.",
         "news": [
           {
             "title": "US Equity Markets End Mixed as Dow Hits Record High Amid Lower Crude Oil Prices, Tech Stock Sell-Off",
@@ -6807,30 +6813,30 @@
         "verdict": "WATCHLIST",
         "price": 875.36,
         "pct_day": -8.55,
-        "pct_since": -0.91,
+        "pct_since": 0.0,
         "direction": "down",
         "triggers": [
           "-8.6% on the day"
         ],
-        "reason": "No clear catalyst in current news.",
+        "reason": "AI Stocks Skid is the likely reason.",
         "news": [
+          {
+            "title": "Dow Jones Hits High, SpaceX Keeps Rising, But AI Stocks Skid; Warsh's Fed Debut On Tap",
+            "publisher": "Investor's Business Daily",
+            "date": "2026-06-16",
+            "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-spacex-ai-stocks-warsh-fed-debut/?src=A00220&yptr=yahoo"
+          },
+          {
+            "title": "Stock Market Today: Dow Ends Shy Of 52,000; SpaceX Slashes Its Gain; Lumentum Tumbles",
+            "publisher": "Investor's Business Daily",
+            "date": "2026-06-16",
+            "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-fed-meeting-spacex-stock-spcx/?src=A00220&yptr=yahoo"
+          },
           {
             "title": "Here\u2019s What Boosted Lumentum Holdings (LITE) in Q1",
             "publisher": "Insider Monkey",
             "date": "2026-06-16",
             "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-inclusion-boosted-lumentum-145024414.html"
-          },
-          {
-            "title": "Top Stock Picks for Week of June 15, 2026",
-            "publisher": "Zacks",
-            "date": "2026-06-15",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/top-stock-picks-week-june-185000747.html"
-          },
-          {
-            "title": "LITE vs. AVGO: Which AI Infrastructure Stock Is the Better Pick Now?",
-            "publisher": "Zacks",
-            "date": "2026-06-15",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/lite-vs-avgo-ai-infrastructure-143600328.html"
           }
         ]
       },
@@ -6840,10 +6846,9 @@
         "verdict": "WATCHLIST",
         "price": 382.81,
         "pct_day": -7.5,
-        "pct_since": -3.15,
+        "pct_since": 0.0,
         "direction": "down",
         "triggers": [
-          "-3.1% since last check",
           "-7.5% on the day"
         ],
         "reason": "No clear catalyst in current news.",
@@ -6874,7 +6879,7 @@
         "verdict": "WATCHLIST",
         "price": 507.29,
         "pct_day": -7.3,
-        "pct_since": -2.86,
+        "pct_since": 0.0,
         "direction": "down",
         "triggers": [
           "-7.3% on the day"
@@ -6894,10 +6899,10 @@
             "url": "https://finance.yahoo.com/video/trending-robinhood-cuts-10-of-workforce-yum-brands-sells-pizza-hut-qualcomms-ai-deal-145724697.html"
           },
           {
-            "title": "Why Rackspace Rallied Today",
-            "publisher": "Motley Fool",
+            "title": "AMD deal sparks Rackspace stock surge as company cuts jobs",
+            "publisher": "TheStreet",
             "date": "2026-06-16",
-            "url": "https://www.fool.com/investing/2026/06/16/why-rackspace-rallied-today/"
+            "url": "https://www.thestreet.com/investing/stocks/rtx-rackspace-bets-on-amd-ai-compute-cuts-15-of-workforce"
           }
         ]
       },
@@ -6907,7 +6912,7 @@
         "verdict": "RESEARCH-WORTHY",
         "price": 1020.76,
         "pct_day": -6.18,
-        "pct_since": -2.89,
+        "pct_since": 0.0,
         "direction": "down",
         "triggers": [
           "-6.2% on the day"
@@ -6921,16 +6926,16 @@
             "url": "https://finance.yahoo.com/markets/article/western-digital-stock-jumps-as-ai-trade-reignites-132154187.html"
           },
           {
-            "title": "Stocks to Watch: SpaceX, JPMorgan, AMD, Robinhood",
-            "publisher": "The Wall Street Journal",
+            "title": "Micron gets aggressive stock price target from veteran analyst",
+            "publisher": "TheStreet",
             "date": "2026-06-16",
-            "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-06-16-2026/card/stocks-to-watch-spacex-qualcomm-dave-buster-s-6q5CjGNVDDA4CigySAs4?siteid=yhoof2&yptr=yahoo"
+            "url": "https://www.thestreet.com/investing/stocks/micron-td-cowen-raised-stock-price-target"
           },
           {
-            "title": "Veteran Analyst Firm Sees 40% More Upside for Micron Stock",
-            "publisher": "GuruFocus.com",
+            "title": "Micron (MU) Falls More Steeply Than Broader Market: What Investors Need to Know",
+            "publisher": "Zacks",
             "date": "2026-06-16",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/veteran-analyst-firm-sees-40-192036977.html"
+            "url": "https://finance.yahoo.com/markets/stocks/articles/micron-mu-falls-more-steeply-214504874.html"
           }
         ]
       },
@@ -6940,13 +6945,19 @@
         "verdict": "WATCHLIST",
         "price": 57.45,
         "pct_day": -5.42,
-        "pct_since": -2.06,
+        "pct_since": 0.0,
         "direction": "down",
         "triggers": [
           "-5.4% on the day"
         ],
         "reason": "No clear catalyst in current news.",
         "news": [
+          {
+            "title": "1 Reason to Buy NuScale Power and Hold Until 2033",
+            "publisher": "Motley Fool",
+            "date": "2026-06-16",
+            "url": "https://www.fool.com/investing/2026/06/16/1-reason-to-buy-nuscale-and-hold-until-2033/"
+          },
           {
             "title": "Nuclear Is the Energy Story of 2026. Here Are 3 Stocks to Own All Year.",
             "publisher": "Motley Fool",
@@ -6958,17 +6969,11 @@
             "publisher": "Simply Wall St.",
             "date": "2026-06-16",
             "url": "https://finance.yahoo.com/energy/articles/oklo-oklo-partners-standard-nuclear-171126304.html"
-          },
-          {
-            "title": "This Restructured Energy Monopoly Is a No-Brainer Buy",
-            "publisher": "24/7 Wall St.",
-            "date": "2026-06-16",
-            "url": "https://247wallst.com/investing/2026/06/16/this-restructured-energy-monopoly-is-a-no-brainer-buy/"
           }
         ]
       }
     ],
-    "movers_updated": "2026-06-16T20:39:39Z",
+    "movers_updated": "2026-06-16T23:20:59Z",
     "target_hits": [
       {
         "ticker": "CEG",
@@ -7219,6 +7224,30 @@
       {
         "ticker": "AVGO",
         "verdict": "RESEARCH-WORTHY",
+        "title": "Stock Market Today, June 16: Nvidia, Broadcom, and Micron Technology Lead Drop in Nasdaq",
+        "publisher": "Motley Fool",
+        "date": "2026-06-16",
+        "url": "https://www.fool.com/coverage/stock-market-today/2026/06/16/stock-market-today-june-16-nvidia-broadcom-and-micron-technology-lead-drop-in-nasdaq/"
+      },
+      {
+        "ticker": "AVGO",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Analysts' Top S&P 500 Stocks to Buy Now",
+        "publisher": "Kiplinger",
+        "date": "2026-06-16",
+        "url": "https://www.kiplinger.com/investing/analysts-top-sandp-500-stocks-to-buy-now"
+      },
+      {
+        "ticker": "AVGO",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Micron Stock Falls From Record High. Where It Goes Next.",
+        "publisher": "Barrons.com",
+        "date": "2026-06-16",
+        "url": "https://www.barrons.com/articles/micron-stock-price-new-high-analyst-fc450072?siteid=yhoof2&yptr=yahoo"
+      },
+      {
+        "ticker": "AVGO",
+        "verdict": "RESEARCH-WORTHY",
         "title": "Intel Spinout Cornelis Wins Supercomputer Chip Role",
         "publisher": "GuruFocus.com",
         "date": "2026-06-16",
@@ -7239,30 +7268,6 @@
         "publisher": "Motley Fool",
         "date": "2026-06-16",
         "url": "https://www.fool.com/investing/2026/06/16/meet-the-super-semiconductor-stock-crushing-hot-ti/"
-      },
-      {
-        "ticker": "AVGO",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Why Is the US Stock Market Down Today?",
-        "publisher": "BeInCrypto",
-        "date": "2026-06-16",
-        "url": "https://beincrypto.com/why-is-the-us-stock-market-down-today/"
-      },
-      {
-        "ticker": "AVGO",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Micron Stock Slips From Record High. Where It Goes Next.",
-        "publisher": "Barrons.com",
-        "date": "2026-06-16",
-        "url": "https://www.barrons.com/articles/micron-stock-price-new-high-analyst-fc450072?siteid=yhoof2&yptr=yahoo"
-      },
-      {
-        "ticker": "AVGO",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Down More Than 20% From Its High, Is Broadcom Stock a Buy?",
-        "publisher": "Motley Fool",
-        "date": "2026-06-16",
-        "url": "https://www.fool.com/investing/2026/06/16/down-more-than-20-from-its-high-is-broadcom-stock/"
       },
       {
         "ticker": "RDDT",
@@ -7311,6 +7316,14 @@
         "publisher": "Zacks",
         "date": "2026-06-16",
         "url": "https://finance.yahoo.com/markets/stocks/articles/worth-investing-vistra-vst-based-133004169.html"
+      },
+      {
+        "ticker": "MA",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "MasterCard (MA) Increases Despite Market Slip: Here's What You Need to Know",
+        "publisher": "Zacks",
+        "date": "2026-06-16",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/mastercard-ma-increases-despite-market-215005219.html"
       },
       {
         "ticker": "MA",
@@ -7503,14 +7516,6 @@
         "publisher": "Insider Monkey",
         "date": "2026-06-13",
         "url": "https://finance.yahoo.com/markets/stocks/articles/visa-mastercard-ma-granted-preliminary-171457721.html"
-      },
-      {
-        "ticker": "MA",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Is Mastercard Incorporated (MA) A Good Stock To Buy Now?",
-        "publisher": "Insider Monkey",
-        "date": "2026-06-13",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/mastercard-incorporated-ma-good-stock-165542957.html"
       },
       {
         "ticker": "MKTX",
