@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-06-19T19:27:12Z",
-  "quotes_updated": "2026-06-19T19:26:33Z",
+  "last_built": "2026-06-19T20:52:38Z",
+  "quotes_updated": "2026-06-19T20:51:39Z",
   "portfolio": {
     "total_value": 0,
     "core": [
@@ -4921,7 +4921,7 @@
     "data_warnings": []
   },
   "analytics": {
-    "generated_at": "2026-06-19T19:27:12Z",
+    "generated_at": "2026-06-19T20:52:38Z",
     "funded": false,
     "total_value": 0.0,
     "total_invested": 0.0,
@@ -5018,7 +5018,7 @@
     "concentration_warnings": []
   },
   "track_record": {
-    "generated_at": "2026-06-19T19:27:12Z",
+    "generated_at": "2026-06-19T20:52:38Z",
     "tracked_since": "2026-04-25",
     "scoreboard": {
       "RESEARCH-WORTHY": {
@@ -6606,11 +6606,21 @@
         "ticker": "CBRS",
         "name": "Cerebras Systems Inc.",
         "date": "2026-06-23",
-        "days_until": 4,
+        "days_until": 3,
         "theme": "edge_ai_silicon",
         "verdict": "WATCHLIST",
         "thesis": "Cerebras \u2014 wafer-scale AI processors (largest chip ever made) for AI training/inference. 1474% revenue growth but -31% op margin (unprofitable), 287x fwd PE, -37% from ATH. Direct NVIDIA challenger \u2014 pure speculation at this valuation.",
         "action": "Review thesis before earnings. Re-run research_ticker.py CBRS after."
+      },
+      {
+        "ticker": "MU",
+        "name": "Micron Technology, Inc.",
+        "date": "2026-06-24",
+        "days_until": 4,
+        "theme": "edge_ai_silicon",
+        "verdict": "RESEARCH-WORTHY",
+        "thesis": "Only US-based HBM3E manufacturer \u2014 every NVIDIA H100/H200/B200 GPU requires High Bandwidth Memory stacked on the die. Samsung and SK Hynix dominate HBM but Micron has a geopolitical moat as the only American supplier. 196% revenue growth YoY (coming off cyclical trough), 8.2x forward PE. DATA QUALITY WARNING: yfinance shows $864 price \u2014 verify on Fidelity before acting. Memory is cyclical; this growth rate will moderate but AI demand provides a structural floor.",
+        "action": "Review thesis before earnings. Re-run research_ticker.py MU after."
       },
       {
         "ticker": "PAYX",
@@ -6623,14 +6633,14 @@
         "action": "Review thesis before earnings. Re-run research_ticker.py PAYX after."
       },
       {
-        "ticker": "MU",
-        "name": "Micron Technology, Inc.",
-        "date": "2026-06-24",
-        "days_until": 5,
-        "theme": "edge_ai_silicon",
-        "verdict": "RESEARCH-WORTHY",
-        "thesis": "Only US-based HBM3E manufacturer \u2014 every NVIDIA H100/H200/B200 GPU requires High Bandwidth Memory stacked on the die. Samsung and SK Hynix dominate HBM but Micron has a geopolitical moat as the only American supplier. 196% revenue growth YoY (coming off cyclical trough), 8.2x forward PE. DATA QUALITY WARNING: yfinance shows $864 price \u2014 verify on Fidelity before acting. Memory is cyclical; this growth rate will moderate but AI demand provides a structural floor.",
-        "action": "Review thesis before earnings. Re-run research_ticker.py MU after."
+        "ticker": "STZ",
+        "name": "Constellation Brands, Inc.",
+        "date": "2026-06-30",
+        "days_until": 10,
+        "theme": "defensive_income",
+        "verdict": "WATCHLIST",
+        "thesis": "Constellation Brands \u2014 beer (Modelo, Corona) + wine. 27% op margin but -11% revenue growth. 11.4x fwd PE, -20% from ATH. Cheap but shrinking \u2014 needs a turnaround thesis.",
+        "action": "Review thesis before earnings. Re-run research_ticker.py STZ after."
       },
       {
         "ticker": "GIS",
@@ -6643,16 +6653,6 @@
         "action": "Review thesis before earnings. Re-run research_ticker.py GIS after."
       },
       {
-        "ticker": "STZ",
-        "name": "Constellation Brands, Inc.",
-        "date": "2026-06-30",
-        "days_until": 11,
-        "theme": "defensive_income",
-        "verdict": "WATCHLIST",
-        "thesis": "Constellation Brands \u2014 beer (Modelo, Corona) + wine. 27% op margin but -11% revenue growth. 11.4x fwd PE, -20% from ATH. Cheap but shrinking \u2014 needs a turnaround thesis.",
-        "action": "Review thesis before earnings. Re-run research_ticker.py STZ after."
-      },
-      {
         "ticker": "ASML",
         "name": "ASML Holding N.V.",
         "date": "2026-07-15",
@@ -6663,6 +6663,16 @@
         "action": "Review thesis before earnings. Re-run research_ticker.py ASML after."
       },
       {
+        "ticker": "NFLX",
+        "name": "Netflix, Inc.",
+        "date": "2026-07-16",
+        "days_until": 26,
+        "theme": "consumer_media",
+        "verdict": "WATCHLIST",
+        "thesis": "Netflix \u2014 streaming leader, 300M+ subs. 32% op margin, 16% growth, $26B FCF, 21.5x fwd PE. -38% from ATH. Ad-tier + password-sharing crackdown driving margin expansion. Now in-mandate under diversified themes.",
+        "action": "Review thesis before earnings. Re-run research_ticker.py NFLX after."
+      },
+      {
         "ticker": "UNH",
         "name": "UnitedHealth Group Incorporated",
         "date": "2026-07-16",
@@ -6671,16 +6681,6 @@
         "verdict": "PASS",
         "thesis": "Largest US health insurer. 2% revenue growth, 8% op margin. DOJ investigation ongoing. No AI infrastructure exposure.",
         "action": "Review thesis before earnings. Re-run research_ticker.py UNH after."
-      },
-      {
-        "ticker": "NFLX",
-        "name": "Netflix, Inc.",
-        "date": "2026-07-16",
-        "days_until": 27,
-        "theme": "consumer_media",
-        "verdict": "WATCHLIST",
-        "thesis": "Netflix \u2014 streaming leader, 300M+ subs. 32% op margin, 16% growth, $26B FCF, 21.5x fwd PE. -38% from ATH. Ad-tier + password-sharing crackdown driving margin expansion. Now in-mandate under diversified themes.",
-        "action": "Review thesis before earnings. Re-run research_ticker.py NFLX after."
       }
     ],
     "sec_ownership_stakes": [],
@@ -6907,8 +6907,14 @@
         "triggers": [
           "+8.7% on the day"
         ],
-        "reason": "Micron Stock Gets Stunning Double Upgrade, predicting DRAM surge.",
+        "reason": "No clear catalyst in current news.",
         "news": [
+          {
+            "title": "Micron Gets the Headlines, But Sandisk Could Offer More Upside",
+            "publisher": "Zacks",
+            "date": "2026-06-19",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/micron-gets-headlines-sandisk-could-190000313.html"
+          },
           {
             "title": "Everything Could Change for Micron Stock on June 24",
             "publisher": "Motley Fool",
@@ -6920,12 +6926,6 @@
             "publisher": "GuruFocus.com",
             "date": "2026-06-19",
             "url": "https://finance.yahoo.com/markets/stocks/articles/micron-faces-big-earnings-test-174441041.html"
-          },
-          {
-            "title": "Analyst Warns Intel Valuation \u2018Doesn\u2019t Make Sense.\u2019 Suggests NVIDIA, AMD, Micron, and Broadcom as Alternatives.",
-            "publisher": "24/7 Wall St.",
-            "date": "2026-06-19",
-            "url": "https://247wallst.com/investing/2026/06/19/analyst-warns-intel-valuation-doesnt-make-sense-suggests-nvidia-amd-micron-and-broadcom-as-alternatives/"
           }
         ]
       },
@@ -7006,7 +7006,7 @@
         "triggers": [
           "+5.8% on the day"
         ],
-        "reason": "Data centers lift construction sector, benefiting GEV supplier.",
+        "reason": "Data centers lift construction sector.",
         "news": [
           {
             "title": "Can GEV's Sustainability Create Long-Term Competitive Advantages?",
@@ -7039,7 +7039,7 @@
         "triggers": [
           "+5.4% on the day"
         ],
-        "reason": "1 Mooning Stock to Target may have mentioned RDDT.",
+        "reason": "No clear catalyst in current news.",
         "news": [
           {
             "title": "'Boomers Are Just Rage Baiting Us,' Says A Woman Whose Mother-In-Law, Who 'Never Worked But Has Multiple Properties,' Gives Advice On Real Estate",
@@ -7095,7 +7095,7 @@
         ]
       }
     ],
-    "movers_updated": "2026-06-19T19:27:12Z",
+    "movers_updated": "2026-06-19T20:52:37Z",
     "target_hits": [
       {
         "ticker": "MSFT",
