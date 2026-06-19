@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-06-19T14:22:27Z",
-  "quotes_updated": "2026-06-19T14:17:41Z",
+  "last_built": "2026-06-19T15:57:39Z",
+  "quotes_updated": "2026-06-19T15:56:46Z",
   "portfolio": {
     "total_value": 0,
     "core": [
@@ -715,7 +715,7 @@
         "last_researched": "2026-06-08",
         "price": 310.58,
         "pct_change_1d": 7.27,
-        "market_cap": 271695364096,
+        "market_cap": 271929278464,
         "cap_tier": "mega",
         "drawdown_from_high": -5.9,
         "revenue_growth": 27.6,
@@ -1149,7 +1149,7 @@
         "last_researched": "2026-06-08",
         "price": 141.18,
         "pct_change_1d": 1.6,
-        "market_cap": 24215013376,
+        "market_cap": 24314677248,
         "cap_tier": "large",
         "drawdown_from_high": -20.7,
         "revenue_growth": -11.3,
@@ -2084,7 +2084,7 @@
           "last_researched": "2026-06-08",
           "price": 310.58,
           "pct_change_1d": 7.27,
-          "market_cap": 271695364096,
+          "market_cap": 271929278464,
           "cap_tier": "mega",
           "drawdown_from_high": -5.9,
           "revenue_growth": 27.6,
@@ -2399,7 +2399,7 @@
           "last_researched": "2026-06-08",
           "price": 141.18,
           "pct_change_1d": 1.6,
-          "market_cap": 24215013376,
+          "market_cap": 24314677248,
           "cap_tier": "large",
           "drawdown_from_high": -20.7,
           "revenue_growth": -11.3,
@@ -3494,7 +3494,7 @@
           "last_researched": "2026-06-08",
           "price": 310.58,
           "pct_change_1d": 7.27,
-          "market_cap": 271695364096,
+          "market_cap": 271929278464,
           "cap_tier": "mega",
           "drawdown_from_high": -5.9,
           "revenue_growth": 27.6,
@@ -4351,7 +4351,7 @@
           "last_researched": "2026-06-08",
           "price": 141.18,
           "pct_change_1d": 1.6,
-          "market_cap": 24215013376,
+          "market_cap": 24314677248,
           "cap_tier": "large",
           "drawdown_from_high": -20.7,
           "revenue_growth": -11.3,
@@ -4921,7 +4921,7 @@
     "data_warnings": []
   },
   "analytics": {
-    "generated_at": "2026-06-18T23:42:35Z",
+    "generated_at": "2026-06-19T15:57:39Z",
     "funded": false,
     "total_value": 0.0,
     "total_invested": 0.0,
@@ -5018,13 +5018,13 @@
     "concentration_warnings": []
   },
   "track_record": {
-    "generated_at": "2026-06-18T23:42:35Z",
+    "generated_at": "2026-06-19T15:57:39Z",
     "tracked_since": "2026-04-25",
     "scoreboard": {
       "RESEARCH-WORTHY": {
-        "count": 58,
-        "avg_return": 1.5,
-        "win_rate": 48,
+        "count": 64,
+        "avg_return": 1.4,
+        "win_rate": 44,
         "best": {
           "ticker": "MU",
           "verdict": "RESEARCH-WORTHY",
@@ -5500,6 +5500,60 @@
         "confidence": "MEDIUM",
         "current_price": 293.95,
         "return_pct": -0.0
+      },
+      {
+        "ticker": "VST",
+        "verdict": "RESEARCH-WORTHY",
+        "date": "2026-06-19",
+        "entry_price": 163.75,
+        "confidence": "MEDIUM",
+        "current_price": 163.75,
+        "return_pct": 0.0
+      },
+      {
+        "ticker": "ADP",
+        "verdict": "RESEARCH-WORTHY",
+        "date": "2026-06-19",
+        "entry_price": 218.41,
+        "confidence": "MEDIUM",
+        "current_price": 218.41,
+        "return_pct": 0.0
+      },
+      {
+        "ticker": "PAYX",
+        "verdict": "RESEARCH-WORTHY",
+        "date": "2026-06-19",
+        "entry_price": 98.24,
+        "confidence": "MEDIUM",
+        "current_price": 98.24,
+        "return_pct": 0.0
+      },
+      {
+        "ticker": "GEHC",
+        "verdict": "RESEARCH-WORTHY",
+        "date": "2026-06-19",
+        "entry_price": 61.59,
+        "confidence": "MEDIUM",
+        "current_price": 61.59,
+        "return_pct": 0.0
+      },
+      {
+        "ticker": "MKTX",
+        "verdict": "RESEARCH-WORTHY",
+        "date": "2026-06-19",
+        "entry_price": 120.33,
+        "confidence": "MEDIUM",
+        "current_price": 120.33,
+        "return_pct": 0.0
+      },
+      {
+        "ticker": "LPLA",
+        "verdict": "RESEARCH-WORTHY",
+        "date": "2026-06-19",
+        "entry_price": 293.95,
+        "confidence": "MEDIUM",
+        "current_price": 293.95,
+        "return_pct": 0.0
       },
       {
         "ticker": "AMZN",
@@ -6559,6 +6613,16 @@
         "action": "Review thesis before earnings. Re-run research_ticker.py CBRS after."
       },
       {
+        "ticker": "PAYX",
+        "name": "Paychex, Inc.",
+        "date": "2026-06-24",
+        "days_until": 4,
+        "theme": "quality_compounder",
+        "verdict": "RESEARCH-WORTHY",
+        "thesis": "Payroll for SMBs \u2014 44% op margin, 20% growth, 4.7% dividend yield, 16.8x fwd PE. -38.6% from ATH. High-quality at a genuinely cheap multiple with strong income.",
+        "action": "Review thesis before earnings. Re-run research_ticker.py PAYX after."
+      },
+      {
         "ticker": "MU",
         "name": "Micron Technology, Inc.",
         "date": "2026-06-24",
@@ -6569,14 +6633,14 @@
         "action": "Review thesis before earnings. Re-run research_ticker.py MU after."
       },
       {
-        "ticker": "PAYX",
-        "name": "Paychex, Inc.",
-        "date": "2026-06-24",
-        "days_until": 5,
-        "theme": "quality_compounder",
-        "verdict": "RESEARCH-WORTHY",
-        "thesis": "Payroll for SMBs \u2014 44% op margin, 20% growth, 4.7% dividend yield, 16.8x fwd PE. -38.6% from ATH. High-quality at a genuinely cheap multiple with strong income.",
-        "action": "Review thesis before earnings. Re-run research_ticker.py PAYX after."
+        "ticker": "GIS",
+        "name": "General Mills, Inc.",
+        "date": "2026-07-01",
+        "days_until": 11,
+        "theme": "defensive_income",
+        "verdict": "WATCHLIST",
+        "thesis": "General Mills \u2014 packaged foods. 7.4% dividend yield(!), 10.5x fwd PE, -40% from ATH. Deep value but only 2% growth. Verify dividend payout safety before chasing the yield.",
+        "action": "Review thesis before earnings. Re-run research_ticker.py GIS after."
       },
       {
         "ticker": "STZ",
@@ -6589,24 +6653,24 @@
         "action": "Review thesis before earnings. Re-run research_ticker.py STZ after."
       },
       {
-        "ticker": "GIS",
-        "name": "General Mills, Inc.",
-        "date": "2026-07-01",
-        "days_until": 12,
-        "theme": "defensive_income",
-        "verdict": "WATCHLIST",
-        "thesis": "General Mills \u2014 packaged foods. 7.4% dividend yield(!), 10.5x fwd PE, -40% from ATH. Deep value but only 2% growth. Verify dividend payout safety before chasing the yield.",
-        "action": "Review thesis before earnings. Re-run research_ticker.py GIS after."
-      },
-      {
         "ticker": "ASML",
         "name": "ASML Holding N.V.",
         "date": "2026-07-15",
-        "days_until": 26,
+        "days_until": 25,
         "theme": "edge_ai_silicon",
         "verdict": "WATCHLIST",
         "thesis": "World's only EUV lithography manufacturer \u2014 the absolute bottleneck for advanced chip production. Every NVIDIA GPU, every Apple chip, every AI accelerator runs through ASML machines. $36B+ backlog. High-NA EUV (next gen, \u20ac350M/unit) booked through 2028. China export restrictions are suppressing near-term growth (13% YoY vs 50%+ in 2023) \u2014 the headwind is known and finite.",
         "action": "Review thesis before earnings. Re-run research_ticker.py ASML after."
+      },
+      {
+        "ticker": "UNH",
+        "name": "UnitedHealth Group Incorporated",
+        "date": "2026-07-16",
+        "days_until": 26,
+        "theme": "uncategorized",
+        "verdict": "PASS",
+        "thesis": "Largest US health insurer. 2% revenue growth, 8% op margin. DOJ investigation ongoing. No AI infrastructure exposure.",
+        "action": "Review thesis before earnings. Re-run research_ticker.py UNH after."
       },
       {
         "ticker": "NFLX",
@@ -6617,16 +6681,6 @@
         "verdict": "WATCHLIST",
         "thesis": "Netflix \u2014 streaming leader, 300M+ subs. 32% op margin, 16% growth, $26B FCF, 21.5x fwd PE. -38% from ATH. Ad-tier + password-sharing crackdown driving margin expansion. Now in-mandate under diversified themes.",
         "action": "Review thesis before earnings. Re-run research_ticker.py NFLX after."
-      },
-      {
-        "ticker": "UNH",
-        "name": "UnitedHealth Group Incorporated",
-        "date": "2026-07-16",
-        "days_until": 27,
-        "theme": "uncategorized",
-        "verdict": "PASS",
-        "thesis": "Largest US health insurer. 2% revenue growth, 8% op margin. DOJ investigation ongoing. No AI infrastructure exposure.",
-        "action": "Review thesis before earnings. Re-run research_ticker.py UNH after."
       }
     ],
     "sec_ownership_stakes": [],
@@ -6820,25 +6874,25 @@
         "triggers": [
           "+9.8% on the day"
         ],
-        "reason": "Cerebras lands OpenAI deal and Amazon partnership.",
+        "reason": "No clear catalyst in current news.",
         "news": [
+          {
+            "title": "CBRS Gears Up to Report Q1 Earnings: What's in Store for the Stock?",
+            "publisher": "Zacks",
+            "date": "2026-06-19",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/cbrs-gears-report-q1-earnings-143700657.html"
+          },
+          {
+            "title": "Latest News In AI Chips - MEXC Expands Access To Tokenized Stock Trading Globally",
+            "publisher": "Simply Wall St.",
+            "date": "2026-06-19",
+            "url": "https://finance.yahoo.com/technology/ai/articles/latest-news-ai-chips-mexc-113751045.html"
+          },
           {
             "title": "Cerebras Post-IPO: Buy, Hold, or Sell?",
             "publisher": "Motley Fool",
             "date": "2026-06-18",
             "url": "https://www.fool.com/investing/2026/06/18/cerebras-post-ipo-buy-hold-or-sell/"
-          },
-          {
-            "title": "Cerebras Stock Is a Cautionary Tale for SpaceX Investors",
-            "publisher": "Barrons.com",
-            "date": "2026-06-18",
-            "url": "https://www.barrons.com/articles/cerebras-stock-cautionary-spacex-investors-651f4479?siteid=yhoof2&yptr=yahoo"
-          },
-          {
-            "title": "Billions in SpaceX IPO Arb Trades Rattle ETFs Including ARKK",
-            "publisher": "Bloomberg",
-            "date": "2026-06-17",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/billions-spacex-trades-jolt-etfs-152559975.html"
           }
         ]
       },
@@ -6853,25 +6907,25 @@
         "triggers": [
           "+8.7% on the day"
         ],
-        "reason": "No clear catalyst in current news.",
+        "reason": "Strong memory pricing boosted Micron.",
         "news": [
           {
-            "title": "Dow Jones Futures: Nvidia Leads 5 Chips Near Buy Points; SpaceX Stock Needs This",
+            "title": "Donald Trump\u2019s Favorite AI Chip Stock in 2026 That Performed Better Than Nvidia (NVDA)",
+            "publisher": "Insider Monkey",
+            "date": "2026-06-19",
+            "url": "https://finance.yahoo.com/technology/ai/articles/donald-trump-favorite-ai-chip-153822311.html"
+          },
+          {
+            "title": "Dow Jones Futures Fall With U.S. Markets Shut; Nvidia Leads 5 Stocks Near Buy Points, SpaceX Needs This",
             "publisher": "Investor's Business Daily",
-            "date": "2026-06-18",
+            "date": "2026-06-19",
             "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-5-chips-buy-points-spacex-stock/?src=A00220&yptr=yahoo"
           },
           {
-            "title": "Prediction: This Will Be Micron's Next Big Move",
-            "publisher": "Motley Fool",
-            "date": "2026-06-18",
-            "url": "https://www.fool.com/investing/2026/06/18/prediction-this-will-be-microns-next-big-move/"
-          },
-          {
-            "title": "Apple\u2019s Unsustainable Memory Costs and the Rethinking of Micron\u2019s Valuation",
-            "publisher": "Barrons.com",
-            "date": "2026-06-18",
-            "url": "https://www.barrons.com/articles/micron-stock-price-apple-memory-chip-59a3dbf6?siteid=yhoof2&yptr=yahoo"
+            "title": "Why Micron Technology (MU) Is Expanding U.S. Memory Capacity as AI Turns DRAM Into Strategic Infrastructure",
+            "publisher": "Insider Monkey",
+            "date": "2026-06-19",
+            "url": "https://finance.yahoo.com/technology/ai/articles/why-micron-technology-mu-expanding-143343380.html"
           }
         ]
       },
@@ -6886,25 +6940,25 @@
         "triggers": [
           "+7.3% on the day"
         ],
-        "reason": "Price target hike by KeyBanc.",
+        "reason": "KeyBanc raises Marvell's price target.",
         "news": [
           {
-            "title": "MRVL Stock Jumps 14% Today \u2014 KeyBanc Lifts AI Networking Outlook, Raises Marvell\u2019s Price Target",
-            "publisher": "Stocktwits",
-            "date": "2026-06-18",
-            "url": "https://stocktwits.com/news-articles/markets/equity/mrvl-stock-jumps-14-percent-keybanc-lifts-ai-networking-outlook-raises-marvell-price-target/cZKkSG2R77w"
+            "title": "ALAB Rides on Strong Aries and Taurus Demand: A Sign for More Upside?",
+            "publisher": "Zacks",
+            "date": "2026-06-19",
+            "url": "https://finance.yahoo.com/technology/ai/articles/alab-rides-strong-aries-taurus-143900927.html"
           },
           {
-            "title": "Stock Market Today, June 18: Marvell Technology Surges on Price Target Hike",
-            "publisher": "Motley Fool",
-            "date": "2026-06-18",
-            "url": "https://www.fool.com/coverage/stock-market-today/2026/06/18/stock-market-today-june-18-marvell-technology-surges-on-price-target-hike/"
-          },
-          {
-            "title": "Is Marvell Technology, Inc. (MRVL) The Best Growth Stock to Buy?",
+            "title": "Marvell Technology, Inc. (MRVL) Names Adobe\u2019s Dan Durn as Finance Chief",
             "publisher": "Insider Monkey",
-            "date": "2026-06-18",
-            "url": "https://finance.yahoo.com/technology/articles/marvell-technology-inc-mrvl-best-212025235.html"
+            "date": "2026-06-19",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/marvell-technology-inc-mrvl-names-071719592.html"
+          },
+          {
+            "title": "Marvell Stock Just Hit a New High. A Quiet Amazon Decision Could Be Why.",
+            "publisher": "Motley Fool",
+            "date": "2026-06-19",
+            "url": "https://www.fool.com/investing/2026/06/18/marvell-stock-just-hit-a-new-high-a-quiet-amazon-d/"
           }
         ]
       },
@@ -6919,25 +6973,25 @@
         "triggers": [
           "+6.9% on the day"
         ],
-        "reason": "Taiwan chip curbs on China likely boosted TSM.",
+        "reason": "No clear catalyst in current news.",
         "news": [
           {
-            "title": "Intel jumps after Trump says Apple, Intel reached US chip deal",
-            "publisher": "Yahoo Finance Video",
-            "date": "2026-06-18",
-            "url": "https://finance.yahoo.com/video/intel-jumps-after-trump-says-apple-intel-reached-us-chip-deal-144520733.html"
+            "title": "Here Is the 1 Dirt-Cheap Semiconductor Titan I Keep Loading Up on Repeat",
+            "publisher": "24/7 Wall St.",
+            "date": "2026-06-19",
+            "url": "https://247wallst.com/investing/2026/06/19/here-is-the-1-dirt-cheap-semiconductor-titan-i-keep-loading-up-on-repeat/"
           },
           {
-            "title": "Taiwan Semiconductor Manufacturing Company Limited (TSM) In Spotlight Amid Taiwan Chip Curbs on China",
-            "publisher": "Insider Monkey",
-            "date": "2026-06-18",
-            "url": "https://finance.yahoo.com/technology/ai/articles/taiwan-semiconductor-manufacturing-company-limited-211938783.html"
+            "title": "SpaceX Is the 5th Most Valuable Public Company in the World. Can It Overtake Nvidia, Alphabet, Apple, or Microsoft?",
+            "publisher": "Motley Fool",
+            "date": "2026-06-19",
+            "url": "https://www.fool.com/investing/2026/06/19/spacex-is-the-5th-most-valuable-public-company-in/"
           },
           {
-            "title": "Intel Rallies to Record After Trump Touts Apple Chip Deal",
-            "publisher": "Bloomberg",
-            "date": "2026-06-18",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/intel-shares-soar-trump-says-093534172.html"
+            "title": "Why Intel Hired the Former CEO of Micron\u2019s Big Rival SK Hynix",
+            "publisher": "Barrons.com",
+            "date": "2026-06-19",
+            "url": "https://www.barrons.com/articles/intel-stock-price-micron-sk-hynix-af7e7f81?siteid=yhoof2&yptr=yahoo"
           }
         ]
       },
@@ -6955,22 +7009,22 @@
         "reason": "Data centers lift construction sector.",
         "news": [
           {
+            "title": "Can GEV's Sustainability Create Long-Term Competitive Advantages?",
+            "publisher": "Zacks",
+            "date": "2026-06-19",
+            "url": "https://finance.yahoo.com/energy/articles/gevs-sustainability-create-long-term-123800321.html"
+          },
+          {
+            "title": "Forget Critical Metals, Electricity is The Real Bottleneck for AI",
+            "publisher": "Oilprice.com",
+            "date": "2026-06-19",
+            "url": "https://finance.yahoo.com/energy/articles/forget-critical-metals-electricity-real-000000768.html"
+          },
+          {
             "title": "GE Vernova Supplier Breaks Out As Data Centers Lift Construction Sector",
             "publisher": "Investor's Business Daily",
             "date": "2026-06-18",
             "url": "https://www.investors.com/news/ge-vernova-arcosa-data-center-construction-ai-artificial-intelligence/?src=A00220&yptr=yahoo"
-          },
-          {
-            "title": "Why GE Vernova (GEV) Stock Is Trading Up Today",
-            "publisher": "StockStory",
-            "date": "2026-06-18",
-            "url": "https://finance.yahoo.com/energy/articles/why-ge-vernova-gev-stock-174128116.html"
-          },
-          {
-            "title": "Here's Why GE Vernova Stock Surged Higher Today",
-            "publisher": "Motley Fool",
-            "date": "2026-06-18",
-            "url": "https://www.fool.com/investing/2026/06/18/heres-why-ge-vernova-stock-surged-higher-today/"
           }
         ]
       },
@@ -6988,6 +7042,12 @@
         "reason": "No clear catalyst in current news.",
         "news": [
           {
+            "title": "Social Media Faces New Child Safety Test",
+            "publisher": "GuruFocus.com",
+            "date": "2026-06-19",
+            "url": "https://finance.yahoo.com/media-advertising/articles/social-media-faces-child-safety-121036278.html"
+          },
+          {
             "title": "After Being 'Pretty Nonchalant About Retirement,' He Finally Decided To Open A Roth IRA At 32. 'What Do I Invest In?'",
             "publisher": "Benzinga",
             "date": "2026-06-18",
@@ -6998,12 +7058,6 @@
             "publisher": "Benzinga",
             "date": "2026-06-18",
             "url": "https://finance.yahoo.com/markets/options/articles/day-trader-wants-know-anyone-154607066.html"
-          },
-          {
-            "title": "1 Mooning  Stock to Target This Week and 2 We Question",
-            "publisher": "StockStory",
-            "date": "2026-06-18",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/1-mooning-stock-target-week-142928367.html"
           }
         ]
       },
@@ -7021,6 +7075,12 @@
         "reason": "No clear catalyst in current news.",
         "news": [
           {
+            "title": "Better Quantum Computing Stock to Buy: IonQ vs. Rigetti",
+            "publisher": "Motley Fool",
+            "date": "2026-06-19",
+            "url": "https://www.fool.com/investing/2026/06/19/better-quantum-computing-stock-to-buy-ionq-rigetti/"
+          },
+          {
             "title": "PLTR Stock: The Math Hidden In Its Price",
             "publisher": "Trefis",
             "date": "2026-06-18",
@@ -7031,17 +7091,11 @@
             "publisher": "Kiplinger",
             "date": "2026-06-18",
             "url": "https://www.kiplinger.com/investing/stocks/stocks-rally-on-middle-east-peace-apple-intel-deal-stock-market-today"
-          },
-          {
-            "title": "Tim Cook Says Chip Wars Will Take a Big Bite of Apple",
-            "publisher": "Moby",
-            "date": "2026-06-18",
-            "url": "https://app.moby.co/home/news/news-tim-cook-says-chip-wars-will-take-a-big-bite-of-apple?utm_source=yahoo_finance&utm_medium=rss"
           }
         ]
       }
     ],
-    "movers_updated": "2026-06-18T23:42:35Z",
+    "movers_updated": "2026-06-19T15:57:39Z",
     "target_hits": [
       {
         "ticker": "MSFT",
@@ -7303,6 +7357,14 @@
       {
         "ticker": "AVGO",
         "verdict": "RESEARCH-WORTHY",
+        "title": "SanDisk (SNDK): Donald Trump\u2019s Top Stock Pick in 2026",
+        "publisher": "Insider Monkey",
+        "date": "2026-06-19",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/sandisk-sndk-donald-trump-top-153230468.html"
+      },
+      {
+        "ticker": "AVGO",
+        "verdict": "RESEARCH-WORTHY",
         "title": "Intel Leads Big Chip Stock Rally",
         "publisher": "GuruFocus.com",
         "date": "2026-06-19",
@@ -7341,12 +7403,12 @@
         "url": "https://www.barrons.com/articles/broadcom-hock-tan-top-ceos-2026-856230b0?siteid=yhoof2&yptr=yahoo"
       },
       {
-        "ticker": "AVGO",
+        "ticker": "VST",
         "verdict": "RESEARCH-WORTHY",
-        "title": "JPMorgan latest Broadcom outlook sends key signal",
-        "publisher": "TheStreet",
+        "title": "Can Vistra Unlock More Value for Investors Through Share Buybacks?",
+        "publisher": "Zacks",
         "date": "2026-06-19",
-        "url": "https://www.thestreet.com/investing/stocks/jpmorgan-broadcom-bull-case-depsite-sell-off"
+        "url": "https://finance.yahoo.com/markets/stocks/articles/vistra-unlock-more-value-investors-134000183.html"
       },
       {
         "ticker": "VST",
@@ -7371,6 +7433,38 @@
         "publisher": "Motley Fool",
         "date": "2026-06-19",
         "url": "https://www.fool.com/investing/2026/06/19/visa-mastercard-stablecoins-what-means-investors/"
+      },
+      {
+        "ticker": "ADP",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "3 Services Stocks for Long-Term Investors",
+        "publisher": "StockStory",
+        "date": "2026-06-19",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/3-services-stocks-long-term-145258460.html"
+      },
+      {
+        "ticker": "PAYX",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Paychex Gears Up to Report Q4 Earnings: What's in Store?",
+        "publisher": "Zacks",
+        "date": "2026-06-19",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/paychex-gears-report-q4-earnings-135900204.html"
+      },
+      {
+        "ticker": "MKTX",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "MarketAxess Expands Bond Market Transparency With New TraX Tape",
+        "publisher": "Zacks",
+        "date": "2026-06-19",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/marketaxess-expands-bond-market-transparency-133900744.html"
+      },
+      {
+        "ticker": "LPLA",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "3 Market-Beating Stocks with Competitive Advantages",
+        "publisher": "StockStory",
+        "date": "2026-06-19",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/3-market-beating-stocks-competitive-142858230.html"
       },
       {
         "ticker": "VST",
@@ -7461,14 +7555,6 @@
         "url": "https://finance.yahoo.com/markets/stocks/articles/lyft-upgraded-leidos-downgraded-wall-134756673.html"
       },
       {
-        "ticker": "VST",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "The top stocks to own for a major structural shift in the U.S. economy",
-        "publisher": "Investing.com",
-        "date": "2026-06-17",
-        "url": "https://finance.yahoo.com/energy/articles/top-stocks-own-major-structural-111924888.html"
-      },
-      {
         "ticker": "MA",
         "verdict": "RESEARCH-WORTHY",
         "title": "Mastercard vs. Remitly Global: Which Financial Stock Is a Better Buy in 2026?",
@@ -7557,28 +7643,12 @@
         "url": "https://www.trefis.com/articles/602904/intuit-stocks-real-growth-story-isnt-the-one-youre-watching/2026-06-15"
       },
       {
-        "ticker": "LPLA",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "LPL Recruits $1.5B Dallas Team From MassMutual",
-        "publisher": "Wealth Management",
-        "date": "2026-06-16",
-        "url": "https://www.wealthmanagement.com/ibd-news/lpl-financial-recruits-15b-dallas-team"
-      },
-      {
         "ticker": "ADP",
         "verdict": "RESEARCH-WORTHY",
         "title": "Automatic Data Processing And 2 Other Reliable Dividend Stocks To Consider",
         "publisher": "Simply Wall St.",
         "date": "2026-06-15",
         "url": "https://finance.yahoo.com/markets/stocks/articles/automatic-data-processing-2-other-173223168.html"
-      },
-      {
-        "ticker": "ADP",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "1 Unpopular Stock That Should Get More Attention and 2 We Find Risky",
-        "publisher": "StockStory",
-        "date": "2026-06-15",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/1-unpopular-stock-more-attention-142807817.html"
       },
       {
         "ticker": "PAYX",
@@ -7595,14 +7665,6 @@
         "publisher": "The Fly",
         "date": "2026-06-15",
         "url": "https://finance.yahoo.com/markets/stocks/articles/datadog-upgraded-accenture-downgraded-wall-134248909.html"
-      },
-      {
-        "ticker": "PAYX",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Here Are Monday\u2019s Best Wall Street Analyst Research Calls: Accenture, Caesars Entertainment, Datadog, DuPont, EPAM Systems, Ferrari, Paychex, Rocket Lab, TeraWulf, and More",
-        "publisher": "24/7 Wall St.",
-        "date": "2026-06-15",
-        "url": "https://247wallst.com/investing/2026/06/15/here-are-mondays-best-wall-street-analyst-research-calls-accenture-caesars-entertainment-datadog-dupont-epam-systems-ferrari-paychex-rocket-lab-terawulf-and-more/"
       },
       {
         "ticker": "GEHC",
@@ -7653,14 +7715,6 @@
         "url": "https://finance.yahoo.com/markets/stocks/articles/marketaxess-benefit-abating-competition-electronic-145859367.html"
       },
       {
-        "ticker": "MKTX",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "MarketAxess (MKTX) Stock Valuation Check After Recent Share Price Weakness",
-        "publisher": "Simply Wall St.",
-        "date": "2026-06-12",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/marketaxess-mktx-stock-valuation-check-131550518.html"
-      },
-      {
         "ticker": "GEHC",
         "verdict": "RESEARCH-WORTHY",
         "title": "Is GE HealthCare Stock Underperforming the S&P 500?",
@@ -7687,18 +7741,18 @@
       {
         "ticker": "AAPL",
         "verdict": "WATCHLIST",
-        "title": "Prediction: This Stock is Going to Plummet in The Second Half of 2026",
-        "publisher": "24/7 Wall St.",
+        "title": "Beyond Trump Hype: Does Intel (INTC) Have Long-Term Growth Catalysts?",
+        "publisher": "Insider Monkey",
         "date": "2026-06-19",
-        "url": "https://247wallst.com/investing/2026/06/19/prediction-this-stock-is-going-to-plummet-in-the-second-half-of-2026/"
+        "url": "https://finance.yahoo.com/markets/stocks/articles/beyond-trump-hype-does-intel-153956796.html"
       },
       {
         "ticker": "AAPL",
         "verdict": "WATCHLIST",
-        "title": "\u201cThey Forgot to Protect Our Industries With TARIFFS!\u201d \u2014 Does a Trump Trade War 2.0 Loom?",
-        "publisher": "24/7 Wall St.",
+        "title": "SpaceX Is the 5th Most Valuable Public Company in the World. Can It Overtake Nvidia, Alphabet, Apple, or Microsoft?",
+        "publisher": "Motley Fool",
         "date": "2026-06-19",
-        "url": "https://247wallst.com/investing/2026/06/19/they-forgot-to-protect-our-industries-with-tariffs-does-a-trump-trade-war-2-0-loom/"
+        "url": "https://www.fool.com/investing/2026/06/19/spacex-is-the-5th-most-valuable-public-company-in/"
       }
     ],
     "insider_alerts": [],
