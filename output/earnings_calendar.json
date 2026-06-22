@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T20:19:27Z",
+  "generated_at": "2026-06-22T22:20:22Z",
   "lookahead_days": 30,
   "upcoming_earnings": [
     {
@@ -81,6 +81,16 @@
       "verdict": "PASS",
       "thesis": "Largest US health insurer. 2% revenue growth, 8% op margin. DOJ investigation ongoing. No AI infrastructure exposure.",
       "action": "Review thesis before earnings. Re-run research_ticker.py UNH after."
+    },
+    {
+      "ticker": "DHR",
+      "name": "Danaher Corporation",
+      "date": "2026-07-21",
+      "days_until": 28,
+      "theme": "healthcare_innovation",
+      "verdict": "WATCHLIST",
+      "thesis": "Life-science tools + diagnostics. 23% op margin but only 4% growth, 20x fwd PE. -24% from ATH. Premier compounder but growth has stalled post-COVID.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py DHR after."
     },
     {
       "ticker": "GEV",
