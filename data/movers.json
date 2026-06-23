@@ -1,51 +1,16 @@
 {
-  "generated_at": "2026-06-23T15:45:55Z",
+  "generated_at": "2026-06-23T17:48:01Z",
   "movers": [
-    {
-      "ticker": "MU",
-      "name": "Micron Technology, Inc.",
-      "verdict": "RESEARCH-WORTHY",
-      "price": 1078.27,
-      "pct_day": -10.99,
-      "pct_since": -10.99,
-      "direction": "down",
-      "triggers": [
-        "-11.0% since last check",
-        "-11.0% on the day"
-      ],
-      "reason": "Tech sell-off as AI trade cools.",
-      "news": [
-        {
-          "title": "Nvidia, Micron, AMD lead tech sell-off as AI trade cools",
-          "publisher": "Yahoo Finance",
-          "date": "2026-06-23",
-          "url": "https://finance.yahoo.com/markets/stocks/article/nvidia-micron-amd-lead-tech-sell-off-as-ai-trade-cools-125946422.html"
-        },
-        {
-          "title": "Memory's price surge threatens Apple's 'magic formula' \u2014 and the economy: WSJ reporter",
-          "publisher": "Yahoo Finance Video",
-          "date": "2026-06-22",
-          "url": "https://finance.yahoo.com/video/memorys-price-surge-threatens-apples-211614571.html"
-        },
-        {
-          "title": "Micron Earnings Have Never Looked Better. Start Worrying.",
-          "publisher": "Trefis",
-          "date": "2026-06-23",
-          "url": "https://www.trefis.com/articles/603858/micron-earnings-have-never-looked-better-start-worrying/2026-06-23"
-        }
-      ]
-    },
     {
       "ticker": "AAOI",
       "name": "Applied Optoelectronics, Inc.",
       "verdict": "WATCHLIST",
-      "price": 152.8622,
-      "pct_day": -10.73,
-      "pct_since": -10.73,
+      "price": 150.9,
+      "pct_day": -11.87,
+      "pct_since": -1.28,
       "direction": "down",
       "triggers": [
-        "-10.7% since last check",
-        "-10.7% on the day"
+        "-11.9% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -70,21 +35,53 @@
       ]
     },
     {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "verdict": "RESEARCH-WORTHY",
+      "price": 1071.91,
+      "pct_day": -11.51,
+      "pct_since": -0.59,
+      "direction": "down",
+      "triggers": [
+        "-11.5% on the day"
+      ],
+      "reason": "AI trade cools, leading tech sell-off.",
+      "news": [
+        {
+          "title": "Nvidia, Micron, AMD lead tech sell-off as AI trade cools",
+          "publisher": "Yahoo Finance",
+          "date": "2026-06-23",
+          "url": "https://finance.yahoo.com/markets/stocks/article/nvidia-micron-amd-lead-tech-sell-off-as-ai-trade-cools-125946422.html"
+        },
+        {
+          "title": "Memory's price surge threatens Apple's 'magic formula' \u2014 and the economy: WSJ reporter",
+          "publisher": "Yahoo Finance Video",
+          "date": "2026-06-22",
+          "url": "https://finance.yahoo.com/video/memorys-price-surge-threatens-apples-211614571.html"
+        },
+        {
+          "title": "Intel, Micron Among Winners as BofA Supercharges Semiconductor Outlook",
+          "publisher": "GuruFocus.com",
+          "date": "2026-06-23",
+          "url": "https://finance.yahoo.com/technology/articles/intel-micron-among-winners-bofa-172016994.html"
+        }
+      ]
+    },
+    {
       "ticker": "VRT",
       "name": "Vertiv Holdings Co",
       "verdict": "WATCHLIST",
-      "price": 321.3,
-      "pct_day": -10.24,
-      "pct_since": -10.24,
+      "price": 322.86,
+      "pct_day": -9.81,
+      "pct_since": 0.49,
       "direction": "down",
       "triggers": [
-        "-10.2% since last check",
-        "-10.2% on the day"
+        "-9.8% on the day"
       ],
-      "reason": "Tech sector downturn likely caused VRT's decline.",
+      "reason": "Tech selloff likely dragged VRT down.",
       "news": [
         {
-          "title": "Tech Is Plummeting. Why the Dow Is Actually Rising Today.",
+          "title": "Tech Is Getting Hit Hard. Why the Dow Is Actually Rising Today.",
           "publisher": "Barrons.com",
           "date": "2026-06-23",
           "url": "https://www.barrons.com/livecoverage/stock-market-news-today-062326/card/tech-is-plummeting-why-the-dow-is-actually-rising-today--4ttvHNIbSS9PDqeg49Oa?siteid=yhoof2&yptr=yahoo"
@@ -104,16 +101,48 @@
       ]
     },
     {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "verdict": "WATCHLIST",
+      "price": 280.535,
+      "pct_day": -8.88,
+      "pct_since": 0.11,
+      "direction": "down",
+      "triggers": [
+        "-8.9% on the day"
+      ],
+      "reason": "Tech selloff due to hawkish Fed concerns.",
+      "news": [
+        {
+          "title": "How Marvell Technology (MRVL) Is Using Teralynx T100 to Target AI Data-Center Bandwidth Bottlenecks",
+          "publisher": "Insider Monkey",
+          "date": "2026-06-23",
+          "url": "https://finance.yahoo.com/technology/ai/articles/marvell-technology-mrvl-using-teralynx-161034353.html"
+        },
+        {
+          "title": "Is The AI-Fueled Growth Story For AMD Stock Worth The Elevated Price?",
+          "publisher": "Trefis",
+          "date": "2026-06-23",
+          "url": "https://www.trefis.com/articles/604051/is-the-ai-fueled-growth-story-for-amd-stock-worth-the-elevated-price/2026-06-23"
+        },
+        {
+          "title": "S&P, Nasdaq drop on tech selloff as concerns about hawkish Fed, AI spending mount",
+          "publisher": "Reuters",
+          "date": "2026-06-23",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-fall-2-tech-080433395.html"
+        }
+      ]
+    },
+    {
       "ticker": "COHR",
       "name": "Coherent Corp.",
       "verdict": "WATCHLIST",
-      "price": 385.6599,
-      "pct_day": -9.36,
-      "pct_since": -9.36,
+      "price": 389.32,
+      "pct_day": -8.5,
+      "pct_since": 0.95,
       "direction": "down",
       "triggers": [
-        "-9.4% since last check",
-        "-9.4% on the day"
+        "-8.5% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -138,53 +167,24 @@
       ]
     },
     {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
-      "verdict": "WATCHLIST",
-      "price": 280.22,
-      "pct_day": -8.98,
-      "pct_since": -8.98,
-      "direction": "down",
-      "triggers": [
-        "-9.0% since last check",
-        "-9.0% on the day"
-      ],
-      "reason": "Broad tech sell-off likely caused MRVL's decline.",
-      "news": [
-        {
-          "title": "Infleqtion, IBM, and Other Quantum Stocks Defy the Tech Selloff",
-          "publisher": "Barrons.com",
-          "date": "2026-06-23",
-          "url": "https://www.barrons.com/articles/ibm-stock-infleqtion-quantum-edd70949?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "title": "\ud83d\udcc9 These Tech Stocks Are Falling the Most This Morning",
-          "publisher": "The Wall Street Journal",
-          "date": "2026-06-23",
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-06-23-2026/card/-these-tech-stocks-are-falling-the-most-this-morning-Oo14F89dDEicUznHFUQK?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "title": "AI Chip Stocks Take a Hit as Sector Faces Broad Sell-Off. Is This Company a Buy?",
-          "publisher": "Motley Fool",
-          "date": "2026-06-23",
-          "url": "https://www.fool.com/investing/2026/06/23/ai-chip-stocks-hit-as-sector-sell-off-buy-mrvl/"
-        }
-      ]
-    },
-    {
       "ticker": "ASML",
       "name": "ASML Holding N.V.",
       "verdict": "WATCHLIST",
-      "price": 1773.315,
-      "pct_day": -8.08,
-      "pct_since": -8.08,
+      "price": 1778.0,
+      "pct_day": -7.84,
+      "pct_since": 0.26,
       "direction": "down",
       "triggers": [
-        "-8.1% since last check",
-        "-8.1% on the day"
+        "-7.8% on the day"
       ],
-      "reason": "Global tech selloff triggered the decline.",
+      "reason": "Tech selloff weighs on ASML.",
       "news": [
+        {
+          "title": "Europe's STOXX 600 ends lower as tech selloff, rising Fed hike bets weigh",
+          "publisher": "Reuters",
+          "date": "2026-06-23",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/european-shares-set-open-lower-064804708.html"
+        },
         {
           "title": "ASML Holding N.V. (ASML) Reported Strong Returns in Q1",
           "publisher": "Insider Monkey",
@@ -196,12 +196,6 @@
           "publisher": "Reuters",
           "date": "2026-06-23",
           "url": "https://ca.news.yahoo.com/netherlands-join-us-led-pax-113435012.html"
-        },
-        {
-          "title": "ASML (NasdaqGS:ASML) Denies China EUV Export Allegations As Scrutiny Builds",
-          "publisher": "Simply Wall St.",
-          "date": "2026-06-23",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/asml-nasdaqgs-asml-denies-china-111207234.html"
         }
       ]
     },
@@ -209,13 +203,12 @@
       "ticker": "LITE",
       "name": "Lumentum Holdings Inc.",
       "verdict": "WATCHLIST",
-      "price": 824.035,
-      "pct_day": -7.82,
-      "pct_since": -7.82,
+      "price": 829.29,
+      "pct_day": -7.23,
+      "pct_since": 0.64,
       "direction": "down",
       "triggers": [
-        "-7.8% since last check",
-        "-7.8% on the day"
+        "-7.2% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -243,16 +236,21 @@
       "ticker": "GEV",
       "name": "GE Vernova Inc.",
       "verdict": "WATCHLIST",
-      "price": 1040.83,
-      "pct_day": -7.69,
-      "pct_since": -7.69,
+      "price": 1056.125,
+      "pct_day": -6.34,
+      "pct_since": 1.47,
       "direction": "down",
       "triggers": [
-        "-7.7% since last check",
-        "-7.7% on the day"
+        "-6.3% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
+        {
+          "title": "Dow Jones AI Giant Nvidia Tumbles Below Key Level; Cummins, GE Vernova Near Buy Zones",
+          "publisher": "Investor's Business Daily",
+          "date": "2026-06-23",
+          "url": "https://www.investors.com/stock-lists/stocks-near-a-buy-zone/dow-jones-nvidia-nvda-stock-cummins-ge-vernova-buy-points/?src=A00220&yptr=yahoo"
+        },
         {
           "title": "Chevron's Microsoft Power Deal Highlights 'Underappreciated' Fuel Cost Economics, UBS Securities Says",
           "publisher": "MT Newswires",
@@ -264,12 +262,6 @@
           "publisher": "Zacks",
           "date": "2026-06-23",
           "url": "https://finance.yahoo.com/energy/articles/canadian-solar-benefits-expanding-solar-141300884.html"
-        },
-        {
-          "title": "Is GE Vernova Inc. (GEV) Outperforming Other Oils-Energy Stocks This Year?",
-          "publisher": "Zacks",
-          "date": "2026-06-23",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/ge-vernova-inc-gev-outperforming-134006458.html"
         }
       ]
     },
@@ -277,13 +269,12 @@
       "ticker": "ETN",
       "name": "Eaton Corporation plc",
       "verdict": "WATCHLIST",
-      "price": 409.695,
-      "pct_day": -5.99,
-      "pct_since": -5.99,
+      "price": 410.91,
+      "pct_day": -5.71,
+      "pct_since": 0.3,
       "direction": "down",
       "triggers": [
-        "-6.0% since last check",
-        "-6.0% on the day"
+        "-5.7% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -311,27 +302,26 @@
       "ticker": "TSM",
       "name": "Taiwan Semiconductor Manufacturing Company Limited",
       "verdict": "WATCHLIST",
-      "price": 439.65,
-      "pct_day": -5.99,
-      "pct_since": -5.99,
+      "price": 442.28,
+      "pct_day": -5.43,
+      "pct_since": 0.6,
       "direction": "down",
       "triggers": [
-        "-6.0% since last check",
-        "-6.0% on the day"
+        "-5.4% on the day"
       ],
-      "reason": "Chip stocks tumble from record heights.",
+      "reason": "Chip Stocks Tumble From Record Heights, Lead Tech Wreck.",
       "news": [
+        {
+          "title": "Why TSMC\u2019s CoWoS Role Keeps Taiwan Semiconductor (TSM) Central to the HBM-Driven AI Chip Boom",
+          "publisher": "Insider Monkey",
+          "date": "2026-06-23",
+          "url": "https://finance.yahoo.com/technology/ai/articles/why-tsmc-cowos-role-keeps-161005521.html"
+        },
         {
           "title": "Chip Stocks Tumble From Record Heights, Lead Tech Wreck",
           "publisher": "Investor's Business Daily",
           "date": "2026-06-23",
           "url": "https://www.investors.com/news/technology/chip-stocks-tumble-from-record-heights-micron-sandisk-nvidia/?src=A00220&yptr=yahoo"
-        },
-        {
-          "title": "Tech, Media & Telecom Roundup: Market Talk",
-          "publisher": "The Wall Street Journal",
-          "date": "2026-06-23",
-          "url": "https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-16393135?siteid=yhoof2&yptr=yahoo"
         },
         {
           "title": "SpaceX sheds $600 billion in three days as it taps the bond market for the first time",
@@ -345,22 +335,15 @@
       "ticker": "AMD",
       "name": "Advanced Micro Devices, Inc.",
       "verdict": "WATCHLIST",
-      "price": 518.655,
-      "pct_day": -5.98,
-      "pct_since": -5.98,
+      "price": 522.0999,
+      "pct_day": -5.35,
+      "pct_since": 0.66,
       "direction": "down",
       "triggers": [
-        "-6.0% since last check",
-        "-6.0% on the day"
+        "-5.3% on the day"
       ],
-      "reason": "AI trade cools, impacting AMD.",
+      "reason": "AI trade cools, leading to tech sell-off.",
       "news": [
-        {
-          "title": "Tech stocks live: Google and other tech stocks extend losses as AI worries creep back in",
-          "publisher": "Yahoo Finance",
-          "date": "2026-06-22",
-          "url": "https://finance.yahoo.com/technology/live/tech-stocks-live-google-and-other-tech-stocks-extend-losses-as-ai-worries-creep-back-in-143422690.html"
-        },
         {
           "title": "Nvidia, Micron, AMD lead tech sell-off as AI trade cools",
           "publisher": "Yahoo Finance",
@@ -368,10 +351,16 @@
           "url": "https://finance.yahoo.com/markets/stocks/article/nvidia-micron-amd-lead-tech-sell-off-as-ai-trade-cools-125946422.html"
         },
         {
-          "title": "Rise of the Managed Intelligence Provider: Pax8\u202fCPO Libby McIlhany, COO Craig Donovan, Live from Pax8 Beyond 2026",
-          "publisher": "Exec Edge",
+          "title": "Tech stocks live: Google and other tech stocks extend losses as AI worries creep back in",
+          "publisher": "Yahoo Finance",
+          "date": "2026-06-22",
+          "url": "https://finance.yahoo.com/technology/live/tech-stocks-live-google-and-other-tech-stocks-extend-losses-as-ai-worries-creep-back-in-143422690.html"
+        },
+        {
+          "title": "Over 40 Analysts Rate AMD a Buy, Here\u2019s Why We Agree",
+          "publisher": "24/7 Wall St.",
           "date": "2026-06-23",
-          "url": "https://tech.yahoo.com/ai/deals/articles/rise-managed-intelligence-provider-pax8-152702205.html"
+          "url": "https://247wallst.com/investing/2026/06/23/over-40-analysts-rate-amd-a-buy-heres-why-we-agree/"
         }
       ]
     },
@@ -379,14 +368,14 @@
       "ticker": "IBM",
       "name": "International Business Machines Corporation",
       "verdict": "WATCHLIST",
-      "price": 263.555,
-      "pct_day": 4.49,
-      "pct_since": 4.49,
+      "price": 264.875,
+      "pct_day": 5.02,
+      "pct_since": 0.5,
       "direction": "up",
       "triggers": [
-        "+4.5% since last check"
+        "+5.0% on the day"
       ],
-      "reason": "Analyst upgrade likely caused the increase.",
+      "reason": "JPMorgan upgrade likely caused the increase.",
       "news": [
         {
           "title": "Trending: JPMorgan upgrades IBM stock despite tech sell-off, Carnival earnings disappoint",
@@ -395,16 +384,16 @@
           "url": "https://finance.yahoo.com/video/trending-jpmorgan-upgrades-ibm-stock-150837182.html"
         },
         {
-          "title": "Big Blue is Back: IBM Gains Despite Tech Rout Following Big Analyst Upgrade",
-          "publisher": "Barrons.com",
+          "title": "Morgan Stanley lifts server market TAM to $809B, boosts targets on compute stocks",
+          "publisher": "Investing.com",
           "date": "2026-06-23",
-          "url": "https://www.barrons.com/articles/ibm-stock-price-upgrade-software-quantum-2f7e4792?siteid=yhoof2&yptr=yahoo"
+          "url": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-lifts-server-market-171413618.html"
         },
         {
-          "title": "Infleqtion, IBM, and Other Quantum Stocks Defy the Tech Selloff",
-          "publisher": "Barrons.com",
+          "title": "Stock Market Today, June 23: Sandisk Leads Tech Stock Slide as South Korea Jitters Trigger Global Pullback at Midday",
+          "publisher": "Motley Fool",
           "date": "2026-06-23",
-          "url": "https://www.barrons.com/articles/ibm-stock-infleqtion-quantum-edd70949?siteid=yhoof2&yptr=yahoo"
+          "url": "https://www.fool.com/coverage/stock-market-today/2026/06/23/stock-market-today-june-23-sandisk-leads-tech-stock-slide-as-south-korea-jitters-trigger-global-pullback-at-midday/"
         }
       ]
     },
@@ -412,14 +401,14 @@
       "ticker": "CBRS",
       "name": "Cerebras Systems Inc.",
       "verdict": "WATCHLIST",
-      "price": 214.795,
-      "pct_day": -4.29,
-      "pct_since": -4.29,
-      "direction": "down",
+      "price": 230.48,
+      "pct_day": 2.7,
+      "pct_since": 7.3,
+      "direction": "up",
       "triggers": [
-        "-4.3% since last check"
+        "+7.3% since last check"
       ],
-      "reason": "No clear catalyst in current news.",
+      "reason": "Upcoming earnings report with expected upside potential.",
       "news": [
         {
           "title": "Cerebras Just Had Its IPO. Now, the Chip Maker Faces Its Next Big Test.",
@@ -438,204 +427,6 @@
           "publisher": "Proactive",
           "date": "2026-06-22",
           "url": "https://www.proactiveinvestors.com/companies/news/1094288/cerebras-gets-set-for-inaugural-earnings-with-upside-potential-wedbush-says-1094288.html"
-        }
-      ]
-    },
-    {
-      "ticker": "GIS",
-      "name": "General Mills, Inc.",
-      "verdict": "WATCHLIST",
-      "price": 34.755,
-      "pct_day": 4.24,
-      "pct_since": 4.24,
-      "direction": "up",
-      "triggers": [
-        "+4.2% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Conagra, General Mills, and Post Shares Are Falling, What You Need To Know",
-          "publisher": "StockStory",
-          "date": "2026-06-17",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/conagra-general-mills-post-shares-233104586.html"
-        },
-        {
-          "title": "General Mills (GIS) Faces Lower Price Target from JPMorgan on Inflation Concerns",
-          "publisher": "Insider Monkey",
-          "date": "2026-06-17",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/general-mills-gis-faces-lower-191825453.html"
-        },
-        {
-          "title": "Q1 Rundown: General Mills (NYSE:GIS) Vs Other Shelf-Stable Food Stocks",
-          "publisher": "StockStory",
-          "date": "2026-06-17",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/q1-rundown-general-mills-nyse-170051252.html"
-        }
-      ]
-    },
-    {
-      "ticker": "GEHC",
-      "name": "GE HealthCare Technologies Inc.",
-      "verdict": "RESEARCH-WORTHY",
-      "price": 62.995,
-      "pct_day": 3.88,
-      "pct_since": 3.88,
-      "direction": "up",
-      "triggers": [
-        "+3.9% since last check"
-      ],
-      "reason": "RBC's positive initiation and outlook drove the stock up.",
-      "news": [
-        {
-          "title": "GE HealthCare Technologies Set for Further Growth on Strong Backlog, Execution, RBC Says",
-          "publisher": "MT Newswires",
-          "date": "2026-06-23",
-          "url": "https://finance.yahoo.com/healthcare/articles/ge-healthcare-technologies-set-further-150020185.html"
-        },
-        {
-          "title": "IBM upgrade, SpaceX initiation among today's top calls on Wall Street",
-          "publisher": "The Fly",
-          "date": "2026-06-23",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/ibm-upgrade-spacex-initiation-among-133301562.html"
-        },
-        {
-          "title": "RBC initiates GE HealthCare as it sees AI-led innovation cycle driving growth",
-          "publisher": "Investing.com",
-          "date": "2026-06-23",
-          "url": "https://finance.yahoo.com/healthcare/articles/rbc-initiates-ge-healthcare-sees-125241583.html"
-        }
-      ]
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "verdict": "WATCHLIST",
-      "price": 96.385,
-      "pct_day": 3.63,
-      "pct_since": 3.63,
-      "direction": "up",
-      "triggers": [
-        "+3.6% since last check"
-      ],
-      "reason": "AI adoption potential mentioned in NOW headline.",
-      "news": [
-        {
-          "title": "Jim Cramer on Paychex: \u201cI\u2019m Not Going to Fight the Tide\u201d",
-          "publisher": "Insider Monkey",
-          "date": "2026-06-23",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-paychex-m-not-143137561.html"
-        },
-        {
-          "title": "CTSH Grows Through Strong Partnerships: Buy, Sell or Hold the Stock?",
-          "publisher": "Zacks",
-          "date": "2026-06-23",
-          "url": "https://finance.yahoo.com/technology/ai/articles/ctsh-grows-strong-partnerships-buy-142500654.html"
-        },
-        {
-          "title": "Can Strategic Partnerships Help NOW Scale Enterprise AI Adoption?",
-          "publisher": "Zacks",
-          "date": "2026-06-23",
-          "url": "https://finance.yahoo.com/technology/ai/articles/strategic-partnerships-help-now-scale-140100652.html"
-        }
-      ]
-    },
-    {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corporation",
-      "verdict": "WATCHLIST",
-      "price": 201.3699,
-      "pct_day": -3.49,
-      "pct_since": -3.49,
-      "direction": "down",
-      "triggers": [
-        "-3.5% since last check"
-      ],
-      "reason": "AI worries creep back in, impacting tech stocks.",
-      "news": [
-        {
-          "title": "Tech stocks live: Google and other tech stocks extend losses as AI worries creep back in",
-          "publisher": "Yahoo Finance",
-          "date": "2026-06-22",
-          "url": "https://finance.yahoo.com/technology/live/tech-stocks-live-google-and-other-tech-stocks-extend-losses-as-ai-worries-creep-back-in-143422690.html"
-        },
-        {
-          "title": "Micron stock hits an all-time high, thanks to the new Anthropic deal",
-          "publisher": "Yahoo Finance Video",
-          "date": "2026-06-22",
-          "url": "https://finance.yahoo.com/video/micron-stock-hits-time-high-195156327.html"
-        },
-        {
-          "title": "'The most powerful market force I think I've ever seen in my career': Strategist discusses",
-          "publisher": "Yahoo Finance Video",
-          "date": "2026-06-22",
-          "url": "https://finance.yahoo.com/video/the-most-powerful-market-force-i-think-ive-ever-seen-in-my-career-strategist-discusses-180108004.html"
-        }
-      ]
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "verdict": "WATCHLIST",
-      "price": 274.4,
-      "pct_day": -3.25,
-      "pct_since": -3.25,
-      "direction": "down",
-      "triggers": [
-        "-3.2% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "CoreWeave vs. Nebius: Which AI Infrastructure Stock Has More Upside?",
-          "publisher": "Zacks",
-          "date": "2026-06-23",
-          "url": "https://finance.yahoo.com/technology/ai/articles/coreweave-vs-nebius-ai-infrastructure-135300566.html"
-        },
-        {
-          "title": "\ud83d\udcc9 These Tech Stocks Are Falling the Most This Morning",
-          "publisher": "The Wall Street Journal",
-          "date": "2026-06-23",
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-06-23-2026/card/-these-tech-stocks-are-falling-the-most-this-morning-Oo14F89dDEicUznHFUQK?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "title": "Mara Holdings vs. Soluna Holdings: Which AI Pivot Is More Compelling?",
-          "publisher": "Motley Fool",
-          "date": "2026-06-23",
-          "url": "https://www.fool.com/investing/2026/06/23/mara-holdings-vs-soluna-holdings-which-ai-pivo/"
-        }
-      ]
-    },
-    {
-      "ticker": "AVGO",
-      "name": "Broadcom Inc.",
-      "verdict": "RESEARCH-WORTHY",
-      "price": 380.23,
-      "pct_day": -3.03,
-      "pct_since": -3.03,
-      "direction": "down",
-      "triggers": [
-        "-3.0% since last check"
-      ],
-      "reason": "Tech sell-off due to cooling AI trade.",
-      "news": [
-        {
-          "title": "Nvidia, Micron, AMD lead tech sell-off as AI trade cools",
-          "publisher": "Yahoo Finance",
-          "date": "2026-06-23",
-          "url": "https://finance.yahoo.com/markets/stocks/article/nvidia-micron-amd-lead-tech-sell-off-as-ai-trade-cools-125946422.html"
-        },
-        {
-          "title": "Tech names drag down world stocks, oil dips on supply hopes",
-          "publisher": "AFP",
-          "date": "2026-06-23",
-          "url": "https://finance.yahoo.com/markets/world-indices/articles/stocks-fluctuate-wall-st-sell-023644743.html"
-        },
-        {
-          "title": "Nvidia Stock Falls as Tech Selloff Catches Up With Chips",
-          "publisher": "Barrons.com",
-          "date": "2026-06-23",
-          "url": "https://www.barrons.com/articles/nvidia-stock-price-chip-selloff-ca80d4cc?siteid=yhoof2&yptr=yahoo"
         }
       ]
     }
