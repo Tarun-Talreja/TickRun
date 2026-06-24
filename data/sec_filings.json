@@ -1,7 +1,15 @@
 {
-  "generated_at": "2026-06-23T23:04:56Z",
+  "generated_at": "2026-06-24T13:30:18Z",
   "lookback_days": 14,
   "filings": [
+    {
+      "ticker": "PAYX",
+      "form": "8-K",
+      "label": "MATERIAL EVENT",
+      "meaning": "Corporate event: M&A, guidance, exec change",
+      "filed_date": "2026-06-24",
+      "url": "https://www.sec.gov/Archives/edgar/data/723531/000119312526280314/payx-20260624.htm"
+    },
     {
       "ticker": "IBM",
       "form": "8-K",
@@ -139,28 +147,12 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1606163/000162828026042515/lmb-20260609.htm"
     },
     {
-      "ticker": "AMZN",
-      "form": "8-K",
-      "label": "MATERIAL EVENT",
-      "meaning": "Corporate event: M&A, guidance, exec change",
-      "filed_date": "2026-06-10",
-      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926072140/tm2613616d4_8k.htm"
-    },
-    {
-      "ticker": "RDDT",
-      "form": "8-K",
-      "label": "MATERIAL EVENT",
-      "meaning": "Corporate event: M&A, guidance, exec change",
-      "filed_date": "2026-06-10",
-      "url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000088/rddt-20260608.htm"
-    },
-    {
-      "ticker": "MKTX",
-      "form": "8-K",
-      "label": "MATERIAL EVENT",
-      "meaning": "Corporate event: M&A, guidance, exec change",
-      "filed_date": "2026-06-10",
-      "url": "https://www.sec.gov/Archives/edgar/data/1278021/000119312526265854/mktx-20260610.htm"
+      "ticker": "TSM",
+      "form": "4",
+      "label": "INSIDER TRADE",
+      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
+      "filed_date": "2026-06-24",
+      "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000375/xslF345X06/wk-form4_1782297778.xml"
     },
     {
       "ticker": "NVDA",
@@ -1217,86 +1209,6 @@
       "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
       "filed_date": "2026-06-11",
       "url": "https://www.sec.gov/Archives/edgar/data/723125/000179875726000006/xslF345X06/primarydocument.xml"
-    },
-    {
-      "ticker": "MSFT",
-      "form": "4",
-      "label": "INSIDER TRADE",
-      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
-      "filed_date": "2026-06-10",
-      "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000109/xslF345X06/form4.xml"
-    },
-    {
-      "ticker": "NVDA",
-      "form": "4",
-      "label": "INSIDER TRADE",
-      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
-      "filed_date": "2026-06-10",
-      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000124382126000005/xslF345X06/wk-form4_1781125804.xml"
-    },
-    {
-      "ticker": "RDDT",
-      "form": "4",
-      "label": "INSIDER TRADE",
-      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
-      "filed_date": "2026-06-10",
-      "url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000086/xslF345X06/wk-form4_1781122075.xml"
-    },
-    {
-      "ticker": "RDDT",
-      "form": "4",
-      "label": "INSIDER TRADE",
-      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
-      "filed_date": "2026-06-10",
-      "url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000085/xslF345X06/wk-form4_1781122027.xml"
-    },
-    {
-      "ticker": "RDDT",
-      "form": "4",
-      "label": "INSIDER TRADE",
-      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
-      "filed_date": "2026-06-10",
-      "url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000084/xslF345X06/wk-form4_1781122003.xml"
-    },
-    {
-      "ticker": "RDDT",
-      "form": "4",
-      "label": "INSIDER TRADE",
-      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
-      "filed_date": "2026-06-10",
-      "url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000083/xslF345X06/wk-form4_1781121936.xml"
-    },
-    {
-      "ticker": "RDDT",
-      "form": "4",
-      "label": "INSIDER TRADE",
-      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
-      "filed_date": "2026-06-10",
-      "url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000082/xslF345X06/wk-form4_1781121880.xml"
-    },
-    {
-      "ticker": "RDDT",
-      "form": "4",
-      "label": "INSIDER TRADE",
-      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
-      "filed_date": "2026-06-10",
-      "url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000081/xslF345X06/wk-form4_1781121825.xml"
-    },
-    {
-      "ticker": "RDDT",
-      "form": "4",
-      "label": "INSIDER TRADE",
-      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
-      "filed_date": "2026-06-10",
-      "url": "https://www.sec.gov/Archives/edgar/data/1713445/000183562826000006/xslF345X06/wk-form4_1781121786.xml"
-    },
-    {
-      "ticker": "CPB",
-      "form": "4",
-      "label": "INSIDER TRADE",
-      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
-      "filed_date": "2026-06-10",
-      "url": "https://www.sec.gov/Archives/edgar/data/16732/000194057926000004/xslF345X06/wk-form4_1781122028.xml"
     }
   ]
 }
