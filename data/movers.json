@@ -1,18 +1,87 @@
 {
-  "generated_at": "2026-06-24T23:01:59Z",
+  "generated_at": "2026-06-25T15:38:22Z",
   "movers": [
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "verdict": "RESEARCH-WORTHY",
+      "price": 1181.1101,
+      "pct_day": 12.71,
+      "pct_since": 12.65,
+      "direction": "up",
+      "triggers": [
+        "+12.7% since last check",
+        "+12.7% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "Stock market today: Dow and S&P 500 rise, Nasdaq slips as PCE comes in hot, Big Tech falters",
+          "publisher": "Yahoo Finance",
+          "date": "2026-06-24",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-and-sp-500-rise-nasdaq-slips-as-pce-comes-in-hot-big-tech-falters-232650645.html"
+        },
+        {
+          "title": "May PCE: Inflation ticks up to highest level since 2023",
+          "publisher": "Yahoo Finance Video",
+          "date": "2026-06-25",
+          "url": "https://finance.yahoo.com/video/may-pce-inflation-ticks-highest-135200649.html"
+        },
+        {
+          "title": "Stock market today: Dow rises, S&P 500 and Nasdaq slip as AI jitters return ahead of Micron earnings",
+          "publisher": "Yahoo Finance",
+          "date": "2026-06-23",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-rises-sp-500-and-nasdaq-slip-as-ai-jitters-return-ahead-of-micron-earnings-230105138.html"
+        }
+      ]
+    },
+    {
+      "ticker": "AAOI",
+      "name": "Applied Optoelectronics, Inc.",
+      "verdict": "WATCHLIST",
+      "price": 135.925,
+      "pct_day": -7.52,
+      "pct_since": -7.52,
+      "direction": "down",
+      "triggers": [
+        "-7.5% since last check",
+        "-7.5% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "Applied Optoelectronics (AAOI) Rallied on Robust Results and Winning Major Orders",
+          "publisher": "Insider Monkey",
+          "date": "2026-06-25",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/applied-optoelectronics-aaoi-rallied-robust-142023820.html"
+        },
+        {
+          "title": "Why Applied Optoelectronics\u2019 (AAOI) Mediacom Work Points to Broader Bandwidth Upgrade Demand",
+          "publisher": "Insider Monkey",
+          "date": "2026-06-24",
+          "url": "https://finance.yahoo.com/technology/articles/why-applied-optoelectronics-aaoi-mediacom-185342536.html"
+        },
+        {
+          "title": "Applied Optoelectronics Plunges 13%, Coherent Drops 9%, Lumentum Falls 8%: Has an Optics Valuation Reckoning Begun?",
+          "publisher": "24/7 Wall St.",
+          "date": "2026-06-23",
+          "url": "https://247wallst.com/investing/2026/06/23/applied-optoelectronics-plunges-13-coherent-drops-9-lumentum-falls-8-has-an-optics-valuation-reckoning-begun/"
+        }
+      ]
+    },
     {
       "ticker": "CBRS",
       "name": "Cerebras Systems Inc.",
       "verdict": "WATCHLIST",
-      "price": 182.26,
-      "pct_day": -19.61,
-      "pct_since": 0.0,
+      "price": 172.7,
+      "pct_day": -5.32,
+      "pct_since": -5.25,
       "direction": "down",
       "triggers": [
-        "-19.6% on the day"
+        "-5.2% since last check",
+        "-5.3% on the day"
       ],
-      "reason": "No clear catalyst in current news.",
+      "reason": "Lower margins guidance.",
       "news": [
         {
           "title": "Trending: OpenAI, Broadcom target Nvidia's AI chip dominance; Wendy's sees meme stock boost",
@@ -21,49 +90,82 @@
           "url": "https://finance.yahoo.com/video/trending-openai-broadcom-target-nvidias-194722853.html"
         },
         {
-          "title": "Cerebras Stock Falls Despite Improving Outlook For AI Chip Sales",
-          "publisher": "Investor's Business Daily",
-          "date": "2026-06-24",
-          "url": "https://www.investors.com/news/technology/cerebras-stock-improving-ai-chip-sales-outlook/?src=A00220&yptr=yahoo"
+          "title": "US Stock Market Today S&P 500 Futures Edge Higher On Cooler Yields Data",
+          "publisher": "Simply Wall St.",
+          "date": "2026-06-25",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-market-today-p-080908518.html"
         },
         {
-          "title": "Stock Market Today, June 24: Micron Surges After Hours as Nasdaq Stems Losses",
-          "publisher": "Motley Fool",
-          "date": "2026-06-24",
-          "url": "https://www.fool.com/coverage/stock-market-today/2026/06/24/stock-market-today-june-24-micron-surges-after-hours-as-nasdaq-stems-losses/"
+          "title": "Cerebras Systems (CBRS) Is Down 22.3% After Guiding To Lower Margins Amid Major AI Cloud Deals",
+          "publisher": "Simply Wall St.",
+          "date": "2026-06-25",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/cerebras-systems-cbrs-down-22-050644951.html"
         }
       ]
     },
     {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
       "verdict": "WATCHLIST",
-      "price": 259.66,
-      "pct_day": -5.66,
-      "pct_since": 0.0,
+      "price": 278.855,
+      "pct_day": -4.88,
+      "pct_since": -4.85,
       "direction": "down",
       "triggers": [
-        "-5.7% on the day"
+        "-4.8% since last check"
       ],
-      "reason": "Nasdaq 100 listing likely caused the decline.",
+      "reason": "Apple raises prices, passing chip costs to consumers.",
       "news": [
         {
-          "title": "Nebius Introduces AI Cloud 3.6",
-          "publisher": "GuruFocus.com",
-          "date": "2026-06-24",
-          "url": "https://finance.yahoo.com/technology/ai/articles/nebius-introduces-ai-cloud-3-173604387.html"
+          "title": "Tech stocks live: AI memory trade roars back after Micron earnings crush estimates",
+          "publisher": "Yahoo Finance",
+          "date": "2026-06-22",
+          "url": "https://finance.yahoo.com/technology/live/tech-stocks-live-ai-memory-trade-roars-back-after-micron-earnings-crush-estimates-143422690.html"
         },
         {
-          "title": "How Nebius AI Cloud 3.6 \u201cAether\u201d And Echo Launch At Nebius Group (NBIS) Has Changed Its Investment Story",
-          "publisher": "Simply Wall St.",
-          "date": "2026-06-24",
-          "url": "https://finance.yahoo.com/technology/ai/articles/nebius-ai-cloud-3-6-161323557.html"
+          "title": "AAPL Stock Drops 6% After Apple Passes AI-Driven Chip Costs to Consumers",
+          "publisher": "BeInCrypto",
+          "date": "2026-06-25",
+          "url": "https://beincrypto.com/apple-raises-mac-ipad-prices-memory/"
         },
         {
-          "title": "3 Impressive Artificial Intelligence (AI) Stocks You Should Buy Right Now",
-          "publisher": "Motley Fool",
-          "date": "2026-06-24",
-          "url": "https://www.fool.com/investing/2026/06/24/3-impressive-artificial-intelligence-ai-stocks-you/"
+          "title": "Apple raises Mac and iPad prices, spares iPhone for now",
+          "publisher": "TechCrunch",
+          "date": "2026-06-25",
+          "url": "https://finance.yahoo.com/technology/articles/apple-raises-mac-ipad-prices-145235673.html"
+        }
+      ]
+    },
+    {
+      "ticker": "ETN",
+      "name": "Eaton Corporation plc",
+      "verdict": "WATCHLIST",
+      "price": 419.365,
+      "pct_day": 3.65,
+      "pct_since": 3.65,
+      "direction": "up",
+      "triggers": [
+        "+3.6% since last check"
+      ],
+      "reason": "Eaton Corporation merger news likely boosted ETN.",
+      "news": [
+        {
+          "title": "Top Analyst Reports for Micron Technology, Coca-Cola & Arista Networks",
+          "publisher": "Zacks",
+          "date": "2026-06-23",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/top-analyst-reports-micron-technology-202900550.html"
+        },
+        {
+          "title": "Cummins Stock Adds Horsepower, Not Ballast",
+          "publisher": "Trefis",
+          "date": "2026-06-23",
+          "url": "https://www.trefis.com/articles/604062/cummins-stock-adds-horsepower-not-ballast/2026-06-23"
+        },
+        {
+          "title": "Eaton Corporation to Merge Mobility Business with Dana",
+          "publisher": "Insider Monkey",
+          "date": "2026-06-22",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/eaton-corporation-merge-mobility-business-213225430.html"
         }
       ]
     },
@@ -71,32 +173,32 @@
       "ticker": "DHR",
       "name": "Danaher Corporation",
       "verdict": "WATCHLIST",
-      "price": 188.87,
-      "pct_day": 5.53,
-      "pct_since": 0.0,
+      "price": 195.515,
+      "pct_day": 3.52,
+      "pct_since": 3.52,
       "direction": "up",
       "triggers": [
-        "+5.5% on the day"
+        "+3.5% since last check"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
         {
-          "title": "Danaher Is Down 22% This Year. Is the Masimo Acquisition the Entry Point Investors Have Been Waiting for?",
-          "publisher": "Motley Fool",
-          "date": "2026-06-24",
-          "url": "https://www.fool.com/investing/2026/06/24/danaher-is-down-22-this-year-is-the-masimo-acquisi/"
-        },
-        {
-          "title": "HSBC Cuts PT on Danaher Corporation (DHR) \u2013 Here\u2019s Why",
-          "publisher": "Insider Monkey",
-          "date": "2026-06-24",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/hsbc-cuts-pt-danaher-corporation-121456430.html"
-        },
-        {
-          "title": "VTRS vs. DHR: Which Stock Is the Better Value Option?",
+          "title": "Danaher (DHR) Crossed Above the 20-Day Moving Average: What That Means for Investors",
           "publisher": "Zacks",
-          "date": "2026-06-23",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/vtrs-vs-dhr-stock-better-154005221.html"
+          "date": "2026-06-25",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/danaher-dhr-crossed-above-20-133503271.html"
+        },
+        {
+          "title": "3 Healthcare Stocks with Questionable Fundamentals",
+          "publisher": "StockStory",
+          "date": "2026-06-25",
+          "url": "https://finance.yahoo.com/healthcare/articles/3-healthcare-stocks-questionable-fundamentals-104950744.html"
+        },
+        {
+          "title": "Is Danaher (DHR) Using Masimo\u2019s New FDA-Cleared AI Tool To Redefine Its Medtech Edge?",
+          "publisher": "Simply Wall St.",
+          "date": "2026-06-25",
+          "url": "https://finance.yahoo.com/healthcare/articles/danaher-dhr-using-masimo-fda-031608737.html"
         }
       ]
     },
@@ -104,12 +206,12 @@
       "ticker": "OKLO",
       "name": "Oklo Inc.",
       "verdict": "WATCHLIST",
-      "price": 54.06,
-      "pct_day": -5.47,
-      "pct_since": 0.0,
+      "price": 52.155,
+      "pct_day": -3.52,
+      "pct_since": -3.52,
       "direction": "down",
       "triggers": [
-        "-5.5% on the day"
+        "-3.5% since last check"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -130,6 +232,105 @@
           "publisher": "Zacks",
           "date": "2026-06-24",
           "url": "https://finance.yahoo.com/energy/articles/oklos-licensing-strategy-aims-support-122000432.html"
+        }
+      ]
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "verdict": "WATCHLIST",
+      "price": 90.71,
+      "pct_day": -3.29,
+      "pct_since": -3.29,
+      "direction": "down",
+      "triggers": [
+        "-3.3% since last check"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "ServiceNow: An Excellent Business Trading at a Discount",
+          "publisher": "Motley Fool",
+          "date": "2026-06-25",
+          "url": "https://www.fool.com/investing/2026/06/25/servicenow-excellent-business-trading-at-discount/"
+        },
+        {
+          "title": "Can AI Infrastructure Demand Fuel CDW's Growth in 2026?",
+          "publisher": "Zacks",
+          "date": "2026-06-25",
+          "url": "https://finance.yahoo.com/technology/ai/articles/ai-infrastructure-demand-fuel-cdws-135100570.html"
+        },
+        {
+          "title": "Salesforce vs. ServiceNow: What Do Their Revenue Trends Tell Investors?",
+          "publisher": "Motley Fool",
+          "date": "2026-06-25",
+          "url": "https://www.fool.com/coverage/charts/2026/06/25/salesforce-vs-servicenow-what-do-their-revenue-trends-tell-investors/"
+        }
+      ]
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings Co",
+      "verdict": "WATCHLIST",
+      "price": 326.58,
+      "pct_day": 3.21,
+      "pct_since": 3.21,
+      "direction": "up",
+      "triggers": [
+        "+3.2% since last check"
+      ],
+      "reason": "AI infrastructure demand growth potential.",
+      "news": [
+        {
+          "title": "Can AI Infrastructure Demand Fuel CDW's Growth in 2026?",
+          "publisher": "Zacks",
+          "date": "2026-06-25",
+          "url": "https://finance.yahoo.com/technology/ai/articles/ai-infrastructure-demand-fuel-cdws-135100570.html"
+        },
+        {
+          "title": "Can AI-Driven Liquid Cooling Demand Boost NVT's Long-Term Growth?",
+          "publisher": "Zacks",
+          "date": "2026-06-24",
+          "url": "https://finance.yahoo.com/technology/ai/articles/ai-driven-liquid-cooling-demand-132700872.html"
+        },
+        {
+          "title": "Unlocking an AI Boom in Small Business: Pax8 VP of AI Adoption Chance Weaver, Live from Pax8 Beyond 2026",
+          "publisher": "Exec Edge",
+          "date": "2026-06-24",
+          "url": "https://tech.yahoo.com/ai/articles/unlocking-ai-boom-small-business-120021762.html"
+        }
+      ]
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML Holding N.V.",
+      "verdict": "WATCHLIST",
+      "price": 1816.155,
+      "pct_day": 2.99,
+      "pct_since": 3.03,
+      "direction": "up",
+      "triggers": [
+        "+3.0% since last check"
+      ],
+      "reason": "Upbeat Micron forecast sparks AI chip stock rally.",
+      "news": [
+        {
+          "title": "European shares gain as upbeat Micron forecast revives AI rally",
+          "publisher": "Reuters",
+          "date": "2026-06-25",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/european-shares-gain-upbeat-micron-072325645.html"
+        },
+        {
+          "title": "Europe is pushing back on Washington\u2019s chip war",
+          "publisher": "TechCrunch",
+          "date": "2026-06-25",
+          "url": "https://finance.yahoo.com/technology/ai/articles/europe-pushing-back-washington-chip-000836402.html"
+        },
+        {
+          "title": "Micron and Qualcomm forecasts ignite $400 billion AI chip stock rally",
+          "publisher": "Reuters",
+          "date": "2026-06-24",
+          "url": "https://finance.yahoo.com/technology/ai/articles/micron-qualcomm-forecasts-ignite-400-230933990.html"
         }
       ]
     }
