@@ -1,37 +1,102 @@
 {
-  "generated_at": "2026-06-25T18:11:28Z",
+  "generated_at": "2026-06-25T20:29:49Z",
   "movers": [
     {
       "ticker": "MU",
       "name": "Micron Technology, Inc.",
       "verdict": "RESEARCH-WORTHY",
-      "price": 1231.36,
-      "pct_day": 17.51,
-      "pct_since": 4.25,
+      "price": 1213.56,
+      "pct_day": 15.81,
+      "pct_since": -1.45,
       "direction": "up",
       "triggers": [
-        "+4.2% since last check",
-        "+17.5% on the day"
+        "+15.8% on the day"
       ],
-      "reason": "Micron's strong Q3 earnings and outlook likely drove the increase.",
+      "reason": "Blowout Q3 earnings likely drove the increase.",
       "news": [
         {
-          "title": "Stock market today: Dow and S&P 500 rise, Nasdaq slips as PCE comes in hot, Big Tech falters",
+          "title": "Sandisk, Western Digital, and others soar as Micron results  'justify elevated valuations'",
+          "publisher": "Yahoo Finance",
+          "date": "2026-06-25",
+          "url": "https://finance.yahoo.com/markets/article/sandisk-western-digital-and-others-soar-as-micron-results-justify-elevated-valuations-140642825.html"
+        },
+        {
+          "title": "Big Tech stocks tumble while Micron continues to gain on Q3 earnings",
+          "publisher": "Yahoo Finance Video",
+          "date": "2026-06-25",
+          "url": "https://finance.yahoo.com/video/big-tech-stocks-tumble-while-191535676.html"
+        },
+        {
+          "title": "Micron stock soars after blowout earnings expose AI's memory bottleneck",
           "publisher": "Yahoo Finance",
           "date": "2026-06-24",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-and-sp-500-rise-nasdaq-slips-as-pce-comes-in-hot-big-tech-falters-232650645.html"
+          "url": "https://finance.yahoo.com/markets/article/micron-stock-soars-after-blowout-earnings-expose-ais-memory-bottleneck-204039376.html"
+        }
+      ]
+    },
+    {
+      "ticker": "CBRS",
+      "name": "Cerebras Systems Inc.",
+      "verdict": "WATCHLIST",
+      "price": 168.52,
+      "pct_day": -7.61,
+      "pct_since": -1.74,
+      "direction": "down",
+      "triggers": [
+        "-7.6% on the day"
+      ],
+      "reason": "Lower margins guidance.",
+      "news": [
+        {
+          "title": "Cathie Wood Buys $22 Million of This Tumbling Tech Stock",
+          "publisher": "GuruFocus.com",
+          "date": "2026-06-25",
+          "url": "https://finance.yahoo.com/technology/ai/articles/cathie-wood-buys-22-million-170651679.html"
         },
         {
-          "title": "Employers, governments join forces to address AI job loss concerns",
-          "publisher": "Yahoo Finance Video",
+          "title": "US Stock Market Today S&P 500 Futures Edge Higher On Cooler Yields Data",
+          "publisher": "Simply Wall St.",
           "date": "2026-06-25",
-          "url": "https://finance.yahoo.com/video/employers-governments-join-forces-address-143000696.html"
+          "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-market-today-p-080908518.html"
         },
         {
-          "title": "AI trade: Making sense of Micron's massive Q3 earnings boost",
+          "title": "Cerebras Systems (CBRS) Is Down 22.3% After Guiding To Lower Margins Amid Major AI Cloud Deals",
+          "publisher": "Simply Wall St.",
+          "date": "2026-06-25",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/cerebras-systems-cbrs-down-22-050644951.html"
+        }
+      ]
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "verdict": "WATCHLIST",
+      "price": 275.15,
+      "pct_day": -6.15,
+      "pct_since": -0.51,
+      "direction": "down",
+      "triggers": [
+        "-6.2% on the day"
+      ],
+      "reason": "Apple raised prices on MacBooks, iPads amid global memory crisis.",
+      "news": [
+        {
+          "title": "How Qualcomm is evolving to grab a piece of the AI data center explosion.",
+          "publisher": "Yahoo Finance",
+          "date": "2026-06-25",
+          "url": "https://finance.yahoo.com/technology/article/how-qualcomm-is-evolving-to-grab-a-piece-of-the-ai-data-center-explosion-200314570.html"
+        },
+        {
+          "title": "Apple stock plunges after raising prices on MacBooks, iPads amid global memory crisis",
+          "publisher": "Yahoo Finance",
+          "date": "2026-06-25",
+          "url": "https://finance.yahoo.com/technology/article/apple-stock-plunges-after-raising-prices-on-macbooks-ipads-amid-global-memory-crisis-140406938.html"
+        },
+        {
+          "title": "May PCE: Inflation ticks up to highest level since 2023",
           "publisher": "Yahoo Finance Video",
           "date": "2026-06-25",
-          "url": "https://finance.yahoo.com/video/ai-trade-making-sense-microns-133340659.html"
+          "url": "https://finance.yahoo.com/video/may-pce-inflation-ticks-highest-135200649.html"
         }
       ]
     },
@@ -39,12 +104,12 @@
       "ticker": "AAOI",
       "name": "Applied Optoelectronics, Inc.",
       "verdict": "WATCHLIST",
-      "price": 137.31,
-      "pct_day": -6.57,
-      "pct_since": 1.02,
+      "price": 138.54,
+      "pct_day": -5.74,
+      "pct_since": 0.9,
       "direction": "down",
       "triggers": [
-        "-6.6% on the day"
+        "-5.7% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -69,68 +134,35 @@
       ]
     },
     {
-      "ticker": "CBRS",
-      "name": "Cerebras Systems Inc.",
+      "ticker": "OKLO",
+      "name": "Oklo Inc.",
       "verdict": "WATCHLIST",
-      "price": 171.5001,
-      "pct_day": -5.98,
-      "pct_since": -0.69,
+      "price": 51.01,
+      "pct_day": -5.64,
+      "pct_since": -1.04,
       "direction": "down",
       "triggers": [
-        "-6.0% on the day"
+        "-5.6% on the day"
       ],
-      "reason": "Lower margin guidance and misunderstood outlook.",
+      "reason": "No clear catalyst in current news.",
       "news": [
         {
-          "title": "Trending: OpenAI, Broadcom target Nvidia's AI chip dominance; Wendy's sees meme stock boost",
-          "publisher": "Yahoo Finance Video",
+          "title": "Why Oklo Stock Keeps Going Down",
+          "publisher": "Motley Fool",
           "date": "2026-06-24",
-          "url": "https://finance.yahoo.com/video/trending-openai-broadcom-target-nvidias-194722853.html"
+          "url": "https://www.fool.com/investing/2026/06/24/why-oklo-stock-keeps-going-down/"
         },
         {
-          "title": "Cathie Wood Buys $22 Million of This Tumbling Tech Stock",
-          "publisher": "GuruFocus.com",
-          "date": "2026-06-25",
-          "url": "https://finance.yahoo.com/technology/ai/articles/cathie-wood-buys-22-million-170651679.html"
-        },
-        {
-          "title": "US Stock Market Today S&P 500 Futures Edge Higher On Cooler Yields Data",
-          "publisher": "Simply Wall St.",
-          "date": "2026-06-25",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-market-today-p-080908518.html"
-        }
-      ]
-    },
-    {
-      "ticker": "AAPL",
-      "name": "Apple Inc.",
-      "verdict": "WATCHLIST",
-      "price": 276.56,
-      "pct_day": -5.67,
-      "pct_since": -0.82,
-      "direction": "down",
-      "triggers": [
-        "-5.7% on the day"
-      ],
-      "reason": "Apple raised prices due to soaring costs.",
-      "news": [
-        {
-          "title": "Tech stocks live: AI memory trade roars back after Micron earnings crush estimates",
-          "publisher": "Yahoo Finance",
-          "date": "2026-06-22",
-          "url": "https://finance.yahoo.com/technology/live/tech-stocks-live-ai-memory-trade-roars-back-after-micron-earnings-crush-estimates-143422690.html"
-        },
-        {
-          "title": "May PCE: Inflation ticks up to highest level since 2023",
-          "publisher": "Yahoo Finance Video",
-          "date": "2026-06-25",
-          "url": "https://finance.yahoo.com/video/may-pce-inflation-ticks-highest-135200649.html"
-        },
-        {
-          "title": "Alphabet makes the Dow look more like the Nasdaq",
-          "publisher": "Yahoo Finance",
+          "title": "Agility Robotics goes public with Churchill Capital SPAC merger",
+          "publisher": "Quartz",
           "date": "2026-06-24",
-          "url": "https://finance.yahoo.com/markets/article/alphabet-makes-the-dow-look-more-like-the-nasdaq-155236659.html"
+          "url": "https://qz.com/agility-robotics-spac-merger-churchill-capital-2-5-billion-062426"
+        },
+        {
+          "title": "OKLO's Licensing Strategy Aims to Support Reactor Rollout",
+          "publisher": "Zacks",
+          "date": "2026-06-24",
+          "url": "https://finance.yahoo.com/energy/articles/oklos-licensing-strategy-aims-support-122000432.html"
         }
       ]
     }
