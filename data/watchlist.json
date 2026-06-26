@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-25",
+  "last_updated": "2026-06-26",
   "candidates": [
     {
       "ticker": "AAPL",
@@ -42,8 +42,10 @@
       "buy_target": 316,
       "current_price": 316,
       "next_action": "BUY $1,500 \u2014 top conviction pick after web research",
-      "research_file": null,
-      "last_researched": "2026-04-25"
+      "research_file": "output/research/GOOGL_2026-06-26.md",
+      "last_researched": "2026-06-26",
+      "confidence": "MEDIUM",
+      "bear_check": "The strongest argument against buying GOOGL right now is that the bull case may be underweighting the potential risks and disruptions in the technology sector, such as the AI boom's price tag and the debt sale by SpaceX, which could lead to bubble concerns and impact GOOGL's growth prospects. Additionally, the potential delay of OpenAI's IPO, a key partner of Oracle, could have a ripple effect on the industry and GOOGL's collaborations. The note's limited analysis of the company's future plans, competitive landscape, and potential risks also raises concerns about the stock's valuation.\n\nVERDICT: BEARISH \nCONFIDENCE: MEDIUM\nCHANGES VERDICT: YES"
     },
     {
       "ticker": "AMZN",
@@ -98,10 +100,10 @@
       "buy_target": 400,
       "current_price": null,
       "next_action": "RESEARCH \u2014 verify Google/Meta XPU contract durations in 10-K. At -4.6% from high, entry is acceptable at current price or on any 10% dip to ~$380.",
-      "research_file": "output/research/AVGO_2026-06-25.md",
-      "last_researched": "2026-06-25",
+      "research_file": "output/research/AVGO_2026-06-26.md",
+      "last_researched": "2026-06-26",
       "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying AVGO right now is that the emerging competition in the AI chip market, particularly from Google and Nvidia, poses a significant threat to Broadcom's market share and future growth prospects, which the bull case may be underestimating. This threat is highlighted by recent headlines warning of a potential \"TPU Shakeup\" and Nvidia's continued dominance in the AI chip space. The high valuation of AVGO, with a trailing P/E of 63.7x, further exacerbates the risk of a downturn if the company fails to meet expectations in the face of increasing competition.\n\nVERDICT: \nCONFIDENCE: \nCHANGES VERDICT: YES"
+      "bear_check": "The strongest argument against buying AVGO right now is that the semiconductor sector's volatility, particularly concerns over memory costs, could negatively impact the company's growth trajectory and profitability, which may not be fully factored into the bull case. Additionally, the high valuation metrics, such as a trailing P/E ratio of 62.9x and an EV/EBITDA ratio of 43.9x, suggest that the stock may be overvalued, leaving little room for error if the company's growth slows. The recent retreat of semiconductor stocks, including AVGO's 23.5% decline from its peak, may not be fully justified by the company's fundamentals, making it a risky buy.\n\nCHANGES VERDICT: YES"
     },
     {
       "ticker": "LLY",
@@ -356,10 +358,10 @@
       "buy_target": 160,
       "current_price": null,
       "next_action": "RESEARCH \u2014 14.6x forward PE for 43% growth is the best risk/reward in the energy theme. Verify Energy Harbor integration and nuclear capacity utilization in latest earnings. At current price ~$160 is already near buy target.",
-      "research_file": "output/research/VST_2026-06-25.md",
-      "last_researched": "2026-06-25",
+      "research_file": "output/research/VST_2026-06-26.md",
+      "last_researched": "2026-06-26",
       "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying VST right now is its significant net debt of $19,268M, which could substantially impact the company's financial flexibility and ability to invest in growth opportunities, potentially outweighing its positive revenue growth and cash flow generation. This debt burden is a critical factor that the bull case may be underweighting, as it could lead to increased interest expenses and limit the company's ability to capitalize on new opportunities. The bull case seems to be relying heavily on valuation metrics and recent positive news headlines, which may not fully account for the potential risks associated with VST's high debt levels.\n\nCHANGES VERDICT: YES"
+      "bear_check": "The strongest argument against buying VST right now is its substantial net debt of $19,268M, which poses a significant risk to its financial health and could outweigh the positive factors such as revenue growth and operational margins. This high level of debt could lead to increased interest expenses, reduced financial flexibility, and a higher risk of default, making the stock less attractive despite its potential for growth. The bull case may be underweighting the potential impact of this debt on VST's future performance.\n\nVERDICT: BEARISH \nCONFIDENCE: HIGH \nCHANGES VERDICT: YES"
     },
     {
       "ticker": "VRT",
@@ -458,10 +460,10 @@
       "buy_target": 95,
       "current_price": null,
       "next_action": "RESEARCH \u2014 cheap quality + 4.7% yield. Verify SMB client retention trends.",
-      "research_file": "output/research/PAYX_2026-06-25.md",
-      "last_researched": "2026-06-25",
+      "research_file": "output/research/PAYX_2026-06-26.md",
+      "last_researched": "2026-06-26",
       "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying PAYX right now is that the company's significant net debt of $3484M could pose a substantial risk, particularly if interest rates rise or the company's cash flow is impacted by economic downturns, which could outweigh the potential benefits of its revenue growth and AI innovations. This debt burden is a concern that the bull case may be underweighting. Additionally, the recent 27% slide in stock price and mixed narratives surrounding the company's valuation also suggest caution.\n\nVERDICT: BEARISH \nCONFIDENCE: HIGH \nCHANGES VERDICT: YES"
+      "bear_check": "The strongest argument against buying PAYX right now is the significant presence of $3484M in net debt, which could pose a substantial risk if the company fails to manage its debt effectively and generate sufficient cash flow to service it, potentially outweighing the benefits of its revenue growth and AI push. This concern is heightened in a market environment where caution over AI-chip developments and broader economic factors are contributing to stock price slides. The bull case may be underweighting the potential debt servicing challenges PAYX faces.\n\nVERDICT: BEARISH \nCONFIDENCE: HIGH \nCHANGES VERDICT: YES"
     },
     {
       "ticker": "DHR",
@@ -544,10 +546,10 @@
       "buy_target": 64,
       "current_price": null,
       "next_action": "RESEARCH \u2014 AI imaging at 12x fwd PE after 28% pullback. Verify order backlog.",
-      "research_file": "output/research/GEHC_2026-06-25.md",
-      "last_researched": "2026-06-25",
+      "research_file": "output/research/GEHC_2026-06-26.md",
+      "last_researched": "2026-06-26",
       "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying GEHC right now is its significant net debt of $8316M, which could pose a substantial risk to the company's financial stability and ability to invest in growth initiatives, such as AI-powered imaging solutions, especially if interest rates rise or market conditions deteriorate. This debt burden may not be adequately reflected in the current valuation multiples, potentially making the stock more vulnerable to downside risks than the bullish note suggests. The lack of detailed information on contract values and specific analyst targets also adds to the uncertainty surrounding the stock's true potential.\n\nVERDICT: BEARISH \nCONFIDENCE: HIGH \nCHANGES VERDICT: YES"
+      "bear_check": "The strongest argument against buying GEHC right now is its significant net debt of $8,316M, which could pose a substantial risk to the company's financial health and ability to invest in growth initiatives, such as its AI-powered imaging solutions, especially if interest rates rise or the company's cash flow deteriorates. This debt level may be underweighted in the bull case, as it could limit the company's flexibility and increase its vulnerability to economic downturns. Additionally, the drawdown of 27.7% from its 52-week high may indicate underlying market concerns about the company's valuation or growth prospects.\n\nVERDICT: BEARISH \nCONFIDENCE: HIGH \nCHANGES VERDICT: YES"
     },
     {
       "ticker": "ZBH",
@@ -590,10 +592,10 @@
       "buy_target": 285,
       "current_price": null,
       "next_action": "RESEARCH \u2014 35% growth at 10x forward PE is rare. Verify advisor headcount + asset growth.",
-      "research_file": "output/research/LPLA_2026-06-25.md",
-      "last_researched": "2026-06-25",
+      "research_file": "output/research/LPLA_2026-06-26.md",
+      "last_researched": "2026-06-26",
       "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying LPLA right now is that the bull case may be underweighting the financial leverage risk posed by the company's significant net debt of $4796M, which could become a major issue if interest rates rise or the company's growth prospects do not materialize as expected. This debt burden, combined with the stock's somewhat elevated trailing P/E of 25.4x, suggests that the potential undervaluation implied by the forward P/E of 9.9x may be overstated. The recent advisor recruitment efforts, while positive, may not be enough to offset the risks associated with the company's debt levels.\n\nVERDICT: BEARISH \nCONFIDENCE: MEDIUM \nCHANGES VERDICT: YES"
+      "bear_check": "The strongest argument against buying LPLA right now is that the current valuation, with a trailing P/E ratio of 24.9x, may be overly optimistic given the rising inflation concerns, which could potentially impact consumer spending and, by extension, the financial services sector. This concern is exacerbated by the fact that LPLA's growth prospects are heavily reliant on its ability to maintain and grow its revenue in a potentially challenging economic environment. The bull case may be underweighting the potential risks associated with inflation and its impact on consumer behavior.\n\nCHANGES VERDICT: YES"
     },
     {
       "ticker": "INVH",
