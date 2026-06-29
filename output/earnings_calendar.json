@@ -1,7 +1,17 @@
 {
-  "generated_at": "2026-06-29T18:59:46Z",
+  "generated_at": "2026-06-29T20:50:09Z",
   "lookahead_days": 30,
   "upcoming_earnings": [
+    {
+      "ticker": "STZ",
+      "name": "Constellation Brands, Inc.",
+      "date": "2026-06-30",
+      "days_until": 0,
+      "theme": "defensive_income",
+      "verdict": "WATCHLIST",
+      "thesis": "Constellation Brands \u2014 beer (Modelo, Corona) + wine. 27% op margin but -11% revenue growth. 11.4x fwd PE, -20% from ATH. Cheap but shrinking \u2014 needs a turnaround thesis.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py STZ after."
+    },
     {
       "ticker": "GIS",
       "name": "General Mills, Inc.",
@@ -13,16 +23,6 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py GIS after."
     },
     {
-      "ticker": "STZ",
-      "name": "Constellation Brands, Inc.",
-      "date": "2026-06-30",
-      "days_until": 1,
-      "theme": "defensive_income",
-      "verdict": "WATCHLIST",
-      "thesis": "Constellation Brands \u2014 beer (Modelo, Corona) + wine. 27% op margin but -11% revenue growth. 11.4x fwd PE, -20% from ATH. Cheap but shrinking \u2014 needs a turnaround thesis.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py STZ after."
-    },
-    {
       "ticker": "ASML",
       "name": "ASML Holding N.V.",
       "date": "2026-07-15",
@@ -31,6 +31,16 @@
       "verdict": "WATCHLIST",
       "thesis": "World's only EUV lithography manufacturer \u2014 the absolute bottleneck for advanced chip production. Every NVIDIA GPU, every Apple chip, every AI accelerator runs through ASML machines. $36B+ backlog. High-NA EUV (next gen, \u20ac350M/unit) booked through 2028. China export restrictions are suppressing near-term growth (13% YoY vs 50%+ in 2023) \u2014 the headwind is known and finite.",
       "action": "Review thesis before earnings. Re-run research_ticker.py ASML after."
+    },
+    {
+      "ticker": "NFLX",
+      "name": "Netflix, Inc.",
+      "date": "2026-07-16",
+      "days_until": 16,
+      "theme": "consumer_media",
+      "verdict": "WATCHLIST",
+      "thesis": "Netflix \u2014 streaming leader, 300M+ subs. 32% op margin, 16% growth, $26B FCF, 21.5x fwd PE. -38% from ATH. Ad-tier + password-sharing crackdown driving margin expansion. Now in-mandate under diversified themes.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py NFLX after."
     },
     {
       "ticker": "TSM",
@@ -53,16 +63,6 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py UNH after."
     },
     {
-      "ticker": "NFLX",
-      "name": "Netflix, Inc.",
-      "date": "2026-07-16",
-      "days_until": 17,
-      "theme": "consumer_media",
-      "verdict": "WATCHLIST",
-      "thesis": "Netflix \u2014 streaming leader, 300M+ subs. 32% op margin, 16% growth, $26B FCF, 21.5x fwd PE. -38% from ATH. Ad-tier + password-sharing crackdown driving margin expansion. Now in-mandate under diversified themes.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py NFLX after."
-    },
-    {
       "ticker": "DHR",
       "name": "Danaher Corporation",
       "date": "2026-07-21",
@@ -83,6 +83,16 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py GEV after."
     },
     {
+      "ticker": "IBM",
+      "name": "International Business Machines Corporation",
+      "date": "2026-07-22",
+      "days_until": 22,
+      "theme": "mega_cap_ai",
+      "verdict": "WATCHLIST",
+      "thesis": "Enterprise AI (WatsonX) + hybrid cloud (Red Hat OpenShift) + consulting. WatsonX wins in regulated industries (banking, healthcare, government) where OpenAI/Azure can't go \u2014 on-prem, air-gapped deployments. $13.08B FCF is exceptional. Red Hat growing 15%+ annually. 21.2x forward PE, 9.5% revenue growth, -14.3% from $332 ATH. Slow growth but durable cash generation.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py IBM after."
+    },
+    {
       "ticker": "CMCSA",
       "name": "Comcast Corporation",
       "date": "2026-07-23",
@@ -91,16 +101,6 @@
       "verdict": "WATCHLIST",
       "thesis": "Comcast \u2014 cable + NBCUniversal + Peacock. 6.3x fwd PE (very cheap), 5.5% dividend, -31% from ATH. But cord-cutting headwind; broadband growth slowing.",
       "action": "Review thesis before earnings. Re-run research_ticker.py CMCSA after."
-    },
-    {
-      "ticker": "IBM",
-      "name": "International Business Machines Corporation",
-      "date": "2026-07-22",
-      "days_until": 23,
-      "theme": "mega_cap_ai",
-      "verdict": "WATCHLIST",
-      "thesis": "Enterprise AI (WatsonX) + hybrid cloud (Red Hat OpenShift) + consulting. WatsonX wins in regulated industries (banking, healthcare, government) where OpenAI/Azure can't go \u2014 on-prem, air-gapped deployments. $13.08B FCF is exceptional. Red Hat growing 15%+ annually. 21.2x forward PE, 9.5% revenue growth, -14.3% from $332 ATH. Slow growth but durable cash generation.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py IBM after."
     },
     {
       "ticker": "ADP",
