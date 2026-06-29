@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T23:03:43Z",
+  "generated_at": "2026-06-29T16:35:21Z",
   "hits": [
     {
       "ticker": "MSFT",
@@ -7,21 +7,10 @@
       "verdict": "WATCHLIST",
       "confidence": "MEDIUM",
       "theme": "mega_cap_ai",
-      "price": 372.97,
+      "price": 367.8775,
       "buy_target": 425,
-      "gap_pct": -12.2,
+      "gap_pct": -13.4,
       "next_action": "BUY $1,200 \u2014 at current price, deploy now"
-    },
-    {
-      "ticker": "NFLX",
-      "name": "NFLX",
-      "verdict": "WATCHLIST",
-      "confidence": "MEDIUM",
-      "theme": "consumer_media",
-      "price": 73.81,
-      "buy_target": 82,
-      "gap_pct": -10.0,
-      "next_action": "RESEARCH \u2014 quality platform down 38%. Verify ad-tier subscriber ramp. Strong FCF compounder."
     },
     {
       "ticker": "CEG",
@@ -29,10 +18,21 @@
       "verdict": "WATCHLIST",
       "confidence": "MEDIUM",
       "theme": "nuclear_smr",
-      "price": 264.02,
+      "price": 260.02,
       "buy_target": 290,
-      "gap_pct": -9.0,
+      "gap_pct": -10.3,
       "next_action": "RESEARCH \u2014 verify Microsoft PPA terms and Three Mile Island restart timeline. At -30% from ATH and 21x forward PE this is the best nuclear entry. Deploy at or near current price."
+    },
+    {
+      "ticker": "NFLX",
+      "name": "NFLX",
+      "verdict": "WATCHLIST",
+      "confidence": "MEDIUM",
+      "theme": "consumer_media",
+      "price": 74.91,
+      "buy_target": 82,
+      "gap_pct": -8.6,
+      "next_action": "RESEARCH \u2014 quality platform down 38%. Verify ad-tier subscriber ramp. Strong FCF compounder."
     },
     {
       "ticker": "AVGO",
@@ -40,9 +40,9 @@
       "verdict": "RESEARCH-WORTHY",
       "confidence": "MEDIUM",
       "theme": "edge_ai_silicon",
-      "price": 365.02,
+      "price": 370.15,
       "buy_target": 400,
-      "gap_pct": -8.7,
+      "gap_pct": -7.5,
       "next_action": "RESEARCH \u2014 verify Google/Meta XPU contract durations in 10-K. At -4.6% from high, entry is acceptable at current price or on any 10% dip to ~$380."
     },
     {
@@ -57,48 +57,15 @@
       "next_action": "RESEARCH \u2014 35% growth at 10x forward PE is rare. Verify advisor headcount + asset growth."
     },
     {
-      "ticker": "AAOI",
-      "name": "Applied Optoelectronics, Inc.",
-      "verdict": "WATCHLIST",
-      "confidence": null,
-      "theme": "networking_infra",
-      "price": 135.69,
-      "buy_target": 140,
-      "gap_pct": -3.1,
-      "next_action": "WATCH \u2014 right theme and real hyperscaler demand, but unprofitable with negative FCF. Monitor next 2 quarters for gross margin expansion toward 35%+. Buy at $140 (-40%) if profitability trajectory confirms."
-    },
-    {
       "ticker": "MKTX",
       "name": "MKTX",
       "verdict": "WATCHLIST",
       "confidence": "MEDIUM",
       "theme": "financials",
-      "price": 112.54,
+      "price": 109.14,
       "buy_target": 115,
-      "gap_pct": -2.1,
+      "gap_pct": -5.1,
       "next_action": "RESEARCH \u2014 44%-margin network business down 50%. Verify trading-volume trends; strong risk/reward."
-    },
-    {
-      "ticker": "AMZN",
-      "name": "Amazon.com, Inc.",
-      "verdict": "WATCHLIST",
-      "confidence": null,
-      "theme": "mega_cap_ai",
-      "price": 232.69,
-      "buy_target": 237,
-      "gap_pct": -1.8,
-      "next_action": "WAIT \u2014 near 52w high (-2.4%), 31.6x PE reasonable but timing poor. Buy on 15%+ pullback to ~$237."
-    },
-    {
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "verdict": "WATCHLIST",
-      "confidence": null,
-      "theme": "mega_cap_ai",
-      "price": 550.25,
-      "buy_target": 560,
-      "gap_pct": -1.7,
-      "next_action": "WAIT for Q1 earnings April 29. Buy $1,000 if beats and stock holds; $1,200 if drops on capex guidance"
     },
     {
       "ticker": "FLUT",
@@ -106,32 +73,54 @@
       "verdict": "WATCHLIST",
       "confidence": null,
       "theme": "consumer_media",
-      "price": 104.19,
+      "price": 102.67,
       "buy_target": 105,
-      "gap_pct": -0.8,
+      "gap_pct": -2.2,
       "next_action": "WAIT \u2014 massive pullback but thin margins. Verify FanDuel profitability trajectory before buying."
     },
     {
-      "ticker": "OKLO",
-      "name": "Oklo Inc.",
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
       "verdict": "WATCHLIST",
       "confidence": null,
-      "theme": "nuclear_smr",
-      "price": 50.0,
-      "buy_target": 50,
-      "gap_pct": 0.0,
-      "next_action": "SPECULATIVE ONLY \u2014 not a core position. If you want SMR exposure, max $200-300 at $50 or below. Monitor DOE permit progress and first reactor deployment milestones."
+      "theme": "mega_cap_ai",
+      "price": 564.295,
+      "buy_target": 560,
+      "gap_pct": 0.8,
+      "next_action": "WAIT for Q1 earnings April 29. Buy $1,000 if beats and stock holds; $1,200 if drops on capex guidance"
     },
     {
-      "ticker": "CBRS",
-      "name": "CBRS",
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
       "verdict": "WATCHLIST",
       "confidence": null,
-      "theme": "edge_ai_silicon",
-      "price": 181.59,
-      "buy_target": 180,
-      "gap_pct": 0.9,
-      "next_action": "SPECULATIVE \u2014 real AI-chip innovation but unprofitable at 287x fwd PE. Max small position. Buy only on deeper pullback to ~$180."
+      "theme": "mega_cap_ai",
+      "price": 240.04,
+      "buy_target": 237,
+      "gap_pct": 1.3,
+      "next_action": "WAIT \u2014 near 52w high (-2.4%), 31.6x PE reasonable but timing poor. Buy on 15%+ pullback to ~$237."
+    },
+    {
+      "ticker": "GEHC",
+      "name": "GEHC",
+      "verdict": "RESEARCH-WORTHY",
+      "confidence": "MEDIUM",
+      "theme": "healthcare_innovation",
+      "price": 64.9151,
+      "buy_target": 64,
+      "gap_pct": 1.4,
+      "next_action": "RESEARCH \u2014 AI imaging at 12x fwd PE after 28% pullback. Verify order backlog."
+    },
+    {
+      "ticker": "AAOI",
+      "name": "Applied Optoelectronics, Inc.",
+      "verdict": "WATCHLIST",
+      "confidence": null,
+      "theme": "networking_infra",
+      "price": 142.455,
+      "buy_target": 140,
+      "gap_pct": 1.8,
+      "next_action": "WATCH \u2014 right theme and real hyperscaler demand, but unprofitable with negative FCF. Monitor next 2 quarters for gross margin expansion toward 35%+. Buy at $140 (-40%) if profitability trajectory confirms."
     },
     {
       "ticker": "ADP",
@@ -139,9 +128,9 @@
       "verdict": "WATCHLIST",
       "confidence": "MEDIUM",
       "theme": "quality_compounder",
-      "price": 223.55,
+      "price": 223.92,
       "buy_target": 220,
-      "gap_pct": 1.6,
+      "gap_pct": 1.8,
       "next_action": "RESEARCH \u2014 durable compounder down 30%. Attractive entry with growing dividend."
     },
     {
@@ -150,89 +139,23 @@
       "verdict": "RESEARCH-WORTHY",
       "confidence": "MEDIUM",
       "theme": "nuclear_smr",
-      "price": 163.49,
+      "price": 164.235,
       "buy_target": 160,
-      "gap_pct": 2.2,
+      "gap_pct": 2.6,
       "next_action": "RESEARCH \u2014 14.6x forward PE for 43% growth is the best risk/reward in the energy theme. Verify Energy Harbor integration and nuclear capacity utilization in latest earnings. At current price ~$160 is already near buy target."
-    },
-    {
-      "ticker": "GEHC",
-      "name": "GEHC",
-      "verdict": "RESEARCH-WORTHY",
-      "confidence": "MEDIUM",
-      "theme": "healthcare_innovation",
-      "price": 65.76,
-      "buy_target": 64,
-      "gap_pct": 2.8,
-      "next_action": "RESEARCH \u2014 AI imaging at 12x fwd PE after 28% pullback. Verify order backlog."
     }
   ],
   "approaching": [
     {
-      "ticker": "TSM",
-      "name": "Taiwan Semiconductor Manufacturing Company",
+      "ticker": "OKLO",
+      "name": "Oklo Inc.",
       "verdict": "WATCHLIST",
       "confidence": null,
-      "theme": "edge_ai_silicon",
-      "price": 432.35,
-      "buy_target": 415,
-      "gap_pct": 4.2,
-      "next_action": "RESEARCH \u2014 most direct AI chip infrastructure play. Verify Arizona fab timeline and CoWoS capacity bookings in latest earnings. At -1.8% from 52w high, wait for 10% dip to ~$385 for better entry."
-    },
-    {
-      "ticker": "PAYX",
-      "name": "PAYX",
-      "verdict": "RESEARCH-WORTHY",
-      "confidence": "MEDIUM",
-      "theme": "quality_compounder",
-      "price": 99.9,
-      "buy_target": 95,
-      "gap_pct": 5.2,
-      "next_action": "RESEARCH \u2014 cheap quality + 4.7% yield. Verify SMB client retention trends."
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "CMCSA",
-      "verdict": "WATCHLIST",
-      "confidence": null,
-      "theme": "consumer_media",
-      "price": 23.17,
-      "buy_target": 22,
-      "gap_pct": 5.3,
-      "next_action": "WAIT \u2014 deep value + 5.5% yield, but secular cable decline. Income play, not growth."
-    },
-    {
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc.",
-      "verdict": "RESEARCH-WORTHY",
-      "confidence": "MEDIUM",
-      "theme": "mega_cap_ai",
-      "price": 337.39,
-      "buy_target": 316,
-      "gap_pct": 6.8,
-      "next_action": "BUY $1,500 \u2014 top conviction pick after web research"
-    },
-    {
-      "ticker": "AAPL",
-      "name": "Apple Inc.",
-      "verdict": "WATCHLIST",
-      "confidence": null,
-      "theme": "mega_cap_ai",
-      "price": 283.78,
-      "buy_target": 265,
-      "gap_pct": 7.1,
-      "next_action": "WAIT \u2014 near 52w high (-0.8%), 37.6x PE too rich for 16.6% growth. Buy only on 15%+ pullback to ~$265."
-    },
-    {
-      "ticker": "RDDT",
-      "name": "Reddit, Inc.",
-      "verdict": "WATCHLIST",
-      "confidence": "MEDIUM",
-      "theme": "platform_network",
-      "price": 166.94,
-      "buy_target": 154,
-      "gap_pct": 8.4,
-      "next_action": "RESEARCH \u2014 17x forward PE for 69% growth with real FCF is the best risk/reward in this group. At -45.5% from ATH the entry is already attractive. Verify AI licensing contract renewal terms and DAU growth trajectory."
+      "theme": "nuclear_smr",
+      "price": 51.7,
+      "buy_target": 50,
+      "gap_pct": 3.4,
+      "next_action": "SPECULATIVE ONLY \u2014 not a core position. If you want SMR exposure, max $200-300 at $50 or below. Monitor DOE permit progress and first reactor deployment milestones."
     },
     {
       "ticker": "STZ",
@@ -240,10 +163,43 @@
       "verdict": "WATCHLIST",
       "confidence": null,
       "theme": "defensive_income",
-      "price": 146.3,
+      "price": 140.61,
       "buy_target": 135,
-      "gap_pct": 8.4,
+      "gap_pct": 4.2,
       "next_action": "WAIT \u2014 negative growth is a red flag. Only for deep-value conviction."
+    },
+    {
+      "ticker": "PAYX",
+      "name": "PAYX",
+      "verdict": "RESEARCH-WORTHY",
+      "confidence": "MEDIUM",
+      "theme": "quality_compounder",
+      "price": 99.285,
+      "buy_target": 95,
+      "gap_pct": 4.5,
+      "next_action": "RESEARCH \u2014 cheap quality + 4.7% yield. Verify SMB client retention trends."
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "verdict": "WATCHLIST",
+      "confidence": null,
+      "theme": "mega_cap_ai",
+      "price": 280.16,
+      "buy_target": 265,
+      "gap_pct": 5.7,
+      "next_action": "WAIT \u2014 near 52w high (-0.8%), 37.6x PE too rich for 16.6% growth. Buy only on 15%+ pullback to ~$265."
+    },
+    {
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor Manufacturing Company",
+      "verdict": "WATCHLIST",
+      "confidence": null,
+      "theme": "edge_ai_silicon",
+      "price": 449.33,
+      "buy_target": 415,
+      "gap_pct": 8.3,
+      "next_action": "RESEARCH \u2014 most direct AI chip infrastructure play. Verify Arizona fab timeline and CoWoS capacity bookings in latest earnings. At -1.8% from 52w high, wait for 10% dip to ~$385 for better entry."
     },
     {
       "ticker": "ZBH",
@@ -251,21 +207,10 @@
       "verdict": "WATCHLIST",
       "confidence": null,
       "theme": "healthcare_innovation",
-      "price": 93.1,
+      "price": 92.155,
       "buy_target": 85,
-      "gap_pct": 9.5,
+      "gap_pct": 8.4,
       "next_action": "WAIT \u2014 cheap but slow-moving. Buy at $85 or below on further weakness."
-    },
-    {
-      "ticker": "MA",
-      "name": "MA",
-      "verdict": "RESEARCH-WORTHY",
-      "confidence": null,
-      "theme": "quality_compounder",
-      "price": 499.02,
-      "buy_target": 455,
-      "gap_pct": 9.7,
-      "next_action": "RESEARCH \u2014 quality compounder pulled back. Buy near $455 or current levels."
     }
   ]
 }
