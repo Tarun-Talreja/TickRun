@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-29T16:35:21Z",
+  "generated_at": "2026-06-29T19:00:23Z",
   "movers": [
     {
       "ticker": "CBRS",
       "name": "Cerebras Systems Inc.",
       "verdict": "WATCHLIST",
-      "price": 206.245,
-      "pct_day": 13.58,
-      "pct_since": 13.58,
+      "price": 218.725,
+      "pct_day": 20.45,
+      "pct_since": 6.05,
       "direction": "up",
       "triggers": [
-        "+13.6% since last check",
-        "+13.6% on the day"
+        "+6.0% since last check",
+        "+20.4% on the day"
       ],
-      "reason": "Inclusion among \"10 Best New Stocks to Buy\".",
+      "reason": "Inclusion among best new stocks to buy.",
       "news": [
         {
           "title": "Where Will Cerebras Stock be in 3 Years?",
@@ -36,83 +36,16 @@
       ]
     },
     {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "verdict": "WATCHLIST",
-      "price": 24.895,
-      "pct_day": 7.44,
-      "pct_since": 7.44,
-      "direction": "up",
-      "triggers": [
-        "+7.4% since last check",
-        "+7.4% on the day"
-      ],
-      "reason": "Comcast surges on media spin-off plan.",
-      "news": [
-        {
-          "title": "Why Comcast is spinning off NBCUniversal",
-          "publisher": "Yahoo Finance Video",
-          "date": "2026-06-29",
-          "url": "https://finance.yahoo.com/video/why-comcast-spinning-off-nbcuniversal-143500057.html"
-        },
-        {
-          "title": "Update: Communication Services, Consumer Discretionary Help Push US Equity Indexes Higher",
-          "publisher": "MT Newswires",
-          "date": "2026-06-29",
-          "url": "https://finance.yahoo.com/markets/world-indices/articles/communication-services-consumer-discretionary-help-162054928.html"
-        },
-        {
-          "title": "Wall St indexes climb as US, Iran halt attacks; Comcast surges on spin-off plan",
-          "publisher": "Reuters",
-          "date": "2026-06-29",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-lead-wall-st-094159548.html"
-        }
-      ]
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "verdict": "WATCHLIST",
-      "price": 254.83,
-      "pct_day": 6.05,
-      "pct_since": 6.05,
-      "direction": "up",
-      "triggers": [
-        "+6.0% since last check",
-        "+6.0% on the day"
-      ],
-      "reason": "Nvidia ownership mention likely boosted NBIS stock.",
-      "news": [
-        {
-          "title": "CoreWeave Collaborates With Conapto to Expand Sweden AI Cloud Capacity",
-          "publisher": "Zacks",
-          "date": "2026-06-29",
-          "url": "https://finance.yahoo.com/technology/ai/articles/coreweave-collaborates-conapto-expand-sweden-142200890.html"
-        },
-        {
-          "title": "How Does Nebius AI Cloud 3.6 Strengthen Its AI Cloud Advantage?",
-          "publisher": "Zacks",
-          "date": "2026-06-29",
-          "url": "https://finance.yahoo.com/technology/ai/articles/does-nebius-ai-cloud-3-133300443.html"
-        },
-        {
-          "title": "2 Nvidia-Owned Stocks Investors Should Buy Now",
-          "publisher": "Motley Fool",
-          "date": "2026-06-28",
-          "url": "https://www.fool.com/investing/2026/06/28/2-nvidia-owned-stocks-investors-should-buy-now/"
-        }
-      ]
-    },
-    {
       "ticker": "AAOI",
       "name": "Applied Optoelectronics, Inc.",
       "verdict": "WATCHLIST",
-      "price": 142.455,
-      "pct_day": 4.99,
-      "pct_since": 4.99,
+      "price": 148.27,
+      "pct_day": 9.27,
+      "pct_since": 4.08,
       "direction": "up",
       "triggers": [
-        "+5.0% since last check"
+        "+4.1% since last check",
+        "+9.3% on the day"
       ],
       "reason": "Landing Mediacom DOCSIS 4.0 role likely drove the increase.",
       "news": [
@@ -137,17 +70,83 @@
       ]
     },
     {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "verdict": "WATCHLIST",
+      "price": 262.38,
+      "pct_day": 9.19,
+      "pct_since": 2.96,
+      "direction": "up",
+      "triggers": [
+        "+9.2% on the day"
+      ],
+      "reason": "Nvidia ownership mention likely drove the increase.",
+      "news": [
+        {
+          "title": "CoreWeave Collaborates With Conapto to Expand Sweden AI Cloud Capacity",
+          "publisher": "Zacks",
+          "date": "2026-06-29",
+          "url": "https://finance.yahoo.com/technology/ai/articles/coreweave-collaborates-conapto-expand-sweden-142200890.html"
+        },
+        {
+          "title": "How Does Nebius AI Cloud 3.6 Strengthen Its AI Cloud Advantage?",
+          "publisher": "Zacks",
+          "date": "2026-06-29",
+          "url": "https://finance.yahoo.com/technology/ai/articles/does-nebius-ai-cloud-3-133300443.html"
+        },
+        {
+          "title": "2 Nvidia-Owned Stocks Investors Should Buy Now",
+          "publisher": "Motley Fool",
+          "date": "2026-06-28",
+          "url": "https://www.fool.com/investing/2026/06/28/2-nvidia-owned-stocks-investors-should-buy-now/"
+        }
+      ]
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "verdict": "WATCHLIST",
+      "price": 24.7,
+      "pct_day": 6.6,
+      "pct_since": -0.78,
+      "direction": "up",
+      "triggers": [
+        "+6.6% on the day"
+      ],
+      "reason": "NBCUniversal spin-off announcement likely drove the stock price up.",
+      "news": [
+        {
+          "title": "Why Comcast is spinning off NBCUniversal",
+          "publisher": "Yahoo Finance Video",
+          "date": "2026-06-29",
+          "url": "https://finance.yahoo.com/video/why-comcast-is-spinning-off-nbcuniversal-143500057.html"
+        },
+        {
+          "title": "Comcast, Charter, Rocket Lab, SpaceX, Tesla, and More Stocks That Explain Today\u2019s Market",
+          "publisher": "Barrons.com",
+          "date": "2026-06-29",
+          "url": "https://www.barrons.com/articles/stock-movers-bb996027?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "title": "Update: Equities Rise Intraday as US, Iran Halt Hostilities Ahead of Qatar Meeting",
+          "publisher": "MT Newswires",
+          "date": "2026-06-29",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/equities-rise-intraday-us-iran-183320627.html"
+        }
+      ]
+    },
+    {
       "ticker": "GEV",
       "name": "GE Vernova Inc.",
       "verdict": "WATCHLIST",
-      "price": 1092.99,
-      "pct_day": 4.58,
-      "pct_since": 4.58,
+      "price": 1104.79,
+      "pct_day": 5.7,
+      "pct_since": 1.08,
       "direction": "up",
       "triggers": [
-        "+4.6% since last check"
+        "+5.7% on the day"
       ],
-      "reason": "Nuclear and utility sector news likely boosted GEV.",
+      "reason": "No clear catalyst in current news.",
       "news": [
         {
           "title": "SpaceX Has Real Value\u2014But These 3 Stocks Have Better Odds Right Now",
@@ -170,147 +169,15 @@
       ]
     },
     {
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc.",
-      "verdict": "RESEARCH-WORTHY",
-      "price": 351.81,
-      "pct_day": 4.27,
-      "pct_since": 4.27,
-      "direction": "up",
-      "triggers": [
-        "+4.3% since last check"
-      ],
-      "reason": "Alphabet joined the Dow Jones Industrial Average.",
-      "news": [
-        {
-          "title": "Tech stocks today: Tech stocks halt slide, Google rises after joining the Dow",
-          "publisher": "Yahoo Finance",
-          "date": "2026-06-29",
-          "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-tech-stocks-halt-slide-google-rises-after-joining-the-dow-151053436.html"
-        },
-        {
-          "title": "'Magnificent 7' stocks are having a dreadful year",
-          "publisher": "Yahoo Finance",
-          "date": "2026-06-29",
-          "url": "https://finance.yahoo.com/markets/article/magnificent-7-stocks-are-having-a-dreadful-year-134333813.html"
-        },
-        {
-          "title": "Nvidia, Micron, and Broadcom hold the stock market's fate in the palm of their hands",
-          "publisher": "Yahoo Finance",
-          "date": "2026-06-29",
-          "url": "https://finance.yahoo.com/markets/article/nvidia-micron-and-broadcom-hold-the-stock-markets-fate-in-the-palm-of-their-hands-130753236.html"
-        }
-      ]
-    },
-    {
-      "ticker": "TSM",
-      "name": "Taiwan Semiconductor Manufacturing Company Limited",
-      "verdict": "WATCHLIST",
-      "price": 449.33,
-      "pct_day": 3.93,
-      "pct_since": 3.93,
-      "direction": "up",
-      "triggers": [
-        "+3.9% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Emerging markets are now an AI chip trade: Chart of the Day",
-          "publisher": "Yahoo Finance",
-          "date": "2026-06-28",
-          "url": "https://finance.yahoo.com/markets/article/emerging-markets-are-now-an-ai-chip-trade-chart-of-the-day-115540648.html"
-        },
-        {
-          "title": "Taiwan Semiconductor Manufacturing Company Ltd. (TSM) is Attracting Investor Attention: Here is What You Should Know",
-          "publisher": "Zacks",
-          "date": "2026-06-29",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/taiwan-semiconductor-manufacturing-company-ltd-130007396.html"
-        },
-        {
-          "title": "Wall Street Firm Says Intel (INTC) Has a Cost Edge Over TSMC in the Advanced Chip Packaging Race",
-          "publisher": "Insider Monkey",
-          "date": "2026-06-29",
-          "url": "https://finance.yahoo.com/technology/articles/wall-street-firm-says-intel-101834662.html"
-        }
-      ]
-    },
-    {
-      "ticker": "STZ",
-      "name": "Constellation Brands, Inc.",
-      "verdict": "WATCHLIST",
-      "price": 140.61,
-      "pct_day": -3.89,
-      "pct_since": -3.89,
-      "direction": "down",
-      "triggers": [
-        "-3.9% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "JPMorgan, Micron, FedEx , Nike, Constellation Brands are part of Zacks Earnings Preview",
-          "publisher": "Zacks",
-          "date": "2026-06-29",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-micron-fedex-nike-constellation-132900853.html"
-        },
-        {
-          "title": "5 Things to Know Before the Stock Market Opens",
-          "publisher": "Investopedia",
-          "date": "2026-06-29",
-          "url": "https://www.investopedia.com/5-things-to-know-before-the-stock-market-opens-june-29-2026-12008262"
-        },
-        {
-          "title": "What To Expect From Constellation Brands\u2019s (STZ) Q2 Earnings",
-          "publisher": "StockStory",
-          "date": "2026-06-29",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/expect-constellation-brands-stz-q2-113815146.html"
-        }
-      ]
-    },
-    {
-      "ticker": "ASML",
-      "name": "ASML Holding N.V.",
-      "verdict": "WATCHLIST",
-      "price": 1858.65,
-      "pct_day": 3.57,
-      "pct_since": 3.57,
-      "direction": "up",
-      "triggers": [
-        "+3.6% since last check"
-      ],
-      "reason": "AI semiconductor stock prediction boosted ASML.",
-      "news": [
-        {
-          "title": "Prediction: This Artificial Intelligence (AI) Semiconductor Stock Will Join the $1 Trillion Club by 2028",
-          "publisher": "Motley Fool",
-          "date": "2026-06-29",
-          "url": "https://www.fool.com/investing/2026/06/29/prediction-this-artificial-intelligence-ai-semicon/"
-        },
-        {
-          "title": "FNDF Pays Twice Yearly From 800 Global Companies, But Tariffs and Oil Prices Threaten Payouts",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-06-29",
-          "url": "https://247wallst.com/investing/2026/06/28/fndf-pays-twice-yearly-from-800-global-companies-but-tariffs-and-oil-prices-threaten-payouts/"
-        },
-        {
-          "title": "ASML Holding N.V. (ASML) Denies Selling EUV Chipmaking Tool to China Following Report of US Concern",
-          "publisher": "Insider Monkey",
-          "date": "2026-06-28",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/asml-holding-n-v-asml-184533859.html"
-        }
-      ]
-    },
-    {
       "ticker": "OKLO",
       "name": "Oklo Inc.",
       "verdict": "WATCHLIST",
-      "price": 51.7,
-      "pct_day": 3.4,
-      "pct_since": 3.4,
+      "price": 52.798,
+      "pct_day": 5.6,
+      "pct_since": 2.12,
       "direction": "up",
       "triggers": [
-        "+3.4% since last check"
+        "+5.6% on the day"
       ],
       "reason": "Nuclear stocks and small modular reactors saw big wins, boosting OKLO.",
       "news": [
@@ -335,68 +202,35 @@
       ]
     },
     {
-      "ticker": "AMZN",
-      "name": "Amazon.com, Inc.",
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
       "verdict": "WATCHLIST",
-      "price": 240.04,
-      "pct_day": 3.16,
-      "pct_since": 3.16,
+      "price": 386.595,
+      "pct_day": 1.59,
+      "pct_since": 3.05,
       "direction": "up",
       "triggers": [
-        "+3.2% since last check"
+        "+3.0% since last check"
       ],
-      "reason": "AI spending is \"beyond experimental\", benefiting Amazon.",
+      "reason": "AI and photonics expansion news likely boosted COHR.",
       "news": [
         {
-          "title": "Why AI is the core of the 'Back to the Future' trade",
-          "publisher": "Yahoo Finance Video",
+          "title": "These 7 Stocks Will Solve AI\u2019s Most Important Bottleneck",
+          "publisher": "24/7 Wall St.",
           "date": "2026-06-29",
-          "url": "https://finance.yahoo.com/video/why-ai-core-back-future-141225602.html"
+          "url": "https://247wallst.com/investing/2026/06/29/these-7-stocks-will-solve-ais-most-important-bottleneck/"
         },
         {
-          "title": "Piper Sandler CIO survey finds AI spending \u2019beyond experimental\u2019",
-          "publisher": "Investing.com",
-          "date": "2026-06-29",
-          "url": "https://finance.yahoo.com/technology/ai/articles/piper-sandler-cio-survey-finds-154923593.html"
-        },
-        {
-          "title": "Top Midday Stories: Comcast Plans to Separate Into Two Publicly Traded Companies; Rocket Lab to Acquire Iridium in $8 Billion Deal",
-          "publisher": "MT Newswires",
-          "date": "2026-06-29",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/top-midday-stories-comcast-plans-154448815.html"
-        }
-      ]
-    },
-    {
-      "ticker": "MKTX",
-      "name": "MarketAxess Holdings Inc.",
-      "verdict": "WATCHLIST",
-      "price": 109.14,
-      "pct_day": -3.02,
-      "pct_since": -3.02,
-      "direction": "down",
-      "triggers": [
-        "-3.0% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "1 of Wall Street\u2019s Favorite Stocks to Own for Decades and 2 Facing Headwinds",
-          "publisher": "StockStory",
+          "title": "Moderna, Nvidia, Sandisk, Palantir, ON Semi, and More Stocks That Explain Today\u2019s Market",
+          "publisher": "Barrons.com",
           "date": "2026-06-26",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/1-wall-street-favorite-stocks-160825656.html"
+          "url": "https://www.barrons.com/articles/stock-movers-3d8bd464?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "Q1 Earnings Highlights: MarketAxess (NASDAQ:MKTX) Vs The Rest Of The Financial Exchanges & Data Stocks",
-          "publisher": "StockStory",
-          "date": "2026-06-22",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/q1-earnings-highlights-marketaxess-nasdaq-173919331.html"
-        },
-        {
-          "title": "MarketAxess Expands Bond Market Transparency With New TraX Tape",
-          "publisher": "Zacks",
-          "date": "2026-06-19",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/marketaxess-expands-bond-market-transparency-133900744.html"
+          "title": "Nvidia, Micron, AMD Lead Chip Selloff on OpenAI IPO Delay Report Rattles Tech",
+          "publisher": "GuruFocus.com",
+          "date": "2026-06-26",
+          "url": "https://finance.yahoo.com/technology/articles/nvidia-micron-amd-lead-chip-150833279.html"
         }
       ]
     }
