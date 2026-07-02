@@ -1,42 +1,22 @@
 {
-  "generated_at": "2026-06-30T23:06:16Z",
+  "generated_at": "2026-07-02T17:09:04Z",
   "lookahead_days": 30,
   "upcoming_earnings": [
-    {
-      "ticker": "GIS",
-      "name": "General Mills, Inc.",
-      "date": "2026-07-01",
-      "days_until": 0,
-      "theme": "defensive_income",
-      "verdict": "WATCHLIST",
-      "thesis": "General Mills \u2014 packaged foods. 7.4% dividend yield(!), 10.5x fwd PE, -40% from ATH. Deep value but only 2% growth. Verify dividend payout safety before chasing the yield.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py GIS after."
-    },
     {
       "ticker": "ASML",
       "name": "ASML Holding N.V.",
       "date": "2026-07-15",
-      "days_until": 14,
+      "days_until": 12,
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
       "thesis": "World's only EUV lithography manufacturer \u2014 the absolute bottleneck for advanced chip production. Every NVIDIA GPU, every Apple chip, every AI accelerator runs through ASML machines. $36B+ backlog. High-NA EUV (next gen, \u20ac350M/unit) booked through 2028. China export restrictions are suppressing near-term growth (13% YoY vs 50%+ in 2023) \u2014 the headwind is known and finite.",
       "action": "Review thesis before earnings. Re-run research_ticker.py ASML after."
     },
     {
-      "ticker": "NFLX",
-      "name": "Netflix, Inc.",
-      "date": "2026-07-16",
-      "days_until": 15,
-      "theme": "consumer_media",
-      "verdict": "WATCHLIST",
-      "thesis": "Netflix \u2014 streaming leader, 300M+ subs. 32% op margin, 16% growth, $26B FCF, 21.5x fwd PE. -38% from ATH. Ad-tier + password-sharing crackdown driving margin expansion. Now in-mandate under diversified themes.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py NFLX after."
-    },
-    {
       "ticker": "TSM",
       "name": "Taiwan Semiconductor Manufacturing Company Limited",
       "date": "2026-07-16",
-      "days_until": 15,
+      "days_until": 13,
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
       "thesis": "The world's most advanced chip foundry \u2014 makes every NVIDIA GPU and Apple chip. 35.1% revenue growth, 61.9% gross margin, 58.1% op margin. CoWoS advanced packaging (required for AI GPUs) is sold out through 2026. Arizona fab coming online reduces geopolitical risk. 22x forward PE is reasonable for the AI infrastructure backbone company. Geopolitical tail risk (Taiwan) is real but partially priced in.",
@@ -46,17 +26,27 @@
       "ticker": "UNH",
       "name": "UnitedHealth Group Incorporated",
       "date": "2026-07-16",
-      "days_until": 15,
+      "days_until": 13,
       "theme": "uncategorized",
       "verdict": "PASS",
       "thesis": "Largest US health insurer. 2% revenue growth, 8% op margin. DOJ investigation ongoing. No AI infrastructure exposure.",
       "action": "Review thesis before earnings. Re-run research_ticker.py UNH after."
     },
     {
+      "ticker": "NFLX",
+      "name": "Netflix, Inc.",
+      "date": "2026-07-16",
+      "days_until": 14,
+      "theme": "consumer_media",
+      "verdict": "WATCHLIST",
+      "thesis": "Netflix \u2014 streaming leader, 300M+ subs. 32% op margin, 16% growth, $26B FCF, 21.5x fwd PE. -38% from ATH. Ad-tier + password-sharing crackdown driving margin expansion. Now in-mandate under diversified themes.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py NFLX after."
+    },
+    {
       "ticker": "DHR",
       "name": "Danaher Corporation",
       "date": "2026-07-21",
-      "days_until": 20,
+      "days_until": 18,
       "theme": "healthcare_innovation",
       "verdict": "WATCHLIST",
       "thesis": "Life-science tools + diagnostics. 23% op margin but only 4% growth, 20x fwd PE. -24% from ATH. Premier compounder but growth has stalled post-COVID.",
@@ -66,41 +56,61 @@
       "ticker": "GEV",
       "name": "GE Vernova Inc.",
       "date": "2026-07-22",
-      "days_until": 21,
+      "days_until": 19,
       "theme": "power_grid",
       "verdict": "WATCHLIST",
       "thesis": "Makes HA-class gas turbines (most efficient in existence), wind, and grid equipment. Hyperscalers ordering GE turbines to build dedicated AI datacenter power plants. One of only 3 companies globally that can make utility-scale gas turbines. $9.32B FCF. Grid equipment (transformers, switchgear) sold out through 2027. 42.1x forward PE, -12.7% from $1,181 ATH.",
       "action": "Review thesis before earnings. Re-run research_ticker.py GEV after."
     },
     {
-      "ticker": "IBM",
-      "name": "International Business Machines Corporation",
-      "date": "2026-07-22",
-      "days_until": 21,
-      "theme": "mega_cap_ai",
-      "verdict": "WATCHLIST",
-      "thesis": "Enterprise AI (WatsonX) + hybrid cloud (Red Hat OpenShift) + consulting. WatsonX wins in regulated industries (banking, healthcare, government) where OpenAI/Azure can't go \u2014 on-prem, air-gapped deployments. $13.08B FCF is exceptional. Red Hat growing 15%+ annually. 21.2x forward PE, 9.5% revenue growth, -14.3% from $332 ATH. Slow growth but durable cash generation.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py IBM after."
-    },
-    {
       "ticker": "CMCSA",
       "name": "Comcast Corporation",
       "date": "2026-07-23",
-      "days_until": 22,
+      "days_until": 20,
       "theme": "consumer_media",
       "verdict": "WATCHLIST",
       "thesis": "Comcast \u2014 cable + NBCUniversal + Peacock. 6.3x fwd PE (very cheap), 5.5% dividend, -31% from ATH. But cord-cutting headwind; broadband growth slowing.",
       "action": "Review thesis before earnings. Re-run research_ticker.py CMCSA after."
     },
     {
+      "ticker": "IBM",
+      "name": "International Business Machines Corporation",
+      "date": "2026-07-22",
+      "days_until": 20,
+      "theme": "mega_cap_ai",
+      "verdict": "WATCHLIST",
+      "thesis": "Enterprise AI (WatsonX) + hybrid cloud (Red Hat OpenShift) + consulting. WatsonX wins in regulated industries (banking, healthcare, government) where OpenAI/Azure can't go \u2014 on-prem, air-gapped deployments. $13.08B FCF is exceptional. Red Hat growing 15%+ annually. 21.2x forward PE, 9.5% revenue growth, -14.3% from $332 ATH. Slow growth but durable cash generation.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py IBM after."
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "date": "2026-07-22",
+      "days_until": 20,
+      "theme": "cybersecurity",
+      "verdict": "WATCHLIST",
+      "thesis": "Enterprise AI workflow platform (Now Assist). 22.1% revenue growth, 76.6% gross margin. DATA QUALITY WARNING: yfinance reports $102 price vs actual market price ~$1,000. The -51.7% drawdown signal is unreliable. Do not act on any alerts for this ticker until price data is verified.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py NOW after."
+    },
+    {
       "ticker": "ADP",
       "name": "Automatic Data Processing, Inc.",
       "date": "2026-07-29",
-      "days_until": 28,
+      "days_until": 26,
       "theme": "quality_compounder",
       "verdict": "WATCHLIST",
       "thesis": "Payroll + HR outsourcing \u2014 30% op margin, sticky multi-year contracts, 2.9% dividend, 18.8x fwd PE. -30% from ATH. Recession-resilient cash compounder.",
       "action": "Review thesis before earnings. Re-run research_ticker.py ADP after."
+    },
+    {
+      "ticker": "EIX",
+      "name": "Edison International",
+      "date": "2026-07-30",
+      "days_until": 28,
+      "theme": "power_grid",
+      "verdict": "WATCHLIST",
+      "thesis": "Edison International \u2014 regulated California electric utility. 8% growth, 4.8% dividend, 10.9x fwd PE. Grid/electrification exposure BUT California wildfire liability is a major overhang. -6.7% from ATH (near high).",
+      "action": "Review thesis before earnings. Re-run research_ticker.py EIX after."
     }
   ]
 }
