@@ -1,20 +1,25 @@
 {
-  "generated_at": "2026-07-02T17:11:33Z",
+  "generated_at": "2026-07-02T18:56:24Z",
   "movers": [
     {
       "ticker": "AAOI",
       "name": "Applied Optoelectronics, Inc.",
       "verdict": "WATCHLIST",
-      "price": 115.43,
-      "pct_day": -16.96,
-      "pct_since": -22.09,
+      "price": 116.04,
+      "pct_day": -16.52,
+      "pct_since": 0.53,
       "direction": "down",
       "triggers": [
-        "-22.1% since last check",
-        "-17.0% on the day"
+        "-16.5% on the day"
       ],
-      "reason": "No clear catalyst in current news.",
+      "reason": "Photonics stocks reset, causing AAOI to drop.",
       "news": [
+        {
+          "title": "Applied Optoelectronics Plunges 17%, Coherent and Lumentum Sink 10% as Photonics Stocks Reset",
+          "publisher": "24/7 Wall St.",
+          "date": "2026-07-02",
+          "url": "https://247wallst.com/investing/2026/07/02/applied-optoelectronics-plunges-17-coherent-and-lumentum-sink-10-as-photonics-stocks-reset/"
+        },
         {
           "title": "SonoTek (SOTK) Surges 14.6%: Is This an Indication of Further Gains?",
           "publisher": "Zacks",
@@ -26,46 +31,6 @@
           "publisher": "Zacks",
           "date": "2026-06-30",
           "url": "https://finance.yahoo.com/technology/ai/articles/aaoi-rides-datacenter-catv-businesses-125800189.html"
-        },
-        {
-          "title": "Applied Optoelectronics (AAOI) Stock After Recent Pullback And Conflicting Valuation Signals",
-          "publisher": "Simply Wall St.",
-          "date": "2026-06-26",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/applied-optoelectronics-aaoi-stock-recent-220846255.html"
-        }
-      ]
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "verdict": "WATCHLIST",
-      "price": 330.74,
-      "pct_day": -10.28,
-      "pct_since": -16.16,
-      "direction": "down",
-      "triggers": [
-        "-16.2% since last check",
-        "-10.3% on the day"
-      ],
-      "reason": "Chip stocks selloff due to valuation concerns.",
-      "news": [
-        {
-          "title": "Here's Why Verisk's Stock Is a Great Pick for Investors Now",
-          "publisher": "Zacks",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/heres-why-verisks-stock-great-151200054.html"
-        },
-        {
-          "title": "Are Business Services Stocks Lagging  COHERENT CORP (COHR) This Year?",
-          "publisher": "Zacks",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/business-services-stocks-lagging-coherent-134005675.html"
-        },
-        {
-          "title": "Corning Stock Rises 318.5% in a Year: Should You Invest Now?",
-          "publisher": "Zacks",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/corning-stock-rises-318-5-132000101.html"
         }
       ]
     },
@@ -73,16 +38,21 @@
       "ticker": "MRVL",
       "name": "Marvell Technology, Inc.",
       "verdict": "WATCHLIST",
-      "price": 244.55,
-      "pct_day": -10.11,
-      "pct_since": -17.91,
+      "price": 242.589,
+      "pct_day": -10.83,
+      "pct_since": -0.8,
       "direction": "down",
       "triggers": [
-        "-17.9% since last check",
-        "-10.1% on the day"
+        "-10.8% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
+        {
+          "title": "Should You Buy, Sell, or Hold Astera Labs Stock at 40.16X PS?",
+          "publisher": "Zacks",
+          "date": "2026-07-02",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/buy-sell-hold-astera-labs-160500429.html"
+        },
         {
           "title": "Follow Stock Market Leaders To Stay In Step With Broader Market Health",
           "publisher": "Investor's Business Daily",
@@ -94,12 +64,39 @@
           "publisher": "Trefis",
           "date": "2026-07-02",
           "url": "https://www.trefis.com/articles/605380/the-wide-divide-priced-into-advanced-micro-devices-stock/2026-07-02"
+        }
+      ]
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "verdict": "WATCHLIST",
+      "price": 331.79,
+      "pct_day": -10.0,
+      "pct_since": 0.32,
+      "direction": "down",
+      "triggers": [
+        "-10.0% on the day"
+      ],
+      "reason": "Photonics stocks, including COHR, are resetting, causing the decline.",
+      "news": [
+        {
+          "title": "Applied Optoelectronics Plunges 17%, Coherent and Lumentum Sink 10% as Photonics Stocks Reset",
+          "publisher": "24/7 Wall St.",
+          "date": "2026-07-02",
+          "url": "https://247wallst.com/investing/2026/07/02/applied-optoelectronics-plunges-17-coherent-and-lumentum-sink-10-as-photonics-stocks-reset/"
         },
         {
-          "title": "MRVL Rallies 154% in 3 Months: Time to Hold or Fold the Stock?",
+          "title": "Here's Why Verisk's Stock Is a Great Pick for Investors Now",
           "publisher": "Zacks",
           "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/mrvl-rallies-154-3-months-151700978.html"
+          "url": "https://finance.yahoo.com/markets/stocks/articles/heres-why-verisks-stock-great-151200054.html"
+        },
+        {
+          "title": "Are Business Services Stocks Lagging  COHERENT CORP (COHR) This Year?",
+          "publisher": "Zacks",
+          "date": "2026-07-02",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/business-services-stocks-lagging-coherent-134005675.html"
         }
       ]
     },
@@ -107,16 +104,21 @@
       "ticker": "LITE",
       "name": "Lumentum Holdings Inc.",
       "verdict": "WATCHLIST",
-      "price": 725.375,
-      "pct_day": -9.46,
-      "pct_since": -15.46,
+      "price": 721.235,
+      "pct_day": -9.98,
+      "pct_since": -0.57,
       "direction": "down",
       "triggers": [
-        "-15.5% since last check",
-        "-9.5% on the day"
+        "-10.0% on the day"
       ],
-      "reason": "Nvidia, Micron, AMD selloff likely dragged LITE down.",
+      "reason": "Photonics stocks, including LITE, are resetting.",
       "news": [
+        {
+          "title": "Applied Optoelectronics Plunges 17%, Coherent and Lumentum Sink 10% as Photonics Stocks Reset",
+          "publisher": "24/7 Wall St.",
+          "date": "2026-07-02",
+          "url": "https://247wallst.com/investing/2026/07/02/applied-optoelectronics-plunges-17-coherent-and-lumentum-sink-10-as-photonics-stocks-reset/"
+        },
         {
           "title": "Lumentum's Component Business Accelerates: More Upside Ahead?",
           "publisher": "Zacks",
@@ -128,12 +130,6 @@
           "publisher": "Insider Monkey",
           "date": "2026-07-01",
           "url": "https://finance.yahoo.com/markets/stocks/articles/why-lumentum-holdings-lite-among-044144998.html"
-        },
-        {
-          "title": "These 7 Stocks Will Solve AI\u2019s Most Important Bottleneck",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-06-29",
-          "url": "https://247wallst.com/investing/2026/06/29/these-7-stocks-will-solve-ais-most-important-bottleneck/"
         }
       ]
     },
@@ -141,15 +137,14 @@
       "ticker": "NBIS",
       "name": "Nebius Group N.V.",
       "verdict": "WATCHLIST",
-      "price": 210.625,
-      "pct_day": -8.1,
-      "pct_since": -23.73,
+      "price": 213.51,
+      "pct_day": -6.84,
+      "pct_since": 1.37,
       "direction": "down",
       "triggers": [
-        "-23.7% since last check",
-        "-8.1% on the day"
+        "-6.8% on the day"
       ],
-      "reason": "Meta's AI cloud plans likely hurt NBIS.",
+      "reason": "Meta's AI cloud plans hitting a snag likely impacted NBIS.",
       "news": [
         {
           "title": "Why Meta's cloud business would be 'very bad' for these 2 companies",
@@ -158,16 +153,16 @@
           "url": "https://finance.yahoo.com/video/why-metas-cloud-business-would-be-very-bad-for-these-2-companies-201517062.html"
         },
         {
-          "title": "CoreWeave and Nebius Plunged 14% and 17% in a Single Day. Which Beaten-Down AI Cloud Stock Is the Better Rebound Bet?",
-          "publisher": "Motley Fool",
-          "date": "2026-07-02",
-          "url": "https://www.fool.com/investing/2026/07/02/coreweave-and-nebius-plunged-14-and-17-in-a-single/"
-        },
-        {
-          "title": "Meta-Fueled Selloff Is a CoreWeave Stock Buying Opportunity, Analysts Say",
+          "title": "Meta Stock Falls as AI Cloud Plans Hit an Immediate Snag",
           "publisher": "Barrons.com",
           "date": "2026-07-02",
-          "url": "https://www.barrons.com/articles/ai-meta-coreweave-stock-cfb7120a?siteid=yhoof2&yptr=yahoo"
+          "url": "https://www.barrons.com/articles/meta-stock-price-softbank-cloud-0f855abd?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "title": "CoreWeave Takes Another Hit From Meta. One Analyst Sees 200% Upside for the AI Stock.",
+          "publisher": "Barrons.com",
+          "date": "2026-07-02",
+          "url": "https://www.barrons.com/articles/coreweave-stock-price-meta-cfb7120a?siteid=yhoof2&yptr=yahoo"
         }
       ]
     },
@@ -175,13 +170,12 @@
       "ticker": "CBRS",
       "name": "Cerebras Systems Inc.",
       "verdict": "WATCHLIST",
-      "price": 205.985,
-      "pct_day": -6.91,
-      "pct_since": -6.79,
+      "price": 208.906,
+      "pct_day": -5.59,
+      "pct_since": 1.42,
       "direction": "down",
       "triggers": [
-        "-6.8% since last check",
-        "-6.9% on the day"
+        "-5.6% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -209,100 +203,32 @@
       "ticker": "MU",
       "name": "Micron Technology, Inc.",
       "verdict": "RESEARCH-WORTHY",
-      "price": 973.95,
-      "pct_day": -5.65,
-      "pct_since": -15.62,
+      "price": 977.0,
+      "pct_day": -5.36,
+      "pct_since": 0.31,
       "direction": "down",
       "triggers": [
-        "-15.6% since last check",
-        "-5.7% on the day"
-      ],
-      "reason": "Memory supply-glut fears likely caused the decline.",
-      "news": [
-        {
-          "title": "Micron\u2019s CEO Says Even His Own Customers Couldn\u2019t See This Coming. Now He\u2019s Spending $200 Billion",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-07-02",
-          "url": "https://247wallst.com/investing/2026/07/02/microns-ceo-says-even-his-own-customers-couldnt-see-this-coming-now-hes-spending-200-billion/"
-        },
-        {
-          "title": "Tesla, Rivian, Strategy, Moderna, Sandisk, Blue Owl, and More Stocks That Explain Today\u2019s Market",
-          "publisher": "Barrons.com",
-          "date": "2026-07-02",
-          "url": "https://www.barrons.com/articles/stock-movers-4b343e08?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "title": "Micron Technology Has Fantastic News for This Artificial Intelligence (AI) Infrastructure Stock That Has More Than Doubled in 2026",
-          "publisher": "Motley Fool",
-          "date": "2026-07-02",
-          "url": "https://www.fool.com/investing/2026/07/02/micron-technology-has-fantastic-news-for-this-arti/"
-        }
-      ]
-    },
-    {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "verdict": "WATCHLIST",
-      "price": 512.33,
-      "pct_day": -5.28,
-      "pct_since": -11.81,
-      "direction": "down",
-      "triggers": [
-        "-11.8% since last check",
-        "-5.3% on the day"
+        "-5.4% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
         {
-          "title": "Your Funds Quietly Made A Big Bet On AMD",
-          "publisher": "Trefis",
-          "date": "2026-07-02",
-          "url": "https://www.trefis.com/articles/605513/your-funds-quietly-made-a-big-bet-on-amd/2026-07-02"
-        },
-        {
-          "title": "The Nasdaq Was Up 26% in the First Half of 2026 \u2014 These 3 AI Stocks Are Just Getting Started",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-07-02",
-          "url": "https://247wallst.com/investing/2026/07/02/the-nasdaq-was-up-26-in-the-first-half-of-2026-these-3-ai-stocks-are-just-getting-started/"
-        },
-        {
-          "title": "This 40%-a-Year Fund Manager Says Semis Are STILL the Place to Be After a 100% Run",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-07-02",
-          "url": "https://247wallst.com/investing/2026/07/02/this-40-a-year-fund-manager-says-semis-are-still-the-place-to-be-after-a-100-run/"
-        }
-      ]
-    },
-    {
-      "ticker": "AAPL",
-      "name": "Apple Inc.",
-      "verdict": "WATCHLIST",
-      "price": 308.03,
-      "pct_day": 4.64,
-      "pct_since": 6.45,
-      "direction": "up",
-      "triggers": [
-        "+6.5% since last check"
-      ],
-      "reason": "Apple Eyes Blacklisted Chinese Chips as Memory Shortage Hits Prices.",
-      "news": [
-        {
-          "title": "Here's how much more expensive your devices have gotten thanks to AI",
-          "publisher": "Yahoo Finance",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/technology/article/heres-how-much-more-expensive-your-devices-have-gotten-thanks-to-ai-121100267.html"
-        },
-        {
-          "title": "The ETFs behind Trump's new child investment accounts",
+          "title": "What a weak jobs report means for crypto",
           "publisher": "Yahoo Finance Video",
-          "date": "2026-07-01",
-          "url": "https://finance.yahoo.com/video/the-etfs-behind-trumps-new-child-investment-accounts-215300606.html"
+          "date": "2026-07-02",
+          "url": "https://finance.yahoo.com/video/what-a-weak-jobs-report-means-for-crypto-173342792.html"
         },
         {
-          "title": "Robinhood shares rise on launch of new blockchain network",
-          "publisher": "Proactive",
+          "title": "FOMO Vs. FOMU: What Do Apple, Nvidia And These IPOs Reveal?",
+          "publisher": "Investor's Business Daily",
           "date": "2026-07-02",
-          "url": "https://www.proactiveinvestors.com/companies/news/1094880/robinhood-shares-rise-on-launch-of-new-blockchain-network-1094880.html"
+          "url": "https://www.investors.com/how-to-invest/how-to-invest-in-stocks-fomo-vs-fomu-nvidia-apple-micron-ipo-stocks/?src=A00220&yptr=yahoo"
+        },
+        {
+          "title": "Ondo Finance brings U.S. stocks onchain for the first time following SEC guidance",
+          "publisher": "TheStreet",
+          "date": "2026-07-02",
+          "url": "https://www.thestreet.com/crypto/markets/ondo-finance-brings-u-s-stocks-onchain-for-the-first-time-following-sec-guidance"
         }
       ]
     },
@@ -310,12 +236,12 @@
       "ticker": "NFLX",
       "name": "Netflix, Inc.",
       "verdict": "WATCHLIST",
-      "price": 77.61,
-      "pct_day": 4.61,
-      "pct_since": 8.7,
+      "price": 78.0497,
+      "pct_day": 5.2,
+      "pct_since": 0.57,
       "direction": "up",
       "triggers": [
-        "+8.7% since last check"
+        "+5.2% on the day"
       ],
       "reason": "Refocusing on fundamentals likely drove the increase.",
       "news": [
@@ -336,798 +262,6 @@
           "publisher": "Investing.com",
           "date": "2026-07-01",
           "url": "https://finance.yahoo.com/markets/stocks/articles/netflix-gains-over-3-report-201322952.html"
-        }
-      ]
-    },
-    {
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "verdict": "WATCHLIST",
-      "price": 585.035,
-      "pct_day": -4.55,
-      "pct_since": 3.86,
-      "direction": "down",
-      "triggers": [
-        "+3.9% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Stock analysts may be setting up the market for a summer failure",
-          "publisher": "Yahoo Finance",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/article/stock-analysts-may-be-setting-up-the-market-for-a-summer-failure-135125532.html"
-        },
-        {
-          "title": "Tech stocks today: Meta stock jumps on cloud computing plans to rival Amazon, Microsoft",
-          "publisher": "Yahoo Finance",
-          "date": "2026-06-29",
-          "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-meta-stock-jumps-on-cloud-computing-plans-to-rival-amazon-microsoft-151053436.html"
-        },
-        {
-          "title": "CoreWeave and Nebius Plunged 14% and 17% in a Single Day. Which Beaten-Down AI Cloud Stock Is the Better Rebound Bet?",
-          "publisher": "Motley Fool",
-          "date": "2026-07-02",
-          "url": "https://www.fool.com/investing/2026/07/02/coreweave-and-nebius-plunged-14-and-17-in-a-single/"
-        }
-      ]
-    },
-    {
-      "ticker": "ASML",
-      "name": "ASML Holding N.V.",
-      "verdict": "WATCHLIST",
-      "price": 1763.55,
-      "pct_day": -4.31,
-      "pct_since": -11.35,
-      "direction": "down",
-      "triggers": [
-        "-11.3% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Goldman\u2019s Top Strategist Says Europe Is Quietly Keeping Pace With the S&P 500. Here\u2019s the AI Spillover Nobody\u2019s Watching",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-07-02",
-          "url": "https://247wallst.com/investing/2026/07/02/goldmans-top-strategist-says-europe-is-quietly-keeping-pace-with-the-sp-500-heres-the-ai-spillover-nobodys-watching/"
-        },
-        {
-          "title": "Chinese and US risks mean EU chip sector faces a 'bleak future,' report says",
-          "publisher": "Reuters",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/technology/articles/chinese-us-risks-mean-eu-040335205.html"
-        },
-        {
-          "title": "Eurozone\u2019s Biggest Payers Face Geopolitical Pressure On Dividend Safety This Year",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-07-02",
-          "url": "https://247wallst.com/investing/2026/07/01/eurozones-biggest-payers-face-geopolitical-pressure-on-dividend-safety-this-year/"
-        }
-      ]
-    },
-    {
-      "ticker": "ETN",
-      "name": "Eaton Corporation plc",
-      "verdict": "WATCHLIST",
-      "price": 394.78,
-      "pct_day": -4.25,
-      "pct_since": -7.35,
-      "direction": "down",
-      "triggers": [
-        "-7.3% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "nVent Stock Outlook Gets a Boost From Data Center Demand Wave",
-          "publisher": "Zacks",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nvent-stock-outlook-gets-boost-143200298.html"
-        },
-        {
-          "title": "NVT Is Emerging as an AI Infrastructure Winner Beyond Liquid Cooling",
-          "publisher": "Zacks",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/technology/ai/articles/nvt-emerging-ai-infrastructure-winner-142600837.html"
-        },
-        {
-          "title": "Is NVT Stock Still Worth Buying After Its Huge Rally in 2026?",
-          "publisher": "Zacks",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nvt-stock-still-worth-buying-142300259.html"
-        }
-      ]
-    },
-    {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings Co",
-      "verdict": "WATCHLIST",
-      "price": 299.01,
-      "pct_day": -3.98,
-      "pct_since": -10.7,
-      "direction": "down",
-      "triggers": [
-        "-10.7% since last check"
-      ],
-      "reason": "Reason pending \u2014 see headlines.",
-      "news": [
-        {
-          "title": "nVent Stock Outlook Gets a Boost From Data Center Demand Wave",
-          "publisher": "Zacks",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nvent-stock-outlook-gets-boost-143200298.html"
-        },
-        {
-          "title": "NVT Is Emerging as an AI Infrastructure Winner Beyond Liquid Cooling",
-          "publisher": "Zacks",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/technology/ai/articles/nvt-emerging-ai-infrastructure-winner-142600837.html"
-        },
-        {
-          "title": "Is NVT Stock Still Worth Buying After Its Huge Rally in 2026?",
-          "publisher": "Zacks",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nvt-stock-still-worth-buying-142300259.html"
-        }
-      ]
-    },
-    {
-      "ticker": "GEV",
-      "name": "GE Vernova Inc.",
-      "verdict": "WATCHLIST",
-      "price": 1090.32,
-      "pct_day": -3.88,
-      "pct_since": -7.2,
-      "direction": "down",
-      "triggers": [
-        "-7.2% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Here's Why GE Vernova Stock Soared Last Month",
-          "publisher": "Motley Fool",
-          "date": "2026-07-02",
-          "url": "https://www.fool.com/investing/2026/07/02/heres-why-ge-vernova-stock-soared-last-month/"
-        },
-        {
-          "title": "Why GE Vernova (GEV) Is Up 7.3% After Russell Top 50 Nod And AI Power Orders",
-          "publisher": "Simply Wall St.",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-ge-vernova-gev-7-111202607.html"
-        },
-        {
-          "title": "1 S&P 500 Stock with Promising Prospects and 2 We Question",
-          "publisher": "StockStory",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/1-p-500-stock-promising-093224765.html"
-        }
-      ]
-    },
-    {
-      "ticker": "RDDT",
-      "name": "Reddit, Inc.",
-      "verdict": "WATCHLIST",
-      "price": 190.225,
-      "pct_day": -3.81,
-      "pct_since": 9.59,
-      "direction": "down",
-      "triggers": [
-        "+9.6% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Reddit Vs. Chewy: The Better Buy Stock In 2026",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-07-02",
-          "url": "https://247wallst.com/investing/2026/07/02/reddit-vs-chewy-the-better-buy-stock-in-2026/"
-        },
-        {
-          "title": "Their Dad Told Them To Pull All Their Money Out Of The Stock Market In 2025. Now Historic Highs Are Keeping Them From Getting Back In",
-          "publisher": "Benzinga",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/dad-told-them-pull-money-140107332.html"
-        },
-        {
-          "title": "Don't Chase Wendy's Meme Stock Rally. Here Are 2 Restaurant Stocks With Actual Growth Stories.",
-          "publisher": "Motley Fool",
-          "date": "2026-07-02",
-          "url": "https://www.fool.com/investing/2026/07/02/dont-chase-wendys-meme-stock-rally-here-are-2-rest/"
-        }
-      ]
-    },
-    {
-      "ticker": "AVGO",
-      "name": "Broadcom Inc.",
-      "verdict": "RESEARCH-WORTHY",
-      "price": 358.735,
-      "pct_day": -2.87,
-      "pct_since": -5.03,
-      "direction": "down",
-      "triggers": [
-        "-5.0% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Broadcom vs. Navitas Semiconductor: Which AI Chip Maker Stock Is a Better Buy in 2026?",
-          "publisher": "Motley Fool",
-          "date": "2026-07-02",
-          "url": "https://www.fool.com/coverage/better-buy/2026/07/02/broadcom-vs-navitas-semiconductor-which-ai-chip-maker-stock-is-a-better-buy-in-2026/"
-        },
-        {
-          "title": "The Nasdaq Was Up 26% in the First Half of 2026 \u2014 These 3 AI Stocks Are Just Getting Started",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-07-02",
-          "url": "https://247wallst.com/investing/2026/07/02/the-nasdaq-was-up-26-in-the-first-half-of-2026-these-3-ai-stocks-are-just-getting-started/"
-        },
-        {
-          "title": "This 40%-a-Year Fund Manager Says Semis Are STILL the Place to Be After a 100% Run",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-07-02",
-          "url": "https://247wallst.com/investing/2026/07/02/this-40-a-year-fund-manager-says-semis-are-still-the-place-to-be-after-a-100-run/"
-        }
-      ]
-    },
-    {
-      "ticker": "ADP",
-      "name": "Automatic Data Processing, Inc.",
-      "verdict": "WATCHLIST",
-      "price": 241.85,
-      "pct_day": 2.6,
-      "pct_since": 7.99,
-      "direction": "up",
-      "triggers": [
-        "+8.0% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Jobless Claims Decreased Less Than Expected",
-          "publisher": "Zacks",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/economy/articles/jobless-claims-decreased-less-expected-150500786.html"
-        },
-        {
-          "title": "Stock Market News for July 2, 2026",
-          "publisher": "Zacks",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-july-2-132600808.html"
-        },
-        {
-          "title": "The Dow Just Had Its Best First Half Since 2021, but This Jobs Number Is Flashing Yellow",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-07-02",
-          "url": "https://247wallst.com/investing/2026/07/02/the-dow-just-had-its-best-first-half-since-2021-but-this-jobs-number-is-flashing-yellow/"
-        }
-      ]
-    },
-    {
-      "ticker": "PAYX",
-      "name": "Paychex, Inc.",
-      "verdict": "RESEARCH-WORTHY",
-      "price": 105.38,
-      "pct_day": 2.6,
-      "pct_since": 7.17,
-      "direction": "up",
-      "triggers": [
-        "+7.2% since last check"
-      ],
-      "reason": "Strong quarterly results supported PAYX's growth.",
-      "news": [
-        {
-          "title": "Why Paychex, Inc. (PAYX) Is Still a Controversial Pick on Wall Street",
-          "publisher": "Insider Monkey",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-paychex-inc-payx-still-112816828.html"
-        },
-        {
-          "title": "PagerDuty, Paychex, and Commerce Shares Are Soaring, What You Need To Know",
-          "publisher": "StockStory",
-          "date": "2026-07-01",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/pagerduty-paychex-commerce-shares-soaring-220900179.html"
-        },
-        {
-          "title": "Paychex Inc. (PAYX) Reports Strong Results as AI Platform Supports Future Growth",
-          "publisher": "Insider Monkey",
-          "date": "2026-07-01",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/paychex-inc-payx-reports-strong-155815968.html"
-        }
-      ]
-    },
-    {
-      "ticker": "TSM",
-      "name": "Taiwan Semiconductor Manufacturing Company Limited",
-      "verdict": "WATCHLIST",
-      "price": 432.71,
-      "pct_day": -2.59,
-      "pct_since": -9.39,
-      "direction": "down",
-      "triggers": [
-        "-9.4% since last check"
-      ],
-      "reason": "Reason pending \u2014 see headlines.",
-      "news": [
-        {
-          "title": "This 40%-a-Year Fund Manager Says Semis Are STILL the Place to Be After a 100% Run",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-07-02",
-          "url": "https://247wallst.com/investing/2026/07/02/this-40-a-year-fund-manager-says-semis-are-still-the-place-to-be-after-a-100-run/"
-        },
-        {
-          "title": "Does Intel pay dividends? How the chipmaker spends its money",
-          "publisher": "TheStreet",
-          "date": "2026-07-02",
-          "url": "https://www.thestreet.com/investing/stocks/intel-dividends"
-        },
-        {
-          "title": "Anthropic explores Samsung 2nm chip partnership - The Information",
-          "publisher": "Investing.com",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-explores-samsung-2nm-chip-144844786.html"
-        }
-      ]
-    },
-    {
-      "ticker": "MA",
-      "name": "Mastercard Incorporated",
-      "verdict": "RESEARCH-WORTHY",
-      "price": 535.26,
-      "pct_day": 2.45,
-      "pct_since": 4.22,
-      "direction": "up",
-      "triggers": [
-        "+4.2% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Circle stock plummeted because of this new stablecoin. Here's why.",
-          "publisher": "Yahoo Finance Video",
-          "date": "2026-07-01",
-          "url": "https://finance.yahoo.com/video/circle-stock-plummeted-because-stablecoin-190000768.html"
-        },
-        {
-          "title": "Visa Stock Surges 12.4% in a Month: Time to Buy, Hold or Sell?",
-          "publisher": "Zacks",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/visa-stock-surges-12-4-151200524.html"
-        },
-        {
-          "title": "Mastercard Vs. American Express: Buy Mastercard to Secure Risk-Free Network Fees and Pure Margin Insulation",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-07-02",
-          "url": "https://247wallst.com/investing/2026/07/02/mastercard-vs-american-express-buy-mastercard-to-secure-risk-free-network-fees-and-pure-margin-insulation/"
-        }
-      ]
-    },
-    {
-      "ticker": "V",
-      "name": "Visa Inc.",
-      "verdict": "WATCHLIST",
-      "price": 358.75,
-      "pct_day": 2.18,
-      "pct_since": 4.56,
-      "direction": "up",
-      "triggers": [
-        "+4.6% since last check"
-      ],
-      "reason": "Reason pending \u2014 see headlines.",
-      "news": [
-        {
-          "title": "Circle stock plummeted because of this new stablecoin. Here's why.",
-          "publisher": "Yahoo Finance Video",
-          "date": "2026-07-01",
-          "url": "https://finance.yahoo.com/video/circle-stock-plummeted-because-stablecoin-190000768.html"
-        },
-        {
-          "title": "Visa announces Visa Threat Intelligence Platform to strengthen cyber and fraud\u00a0defence",
-          "publisher": "Electronic Payments",
-          "date": "2026-07-02",
-          "url": "https://www.electronicpaymentsinternational.com/news/visa-launches-visa-threat-intelligence-platform/"
-        },
-        {
-          "title": "Worldline, ING and Visa complete a live agentic payment transaction in Europe",
-          "publisher": "Electronic Payments",
-          "date": "2026-07-02",
-          "url": "https://www.electronicpaymentsinternational.com/news/worldline-ing-visa-complete-agentic-payment-transaction/"
-        }
-      ]
-    },
-    {
-      "ticker": "VST",
-      "name": "Vistra Corp.",
-      "verdict": "RESEARCH-WORTHY",
-      "price": 149.84,
-      "pct_day": -2.17,
-      "pct_since": -5.54,
-      "direction": "down",
-      "triggers": [
-        "-5.5% since last check"
-      ],
-      "reason": "Reason pending \u2014 see headlines.",
-      "news": [
-        {
-          "title": "Here is What Analysts Think About Vistra Corp. (VST)",
-          "publisher": "Insider Monkey",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/analysts-think-vistra-corp-vst-084955115.html"
-        },
-        {
-          "title": "Vistra Corp. (VST) Stock Slides as Market Rises: Facts to Know Before You Trade",
-          "publisher": "Zacks",
-          "date": "2026-06-30",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/vistra-corp-vst-stock-slides-214504930.html"
-        },
-        {
-          "title": "Nuclear Power Is the Only Real Answer to AI Data Center Demand and These 3 ETFs Cover the Trade at Three Risk Levels",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-06-30",
-          "url": "https://247wallst.com/investing/2026/06/30/nuclear-power-is-the-only-real-answer-to-ai-data-center-demand-and-these-3-etfs-cover-the-trade-at-three-risk-levels/"
-        }
-      ]
-    },
-    {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corporation",
-      "verdict": "WATCHLIST",
-      "price": 193.33,
-      "pct_day": -2.15,
-      "pct_since": -3.38,
-      "direction": "down",
-      "triggers": [
-        "-3.4% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Palantir stock jumps on analyst upgrade 'as profits have soared'",
-          "publisher": "Yahoo Finance",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/article/palantir-stock-jumps-on-analyst-upgrade-as-profits-have-soared-141251986.html"
-        },
-        {
-          "title": "The average investor is running away from 'Magnificent 7' stocks",
-          "publisher": "Yahoo Finance",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/article/the-average-investor-is-running-away-from-magnificent-7-stocks-120204013.html"
-        },
-        {
-          "title": "Microsoft vs. Nvidia: Which Is the Better AI Stock to Own for the Next 3 Years?",
-          "publisher": "Motley Fool",
-          "date": "2026-07-02",
-          "url": "https://www.fool.com/investing/2026/07/02/microsoft-vs-nvidia-better-ai-stock-own/"
-        }
-      ]
-    },
-    {
-      "ticker": "MKTX",
-      "name": "MarketAxess Holdings Inc.",
-      "verdict": "WATCHLIST",
-      "price": 116.89,
-      "pct_day": 2.1,
-      "pct_since": 3.0,
-      "direction": "up",
-      "triggers": [
-        "+3.0% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "NMR or MKTX: Which Is the Better Value Stock Right Now?",
-          "publisher": "Zacks",
-          "date": "2026-06-29",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nmr-mktx-better-value-stock-154004247.html"
-        },
-        {
-          "title": "1 of Wall Street\u2019s Favorite Stocks to Own for Decades and 2 Facing Headwinds",
-          "publisher": "StockStory",
-          "date": "2026-06-26",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/1-wall-street-favorite-stocks-160825656.html"
-        },
-        {
-          "title": "Q1 Earnings Highlights: MarketAxess (NASDAQ:MKTX) Vs The Rest Of The Financial Exchanges & Data Stocks",
-          "publisher": "StockStory",
-          "date": "2026-06-22",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/q1-earnings-highlights-marketaxess-nasdaq-173919331.html"
-        }
-      ]
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "verdict": "WATCHLIST",
-      "price": 23.255,
-      "pct_day": -2.0,
-      "pct_since": -5.27,
-      "direction": "down",
-      "triggers": [
-        "-5.3% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Comcast Spinoff Could Rejuvenate Its Depressed Stock",
-          "publisher": "Barrons.com",
-          "date": "2026-07-02",
-          "url": "https://www.barrons.com/articles/comcast-spinoff-rejuvenate-depressed-stock-75907303?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "title": "A Cable Scion\u2019s Hardest Deal Yet: Breaking Up His Family\u2019s Company",
-          "publisher": "The Wall Street Journal",
-          "date": "2026-07-02",
-          "url": "https://www.wsj.com/business/media/a-cable-scions-hardest-deal-yet-breaking-up-his-familys-company-472b18ae?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "title": "1 Nasdaq 100 Stock to Consider Right Now and 2 We Avoid",
-          "publisher": "StockStory",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/1-nasdaq-100-stock-consider-101224048.html"
-        }
-      ]
-    },
-    {
-      "ticker": "QQQ",
-      "name": "Invesco QQQ Trust",
-      "verdict": "WATCHLIST",
-      "price": 710.64,
-      "pct_day": -2.0,
-      "pct_since": -3.5,
-      "direction": "down",
-      "triggers": [
-        "-3.5% since last check"
-      ],
-      "reason": "Reason pending \u2014 see headlines.",
-      "news": [
-        {
-          "title": "The Mag 7 Just Lost $2.3 Trillion in a Single Month. Here\u2019s the AI Fear Behind It",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-07-02",
-          "url": "https://247wallst.com/investing/2026/07/02/the-mag-7-just-lost-2-3-trillion-in-a-single-month-heres-the-ai-fear-behind-it/"
-        },
-        {
-          "title": "A Strategist Says Big Tech Is \u2018Completely Underappreciated\u2019 With a PEG Under 1 as Everyone Bails",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-07-02",
-          "url": "https://247wallst.com/investing/2026/07/02/a-strategist-says-big-tech-is-completely-underappreciated-with-a-peg-under-1-as-everyone-bails/"
-        },
-        {
-          "title": "Exchange-Traded Funds Higher, Equity Futures Mixed Pre-Bell Thursday Amid Latest Economic Reports",
-          "publisher": "MT Newswires",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-higher-equity-125735076.html"
-        }
-      ]
-    },
-    {
-      "ticker": "DHR",
-      "name": "Danaher Corporation",
-      "verdict": "WATCHLIST",
-      "price": 196.79,
-      "pct_day": 1.58,
-      "pct_since": 3.31,
-      "direction": "up",
-      "triggers": [
-        "+3.3% since last check"
-      ],
-      "reason": "Acquisition of Masimo Corporation likely boosted the stock.",
-      "news": [
-        {
-          "title": "Danaher (DHR) Completes $9.9B Acquisition of Masimo Corporation",
-          "publisher": "Insider Monkey",
-          "date": "2026-06-29",
-          "url": "https://finance.yahoo.com/healthcare/articles/danaher-dhr-completes-9-9b-052800253.html"
-        },
-        {
-          "title": "Is Danaher (DHR) One of the Best Non-Tech Stocks to Buy According to Analysts?",
-          "publisher": "Insider Monkey",
-          "date": "2026-06-28",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/danaher-dhr-one-best-non-164559001.html"
-        },
-        {
-          "title": "Just How Far Could Corning Stock Swing From Here?",
-          "publisher": "Trefis",
-          "date": "2026-06-26",
-          "url": "https://www.trefis.com/articles/604726/just-how-far-could-corning-stock-swing-from-here/2026-06-26"
-        }
-      ]
-    },
-    {
-      "ticker": "MSFT",
-      "name": "Microsoft Corporation",
-      "verdict": "WATCHLIST",
-      "price": 390.0,
-      "pct_day": 1.49,
-      "pct_since": 4.55,
-      "direction": "up",
-      "triggers": [
-        "+4.5% since last check"
-      ],
-      "reason": "Sector rotation favors Microsoft over Intel.",
-      "news": [
-        {
-          "title": "Stock analysts may be setting up the market for a summer failure",
-          "publisher": "Yahoo Finance",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/article/stock-analysts-may-be-setting-up-the-market-for-a-summer-failure-135125532.html"
-        },
-        {
-          "title": "The average investor is running away from 'Magnificent 7' stocks",
-          "publisher": "Yahoo Finance",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/article/the-average-investor-is-running-away-from-magnificent-7-stocks-120204013.html"
-        },
-        {
-          "title": "Microsoft vs. Nvidia: Which Is the Better AI Stock to Own for the Next 3 Years?",
-          "publisher": "Motley Fool",
-          "date": "2026-07-02",
-          "url": "https://www.fool.com/investing/2026/07/02/microsoft-vs-nvidia-better-ai-stock-own/"
-        }
-      ]
-    },
-    {
-      "ticker": "CPB",
-      "name": "The Campbell's Company",
-      "verdict": "WATCHLIST",
-      "price": 23.13,
-      "pct_day": -1.45,
-      "pct_since": 3.86,
-      "direction": "down",
-      "triggers": [
-        "+3.9% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "William Blair Highlights The Campbell\u2019s Company (CPB)\u2019s Stable Growth Strategy",
-          "publisher": "Insider Monkey",
-          "date": "2026-07-01",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/william-blair-highlights-campbell-company-155811814.html"
-        },
-        {
-          "title": "Campbell's, The Marzetti Company, and Colgate-Palmolive Shares Skyrocket, What You Need To Know",
-          "publisher": "StockStory",
-          "date": "2026-06-23",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/campbells-marzetti-company-colgate-palmolive-221646106.html"
-        },
-        {
-          "title": "Why Falling Oil Prices Are Bad News for Packaged-Food Companies",
-          "publisher": "Barrons.com",
-          "date": "2026-06-23",
-          "url": "https://www.barrons.com/articles/oil-prices-packaged-food-companies-0ed858e4?siteid=yhoof2&yptr=yahoo"
-        }
-      ]
-    },
-    {
-      "ticker": "GIS",
-      "name": "General Mills, Inc.",
-      "verdict": "WATCHLIST",
-      "price": 37.39,
-      "pct_day": -1.01,
-      "pct_since": 7.44,
-      "direction": "down",
-      "triggers": [
-        "+7.4% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Lime and Bending Spoons stocks get post-IPO lift, General Mills tops Q4 estimates",
-          "publisher": "Yahoo Finance Video",
-          "date": "2026-07-01",
-          "url": "https://finance.yahoo.com/video/lime-and-bending-spoons-stocks-get-post-ipo-lift-general-mills-tops-q4-estimates-191926523.html"
-        },
-        {
-          "title": "General Mills, Mattel, and Mohawk: A Contrarian\u2019s Guide to Finding Hidden Value",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-07-02",
-          "url": "https://247wallst.com/investing/2026/07/02/general-mills-mattel-and-mohawk-a-contrarians-guide-to-finding-hidden-value/"
-        },
-        {
-          "title": "General Mills Q4 Beats Expectations, FY27 Outlook 'Better-Than-Feared,' UBS Says",
-          "publisher": "MT Newswires",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/general-mills-q4-beats-expectations-152320975.html"
-        }
-      ]
-    },
-    {
-      "ticker": "CEG",
-      "name": "Constellation Energy Corporation",
-      "verdict": "WATCHLIST",
-      "price": 238.79,
-      "pct_day": 0.97,
-      "pct_since": -3.86,
-      "direction": "up",
-      "triggers": [
-        "-3.9% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Energy Transition Today - Driving Grid Stability With Vehicle-To-Grid Innovation",
-          "publisher": "Simply Wall St.",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/energy/articles/energy-transition-today-driving-grid-113803365.html"
-        },
-        {
-          "title": "Is Constellation Energy Corporation (CEG) Among the Best AI Power Grid Stocks to Buy According to Analysts?",
-          "publisher": "Insider Monkey",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/constellation-energy-corporation-ceg-among-084939644.html"
-        },
-        {
-          "title": "CEG Stock Takes A Hit After Citi's Price-Target Cut \u2014 But Retail Is Already Diving In To Buy The Dip",
-          "publisher": "Stocktwits",
-          "date": "2026-07-02",
-          "url": "https://stocktwits.com/news-articles/markets/equity/ceg-stock-takes-a-hit-after-citi-price-target-cut/cZme36rR71A"
-        }
-      ]
-    },
-    {
-      "ticker": "LPLA",
-      "name": "LPL Financial Holdings Inc.",
-      "verdict": "RESEARCH-WORTHY",
-      "price": 295.91,
-      "pct_day": 0.9,
-      "pct_since": 5.05,
-      "direction": "up",
-      "triggers": [
-        "+5.0% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Review & Preview: Halftime",
-          "publisher": "Barrons.com",
-          "date": "2026-06-30",
-          "url": "https://www.barrons.com/articles/stocks-today-ai-rotates-sectors-health-care-industrials-financials-28819289?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "title": "Client Sues Commonwealth Financial Over Low-Paying Sweep Accounts. He\u2019s Seeking Class Action Status.",
-          "publisher": "Barrons.com",
-          "date": "2026-06-26",
-          "url": "https://www.barrons.com/advisor/articles/commonwealth-lpl-financial-lawsuit-sweep-cash-f17f41aa?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "title": "Consumer spending rises as inflation speeds up to three-year high",
-          "publisher": "CFO Dive",
-          "date": "2026-06-25",
-          "url": "https://www.cfodive.com/news/consumer-spending-rises-inflation-speeds-up-three-year-high/823825/"
-        }
-      ]
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "verdict": "WATCHLIST",
-      "price": 105.6,
-      "pct_day": -0.19,
-      "pct_since": 6.37,
-      "direction": "down",
-      "triggers": [
-        "+6.4% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Palantir Stock Is Surging Again. A Bullish Upgrade Adds to the Nvidia Momentum.",
-          "publisher": "Barrons.com",
-          "date": "2026-07-02",
-          "url": "https://www.barrons.com/articles/palantir-stock-price-upgrade-nvidia-1cacf3b9?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "title": "ServiceNow Trades at Premium Valuation: How to Play the Stock",
-          "publisher": "Zacks",
-          "date": "2026-07-02",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/servicenow-trades-premium-valuation-play-135100965.html"
-        },
-        {
-          "title": "The Dow Just Had Its Best First Half Since 2021, but This Jobs Number Is Flashing Yellow",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-07-02",
-          "url": "https://247wallst.com/investing/2026/07/02/the-dow-just-had-its-best-first-half-since-2021-but-this-jobs-number-is-flashing-yellow/"
         }
       ]
     }
