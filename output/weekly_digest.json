@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-28T22:52:17Z",
-  "narrative": "This week, several stocks experienced significant price movements, with NOW leading the pack with a 9.85% gain due to market rotation favoring software stocks over chips. On the other hand, MU declined by 6.69% likely due to semiconductor and tech weakness. Looking ahead, upcoming earnings reports from STZ and GIS may be important to watch, with STZ reporting in just one day. It may be a good time to consider buying AVGO, VST, GEHC, and LPLA, as they are marked as \"buy ready at target\".",
+  "generated_at": "2026-07-05T22:48:31Z",
+  "narrative": "This week, several stocks experienced significant declines, with AAOI, MRVL, COHR, and LITE being among the biggest movers, largely due to a reset in photonics stocks. It's essential to monitor these stocks and consider the potential impact of upcoming earnings reports, particularly for ASML, NFLX, TSM, and UNH, which are scheduled to report within the next 10 days. Additionally, reviewing the \"buy_ready_at_target\" list, which includes AVGO, VST, and GEHC, may provide opportunities for strategic portfolio adjustments.",
   "buy_ready": [
     {
       "ticker": "AVGO",
       "name": "Broadcom Inc.",
-      "price": 365.02,
+      "price": 360.45,
       "buy_target": 400,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -14,7 +14,7 @@
     {
       "ticker": "VST",
       "name": "Vistra Corp.",
-      "price": 163.49,
+      "price": 151.05,
       "buy_target": 160,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -23,130 +23,131 @@
     {
       "ticker": "GEHC",
       "name": "GEHC",
-      "price": 65.76,
+      "price": 65.565,
       "buy_target": 64,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
       "theme": "healthcare_innovation"
     },
     {
-      "ticker": "LPLA",
-      "name": "LPLA",
-      "price": 268.75,
-      "buy_target": 285,
-      "at_or_below_target": true,
-      "confidence": "MEDIUM",
-      "theme": "financials"
-    },
-    {
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc.",
-      "price": 337.39,
-      "buy_target": 316,
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "price": 975.56,
+      "buy_target": null,
       "at_or_below_target": false,
       "confidence": "MEDIUM",
-      "theme": "mega_cap_ai"
-    },
-    {
-      "ticker": "MA",
-      "name": "MA",
-      "price": 499.02,
-      "buy_target": 455,
-      "at_or_below_target": false,
-      "confidence": null,
-      "theme": "quality_compounder"
+      "theme": "edge_ai_silicon"
     },
     {
       "ticker": "PAYX",
       "name": "PAYX",
-      "price": 99.9,
+      "price": 106.35,
       "buy_target": 95,
       "at_or_below_target": false,
       "confidence": "MEDIUM",
       "theme": "quality_compounder"
+    },
+    {
+      "ticker": "LPLA",
+      "name": "LPLA",
+      "price": 295.18,
+      "buy_target": 285,
+      "at_or_below_target": false,
+      "confidence": "MEDIUM",
+      "theme": "financials"
     }
   ],
   "movers": [
     {
-      "ticker": "NOW",
-      "pct": 9.85,
-      "reason": "Market rotation favors software stocks over chips."
+      "ticker": "AAOI",
+      "pct": -16.52,
+      "reason": "Photonics stocks reset, causing AAOI to drop."
     },
     {
-      "ticker": "FLUT",
-      "pct": 8.32,
+      "ticker": "MRVL",
+      "pct": -10.83,
       "reason": "No clear catalyst in current news."
+    },
+    {
+      "ticker": "COHR",
+      "pct": -10.0,
+      "reason": "Photonics stocks, including COHR, are resetting, causing the decline."
+    },
+    {
+      "ticker": "LITE",
+      "pct": -9.98,
+      "reason": "Photonics stocks, including LITE, are resetting."
+    },
+    {
+      "ticker": "NBIS",
+      "pct": -6.84,
+      "reason": "Meta's AI cloud plans hitting a snag likely impacted NBIS."
     },
     {
       "ticker": "CBRS",
-      "pct": 7.76,
-      "reason": "No clear catalyst in current news."
-    },
-    {
-      "ticker": "LLY",
-      "pct": 7.13,
-      "reason": "No clear catalyst in current news."
-    },
-    {
-      "ticker": "MU",
-      "pct": -6.69,
-      "reason": "Semiconductor and tech weakness likely caused MU's decline."
-    },
-    {
-      "ticker": "VRT",
-      "pct": -6.64,
+      "pct": -5.59,
       "reason": "No clear catalyst in current news."
     }
   ],
   "upcoming_earnings": [
     {
-      "ticker": "STZ",
-      "date": "2026-06-30",
-      "days_until": 1
-    },
-    {
-      "ticker": "GIS",
-      "date": "2026-07-01",
-      "days_until": 2
-    },
-    {
       "ticker": "ASML",
       "date": "2026-07-15",
-      "days_until": 16
+      "days_until": 9
     },
     {
       "ticker": "NFLX",
       "date": "2026-07-16",
-      "days_until": 17
+      "days_until": 10
     },
     {
       "ticker": "TSM",
       "date": "2026-07-16",
-      "days_until": 17
+      "days_until": 10
     },
     {
       "ticker": "UNH",
       "date": "2026-07-16",
-      "days_until": 17
+      "days_until": 10
     },
     {
       "ticker": "DHR",
       "date": "2026-07-21",
-      "days_until": 22
+      "days_until": 15
     },
     {
       "ticker": "GEV",
       "date": "2026-07-22",
-      "days_until": 23
+      "days_until": 16
     },
     {
       "ticker": "IBM",
       "date": "2026-07-22",
-      "days_until": 23
+      "days_until": 16
+    },
+    {
+      "ticker": "NOW",
+      "date": "2026-07-22",
+      "days_until": 16
     },
     {
       "ticker": "CMCSA",
       "date": "2026-07-23",
+      "days_until": 17
+    },
+    {
+      "ticker": "ADP",
+      "date": "2026-07-29",
+      "days_until": 23
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2026-07-30",
+      "days_until": 24
+    },
+    {
+      "ticker": "EIX",
+      "date": "2026-07-30",
       "days_until": 24
     }
   ],
