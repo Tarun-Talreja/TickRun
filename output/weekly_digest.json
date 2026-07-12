@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-05T22:48:31Z",
-  "narrative": "This week, several stocks experienced significant declines, with AAOI, MRVL, COHR, and LITE being among the biggest movers, largely due to a reset in photonics stocks. It's essential to monitor these stocks and consider the potential impact of upcoming earnings reports, particularly for ASML, NFLX, TSM, and UNH, which are scheduled to report within the next 10 days. Additionally, reviewing the \"buy_ready_at_target\" list, which includes AVGO, VST, and GEHC, may provide opportunities for strategic portfolio adjustments.",
+  "generated_at": "2026-07-12T22:41:09Z",
+  "narrative": "This week, several stocks experienced significant declines, including AAOI, MRVL, and COHR, with AAOI dropping 16.52% due to a reset in photonics stocks. In the coming weeks, several companies are scheduled to report earnings, with ASML reporting in just 2 days. The three most important things to consider are: reviewing the performance of photonics stocks like AAOI and COHR, preparing for upcoming earnings reports from companies like ASML and NFLX, and considering buying opportunities in stocks like AVGO, VST, and GEHC, which are marked as \"buy ready at target\".",
   "buy_ready": [
     {
       "ticker": "AVGO",
       "name": "Broadcom Inc.",
-      "price": 360.45,
+      "price": 399.97,
       "buy_target": 400,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -14,7 +14,7 @@
     {
       "ticker": "VST",
       "name": "Vistra Corp.",
-      "price": 151.05,
+      "price": 158.86,
       "buy_target": 160,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -23,7 +23,7 @@
     {
       "ticker": "GEHC",
       "name": "GEHC",
-      "price": 65.565,
+      "price": 64.7,
       "buy_target": 64,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -32,7 +32,7 @@
     {
       "ticker": "MU",
       "name": "Micron Technology, Inc.",
-      "price": 975.56,
+      "price": 979.3,
       "buy_target": null,
       "at_or_below_target": false,
       "confidence": "MEDIUM",
@@ -41,7 +41,7 @@
     {
       "ticker": "PAYX",
       "name": "PAYX",
-      "price": 106.35,
+      "price": 107.54,
       "buy_target": 95,
       "at_or_below_target": false,
       "confidence": "MEDIUM",
@@ -50,7 +50,7 @@
     {
       "ticker": "LPLA",
       "name": "LPLA",
-      "price": 295.18,
+      "price": 317.03,
       "buy_target": 285,
       "at_or_below_target": false,
       "confidence": "MEDIUM",
@@ -93,62 +93,122 @@
     {
       "ticker": "ASML",
       "date": "2026-07-15",
-      "days_until": 9
+      "days_until": 2
     },
     {
       "ticker": "NFLX",
       "date": "2026-07-16",
-      "days_until": 10
+      "days_until": 3
     },
     {
       "ticker": "TSM",
       "date": "2026-07-16",
-      "days_until": 10
+      "days_until": 3
     },
     {
       "ticker": "UNH",
       "date": "2026-07-16",
-      "days_until": 10
+      "days_until": 3
     },
     {
       "ticker": "DHR",
       "date": "2026-07-21",
-      "days_until": 15
+      "days_until": 8
     },
     {
       "ticker": "GEV",
       "date": "2026-07-22",
-      "days_until": 16
+      "days_until": 9
+    },
+    {
+      "ticker": "GOOGL",
+      "date": "2026-07-22",
+      "days_until": 9
     },
     {
       "ticker": "IBM",
       "date": "2026-07-22",
-      "days_until": 16
+      "days_until": 9
     },
     {
       "ticker": "NOW",
       "date": "2026-07-22",
-      "days_until": 16
+      "days_until": 9
     },
     {
       "ticker": "CMCSA",
       "date": "2026-07-23",
-      "days_until": 17
+      "days_until": 10
+    },
+    {
+      "ticker": "V",
+      "date": "2026-07-28",
+      "days_until": 15
     },
     {
       "ticker": "ADP",
       "date": "2026-07-29",
-      "days_until": 23
+      "days_until": 16
+    },
+    {
+      "ticker": "GEHC",
+      "date": "2026-07-29",
+      "days_until": 16
+    },
+    {
+      "ticker": "INVH",
+      "date": "2026-07-29",
+      "days_until": 16
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2026-07-29",
+      "days_until": 16
     },
     {
       "ticker": "AAPL",
       "date": "2026-07-30",
-      "days_until": 24
+      "days_until": 17
     },
     {
       "ticker": "EIX",
       "date": "2026-07-30",
+      "days_until": 17
+    },
+    {
+      "ticker": "LPLA",
+      "date": "2026-07-30",
+      "days_until": 17
+    },
+    {
+      "ticker": "MA",
+      "date": "2026-07-30",
+      "days_until": 17
+    },
+    {
+      "ticker": "RDDT",
+      "date": "2026-07-30",
+      "days_until": 17
+    },
+    {
+      "ticker": "AMD",
+      "date": "2026-08-04",
+      "days_until": 22
+    },
+    {
+      "ticker": "LLY",
+      "date": "2026-08-05",
+      "days_until": 23
+    },
+    {
+      "ticker": "CEG",
+      "date": "2026-08-06",
       "days_until": 24
+    },
+    {
+      "ticker": "VST",
+      "date": "2026-08-07",
+      "days_until": 25
     }
   ],
   "sec_stakes": [],
