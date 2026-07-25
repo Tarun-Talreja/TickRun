@@ -1,5 +1,5 @@
 {
-  "last_built": "2026-07-25T23:22:32Z",
+  "last_built": "2026-07-25T23:23:06Z",
   "quotes_updated": "2026-07-25T20:18:21Z",
   "portfolio": {
     "total_value": 0,
@@ -1711,14 +1711,18 @@
         "name": "EIX",
         "theme": "power_grid",
         "status": "research_complete",
-        "thesis": "Edison International \u2014 regulated California electric utility. 8% growth, 4.8% dividend, 10.9x fwd PE. Grid/electrification exposure BUT California wildfire liability is a major overhang. -6.7% from ATH (near high).",
+        "thesis": "Edison International offers a relatively cheap valuation at 8.7x trailing earnings for a stable utility company with 7.7% YoY revenue growth.",
         "added": "2026-06-08",
         "verdict": "WATCHLIST",
-        "buy_target": 60,
+        "buy_target": 72.81,
         "current_price": 79.75,
-        "next_action": "WAIT \u2014 grid exposure + 4.8% yield, but wildfire liability is a real tail risk. Near 52w high. Buy at $60 on pullback.",
-        "research_file": null,
-        "last_researched": "2026-06-08",
+        "next_action": "WAIT \u2014 Edison International offers a relatively cheap valuation at 8.7x trailing earnings for a stable utility company with 7.7% YoY revenue growth. Revisit at 10% below the 52-week high.",
+        "research_file": "output/research/EIX_2026-07-25.md",
+        "last_researched": "2026-07-25",
+        "llm_verdict": "WATCHLIST",
+        "bear_downgraded": false,
+        "confidence": "MEDIUM",
+        "buy_trigger_drawdown_pct": -10.0,
         "price": 79.75,
         "pct_change_1d": 0.14,
         "market_cap": 30687318016,
@@ -2946,14 +2950,18 @@
           "name": "EIX",
           "theme": "power_grid",
           "status": "research_complete",
-          "thesis": "Edison International \u2014 regulated California electric utility. 8% growth, 4.8% dividend, 10.9x fwd PE. Grid/electrification exposure BUT California wildfire liability is a major overhang. -6.7% from ATH (near high).",
+          "thesis": "Edison International offers a relatively cheap valuation at 8.7x trailing earnings for a stable utility company with 7.7% YoY revenue growth.",
           "added": "2026-06-08",
           "verdict": "WATCHLIST",
-          "buy_target": 60,
+          "buy_target": 72.81,
           "current_price": 79.75,
-          "next_action": "WAIT \u2014 grid exposure + 4.8% yield, but wildfire liability is a real tail risk. Near 52w high. Buy at $60 on pullback.",
-          "research_file": null,
-          "last_researched": "2026-06-08",
+          "next_action": "WAIT \u2014 Edison International offers a relatively cheap valuation at 8.7x trailing earnings for a stable utility company with 7.7% YoY revenue growth. Revisit at 10% below the 52-week high.",
+          "research_file": "output/research/EIX_2026-07-25.md",
+          "last_researched": "2026-07-25",
+          "llm_verdict": "WATCHLIST",
+          "bear_downgraded": false,
+          "confidence": "MEDIUM",
+          "buy_trigger_drawdown_pct": -10.0,
           "price": 79.75,
           "pct_change_1d": 0.14,
           "market_cap": 30687318016,
@@ -4920,14 +4928,18 @@
           "name": "EIX",
           "theme": "power_grid",
           "status": "research_complete",
-          "thesis": "Edison International \u2014 regulated California electric utility. 8% growth, 4.8% dividend, 10.9x fwd PE. Grid/electrification exposure BUT California wildfire liability is a major overhang. -6.7% from ATH (near high).",
+          "thesis": "Edison International offers a relatively cheap valuation at 8.7x trailing earnings for a stable utility company with 7.7% YoY revenue growth.",
           "added": "2026-06-08",
           "verdict": "WATCHLIST",
-          "buy_target": 60,
+          "buy_target": 72.81,
           "current_price": 79.75,
-          "next_action": "WAIT \u2014 grid exposure + 4.8% yield, but wildfire liability is a real tail risk. Near 52w high. Buy at $60 on pullback.",
-          "research_file": null,
-          "last_researched": "2026-06-08",
+          "next_action": "WAIT \u2014 Edison International offers a relatively cheap valuation at 8.7x trailing earnings for a stable utility company with 7.7% YoY revenue growth. Revisit at 10% below the 52-week high.",
+          "research_file": "output/research/EIX_2026-07-25.md",
+          "last_researched": "2026-07-25",
+          "llm_verdict": "WATCHLIST",
+          "bear_downgraded": false,
+          "confidence": "MEDIUM",
+          "buy_trigger_drawdown_pct": -10.0,
           "price": 79.75,
           "pct_change_1d": 0.14,
           "market_cap": 30687318016,
@@ -7937,14 +7949,14 @@
     ]
   },
   "asset_location": {
-    "generated_at": "2026-07-25T22:40:52Z",
+    "generated_at": "2026-07-25T23:21:37Z",
     "rules": {
       "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
       "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
       "high_yield_threshold_pct": 3.0
     },
     "counts": {
-      "roth": 46,
+      "roth": 42,
       "taxable": 2
     },
     "roth": [
@@ -7967,16 +7979,6 @@
         "account": "ROTH",
         "priority": "high",
         "reason": "Highest-conviction growth pick (53% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
-      },
-      {
-        "ticker": "CMCSA",
-        "name": "CMCSA",
-        "theme": "consumer_media",
-        "verdict": "WATCHLIST",
-        "div_yield_pct": 5.92,
-        "account": "ROTH",
-        "priority": "high",
-        "reason": "5.9% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
       },
       {
         "ticker": "COHR",
@@ -8139,16 +8141,6 @@
         "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
       },
       {
-        "ticker": "CBRS",
-        "name": "CBRS",
-        "theme": "edge_ai_silicon",
-        "verdict": "WATCHLIST",
-        "div_yield_pct": null,
-        "account": "ROTH",
-        "priority": "medium",
-        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
-      },
-      {
         "ticker": "CEG",
         "name": "Constellation Energy Corporation",
         "theme": "nuclear_smr",
@@ -8199,16 +8191,6 @@
         "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
       },
       {
-        "ticker": "GEV",
-        "name": "GE Vernova Inc.",
-        "theme": "power_grid",
-        "verdict": "WATCHLIST",
-        "div_yield_pct": 0.2,
-        "account": "ROTH",
-        "priority": "medium",
-        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
-      },
-      {
         "ticker": "GOOGL",
         "name": "Alphabet Inc.",
         "theme": "mega_cap_ai",
@@ -8222,16 +8204,6 @@
         "ticker": "LITE",
         "name": "Lumentum Holdings Inc.",
         "theme": "networking_infra",
-        "verdict": "WATCHLIST",
-        "div_yield_pct": null,
-        "account": "ROTH",
-        "priority": "medium",
-        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
-      },
-      {
-        "ticker": "LMB",
-        "name": "LMB",
-        "theme": "datacenter_infra",
         "verdict": "WATCHLIST",
         "div_yield_pct": null,
         "account": "ROTH",
@@ -8461,16 +8433,6 @@
         "account": "ROTH",
         "priority": "high",
         "reason": "REIT \u2014 distributions are largely non-qualified and taxed as ordinary income, making this the most tax-inefficient asset class you hold. Sheltering it is worth more than sheltering an equivalent amount of growth stock."
-      },
-      {
-        "ticker": "CMCSA",
-        "name": "CMCSA",
-        "theme": "consumer_media",
-        "verdict": "WATCHLIST",
-        "div_yield_pct": 5.92,
-        "account": "ROTH",
-        "priority": "high",
-        "reason": "5.9% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
       },
       {
         "ticker": "EIX",
@@ -10288,28 +10250,12 @@
     "sec_ownership_stakes": [],
     "sec_material_events": [
       {
-        "ticker": "LMB",
-        "form": "8-K",
-        "label": "MATERIAL EVENT",
-        "meaning": "Corporate event: M&A, guidance, exec change",
-        "filed_date": "2026-07-24",
-        "url": "https://www.sec.gov/Archives/edgar/data/1606163/000162828026049590/lmb-20260724.htm"
-      },
-      {
         "ticker": "GEHC",
         "form": "8-K",
         "label": "MATERIAL EVENT",
         "meaning": "Corporate event: M&A, guidance, exec change",
         "filed_date": "2026-07-23",
         "url": "https://www.sec.gov/Archives/edgar/data/1932393/000193239326000039/gehc-20260721.htm"
-      },
-      {
-        "ticker": "CMCSA",
-        "form": "8-K",
-        "label": "MATERIAL EVENT",
-        "meaning": "Corporate event: M&A, guidance, exec change",
-        "filed_date": "2026-07-23",
-        "url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026049274/cmcsa-20260723.htm"
       },
       {
         "ticker": "GOOGL",
@@ -10334,14 +10280,6 @@
         "meaning": "Corporate event: M&A, guidance, exec change",
         "filed_date": "2026-07-22",
         "url": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000077/ibm-20260722.htm"
-      },
-      {
-        "ticker": "GEV",
-        "form": "8-K",
-        "label": "MATERIAL EVENT",
-        "meaning": "Corporate event: M&A, guidance, exec change",
-        "filed_date": "2026-07-22",
-        "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gev-20260722.htm"
       },
       {
         "ticker": "NFLX",
