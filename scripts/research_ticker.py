@@ -64,6 +64,10 @@ ANTHROPIC_MODEL = "claude-opus-4-7"
 
 MAX_TOKENS = 4000   # 8-section structured prompt needs room to reach the verdict (section 8)
 
+# Without a client timeout a single slow generation can hang until the whole
+# workflow is cancelled, which is what left most of the watchlist stale.
+LLM_TIMEOUT_SECONDS = 90
+
 VERDICT_STRINGS = ["RESEARCH-WORTHY", "WATCHLIST", "PASS", "RED FLAG"]
 
 
@@ -101,7 +105,12 @@ def _call_llm(provider: str, api_key: str, prompt: str) -> str:
             print("Missing dependency: pip install openai")
             sys.exit(1)
 
-        client = OpenAI(base_url=NVIDIA_BASE_URL, api_key=api_key)
+        client = OpenAI(
+            base_url=NVIDIA_BASE_URL,
+            api_key=api_key,
+            timeout=LLM_TIMEOUT_SECONDS,
+            max_retries=1,
+        )
 
         # Build the model attempt list: explicit NVIDIA_MODEL first (covers --model
         # override), then any remaining fallbacks in the chain.
@@ -139,7 +148,7 @@ def _call_llm(provider: str, api_key: str, prompt: str) -> str:
             print("Missing dependency: pip install anthropic")
             sys.exit(1)
 
-        client = anthropic.Anthropic(api_key=api_key)
+        client = anthropic.Anthropic(api_key=api_key, timeout=LLM_TIMEOUT_SECONDS, max_retries=1)
         msg = client.messages.create(
             model=ANTHROPIC_MODEL,
             max_tokens=MAX_TOKENS,

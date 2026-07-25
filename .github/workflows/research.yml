@@ -2,13 +2,18 @@ name: Daily LLM Research
 
 on:
   schedule:
-    # 7am ET weekdays (11:00 UTC) — before market open, after overnight news
-    - cron: '0 11 * * 1-5'
+    # 7am ET daily (11:00 UTC). Weekdays-only couldn't keep the watchlist fresh:
+    # ~6 names/run × 5 days < 51 names re-going-stale every 7 days.
+    - cron: '0 11 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
   issues: write
+
+concurrency:
+  group: llm-research
+  cancel-in-progress: false
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -16,7 +21,8 @@ env:
 jobs:
   research:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # Was 20m and hit the cap repeatedly; each ticker runs research + bear check.
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -36,7 +42,7 @@ jobs:
       - name: Run daily LLM research (NVIDIA NIM, free)
         env:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API }}
-        run: python scripts/research_batch.py --max 6
+        run: python scripts/research_batch.py --max 8
 
       - name: Check SEC filings
         run: python scripts/sec_filings.py
