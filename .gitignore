@@ -12,3 +12,6 @@ data/cache/
 data/quotes_cache.json
 # Research output files are committed (useful record)
 # but the raw cache bloats git history.
+
+# 10-K RAG cache — large binary/text artifacts, rebuildable from SEC
+data/filing_cache/

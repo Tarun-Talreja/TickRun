@@ -1,0 +1,63 @@
+name: Filing Deep-Dive (10-K RAG)
+
+on:
+  workflow_dispatch:
+    inputs:
+      ticker:
+        description: 'Ticker to analyze (e.g. TLN). Leave blank with probe=true to just test embedders.'
+        required: false
+        default: ''
+      probe:
+        description: 'Probe which embedding models are provisioned on this key'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: filing-rag
+  cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  rag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Probe embedding models
+        if: ${{ github.event.inputs.probe == 'true' }}
+        env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API }}
+        run: python scripts/filing_rag.py --probe
+
+      - name: Run filing deep-dive
+        if: ${{ github.event.inputs.ticker != '' }}
+        env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API }}
+        run: python scripts/filing_rag.py "${{ github.event.inputs.ticker }}"
+
+      - name: Sync with remote before commit
+        if: ${{ github.event.inputs.ticker != '' }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase --autostash origin main
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        if: ${{ github.event.inputs.ticker != '' }}
+        with:
+          commit_message: "Auto: 10-K deep-dive for ${{ github.event.inputs.ticker }}"
+          file_pattern: >-
+            output/filing_answers/
