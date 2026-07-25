@@ -286,6 +286,7 @@ html,body{
 .brief-item:first-of-type{border-top:none;padding-top:0}
 .brief-line{font-size:13px;font-weight:600;color:var(--text0);line-height:1.35}
 .brief-detail{font-size:11px;color:var(--text2);margin-top:3px;line-height:1.4}
+.brief-action{font-size:11px;color:#00d9f5;margin-top:4px;font-weight:600;line-height:1.4}
 .brief-p1 .brief-line{color:#ff6677}
 .brief-quiet{font-size:12px;color:var(--text2)}
 .brief-more{margin-top:9px;font-size:11px;color:var(--cyan);cursor:pointer;font-weight:600}
@@ -1487,6 +1488,7 @@ function renderDailyBrief(data){
     ${items.map(i=>`<div class="brief-item brief-p${i.priority}">
       <div class="brief-line">${ICON[i.kind]||'•'} ${esc(i.headline)}</div>
       ${i.detail?`<div class="brief-detail">${esc(i.detail)}</div>`:''}
+      ${i.action?`<div class="brief-action">→ ${esc(i.action)}</div>`:''}
     </div>`).join('')}
     ${b.hidden_count?`<div class="brief-more" onclick="navigateTo('signals')">+${b.hidden_count} more in Signals →</div>`:''}
   </div>`;

@@ -91,6 +91,7 @@ def main():
                 "priority": 1, "kind": "catalyst", "ticker": e["ticker"],
                 "headline": f"{e['ticker']} {str(e.get('type','')).replace('_',' ')} {when}{bar}",
                 "detail": e.get("plan", ""),
+                "action": "Decide your number before the print — not after.",
             })
 
     # 2. NEWLY at research target — the ones that crossed the line since yesterday
@@ -102,17 +103,27 @@ def main():
                     "priority": 2, "kind": "new_target", "ticker": h["ticker"],
                     "headline": f"{h['ticker']} newly at research target ({h.get('gap_pct', 0):+.1f}%)",
                     "detail": (h.get("next_action") or "")[:160],
+                    "action": "Worth reviewing today — this is new since yesterday.",
                 })
 
     # 3. Big movers — reason already attached by move_explainer
+    NO_REASON = {"no clear catalyst in current news.",
+                 "see headlines (explanation limited to top movers).",
+                 ""}
     for m in sig.get("price_movers", []):
         pct = m.get("primary_pct") or 0
         if abs(pct) >= MOVER_PCT:
             arrow = "▲" if pct > 0 else "▼"
+            reason = (m.get("reason") or "").strip()
+            has_reason = reason.lower() not in NO_REASON
             items.append({
                 "priority": 3, "kind": "mover", "ticker": m["ticker"],
                 "headline": f"{m['ticker']} {arrow} {pct:+.1f}%",
-                "detail": m.get("reason", ""),
+                # A real reason IS the detail. With no reason, don't repeat a
+                # dead-end sentence — say what to actually do about it instead.
+                "detail": reason if has_reason else None,
+                "action": ("Verdict unaffected unless this breaks your thesis." if has_reason
+                           else "No catalyst found — check the ticker's news tab yourself before acting."),
             })
 
     # 4. New 5%+ ownership stakes — the early smart-money signal
@@ -123,6 +134,7 @@ def main():
                 "priority": 4, "kind": "sec_stake", "ticker": s["ticker"],
                 "headline": f"{s['ticker']} — {s.get('label', s.get('form'))} filed {s.get('filed_date')}",
                 "detail": s.get("meaning", ""),
+                "action": "Read the filing before treating this as a signal — a stake alone isn't a buy/sell call.",
             })
 
     # 5. Verdict changes — research changed its mind
@@ -134,6 +146,8 @@ def main():
                     "priority": 5, "kind": "verdict_change", "ticker": ticker,
                     "headline": f"{ticker} verdict changed: {old} → {v}",
                     "detail": "Research reassessed this name since your last check.",
+                    "action": ("Now buy-ready — worth a look." if v == "RESEARCH-WORTHY"
+                               else "No longer buy-ready — re-read why before adding more."),
                 })
 
     # 6. Data warnings — never act on a number the app itself distrusts
@@ -143,6 +157,7 @@ def main():
             "priority": 6, "kind": "data_warning", "ticker": t,
             "headline": f"{t} — data quality warning",
             "detail": "Figures look unreliable; verify before acting on this name.",
+            "action": "Do not act on this name's targets/verdict until the data is confirmed clean.",
         })
 
     items.sort(key=lambda i: i["priority"])

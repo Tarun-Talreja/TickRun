@@ -76,8 +76,15 @@ def _llm_reason(ticker: str, pct: float, headlines: list[str]) -> str | None:
     headlines_block = "\n".join(f"- {h}" for h in headlines)
     prompt = (
         f"{ticker} moved {direction} {abs(pct):.1f}% today. Based ONLY on these "
-        f"headlines, give the single most likely reason in ONE sentence (max 20 words). "
-        f"If the headlines don't explain it, say 'No clear catalyst in current news.'\n\n"
+        f"headlines, give the single most likely reason in ONE sentence (max 20 words).\n\n"
+        f"A headline does NOT need to be ticker-specific to count as an answer. If the "
+        f"headlines describe a broader sector or market move (e.g. 'tech stocks selloff', "
+        f"'AI names down across the board', a peer-comparison article, a rate move), that "
+        f"IS the reason — say so explicitly, e.g. 'Part of a broader AI/tech selloff, "
+        f"not company-specific.' This is a MORE useful answer than a company-specific one, "
+        f"because it tells me whether to worry about this stock specifically or not at all.\n\n"
+        f"Only say 'No clear catalyst in current news.' if the headlines are unrelated to "
+        f"price action entirely (e.g. an old product review, an unrelated announcement).\n\n"
         f"Headlines:\n{headlines_block}"
     )
     try:
