@@ -83,6 +83,14 @@ jobs:
       - name: Assemble dashboard.json
         run: python scripts/build_dashboard.py
 
+      - name: Sync with remote before commit
+        # Long runs can be overtaken by another push; auto-commit does not
+        # rebase, so without this its push is rejected and the run's work is lost.
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase --autostash origin main
+
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Auto: daily quote refresh"
