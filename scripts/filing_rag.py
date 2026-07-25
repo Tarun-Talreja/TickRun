@@ -129,29 +129,53 @@ def _chunk(text: str) -> list[str]:
 
 # ── Embeddings, with graceful degradation ────────────────────────────────────
 
-def _embed(texts: list[str], api_key: str, input_type: str) -> tuple[np.ndarray | None, str | None]:
-    """Try each hosted model in turn; return (vectors, model_used) or (None, None)."""
+def _embed(texts: list[str], api_key: str, input_type: str,
+           pin_model: str | None = None) -> tuple[np.ndarray | None, str | None]:
+    """Embed texts, returning (vectors, model_used).
+
+    pin_model forces a specific model and disables the fallback chain. This
+    matters more than it looks: query vectors and passage vectors MUST come
+    from the same model. Different embedders produce different vector spaces,
+    so mixing them makes cosine similarity meaningless — it silently returns
+    near-identical scores for every chunk instead of failing loudly. That is
+    exactly what happened when a transient rate limit pushed the query onto a
+    different model than the index, so once an index is built we pin to it and
+    surface an error rather than quietly degrading retrieval.
+    """
     try:
         from openai import OpenAI
     except ImportError:
         return None, None
-    client = OpenAI(base_url=NVIDIA_BASE, api_key=api_key, timeout=60, max_retries=1)
+    client = OpenAI(base_url=NVIDIA_BASE, api_key=api_key, timeout=90, max_retries=3)
 
-    for model in EMBED_MODEL_CHAIN:
+    candidates = [pin_model] if pin_model else EMBED_MODEL_CHAIN
+    for model in candidates:
         vectors = []
         try:
             for i in range(0, len(texts), EMBED_BATCH):
                 batch = texts[i:i + EMBED_BATCH]
-                # NVIDIA retrieval embedders expect asymmetric query/passage
+                # NVIDIA retrieval embedders use asymmetric query/passage
                 # encoding; extra_body is ignored by models that don't use it.
-                resp = client.embeddings.create(
-                    model=model, input=batch,
-                    extra_body={"input_type": input_type, "truncate": "END"},
-                )
+                for attempt in range(4):
+                    try:
+                        resp = client.embeddings.create(
+                            model=model, input=batch,
+                            extra_body={"input_type": input_type, "truncate": "END"},
+                        )
+                        break
+                    except Exception as e:
+                        # Free-tier concurrency limits surface as 503/429 under
+                        # load; back off rather than dropping to another model.
+                        if attempt == 3 or not any(c in str(e) for c in ("503", "429", "ResourceExhausted")):
+                            raise
+                        time.sleep(2 ** attempt)
                 vectors.extend(d.embedding for d in resp.data)
-                time.sleep(0.2)               # stay under free-tier rate limits
+                time.sleep(1.0)               # pace against free-tier limits
             return np.array(vectors, dtype=float), model
         except Exception as e:
+            if pin_model:
+                print(f"   ✗ pinned embedder {model} failed ({str(e)[:80]})")
+                return None, None
             print(f"   embed via {model} unavailable ({str(e)[:70]}) — trying next")
             continue
     return None, None
@@ -187,17 +211,20 @@ def _tfidf(chunks: list[str], query: str) -> np.ndarray:
     return D @ q
 
 
-def _retrieve(chunks, chunk_vecs, query, api_key, k=TOP_K):
-    if chunk_vecs is not None:
-        qv, _ = _embed([query], api_key, "query")
+def _retrieve(chunks, chunk_vecs, query, api_key, k=TOP_K, index_model=None):
+    if chunk_vecs is not None and index_model:
+        # Pin to the model that built the index — a query embedded by any other
+        # model lands in a different vector space and the scores become noise.
+        qv, _ = _embed([query], api_key, "query", pin_model=index_model)
         if qv is not None:
             sims = chunk_vecs @ qv[0] / (
                 np.linalg.norm(chunk_vecs, axis=1) * np.linalg.norm(qv[0]) + 1e-9)
             idx = np.argsort(-sims)[:k]
-            return [(chunks[i], float(sims[i])) for i in idx]
+            return [(chunks[i], float(sims[i])) for i in idx], "embeddings"
+        print("   ⚠ query embedding failed — falling back to TF-IDF for this query")
     sims = _tfidf(chunks, query)
     idx = np.argsort(-sims)[:k]
-    return [(chunks[i], float(sims[i])) for i in idx]
+    return [(chunks[i], float(sims[i])) for i in idx], "tfidf"
 
 
 # ── Answering ────────────────────────────────────────────────────────────────
@@ -317,14 +344,15 @@ def main():
     results = []
     for q in questions:
         print(f"\n❓ {q}")
-        passages = _retrieve(chunks, vecs, q, api_key)
+        passages, method = _retrieve(chunks, vecs, q, api_key, index_model=model)
         ans = _answer(q, passages, ticker, filing, api_key) if api_key else \
               "(no API key — retrieved passages only)"
-        print(f"   {ans[:400]}")
+        print(f"   [{method}] {ans[:400]}")
         results.append({
-            "question": q, "answer": ans,
+            "question": q, "answer": ans, "retrieval_method": method,
             "passages": [{"text": p[:600], "score": round(s, 3)} for p, s in passages],
         })
+        time.sleep(2)   # pace answer calls against free-tier concurrency limits
 
     out = {
         "ticker": ticker, "filing": filing,
