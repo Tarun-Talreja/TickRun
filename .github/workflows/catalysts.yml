@@ -1,0 +1,104 @@
+name: Catalyst Lookahead + Alerts
+
+on:
+  schedule:
+    # 6:30am ET daily (10:30 UTC) — before the open, so an imminent catalyst
+    # reaches you while you can still act on it.
+    - cron: '30 10 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: catalysts
+  cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  catalysts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Scan forward catalysts
+        run: python scripts/catalyst_calendar.py
+
+      - name: Rebuild dashboard
+        run: python scripts/build_dashboard.py
+
+      - name: Sync with remote before commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase --autostash origin main
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto: catalyst lookahead"
+          file_pattern: >-
+            data/catalysts.json
+            output/dashboard.json
+
+      - name: Notify on imminent catalysts
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const data = JSON.parse(fs.readFileSync('data/catalysts.json', 'utf8'));
+            const imminent = (data.imminent || []).filter(e => e.urgency !== 'low');
+            if (!imminent.length) {
+              core.info('No imminent catalysts worth alerting on.');
+              return;
+            }
+
+            const today = new Date().toISOString().slice(0, 10);
+            const title = `📅 Catalysts ahead — ${today}`;
+
+            // One issue per day: if today's already exists, update it rather
+            // than stacking duplicates every run.
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'catalyst',
+            });
+            const dupe = existing.data.find(i => i.title === title);
+
+            const fmt = e => {
+              const mark = e.urgency === 'high' ? '🔴' : '🟡';
+              const est = (typeof e.eps_estimate === 'number')
+                ? ` · consensus EPS **${e.eps_estimate.toFixed(2)}**` : '';
+              const px = e.price ? ` · $${e.price}` : '';
+              return `### ${mark} ${e.ticker} — ${e.type.replace('_', ' ')} in ${e.days_until}d\n` +
+                     `**${e.date}**${est}${px}${e.verdict ? ` · ${e.verdict}` : ''}\n\n${e.plan}\n`;
+            };
+
+            const body =
+              `**${imminent.length} catalyst(s) within 7 days.** Decide before the event, not after it.\n\n` +
+              imminent.map(fmt).join('\n') +
+              `\n---\n_A beat or miss only matters relative to the consensus above — that is the bar._\n` +
+              `\n[Open dashboard](https://tarun-talreja.github.io/TickRun/)`;
+
+            if (dupe) {
+              await github.rest.issues.update({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: dupe.number, body,
+              });
+              core.info(`Updated issue #${dupe.number}`);
+            } else {
+              const res = await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title, body, labels: ['catalyst'],
+              });
+              core.info(`Created issue #${res.data.number}`);
+            }

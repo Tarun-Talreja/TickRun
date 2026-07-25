@@ -272,6 +272,7 @@ html,body{
 .mover-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:12px 14px}
 .mover-pct{font-size:15px;font-weight:700}
 .mover-reason{font-size:13px;line-height:1.4;color:var(--text0);margin-top:6px}
+.cat-plan{font-size:11px;line-height:1.45;color:var(--text2);margin-top:7px;padding-top:7px;border-top:1px solid var(--border)}
 .data-warn{font-size:9px;font-weight:700;padding:2px 6px;border-radius:4px;background:#ff445522;color:#ff6677;letter-spacing:.04em;cursor:help}
 .conf-badge{font-size:8px;font-weight:700;padding:2px 5px;border-radius:4px;letter-spacing:.05em}
 .conf-high{background:#00f08222;color:#00f082}
@@ -1241,6 +1242,28 @@ function renderSignals(data){
     <div class="sh-sub">${urgent} urgent items</div>
   </div>
   <div class="sig-feed">`;
+
+  // ── Catalysts ahead: forward-looking, so it leads the feed ────────────────
+  const cat = ((data.catalysts||{}).imminent||[]).filter(e=>e.urgency!=='low');
+  if(cat.length){
+    html+=`<div class="sig-section-title">🔭 Catalysts Ahead <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text2);font-size:10px">· decide before the event</span></div>`;
+    html+=`<div class="news-list">`;
+    cat.forEach((e,i)=>{
+      const hot = e.urgency==='high';
+      const col = hot?'var(--red)':'var(--amber)';
+      const est = (typeof e.eps_estimate==='number')?`consensus EPS ${e.eps_estimate.toFixed(2)}`:'';
+      html+=`<div class="mover-card s-anim" style="animation-delay:${i*0.03}s;border-left:3px solid ${col}">
+        <div class="news-head">
+          <span class="news-ticker">${esc(e.ticker)}</span>
+          ${e.verdict?vbadge(e.verdict):''}
+          <span class="mover-pct" style="color:${col};margin-left:auto">${e.days_until}d</span>
+        </div>
+        <div class="mover-reason"><strong>${esc((e.type||'').replace('_',' '))}</strong> ${esc(e.date||'')}${est?` · ${est}`:''}</div>
+        <div class="cat-plan">${esc(e.plan||'')}</div>
+      </div>`;
+    });
+    html+=`</div>`;
+  }
 
   // ── Buy-target hits: the most actionable signal, shown first ──────────────
   const tgtHits = sig.target_hits||[];
