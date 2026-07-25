@@ -14,13 +14,20 @@ permissions:
   contents: write
   issues: write
 
+# Runs fire every 30 min; if one is slow, don't let a queue of overlapping
+# runs build up (they'd race on the same auto-commit).
+concurrency:
+  group: daily-refresh
+  cancel-in-progress: false
+
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    # 10m was too tight once the pipeline grew (movers/news/SEC steps).
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

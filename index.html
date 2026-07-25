@@ -1260,7 +1260,9 @@ function renderSignals(data){
     html+=`<div class="news-list">`;
     movers.forEach((m,i)=>{
       const up = m.direction==='up';
-      const pct = m.pct_day!=null?m.pct_day:m.pct_since;
+      // primary_pct is the move that actually triggered the alert; fall back for
+      // older payloads written before that field existed.
+      const pct = m.primary_pct!=null?m.primary_pct:(m.pct_day!=null?m.pct_day:m.pct_since);
       const col = up?'var(--green)':'var(--red)';
       const news0 = (m.news&&m.news[0])||{};
       const safeUrl=(news0.url||'').startsWith('http')?news0.url:'';

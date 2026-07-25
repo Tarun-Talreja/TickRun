@@ -33,6 +33,12 @@ MOVERS_PATH    = os.path.join(SCRIPT_DIR, "data", "movers.json")
 MOVE_THRESHOLD = 3.0   # % change since last snapshot to flag (intraday spike)
 DAY_THRESHOLD  = 5.0   # % change on the day to flag regardless of snapshot
 
+# Cost/latency guards. On a broad market day 30+ names move >3%; one sequential
+# LLM call each blew past the workflow timeout. Only the biggest movers get an
+# LLM explanation — the rest still get headlines attached.
+MAX_LLM_EXPLANATIONS = 8
+LLM_TIMEOUT_SECONDS  = 25
+
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 try:
     from news_feed import fetch_news
@@ -75,7 +81,12 @@ def _llm_reason(ticker: str, pct: float, headlines: list[str]) -> str | None:
         f"Headlines:\n{headlines_block}"
     )
     try:
-        client = OpenAI(base_url="https://integrate.api.nvidia.com/v1", api_key=key)
+        client = OpenAI(
+            base_url="https://integrate.api.nvidia.com/v1",
+            api_key=key,
+            timeout=LLM_TIMEOUT_SECONDS,
+            max_retries=1,
+        )
         r = client.chat.completions.create(
             model="meta/llama-3.3-70b-instruct",
             messages=[{"role": "user", "content": prompt}],
@@ -120,26 +131,45 @@ def main():
         if not triggers:
             continue
 
-        # Pull news + reason
-        news = fetch_news(ticker, 5)
-        headlines = [n["title"] for n in news if n.get("title")]
-        reason = _llm_reason(ticker, day_pct or since_pct or 0, headlines)
+        # The move that actually tripped the alert is the one to report. Using
+        # whichever value is larger in magnitude keeps direction, the displayed
+        # %, and the trigger text consistent — day and since can disagree in
+        # sign (e.g. up on the day but sharply down since the last check).
+        primary_pct = max(
+            [p for p in (day_pct, since_pct) if p is not None],
+            key=abs,
+            default=0,
+        )
 
+        # Detection only here — LLM explanations happen after ranking so we
+        # spend calls on the biggest movers, not the first 30 alphabetically.
         movers.append({
-            "ticker":     ticker,
-            "name":       q.get("name", ticker),
-            "verdict":    verdicts.get(ticker, ""),
-            "price":      price,
-            "pct_day":    day_pct,
-            "pct_since":  since_pct,
-            "direction":  "up" if (day_pct or since_pct or 0) > 0 else "down",
-            "triggers":   triggers,
-            "reason":     reason or "Reason pending — see headlines.",
-            "news":       news[:3],
+            "ticker":      ticker,
+            "name":        q.get("name", ticker),
+            "verdict":     verdicts.get(ticker, ""),
+            "price":       price,
+            "pct_day":     day_pct,
+            "pct_since":   since_pct,
+            "primary_pct": primary_pct,
+            "direction":   "up" if primary_pct > 0 else "down",
+            "triggers":    triggers,
+            "reason":      None,
+            "news":        [],
         })
 
-    # Sort by absolute daily move, biggest first
-    movers.sort(key=lambda m: abs(m.get("pct_day") or m.get("pct_since") or 0), reverse=True)
+    # Sort by the size of the move that triggered the alert, biggest first
+    movers.sort(key=lambda m: abs(m.get("primary_pct") or 0), reverse=True)
+
+    # Explain only the top N — bounded work keeps the workflow inside its timeout.
+    for i, m in enumerate(movers):
+        news = fetch_news(m["ticker"], 5)
+        m["news"] = news[:3]
+        if i < MAX_LLM_EXPLANATIONS:
+            headlines = [n["title"] for n in news if n.get("title")]
+            reason = _llm_reason(m["ticker"], m.get("primary_pct") or 0, headlines)
+            m["reason"] = reason or "No clear catalyst in current news."
+        else:
+            m["reason"] = "See headlines (explanation limited to top movers)."
 
     with open(MOVERS_PATH, "w") as f:
         json.dump({
