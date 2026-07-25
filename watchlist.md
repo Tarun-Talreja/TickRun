@@ -1,6 +1,7 @@
 # Watchlist
 # One ticker per line. Section headers and comments are ignored.
 # Diversified across themes — use the app's theme filter to focus.
+# Last reviewed: 2026-07-25 (see TICKRUN_RESEARCH_2026-07-25.md)
 
 ## Core holdings
 AAPL
@@ -22,7 +23,6 @@ NOW
 AMD
 NBIS
 LITE
-AAOI
 RDDT
 MU
 MRVL
@@ -36,6 +36,10 @@ VRT
 GEV
 ETN
 OKLO
+TLN
+BWXT
+NVT
+POWL
 
 ## Quality compounders
 MA
@@ -44,18 +48,19 @@ PAYX
 DHR
 
 ## Defensive / dividend income
-DEO
 GIS
 STZ
-CPB
 
 ## Healthcare innovation
 GEHC
 ZBH
+ISRG
+PODD
 
 ## Financials / capital markets
 MKTX
 LPLA
+TW
 
 ## Real estate / REITs
 INVH
@@ -69,6 +74,8 @@ CMCSA
 LMB
 EIX
 CBRS
+CLS
+CRDO
 
 ## Index benchmarks (always include)
 SPY

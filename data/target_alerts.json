@@ -1,17 +1,6 @@
 {
-  "generated_at": "2026-07-25T19:41:03Z",
+  "generated_at": "2026-07-25T20:15:19Z",
   "hits": [
-    {
-      "ticker": "AAOI",
-      "name": "Applied Optoelectronics, Inc.",
-      "verdict": "WATCHLIST",
-      "confidence": null,
-      "theme": "networking_infra",
-      "price": 100.15,
-      "buy_target": 140,
-      "gap_pct": -28.5,
-      "next_action": "WATCH \u2014 right theme and real hyperscaler demand, but unprofitable with negative FCF. Monitor next 2 quarters for gross margin expansion toward 35%+. Buy at $140 (-40%) if profitability trajectory confirms."
-    },
     {
       "ticker": "OKLO",
       "name": "Oklo Inc.",
@@ -77,6 +66,28 @@
       "buy_target": 310,
       "gap_pct": -8.9,
       "next_action": "WAIT \u2014 right theme but LITE is superior (90% growth vs 20% at similar valuation). Wait for 30% pullback to ~$310 or after LITE position is established."
+    },
+    {
+      "ticker": "CRDO",
+      "name": "Credo Technology Group Holding Ltd",
+      "verdict": "WATCHLIST",
+      "confidence": "HIGH",
+      "theme": "edge_ai_silicon",
+      "price": 213.15,
+      "buy_target": 231.5,
+      "gap_pct": -7.9,
+      "next_action": "WAIT \u2014 Pure-play AI interconnect with a semiconductor margin structure (68% GM, ~36% op margin) on a net-cash balance sheet. Revisit at 25% below the 52-week high."
+    },
+    {
+      "ticker": "POWL",
+      "name": "Powell Industries, Inc.",
+      "verdict": "WATCHLIST",
+      "confidence": "HIGH",
+      "theme": "power_grid",
+      "price": 232.21,
+      "buy_target": 246.0,
+      "gap_pct": -5.6,
+      "next_action": "WAIT \u2014 Record backlog at ~1. Revisit at 25% below the 52-week high."
     },
     {
       "ticker": "CEG",
@@ -156,6 +167,83 @@
       "next_action": "WAIT \u2014 near 52w high (-2.4%), 31.6x PE reasonable but timing poor. Buy on 15%+ pullback to ~$237."
     },
     {
+      "ticker": "TLN",
+      "name": "Talen Energy Corporation",
+      "verdict": "RESEARCH-WORTHY",
+      "confidence": "HIGH",
+      "theme": "nuclear_smr",
+      "price": 359.9,
+      "buy_target": 359.9,
+      "gap_pct": 0.0,
+      "next_action": "RESEARCH \u2014 Cheapest contracted-nuclear-to-hyperscaler play at ~12x forward earnings vs CEG/VST premium; 1,920MW Amazon PPA through 2042 gives merchant-rare revenue visibility. Current levels clear the entry bar."
+    },
+    {
+      "ticker": "BWXT",
+      "name": "BWX Technologies, Inc.",
+      "verdict": "RESEARCH-WORTHY",
+      "confidence": "HIGH",
+      "theme": "nuclear_smr",
+      "price": 174.52,
+      "buy_target": 174.52,
+      "gap_pct": 0.0,
+      "next_action": "RESEARCH \u2014 Nuclear buildout exposure with an actual P&L: backlog +77% YoY at ~2. Current levels clear the entry bar."
+    },
+    {
+      "ticker": "NVT",
+      "name": "nVent Electric plc",
+      "verdict": "RESEARCH-WORTHY",
+      "confidence": "MEDIUM",
+      "theme": "power_grid",
+      "price": 151.79,
+      "buy_target": 151.79,
+      "gap_pct": 0.0,
+      "next_action": "RESEARCH \u2014 Liquid cooling and power distribution inside the data center at ~26x forward for ~28% expected growth (~1x PEG); complements rather than duplicates VRT. Current levels clear the entry bar."
+    },
+    {
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical, Inc.",
+      "verdict": "RESEARCH-WORTHY",
+      "confidence": "MEDIUM",
+      "theme": "healthcare_innovation",
+      "price": 337.5,
+      "buy_target": 337.5,
+      "gap_pct": 0.0,
+      "next_action": "RESEARCH \u2014 Only profitable commercial-scale robotics franchise; down ~29% YTD to ~28x forward, cheapest vs its own history in years, still guiding 13. Current levels clear the entry bar."
+    },
+    {
+      "ticker": "PODD",
+      "name": "Insulet Corporation",
+      "verdict": "RESEARCH-WORTHY",
+      "confidence": "MEDIUM",
+      "theme": "healthcare_innovation",
+      "price": 163.26,
+      "buy_target": 163.26,
+      "gap_pct": 0.0,
+      "next_action": "RESEARCH \u2014 ~34% growth at 71% gross margin for ~20x forward is a sub-1x PEG, rare in medtech and roughly half DXCM's multiple on twice the growth. Current levels clear the entry bar."
+    },
+    {
+      "ticker": "TW",
+      "name": "Tradeweb Markets Inc.",
+      "verdict": "RESEARCH-WORTHY",
+      "confidence": "MEDIUM",
+      "theme": "financials",
+      "price": 99.83,
+      "buy_target": 99.83,
+      "gap_pct": 0.0,
+      "next_action": "RESEARCH \u2014 Structural winner in fixed-income electronification: 93. Current levels clear the entry bar."
+    },
+    {
+      "ticker": "CLS",
+      "name": "Celestica Inc.",
+      "verdict": "RESEARCH-WORTHY",
+      "confidence": "HIGH",
+      "theme": "datacenter_infra",
+      "price": 305.28,
+      "buy_target": 305.28,
+      "gap_pct": 0.0,
+      "next_action": "RESEARCH \u2014 Cheapest credible AI-hardware exposure at ~20x forward for 50%+ growth, guiding to 53% revenue and 68% EPS growth on 800G/1. Current levels clear the entry bar."
+    },
+    {
       "ticker": "GOOGL",
       "name": "Alphabet Inc.",
       "verdict": "WATCHLIST",
@@ -186,7 +274,7 @@
       "price": 116.69,
       "buy_target": 115,
       "gap_pct": 1.5,
-      "next_action": "RESEARCH \u2014 44%-margin network business down 50%. Verify trading-volume trends; strong risk/reward."
+      "next_action": "Downgrade \u2014 still a ~44% op-margin business at ~13x forward, but TTM FCF is negative and it is visibly losing US high-grade share to Tradeweb amid fee pressure. The ICE partnership is a response to the problem, not proof it is solved. Hold only as the cheap side of a pair against TW, or replace with TW."
     },
     {
       "ticker": "VST",
@@ -210,7 +298,7 @@
       "price": 72.74,
       "buy_target": 70,
       "gap_pct": 3.9,
-      "next_action": "WAIT \u2014 interesting data-center angle but thin margins + small cap. Verify data-center revenue mix."
+      "next_action": "Downgrade \u2014 sub-$1B cap growing 4.3%; legitimate business but too small and slow to move the portfolio, and data-center-infra exposure is better expressed through POWL. Position sizing makes this a rounding error."
     },
     {
       "ticker": "META",
@@ -232,18 +320,7 @@
       "price": 91.35,
       "buy_target": 85,
       "gap_pct": 7.5,
-      "next_action": "WAIT \u2014 cheap but slow-moving. Buy at $85 or below on further weakness."
-    },
-    {
-      "ticker": "CPB",
-      "name": "CPB",
-      "verdict": "WATCHLIST",
-      "confidence": null,
-      "theme": "defensive_income",
-      "price": 21.84,
-      "buy_target": 20,
-      "gap_pct": 9.2,
-      "next_action": "WAIT \u2014 high yield, declining business. Value-trap risk; verify dividend coverage."
+      "next_action": "Downgrade \u2014 6.1% ROE and ~16x debt/cash; ~10x forward looks cheap and probably is cheap for a reason. With ISRG and PODD added, ZBH is the redundant lowest-quality name in the healthcare bucket."
     },
     {
       "ticker": "RDDT",

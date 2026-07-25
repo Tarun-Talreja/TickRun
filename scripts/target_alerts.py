@@ -46,10 +46,25 @@ def _refresh_live_targets(wl: dict, quotes: dict) -> bool:
         pct = c.get("buy_trigger_drawdown_pct")
         if pct is None:
             continue
-        high = quotes.get(c.get("ticker", ""), {}).get("high_52w")
-        if not high:
-            continue
-        new_target = round(high * (1 + pct / 100), 2)
+        q = quotes.get(c.get("ticker", ""), {})
+        high, price = q.get("high_52w"), q.get("price")
+
+        if pct == 0:
+            # 0 means "no pullback required — current levels already clear the
+            # bar". Applying the drawdown formula here would set the target to
+            # the 52-week HIGH, making a buy-ready name render as a huge fake
+            # discount (e.g. "54% below target"). Anchor to the live price so
+            # the gap reads ~0% and the name shows as at-target, not on sale.
+            if not price:
+                continue
+            new_target = round(price, 2)
+            c["no_pullback_gate"] = True
+        else:
+            if not high:
+                continue
+            new_target = round(high * (1 + pct / 100), 2)
+            c["no_pullback_gate"] = False
+
         if c.get("buy_target") != new_target:
             c["buy_target"] = new_target
             changed = True

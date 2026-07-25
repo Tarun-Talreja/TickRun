@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T19:01:40Z",
+  "generated_at": "2026-07-25T20:15:36Z",
   "pullback_alerts": [
     {
       "ticker": "OKLO",
@@ -26,15 +26,15 @@
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
-      "ticker": "AAOI",
-      "name": "Applied Optoelectronics, Inc.",
-      "theme": "networking_infra",
-      "verdict": "WATCHLIST",
-      "price": 100.15,
-      "high_52w": 233.67,
-      "drawdown_pct": -57.1,
+      "ticker": "PODD",
+      "name": "Insulet Corporation",
+      "theme": "healthcare_innovation",
+      "verdict": "RESEARCH-WORTHY",
+      "price": 163.26,
+      "high_52w": 354.88,
+      "drawdown_pct": -54.0,
       "severity": "STRONG",
-      "thesis": "Makes 100G/400G/800G optical transceiver modules for AWS and Microsoft AI datacenter builds. Revenue grew 51.4% YoY as hyperscalers upgrade interconnects. 29.6% gross margin (improving), -8.6% op margin (still unprofitable). $14.4B market cap on $0.5B revenue = 28x P/S. -23% from $233 ATH. Path to profitability is the key question.",
+      "thesis": "~34% growth at 71% gross margin for ~20x forward is a sub-1x PEG, rare in medtech and roughly half DXCM's multiple on twice the growth. Consumable replaced every 72 hours makes each patient an annuity; the discount is GLP-1 fear over type 2 pump demand.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -46,7 +46,7 @@
       "high_52w": 201.15,
       "drawdown_pct": -50.9,
       "severity": "STRONG",
-      "thesis": "Enterprise AI workflow platform (Now Assist). 22.1% revenue growth, 76.6% gross margin. DATA QUALITY WARNING: yfinance reports $102 price vs actual market price ~$1,000. The -51.7% drawdown signal is unreliable. Do not act on any alerts for this ticker until price data is verified.",
+      "thesis": "Enterprise AI workflow platform (Now Assist). 22.1% revenue growth, 76.6% gross margin. NOTE: underwent a 5-for-1 stock split on 2025-12-18 -- the ~$99 price is correct, not a data error (confirmed via yfinance splits history + market-cap/share-count cross-check). Previously flagged as a data bug; that flag was wrong and has been corrected.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -98,6 +98,18 @@
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical, Inc.",
+      "theme": "healthcare_innovation",
+      "verdict": "RESEARCH-WORTHY",
+      "price": 337.5,
+      "high_52w": 603.88,
+      "drawdown_pct": -44.1,
+      "severity": "STRONG",
+      "thesis": "Only profitable commercial-scale robotics franchise; down ~29% YTD to ~28x forward, cheapest vs its own history in years, still guiding 13.5-15.5% procedure growth on zero debt. Recurring instruments-per-procedure revenue compounds on the install base \u2014 but confirm what caused the derating first.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
       "ticker": "MRVL",
       "name": "Marvell Technology, Inc.",
       "theme": "edge_ai_silicon",
@@ -134,18 +146,6 @@
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
-      "ticker": "CPB",
-      "name": "The Campbell's Company",
-      "theme": "defensive_income",
-      "verdict": "WATCHLIST",
-      "price": 21.84,
-      "high_52w": 34.17,
-      "drawdown_pct": -36.1,
-      "severity": "STRONG",
-      "thesis": "Campbell's \u2014 soup + snacks. 7.2% dividend, 10.3x fwd PE, -38% from ATH, -4% growth. Defensive income but declining packaged-food category.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
       "ticker": "COHR",
       "name": "Coherent Corp.",
       "theme": "networking_infra",
@@ -155,6 +155,18 @@
       "drawdown_pct": -35.8,
       "severity": "STRONG",
       "thesis": "Makes optical transceivers, lasers, and compound semiconductors for AI datacenters and telecom. Same 800G upgrade cycle thesis as LITE (Lumentum). 20.5% revenue growth, 37% gross margin, 46.6x forward PE. Negative FCF (-$0.20B). LITE is the better-valued optical play (90% growth vs 20.5% at similar PE). Add COHR only if LITE position is full.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "CLS",
+      "name": "Celestica Inc.",
+      "theme": "datacenter_infra",
+      "verdict": "RESEARCH-WORTHY",
+      "price": 305.28,
+      "high_52w": 474.03,
+      "drawdown_pct": -35.6,
+      "severity": "STRONG",
+      "thesis": "Cheapest credible AI-hardware exposure at ~20x forward for 50%+ growth, guiding to 53% revenue and 68% EPS growth on 800G/1.6T hyperscaler switch ramps. The catch is structural: 12% gross margin means you are buying operating leverage, not a moat.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -185,12 +197,24 @@
       "ticker": "GEHC",
       "name": "GE HealthCare Technologies Inc.",
       "theme": "healthcare_innovation",
-      "verdict": "RESEARCH-WORTHY",
+      "verdict": "WATCHLIST",
       "price": 60.58,
       "high_52w": 89.77,
       "drawdown_pct": -32.5,
       "severity": "MODERATE",
       "thesis": "GE HealthCare \u2014 medical imaging (MRI, CT, ultrasound) with AI-assisted diagnostics. 12x fwd PE, 7% growth, -28% from ATH. Reasonable valuation on an AI-adjacent healthcare leader.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "TW",
+      "name": "Tradeweb Markets Inc.",
+      "theme": "financials",
+      "verdict": "RESEARCH-WORTHY",
+      "price": 99.83,
+      "high_52w": 147.49,
+      "drawdown_pct": -32.3,
+      "severity": "MODERATE",
+      "thesis": "Structural winner in fixed-income electronification: 93.6% gross margin, 46.4% op margin, ~21% growth on net cash, priced near ICE/NDAQ despite growing faster. Note this is the other side of the MKTX trade \u2014 a swap candidate rather than an addition.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -218,6 +242,18 @@
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
+      "ticker": "CRDO",
+      "name": "Credo Technology Group Holding Ltd",
+      "theme": "edge_ai_silicon",
+      "verdict": "WATCHLIST",
+      "price": 213.15,
+      "high_52w": 308.67,
+      "drawdown_pct": -30.9,
+      "severity": "MODERATE",
+      "thesis": "Pure-play AI interconnect with a semiconductor margin structure (68% GM, ~36% op margin) on a net-cash balance sheet. At ~30x sales with the top three customers at 77% of revenue, no execution risk is priced in.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
       "ticker": "GIS",
       "name": "General Mills, Inc.",
       "theme": "defensive_income",
@@ -242,22 +278,34 @@
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
-      "ticker": "DEO",
-      "name": "Diageo plc",
-      "theme": "defensive_income",
+      "ticker": "POWL",
+      "name": "Powell Industries, Inc.",
+      "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "price": 83.08,
-      "high_52w": 116.41,
-      "drawdown_pct": -28.6,
+      "price": 232.21,
+      "high_52w": 328.0,
+      "drawdown_pct": -29.2,
       "severity": "MODERATE",
-      "thesis": "Diageo \u2014 global spirits (Johnnie Walker, Guinness). 31% op margin, 4.1% dividend, 12.5x fwd PE. But -4% revenue growth. -31% from ATH. Cheap defensive, but declining sales = possible value trap.",
+      "thesis": "Record backlog at ~1.6 years of visibility plus a largest-ever data center mega-order, on a debt-free balance sheet with ~30% ROE. But ~34x forward on 6.5% realized growth prices in a backlog conversion and capacity expansion that both still must be executed.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "BWXT",
+      "name": "BWX Technologies, Inc.",
+      "theme": "nuclear_smr",
+      "verdict": "RESEARCH-WORTHY",
+      "price": 174.52,
+      "high_52w": 241.82,
+      "drawdown_pct": -27.8,
+      "severity": "MODERATE",
+      "thesis": "Nuclear buildout exposure with an actual P&L: backlog +77% YoY at ~2.6 years of booked revenue, funded by a naval-propulsion monopoly. SMR upside is a free option, not the whole thesis \u2014 but ~34x forward means the market knows.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
       "ticker": "MU",
       "name": "Micron Technology, Inc.",
       "theme": "edge_ai_silicon",
-      "verdict": "RESEARCH-WORTHY",
+      "verdict": "WATCHLIST",
       "price": 920.95,
       "high_52w": 1255.0,
       "drawdown_pct": -26.6,
@@ -281,7 +329,7 @@
       "ticker": "VST",
       "name": "Vistra Corp.",
       "theme": "nuclear_smr",
-      "verdict": "RESEARCH-WORTHY",
+      "verdict": "WATCHLIST",
       "price": 163.38,
       "high_52w": 219.82,
       "drawdown_pct": -25.7,
@@ -317,7 +365,7 @@
       "ticker": "PAYX",
       "name": "Paychex, Inc.",
       "theme": "quality_compounder",
-      "verdict": "RESEARCH-WORTHY",
+      "verdict": "WATCHLIST",
       "price": 113.55,
       "high_52w": 148.11,
       "drawdown_pct": -23.3,
@@ -329,7 +377,7 @@
       "ticker": "AVGO",
       "name": "Broadcom Inc.",
       "theme": "edge_ai_silicon",
-      "verdict": "RESEARCH-WORTHY",
+      "verdict": "WATCHLIST",
       "price": 381.92,
       "high_52w": 495.0,
       "drawdown_pct": -22.8,
@@ -341,7 +389,7 @@
       "ticker": "GOOGL",
       "name": "Alphabet Inc.",
       "theme": "mega_cap_ai",
-      "verdict": "RESEARCH-WORTHY",
+      "verdict": "WATCHLIST",
       "price": 319.74,
       "high_52w": 408.61,
       "drawdown_pct": -21.7,
@@ -371,6 +419,18 @@
       "drawdown_pct": -20.9,
       "severity": "MODERATE",
       "thesis": "Payroll + HR outsourcing \u2014 30% op margin, sticky multi-year contracts, 2.9% dividend, 18.8x fwd PE. -30% from ATH. Recession-resilient cash compounder.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "TLN",
+      "name": "Talen Energy Corporation",
+      "theme": "nuclear_smr",
+      "verdict": "RESEARCH-WORTHY",
+      "price": 359.9,
+      "high_52w": 451.28,
+      "drawdown_pct": -20.2,
+      "severity": "MODERATE",
+      "thesis": "Cheapest contracted-nuclear-to-hyperscaler play at ~12x forward earnings vs CEG/VST premium; 1,920MW Amazon PPA through 2042 gives merchant-rare revenue visibility. Discount reflects measurable concentration risk (single asset Susquehanna, single counterparty), not broken fundamentals.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     }
   ],

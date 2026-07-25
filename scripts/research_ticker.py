@@ -303,7 +303,14 @@ def _live_buy_target(ticker: str, drawdown_trigger_pct: float | None, quotes: di
     """Recompute a buy target from the CURRENT 52-week high — never a stale price."""
     if drawdown_trigger_pct is None:
         return None
-    high_52w = quotes.get("tickers", {}).get(ticker, {}).get("high_52w")
+    q = quotes.get("tickers", {}).get(ticker, {})
+    # 0 = no pullback gate ("buy at current levels"). Using the drawdown formula
+    # would anchor the target to the 52-week high and render a buy-ready name as
+    # a large fake discount, so anchor to the live price instead.
+    if drawdown_trigger_pct == 0:
+        price = q.get("price")
+        return round(price, 2) if price else None
+    high_52w = q.get("high_52w")
     if not high_52w:
         return None
     return round(high_52w * (1 + drawdown_trigger_pct / 100), 2)
