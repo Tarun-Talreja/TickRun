@@ -65,6 +65,21 @@ Output EXACTLY one line in this format:
 - LOW: key facts are missing or the data looks suspect; treat this as a starting point only.
 State which specific claims in your analysis are NOT supported by the provided data/headlines.
 
+## 10. Machine-readable summary (exact format — this gets parsed and stored)
+Output exactly these two lines. **Never include a specific dollar price in either line** —
+dollar figures go stale the moment the stock moves and end up misleading me weeks later.
+Use durable, self-updating language instead: valuation multiples, % from 52-week high,
+growth rates, margins.
+
+`THESIS: <one sentence — the core reason to own or avoid this, in durable terms (e.g.
+"cheapest AI power play at 15x forward earnings for 40%+ growth" not "$148 is a buy")>`
+
+`BUY_TRIGGER_DRAWDOWN_PCT: <integer, e.g. -20>` — the drawdown from the 52-week high (as a
+negative percent) at which this becomes a good entry. Use `0` if the current price already
+clears your bar (i.e. verdict is RESEARCH-WORTHY). This number, not a dollar figure, is what
+gets converted into a live buy-target price — so it must reflect your own analysis, not the
+current price.
+
 ---
 
 Be honest about uncertainty. If you don't have current data, say so. If the company is borderline, say borderline — don't manufacture conviction. I would rather get 5 honest "PASS" verdicts than 1 fake "RESEARCH-WORTHY."

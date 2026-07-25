@@ -29,7 +29,8 @@
       "research_file": "output/research/MSFT_2026-06-11.md",
       "last_researched": "2026-06-11",
       "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying MSFT right now is that the bull case may be underweighting the potential risks and uncertainties associated with the company's significant investment in AI, as highlighted by OpenAI's spending spree and the potential for a high-risk tech debut, which could lead to increased competition and downward pressure on MSFT's stock price. Additionally, the drawdown from the 52-week high of -26.1% and the net debt position of $47,204M may indicate some underlying volatility or market concerns that are not fully addressed in the bullish note. The recent rollout of Microsoft Copilot in the NHS, while positive, may not be enough to offset these potential risks.\n\nVERDICT: BEARISH \nCONFIDENCE: MEDIUM\nCHANGES VERDICT: YES"
+      "bear_check": "The strongest argument against buying MSFT right now is that the bull case may be underweighting the potential risks and uncertainties associated with the company's significant investment in AI, as highlighted by OpenAI's spending spree and the potential for a high-risk tech debut, which could lead to increased competition and downward pressure on MSFT's stock price. Additionally, the drawdown from the 52-week high of -26.1% and the net debt position of $47,204M may indicate some underlying volatility or market concerns that are not fully addressed in the bullish note. The recent rollout of Microsoft Copilot in the NHS, while positive, may not be enough to offset these potential risks.\n\nVERDICT: BEARISH \nCONFIDENCE: MEDIUM\nCHANGES VERDICT: YES",
+      "bear_downgraded": false
     },
     {
       "ticker": "GOOGL",
@@ -38,14 +39,16 @@
       "status": "research_complete",
       "thesis": "Cheapest mega-cap AI play. 90% global search share, $328B ad revenue (+24% YoY), 29x trailing P/E. $175-185B 2026 capex into AI infrastructure. Get Cloud + Waymo + Anthropic stake at search valuation.",
       "added": "2026-04-25",
-      "verdict": "RESEARCH-WORTHY",
+      "verdict": "WATCHLIST",
       "buy_target": 316,
       "current_price": 316,
       "next_action": "BUY $1,500 \u2014 top conviction pick after web research",
       "research_file": "output/research/GOOGL_2026-07-24.md",
       "last_researched": "2026-07-24",
       "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying GOOGL right now is that the recent fall below its 200-day average for the first time in over a year, as reported on July 24, may indicate a significant shift in market sentiment, potentially signaling a trend reversal. This technical indicator suggests that the stock's downward momentum could continue, making it a less favorable time to buy. Furthermore, the comparison with other volatile tech stocks like Tesla, which also \"dive\" as mentioned in the headlines, adds to the uncertainty surrounding GOOGL's near-term performance.\n\nCHANGES VERDICT: YES"
+      "bear_check": "The strongest argument against buying GOOGL right now is that the recent fall below its 200-day average for the first time in over a year, as reported on July 24, may indicate a significant shift in market sentiment, potentially signaling a trend reversal. This technical indicator suggests that the stock's downward momentum could continue, making it a less favorable time to buy. Furthermore, the comparison with other volatile tech stocks like Tesla, which also \"dive\" as mentioned in the headlines, adds to the uncertainty surrounding GOOGL's near-term performance.\n\nCHANGES VERDICT: YES",
+      "llm_verdict": "RESEARCH-WORTHY",
+      "bear_downgraded": true
     },
     {
       "ticker": "AMZN",
@@ -96,14 +99,16 @@
       "status": "research_complete",
       "thesis": "Second-largest AI chip company by revenue. Designs custom XPU accelerators for Google (TPU) and Meta (MTIA) \u2014 both committed to $1B+ AVGO roadmaps through 2027. VMware integration completing, op margin should expand from 45% to 55%+. Networking silicon (Tomahawk switches) is a winner-take-most market for AI cluster fabric. 29.5% revenue growth, 23x forward PE.",
       "added": "2026-05-28",
-      "verdict": "RESEARCH-WORTHY",
+      "verdict": "WATCHLIST",
       "buy_target": 400,
       "current_price": null,
       "next_action": "RESEARCH \u2014 verify Google/Meta XPU contract durations in 10-K. At -4.6% from high, entry is acceptable at current price or on any 10% dip to ~$380.",
       "research_file": "output/research/AVGO_2026-07-24.md",
       "last_researched": "2026-07-24",
       "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying AVGO right now is that its trailing P/E ratio of 65.4x appears significantly high compared to its forward P/E of 20.2x, suggesting potential overvaluation that could lead to a correction in the stock price. This discrepancy may indicate that the current market price does not accurately reflect the company's future earnings potential, making it a risky buy at current levels. The bull case may be underweighting this valuation risk.\n\nCHANGES VERDICT: YES"
+      "bear_check": "The strongest argument against buying AVGO right now is that its trailing P/E ratio of 65.4x appears significantly high compared to its forward P/E of 20.2x, suggesting potential overvaluation that could lead to a correction in the stock price. This discrepancy may indicate that the current market price does not accurately reflect the company's future earnings potential, making it a risky buy at current levels. The bull case may be underweighting this valuation risk.\n\nCHANGES VERDICT: YES",
+      "llm_verdict": "RESEARCH-WORTHY",
+      "bear_downgraded": true
     },
     {
       "ticker": "LLY",
@@ -194,14 +199,15 @@
       "name": "ServiceNow, Inc.",
       "theme": "cybersecurity",
       "status": "monitoring",
-      "thesis": "Enterprise AI workflow platform (Now Assist). 22.1% revenue growth, 76.6% gross margin. DATA QUALITY WARNING: yfinance reports $102 price vs actual market price ~$1,000. The -51.7% drawdown signal is unreliable. Do not act on any alerts for this ticker until price data is verified.",
+      "thesis": "Enterprise AI workflow platform (Now Assist). 22.1% revenue growth, 76.6% gross margin. NOTE: underwent a 5-for-1 stock split on 2025-12-18 -- the ~$99 price is correct, not a data error (confirmed via yfinance splits history + market-cap/share-count cross-check). Previously flagged as a data bug; that flag was wrong and has been corrected.",
       "added": "2026-05-28",
       "verdict": "WATCHLIST",
       "buy_target": null,
       "current_price": null,
-      "next_action": "VERIFY DATA \u2014 yfinance price ($102) appears to be incorrect vs actual market price (~$1,000). Check yfinance NOW ticker resolution before relying on any signals.",
+      "next_action": "RESEARCH -- split-adjusted price confirmed correct. Needs a full grounded research pass (never been through research_ticker.py); currently -51% from pre-split-adjusted 52-week high, worth evaluating.",
       "research_file": null,
-      "last_researched": "2026-05-28"
+      "last_researched": "2026-05-28",
+      "data_bug_corrected": true
     },
     {
       "ticker": "AMD",
@@ -273,7 +279,8 @@
       "research_file": "output/research/RDDT_2026-06-18.md",
       "last_researched": "2026-06-18",
       "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying RDDT right now is that its valuation metrics, such as a trailing P/E of 48.4x and EV/EBITDA of 48.7x, suggest the stock might be overvalued, which could indicate that the market has already priced in substantial future growth, leaving little room for upside. This overvaluation concern is further highlighted by the significant discrepancy between the trailing and forward P/E ratios, which may not be fully justified by the company's growth prospects. The drawdown of 39.9% from its 52-week high may not necessarily present a buying opportunity if the stock was previously overvalued.\n\nVERDICT: AVOID \nCONFIDENCE: HIGH \nCHANGES VERDICT: YES"
+      "bear_check": "The strongest argument against buying RDDT right now is that its valuation metrics, such as a trailing P/E of 48.4x and EV/EBITDA of 48.7x, suggest the stock might be overvalued, which could indicate that the market has already priced in substantial future growth, leaving little room for upside. This overvaluation concern is further highlighted by the significant discrepancy between the trailing and forward P/E ratios, which may not be fully justified by the company's growth prospects. The drawdown of 39.9% from its 52-week high may not necessarily present a buying opportunity if the stock was previously overvalued.\n\nVERDICT: AVOID \nCONFIDENCE: HIGH \nCHANGES VERDICT: YES",
+      "bear_downgraded": false
     },
     {
       "ticker": "MU",
@@ -282,14 +289,16 @@
       "status": "research_complete",
       "thesis": "Only US-based HBM3E manufacturer \u2014 every NVIDIA H100/H200/B200 GPU requires High Bandwidth Memory stacked on the die. Samsung and SK Hynix dominate HBM but Micron has a geopolitical moat as the only American supplier. 196% revenue growth YoY (coming off cyclical trough), 8.2x forward PE. DATA QUALITY WARNING: yfinance shows $864 price \u2014 verify on Fidelity before acting. Memory is cyclical; this growth rate will moderate but AI demand provides a structural floor.",
       "added": "2026-06-08",
-      "verdict": "RESEARCH-WORTHY",
+      "verdict": "WATCHLIST",
       "buy_target": null,
       "current_price": null,
       "next_action": "VERIFY DATA \u2014 confirm current price on Fidelity (yfinance showing $864 which appears incorrect). If price is ~$100-130 range, this is a buy at current levels given HBM thesis.",
       "research_file": "output/research/MU_2026-07-24.md",
       "last_researched": "2026-07-24",
       "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying MU right now is that the bullish note underweights the potential industry-wide risks and uncertainties, as evidenced by Nvidia's falling stock price despite other chip stocks rising, which could be a sign of underlying issues in the semiconductor industry that may impact Micron's future growth prospects. Additionally, the note's reliance on forward P/E ratio and strong growth prospects may be overly optimistic, given the industry's volatility. The recent slip in Micron's stock price also suggests that the market may be pricing in some of these risks, making the current price potentially unattractive.\n\nCHANGES VERDICT: YES"
+      "bear_check": "The strongest argument against buying MU right now is that the bullish note underweights the potential industry-wide risks and uncertainties, as evidenced by Nvidia's falling stock price despite other chip stocks rising, which could be a sign of underlying issues in the semiconductor industry that may impact Micron's future growth prospects. Additionally, the note's reliance on forward P/E ratio and strong growth prospects may be overly optimistic, given the industry's volatility. The recent slip in Micron's stock price also suggests that the market may be pricing in some of these risks, making the current price potentially unattractive.\n\nCHANGES VERDICT: YES",
+      "llm_verdict": "RESEARCH-WORTHY",
+      "bear_downgraded": true
     },
     {
       "ticker": "MRVL",
@@ -347,7 +356,8 @@
       "research_file": "output/research/CEG_2026-06-12.md",
       "last_researched": "2026-06-12",
       "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying CEG right now is its significant negative free cash flow of $-4479M, which, combined with its substantial net debt of $21602M, poses a considerable risk to the company's ability to service its debt and invest in future growth, especially in a rising interest rate environment. This concern is further amplified by the company's reliance on debt to finance its operations, making it vulnerable to changes in market conditions. The bull case may be underweighting the potential impact of sustained negative cash flow on the company's long-term sustainability.\n\nVERDICT: Bearish \nCONFIDENCE: High\nCHANGES VERDICT: YES"
+      "bear_check": "The strongest argument against buying CEG right now is its significant negative free cash flow of $-4479M, which, combined with its substantial net debt of $21602M, poses a considerable risk to the company's ability to service its debt and invest in future growth, especially in a rising interest rate environment. This concern is further amplified by the company's reliance on debt to finance its operations, making it vulnerable to changes in market conditions. The bull case may be underweighting the potential impact of sustained negative cash flow on the company's long-term sustainability.\n\nVERDICT: Bearish \nCONFIDENCE: High\nCHANGES VERDICT: YES",
+      "bear_downgraded": false
     },
     {
       "ticker": "VST",
@@ -356,14 +366,16 @@
       "status": "research_complete",
       "thesis": "Nuclear + gas power generator. 14.6x forward PE for 43% growth \u2014 cheapest AI power play in the market. Just closed Energy Harbor acquisition adding 4 nuclear plants. Illinois nuclear plants (Clinton, Quad Cities) are in direct crosshairs of AI datacenter power demand. Wholesale power prices in Texas and PJM rising structurally. -27% from $219 ATH.",
       "added": "2026-05-28",
-      "verdict": "RESEARCH-WORTHY",
+      "verdict": "WATCHLIST",
       "buy_target": 160,
       "current_price": null,
       "next_action": "RESEARCH \u2014 14.6x forward PE for 43% growth is the best risk/reward in the energy theme. Verify Energy Harbor integration and nuclear capacity utilization in latest earnings. At current price ~$160 is already near buy target.",
       "research_file": "output/research/VST_2026-07-24.md",
       "last_researched": "2026-07-24",
       "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying VST right now is its negative free cash flow (FCF) of $-164M, which raises significant concerns about the company's ability to generate cash and service its substantial net debt of $19,909M, potentially undermining its growth prospects and making its valuation, including a trailing P/E ratio of 28.3x, less sustainable. This financial health concern is not adequately addressed by the bullish outlook based on revenue growth and investor interest. The drawdown of 23.1% from the 52-week high also suggests recent market skepticism about VST's valuation.\n\nCHANGES VERDICT: YES"
+      "bear_check": "The strongest argument against buying VST right now is its negative free cash flow (FCF) of $-164M, which raises significant concerns about the company's ability to generate cash and service its substantial net debt of $19,909M, potentially undermining its growth prospects and making its valuation, including a trailing P/E ratio of 28.3x, less sustainable. This financial health concern is not adequately addressed by the bullish outlook based on revenue growth and investor interest. The drawdown of 23.1% from the 52-week high also suggests recent market skepticism about VST's valuation.\n\nCHANGES VERDICT: YES",
+      "llm_verdict": "RESEARCH-WORTHY",
+      "bear_downgraded": true
     },
     {
       "ticker": "VRT",
@@ -428,14 +440,16 @@
       "status": "research_complete",
       "thesis": "Payments toll road like Visa \u2014 61% op margin, 16% growth, 21x fwd PE. -19% from ATH. Every digital transaction pays Mastercard regardless of cycle. Quality compounder on a rare sale.",
       "added": "2026-06-08",
-      "verdict": "RESEARCH-WORTHY",
+      "verdict": "WATCHLIST",
       "buy_target": 455,
       "current_price": null,
       "next_action": "RESEARCH \u2014 quality compounder pulled back. Buy near $455 or current levels.",
       "research_file": "output/research/MA_2026-07-02.md",
       "last_researched": "2026-07-02",
       "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying MA right now is that the bull case may be underweighting the potential disruption to Mastercard's business from stablecoins, as hinted at by the headlines \"Circle stock plummeted because of this new stablecoin\" and \"Open USD Is Coming for Circle's Margins\", which could erode MA's margins and growth prospects. The note's acknowledgement of \"discussions around stablecoins\" as a potential challenge is brief and lacks specificity, suggesting that the bull case may not be fully accounting for this risk. The recent news about Circle and Trump's crypto losses also adds to the uncertainty surrounding the crypto and stablecoin space, which could have a negative impact on MA's business.\n\nCHANGES VERDICT: YES"
+      "bear_check": "The strongest argument against buying MA right now is that the bull case may be underweighting the potential disruption to Mastercard's business from stablecoins, as hinted at by the headlines \"Circle stock plummeted because of this new stablecoin\" and \"Open USD Is Coming for Circle's Margins\", which could erode MA's margins and growth prospects. The note's acknowledgement of \"discussions around stablecoins\" as a potential challenge is brief and lacks specificity, suggesting that the bull case may not be fully accounting for this risk. The recent news about Circle and Trump's crypto losses also adds to the uncertainty surrounding the crypto and stablecoin space, which could have a negative impact on MA's business.\n\nCHANGES VERDICT: YES",
+      "llm_verdict": "RESEARCH-WORTHY",
+      "bear_downgraded": true
     },
     {
       "ticker": "ADP",
@@ -451,7 +465,8 @@
       "research_file": "output/research/ADP_2026-06-25.md",
       "last_researched": "2026-06-25",
       "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying ADP right now is that the bull case may be underweighting the potential impact of market volatility and sector-specific challenges, as evidenced by the drawdown from its 52-week high of -30.2%, which could indicate underlying issues not fully addressed by the company's acquisition and transformation strategies. This drawdown suggests that there may be unaccounted-for risks or challenges facing ADP that are not fully captured in the bullish research note. The lack of detailed insight into the causes of this drawdown and ADP's strategic responses to navigate these challenges raises concerns about the company's future performance.\n\nVERDICT: BEARISH\nCONFIDENCE: MEDIUM\nCHANGES VERDICT: YES"
+      "bear_check": "The strongest argument against buying ADP right now is that the bull case may be underweighting the potential impact of market volatility and sector-specific challenges, as evidenced by the drawdown from its 52-week high of -30.2%, which could indicate underlying issues not fully addressed by the company's acquisition and transformation strategies. This drawdown suggests that there may be unaccounted-for risks or challenges facing ADP that are not fully captured in the bullish research note. The lack of detailed insight into the causes of this drawdown and ADP's strategic responses to navigate these challenges raises concerns about the company's future performance.\n\nVERDICT: BEARISH\nCONFIDENCE: MEDIUM\nCHANGES VERDICT: YES",
+      "bear_downgraded": false
     },
     {
       "ticker": "PAYX",
@@ -460,14 +475,16 @@
       "status": "research_complete",
       "thesis": "Payroll for SMBs \u2014 44% op margin, 20% growth, 4.7% dividend yield, 16.8x fwd PE. -38.6% from ATH. High-quality at a genuinely cheap multiple with strong income.",
       "added": "2026-06-08",
-      "verdict": "RESEARCH-WORTHY",
+      "verdict": "WATCHLIST",
       "buy_target": 95,
       "current_price": null,
       "next_action": "RESEARCH \u2014 cheap quality + 4.7% yield. Verify SMB client retention trends.",
       "research_file": "output/research/PAYX_2026-07-24.md",
       "last_researched": "2026-07-24",
       "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying PAYX right now is the recent insider sales by the Chairman and CFO, which may indicate a lack of confidence in the company's near-term prospects, and could be a sign of internal knowledge that is not yet reflected in the public market data. This is particularly concerning given the company's relatively high EV/EBITDA ratio of 26.6x, which may not be justified if the insiders' actions are a harbinger of weaker future performance. The bull case may be underweighting the potential implications of these insider sales.\n\nCHANGES VERDICT: YES"
+      "bear_check": "The strongest argument against buying PAYX right now is the recent insider sales by the Chairman and CFO, which may indicate a lack of confidence in the company's near-term prospects, and could be a sign of internal knowledge that is not yet reflected in the public market data. This is particularly concerning given the company's relatively high EV/EBITDA ratio of 26.6x, which may not be justified if the insiders' actions are a harbinger of weaker future performance. The bull case may be underweighting the potential implications of these insider sales.\n\nCHANGES VERDICT: YES",
+      "llm_verdict": "RESEARCH-WORTHY",
+      "bear_downgraded": true
     },
     {
       "ticker": "DHR",
@@ -546,14 +563,16 @@
       "status": "research_complete",
       "thesis": "GE HealthCare \u2014 medical imaging (MRI, CT, ultrasound) with AI-assisted diagnostics. 12x fwd PE, 7% growth, -28% from ATH. Reasonable valuation on an AI-adjacent healthcare leader.",
       "added": "2026-06-08",
-      "verdict": "RESEARCH-WORTHY",
+      "verdict": "WATCHLIST",
       "buy_target": 64,
       "current_price": null,
       "next_action": "RESEARCH \u2014 AI imaging at 12x fwd PE after 28% pullback. Verify order backlog.",
       "research_file": "output/research/GEHC_2026-07-24.md",
       "last_researched": "2026-07-24",
       "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying GEHC right now is that the company's significant net debt of $8316M, despite the positive free cash flow, may still pose a substantial risk, especially if interest rates rise or the company's cash flow generation slows down, which could negatively impact its ability to manage its debt and invest in growth initiatives. This concern is not fully alleviated by the positive free cash flow, as it only partially offsets the large debt burden. Furthermore, the bull case may be underweighting the potential risks associated with the company's debt levels.\n\nCHANGES VERDICT: YES"
+      "bear_check": "The strongest argument against buying GEHC right now is that the company's significant net debt of $8316M, despite the positive free cash flow, may still pose a substantial risk, especially if interest rates rise or the company's cash flow generation slows down, which could negatively impact its ability to manage its debt and invest in growth initiatives. This concern is not fully alleviated by the positive free cash flow, as it only partially offsets the large debt burden. Furthermore, the bull case may be underweighting the potential risks associated with the company's debt levels.\n\nCHANGES VERDICT: YES",
+      "llm_verdict": "RESEARCH-WORTHY",
+      "bear_downgraded": true
     },
     {
       "ticker": "ZBH",
@@ -583,7 +602,8 @@
       "research_file": "output/research/MKTX_2026-06-22.md",
       "last_researched": "2026-06-22",
       "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying MKTX right now is its negative free cash flow of $-254M, which raises significant concerns about the company's ability to generate cash and sustain its operations, especially considering the significant drawdown from its 52-week high. This issue is compounded by the lack of concrete evidence to support the claim of benefiting from abating competition and electronic trading reacceleration. The bull case may be underweighting the potential cash flow problems that could exacerbate the existing drawdown.\n\nCHANGES VERDICT: YES"
+      "bear_check": "The strongest argument against buying MKTX right now is its negative free cash flow of $-254M, which raises significant concerns about the company's ability to generate cash and sustain its operations, especially considering the significant drawdown from its 52-week high. This issue is compounded by the lack of concrete evidence to support the claim of benefiting from abating competition and electronic trading reacceleration. The bull case may be underweighting the potential cash flow problems that could exacerbate the existing drawdown.\n\nCHANGES VERDICT: YES",
+      "bear_downgraded": false
     },
     {
       "ticker": "LPLA",
@@ -592,14 +612,16 @@
       "status": "research_complete",
       "thesis": "LPL Financial \u2014 largest independent broker-dealer platform. 35% revenue growth (!), 10x fwd PE, -29% from ATH. Fast-growing, cheap, advisor-network scale moat.",
       "added": "2026-06-08",
-      "verdict": "RESEARCH-WORTHY",
+      "verdict": "WATCHLIST",
       "buy_target": 285,
       "current_price": null,
       "next_action": "RESEARCH \u2014 35% growth at 10x forward PE is rare. Verify advisor headcount + asset growth.",
       "research_file": "output/research/LPLA_2026-07-02.md",
       "last_researched": "2026-07-02",
       "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying LPLA right now is its high trailing P/E ratio of 26.4x, which suggests potential overvaluation in the current market, especially when compared to its forward P/E of 10.2x, indicating a possible correction or downturn in the stock's value. This discrepancy, combined with the significant net debt of $4771M, raises concerns about the company's valuation and financial health. The bullish note's emphasis on strong revenue growth and potential undervaluation may be overshadowed by these financial metrics.\n\nCHANGES VERDICT: YES"
+      "bear_check": "The strongest argument against buying LPLA right now is its high trailing P/E ratio of 26.4x, which suggests potential overvaluation in the current market, especially when compared to its forward P/E of 10.2x, indicating a possible correction or downturn in the stock's value. This discrepancy, combined with the significant net debt of $4771M, raises concerns about the company's valuation and financial health. The bullish note's emphasis on strong revenue growth and potential undervaluation may be overshadowed by these financial metrics.\n\nCHANGES VERDICT: YES",
+      "llm_verdict": "RESEARCH-WORTHY",
+      "bear_downgraded": true
     },
     {
       "ticker": "INVH",
@@ -629,7 +651,8 @@
       "research_file": "output/research/NFLX_2026-06-11.md",
       "last_researched": "2026-06-11",
       "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying NFLX right now is that the company's significant net debt of $4454M, combined with a relatively high trailing P/E of 26.4x, may indicate an overvaluation of the stock, especially considering the drawdown from the 52-week high of -38.9% may not be a strong enough buying opportunity to outweigh these concerns. This debt and valuation multiple could pose a risk to investors if the company's growth slows or if interest rates rise, making it more expensive to service the debt. The bull case may be underweighting the potential impact of this debt on NFLX's future financial performance.\n\nVERDICT: SELL \nCONFIDENCE: HIGH \nCHANGES VERDICT: YES"
+      "bear_check": "The strongest argument against buying NFLX right now is that the company's significant net debt of $4454M, combined with a relatively high trailing P/E of 26.4x, may indicate an overvaluation of the stock, especially considering the drawdown from the 52-week high of -38.9% may not be a strong enough buying opportunity to outweigh these concerns. This debt and valuation multiple could pose a risk to investors if the company's growth slows or if interest rates rise, making it more expensive to service the debt. The bull case may be underweighting the potential impact of this debt on NFLX's future financial performance.\n\nVERDICT: SELL \nCONFIDENCE: HIGH \nCHANGES VERDICT: YES",
+      "bear_downgraded": false
     },
     {
       "ticker": "FLUT",

@@ -242,10 +242,17 @@ IMPORTANT GROUNDING RULES:
   management quotes, customer names, analyst targets), write "unverified" — do NOT invent it.
 - Distinguish clearly between facts from the provided data vs. your general knowledge.
 
-MANDATORY OUTPUT FORMAT — your response MUST end with these two lines, EXACTLY,
+MANDATORY OUTPUT FORMAT — your response MUST end with these four lines, EXACTLY,
 as the very last lines, with nothing after them:
 VERDICT: <one of: RESEARCH-WORTHY | WATCHLIST | PASS | RED FLAG>
 CONFIDENCE: <one of: HIGH | MEDIUM | LOW>
+THESIS: <one sentence, durable language only — NEVER a specific dollar price.
+  Use multiples/%/growth rates instead (e.g. "15x forward earnings for 40% growth"
+  not "$148 is cheap") since a dollar figure goes stale the moment the price moves.>
+BUY_TRIGGER_DRAWDOWN_PCT: <integer, e.g. -20. The % drawdown from the 52-week high
+  that would make this a good entry. Use 0 if the current price already clears your
+  bar. This drives a LIVE buy-target price recomputed from the current 52-week high
+  every time quotes refresh — so it must be a durable judgment, not today's price.>
 """
     return template.replace("TICKER: {{TICKER}}", f"TICKER: {ticker}") + "\n" + context
 
@@ -270,6 +277,38 @@ def _extract_confidence(text: str) -> str | None:
     return m.group(1).upper() if m else None
 
 
+def _extract_thesis(text: str) -> str | None:
+    """Pull the THESIS: line — durable language only, never a dollar price."""
+    m = re.search(r"THESIS:\s*(.+)", text)
+    if not m:
+        return None
+    thesis = m.group(1).strip()
+    # Strip a leading dollar figure if the model ignored the instruction — better
+    # to show nothing than to persist a price that will be wrong within days.
+    thesis = re.sub(r"\$\d[\d,]*\.?\d*", "[price omitted — see live data]", thesis)
+    return thesis or None
+
+
+def _extract_drawdown_trigger(text: str) -> float | None:
+    """Pull BUY_TRIGGER_DRAWDOWN_PCT: — the durable, self-updating buy-target basis."""
+    m = re.search(r"BUY_TRIGGER_DRAWDOWN_PCT:\s*(-?\d+(?:\.\d+)?)", text)
+    if not m:
+        return None
+    pct = float(m.group(1))
+    # Sanity clamp: a trigger outside [-90, 0] is not a usable drawdown target.
+    return pct if -90 <= pct <= 0 else None
+
+
+def _live_buy_target(ticker: str, drawdown_trigger_pct: float | None, quotes: dict) -> float | None:
+    """Recompute a buy target from the CURRENT 52-week high — never a stale price."""
+    if drawdown_trigger_pct is None:
+        return None
+    high_52w = quotes.get("tickers", {}).get(ticker, {}).get("high_52w")
+    if not high_52w:
+        return None
+    return round(high_52w * (1 + drawdown_trigger_pct / 100), 2)
+
+
 def _bear_check(provider, api_key, ticker, bull_text, news_block) -> str | None:
     """Devil's-advocate second pass: argue AGAINST the buy to surface blind spots."""
     prompt = (
@@ -287,22 +326,74 @@ def _bear_check(provider, api_key, ticker, bull_text, news_block) -> str | None:
         return None
 
 
-def _update_watchlist(ticker: str, verdict: str, output_file: str, confidence: str | None = None, bear: str | None = None):
+def _bear_flips_verdict(bear_text: str | None) -> bool:
+    """True if the devil's-advocate pass explicitly says the bear case changes the call."""
+    if not bear_text:
+        return False
+    return bool(re.search(r"CHANGES VERDICT:\s*YES", bear_text, re.IGNORECASE))
+
+
+def _synthesize_next_action(final_verdict: str, thesis: str | None, drawdown_pct: float | None) -> str:
+    """Deterministic, durable next_action — no dollar figures, so it never goes stale."""
+    t = thesis or "see thesis"
+    if final_verdict == "RESEARCH-WORTHY":
+        return f"RESEARCH — {t} Current levels already clear the entry bar."
+    if final_verdict == "WATCHLIST":
+        if drawdown_pct is not None and drawdown_pct < 0:
+            return f"WAIT — {t} Revisit at {abs(drawdown_pct):.0f}% below the 52-week high."
+        return f"WAIT — {t}"
+    if final_verdict == "RED FLAG":
+        return f"AVOID — {t}"
+    return f"DROP — {t}"
+
+
+def _update_watchlist(
+    ticker: str, verdict: str, output_file: str,
+    confidence: str | None = None, bear: str | None = None,
+    thesis: str | None = None, drawdown_trigger_pct: float | None = None,
+    live_buy_target: float | None = None,
+):
     with open(WATCHLIST_PATH) as f:
         wl = json.load(f)
 
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    # Policy: a bear-case check that explicitly says it changes the call
+    # downgrades RESEARCH-WORTHY -> WATCHLIST automatically. Storing the bear
+    # text without acting on it (the previous behavior) meant 8 names were
+    # shown as buy-ready even though their own self-critique said not to buy.
+    downgraded = verdict == "RESEARCH-WORTHY" and _bear_flips_verdict(bear)
+    final_verdict = "WATCHLIST" if downgraded else verdict
+
+    next_action = _synthesize_next_action(final_verdict, thesis, drawdown_trigger_pct)
+
     updated = False
     for candidate in wl.get("candidates", []):
         if candidate["ticker"] == ticker:
-            candidate["verdict"]        = verdict
-            candidate["research_file"]  = output_file
+            candidate["verdict"]         = final_verdict
+            candidate["llm_verdict"]     = verdict          # raw model output, kept for transparency
+            candidate["bear_downgraded"] = downgraded
+            candidate["research_file"]   = output_file
             candidate["last_researched"] = today
-            candidate["status"]         = "research_complete"
+            candidate["status"]          = "research_complete"
             if confidence:
                 candidate["confidence"] = confidence
             if bear:
                 candidate["bear_check"] = bear.strip()
+            # Overwrite the stale hand-written content every time real research
+            # runs — this was the actual gap: verdict/confidence updated but
+            # thesis/buy_target/next_action stayed frozen at whatever was first
+            # written, even across dozens of re-research runs.
+            if thesis:
+                candidate["thesis"] = thesis
+            candidate["next_action"] = next_action
+            if drawdown_trigger_pct is not None:
+                # Durable primitive — target_alerts.py recomputes buy_target from
+                # this + the live 52-week high on every quote refresh, so the
+                # target self-heals instead of rotting as a fixed dollar figure.
+                candidate["buy_trigger_drawdown_pct"] = drawdown_trigger_pct
+            if live_buy_target is not None:
+                candidate["buy_target"] = live_buy_target
             updated = True
             break
 
@@ -312,10 +403,14 @@ def _update_watchlist(ticker: str, verdict: str, output_file: str, confidence: s
             "name":            ticker,
             "theme":           "unknown",
             "status":          "research_complete",
-            "thesis":          "",
+            "thesis":          thesis or "",
             "added":           today,
-            "verdict":         verdict,
-            "next_action":     "Review the research output",
+            "verdict":         final_verdict,
+            "llm_verdict":     verdict,
+            "bear_downgraded": downgraded,
+            "next_action":     next_action,
+            "buy_trigger_drawdown_pct": drawdown_trigger_pct,
+            "buy_target":      live_buy_target,
             "research_file":   output_file,
             "last_researched": today,
         })
@@ -323,6 +418,8 @@ def _update_watchlist(ticker: str, verdict: str, output_file: str, confidence: s
     wl["last_updated"] = today
     with open(WATCHLIST_PATH, "w") as f:
         json.dump(wl, f, indent=2)
+
+    return final_verdict, downgraded
 
 
 # ── Main ─────────────────────────────────────────────────────────────────────
@@ -372,6 +469,9 @@ def main():
 
     verdict = _extract_verdict(text)
     confidence = _extract_confidence(text)
+    thesis = _extract_thesis(text)
+    drawdown_trigger_pct = _extract_drawdown_trigger(text)
+    live_buy_target = _live_buy_target(ticker, drawdown_trigger_pct, quotes)
 
     # Devil's-advocate pass only for buy-ready names — surfaces blind spots
     bear = None
@@ -386,9 +486,17 @@ def main():
     if verdict:
         conf_str = f" (confidence: {confidence})" if confidence else ""
         print(f"✅  Verdict: {verdict}{conf_str}")
+        if thesis:
+            print(f"📄  Thesis: {thesis}")
         if not args.save_only:
-            _update_watchlist(ticker, verdict, f"output/research/{filename}", confidence, bear)
-            print(f"📝  Updated watchlist.json → {ticker} = {verdict}{conf_str}")
+            final_verdict, downgraded = _update_watchlist(
+                ticker, verdict, f"output/research/{filename}", confidence, bear,
+                thesis=thesis, drawdown_trigger_pct=drawdown_trigger_pct,
+                live_buy_target=live_buy_target,
+            )
+            if downgraded:
+                print(f"⚠️  Bear check flipped the call — downgraded {verdict} → {final_verdict}")
+            print(f"📝  Updated watchlist.json → {ticker} = {final_verdict}{conf_str}")
     else:
         print("⚠   Could not extract a clear verdict from the response.")
 

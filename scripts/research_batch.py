@@ -67,16 +67,29 @@ def _select_tickers(max_n: int) -> list[str]:
         drawdown = quotes.get(ticker, {}).get("drawdown_from_high")
         stale_days = _days_since(c.get("last_researched"))
 
-        # Priority score: bigger = more urgent
+        # A candidate can carry a last_researched date + thesis that were
+        # written by hand (in conversation) rather than by this pipeline —
+        # those have no research_file and were never actually grounded in
+        # live fundamentals/news. Without this check, +100 for RESEARCH-WORTHY
+        # let the same handful of names win every run forever, starving the
+        # 32 names that had never been through research_ticker.py at all.
+        never_pipeline_researched = not c.get("research_file")
+
+        # Priority score: bigger = more urgent. Never-researched names always
+        # outrank everything else so the backlog actually drains.
         score = 0
+        if never_pipeline_researched:
+            score += 1000
         if verdict == "RESEARCH-WORTHY":
             score += 100
         if drawdown is not None and drawdown <= ALERT_THRESHOLD:
             score += 50
         score += min(stale_days, 30)   # staleness adds up to 30
 
-        # Only include if stale OR freshly dipping
-        if stale_days >= STALE_DAYS or (drawdown is not None and drawdown <= ALERT_THRESHOLD):
+        # Include if: never actually researched, OR stale, OR freshly dipping
+        if (never_pipeline_researched
+                or stale_days >= STALE_DAYS
+                or (drawdown is not None and drawdown <= ALERT_THRESHOLD)):
             scored.append((score, ticker))
 
     scored.sort(reverse=True)

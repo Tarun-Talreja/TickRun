@@ -34,9 +34,36 @@ def _load(path, default=None):
     return default if default is not None else {}
 
 
+def _refresh_live_targets(wl: dict, quotes: dict) -> bool:
+    """Recompute buy_target from buy_trigger_drawdown_pct + the CURRENT 52-week
+    high. research_ticker.py stores the drawdown trigger (a durable judgment,
+    e.g. "-20%") rather than a dollar figure; this makes the displayed target
+    self-heal every quote refresh instead of rotting as a stale fixed price.
+    Candidates researched before this existed have no trigger and are untouched.
+    """
+    changed = False
+    for c in wl.get("candidates", []):
+        pct = c.get("buy_trigger_drawdown_pct")
+        if pct is None:
+            continue
+        high = quotes.get(c.get("ticker", ""), {}).get("high_52w")
+        if not high:
+            continue
+        new_target = round(high * (1 + pct / 100), 2)
+        if c.get("buy_target") != new_target:
+            c["buy_target"] = new_target
+            changed = True
+    return changed
+
+
 def main():
     wl     = _load(WATCHLIST_PATH, {"candidates": []})
     quotes = _load(QUOTES_PATH).get("tickers", {})
+
+    if _refresh_live_targets(wl, quotes):
+        with open(WATCHLIST_PATH, "w") as f:
+            json.dump(wl, f, indent=2)
+        print("🔄 Refreshed live buy targets from current 52-week highs.")
 
     hits = []
     approaching = []
