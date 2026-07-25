@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-25T21:30:41Z",
-  "count": 110,
-  "average": 45.6,
+  "generated_at": "2026-07-25T21:46:16Z",
+  "count": 113,
+  "average": 47.0,
   "results": [
     {
       "file": "output/research/ADP_2026-06-10.md",
@@ -1512,6 +1512,19 @@
       ]
     },
     {
+      "file": "output/research/MRVL_2026-07-25.md",
+      "ticker": "MRVL",
+      "verdict": "RESEARCH-WORTHY",
+      "score": 100.0,
+      "breakdown": {
+        "structure": 40.0,
+        "format": 25.0,
+        "groundedness": 20.0,
+        "bear_check": 15.0
+      },
+      "notes": []
+    },
+    {
       "file": "output/research/MSFT_2026-06-08.md",
       "ticker": "MSFT",
       "verdict": "RESEARCH-WORTHY",
@@ -1715,6 +1728,21 @@
         "missing/malformed THESIS line",
         "missing/malformed BUY_TRIGGER_DRAWDOWN_PCT line",
         "revenue_growth: text says 16.2, data says 13.4",
+        "not RESEARCH-WORTHY \u2014 bear check not required"
+      ]
+    },
+    {
+      "file": "output/research/NOW_2026-07-25.md",
+      "ticker": "NOW",
+      "verdict": "WATCHLIST",
+      "score": 100.0,
+      "breakdown": {
+        "structure": 40.0,
+        "format": 25.0,
+        "groundedness": 20.0,
+        "bear_check": 15.0
+      },
+      "notes": [
         "not RESEARCH-WORTHY \u2014 bear check not required"
       ]
     },
@@ -2315,6 +2343,21 @@
         "missing section 9 (confidence)",
         "missing/malformed THESIS line",
         "missing/malformed BUY_TRIGGER_DRAWDOWN_PCT line",
+        "not RESEARCH-WORTHY \u2014 bear check not required"
+      ]
+    },
+    {
+      "file": "output/research/STZ_2026-07-25.md",
+      "ticker": "STZ",
+      "verdict": "PASS",
+      "score": 100.0,
+      "breakdown": {
+        "structure": 40.0,
+        "format": 25.0,
+        "groundedness": 20.0,
+        "bear_check": 15.0
+      },
+      "notes": [
         "not RESEARCH-WORTHY \u2014 bear check not required"
       ]
     },

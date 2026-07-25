@@ -21,6 +21,7 @@ import json
 import os
 import subprocess
 import sys
+import time
 from datetime import datetime, timezone
 
 SCRIPT_DIR     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -96,6 +97,52 @@ def _select_tickers(max_n: int) -> list[str]:
     return [t for _, t in scored[:max_n]]
 
 
+def _in_ci() -> bool:
+    return os.environ.get("GITHUB_ACTIONS") == "true"
+
+
+def _git(*args) -> subprocess.CompletedProcess:
+    return subprocess.run(["git", *args], cwd=SCRIPT_DIR, capture_output=True, text=True)
+
+
+def _commit_and_push_one(ticker: str, filename: str) -> bool:
+    """Commit + push this ticker's result immediately.
+
+    Why per-ticker rather than once at the end: a 12-ticker batch was cancelled
+    at the 35-minute workflow timeout with every ticker successfully researched
+    and NONE of it landed, because the single end-of-run commit never got a
+    chance to execute. Real LLM cost, real time, zero output. Committing after
+    each ticker means a timeout can only ever cost the ONE ticker in flight,
+    never the tickers already finished.
+
+    Only runs in CI (GITHUB_ACTIONS=true) — local/manual runs should not be
+    silently pushing to the repo.
+    """
+    _git("add", "data/watchlist.json", f"output/research/{filename}")
+    if _git("diff", "--cached", "--quiet").returncode == 0:
+        return True   # nothing changed (e.g. --save-only path) — not an error
+
+    commit = _git("commit", "-m", f"Auto: research {ticker}")
+    if commit.returncode != 0:
+        print(f"   ⚠ commit failed for {ticker}: {commit.stderr.strip()[:200]}")
+        return False
+
+    for attempt in range(3):
+        pull = _git("pull", "--rebase", "--autostash", "origin", "main")
+        if pull.returncode != 0:
+            print(f"   ⚠ pull --rebase failed for {ticker} (attempt {attempt+1}): {pull.stderr.strip()[:200]}")
+            time.sleep(3)
+            continue
+        push = _git("push", "origin", "main")
+        if push.returncode == 0:
+            return True
+        print(f"   ⚠ push failed for {ticker} (attempt {attempt+1}): {push.stderr.strip()[:200]}")
+        time.sleep(3)
+
+    print(f"   ⚠ could not land {ticker}'s research after retries — continuing to next ticker")
+    return False
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--max", type=int, default=MAX_PER_RUN,
@@ -111,8 +158,15 @@ def main():
         print("✅ No tickers need re-research today.")
         sys.exit(0)
 
+    incremental = _in_ci()
+    if incremental:
+        _git("config", "user.name", "github-actions[bot]")
+        _git("config", "user.email", "github-actions[bot]@users.noreply.github.com")
+        print("🔒 Incremental commit mode ON — each ticker lands as soon as it finishes.\n")
+
     print(f"🔬 Daily research queue ({len(tickers)}): {', '.join(tickers)}\n")
-    failures = []
+    failures, landed = [], []
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     for ticker in tickers:
         print(f"── {ticker} " + "─" * 40)
         result = subprocess.run(
@@ -121,8 +175,17 @@ def main():
         )
         if result.returncode != 0:
             failures.append(ticker)
+            continue
+        if incremental:
+            filename = f"{ticker}_{today}.md"
+            if _commit_and_push_one(ticker, filename):
+                landed.append(ticker)
+        else:
+            landed.append(ticker)
 
     print(f"\n✅ Researched {len(tickers) - len(failures)}/{len(tickers)} tickers.")
+    if incremental:
+        print(f"   Landed (committed+pushed): {len(landed)}/{len(tickers)}")
     if failures:
         print(f"⚠ Failed: {', '.join(failures)}")
 
