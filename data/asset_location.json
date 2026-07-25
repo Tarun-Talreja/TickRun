@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-25T20:18:28Z",
+  "generated_at": "2026-07-25T21:45:06Z",
   "rules": {
     "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
     "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
     "high_yield_threshold_pct": 3.0
   },
   "counts": {
-    "roth": 51,
+    "roth": 50,
     "taxable": 2
   },
   "roth": [
@@ -119,16 +119,6 @@
       "account": "ROTH",
       "priority": "high",
       "reason": "Highest-conviction growth pick (34% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
-    },
-    {
-      "ticker": "STZ",
-      "name": "STZ",
-      "theme": "defensive_income",
-      "verdict": "WATCHLIST",
-      "div_yield_pct": 3.17,
-      "account": "ROTH",
-      "priority": "high",
-      "reason": "3.2% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
     },
     {
       "ticker": "TLN",
@@ -573,16 +563,6 @@
       "account": "ROTH",
       "priority": "high",
       "reason": "6.8% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
-    },
-    {
-      "ticker": "STZ",
-      "name": "STZ",
-      "theme": "defensive_income",
-      "verdict": "WATCHLIST",
-      "div_yield_pct": 3.17,
-      "account": "ROTH",
-      "priority": "high",
-      "reason": "3.2% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
     },
     {
       "ticker": "INVH",
