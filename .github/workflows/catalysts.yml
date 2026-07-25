@@ -38,6 +38,10 @@ jobs:
       - name: Rebuild dashboard
         run: python scripts/build_dashboard.py
 
+      - name: Daily brief (what changed since yesterday)
+        run: python scripts/daily_brief.py
+        continue-on-error: true
+
       - name: Sync with remote before commit
         run: |
           git config user.name  "github-actions[bot]"
@@ -50,6 +54,8 @@ jobs:
           file_pattern: >-
             data/catalysts.json
             output/dashboard.json
+            output/daily_brief.json
+            data/brief_snapshot.json
 
       - name: Notify on imminent catalysts
         uses: actions/github-script@v7

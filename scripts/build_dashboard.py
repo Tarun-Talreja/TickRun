@@ -41,6 +41,7 @@ TRACK_RECORD_PATH   = os.path.join(SCRIPT_DIR, "output", "track_record.json")
 DISCOVERED_PATH     = os.path.join(SCRIPT_DIR, "data", "discovered.json")
 ASSET_LOCATION_PATH = os.path.join(SCRIPT_DIR, "data", "asset_location.json")
 CATALYSTS_PATH      = os.path.join(SCRIPT_DIR, "data", "catalysts.json")
+DAILY_BRIEF_PATH    = os.path.join(SCRIPT_DIR, "output", "daily_brief.json")
 OUTPUT_PATH         = os.path.join(SCRIPT_DIR, "output", "dashboard.json")
 os.makedirs(os.path.join(SCRIPT_DIR, "output"), exist_ok=True)
 
@@ -277,6 +278,7 @@ def main():
         "discovered":      _load(DISCOVERED_PATH),
         "asset_location":  _load(ASSET_LOCATION_PATH),
         "catalysts":       _load(CATALYSTS_PATH),
+        "daily_brief":     _load(DAILY_BRIEF_PATH),
         "signals": {
             "pullback_alerts":    alerts.get("pullback_alerts", []),
             "stale_research":     alerts.get("stale_research", []),

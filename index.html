@@ -278,6 +278,17 @@ html,body{
 .conf-high{background:#00f08222;color:#00f082}
 .conf-medium{background:#ffaa0022;color:#ffaa00}
 .conf-low{background:#ff445522;color:#ff6677}
+.brief-card{margin:0 16px 14px;padding:14px 16px;background:linear-gradient(135deg,var(--bg2),#0a1a14);border:1px solid #00f08233;border-radius:12px}
+.brief-head{display:flex;align-items:baseline;gap:9px;margin-bottom:10px}
+.brief-label{font-size:11px;font-weight:700;letter-spacing:.08em;color:#00f082;text-transform:uppercase}
+.brief-count{font-size:10px;color:var(--text2)}
+.brief-item{padding:8px 0;border-top:1px solid var(--border)}
+.brief-item:first-of-type{border-top:none;padding-top:0}
+.brief-line{font-size:13px;font-weight:600;color:var(--text0);line-height:1.35}
+.brief-detail{font-size:11px;color:var(--text2);margin-top:3px;line-height:1.4}
+.brief-p1 .brief-line{color:#ff6677}
+.brief-quiet{font-size:12px;color:var(--text2)}
+.brief-more{margin-top:9px;font-size:11px;color:var(--cyan);cursor:pointer;font-weight:600}
 .digest-card{margin:0 16px 14px;padding:14px 16px;background:linear-gradient(135deg,var(--bg2),#0a1420);border:1px solid var(--border);border-radius:12px}
 .digest-label{font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--cyan);text-transform:uppercase;margin-bottom:7px}
 .digest-text{font-size:13px;line-height:1.5;color:var(--text0)}
@@ -929,6 +940,7 @@ function renderHome(data){
     <div class="home-headline">Here's what needs<br>your attention today.</div>
     <div class="home-sub" id="homeTs">—</div>
   </div>
+  ${renderDailyBrief(data)}
   ${digest.narrative?`<div class="digest-card s-anim" style="animation-delay:.07s">
     <div class="digest-label">📋 This Week</div>
     <div class="digest-text">${esc(digest.narrative)}</div>
@@ -1456,6 +1468,30 @@ function renderSignals(data){
 }
 
 // ── RENDER PORTFOLIO ──────────────────────────────────────────────────────────
+function renderDailyBrief(data){
+  const b = data.daily_brief||{};
+  const items = b.items||[];
+  const ICON = {catalyst:'📅', new_target:'🎯', mover:'⚡', sec_stake:'🏛️',
+                verdict_change:'🔄', data_warning:'⚠️'};
+  if(b.quiet_day || !items.length){
+    return `<div class="brief-card s-anim" style="animation-delay:.06s">
+      <div class="brief-head"><span class="brief-label">☀️ Today</span></div>
+      <div class="brief-quiet">Nothing changed since yesterday. No action needed.</div>
+    </div>`;
+  }
+  return `<div class="brief-card s-anim" style="animation-delay:.06s">
+    <div class="brief-head">
+      <span class="brief-label">☀️ Today</span>
+      <span class="brief-count">${items.length} thing${items.length>1?'s':''} that changed</span>
+    </div>
+    ${items.map(i=>`<div class="brief-item brief-p${i.priority}">
+      <div class="brief-line">${ICON[i.kind]||'•'} ${esc(i.headline)}</div>
+      ${i.detail?`<div class="brief-detail">${esc(i.detail)}</div>`:''}
+    </div>`).join('')}
+    ${b.hidden_count?`<div class="brief-more" onclick="navigateTo('signals')">+${b.hidden_count} more in Signals →</div>`:''}
+  </div>`;
+}
+
 function renderAssetLocation(data){
   const al = data.asset_location||{};
   const roth = al.roth||[], taxable = al.taxable||[], overrides = al.tax_drag_overrides||[];
