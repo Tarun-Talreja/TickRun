@@ -163,12 +163,34 @@ def _call_llm(provider: str, api_key: str, prompt: str) -> str:
 # ── Prompt building ───────────────────────────────────────────────────────────
 
 def _load_prompt_template() -> str:
+    """Extract the actual LLM-facing instructions from prompts/stock_research.md.
+
+    BUG THIS REPLACES: the file has a leading '# Title' + human copy-paste note,
+    then the real prompt (persona -> numbered sections -> closing remarks). It
+    used to be delimited by exactly two '---' lines, and content.split("---")[1]
+    grabbed the middle. Adding Section 10 introduced a THIRD '---' fence, which
+    shifted every index — parts[1] became the 142-char human note ("Copy
+    everything between the ` markers into Claude...") instead of the prompt.
+    The model was never receiving the persona, the portfolio context, or the
+    9 numbered section instructions; it only ever saw the live-fundamentals
+    block appended in _build_prompt plus the 4 mandatory output lines. That is
+    the actual reason research came back as unstructured prose with no
+    section headers — not a model-compliance problem.
+
+    Fix: anchor on the first stable content marker ("You are my fundamental
+    research analyst") rather than counting dividers, so adding or removing
+    '---' fences elsewhere in the file can't silently break this again.
+    """
     with open(PROMPT_PATH) as f:
         content = f.read()
-    parts = content.split("---")
-    if len(parts) >= 3:
-        return parts[1].strip()
-    return content
+    anchor = "You are my fundamental research analyst"
+    idx = content.find(anchor)
+    if idx == -1:
+        raise RuntimeError(
+            f"{PROMPT_PATH}: could not find the prompt anchor {anchor!r} — "
+            f"the template structure changed and _load_prompt_template needs updating."
+        )
+    return content[idx:].strip()
 
 
 def _fmt(value, suffix="", prefix="", none_str="unverified") -> str:
