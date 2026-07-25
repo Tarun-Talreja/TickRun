@@ -68,7 +68,7 @@ CHUNK_WORDS   = 350    # ~450-500 tokens, safely inside the 512-token embed cap
 CHUNK_OVERLAP = 60     # keeps a claim from being split across a boundary
 MAX_CHUNKS    = 320    # rate-limit / runtime guard on very long filings
 EMBED_BATCH   = 32
-TOP_K         = 6
+TOP_K         = 4     # smaller context -> answer calls that finish in time
 
 DEFAULT_QUESTIONS = [
     "What are the most significant risk factors disclosed?",
@@ -133,14 +133,14 @@ def _embed(texts: list[str], api_key: str, input_type: str,
            pin_model: str | None = None) -> tuple[np.ndarray | None, str | None]:
     """Embed texts, returning (vectors, model_used).
 
-    pin_model forces a specific model and disables the fallback chain. This
-    matters more than it looks: query vectors and passage vectors MUST come
-    from the same model. Different embedders produce different vector spaces,
-    so mixing them makes cosine similarity meaningless — it silently returns
-    near-identical scores for every chunk instead of failing loudly. That is
-    exactly what happened when a transient rate limit pushed the query onto a
-    different model than the index, so once an index is built we pin to it and
-    surface an error rather than quietly degrading retrieval.
+    pin_model forces a specific model and disables the fallback chain. Query
+    vectors and passage vectors must come from the same model — different
+    embedders produce different vector spaces, so mixing them would make cosine
+    similarity meaningless while still returning plausible-looking numbers.
+    This is defensive rather than a fix for an observed bug: in practice the
+    fallback chain settled on the same model for both, but a transient 503 on
+    the first choice could silently split them, and that failure mode is very
+    hard to spot from the output.
     """
     try:
         from openai import OpenAI
@@ -234,7 +234,9 @@ def _answer(question, passages, ticker, filing, api_key) -> str:
         from openai import OpenAI
     except ImportError:
         return "openai package unavailable."
-    ctx = "\n\n".join(f"[Passage {i+1}]\n{p}" for i, (p, _) in enumerate(passages))
+    # Cap each passage: the free-tier endpoint times out on long prompts, and
+    # the answer only needs the relevant span, not the whole chunk.
+    ctx = "\n\n".join(f"[Passage {i+1}]\n{p[:1200]}" for i, (p, _) in enumerate(passages))
     prompt = (
         f"You are reading {ticker}'s {filing['form']} filed {filing['date']}. "
         f"Answer the question using ONLY the passages below.\n\n"
@@ -246,11 +248,11 @@ def _answer(question, passages, ticker, filing, api_key) -> str:
         f"QUESTION: {question}\n\n{ctx}"
     )
     try:
-        client = OpenAI(base_url=NVIDIA_BASE, api_key=api_key, timeout=90, max_retries=1)
+        client = OpenAI(base_url=NVIDIA_BASE, api_key=api_key, timeout=180, max_retries=2)
         r = client.chat.completions.create(
             model=ANSWER_MODEL,
             messages=[{"role": "user", "content": prompt}],
-            max_tokens=700, temperature=0.2,
+            max_tokens=450, temperature=0.2,
         )
         return r.choices[0].message.content.strip()
     except Exception as e:
