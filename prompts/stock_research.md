@@ -40,10 +40,44 @@ Flag any field as "unverified" if you cannot find a recent reliable source.
 Is this expensive, fair, or cheap relative to its growth and quality? Cite ONE multiple (P/S, P/E, or EV/EBITDA depending on profitability) and what comparable peers trade at. If unprofitable, comment on path to profitability and cash runway.
 
 ## 5. The bull case (3 concrete bullets)
-Why might this 3-5x over 5 years? Each bullet must be a concrete, falsifiable claim — not a platitude. "Strong management" is banned. "Hyperscaler X named them as preferred supplier in 2025 earnings call" is acceptable.
+Why might this 3-5x over 5 years? Each bullet must be a concrete, falsifiable claim — not a platitude.
+
+HARD RULES — a bullet is REJECTED if it:
+- uses "could", "might", "may", "potentially", "positions it well", "if successful"
+- contains no number, percentage, dollar figure, date, or named counterparty
+- would still read as true if you swapped in any other company in the sector
+
+GOOD (specific, checkable, falsifiable):
+- "Q1 2026 operating revenue was $1.129B vs $390M a year earlier; adjusted EBITDA rose to $473M from $200M."
+- "The expanded Amazon PPA covers ~1,920 MW through 2042, roughly $18B of contracted revenue."
+- "Backlog reached $8.7B in Q1 2026, up 77% YoY — about 2.6 years of booked work."
+
+BAD (rejected — these are the failure mode to avoid):
+- "The partnership could significantly enhance its technology and market reach."
+- "The company is well-positioned in a rapidly growing market."
+- "Successful execution of its strategy could drive long-term growth."
+
+If the provided data and headlines do not support three concrete claims, write fewer
+bullets and state "insufficient verifiable data for a third bullet." Fabricating a
+vague bullet to fill the slot is worse than leaving it out.
 
 ## 6. The bear case (single biggest specific risk)
-What is the one thing that, if true, makes this stock go to zero or stagnate for a decade? Concrete, not generic. "Competition" is banned. "Customer concentration: 60% revenue from Customer X who is in-housing this capability" is acceptable.
+What is the one thing that, if true, makes this stock go to zero or stagnate for a decade? Concrete, not generic.
+
+REJECTED: "competition", "fails to achieve profitability", "execution risk", "market conditions".
+GOOD: "Customer concentration: top three customers are 34%/27%/16% of revenue — losing the
+27% socket at one design-win cycle cuts revenue by a quarter."
+GOOD: "Single asset, single counterparty: Susquehanna is the bulk of contracted cash flow and
+Amazon is the buyer; a multi-month outage hits volume and price simultaneously."
+
+## 6b. Data interrogation (REQUIRED — 1-3 sentences)
+Look at the provided fundamentals and name anything internally contradictory or
+misleading, rather than repeating it uncritically. Examples of what to catch: a
+POSITIVE trailing P/E alongside a deeply negative operating margin (usually a one-off
+gain, not real earnings); a positive trailing P/E next to a negative forward P/E;
+net cash that looks fine against an annual burn that would exhaust it. If a headline
+number is an artifact, say so — quoting it at face value is an analytical error.
+If nothing is contradictory, write "No contradictions in the provided data."
 
 ## 7. Three things to verify before buying
 Falsifiable checks I can confirm in 30 minutes by reading the 10-K Item 1, the last earnings transcript, or a single industry report. Not "do more research" — specific things with specific sources.

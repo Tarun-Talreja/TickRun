@@ -13,14 +13,19 @@ yardstick. Every check here is regex/structure-based and free to run as often
 as you want — against every file in output/research/, not a sample.
 
 SCORING (100 points)
-  Structure   40 — are all 9 required sections present, in order, non-empty?
-  Format      25 — do the 4 mandatory machine-readable lines parse correctly?
-  Groundedness 20 — do specific numeric claims in the text (revenue growth,
+  Structure   30 — are all 9 required sections present, in order, non-empty?
+  Format      20 — do the 4 mandatory machine-readable lines parse correctly?
+  Substance   25 — is the ANALYSIS specific, or well-formatted filler? Bull
+                    bullets must carry numbers/dates and avoid banned hedging
+                    ("could", "well-positioned"); bear case must not be a
+                    generic ("competition"). Added after every file scored ~98
+                    on structure while every bull case was empty platitudes.
+  Groundedness 15 — do specific numeric claims in the text (revenue growth,
                     margins, P/E, market cap) match quotes_cache.json within
                     tolerance? This is the direct, checkable proxy for
                     hallucination: a number in the text that contradicts the
                     data it was given to work with.
-  Bear check  15 — for RESEARCH-WORTHY calls, is there a real bear-case section
+  Bear check  10 — for RESEARCH-WORTHY calls, is there a real bear-case section
                     and does it look like a genuine counter-argument rather
                     than a one-line dismissal?
 
@@ -82,7 +87,7 @@ def _score_structure(text: str) -> tuple[float, list[str]]:
 
     present = len(found_positions)
     in_order = present == len(REQUIRED_SECTIONS) and found_positions == sorted(found_positions)
-    score = 40 * (present / len(REQUIRED_SECTIONS))
+    score = 30 * (present / len(REQUIRED_SECTIONS))
     if present == len(REQUIRED_SECTIONS) and not in_order:
         score -= 5
         notes.append("sections present but out of order")
@@ -103,7 +108,7 @@ def _score_format(text: str) -> tuple[float, list[str]]:
             hits += 1
         else:
             notes.append(f"missing/malformed {name} line")
-    return round(25 * hits / len(checks), 1), notes
+    return round(20 * hits / len(checks), 1), notes
 
 
 def _extract_numeric_claims(text: str) -> list[tuple[str, float]]:
@@ -145,7 +150,7 @@ def _score_groundedness(text: str, ticker: str, quotes: dict) -> tuple[float, li
         # Nothing checkable was restated in prose — neutral, not a penalty;
         # this is common when the model correctly relies on the structured
         # quality-snapshot section instead of repeating numbers in prose.
-        return 20.0, ["no restated numeric claims to check (neutral)"]
+        return 15.0, ["no restated numeric claims to check (neutral)"]
 
     notes, matched = [], 0
     for label, claimed in claims:
@@ -159,20 +164,66 @@ def _score_groundedness(text: str, ticker: str, quotes: dict) -> tuple[float, li
             notes.append(f"{label}: text says {claimed}, data says {actual:.1f}")
     checked = [c for c in claims if field_map.get(c[0]) is not None]
     if not checked:
-        return 20.0, ["no checkable claims overlapped with cached fields (neutral)"]
-    return round(20 * matched / len(checked), 1), notes
+        return 15.0, ["no checkable claims overlapped with cached fields (neutral)"]
+    return round(15 * matched / len(checked), 1), notes
+
+
+HEDGE_WORDS = r"\b(could|might|may|potentially|possibly|if successful|positions? it well|well[- ]positioned|strong position)\b"
+GENERIC_BEAR = r"\b(competition|competitive pressure|fails? to achieve profitability|execution risk|market conditions)\b"
+
+
+def _score_substance(text: str) -> tuple[float, list[str]]:
+    """25 pts: is the ANALYSIS actually specific, or structurally-perfect filler?
+
+    Added after a review found 15/15 files scoring ~98/100 on structure while
+    every single bull case was hedged platitudes with no numbers — exactly what
+    the prompt explicitly bans. Structure compliance was being mistaken for
+    quality. A well-formed empty answer should not outscore a rough useful one.
+    """
+    notes = []
+    bull = re.search(r"##\s*5\..*?\n(.*?)##\s*6\.", text, re.DOTALL)
+    bear = re.search(r"##\s*6\.[^\n]*\n(.*?)(?:##\s*6b\.|##\s*7\.)", text, re.DOTALL)
+
+    score = 0.0
+    if bull:
+        bullets = [b for b in bull.group(1).split("\n")
+                   if b.strip().startswith(("*", "-")) or re.match(r"^\s*\d[.)]", b)]
+        if bullets:
+            # 15 pts: share of bullets carrying a concrete, checkable figure
+            concrete = sum(1 for b in bullets if re.search(r"\d|\$", b))
+            score += 15 * (concrete / len(bullets))
+            if concrete == 0:
+                notes.append("bull case has no numbers/dates — all bullets are unfalsifiable")
+            # 5 pts: penalise hedging language the prompt bans outright
+            hedged = sum(1 for b in bullets if re.search(HEDGE_WORDS, b, re.I))
+            score += 5 * (1 - hedged / len(bullets))
+            if hedged:
+                notes.append(f"{hedged}/{len(bullets)} bull bullets use banned hedging language")
+    else:
+        notes.append("no bull case section found")
+
+    # 5 pts: bear case must not be a banned generic
+    if bear:
+        if re.search(GENERIC_BEAR, bear.group(1), re.I):
+            notes.append("bear case relies on a banned generic risk (competition/profitability)")
+        else:
+            score += 5
+    else:
+        notes.append("no bear case section found")
+
+    return round(score, 1), notes
 
 
 def _score_bear_check(text: str, verdict: str | None) -> tuple[float, list[str]]:
     """15 pts: RESEARCH-WORTHY calls should carry a substantive bear-case pass."""
     if verdict != "RESEARCH-WORTHY":
-        return 15.0, ["not RESEARCH-WORTHY — bear check not required"]
+        return 10.0, ["not RESEARCH-WORTHY — bear check not required"]
     m = re.search(r"Bear-Case Check.*?\n\n(.+?)(?:\n\nCHANGES VERDICT|\Z)", text, re.DOTALL)
     if not m:
         return 0.0, ["no bear-case check section found"]
     body = m.group(1).strip()
     if len(body.split()) < 15:
-        return 5.0, ["bear-case present but too short to be a real counter-argument"]
+        return 3.0, ["bear-case present but too short to be a real counter-argument"]
     return 15.0, []
 
 
@@ -187,7 +238,8 @@ def score_file(path: str, quotes: dict) -> dict:
     s_fmt,    n_fmt     = _score_format(text)
     s_ground, n_ground  = _score_groundedness(text, ticker, quotes)
     s_bear,   n_bear     = _score_bear_check(text, verdict)
-    total = round(s_struct + s_fmt + s_ground + s_bear, 1)
+    s_sub,    n_sub       = _score_substance(text)
+    total = round(s_struct + s_fmt + s_ground + s_bear + s_sub, 1)
 
     return {
         "file": os.path.relpath(path, SCRIPT_DIR),
@@ -196,9 +248,9 @@ def score_file(path: str, quotes: dict) -> dict:
         "score": total,
         "breakdown": {
             "structure": s_struct, "format": s_fmt,
-            "groundedness": s_ground, "bear_check": s_bear,
+            "groundedness": s_ground, "bear_check": s_bear, "substance": s_sub,
         },
-        "notes": n_struct + n_fmt + n_ground + n_bear,
+        "notes": n_struct + n_fmt + n_ground + n_bear + n_sub,
     }
 
 
@@ -235,7 +287,7 @@ def main():
     avg = round(sum(r["score"] for r in results) / len(results), 1)
     print(f"📊 Scored {len(results)} research files — average {avg}/100\n")
 
-    for dim in ("structure", "format", "groundedness", "bear_check"):
+    for dim in ("structure", "format", "groundedness", "bear_check", "substance"):
         dim_avg = round(sum(r["breakdown"][dim] for r in results) / len(results), 1)
         print(f"  {dim:14s} avg {dim_avg}")
 
