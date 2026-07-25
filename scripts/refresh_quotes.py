@@ -81,8 +81,22 @@ def _fetch_with_retry(ticker: str) -> dict:
     prev_close = float(info.get("regularMarketPreviousClose") or info.get("previousClose") or 0)
     pct_change_1d = round((price - prev_close) / prev_close * 100, 2) if prev_close else None
 
-    raw_yield = info.get("dividendYield")
-    div_yield_pct = round(raw_yield * 100, 2) if raw_yield and raw_yield < 1 else raw_yield
+    # Dividend yield: derive from dividendRate / price when possible. That is
+    # unambiguous and self-verifying, unlike info["dividendYield"], whose units
+    # changed — it used to return a decimal (0.0095) and now returns a percent
+    # (0.95). The old "multiply by 100 if < 1" heuristic silently inflated every
+    # sub-1% payer by 100x (MSFT showed a 95% yield), which in turn corrupted the
+    # projected dividend income in portfolio_analytics.
+    div_yield_pct = None
+    dividend_rate = info.get("dividendRate")
+    if dividend_rate and price:
+        div_yield_pct = round(dividend_rate / price * 100, 2)
+    else:
+        raw_yield = info.get("dividendYield")
+        if raw_yield:
+            # Fall back to the reported field, treating it as a percent, and
+            # discard implausible values rather than trusting ambiguous units.
+            div_yield_pct = round(raw_yield, 2) if raw_yield < 25 else None
 
     return {
         "ticker":               ticker,

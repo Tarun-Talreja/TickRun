@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-07-25T20:15:51Z",
-  "quotes_updated": "2026-07-25T20:14:32Z",
+  "last_built": "2026-07-25T20:19:33Z",
+  "quotes_updated": "2026-07-25T20:18:21Z",
   "portfolio": {
     "total_value": 0,
     "core": [
@@ -7696,6 +7696,624 @@
         "rev_growth": 0.59,
         "roe": 2.66444,
         "drawdown_pct": -47.4
+      }
+    ]
+  },
+  "asset_location": {
+    "generated_at": "2026-07-25T20:18:28Z",
+    "rules": {
+      "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
+      "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
+      "high_yield_threshold_pct": 3.0
+    },
+    "counts": {
+      "roth": 51,
+      "taxable": 2
+    },
+    "roth": [
+      {
+        "ticker": "BWXT",
+        "name": "BWX Technologies, Inc.",
+        "theme": "nuclear_smr",
+        "verdict": "RESEARCH-WORTHY",
+        "div_yield_pct": 0.6,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "Highest-conviction growth pick (26% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+      },
+      {
+        "ticker": "CLS",
+        "name": "Celestica Inc.",
+        "theme": "datacenter_infra",
+        "verdict": "RESEARCH-WORTHY",
+        "div_yield_pct": null,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "Highest-conviction growth pick (53% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+      },
+      {
+        "ticker": "CMCSA",
+        "name": "CMCSA",
+        "theme": "consumer_media",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 5.92,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "5.9% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
+      },
+      {
+        "ticker": "EIX",
+        "name": "EIX",
+        "theme": "power_grid",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 4.4,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "4.4% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
+      },
+      {
+        "ticker": "GIS",
+        "name": "GIS",
+        "theme": "defensive_income",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 6.77,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "6.8% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
+      },
+      {
+        "ticker": "IBM",
+        "name": "International Business Machines Corporation",
+        "theme": "mega_cap_ai",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 3.16,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "3.2% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
+      },
+      {
+        "ticker": "INVH",
+        "name": "INVH",
+        "theme": "real_estate",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 4.03,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "REIT \u2014 distributions are largely non-qualified and taxed as ordinary income, making this the most tax-inefficient asset class you hold. Sheltering it is worth more than sheltering an equivalent amount of growth stock."
+      },
+      {
+        "ticker": "ISRG",
+        "name": "Intuitive Surgical, Inc.",
+        "theme": "healthcare_innovation",
+        "verdict": "RESEARCH-WORTHY",
+        "div_yield_pct": null,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "Highest-conviction growth pick (18% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+      },
+      {
+        "ticker": "NVT",
+        "name": "nVent Electric plc",
+        "theme": "power_grid",
+        "verdict": "RESEARCH-WORTHY",
+        "div_yield_pct": 0.55,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "Highest-conviction growth pick (54% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+      },
+      {
+        "ticker": "PAYX",
+        "name": "PAYX",
+        "theme": "quality_compounder",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 4.19,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "4.2% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
+      },
+      {
+        "ticker": "PODD",
+        "name": "Insulet Corporation",
+        "theme": "healthcare_innovation",
+        "verdict": "RESEARCH-WORTHY",
+        "div_yield_pct": null,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "Highest-conviction growth pick (34% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+      },
+      {
+        "ticker": "STZ",
+        "name": "STZ",
+        "theme": "defensive_income",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 3.17,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "3.2% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
+      },
+      {
+        "ticker": "TLN",
+        "name": "Talen Energy Corporation",
+        "theme": "nuclear_smr",
+        "verdict": "RESEARCH-WORTHY",
+        "div_yield_pct": null,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "Highest-conviction growth pick (97% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+      },
+      {
+        "ticker": "TW",
+        "name": "Tradeweb Markets Inc.",
+        "theme": "financials",
+        "verdict": "RESEARCH-WORTHY",
+        "div_yield_pct": 0.56,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "Highest-conviction growth pick (21% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+      },
+      {
+        "ticker": "AAPL",
+        "name": "Apple Inc.",
+        "theme": "mega_cap_ai",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 0.32,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "ADP",
+        "name": "ADP",
+        "theme": "quality_compounder",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 2.72,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "AMD",
+        "name": "Advanced Micro Devices, Inc.",
+        "theme": "edge_ai_silicon",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": null,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "AMZN",
+        "name": "Amazon.com, Inc.",
+        "theme": "mega_cap_ai",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": null,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "ASML",
+        "name": "ASML Holding N.V.",
+        "theme": "edge_ai_silicon",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 0.52,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "AVGO",
+        "name": "Broadcom Inc.",
+        "theme": "edge_ai_silicon",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 0.68,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "CBRS",
+        "name": "CBRS",
+        "theme": "edge_ai_silicon",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": null,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "CEG",
+        "name": "Constellation Energy Corporation",
+        "theme": "nuclear_smr",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 0.62,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "COHR",
+        "name": "Coherent Corp.",
+        "theme": "networking_infra",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": null,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "CRDO",
+        "name": "Credo Technology Group Holding Ltd",
+        "theme": "edge_ai_silicon",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": null,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "DHR",
+        "name": "DHR",
+        "theme": "healthcare_innovation",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 0.84,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "ETN",
+        "name": "Eaton Corporation plc",
+        "theme": "power_grid",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 1.09,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "FLUT",
+        "name": "FLUT",
+        "theme": "consumer_media",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": null,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "GEHC",
+        "name": "GEHC",
+        "theme": "healthcare_innovation",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 0.23,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "GEV",
+        "name": "GE Vernova Inc.",
+        "theme": "power_grid",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 0.2,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "GOOGL",
+        "name": "Alphabet Inc.",
+        "theme": "mega_cap_ai",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 0.28,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "LITE",
+        "name": "Lumentum Holdings Inc.",
+        "theme": "networking_infra",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": null,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "LMB",
+        "name": "LMB",
+        "theme": "datacenter_infra",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": null,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "LPLA",
+        "name": "LPLA",
+        "theme": "financials",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 0.37,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "MA",
+        "name": "MA",
+        "theme": "quality_compounder",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 0.64,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "META",
+        "name": "Meta Platforms, Inc.",
+        "theme": "mega_cap_ai",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 0.35,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "MKTX",
+        "name": "MKTX",
+        "theme": "financials",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 2.67,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "MRVL",
+        "name": "Marvell Technology, Inc.",
+        "theme": "edge_ai_silicon",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 0.12,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "MSFT",
+        "name": "Microsoft Corporation",
+        "theme": "mega_cap_ai",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 0.95,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "MU",
+        "name": "Micron Technology, Inc.",
+        "theme": "edge_ai_silicon",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 0.06,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "NBIS",
+        "name": "Nebius Group N.V.",
+        "theme": "mega_cap_ai",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": null,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "NFLX",
+        "name": "NFLX",
+        "theme": "consumer_media",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": null,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "NOW",
+        "name": "ServiceNow, Inc.",
+        "theme": "cybersecurity",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": null,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "NVDA",
+        "name": "NVIDIA Corporation",
+        "theme": "mega_cap_ai",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 0.48,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "OKLO",
+        "name": "Oklo Inc.",
+        "theme": "nuclear_smr",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": null,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "POWL",
+        "name": "Powell Industries, Inc.",
+        "theme": "power_grid",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 0.16,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "RDDT",
+        "name": "Reddit, Inc.",
+        "theme": "platform_network",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": null,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "TSM",
+        "name": "Taiwan Semiconductor Manufacturing Company",
+        "theme": "edge_ai_silicon",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 0.94,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "V",
+        "name": "Visa Inc.",
+        "theme": "platform_network",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 0.75,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "VRT",
+        "name": "Vertiv Holdings Co",
+        "theme": "power_grid",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 0.09,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "VST",
+        "name": "Vistra Corp.",
+        "theme": "nuclear_smr",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 0.56,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "ZBH",
+        "name": "ZBH",
+        "theme": "healthcare_innovation",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 1.05,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      }
+    ],
+    "taxable": [
+      {
+        "ticker": "QQQ",
+        "name": "Invesco QQQ Trust (Nasdaq-100)",
+        "theme": "uncategorized",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 0.41,
+        "account": "TAXABLE",
+        "priority": "high",
+        "reason": "Broad-market index fund \u2014 low turnover and mostly qualified dividends make it tax-efficient on its own. Holding it here preserves Roth space for assets that actually need shelter, and keeps it available before 59.5."
+      },
+      {
+        "ticker": "SPY",
+        "name": "SPDR S&P 500 ETF",
+        "theme": "uncategorized",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 1.01,
+        "account": "TAXABLE",
+        "priority": "high",
+        "reason": "Broad-market index fund \u2014 low turnover and mostly qualified dividends make it tax-efficient on its own. Holding it here preserves Roth space for assets that actually need shelter, and keeps it available before 59.5."
+      }
+    ],
+    "tax_drag_overrides": [
+      {
+        "ticker": "IBM",
+        "name": "International Business Machines Corporation",
+        "theme": "mega_cap_ai",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 3.16,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "3.2% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
+      },
+      {
+        "ticker": "PAYX",
+        "name": "PAYX",
+        "theme": "quality_compounder",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 4.19,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "4.2% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
+      },
+      {
+        "ticker": "GIS",
+        "name": "GIS",
+        "theme": "defensive_income",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 6.77,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "6.8% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
+      },
+      {
+        "ticker": "STZ",
+        "name": "STZ",
+        "theme": "defensive_income",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 3.17,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "3.2% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
+      },
+      {
+        "ticker": "INVH",
+        "name": "INVH",
+        "theme": "real_estate",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 4.03,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "REIT \u2014 distributions are largely non-qualified and taxed as ordinary income, making this the most tax-inefficient asset class you hold. Sheltering it is worth more than sheltering an equivalent amount of growth stock."
+      },
+      {
+        "ticker": "CMCSA",
+        "name": "CMCSA",
+        "theme": "consumer_media",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 5.92,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "5.9% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
+      },
+      {
+        "ticker": "EIX",
+        "name": "EIX",
+        "theme": "power_grid",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": 4.4,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "4.4% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
       }
     ]
   },

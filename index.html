@@ -287,6 +287,15 @@ html,body{
 .track-val{font-size:18px;font-weight:600;font-family:'IBM Plex Mono',monospace;color:var(--text0)}
 .track-val.green{color:var(--green)}.track-val.red{color:var(--red)}
 .track-lbl{font-size:9px;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-top:3px}
+.al-block{margin-top:12px}
+.al-head{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.al-tag{font-size:9px;font-weight:700;padding:3px 8px;border-radius:5px;letter-spacing:.06em}
+.al-roth{background:#00f08222;color:#00f082}
+.al-tax{background:#00d9f522;color:#00d9f5}
+.al-note{font-size:10px;color:var(--text2)}
+.al-chips{display:flex;flex-wrap:wrap;gap:5px}
+.al-chip{font-size:10px;font-weight:600;padding:3px 7px;border-radius:5px;background:var(--bg3);color:var(--text1);cursor:help}
+.al-warn{margin-top:12px;padding:10px 12px;background:#ffaa0015;border:1px solid #ffaa0033;border-radius:8px;font-size:11px;color:#ffaa00;line-height:1.5}
 .disc-wrap{padding:12px 0 4px}
 .disc-head{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);padding:0 16px 8px}
 .disc-note{font-weight:400;text-transform:none;letter-spacing:0;color:var(--text2);font-size:9px}
@@ -1424,6 +1433,29 @@ function renderSignals(data){
 }
 
 // ── RENDER PORTFOLIO ──────────────────────────────────────────────────────────
+function renderAssetLocation(data){
+  const al = data.asset_location||{};
+  const roth = al.roth||[], taxable = al.taxable||[], overrides = al.tax_drag_overrides||[];
+  if(!roth.length && !taxable.length) return '';
+  const chips = arr => arr.map(p=>`<span class="al-chip" title="${esc(p.reason||'')}">${esc(p.ticker)}</span>`).join('');
+  return `<div class="track-card">
+    <div class="digest-label">🏦 Asset Location — which account holds what</div>
+    <div class="al-block">
+      <div class="al-head"><span class="al-tag al-roth">ROTH</span><span class="al-note">tax-free growth — shelter what's taxed hardest</span></div>
+      <div class="al-chips">${chips(roth)}</div>
+    </div>
+    <div class="al-block">
+      <div class="al-head"><span class="al-tag al-tax">TAXABLE</span><span class="al-note">already tax-efficient · available before 59½</span></div>
+      <div class="al-chips">${chips(taxable)||'<span class="al-note">none</span>'}</div>
+    </div>
+    ${overrides.length?`<div class="al-warn">
+      <strong>⚠ ${overrides.length} names where tax drag beats the "boring → taxable" instinct</strong><br>
+      ${overrides.map(p=>`${esc(p.ticker)}${p.div_yield_pct?` (${p.div_yield_pct}% yield)`:' (REIT)'}`).join(' · ')}
+      <br><span class="al-note">A yield you can't defer is taxed every year you hold it — the criterion is taxability, not volatility.</span>
+    </div>`:''}
+  </div>`;
+}
+
 function renderPortfolio(data){
   const port = data.portfolio;
   const alloc = port.target_allocation;
@@ -1479,6 +1511,8 @@ function renderPortfolio(data){
       <div class="track-stat"><div class="track-val">${tr['RESEARCH-WORTHY'].count}</div><div class="track-lbl">Calls tracked</div></div>
     </div>
   </div>`:''}
+
+  ${renderAssetLocation(data)}
 
   <div class="alloc-section">
     <div class="sec-head-label" style="font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--text2);margin-bottom:14px">Target Allocation</div>

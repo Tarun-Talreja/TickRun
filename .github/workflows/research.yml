@@ -57,6 +57,10 @@ jobs:
         run: python scripts/news_feed.py
         continue-on-error: true
 
+      - name: Asset location (Roth vs taxable)
+        run: python scripts/asset_location.py
+        continue-on-error: true
+
       - name: Rebuild dashboard
         run: python scripts/build_dashboard.py
 
@@ -73,6 +77,7 @@ jobs:
           commit_message: "Auto: daily LLM research + SEC filings"
           file_pattern: >-
             data/watchlist.json
+            data/asset_location.json
             data/sec_filings.json
             data/news_cache.json
             output/research/

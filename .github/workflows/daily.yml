@@ -80,6 +80,10 @@ jobs:
         run: python scripts/track_record.py
         continue-on-error: true
 
+      - name: Asset location (Roth vs taxable)
+        run: python scripts/asset_location.py
+        continue-on-error: true
+
       - name: Assemble dashboard.json
         run: python scripts/build_dashboard.py
 
@@ -101,6 +105,7 @@ jobs:
             data/movers.json
             data/price_snapshot.json
             data/data_quality.json
+            data/asset_location.json
             data/target_alerts.json
             data/verdict_history.json
             output/dashboard.json

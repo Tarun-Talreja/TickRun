@@ -39,6 +39,7 @@ ANALYTICS_PATH      = os.path.join(SCRIPT_DIR, "output", "portfolio_analytics.js
 TARGET_ALERTS_PATH  = os.path.join(SCRIPT_DIR, "data", "target_alerts.json")
 TRACK_RECORD_PATH   = os.path.join(SCRIPT_DIR, "output", "track_record.json")
 DISCOVERED_PATH     = os.path.join(SCRIPT_DIR, "data", "discovered.json")
+ASSET_LOCATION_PATH = os.path.join(SCRIPT_DIR, "data", "asset_location.json")
 OUTPUT_PATH         = os.path.join(SCRIPT_DIR, "output", "dashboard.json")
 os.makedirs(os.path.join(SCRIPT_DIR, "output"), exist_ok=True)
 
@@ -273,6 +274,7 @@ def main():
         "analytics":       analytics,
         "track_record":    track_rec,
         "discovered":      _load(DISCOVERED_PATH),
+        "asset_location":  _load(ASSET_LOCATION_PATH),
         "signals": {
             "pullback_alerts":    alerts.get("pullback_alerts", []),
             "stale_research":     alerts.get("stale_research", []),
