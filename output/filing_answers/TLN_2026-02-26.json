@@ -7,11 +7,12 @@
     "url": "https://www.sec.gov/Archives/edgar/data/1622536/000162253626000017/tln-20251231.htm"
   },
   "retrieval": "embeddings:nvidia/nv-embedqa-e5-v5",
-  "generated_at": "2026-07-25T20:35:13Z",
+  "generated_at": "2026-07-25T20:47:54Z",
   "results": [
     {
       "question": "What are the most significant risk factors disclosed?",
-      "answer": "Answer generation failed: Error code: 503 - {'error': {'message': 'ResourceExhausted: Worker local total request limit reached (17/16)', 'type': 'Service Unavailable', 'code': 503}}",
+      "answer": "Answer generation failed: Request timed out.",
+      "retrieval_method": "embeddings",
       "passages": [
         {
           "text": "rates for transmission capacity from our facilities are set by others and thus are subject to changes outside of our control, some of which could be significant. Our ownership and operation of Susquehanna subjects us to substantial risks associated with nuclear generation. Although the safety record of nuclear reactors generally has been very good, accidents and other unforeseen problems have occurred both in the United States and abroad. The consequences of a major incident could be significant, including loss of life, destruction of property, and environmental damage. Because Susquehanna acc",
@@ -41,7 +42,8 @@
     },
     {
       "question": "What is the customer concentration \u2014 do any customers exceed 10% of revenue?",
-      "answer": "Not found in the retrieved passages.",
+      "answer": "Answer generation failed: Request timed out.",
+      "retrieval_method": "embeddings",
       "passages": [
         {
           "text": "cash equivalents are generally held in accounts where the amounts deposited exceed the maximum deposit insurance provided by the Federal Deposit Insurance Corporation. Cash and cash equivalents and restricted cash balances are primarily deposited in accounts with major financial institutions with investment grade credit ratings. In certain instances, funds are invested in highly liquid U.S. Treasury securities or other obligations with original maturities of less than 90 days that are issued by or guaranteed by the U.S. Government. Concentrations of credit risk for receivables are primarily at",
@@ -71,7 +73,8 @@
     },
     {
       "question": "What are the debt maturities and total debt obligations?",
-      "answer": "Not found in the retrieved passages.",
+      "answer": "Answer generation failed: Request timed out.",
+      "retrieval_method": "embeddings",
       "passages": [
         {
           "text": "Sheets and presented together with the associated outstanding principal amounts of indebtedness. Interest accrues on outstanding principal amounts of indebtedness based on contractually determined rates during each period. Costs incurred for the issuance of indebtedness and any original issuance discounts or premiums are subsequently amortized through the expected maturity date of the associated indebtedness under the effective interest rate method and are presented as \"Interest expense and other finance charges\" on the Consolidated Statements of Operations. Gains and losses on the: (i) early ",
