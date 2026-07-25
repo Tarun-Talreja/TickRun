@@ -1,36 +1,16 @@
 {
-  "generated_at": "2026-07-18T12:43:47Z",
+  "generated_at": "2026-07-25T12:54:56Z",
   "universe": "sp500",
   "scanned": 503,
-  "qualified": 413,
+  "qualified": 416,
   "discovered": [
-    {
-      "ticker": "NEM",
-      "name": "Newmont Corporation",
-      "sector": "Basic Materials",
-      "score": 84.3,
-      "quality": 33.3,
-      "value": 16.9,
-      "growth": 20,
-      "health": 14.1,
-      "passes_screens": [
-        "Quality",
-        "Magic Formula"
-      ],
-      "market_cap": 95759482880,
-      "price": 89.7,
-      "forward_pe": 8.359591,
-      "rev_growth": 0.458,
-      "roe": 0.25832,
-      "drawdown_pct": -33.5
-    },
     {
       "ticker": "FSLR",
       "name": "First Solar, Inc.",
       "sector": "Technology",
-      "score": 80.2,
+      "score": 80.6,
       "quality": 26.9,
-      "value": 21.2,
+      "value": 21.6,
       "growth": 17.4,
       "health": 14.6,
       "passes_screens": [
@@ -38,20 +18,20 @@
         "GARP",
         "Magic Formula"
       ],
-      "market_cap": 22779037696,
-      "price": 211.99,
-      "forward_pe": 9.043707,
+      "market_cap": 21793691648,
+      "price": 202.82,
+      "forward_pe": 8.656512,
       "rev_growth": 0.236,
       "roe": 0.18436001,
-      "drawdown_pct": -33.9
+      "drawdown_pct": -36.8
     },
     {
       "ticker": "PTC",
       "name": "PTC Inc.",
       "sector": "Technology",
-      "score": 79.2,
+      "score": 80.0,
       "quality": 35,
-      "value": 17.0,
+      "value": 17.8,
       "growth": 16.7,
       "health": 10.6,
       "passes_screens": [
@@ -59,20 +39,20 @@
         "GARP",
         "Magic Formula"
       ],
-      "market_cap": 14365455360,
-      "price": 124.37,
-      "forward_pe": 14.412041,
+      "market_cap": 13689746432,
+      "price": 118.52,
+      "forward_pe": 13.734139,
       "rev_growth": 0.217,
       "roe": 0.344,
-      "drawdown_pct": -43.4
+      "drawdown_pct": -46.1
     },
     {
       "ticker": "EOG",
       "name": "EOG Resources, Inc.",
       "sector": "Energy",
-      "score": 77.8,
+      "score": 77.3,
       "quality": 30.3,
-      "value": 20.7,
+      "value": 20.3,
       "growth": 14.2,
       "health": 12.5,
       "passes_screens": [
@@ -81,135 +61,138 @@
         "Magic Formula",
         "Dividend Quality"
       ],
-      "market_cap": 74509410304,
-      "price": 139.89,
-      "forward_pe": 9.564089,
+      "market_cap": 77971488768,
+      "price": 146.39,
+      "forward_pe": 9.978569,
       "rev_growth": 0.156,
       "roe": 0.18195,
-      "drawdown_pct": -7.9
+      "drawdown_pct": -3.6
     },
     {
-      "ticker": "EQT",
-      "name": "EQT Corporation",
-      "sector": "Energy",
-      "score": 75.0,
-      "quality": 28.4,
-      "value": 17.0,
-      "growth": 20,
-      "health": 9.7,
-      "passes_screens": [],
-      "market_cap": 30998691840,
-      "price": 49.56,
-      "forward_pe": 11.712436,
-      "rev_growth": 0.499,
-      "roe": 0.13402,
-      "drawdown_pct": -27.4
+      "ticker": "GOOG",
+      "name": "Alphabet Inc.",
+      "sector": "Communication Services",
+      "score": 75.6,
+      "quality": 34.8,
+      "value": 9.3,
+      "growth": 17.7,
+      "health": 13.9,
+      "passes_screens": [
+        "Quality",
+        "GARP"
+      ],
+      "market_cap": 3902449909760,
+      "price": 319.09,
+      "forward_pe": 21.590858,
+      "rev_growth": 0.242,
+      "roe": 0.48676,
+      "drawdown_pct": -21.1
     },
     {
       "ticker": "INCY",
       "name": "Incyte Corporation",
       "sector": "Healthcare",
-      "score": 75.0,
+      "score": 75.2,
       "quality": 31.6,
-      "value": 12.0,
+      "value": 12.2,
       "growth": 16.4,
       "health": 15.0,
       "passes_screens": [
         "Quality"
       ],
-      "market_cap": 23424458752,
-      "price": 117.25,
-      "forward_pe": 13.89218,
+      "market_cap": 23508367360,
+      "price": 117.67,
+      "forward_pe": 13.054703,
       "rev_growth": 0.209,
       "roe": 0.30823,
-      "drawdown_pct": -2.0
-    },
-    {
-      "ticker": "WDC",
-      "name": "Western Digital Corporation",
-      "sector": "Technology",
-      "score": 74.3,
-      "quality": 32.6,
-      "value": 9.3,
-      "growth": 20,
-      "health": 12.4,
-      "passes_screens": [
-        "Quality",
-        "GARP"
-      ],
-      "market_cap": 164489216000,
-      "price": 477.22,
-      "forward_pe": 25.730211,
-      "rev_growth": 0.455,
-      "roe": 0.85920995,
-      "drawdown_pct": -40.3
+      "drawdown_pct": -1.6
     },
     {
       "ticker": "CF",
       "name": "CF Industries Holdings, Inc.",
       "sector": "Basic Materials",
-      "score": 73.9,
+      "score": 73.8,
       "quality": 30.1,
-      "value": 15.7,
+      "value": 15.5,
       "growth": 15.8,
       "health": 12.4,
       "passes_screens": [
         "Magic Formula"
       ],
-      "market_cap": 18653667328,
-      "price": 121.42,
-      "forward_pe": 10.842088,
+      "market_cap": 19214413824,
+      "price": 125.07,
+      "forward_pe": 11.1459465,
       "rev_growth": 0.194,
       "roe": 0.273,
-      "drawdown_pct": -14.5
+      "drawdown_pct": -11.9
     },
     {
       "ticker": "CPAY",
       "name": "Corpay, Inc.",
       "sector": "Technology",
-      "score": 73.8,
+      "score": 73.7,
       "quality": 35,
-      "value": 17.7,
+      "value": 17.6,
       "growth": 18.2,
       "health": 2.9,
       "passes_screens": [
         "Quality",
         "GARP"
       ],
-      "market_cap": 23908737024,
-      "price": 365.79,
-      "forward_pe": 11.956544,
+      "market_cap": 24221818880,
+      "price": 370.58,
+      "forward_pe": 12.111261,
       "rev_growth": 0.254,
       "roe": 0.32124,
-      "drawdown_pct": -2.2
+      "drawdown_pct": -0.9
     },
     {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
+      "ticker": "WDC",
+      "name": "Western Digital Corporation",
       "sector": "Technology",
-      "score": 73.7,
-      "quality": 34.3,
-      "value": 4.5,
+      "score": 73.4,
+      "quality": 32.6,
+      "value": 8.4,
       "growth": 20,
-      "health": 14.8,
+      "health": 12.4,
       "passes_screens": [
         "Quality",
         "GARP"
       ],
-      "market_cap": 50462150656,
-      "price": 322.355,
-      "forward_pe": 32.770447,
-      "rev_growth": 0.87,
-      "roe": 0.2875,
-      "drawdown_pct": -33.9
+      "market_cap": 179165773824,
+      "price": 519.8,
+      "forward_pe": 28.02599,
+      "rev_growth": 0.455,
+      "roe": 0.85920995,
+      "drawdown_pct": -35.0
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
+      "sector": "Basic Materials",
+      "score": 73.3,
+      "quality": 33.4,
+      "value": 16.8,
+      "growth": 9.1,
+      "health": 14.1,
+      "passes_screens": [
+        "Quality",
+        "Magic Formula"
+      ],
+      "market_cap": 98193588224,
+      "price": 93.19,
+      "forward_pe": 8.813135,
+      "rev_growth": 0.151,
+      "roe": 0.25905,
+      "drawdown_pct": -30.9
     },
     {
       "ticker": "APA",
       "name": "APA Corporation",
       "sector": "Energy",
-      "score": 73.3,
+      "score": 73.2,
       "quality": 33.5,
-      "value": 23.7,
+      "value": 23.6,
       "growth": 8,
       "health": 8.1,
       "passes_screens": [
@@ -217,78 +200,80 @@
         "Magic Formula",
         "Dividend Quality"
       ],
-      "market_cap": 12449222656,
-      "price": 35.22,
-      "forward_pe": 8.91693,
+      "market_cap": 12777950208,
+      "price": 36.15,
+      "forward_pe": 8.806678,
       "rev_growth": -0.119,
       "roe": 0.26217,
-      "drawdown_pct": -22.9
+      "drawdown_pct": -20.8
     },
     {
-      "ticker": "GOOG",
-      "name": "Alphabet Inc.",
-      "sector": "Communication Services",
-      "score": 72.1,
-      "quality": 35,
-      "value": 6.8,
-      "growth": 16.7,
-      "health": 13.6,
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
+      "sector": "Technology",
+      "score": 72.7,
+      "quality": 34.3,
+      "value": 3.5,
+      "growth": 20,
+      "health": 14.8,
       "passes_screens": [
         "Quality",
         "GARP"
       ],
-      "market_cap": 4223554551808,
-      "price": 346.12,
-      "forward_pe": 23.646824,
-      "rev_growth": 0.218,
-      "roe": 0.38884997,
-      "drawdown_pct": -14.4
+      "market_cap": 54777233408,
+      "price": 349.92,
+      "forward_pe": 34.0262,
+      "rev_growth": 0.87,
+      "roe": 0.2875,
+      "drawdown_pct": -28.3
     },
     {
       "ticker": "PLTR",
       "name": "Palantir Technologies Inc.",
       "sector": "Technology",
-      "score": 71.7,
+      "score": 72.2,
       "quality": 35,
-      "value": 1.8,
+      "value": 2.3,
       "growth": 20,
       "health": 14.9,
       "passes_screens": [
         "Quality"
       ],
-      "market_cap": 317356179456,
-      "price": 132.38,
-      "forward_pe": 63.204235,
+      "market_cap": 294677577728,
+      "price": 122.92,
+      "forward_pe": 58.687595,
       "rev_growth": 0.847,
       "roe": 0.32587,
-      "drawdown_pct": -36.2
+      "drawdown_pct": -40.8
     },
     {
-      "ticker": "HIG",
-      "name": "The Hartford Insurance Group, Inc.",
-      "sector": "Financial Services",
-      "score": 70.7,
-      "quality": 24.0,
-      "value": 23.3,
-      "growth": 10.4,
-      "health": 13.0,
+      "ticker": "ADBE",
+      "name": "Adobe Inc.",
+      "sector": "Technology",
+      "score": 71.1,
+      "quality": 35,
+      "value": 21.3,
+      "growth": 7.2,
+      "health": 7.6,
       "passes_screens": [
+        "Quality",
+        "GARP",
         "Magic Formula"
       ],
-      "market_cap": 38449586176,
-      "price": 140.26,
-      "forward_pe": 10.138444,
-      "rev_growth": 0.061,
-      "roe": 0.22735001,
-      "drawdown_pct": -2.9
+      "market_cap": 89481224192,
+      "price": 225.11,
+      "forward_pe": 8.189729,
+      "rev_growth": 0.127,
+      "roe": 0.62953997,
+      "drawdown_pct": -40.2
     },
     {
       "ticker": "AFL",
       "name": "Aflac Incorporated",
       "sector": "Financial Services",
-      "score": 70.6,
+      "score": 70.5,
       "quality": 26.7,
-      "value": 15.8,
+      "value": 15.7,
       "growth": 19.2,
       "health": 8.9,
       "passes_screens": [
@@ -296,12 +281,32 @@
         "GARP",
         "Magic Formula"
       ],
-      "market_cap": 63480598528,
-      "price": 124.72,
-      "forward_pe": 16.502048,
+      "market_cap": 63928500224,
+      "price": 125.6,
+      "forward_pe": 16.643654,
       "rev_growth": 0.279,
       "roe": 0.16469,
-      "drawdown_pct": -1.0
+      "drawdown_pct": -0.3
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "sector": "Communication Services",
+      "score": 70.3,
+      "quality": 35,
+      "value": 9.3,
+      "growth": 20,
+      "health": 6,
+      "passes_screens": [
+        "Quality",
+        "GARP"
+      ],
+      "market_cap": 131681574912,
+      "price": 391.98,
+      "forward_pe": 18.085264,
+      "rev_growth": 0.59,
+      "roe": 2.66444,
+      "drawdown_pct": -47.4
     }
   ]
 }
