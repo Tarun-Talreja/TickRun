@@ -7,11 +7,11 @@
     "url": "https://www.sec.gov/Archives/edgar/data/1622536/000162253626000017/tln-20251231.htm"
   },
   "retrieval": "embeddings:nvidia/nv-embedqa-e5-v5",
-  "generated_at": "2026-07-25T20:47:54Z",
+  "generated_at": "2026-07-25T20:53:53Z",
   "results": [
     {
       "question": "What are the most significant risk factors disclosed?",
-      "answer": "Answer generation failed: Request timed out.",
+      "answer": "The most significant risk factors disclosed include:\n* \"accidents and other unforeseen problems\" related to nuclear generation, which \"could be significant, including loss of life, destruction of property, and environmental damage\" \n* \"cyber-based attacks\" and \"cybersecurity risks\" that \"could result in an adverse impact to our results of operations or business reputation\"\n* \"natural or man-made disaster\" in the mid-Atlantic area, which \"could adversely affect a large part of our operations\"\n* \"epidemic, an infectious disease outbreak, or other public health events\" that \"could impact our workforce and the availability of other resources\" \n\nas stated in the passages.",
       "retrieval_method": "embeddings",
       "passages": [
         {
@@ -29,20 +29,12 @@
         {
           "text": "Annual Report on Form 10-K (this \"Report\") contains forward-looking statements concerning expectations, beliefs, plans, objectives, goals, strategies, and (or) future performance or other events, as well as underlying assumptions and other statements, that are not statements of historical fact. These statements often include words such as \"believe,\" \"expect,\" \"anticipate,\" \"intend,\" \"plan,\" \"estimate,\" \"target,\" \"project,\" \"forecast,\" \"seek,\" \"will,\" \"may,\" \"should,\" \"could,\" \"would,\" or similar expressions. Although we believe that the expectations and assumptions reflected in these forward-l",
           "score": 0.3
-        },
-        {
-          "text": "uncertainties described below, as well as the other information included in this Report, including the Annual Financial Statements. Although we believe the following discussion includes the key risks affecting our business, new risks and uncertainties emerge from time to time, and it is not possible for us to predict all risks and uncertainties that could have an impact on our business. The occurrence of any of the following risks, or additional risks and uncertainties not presently known to us or that we currently believe to be immaterial, could materially and adversely affect our business, f",
-          "score": 0.293
-        },
-        {
-          "text": "return. Income taxes are accounted for under the asset and liability method. Deferred tax assets and liabilities are recognized for the future tax consequences attributable to differences between the financial statement carrying values of existing assets and liabilities and their respective tax basis, tax credits and NOL carryforwards. Deferred tax assets and liabilities are measured using enacted tax rates expected to apply to taxable income in the years in which temporary differences are expected to be recovered or settled. The effect on deferred tax assets and liabilities due to a change in",
-          "score": 0.293
         }
       ]
     },
     {
       "question": "What is the customer concentration \u2014 do any customers exceed 10% of revenue?",
-      "answer": "Answer generation failed: Request timed out.",
+      "answer": "Not found in the retrieved passages.",
       "retrieval_method": "embeddings",
       "passages": [
         {
@@ -60,20 +52,12 @@
         {
           "text": "demand from hyperscalers, industrial customers, and re-shoring of manufacturing drives load growth, which creates an attractive opportunity to contract reliable baseload generation for extended periods. Our operational track record and ability to deliver speed-to-market, price certainty, and scale position us well to achieve pricing premiums and contract structures that capture significant margin while also materially reducing commodity exposure and cash flow cyclicality. Importantly, these arrangements will also enable more efficient planning and resource deployment across the Company and the",
           "score": 0.29
-        },
-        {
-          "text": "at our coal-fired units. Short- and long-term supply contracts support adequate coal inventory levels and are augmented with spot market purchases as needed. Seasonality/Scheduled Maintenance The demand for and market prices of electricity and natural gas are affected considerably by weather and, as a result, our operating results may fluctuate significantly on a seasonal basis. In general, below-average temperatures in the winter and above-average temperatures in the summer tend to increase electricity demand, energy prices, and revenues. Alternatively, moderate temperatures tend to decrease ",
-          "score": 0.288
-        },
-        {
-          "text": "our supply obligations or to sell electricity in the wholesale market during periods of low prices. The effects of storms, floods, and other climatic events could disrupt our operations and cause us to incur significant costs in preparing for or responding to these effects. These or other meteorological changes could lead to increased operating costs, capital expenses, or power purchase costs. Such climatic events could also affect the availability of secure and economical fuel and water supplies in some locations, both of which are essential for the continued operation of our generation facil",
-          "score": 0.285
         }
       ]
     },
     {
       "question": "What are the debt maturities and total debt obligations?",
-      "answer": "Answer generation failed: Request timed out.",
+      "answer": "Not found in the retrieved passages.",
       "retrieval_method": "embeddings",
       "passages": [
         {
@@ -91,14 +75,6 @@
         {
           "text": "Consolidated Statements of Operations are primarily comprised of items presented as: (i) \"Capacity revenues;\" (ii) \"Energy and other revenues;\" and (iii) \"Unrealized gain (loss) on derivative instruments\" for certain electricity contracts. Capacity revenues. Include amounts earned from auctions in ISOs and RTOs and under bilateral contracts to provide available generation capacity that is needed to satisfy system reliability and integrity requirements. Capacity revenues are recognized ratably over the PJM Capacity Year by Talen-owned generation facilities that participate in the auctions and s",
           "score": 0.37
-        },
-        {
-          "text": "carries accounts receivable due from joint owners for their portion of operating and capital costs for certain jointly owned facilities that are operated by the Company. The majority of outstanding receivables, which are continually monitored, have customary payment terms. The allowance for doubtful accounts was a non-material amount as of December 31, 2025 (Successor) and 2024 (Successor). As of December 31, 2025 (Successor), Talen's aggregate credit exposure, which excludes the effects of netting arrangements, cash collateral, LCs, and any allowances for doubtful collections, was $ 652 milli",
-          "score": 0.365
-        },
-        {
-          "text": "8. Table of Contents PEDFA Bonds. In June 2024, TES completed the remarketing of its outstanding $ 50 million in PEDFA 2009B Bonds and $ 81 million in PEDFA 2009C Bonds. As part of the remarketing, (i) the PEDFA Bonds were transitioned from a variable daily interest rate to a fixed term rate of 5.25 % until June 1, 2027, at which time they are subject to mandatory remarketing during which TES may elect a different interest rate mode; (ii) $ 133 million of TES LCs that had previously supported the PEDFA Bonds were terminated; (iii) mandatory repurchase and optional redemption provisions were mo",
-          "score": 0.36
         }
       ]
     }
