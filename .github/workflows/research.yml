@@ -6,6 +6,11 @@ on:
     # ~6 names/run × 5 days < 51 names re-going-stale every 7 days.
     - cron: '0 11 * * *'
   workflow_dispatch:
+    inputs:
+      max:
+        description: 'How many tickers to research this run (catch-up runs can go higher)'
+        required: false
+        default: '8'
 
 permissions:
   contents: write
@@ -42,7 +47,7 @@ jobs:
       - name: Run daily LLM research (NVIDIA NIM, free)
         env:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API }}
-        run: python scripts/research_batch.py --max 8
+        run: python scripts/research_batch.py --max ${{ github.event.inputs.max || 8 }}
 
       - name: Check SEC filings
         run: python scripts/sec_filings.py

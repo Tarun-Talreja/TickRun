@@ -30,7 +30,11 @@ RESEARCH_SCRIPT = os.path.join(SCRIPT_DIR, "scripts", "research_ticker.py")
 
 STALE_DAYS      = 7      # re-research if older than this
 ALERT_THRESHOLD = -20.0  # drawdown that forces a re-research
-MAX_PER_RUN     = 6      # cap per daily run to respect free-tier limits
+MAX_PER_RUN     = 8      # cap per run to respect free-tier limits
+
+# Index/benchmark ETFs are tracked for context, not as buy candidates —
+# spending a research slot on them starves real names in the queue.
+SKIP_TICKERS = {"SPY", "QQQ", "VTI", "VOO", "DIA", "IWM"}
 
 
 def _days_since(date_str: str | None) -> int:
@@ -55,7 +59,7 @@ def _select_tickers(max_n: int) -> list[str]:
     for c in wl.get("candidates", []):
         ticker = c.get("ticker", "")
         verdict = c.get("verdict", "")
-        if ticker.startswith("^") or verdict == "PASS":
+        if ticker.startswith("^") or verdict == "PASS" or ticker in SKIP_TICKERS:
             continue
         if verdict not in ("RESEARCH-WORTHY", "WATCHLIST"):
             continue
