@@ -115,8 +115,8 @@ def _extract_numeric_claims(text: str) -> list[tuple[str, float]]:
     for label, pattern in [
         ("revenue_growth", r"revenue growth[^.\n]{0,25}?(-?\d+(?:\.\d+)?)\s*%"),
         ("gross_margin",   r"gross margin[^.\n]{0,25}?(\d+(?:\.\d+)?)\s*%"),
-        ("op_margin",      r"operating margin[^.\n]{0,25}?(\d+(?:\.\d+)?)\s*%"),
-        ("forward_pe",     r"forward P/?E[^.\n]{0,25}?(\d+(?:\.\d+)?)\s*x"),
+        ("op_margin",      r"operating margin[^.\n]{0,25}?(-?\d+(?:\.\d+)?)\s*%"),
+        ("forward_pe",     r"forward P/?E[^.\n]{0,25}?(-?\d+(?:\.\d+)?)\s*x"),
     ]:
         m = re.search(pattern, text, re.IGNORECASE)
         if m:

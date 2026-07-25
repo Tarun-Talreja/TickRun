@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-25T21:46:16Z",
-  "count": 113,
-  "average": 47.0,
+  "generated_at": "2026-07-25T22:43:44Z",
+  "count": 122,
+  "average": 50.8,
   "results": [
     {
       "file": "output/research/ADP_2026-06-10.md",
@@ -557,6 +557,36 @@
       ]
     },
     {
+      "file": "output/research/COHR_2026-07-25.md",
+      "ticker": "COHR",
+      "verdict": "RESEARCH-WORTHY",
+      "score": 85.0,
+      "breakdown": {
+        "structure": 40.0,
+        "format": 25.0,
+        "groundedness": 20.0,
+        "bear_check": 0.0
+      },
+      "notes": [
+        "no bear-case check section found"
+      ]
+    },
+    {
+      "file": "output/research/DHR_2026-07-25.md",
+      "ticker": "DHR",
+      "verdict": "PASS",
+      "score": 100.0,
+      "breakdown": {
+        "structure": 40.0,
+        "format": 25.0,
+        "groundedness": 20.0,
+        "bear_check": 15.0
+      },
+      "notes": [
+        "not RESEARCH-WORTHY \u2014 bear check not required"
+      ]
+    },
+    {
       "file": "output/research/GEHC_2026-06-10.md",
       "ticker": "GEHC",
       "verdict": "RESEARCH-WORTHY",
@@ -882,6 +912,21 @@
       ]
     },
     {
+      "file": "output/research/GIS_2026-07-25.md",
+      "ticker": "GIS",
+      "verdict": "PASS",
+      "score": 100.0,
+      "breakdown": {
+        "structure": 40.0,
+        "format": 25.0,
+        "groundedness": 20.0,
+        "bear_check": 15.0
+      },
+      "notes": [
+        "not RESEARCH-WORTHY \u2014 bear check not required"
+      ]
+    },
+    {
       "file": "output/research/GOOGL_2026-06-08.md",
       "ticker": "GOOGL",
       "verdict": null,
@@ -959,6 +1004,34 @@
         "missing/malformed THESIS line",
         "missing/malformed BUY_TRIGGER_DRAWDOWN_PCT line"
       ]
+    },
+    {
+      "file": "output/research/IBM_2026-07-25.md",
+      "ticker": "IBM",
+      "verdict": "WATCHLIST",
+      "score": 100.0,
+      "breakdown": {
+        "structure": 40.0,
+        "format": 25.0,
+        "groundedness": 20.0,
+        "bear_check": 15.0
+      },
+      "notes": [
+        "not RESEARCH-WORTHY \u2014 bear check not required"
+      ]
+    },
+    {
+      "file": "output/research/LITE_2026-07-25.md",
+      "ticker": "LITE",
+      "verdict": "RESEARCH-WORTHY",
+      "score": 100.0,
+      "breakdown": {
+        "structure": 40.0,
+        "format": 25.0,
+        "groundedness": 20.0,
+        "bear_check": 15.0
+      },
+      "notes": []
     },
     {
       "file": "output/research/LPLA_2026-06-10.md",
@@ -1311,6 +1384,19 @@
       ]
     },
     {
+      "file": "output/research/META_2026-07-25.md",
+      "ticker": "META",
+      "verdict": "RESEARCH-WORTHY",
+      "score": 100.0,
+      "breakdown": {
+        "structure": 40.0,
+        "format": 25.0,
+        "groundedness": 20.0,
+        "bear_check": 15.0
+      },
+      "notes": []
+    },
+    {
       "file": "output/research/MKTX_2026-06-09.md",
       "ticker": "MKTX",
       "verdict": "RESEARCH-WORTHY",
@@ -1652,6 +1738,21 @@
       ]
     },
     {
+      "file": "output/research/NBIS_2026-07-25.md",
+      "ticker": "NBIS",
+      "verdict": "PASS",
+      "score": 100.0,
+      "breakdown": {
+        "structure": 40.0,
+        "format": 25.0,
+        "groundedness": 20.0,
+        "bear_check": 15.0
+      },
+      "notes": [
+        "not RESEARCH-WORTHY \u2014 bear check not required"
+      ]
+    },
+    {
       "file": "output/research/NFLX_2026-06-08.md",
       "ticker": "NFLX",
       "verdict": "RESEARCH-WORTHY",
@@ -1743,6 +1844,22 @@
         "bear_check": 15.0
       },
       "notes": [
+        "not RESEARCH-WORTHY \u2014 bear check not required"
+      ]
+    },
+    {
+      "file": "output/research/OKLO_2026-07-25.md",
+      "ticker": "OKLO",
+      "verdict": "PASS",
+      "score": 93.8,
+      "breakdown": {
+        "structure": 40.0,
+        "format": 18.8,
+        "groundedness": 20.0,
+        "bear_check": 15.0
+      },
+      "notes": [
+        "missing/malformed BUY_TRIGGER_DRAWDOWN_PCT line",
         "not RESEARCH-WORTHY \u2014 bear check not required"
       ]
     },
@@ -2388,6 +2505,19 @@
         "missing/malformed BUY_TRIGGER_DRAWDOWN_PCT line",
         "not RESEARCH-WORTHY \u2014 bear check not required"
       ]
+    },
+    {
+      "file": "output/research/VRT_2026-07-25.md",
+      "ticker": "VRT",
+      "verdict": "RESEARCH-WORTHY",
+      "score": 100.0,
+      "breakdown": {
+        "structure": 40.0,
+        "format": 25.0,
+        "groundedness": 20.0,
+        "bear_check": 15.0
+      },
+      "notes": []
     },
     {
       "file": "output/research/VST_2026-06-08.md",
