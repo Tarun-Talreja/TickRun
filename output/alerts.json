@@ -1,18 +1,6 @@
 {
-  "generated_at": "2026-07-25T20:15:36Z",
+  "generated_at": "2026-07-26T04:07:34Z",
   "pullback_alerts": [
-    {
-      "ticker": "OKLO",
-      "name": "Oklo Inc.",
-      "theme": "nuclear_smr",
-      "verdict": "WATCHLIST",
-      "price": 40.25,
-      "high_52w": 193.84,
-      "drawdown_pct": -79.2,
-      "severity": "STRONG",
-      "thesis": "Sam Altman-backed advanced nuclear startup. Building Aurora microreactors (1-50MW). DOE site use permit secured at Idaho National Lab. Pre-revenue \u2014 pure speculation on the long-term SMR thesis. -65% from $193 ATH at $67. If advanced nuclear succeeds, Oklo is the pure-play but it's a 5-10 year story with binary risk.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
     {
       "ticker": "FLUT",
       "name": "Flutter Entertainment plc",
@@ -46,31 +34,7 @@
       "high_52w": 201.15,
       "drawdown_pct": -50.9,
       "severity": "STRONG",
-      "thesis": "Enterprise AI workflow platform (Now Assist). 22.1% revenue growth, 76.6% gross margin. NOTE: underwent a 5-for-1 stock split on 2025-12-18 -- the ~$99 price is correct, not a data error (confirmed via yfinance splits history + market-cap/share-count cross-check). Previously flagged as a data bug; that flag was wrong and has been corrected.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "CBRS",
-      "name": "Cerebras Systems Inc.",
-      "theme": "edge_ai_silicon",
-      "verdict": "WATCHLIST",
-      "price": 199.12,
-      "high_52w": 386.34,
-      "drawdown_pct": -48.5,
-      "severity": "STRONG",
-      "thesis": "Cerebras \u2014 wafer-scale AI processors (largest chip ever made) for AI training/inference. 1474% revenue growth but -31% op margin (unprofitable), 287x fwd PE, -37% from ATH. Direct NVIDIA challenger \u2014 pure speculation at this valuation.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "LMB",
-      "name": "Limbach Holdings, Inc.",
-      "theme": "datacenter_infra",
-      "verdict": "WATCHLIST",
-      "price": 72.74,
-      "high_52w": 141.18,
-      "drawdown_pct": -48.5,
-      "severity": "STRONG",
-      "thesis": "Limbach \u2014 mechanical/HVAC systems contractor increasingly serving data centers. 4% growth, thin 1% op margin reported, 16x fwd PE, -47% from ATH. Small-cap data-center infra pick-and-shovel.",
+      "thesis": "Enterprise software company with strong revenue growth and positive free cash flow, but expensive valuation multiples.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -118,7 +82,7 @@
       "high_52w": 329.88,
       "drawdown_pct": -41.1,
       "severity": "STRONG",
-      "thesis": "Designs custom AI ASICs and SerDes interconnect IP for Amazon (Trainium), Google (TPU interconnects), and Microsoft. Direct AVGO competitor in hyperscaler custom silicon. 27.6% revenue growth, 51.5% gross margin, $2.27B FCF. 42.7x forward PE. Down -16.7% today (2026-06-08) \u2014 verify cause before buying. If drop is macro-driven (not a lost design win), this is an entry opportunity at -18.7% from ATH.",
+      "thesis": "Marvell Technology is a high-growth AI infrastructure and data center power play at 31x forward earnings.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -134,27 +98,15 @@
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "theme": "mega_cap_ai",
-      "verdict": "WATCHLIST",
-      "price": 187.77,
-      "high_52w": 299.86,
-      "drawdown_pct": -37.4,
-      "severity": "STRONG",
-      "thesis": "Pure-play AI cloud infrastructure spun out of Yandex. Rents GPU clusters for AI training/inference. $0.9B revenue growing 684% YoY from a small base. 72.1% gross margin but -32% op margin and -$6.15B FCF \u2014 heavy capex mode. $52.9B market cap. European/international alternative to AWS for AI workloads. Elite ML engineering talent from Yandex lineage.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
       "ticker": "COHR",
       "name": "Coherent Corp.",
       "theme": "networking_infra",
-      "verdict": "WATCHLIST",
+      "verdict": "RESEARCH-WORTHY",
       "price": 282.39,
       "high_52w": 440.0,
       "drawdown_pct": -35.8,
       "severity": "STRONG",
-      "thesis": "Makes optical transceivers, lasers, and compound semiconductors for AI datacenters and telecom. Same 800G upgrade cycle thesis as LITE (Lumentum). 20.5% revenue growth, 37% gross margin, 46.6x forward PE. Negative FCF (-$0.20B). LITE is the better-valued optical play (90% growth vs 20.5% at similar PE). Add COHR only if LITE position is full.",
+      "thesis": "High-growth AI infrastructure play with diversified customer base and strong R&D investment.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -178,7 +130,7 @@
       "high_52w": 332.46,
       "drawdown_pct": -35.6,
       "severity": "STRONG",
-      "thesis": "Enterprise AI (WatsonX) + hybrid cloud (Red Hat OpenShift) + consulting. WatsonX wins in regulated industries (banking, healthcare, government) where OpenAI/Azure can't go \u2014 on-prem, air-gapped deployments. $13.08B FCF is exceptional. Red Hat growing 15%+ annually. 21.2x forward PE, 9.5% revenue growth, -14.3% from $332 ATH. Slow growth but durable cash generation.",
+      "thesis": "Large-cap technology company with significant AI infrastructure exposure trading at a reasonable forward P/E of 16.2x for modest growth.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -218,18 +170,6 @@
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "theme": "consumer_media",
-      "verdict": "WATCHLIST",
-      "price": 22.295,
-      "high_52w": 32.86,
-      "drawdown_pct": -32.2,
-      "severity": "MODERATE",
-      "thesis": "Comcast \u2014 cable + NBCUniversal + Peacock. 6.3x fwd PE (very cheap), 5.5% dividend, -31% from ATH. But cord-cutting headwind; broadband growth slowing.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
       "ticker": "MSFT",
       "name": "Microsoft Corporation",
       "theme": "mega_cap_ai",
@@ -254,18 +194,6 @@
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
-      "ticker": "GIS",
-      "name": "General Mills, Inc.",
-      "theme": "defensive_income",
-      "verdict": "WATCHLIST",
-      "price": 36.03,
-      "high_52w": 51.33,
-      "drawdown_pct": -29.8,
-      "severity": "MODERATE",
-      "thesis": "General Mills \u2014 packaged foods. 7.4% dividend yield(!), 10.5x fwd PE, -40% from ATH. Deep value but only 2% growth. Verify dividend payout safety before chasing the yield.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
       "ticker": "LITE",
       "name": "Lumentum Holdings Inc.",
       "theme": "networking_infra",
@@ -274,7 +202,7 @@
       "high_52w": 1085.68,
       "drawdown_pct": -29.7,
       "severity": "MODERATE",
-      "thesis": "Makes EML laser chips and coherent optical components inside 400G/800G transceivers connecting AI GPU clusters. Only vertically integrated laser chip + transceiver company at scale. Revenue grew 90% YoY as AI datacenter optical upgrade cycle accelerates. 40.8% gross margin, 21.8% op margin. 49.8x forward PE. -16.9% from $1,085 ATH.",
+      "thesis": "High-growth AI infrastructure play at 41.6x forward earnings for 90%+ growth.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -314,18 +242,6 @@
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
-      "ticker": "STZ",
-      "name": "Constellation Brands, Inc.",
-      "theme": "defensive_income",
-      "verdict": "WATCHLIST",
-      "price": 130.16,
-      "high_52w": 176.33,
-      "drawdown_pct": -26.2,
-      "severity": "MODERATE",
-      "thesis": "Constellation Brands \u2014 beer (Modelo, Corona) + wine. 27% op margin but -11% revenue growth. 11.4x fwd PE, -20% from ATH. Cheap but shrinking \u2014 needs a turnaround thesis.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
       "ticker": "VST",
       "name": "Vistra Corp.",
       "theme": "nuclear_smr",
@@ -346,7 +262,7 @@
       "high_52w": 796.25,
       "drawdown_pct": -25.3,
       "severity": "MODERATE",
-      "thesis": "Down 25% from $800 high, forward P/E 18x \u2014 cheapest since early 2023. AI semiconductor division at $34B annualized. $115-135B capex on AI. Valuation reset overdone given fundamentals intact.",
+      "thesis": "Meta offers a compelling growth story at a reasonable valuation of 16.1x forward earnings, with significant exposure to AI infrastructure theme.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -358,7 +274,7 @@
       "high_52w": 379.935,
       "drawdown_pct": -23.6,
       "severity": "MODERATE",
-      "thesis": "Makes power and cooling infrastructure for AI datacenters \u2014 UPS systems, power distribution units, liquid cooling. AI GPU racks run at 40-100kW vs 5kW traditional; liquid cooling is mandatory at that density. Vertiv is the sole at-scale provider. Backlog +100% YoY. $1.96B FCF. Microsoft, Google, Meta cited as sole-source supplier. 36.2x forward PE, -15.8% from $379 ATH.",
+      "thesis": "Vertiv's strong position in the data center infrastructure market and its expanding margins make it an attractive play on the AI infrastructure theme at a forward P/E of 32.9x.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -398,18 +314,6 @@
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
-      "ticker": "DHR",
-      "name": "Danaher Corporation",
-      "theme": "healthcare_innovation",
-      "verdict": "WATCHLIST",
-      "price": 191.5,
-      "high_52w": 242.8,
-      "drawdown_pct": -21.1,
-      "severity": "MODERATE",
-      "thesis": "Life-science tools + diagnostics. 23% op margin but only 4% growth, 20x fwd PE. -24% from ATH. Premier compounder but growth has stalled post-COVID.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
       "ticker": "ADP",
       "name": "Automatic Data Processing, Inc.",
       "theme": "quality_compounder",
@@ -420,27 +324,7 @@
       "severity": "MODERATE",
       "thesis": "Payroll + HR outsourcing \u2014 30% op margin, sticky multi-year contracts, 2.9% dividend, 18.8x fwd PE. -30% from ATH. Recession-resilient cash compounder.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "TLN",
-      "name": "Talen Energy Corporation",
-      "theme": "nuclear_smr",
-      "verdict": "RESEARCH-WORTHY",
-      "price": 359.9,
-      "high_52w": 451.28,
-      "drawdown_pct": -20.2,
-      "severity": "MODERATE",
-      "thesis": "Cheapest contracted-nuclear-to-hyperscaler play at ~12x forward earnings vs CEG/VST premium; 1,920MW Amazon PPA through 2042 gives merchant-rare revenue visibility. Discount reflects measurable concentration risk (single asset Susquehanna, single counterparty), not broken fundamentals.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     }
   ],
-  "stale_research": [
-    {
-      "ticker": "META",
-      "last_researched": "2026-04-25",
-      "days_since": 91,
-      "verdict": "WATCHLIST",
-      "action": "Re-run: python3 scripts/research_ticker.py META"
-    }
-  ]
+  "stale_research": []
 }

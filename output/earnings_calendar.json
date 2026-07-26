@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T20:15:36Z",
+  "generated_at": "2026-07-26T04:07:34Z",
   "lookahead_days": 30,
   "upcoming_earnings": [
     {
@@ -19,7 +19,7 @@
       "days_until": 2,
       "theme": "platform_network",
       "verdict": "WATCHLIST",
-      "thesis": "Global payments toll road \u2014 97.8% gross margin, 67.3% op margin, 17.1% revenue growth. Cross-border volume (highest fee tier) accelerating. AI agent commerce will need payment rails. -12.8% from 52w high but theme fit is weak for this mandate.",
+      "thesis": "High-quality payment technology company with a strong brand and wide moat, trading at a forward P/E of 23.9x for 17.1% revenue growth.",
       "action": "Review thesis before earnings. Re-run research_ticker.py V after."
     },
     {
@@ -49,7 +49,7 @@
       "days_until": 3,
       "theme": "real_estate",
       "verdict": "WATCHLIST",
-      "thesis": "Invitation Homes \u2014 single-family rental REIT (~80k homes). 4% dividend, 9% growth. Note: REITs use FFO not P/E so the 44x P/E is misleading. -14% from ATH.",
+      "thesis": "Invitation Homes is a fairly valued single-family home REIT with stable cash flow generation and growth prospects.",
       "action": "Review thesis before earnings. Re-run research_ticker.py INVH after."
     },
     {
@@ -59,7 +59,7 @@
       "days_until": 3,
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "thesis": "Down 25% from $800 high, forward P/E 18x \u2014 cheapest since early 2023. AI semiconductor division at $34B annualized. $115-135B capex on AI. Valuation reset overdone given fundamentals intact.",
+      "thesis": "Meta offers a compelling growth story at a reasonable valuation of 16.1x forward earnings, with significant exposure to AI infrastructure theme.",
       "action": "Review thesis before earnings. Re-run research_ticker.py META after."
     },
     {
@@ -79,7 +79,7 @@
       "days_until": 3,
       "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "thesis": "Makes power and cooling infrastructure for AI datacenters \u2014 UPS systems, power distribution units, liquid cooling. AI GPU racks run at 40-100kW vs 5kW traditional; liquid cooling is mandatory at that density. Vertiv is the sole at-scale provider. Backlog +100% YoY. $1.96B FCF. Microsoft, Google, Meta cited as sole-source supplier. 36.2x forward PE, -15.8% from $379 ATH.",
+      "thesis": "Vertiv's strong position in the data center infrastructure market and its expanding margins make it an attractive play on the AI infrastructure theme at a forward P/E of 32.9x.",
       "action": "Review thesis before earnings. Re-run research_ticker.py VRT after."
     },
     {
@@ -109,7 +109,7 @@
       "days_until": 4,
       "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "thesis": "Edison International \u2014 regulated California electric utility. 8% growth, 4.8% dividend, 10.9x fwd PE. Grid/electrification exposure BUT California wildfire liability is a major overhang. -6.7% from ATH (near high).",
+      "thesis": "Edison International offers a relatively cheap valuation at 8.7x trailing earnings for a stable utility company with 7.7% YoY revenue growth.",
       "action": "Review thesis before earnings. Re-run research_ticker.py EIX after."
     },
     {
@@ -208,8 +208,8 @@
       "date": "2026-08-04",
       "days_until": 9,
       "theme": "datacenter_infra",
-      "verdict": "WATCHLIST",
-      "thesis": "Limbach \u2014 mechanical/HVAC systems contractor increasingly serving data centers. 4% growth, thin 1% op margin reported, 16x fwd PE, -47% from ATH. Small-cap data-center infra pick-and-shovel.",
+      "verdict": "PASS",
+      "thesis": "Data center cooling infrastructure provider with a reasonable valuation at 14.3x forward earnings, poised for growth in the expanding data center market.",
       "action": "Review thesis before earnings. Re-run research_ticker.py LMB after."
     },
     {
@@ -238,8 +238,8 @@
       "date": "2026-08-05",
       "days_until": 10,
       "theme": "nuclear_smr",
-      "verdict": "RESEARCH-WORTHY",
-      "thesis": "Cheapest contracted-nuclear-to-hyperscaler play at ~12x forward earnings vs CEG/VST premium; 1,920MW Amazon PPA through 2042 gives merchant-rare revenue visibility. Discount reflects measurable concentration risk (single asset Susquehanna, single counterparty), not broken fundamentals.",
+      "verdict": "PASS",
+      "thesis": "Talen Energy Corporation is a grid/nuclear play with strong revenue growth, reasonable valuation, and manageable debt, but requires closer examination of its debt and cash flow.",
       "action": "Review thesis before earnings. Re-run research_ticker.py TLN after."
     },
     {
@@ -289,7 +289,7 @@
       "days_until": 16,
       "theme": "networking_infra",
       "verdict": "WATCHLIST",
-      "thesis": "Makes EML laser chips and coherent optical components inside 400G/800G transceivers connecting AI GPU clusters. Only vertically integrated laser chip + transceiver company at scale. Revenue grew 90% YoY as AI datacenter optical upgrade cycle accelerates. 40.8% gross margin, 21.8% op margin. 49.8x forward PE. -16.9% from $1,085 ATH.",
+      "thesis": "High-growth AI infrastructure play at 41.6x forward earnings for 90%+ growth.",
       "action": "Review thesis before earnings. Re-run research_ticker.py LITE after."
     },
     {
@@ -298,8 +298,8 @@
       "date": "2026-08-12",
       "days_until": 17,
       "theme": "edge_ai_silicon",
-      "verdict": "WATCHLIST",
-      "thesis": "Cerebras \u2014 wafer-scale AI processors (largest chip ever made) for AI training/inference. 1474% revenue growth but -31% op margin (unprofitable), 287x fwd PE, -37% from ATH. Direct NVIDIA challenger \u2014 pure speculation at this valuation.",
+      "verdict": "PASS",
+      "thesis": "High-growth AI infrastructure play with significant valuation expectations and current unprofitability.",
       "action": "Review thesis before earnings. Re-run research_ticker.py CBRS after."
     },
     {
@@ -308,8 +308,8 @@
       "date": "2026-08-12",
       "days_until": 17,
       "theme": "networking_infra",
-      "verdict": "WATCHLIST",
-      "thesis": "Makes optical transceivers, lasers, and compound semiconductors for AI datacenters and telecom. Same 800G upgrade cycle thesis as LITE (Lumentum). 20.5% revenue growth, 37% gross margin, 46.6x forward PE. Negative FCF (-$0.20B). LITE is the better-valued optical play (90% growth vs 20.5% at similar PE). Add COHR only if LITE position is full.",
+      "verdict": "RESEARCH-WORTHY",
+      "thesis": "High-growth AI infrastructure play with diversified customer base and strong R&D investment.",
       "action": "Review thesis before earnings. Re-run research_ticker.py COHR after."
     }
   ]

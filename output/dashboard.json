@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-07-26T04:04:38Z",
-  "quotes_updated": "2026-07-26T03:35:47Z",
+  "last_built": "2026-07-26T04:14:34Z",
+  "quotes_updated": "2026-07-26T04:07:33Z",
   "portfolio": {
     "total_value": 0,
     "core": [
@@ -5989,7 +5989,7 @@
     "data_warnings": []
   },
   "analytics": {
-    "generated_at": "2026-07-25T19:08:17Z",
+    "generated_at": "2026-07-26T04:14:34Z",
     "funded": false,
     "total_value": 0.0,
     "total_invested": 0.0,
@@ -6025,7 +6025,7 @@
         "pnl_pct": null,
         "pct_change_1d": -3.31,
         "theme": "nuclear_smr",
-        "div_yield_pct": null,
+        "div_yield_pct": 0.56,
         "annual_dividend": 0.0
       },
       {
@@ -6040,7 +6040,7 @@
         "pnl_pct": null,
         "pct_change_1d": -0.45,
         "theme": "nuclear_smr",
-        "div_yield_pct": null,
+        "div_yield_pct": 0.62,
         "annual_dividend": 0.0
       },
       {
@@ -6055,7 +6055,7 @@
         "pnl_pct": null,
         "pct_change_1d": 0.03,
         "theme": "mega_cap_ai",
-        "div_yield_pct": null,
+        "div_yield_pct": 0.95,
         "annual_dividend": 0.0
       },
       {
@@ -6086,12 +6086,12 @@
     "concentration_warnings": []
   },
   "track_record": {
-    "generated_at": "2026-07-25T20:15:44Z",
+    "generated_at": "2026-07-26T04:14:34Z",
     "tracked_since": "2026-04-25",
     "scoreboard": {
       "RESEARCH-WORTHY": {
-        "count": 117,
-        "avg_return": 3.9,
+        "count": 118,
+        "avg_return": 3.8,
         "win_rate": 53,
         "best": {
           "ticker": "LPLA",
@@ -6113,9 +6113,9 @@
         }
       },
       "WATCHLIST": {
-        "count": 50,
-        "avg_return": -3.1,
-        "win_rate": 28,
+        "count": 60,
+        "avg_return": -2.5,
+        "win_rate": 23,
         "best": {
           "ticker": "ADP",
           "verdict": "WATCHLIST",
@@ -7056,6 +7056,105 @@
         "return_pct": 0.0
       },
       {
+        "ticker": "NVDA",
+        "verdict": "WATCHLIST",
+        "date": "2026-07-25",
+        "entry_price": 206.84,
+        "confidence": "HIGH",
+        "current_price": 206.84,
+        "return_pct": 0.0
+      },
+      {
+        "ticker": "META",
+        "verdict": "WATCHLIST",
+        "date": "2026-07-25",
+        "entry_price": 595.19,
+        "confidence": "MEDIUM",
+        "current_price": 595.19,
+        "return_pct": 0.0
+      },
+      {
+        "ticker": "V",
+        "verdict": "WATCHLIST",
+        "date": "2026-07-25",
+        "entry_price": 355.74,
+        "confidence": "HIGH",
+        "current_price": 355.74,
+        "return_pct": 0.0
+      },
+      {
+        "ticker": "NOW",
+        "verdict": "WATCHLIST",
+        "date": "2026-07-25",
+        "entry_price": 98.78,
+        "confidence": "MEDIUM",
+        "current_price": 98.78,
+        "return_pct": 0.0
+      },
+      {
+        "ticker": "LITE",
+        "verdict": "WATCHLIST",
+        "date": "2026-07-25",
+        "entry_price": 762.99,
+        "confidence": "MEDIUM",
+        "current_price": 762.99,
+        "return_pct": 0.0
+      },
+      {
+        "ticker": "MRVL",
+        "verdict": "WATCHLIST",
+        "date": "2026-07-25",
+        "entry_price": 194.23,
+        "confidence": "MEDIUM",
+        "current_price": 194.23,
+        "return_pct": 0.0
+      },
+      {
+        "ticker": "IBM",
+        "verdict": "WATCHLIST",
+        "date": "2026-07-25",
+        "entry_price": 214.19,
+        "confidence": "MEDIUM",
+        "current_price": 214.19,
+        "return_pct": 0.0
+      },
+      {
+        "ticker": "COHR",
+        "verdict": "RESEARCH-WORTHY",
+        "date": "2026-07-25",
+        "entry_price": 282.39,
+        "confidence": "MEDIUM",
+        "current_price": 282.39,
+        "return_pct": 0.0
+      },
+      {
+        "ticker": "VRT",
+        "verdict": "WATCHLIST",
+        "date": "2026-07-25",
+        "entry_price": 290.36,
+        "confidence": "MEDIUM",
+        "current_price": 290.36,
+        "return_pct": 0.0
+      },
+      {
+        "ticker": "INVH",
+        "verdict": "WATCHLIST",
+        "date": "2026-07-25",
+        "entry_price": 29.78,
+        "confidence": "MEDIUM",
+        "current_price": 29.78,
+        "return_pct": 0.0
+      },
+      {
+        "ticker": "EIX",
+        "verdict": "WATCHLIST",
+        "date": "2026-07-25",
+        "entry_price": 79.75,
+        "confidence": "MEDIUM",
+        "current_price": 79.75,
+        "return_pct": 0.0
+      },
+      {
         "ticker": "SPY",
         "verdict": "WATCHLIST",
         "date": "2026-05-28",
@@ -7955,7 +8054,7 @@
     ]
   },
   "asset_location": {
-    "generated_at": "2026-07-26T04:04:38Z",
+    "generated_at": "2026-07-26T04:14:34Z",
     "rules": {
       "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
       "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
@@ -9490,18 +9589,6 @@
   "signals": {
     "pullback_alerts": [
       {
-        "ticker": "OKLO",
-        "name": "Oklo Inc.",
-        "theme": "nuclear_smr",
-        "verdict": "WATCHLIST",
-        "price": 40.25,
-        "high_52w": 193.84,
-        "drawdown_pct": -79.2,
-        "severity": "STRONG",
-        "thesis": "Sam Altman-backed advanced nuclear startup. Building Aurora microreactors (1-50MW). DOE site use permit secured at Idaho National Lab. Pre-revenue \u2014 pure speculation on the long-term SMR thesis. -65% from $193 ATH at $67. If advanced nuclear succeeds, Oklo is the pure-play but it's a 5-10 year story with binary risk.",
-        "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-      },
-      {
         "ticker": "FLUT",
         "name": "Flutter Entertainment plc",
         "theme": "consumer_media",
@@ -9534,31 +9621,7 @@
         "high_52w": 201.15,
         "drawdown_pct": -50.9,
         "severity": "STRONG",
-        "thesis": "Enterprise AI workflow platform (Now Assist). 22.1% revenue growth, 76.6% gross margin. NOTE: underwent a 5-for-1 stock split on 2025-12-18 -- the ~$99 price is correct, not a data error (confirmed via yfinance splits history + market-cap/share-count cross-check). Previously flagged as a data bug; that flag was wrong and has been corrected.",
-        "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-      },
-      {
-        "ticker": "CBRS",
-        "name": "Cerebras Systems Inc.",
-        "theme": "edge_ai_silicon",
-        "verdict": "WATCHLIST",
-        "price": 199.12,
-        "high_52w": 386.34,
-        "drawdown_pct": -48.5,
-        "severity": "STRONG",
-        "thesis": "Cerebras \u2014 wafer-scale AI processors (largest chip ever made) for AI training/inference. 1474% revenue growth but -31% op margin (unprofitable), 287x fwd PE, -37% from ATH. Direct NVIDIA challenger \u2014 pure speculation at this valuation.",
-        "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-      },
-      {
-        "ticker": "LMB",
-        "name": "Limbach Holdings, Inc.",
-        "theme": "datacenter_infra",
-        "verdict": "WATCHLIST",
-        "price": 72.74,
-        "high_52w": 141.18,
-        "drawdown_pct": -48.5,
-        "severity": "STRONG",
-        "thesis": "Limbach \u2014 mechanical/HVAC systems contractor increasingly serving data centers. 4% growth, thin 1% op margin reported, 16x fwd PE, -47% from ATH. Small-cap data-center infra pick-and-shovel.",
+        "thesis": "Enterprise software company with strong revenue growth and positive free cash flow, but expensive valuation multiples.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -9606,7 +9669,7 @@
         "high_52w": 329.88,
         "drawdown_pct": -41.1,
         "severity": "STRONG",
-        "thesis": "Designs custom AI ASICs and SerDes interconnect IP for Amazon (Trainium), Google (TPU interconnects), and Microsoft. Direct AVGO competitor in hyperscaler custom silicon. 27.6% revenue growth, 51.5% gross margin, $2.27B FCF. 42.7x forward PE. Down -16.7% today (2026-06-08) \u2014 verify cause before buying. If drop is macro-driven (not a lost design win), this is an entry opportunity at -18.7% from ATH.",
+        "thesis": "Marvell Technology is a high-growth AI infrastructure and data center power play at 31x forward earnings.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -9622,27 +9685,15 @@
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
-        "ticker": "NBIS",
-        "name": "Nebius Group N.V.",
-        "theme": "mega_cap_ai",
-        "verdict": "WATCHLIST",
-        "price": 187.77,
-        "high_52w": 299.86,
-        "drawdown_pct": -37.4,
-        "severity": "STRONG",
-        "thesis": "Pure-play AI cloud infrastructure spun out of Yandex. Rents GPU clusters for AI training/inference. $0.9B revenue growing 684% YoY from a small base. 72.1% gross margin but -32% op margin and -$6.15B FCF \u2014 heavy capex mode. $52.9B market cap. European/international alternative to AWS for AI workloads. Elite ML engineering talent from Yandex lineage.",
-        "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-      },
-      {
         "ticker": "COHR",
         "name": "Coherent Corp.",
         "theme": "networking_infra",
-        "verdict": "WATCHLIST",
+        "verdict": "RESEARCH-WORTHY",
         "price": 282.39,
         "high_52w": 440.0,
         "drawdown_pct": -35.8,
         "severity": "STRONG",
-        "thesis": "Makes optical transceivers, lasers, and compound semiconductors for AI datacenters and telecom. Same 800G upgrade cycle thesis as LITE (Lumentum). 20.5% revenue growth, 37% gross margin, 46.6x forward PE. Negative FCF (-$0.20B). LITE is the better-valued optical play (90% growth vs 20.5% at similar PE). Add COHR only if LITE position is full.",
+        "thesis": "High-growth AI infrastructure play with diversified customer base and strong R&D investment.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -9666,7 +9717,7 @@
         "high_52w": 332.46,
         "drawdown_pct": -35.6,
         "severity": "STRONG",
-        "thesis": "Enterprise AI (WatsonX) + hybrid cloud (Red Hat OpenShift) + consulting. WatsonX wins in regulated industries (banking, healthcare, government) where OpenAI/Azure can't go \u2014 on-prem, air-gapped deployments. $13.08B FCF is exceptional. Red Hat growing 15%+ annually. 21.2x forward PE, 9.5% revenue growth, -14.3% from $332 ATH. Slow growth but durable cash generation.",
+        "thesis": "Large-cap technology company with significant AI infrastructure exposure trading at a reasonable forward P/E of 16.2x for modest growth.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -9706,18 +9757,6 @@
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
-        "ticker": "CMCSA",
-        "name": "Comcast Corporation",
-        "theme": "consumer_media",
-        "verdict": "WATCHLIST",
-        "price": 22.295,
-        "high_52w": 32.86,
-        "drawdown_pct": -32.2,
-        "severity": "MODERATE",
-        "thesis": "Comcast \u2014 cable + NBCUniversal + Peacock. 6.3x fwd PE (very cheap), 5.5% dividend, -31% from ATH. But cord-cutting headwind; broadband growth slowing.",
-        "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-      },
-      {
         "ticker": "MSFT",
         "name": "Microsoft Corporation",
         "theme": "mega_cap_ai",
@@ -9742,18 +9781,6 @@
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
-        "ticker": "GIS",
-        "name": "General Mills, Inc.",
-        "theme": "defensive_income",
-        "verdict": "WATCHLIST",
-        "price": 36.03,
-        "high_52w": 51.33,
-        "drawdown_pct": -29.8,
-        "severity": "MODERATE",
-        "thesis": "General Mills \u2014 packaged foods. 7.4% dividend yield(!), 10.5x fwd PE, -40% from ATH. Deep value but only 2% growth. Verify dividend payout safety before chasing the yield.",
-        "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-      },
-      {
         "ticker": "LITE",
         "name": "Lumentum Holdings Inc.",
         "theme": "networking_infra",
@@ -9762,7 +9789,7 @@
         "high_52w": 1085.68,
         "drawdown_pct": -29.7,
         "severity": "MODERATE",
-        "thesis": "Makes EML laser chips and coherent optical components inside 400G/800G transceivers connecting AI GPU clusters. Only vertically integrated laser chip + transceiver company at scale. Revenue grew 90% YoY as AI datacenter optical upgrade cycle accelerates. 40.8% gross margin, 21.8% op margin. 49.8x forward PE. -16.9% from $1,085 ATH.",
+        "thesis": "High-growth AI infrastructure play at 41.6x forward earnings for 90%+ growth.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -9802,18 +9829,6 @@
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
-        "ticker": "STZ",
-        "name": "Constellation Brands, Inc.",
-        "theme": "defensive_income",
-        "verdict": "WATCHLIST",
-        "price": 130.16,
-        "high_52w": 176.33,
-        "drawdown_pct": -26.2,
-        "severity": "MODERATE",
-        "thesis": "Constellation Brands \u2014 beer (Modelo, Corona) + wine. 27% op margin but -11% revenue growth. 11.4x fwd PE, -20% from ATH. Cheap but shrinking \u2014 needs a turnaround thesis.",
-        "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-      },
-      {
         "ticker": "VST",
         "name": "Vistra Corp.",
         "theme": "nuclear_smr",
@@ -9834,7 +9849,7 @@
         "high_52w": 796.25,
         "drawdown_pct": -25.3,
         "severity": "MODERATE",
-        "thesis": "Down 25% from $800 high, forward P/E 18x \u2014 cheapest since early 2023. AI semiconductor division at $34B annualized. $115-135B capex on AI. Valuation reset overdone given fundamentals intact.",
+        "thesis": "Meta offers a compelling growth story at a reasonable valuation of 16.1x forward earnings, with significant exposure to AI infrastructure theme.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -9846,7 +9861,7 @@
         "high_52w": 379.935,
         "drawdown_pct": -23.6,
         "severity": "MODERATE",
-        "thesis": "Makes power and cooling infrastructure for AI datacenters \u2014 UPS systems, power distribution units, liquid cooling. AI GPU racks run at 40-100kW vs 5kW traditional; liquid cooling is mandatory at that density. Vertiv is the sole at-scale provider. Backlog +100% YoY. $1.96B FCF. Microsoft, Google, Meta cited as sole-source supplier. 36.2x forward PE, -15.8% from $379 ATH.",
+        "thesis": "Vertiv's strong position in the data center infrastructure market and its expanding margins make it an attractive play on the AI infrastructure theme at a forward P/E of 32.9x.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -9886,18 +9901,6 @@
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
-        "ticker": "DHR",
-        "name": "Danaher Corporation",
-        "theme": "healthcare_innovation",
-        "verdict": "WATCHLIST",
-        "price": 191.5,
-        "high_52w": 242.8,
-        "drawdown_pct": -21.1,
-        "severity": "MODERATE",
-        "thesis": "Life-science tools + diagnostics. 23% op margin but only 4% growth, 20x fwd PE. -24% from ATH. Premier compounder but growth has stalled post-COVID.",
-        "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-      },
-      {
         "ticker": "ADP",
         "name": "Automatic Data Processing, Inc.",
         "theme": "quality_compounder",
@@ -9908,29 +9911,9 @@
         "severity": "MODERATE",
         "thesis": "Payroll + HR outsourcing \u2014 30% op margin, sticky multi-year contracts, 2.9% dividend, 18.8x fwd PE. -30% from ATH. Recession-resilient cash compounder.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-      },
-      {
-        "ticker": "TLN",
-        "name": "Talen Energy Corporation",
-        "theme": "nuclear_smr",
-        "verdict": "RESEARCH-WORTHY",
-        "price": 359.9,
-        "high_52w": 451.28,
-        "drawdown_pct": -20.2,
-        "severity": "MODERATE",
-        "thesis": "Cheapest contracted-nuclear-to-hyperscaler play at ~12x forward earnings vs CEG/VST premium; 1,920MW Amazon PPA through 2042 gives merchant-rare revenue visibility. Discount reflects measurable concentration risk (single asset Susquehanna, single counterparty), not broken fundamentals.",
-        "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       }
     ],
-    "stale_research": [
-      {
-        "ticker": "META",
-        "last_researched": "2026-04-25",
-        "days_since": 91,
-        "verdict": "WATCHLIST",
-        "action": "Re-run: python3 scripts/research_ticker.py META"
-      }
-    ],
+    "stale_research": [],
     "upcoming_earnings": [
       {
         "ticker": "CLS",
@@ -9949,7 +9932,7 @@
         "days_until": 2,
         "theme": "platform_network",
         "verdict": "WATCHLIST",
-        "thesis": "Global payments toll road \u2014 97.8% gross margin, 67.3% op margin, 17.1% revenue growth. Cross-border volume (highest fee tier) accelerating. AI agent commerce will need payment rails. -12.8% from 52w high but theme fit is weak for this mandate.",
+        "thesis": "High-quality payment technology company with a strong brand and wide moat, trading at a forward P/E of 23.9x for 17.1% revenue growth.",
         "action": "Review thesis before earnings. Re-run research_ticker.py V after."
       },
       {
@@ -9979,7 +9962,7 @@
         "days_until": 3,
         "theme": "real_estate",
         "verdict": "WATCHLIST",
-        "thesis": "Invitation Homes \u2014 single-family rental REIT (~80k homes). 4% dividend, 9% growth. Note: REITs use FFO not P/E so the 44x P/E is misleading. -14% from ATH.",
+        "thesis": "Invitation Homes is a fairly valued single-family home REIT with stable cash flow generation and growth prospects.",
         "action": "Review thesis before earnings. Re-run research_ticker.py INVH after."
       },
       {
@@ -9989,7 +9972,7 @@
         "days_until": 3,
         "theme": "mega_cap_ai",
         "verdict": "WATCHLIST",
-        "thesis": "Down 25% from $800 high, forward P/E 18x \u2014 cheapest since early 2023. AI semiconductor division at $34B annualized. $115-135B capex on AI. Valuation reset overdone given fundamentals intact.",
+        "thesis": "Meta offers a compelling growth story at a reasonable valuation of 16.1x forward earnings, with significant exposure to AI infrastructure theme.",
         "action": "Review thesis before earnings. Re-run research_ticker.py META after."
       },
       {
@@ -10009,7 +9992,7 @@
         "days_until": 3,
         "theme": "power_grid",
         "verdict": "WATCHLIST",
-        "thesis": "Makes power and cooling infrastructure for AI datacenters \u2014 UPS systems, power distribution units, liquid cooling. AI GPU racks run at 40-100kW vs 5kW traditional; liquid cooling is mandatory at that density. Vertiv is the sole at-scale provider. Backlog +100% YoY. $1.96B FCF. Microsoft, Google, Meta cited as sole-source supplier. 36.2x forward PE, -15.8% from $379 ATH.",
+        "thesis": "Vertiv's strong position in the data center infrastructure market and its expanding margins make it an attractive play on the AI infrastructure theme at a forward P/E of 32.9x.",
         "action": "Review thesis before earnings. Re-run research_ticker.py VRT after."
       },
       {
@@ -10039,7 +10022,7 @@
         "days_until": 4,
         "theme": "power_grid",
         "verdict": "WATCHLIST",
-        "thesis": "Edison International \u2014 regulated California electric utility. 8% growth, 4.8% dividend, 10.9x fwd PE. Grid/electrification exposure BUT California wildfire liability is a major overhang. -6.7% from ATH (near high).",
+        "thesis": "Edison International offers a relatively cheap valuation at 8.7x trailing earnings for a stable utility company with 7.7% YoY revenue growth.",
         "action": "Review thesis before earnings. Re-run research_ticker.py EIX after."
       },
       {
@@ -10138,8 +10121,8 @@
         "date": "2026-08-04",
         "days_until": 9,
         "theme": "datacenter_infra",
-        "verdict": "WATCHLIST",
-        "thesis": "Limbach \u2014 mechanical/HVAC systems contractor increasingly serving data centers. 4% growth, thin 1% op margin reported, 16x fwd PE, -47% from ATH. Small-cap data-center infra pick-and-shovel.",
+        "verdict": "PASS",
+        "thesis": "Data center cooling infrastructure provider with a reasonable valuation at 14.3x forward earnings, poised for growth in the expanding data center market.",
         "action": "Review thesis before earnings. Re-run research_ticker.py LMB after."
       },
       {
@@ -10168,8 +10151,8 @@
         "date": "2026-08-05",
         "days_until": 10,
         "theme": "nuclear_smr",
-        "verdict": "RESEARCH-WORTHY",
-        "thesis": "Cheapest contracted-nuclear-to-hyperscaler play at ~12x forward earnings vs CEG/VST premium; 1,920MW Amazon PPA through 2042 gives merchant-rare revenue visibility. Discount reflects measurable concentration risk (single asset Susquehanna, single counterparty), not broken fundamentals.",
+        "verdict": "PASS",
+        "thesis": "Talen Energy Corporation is a grid/nuclear play with strong revenue growth, reasonable valuation, and manageable debt, but requires closer examination of its debt and cash flow.",
         "action": "Review thesis before earnings. Re-run research_ticker.py TLN after."
       },
       {
@@ -10219,7 +10202,7 @@
         "days_until": 16,
         "theme": "networking_infra",
         "verdict": "WATCHLIST",
-        "thesis": "Makes EML laser chips and coherent optical components inside 400G/800G transceivers connecting AI GPU clusters. Only vertically integrated laser chip + transceiver company at scale. Revenue grew 90% YoY as AI datacenter optical upgrade cycle accelerates. 40.8% gross margin, 21.8% op margin. 49.8x forward PE. -16.9% from $1,085 ATH.",
+        "thesis": "High-growth AI infrastructure play at 41.6x forward earnings for 90%+ growth.",
         "action": "Review thesis before earnings. Re-run research_ticker.py LITE after."
       },
       {
@@ -10228,8 +10211,8 @@
         "date": "2026-08-12",
         "days_until": 17,
         "theme": "edge_ai_silicon",
-        "verdict": "WATCHLIST",
-        "thesis": "Cerebras \u2014 wafer-scale AI processors (largest chip ever made) for AI training/inference. 1474% revenue growth but -31% op margin (unprofitable), 287x fwd PE, -37% from ATH. Direct NVIDIA challenger \u2014 pure speculation at this valuation.",
+        "verdict": "PASS",
+        "thesis": "High-growth AI infrastructure play with significant valuation expectations and current unprofitability.",
         "action": "Review thesis before earnings. Re-run research_ticker.py CBRS after."
       },
       {
@@ -10238,8 +10221,8 @@
         "date": "2026-08-12",
         "days_until": 17,
         "theme": "networking_infra",
-        "verdict": "WATCHLIST",
-        "thesis": "Makes optical transceivers, lasers, and compound semiconductors for AI datacenters and telecom. Same 800G upgrade cycle thesis as LITE (Lumentum). 20.5% revenue growth, 37% gross margin, 46.6x forward PE. Negative FCF (-$0.20B). LITE is the better-valued optical play (90% growth vs 20.5% at similar PE). Add COHR only if LITE position is full.",
+        "verdict": "RESEARCH-WORTHY",
+        "thesis": "High-growth AI infrastructure play with diversified customer base and strong R&D investment.",
         "action": "Review thesis before earnings. Re-run research_ticker.py COHR after."
       }
     ],
@@ -10354,7 +10337,7 @@
       {
         "ticker": "NBIS",
         "name": "Nebius Group N.V.",
-        "verdict": "WATCHLIST",
+        "verdict": "PASS",
         "price": 187.77,
         "pct_day": -15.02,
         "pct_since": 0.0,
@@ -10363,13 +10346,13 @@
         "triggers": [
           "-15.0% on the day"
         ],
-        "reason": "No clear catalyst in current news.",
+        "reason": "Part of a broader AI/tech selloff, not company-specific.",
         "news": [
           {
-            "title": "These high-flying tech stocks are down 65% \u2014 here's how to shop the sell-off: One Big Investment Idea",
-            "publisher": "Yahoo Finance",
-            "date": "2026-07-23",
-            "url": "https://finance.yahoo.com/markets/article/these-high-flying-tech-stocks-are-down-65--heres-how-to-shop-the-sell-off-one-big-investment-idea-131623103.html"
+            "title": "Nebius vs. Strategy: Comparing Revenue Trends Between an Artificial Intelligence Company and a Bitcoin Giant",
+            "publisher": "Motley Fool",
+            "date": "2026-07-25",
+            "url": "https://www.fool.com/coverage/charts/2026/07/25/nebius-vs-strategy-comparing-revenue-trends-between-an-artificial-intelligence-company-and-a-bitcoin-giant/"
           },
           {
             "title": "Here\u2019s Why Nebius Group N.V. (NBIS) Is a Speculative Growth Play Backed by Nvidia\u2019s $2 Billion Investment",
@@ -10386,43 +10369,43 @@
         ]
       },
       {
-        "ticker": "AAOI",
-        "name": "Applied Optoelectronics, Inc.",
+        "ticker": "CRDO",
+        "name": "Credo Technology Group Holding Ltd",
         "verdict": "WATCHLIST",
-        "price": 100.15,
-        "pct_day": -10.6,
-        "pct_since": 0.0,
-        "primary_pct": -10.6,
+        "price": 213.15,
+        "pct_day": -9.87,
+        "pct_since": null,
+        "primary_pct": -9.87,
         "direction": "down",
         "triggers": [
-          "-10.6% on the day"
+          "-9.9% on the day"
         ],
         "reason": "No clear catalyst in current news.",
         "news": [
           {
-            "title": "These high-flying tech stocks are down 65% \u2014 here's how to shop the sell-off: One Big Investment Idea",
-            "publisher": "Yahoo Finance",
-            "date": "2026-07-23",
-            "url": "https://finance.yahoo.com/markets/article/these-high-flying-tech-stocks-are-down-65--heres-how-to-shop-the-sell-off-one-big-investment-idea-131623103.html"
+            "title": "The Zacks Analyst Blog Highlights Credo Technology, Broadcom, Marvell Technology and Astera Labs",
+            "publisher": "Zacks",
+            "date": "2026-07-24",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-analyst-blog-highlights-credo-110900427.html"
           },
           {
-            "title": "COHR, AAOI, LITE, POET: Photonic Stocks Join Google Capex-Fueled AI Rally",
-            "publisher": "Stocktwits",
+            "title": "Should Credo\u2019s Projected US$600 Million AI Optics Ramp Reshape CRDO\u2019s Core Investment Thesis?",
+            "publisher": "Simply Wall St.",
             "date": "2026-07-23",
-            "url": "https://stocktwits.com/news-articles/markets/equity/cohr-aaoi-lite-poet-photonic-stocks-join-google-capex-fueled-ai-rally/cZZnO3mR7x5"
+            "url": "https://finance.yahoo.com/technology/ai/articles/credo-projected-us-600-million-201102943.html"
           },
           {
-            "title": "Applied Optoelectronics (AAOI) Soars 15.8% Ahead of Earnings; Hedge Fund Holdings More Than Triple",
-            "publisher": "Insider Monkey",
-            "date": "2026-07-21",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/applied-optoelectronics-aaoi-soars-15-222214097.html"
+            "title": "Credo or Marvell: Who Leads the AI Connectivity Race?",
+            "publisher": "24/7 Wall St.",
+            "date": "2026-07-23",
+            "url": "https://247wallst.com/investing/2026/07/23/credo-or-marvell-who-leads-the-ai-connectivity-race/"
           }
         ]
       },
       {
         "ticker": "COHR",
         "name": "Coherent Corp.",
-        "verdict": "WATCHLIST",
+        "verdict": "RESEARCH-WORTHY",
         "price": 282.39,
         "pct_day": -9.84,
         "pct_since": 0.0,
@@ -10456,7 +10439,7 @@
       {
         "ticker": "CBRS",
         "name": "Cerebras Systems Inc.",
-        "verdict": "WATCHLIST",
+        "verdict": "PASS",
         "price": 199.12,
         "pct_day": -9.49,
         "pct_since": 0.0,
@@ -10488,9 +10471,43 @@
         ]
       },
       {
+        "ticker": "CLS",
+        "name": "Celestica Inc.",
+        "verdict": "RESEARCH-WORTHY",
+        "price": 305.28,
+        "pct_day": -8.8,
+        "pct_since": null,
+        "primary_pct": -8.8,
+        "direction": "down",
+        "triggers": [
+          "-8.8% on the day"
+        ],
+        "reason": "No clear catalyst in current news.",
+        "news": [
+          {
+            "title": "2 Stocks to Buy Now as Google Raises Its AI Spending Forecast Yet Again",
+            "publisher": "Barchart",
+            "date": "2026-07-25",
+            "url": "https://www.barchart.com/story/news/3462511/2-stocks-to-buy-now-as-google-raises-its-ai-spending-forecast-yet-again"
+          },
+          {
+            "title": "Own Flex For AI? Its Breakup Changes The Math.",
+            "publisher": "Trefis",
+            "date": "2026-07-24",
+            "url": "https://www.trefis.com/articles/608749/own-flex-for-ai-its-breakup-changes-the-math/2026-07-24"
+          },
+          {
+            "title": "AI Memory Stocks Lead Chip Selloff",
+            "publisher": "GuruFocus.com",
+            "date": "2026-07-24",
+            "url": "https://finance.yahoo.com/technology/articles/ai-memory-stocks-lead-chip-182413900.html"
+          }
+        ]
+      },
+      {
         "ticker": "OKLO",
         "name": "Oklo Inc.",
-        "verdict": "WATCHLIST",
+        "verdict": "PASS",
         "price": 40.25,
         "pct_day": -8.52,
         "pct_since": 0.0,
@@ -10502,12 +10519,6 @@
         "reason": "No clear catalyst in current news.",
         "news": [
           {
-            "title": "These high-flying tech stocks are down 65% \u2014 here's how to shop the sell-off: One Big Investment Idea",
-            "publisher": "Yahoo Finance",
-            "date": "2026-07-23",
-            "url": "https://finance.yahoo.com/markets/article/these-high-flying-tech-stocks-are-down-65--heres-how-to-shop-the-sell-off-one-big-investment-idea-131623103.html"
-          },
-          {
             "title": "The Crowd Is Dumping Oklo. Here's Why I'd Be Buying It Down 44%.",
             "publisher": "Motley Fool",
             "date": "2026-07-25",
@@ -10518,6 +10529,12 @@
             "publisher": "Motley Fool",
             "date": "2026-07-25",
             "url": "https://www.fool.com/investing/2026/07/25/nuclear-company-oklo-receives-startup-authorization-for-groves-reactor-a-key-step-in-its-regulatory-journey/"
+          },
+          {
+            "title": "OpenAI's Sam Altman Is Betting Big on Nuclear -- Should You Follow Him Into Oklo?",
+            "publisher": "Motley Fool",
+            "date": "2026-07-25",
+            "url": "https://www.fool.com/investing/2026/07/25/openais-sam-altman-is-betting-big-on-nuclear-shoul/"
           }
         ]
       },
@@ -10536,6 +10553,12 @@
         "reason": "No clear catalyst in current news.",
         "news": [
           {
+            "title": "2 Stocks to Buy Now as Google Raises Its AI Spending Forecast Yet Again",
+            "publisher": "Barchart",
+            "date": "2026-07-25",
+            "url": "https://www.barchart.com/story/news/3462511/2-stocks-to-buy-now-as-google-raises-its-ai-spending-forecast-yet-again"
+          },
+          {
             "title": "Lumentum and 5 Other Stocks Set to Win From Big Tech\u2019s AI Spending Spree",
             "publisher": "Barrons.com",
             "date": "2026-07-23",
@@ -10546,12 +10569,6 @@
             "publisher": "Barchart",
             "date": "2026-07-23",
             "url": "https://www.barchart.com/story/news/3420740/lumentum-holdings-quarterly-earnings-preview-what-you-need-to-know"
-          },
-          {
-            "title": "NVIDIA is Acquiring \u2018Dark Fiber\u2019 Across the United States. Here\u2019s Why That\u2019s a Big Deal.",
-            "publisher": "24/7 Wall St.",
-            "date": "2026-07-23",
-            "url": "https://247wallst.com/investing/2026/07/23/nvidia-is-acquiring-dark-fiber-across-the-united-states-heres-why-thats-a-big-deal/"
           }
         ]
       },
@@ -10601,7 +10618,7 @@
         "triggers": [
           "-7.2% on the day"
         ],
-        "reason": "No clear catalyst in current news.",
+        "reason": "See headlines (explanation limited to top movers).",
         "news": [
           {
             "title": "Down 34% From Its Highs, Is Marvell Technology a Buy on the Dip?",
@@ -10626,7 +10643,7 @@
       {
         "ticker": "MU",
         "name": "Micron Technology, Inc.",
-        "verdict": "RESEARCH-WORTHY",
+        "verdict": "WATCHLIST",
         "price": 920.95,
         "pct_day": -6.99,
         "pct_since": 0.0,
@@ -10638,12 +10655,6 @@
         "reason": "See headlines (explanation limited to top movers).",
         "news": [
           {
-            "title": "Why Tesla, Google, and other Mag 7 stocks are losing billions in valuation",
-            "publisher": "Yahoo Finance Video",
-            "date": "2026-07-24",
-            "url": "https://finance.yahoo.com/video/why-tesla-google-and-other-mag-7-stocks-are-losing-billions-in-valuation-200043787.html"
-          },
-          {
             "title": "Micron, Nvidia, or SpaceX: Which Is the Best AI Stock to Put $1,000 in Right Now?",
             "publisher": "Motley Fool",
             "date": "2026-07-25",
@@ -10654,22 +10665,73 @@
             "publisher": "Motley Fool",
             "date": "2026-07-25",
             "url": "https://www.fool.com/investing/2026/07/25/should-you-buy-micron-stock-below-price-heres-what/"
+          },
+          {
+            "title": "Binance Data Shows How Crypto is Using AI Stocks to Attract Gen Z Investors",
+            "publisher": "BeInCrypto",
+            "date": "2026-07-25",
+            "url": "https://beincrypto.com/gen-z-crypto-nvidia-first-trade/"
+          }
+        ]
+      },
+      {
+        "ticker": "TLN",
+        "name": "Talen Energy Corporation",
+        "verdict": "PASS",
+        "price": 359.9,
+        "pct_day": -5.11,
+        "pct_since": null,
+        "primary_pct": -5.11,
+        "direction": "down",
+        "triggers": [
+          "-5.1% on the day"
+        ],
+        "reason": "See headlines (explanation limited to top movers).",
+        "news": [
+          {
+            "title": "Talen Energy (TLN) Stock May Be Overvalued On Fresh PJM Auction Revenue",
+            "publisher": "Simply Wall St.",
+            "date": "2026-07-25",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/talen-energy-tln-stock-may-211659985.html"
+          },
+          {
+            "title": "Talen Energy (TLN) Could Be 23% Undervalued Following Earnings And Analyst Calls",
+            "publisher": "Simply Wall St.",
+            "date": "2026-07-25",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/talen-energy-tln-could-23-091050062.html"
+          },
+          {
+            "title": "Goldman lifts data center capacity outlook, flags utility stocks set to benefit",
+            "publisher": "Investing.com",
+            "date": "2026-07-24",
+            "url": "https://finance.yahoo.com/technology/articles/goldman-lifts-data-center-capacity-135213041.html"
           }
         ]
       }
     ],
-    "movers_updated": "2026-07-25T19:08:17Z",
+    "movers_updated": "2026-07-26T04:14:34Z",
     "target_hits": [
       {
-        "ticker": "OKLO",
-        "name": "Oklo Inc.",
+        "ticker": "NOW",
+        "name": "ServiceNow, Inc.",
         "verdict": "WATCHLIST",
-        "confidence": null,
-        "theme": "nuclear_smr",
-        "price": 40.25,
-        "buy_target": 50,
+        "confidence": "MEDIUM",
+        "theme": "cybersecurity",
+        "price": 98.78,
+        "buy_target": 150.86,
+        "gap_pct": -34.5,
+        "next_action": "WAIT \u2014 Enterprise software company with strong revenue growth and positive free cash flow, but expensive valuation multiples. Revisit at 25% below the 52-week high."
+      },
+      {
+        "ticker": "IBM",
+        "name": "International Business Machines Corporation",
+        "verdict": "WATCHLIST",
+        "confidence": "MEDIUM",
+        "theme": "mega_cap_ai",
+        "price": 214.19,
+        "buy_target": 265.97,
         "gap_pct": -19.5,
-        "next_action": "SPECULATIVE ONLY \u2014 not a core position. If you want SMR exposure, max $200-300 at $50 or below. Monitor DOE permit progress and first reactor deployment milestones."
+        "next_action": "WAIT \u2014 Large-cap technology company with significant AI infrastructure exposure trading at a reasonable forward P/E of 16.2x for modest growth. Revisit at 20% below the 52-week high."
       },
       {
         "ticker": "NFLX",
@@ -10683,26 +10745,15 @@
         "next_action": "RESEARCH \u2014 quality platform down 38%. Verify ad-tier subscriber ramp. Strong FCF compounder."
       },
       {
-        "ticker": "IBM",
-        "name": "International Business Machines Corporation",
+        "ticker": "LITE",
+        "name": "Lumentum Holdings Inc.",
         "verdict": "WATCHLIST",
-        "confidence": null,
-        "theme": "mega_cap_ai",
-        "price": 214.19,
-        "buy_target": 245,
-        "gap_pct": -12.6,
-        "next_action": "WAIT \u2014 solid FCF and AI enterprise angle but 9.5% growth limits upside. Buy at $245 (-25% from ATH) where 21x forward PE + $13B FCF provides margin of safety."
-      },
-      {
-        "ticker": "MRVL",
-        "name": "Marvell Technology, Inc.",
-        "verdict": "WATCHLIST",
-        "confidence": null,
-        "theme": "edge_ai_silicon",
-        "price": 194.23,
-        "buy_target": 220,
-        "gap_pct": -11.7,
-        "next_action": "VERIFY TODAY'S DROP \u2014 check why MRVL fell -16.7% on 2026-06-08. If macro/sector rotation: buy at $220. If lost hyperscaler design win: reassess thesis entirely."
+        "confidence": "MEDIUM",
+        "theme": "networking_infra",
+        "price": 762.99,
+        "buy_target": 868.54,
+        "gap_pct": -12.2,
+        "next_action": "WAIT \u2014 High-growth AI infrastructure play at 41.6x forward earnings for 90%+ growth. Revisit at 20% below the 52-week high."
       },
       {
         "ticker": "MSFT",
@@ -10714,17 +10765,6 @@
         "buy_target": 425,
         "gap_pct": -10.2,
         "next_action": "BUY $1,200 \u2014 at current price, deploy now"
-      },
-      {
-        "ticker": "COHR",
-        "name": "Coherent Corp.",
-        "verdict": "WATCHLIST",
-        "confidence": null,
-        "theme": "networking_infra",
-        "price": 282.39,
-        "buy_target": 310,
-        "gap_pct": -8.9,
-        "next_action": "WAIT \u2014 right theme but LITE is superior (90% growth vs 20% at similar valuation). Wait for 30% pullback to ~$310 or after LITE position is established."
       },
       {
         "ticker": "CRDO",
@@ -10782,17 +10822,6 @@
         "next_action": "RESEARCH \u2014 verify Google/Meta XPU contract durations in 10-K. At -4.6% from high, entry is acceptable at current price or on any 10% dip to ~$380."
       },
       {
-        "ticker": "STZ",
-        "name": "STZ",
-        "verdict": "WATCHLIST",
-        "confidence": null,
-        "theme": "defensive_income",
-        "price": 130.16,
-        "buy_target": 135,
-        "gap_pct": -3.6,
-        "next_action": "WAIT \u2014 negative growth is a red flag. Only for deep-value conviction."
-      },
-      {
         "ticker": "FLUT",
         "name": "FLUT",
         "verdict": "WATCHLIST",
@@ -10826,15 +10855,26 @@
         "next_action": "WAIT \u2014 near 52w high (-2.4%), 31.6x PE reasonable but timing poor. Buy on 15%+ pullback to ~$237."
       },
       {
-        "ticker": "TLN",
-        "name": "Talen Energy Corporation",
-        "verdict": "RESEARCH-WORTHY",
-        "confidence": "HIGH",
-        "theme": "nuclear_smr",
-        "price": 359.9,
-        "buy_target": 359.9,
-        "gap_pct": 0.0,
-        "next_action": "RESEARCH \u2014 Cheapest contracted-nuclear-to-hyperscaler play at ~12x forward earnings vs CEG/VST premium; 1,920MW Amazon PPA through 2042 gives merchant-rare revenue visibility. Current levels clear the entry bar."
+        "ticker": "META",
+        "name": "Meta Platforms, Inc.",
+        "verdict": "WATCHLIST",
+        "confidence": "MEDIUM",
+        "theme": "mega_cap_ai",
+        "price": 595.19,
+        "buy_target": 597.19,
+        "gap_pct": -0.3,
+        "next_action": "WAIT \u2014 Meta offers a compelling growth story at a reasonable valuation of 16.1x forward earnings, with significant exposure to AI infrastructure theme. Revisit at 25% below the 52-week high."
+      },
+      {
+        "ticker": "MRVL",
+        "name": "Marvell Technology, Inc.",
+        "verdict": "WATCHLIST",
+        "confidence": "MEDIUM",
+        "theme": "edge_ai_silicon",
+        "price": 194.23,
+        "buy_target": 194.63,
+        "gap_pct": -0.2,
+        "next_action": "WAIT \u2014 Marvell Technology is a high-growth AI infrastructure and data center power play at 31x forward earnings. Revisit at 41% below the 52-week high."
       },
       {
         "ticker": "BWXT",
@@ -10914,17 +10954,6 @@
         "next_action": "BUY $1,500 \u2014 top conviction pick after web research"
       },
       {
-        "ticker": "CMCSA",
-        "name": "CMCSA",
-        "verdict": "WATCHLIST",
-        "confidence": null,
-        "theme": "consumer_media",
-        "price": 22.295,
-        "buy_target": 22,
-        "gap_pct": 1.3,
-        "next_action": "WAIT \u2014 deep value + 5.5% yield, but secular cable decline. Income play, not growth."
-      },
-      {
         "ticker": "MKTX",
         "name": "MKTX",
         "verdict": "WATCHLIST",
@@ -10934,6 +10963,17 @@
         "buy_target": 115,
         "gap_pct": 1.5,
         "next_action": "Downgrade \u2014 still a ~44% op-margin business at ~13x forward, but TTM FCF is negative and it is visibly losing US high-grade share to Tradeweb amid fee pressure. The ICE partnership is a response to the problem, not proof it is solved. Hold only as the cheap side of a pair against TW, or replace with TW."
+      },
+      {
+        "ticker": "VRT",
+        "name": "Vertiv Holdings Co",
+        "verdict": "WATCHLIST",
+        "confidence": "MEDIUM",
+        "theme": "power_grid",
+        "price": 290.36,
+        "buy_target": 284.95,
+        "gap_pct": 1.9,
+        "next_action": "WAIT \u2014 Vertiv's strong position in the data center infrastructure market and its expanding margins make it an attractive play on the AI infrastructure theme at a forward P/E of 32.9x. Revisit at 25% below the 52-week high."
       },
       {
         "ticker": "VST",
@@ -10949,26 +10989,26 @@
     ],
     "target_approaching": [
       {
-        "ticker": "LMB",
-        "name": "LMB",
+        "ticker": "INVH",
+        "name": "INVH",
         "verdict": "WATCHLIST",
-        "confidence": null,
-        "theme": "datacenter_infra",
-        "price": 72.74,
-        "buy_target": 70,
-        "gap_pct": 3.9,
-        "next_action": "Downgrade \u2014 sub-$1B cap growing 4.3%; legitimate business but too small and slow to move the portfolio, and data-center-infra exposure is better expressed through POWL. Position sizing makes this a rounding error."
+        "confidence": "MEDIUM",
+        "theme": "real_estate",
+        "price": 29.78,
+        "buy_target": 28.84,
+        "gap_pct": 3.3,
+        "next_action": "WAIT \u2014 Invitation Homes is a fairly valued single-family home REIT with stable cash flow generation and growth prospects. Revisit at 10% below the 52-week high."
       },
       {
-        "ticker": "META",
-        "name": "Meta Platforms, Inc.",
-        "verdict": "WATCHLIST",
-        "confidence": null,
-        "theme": "mega_cap_ai",
-        "price": 595.19,
-        "buy_target": 560,
-        "gap_pct": 6.3,
-        "next_action": "WAIT for Q1 earnings April 29. Buy $1,000 if beats and stock holds; $1,200 if drops on capex guidance"
+        "ticker": "COHR",
+        "name": "Coherent Corp.",
+        "verdict": "RESEARCH-WORTHY",
+        "confidence": "MEDIUM",
+        "theme": "networking_infra",
+        "price": 282.39,
+        "buy_target": 264.0,
+        "gap_pct": 7.0,
+        "next_action": "RESEARCH \u2014 High-growth AI infrastructure play with diversified customer base and strong R&D investment. Current levels already clear the entry bar."
       },
       {
         "ticker": "ZBH",
@@ -10980,6 +11020,39 @@
         "buy_target": 85,
         "gap_pct": 7.5,
         "next_action": "Downgrade \u2014 6.1% ROE and ~16x debt/cash; ~10x forward looks cheap and probably is cheap for a reason. With ISRG and PODD added, ZBH is the redundant lowest-quality name in the healthcare bucket."
+      },
+      {
+        "ticker": "V",
+        "name": "Visa Inc.",
+        "verdict": "WATCHLIST",
+        "confidence": "HIGH",
+        "theme": "platform_network",
+        "price": 355.74,
+        "buy_target": 328.63,
+        "gap_pct": 8.2,
+        "next_action": "WAIT \u2014 High-quality payment technology company with a strong brand and wide moat, trading at a forward P/E of 23.9x for 17.1% revenue growth. Revisit at 10% below the 52-week high."
+      },
+      {
+        "ticker": "NVDA",
+        "name": "NVIDIA Corporation",
+        "verdict": "WATCHLIST",
+        "confidence": "HIGH",
+        "theme": "mega_cap_ai",
+        "price": 206.84,
+        "buy_target": 189.23,
+        "gap_pct": 9.3,
+        "next_action": "WAIT \u2014 Leading AI infrastructure play with strong growth prospects and reasonable valuation at 16.1x forward earnings. Revisit at 20% below the 52-week high."
+      },
+      {
+        "ticker": "EIX",
+        "name": "EIX",
+        "verdict": "WATCHLIST",
+        "confidence": "MEDIUM",
+        "theme": "power_grid",
+        "price": 79.75,
+        "buy_target": 72.81,
+        "gap_pct": 9.5,
+        "next_action": "WAIT \u2014 Edison International offers a relatively cheap valuation at 8.7x trailing earnings for a stable utility company with 7.7% YoY revenue growth. Revisit at 10% below the 52-week high."
       },
       {
         "ticker": "RDDT",
