@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-07-26T03:38:51Z",
-  "quotes_updated": "2026-07-25T20:18:21Z",
+  "last_built": "2026-07-26T04:04:38Z",
+  "quotes_updated": "2026-07-26T03:35:47Z",
   "portfolio": {
     "total_value": 0,
     "core": [
@@ -483,7 +483,7 @@
         "revenue_growth": 21.3,
         "op_margin": 37.1,
         "pe": 60.61021,
-        "forward_pe": 30.33298,
+        "forward_pe": 30.331112,
         "short_percent_float": 0.33,
         "short_ratio": 0.6,
         "high_proximity_warning": true,
@@ -574,7 +574,7 @@
         "revenue_growth": 37.8,
         "op_margin": 14.4,
         "pe": 175.15102,
-        "forward_pe": 38.623997,
+        "forward_pe": 38.220146,
         "short_percent_float": 2.45,
         "short_ratio": 1.4,
         "high_proximity_warning": true,
@@ -1002,18 +1002,20 @@
         "name": "Talen Energy Corporation",
         "theme": "nuclear_smr",
         "status": "research_complete",
-        "thesis": "Cheapest contracted-nuclear-to-hyperscaler play at ~12x forward earnings vs CEG/VST premium; 1,920MW Amazon PPA through 2042 gives merchant-rare revenue visibility. Discount reflects measurable concentration risk (single asset Susquehanna, single counterparty), not broken fundamentals.",
+        "thesis": "Talen Energy Corporation is a grid/nuclear play with strong revenue growth, reasonable valuation, and manageable debt, but requires closer examination of its debt and cash flow.",
         "added": "2026-07-25",
-        "verdict": "RESEARCH-WORTHY",
-        "buy_target": 359.9,
+        "verdict": "PASS",
+        "buy_target": 338.46,
         "current_price": 359.9,
-        "next_action": "RESEARCH \u2014 Cheapest contracted-nuclear-to-hyperscaler play at ~12x forward earnings vs CEG/VST premium; 1,920MW Amazon PPA through 2042 gives merchant-rare revenue visibility. Current levels clear the entry bar.",
-        "research_file": "output/research/deep/TICKRUN_RESEARCH_2026-07-25.md",
-        "last_researched": "2026-07-25",
-        "confidence": "HIGH",
-        "buy_trigger_drawdown_pct": 0,
+        "next_action": "DROP \u2014 Talen Energy Corporation is a grid/nuclear play with strong revenue growth, reasonable valuation, and manageable debt, but requires closer examination of its debt and cash flow.",
+        "research_file": "output/research/TLN_2026-07-26.md",
+        "last_researched": "2026-07-26",
+        "confidence": "MEDIUM",
+        "buy_trigger_drawdown_pct": -25.0,
         "research_source": "deep_research_2026-07-25",
         "no_pullback_gate": true,
+        "llm_verdict": "PASS",
+        "bear_downgraded": false,
         "price": 359.9,
         "pct_change_1d": -5.11,
         "market_cap": 17201422336,
@@ -2208,7 +2210,7 @@
           "revenue_growth": 21.3,
           "op_margin": 37.1,
           "pe": 60.61021,
-          "forward_pe": 30.33298,
+          "forward_pe": 30.331112,
           "short_percent_float": 0.33,
           "short_ratio": 0.6,
           "high_proximity_warning": true,
@@ -2299,7 +2301,7 @@
           "revenue_growth": 37.8,
           "op_margin": 14.4,
           "pe": 175.15102,
-          "forward_pe": 38.623997,
+          "forward_pe": 38.220146,
           "short_percent_float": 2.45,
           "short_ratio": 1.4,
           "high_proximity_warning": true,
@@ -3283,6 +3285,40 @@
           "data_flags": []
         },
         {
+          "ticker": "TLN",
+          "name": "Talen Energy Corporation",
+          "theme": "nuclear_smr",
+          "status": "research_complete",
+          "thesis": "Talen Energy Corporation is a grid/nuclear play with strong revenue growth, reasonable valuation, and manageable debt, but requires closer examination of its debt and cash flow.",
+          "added": "2026-07-25",
+          "verdict": "PASS",
+          "buy_target": 338.46,
+          "current_price": 359.9,
+          "next_action": "DROP \u2014 Talen Energy Corporation is a grid/nuclear play with strong revenue growth, reasonable valuation, and manageable debt, but requires closer examination of its debt and cash flow.",
+          "research_file": "output/research/TLN_2026-07-26.md",
+          "last_researched": "2026-07-26",
+          "confidence": "MEDIUM",
+          "buy_trigger_drawdown_pct": -25.0,
+          "research_source": "deep_research_2026-07-25",
+          "no_pullback_gate": true,
+          "llm_verdict": "PASS",
+          "bear_downgraded": false,
+          "price": 359.9,
+          "pct_change_1d": -5.11,
+          "market_cap": 17201422336,
+          "cap_tier": "large",
+          "drawdown_from_high": -20.2,
+          "revenue_growth": 96.7,
+          "op_margin": 17.2,
+          "pe": null,
+          "forward_pe": 12.165977,
+          "short_percent_float": 5.9,
+          "short_ratio": 2.6,
+          "high_proximity_warning": false,
+          "data_ok": true,
+          "data_flags": []
+        },
+        {
           "ticker": "DHR",
           "name": "DHR",
           "theme": "healthcare_innovation",
@@ -3506,38 +3542,6 @@
           "forward_pe": 34.06291,
           "short_percent_float": 5.21,
           "short_ratio": 1.6,
-          "high_proximity_warning": false,
-          "data_ok": true,
-          "data_flags": []
-        },
-        {
-          "ticker": "TLN",
-          "name": "Talen Energy Corporation",
-          "theme": "nuclear_smr",
-          "status": "research_complete",
-          "thesis": "Cheapest contracted-nuclear-to-hyperscaler play at ~12x forward earnings vs CEG/VST premium; 1,920MW Amazon PPA through 2042 gives merchant-rare revenue visibility. Discount reflects measurable concentration risk (single asset Susquehanna, single counterparty), not broken fundamentals.",
-          "added": "2026-07-25",
-          "verdict": "RESEARCH-WORTHY",
-          "buy_target": 359.9,
-          "current_price": 359.9,
-          "next_action": "RESEARCH \u2014 Cheapest contracted-nuclear-to-hyperscaler play at ~12x forward earnings vs CEG/VST premium; 1,920MW Amazon PPA through 2042 gives merchant-rare revenue visibility. Current levels clear the entry bar.",
-          "research_file": "output/research/deep/TICKRUN_RESEARCH_2026-07-25.md",
-          "last_researched": "2026-07-25",
-          "confidence": "HIGH",
-          "buy_trigger_drawdown_pct": 0,
-          "research_source": "deep_research_2026-07-25",
-          "no_pullback_gate": true,
-          "price": 359.9,
-          "pct_change_1d": -5.11,
-          "market_cap": 17201422336,
-          "cap_tier": "large",
-          "drawdown_from_high": -20.2,
-          "revenue_growth": 96.7,
-          "op_margin": 17.2,
-          "pe": null,
-          "forward_pe": 12.165977,
-          "short_percent_float": 5.9,
-          "short_ratio": 2.6,
           "high_proximity_warning": false,
           "data_ok": true,
           "data_flags": []
@@ -4058,7 +4062,7 @@
           "revenue_growth": 21.3,
           "op_margin": 37.1,
           "pe": 60.61021,
-          "forward_pe": 30.33298,
+          "forward_pe": 30.331112,
           "short_percent_float": 0.33,
           "short_ratio": 0.6,
           "high_proximity_warning": true,
@@ -4116,7 +4120,7 @@
           "revenue_growth": 37.8,
           "op_margin": 14.4,
           "pe": 175.15102,
-          "forward_pe": 38.623997,
+          "forward_pe": 38.220146,
           "short_percent_float": 2.45,
           "short_ratio": 1.4,
           "high_proximity_warning": true,
@@ -4697,18 +4701,20 @@
           "name": "Talen Energy Corporation",
           "theme": "nuclear_smr",
           "status": "research_complete",
-          "thesis": "Cheapest contracted-nuclear-to-hyperscaler play at ~12x forward earnings vs CEG/VST premium; 1,920MW Amazon PPA through 2042 gives merchant-rare revenue visibility. Discount reflects measurable concentration risk (single asset Susquehanna, single counterparty), not broken fundamentals.",
+          "thesis": "Talen Energy Corporation is a grid/nuclear play with strong revenue growth, reasonable valuation, and manageable debt, but requires closer examination of its debt and cash flow.",
           "added": "2026-07-25",
-          "verdict": "RESEARCH-WORTHY",
-          "buy_target": 359.9,
+          "verdict": "PASS",
+          "buy_target": 338.46,
           "current_price": 359.9,
-          "next_action": "RESEARCH \u2014 Cheapest contracted-nuclear-to-hyperscaler play at ~12x forward earnings vs CEG/VST premium; 1,920MW Amazon PPA through 2042 gives merchant-rare revenue visibility. Current levels clear the entry bar.",
-          "research_file": "output/research/deep/TICKRUN_RESEARCH_2026-07-25.md",
-          "last_researched": "2026-07-25",
-          "confidence": "HIGH",
-          "buy_trigger_drawdown_pct": 0,
+          "next_action": "DROP \u2014 Talen Energy Corporation is a grid/nuclear play with strong revenue growth, reasonable valuation, and manageable debt, but requires closer examination of its debt and cash flow.",
+          "research_file": "output/research/TLN_2026-07-26.md",
+          "last_researched": "2026-07-26",
+          "confidence": "MEDIUM",
+          "buy_trigger_drawdown_pct": -25.0,
           "research_source": "deep_research_2026-07-25",
           "no_pullback_gate": true,
+          "llm_verdict": "PASS",
+          "bear_downgraded": false,
           "price": 359.9,
           "pct_change_1d": -5.11,
           "market_cap": 17201422336,
@@ -5582,9 +5588,9 @@
     },
     "counts": {
       "total": 57,
-      "research_worthy": 8,
+      "research_worthy": 7,
       "watchlist": 37,
-      "pass": 12,
+      "pass": 13,
       "red_flag": 0
     }
   },
@@ -7949,14 +7955,14 @@
     ]
   },
   "asset_location": {
-    "generated_at": "2026-07-25T23:21:37Z",
+    "generated_at": "2026-07-26T04:04:38Z",
     "rules": {
       "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
       "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
       "high_yield_threshold_pct": 3.0
     },
     "counts": {
-      "roth": 42,
+      "roth": 41,
       "taxable": 2
     },
     "roth": [
@@ -8059,16 +8065,6 @@
         "account": "ROTH",
         "priority": "high",
         "reason": "Highest-conviction growth pick (34% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
-      },
-      {
-        "ticker": "TLN",
-        "name": "Talen Energy Corporation",
-        "theme": "nuclear_smr",
-        "verdict": "RESEARCH-WORTHY",
-        "div_yield_pct": null,
-        "account": "ROTH",
-        "priority": "high",
-        "reason": "Highest-conviction growth pick (97% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
       },
       {
         "ticker": "TW",
@@ -10352,14 +10348,6 @@
         "meaning": "Corporate event: M&A, guidance, exec change",
         "filed_date": "2026-07-14",
         "url": "https://www.sec.gov/Archives/edgar/data/1692819/000114036126028454/ef20077988_8k.htm"
-      },
-      {
-        "ticker": "TLN",
-        "form": "8-K",
-        "label": "MATERIAL EVENT",
-        "meaning": "Corporate event: M&A, guidance, exec change",
-        "filed_date": "2026-07-14",
-        "url": "https://www.sec.gov/Archives/edgar/data/1622536/000162253626000058/tln-20260714.htm"
       }
     ],
     "price_movers": [
@@ -11007,22 +10995,6 @@
     ],
     "news": [
       {
-        "ticker": "TLN",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Talen Energy (TLN) Stock May Be Overvalued On Fresh PJM Auction Revenue",
-        "publisher": "Simply Wall St.",
-        "date": "2026-07-25",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/talen-energy-tln-stock-may-211659985.html"
-      },
-      {
-        "ticker": "TLN",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Talen Energy (TLN) Could Be 23% Undervalued Following Earnings And Analyst Calls",
-        "publisher": "Simply Wall St.",
-        "date": "2026-07-25",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/talen-energy-tln-could-23-091050062.html"
-      },
-      {
         "ticker": "CLS",
         "verdict": "RESEARCH-WORTHY",
         "title": "2 Stocks to Buy Now as Google Raises Its AI Spending Forecast Yet Again",
@@ -11045,14 +11017,6 @@
         "publisher": "Zacks",
         "date": "2026-07-24",
         "url": "https://finance.yahoo.com/technology/ai/articles/why-ai-infrastructure-reshaping-coherents-175400328.html"
-      },
-      {
-        "ticker": "TLN",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Goldman lifts data center capacity outlook, flags utility stocks set to benefit",
-        "publisher": "Investing.com",
-        "date": "2026-07-24",
-        "url": "https://finance.yahoo.com/technology/articles/goldman-lifts-data-center-capacity-135213041.html"
       },
       {
         "ticker": "BWXT",
@@ -11255,14 +11219,6 @@
         "url": "https://www.barrons.com/articles/revisiting-stock-picks-sterling-infrastructure-tradeweb-markets-gold-com-54d55dad?siteid=yhoof2&yptr=yahoo"
       },
       {
-        "ticker": "TLN",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Talen Energy (TLN) Gains from Current Electrification Trends",
-        "publisher": "Insider Monkey",
-        "date": "2026-07-22",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/talen-energy-tln-gains-current-144308132.html"
-      },
-      {
         "ticker": "BWXT",
         "verdict": "RESEARCH-WORTHY",
         "title": "BWX Technologies (BWXT) Lagged Despite Strong Nuclear and Defense Growth Prospects",
@@ -11343,22 +11299,6 @@
         "url": "https://www.fool.com/coverage/better-buy/2026/07/19/spacex-vs-bwx-technologies-which-industrials-stock-is-a-better-buy-in-2026/"
       },
       {
-        "ticker": "TLN",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Top energy firm sends key signal on AI's future after $1.2B deal",
-        "publisher": "TheStreet",
-        "date": "2026-07-17",
-        "url": "https://www.thestreet.com/investing/stocks/talen-energy-tln-pjm-capacity-auction-ai-data-center-power"
-      },
-      {
-        "ticker": "TLN",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Hedge Fund Carronade, Nearing $4 Billion, Closing to New Clients",
-        "publisher": "Bloomberg",
-        "date": "2026-07-16",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/hedge-fund-carronade-nearing-4-122721342.html"
-      },
-      {
         "ticker": "PODD",
         "verdict": "RESEARCH-WORTHY",
         "title": "3 Quality Compounders on Our Buy List",
@@ -11391,20 +11331,68 @@
         "url": "https://finance.yahoo.com/markets/stocks/articles/heres-much-youd-invested-1000-123002229.html"
       },
       {
-        "ticker": "AAPL",
+        "ticker": "MSFT",
         "verdict": "WATCHLIST",
-        "title": "Google and Tesla lost half a trillion dollars this week as their suppliers cashed in: Chart of the Day",
-        "publisher": "Yahoo Finance",
-        "date": "2026-07-25",
-        "url": "https://finance.yahoo.com/markets/article/google-and-tesla-lost-half-a-trillion-dollars-this-week-as-their-suppliers-cashed-in-chart-of-the-day-121403846.html"
+        "title": "Monday.com is the latest tech company to blame AI for layoffs \u2014 here are 20 others",
+        "publisher": "TechCrunch",
+        "date": "2026-07-26",
+        "url": "https://finance.yahoo.com/technology/ai/articles/running-list-major-tech-layoffs-012755703.html"
       },
       {
-        "ticker": "AAPL",
+        "ticker": "GOOGL",
         "verdict": "WATCHLIST",
-        "title": "Dow Jones Futures: Market Triggers Sell Signal; Apple Earnings, Iran News, Fed Meeting In Focus",
-        "publisher": "Investor's Business Daily",
-        "date": "2026-07-25",
-        "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-apple-earnings-iran-news-fed-meeting-ai-stocks/?src=A00220&yptr=yahoo"
+        "title": "Some Investors Have Dropped Alphabet Stock Over the Delayed Release of Its Gemini 3.5 Pro Model. Here Are 900 Million Reasons Why They're Wrong.",
+        "publisher": "Motley Fool",
+        "date": "2026-07-26",
+        "url": "https://www.fool.com/investing/2026/07/25/some-investors-have-dropped-alphabet-stock-over-th/"
+      },
+      {
+        "ticker": "GOOGL",
+        "verdict": "WATCHLIST",
+        "title": "Google (GOOGL) Faces $1 Billion EU Antitrust Fine And New Trade Friction",
+        "publisher": "Simply Wall St.",
+        "date": "2026-07-26",
+        "url": "https://finance.yahoo.com/technology/articles/google-googl-faces-1-billion-010946968.html"
+      },
+      {
+        "ticker": "GOOGL",
+        "verdict": "WATCHLIST",
+        "title": "10 Stocks Make Up 60% of This $220 Billion Vanguard ETF. Here's What That Means If the AI Trade Cracks.",
+        "publisher": "Motley Fool",
+        "date": "2026-07-26",
+        "url": "https://www.fool.com/investing/2026/07/25/10-stocks-make-up-60-of-this-220-billion-vanguard/"
+      },
+      {
+        "ticker": "AMZN",
+        "verdict": "WATCHLIST",
+        "title": "Amazon vs. Booking: Comparing Revenue Trends Between a Retail Giant and a Travel Titan",
+        "publisher": "Motley Fool",
+        "date": "2026-07-26",
+        "url": "https://www.fool.com/coverage/charts/2026/07/25/amazon-vs-booking-comparing-revenue-trends-between-a-retail-giant-and-a-travel-titan/"
+      },
+      {
+        "ticker": "NVDA",
+        "verdict": "WATCHLIST",
+        "title": "Some Investors Have Dropped Alphabet Stock Over the Delayed Release of Its Gemini 3.5 Pro Model. Here Are 900 Million Reasons Why They're Wrong.",
+        "publisher": "Motley Fool",
+        "date": "2026-07-26",
+        "url": "https://www.fool.com/investing/2026/07/25/some-investors-have-dropped-alphabet-stock-over-th/"
+      },
+      {
+        "ticker": "NVDA",
+        "verdict": "WATCHLIST",
+        "title": "What Big Bank Earnings Just Revealed About the Health of the U.S. Consumer",
+        "publisher": "Motley Fool",
+        "date": "2026-07-26",
+        "url": "https://www.fool.com/investing/2026/07/25/what-big-bank-earnings-just-revealed-about-the-hea/"
+      },
+      {
+        "ticker": "NVDA",
+        "verdict": "WATCHLIST",
+        "title": "Why RingCentral Stock Rocketed Higher This Week",
+        "publisher": "Motley Fool",
+        "date": "2026-07-26",
+        "url": "https://www.fool.com/investing/2026/07/25/why-ringcentral-stock-rocketed-higher-this-week/"
       }
     ],
     "insider_alerts": [],
