@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-25",
+  "last_updated": "2026-07-26",
   "candidates": [
     {
       "ticker": "AAPL",
@@ -476,18 +476,20 @@
       "name": "Talen Energy Corporation",
       "theme": "nuclear_smr",
       "status": "research_complete",
-      "thesis": "Cheapest contracted-nuclear-to-hyperscaler play at ~12x forward earnings vs CEG/VST premium; 1,920MW Amazon PPA through 2042 gives merchant-rare revenue visibility. Discount reflects measurable concentration risk (single asset Susquehanna, single counterparty), not broken fundamentals.",
+      "thesis": "Talen Energy Corporation is a grid/nuclear play with strong revenue growth, reasonable valuation, and manageable debt, but requires closer examination of its debt and cash flow.",
       "added": "2026-07-25",
-      "verdict": "RESEARCH-WORTHY",
-      "buy_target": 359.9,
+      "verdict": "PASS",
+      "buy_target": 338.46,
       "current_price": null,
-      "next_action": "RESEARCH \u2014 Cheapest contracted-nuclear-to-hyperscaler play at ~12x forward earnings vs CEG/VST premium; 1,920MW Amazon PPA through 2042 gives merchant-rare revenue visibility. Current levels clear the entry bar.",
-      "research_file": "output/research/deep/TICKRUN_RESEARCH_2026-07-25.md",
-      "last_researched": "2026-07-25",
-      "confidence": "HIGH",
-      "buy_trigger_drawdown_pct": 0,
+      "next_action": "DROP \u2014 Talen Energy Corporation is a grid/nuclear play with strong revenue growth, reasonable valuation, and manageable debt, but requires closer examination of its debt and cash flow.",
+      "research_file": "output/research/TLN_2026-07-26.md",
+      "last_researched": "2026-07-26",
+      "confidence": "MEDIUM",
+      "buy_trigger_drawdown_pct": -25.0,
       "research_source": "deep_research_2026-07-25",
-      "no_pullback_gate": true
+      "no_pullback_gate": true,
+      "llm_verdict": "PASS",
+      "bear_downgraded": false
     },
     {
       "ticker": "BWXT",
