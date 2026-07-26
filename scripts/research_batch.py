@@ -175,6 +175,12 @@ def main():
         )
         if result.returncode != 0:
             failures.append(ticker)
+            # A short pause after a failure — back-to-back-to-back API errors
+            # in one batch (InternalServerError/APITimeoutError on 4 of 6
+            # tickers) look like the free tier under momentary load; giving it
+            # a few seconds before hammering it again costs little and may
+            # avoid compounding the same failure across the rest of the queue.
+            time.sleep(5)
             continue
         if incremental:
             filename = f"{ticker}_{today}.md"

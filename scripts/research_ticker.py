@@ -52,10 +52,16 @@ except Exception:
 # NVIDIA NIM settings
 NVIDIA_BASE_URL = "https://integrate.api.nvidia.com/v1"
 # Preferred → fallback. Heavy models may not be provisioned on free tier (404
-# "Function not found for account"); we fall back to the universally-free 70B.
+# "Function not found for account"), and even a provisioned model can return
+# InternalServerError/APITimeoutError under load — a 2-model chain meant that
+# when 70B (the ONLY fallback) was also struggling, 4 of 6 tickers in one batch
+# had nowhere left to go. Two more independently-hosted chat models added so a
+# transient outage on one doesn't take out the whole chain.
 NVIDIA_MODEL_CHAIN = [
     "nvidia/llama-3.1-nemotron-ultra-253b-v1",   # 253B reasoning flagship (if account has access)
     "meta/llama-3.3-70b-instruct",                # reliable free-tier default
+    "meta/llama-3.1-70b-instruct",                 # independent fallback if 3.3 is struggling
+    "nvidia/llama-3.1-nemotron-70b-instruct",      # NVIDIA-tuned 70B, last resort
 ]
 NVIDIA_MODEL = NVIDIA_MODEL_CHAIN[0]   # may be overridden by --model
 
