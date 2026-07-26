@@ -100,16 +100,36 @@ def _detect_provider() -> tuple[str, str]:
 def _call_llm(provider: str, api_key: str, prompt: str) -> str:
     if provider == "nvidia":
         try:
-            from openai import OpenAI, NotFoundError
+            from openai import (
+                OpenAI, NotFoundError, APITimeoutError, APIConnectionError,
+                RateLimitError, InternalServerError,
+            )
         except ImportError:
             print("Missing dependency: pip install openai")
             sys.exit(1)
+
+        # Any of these on one model should fall through to the next model in
+        # the chain, not crash the whole call. NotFoundError alone was the
+        # only thing caught here before, but the actual failure mode we hit
+        # in production was APITimeoutError: the 253B model timed out on 7 of
+        # 8 tickers in one batch, each burning ~3 min (2x LLM_TIMEOUT_SECONDS
+        # via the SDK's built-in retry) before an uncaught exception killed
+        # the whole ticker — no fallback to the fast, reliable 70B ever
+        # happened. That's a bigger loss than "unavailable for this account":
+        # it wastes the timeout AND drops the ticker.
+        RETRYABLE = (NotFoundError, APITimeoutError, APIConnectionError,
+                     RateLimitError, InternalServerError)
 
         client = OpenAI(
             base_url=NVIDIA_BASE_URL,
             api_key=api_key,
             timeout=LLM_TIMEOUT_SECONDS,
-            max_retries=1,
+            # 0, not 1: we already have a model-fallback loop below. Retrying
+            # the SAME (slow) model before moving to the next one just doubles
+            # the wasted time on exactly the failure mode we're trying to
+            # route around — a batch that hit this lost ~3 min per ticker to
+            # 2x90s of retrying 253B instead of ~90s then falling to 70B.
+            max_retries=0,
         )
 
         # Build the model attempt list: explicit NVIDIA_MODEL first (covers --model
@@ -135,9 +155,10 @@ def _call_llm(provider: str, api_key: str, prompt: str) -> str:
                 if model != attempts[0]:
                     print(f"   (fell back to {model})")
                 return response.choices[0].message.content
-            except NotFoundError as exc:
+            except RETRYABLE as exc:
                 last_err = exc
-                print(f"   {model} unavailable for this account — trying next...")
+                reason = type(exc).__name__
+                print(f"   {model} failed ({reason}) — trying next...")
                 continue
         raise RuntimeError(f"All NVIDIA models failed. Last error: {last_err}")
 
