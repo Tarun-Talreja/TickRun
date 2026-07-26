@@ -290,6 +290,8 @@ html,body{
 .brief-p1 .brief-line{color:#ff6677}
 .brief-quiet{font-size:12px;color:var(--text2)}
 .brief-more{margin-top:9px;font-size:11px;color:var(--cyan);cursor:pointer;font-weight:600}
+.sig-more{margin:4px 0 8px;padding:9px 12px;text-align:center;font-size:12px;font-weight:600;color:var(--cyan);background:var(--bg2);border:1px solid var(--border);border-radius:8px;cursor:pointer}
+.sig-more:hover{border-color:var(--cyan)}
 .digest-card{margin:0 16px 14px;padding:14px 16px;background:linear-gradient(135deg,var(--bg2),#0a1420);border:1px solid var(--border);border-radius:12px}
 .digest-label{font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--cyan);text-transform:uppercase;margin-bottom:7px}
 .digest-text{font-size:13px;line-height:1.5;color:var(--text0)}
@@ -1239,6 +1241,26 @@ function renderStockDetail(s){
 }
 
 // ── RENDER SIGNALS ────────────────────────────────────────────────────────────
+// Per-section expand state for the Signals screen, so "Show all" persists
+// across re-renders (live price ticks, etc.) without resetting to collapsed.
+window._sigExpanded = window._sigExpanded || {};
+window.toggleSigSection = function(key){
+  window._sigExpanded[key] = !window._sigExpanded[key];
+  if (DB) renderSignals(DB);
+};
+function sigCap(items, key, defaultCap){
+  const expanded = !!window._sigExpanded[key];
+  const shown = expanded ? items : items.slice(0, defaultCap);
+  const hidden = items.length - shown.length;
+  return { shown, hidden, expanded, key };
+}
+function sigMoreBtn(cap){
+  if(!cap.hidden && !cap.expanded) return '';
+  return cap.expanded
+    ? `<div class="sig-more" onclick="toggleSigSection('${cap.key}')">Show less ↑</div>`
+    : `<div class="sig-more" onclick="toggleSigSection('${cap.key}')">Show all ${cap.hidden} more →</div>`;
+}
+
 function renderSignals(data){
   const sig = data.signals;
   const urgent = (sig.upcoming_earnings||[]).filter(e=>e.days_until<=3).length + (sig.pullback_alerts||[]).length + (sig.price_movers||[]).length + (sig.target_hits||[]).length;
@@ -1259,9 +1281,10 @@ function renderSignals(data){
   // ── Catalysts ahead: forward-looking, so it leads the feed ────────────────
   const cat = ((data.catalysts||{}).imminent||[]).filter(e=>e.urgency!=='low');
   if(cat.length){
+    const catCap = sigCap(cat, 'catalysts', 5);
     html+=`<div class="sig-section-title">🔭 Catalysts Ahead <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text2);font-size:10px">· decide before the event</span></div>`;
     html+=`<div class="news-list">`;
-    cat.forEach((e,i)=>{
+    catCap.shown.forEach((e,i)=>{
       const hot = e.urgency==='high';
       const col = hot?'var(--red)':'var(--amber)';
       const est = (typeof e.eps_estimate==='number')?`consensus EPS ${e.eps_estimate.toFixed(2)}`:'';
@@ -1275,15 +1298,17 @@ function renderSignals(data){
         <div class="cat-plan">${esc(e.plan||'')}</div>
       </div>`;
     });
+    html+=sigMoreBtn(catCap);
     html+=`</div>`;
   }
 
   // ── Buy-target hits: the most actionable signal, shown first ──────────────
   const tgtHits = sig.target_hits||[];
   if(tgtHits.length){
+    const tgtCap = sigCap(tgtHits, 'targets', 5);
     html+=`<div class="sig-section-title">🎯 At Research Target <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text2);font-size:10px">· app-suggested, not yours</span></div>`;
     html+=`<div class="news-list">`;
-    tgtHits.forEach((h,i)=>{
+    tgtCap.shown.forEach((h,i)=>{
       const below = h.gap_pct<=0;
       html+=`<div class="mover-card s-anim" style="animation-delay:${i*0.03}s;border-left:3px solid var(--green)" onclick="openStock(${JSON.stringify(h).replace(/"/g,'&quot;')})">
         <div class="news-head">
@@ -1295,15 +1320,17 @@ function renderSignals(data){
         <div class="mover-reason">${below?`<strong>${Math.abs(h.gap_pct)}% below the research target</strong> — `:'At the research target — '}${esc((h.next_action||'').substring(0,110))}</div>
       </div>`;
     });
+    html+=sigMoreBtn(tgtCap);
     html+=`</div>`;
   }
 
   // ── Movers: why something jumped/dropped (most timely, shown first) ───────
   const movers = sig.price_movers||[];
   if(movers.length){
+    const movCap = sigCap(movers, 'movers', 5);
     html+=`<div class="sig-section-title">⚡ Movers — Why It Moved</div>`;
     html+=`<div class="news-list">`;
-    movers.forEach((m,i)=>{
+    movCap.shown.forEach((m,i)=>{
       const up = m.direction==='up';
       // primary_pct is the move that actually triggered the alert; fall back for
       // older payloads written before that field existed.
@@ -1321,11 +1348,16 @@ function renderSignals(data){
         ${safeUrl?`<a class="report-link" href="${esc(safeUrl)}" target="_blank" rel="noopener noreferrer">${esc(news0.title||'Read more')} ↗</a>`:''}
       </div>`;
     });
+    html+=sigMoreBtn(movCap);
     html+=`</div>`;
   }
 
   // Earnings
-  (sig.upcoming_earnings||[]).forEach((e,i)=>{
+  const earnCap = sigCap(sig.upcoming_earnings||[], 'earnings', 5);
+  if((sig.upcoming_earnings||[]).length){
+    html+=`<div class="sig-section-title" style="margin-top:20px">📅 Upcoming Earnings</div>`;
+  }
+  earnCap.shown.forEach((e,i)=>{
     const s = data.watchlist.all.find(x=>x.ticker===e.ticker)||{};
     const cls=e.days_until<=3?'stl-earnings':'stl-earnings';
     html+=`<div class="sig-card s-anim" style="animation-delay:${i*.05}s" onclick="openStock(${JSON.stringify({...s,...e}).replace(/"/g,'&quot;')})">
@@ -1347,9 +1379,14 @@ function renderSignals(data){
       </div>
     </div>`;
   });
+  html+=sigMoreBtn(earnCap);
 
   // Pullbacks
-  (sig.pullback_alerts||[]).forEach((s,i)=>{
+  const pullCap = sigCap(sig.pullback_alerts||[], 'pullbacks', 5);
+  if((sig.pullback_alerts||[]).length){
+    html+=`<div class="sig-section-title" style="margin-top:20px">📉 Pullback Alerts</div>`;
+  }
+  pullCap.shown.forEach((s,i)=>{
     html+=`<div class="sig-card s-anim" style="animation-delay:${i*.05}s" onclick="openStock(${JSON.stringify(s).replace(/"/g,'&quot;')})">
       <div class="sig-card-head">
         <div style="display:flex;align-items:center;gap:8px">
@@ -1370,9 +1407,14 @@ function renderSignals(data){
       </div>
     </div>`;
   });
+  html+=sigMoreBtn(pullCap);
 
   // Mega-cap on sale
-  (sig.mega_cap_on_sale||[]).forEach((s,i)=>{
+  const megaCap = sigCap(sig.mega_cap_on_sale||[], 'megasale', 5);
+  if((sig.mega_cap_on_sale||[]).length){
+    html+=`<div class="sig-section-title" style="margin-top:20px">💎 Mega-Cap On Sale</div>`;
+  }
+  megaCap.shown.forEach((s,i)=>{
     html+=`<div class="sig-card s-anim" style="animation-delay:${i*.05}s" onclick="openStock(${JSON.stringify(s).replace(/"/g,'&quot;')})">
       <div class="sig-card-head">
         <div style="display:flex;align-items:center;gap:8px">
@@ -1394,9 +1436,14 @@ function renderSignals(data){
       </div>
     </div>`;
   });
+  html+=sigMoreBtn(megaCap);
 
   // Short interest
-  (sig.short_interest_alerts||[]).forEach((s,i)=>{
+  const shortCap = sigCap(sig.short_interest_alerts||[], 'short', 5);
+  if((sig.short_interest_alerts||[]).length){
+    html+=`<div class="sig-section-title" style="margin-top:20px">⚠ Short Interest</div>`;
+  }
+  shortCap.shown.forEach((s,i)=>{
     const col=s.short_pct>15?'var(--red)':s.short_pct>10?'var(--amber)':'var(--green)';
     html+=`<div class="sig-card s-anim">
       <div class="sig-card-head">
@@ -1419,6 +1466,7 @@ function renderSignals(data){
       </div>
     </div>`;
   });
+  html+=sigMoreBtn(shortCap);
 
   html+=`</div>`;
 
@@ -1427,9 +1475,10 @@ function renderSignals(data){
   const events = sig.sec_material_events||[];
   const secAll = [...stakes, ...events];
   if(secAll.length){
+    const secCap = sigCap(secAll, 'sec', 5);
     html+=`<div class="sig-section-title" style="margin-top:20px">🏛️ SEC Filings</div>`;
     html+=`<div class="news-list">`;
-    secAll.slice(0,20).forEach((f,i)=>{
+    secCap.shown.forEach((f,i)=>{
       const safeUrl=(f.url||'').startsWith('http')?f.url:'#';
       const isStake=(f.form||'').startsWith('SC 13');
       html+=`<a class="news-card s-anim" href="${esc(safeUrl)}" target="_blank" rel="noopener noreferrer" style="animation-delay:${Math.min(i*0.02,0.4)}s;${isStake?'border-color:#00f08244':''}">
@@ -1442,15 +1491,17 @@ function renderSignals(data){
         <div class="news-pub">SEC EDGAR · ${esc(f.form)} ↗</div>
       </a>`;
     });
+    html+=sigMoreBtn(secCap);
     html+=`</div>`;
   }
 
   // ── News feed (clickable, opens in new tab) ──────────────────────────────
   const newsItems = sig.news||[];
   if(newsItems.length){
+    const newsCap = sigCap(newsItems, 'news', 5);
     html+=`<div class="sig-section-title" style="margin-top:20px">📰 Latest News</div>`;
     html+=`<div class="news-list">`;
-    newsItems.forEach((n,i)=>{
+    newsCap.shown.forEach((n,i)=>{
       const safeUrl = (n.url||'').startsWith('http') ? n.url : '#';
       html+=`<a class="news-card s-anim" href="${esc(safeUrl)}" target="_blank" rel="noopener noreferrer" style="animation-delay:${Math.min(i*0.02,0.5)}s">
         <div class="news-head">
@@ -1462,6 +1513,7 @@ function renderSignals(data){
         <div class="news-pub">${esc(n.publisher||'')} ↗</div>
       </a>`;
     });
+    html+=sigMoreBtn(newsCap);
     html+=`</div>`;
   }
 
