@@ -168,8 +168,28 @@ def _score_groundedness(text: str, ticker: str, quotes: dict) -> tuple[float, li
     return round(15 * matched / len(checked), 1), notes
 
 
-HEDGE_WORDS = r"\b(could|might|may|potentially|possibly|if successful|positions? it well|well[- ]positioned|strong position)\b"
-GENERIC_BEAR = r"\b(competition|competitive pressure|fails? to achieve profitability|execution risk|market conditions)\b"
+# NOTE: first pass only matched a few exact phrases ("positions it well") and
+# missed the model's actual wording ("positions the company FOR continued
+# growth"). A hand-picked phrase list is doomed to underfit — the model
+# paraphrases. Widened to match the PATTERN of vague growth-speak (verb +
+# "for/to" + growth-word) rather than fixed phrases, since that's what
+# actually recurred: "positions X for growth", "drives further growth",
+# "provides opportunities", "enables it to invest ... driving growth".
+HEDGE_WORDS = (
+    r"\b(could|might|may|potentially|possibly|if successful|"
+    r"well[- ]positioned|strong position|"
+    r"positions?\s+(?:the\s+company|it)?\s*(?:well\s+)?for|"
+    r"(?:drives?|driving|drove)\s+\w*\s*(?:growth|innovation|value|demand)|"
+    r"(?:enables?|allows?)\s+(?:it|the company)?\s*to\s+(?:invest|capitalize|expand)|"
+    r"provides?\s+(?:additional\s+)?(?:growth\s+)?opportunit|"
+    r"further\s+growth|continued\s+growth|long[- ]term\s+growth)\b"
+)
+GENERIC_BEAR = (
+    r"\b(competition|competitive\s+(?:pressure|products|landscape)|"
+    r"more\s+competitive|competitors?\s+(?:develop|could|might)|"
+    r"fails?\s+to\s+achieve\s+profitability|execution\s+risk|market\s+conditions|"
+    r"downturn\s+in\s+the\s+(?:market|industry))\b"
+)
 
 
 def _score_substance(text: str) -> tuple[float, list[str]]:
