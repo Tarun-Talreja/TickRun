@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-26T12:08:34Z",
+  "generated_at": "2026-07-26T14:09:26Z",
   "rules": {
     "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
     "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
     "high_yield_threshold_pct": 3.0
   },
   "counts": {
-    "roth": 41,
+    "roth": 40,
     "taxable": 2
   },
   "roth": [
@@ -121,16 +121,6 @@
       "reason": "Highest-conviction growth pick (34% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
     },
     {
-      "ticker": "TW",
-      "name": "Tradeweb Markets Inc.",
-      "theme": "financials",
-      "verdict": "RESEARCH-WORTHY",
-      "div_yield_pct": 0.56,
-      "account": "ROTH",
-      "priority": "high",
-      "reason": "Highest-conviction growth pick (21% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
-    },
-    {
       "ticker": "AAPL",
       "name": "Apple Inc.",
       "theme": "mega_cap_ai",
@@ -206,16 +196,6 @@
       "theme": "power_grid",
       "verdict": "WATCHLIST",
       "div_yield_pct": 1.09,
-      "account": "ROTH",
-      "priority": "medium",
-      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
-    },
-    {
-      "ticker": "FLUT",
-      "name": "FLUT",
-      "theme": "consumer_media",
-      "verdict": "WATCHLIST",
-      "div_yield_pct": null,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -376,6 +356,16 @@
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
       "div_yield_pct": 0.94,
+      "account": "ROTH",
+      "priority": "medium",
+      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+    },
+    {
+      "ticker": "TW",
+      "name": "Tradeweb Markets Inc.",
+      "theme": "financials",
+      "verdict": "WATCHLIST",
+      "div_yield_pct": 0.56,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
