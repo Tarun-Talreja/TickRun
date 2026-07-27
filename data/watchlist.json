@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26",
+  "last_updated": "2026-07-27",
   "candidates": [
     {
       "ticker": "AAPL",
@@ -734,18 +734,20 @@
       "name": "Insulet Corporation",
       "theme": "healthcare_innovation",
       "status": "research_complete",
-      "thesis": "~34% growth at 71% gross margin for ~20x forward is a sub-1x PEG, rare in medtech and roughly half DXCM's multiple on twice the growth. Consumable replaced every 72 hours makes each patient an annuity; the discount is GLP-1 fear over type 2 pump demand.",
+      "thesis": "High-growth medical device company with a strong market position and high gross margin, but with a relatively high valuation.",
       "added": "2026-07-25",
-      "verdict": "RESEARCH-WORTHY",
-      "buy_target": 163.26,
+      "verdict": "WATCHLIST",
+      "buy_target": 266.16,
       "current_price": null,
-      "next_action": "RESEARCH \u2014 ~34% growth at 71% gross margin for ~20x forward is a sub-1x PEG, rare in medtech and roughly half DXCM's multiple on twice the growth. Current levels clear the entry bar.",
-      "research_file": "output/research/deep/TICKRUN_RESEARCH_2026-07-25.md",
-      "last_researched": "2026-07-25",
+      "next_action": "WAIT \u2014 High-growth medical device company with a strong market position and high gross margin, but with a relatively high valuation. Revisit at 25% below the 52-week high.",
+      "research_file": "output/research/PODD_2026-07-27.md",
+      "last_researched": "2026-07-27",
       "confidence": "MEDIUM",
-      "buy_trigger_drawdown_pct": 0,
+      "buy_trigger_drawdown_pct": -25.0,
       "research_source": "deep_research_2026-07-25",
-      "no_pullback_gate": true
+      "no_pullback_gate": true,
+      "llm_verdict": "WATCHLIST",
+      "bear_downgraded": false
     },
     {
       "ticker": "MKTX",
