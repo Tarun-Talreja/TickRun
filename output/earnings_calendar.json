@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T22:46:34Z",
+  "generated_at": "2026-07-27T15:37:30Z",
   "lookahead_days": 30,
   "upcoming_earnings": [
     {
@@ -8,9 +8,29 @@
       "date": "2026-07-27",
       "days_until": 0,
       "theme": "datacenter_infra",
-      "verdict": "RESEARCH-WORTHY",
-      "thesis": "Cheapest credible AI-hardware exposure at ~20x forward for 50%+ growth, guiding to 53% revenue and 68% EPS growth on 800G/1.6T hyperscaler switch ramps. The catch is structural: 12% gross margin means you are buying operating leverage, not a moat.",
+      "verdict": "WATCHLIST",
+      "thesis": "High-growth manufacturing and supply chain management company with a strong operating margin, but high valuation multiples and net debt.",
       "action": "Review thesis before earnings. Re-run research_ticker.py CLS after."
+    },
+    {
+      "ticker": "ADP",
+      "name": "Automatic Data Processing, Inc.",
+      "date": "2026-07-29",
+      "days_until": 1,
+      "theme": "quality_compounder",
+      "verdict": "WATCHLIST",
+      "thesis": "Payroll + HR outsourcing \u2014 30% op margin, sticky multi-year contracts, 2.9% dividend, 18.8x fwd PE. -30% from ATH. Recession-resilient cash compounder.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py ADP after."
+    },
+    {
+      "ticker": "GEHC",
+      "name": "GE HealthCare Technologies Inc.",
+      "date": "2026-07-29",
+      "days_until": 1,
+      "theme": "healthcare_innovation",
+      "verdict": "WATCHLIST",
+      "thesis": "GE HealthCare \u2014 medical imaging (MRI, CT, ultrasound) with AI-assisted diagnostics. 12x fwd PE, 7% growth, -28% from ATH. Reasonable valuation on an AI-adjacent healthcare leader.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py GEHC after."
     },
     {
       "ticker": "V",
@@ -23,24 +43,14 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py V after."
     },
     {
-      "ticker": "ADP",
-      "name": "Automatic Data Processing, Inc.",
+      "ticker": "VRT",
+      "name": "Vertiv Holdings Co",
       "date": "2026-07-29",
-      "days_until": 2,
-      "theme": "quality_compounder",
+      "days_until": 1,
+      "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "thesis": "Payroll + HR outsourcing \u2014 30% op margin, sticky multi-year contracts, 2.9% dividend, 18.8x fwd PE. -30% from ATH. Recession-resilient cash compounder.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py ADP after."
-    },
-    {
-      "ticker": "GEHC",
-      "name": "GE HealthCare Technologies Inc.",
-      "date": "2026-07-29",
-      "days_until": 2,
-      "theme": "healthcare_innovation",
-      "verdict": "WATCHLIST",
-      "thesis": "GE HealthCare \u2014 medical imaging (MRI, CT, ultrasound) with AI-assisted diagnostics. 12x fwd PE, 7% growth, -28% from ATH. Reasonable valuation on an AI-adjacent healthcare leader.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py GEHC after."
+      "thesis": "Vertiv's strong position in the data center infrastructure market and its expanding margins make it an attractive play on the AI infrastructure theme at a forward P/E of 32.9x.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py VRT after."
     },
     {
       "ticker": "INVH",
@@ -63,24 +73,34 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py META after."
     },
     {
+      "ticker": "MA",
+      "name": "Mastercard Incorporated",
+      "date": "2026-07-30",
+      "days_until": 2,
+      "theme": "quality_compounder",
+      "verdict": "WATCHLIST",
+      "thesis": "Payments toll road like Visa \u2014 61% op margin, 16% growth, 21x fwd PE. -19% from ATH. Every digital transaction pays Mastercard regardless of cycle. Quality compounder on a rare sale.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py MA after."
+    },
+    {
       "ticker": "MSFT",
       "name": "Microsoft Corporation",
       "date": "2026-07-29",
       "days_until": 2,
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "thesis": "Premier AI/cloud platform. Currently $423.88 vs $539.83 ATH (Oct 2025) = -21.5% from peak \u2014 rare entry. Azure + Copilot + OpenAI partnership = AI infrastructure leader. $3.04T market cap = bedrock holding.",
+      "thesis": "Microsoft is a high-quality tech company with a strong growth profile and reasonable valuation.",
       "action": "Review thesis before earnings. Re-run research_ticker.py MSFT after."
     },
     {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings Co",
-      "date": "2026-07-29",
+      "ticker": "TW",
+      "name": "Tradeweb Markets Inc.",
+      "date": "2026-07-30",
       "days_until": 2,
-      "theme": "power_grid",
+      "theme": "financials",
       "verdict": "WATCHLIST",
-      "thesis": "Vertiv's strong position in the data center infrastructure market and its expanding margins make it an attractive play on the AI infrastructure theme at a forward P/E of 32.9x.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py VRT after."
+      "thesis": "Tradeweb is a high-quality financial technology company with a strong growth profile, but its valuation is not extremely cheap and its dependence on large clients poses a risk.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py TW after."
     },
     {
       "ticker": "AAPL",
@@ -113,6 +133,16 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py EIX after."
     },
     {
+      "ticker": "ETN",
+      "name": "Eaton Corporation plc",
+      "date": "2026-07-31",
+      "days_until": 3,
+      "theme": "power_grid",
+      "verdict": "WATCHLIST",
+      "thesis": "Diversified industrial equipment company with strong growth prospects in the data center and grid infrastructure sectors, trading at a forward P/E of 25.6x.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py ETN after."
+    },
+    {
       "ticker": "LPLA",
       "name": "LPL Financial Holdings Inc.",
       "date": "2026-07-30",
@@ -123,14 +153,14 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py LPLA after."
     },
     {
-      "ticker": "MA",
-      "name": "Mastercard Incorporated",
-      "date": "2026-07-30",
+      "ticker": "NVT",
+      "name": "nVent Electric plc",
+      "date": "2026-07-31",
       "days_until": 3,
-      "theme": "quality_compounder",
-      "verdict": "WATCHLIST",
-      "thesis": "Payments toll road like Visa \u2014 61% op margin, 16% growth, 21x fwd PE. -19% from ATH. Every digital transaction pays Mastercard regardless of cycle. Quality compounder on a rare sale.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py MA after."
+      "theme": "power_grid",
+      "verdict": "RESEARCH-WORTHY",
+      "thesis": "Liquid cooling and power distribution inside the data center at ~26x forward for ~28% expected growth (~1x PEG); complements rather than duplicates VRT. Weak spot is FCF conversion consumed by working capital \u2014 this is a gross-margin story, not a revenue story.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py NVT after."
     },
     {
       "ticker": "RDDT",
@@ -139,38 +169,8 @@
       "days_until": 3,
       "theme": "platform_network",
       "verdict": "WATCHLIST",
-      "thesis": "World's largest forum network. Revenue grew 69% YoY with 91.4% gross margin and 27.6% op margin. $0.56B FCF. 17.4x forward PE \u2014 cheapest in this batch relative to growth (PEG <0.3). AI data licensing (Google $60M/yr, OpenAI deal) is a new high-margin revenue layer. -45.5% from $282 ATH at $154 makes the entry compelling. International expansion (historically English-only) is untapped.",
+      "thesis": "High-growth consumer/media company with reasonable valuation relative to growth, but not directly aligned with target themes.",
       "action": "Review thesis before earnings. Re-run research_ticker.py RDDT after."
-    },
-    {
-      "ticker": "TW",
-      "name": "Tradeweb Markets Inc.",
-      "date": "2026-07-30",
-      "days_until": 3,
-      "theme": "financials",
-      "verdict": "WATCHLIST",
-      "thesis": "Tradeweb is a high-quality financial technology company with a strong growth profile, but its valuation is not extremely cheap and its dependence on large clients poses a risk.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py TW after."
-    },
-    {
-      "ticker": "ETN",
-      "name": "Eaton Corporation plc",
-      "date": "2026-07-31",
-      "days_until": 4,
-      "theme": "power_grid",
-      "verdict": "WATCHLIST",
-      "thesis": "Diversified industrial equipment company with strong growth prospects in the data center and grid infrastructure sectors, trading at a forward P/E of 25.6x.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py ETN after."
-    },
-    {
-      "ticker": "NVT",
-      "name": "nVent Electric plc",
-      "date": "2026-07-31",
-      "days_until": 4,
-      "theme": "power_grid",
-      "verdict": "RESEARCH-WORTHY",
-      "thesis": "Liquid cooling and power distribution inside the data center at ~26x forward for ~28% expected growth (~1x PEG); complements rather than duplicates VRT. Weak spot is FCF conversion consumed by working capital \u2014 this is a gross-margin story, not a revenue story.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py NVT after."
     },
     {
       "ticker": "BWXT",
@@ -216,7 +216,7 @@
       "ticker": "LLY",
       "name": "Eli Lilly and Company",
       "date": "2026-08-05",
-      "days_until": 9,
+      "days_until": 8,
       "theme": "uncategorized",
       "verdict": "PASS",
       "thesis": "GLP-1 drug leader (Mounjaro, Zepbound). 55% revenue growth, 82.8% gross margin. Exceptional business \u2014 no theme fit for this portfolio.",
@@ -226,11 +226,31 @@
       "ticker": "PODD",
       "name": "Insulet Corporation",
       "date": "2026-08-05",
-      "days_until": 9,
+      "days_until": 8,
       "theme": "healthcare_innovation",
-      "verdict": "RESEARCH-WORTHY",
-      "thesis": "~34% growth at 71% gross margin for ~20x forward is a sub-1x PEG, rare in medtech and roughly half DXCM's multiple on twice the growth. Consumable replaced every 72 hours makes each patient an annuity; the discount is GLP-1 fear over type 2 pump demand.",
+      "verdict": "WATCHLIST",
+      "thesis": "High-growth medical device company with a strong market position and high gross margin, but with a relatively high valuation.",
       "action": "Review thesis before earnings. Re-run research_ticker.py PODD after."
+    },
+    {
+      "ticker": "ZBH",
+      "name": "Zimmer Biomet Holdings, Inc.",
+      "date": "2026-08-05",
+      "days_until": 8,
+      "theme": "healthcare_innovation",
+      "verdict": "WATCHLIST",
+      "thesis": "Quality compounder in the healthcare sector with a reasonable valuation and strong profitability.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py ZBH after."
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy Corporation",
+      "date": "2026-08-06",
+      "days_until": 9,
+      "theme": "nuclear_smr",
+      "verdict": "WATCHLIST",
+      "thesis": "Largest US nuclear operator (21 reactors). Signed 20-year PPA with Microsoft to restart Three Mile Island for AI datacenter power \u2014 the blueprint every hyperscaler is now copying. 64% revenue growth, 21.2x forward PE, -30% from ATH. Google/Oracle/Meta in active nuclear PPA negotiations. CEG is the only investable pure-play: you cannot build new baseload nuclear in under 10 years.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py CEG after."
     },
     {
       "ticker": "TLN",
@@ -243,40 +263,30 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py TLN after."
     },
     {
-      "ticker": "ZBH",
-      "name": "Zimmer Biomet Holdings, Inc.",
-      "date": "2026-08-05",
-      "days_until": 9,
-      "theme": "healthcare_innovation",
-      "verdict": "WATCHLIST",
-      "thesis": "Quality compounder in the healthcare sector with a reasonable valuation and strong profitability.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py ZBH after."
-    },
-    {
-      "ticker": "CEG",
-      "name": "Constellation Energy Corporation",
-      "date": "2026-08-06",
-      "days_until": 10,
-      "theme": "nuclear_smr",
-      "verdict": "WATCHLIST",
-      "thesis": "Largest US nuclear operator (21 reactors). Signed 20-year PPA with Microsoft to restart Three Mile Island for AI datacenter power \u2014 the blueprint every hyperscaler is now copying. 64% revenue growth, 21.2x forward PE, -30% from ATH. Google/Oracle/Meta in active nuclear PPA negotiations. CEG is the only investable pure-play: you cannot build new baseload nuclear in under 10 years.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py CEG after."
-    },
-    {
       "ticker": "MKTX",
       "name": "MarketAxess Holdings Inc.",
       "date": "2026-08-07",
-      "days_until": 11,
+      "days_until": 10,
       "theme": "financials",
       "verdict": "WATCHLIST",
       "thesis": "MarketAxess \u2014 electronic bond-trading platform. 44% op margin, 12% growth, network-effect moat. 12.8x fwd PE, -49.7% from ATH (!). High-quality exchange business deeply oversold.",
       "action": "Review thesis before earnings. Re-run research_ticker.py MKTX after."
     },
     {
+      "ticker": "OKLO",
+      "name": "Oklo Inc.",
+      "date": "2026-08-07",
+      "days_until": 10,
+      "theme": "nuclear_smr",
+      "verdict": "PASS",
+      "thesis": "Advanced nuclear power play with significant growth potential but unverified revenue and profitability.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py OKLO after."
+    },
+    {
       "ticker": "VST",
       "name": "Vistra Corp.",
       "date": "2026-08-07",
-      "days_until": 11,
+      "days_until": 10,
       "theme": "nuclear_smr",
       "verdict": "WATCHLIST",
       "thesis": "Nuclear + gas power generator. 14.6x forward PE for 43% growth \u2014 cheapest AI power play in the market. Just closed Energy Harbor acquisition adding 4 nuclear plants. Illinois nuclear plants (Clinton, Quad Cities) are in direct crosshairs of AI datacenter power demand. Wholesale power prices in Texas and PJM rising structurally. -27% from $219 ATH.",
