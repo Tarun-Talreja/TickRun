@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-27",
+  "last_updated": "2026-07-28",
   "candidates": [
     {
       "ticker": "AAPL",
@@ -45,18 +45,19 @@
       "name": "Alphabet Inc.",
       "theme": "mega_cap_ai",
       "status": "research_complete",
-      "thesis": "Cheapest mega-cap AI play. 90% global search share, $328B ad revenue (+24% YoY), 29x trailing P/E. $175-185B 2026 capex into AI infrastructure. Get Cloud + Waymo + Anthropic stake at search valuation.",
+      "thesis": "Leader in AI research and development with strong revenue growth and free cash flow generation, trading at a reasonable valuation multiple.",
       "added": "2026-04-25",
       "verdict": "WATCHLIST",
-      "buy_target": 316,
+      "buy_target": 326.89,
       "current_price": 316,
-      "next_action": "BUY $1,500 \u2014 top conviction pick after web research",
-      "research_file": "output/research/GOOGL_2026-07-24.md",
-      "last_researched": "2026-07-24",
-      "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying GOOGL right now is that the recent fall below its 200-day average for the first time in over a year, as reported on July 24, may indicate a significant shift in market sentiment, potentially signaling a trend reversal. This technical indicator suggests that the stock's downward momentum could continue, making it a less favorable time to buy. Furthermore, the comparison with other volatile tech stocks like Tesla, which also \"dive\" as mentioned in the headlines, adds to the uncertainty surrounding GOOGL's near-term performance.\n\nCHANGES VERDICT: YES",
+      "next_action": "WAIT \u2014 Leader in AI research and development with strong revenue growth and free cash flow generation, trading at a reasonable valuation multiple. Revisit at 20% below the 52-week high.",
+      "research_file": "output/research/GOOGL_2026-07-28.md",
+      "last_researched": "2026-07-28",
+      "confidence": "HIGH",
+      "bear_check": "The strongest argument against buying GOOGL right now is that the bull case may be underweighting the potential margin pressure from increased AI spending, as hinted at in the headline \"Is AI spending actually a sore spot for Big Tech margins?\" - this could negatively impact Alphabet's operating margin and, by extension, its valuation multiples. Additionally, the note's emphasis on Alphabet's AI research and development efforts as a growth driver may be overly optimistic if these investments do not yield sufficient returns. The recent $1.5 billion AI infrastructure deal secured by Axe Compute may also indicate increasing competition in the AI space.\n\nCHANGES VERDICT: YES",
       "llm_verdict": "RESEARCH-WORTHY",
-      "bear_downgraded": true
+      "bear_downgraded": true,
+      "buy_trigger_drawdown_pct": -20.0
     },
     {
       "ticker": "AMZN",
