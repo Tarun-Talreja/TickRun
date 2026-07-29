@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-28",
+  "last_updated": "2026-07-29",
   "candidates": [
     {
       "ticker": "AAPL",
@@ -559,18 +559,20 @@
       "name": "nVent Electric plc",
       "theme": "power_grid",
       "status": "research_complete",
-      "thesis": "Liquid cooling and power distribution inside the data center at ~26x forward for ~28% expected growth (~1x PEG); complements rather than duplicates VRT. Weak spot is FCF conversion consumed by working capital \u2014 this is a gross-margin story, not a revenue story.",
+      "thesis": "Reasonably valued data center power play with strong backlog growth.",
       "added": "2026-07-25",
-      "verdict": "RESEARCH-WORTHY",
-      "buy_target": 141.75,
+      "verdict": "WATCHLIST",
+      "buy_target": 138.48,
       "current_price": null,
-      "next_action": "RESEARCH \u2014 Liquid cooling and power distribution inside the data center at ~26x forward for ~28% expected growth (~1x PEG); complements rather than duplicates VRT. Current levels clear the entry bar.",
-      "research_file": "output/research/deep/TICKRUN_RESEARCH_2026-07-25.md",
-      "last_researched": "2026-07-25",
+      "next_action": "WAIT \u2014 Reasonably valued data center power play with strong backlog growth. Revisit at 25% below the 52-week high.",
+      "research_file": "output/research/NVT_2026-07-29.md",
+      "last_researched": "2026-07-29",
       "confidence": "MEDIUM",
-      "buy_trigger_drawdown_pct": 0,
+      "buy_trigger_drawdown_pct": -25.0,
       "research_source": "deep_research_2026-07-25",
-      "no_pullback_gate": true
+      "no_pullback_gate": true,
+      "llm_verdict": "WATCHLIST",
+      "bear_downgraded": false
     },
     {
       "ticker": "POWL",
