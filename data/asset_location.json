@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T23:01:38Z",
+  "generated_at": "2026-07-29T13:21:07Z",
   "rules": {
     "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
     "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
@@ -59,26 +59,6 @@
       "account": "ROTH",
       "priority": "high",
       "reason": "REIT \u2014 distributions are largely non-qualified and taxed as ordinary income, making this the most tax-inefficient asset class you hold. Sheltering it is worth more than sheltering an equivalent amount of growth stock."
-    },
-    {
-      "ticker": "ISRG",
-      "name": "Intuitive Surgical, Inc.",
-      "theme": "healthcare_innovation",
-      "verdict": "RESEARCH-WORTHY",
-      "div_yield_pct": null,
-      "account": "ROTH",
-      "priority": "high",
-      "reason": "Highest-conviction growth pick (18% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
-    },
-    {
-      "ticker": "NVT",
-      "name": "nVent Electric plc",
-      "theme": "power_grid",
-      "verdict": "RESEARCH-WORTHY",
-      "div_yield_pct": 0.59,
-      "account": "ROTH",
-      "priority": "high",
-      "reason": "Highest-conviction growth pick (54% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
     },
     {
       "ticker": "PAYX",
@@ -211,6 +191,16 @@
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
     },
     {
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical, Inc.",
+      "theme": "healthcare_innovation",
+      "verdict": "WATCHLIST",
+      "div_yield_pct": null,
+      "account": "ROTH",
+      "priority": "medium",
+      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+    },
+    {
       "ticker": "LITE",
       "name": "Lumentum Holdings Inc.",
       "theme": "networking_infra",
@@ -316,6 +306,16 @@
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
       "div_yield_pct": 0.51,
+      "account": "ROTH",
+      "priority": "medium",
+      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+    },
+    {
+      "ticker": "NVT",
+      "name": "nVent Electric plc",
+      "theme": "power_grid",
+      "verdict": "WATCHLIST",
+      "div_yield_pct": 0.59,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
