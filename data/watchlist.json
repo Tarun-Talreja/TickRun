@@ -9,7 +9,7 @@
       "thesis": "High-quality technology company with strong brand and cash flow generation, valued at a premium to its peers.",
       "added": "2026-05-28",
       "verdict": "WATCHLIST",
-      "buy_target": 308.6,
+      "buy_target": 309.3,
       "current_price": null,
       "next_action": "WAIT \u2014 High-quality technology company with strong brand and cash flow generation, valued at a premium to its peers. Revisit at 10% below the 52-week high.",
       "research_file": "output/research/AAPL_2026-07-26.md",
@@ -239,7 +239,7 @@
       "thesis": "Enterprise software company with strong revenue growth and positive free cash flow, but expensive valuation multiples.",
       "added": "2026-05-28",
       "verdict": "WATCHLIST",
-      "buy_target": 150.86,
+      "buy_target": 148.95,
       "current_price": null,
       "next_action": "WAIT \u2014 Enterprise software company with strong revenue growth and positive free cash flow, but expensive valuation multiples. Revisit at 25% below the 52-week high.",
       "research_file": "output/research/NOW_2026-07-25.md",
@@ -423,7 +423,8 @@
       "bear_check": "The strongest argument against buying CEG right now is its significant negative free cash flow of $-4479M, which, combined with its substantial net debt of $21602M, poses a considerable risk to the company's ability to service its debt and invest in future growth, especially in a rising interest rate environment. This concern is further amplified by the company's reliance on debt to finance its operations, making it vulnerable to changes in market conditions. The bull case may be underweighting the potential impact of sustained negative cash flow on the company's long-term sustainability.\n\nVERDICT: Bearish \nCONFIDENCE: High\nCHANGES VERDICT: YES",
       "bear_downgraded": false,
       "llm_verdict": "WATCHLIST",
-      "buy_trigger_drawdown_pct": -25.0
+      "buy_trigger_drawdown_pct": -25.0,
+      "no_pullback_gate": false
     },
     {
       "ticker": "VST",
@@ -442,7 +443,8 @@
       "bear_check": "The strongest argument against buying VST right now is its negative free cash flow (FCF) of $-164M, which raises significant concerns about the company's ability to generate cash and service its substantial net debt of $19,909M, potentially undermining its growth prospects and making its valuation, including a trailing P/E ratio of 28.3x, less sustainable. This financial health concern is not adequately addressed by the bullish outlook based on revenue growth and investor interest. The drawdown of 23.1% from the 52-week high also suggests recent market skepticism about VST's valuation.\n\nCHANGES VERDICT: YES",
       "llm_verdict": "WATCHLIST",
       "bear_downgraded": false,
-      "buy_trigger_drawdown_pct": -25.0
+      "buy_trigger_drawdown_pct": -25.0,
+      "no_pullback_gate": false
     },
     {
       "ticker": "VRT",
@@ -547,7 +549,7 @@
       "thesis": "Nuclear buildout exposure with an actual P&L: backlog +77% YoY at ~2.6 years of booked revenue, funded by a naval-propulsion monopoly. SMR upside is a free option, not the whole thesis \u2014 but ~34x forward means the market knows.",
       "added": "2026-07-25",
       "verdict": "RESEARCH-WORTHY",
-      "buy_target": 169.67,
+      "buy_target": 162.15,
       "current_price": null,
       "next_action": "RESEARCH \u2014 Nuclear buildout exposure with an actual P&L: backlog +77% YoY at ~2. Current levels clear the entry bar.",
       "research_file": "output/research/deep/TICKRUN_RESEARCH_2026-07-25.md",
@@ -573,7 +575,7 @@
       "confidence": "MEDIUM",
       "buy_trigger_drawdown_pct": -25.0,
       "research_source": "deep_research_2026-07-25",
-      "no_pullback_gate": true,
+      "no_pullback_gate": false,
       "llm_verdict": "WATCHLIST",
       "bear_downgraded": false
     },
@@ -850,7 +852,7 @@
       "thesis": "Invitation Homes is a fairly valued single-family home REIT with stable cash flow generation and growth prospects.",
       "added": "2026-06-08",
       "verdict": "WATCHLIST",
-      "buy_target": 28.84,
+      "buy_target": 28.76,
       "current_price": null,
       "next_action": "WAIT \u2014 Invitation Homes is a fairly valued single-family home REIT with stable cash flow generation and growth prospects. Revisit at 10% below the 52-week high.",
       "research_file": "output/research/INVH_2026-07-25.md",

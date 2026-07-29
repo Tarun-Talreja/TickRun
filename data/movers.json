@@ -1,17 +1,158 @@
 {
-  "generated_at": "2026-07-28T23:01:37Z",
+  "generated_at": "2026-07-29T15:12:15Z",
   "movers": [
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings Co",
+      "verdict": "WATCHLIST",
+      "price": 235.565,
+      "pct_day": -12.61,
+      "pct_since": -12.61,
+      "primary_pct": -12.61,
+      "direction": "down",
+      "triggers": [
+        "-12.6% since last check",
+        "-12.6% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "Vertiv stock sinks on earnings miss: A look at key AI infrastructure players",
+          "publisher": "Yahoo Finance Video",
+          "date": "2026-07-29",
+          "url": "https://finance.yahoo.com/video/vertiv-stock-sinks-earnings-miss-145000840.html"
+        },
+        {
+          "title": "Vertiv Earnings Beat Estimates. Why the Stock Is Falling.",
+          "publisher": "Barrons.com",
+          "date": "2026-07-29",
+          "url": "https://www.barrons.com/articles/vertiv-earnings-stock-price-8631d669?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "title": "Vertiv Blames Timing Shifts as Stock Falls 13%",
+          "publisher": "GuruFocus.com",
+          "date": "2026-07-29",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/vertiv-blames-timing-shifts-stock-135239671.html"
+        }
+      ]
+    },
+    {
+      "ticker": "GEHC",
+      "name": "GE HealthCare Technologies Inc.",
+      "verdict": "WATCHLIST",
+      "price": 71.5,
+      "pct_day": 11.53,
+      "pct_since": 11.53,
+      "primary_pct": 11.53,
+      "direction": "up",
+      "triggers": [
+        "+11.5% since last check",
+        "+11.5% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "GE HealthCare Stock Soars After Earnings. Here\u2019s What Drove the Profit Gains.",
+          "publisher": "Barrons.com",
+          "date": "2026-07-29",
+          "url": "https://www.barrons.com/articles/ge-healthcare-earnings-stock-price-ce5fd821?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "title": "Vertiv, SK Hynix, SoFi, Bloom Energy, GE HealthCare, and More Stocks That Explain Today\u2019s Market",
+          "publisher": "Barrons.com",
+          "date": "2026-07-29",
+          "url": "https://www.barrons.com/articles/stock-movers-96def795?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "title": "GE HealthCare Beats Second-Quarter Expectations as Record Orders Drive Growth",
+          "publisher": "InvestorsHub",
+          "date": "2026-07-29",
+          "url": "https://investorshub.advfn.com/market-news/article/32955/ge-healthcare-beats-second-quarter-expectations-as-record-orders-drive-growth"
+        }
+      ]
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "verdict": "PASS",
+      "price": 154.49,
+      "pct_day": -8.96,
+      "pct_since": -8.96,
+      "primary_pct": -8.96,
+      "direction": "down",
+      "triggers": [
+        "-9.0% since last check",
+        "-9.0% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "Bloom Energy (BE) Stock Looks Fully Priced After A Very Large Run",
+          "publisher": "Simply Wall St.",
+          "date": "2026-07-28",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/bloom-energy-stock-looks-fully-231644506.html"
+        },
+        {
+          "title": "CRWV Powers Anam's AI Avatars With Low-Latency Cloud Infrastructure",
+          "publisher": "Zacks",
+          "date": "2026-07-28",
+          "url": "https://finance.yahoo.com/technology/ai/articles/crwv-powers-anams-ai-avatars-133200920.html"
+        },
+        {
+          "title": "Can Nebius Stock Turn a $10,000 Investment Into $1 Million?",
+          "publisher": "Motley Fool",
+          "date": "2026-07-28",
+          "url": "https://www.fool.com/investing/2026/07/28/can-nebius-stock-turn-a-10000-investment-into-1-mi/"
+        }
+      ]
+    },
+    {
+      "ticker": "CBRS",
+      "name": "Cerebras Systems Inc.",
+      "verdict": "PASS",
+      "price": 178.35,
+      "pct_day": -7.46,
+      "pct_since": -7.46,
+      "primary_pct": -7.46,
+      "direction": "down",
+      "triggers": [
+        "-7.5% since last check",
+        "-7.5% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "6 Buys and 4 Holds for Bending Spoons Stock, AOL\u2019s New Owner",
+          "publisher": "Barrons.com",
+          "date": "2026-07-27",
+          "url": "https://www.barrons.com/articles/aol-parent-bending-spoons-stock-ipo-af8816e9?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "title": "AMD Data Center Growth Seen Beating Expectations Through 2027",
+          "publisher": "GuruFocus.com",
+          "date": "2026-07-27",
+          "url": "https://finance.yahoo.com/technology/articles/amd-data-center-growth-seen-191730921.html"
+        },
+        {
+          "title": "Asia\u2019s Biggest IPO of 2026 Puts Crypto Shadow Market to the Test",
+          "publisher": "Bloomberg",
+          "date": "2026-07-27",
+          "url": "https://finance.yahoo.com/markets/crypto/articles/asia-biggest-ipo-2026-puts-101734542.html"
+        }
+      ]
+    },
     {
       "ticker": "COHR",
       "name": "Coherent Corp.",
       "verdict": "RESEARCH-WORTHY",
-      "price": 243.33,
-      "pct_day": -10.31,
-      "pct_since": 0.0,
-      "primary_pct": -10.31,
+      "price": 229.04,
+      "pct_day": -5.87,
+      "pct_since": -5.87,
+      "primary_pct": -5.87,
       "direction": "down",
       "triggers": [
-        "-10.3% on the day"
+        "-5.9% since last check",
+        "-5.9% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -36,118 +177,17 @@
       ]
     },
     {
-      "ticker": "CLS",
-      "name": "Celestica Inc.",
-      "verdict": "WATCHLIST",
-      "price": 350.2,
-      "pct_day": 10.04,
-      "pct_since": 0.0,
-      "primary_pct": 10.04,
-      "direction": "up",
-      "triggers": [
-        "+10.0% on the day"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Does Owning Celestica Really Diversify Your Portfolio?",
-          "publisher": "Trefis",
-          "date": "2026-07-28",
-          "url": "https://www.trefis.com/articles/609200/does-owning-celestica-really-diversify-your-portfolio/2026-07-28"
-        },
-        {
-          "title": "Celestica Inc (CLS) Q2 2026 Earnings Call Highlights: Record Revenue and Strong Growth Outlook",
-          "publisher": "GuruFocus.com",
-          "date": "2026-07-28",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/celestica-inc-cls-q2-2026-190135107.html"
-        },
-        {
-          "title": "Coherent Sinks 11%, Applied Optoelectronics Falls 10%, Lumentum Drops 9% as Traders Question AI Spending Spree",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-07-28",
-          "url": "https://247wallst.com/investing/2026/07/28/coherent-sinks-11-applied-optoelectronics-falls-10-lumentum-drops-9-as-traders-question-ai-spending-spree/"
-        }
-      ]
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "verdict": "PASS",
-      "price": 169.69,
-      "pct_day": -9.68,
-      "pct_since": 0.0,
-      "primary_pct": -9.68,
-      "direction": "down",
-      "triggers": [
-        "-9.7% on the day"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "CRWV Powers Anam's AI Avatars With Low-Latency Cloud Infrastructure",
-          "publisher": "Zacks",
-          "date": "2026-07-28",
-          "url": "https://finance.yahoo.com/technology/ai/articles/crwv-powers-anams-ai-avatars-133200920.html"
-        },
-        {
-          "title": "Can Nebius Stock Turn a $10,000 Investment Into $1 Million?",
-          "publisher": "Motley Fool",
-          "date": "2026-07-28",
-          "url": "https://www.fool.com/investing/2026/07/28/can-nebius-stock-turn-a-10000-investment-into-1-mi/"
-        },
-        {
-          "title": "Coreweave is $71 After Falling 43% in a Year: One Analyst Thinks It Can Rocket to $250",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-07-27",
-          "url": "https://247wallst.com/investing/2026/07/27/coreweave-is-71-after-falling-43-in-a-year-one-analyst-thinks-it-can-rocket-to-250/"
-        }
-      ]
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron Technology, Inc.",
-      "verdict": "WATCHLIST",
-      "price": 820.53,
-      "pct_day": -8.85,
-      "pct_since": 0.0,
-      "primary_pct": -8.85,
-      "direction": "down",
-      "triggers": [
-        "-8.8% on the day"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Assessing the chip sector's damage: Chart of the Day",
-          "publisher": "Yahoo Finance Video",
-          "date": "2026-07-28",
-          "url": "https://finance.yahoo.com/video/assessing-the-chip-sectors-damage-chart-of-the-day-195557807.html"
-        },
-        {
-          "title": "CME launches 23-hour single-stock futures to trade stocks like SpaceX, Micron",
-          "publisher": "Yahoo Finance Video",
-          "date": "2026-07-28",
-          "url": "https://finance.yahoo.com/video/cme-launches-23-hour-single-163000931.html"
-        },
-        {
-          "title": "CLARITY Act hits summer roadblock",
-          "publisher": "Yahoo Finance Video",
-          "date": "2026-07-28",
-          "url": "https://finance.yahoo.com/video/clarity-act-hits-summer-roadblock-155743444.html"
-        }
-      ]
-    },
-    {
       "ticker": "LITE",
       "name": "Lumentum Holdings Inc.",
       "verdict": "WATCHLIST",
-      "price": 651.93,
-      "pct_day": -8.43,
-      "pct_since": 0.0,
-      "primary_pct": -8.43,
+      "price": 614.26,
+      "pct_day": -5.78,
+      "pct_since": -5.78,
+      "primary_pct": -5.78,
       "direction": "down",
       "triggers": [
-        "-8.4% on the day"
+        "-5.8% since last check",
+        "-5.8% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -172,16 +212,52 @@
       ]
     },
     {
+      "ticker": "NVT",
+      "name": "nVent Electric plc",
+      "verdict": "WATCHLIST",
+      "price": 133.7324,
+      "pct_day": -5.66,
+      "pct_since": -5.66,
+      "primary_pct": -5.66,
+      "direction": "down",
+      "triggers": [
+        "-5.7% since last check",
+        "-5.7% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "Littelfuse (LFUS) Q2 Earnings and Revenues Surpass Estimates",
+          "publisher": "Zacks",
+          "date": "2026-07-29",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/littelfuse-lfus-q2-earnings-revenues-134004146.html"
+        },
+        {
+          "title": "nVent (NVT) Stock Seems 36% Pricey On Its $2.6B Backlog",
+          "publisher": "Simply Wall St.",
+          "date": "2026-07-28",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nvent-nvt-stock-seems-36-211304055.html"
+        },
+        {
+          "title": "NVT Likely to Beat Q2 Earnings Estimates: Buy, Sell or Hold the Stock?",
+          "publisher": "Zacks",
+          "date": "2026-07-28",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nvt-likely-beat-q2-earnings-152100633.html"
+        }
+      ]
+    },
+    {
       "ticker": "POWL",
       "name": "Powell Industries, Inc.",
       "verdict": "WATCHLIST",
-      "price": 201.0,
-      "pct_day": -8.32,
-      "pct_since": 0.0,
-      "primary_pct": -8.32,
+      "price": 189.71,
+      "pct_day": -5.62,
+      "pct_since": -5.62,
+      "primary_pct": -5.62,
       "direction": "down",
       "triggers": [
-        "-8.3% on the day"
+        "-5.6% since last check",
+        "-5.6% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -206,70 +282,72 @@
       ]
     },
     {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
+      "ticker": "ETN",
+      "name": "Eaton Corporation plc",
       "verdict": "WATCHLIST",
-      "price": 454.62,
-      "pct_day": -8.15,
-      "pct_since": 0.0,
-      "primary_pct": -8.15,
+      "price": 365.815,
+      "pct_day": -5.29,
+      "pct_since": -5.29,
+      "primary_pct": -5.29,
       "direction": "down",
       "triggers": [
-        "-8.2% on the day"
+        "-5.3% since last check",
+        "-5.3% on the day"
       ],
-      "reason": "No clear catalyst in current news.",
+      "reason": "See headlines (explanation limited to top movers).",
       "news": [
         {
-          "title": "Micron, SK Hynix stocks sink as AI chip sell-off deepens",
-          "publisher": "Yahoo Finance",
+          "title": "Eaton vs. Emerson: Which Electrification Stock Is the Better Buy?",
+          "publisher": "Zacks",
           "date": "2026-07-28",
-          "url": "https://finance.yahoo.com/markets/article/micron-sk-hynix-stocks-sink-as-ai-chip-sell-off-deepens-125622548.html"
+          "url": "https://finance.yahoo.com/markets/stocks/articles/eaton-vs-emerson-electrification-stock-180300060.html"
         },
         {
-          "title": "Dow Jones Futures Fall, Oil Jumps On Iran News; Seagate, SK Hynix, KLA, Bloom Energy Earnings Late",
-          "publisher": "Investor's Business Daily",
+          "title": "Emerson Electric (EMR) Earnings Expected to Grow: What to Know Ahead of Next Week's Release",
+          "publisher": "Zacks",
           "date": "2026-07-28",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-seagate-sk-hynix-kla-bloom-energy-earnings-fed-meeting/?src=A00220&yptr=yahoo"
+          "url": "https://finance.yahoo.com/markets/stocks/articles/emerson-electric-emr-earnings-expected-140009166.html"
         },
         {
-          "title": "Advanced Micro Devices vs. Arista Networks: Which Tech Stock Is a Better Buy in 2026?",
-          "publisher": "Motley Fool",
-          "date": "2026-07-28",
-          "url": "https://www.fool.com/coverage/better-buy/2026/07/28/advanced-micro-devices-vs-arista-networks-which-tech-stock-is-a-better-buy-in-2026/"
+          "title": "3 Major Reasons to Buy Vertiv Before July 29 Q2 Earnings",
+          "publisher": "24/7 Wall St.",
+          "date": "2026-07-25",
+          "url": "https://247wallst.com/investing/2026/07/25/3-major-reasons-to-buy-vertiv-before-july-29-q2-earnings/"
         }
       ]
     },
     {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
+      "ticker": "ADP",
+      "name": "Automatic Data Processing, Inc.",
       "verdict": "WATCHLIST",
-      "price": 174.47,
-      "pct_day": -7.77,
-      "pct_since": 0.0,
-      "primary_pct": -7.77,
-      "direction": "down",
+      "price": 277.7,
+      "pct_day": 5.12,
+      "pct_since": 5.12,
+      "primary_pct": 5.12,
+      "direction": "up",
       "triggers": [
-        "-7.8% on the day"
+        "+5.1% since last check",
+        "+5.1% on the day"
       ],
-      "reason": "No clear catalyst in current news.",
+      "reason": "See headlines (explanation limited to top movers).",
       "news": [
         {
-          "title": "Micron, SK Hynix stocks sink as AI chip sell-off deepens",
-          "publisher": "Yahoo Finance",
-          "date": "2026-07-28",
-          "url": "https://finance.yahoo.com/markets/article/micron-sk-hynix-stocks-sink-as-ai-chip-sell-off-deepens-125622548.html"
+          "title": "Automatic Data Processing Q4 Earnings Call Highlights",
+          "publisher": "MarketBeat",
+          "date": "2026-07-29",
+          "url": "https://www.marketbeat.com/instant-alerts/automatic-data-processing-q4-earnings-call-highlights-2026-07-29/?utm_source=yahoofinance&utm_medium=yahoofinance"
         },
         {
-          "title": "How Far Could Marvell Technology Stock Actually Fall From Here?",
-          "publisher": "Trefis",
-          "date": "2026-07-28",
-          "url": "https://www.trefis.com/articles/609203/how-far-could-marvell-technology-stock-actually-fall-from-here/2026-07-28"
+          "title": "ADP (ADP) Q4 Earnings: Taking a Look at Key Metrics Versus Estimates",
+          "publisher": "Zacks",
+          "date": "2026-07-29",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/adp-adp-q4-earnings-taking-133008954.html"
         },
         {
-          "title": "Marvell Technology (MRVL) Stock Slides As AI Funding Doubts Hit Chip Stocks",
-          "publisher": "Simply Wall St.",
-          "date": "2026-07-28",
-          "url": "https://finance.yahoo.com/technology/ai/articles/marvell-technology-mrvl-stock-slides-211423847.html"
+          "title": "Automatic Data Processing (ADP) Tops Q4 Earnings and Revenue Estimates",
+          "publisher": "Zacks",
+          "date": "2026-07-29",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/automatic-data-processing-adp-tops-122503986.html"
         }
       ]
     },
@@ -277,13 +355,13 @@
       "ticker": "CRDO",
       "name": "Credo Technology Group Holding Ltd",
       "verdict": "WATCHLIST",
-      "price": 192.28,
-      "pct_day": -7.62,
-      "pct_since": 0.0,
-      "primary_pct": -7.62,
+      "price": 182.745,
+      "pct_day": -4.96,
+      "pct_since": -4.96,
+      "primary_pct": -4.96,
       "direction": "down",
       "triggers": [
-        "-7.6% on the day"
+        "-5.0% since last check"
       ],
       "reason": "See headlines (explanation limited to top movers).",
       "news": [
@@ -308,104 +386,274 @@
       ]
     },
     {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings Co",
+      "ticker": "CLS",
+      "name": "Celestica Inc.",
       "verdict": "WATCHLIST",
-      "price": 269.56,
-      "pct_day": -6.27,
-      "pct_since": 0.0,
-      "primary_pct": -6.27,
+      "price": 333.13,
+      "pct_day": -4.87,
+      "pct_since": -4.87,
+      "primary_pct": -4.87,
       "direction": "down",
       "triggers": [
-        "-6.3% on the day"
+        "-4.9% since last check"
       ],
       "reason": "See headlines (explanation limited to top movers).",
       "news": [
         {
-          "title": "Forget the Mag 7. Watch These 5 Top Earnings Charts Instead",
+          "title": "Is It Worth Investing in Celestica (CLS) Based on Wall Street's Bullish Views?",
           "publisher": "Zacks",
-          "date": "2026-07-28",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/forget-mag-7-watch-5-190900433.html"
+          "date": "2026-07-29",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/worth-investing-celestica-cls-based-133002336.html"
         },
         {
-          "title": "Earnings To Watch: Vertiv (VRT) Reports Q2 Results Tomorrow",
-          "publisher": "StockStory",
-          "date": "2026-07-28",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/earnings-watch-vertiv-vrt-reports-155702402.html"
-        },
-        {
-          "title": "Prediction: Up 100% in a Year. Will CAT\u2019s Rally Continue?",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-07-27",
-          "url": "https://247wallst.com/investing/2026/07/27/prediction-up-100-in-a-year-will-cats-rally-continue/"
-        }
-      ]
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "verdict": "PASS",
-      "price": 24.19,
-      "pct_day": 6.1,
-      "pct_since": 0.0,
-      "primary_pct": 6.1,
-      "direction": "up",
-      "triggers": [
-        "+6.1% on the day"
-      ],
-      "reason": "See headlines (explanation limited to top movers).",
-      "news": [
-        {
-          "title": "The Profit Engine That Could Power Netflix Stock's Next Rally",
+          "title": "Does Owning Celestica Really Diversify Your Portfolio?",
           "publisher": "Trefis",
           "date": "2026-07-28",
-          "url": "https://www.trefis.com/articles/609198/the-profit-engine-that-could-power-netflix-stocks-next-rally/2026-07-28"
+          "url": "https://www.trefis.com/articles/609200/does-owning-celestica-really-diversify-your-portfolio/2026-07-28"
         },
         {
-          "title": "Comcast Corporation (CMCSA) is Attracting Investor Attention: Here is What You Should Know",
-          "publisher": "Zacks",
+          "title": "Celestica Inc (CLS) Q2 2026 Earnings Call Highlights: Record Revenue and Strong Growth Outlook",
+          "publisher": "GuruFocus.com",
           "date": "2026-07-28",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/comcast-corporation-cmcsa-attracting-investor-130002435.html"
-        },
-        {
-          "title": "YouTube\u2019s Peacock Partnership is a Streaming Bundle Breakthrough",
-          "publisher": "The Daily Upside",
-          "date": "2026-07-28",
-          "url": "https://www.thedailyupside.com/industries/media-entertainment/youtubes-peacock-partnership-is-a-streaming-bundle-breakthrough/"
+          "url": "https://finance.yahoo.com/markets/stocks/articles/celestica-inc-cls-q2-2026-190135107.html"
         }
       ]
     },
     {
-      "ticker": "TLN",
-      "name": "Talen Energy Corporation",
+      "ticker": "LMB",
+      "name": "Limbach Holdings, Inc.",
       "verdict": "PASS",
-      "price": 326.05,
-      "pct_day": -6.06,
-      "pct_since": 0.0,
-      "primary_pct": -6.06,
+      "price": 69.005,
+      "pct_day": -4.81,
+      "pct_since": -4.81,
+      "primary_pct": -4.81,
       "direction": "down",
       "triggers": [
-        "-6.1% on the day"
+        "-4.8% since last check"
       ],
       "reason": "See headlines (explanation limited to top movers).",
       "news": [
         {
-          "title": "Why Talen Energy Corporation (TLN) is Poised to Beat Earnings Estimates Again",
+          "title": "Limbach (LMB) Reports Next Week: Wall Street Expects Earnings Growth",
           "publisher": "Zacks",
+          "date": "2026-07-28",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/limbach-lmb-reports-next-week-140014315.html"
+        },
+        {
+          "title": "Limbach (LMB): Buy, Sell, or Hold Post Q1 Earnings?",
+          "publisher": "StockStory",
+          "date": "2026-07-09",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/limbach-lmb-buy-sell-hold-140500159.html"
+        },
+        {
+          "title": "Gates Industrial Corporation, Titan International, and Limbach Stocks Trade Down, What You Need To Know",
+          "publisher": "StockStory",
+          "date": "2026-07-07",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/gates-industrial-corporation-titan-international-210552908.html"
+        }
+      ]
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "verdict": "WATCHLIST",
+      "price": 434.48,
+      "pct_day": -4.43,
+      "pct_since": -4.43,
+      "primary_pct": -4.43,
+      "direction": "down",
+      "triggers": [
+        "-4.4% since last check"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": [
+        {
+          "title": "Micron, SK Hynix stocks sink as AI chip sell-off deepens",
+          "publisher": "Yahoo Finance",
+          "date": "2026-07-28",
+          "url": "https://finance.yahoo.com/markets/article/micron-sk-hynix-stocks-sink-as-ai-chip-sell-off-deepens-125622548.html"
+        },
+        {
+          "title": "The AI Trade Is Still On: Why Nvidia Remains at the Center of It",
+          "publisher": "24/7 Wall St.",
+          "date": "2026-07-29",
+          "url": "https://247wallst.com/investing/2026/07/29/the-ai-trade-is-still-on-why-nvidia-remains-at-the-center-of-it/"
+        },
+        {
+          "title": "Wedbush Says AMD Deal Comes With a Catch",
+          "publisher": "GuruFocus.com",
+          "date": "2026-07-29",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/wedbush-says-amd-deal-comes-140254104.html"
+        }
+      ]
+    },
+    {
+      "ticker": "BWXT",
+      "name": "BWX Technologies, Inc.",
+      "verdict": "RESEARCH-WORTHY",
+      "price": 162.1502,
+      "pct_day": -4.43,
+      "pct_since": -4.43,
+      "primary_pct": -4.43,
+      "direction": "down",
+      "triggers": [
+        "-4.4% since last check"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": [
+        {
+          "title": "US-Saudi Sign Landmark Atomic Deal: A Game Changer for Nuclear ETFs?",
+          "publisher": "Zacks",
+          "date": "2026-07-29",
+          "url": "https://finance.yahoo.com/energy/articles/us-saudi-sign-landmark-atomic-130300036.html"
+        },
+        {
+          "title": "BWX Technologies vs. Archer Aviation: What Do the Revenue Trends of These Aerospace and Defense Companies Tell Investors?",
+          "publisher": "Motley Fool",
           "date": "2026-07-27",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-talen-energy-corporation-tln-161003083.html"
+          "url": "https://www.fool.com/coverage/charts/2026/07/27/bwx-technologies-vs-archer-aviation-what-do-the-revenue-trends-of-these-aerospace-and-defense-companies-tell-investors/"
         },
         {
-          "title": "Talen Energy (TLN) Stock May Be Overvalued On Fresh PJM Auction Revenue",
+          "title": "Rivian upgraded, Check Point downgrade: Wall Street's top analyst calls",
+          "publisher": "The Fly",
+          "date": "2026-07-27",
+          "url": "https://finance.yahoo.com/news/qualcomm-downgraded-rivian-upgraded-wall-133405953.html"
+        }
+      ]
+    },
+    {
+      "ticker": "PAYX",
+      "name": "Paychex, Inc.",
+      "verdict": "WATCHLIST",
+      "price": 123.64,
+      "pct_day": 4.01,
+      "pct_since": 4.01,
+      "primary_pct": 4.01,
+      "direction": "up",
+      "triggers": [
+        "+4.0% since last check"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": [
+        {
+          "title": "Paychex (PAYX) Board Change And Dividend Stand Out, Is It Fully Priced?",
           "publisher": "Simply Wall St.",
           "date": "2026-07-25",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/talen-energy-tln-stock-may-211659985.html"
+          "url": "https://finance.yahoo.com/markets/stocks/articles/paychex-payx-board-change-dividend-031752791.html"
         },
         {
-          "title": "Talen Energy (TLN) Could Be 23% Undervalued Following Earnings And Analyst Calls",
+          "title": "Why Is Paychex (PAYX) Up 14.4% Since Last Earnings Report?",
+          "publisher": "Zacks",
+          "date": "2026-07-24",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-paychex-payx-14-4-153002878.html"
+        },
+        {
+          "title": "A Paychex Chairman Gave Away 9,309 Shares but Keeps Roughly $50 Million",
+          "publisher": "Motley Fool",
+          "date": "2026-07-22",
+          "url": "https://www.fool.com/coverage/filings/2026/07/22/a-paychex-chairman-gave-away-9-309-shares-but-keeps-roughly-usd50-million/"
+        }
+      ]
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "verdict": "WATCHLIST",
+      "price": 790.73,
+      "pct_day": -3.63,
+      "pct_since": -3.63,
+      "primary_pct": -3.63,
+      "direction": "down",
+      "triggers": [
+        "-3.6% since last check"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": [
+        {
+          "title": "Semiconductor stocks are going up in smoke. But the S&P 500 is holding strong.",
+          "publisher": "Yahoo Finance",
+          "date": "2026-07-29",
+          "url": "https://finance.yahoo.com/markets/article/semiconductor-stocks-are-going-up-in-smoke-but-the-sp-500-is-holding-strong-143223884.html"
+        },
+        {
+          "title": "Micron, SK Hynix stocks sink as AI chip sell-off deepens",
+          "publisher": "Yahoo Finance",
+          "date": "2026-07-28",
+          "url": "https://finance.yahoo.com/markets/article/micron-sk-hynix-stocks-sink-as-ai-chip-sell-off-deepens-125622548.html"
+        },
+        {
+          "title": "CLARITY Act hits summer roadblock",
+          "publisher": "Yahoo Finance Video",
+          "date": "2026-07-28",
+          "url": "https://finance.yahoo.com/video/clarity-act-hits-summer-roadblock-155743444.html"
+        }
+      ]
+    },
+    {
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor Manufacturing Company Limited",
+      "verdict": "WATCHLIST",
+      "price": 380.09,
+      "pct_day": -3.11,
+      "pct_since": -3.11,
+      "primary_pct": -3.11,
+      "direction": "down",
+      "triggers": [
+        "-3.1% since last check"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": [
+        {
+          "title": "Update: Market Chatter: Taiwan Semiconductor Manufacturing, Toyota Operations Hit by Japan Earthquake",
+          "publisher": "MT Newswires",
+          "date": "2026-07-29",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/market-chatter-taiwan-semiconductor-manufacturing-142510528.html"
+        },
+        {
+          "title": "Amkor (AMKR) Lands 10 Year TSMC Arizona Deal After Record Q2 Revenue",
           "publisher": "Simply Wall St.",
-          "date": "2026-07-25",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/talen-energy-tln-could-23-091050062.html"
+          "date": "2026-07-29",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/amkor-amkr-lands-10-tsmc-110934163.html"
+        },
+        {
+          "title": "Nvidia Partner Quanta Seeks Up to $2.2 Billion From Offering",
+          "publisher": "Bloomberg",
+          "date": "2026-07-29",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-partner-quanta-seeks-2-100050526.html"
+        }
+      ]
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "verdict": "WATCHLIST",
+      "price": 169.12,
+      "pct_day": -3.07,
+      "pct_since": -3.07,
+      "primary_pct": -3.07,
+      "direction": "down",
+      "triggers": [
+        "-3.1% since last check"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": [
+        {
+          "title": "Micron, SK Hynix stocks sink as AI chip sell-off deepens",
+          "publisher": "Yahoo Finance",
+          "date": "2026-07-28",
+          "url": "https://finance.yahoo.com/markets/article/micron-sk-hynix-stocks-sink-as-ai-chip-sell-off-deepens-125622548.html"
+        },
+        {
+          "title": "Marvell Is Making a Bigger Bet on India",
+          "publisher": "GuruFocus.com",
+          "date": "2026-07-29",
+          "url": "https://finance.yahoo.com/technology/articles/marvell-making-bigger-bet-india-140140484.html"
+        },
+        {
+          "title": "What Could Push NVDA Stock Higher From Here?",
+          "publisher": "Trefis",
+          "date": "2026-07-29",
+          "url": "https://www.trefis.com/articles/609271/what-could-push-nvda-stock-higher-from-here-2/2026-07-29"
         }
       ]
     },
@@ -413,13 +661,13 @@
       "ticker": "VST",
       "name": "Vistra Corp.",
       "verdict": "WATCHLIST",
-      "price": 148.64,
-      "pct_day": -5.37,
-      "pct_since": 0.0,
-      "primary_pct": -5.37,
+      "price": 144.085,
+      "pct_day": -3.06,
+      "pct_since": -3.06,
+      "primary_pct": -3.06,
       "direction": "down",
       "triggers": [
-        "-5.4% on the day"
+        "-3.1% since last check"
       ],
       "reason": "See headlines (explanation limited to top movers).",
       "news": [
@@ -440,142 +688,6 @@
           "publisher": "Zacks",
           "date": "2026-07-28",
           "url": "https://finance.yahoo.com/energy/articles/vst-nrg-utility-stock-greater-150900660.html"
-        }
-      ]
-    },
-    {
-      "ticker": "GEV",
-      "name": "GE Vernova Inc.",
-      "verdict": "PASS",
-      "price": 943.38,
-      "pct_day": -5.34,
-      "pct_since": 0.0,
-      "primary_pct": -5.34,
-      "direction": "down",
-      "triggers": [
-        "-5.3% on the day"
-      ],
-      "reason": "See headlines (explanation limited to top movers).",
-      "news": [
-        {
-          "title": "GE Vernova (GEV) Deploys AirJoule Water System At Frontier Campus",
-          "publisher": "Simply Wall St.",
-          "date": "2026-07-28",
-          "url": "https://finance.yahoo.com/energy/articles/ge-vernova-gev-deploys-airjoule-180726877.html"
-        },
-        {
-          "title": "Exchange-Traded Funds, Equity Futures Mixed Pre-Bell Tuesday Amid Renewed Pressure on Semiconductor Stocks",
-          "publisher": "MT Newswires",
-          "date": "2026-07-28",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-130015574.html"
-        },
-        {
-          "title": "GE Vernova Wins Contract to Modernise Dinorwig Hydropower Plant in Wales",
-          "publisher": "InvestorsHub",
-          "date": "2026-07-28",
-          "url": "https://investorshub.advfn.com/market-news/article/32823/ge-vernova-wins-contract-to-modernise-dinorwig-hydropower-plant-in-wales"
-        }
-      ]
-    },
-    {
-      "ticker": "OKLO",
-      "name": "Oklo Inc.",
-      "verdict": "PASS",
-      "price": 39.58,
-      "pct_day": -5.33,
-      "pct_since": 0.0,
-      "primary_pct": -5.33,
-      "direction": "down",
-      "triggers": [
-        "-5.3% on the day"
-      ],
-      "reason": "See headlines (explanation limited to top movers).",
-      "news": [
-        {
-          "title": "What Could Drive the Next Phase of Nuclear Energy Growth?",
-          "publisher": "Zacks",
-          "date": "2026-07-28",
-          "url": "https://finance.yahoo.com/energy/articles/could-drive-next-phase-nuclear-115900443.html"
-        },
-        {
-          "title": "The Crowd Is Dumping Oklo. Here's Why I'd Be Buying It Down 44%.",
-          "publisher": "Motley Fool",
-          "date": "2026-07-25",
-          "url": "https://www.fool.com/investing/2026/07/25/the-crowd-is-dumping-oklo-heres-why-id-be-buying/"
-        },
-        {
-          "title": "Nuclear Company Oklo Receives Startup Authorization for Groves Reactor, A Key Step In Its Regulatory Journey",
-          "publisher": "Motley Fool",
-          "date": "2026-07-25",
-          "url": "https://www.fool.com/investing/2026/07/25/nuclear-company-oklo-receives-startup-authorization-for-groves-reactor-a-key-step-in-its-regulatory-journey/"
-        }
-      ]
-    },
-    {
-      "ticker": "IBM",
-      "name": "International Business Machines Corporation",
-      "verdict": "WATCHLIST",
-      "price": 227.55,
-      "pct_day": 5.21,
-      "pct_since": 0.0,
-      "primary_pct": 5.21,
-      "direction": "up",
-      "triggers": [
-        "+5.2% on the day"
-      ],
-      "reason": "See headlines (explanation limited to top movers).",
-      "news": [
-        {
-          "title": "How To Bank 12% On IBM Stock Before Buying A Single Share",
-          "publisher": "Trefis",
-          "date": "2026-07-28",
-          "url": "https://www.trefis.com/articles/609109/how-to-bank-12-on-ibm-stock-before-buying-a-single-share/2026-07-28"
-        },
-        {
-          "title": "Can PLTR Stock Live Up To Its Multiple?",
-          "publisher": "Trefis",
-          "date": "2026-07-28",
-          "url": "https://www.trefis.com/articles/609107/can-pltr-stock-live-up-to-its-multiple-3/2026-07-28"
-        },
-        {
-          "title": "IBM\u2019s Blockchain Patent Empire Lands at Circle in Landmark IP Deal",
-          "publisher": "99bitcoins",
-          "date": "2026-07-28",
-          "url": "https://99bitcoins.com/news/altcoins/blockchain-patents-circle-ibm-acquisition/"
-        }
-      ]
-    },
-    {
-      "ticker": "NVT",
-      "name": "nVent Electric plc",
-      "verdict": "RESEARCH-WORTHY",
-      "price": 141.75,
-      "pct_day": -5.05,
-      "pct_since": 0.0,
-      "primary_pct": -5.05,
-      "direction": "down",
-      "triggers": [
-        "-5.0% on the day"
-      ],
-      "reason": "See headlines (explanation limited to top movers).",
-      "news": [
-        {
-          "title": "nVent (NVT) Stock Seems 36% Pricey On Its $2.6B Backlog",
-          "publisher": "Simply Wall St.",
-          "date": "2026-07-28",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nvent-nvt-stock-seems-36-211304055.html"
-        },
-        {
-          "title": "NVT Likely to Beat Q2 Earnings Estimates: Buy, Sell or Hold the Stock?",
-          "publisher": "Zacks",
-          "date": "2026-07-28",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nvt-likely-beat-q2-earnings-152100633.html"
-        },
-        {
-          "title": "nVent Electric (NVT) Pulled Back After A Strong Run, Is It Still 20% Undervalued?",
-          "publisher": "Simply Wall St.",
-          "date": "2026-07-28",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nvent-electric-nvt-pulled-back-111200525.html"
         }
       ]
     }

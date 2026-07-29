@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-07-28T23:01:38Z",
+  "generated_at": "2026-07-29T15:12:15Z",
   "tracked_since": "2026-04-25",
   "scoreboard": {
     "RESEARCH-WORTHY": {
       "count": 120,
-      "avg_return": 5.2,
-      "win_rate": 63,
+      "avg_return": 7.0,
+      "win_rate": 67,
       "best": {
-        "ticker": "LPLA",
+        "ticker": "ADP",
         "verdict": "RESEARCH-WORTHY",
-        "date": "2026-06-29",
-        "entry_price": 268.75,
+        "date": "2026-06-22",
+        "entry_price": 215.54,
         "confidence": "MEDIUM",
-        "current_price": 342.4,
-        "return_pct": 27.4
+        "current_price": 277.7,
+        "return_pct": 28.8
       },
       "worst": {
         "ticker": "MU",
@@ -21,52 +21,43 @@
         "date": "2026-06-29",
         "entry_price": 1106.595,
         "confidence": "MEDIUM",
-        "current_price": 820.53,
-        "return_pct": -25.9
+        "current_price": 790.73,
+        "return_pct": -28.5
       }
     },
     "WATCHLIST": {
-      "count": 72,
-      "avg_return": -2.6,
-      "win_rate": 53,
+      "count": 76,
+      "avg_return": -3.5,
+      "win_rate": 47,
       "best": {
         "ticker": "ADP",
         "verdict": "WATCHLIST",
         "date": "2026-06-25",
         "entry_price": 222.405,
         "confidence": "MEDIUM",
-        "current_price": 264.17,
-        "return_pct": 18.8
+        "current_price": 277.7,
+        "return_pct": 24.9
       },
       "worst": {
-        "ticker": "MRVL",
+        "ticker": "COHR",
         "verdict": "WATCHLIST",
         "date": "2026-06-08",
-        "entry_price": 294.71,
+        "entry_price": 401.625,
         "confidence": null,
-        "current_price": 174.47,
-        "return_pct": -40.8
+        "current_price": 229.04,
+        "return_pct": -43.0
       }
     }
   },
   "calls": [
     {
-      "ticker": "LPLA",
+      "ticker": "ADP",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-29",
-      "entry_price": 268.75,
+      "date": "2026-06-22",
+      "entry_price": 215.54,
       "confidence": "MEDIUM",
-      "current_price": 342.4,
-      "return_pct": 27.4
-    },
-    {
-      "ticker": "LPLA",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-26",
-      "entry_price": 271.1,
-      "confidence": "MEDIUM",
-      "current_price": 342.4,
-      "return_pct": 26.3
+      "current_price": 277.7,
+      "return_pct": 28.8
     },
     {
       "ticker": "PAYX",
@@ -74,35 +65,8 @@
       "date": "2026-06-24",
       "entry_price": 95.97,
       "confidence": "MEDIUM",
-      "current_price": 118.87,
-      "return_pct": 23.9
-    },
-    {
-      "ticker": "LPLA",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-25",
-      "entry_price": 279.055,
-      "confidence": "MEDIUM",
-      "current_price": 342.4,
-      "return_pct": 22.7
-    },
-    {
-      "ticker": "ADP",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-22",
-      "entry_price": 215.54,
-      "confidence": "MEDIUM",
-      "current_price": 264.17,
-      "return_pct": 22.6
-    },
-    {
-      "ticker": "PAYX",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-22",
-      "entry_price": 97.405,
-      "confidence": "MEDIUM",
-      "current_price": 118.87,
-      "return_pct": 22.0
+      "current_price": 123.64,
+      "return_pct": 28.8
     },
     {
       "ticker": "ADP",
@@ -110,17 +74,8 @@
       "date": "2026-06-18",
       "entry_price": 217.45,
       "confidence": "MEDIUM",
-      "current_price": 264.17,
-      "return_pct": 21.5
-    },
-    {
-      "ticker": "PAYX",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-18",
-      "entry_price": 97.885,
-      "confidence": "MEDIUM",
-      "current_price": 118.87,
-      "return_pct": 21.4
+      "current_price": 277.7,
+      "return_pct": 27.7
     },
     {
       "ticker": "ADP",
@@ -128,26 +83,26 @@
       "date": "2026-06-19",
       "entry_price": 218.41,
       "confidence": "MEDIUM",
-      "current_price": 264.17,
-      "return_pct": 21.0
+      "current_price": 277.7,
+      "return_pct": 27.1
     },
     {
       "ticker": "PAYX",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-19",
-      "entry_price": 98.24,
+      "date": "2026-06-22",
+      "entry_price": 97.405,
       "confidence": "MEDIUM",
-      "current_price": 118.87,
-      "return_pct": 21.0
+      "current_price": 123.64,
+      "return_pct": 26.9
     },
     {
-      "ticker": "PAYX",
+      "ticker": "LPLA",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-23",
-      "entry_price": 98.32,
+      "date": "2026-06-29",
+      "entry_price": 268.75,
       "confidence": "MEDIUM",
-      "current_price": 118.87,
-      "return_pct": 20.9
+      "current_price": 340.815,
+      "return_pct": 26.8
     },
     {
       "ticker": "ADP",
@@ -155,53 +110,17 @@
       "date": "2026-06-23",
       "entry_price": 219.235,
       "confidence": "MEDIUM",
-      "current_price": 264.17,
-      "return_pct": 20.5
+      "current_price": 277.7,
+      "return_pct": 26.7
     },
     {
       "ticker": "PAYX",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-09",
-      "entry_price": 98.73,
+      "date": "2026-06-18",
+      "entry_price": 97.885,
       "confidence": "MEDIUM",
-      "current_price": 118.87,
-      "return_pct": 20.4
-    },
-    {
-      "ticker": "PAYX",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-25",
-      "entry_price": 98.86,
-      "confidence": "MEDIUM",
-      "current_price": 118.87,
-      "return_pct": 20.2
-    },
-    {
-      "ticker": "PAYX",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-26",
-      "entry_price": 98.94,
-      "confidence": "MEDIUM",
-      "current_price": 118.87,
-      "return_pct": 20.1
-    },
-    {
-      "ticker": "PAYX",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-08",
-      "entry_price": 99.04,
-      "confidence": "MEDIUM",
-      "current_price": 118.87,
-      "return_pct": 20.0
-    },
-    {
-      "ticker": "LPLA",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-08",
-      "entry_price": 285.55,
-      "confidence": null,
-      "current_price": 342.4,
-      "return_pct": 19.9
+      "current_price": 123.64,
+      "return_pct": 26.3
     },
     {
       "ticker": "ADP",
@@ -209,8 +128,17 @@
       "date": "2026-06-16",
       "entry_price": 220.305,
       "confidence": "MEDIUM",
-      "current_price": 264.17,
-      "return_pct": 19.9
+      "current_price": 277.7,
+      "return_pct": 26.1
+    },
+    {
+      "ticker": "PAYX",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-19",
+      "entry_price": 98.24,
+      "confidence": "MEDIUM",
+      "current_price": 123.64,
+      "return_pct": 25.9
     },
     {
       "ticker": "ADP",
@@ -218,44 +146,53 @@
       "date": "2026-06-24",
       "entry_price": 220.49,
       "confidence": "MEDIUM",
-      "current_price": 264.17,
-      "return_pct": 19.8
+      "current_price": 277.7,
+      "return_pct": 25.9
     },
     {
       "ticker": "PAYX",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-16",
-      "entry_price": 99.315,
+      "date": "2026-06-23",
+      "entry_price": 98.32,
       "confidence": "MEDIUM",
-      "current_price": 118.87,
-      "return_pct": 19.7
+      "current_price": 123.64,
+      "return_pct": 25.8
     },
     {
       "ticker": "LPLA",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-24",
-      "entry_price": 286.11,
+      "date": "2026-06-26",
+      "entry_price": 271.1,
       "confidence": "MEDIUM",
-      "current_price": 342.4,
-      "return_pct": 19.7
+      "current_price": 340.815,
+      "return_pct": 25.7
     },
     {
       "ticker": "PAYX",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-29",
-      "entry_price": 99.285,
+      "date": "2026-06-09",
+      "entry_price": 98.73,
       "confidence": "MEDIUM",
-      "current_price": 118.87,
-      "return_pct": 19.7
+      "current_price": 123.64,
+      "return_pct": 25.2
     },
     {
       "ticker": "PAYX",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-17",
-      "entry_price": 99.8801,
+      "date": "2026-06-25",
+      "entry_price": 98.86,
       "confidence": "MEDIUM",
-      "current_price": 118.87,
-      "return_pct": 19.0
+      "current_price": 123.64,
+      "return_pct": 25.1
+    },
+    {
+      "ticker": "PAYX",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-26",
+      "entry_price": 98.94,
+      "confidence": "MEDIUM",
+      "current_price": 123.64,
+      "return_pct": 25.0
     },
     {
       "ticker": "ADP",
@@ -263,17 +200,44 @@
       "date": "2026-06-25",
       "entry_price": 222.405,
       "confidence": "MEDIUM",
-      "current_price": 264.17,
-      "return_pct": 18.8
+      "current_price": 277.7,
+      "return_pct": 24.9
     },
     {
-      "ticker": "CLS",
-      "verdict": "WATCHLIST",
-      "date": "2026-07-27",
-      "entry_price": 295.36,
+      "ticker": "PAYX",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-08",
+      "entry_price": 99.04,
       "confidence": "MEDIUM",
-      "current_price": 350.2,
-      "return_pct": 18.6
+      "current_price": 123.64,
+      "return_pct": 24.8
+    },
+    {
+      "ticker": "PAYX",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-16",
+      "entry_price": 99.315,
+      "confidence": "MEDIUM",
+      "current_price": 123.64,
+      "return_pct": 24.5
+    },
+    {
+      "ticker": "PAYX",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-29",
+      "entry_price": 99.285,
+      "confidence": "MEDIUM",
+      "current_price": 123.64,
+      "return_pct": 24.5
+    },
+    {
+      "ticker": "PAYX",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-17",
+      "entry_price": 99.8801,
+      "confidence": "MEDIUM",
+      "current_price": 123.64,
+      "return_pct": 23.8
     },
     {
       "ticker": "PAYX",
@@ -281,26 +245,8 @@
       "date": "2026-06-11",
       "entry_price": 100.27,
       "confidence": "MEDIUM",
-      "current_price": 118.87,
-      "return_pct": 18.5
-    },
-    {
-      "ticker": "PAYX",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-15",
-      "entry_price": 100.9,
-      "confidence": "MEDIUM",
-      "current_price": 118.87,
-      "return_pct": 17.8
-    },
-    {
-      "ticker": "LPLA",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-10",
-      "entry_price": 292.19,
-      "confidence": "MEDIUM",
-      "current_price": 342.4,
-      "return_pct": 17.2
+      "current_price": 123.64,
+      "return_pct": 23.3
     },
     {
       "ticker": "ADP",
@@ -308,34 +254,115 @@
       "date": "2026-06-12",
       "entry_price": 226.07,
       "confidence": "MEDIUM",
-      "current_price": 264.17,
-      "return_pct": 16.9
+      "current_price": 277.7,
+      "return_pct": 22.8
+    },
+    {
+      "ticker": "PAYX",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-15",
+      "entry_price": 100.9,
+      "confidence": "MEDIUM",
+      "current_price": 123.64,
+      "return_pct": 22.5
     },
     {
       "ticker": "LPLA",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-18",
-      "entry_price": 293.96,
+      "date": "2026-06-25",
+      "entry_price": 279.055,
       "confidence": "MEDIUM",
-      "current_price": 342.4,
-      "return_pct": 16.5
+      "current_price": 340.815,
+      "return_pct": 22.1
+    },
+    {
+      "ticker": "ADP",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-08",
+      "entry_price": 229.14,
+      "confidence": null,
+      "current_price": 277.7,
+      "return_pct": 21.2
+    },
+    {
+      "ticker": "ADP",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-10",
+      "entry_price": 231.98,
+      "confidence": "MEDIUM",
+      "current_price": 277.7,
+      "return_pct": 19.7
     },
     {
       "ticker": "LPLA",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-08",
+      "entry_price": 285.55,
+      "confidence": null,
+      "current_price": 340.815,
+      "return_pct": 19.4
+    },
+    {
+      "ticker": "LPLA",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-24",
+      "entry_price": 286.11,
+      "confidence": "MEDIUM",
+      "current_price": 340.815,
+      "return_pct": 19.1
+    },
+    {
+      "ticker": "GEHC",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-07-24",
+      "entry_price": 60.58,
+      "confidence": "MEDIUM",
+      "current_price": 71.5,
+      "return_pct": 18.0
+    },
+    {
+      "ticker": "GEHC",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-24",
+      "entry_price": 60.58,
+      "confidence": "MEDIUM",
+      "current_price": 71.5,
+      "return_pct": 18.0
+    },
+    {
+      "ticker": "GEHC",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-22",
+      "entry_price": 60.895,
+      "confidence": "MEDIUM",
+      "current_price": 71.5,
+      "return_pct": 17.4
+    },
+    {
+      "ticker": "PAYX",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-07-02",
+      "entry_price": 105.38,
+      "confidence": "MEDIUM",
+      "current_price": 123.64,
+      "return_pct": 17.3
+    },
+    {
+      "ticker": "LPLA",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-10",
+      "entry_price": 292.19,
+      "confidence": "MEDIUM",
+      "current_price": 340.815,
+      "return_pct": 16.6
+    },
+    {
+      "ticker": "GEHC",
       "verdict": "RESEARCH-WORTHY",
       "date": "2026-06-19",
-      "entry_price": 293.95,
+      "entry_price": 61.59,
       "confidence": "MEDIUM",
-      "current_price": 342.4,
-      "return_pct": 16.5
-    },
-    {
-      "ticker": "LPLA",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-12",
-      "entry_price": 295.0,
-      "confidence": "MEDIUM",
-      "current_price": 342.4,
+      "current_price": 71.5,
       "return_pct": 16.1
     },
     {
@@ -344,53 +371,26 @@
       "date": "2026-06-08",
       "entry_price": 485.13,
       "confidence": null,
-      "current_price": 562.75,
-      "return_pct": 16.0
-    },
-    {
-      "ticker": "LPLA",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-15",
-      "entry_price": 295.32,
-      "confidence": "MEDIUM",
-      "current_price": 342.4,
+      "current_price": 562.32,
       "return_pct": 15.9
     },
     {
       "ticker": "LPLA",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-07-02",
-      "entry_price": 295.91,
+      "date": "2026-06-18",
+      "entry_price": 293.96,
       "confidence": "MEDIUM",
-      "current_price": 342.4,
-      "return_pct": 15.7
-    },
-    {
-      "ticker": "ADP",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-08",
-      "entry_price": 229.14,
-      "confidence": null,
-      "current_price": 264.17,
-      "return_pct": 15.3
+      "current_price": 340.815,
+      "return_pct": 15.9
     },
     {
       "ticker": "LPLA",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-22",
-      "entry_price": 297.02,
+      "date": "2026-06-19",
+      "entry_price": 293.95,
       "confidence": "MEDIUM",
-      "current_price": 342.4,
-      "return_pct": 15.3
-    },
-    {
-      "ticker": "CLS",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-07-25",
-      "entry_price": 305.28,
-      "confidence": "HIGH",
-      "current_price": 350.2,
-      "return_pct": 14.7
+      "current_price": 340.815,
+      "return_pct": 15.9
     },
     {
       "ticker": "V",
@@ -398,26 +398,8 @@
       "date": "2026-05-28",
       "entry_price": 320.245,
       "confidence": null,
-      "current_price": 366.59,
-      "return_pct": 14.5
-    },
-    {
-      "ticker": "LPLA",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-23",
-      "entry_price": 299.19,
-      "confidence": "MEDIUM",
-      "current_price": 342.4,
-      "return_pct": 14.4
-    },
-    {
-      "ticker": "ADP",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-10",
-      "entry_price": 231.98,
-      "confidence": "MEDIUM",
-      "current_price": 264.17,
-      "return_pct": 13.9
+      "current_price": 369.84,
+      "return_pct": 15.5
     },
     {
       "ticker": "GIS",
@@ -425,16 +407,88 @@
       "date": "2026-06-08",
       "entry_price": 33.145,
       "confidence": null,
-      "current_price": 37.65,
-      "return_pct": 13.6
+      "current_price": 38.275,
+      "return_pct": 15.5
     },
     {
-      "ticker": "PAYX",
+      "ticker": "LPLA",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-12",
+      "entry_price": 295.0,
+      "confidence": "MEDIUM",
+      "current_price": 340.815,
+      "return_pct": 15.5
+    },
+    {
+      "ticker": "LPLA",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-15",
+      "entry_price": 295.32,
+      "confidence": "MEDIUM",
+      "current_price": 340.815,
+      "return_pct": 15.4
+    },
+    {
+      "ticker": "LPLA",
       "verdict": "RESEARCH-WORTHY",
       "date": "2026-07-02",
-      "entry_price": 105.38,
+      "entry_price": 295.91,
       "confidence": "MEDIUM",
-      "current_price": 118.87,
+      "current_price": 340.815,
+      "return_pct": 15.2
+    },
+    {
+      "ticker": "NOW",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-25",
+      "entry_price": 98.78,
+      "confidence": "MEDIUM",
+      "current_price": 113.84,
+      "return_pct": 15.2
+    },
+    {
+      "ticker": "LPLA",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-22",
+      "entry_price": 297.02,
+      "confidence": "MEDIUM",
+      "current_price": 340.815,
+      "return_pct": 14.7
+    },
+    {
+      "ticker": "GEHC",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-17",
+      "entry_price": 62.64,
+      "confidence": "MEDIUM",
+      "current_price": 71.5,
+      "return_pct": 14.1
+    },
+    {
+      "ticker": "LPLA",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-23",
+      "entry_price": 299.19,
+      "confidence": "MEDIUM",
+      "current_price": 340.815,
+      "return_pct": 13.9
+    },
+    {
+      "ticker": "GEHC",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-23",
+      "entry_price": 62.995,
+      "confidence": "MEDIUM",
+      "current_price": 71.5,
+      "return_pct": 13.5
+    },
+    {
+      "ticker": "CLS",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-27",
+      "entry_price": 295.36,
+      "confidence": "MEDIUM",
+      "current_price": 333.13,
       "return_pct": 12.8
     },
     {
@@ -443,17 +497,8 @@
       "date": "2026-05-28",
       "entry_price": 302.37,
       "confidence": null,
-      "current_price": 340.08,
-      "return_pct": 12.5
-    },
-    {
-      "ticker": "EIX",
-      "verdict": "WATCHLIST",
-      "date": "2026-06-08",
-      "entry_price": 71.095,
-      "confidence": null,
-      "current_price": 79.79,
-      "return_pct": 12.2
+      "current_price": 339.655,
+      "return_pct": 12.3
     },
     {
       "ticker": "LPLA",
@@ -461,17 +506,89 @@
       "date": "2026-06-17",
       "entry_price": 305.11,
       "confidence": "MEDIUM",
-      "current_price": 342.4,
-      "return_pct": 12.2
+      "current_price": 340.815,
+      "return_pct": 11.7
     },
     {
-      "ticker": "NOW",
+      "ticker": "EIX",
       "verdict": "WATCHLIST",
-      "date": "2026-07-25",
-      "entry_price": 98.78,
+      "date": "2026-06-08",
+      "entry_price": 71.095,
+      "confidence": null,
+      "current_price": 79.05,
+      "return_pct": 11.2
+    },
+    {
+      "ticker": "GEHC",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-08",
+      "entry_price": 64.5,
+      "confidence": null,
+      "current_price": 71.5,
+      "return_pct": 10.9
+    },
+    {
+      "ticker": "GEHC",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-12",
+      "entry_price": 64.615,
       "confidence": "MEDIUM",
-      "current_price": 110.62,
-      "return_pct": 12.0
+      "current_price": 71.5,
+      "return_pct": 10.7
+    },
+    {
+      "ticker": "GEHC",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-15",
+      "entry_price": 64.76,
+      "confidence": "MEDIUM",
+      "current_price": 71.5,
+      "return_pct": 10.4
+    },
+    {
+      "ticker": "GEHC",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-29",
+      "entry_price": 64.9151,
+      "confidence": "MEDIUM",
+      "current_price": 71.5,
+      "return_pct": 10.1
+    },
+    {
+      "ticker": "GEHC",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-24",
+      "entry_price": 65.06,
+      "confidence": "MEDIUM",
+      "current_price": 71.5,
+      "return_pct": 9.9
+    },
+    {
+      "ticker": "GEHC",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-25",
+      "entry_price": 65.14,
+      "confidence": "MEDIUM",
+      "current_price": 71.5,
+      "return_pct": 9.8
+    },
+    {
+      "ticker": "GEHC",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-10",
+      "entry_price": 65.175,
+      "confidence": "MEDIUM",
+      "current_price": 71.5,
+      "return_pct": 9.7
+    },
+    {
+      "ticker": "GEHC",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-07-02",
+      "entry_price": 65.17,
+      "confidence": "MEDIUM",
+      "current_price": 71.5,
+      "return_pct": 9.7
     },
     {
       "ticker": "ZBH",
@@ -479,8 +596,8 @@
       "date": "2026-06-08",
       "entry_price": 87.65,
       "confidence": null,
-      "current_price": 95.75,
-      "return_pct": 9.2
+      "current_price": 95.93,
+      "return_pct": 9.4
     },
     {
       "ticker": "DHR",
@@ -488,17 +605,17 @@
       "date": "2026-06-08",
       "entry_price": 184.17,
       "confidence": null,
-      "current_price": 199.05,
-      "return_pct": 8.1
+      "current_price": 200.945,
+      "return_pct": 9.1
     },
     {
-      "ticker": "ISRG",
+      "ticker": "CLS",
       "verdict": "RESEARCH-WORTHY",
       "date": "2026-07-25",
-      "entry_price": 337.5,
-      "confidence": "MEDIUM",
-      "current_price": 361.8,
-      "return_pct": 7.2
+      "entry_price": 305.28,
+      "confidence": "HIGH",
+      "current_price": 333.13,
+      "return_pct": 9.1
     },
     {
       "ticker": "RDDT",
@@ -506,17 +623,35 @@
       "date": "2026-06-11",
       "entry_price": 166.82,
       "confidence": "MEDIUM",
-      "current_price": 178.44,
-      "return_pct": 7.0
+      "current_price": 181.69,
+      "return_pct": 8.9
     },
     {
-      "ticker": "CEG",
+      "ticker": "GEHC",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-10",
-      "entry_price": 243.545,
+      "date": "2026-06-26",
+      "entry_price": 65.655,
       "confidence": "MEDIUM",
-      "current_price": 259.82,
-      "return_pct": 6.7
+      "current_price": 71.5,
+      "return_pct": 8.9
+    },
+    {
+      "ticker": "PAYX",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-07-24",
+      "entry_price": 113.55,
+      "confidence": "MEDIUM",
+      "current_price": 123.64,
+      "return_pct": 8.9
+    },
+    {
+      "ticker": "PAYX",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-24",
+      "entry_price": 113.55,
+      "confidence": "MEDIUM",
+      "current_price": 123.64,
+      "return_pct": 8.9
     },
     {
       "ticker": "MKTX",
@@ -524,62 +659,26 @@
       "date": "2026-06-08",
       "entry_price": 114.64,
       "confidence": null,
-      "current_price": 122.05,
-      "return_pct": 6.5
+      "current_price": 123.54,
+      "return_pct": 7.8
     },
     {
-      "ticker": "VST",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-10",
-      "entry_price": 139.63,
-      "confidence": "MEDIUM",
-      "current_price": 148.64,
-      "return_pct": 6.5
-    },
-    {
-      "ticker": "AVGO",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-07-02",
-      "entry_price": 358.735,
-      "confidence": "MEDIUM",
-      "current_price": 380.91,
-      "return_pct": 6.2
-    },
-    {
-      "ticker": "IBM",
+      "ticker": "RDDT",
       "verdict": "WATCHLIST",
-      "date": "2026-07-25",
-      "entry_price": 214.19,
+      "date": "2026-06-18",
+      "entry_price": 169.87,
       "confidence": "MEDIUM",
-      "current_price": 227.55,
-      "return_pct": 6.2
+      "current_price": 181.69,
+      "return_pct": 7.0
     },
     {
-      "ticker": "GEHC",
+      "ticker": "RDDT",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-07-24",
-      "entry_price": 60.58,
+      "date": "2026-06-17",
+      "entry_price": 170.14,
       "confidence": "MEDIUM",
-      "current_price": 64.11,
-      "return_pct": 5.8
-    },
-    {
-      "ticker": "GEHC",
-      "verdict": "WATCHLIST",
-      "date": "2026-07-24",
-      "entry_price": 60.58,
-      "confidence": "MEDIUM",
-      "current_price": 64.11,
-      "return_pct": 5.8
-    },
-    {
-      "ticker": "GEHC",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-22",
-      "entry_price": 60.895,
-      "confidence": "MEDIUM",
-      "current_price": 64.11,
-      "return_pct": 5.3
+      "current_price": 181.69,
+      "return_pct": 6.8
     },
     {
       "ticker": "MKTX",
@@ -587,7 +686,97 @@
       "date": "2026-06-11",
       "entry_price": 116.125,
       "confidence": "MEDIUM",
-      "current_price": 122.05,
+      "current_price": 123.54,
+      "return_pct": 6.4
+    },
+    {
+      "ticker": "CEG",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-10",
+      "entry_price": 243.545,
+      "confidence": "MEDIUM",
+      "current_price": 258.745,
+      "return_pct": 6.2
+    },
+    {
+      "ticker": "RDDT",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-08",
+      "entry_price": 171.1868,
+      "confidence": "MEDIUM",
+      "current_price": 181.69,
+      "return_pct": 6.1
+    },
+    {
+      "ticker": "TW",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-07-25",
+      "entry_price": 99.83,
+      "confidence": "MEDIUM",
+      "current_price": 105.82,
+      "return_pct": 6.0
+    },
+    {
+      "ticker": "MKTX",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-25",
+      "entry_price": 116.69,
+      "confidence": "MEDIUM",
+      "current_price": 123.54,
+      "return_pct": 5.9
+    },
+    {
+      "ticker": "ISRG",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-07-25",
+      "entry_price": 337.5,
+      "confidence": "MEDIUM",
+      "current_price": 356.96,
+      "return_pct": 5.8
+    },
+    {
+      "ticker": "RDDT",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-09",
+      "entry_price": 172.03,
+      "confidence": "MEDIUM",
+      "current_price": 181.69,
+      "return_pct": 5.6
+    },
+    {
+      "ticker": "MKTX",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-09",
+      "entry_price": 116.95,
+      "confidence": "MEDIUM",
+      "current_price": 123.54,
+      "return_pct": 5.6
+    },
+    {
+      "ticker": "IBM",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-25",
+      "entry_price": 214.19,
+      "confidence": "MEDIUM",
+      "current_price": 226.105,
+      "return_pct": 5.6
+    },
+    {
+      "ticker": "AVGO",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-07-02",
+      "entry_price": 358.735,
+      "confidence": "MEDIUM",
+      "current_price": 377.64,
+      "return_pct": 5.3
+    },
+    {
+      "ticker": "MKTX",
+      "verdict": "WATCHLIST",
+      "date": "2026-06-22",
+      "entry_price": 117.58,
+      "confidence": "MEDIUM",
+      "current_price": 123.54,
       "return_pct": 5.1
     },
     {
@@ -596,26 +785,8 @@
       "date": "2026-07-02",
       "entry_price": 535.26,
       "confidence": "MEDIUM",
-      "current_price": 562.75,
+      "current_price": 562.32,
       "return_pct": 5.1
-    },
-    {
-      "ticker": "RDDT",
-      "verdict": "WATCHLIST",
-      "date": "2026-06-18",
-      "entry_price": 169.87,
-      "confidence": "MEDIUM",
-      "current_price": 178.44,
-      "return_pct": 5.0
-    },
-    {
-      "ticker": "RDDT",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-17",
-      "entry_price": 170.14,
-      "confidence": "MEDIUM",
-      "current_price": 178.44,
-      "return_pct": 4.9
     },
     {
       "ticker": "ZBH",
@@ -623,71 +794,26 @@
       "date": "2026-07-25",
       "entry_price": 91.35,
       "confidence": null,
-      "current_price": 95.75,
+      "current_price": 95.93,
+      "return_pct": 5.0
+    },
+    {
+      "ticker": "GOOGL",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-07-24",
+      "entry_price": 319.74,
+      "confidence": "MEDIUM",
+      "current_price": 334.9665,
       "return_pct": 4.8
     },
     {
-      "ticker": "PAYX",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-07-24",
-      "entry_price": 113.55,
-      "confidence": "MEDIUM",
-      "current_price": 118.87,
-      "return_pct": 4.7
-    },
-    {
-      "ticker": "PAYX",
-      "verdict": "WATCHLIST",
-      "date": "2026-07-24",
-      "entry_price": 113.55,
-      "confidence": "MEDIUM",
-      "current_price": 118.87,
-      "return_pct": 4.7
-    },
-    {
-      "ticker": "MKTX",
-      "verdict": "WATCHLIST",
-      "date": "2026-07-25",
-      "entry_price": 116.69,
-      "confidence": "MEDIUM",
-      "current_price": 122.05,
-      "return_pct": 4.6
-    },
-    {
-      "ticker": "MKTX",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-09",
-      "entry_price": 116.95,
-      "confidence": "MEDIUM",
-      "current_price": 122.05,
-      "return_pct": 4.4
-    },
-    {
-      "ticker": "GOOGL",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-07-24",
-      "entry_price": 319.74,
-      "confidence": "MEDIUM",
-      "current_price": 333.71,
-      "return_pct": 4.4
-    },
-    {
       "ticker": "GOOGL",
       "verdict": "WATCHLIST",
       "date": "2026-07-24",
       "entry_price": 319.74,
       "confidence": "MEDIUM",
-      "current_price": 333.71,
-      "return_pct": 4.4
-    },
-    {
-      "ticker": "TW",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-07-25",
-      "entry_price": 99.83,
-      "confidence": "MEDIUM",
-      "current_price": 104.27,
-      "return_pct": 4.4
+      "current_price": 334.9665,
+      "return_pct": 4.8
     },
     {
       "ticker": "MA",
@@ -695,143 +821,8 @@
       "date": "2026-07-02",
       "entry_price": 539.66,
       "confidence": "MEDIUM",
-      "current_price": 562.75,
-      "return_pct": 4.3
-    },
-    {
-      "ticker": "RDDT",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-08",
-      "entry_price": 171.1868,
-      "confidence": "MEDIUM",
-      "current_price": 178.44,
+      "current_price": 562.32,
       "return_pct": 4.2
-    },
-    {
-      "ticker": "LPLA",
-      "verdict": "WATCHLIST",
-      "date": "2026-07-02",
-      "entry_price": 328.7,
-      "confidence": "MEDIUM",
-      "current_price": 342.4,
-      "return_pct": 4.2
-    },
-    {
-      "ticker": "GEHC",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-19",
-      "entry_price": 61.59,
-      "confidence": "MEDIUM",
-      "current_price": 64.11,
-      "return_pct": 4.1
-    },
-    {
-      "ticker": "CEG",
-      "verdict": "WATCHLIST",
-      "date": "2026-06-12",
-      "entry_price": 250.18,
-      "confidence": "MEDIUM",
-      "current_price": 259.82,
-      "return_pct": 3.9
-    },
-    {
-      "ticker": "MKTX",
-      "verdict": "WATCHLIST",
-      "date": "2026-06-22",
-      "entry_price": 117.58,
-      "confidence": "MEDIUM",
-      "current_price": 122.05,
-      "return_pct": 3.8
-    },
-    {
-      "ticker": "FLUT",
-      "verdict": "WATCHLIST",
-      "date": "2026-06-08",
-      "entry_price": 105.13,
-      "confidence": null,
-      "current_price": 109.06,
-      "return_pct": 3.7
-    },
-    {
-      "ticker": "RDDT",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-09",
-      "entry_price": 172.03,
-      "confidence": "MEDIUM",
-      "current_price": 178.44,
-      "return_pct": 3.7
-    },
-    {
-      "ticker": "AVGO",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-26",
-      "entry_price": 368.2899,
-      "confidence": "MEDIUM",
-      "current_price": 380.91,
-      "return_pct": 3.4
-    },
-    {
-      "ticker": "ZBH",
-      "verdict": "WATCHLIST",
-      "date": "2026-07-26",
-      "entry_price": 92.72,
-      "confidence": "MEDIUM",
-      "current_price": 95.75,
-      "return_pct": 3.3
-    },
-    {
-      "ticker": "CEG",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-08",
-      "entry_price": 252.12,
-      "confidence": "MEDIUM",
-      "current_price": 259.82,
-      "return_pct": 3.1
-    },
-    {
-      "ticker": "V",
-      "verdict": "WATCHLIST",
-      "date": "2026-07-25",
-      "entry_price": 355.74,
-      "confidence": "HIGH",
-      "current_price": 366.59,
-      "return_pct": 3.0
-    },
-    {
-      "ticker": "VST",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-09",
-      "entry_price": 144.45,
-      "confidence": "MEDIUM",
-      "current_price": 148.64,
-      "return_pct": 2.9
-    },
-    {
-      "ticker": "AVGO",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-29",
-      "entry_price": 370.15,
-      "confidence": "MEDIUM",
-      "current_price": 380.91,
-      "return_pct": 2.9
-    },
-    {
-      "ticker": "VST",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-11",
-      "entry_price": 144.8894,
-      "confidence": "MEDIUM",
-      "current_price": 148.64,
-      "return_pct": 2.6
-    },
-    {
-      "ticker": "PODD",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-07-25",
-      "entry_price": 163.26,
-      "confidence": "MEDIUM",
-      "current_price": 167.47,
-      "return_pct": 2.6
     },
     {
       "ticker": "TW",
@@ -839,71 +830,35 @@
       "date": "2026-07-26",
       "entry_price": 101.645,
       "confidence": "MEDIUM",
-      "current_price": 104.27,
-      "return_pct": 2.6
+      "current_price": 105.82,
+      "return_pct": 4.1
     },
     {
-      "ticker": "INVH",
+      "ticker": "V",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-25",
+      "entry_price": 355.74,
+      "confidence": "HIGH",
+      "current_price": 369.84,
+      "return_pct": 4.0
+    },
+    {
+      "ticker": "FLUT",
       "verdict": "WATCHLIST",
       "date": "2026-06-08",
-      "entry_price": 29.385,
+      "entry_price": 105.13,
       "confidence": null,
-      "current_price": 30.05,
-      "return_pct": 2.3
+      "current_price": 109.11,
+      "return_pct": 3.8
     },
     {
-      "ticker": "GEHC",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-17",
-      "entry_price": 62.64,
-      "confidence": "MEDIUM",
-      "current_price": 64.11,
-      "return_pct": 2.3
-    },
-    {
-      "ticker": "CMCSA",
+      "ticker": "LPLA",
       "verdict": "WATCHLIST",
-      "date": "2026-06-08",
-      "entry_price": 23.7034,
-      "confidence": null,
-      "current_price": 24.19,
-      "return_pct": 2.1
-    },
-    {
-      "ticker": "AVGO",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-10",
-      "entry_price": 373.99,
+      "date": "2026-07-02",
+      "entry_price": 328.7,
       "confidence": "MEDIUM",
-      "current_price": 380.91,
-      "return_pct": 1.9
-    },
-    {
-      "ticker": "GEHC",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-23",
-      "entry_price": 62.995,
-      "confidence": "MEDIUM",
-      "current_price": 64.11,
-      "return_pct": 1.8
-    },
-    {
-      "ticker": "ISRG",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-07-27",
-      "entry_price": 355.54,
-      "confidence": "MEDIUM",
-      "current_price": 361.8,
-      "return_pct": 1.8
-    },
-    {
-      "ticker": "NFLX",
-      "verdict": "WATCHLIST",
-      "date": "2026-07-27",
-      "entry_price": 71.155,
-      "confidence": "MEDIUM",
-      "current_price": 72.39,
-      "return_pct": 1.7
+      "current_price": 340.815,
+      "return_pct": 3.7
     },
     {
       "ticker": "RDDT",
@@ -911,17 +866,53 @@
       "date": "2026-06-16",
       "entry_price": 175.59,
       "confidence": "MEDIUM",
-      "current_price": 178.44,
-      "return_pct": 1.6
+      "current_price": 181.69,
+      "return_pct": 3.5
     },
     {
-      "ticker": "MSFT",
-      "verdict": "WATCHLIST",
-      "date": "2026-06-11",
-      "entry_price": 387.72,
+      "ticker": "PODD",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-07-25",
+      "entry_price": 163.26,
       "confidence": "MEDIUM",
-      "current_price": 393.35,
-      "return_pct": 1.5
+      "current_price": 168.93,
+      "return_pct": 3.5
+    },
+    {
+      "ticker": "ZBH",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-26",
+      "entry_price": 92.72,
+      "confidence": "MEDIUM",
+      "current_price": 95.93,
+      "return_pct": 3.5
+    },
+    {
+      "ticker": "CEG",
+      "verdict": "WATCHLIST",
+      "date": "2026-06-12",
+      "entry_price": 250.18,
+      "confidence": "MEDIUM",
+      "current_price": 258.745,
+      "return_pct": 3.4
+    },
+    {
+      "ticker": "VST",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-10",
+      "entry_price": 139.63,
+      "confidence": "MEDIUM",
+      "current_price": 144.085,
+      "return_pct": 3.2
+    },
+    {
+      "ticker": "CMCSA",
+      "verdict": "WATCHLIST",
+      "date": "2026-06-08",
+      "entry_price": 23.7034,
+      "confidence": null,
+      "current_price": 24.4357,
+      "return_pct": 3.1
     },
     {
       "ticker": "MKTX",
@@ -929,44 +920,26 @@
       "date": "2026-06-19",
       "entry_price": 120.33,
       "confidence": "MEDIUM",
-      "current_price": 122.05,
-      "return_pct": 1.4
+      "current_price": 123.54,
+      "return_pct": 2.7
     },
     {
-      "ticker": "GOOGL",
-      "verdict": "WATCHLIST",
-      "date": "2026-07-28",
-      "entry_price": 329.3,
-      "confidence": "HIGH",
-      "current_price": 333.71,
-      "return_pct": 1.3
-    },
-    {
-      "ticker": "^TNX",
-      "verdict": "WATCHLIST",
-      "date": "2026-05-28",
-      "entry_price": 4.552,
-      "confidence": null,
-      "current_price": 4.604,
-      "return_pct": 1.1
-    },
-    {
-      "ticker": "META",
-      "verdict": "WATCHLIST",
-      "date": "2026-04-25",
-      "entry_price": 587.25,
-      "confidence": null,
-      "current_price": 593.41,
-      "return_pct": 1.0
-    },
-    {
-      "ticker": "VST",
+      "ticker": "CEG",
       "verdict": "RESEARCH-WORTHY",
       "date": "2026-06-08",
-      "entry_price": 147.14,
+      "entry_price": 252.12,
       "confidence": "MEDIUM",
-      "current_price": 148.64,
-      "return_pct": 1.0
+      "current_price": 258.745,
+      "return_pct": 2.6
+    },
+    {
+      "ticker": "AVGO",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-26",
+      "entry_price": 368.2899,
+      "confidence": "MEDIUM",
+      "current_price": 377.64,
+      "return_pct": 2.5
     },
     {
       "ticker": "MKTX",
@@ -974,107 +947,62 @@
       "date": "2026-06-15",
       "entry_price": 121.0,
       "confidence": "MEDIUM",
-      "current_price": 122.05,
-      "return_pct": 0.9
+      "current_price": 123.54,
+      "return_pct": 2.1
     },
     {
       "ticker": "INVH",
       "verdict": "WATCHLIST",
-      "date": "2026-07-25",
-      "entry_price": 29.78,
-      "confidence": "MEDIUM",
-      "current_price": 30.05,
-      "return_pct": 0.9
-    },
-    {
-      "ticker": "VST",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-12",
-      "entry_price": 147.63,
-      "confidence": "MEDIUM",
-      "current_price": 148.64,
-      "return_pct": 0.7
-    },
-    {
-      "ticker": "GEV",
-      "verdict": "WATCHLIST",
-      "date": "2026-05-28",
-      "entry_price": 939.25,
+      "date": "2026-06-08",
+      "entry_price": 29.385,
       "confidence": null,
-      "current_price": 943.38,
-      "return_pct": 0.4
+      "current_price": 29.98,
+      "return_pct": 2.0
     },
     {
       "ticker": "AVGO",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-12",
-      "entry_price": 379.3535,
+      "date": "2026-06-29",
+      "entry_price": 370.15,
       "confidence": "MEDIUM",
-      "current_price": 380.91,
-      "return_pct": 0.4
+      "current_price": 377.64,
+      "return_pct": 2.0
     },
     {
-      "ticker": "AAPL",
+      "ticker": "^TNX",
       "verdict": "WATCHLIST",
-      "date": "2026-07-26",
-      "entry_price": 338.5701,
-      "confidence": "MEDIUM",
-      "current_price": 340.08,
-      "return_pct": 0.4
+      "date": "2026-05-28",
+      "entry_price": 4.552,
+      "confidence": null,
+      "current_price": 4.639,
+      "return_pct": 1.9
     },
     {
       "ticker": "MSFT",
       "verdict": "WATCHLIST",
-      "date": "2026-07-27",
-      "entry_price": 391.915,
+      "date": "2026-06-11",
+      "entry_price": 387.72,
+      "confidence": "MEDIUM",
+      "current_price": 394.92,
+      "return_pct": 1.9
+    },
+    {
+      "ticker": "GOOGL",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-28",
+      "entry_price": 329.3,
       "confidence": "HIGH",
-      "current_price": 393.35,
-      "return_pct": 0.4
+      "current_price": 334.9665,
+      "return_pct": 1.7
     },
     {
-      "ticker": "PODD",
+      "ticker": "NFLX",
       "verdict": "WATCHLIST",
       "date": "2026-07-27",
-      "entry_price": 166.88,
+      "entry_price": 71.155,
       "confidence": "MEDIUM",
-      "current_price": 167.47,
-      "return_pct": 0.4
-    },
-    {
-      "ticker": "SPY",
-      "verdict": "WATCHLIST",
-      "date": "2026-05-28",
-      "entry_price": 739.46,
-      "confidence": null,
-      "current_price": 740.86,
-      "return_pct": 0.2
-    },
-    {
-      "ticker": "AVGO",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-16",
-      "entry_price": 380.255,
-      "confidence": "MEDIUM",
-      "current_price": 380.91,
-      "return_pct": 0.2
-    },
-    {
-      "ticker": "AVGO",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-23",
-      "entry_price": 380.23,
-      "confidence": "MEDIUM",
-      "current_price": 380.91,
-      "return_pct": 0.2
-    },
-    {
-      "ticker": "EIX",
-      "verdict": "WATCHLIST",
-      "date": "2026-07-25",
-      "entry_price": 79.75,
-      "confidence": "MEDIUM",
-      "current_price": 79.79,
-      "return_pct": 0.1
+      "current_price": 72.1951,
+      "return_pct": 1.5
     },
     {
       "ticker": "MKTX",
@@ -1082,116 +1010,35 @@
       "date": "2026-06-18",
       "entry_price": 122.08,
       "confidence": "MEDIUM",
-      "current_price": 122.05,
-      "return_pct": -0.0
+      "current_price": 123.54,
+      "return_pct": 1.2
+    },
+    {
+      "ticker": "PODD",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-27",
+      "entry_price": 166.88,
+      "confidence": "MEDIUM",
+      "current_price": 168.93,
+      "return_pct": 1.2
     },
     {
       "ticker": "AVGO",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-25",
-      "entry_price": 381.6,
+      "date": "2026-06-10",
+      "entry_price": 373.99,
       "confidence": "MEDIUM",
-      "current_price": 380.91,
-      "return_pct": -0.2
+      "current_price": 377.64,
+      "return_pct": 1.0
     },
     {
-      "ticker": "AVGO",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-07-24",
-      "entry_price": 381.92,
-      "confidence": "MEDIUM",
-      "current_price": 380.91,
-      "return_pct": -0.3
-    },
-    {
-      "ticker": "AVGO",
+      "ticker": "MSFT",
       "verdict": "WATCHLIST",
-      "date": "2026-07-24",
-      "entry_price": 381.92,
-      "confidence": "MEDIUM",
-      "current_price": 380.91,
-      "return_pct": -0.3
-    },
-    {
-      "ticker": "LMB",
-      "verdict": "WATCHLIST",
-      "date": "2026-07-25",
-      "entry_price": 72.74,
-      "confidence": null,
-      "current_price": 72.49,
-      "return_pct": -0.3
-    },
-    {
-      "ticker": "META",
-      "verdict": "WATCHLIST",
-      "date": "2026-07-25",
-      "entry_price": 595.19,
-      "confidence": "MEDIUM",
-      "current_price": 593.41,
-      "return_pct": -0.3
-    },
-    {
-      "ticker": "ETN",
-      "verdict": "WATCHLIST",
-      "date": "2026-07-26",
-      "entry_price": 388.05,
-      "confidence": "MEDIUM",
-      "current_price": 386.26,
-      "return_pct": -0.5
-    },
-    {
-      "ticker": "GEHC",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-08",
-      "entry_price": 64.5,
-      "confidence": null,
-      "current_price": 64.11,
-      "return_pct": -0.6
-    },
-    {
-      "ticker": "AMZN",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-07-26",
-      "entry_price": 232.24,
-      "confidence": "MEDIUM",
-      "current_price": 230.86,
-      "return_pct": -0.6
-    },
-    {
-      "ticker": "GEHC",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-12",
-      "entry_price": 64.615,
-      "confidence": "MEDIUM",
-      "current_price": 64.11,
-      "return_pct": -0.8
-    },
-    {
-      "ticker": "VST",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-07-02",
-      "entry_price": 149.84,
-      "confidence": "MEDIUM",
-      "current_price": 148.64,
-      "return_pct": -0.8
-    },
-    {
-      "ticker": "MKTX",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-17",
-      "entry_price": 123.16,
-      "confidence": "MEDIUM",
-      "current_price": 122.05,
-      "return_pct": -0.9
-    },
-    {
-      "ticker": "GEHC",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-15",
-      "entry_price": 64.76,
-      "confidence": "MEDIUM",
-      "current_price": 64.11,
-      "return_pct": -1.0
+      "date": "2026-07-27",
+      "entry_price": 391.915,
+      "confidence": "HIGH",
+      "current_price": 394.92,
+      "return_pct": 0.8
     },
     {
       "ticker": "RDDT",
@@ -1199,71 +1046,89 @@
       "date": "2026-07-27",
       "entry_price": 180.315,
       "confidence": "MEDIUM",
-      "current_price": 178.44,
-      "return_pct": -1.0
+      "current_price": 181.69,
+      "return_pct": 0.8
     },
     {
-      "ticker": "AVGO",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-24",
-      "entry_price": 385.46,
+      "ticker": "INVH",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-25",
+      "entry_price": 29.78,
       "confidence": "MEDIUM",
-      "current_price": 380.91,
-      "return_pct": -1.2
+      "current_price": 29.98,
+      "return_pct": 0.7
     },
     {
-      "ticker": "GEHC",
+      "ticker": "ISRG",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-29",
-      "entry_price": 64.9151,
+      "date": "2026-07-27",
+      "entry_price": 355.54,
       "confidence": "MEDIUM",
-      "current_price": 64.11,
-      "return_pct": -1.2
-    },
-    {
-      "ticker": "GEHC",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-24",
-      "entry_price": 65.06,
-      "confidence": "MEDIUM",
-      "current_price": 64.11,
-      "return_pct": -1.5
-    },
-    {
-      "ticker": "GEHC",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-10",
-      "entry_price": 65.175,
-      "confidence": "MEDIUM",
-      "current_price": 64.11,
-      "return_pct": -1.6
-    },
-    {
-      "ticker": "GEHC",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-25",
-      "entry_price": 65.14,
-      "confidence": "MEDIUM",
-      "current_price": 64.11,
-      "return_pct": -1.6
-    },
-    {
-      "ticker": "GEHC",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-07-02",
-      "entry_price": 65.17,
-      "confidence": "MEDIUM",
-      "current_price": 64.11,
-      "return_pct": -1.6
+      "current_price": 356.96,
+      "return_pct": 0.4
     },
     {
       "ticker": "MKTX",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-16",
-      "entry_price": 124.245,
+      "date": "2026-06-17",
+      "entry_price": 123.16,
       "confidence": "MEDIUM",
-      "current_price": 122.05,
-      "return_pct": -1.8
+      "current_price": 123.54,
+      "return_pct": 0.3
+    },
+    {
+      "ticker": "AAPL",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-26",
+      "entry_price": 338.5701,
+      "confidence": "MEDIUM",
+      "current_price": 339.655,
+      "return_pct": 0.3
+    },
+    {
+      "ticker": "META",
+      "verdict": "WATCHLIST",
+      "date": "2026-04-25",
+      "entry_price": 587.25,
+      "confidence": null,
+      "current_price": 588.71,
+      "return_pct": 0.2
+    },
+    {
+      "ticker": "CEG",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-29",
+      "entry_price": 258.745,
+      "confidence": "MEDIUM",
+      "current_price": 258.745,
+      "return_pct": 0.0
+    },
+    {
+      "ticker": "VST",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-29",
+      "entry_price": 144.085,
+      "confidence": "MEDIUM",
+      "current_price": 144.085,
+      "return_pct": 0.0
+    },
+    {
+      "ticker": "NVT",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-29",
+      "entry_price": 133.7324,
+      "confidence": "MEDIUM",
+      "current_price": 133.7324,
+      "return_pct": 0.0
+    },
+    {
+      "ticker": "ISRG",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-29",
+      "entry_price": 356.96,
+      "confidence": "MEDIUM",
+      "current_price": 356.96,
+      "return_pct": 0.0
     },
     {
       "ticker": "RDDT",
@@ -1271,62 +1136,71 @@
       "date": "2026-06-15",
       "entry_price": 181.88,
       "confidence": "MEDIUM",
-      "current_price": 178.44,
-      "return_pct": -1.9
-    },
-    {
-      "ticker": "ASML",
-      "verdict": "WATCHLIST",
-      "date": "2026-07-26",
-      "entry_price": 1620.07,
-      "confidence": "MEDIUM",
-      "current_price": 1582.95,
-      "return_pct": -2.3
-    },
-    {
-      "ticker": "MSFT",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-09",
-      "entry_price": 402.84,
-      "confidence": "MEDIUM",
-      "current_price": 393.35,
-      "return_pct": -2.4
-    },
-    {
-      "ticker": "GEHC",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-26",
-      "entry_price": 65.655,
-      "confidence": "MEDIUM",
-      "current_price": 64.11,
-      "return_pct": -2.4
-    },
-    {
-      "ticker": "GOOGL",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-26",
-      "entry_price": 342.59,
-      "confidence": "MEDIUM",
-      "current_price": 333.71,
-      "return_pct": -2.6
-    },
-    {
-      "ticker": "BWXT",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-07-25",
-      "entry_price": 174.52,
-      "confidence": "HIGH",
-      "current_price": 169.67,
-      "return_pct": -2.8
+      "current_price": 181.69,
+      "return_pct": -0.1
     },
     {
       "ticker": "VST",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-15",
-      "entry_price": 153.52,
+      "date": "2026-06-09",
+      "entry_price": 144.45,
       "confidence": "MEDIUM",
-      "current_price": 148.64,
-      "return_pct": -3.2
+      "current_price": 144.085,
+      "return_pct": -0.3
+    },
+    {
+      "ticker": "AVGO",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-12",
+      "entry_price": 379.3535,
+      "confidence": "MEDIUM",
+      "current_price": 377.64,
+      "return_pct": -0.5
+    },
+    {
+      "ticker": "SPY",
+      "verdict": "WATCHLIST",
+      "date": "2026-05-28",
+      "entry_price": 739.46,
+      "confidence": null,
+      "current_price": 735.3264,
+      "return_pct": -0.6
+    },
+    {
+      "ticker": "VST",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-11",
+      "entry_price": 144.8894,
+      "confidence": "MEDIUM",
+      "current_price": 144.085,
+      "return_pct": -0.6
+    },
+    {
+      "ticker": "MKTX",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-16",
+      "entry_price": 124.245,
+      "confidence": "MEDIUM",
+      "current_price": 123.54,
+      "return_pct": -0.6
+    },
+    {
+      "ticker": "AVGO",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-16",
+      "entry_price": 380.255,
+      "confidence": "MEDIUM",
+      "current_price": 377.64,
+      "return_pct": -0.7
+    },
+    {
+      "ticker": "AVGO",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-23",
+      "entry_price": 380.23,
+      "confidence": "MEDIUM",
+      "current_price": 377.64,
+      "return_pct": -0.7
     },
     {
       "ticker": "NOW",
@@ -1334,17 +1208,134 @@
       "date": "2026-05-28",
       "entry_price": 114.785,
       "confidence": null,
-      "current_price": 110.62,
-      "return_pct": -3.6
+      "current_price": 113.84,
+      "return_pct": -0.8
+    },
+    {
+      "ticker": "EIX",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-25",
+      "entry_price": 79.75,
+      "confidence": "MEDIUM",
+      "current_price": 79.05,
+      "return_pct": -0.9
     },
     {
       "ticker": "AVGO",
       "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-25",
+      "entry_price": 381.6,
+      "confidence": "MEDIUM",
+      "current_price": 377.64,
+      "return_pct": -1.0
+    },
+    {
+      "ticker": "AVGO",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-07-24",
+      "entry_price": 381.92,
+      "confidence": "MEDIUM",
+      "current_price": 377.64,
+      "return_pct": -1.1
+    },
+    {
+      "ticker": "AVGO",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-24",
+      "entry_price": 381.92,
+      "confidence": "MEDIUM",
+      "current_price": 377.64,
+      "return_pct": -1.1
+    },
+    {
+      "ticker": "META",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-25",
+      "entry_price": 595.19,
+      "confidence": "MEDIUM",
+      "current_price": 588.71,
+      "return_pct": -1.1
+    },
+    {
+      "ticker": "AMZN",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-07-26",
+      "entry_price": 232.24,
+      "confidence": "MEDIUM",
+      "current_price": 228.165,
+      "return_pct": -1.8
+    },
+    {
+      "ticker": "MSFT",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-09",
+      "entry_price": 402.84,
+      "confidence": "MEDIUM",
+      "current_price": 394.92,
+      "return_pct": -2.0
+    },
+    {
+      "ticker": "AVGO",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-24",
+      "entry_price": 385.46,
+      "confidence": "MEDIUM",
+      "current_price": 377.64,
+      "return_pct": -2.0
+    },
+    {
+      "ticker": "VST",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-08",
+      "entry_price": 147.14,
+      "confidence": "MEDIUM",
+      "current_price": 144.085,
+      "return_pct": -2.1
+    },
+    {
+      "ticker": "GEV",
+      "verdict": "WATCHLIST",
       "date": "2026-05-28",
-      "entry_price": 396.195,
+      "entry_price": 939.25,
       "confidence": null,
-      "current_price": 380.91,
-      "return_pct": -3.9
+      "current_price": 919.9,
+      "return_pct": -2.1
+    },
+    {
+      "ticker": "GOOGL",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-26",
+      "entry_price": 342.59,
+      "confidence": "MEDIUM",
+      "current_price": 334.9665,
+      "return_pct": -2.2
+    },
+    {
+      "ticker": "VST",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-12",
+      "entry_price": 147.63,
+      "confidence": "MEDIUM",
+      "current_price": 144.085,
+      "return_pct": -2.4
+    },
+    {
+      "ticker": "VST",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-07-02",
+      "entry_price": 149.84,
+      "confidence": "MEDIUM",
+      "current_price": 144.085,
+      "return_pct": -3.8
+    },
+    {
+      "ticker": "ASML",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-26",
+      "entry_price": 1620.07,
+      "confidence": "MEDIUM",
+      "current_price": 1558.39,
+      "return_pct": -3.8
     },
     {
       "ticker": "MSFT",
@@ -1352,62 +1343,44 @@
       "date": "2026-06-08",
       "entry_price": 412.37,
       "confidence": "MEDIUM",
-      "current_price": 393.35,
-      "return_pct": -4.6
+      "current_price": 394.92,
+      "return_pct": -4.2
+    },
+    {
+      "ticker": "AVGO",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-05-28",
+      "entry_price": 396.195,
+      "confidence": null,
+      "current_price": 377.64,
+      "return_pct": -4.7
+    },
+    {
+      "ticker": "LMB",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-25",
+      "entry_price": 72.74,
+      "confidence": null,
+      "current_price": 69.005,
+      "return_pct": -5.1
     },
     {
       "ticker": "ETN",
       "verdict": "WATCHLIST",
-      "date": "2026-05-28",
-      "entry_price": 405.57,
-      "confidence": null,
-      "current_price": 386.26,
-      "return_pct": -4.8
-    },
-    {
-      "ticker": "NVDA",
-      "verdict": "WATCHLIST",
-      "date": "2026-07-25",
-      "entry_price": 206.84,
-      "confidence": "HIGH",
-      "current_price": 197.01,
-      "return_pct": -4.8
-    },
-    {
-      "ticker": "AMD",
-      "verdict": "WATCHLIST",
       "date": "2026-07-26",
-      "entry_price": 479.12,
-      "confidence": "HIGH",
-      "current_price": 454.62,
-      "return_pct": -5.1
-    },
-    {
-      "ticker": "NVDA",
-      "verdict": "WATCHLIST",
-      "date": "2026-05-01",
-      "entry_price": 207.91,
-      "confidence": null,
-      "current_price": 197.01,
-      "return_pct": -5.2
-    },
-    {
-      "ticker": "AMZN",
-      "verdict": "WATCHLIST",
-      "date": "2026-05-28",
-      "entry_price": 244.79,
-      "confidence": null,
-      "current_price": 230.86,
+      "entry_price": 388.05,
+      "confidence": "MEDIUM",
+      "current_price": 365.815,
       "return_pct": -5.7
     },
     {
-      "ticker": "QQQ",
-      "verdict": "WATCHLIST",
-      "date": "2026-05-28",
-      "entry_price": 716.15,
-      "confidence": null,
-      "current_price": 675.49,
-      "return_pct": -5.7
+      "ticker": "VST",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-15",
+      "entry_price": 153.52,
+      "confidence": "MEDIUM",
+      "current_price": 144.085,
+      "return_pct": -6.1
     },
     {
       "ticker": "STZ",
@@ -1415,44 +1388,53 @@
       "date": "2026-06-08",
       "entry_price": 141.42,
       "confidence": null,
-      "current_price": 132.02,
-      "return_pct": -6.6
+      "current_price": 132.27,
+      "return_pct": -6.5
     },
     {
-      "ticker": "NVT",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-07-25",
-      "entry_price": 151.79,
-      "confidence": "MEDIUM",
-      "current_price": 141.75,
-      "return_pct": -6.6
-    },
-    {
-      "ticker": "AMD",
+      "ticker": "QQQ",
       "verdict": "WATCHLIST",
       "date": "2026-05-28",
-      "entry_price": 489.515,
+      "entry_price": 716.15,
       "confidence": null,
-      "current_price": 454.62,
+      "current_price": 668.835,
+      "return_pct": -6.6
+    },
+    {
+      "ticker": "NVDA",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-25",
+      "entry_price": 206.84,
+      "confidence": "HIGH",
+      "current_price": 193.135,
+      "return_pct": -6.6
+    },
+    {
+      "ticker": "AMZN",
+      "verdict": "WATCHLIST",
+      "date": "2026-05-28",
+      "entry_price": 244.79,
+      "confidence": null,
+      "current_price": 228.165,
+      "return_pct": -6.8
+    },
+    {
+      "ticker": "NVDA",
+      "verdict": "WATCHLIST",
+      "date": "2026-05-01",
+      "entry_price": 207.91,
+      "confidence": null,
+      "current_price": 193.135,
       "return_pct": -7.1
     },
     {
-      "ticker": "VRT",
-      "verdict": "WATCHLIST",
-      "date": "2026-07-25",
-      "entry_price": 290.36,
-      "confidence": "MEDIUM",
-      "current_price": 269.56,
-      "return_pct": -7.2
-    },
-    {
-      "ticker": "VST",
+      "ticker": "BWXT",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-16",
-      "entry_price": 160.64,
-      "confidence": "MEDIUM",
-      "current_price": 148.64,
-      "return_pct": -7.5
+      "date": "2026-07-25",
+      "entry_price": 174.52,
+      "confidence": "HIGH",
+      "current_price": 162.1502,
+      "return_pct": -7.1
     },
     {
       "ticker": "GOOGL",
@@ -1460,53 +1442,35 @@
       "date": "2026-04-25",
       "entry_price": 363.1631,
       "confidence": null,
-      "current_price": 333.71,
-      "return_pct": -8.1
+      "current_price": 334.9665,
+      "return_pct": -7.8
     },
     {
-      "ticker": "VST",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-17",
-      "entry_price": 161.6693,
-      "confidence": "MEDIUM",
-      "current_price": 148.64,
-      "return_pct": -8.1
-    },
-    {
-      "ticker": "TSM",
+      "ticker": "AMD",
       "verdict": "WATCHLIST",
-      "date": "2026-06-08",
-      "entry_price": 427.47,
+      "date": "2026-07-26",
+      "entry_price": 479.12,
+      "confidence": "HIGH",
+      "current_price": 434.48,
+      "return_pct": -9.3
+    },
+    {
+      "ticker": "ETN",
+      "verdict": "WATCHLIST",
+      "date": "2026-05-28",
+      "entry_price": 405.57,
       "confidence": null,
-      "current_price": 392.31,
-      "return_pct": -8.2
+      "current_price": 365.815,
+      "return_pct": -9.8
     },
     {
       "ticker": "VST",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-07-24",
-      "entry_price": 163.38,
+      "date": "2026-06-16",
+      "entry_price": 160.64,
       "confidence": "MEDIUM",
-      "current_price": 148.64,
-      "return_pct": -9.0
-    },
-    {
-      "ticker": "VST",
-      "verdict": "WATCHLIST",
-      "date": "2026-07-24",
-      "entry_price": 163.38,
-      "confidence": "MEDIUM",
-      "current_price": 148.64,
-      "return_pct": -9.0
-    },
-    {
-      "ticker": "VST",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-19",
-      "entry_price": 163.75,
-      "confidence": "MEDIUM",
-      "current_price": 148.64,
-      "return_pct": -9.2
+      "current_price": 144.085,
+      "return_pct": -10.3
     },
     {
       "ticker": "ASML",
@@ -1514,80 +1478,8 @@
       "date": "2026-05-28",
       "entry_price": 1747.58,
       "confidence": null,
-      "current_price": 1582.95,
-      "return_pct": -9.4
-    },
-    {
-      "ticker": "TLN",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-07-25",
-      "entry_price": 359.9,
-      "confidence": "HIGH",
-      "current_price": 326.05,
-      "return_pct": -9.4
-    },
-    {
-      "ticker": "VST",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-29",
-      "entry_price": 164.235,
-      "confidence": "MEDIUM",
-      "current_price": 148.64,
-      "return_pct": -9.5
-    },
-    {
-      "ticker": "VST",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-23",
-      "entry_price": 164.67,
-      "confidence": "MEDIUM",
-      "current_price": 148.64,
-      "return_pct": -9.7
-    },
-    {
-      "ticker": "CRDO",
-      "verdict": "WATCHLIST",
-      "date": "2026-07-25",
-      "entry_price": 213.15,
-      "confidence": "HIGH",
-      "current_price": 192.28,
-      "return_pct": -9.8
-    },
-    {
-      "ticker": "VST",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-26",
-      "entry_price": 165.09,
-      "confidence": "MEDIUM",
-      "current_price": 148.64,
-      "return_pct": -10.0
-    },
-    {
-      "ticker": "VST",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-24",
-      "entry_price": 165.29,
-      "confidence": "MEDIUM",
-      "current_price": 148.64,
-      "return_pct": -10.1
-    },
-    {
-      "ticker": "MRVL",
-      "verdict": "WATCHLIST",
-      "date": "2026-07-25",
-      "entry_price": 194.23,
-      "confidence": "MEDIUM",
-      "current_price": 174.47,
-      "return_pct": -10.2
-    },
-    {
-      "ticker": "VRT",
-      "verdict": "WATCHLIST",
-      "date": "2026-05-28",
-      "entry_price": 301.56,
-      "confidence": null,
-      "current_price": 269.56,
-      "return_pct": -10.6
+      "current_price": 1558.39,
+      "return_pct": -10.8
     },
     {
       "ticker": "NFLX",
@@ -1595,53 +1487,62 @@
       "date": "2026-06-11",
       "entry_price": 81.01,
       "confidence": "MEDIUM",
-      "current_price": 72.39,
-      "return_pct": -10.6
+      "current_price": 72.1951,
+      "return_pct": -10.9
     },
     {
       "ticker": "VST",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-25",
-      "entry_price": 166.655,
+      "date": "2026-06-17",
+      "entry_price": 161.6693,
       "confidence": "MEDIUM",
-      "current_price": 148.64,
-      "return_pct": -10.8
-    },
-    {
-      "ticker": "MU",
-      "verdict": "RESEARCH-WORTHY",
-      "date": "2026-07-24",
-      "entry_price": 920.95,
-      "confidence": "MEDIUM",
-      "current_price": 820.53,
+      "current_price": 144.085,
       "return_pct": -10.9
     },
     {
-      "ticker": "MU",
-      "verdict": "WATCHLIST",
-      "date": "2026-07-24",
-      "entry_price": 920.95,
-      "confidence": "MEDIUM",
-      "current_price": 820.53,
-      "return_pct": -10.9
-    },
-    {
-      "ticker": "LMB",
+      "ticker": "TSM",
       "verdict": "WATCHLIST",
       "date": "2026-06-08",
-      "entry_price": 81.82,
+      "entry_price": 427.47,
       "confidence": null,
-      "current_price": 72.49,
-      "return_pct": -11.4
+      "current_price": 380.09,
+      "return_pct": -11.1
+    },
+    {
+      "ticker": "AMD",
+      "verdict": "WATCHLIST",
+      "date": "2026-05-28",
+      "entry_price": 489.515,
+      "confidence": null,
+      "current_price": 434.48,
+      "return_pct": -11.2
     },
     {
       "ticker": "VST",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-22",
-      "entry_price": 167.94,
+      "date": "2026-07-24",
+      "entry_price": 163.38,
       "confidence": "MEDIUM",
-      "current_price": 148.64,
-      "return_pct": -11.5
+      "current_price": 144.085,
+      "return_pct": -11.8
+    },
+    {
+      "ticker": "VST",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-24",
+      "entry_price": 163.38,
+      "confidence": "MEDIUM",
+      "current_price": 144.085,
+      "return_pct": -11.8
+    },
+    {
+      "ticker": "TLN",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-07-25",
+      "entry_price": 359.9,
+      "confidence": "HIGH",
+      "current_price": 317.35,
+      "return_pct": -11.8
     },
     {
       "ticker": "NFLX",
@@ -1649,17 +1550,35 @@
       "date": "2026-06-09",
       "entry_price": 81.965,
       "confidence": "MEDIUM",
-      "current_price": 72.39,
-      "return_pct": -11.7
+      "current_price": 72.1951,
+      "return_pct": -11.9
+    },
+    {
+      "ticker": "NVT",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-07-25",
+      "entry_price": 151.79,
+      "confidence": "MEDIUM",
+      "current_price": 133.7324,
+      "return_pct": -11.9
     },
     {
       "ticker": "VST",
       "verdict": "RESEARCH-WORTHY",
-      "date": "2026-06-18",
-      "entry_price": 168.7175,
+      "date": "2026-06-19",
+      "entry_price": 163.75,
       "confidence": "MEDIUM",
-      "current_price": 148.64,
-      "return_pct": -11.9
+      "current_price": 144.085,
+      "return_pct": -12.0
+    },
+    {
+      "ticker": "VST",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-29",
+      "entry_price": 164.235,
+      "confidence": "MEDIUM",
+      "current_price": 144.085,
+      "return_pct": -12.3
     },
     {
       "ticker": "NFLX",
@@ -1667,8 +1586,98 @@
       "date": "2026-06-08",
       "entry_price": 82.5499,
       "confidence": "MEDIUM",
-      "current_price": 72.39,
-      "return_pct": -12.3
+      "current_price": 72.1951,
+      "return_pct": -12.5
+    },
+    {
+      "ticker": "VST",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-23",
+      "entry_price": 164.67,
+      "confidence": "MEDIUM",
+      "current_price": 144.085,
+      "return_pct": -12.5
+    },
+    {
+      "ticker": "VST",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-26",
+      "entry_price": 165.09,
+      "confidence": "MEDIUM",
+      "current_price": 144.085,
+      "return_pct": -12.7
+    },
+    {
+      "ticker": "VST",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-24",
+      "entry_price": 165.29,
+      "confidence": "MEDIUM",
+      "current_price": 144.085,
+      "return_pct": -12.8
+    },
+    {
+      "ticker": "MRVL",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-25",
+      "entry_price": 194.23,
+      "confidence": "MEDIUM",
+      "current_price": 169.12,
+      "return_pct": -12.9
+    },
+    {
+      "ticker": "VST",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-25",
+      "entry_price": 166.655,
+      "confidence": "MEDIUM",
+      "current_price": 144.085,
+      "return_pct": -13.5
+    },
+    {
+      "ticker": "MU",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-07-24",
+      "entry_price": 920.95,
+      "confidence": "MEDIUM",
+      "current_price": 790.73,
+      "return_pct": -14.1
+    },
+    {
+      "ticker": "MU",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-24",
+      "entry_price": 920.95,
+      "confidence": "MEDIUM",
+      "current_price": 790.73,
+      "return_pct": -14.1
+    },
+    {
+      "ticker": "VST",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-22",
+      "entry_price": 167.94,
+      "confidence": "MEDIUM",
+      "current_price": 144.085,
+      "return_pct": -14.2
+    },
+    {
+      "ticker": "CRDO",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-25",
+      "entry_price": 213.15,
+      "confidence": "HIGH",
+      "current_price": 182.745,
+      "return_pct": -14.3
+    },
+    {
+      "ticker": "VST",
+      "verdict": "RESEARCH-WORTHY",
+      "date": "2026-06-18",
+      "entry_price": 168.7175,
+      "confidence": "MEDIUM",
+      "current_price": 144.085,
+      "return_pct": -14.6
     },
     {
       "ticker": "MU",
@@ -1676,8 +1685,17 @@
       "date": "2026-06-08",
       "entry_price": 938.005,
       "confidence": null,
-      "current_price": 820.53,
-      "return_pct": -12.5
+      "current_price": 790.73,
+      "return_pct": -15.7
+    },
+    {
+      "ticker": "LMB",
+      "verdict": "WATCHLIST",
+      "date": "2026-06-08",
+      "entry_price": 81.82,
+      "confidence": null,
+      "current_price": 69.005,
+      "return_pct": -15.7
     },
     {
       "ticker": "POWL",
@@ -1685,8 +1703,8 @@
       "date": "2026-07-25",
       "entry_price": 232.21,
       "confidence": "HIGH",
-      "current_price": 201.0,
-      "return_pct": -13.4
+      "current_price": 189.71,
+      "return_pct": -18.3
     },
     {
       "ticker": "COHR",
@@ -1694,8 +1712,17 @@
       "date": "2026-07-25",
       "entry_price": 282.39,
       "confidence": "MEDIUM",
-      "current_price": 243.33,
-      "return_pct": -13.8
+      "current_price": 229.04,
+      "return_pct": -18.9
+    },
+    {
+      "ticker": "VRT",
+      "verdict": "WATCHLIST",
+      "date": "2026-07-25",
+      "entry_price": 290.36,
+      "confidence": "MEDIUM",
+      "current_price": 235.565,
+      "return_pct": -18.9
     },
     {
       "ticker": "LITE",
@@ -1703,8 +1730,8 @@
       "date": "2026-07-25",
       "entry_price": 762.99,
       "confidence": "MEDIUM",
-      "current_price": 651.93,
-      "return_pct": -14.6
+      "current_price": 614.26,
+      "return_pct": -19.5
     },
     {
       "ticker": "IBM",
@@ -1712,8 +1739,17 @@
       "date": "2026-06-08",
       "entry_price": 281.295,
       "confidence": null,
-      "current_price": 227.55,
-      "return_pct": -19.1
+      "current_price": 226.105,
+      "return_pct": -19.6
+    },
+    {
+      "ticker": "VRT",
+      "verdict": "WATCHLIST",
+      "date": "2026-05-28",
+      "entry_price": 301.56,
+      "confidence": null,
+      "current_price": 235.565,
+      "return_pct": -21.9
     },
     {
       "ticker": "CBRS",
@@ -1721,17 +1757,8 @@
       "date": "2026-06-08",
       "entry_price": 243.31,
       "confidence": null,
-      "current_price": 192.72,
-      "return_pct": -20.8
-    },
-    {
-      "ticker": "NBIS",
-      "verdict": "WATCHLIST",
-      "date": "2026-05-28",
-      "entry_price": 220.385,
-      "confidence": null,
-      "current_price": 169.69,
-      "return_pct": -23.0
+      "current_price": 178.35,
+      "return_pct": -26.7
     },
     {
       "ticker": "MU",
@@ -1739,8 +1766,17 @@
       "date": "2026-06-29",
       "entry_price": 1106.595,
       "confidence": "MEDIUM",
-      "current_price": 820.53,
-      "return_pct": -25.9
+      "current_price": 790.73,
+      "return_pct": -28.5
+    },
+    {
+      "ticker": "NBIS",
+      "verdict": "WATCHLIST",
+      "date": "2026-05-28",
+      "entry_price": 220.385,
+      "confidence": null,
+      "current_price": 154.49,
+      "return_pct": -29.9
     },
     {
       "ticker": "LITE",
@@ -1748,8 +1784,8 @@
       "date": "2026-05-28",
       "entry_price": 890.7701,
       "confidence": null,
-      "current_price": 651.93,
-      "return_pct": -26.8
+      "current_price": 614.26,
+      "return_pct": -31.0
     },
     {
       "ticker": "OKLO",
@@ -1757,17 +1793,8 @@
       "date": "2026-05-28",
       "entry_price": 58.9,
       "confidence": null,
-      "current_price": 39.58,
-      "return_pct": -32.8
-    },
-    {
-      "ticker": "COHR",
-      "verdict": "WATCHLIST",
-      "date": "2026-06-08",
-      "entry_price": 401.625,
-      "confidence": null,
-      "current_price": 243.33,
-      "return_pct": -39.4
+      "current_price": 38.51,
+      "return_pct": -34.6
     },
     {
       "ticker": "MRVL",
@@ -1775,8 +1802,17 @@
       "date": "2026-06-08",
       "entry_price": 294.71,
       "confidence": null,
-      "current_price": 174.47,
-      "return_pct": -40.8
+      "current_price": 169.12,
+      "return_pct": -42.6
+    },
+    {
+      "ticker": "COHR",
+      "verdict": "WATCHLIST",
+      "date": "2026-06-08",
+      "entry_price": 401.625,
+      "confidence": null,
+      "current_price": 229.04,
+      "return_pct": -43.0
     }
   ]
 }
