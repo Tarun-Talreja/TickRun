@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T16:46:00Z",
+  "generated_at": "2026-07-29T18:01:55Z",
   "lookahead_days": 30,
   "upcoming_earnings": [
     {
@@ -13,16 +13,6 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py INVH after."
     },
     {
-      "ticker": "MA",
-      "name": "Mastercard Incorporated",
-      "date": "2026-07-30",
-      "days_until": 0,
-      "theme": "quality_compounder",
-      "verdict": "WATCHLIST",
-      "thesis": "Payments toll road like Visa \u2014 61% op margin, 16% growth, 21x fwd PE. -19% from ATH. Every digital transaction pays Mastercard regardless of cycle. Quality compounder on a rare sale.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py MA after."
-    },
-    {
       "ticker": "META",
       "name": "Meta Platforms, Inc.",
       "date": "2026-07-29",
@@ -31,6 +21,16 @@
       "verdict": "WATCHLIST",
       "thesis": "Meta offers a compelling growth story at a reasonable valuation of 16.1x forward earnings, with significant exposure to AI infrastructure theme.",
       "action": "Review thesis before earnings. Re-run research_ticker.py META after."
+    },
+    {
+      "ticker": "MA",
+      "name": "Mastercard Incorporated",
+      "date": "2026-07-30",
+      "days_until": 0,
+      "theme": "quality_compounder",
+      "verdict": "WATCHLIST",
+      "thesis": "Payments toll road like Visa \u2014 61% op margin, 16% growth, 21x fwd PE. -19% from ATH. Every digital transaction pays Mastercard regardless of cycle. Quality compounder on a rare sale.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py MA after."
     },
     {
       "ticker": "MSFT",
@@ -163,16 +163,6 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py FLUT after."
     },
     {
-      "ticker": "LLY",
-      "name": "Eli Lilly and Company",
-      "date": "2026-08-05",
-      "days_until": 6,
-      "theme": "uncategorized",
-      "verdict": "PASS",
-      "thesis": "GLP-1 drug leader (Mounjaro, Zepbound). 55% revenue growth, 82.8% gross margin. Exceptional business \u2014 no theme fit for this portfolio.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py LLY after."
-    },
-    {
       "ticker": "LMB",
       "name": "Limbach Holdings, Inc.",
       "date": "2026-08-04",
@@ -181,6 +171,16 @@
       "verdict": "PASS",
       "thesis": "Data center cooling infrastructure provider with a reasonable valuation at 14.3x forward earnings, poised for growth in the expanding data center market.",
       "action": "Review thesis before earnings. Re-run research_ticker.py LMB after."
+    },
+    {
+      "ticker": "LLY",
+      "name": "Eli Lilly and Company",
+      "date": "2026-08-05",
+      "days_until": 6,
+      "theme": "uncategorized",
+      "verdict": "PASS",
+      "thesis": "GLP-1 drug leader (Mounjaro, Zepbound). 55% revenue growth, 82.8% gross margin. Exceptional business \u2014 no theme fit for this portfolio.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py LLY after."
     },
     {
       "ticker": "PODD",
