@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T12:53:28Z",
+  "generated_at": "2026-07-30T15:09:52Z",
   "rules": {
     "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
     "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
@@ -25,7 +25,7 @@
       "name": "BWX Technologies, Inc.",
       "theme": "nuclear_smr",
       "verdict": "RESEARCH-WORTHY",
-      "div_yield_pct": 0.66,
+      "div_yield_pct": 0.63,
       "account": "ROTH",
       "priority": "high",
       "reason": "Highest-conviction growth pick (26% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
@@ -35,17 +35,27 @@
       "name": "EIX",
       "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 4.46,
+      "div_yield_pct": 4.53,
       "account": "ROTH",
       "priority": "high",
       "reason": "4.5% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
+    },
+    {
+      "ticker": "IBM",
+      "name": "International Business Machines Corporation",
+      "theme": "mega_cap_ai",
+      "verdict": "WATCHLIST",
+      "div_yield_pct": 3.07,
+      "account": "ROTH",
+      "priority": "high",
+      "reason": "3.1% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
     },
     {
       "ticker": "INVH",
       "name": "INVH",
       "theme": "real_estate",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 3.99,
+      "div_yield_pct": 4.06,
       "account": "ROTH",
       "priority": "high",
       "reason": "REIT \u2014 distributions are largely non-qualified and taxed as ordinary income, making this the most tax-inefficient asset class you hold. Sheltering it is worth more than sheltering an equivalent amount of growth stock."
@@ -55,10 +65,10 @@
       "name": "PAYX",
       "theme": "quality_compounder",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 3.9,
+      "div_yield_pct": 4.16,
       "account": "ROTH",
       "priority": "high",
-      "reason": "3.9% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
+      "reason": "4.2% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
     },
     {
       "ticker": "VRT",
@@ -75,7 +85,7 @@
       "name": "Apple Inc.",
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 0.32,
+      "div_yield_pct": 0.33,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -85,7 +95,7 @@
       "name": "ADP",
       "theme": "quality_compounder",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 2.49,
+      "div_yield_pct": 2.64,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -105,7 +115,7 @@
       "name": "ASML Holding N.V.",
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 0.59,
+      "div_yield_pct": 0.55,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -115,7 +125,7 @@
       "name": "Broadcom Inc.",
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 0.7,
+      "div_yield_pct": 0.68,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -125,7 +135,7 @@
       "name": "Constellation Energy Corporation",
       "theme": "nuclear_smr",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 0.66,
+      "div_yield_pct": 0.64,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -165,7 +175,7 @@
       "name": "Eaton Corporation plc",
       "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 1.22,
+      "div_yield_pct": 1.15,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -175,7 +185,7 @@
       "name": "GEHC",
       "theme": "healthcare_innovation",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 0.19,
+      "div_yield_pct": 0.2,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -186,16 +196,6 @@
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
       "div_yield_pct": 0.26,
-      "account": "ROTH",
-      "priority": "medium",
-      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
-    },
-    {
-      "ticker": "IBM",
-      "name": "International Business Machines Corporation",
-      "theme": "mega_cap_ai",
-      "verdict": "WATCHLIST",
-      "div_yield_pct": 2.99,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -235,7 +235,7 @@
       "name": "MA",
       "theme": "quality_compounder",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 0.62,
+      "div_yield_pct": 0.61,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -245,7 +245,7 @@
       "name": "Meta Platforms, Inc.",
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 0.36,
+      "div_yield_pct": 0.39,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -255,7 +255,7 @@
       "name": "MKTX",
       "theme": "financials",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 2.48,
+      "div_yield_pct": 1.91,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -265,7 +265,7 @@
       "name": "Marvell Technology, Inc.",
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 0.15,
+      "div_yield_pct": 0.13,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -275,7 +275,7 @@
       "name": "Microsoft Corporation",
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 0.93,
+      "div_yield_pct": 0.82,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -285,7 +285,7 @@
       "name": "Micron Technology, Inc.",
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 0.07,
+      "div_yield_pct": 0.06,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -315,7 +315,7 @@
       "name": "NVIDIA Corporation",
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 0.53,
+      "div_yield_pct": 0.51,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -325,7 +325,7 @@
       "name": "nVent Electric plc",
       "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 0.63,
+      "div_yield_pct": 0.58,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -345,7 +345,7 @@
       "name": "Powell Industries, Inc.",
       "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 0.19,
+      "div_yield_pct": 0.18,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -365,7 +365,7 @@
       "name": "Taiwan Semiconductor Manufacturing Company",
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 1.01,
+      "div_yield_pct": 0.95,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -375,7 +375,7 @@
       "name": "Tradeweb Markets Inc.",
       "theme": "financials",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 0.52,
+      "div_yield_pct": 0.59,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -385,7 +385,7 @@
       "name": "Visa Inc.",
       "theme": "platform_network",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 0.73,
+      "div_yield_pct": 0.74,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -395,7 +395,7 @@
       "name": "Vistra Corp.",
       "theme": "nuclear_smr",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 0.64,
+      "div_yield_pct": 0.61,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -405,7 +405,7 @@
       "name": "ZBH",
       "theme": "healthcare_innovation",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 0.99,
+      "div_yield_pct": 1.02,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -435,21 +435,31 @@
   ],
   "tax_drag_overrides": [
     {
+      "ticker": "IBM",
+      "name": "International Business Machines Corporation",
+      "theme": "mega_cap_ai",
+      "verdict": "WATCHLIST",
+      "div_yield_pct": 3.07,
+      "account": "ROTH",
+      "priority": "high",
+      "reason": "3.1% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
+    },
+    {
       "ticker": "PAYX",
       "name": "PAYX",
       "theme": "quality_compounder",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 3.9,
+      "div_yield_pct": 4.16,
       "account": "ROTH",
       "priority": "high",
-      "reason": "3.9% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
+      "reason": "4.2% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
     },
     {
       "ticker": "INVH",
       "name": "INVH",
       "theme": "real_estate",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 3.99,
+      "div_yield_pct": 4.06,
       "account": "ROTH",
       "priority": "high",
       "reason": "REIT \u2014 distributions are largely non-qualified and taxed as ordinary income, making this the most tax-inefficient asset class you hold. Sheltering it is worth more than sheltering an equivalent amount of growth stock."
@@ -459,7 +469,7 @@
       "name": "EIX",
       "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 4.46,
+      "div_yield_pct": 4.53,
       "account": "ROTH",
       "priority": "high",
       "reason": "4.5% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
