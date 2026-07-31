@@ -1,15 +1,26 @@
 {
-  "generated_at": "2026-07-30T23:07:16Z",
+  "generated_at": "2026-07-31T15:20:20Z",
   "hits": [
+    {
+      "ticker": "RDDT",
+      "name": "Reddit, Inc.",
+      "verdict": "WATCHLIST",
+      "confidence": "MEDIUM",
+      "theme": "platform_network",
+      "price": 138.2399,
+      "buy_target": 226.36,
+      "gap_pct": -38.9,
+      "next_action": "WAIT \u2014 High-growth consumer/media company with reasonable valuation relative to growth, but not directly aligned with target themes. Revisit at 20% below the 52-week high."
+    },
     {
       "ticker": "PODD",
       "name": "Insulet Corporation",
       "verdict": "WATCHLIST",
       "confidence": "MEDIUM",
       "theme": "healthcare_innovation",
-      "price": 165.68,
+      "price": 163.79,
       "buy_target": 266.16,
-      "gap_pct": -37.8,
+      "gap_pct": -38.5,
       "next_action": "WAIT \u2014 High-growth medical device company with a strong market position and high gross margin, but with a relatively high valuation. Revisit at 25% below the 52-week high."
     },
     {
@@ -18,43 +29,10 @@
       "verdict": "WATCHLIST",
       "confidence": "MEDIUM",
       "theme": "healthcare_innovation",
-      "price": 352.97,
+      "price": 349.93,
       "buy_target": 483.1,
-      "gap_pct": -26.9,
+      "gap_pct": -27.6,
       "next_action": "WAIT \u2014 High-quality robotics play with strong growth prospects at a reasonable valuation. Revisit at 20% below the 52-week high."
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "verdict": "WATCHLIST",
-      "confidence": "MEDIUM",
-      "theme": "cybersecurity",
-      "price": 110.07,
-      "buy_target": 147.3,
-      "gap_pct": -25.3,
-      "next_action": "WAIT \u2014 Enterprise software company with strong revenue growth and positive free cash flow, but expensive valuation multiples. Revisit at 25% below the 52-week high."
-    },
-    {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings Co",
-      "verdict": "RESEARCH-WORTHY",
-      "confidence": "MEDIUM",
-      "theme": "power_grid",
-      "price": 227.5,
-      "buy_target": 303.95,
-      "gap_pct": -25.2,
-      "next_action": "RESEARCH \u2014 Vertiv is a high-growth AI infrastructure play with expanding operating margins and a critical role in supporting data center demand. Current levels already clear the entry bar."
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "verdict": "WATCHLIST",
-      "confidence": "MEDIUM",
-      "theme": "networking_infra",
-      "price": 249.06,
-      "buy_target": 330.0,
-      "gap_pct": -24.5,
-      "next_action": "WAIT \u2014 Coherent Corp. is a high-growth laser technology company with a strong position in AI infrastructure, but its valuation is relatively high. Revisit at 25% below the 52-week high."
     },
     {
       "ticker": "NFLX",
@@ -62,21 +40,43 @@
       "verdict": "WATCHLIST",
       "confidence": "MEDIUM",
       "theme": "consumer_media",
-      "price": 73.17,
+      "price": 71.625,
       "buy_target": 95.03,
-      "gap_pct": -23.0,
+      "gap_pct": -24.6,
       "next_action": "WAIT \u2014 Netflix is a high-quality media company with a strong competitive moat and growth opportunity, but its valuation is not yet compelling. Revisit at 25% below the 52-week high."
     },
     {
-      "ticker": "RDDT",
-      "name": "Reddit, Inc.",
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
       "verdict": "WATCHLIST",
       "confidence": "MEDIUM",
-      "theme": "platform_network",
-      "price": 178.04,
-      "buy_target": 226.36,
-      "gap_pct": -21.3,
-      "next_action": "WAIT \u2014 High-growth consumer/media company with reasonable valuation relative to growth, but not directly aligned with target themes. Revisit at 20% below the 52-week high."
+      "theme": "edge_ai_silicon",
+      "price": 191.38,
+      "buy_target": 247.41,
+      "gap_pct": -22.6,
+      "next_action": "WAIT \u2014 High-growth semiconductor company with strong revenue and free cash flow, but high valuation and potential risks. Revisit at 25% below the 52-week high."
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "verdict": "WATCHLIST",
+      "confidence": "MEDIUM",
+      "theme": "networking_infra",
+      "price": 261.34,
+      "buy_target": 330.0,
+      "gap_pct": -20.8,
+      "next_action": "WAIT \u2014 Coherent Corp. is a high-growth laser technology company with a strong position in AI infrastructure, but its valuation is relatively high. Revisit at 25% below the 52-week high."
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings Co",
+      "verdict": "RESEARCH-WORTHY",
+      "confidence": "MEDIUM",
+      "theme": "power_grid",
+      "price": 241.36,
+      "buy_target": 303.95,
+      "gap_pct": -20.6,
+      "next_action": "RESEARCH \u2014 Vertiv is a high-growth AI infrastructure play with expanding operating margins and a critical role in supporting data center demand. Current levels already clear the entry bar."
     },
     {
       "ticker": "LITE",
@@ -84,9 +84,9 @@
       "verdict": "WATCHLIST",
       "confidence": "MEDIUM",
       "theme": "networking_infra",
-      "price": 693.24,
+      "price": 707.5,
       "buy_target": 868.54,
-      "gap_pct": -20.2,
+      "gap_pct": -18.5,
       "next_action": "WAIT \u2014 High-growth AI infrastructure play at 41.6x forward earnings for 90%+ growth. Revisit at 20% below the 52-week high."
     },
     {
@@ -95,65 +95,10 @@
       "verdict": "WATCHLIST",
       "confidence": "MEDIUM",
       "theme": "mega_cap_ai",
-      "price": 221.74,
+      "price": 219.1,
       "buy_target": 265.97,
-      "gap_pct": -16.6,
+      "gap_pct": -17.6,
       "next_action": "WAIT \u2014 Large-cap technology company with significant AI infrastructure exposure trading at a reasonable forward P/E of 16.2x for modest growth. Revisit at 20% below the 52-week high."
-    },
-    {
-      "ticker": "TW",
-      "name": "Tradeweb Markets Inc.",
-      "verdict": "WATCHLIST",
-      "confidence": "MEDIUM",
-      "theme": "financials",
-      "price": 97.8,
-      "buy_target": 115.58,
-      "gap_pct": -15.4,
-      "next_action": "WAIT \u2014 Tradeweb is a high-quality financial technology company with a strong growth profile, but its valuation is not extremely cheap and its dependence on large clients poses a risk. Revisit at 20% below the 52-week high."
-    },
-    {
-      "ticker": "POWL",
-      "name": "Powell Industries, Inc.",
-      "verdict": "WATCHLIST",
-      "confidence": "MEDIUM",
-      "theme": "power_grid",
-      "price": 209.3,
-      "buy_target": 246.0,
-      "gap_pct": -14.9,
-      "next_action": "WAIT \u2014 Powell Industries is a high-quality company with a strong track record of generating free cash flow, but its valuation multiple is stretched. Revisit at 25% below the 52-week high."
-    },
-    {
-      "ticker": "CEG",
-      "name": "Constellation Energy Corporation",
-      "verdict": "WATCHLIST",
-      "confidence": "MEDIUM",
-      "theme": "nuclear_smr",
-      "price": 263.56,
-      "buy_target": 309.52,
-      "gap_pct": -14.8,
-      "next_action": "WAIT \u2014 Reasonable valuation at 19.4x forward earnings for 63.8% growth, but concerns around negative free cash flow and significant net debt. Revisit at 25% below the 52-week high."
-    },
-    {
-      "ticker": "BWXT",
-      "name": "BWX Technologies, Inc.",
-      "verdict": "RESEARCH-WORTHY",
-      "confidence": "MEDIUM",
-      "theme": "nuclear_smr",
-      "price": 165.59,
-      "buy_target": 193.46,
-      "gap_pct": -14.4,
-      "next_action": "RESEARCH \u2014 Reasonably valued nuclear energy play with strong revenue growth and a significant backlog of orders. Current levels already clear the entry bar."
-    },
-    {
-      "ticker": "CRDO",
-      "name": "Credo Technology Group Holding Ltd",
-      "verdict": "WATCHLIST",
-      "confidence": "HIGH",
-      "theme": "edge_ai_silicon",
-      "price": 201.08,
-      "buy_target": 231.5,
-      "gap_pct": -13.1,
-      "next_action": "WAIT \u2014 Pure-play AI interconnect with a semiconductor margin structure (68% GM, ~36% op margin) on a net-cash balance sheet. Revisit at 25% below the 52-week high."
     },
     {
       "ticker": "MU",
@@ -161,10 +106,43 @@
       "verdict": "WATCHLIST",
       "confidence": "MEDIUM",
       "theme": "edge_ai_silicon",
-      "price": 874.66,
+      "price": 838.2552,
       "buy_target": 1004.0,
-      "gap_pct": -12.9,
+      "gap_pct": -16.5,
       "next_action": "WAIT \u2014 Micron is a leading memory and storage solutions provider with strong revenue growth and a solid balance sheet, trading at a reasonable valuation. Revisit at 20% below the 52-week high."
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy Corporation",
+      "verdict": "WATCHLIST",
+      "confidence": "MEDIUM",
+      "theme": "nuclear_smr",
+      "price": 261.81,
+      "buy_target": 309.52,
+      "gap_pct": -15.4,
+      "next_action": "WAIT \u2014 Reasonable valuation at 19.4x forward earnings for 63.8% growth, but concerns around negative free cash flow and significant net debt. Revisit at 25% below the 52-week high."
+    },
+    {
+      "ticker": "POWL",
+      "name": "Powell Industries, Inc.",
+      "verdict": "WATCHLIST",
+      "confidence": "MEDIUM",
+      "theme": "power_grid",
+      "price": 215.65,
+      "buy_target": 246.0,
+      "gap_pct": -12.3,
+      "next_action": "WAIT \u2014 Powell Industries is a high-quality company with a strong track record of generating free cash flow, but its valuation multiple is stretched. Revisit at 25% below the 52-week high."
+    },
+    {
+      "ticker": "TW",
+      "name": "Tradeweb Markets Inc.",
+      "verdict": "WATCHLIST",
+      "confidence": "MEDIUM",
+      "theme": "financials",
+      "price": 100.24,
+      "buy_target": 112.9,
+      "gap_pct": -11.2,
+      "next_action": "WAIT \u2014 Tradeweb is a high-quality financial technology company with a strong growth profile, but its valuation is not extremely cheap and its dependence on large clients poses a risk. Revisit at 20% below the 52-week high."
     },
     {
       "ticker": "VST",
@@ -172,10 +150,21 @@
       "verdict": "WATCHLIST",
       "confidence": "MEDIUM",
       "theme": "nuclear_smr",
-      "price": 148.62,
+      "price": 147.275,
       "buy_target": 164.87,
-      "gap_pct": -9.9,
+      "gap_pct": -10.7,
       "next_action": "WAIT \u2014 Vistra Corp. is a high-growth utility company with a strong operating margin, but its high net debt and negative free cash flow pose significant risks. Revisit at 25% below the 52-week high."
+    },
+    {
+      "ticker": "CRDO",
+      "name": "Credo Technology Group Holding Ltd",
+      "verdict": "WATCHLIST",
+      "confidence": "HIGH",
+      "theme": "edge_ai_silicon",
+      "price": 209.175,
+      "buy_target": 231.5,
+      "gap_pct": -9.6,
+      "next_action": "WAIT \u2014 Pure-play AI interconnect with a semiconductor margin structure (68% GM, ~36% op margin) on a net-cash balance sheet. Revisit at 25% below the 52-week high."
     },
     {
       "ticker": "META",
@@ -183,21 +172,21 @@
       "verdict": "WATCHLIST",
       "confidence": "MEDIUM",
       "theme": "mega_cap_ai",
-      "price": 539.03,
+      "price": 547.5773,
       "buy_target": 597.19,
-      "gap_pct": -9.7,
+      "gap_pct": -8.3,
       "next_action": "WAIT \u2014 Meta offers a compelling growth story at a reasonable valuation of 16.1x forward earnings, with significant exposure to AI infrastructure theme. Revisit at 25% below the 52-week high."
     },
     {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
+      "ticker": "BWXT",
+      "name": "BWX Technologies, Inc.",
       "verdict": "WATCHLIST",
       "confidence": "MEDIUM",
-      "theme": "edge_ai_silicon",
-      "price": 183.3,
-      "buy_target": 194.63,
-      "gap_pct": -5.8,
-      "next_action": "WAIT \u2014 Marvell Technology is a high-growth AI infrastructure and data center power play at 31x forward earnings. Revisit at 41% below the 52-week high."
+      "theme": "nuclear_smr",
+      "price": 167.22,
+      "buy_target": 181.37,
+      "gap_pct": -7.8,
+      "next_action": "WAIT \u2014 Fairly valued nuclear energy play with 26% YoY revenue growth and a stable government contract base. Revisit at 25% below the 52-week high."
     },
     {
       "ticker": "AVGO",
@@ -205,10 +194,32 @@
       "verdict": "WATCHLIST",
       "confidence": "MEDIUM",
       "theme": "edge_ai_silicon",
-      "price": 387.84,
+      "price": 386.42,
       "buy_target": 400,
-      "gap_pct": -3.0,
+      "gap_pct": -3.4,
       "next_action": "RESEARCH \u2014 verify Google/Meta XPU contract durations in 10-K. At -4.6% from high, entry is acceptable at current price or on any 10% dip to ~$380."
+    },
+    {
+      "ticker": "CLS",
+      "name": "Celestica Inc.",
+      "verdict": "WATCHLIST",
+      "confidence": "MEDIUM",
+      "theme": "datacenter_infra",
+      "price": 345.17,
+      "buy_target": 355.52,
+      "gap_pct": -2.9,
+      "next_action": "WAIT \u2014 High-growth manufacturing and supply chain management company with a strong operating margin, but high valuation multiples and net debt. Revisit at 25% below the 52-week high."
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "verdict": "WATCHLIST",
+      "confidence": "MEDIUM",
+      "theme": "mega_cap_ai",
+      "price": 302.575,
+      "buy_target": 310.11,
+      "gap_pct": -2.4,
+      "next_action": "WAIT \u2014 High-quality technology company with strong brand and cash flow generation, valued at a premium to its peers. Revisit at 10% below the 52-week high."
     },
     {
       "ticker": "TSM",
@@ -216,9 +227,9 @@
       "verdict": "WATCHLIST",
       "confidence": null,
       "theme": "edge_ai_silicon",
-      "price": 403.31,
+      "price": 405.73,
       "buy_target": 415,
-      "gap_pct": -2.8,
+      "gap_pct": -2.2,
       "next_action": "RESEARCH \u2014 most direct AI chip infrastructure play. Verify Arizona fab timeline and CoWoS capacity bookings in latest earnings. At -1.8% from 52w high, wait for 10% dip to ~$385 for better entry."
     },
     {
@@ -227,21 +238,21 @@
       "verdict": "WATCHLIST",
       "confidence": "MEDIUM",
       "theme": "power_grid",
-      "price": 386.89,
+      "price": 400.715,
       "buy_target": 393.07,
-      "gap_pct": -1.6,
+      "gap_pct": 1.9,
       "next_action": "WAIT \u2014 Diversified industrial equipment company with strong growth prospects in the data center and grid infrastructure sectors, trading at a forward P/E of 25.6x. Revisit at 10% below the 52-week high."
     },
     {
-      "ticker": "CLS",
-      "name": "Celestica Inc.",
+      "ticker": "EIX",
+      "name": "EIX",
       "verdict": "WATCHLIST",
       "confidence": "MEDIUM",
-      "theme": "datacenter_infra",
-      "price": 352.59,
-      "buy_target": 355.52,
-      "gap_pct": -0.8,
-      "next_action": "WAIT \u2014 High-growth manufacturing and supply chain management company with a strong operating margin, but high valuation multiples and net debt. Revisit at 25% below the 52-week high."
+      "theme": "power_grid",
+      "price": 74.82,
+      "buy_target": 73.46,
+      "gap_pct": 1.9,
+      "next_action": "WAIT \u2014 Edison International offers a relatively cheap valuation at 8.7x trailing earnings for a stable utility company with 7.7% YoY revenue growth. Revisit at 10% below the 52-week high."
     },
     {
       "ticker": "MSFT",
@@ -249,21 +260,10 @@
       "verdict": "WATCHLIST",
       "confidence": "HIGH",
       "theme": "mega_cap_ai",
-      "price": 451.1,
-      "buy_target": 444.36,
-      "gap_pct": 1.5,
+      "price": 454.61,
+      "buy_target": 442.98,
+      "gap_pct": 2.6,
       "next_action": "WAIT \u2014 Microsoft is a high-quality tech company with a strong growth profile and reasonable valuation. Revisit at 20% below the 52-week high."
-    },
-    {
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc.",
-      "verdict": "WATCHLIST",
-      "confidence": "HIGH",
-      "theme": "mega_cap_ai",
-      "price": 333.66,
-      "buy_target": 326.89,
-      "gap_pct": 2.1,
-      "next_action": "WAIT \u2014 Leader in AI research and development with strong revenue growth and free cash flow generation, trading at a reasonable valuation multiple. Revisit at 20% below the 52-week high."
     }
   ],
   "approaching": [
@@ -273,9 +273,9 @@
       "verdict": "WATCHLIST",
       "confidence": "HIGH",
       "theme": "mega_cap_ai",
-      "price": 195.04,
+      "price": 196.97,
       "buy_target": 189.23,
-      "gap_pct": 3.1,
+      "gap_pct": 4.1,
       "next_action": "WAIT \u2014 Leading AI infrastructure play with strong growth prospects and reasonable valuation at 16.1x forward earnings. Revisit at 20% below the 52-week high."
     },
     {
@@ -284,21 +284,10 @@
       "verdict": "WATCHLIST",
       "confidence": "HIGH",
       "theme": "edge_ai_silicon",
-      "price": 485.39,
+      "price": 490.615,
       "buy_target": 467.78,
-      "gap_pct": 3.8,
+      "gap_pct": 4.9,
       "next_action": "WAIT \u2014 High-growth AI infrastructure play with strong margins and free cash flow generation, trading at a premium valuation. Revisit at 20% below the 52-week high."
-    },
-    {
-      "ticker": "NVT",
-      "name": "nVent Electric plc",
-      "verdict": "WATCHLIST",
-      "confidence": "MEDIUM",
-      "theme": "power_grid",
-      "price": 144.8,
-      "buy_target": 138.48,
-      "gap_pct": 4.6,
-      "next_action": "WAIT \u2014 Reasonably valued data center power play with strong backlog growth. Revisit at 25% below the 52-week high."
     },
     {
       "ticker": "INVH",
@@ -306,54 +295,10 @@
       "verdict": "WATCHLIST",
       "confidence": "MEDIUM",
       "theme": "real_estate",
-      "price": 29.67,
+      "price": 29.715,
       "buy_target": 28.24,
-      "gap_pct": 5.1,
+      "gap_pct": 5.2,
       "next_action": "WAIT \u2014 Invitation Homes is a fairly valued single-family home REIT with stable cash flow generation and growth prospects. Revisit at 10% below the 52-week high."
-    },
-    {
-      "ticker": "AMZN",
-      "name": "Amazon.com, Inc.",
-      "verdict": "RESEARCH-WORTHY",
-      "confidence": "MEDIUM",
-      "theme": "mega_cap_ai",
-      "price": 235.5,
-      "buy_target": 222.85,
-      "gap_pct": 5.7,
-      "next_action": "RESEARCH \u2014 Large-cap technology company with strong revenue growth and profitability, trading at a reasonable valuation multiple. Current levels already clear the entry bar."
-    },
-    {
-      "ticker": "EIX",
-      "name": "EIX",
-      "verdict": "WATCHLIST",
-      "confidence": "MEDIUM",
-      "theme": "power_grid",
-      "price": 78.73,
-      "buy_target": 73.46,
-      "gap_pct": 7.2,
-      "next_action": "WAIT \u2014 Edison International offers a relatively cheap valuation at 8.7x trailing earnings for a stable utility company with 7.7% YoY revenue growth. Revisit at 10% below the 52-week high."
-    },
-    {
-      "ticker": "AAPL",
-      "name": "Apple Inc.",
-      "verdict": "WATCHLIST",
-      "confidence": "MEDIUM",
-      "theme": "mega_cap_ai",
-      "price": 333.43,
-      "buy_target": 310.11,
-      "gap_pct": 7.5,
-      "next_action": "WAIT \u2014 High-quality technology company with strong brand and cash flow generation, valued at a premium to its peers. Revisit at 10% below the 52-week high."
-    },
-    {
-      "ticker": "V",
-      "name": "Visa Inc.",
-      "verdict": "WATCHLIST",
-      "confidence": "HIGH",
-      "theme": "platform_network",
-      "price": 366.27,
-      "buy_target": 336.57,
-      "gap_pct": 8.8,
-      "next_action": "WAIT \u2014 High-quality payment technology company with a strong brand and wide moat, trading at a forward P/E of 23.9x for 17.1% revenue growth. Revisit at 10% below the 52-week high."
     },
     {
       "ticker": "GEHC",
@@ -361,10 +306,43 @@
       "verdict": "WATCHLIST",
       "confidence": "MEDIUM",
       "theme": "healthcare_innovation",
-      "price": 69.94,
+      "price": 67.425,
       "buy_target": 64,
-      "gap_pct": 9.3,
+      "gap_pct": 5.4,
       "next_action": "RESEARCH \u2014 AI imaging at 12x fwd PE after 28% pullback. Verify order backlog."
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc.",
+      "verdict": "WATCHLIST",
+      "confidence": "HIGH",
+      "theme": "mega_cap_ai",
+      "price": 349.7,
+      "buy_target": 326.89,
+      "gap_pct": 7.0,
+      "next_action": "WAIT \u2014 Leader in AI research and development with strong revenue growth and free cash flow generation, trading at a reasonable valuation multiple. Revisit at 20% below the 52-week high."
+    },
+    {
+      "ticker": "V",
+      "name": "Visa Inc.",
+      "verdict": "WATCHLIST",
+      "confidence": "HIGH",
+      "theme": "platform_network",
+      "price": 364.05,
+      "buy_target": 336.57,
+      "gap_pct": 8.2,
+      "next_action": "WAIT \u2014 High-quality payment technology company with a strong brand and wide moat, trading at a forward P/E of 23.9x for 17.1% revenue growth. Revisit at 10% below the 52-week high."
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML Holding N.V.",
+      "verdict": "WATCHLIST",
+      "confidence": "MEDIUM",
+      "theme": "edge_ai_silicon",
+      "price": 1649.41,
+      "buy_target": 1499.97,
+      "gap_pct": 10.0,
+      "next_action": "WAIT \u2014 ASML is a high-quality AI infrastructure play with strong revenue growth and high margins, but its valuation is expensive relative to its growth and quality. Revisit at 25% below the 52-week high."
     }
   ]
 }

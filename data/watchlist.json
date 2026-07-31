@@ -28,7 +28,7 @@
       "thesis": "Microsoft is a high-quality tech company with a strong growth profile and reasonable valuation.",
       "added": "2026-04-25",
       "verdict": "WATCHLIST",
-      "buy_target": 444.36,
+      "buy_target": 442.98,
       "current_price": 423.88,
       "next_action": "WAIT \u2014 Microsoft is a high-quality tech company with a strong growth profile and reasonable valuation. Revisit at 20% below the 52-week high.",
       "research_file": "output/research/MSFT_2026-07-27.md",
@@ -812,7 +812,8 @@
       "downgraded_2026_07_25": true,
       "research_source": "deep_research_2026-07-25",
       "llm_verdict": "PASS",
-      "buy_trigger_drawdown_pct": -30.0
+      "buy_trigger_drawdown_pct": -30.0,
+      "no_pullback_gate": false
     },
     {
       "ticker": "LPLA",
@@ -840,7 +841,7 @@
       "thesis": "Tradeweb is a high-quality financial technology company with a strong growth profile, but its valuation is not extremely cheap and its dependence on large clients poses a risk.",
       "added": "2026-07-25",
       "verdict": "WATCHLIST",
-      "buy_target": 115.58,
+      "buy_target": 112.9,
       "current_price": null,
       "next_action": "WAIT \u2014 Tradeweb is a high-quality financial technology company with a strong growth profile, but its valuation is not extremely cheap and its dependence on large clients poses a risk. Revisit at 20% below the 52-week high.",
       "research_file": "output/research/TW_2026-07-26.md",
@@ -937,7 +938,7 @@
       "thesis": "Data center cooling infrastructure provider with a reasonable valuation at 14.3x forward earnings, poised for growth in the expanding data center market.",
       "added": "2026-06-08",
       "verdict": "PASS",
-      "buy_target": 112.94,
+      "buy_target": 110.49,
       "current_price": null,
       "next_action": "DROP \u2014 Data center cooling infrastructure provider with a reasonable valuation at 14.3x forward earnings, poised for growth in the expanding data center market.",
       "research_file": "output/research/LMB_2026-07-25.md",
