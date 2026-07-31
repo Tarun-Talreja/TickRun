@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-30T23:07:16Z",
+  "generated_at": "2026-07-31T13:13:17Z",
   "rules": {
     "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
     "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
     "high_yield_threshold_pct": 3.0
   },
   "counts": {
-    "roth": 40,
+    "roth": 39,
     "taxable": 2
   },
   "roth": [
@@ -18,17 +18,7 @@
       "div_yield_pct": null,
       "account": "ROTH",
       "priority": "high",
-      "reason": "Highest-conviction growth pick (17% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
-    },
-    {
-      "ticker": "BWXT",
-      "name": "BWX Technologies, Inc.",
-      "theme": "nuclear_smr",
-      "verdict": "RESEARCH-WORTHY",
-      "div_yield_pct": 0.63,
-      "account": "ROTH",
-      "priority": "high",
-      "reason": "Highest-conviction growth pick (26% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+      "reason": "Highest-conviction growth pick (20% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
     },
     {
       "ticker": "EIX",
@@ -126,6 +116,16 @@
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
       "div_yield_pct": 0.67,
+      "account": "ROTH",
+      "priority": "medium",
+      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+    },
+    {
+      "ticker": "BWXT",
+      "name": "BWX Technologies, Inc.",
+      "theme": "nuclear_smr",
+      "verdict": "WATCHLIST",
+      "div_yield_pct": 0.63,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -246,16 +246,6 @@
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
       "div_yield_pct": 0.39,
-      "account": "ROTH",
-      "priority": "medium",
-      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
-    },
-    {
-      "ticker": "MKTX",
-      "name": "MKTX",
-      "theme": "financials",
-      "verdict": "WATCHLIST",
-      "div_yield_pct": 1.92,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
