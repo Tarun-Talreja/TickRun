@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T15:13:22Z",
+  "generated_at": "2026-07-31T17:00:55Z",
   "lookahead_days": 30,
   "upcoming_earnings": [
     {
@@ -43,16 +43,6 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py FLUT after."
     },
     {
-      "ticker": "LLY",
-      "name": "Eli Lilly and Company",
-      "date": "2026-08-05",
-      "days_until": 4,
-      "theme": "uncategorized",
-      "verdict": "PASS",
-      "thesis": "GLP-1 drug leader (Mounjaro, Zepbound). 55% revenue growth, 82.8% gross margin. Exceptional business \u2014 no theme fit for this portfolio.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py LLY after."
-    },
-    {
       "ticker": "LMB",
       "name": "Limbach Holdings, Inc.",
       "date": "2026-08-04",
@@ -61,6 +51,16 @@
       "verdict": "PASS",
       "thesis": "Data center cooling infrastructure provider with a reasonable valuation at 14.3x forward earnings, poised for growth in the expanding data center market.",
       "action": "Review thesis before earnings. Re-run research_ticker.py LMB after."
+    },
+    {
+      "ticker": "LLY",
+      "name": "Eli Lilly and Company",
+      "date": "2026-08-05",
+      "days_until": 4,
+      "theme": "uncategorized",
+      "verdict": "PASS",
+      "thesis": "GLP-1 drug leader (Mounjaro, Zepbound). 55% revenue growth, 82.8% gross margin. Exceptional business \u2014 no theme fit for this portfolio.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py LLY after."
     },
     {
       "ticker": "PODD",
