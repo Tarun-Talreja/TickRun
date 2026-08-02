@@ -1,18 +1,6 @@
 {
-  "generated_at": "2026-07-31T22:55:28Z",
+  "generated_at": "2026-08-02T22:43:11Z",
   "pullback_alerts": [
-    {
-      "ticker": "PODD",
-      "name": "Insulet Corporation",
-      "theme": "healthcare_innovation",
-      "verdict": "WATCHLIST",
-      "price": 165.35,
-      "high_52w": 354.88,
-      "drawdown_pct": -53.4,
-      "severity": "STRONG",
-      "thesis": "High-growth medical device company with a strong market position and high gross margin, but with a relatively high valuation.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
     {
       "ticker": "RDDT",
       "name": "Reddit, Inc.",
@@ -34,7 +22,7 @@
       "high_52w": 126.71,
       "drawdown_pct": -43.4,
       "severity": "STRONG",
-      "thesis": "Netflix is a high-quality media company with a strong competitive moat and growth opportunity, but its valuation is not yet compelling.",
+      "thesis": "Netflix is a quality streaming service with a competitive advantage, but its valuation is relatively high at 18.8x forward earnings.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -101,12 +89,12 @@
       "ticker": "VRT",
       "name": "Vertiv Holdings Co",
       "theme": "power_grid",
-      "verdict": "RESEARCH-WORTHY",
+      "verdict": "WATCHLIST",
       "price": 241.57,
       "high_52w": 379.935,
       "drawdown_pct": -36.4,
       "severity": "STRONG",
-      "thesis": "Vertiv is a high-growth AI infrastructure play with expanding operating margins and a critical role in supporting data center demand.",
+      "thesis": "Vertiv is a high-growth AI infrastructure play with a strong track record of execution and a premium valuation.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -142,7 +130,7 @@
       "high_52w": 1085.68,
       "drawdown_pct": -34.2,
       "severity": "MODERATE",
-      "thesis": "High-growth AI infrastructure play at 41.6x forward earnings for 90%+ growth.",
+      "thesis": "Lumentum is a high-growth optical communications company with a strong product portfolio and a relatively stable financial position.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -154,7 +142,7 @@
       "high_52w": 308.67,
       "drawdown_pct": -32.9,
       "severity": "MODERATE",
-      "thesis": "Pure-play AI interconnect with a semiconductor margin structure (68% GM, ~36% op margin) on a net-cash balance sheet. At ~30x sales with the top three customers at 77% of revenue, no execution risk is priced in.",
+      "thesis": "High-growth AI infrastructure play with strong margins and a high valuation multiple.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -166,7 +154,7 @@
       "high_52w": 332.46,
       "drawdown_pct": -32.7,
       "severity": "MODERATE",
-      "thesis": "Large-cap technology company with significant AI infrastructure exposure trading at a reasonable forward P/E of 16.2x for modest growth.",
+      "thesis": "Large-cap AI infrastructure play with reasonable valuation multiples and a strong backlog of contracts.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -214,7 +202,7 @@
       "high_52w": 796.25,
       "drawdown_pct": -30.1,
       "severity": "MODERATE",
-      "thesis": "Meta offers a compelling growth story at a reasonable valuation of 16.1x forward earnings, with significant exposure to AI infrastructure theme.",
+      "thesis": "Reasonable valuation at 15.7x forward earnings for 28% growth, with a strong position in emerging technologies.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -226,7 +214,7 @@
       "high_52w": 141.13,
       "drawdown_pct": -28.8,
       "severity": "MODERATE",
-      "thesis": "Tradeweb is a high-quality financial technology company with a strong growth profile, but its valuation is not extremely cheap and its dependence on large clients poses a risk.",
+      "thesis": "Tradeweb Markets Inc. is a high-margin financial services company with stable revenue growth, but its valuation appears to be fair and not particularly cheap.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -250,7 +238,7 @@
       "high_52w": 495.0,
       "drawdown_pct": -21.4,
       "severity": "MODERATE",
-      "thesis": "Second-largest AI chip company by revenue. Designs custom XPU accelerators for Google (TPU) and Meta (MTIA) \u2014 both committed to $1B+ AVGO roadmaps through 2027. VMware integration completing, op margin should expand from 45% to 55%+. Networking silicon (Tomahawk switches) is a winner-take-most market for AI cluster fabric. 29.5% revenue growth, 23x forward PE.",
+      "thesis": "High-growth semiconductor company with strong margins and free cash flow generation, trading at a premium valuation.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     }
   ],

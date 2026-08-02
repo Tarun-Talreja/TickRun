@@ -1,258 +1,124 @@
 {
-  "generated_at": "2026-07-26T22:48:22Z",
-  "narrative": "This week, several stocks experienced significant declines, including NBIS, which fell 15.02% due to a broader AI/tech selloff. Other notable decliners included CRDO, COHR, CBRS, CLS, and OKLO, although no clear catalysts were identified for these moves. Looking ahead, several companies are set to report earnings in the coming days, including CLS, which reports today, and a slew of other companies that will report later this week, such as V, ADP, and META.",
-  "buy_ready": [
+  "generated_at": "2026-08-02T22:43:39Z",
+  "narrative": "This week, several stocks experienced significant price movements, including AMZN with a 15.32% gain and RDDT with a -20.99% loss. With no clear catalysts reported, it's essential to monitor these stocks for further developments. In the coming days, earnings reports are scheduled for several companies, including BWXT and POWL on August 3, and AMD on August 4, which may impact their stock prices and the overall market.",
+  "buy_ready": [],
+  "movers": [
     {
-      "ticker": "BWXT",
-      "name": "BWX Technologies, Inc.",
-      "price": 174.52,
-      "buy_target": 174.52,
-      "at_or_below_target": true,
-      "confidence": "HIGH",
-      "theme": "nuclear_smr"
-    },
-    {
-      "ticker": "NVT",
-      "name": "nVent Electric plc",
-      "price": 151.79,
-      "buy_target": 151.79,
-      "at_or_below_target": true,
-      "confidence": "MEDIUM",
-      "theme": "power_grid"
-    },
-    {
-      "ticker": "ISRG",
-      "name": "Intuitive Surgical, Inc.",
-      "price": 337.5,
-      "buy_target": 337.5,
-      "at_or_below_target": true,
-      "confidence": "MEDIUM",
-      "theme": "healthcare_innovation"
-    },
-    {
-      "ticker": "PODD",
-      "name": "Insulet Corporation",
-      "price": 163.26,
-      "buy_target": 163.26,
-      "at_or_below_target": true,
-      "confidence": "MEDIUM",
-      "theme": "healthcare_innovation"
-    },
-    {
-      "ticker": "CLS",
-      "name": "Celestica Inc.",
-      "price": 305.28,
-      "buy_target": 305.28,
-      "at_or_below_target": true,
-      "confidence": "HIGH",
-      "theme": "datacenter_infra"
+      "ticker": "RDDT",
+      "pct": -20.99,
+      "reason": "No clear catalyst in current news."
     },
     {
       "ticker": "AMZN",
-      "name": "Amazon.com, Inc.",
-      "price": 232.11,
-      "buy_target": 222.85,
-      "at_or_below_target": false,
-      "confidence": "MEDIUM",
-      "theme": "mega_cap_ai"
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "price": 282.39,
-      "buy_target": 264.0,
-      "at_or_below_target": false,
-      "confidence": "MEDIUM",
-      "theme": "networking_infra"
-    }
-  ],
-  "movers": [
-    {
-      "ticker": "NBIS",
-      "pct": -15.02,
-      "reason": "Part of a broader AI/tech selloff, not company-specific."
-    },
-    {
-      "ticker": "CRDO",
-      "pct": -9.87,
+      "pct": 15.32,
       "reason": "No clear catalyst in current news."
     },
     {
-      "ticker": "COHR",
-      "pct": -9.84,
+      "ticker": "AAPL",
+      "pct": -7.35,
       "reason": "No clear catalyst in current news."
     },
     {
-      "ticker": "CBRS",
-      "pct": -9.49,
+      "ticker": "ETN",
+      "pct": 7.32,
       "reason": "No clear catalyst in current news."
     },
     {
-      "ticker": "CLS",
-      "pct": -8.8,
+      "ticker": "EIX",
+      "pct": -6.81,
       "reason": "No clear catalyst in current news."
     },
     {
-      "ticker": "OKLO",
-      "pct": -8.52,
+      "ticker": "GOOGL",
+      "pct": 6.73,
       "reason": "No clear catalyst in current news."
     }
   ],
   "upcoming_earnings": [
     {
-      "ticker": "CLS",
-      "date": "2026-07-27",
-      "days_until": 0
-    },
-    {
-      "ticker": "V",
-      "date": "2026-07-28",
-      "days_until": 1
-    },
-    {
-      "ticker": "ADP",
-      "date": "2026-07-29",
-      "days_until": 2
-    },
-    {
-      "ticker": "GEHC",
-      "date": "2026-07-29",
-      "days_until": 2
-    },
-    {
-      "ticker": "INVH",
-      "date": "2026-07-29",
-      "days_until": 2
-    },
-    {
-      "ticker": "META",
-      "date": "2026-07-29",
-      "days_until": 2
-    },
-    {
-      "ticker": "MSFT",
-      "date": "2026-07-29",
-      "days_until": 2
-    },
-    {
-      "ticker": "VRT",
-      "date": "2026-07-29",
-      "days_until": 2
-    },
-    {
-      "ticker": "AAPL",
-      "date": "2026-07-30",
-      "days_until": 3
-    },
-    {
-      "ticker": "AMZN",
-      "date": "2026-07-30",
-      "days_until": 3
-    },
-    {
-      "ticker": "EIX",
-      "date": "2026-07-30",
-      "days_until": 3
-    },
-    {
-      "ticker": "LPLA",
-      "date": "2026-07-30",
-      "days_until": 3
-    },
-    {
-      "ticker": "MA",
-      "date": "2026-07-30",
-      "days_until": 3
-    },
-    {
-      "ticker": "RDDT",
-      "date": "2026-07-30",
-      "days_until": 3
-    },
-    {
-      "ticker": "TW",
-      "date": "2026-07-30",
-      "days_until": 3
-    },
-    {
-      "ticker": "ETN",
-      "date": "2026-07-31",
-      "days_until": 4
-    },
-    {
-      "ticker": "NVT",
-      "date": "2026-07-31",
-      "days_until": 4
-    },
-    {
       "ticker": "BWXT",
       "date": "2026-08-03",
-      "days_until": 7
+      "days_until": 0
     },
     {
       "ticker": "POWL",
       "date": "2026-08-03",
-      "days_until": 7
+      "days_until": 0
     },
     {
       "ticker": "AMD",
       "date": "2026-08-04",
-      "days_until": 8
+      "days_until": 1
     },
     {
       "ticker": "LMB",
       "date": "2026-08-04",
-      "days_until": 8
+      "days_until": 1
+    },
+    {
+      "ticker": "FLUT",
+      "date": "2026-08-05",
+      "days_until": 2
     },
     {
       "ticker": "LLY",
       "date": "2026-08-05",
-      "days_until": 9
+      "days_until": 2
     },
     {
       "ticker": "PODD",
       "date": "2026-08-05",
-      "days_until": 9
+      "days_until": 2
     },
     {
       "ticker": "TLN",
       "date": "2026-08-05",
-      "days_until": 9
+      "days_until": 2
     },
     {
       "ticker": "ZBH",
       "date": "2026-08-05",
-      "days_until": 9
+      "days_until": 2
     },
     {
       "ticker": "CEG",
       "date": "2026-08-06",
-      "days_until": 10
+      "days_until": 3
     },
     {
-      "ticker": "MKTX",
+      "ticker": "OKLO",
       "date": "2026-08-07",
-      "days_until": 11
+      "days_until": 4
     },
     {
       "ticker": "VST",
       "date": "2026-08-07",
-      "days_until": 11
+      "days_until": 4
     },
     {
       "ticker": "LITE",
       "date": "2026-08-11",
-      "days_until": 15
+      "days_until": 8
     },
     {
       "ticker": "CBRS",
       "date": "2026-08-12",
-      "days_until": 16
+      "days_until": 9
     },
     {
       "ticker": "COHR",
       "date": "2026-08-12",
-      "days_until": 16
+      "days_until": 9
+    },
+    {
+      "ticker": "NBIS",
+      "date": "2026-08-12",
+      "days_until": 9
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2026-08-26",
+      "days_until": 23
     }
   ],
   "sec_stakes": [],
