@@ -1,25 +1,15 @@
 {
-  "generated_at": "2026-08-01T12:23:27Z",
+  "generated_at": "2026-08-02T12:15:50Z",
   "rules": {
     "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
     "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
     "high_yield_threshold_pct": 3.0
   },
   "counts": {
-    "roth": 39,
+    "roth": 38,
     "taxable": 2
   },
   "roth": [
-    {
-      "ticker": "AMZN",
-      "name": "Amazon.com, Inc.",
-      "theme": "mega_cap_ai",
-      "verdict": "RESEARCH-WORTHY",
-      "div_yield_pct": null,
-      "account": "ROTH",
-      "priority": "high",
-      "reason": "Highest-conviction growth pick (20% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
-    },
     {
       "ticker": "EIX",
       "name": "EIX",
@@ -84,6 +74,16 @@
       "ticker": "AMD",
       "name": "Advanced Micro Devices, Inc.",
       "theme": "edge_ai_silicon",
+      "verdict": "WATCHLIST",
+      "div_yield_pct": null,
+      "account": "ROTH",
+      "priority": "medium",
+      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
       "div_yield_pct": null,
       "account": "ROTH",
@@ -306,16 +306,6 @@
       "theme": "power_grid",
       "verdict": "WATCHLIST",
       "div_yield_pct": 0.55,
-      "account": "ROTH",
-      "priority": "medium",
-      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
-    },
-    {
-      "ticker": "PODD",
-      "name": "Insulet Corporation",
-      "theme": "healthcare_innovation",
-      "verdict": "WATCHLIST",
-      "div_yield_pct": null,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
