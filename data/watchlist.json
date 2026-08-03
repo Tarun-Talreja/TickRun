@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-02",
+  "last_updated": "2026-08-03",
   "candidates": [
     {
       "ticker": "AAPL",
@@ -204,19 +204,20 @@
       "name": "ASML Holding N.V.",
       "theme": "edge_ai_silicon",
       "status": "research_complete",
-      "thesis": "ASML is a high-quality AI infrastructure play with strong revenue growth and high margins, but its valuation is expensive relative to its growth and quality.",
+      "thesis": "ASML is a high-growth, high-margin leader in the AI infrastructure theme, with a strong track record of revenue growth and profitability.",
       "added": "2026-05-28",
       "verdict": "WATCHLIST",
       "buy_target": 1499.97,
       "current_price": null,
-      "next_action": "WAIT \u2014 ASML is a high-quality AI infrastructure play with strong revenue growth and high margins, but its valuation is expensive relative to its growth and quality. Revisit at 25% below the 52-week high.",
-      "research_file": "output/research/ASML_2026-07-26.md",
-      "last_researched": "2026-07-26",
-      "llm_verdict": "WATCHLIST",
-      "bear_downgraded": false,
-      "confidence": "MEDIUM",
+      "next_action": "WAIT \u2014 ASML is a high-growth, high-margin leader in the AI infrastructure theme, with a strong track record of revenue growth and profitability. Revisit at 25% below the 52-week high.",
+      "research_file": "output/research/ASML_2026-08-03.md",
+      "last_researched": "2026-08-03",
+      "llm_verdict": "RESEARCH-WORTHY",
+      "bear_downgraded": true,
+      "confidence": "HIGH",
       "buy_trigger_drawdown_pct": -25.0,
-      "no_pullback_gate": false
+      "no_pullback_gate": false,
+      "bear_check": "The strongest argument against buying ASML right now is its rich valuation, with a trailing P/E of 54.4x and an EV/EBITDA of 2,576.7x, which may not be justified even by its strong growth prospects, especially considering comparable peers trade at lower multiples. This valuation multiple leaves little room for error and may be vulnerable to a correction if growth slows. The bull case may be underweighting the potential for a valuation-driven decline.\n\nCHANGES VERDICT: YES"
     },
     {
       "ticker": "TSM",
