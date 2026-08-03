@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-03T15:43:30Z",
+  "generated_at": "2026-08-03T17:54:01Z",
   "movers": [
     {
       "ticker": "NBIS",
       "name": "Nebius Group N.V.",
       "verdict": "PASS",
-      "price": 213.42,
-      "pct_day": 12.08,
-      "pct_since": 12.08,
-      "primary_pct": 12.08,
+      "price": 220.2805,
+      "pct_day": 15.69,
+      "pct_since": 3.21,
+      "primary_pct": 15.69,
       "direction": "up",
       "triggers": [
-        "+12.1% since last check",
-        "+12.1% on the day"
+        "+3.2% since last check",
+        "+15.7% on the day"
       ],
-      "reason": "Part of a broader AI/tech rally, not company-specific.",
+      "reason": "No clear catalyst in current news.",
       "news": [
         {
           "title": "CoreWeave Jumps 11%, Snowflake Gains 6%, Oracle Climbs 5% as Risk-On Mood Lifts AI Cloud",
@@ -40,34 +40,68 @@
       "ticker": "COHR",
       "name": "Coherent Corp.",
       "verdict": "WATCHLIST",
-      "price": 284.62,
-      "pct_day": 8.27,
-      "pct_since": 8.27,
-      "primary_pct": 8.27,
+      "price": 290.92,
+      "pct_day": 10.66,
+      "pct_since": 2.21,
+      "primary_pct": 10.66,
       "direction": "up",
       "triggers": [
-        "+8.3% since last check",
-        "+8.3% on the day"
+        "+10.7% on the day"
       ],
-      "reason": "Part of a broader optics sector move.",
+      "reason": "No clear catalyst in current news.",
       "news": [
+        {
+          "title": "Nvidia Stock Retakes Key Level As Chip Stocks Waver",
+          "publisher": "Investor's Business Daily",
+          "date": "2026-08-03",
+          "url": "https://www.investors.com/news/technology/nvidia-stock-up-chip-stocks-sox-index-wavers/?src=A00220&yptr=yahoo"
+        },
+        {
+          "title": "Coherent (COHR) Price Prediction: How Much a $1,000 Investment Could Be Worth by 2027",
+          "publisher": "24/7 Wall St.",
+          "date": "2026-08-03",
+          "url": "https://247wallst.com/investing/2026/08/03/coherent-cohr-price-prediction-how-much-a-1000-investment-could-be-worth-by-2027/"
+        },
         {
           "title": "Corning Stock Sank 46% in July. Why Wall Street Says It Could Be a Buy Right Now.",
           "publisher": "Barrons.com",
           "date": "2026-08-03",
           "url": "https://www.barrons.com/articles/corning-stock-buy-upgrade-76fdef81?siteid=yhoof2&yptr=yahoo"
+        }
+      ]
+    },
+    {
+      "ticker": "CBRS",
+      "name": "Cerebras Systems Inc.",
+      "verdict": "PASS",
+      "price": 218.705,
+      "pct_day": 10.06,
+      "pct_since": 5.03,
+      "primary_pct": 10.06,
+      "direction": "up",
+      "triggers": [
+        "+5.0% since last check",
+        "+10.1% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "Cathie Wood Bought Cerebras Systems Stock the Same Week the AI Chip Startup's Shares Fell More Than 58% From Their First-Day IPO Pop",
+          "publisher": "Motley Fool",
+          "date": "2026-08-03",
+          "url": "https://www.fool.com/investing/2026/08/03/cathie-wood-bought-cerebras-systems-stock-the-same/"
         },
         {
-          "title": "Applied Optoelectronics and Coherent Gain 7%, Lumentum Adds 5% as Risk-On Feeling Spreads to Optics Stocks",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-07-31",
-          "url": "https://247wallst.com/investing/2026/07/31/applied-optoelectronics-and-coherent-gain-7-lumentum-adds-5-as-risk-on-feeling-spreads-to-optics-stocks/"
-        },
-        {
-          "title": "AXT Q2 Earnings Call Highlights",
-          "publisher": "MarketBeat",
+          "title": "FLEX Q1 Earnings Call Highlights AI Infrastructure Growth",
+          "publisher": "Zacks",
           "date": "2026-07-30",
-          "url": "https://www.marketbeat.com/instant-alerts/axt-q2-earnings-call-highlights-2026-07-30/?utm_source=yahoofinance&utm_medium=yahoofinance"
+          "url": "https://finance.yahoo.com/technology/ai/articles/flex-q1-earnings-call-highlights-140000883.html"
+        },
+        {
+          "title": "Jim Cramer Just Dumped Tech Stocks. He\u2019s Loading Up on Intel Instead of Cerebras.",
+          "publisher": "24/7 Wall St.",
+          "date": "2026-07-30",
+          "url": "https://247wallst.com/investing/2026/07/29/jim-cramer-just-dumped-tech-stocks-hes-loading-up-on-intel-instead-of-cerebras/"
         }
       ]
     },
@@ -75,16 +109,15 @@
       "ticker": "RDDT",
       "name": "Reddit, Inc.",
       "verdict": "WATCHLIST",
-      "price": 152.15,
-      "pct_day": 8.16,
-      "pct_since": 8.16,
-      "primary_pct": 8.16,
+      "price": 154.345,
+      "pct_day": 9.72,
+      "pct_since": 1.44,
+      "primary_pct": 9.72,
       "direction": "up",
       "triggers": [
-        "+8.2% since last check",
-        "+8.2% on the day"
+        "+9.7% on the day"
       ],
-      "reason": "Part of a broader market rise, as indicated by S&P 500 Futures increase.",
+      "reason": "No clear catalyst in current news.",
       "news": [
         {
           "title": "I Finally Paid Off My First Rental Property and It Generates $1,700 a Month. Should I Buy Another One or Focus Somewhere Else?",
@@ -107,60 +140,24 @@
       ]
     },
     {
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "verdict": "WATCHLIST",
-      "price": 594.4219,
-      "pct_day": 6.77,
-      "pct_since": 6.77,
-      "primary_pct": 6.77,
-      "direction": "up",
-      "triggers": [
-        "+6.8% since last check",
-        "+6.8% on the day"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Open-weight AI models add new spark to China, Silicon Valley's AI race",
-          "publisher": "Yahoo Finance Video",
-          "date": "2026-08-03",
-          "url": "https://finance.yahoo.com/video/open-weight-ai-models-add-140000138.html"
-        },
-        {
-          "title": "Tech stock investors have a $1 trillion problem that won't improve until at least 2028",
-          "publisher": "Yahoo Finance",
-          "date": "2026-08-03",
-          "url": "https://finance.yahoo.com/markets/article/tech-stock-investors-have-a-1-trillion-problem-that-wont-improve-until-at-least-2028-120918848.html"
-        },
-        {
-          "title": "Should You Buy Meta Platforms Stock While It's Below $600?",
-          "publisher": "Motley Fool",
-          "date": "2026-08-03",
-          "url": "https://www.fool.com/investing/2026/08/03/should-you-buy-meta-platforms-stock-while-its-belo/"
-        }
-      ]
-    },
-    {
       "ticker": "LITE",
       "name": "Lumentum Holdings Inc.",
       "verdict": "WATCHLIST",
-      "price": 755.535,
-      "pct_day": 5.83,
-      "pct_since": 5.83,
-      "primary_pct": 5.83,
+      "price": 775.41,
+      "pct_day": 8.61,
+      "pct_since": 2.63,
+      "primary_pct": 8.61,
       "direction": "up",
       "triggers": [
-        "+5.8% since last check",
-        "+5.8% on the day"
+        "+8.6% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
         {
-          "title": "Is Lumentum Holdings (LITE) Reasonable, Or Are Expectations Too Rich?",
-          "publisher": "Simply Wall St.",
+          "title": "Coherent (COHR) Price Prediction: How Much a $1,000 Investment Could Be Worth by 2027",
+          "publisher": "24/7 Wall St.",
           "date": "2026-08-03",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/lumentum-holdings-lite-reasonable-expectations-150840816.html"
+          "url": "https://247wallst.com/investing/2026/08/03/coherent-cohr-price-prediction-how-much-a-1000-investment-could-be-worth-by-2027/"
         },
         {
           "title": "Corning Stock Sank 46% in July. Why Wall Street Says It Could Be a Buy Right Now.",
@@ -169,10 +166,10 @@
           "url": "https://www.barrons.com/articles/corning-stock-buy-upgrade-76fdef81?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "Applied Optoelectronics and Coherent Gain 7%, Lumentum Adds 5% as Risk-On Feeling Spreads to Optics Stocks",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-07-31",
-          "url": "https://247wallst.com/investing/2026/07/31/applied-optoelectronics-and-coherent-gain-7-lumentum-adds-5-as-risk-on-feeling-spreads-to-optics-stocks/"
+          "title": "Is Lumentum Holdings (LITE) Reasonable, Or Are Expectations Too Rich?",
+          "publisher": "Simply Wall St.",
+          "date": "2026-08-03",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/lumentum-holdings-lite-reasonable-expectations-150840816.html"
         }
       ]
     },
@@ -180,69 +177,33 @@
       "ticker": "VRT",
       "name": "Vertiv Holdings Co",
       "verdict": "WATCHLIST",
-      "price": 255.2,
-      "pct_day": 5.64,
-      "pct_since": 5.64,
-      "primary_pct": 5.64,
+      "price": 261.07,
+      "pct_day": 8.07,
+      "pct_since": 2.3,
+      "primary_pct": 8.07,
       "direction": "up",
       "triggers": [
-        "+5.6% since last check",
-        "+5.6% on the day"
+        "+8.1% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
+        {
+          "title": "Vertiv (VRT) Upgraded to Strong Buy: Here's What You Should Know",
+          "publisher": "Zacks",
+          "date": "2026-08-03",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/vertiv-vrt-upgraded-strong-buy-160006008.html"
+        },
+        {
+          "title": "Wall Street Cuts MOD Stock Earnings Outlook: Hold or Sell the Stock?",
+          "publisher": "Zacks",
+          "date": "2026-08-03",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-cuts-mod-stock-151800123.html"
+        },
         {
           "title": "Best Momentum Stocks to Buy for August 3rd",
           "publisher": "Zacks",
           "date": "2026-08-03",
           "url": "https://finance.yahoo.com/markets/stocks/articles/best-momentum-stocks-buy-august-140000872.html"
-        },
-        {
-          "title": "MOD Q1 Earnings Top Estimates on Data Center Growth, Sales Miss",
-          "publisher": "Zacks",
-          "date": "2026-08-03",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/mod-q1-earnings-top-estimates-121100545.html"
-        },
-        {
-          "title": "The Zacks Analyst Blog Highlights Micron, Seagate, Western Digital, Sandisk and Vertiv",
-          "publisher": "Zacks",
-          "date": "2026-08-03",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-analyst-blog-highlights-micron-101600919.html"
-        }
-      ]
-    },
-    {
-      "ticker": "ISRG",
-      "name": "Intuitive Surgical, Inc.",
-      "verdict": "WATCHLIST",
-      "price": 373.16,
-      "pct_day": 5.61,
-      "pct_since": 5.61,
-      "primary_pct": 5.61,
-      "direction": "up",
-      "triggers": [
-        "+5.6% since last check",
-        "+5.6% on the day"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Stock Market Today: Dow Jumps As Microsoft Surges; Oil Stocks Skid On Trump Iran Move (Live Coverage)",
-          "publisher": "Investor's Business Daily",
-          "date": "2026-08-03",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-trump-iran-comments-oil-prices-plunge/?src=A00220&yptr=yahoo"
-        },
-        {
-          "title": "FTSE 100 Live: London lagging as AstraZeneca plunges and commodities slip",
-          "publisher": "Proactive",
-          "date": "2026-08-03",
-          "url": "https://www.proactiveinvestors.com/companies/news/1096411/ftse-100-live-blue-chips-to-start-august-on-front-foot-as-oil-falls-on-iran-talks-1096411.html"
-        },
-        {
-          "title": "Intuitive Surgical (ISRG) vs. Medtronic (MDT): Which MedTech Stock Looks Better Positioned for Growth?",
-          "publisher": "Insider Monkey",
-          "date": "2026-07-31",
-          "url": "https://finance.yahoo.com/healthcare/articles/intuitive-surgical-isrg-vs-medtronic-192633699.html"
         }
       ]
     },
@@ -250,14 +211,13 @@
       "ticker": "OKLO",
       "name": "Oklo Inc.",
       "verdict": "PASS",
-      "price": 40.92,
-      "pct_day": 5.38,
-      "pct_since": 5.38,
-      "primary_pct": 5.38,
+      "price": 41.89,
+      "pct_day": 7.88,
+      "pct_since": 2.37,
+      "primary_pct": 7.88,
       "direction": "up",
       "triggers": [
-        "+5.4% since last check",
-        "+5.4% on the day"
+        "+7.9% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -282,16 +242,83 @@
       ]
     },
     {
-      "ticker": "AMZN",
-      "name": "Amazon.com, Inc.",
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
       "verdict": "WATCHLIST",
-      "price": 285.7571,
-      "pct_day": 5.22,
-      "pct_since": 5.22,
-      "primary_pct": 5.22,
+      "price": 590.59,
+      "pct_day": 6.09,
+      "pct_since": -0.64,
+      "primary_pct": 6.09,
       "direction": "up",
       "triggers": [
-        "+5.2% since last check",
+        "+6.1% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "Amazon, Meta, and Microsoft stocks surge as AI hyperscalers post strong earnings results",
+          "publisher": "Yahoo Finance",
+          "date": "2026-08-03",
+          "url": "https://finance.yahoo.com/technology/article/amazon-meta-and-microsoft-stocks-surge-as-ai-hyperscalers-post-strong-earnings-results-163729332.html"
+        },
+        {
+          "title": "Microsoft Just Proved that AI Spending Can Pay Off. Here's How the Company Separates Itself From Other AI Stocks.",
+          "publisher": "Motley Fool",
+          "date": "2026-08-03",
+          "url": "https://www.fool.com/investing/2026/08/03/microsoft-just-proved-that-ai-spending-can-pay-off/"
+        },
+        {
+          "title": "Amazon Tops $3T, Meta Rallies 7% as AI Hyperscalers Ride Earnings Momentum",
+          "publisher": "24/7 Wall St.",
+          "date": "2026-08-03",
+          "url": "https://247wallst.com/investing/2026/08/03/amazon-tops-3t-meta-rallies-7-as-ai-hyperscalers-ride-earnings-momentum/"
+        }
+      ]
+    },
+    {
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical, Inc.",
+      "verdict": "WATCHLIST",
+      "price": 374.14,
+      "pct_day": 5.89,
+      "pct_since": 0.26,
+      "primary_pct": 5.89,
+      "direction": "up",
+      "triggers": [
+        "+5.9% on the day"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": [
+        {
+          "title": "FTSE 100 Live: London lagging as AstraZeneca plunges and commodities slip",
+          "publisher": "Proactive",
+          "date": "2026-08-03",
+          "url": "https://www.proactiveinvestors.com/companies/news/1096411/ftse-100-live-blue-chips-to-start-august-on-front-foot-as-oil-falls-on-iran-talks-1096411.html"
+        },
+        {
+          "title": "Intuitive Surgical (ISRG) vs. Medtronic (MDT): Which MedTech Stock Looks Better Positioned for Growth?",
+          "publisher": "Insider Monkey",
+          "date": "2026-07-31",
+          "url": "https://finance.yahoo.com/healthcare/articles/intuitive-surgical-isrg-vs-medtronic-192633699.html"
+        },
+        {
+          "title": "UBS reveals what\u2019s next for Intuitive Surgical stock",
+          "publisher": "TheStreet",
+          "date": "2026-07-30",
+          "url": "https://www.thestreet.com/investing/stocks/ubs-upgrades-isrg-intuitive-surgical-stock-selloff-automation"
+        }
+      ]
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft Corporation",
+      "verdict": "WATCHLIST",
+      "price": 488.945,
+      "pct_day": 5.21,
+      "pct_since": 0.37,
+      "primary_pct": 5.21,
+      "direction": "up",
+      "triggers": [
         "+5.2% on the day"
       ],
       "reason": "See headlines (explanation limited to top movers).",
@@ -303,16 +330,16 @@
           "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-investors-eye-spacexs-first-earnings-report-140419479.html"
         },
         {
-          "title": "Amazon Stock Hits $3 Trillion Market Cap As AI Cloud Hyperscalers Rally",
-          "publisher": "Investor's Business Daily",
+          "title": "AMD to report Q2 earnings as chip stocks continue to waver",
+          "publisher": "Yahoo Finance",
           "date": "2026-08-03",
-          "url": "https://www.investors.com/news/technology/amazon-stock-ai-rally-hyperscalers-3-trillion/?src=A00220&yptr=yahoo"
+          "url": "https://finance.yahoo.com/technology/article/amd-to-report-q2-earnings-as-chip-stocks-continue-to-waver-110000620.html"
         },
         {
-          "title": "Astera Labs, GlobalFoundries Positioned for Long-term AI Growth, Morgan Stanley Says",
-          "publisher": "MT Newswires",
+          "title": "Microsoft Just Proved that AI Spending Can Pay Off. Here's How the Company Separates Itself From Other AI Stocks.",
+          "publisher": "Motley Fool",
           "date": "2026-08-03",
-          "url": "https://finance.yahoo.com/technology/ai/articles/astera-labs-globalfoundries-positioned-long-152555818.html"
+          "url": "https://www.fool.com/investing/2026/08/03/microsoft-just-proved-that-ai-spending-can-pay-off/"
         }
       ]
     },
@@ -320,272 +347,67 @@
       "ticker": "GOOGL",
       "name": "Alphabet Inc.",
       "verdict": "WATCHLIST",
-      "price": 374.23,
-      "pct_day": 5.08,
-      "pct_since": 5.08,
-      "primary_pct": 5.08,
+      "price": 374.535,
+      "pct_day": 5.17,
+      "pct_since": 0.08,
+      "primary_pct": 5.17,
       "direction": "up",
       "triggers": [
-        "+5.1% since last check",
-        "+5.1% on the day"
+        "+5.2% on the day"
       ],
       "reason": "See headlines (explanation limited to top movers).",
       "news": [
         {
-          "title": "This valuation signal shows how investors are rethinking tech stocks",
+          "title": "Amazon, Meta, and Microsoft stocks surge as AI hyperscalers post strong earnings results",
           "publisher": "Yahoo Finance",
           "date": "2026-08-03",
-          "url": "https://finance.yahoo.com/markets/article/this-valuation-signal-shows-how-investors-are-rethinking-tech-stocks-144411798.html"
+          "url": "https://finance.yahoo.com/technology/article/amazon-meta-and-microsoft-stocks-surge-as-ai-hyperscalers-post-strong-earnings-results-163729332.html"
         },
         {
-          "title": "Amazon Stock Hits $3 Trillion Market Cap As AI Cloud Hyperscalers Rally",
-          "publisher": "Investor's Business Daily",
+          "title": "Stocks are ignoring higher bond yields, but that can't last for 'very long'",
+          "publisher": "Yahoo Finance Video",
           "date": "2026-08-03",
-          "url": "https://www.investors.com/news/technology/amazon-stock-ai-rally-hyperscalers-3-trillion/?src=A00220&yptr=yahoo"
+          "url": "https://finance.yahoo.com/video/stocks-ignoring-higher-bond-yields-140933047.html"
         },
         {
-          "title": "Greg Abel Poured $23 Billion of Berkshire's Cash Into Alphabet Stock",
+          "title": "Microsoft Just Proved that AI Spending Can Pay Off. Here's How the Company Separates Itself From Other AI Stocks.",
           "publisher": "Motley Fool",
           "date": "2026-08-03",
-          "url": "https://www.fool.com/investing/2026/08/03/greg-abel-poured-23-billion-of-berkshires-cash-int/"
+          "url": "https://www.fool.com/investing/2026/08/03/microsoft-just-proved-that-ai-spending-can-pay-off/"
         }
       ]
     },
     {
-      "ticker": "MSFT",
-      "name": "Microsoft Corporation",
+      "ticker": "CRDO",
+      "name": "Credo Technology Group Holding Ltd",
       "verdict": "WATCHLIST",
-      "price": 487.145,
-      "pct_day": 4.83,
-      "pct_since": 4.83,
-      "primary_pct": 4.83,
+      "price": 216.18,
+      "pct_day": 4.44,
+      "pct_since": 3.86,
+      "primary_pct": 4.44,
       "direction": "up",
       "triggers": [
-        "+4.8% since last check"
+        "+3.9% since last check"
       ],
       "reason": "See headlines (explanation limited to top movers).",
       "news": [
         {
-          "title": "Tech stocks today: Investors eye SpaceX's first earnings report",
-          "publisher": "Yahoo Finance",
-          "date": "2026-08-03",
-          "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-investors-eye-spacexs-first-earnings-report-140419479.html"
-        },
-        {
-          "title": "Microsoft Stock Breaks Out Into Buy Zone. Here's Why.",
-          "publisher": "Investor's Business Daily",
-          "date": "2026-08-03",
-          "url": "https://www.investors.com/news/technology/microsoft-stock-msft-breaks-out-after-fiscal-q4-report/?src=A00220&yptr=yahoo"
-        },
-        {
-          "title": "Amazon Stock Hits $3 Trillion Market Cap As AI Cloud Hyperscalers Rally",
-          "publisher": "Investor's Business Daily",
-          "date": "2026-08-03",
-          "url": "https://www.investors.com/news/technology/amazon-stock-ai-rally-hyperscalers-3-trillion/?src=A00220&yptr=yahoo"
-        }
-      ]
-    },
-    {
-      "ticker": "CBRS",
-      "name": "Cerebras Systems Inc.",
-      "verdict": "PASS",
-      "price": 208.24,
-      "pct_day": 4.8,
-      "pct_since": 4.8,
-      "primary_pct": 4.8,
-      "direction": "up",
-      "triggers": [
-        "+4.8% since last check"
-      ],
-      "reason": "See headlines (explanation limited to top movers).",
-      "news": [
-        {
-          "title": "Cathie Wood Bought Cerebras Systems Stock the Same Week the AI Chip Startup's Shares Fell More Than 58% From Their First-Day IPO Pop",
+          "title": "Credo Technology's Co-Founder and CTO Sold Nearly 30,000 Shares Worth $6.1 Million. What Does That Mean for Investors?",
           "publisher": "Motley Fool",
           "date": "2026-08-03",
-          "url": "https://www.fool.com/investing/2026/08/03/cathie-wood-bought-cerebras-systems-stock-the-same/"
+          "url": "https://www.fool.com/coverage/filings/2026/08/02/credo-technology-s-co-founder-and-cto-sold-nearly-30-000-shares-worth-usd6-1-million-what-does-that-mean-for-investors/"
         },
         {
-          "title": "FLEX Q1 Earnings Call Highlights AI Infrastructure Growth",
+          "title": "Should You Buy, Sell, or Hold ALAB Stock Before Q2 Earnings Release?",
           "publisher": "Zacks",
-          "date": "2026-07-30",
-          "url": "https://finance.yahoo.com/technology/ai/articles/flex-q1-earnings-call-highlights-140000883.html"
-        },
-        {
-          "title": "Jim Cramer Just Dumped Tech Stocks. He\u2019s Loading Up on Intel Instead of Cerebras.",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-07-30",
-          "url": "https://247wallst.com/investing/2026/07/29/jim-cramer-just-dumped-tech-stocks-hes-loading-up-on-intel-instead-of-cerebras/"
-        }
-      ]
-    },
-    {
-      "ticker": "ETN",
-      "name": "Eaton Corporation plc",
-      "verdict": "WATCHLIST",
-      "price": 430.7,
-      "pct_day": 3.73,
-      "pct_since": 3.73,
-      "primary_pct": 3.73,
-      "direction": "up",
-      "triggers": [
-        "+3.7% since last check"
-      ],
-      "reason": "See headlines (explanation limited to top movers).",
-      "news": [
-        {
-          "title": "ETN Q2 Earnings Call Highlights Ramp Progress and Raised Outlook",
-          "publisher": "Zacks",
-          "date": "2026-08-03",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/etn-q2-earnings-call-highlights-140000165.html"
-        },
-        {
-          "title": "Starbucks upgraded, eBay downgraded: Wall Street's top analyst calls",
-          "publisher": "The Fly",
-          "date": "2026-08-03",
-          "url": "https://finance.yahoo.com/news/netflix-resumed-starbucks-downgraded-wall-133343741.html"
-        },
-        {
-          "title": "Stock Market News for Aug 3, 2026",
-          "publisher": "Zacks",
-          "date": "2026-08-03",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-aug-3-124000595.html"
-        }
-      ]
-    },
-    {
-      "ticker": "TLN",
-      "name": "Talen Energy Corporation",
-      "verdict": "PASS",
-      "price": 346.18,
-      "pct_day": 3.62,
-      "pct_since": 3.62,
-      "primary_pct": 3.62,
-      "direction": "up",
-      "triggers": [
-        "+3.6% since last check"
-      ],
-      "reason": "See headlines (explanation limited to top movers).",
-      "news": [
-        {
-          "title": "All You Need to Know About Talen Energy Corporation (TLN) Rating Upgrade to Strong Buy",
-          "publisher": "Zacks",
-          "date": "2026-07-30",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/know-talen-energy-corporation-tln-160002521.html"
-        },
-        {
-          "title": "Zacks Industry Outlook Highlights Bloom Energy, Talen Energy and Montauk Renewables",
-          "publisher": "Zacks",
-          "date": "2026-07-30",
-          "url": "https://finance.yahoo.com/energy/articles/zacks-industry-outlook-highlights-bloom-090100190.html"
-        },
-        {
-          "title": "Talen Energy Corporation (TLN) Reports Next Week: Wall Street Expects Earnings Growth",
-          "publisher": "Zacks",
-          "date": "2026-07-29",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/talen-energy-corporation-tln-reports-140030085.html"
-        }
-      ]
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "verdict": "WATCHLIST",
-      "price": 115.195,
-      "pct_day": 3.56,
-      "pct_since": 3.56,
-      "primary_pct": 3.56,
-      "direction": "up",
-      "triggers": [
-        "+3.6% since last check"
-      ],
-      "reason": "See headlines (explanation limited to top movers).",
-      "news": [
-        {
-          "title": "Software catches a bid as investors rotate ahead of Palantir earnings",
-          "publisher": "Investing.com",
-          "date": "2026-08-03",
-          "url": "https://finance.yahoo.com/technology/articles/software-catches-bid-investors-rotate-123937611.html"
-        },
-        {
-          "title": "Microsoft joins, Broadcom exits Goldman\u2019s top-stocks list",
-          "publisher": "Investing.com",
-          "date": "2026-08-03",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/microsoft-joins-broadcom-exits-goldman-110015714.html"
-        },
-        {
-          "title": "How ServiceNow\u2019s CEO Weighs Long-Term Bets",
-          "publisher": "The Wall Street Journal",
-          "date": "2026-08-03",
-          "url": "https://www.wsj.com/business/how-servicenows-ceo-weighs-long-term-bets-dfbcb86a?siteid=yhoof2&yptr=yahoo"
-        }
-      ]
-    },
-    {
-      "ticker": "VST",
-      "name": "Vistra Corp.",
-      "verdict": "PASS",
-      "price": 153.0151,
-      "pct_day": 3.26,
-      "pct_since": 3.26,
-      "primary_pct": 3.26,
-      "direction": "up",
-      "triggers": [
-        "+3.3% since last check"
-      ],
-      "reason": "See headlines (explanation limited to top movers).",
-      "news": [
-        {
-          "title": "Constellation Energy vs. Vistra: Which Utilities Stock Is a Better Buy in 2026?",
-          "publisher": "Motley Fool",
-          "date": "2026-08-03",
-          "url": "https://www.fool.com/coverage/better-buy/2026/08/03/constellation-energy-vs-vistra-which-utilities-stock-is-a-better-buy-in-2026/"
-        },
-        {
-          "title": "This Is The Best-Performing Nuclear Stock Now Even As Peers Are Losing Value",
-          "publisher": "Stocktwits",
-          "date": "2026-08-03",
-          "url": "https://stocktwits.com/news-articles/markets/equity/this-is-the-best-performing-nuclear-stock-now-even-as-peers-are-losing-value/cZoR6lERJ5q"
-        },
-        {
-          "title": "Should You Buy Billionaire Investor Stephen Mandel\u2019s Top 5 Stock Picks in August?",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-08-02",
-          "url": "https://247wallst.com/investing/2026/08/02/should-you-buy-billionaire-investor-stephen-mandels-top-5-stock-picks-in-august/"
-        }
-      ]
-    },
-    {
-      "ticker": "CEG",
-      "name": "Constellation Energy Corporation",
-      "verdict": "WATCHLIST",
-      "price": 271.13,
-      "pct_day": 3.19,
-      "pct_since": 3.19,
-      "primary_pct": 3.19,
-      "direction": "up",
-      "triggers": [
-        "+3.2% since last check"
-      ],
-      "reason": "See headlines (explanation limited to top movers).",
-      "news": [
-        {
-          "title": "Constellation Energy vs. Vistra: Which Utilities Stock Is a Better Buy in 2026?",
-          "publisher": "Motley Fool",
-          "date": "2026-08-03",
-          "url": "https://www.fool.com/coverage/better-buy/2026/08/03/constellation-energy-vs-vistra-which-utilities-stock-is-a-better-buy-in-2026/"
-        },
-        {
-          "title": "This Is The Best-Performing Nuclear Stock Now Even As Peers Are Losing Value",
-          "publisher": "Stocktwits",
-          "date": "2026-08-03",
-          "url": "https://stocktwits.com/news-articles/markets/equity/this-is-the-best-performing-nuclear-stock-now-even-as-peers-are-losing-value/cZoR6lERJ5q"
-        },
-        {
-          "title": "El Ni\u00f1o Hits the Panama Canal",
-          "publisher": "Barrons.com",
           "date": "2026-07-31",
-          "url": "https://www.barrons.com/articles/el-nino-hits-the-panama-canal-a27222c3?siteid=yhoof2&yptr=yahoo"
+          "url": "https://finance.yahoo.com/markets/stocks/articles/buy-sell-hold-alab-stock-173900918.html"
+        },
+        {
+          "title": "Optical Momentum Triggers Investor Rerating of Credo Technology Group Holding Ltd (CRDO)",
+          "publisher": "Insider Monkey",
+          "date": "2026-07-31",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/optical-momentum-triggers-investor-rerating-135936372.html"
         }
       ]
     }
