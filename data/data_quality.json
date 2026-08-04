@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-04T17:17:47Z",
+  "generated_at": "2026-08-04T19:10:17Z",
   "checked": 58,
   "flagged": 0,
   "quality": {
-    "AAPL": {
+    "AMD": {
       "ok": true,
       "flags": []
     },
-    "AMD": {
+    "AAPL": {
       "ok": true,
       "flags": []
     },
@@ -23,15 +23,15 @@
       "ok": true,
       "flags": []
     },
+    "AVGO": {
+      "ok": true,
+      "flags": []
+    },
     "BWXT": {
       "ok": true,
       "flags": []
     },
     "CBRS": {
-      "ok": true,
-      "flags": []
-    },
-    "AVGO": {
       "ok": true,
       "flags": []
     },
@@ -75,11 +75,11 @@
       "ok": true,
       "flags": []
     },
-    "GEV": {
+    "GEHC": {
       "ok": true,
       "flags": []
     },
-    "GEHC": {
+    "GEV": {
       "ok": true,
       "flags": []
     },
@@ -91,7 +91,7 @@
       "ok": true,
       "flags": []
     },
-    "IBM": {
+    "ISRG": {
       "ok": true,
       "flags": []
     },
@@ -99,7 +99,11 @@
       "ok": true,
       "flags": []
     },
-    "ISRG": {
+    "IBM": {
+      "ok": true,
+      "flags": []
+    },
+    "LLY": {
       "ok": true,
       "flags": []
     },
@@ -111,15 +115,7 @@
       "ok": true,
       "flags": []
     },
-    "LLY": {
-      "ok": true,
-      "flags": []
-    },
     "LPLA": {
-      "ok": true,
-      "flags": []
-    },
-    "MA": {
       "ok": true,
       "flags": []
     },
@@ -127,11 +123,11 @@
       "ok": true,
       "flags": []
     },
-    "MKTX": {
+    "MA": {
       "ok": true,
       "flags": []
     },
-    "MRVL": {
+    "MKTX": {
       "ok": true,
       "flags": []
     },
@@ -139,11 +135,19 @@
       "ok": true,
       "flags": []
     },
+    "MU": {
+      "ok": true,
+      "flags": []
+    },
+    "MRVL": {
+      "ok": true,
+      "flags": []
+    },
     "NBIS": {
       "ok": true,
       "flags": []
     },
-    "MU": {
+    "NOW": {
       "ok": true,
       "flags": []
     },
@@ -155,15 +159,11 @@
       "ok": true,
       "flags": []
     },
-    "NOW": {
+    "OKLO": {
       "ok": true,
       "flags": []
     },
     "NVT": {
-      "ok": true,
-      "flags": []
-    },
-    "OKLO": {
       "ok": true,
       "flags": []
     },
@@ -187,11 +187,15 @@
       "ok": true,
       "flags": []
     },
+    "STZ": {
+      "ok": true,
+      "flags": []
+    },
     "SPY": {
       "ok": true,
       "flags": []
     },
-    "STZ": {
+    "TW": {
       "ok": true,
       "flags": []
     },
@@ -199,11 +203,7 @@
       "ok": true,
       "flags": []
     },
-    "TSM": {
-      "ok": true,
-      "flags": []
-    },
-    "TW": {
+    "V": {
       "ok": true,
       "flags": []
     },
@@ -215,15 +215,11 @@
       "ok": true,
       "flags": []
     },
-    "V": {
-      "ok": true,
-      "flags": []
-    },
     "VST": {
       "ok": true,
       "flags": []
     },
-    "^TNX": {
+    "TSM": {
       "ok": true,
       "flags": []
     },
@@ -232,6 +228,10 @@
       "flags": []
     },
     "ZBH": {
+      "ok": true,
+      "flags": []
+    },
+    "^TNX": {
       "ok": true,
       "flags": []
     }
