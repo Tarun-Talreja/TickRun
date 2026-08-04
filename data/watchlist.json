@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-03",
+  "last_updated": "2026-08-04",
   "candidates": [
     {
       "ticker": "AAPL",
@@ -721,18 +721,19 @@
       "name": "GEHC",
       "theme": "healthcare_innovation",
       "status": "research_complete",
-      "thesis": "GE HealthCare \u2014 medical imaging (MRI, CT, ultrasound) with AI-assisted diagnostics. 12x fwd PE, 7% growth, -28% from ATH. Reasonable valuation on an AI-adjacent healthcare leader.",
+      "thesis": "Reasonable valuation and stable cash flows make GEHC a research-worthy candidate in the healthcare space.",
       "added": "2026-06-08",
       "verdict": "WATCHLIST",
-      "buy_target": 64,
+      "buy_target": 67.33,
       "current_price": null,
-      "next_action": "RESEARCH \u2014 AI imaging at 12x fwd PE after 28% pullback. Verify order backlog.",
-      "research_file": "output/research/GEHC_2026-07-24.md",
-      "last_researched": "2026-07-24",
+      "next_action": "WAIT \u2014 Reasonable valuation and stable cash flows make GEHC a research-worthy candidate in the healthcare space. Revisit at 25% below the 52-week high.",
+      "research_file": "output/research/GEHC_2026-08-04.md",
+      "last_researched": "2026-08-04",
       "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying GEHC right now is that the company's significant net debt of $8316M, despite the positive free cash flow, may still pose a substantial risk, especially if interest rates rise or the company's cash flow generation slows down, which could negatively impact its ability to manage its debt and invest in growth initiatives. This concern is not fully alleviated by the positive free cash flow, as it only partially offsets the large debt burden. Furthermore, the bull case may be underweighting the potential risks associated with the company's debt levels.\n\nCHANGES VERDICT: YES",
+      "bear_check": "The strongest specific argument against buying GEHC right now is that the company's high net debt of $8,462M, which could limit its ability to invest in research and development, make strategic acquisitions, or return capital to shareholders, potentially hindering its long-term growth prospects. This concern is not adequately addressed in the bullish note, which focuses on the company's growth and quality but glosses over its debt burden. Furthermore, the note's valuation assessment does not consider the potential impact of debt on GEHC's financial health.\n\nCHANGES VERDICT: YES",
       "llm_verdict": "RESEARCH-WORTHY",
-      "bear_downgraded": true
+      "bear_downgraded": true,
+      "buy_trigger_drawdown_pct": -25.0
     },
     {
       "ticker": "ZBH",
