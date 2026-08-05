@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T18:19:42Z",
+  "generated_at": "2026-08-05T20:02:29Z",
   "lookahead_days": 30,
   "upcoming_earnings": [
     {
@@ -11,16 +11,6 @@
       "verdict": "WATCHLIST",
       "thesis": "Reasonably valued nuclear power play with stable revenue and growth potential, but facing financial health concerns.",
       "action": "Review thesis before earnings. Re-run research_ticker.py CEG after."
-    },
-    {
-      "ticker": "TLN",
-      "name": "Talen Energy Corporation",
-      "date": "2026-08-05",
-      "days_until": 0,
-      "theme": "nuclear_smr",
-      "verdict": "PASS",
-      "thesis": "Talen Energy Corporation is a grid/nuclear play with strong revenue growth, reasonable valuation, and manageable debt, but requires closer examination of its debt and cash flow.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py TLN after."
     },
     {
       "ticker": "OKLO",
@@ -46,11 +36,31 @@
       "ticker": "LITE",
       "name": "Lumentum Holdings Inc.",
       "date": "2026-08-11",
-      "days_until": 6,
+      "days_until": 5,
       "theme": "networking_infra",
       "verdict": "WATCHLIST",
       "thesis": "Lumentum is a high-growth optical communications company with a strong product portfolio and a relatively stable financial position.",
       "action": "Review thesis before earnings. Re-run research_ticker.py LITE after."
+    },
+    {
+      "ticker": "CBRS",
+      "name": "Cerebras Systems Inc.",
+      "date": "2026-08-12",
+      "days_until": 6,
+      "theme": "edge_ai_silicon",
+      "verdict": "PASS",
+      "thesis": "High-growth AI infrastructure play with significant valuation expectations and current unprofitability.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py CBRS after."
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "date": "2026-08-12",
+      "days_until": 6,
+      "theme": "networking_infra",
+      "verdict": "WATCHLIST",
+      "thesis": "Coherent Corp. is a high-growth laser technology company with a strong presence in the AI infrastructure theme, but its valuation is relatively high and its negative free cash flow and net debt position may be a concern for investors.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py COHR after."
     },
     {
       "ticker": "NBIS",
@@ -63,30 +73,10 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py NBIS after."
     },
     {
-      "ticker": "CBRS",
-      "name": "Cerebras Systems Inc.",
-      "date": "2026-08-12",
-      "days_until": 7,
-      "theme": "edge_ai_silicon",
-      "verdict": "PASS",
-      "thesis": "High-growth AI infrastructure play with significant valuation expectations and current unprofitability.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py CBRS after."
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "date": "2026-08-12",
-      "days_until": 7,
-      "theme": "networking_infra",
-      "verdict": "WATCHLIST",
-      "thesis": "Coherent Corp. is a high-growth laser technology company with a strong presence in the AI infrastructure theme, but its valuation is relatively high and its negative free cash flow and net debt position may be a concern for investors.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py COHR after."
-    },
-    {
       "ticker": "NVDA",
       "name": "NVIDIA Corporation",
       "date": "2026-08-26",
-      "days_until": 21,
+      "days_until": 20,
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
       "thesis": "Leading AI infrastructure play with strong growth prospects and reasonable valuation at 16.1x forward earnings.",
@@ -96,7 +86,7 @@
       "ticker": "MRVL",
       "name": "Marvell Technology, Inc.",
       "date": "2026-08-27",
-      "days_until": 22,
+      "days_until": 21,
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
       "thesis": "High-growth semiconductor company with strong revenue and free cash flow, but high valuation and potential risks.",
@@ -106,7 +96,7 @@
       "ticker": "AVGO",
       "name": "Broadcom Inc.",
       "date": "2026-09-02",
-      "days_until": 28,
+      "days_until": 27,
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
       "thesis": "High-growth semiconductor company with strong margins and free cash flow generation, trading at a premium valuation.",
