@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-08-07T15:22:15Z",
+  "generated_at": "2026-08-07T16:20:17Z",
   "movers": [
     {
       "ticker": "COHR",
       "name": "Coherent Corp.",
       "verdict": "WATCHLIST",
-      "price": 375.83,
-      "pct_day": 12.45,
-      "pct_since": 0.91,
-      "primary_pct": 12.45,
+      "price": 386.09,
+      "pct_day": 15.52,
+      "pct_since": 2.73,
+      "primary_pct": 15.52,
       "direction": "up",
       "triggers": [
-        "+12.4% on the day"
+        "+15.5% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
         {
-          "title": "Stock Market Today: Nasdaq Leads After Surprise July Jobs Reading; AI Stock Cloudflare Soars (Live Coverage)",
+          "title": "Stock Market Today: Nasdaq Rallies After Surprise July Jobs Reading; SpaceX Soars (Live Coverage)",
           "publisher": "Investor's Business Daily",
           "date": "2026-08-07",
           "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-july-jobs-report-cloudflare-stock/?src=A00220&yptr=yahoo"
@@ -39,13 +39,14 @@
       "ticker": "OKLO",
       "name": "Oklo Inc.",
       "verdict": "PASS",
-      "price": 46.205,
-      "pct_day": 9.52,
-      "pct_since": 2.51,
-      "primary_pct": 9.52,
+      "price": 48.2799,
+      "pct_day": 14.43,
+      "pct_since": 4.49,
+      "primary_pct": 14.43,
       "direction": "up",
       "triggers": [
-        "+9.5% on the day"
+        "+4.5% since last check",
+        "+14.4% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -70,16 +71,119 @@
       ]
     },
     {
+      "ticker": "CBRS",
+      "name": "Cerebras Systems Inc.",
+      "verdict": "PASS",
+      "price": 227.535,
+      "pct_day": 7.68,
+      "pct_since": 5.46,
+      "primary_pct": 7.68,
+      "direction": "up",
+      "triggers": [
+        "+5.5% since last check",
+        "+7.7% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "An Early Bet on SpaceX Led to a 30% Gain for This College Endowment",
+          "publisher": "Bloomberg",
+          "date": "2026-08-07",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/early-bet-spacex-led-30-111500300.html"
+        },
+        {
+          "title": "What You Actually Pay To Join The SITM Run",
+          "publisher": "Trefis",
+          "date": "2026-08-06",
+          "url": "https://www.trefis.com/articles/610350/what-you-actually-pay-to-join-the-sitm-run/2026-08-06"
+        },
+        {
+          "title": "Cerebras Systems: A Leading AI Semiconductor Company",
+          "publisher": "Zacks",
+          "date": "2026-08-03",
+          "url": "https://finance.yahoo.com/technology/ai/articles/cerebras-systems-leading-ai-semiconductor-195400355.html"
+        }
+      ]
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "verdict": "WATCHLIST",
+      "price": 895.184,
+      "pct_day": 6.82,
+      "pct_since": 1.47,
+      "primary_pct": 6.82,
+      "direction": "up",
+      "triggers": [
+        "+6.8% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "Sabre Q2 Loss Widens, Revenues Beat Estimates on Marketplace Growth",
+          "publisher": "Zacks",
+          "date": "2026-08-07",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sabre-q2-loss-widens-revenues-150100263.html"
+        },
+        {
+          "title": "Atlassian Q4 Earnings Beat Estimates, Revenues Increase Y/Y",
+          "publisher": "Zacks",
+          "date": "2026-08-07",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/atlassian-q4-earnings-beat-estimates-145900038.html"
+        },
+        {
+          "title": "MTSI Q3 Earnings Surpass Expectations, Revenues Rise Y/Y",
+          "publisher": "Zacks",
+          "date": "2026-08-07",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/mtsi-q3-earnings-surpass-expectations-141200668.html"
+        }
+      ]
+    },
+    {
+      "ticker": "CRDO",
+      "name": "Credo Technology Group Holding Ltd",
+      "verdict": "PASS",
+      "price": 245.615,
+      "pct_day": 6.59,
+      "pct_since": 1.41,
+      "primary_pct": 6.59,
+      "direction": "up",
+      "triggers": [
+        "+6.6% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "Two AI Names Bounce From Chip Sell-Off; Three More IBD 50 Stocks On Watch",
+          "publisher": "Investor's Business Daily",
+          "date": "2026-08-07",
+          "url": "https://www.investors.com/stock-lists/ibd-50/stock-market-ai-memory-teradyne-ter-stock-credo-crdo/?src=A00220&yptr=yahoo"
+        },
+        {
+          "title": "Dow Jones Futures Rise As Cloudflare Leads Big Software Winners; Jobs Report On Tap",
+          "publisher": "Investor's Business Daily",
+          "date": "2026-08-07",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-jobs-report-cloudflare-sezzle-earnings-movers/?src=A00220&yptr=yahoo"
+        },
+        {
+          "title": "Astera Labs Beat And Guided Higher, Then Fell Because The Rally Came First",
+          "publisher": "Trefis",
+          "date": "2026-08-06",
+          "url": "https://www.trefis.com/articles/610418/astera-labs-beat-and-guided-higher-then-fell-because-the-rally-came-first/2026-08-06"
+        }
+      ]
+    },
+    {
       "ticker": "RDDT",
       "name": "Reddit, Inc.",
       "verdict": "PASS",
-      "price": 162.93,
-      "pct_day": 7.99,
-      "pct_since": 1.56,
-      "primary_pct": 7.99,
+      "price": 160.6,
+      "pct_day": 6.45,
+      "pct_since": -1.43,
+      "primary_pct": 6.45,
       "direction": "up",
       "triggers": [
-        "+8.0% on the day"
+        "+6.5% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -107,13 +211,13 @@
       "ticker": "NOW",
       "name": "ServiceNow, Inc.",
       "verdict": "WATCHLIST",
-      "price": 125.28,
-      "pct_day": 6.76,
-      "pct_since": 0.51,
-      "primary_pct": 6.76,
+      "price": 124.74,
+      "pct_day": 6.3,
+      "pct_since": -0.43,
+      "primary_pct": 6.3,
       "direction": "up",
       "triggers": [
-        "+6.8% on the day"
+        "+6.3% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -134,143 +238,6 @@
           "publisher": "Yahoo Finance",
           "date": "2026-08-06",
           "url": "https://finance.yahoo.com/markets/article/software-stocks-sink-led-by-declines-from-figma-datadog-144104020.html"
-        }
-      ]
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "verdict": "WATCHLIST",
-      "price": 882.215,
-      "pct_day": 5.27,
-      "pct_since": -1.23,
-      "primary_pct": 5.27,
-      "direction": "up",
-      "triggers": [
-        "+5.3% on the day"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Applied Optoelectronics Zooms 13% Higher on Pivotal Quarterly Print; Coherent Advances 13%, Lumentum Adds 8%",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-08-07",
-          "url": "https://247wallst.com/investing/2026/08/07/applied-optoelectronics-zooms-13-higher-on-pivotal-quarterly-print-coherent-advances-13-lumentum-adds-8/"
-        },
-        {
-          "title": "Dow Jones Futures Rise As Cloudflare Leads Big Software Winners; Jobs Report On Tap",
-          "publisher": "Investor's Business Daily",
-          "date": "2026-08-07",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-jobs-report-cloudflare-sezzle-earnings-movers/?src=A00220&yptr=yahoo"
-        },
-        {
-          "title": "CoreWeave Stock, Nebius Highlight Data Center Earnings; Tech Stars Lumentum, AMAT Also Due",
-          "publisher": "Investor's Business Daily",
-          "date": "2026-08-06",
-          "url": "https://www.investors.com/research/earnings-preview/coreweave-stock-nebius-highlight-data-center-earnings-tech-stars-lumentum-amat-earnings/?src=A00220&yptr=yahoo"
-        }
-      ]
-    },
-    {
-      "ticker": "CRDO",
-      "name": "Credo Technology Group Holding Ltd",
-      "verdict": "PASS",
-      "price": 242.2025,
-      "pct_day": 5.11,
-      "pct_since": 3.03,
-      "primary_pct": 5.11,
-      "direction": "up",
-      "triggers": [
-        "+3.0% since last check",
-        "+5.1% on the day"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Two AI Names Bounce From Chip Sell-Off; Three More IBD 50 Stocks On Watch",
-          "publisher": "Investor's Business Daily",
-          "date": "2026-08-07",
-          "url": "https://www.investors.com/stock-lists/ibd-50/stock-market-ai-memory-teradyne-ter-stock-credo-crdo/?src=A00220&yptr=yahoo"
-        },
-        {
-          "title": "Dow Jones Futures Rise As Cloudflare Leads Big Software Winners; Jobs Report On Tap",
-          "publisher": "Investor's Business Daily",
-          "date": "2026-08-07",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-jobs-report-cloudflare-sezzle-earnings-movers/?src=A00220&yptr=yahoo"
-        },
-        {
-          "title": "Astera Labs Beat And Guided Higher, Then Fell Because The Rally Came First",
-          "publisher": "Trefis",
-          "date": "2026-08-06",
-          "url": "https://www.trefis.com/articles/610418/astera-labs-beat-and-guided-higher-then-fell-because-the-rally-came-first/2026-08-06"
-        }
-      ]
-    },
-    {
-      "ticker": "CBRS",
-      "name": "Cerebras Systems Inc.",
-      "verdict": "PASS",
-      "price": 215.765,
-      "pct_day": 2.11,
-      "pct_since": 3.76,
-      "primary_pct": 3.76,
-      "direction": "up",
-      "triggers": [
-        "+3.8% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "An Early Bet on SpaceX Led to a 30% Gain for This College Endowment",
-          "publisher": "Bloomberg",
-          "date": "2026-08-07",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/early-bet-spacex-led-30-111500300.html"
-        },
-        {
-          "title": "What You Actually Pay To Join The SITM Run",
-          "publisher": "Trefis",
-          "date": "2026-08-06",
-          "url": "https://www.trefis.com/articles/610350/what-you-actually-pay-to-join-the-sitm-run/2026-08-06"
-        },
-        {
-          "title": "Cerebras Systems: A Leading AI Semiconductor Company",
-          "publisher": "Zacks",
-          "date": "2026-08-03",
-          "url": "https://finance.yahoo.com/technology/ai/articles/cerebras-systems-leading-ai-semiconductor-195400355.html"
-        }
-      ]
-    },
-    {
-      "ticker": "FLUT",
-      "name": "Flutter Entertainment plc",
-      "verdict": "PASS",
-      "price": 95.9125,
-      "pct_day": 3.12,
-      "pct_since": 3.6,
-      "primary_pct": 3.6,
-      "direction": "up",
-      "triggers": [
-        "+3.6% since last check"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Citi upgrades Flutter after 13% share price slide",
-          "publisher": "Proactive",
-          "date": "2026-08-07",
-          "url": "https://www.proactiveinvestors.com/companies/news/1096718/citi-upgrades-flutter-after-13-share-price-slide-1096718.html"
-        },
-        {
-          "title": "DKNG Stock Slips After-Hours As Q2 Earnings Disappoint \u2014 CEO Says Predictions Growing Faster Than Expected, Ready To Win NFL Season",
-          "publisher": "Stocktwits",
-          "date": "2026-08-06",
-          "url": "https://stocktwits.com/news-articles/markets/equity/dkng-stock-slips-after-hours-as-q2-earnings-disappoint-ceo-says-predictions-growing-faster-than-expected-ready-to-win-nfl-season/cZoBQgERJJs"
-        },
-        {
-          "title": "Michael Burry Disagrees With Hedge Funds Over Flutter (FLUT)",
-          "publisher": "Insider Monkey",
-          "date": "2026-08-06",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/michael-burry-disagrees-hedge-funds-220346496.html"
         }
       ]
     }
