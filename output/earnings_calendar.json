@@ -1,16 +1,36 @@
 {
-  "generated_at": "2026-08-07T19:26:38Z",
+  "generated_at": "2026-08-07T20:04:07Z",
   "lookahead_days": 30,
   "upcoming_earnings": [
     {
       "ticker": "LITE",
       "name": "Lumentum Holdings Inc.",
       "date": "2026-08-11",
-      "days_until": 4,
+      "days_until": 3,
       "theme": "networking_infra",
       "verdict": "WATCHLIST",
       "thesis": "High-growth optical and photonic products company with a strong position in data center and cloud infrastructure, but with high valuation multiples.",
       "action": "Review thesis before earnings. Re-run research_ticker.py LITE after."
+    },
+    {
+      "ticker": "CBRS",
+      "name": "Cerebras Systems Inc.",
+      "date": "2026-08-12",
+      "days_until": 4,
+      "theme": "edge_ai_silicon",
+      "verdict": "PASS",
+      "thesis": "High-growth AI infrastructure play with significant valuation expectations and current unprofitability.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py CBRS after."
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "date": "2026-08-12",
+      "days_until": 4,
+      "theme": "networking_infra",
+      "verdict": "WATCHLIST",
+      "thesis": "Coherent Corp. is a high-growth laser technology company with a strong presence in the AI infrastructure theme, but its valuation is relatively high and its negative free cash flow and net debt position may be a concern for investors.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py COHR after."
     },
     {
       "ticker": "NBIS",
@@ -23,30 +43,10 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py NBIS after."
     },
     {
-      "ticker": "CBRS",
-      "name": "Cerebras Systems Inc.",
-      "date": "2026-08-12",
-      "days_until": 5,
-      "theme": "edge_ai_silicon",
-      "verdict": "PASS",
-      "thesis": "High-growth AI infrastructure play with significant valuation expectations and current unprofitability.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py CBRS after."
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "date": "2026-08-12",
-      "days_until": 5,
-      "theme": "networking_infra",
-      "verdict": "WATCHLIST",
-      "thesis": "Coherent Corp. is a high-growth laser technology company with a strong presence in the AI infrastructure theme, but its valuation is relatively high and its negative free cash flow and net debt position may be a concern for investors.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py COHR after."
-    },
-    {
       "ticker": "NVDA",
       "name": "NVIDIA Corporation",
       "date": "2026-08-26",
-      "days_until": 19,
+      "days_until": 18,
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
       "thesis": "Leading AI infrastructure play with strong growth prospects and reasonable valuation at 16.1x forward earnings.",
@@ -56,7 +56,7 @@
       "ticker": "MRVL",
       "name": "Marvell Technology, Inc.",
       "date": "2026-08-27",
-      "days_until": 20,
+      "days_until": 19,
       "theme": "edge_ai_silicon",
       "verdict": "PASS",
       "thesis": "Marvell Technology is a semiconductor company with significant exposure to AI infrastructure and data center power, but its valuation appears expensive relative to its growth.",
@@ -66,7 +66,7 @@
       "ticker": "AVGO",
       "name": "Broadcom Inc.",
       "date": "2026-09-02",
-      "days_until": 26,
+      "days_until": 25,
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
       "thesis": "High-growth semiconductor company with strong margins and free cash flow generation, trading at a premium valuation.",
