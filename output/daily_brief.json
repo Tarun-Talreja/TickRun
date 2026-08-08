@@ -1,13 +1,21 @@
 {
-  "generated_at": "2026-08-07T22:35:22Z",
-  "date": "2026-08-07",
+  "generated_at": "2026-08-08T11:01:17Z",
+  "date": "2026-08-08",
   "first_run": false,
   "items": [
     {
       "priority": 1,
       "kind": "catalyst",
-      "ticker": "ETN",
-      "headline": "ETN ex dividend TODAY",
+      "ticker": "AAPL",
+      "headline": "AAPL ex dividend in 2d",
+      "detail": "Ex-dividend date \u2014 buy before it to receive the dividend. Tax-free in the Roth, which is where this name is routed.",
+      "action": "Decide your number before the print \u2014 not after."
+    },
+    {
+      "priority": 1,
+      "kind": "catalyst",
+      "ticker": "IBM",
+      "headline": "IBM ex dividend in 2d",
       "detail": "Ex-dividend date \u2014 buy before it to receive the dividend. Tax-free in the Roth, which is where this name is routed.",
       "action": "Decide your number before the print \u2014 not after."
     },
@@ -50,16 +58,8 @@
       "headline": "RDDT \u25b2 +7.2%",
       "detail": null,
       "action": "No catalyst found \u2014 check the ticker's news tab yourself before acting."
-    },
-    {
-      "priority": 3,
-      "kind": "mover",
-      "ticker": "NOW",
-      "headline": "NOW \u25b2 +6.4%",
-      "detail": null,
-      "action": "No catalyst found \u2014 check the ticker's news tab yourself before acting."
     }
   ],
-  "hidden_count": 1,
+  "hidden_count": 2,
   "quiet_day": false
 }
