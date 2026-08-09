@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-08T11:41:47Z",
+  "generated_at": "2026-08-09T11:41:51Z",
   "rules": {
     "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
     "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
     "high_yield_threshold_pct": 3.0
   },
   "counts": {
-    "roth": 32,
+    "roth": 30,
     "taxable": 2
   },
   "roth": [
@@ -29,6 +29,16 @@
       "account": "ROTH",
       "priority": "high",
       "reason": "REIT \u2014 distributions are largely non-qualified and taxed as ordinary income, making this the most tax-inefficient asset class you hold. Sheltering it is worth more than sheltering an equivalent amount of growth stock."
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "theme": "edge_ai_silicon",
+      "verdict": "RESEARCH-WORTHY",
+      "div_yield_pct": 0.06,
+      "account": "ROTH",
+      "priority": "high",
+      "reason": "Highest-conviction growth pick (346% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
     },
     {
       "ticker": "PAYX",
@@ -231,16 +241,6 @@
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
     },
     {
-      "ticker": "MU",
-      "name": "Micron Technology, Inc.",
-      "theme": "edge_ai_silicon",
-      "verdict": "WATCHLIST",
-      "div_yield_pct": 0.06,
-      "account": "ROTH",
-      "priority": "medium",
-      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
-    },
-    {
       "ticker": "NOW",
       "name": "ServiceNow, Inc.",
       "theme": "cybersecurity",
@@ -291,31 +291,11 @@
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
     },
     {
-      "ticker": "TW",
-      "name": "Tradeweb Markets Inc.",
-      "theme": "financials",
-      "verdict": "WATCHLIST",
-      "div_yield_pct": 0.55,
-      "account": "ROTH",
-      "priority": "medium",
-      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
-    },
-    {
       "ticker": "V",
       "name": "Visa Inc.",
       "theme": "platform_network",
       "verdict": "WATCHLIST",
       "div_yield_pct": 0.74,
-      "account": "ROTH",
-      "priority": "medium",
-      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
-    },
-    {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings Co",
-      "theme": "power_grid",
-      "verdict": "WATCHLIST",
-      "div_yield_pct": 0.09,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
