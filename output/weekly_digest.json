@@ -1,123 +1,83 @@
 {
-  "generated_at": "2026-08-02T22:43:39Z",
-  "narrative": "This week, several stocks experienced significant price movements, including AMZN with a 15.32% gain and RDDT with a -20.99% loss. With no clear catalysts reported, it's essential to monitor these stocks for further developments. In the coming days, earnings reports are scheduled for several companies, including BWXT and POWL on August 3, and AMD on August 4, which may impact their stock prices and the overall market.",
-  "buy_ready": [],
+  "generated_at": "2026-08-09T22:17:36Z",
+  "narrative": "This week, several stocks experienced significant price movements, with OKLO leading the way with a 14.77% increase, followed by COHR with a 13.44% gain. It's essential to monitor these stocks, particularly COHR and CBRS, as they are set to report earnings in the next two days. Additionally, consider keeping an eye on MU, which is indicated as ready to be bought at its target price, although the specific target price is not provided.",
+  "buy_ready": [
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "price": 877.57,
+      "buy_target": 1004.0,
+      "at_or_below_target": true,
+      "confidence": "MEDIUM",
+      "theme": "edge_ai_silicon"
+    }
+  ],
   "movers": [
     {
+      "ticker": "OKLO",
+      "pct": 14.77,
+      "reason": "No clear catalyst in current news."
+    },
+    {
+      "ticker": "COHR",
+      "pct": 13.44,
+      "reason": "No clear catalyst in current news."
+    },
+    {
+      "ticker": "CRDO",
+      "pct": 8.45,
+      "reason": "No clear catalyst in current news."
+    },
+    {
+      "ticker": "CBRS",
+      "pct": 7.3,
+      "reason": "No clear catalyst in current news."
+    },
+    {
       "ticker": "RDDT",
-      "pct": -20.99,
+      "pct": 7.18,
       "reason": "No clear catalyst in current news."
     },
     {
-      "ticker": "AMZN",
-      "pct": 15.32,
-      "reason": "No clear catalyst in current news."
-    },
-    {
-      "ticker": "AAPL",
-      "pct": -7.35,
-      "reason": "No clear catalyst in current news."
-    },
-    {
-      "ticker": "ETN",
-      "pct": 7.32,
-      "reason": "No clear catalyst in current news."
-    },
-    {
-      "ticker": "EIX",
-      "pct": -6.81,
-      "reason": "No clear catalyst in current news."
-    },
-    {
-      "ticker": "GOOGL",
-      "pct": 6.73,
+      "ticker": "NOW",
+      "pct": 6.42,
       "reason": "No clear catalyst in current news."
     }
   ],
   "upcoming_earnings": [
     {
-      "ticker": "BWXT",
-      "date": "2026-08-03",
-      "days_until": 0
-    },
-    {
-      "ticker": "POWL",
-      "date": "2026-08-03",
-      "days_until": 0
-    },
-    {
-      "ticker": "AMD",
-      "date": "2026-08-04",
-      "days_until": 1
-    },
-    {
-      "ticker": "LMB",
-      "date": "2026-08-04",
-      "days_until": 1
-    },
-    {
-      "ticker": "FLUT",
-      "date": "2026-08-05",
-      "days_until": 2
-    },
-    {
-      "ticker": "LLY",
-      "date": "2026-08-05",
-      "days_until": 2
-    },
-    {
-      "ticker": "PODD",
-      "date": "2026-08-05",
-      "days_until": 2
-    },
-    {
-      "ticker": "TLN",
-      "date": "2026-08-05",
-      "days_until": 2
-    },
-    {
-      "ticker": "ZBH",
-      "date": "2026-08-05",
-      "days_until": 2
-    },
-    {
-      "ticker": "CEG",
-      "date": "2026-08-06",
-      "days_until": 3
-    },
-    {
-      "ticker": "OKLO",
-      "date": "2026-08-07",
-      "days_until": 4
-    },
-    {
-      "ticker": "VST",
-      "date": "2026-08-07",
-      "days_until": 4
-    },
-    {
       "ticker": "LITE",
       "date": "2026-08-11",
-      "days_until": 8
+      "days_until": 1
     },
     {
       "ticker": "CBRS",
       "date": "2026-08-12",
-      "days_until": 9
+      "days_until": 2
     },
     {
       "ticker": "COHR",
       "date": "2026-08-12",
-      "days_until": 9
+      "days_until": 2
     },
     {
       "ticker": "NBIS",
       "date": "2026-08-12",
-      "days_until": 9
+      "days_until": 2
     },
     {
       "ticker": "NVDA",
       "date": "2026-08-26",
+      "days_until": 16
+    },
+    {
+      "ticker": "MRVL",
+      "date": "2026-08-27",
+      "days_until": 17
+    },
+    {
+      "ticker": "AVGO",
+      "date": "2026-09-02",
       "days_until": 23
     }
   ],

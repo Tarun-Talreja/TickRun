@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T22:29:18Z",
+  "generated_at": "2026-08-09T22:17:05Z",
   "pullback_alerts": [
     {
       "ticker": "ISRG",
@@ -10,7 +10,7 @@
       "high_52w": 603.88,
       "drawdown_pct": -37.3,
       "severity": "STRONG",
-      "thesis": "High-growth medical technology company with a strong track record of innovation and a significant presence in the robotics and AI infrastructure space, trading at a premium valuation.",
+      "thesis": "High-quality medical device company with strong market position and growth potential, trading at a premium valuation.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -22,7 +22,7 @@
       "high_52w": 194.726,
       "drawdown_pct": -35.9,
       "severity": "STRONG",
-      "thesis": "ServiceNow is a high-growth SaaS company with a strong product portfolio, but its valuation multiple may be unsustainable.",
+      "thesis": "High-growth software company with expanding margins, but high valuation and potential customer concentration risks.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -35,18 +35,6 @@
       "drawdown_pct": -35.5,
       "severity": "STRONG",
       "thesis": "Powell Industries is a high-quality company with a strong track record of generating free cash flow, but its valuation is relatively high compared to its revenue growth rate.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "CEG",
-      "name": "Constellation Energy Corporation",
-      "theme": "nuclear_smr",
-      "verdict": "WATCHLIST",
-      "price": 269.89,
-      "high_52w": 412.7,
-      "drawdown_pct": -34.6,
-      "severity": "MODERATE",
-      "thesis": "Reasonably valued nuclear power play with stable revenue and growth potential, but facing financial health concerns.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -65,12 +53,12 @@
       "ticker": "MU",
       "name": "Micron Technology, Inc.",
       "theme": "edge_ai_silicon",
-      "verdict": "WATCHLIST",
+      "verdict": "RESEARCH-WORTHY",
       "price": 877.57,
       "high_52w": 1255.0,
       "drawdown_pct": -30.1,
       "severity": "MODERATE",
-      "thesis": "Micron is a leading memory and storage solutions provider with strong revenue growth and a solid balance sheet, trading at a reasonable valuation.",
+      "thesis": "AI infrastructure play with strong revenue growth and high gross margin, trading at a relatively cheap forward P/E of 5.7x.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -98,30 +86,6 @@
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings Co",
-      "theme": "power_grid",
-      "verdict": "WATCHLIST",
-      "price": 272.4,
-      "high_52w": 379.935,
-      "drawdown_pct": -28.3,
-      "severity": "MODERATE",
-      "thesis": "High-growth digital infrastructure provider with strong operating margin and alignment with AI infrastructure and data center power themes.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "TW",
-      "name": "Tradeweb Markets Inc.",
-      "theme": "financials",
-      "verdict": "WATCHLIST",
-      "price": 102.62,
-      "high_52w": 138.71,
-      "drawdown_pct": -26.0,
-      "severity": "MODERATE",
-      "thesis": "Tradeweb Markets Inc. is a quality compounder in the financial sector with a scalable business model, but its valuation is reasonable rather than cheap.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
       "ticker": "META",
       "name": "Meta Platforms, Inc.",
       "theme": "mega_cap_ai",
@@ -130,7 +94,7 @@
       "high_52w": 796.25,
       "drawdown_pct": -25.6,
       "severity": "MODERATE",
-      "thesis": "Reasonable valuation at 15.7x forward earnings for 28% growth, with a strong position in emerging technologies.",
+      "thesis": "Reasonably valued AI infrastructure play with strong revenue growth and a focus on innovation.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -142,7 +106,7 @@
       "high_52w": 89.77,
       "drawdown_pct": -20.1,
       "severity": "MODERATE",
-      "thesis": "Reasonable valuation and stable cash flows make GEHC a research-worthy candidate in the healthcare space.",
+      "thesis": "Reasonable valuation at 13.3x forward earnings for a quality healthcare technology company with a strong product innovation pipeline.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     }
   ],

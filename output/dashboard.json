@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-08-09T11:41:51Z",
-  "quotes_updated": "2026-08-09T11:21:24Z",
+  "last_built": "2026-08-09T22:17:36Z",
+  "quotes_updated": "2026-08-09T22:16:45Z",
   "portfolio": {
     "total_value": 0,
     "core": [
@@ -354,7 +354,7 @@
         "revenue_growth": 47.9,
         "op_margin": 49.0,
         "pe": 71.41236,
-        "forward_pe": 21.94546,
+        "forward_pe": 21.901974,
         "short_percent_float": 1.47,
         "short_ratio": 2.5,
         "high_proximity_warning": true,
@@ -510,7 +510,7 @@
         "revenue_growth": 21.3,
         "op_margin": 37.1,
         "pe": 59.17709,
-        "forward_pe": 29.378746,
+        "forward_pe": 29.289024,
         "short_percent_float": 0.33,
         "short_ratio": 0.6,
         "high_proximity_warning": true,
@@ -1047,7 +1047,7 @@
         "revenue_growth": null,
         "op_margin": -6048.8,
         "pe": null,
-        "forward_pe": -53.130554,
+        "forward_pe": -51.80438,
         "short_percent_float": 18.39,
         "short_ratio": 2.9,
         "high_proximity_warning": false,
@@ -2273,7 +2273,7 @@
           "revenue_growth": 47.9,
           "op_margin": 49.0,
           "pe": 71.41236,
-          "forward_pe": 21.94546,
+          "forward_pe": 21.901974,
           "short_percent_float": 1.47,
           "short_ratio": 2.5,
           "high_proximity_warning": true,
@@ -2342,7 +2342,7 @@
           "revenue_growth": 21.3,
           "op_margin": 37.1,
           "pe": 59.17709,
-          "forward_pe": 29.378746,
+          "forward_pe": 29.289024,
           "short_percent_float": 0.33,
           "short_ratio": 0.6,
           "high_proximity_warning": true,
@@ -3467,7 +3467,7 @@
           "revenue_growth": null,
           "op_margin": -6048.8,
           "pe": null,
-          "forward_pe": -53.130554,
+          "forward_pe": -51.80438,
           "short_percent_float": 18.39,
           "short_ratio": 2.9,
           "high_proximity_warning": false,
@@ -4265,7 +4265,7 @@
           "revenue_growth": 47.9,
           "op_margin": 49.0,
           "pe": 71.41236,
-          "forward_pe": 21.94546,
+          "forward_pe": 21.901974,
           "short_percent_float": 1.47,
           "short_ratio": 2.5,
           "high_proximity_warning": true,
@@ -4300,7 +4300,7 @@
           "revenue_growth": 21.3,
           "op_margin": 37.1,
           "pe": 59.17709,
-          "forward_pe": 29.378746,
+          "forward_pe": 29.289024,
           "short_percent_float": 0.33,
           "short_ratio": 0.6,
           "high_proximity_warning": true,
@@ -4954,7 +4954,7 @@
           "revenue_growth": null,
           "op_margin": -6048.8,
           "pe": null,
-          "forward_pe": -53.130554,
+          "forward_pe": -51.80438,
           "short_percent_float": 18.39,
           "short_ratio": 2.9,
           "high_proximity_warning": false,
@@ -6084,125 +6084,85 @@
     }
   },
   "digest": {
-    "generated_at": "2026-08-02T22:43:39Z",
-    "narrative": "This week, several stocks experienced significant price movements, including AMZN with a 15.32% gain and RDDT with a -20.99% loss. With no clear catalysts reported, it's essential to monitor these stocks for further developments. In the coming days, earnings reports are scheduled for several companies, including BWXT and POWL on August 3, and AMD on August 4, which may impact their stock prices and the overall market.",
-    "buy_ready": [],
+    "generated_at": "2026-08-09T22:17:36Z",
+    "narrative": "This week, several stocks experienced significant price movements, with OKLO leading the way with a 14.77% increase, followed by COHR with a 13.44% gain. It's essential to monitor these stocks, particularly COHR and CBRS, as they are set to report earnings in the next two days. Additionally, consider keeping an eye on MU, which is indicated as ready to be bought at its target price, although the specific target price is not provided.",
+    "buy_ready": [
+      {
+        "ticker": "MU",
+        "name": "Micron Technology, Inc.",
+        "price": 877.57,
+        "buy_target": 1004.0,
+        "at_or_below_target": true,
+        "confidence": "MEDIUM",
+        "theme": "edge_ai_silicon"
+      }
+    ],
     "movers": [
       {
+        "ticker": "OKLO",
+        "pct": 14.77,
+        "reason": "No clear catalyst in current news."
+      },
+      {
+        "ticker": "COHR",
+        "pct": 13.44,
+        "reason": "No clear catalyst in current news."
+      },
+      {
+        "ticker": "CRDO",
+        "pct": 8.45,
+        "reason": "No clear catalyst in current news."
+      },
+      {
+        "ticker": "CBRS",
+        "pct": 7.3,
+        "reason": "No clear catalyst in current news."
+      },
+      {
         "ticker": "RDDT",
-        "pct": -20.99,
+        "pct": 7.18,
         "reason": "No clear catalyst in current news."
       },
       {
-        "ticker": "AMZN",
-        "pct": 15.32,
-        "reason": "No clear catalyst in current news."
-      },
-      {
-        "ticker": "AAPL",
-        "pct": -7.35,
-        "reason": "No clear catalyst in current news."
-      },
-      {
-        "ticker": "ETN",
-        "pct": 7.32,
-        "reason": "No clear catalyst in current news."
-      },
-      {
-        "ticker": "EIX",
-        "pct": -6.81,
-        "reason": "No clear catalyst in current news."
-      },
-      {
-        "ticker": "GOOGL",
-        "pct": 6.73,
+        "ticker": "NOW",
+        "pct": 6.42,
         "reason": "No clear catalyst in current news."
       }
     ],
     "upcoming_earnings": [
       {
-        "ticker": "BWXT",
-        "date": "2026-08-03",
-        "days_until": 0
-      },
-      {
-        "ticker": "POWL",
-        "date": "2026-08-03",
-        "days_until": 0
-      },
-      {
-        "ticker": "AMD",
-        "date": "2026-08-04",
-        "days_until": 1
-      },
-      {
-        "ticker": "LMB",
-        "date": "2026-08-04",
-        "days_until": 1
-      },
-      {
-        "ticker": "FLUT",
-        "date": "2026-08-05",
-        "days_until": 2
-      },
-      {
-        "ticker": "LLY",
-        "date": "2026-08-05",
-        "days_until": 2
-      },
-      {
-        "ticker": "PODD",
-        "date": "2026-08-05",
-        "days_until": 2
-      },
-      {
-        "ticker": "TLN",
-        "date": "2026-08-05",
-        "days_until": 2
-      },
-      {
-        "ticker": "ZBH",
-        "date": "2026-08-05",
-        "days_until": 2
-      },
-      {
-        "ticker": "CEG",
-        "date": "2026-08-06",
-        "days_until": 3
-      },
-      {
-        "ticker": "OKLO",
-        "date": "2026-08-07",
-        "days_until": 4
-      },
-      {
-        "ticker": "VST",
-        "date": "2026-08-07",
-        "days_until": 4
-      },
-      {
         "ticker": "LITE",
         "date": "2026-08-11",
-        "days_until": 8
+        "days_until": 1
       },
       {
         "ticker": "CBRS",
         "date": "2026-08-12",
-        "days_until": 9
+        "days_until": 2
       },
       {
         "ticker": "COHR",
         "date": "2026-08-12",
-        "days_until": 9
+        "days_until": 2
       },
       {
         "ticker": "NBIS",
         "date": "2026-08-12",
-        "days_until": 9
+        "days_until": 2
       },
       {
         "ticker": "NVDA",
         "date": "2026-08-26",
+        "days_until": 16
+      },
+      {
+        "ticker": "MRVL",
+        "date": "2026-08-27",
+        "days_until": 17
+      },
+      {
+        "ticker": "AVGO",
+        "date": "2026-09-02",
         "days_until": 23
       }
     ],
@@ -9439,7 +9399,7 @@
         "high_52w": 603.88,
         "drawdown_pct": -37.3,
         "severity": "STRONG",
-        "thesis": "High-growth medical technology company with a strong track record of innovation and a significant presence in the robotics and AI infrastructure space, trading at a premium valuation.",
+        "thesis": "High-quality medical device company with strong market position and growth potential, trading at a premium valuation.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -9451,7 +9411,7 @@
         "high_52w": 194.726,
         "drawdown_pct": -35.9,
         "severity": "STRONG",
-        "thesis": "ServiceNow is a high-growth SaaS company with a strong product portfolio, but its valuation multiple may be unsustainable.",
+        "thesis": "High-growth software company with expanding margins, but high valuation and potential customer concentration risks.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -9464,18 +9424,6 @@
         "drawdown_pct": -35.5,
         "severity": "STRONG",
         "thesis": "Powell Industries is a high-quality company with a strong track record of generating free cash flow, but its valuation is relatively high compared to its revenue growth rate.",
-        "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-      },
-      {
-        "ticker": "CEG",
-        "name": "Constellation Energy Corporation",
-        "theme": "nuclear_smr",
-        "verdict": "WATCHLIST",
-        "price": 269.89,
-        "high_52w": 412.7,
-        "drawdown_pct": -34.6,
-        "severity": "MODERATE",
-        "thesis": "Reasonably valued nuclear power play with stable revenue and growth potential, but facing financial health concerns.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -9494,12 +9442,12 @@
         "ticker": "MU",
         "name": "Micron Technology, Inc.",
         "theme": "edge_ai_silicon",
-        "verdict": "WATCHLIST",
+        "verdict": "RESEARCH-WORTHY",
         "price": 877.57,
         "high_52w": 1255.0,
         "drawdown_pct": -30.1,
         "severity": "MODERATE",
-        "thesis": "Micron is a leading memory and storage solutions provider with strong revenue growth and a solid balance sheet, trading at a reasonable valuation.",
+        "thesis": "AI infrastructure play with strong revenue growth and high gross margin, trading at a relatively cheap forward P/E of 5.7x.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -9527,30 +9475,6 @@
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
-        "ticker": "VRT",
-        "name": "Vertiv Holdings Co",
-        "theme": "power_grid",
-        "verdict": "WATCHLIST",
-        "price": 272.4,
-        "high_52w": 379.935,
-        "drawdown_pct": -28.3,
-        "severity": "MODERATE",
-        "thesis": "High-growth digital infrastructure provider with strong operating margin and alignment with AI infrastructure and data center power themes.",
-        "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-      },
-      {
-        "ticker": "TW",
-        "name": "Tradeweb Markets Inc.",
-        "theme": "financials",
-        "verdict": "WATCHLIST",
-        "price": 102.62,
-        "high_52w": 138.71,
-        "drawdown_pct": -26.0,
-        "severity": "MODERATE",
-        "thesis": "Tradeweb Markets Inc. is a quality compounder in the financial sector with a scalable business model, but its valuation is reasonable rather than cheap.",
-        "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-      },
-      {
         "ticker": "META",
         "name": "Meta Platforms, Inc.",
         "theme": "mega_cap_ai",
@@ -9559,7 +9483,7 @@
         "high_52w": 796.25,
         "drawdown_pct": -25.6,
         "severity": "MODERATE",
-        "thesis": "Reasonable valuation at 15.7x forward earnings for 28% growth, with a strong position in emerging technologies.",
+        "thesis": "Reasonably valued AI infrastructure play with strong revenue growth and a focus on innovation.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -9571,7 +9495,7 @@
         "high_52w": 89.77,
         "drawdown_pct": -20.1,
         "severity": "MODERATE",
-        "thesis": "Reasonable valuation and stable cash flows make GEHC a research-worthy candidate in the healthcare space.",
+        "thesis": "Reasonable valuation at 13.3x forward earnings for a quality healthcare technology company with a strong product innovation pipeline.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       }
     ],
@@ -9581,7 +9505,7 @@
         "ticker": "LITE",
         "name": "Lumentum Holdings Inc.",
         "date": "2026-08-11",
-        "days_until": 3,
+        "days_until": 1,
         "theme": "networking_infra",
         "verdict": "WATCHLIST",
         "thesis": "High-growth optical and photonic products company with a strong position in data center and cloud infrastructure, but with high valuation multiples.",
@@ -9591,7 +9515,7 @@
         "ticker": "CBRS",
         "name": "Cerebras Systems Inc.",
         "date": "2026-08-12",
-        "days_until": 4,
+        "days_until": 2,
         "theme": "edge_ai_silicon",
         "verdict": "PASS",
         "thesis": "High-growth AI infrastructure play with significant valuation expectations and current unprofitability.",
@@ -9601,7 +9525,7 @@
         "ticker": "COHR",
         "name": "Coherent Corp.",
         "date": "2026-08-12",
-        "days_until": 4,
+        "days_until": 2,
         "theme": "networking_infra",
         "verdict": "WATCHLIST",
         "thesis": "Coherent Corp. is a high-growth laser technology company with a strong presence in the AI infrastructure theme, but its valuation is relatively high and its negative free cash flow and net debt position may be a concern for investors.",
@@ -9611,7 +9535,7 @@
         "ticker": "NBIS",
         "name": "Nebius Group N.V.",
         "date": "2026-08-12",
-        "days_until": 4,
+        "days_until": 2,
         "theme": "mega_cap_ai",
         "verdict": "PASS",
         "thesis": "expensive AI cloud play at 72.5x trailing earnings for 683.9% growth, with significant profitability and cash flow risks.",
@@ -9621,7 +9545,7 @@
         "ticker": "NVDA",
         "name": "NVIDIA Corporation",
         "date": "2026-08-26",
-        "days_until": 18,
+        "days_until": 16,
         "theme": "mega_cap_ai",
         "verdict": "WATCHLIST",
         "thesis": "Leading AI infrastructure play with strong growth prospects and reasonable valuation at 16.1x forward earnings.",
@@ -9631,7 +9555,7 @@
         "ticker": "MRVL",
         "name": "Marvell Technology, Inc.",
         "date": "2026-08-27",
-        "days_until": 19,
+        "days_until": 17,
         "theme": "edge_ai_silicon",
         "verdict": "PASS",
         "thesis": "Marvell Technology is a semiconductor company with significant exposure to AI infrastructure and data center power, but its valuation appears expensive relative to its growth.",
@@ -9641,7 +9565,7 @@
         "ticker": "AVGO",
         "name": "Broadcom Inc.",
         "date": "2026-09-02",
-        "days_until": 25,
+        "days_until": 23,
         "theme": "edge_ai_silicon",
         "verdict": "WATCHLIST",
         "thesis": "High-growth semiconductor company with strong margins and free cash flow generation, trading at a premium valuation.",
