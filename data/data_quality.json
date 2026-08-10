@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T21:12:19Z",
+  "generated_at": "2026-08-10T22:34:17Z",
   "checked": 58,
   "flagged": 0,
   "quality": {
@@ -15,6 +15,10 @@
       "ok": true,
       "flags": []
     },
+    "AMZN": {
+      "ok": true,
+      "flags": []
+    },
     "ASML": {
       "ok": true,
       "flags": []
@@ -23,19 +27,15 @@
       "ok": true,
       "flags": []
     },
-    "AMZN": {
-      "ok": true,
-      "flags": []
-    },
     "BWXT": {
       "ok": true,
       "flags": []
     },
-    "CEG": {
+    "CBRS": {
       "ok": true,
       "flags": []
     },
-    "CBRS": {
+    "CEG": {
       "ok": true,
       "flags": []
     },
@@ -63,11 +63,11 @@
       "ok": true,
       "flags": []
     },
-    "ETN": {
+    "EIX": {
       "ok": true,
       "flags": []
     },
-    "EIX": {
+    "ETN": {
       "ok": true,
       "flags": []
     },
@@ -83,11 +83,11 @@
       "ok": true,
       "flags": []
     },
-    "GIS": {
+    "GOOGL": {
       "ok": true,
       "flags": []
     },
-    "GOOGL": {
+    "GIS": {
       "ok": true,
       "flags": []
     },
@@ -95,11 +95,11 @@
       "ok": true,
       "flags": []
     },
-    "ISRG": {
+    "INVH": {
       "ok": true,
       "flags": []
     },
-    "INVH": {
+    "ISRG": {
       "ok": true,
       "flags": []
     },
@@ -139,6 +139,10 @@
       "ok": true,
       "flags": []
     },
+    "MU": {
+      "ok": true,
+      "flags": []
+    },
     "NBIS": {
       "ok": true,
       "flags": []
@@ -147,15 +151,7 @@
       "ok": true,
       "flags": []
     },
-    "MU": {
-      "ok": true,
-      "flags": []
-    },
     "NOW": {
-      "ok": true,
-      "flags": []
-    },
-    "NVT": {
       "ok": true,
       "flags": []
     },
@@ -167,11 +163,15 @@
       "ok": true,
       "flags": []
     },
-    "PODD": {
+    "NVT": {
       "ok": true,
       "flags": []
     },
     "PAYX": {
+      "ok": true,
+      "flags": []
+    },
+    "PODD": {
       "ok": true,
       "flags": []
     },
@@ -187,6 +187,10 @@
       "ok": true,
       "flags": []
     },
+    "TLN": {
+      "ok": true,
+      "flags": []
+    },
     "SPY": {
       "ok": true,
       "flags": []
@@ -195,19 +199,15 @@
       "ok": true,
       "flags": []
     },
-    "TLN": {
-      "ok": true,
-      "flags": []
-    },
     "TSM": {
       "ok": true,
       "flags": []
     },
-    "UNH": {
+    "TW": {
       "ok": true,
       "flags": []
     },
-    "TW": {
+    "UNH": {
       "ok": true,
       "flags": []
     },
@@ -223,7 +223,7 @@
       "ok": true,
       "flags": []
     },
-    "VTI": {
+    "^TNX": {
       "ok": true,
       "flags": []
     },
@@ -231,7 +231,7 @@
       "ok": true,
       "flags": []
     },
-    "^TNX": {
+    "VTI": {
       "ok": true,
       "flags": []
     }
