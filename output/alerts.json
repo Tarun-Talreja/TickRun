@@ -1,28 +1,16 @@
 {
-  "generated_at": "2026-08-10T22:31:34Z",
+  "generated_at": "2026-08-11T14:12:40Z",
   "pullback_alerts": [
     {
       "ticker": "POWL",
       "name": "Powell Industries, Inc.",
       "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "price": 207.22,
+      "price": 213.9,
       "high_52w": 328.0,
-      "drawdown_pct": -36.8,
-      "severity": "STRONG",
-      "thesis": "High-quality electrical power distribution and control equipment manufacturer with strong financials and growth prospects, trading at a premium valuation.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "ISRG",
-      "name": "Intuitive Surgical, Inc.",
-      "theme": "healthcare_innovation",
-      "verdict": "WATCHLIST",
-      "price": 393.38,
-      "high_52w": 603.88,
-      "drawdown_pct": -34.9,
+      "drawdown_pct": -34.8,
       "severity": "MODERATE",
-      "thesis": "High-quality medical device company with strong market position and growth potential, trading at a premium valuation.",
+      "thesis": "High-quality electrical power distribution and control equipment manufacturer with strong financials and growth prospects, trading at a premium valuation.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -30,7 +18,7 @@
       "name": "ServiceNow, Inc.",
       "theme": "cybersecurity",
       "verdict": "WATCHLIST",
-      "price": 127.44,
+      "price": 127.405,
       "high_52w": 194.726,
       "drawdown_pct": -34.6,
       "severity": "MODERATE",
@@ -42,11 +30,23 @@
       "name": "Celestica Inc.",
       "theme": "datacenter_infra",
       "verdict": "WATCHLIST",
-      "price": 314.59,
+      "price": 311.37,
       "high_52w": 474.03,
-      "drawdown_pct": -33.6,
+      "drawdown_pct": -34.3,
       "severity": "MODERATE",
       "thesis": "High-growth compounder with a diverse customer base, but high valuation and net debt pose a risk.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical, Inc.",
+      "theme": "healthcare_innovation",
+      "verdict": "WATCHLIST",
+      "price": 397.77,
+      "high_52w": 603.88,
+      "drawdown_pct": -34.1,
+      "severity": "MODERATE",
+      "thesis": "High-quality medical device company with strong market position and growth potential, trading at a premium valuation.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -54,9 +54,9 @@
       "name": "Micron Technology, Inc.",
       "theme": "edge_ai_silicon",
       "verdict": "RESEARCH-WORTHY",
-      "price": 861.0,
+      "price": 856.795,
       "high_52w": 1255.0,
-      "drawdown_pct": -31.4,
+      "drawdown_pct": -31.7,
       "severity": "MODERATE",
       "thesis": "AI infrastructure play with strong revenue growth and high gross margin, trading at a relatively cheap forward P/E of 5.7x.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -66,11 +66,11 @@
       "name": "BWX Technologies, Inc.",
       "theme": "nuclear_smr",
       "verdict": "WATCHLIST",
-      "price": 168.88,
+      "price": 172.355,
       "high_52w": 241.82,
-      "drawdown_pct": -30.2,
+      "drawdown_pct": -28.7,
       "severity": "MODERATE",
-      "thesis": "Nuclear-focused company with strong revenue growth and increasing backlog at a fair valuation.",
+      "thesis": "Nuclear energy company with strong growth prospects at 32.2x forward earnings for 18% growth.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -78,11 +78,23 @@
       "name": "International Business Machines Corporation",
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "price": 236.31,
+      "price": 238.18,
       "high_52w": 332.46,
-      "drawdown_pct": -28.9,
+      "drawdown_pct": -28.4,
       "severity": "MODERATE",
       "thesis": "Large-cap AI infrastructure play with reasonable valuation multiples and a strong backlog of contracts.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "theme": "networking_infra",
+      "verdict": "WATCHLIST",
+      "price": 804.97,
+      "high_52w": 1085.68,
+      "drawdown_pct": -25.9,
+      "severity": "MODERATE",
+      "thesis": "High-growth optical and photonic products company with a strong track record of revenue growth, but trading at a high valuation multiple.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -90,9 +102,9 @@
       "name": "Coherent Corp.",
       "theme": "networking_infra",
       "verdict": "WATCHLIST",
-      "price": 325.15,
+      "price": 326.67,
       "high_52w": 440.0,
-      "drawdown_pct": -26.1,
+      "drawdown_pct": -25.8,
       "severity": "MODERATE",
       "thesis": "Coherent Corp. is a high-growth laser technology company with a strong presence in the AI infrastructure theme, but its valuation is relatively high and its negative free cash flow and net debt position may be a concern for investors.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -102,23 +114,11 @@
       "name": "Meta Platforms, Inc.",
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "price": 594.92,
+      "price": 608.145,
       "high_52w": 796.25,
-      "drawdown_pct": -25.3,
+      "drawdown_pct": -23.6,
       "severity": "MODERATE",
       "thesis": "Reasonably valued AI infrastructure play with strong revenue growth and a focus on innovation.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "theme": "networking_infra",
-      "verdict": "WATCHLIST",
-      "price": 813.51,
-      "high_52w": 1085.68,
-      "drawdown_pct": -25.1,
-      "severity": "MODERATE",
-      "thesis": "High-growth optical and photonic products company with a strong position in data center and cloud infrastructure, but with high valuation multiples.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     }
   ],
