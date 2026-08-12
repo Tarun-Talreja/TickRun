@@ -1,37 +1,383 @@
 {
-  "generated_at": "2026-08-11T22:37:55Z",
+  "generated_at": "2026-08-12T14:20:56Z",
   "movers": [
     {
-      "ticker": "OKLO",
-      "name": "Oklo Inc.",
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
       "verdict": "PASS",
-      "price": 47.01,
-      "pct_day": 5.66,
-      "pct_since": 0.0,
-      "primary_pct": 5.66,
+      "price": 234.43,
+      "pct_day": 21.32,
+      "pct_since": 21.32,
+      "primary_pct": 21.32,
       "direction": "up",
       "triggers": [
-        "+5.7% on the day"
+        "+21.3% since last check",
+        "+21.3% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
         {
-          "title": "NuScale Power Is Still Down 32% This Year. What Will It Take to Get SMR Stock Back to $15?",
+          "title": "Earnings live updates: Nebius stock soars as AI cloud revenue jumps 514%, Cava gains on earnings beat",
+          "publisher": "Yahoo Finance",
+          "date": "2026-08-10",
+          "url": "https://finance.yahoo.com/markets/live/earnings-live-updates-nebius-stock-soars-as-ai-cloud-revenue-jumps-514-cava-gains-on-earnings-beat-202302733.html"
+        },
+        {
+          "title": "Tech leads sectors higher in early trading as chip stocks gain: AlphaCheck",
+          "publisher": "Yahoo Finance",
+          "date": "2026-08-12",
+          "url": "https://finance.yahoo.com/markets/article/tech-leads-sectors-higher-in-early-trading-as-chip-stocks-gain-alphacheck-134443200.html"
+        },
+        {
+          "title": "CoreWeave Earnings Beat Amid Operating Margin Upside. AI Stock Jumps.",
+          "publisher": "Investor's Business Daily",
+          "date": "2026-08-12",
+          "url": "https://www.investors.com/news/technology/coreweave-stock-crwv-coreweave-earnings-q22026/?src=A00220&yptr=yahoo"
+        }
+      ]
+    },
+    {
+      "ticker": "CBRS",
+      "name": "Cerebras Systems Inc.",
+      "verdict": "PASS",
+      "price": 249.335,
+      "pct_day": 6.21,
+      "pct_since": 6.21,
+      "primary_pct": 6.21,
+      "direction": "up",
+      "triggers": [
+        "+6.2% since last check",
+        "+6.2% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "Quantum trade moves beyond science fiction: AlphaCheck",
+          "publisher": "Yahoo Finance",
+          "date": "2026-08-11",
+          "url": "https://finance.yahoo.com/markets/article/quantum-trade-moves-beyond-science-fiction-alphacheck-152407486.html"
+        },
+        {
+          "title": "The $1.3 Trillion Inference War Is Heating Up. 3 Stocks to Watch.",
+          "publisher": "Motley Fool",
+          "date": "2026-08-12",
+          "url": "https://www.fool.com/investing/2026/08/12/trillion-inference-war-heating-up-stocks-nvda-amd/"
+        },
+        {
+          "title": "Cerebras Set to Report Earnings as AI Chips Enter a New Era",
+          "publisher": "Barrons.com",
+          "date": "2026-08-12",
+          "url": "https://www.barrons.com/articles/cerebras-systems-earnings-stock-price-fac4c486?siteid=yhoof2&yptr=yahoo"
+        }
+      ]
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "verdict": "WATCHLIST",
+      "price": 870.62,
+      "pct_day": 6.1,
+      "pct_since": 6.1,
+      "primary_pct": 6.1,
+      "direction": "up",
+      "triggers": [
+        "+6.1% since last check",
+        "+6.1% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "Lumentum Earnings Top Estimates Amid Supply Chain Constraints",
+          "publisher": "Investor's Business Daily",
+          "date": "2026-08-12",
+          "url": "https://www.investors.com/news/technology/lumentum-stock-lite-lumenum-earnings-news-q22026/?src=A00220&yptr=yahoo"
+        },
+        {
+          "title": "Lumentum Q4 Earnings Call Focuses on AI Optics, OCS & NPO Ramps",
+          "publisher": "Zacks",
+          "date": "2026-08-12",
+          "url": "https://finance.yahoo.com/technology/ai/articles/lumentum-q4-earnings-call-focuses-130600686.html"
+        },
+        {
+          "title": "Lumentum Stock Rises 8% Despite a $7 Billion Paper Loss",
+          "publisher": "GuruFocus.com",
+          "date": "2026-08-12",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/lumentum-stock-rises-8-despite-124825722.html"
+        }
+      ]
+    },
+    {
+      "ticker": "CRDO",
+      "name": "Credo Technology Group Holding Ltd",
+      "verdict": "PASS",
+      "price": 262.585,
+      "pct_day": 6.01,
+      "pct_since": 6.01,
+      "primary_pct": 6.01,
+      "direction": "up",
+      "triggers": [
+        "+6.0% since last check",
+        "+6.0% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "QuickLogic (QUIK) Reports Q2 Loss, Lags Revenue Estimates",
+          "publisher": "Zacks",
+          "date": "2026-08-11",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/quicklogic-quik-reports-q2-loss-211502615.html"
+        },
+        {
+          "title": "Two AI Names Bounce From Chip Sell-Off; Three More IBD 50 Stocks On Watch",
+          "publisher": "Investor's Business Daily",
+          "date": "2026-08-07",
+          "url": "https://www.investors.com/stock-lists/ibd-50/stock-market-ai-memory-teradyne-ter-stock-credo-crdo/?src=A00220&yptr=yahoo"
+        },
+        {
+          "title": "Dow Jones Futures Rise As Cloudflare Leads Big Software Winners; Jobs Report On Tap",
+          "publisher": "Investor's Business Daily",
+          "date": "2026-08-07",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-jobs-report-cloudflare-sezzle-earnings-movers/?src=A00220&yptr=yahoo"
+        }
+      ]
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "verdict": "RESEARCH-WORTHY",
+      "price": 919.28,
+      "pct_day": 5.84,
+      "pct_since": 5.84,
+      "primary_pct": 5.84,
+      "direction": "up",
+      "triggers": [
+        "+5.8% since last check",
+        "+5.8% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "Tech leads sectors higher in early trading as chip stocks gain: AlphaCheck",
+          "publisher": "Yahoo Finance",
+          "date": "2026-08-12",
+          "url": "https://finance.yahoo.com/markets/article/tech-leads-sectors-higher-in-early-trading-as-chip-stocks-gain-alphacheck-134443200.html"
+        },
+        {
+          "title": "Forget big tech: the real AI money is in plumbing",
+          "publisher": "Yahoo Finance Video",
+          "date": "2026-08-12",
+          "url": "https://finance.yahoo.com/video/forget-big-tech-real-ai-100000112.html"
+        },
+        {
+          "title": "Micron Set A Margin Record On Prices It Has Agreed To Cap",
+          "publisher": "Trefis",
+          "date": "2026-08-12",
+          "url": "https://www.trefis.com/articles/611167/micron-set-a-margin-record-on-prices-it-has-agreed-to-cap/2026-08-12"
+        }
+      ]
+    },
+    {
+      "ticker": "CLS",
+      "name": "Celestica, Inc.",
+      "verdict": "WATCHLIST",
+      "price": 327.555,
+      "pct_day": 5.53,
+      "pct_since": 5.53,
+      "primary_pct": 5.53,
+      "direction": "up",
+      "triggers": [
+        "+5.5% since last check",
+        "+5.5% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "Boeing upgraded, Under Armour downgraded: Wall Street's top analyst calls",
+          "publisher": "The Fly",
+          "date": "2026-08-11",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/boeing-upgraded-under-armour-downgraded-133858700.html"
+        },
+        {
+          "title": "Is Flex Stock a Buy as AI Growth Collides With a Richer Valuation?",
+          "publisher": "Zacks",
+          "date": "2026-08-11",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/flex-stock-buy-ai-growth-132600322.html"
+        },
+        {
+          "title": "Flex's CPI Spin-Off Could Reshape Its AI Infrastructure Growth Story",
+          "publisher": "Zacks",
+          "date": "2026-08-11",
+          "url": "https://finance.yahoo.com/technology/ai/articles/flexs-cpi-spin-off-could-132000487.html"
+        }
+      ]
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "verdict": "PASS",
+      "price": 222.64,
+      "pct_day": 4.87,
+      "pct_since": 4.87,
+      "primary_pct": 4.87,
+      "direction": "up",
+      "triggers": [
+        "+4.9% since last check"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "Nvidia Will Be The World\u2019s First $10 Trillion Company",
           "publisher": "24/7 Wall St.",
-          "date": "2026-08-11",
-          "url": "https://247wallst.com/investing/2026/08/11/nuscale-power-is-still-down-32-this-year-what-will-it-take-to-get-smr-stock-back-to-15/"
+          "date": "2026-08-12",
+          "url": "https://247wallst.com/investing/2026/08/12/nvidia-will-be-the-worlds-first-10-trillion-company/"
         },
         {
-          "title": "Cause for Concern or Routine Move? Oklo CEO Jacob DeWitte Sells 120,000 Shares for $4.9 Million",
-          "publisher": "Motley Fool",
-          "date": "2026-08-11",
-          "url": "https://www.fool.com/coverage/filings/2026/08/11/cause-for-concern-or-routine-move-oklo-ceo-jacob-dewitte-sells-120-000-shares-for-usd4-9-million/"
+          "title": "Lumentum, CoreWeave, SMCI, and More Stocks That Explain Today\u2019s Market",
+          "publisher": "Barrons.com",
+          "date": "2026-08-12",
+          "url": "https://www.barrons.com/articles/stock-movers-dfcc9c13?siteid=yhoof2&yptr=yahoo"
         },
         {
-          "title": "Oklo Stock Sank Another 26% in July. Is It a Buy?",
+          "title": "Strong Results from CoreWeave, Super Micro Computer Boost Stock Futures",
+          "publisher": "The Wall Street Journal",
+          "date": "2026-08-12",
+          "url": "https://www.wsj.com/livecoverage/stock-market-cpi-inflation-08-12-2026/card/strong-results-from-coreweave-super-micro-computer-boost-stock-futures-LNlyXNyr4t6DrebmZZvX?siteid=yhoof2&yptr=yahoo"
+        }
+      ]
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings Co",
+      "verdict": "PASS",
+      "price": 294.33,
+      "pct_day": 4.44,
+      "pct_since": 4.44,
+      "primary_pct": 4.44,
+      "direction": "up",
+      "triggers": [
+        "+4.4% since last check"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "Stronger Results, AI Deals, and Buybacks Could Be A Game Changer For Vertiv Holdings Co (VRT)",
+          "publisher": "Simply Wall St.",
+          "date": "2026-08-12",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/stronger-results-ai-deals-buybacks-111248821.html"
+        },
+        {
+          "title": "The Best AI Stocks of 2026 Shouldn\u2019t Be in Your Three-Year Plan: Here\u2019s Why",
+          "publisher": "BeInCrypto",
+          "date": "2026-08-12",
+          "url": "https://beincrypto.com/best-ai-stocks-2026-to-watch/"
+        },
+        {
+          "title": "Better AI Infrastructure Stock: Vertiv vs. Eaton",
           "publisher": "Motley Fool",
+          "date": "2026-08-12",
+          "url": "https://www.fool.com/investing/2026/08/12/better-ai-infrastructure-stock-vertiv-vs-eaton/"
+        }
+      ]
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "verdict": "WATCHLIST",
+      "price": 342.255,
+      "pct_day": 4.17,
+      "pct_since": 4.17,
+      "primary_pct": 4.17,
+      "direction": "up",
+      "triggers": [
+        "+4.2% since last check"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": [
+        {
+          "title": "Stocks to Watch Wednesday: CoreWeave, Super Micro, Cisco",
+          "publisher": "The Wall Street Journal",
+          "date": "2026-08-12",
+          "url": "https://www.wsj.com/livecoverage/stock-market-cpi-inflation-08-12-2026/card/stocks-to-watch-wednesday-coreweave-super-micro-cisco-5yWXl9pdmSJkXBPzjbew?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "title": "Lumentum, CoreWeave, SMCI, and More Stocks That Explain Today\u2019s Market",
+          "publisher": "Barrons.com",
+          "date": "2026-08-12",
+          "url": "https://www.barrons.com/articles/stock-movers-dfcc9c13?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "title": "Market\u2019s Momentum Darlings Resurface as Optical Stocks Take Off",
+          "publisher": "Bloomberg",
+          "date": "2026-08-12",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/market-momentum-darlings-resurface-optical-104501913.html"
+        }
+      ]
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "verdict": "WATCHLIST",
+      "price": 122.785,
+      "pct_day": -3.73,
+      "pct_since": -3.73,
+      "primary_pct": -3.73,
+      "direction": "down",
+      "triggers": [
+        "-3.7% since last check"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": [
+        {
+          "title": "Palantir and These Software Stocks Slide in Seesaw With Chip Giants",
+          "publisher": "Barrons.com",
+          "date": "2026-08-12",
+          "url": "https://www.barrons.com/articles/palantir-software-stocks-chip-81e21d89?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "title": "SpaceX\u2019s High-Margin Software Business Could Soon Hit $33 Billion. Investors Are Underestimating It.",
+          "publisher": "24/7 Wall St.",
+          "date": "2026-08-12",
+          "url": "https://247wallst.com/investing/2026/08/12/spacexs-high-margin-software-business-could-soon-hit-33-billion-investors-are-underestimating-it/"
+        },
+        {
+          "title": "Software-as-a-Service (SaaS) Companies Are Making a Comeback. Here's the Exact SaaS Stock I Recommend Buying Right Now.",
+          "publisher": "Motley Fool",
+          "date": "2026-08-12",
+          "url": "https://www.fool.com/investing/2026/08/12/software-as-a-service-saas-companies-are-making-a/"
+        }
+      ]
+    },
+    {
+      "ticker": "TLN",
+      "name": "Talen Energy Corporation",
+      "verdict": "PASS",
+      "price": 368.7566,
+      "pct_day": 3.04,
+      "pct_since": 3.04,
+      "primary_pct": 3.04,
+      "direction": "up",
+      "triggers": [
+        "+3.0% since last check"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": [
+        {
+          "title": "Does Talen Energy\u2019s (TLN) Aggressive Buyback and PJM Bets Redefine Its Post-Loss Investment Story?",
+          "publisher": "Simply Wall St.",
+          "date": "2026-08-12",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/does-talen-energy-tln-aggressive-101153717.html"
+        },
+        {
+          "title": "Talen Energy (TLN) Raised Guidance In August, So Why The Loss?",
+          "publisher": "Insider Monkey",
           "date": "2026-08-11",
-          "url": "https://www.fool.com/investing/2026/08/11/oklo-stock-sank-another-26-in-july-is-it-a-buy/"
+          "url": "https://finance.yahoo.com/markets/stocks/articles/talen-energy-tln-raised-guidance-192349215.html"
+        },
+        {
+          "title": "TLN Q2 Earnings Call Emphasizes Cash Flow and Data Center Strategy",
+          "publisher": "Zacks",
+          "date": "2026-08-07",
+          "url": "https://finance.yahoo.com/energy/articles/tln-q2-earnings-call-emphasizes-140000814.html"
         }
       ]
     },
@@ -39,16 +385,22 @@
       "ticker": "FLUT",
       "name": "Flutter Entertainment plc",
       "verdict": "PASS",
-      "price": 99.02,
-      "pct_day": 5.04,
-      "pct_since": 0.0,
-      "primary_pct": 5.04,
-      "direction": "up",
+      "price": 96.035,
+      "pct_day": -2.99,
+      "pct_since": -3.01,
+      "primary_pct": -3.01,
+      "direction": "down",
       "triggers": [
-        "+5.0% on the day"
+        "-3.0% since last check"
       ],
-      "reason": "No clear catalyst in current news.",
+      "reason": "See headlines (explanation limited to top movers).",
       "news": [
+        {
+          "title": "Flutter (FLUT) Q2 2026 Earnings Call Transcript",
+          "publisher": "Motley Fool",
+          "date": "2026-08-12",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/08/12/flutter-flut-q2-2026-earnings-call-transcript/"
+        },
         {
           "title": "Flutter Entertainment price target trimmed on increased promotional spending",
           "publisher": "Proactive",
@@ -60,12 +412,6 @@
           "publisher": "MarketBeat",
           "date": "2026-08-08",
           "url": "https://www.marketbeat.com/instant-alerts/flutter-entertainment-q2-earnings-call-highlights-2026-08-08/?utm_source=yahoofinance&utm_medium=yahoofinance"
-        },
-        {
-          "title": "Stock Market Today, Aug. 7: DraftKings Surges 8% on Prediction-Market Growth After Q2 Results",
-          "publisher": "Motley Fool",
-          "date": "2026-08-07",
-          "url": "https://www.fool.com/coverage/stock-market-today/2026/08/07/stock-market-today-aug-7-draftkings-surges-8-on-prediction-market-growth-after-q2-results/"
         }
       ]
     }
