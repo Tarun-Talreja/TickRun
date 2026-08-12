@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-12T19:33:55Z",
+  "generated_at": "2026-08-12T20:33:23Z",
   "pullback_alerts": [
     {
       "ticker": "NOW",
       "name": "ServiceNow, Inc.",
       "theme": "cybersecurity",
       "verdict": "WATCHLIST",
-      "price": 124.425,
+      "price": 124.94,
       "high_52w": 194.726,
-      "drawdown_pct": -36.1,
+      "drawdown_pct": -35.8,
       "severity": "STRONG",
       "thesis": "High-growth SaaS company with a strong market position, but high valuation and competitive industry make it a less attractive investment opportunity at current prices.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -18,9 +18,9 @@
       "name": "Intuitive Surgical, Inc.",
       "theme": "healthcare_innovation",
       "verdict": "WATCHLIST",
-      "price": 400.3343,
+      "price": 401.27,
       "high_52w": 603.88,
-      "drawdown_pct": -33.7,
+      "drawdown_pct": -33.6,
       "severity": "MODERATE",
       "thesis": "High-quality medical device company with strong market position and growth potential, trading at a premium valuation.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -30,23 +30,11 @@
       "name": "International Business Machines Corporation",
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "price": 235.4929,
+      "price": 235.98,
       "high_52w": 332.46,
-      "drawdown_pct": -29.2,
+      "drawdown_pct": -29.0,
       "severity": "MODERATE",
       "thesis": "Large-cap AI infrastructure play with reasonable valuation multiples and recent contract wins.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "CLS",
-      "name": "Celestica, Inc.",
-      "theme": "datacenter_infra",
-      "verdict": "WATCHLIST",
-      "price": 336.25,
-      "high_52w": 474.03,
-      "drawdown_pct": -29.1,
-      "severity": "MODERATE",
-      "thesis": "High-growth compounder with a diverse customer base, but high valuation and net debt pose a risk.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -54,7 +42,7 @@
       "name": "BWX Technologies, Inc.",
       "theme": "nuclear_smr",
       "verdict": "WATCHLIST",
-      "price": 172.695,
+      "price": 172.56,
       "high_52w": 241.82,
       "drawdown_pct": -28.6,
       "severity": "MODERATE",
@@ -62,15 +50,15 @@
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "theme": "mega_cap_ai",
+      "ticker": "CLS",
+      "name": "Celestica Inc.",
+      "theme": "datacenter_infra",
       "verdict": "WATCHLIST",
-      "price": 580.135,
-      "high_52w": 796.25,
-      "drawdown_pct": -27.1,
+      "price": 339.46,
+      "high_52w": 474.03,
+      "drawdown_pct": -28.4,
       "severity": "MODERATE",
-      "thesis": "Meta is a research-worthy opportunity due to its strong revenue growth, investments in AI research and development, and reasonable valuation.",
+      "thesis": "High-growth compounder with a diverse customer base, but high valuation and net debt pose a risk.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -78,11 +66,23 @@
       "name": "Micron Technology, Inc.",
       "theme": "edge_ai_silicon",
       "verdict": "RESEARCH-WORTHY",
-      "price": 917.13,
+      "price": 911.29,
       "high_52w": 1255.0,
-      "drawdown_pct": -26.9,
+      "drawdown_pct": -27.4,
       "severity": "MODERATE",
       "thesis": "AI infrastructure play with strong revenue growth and high gross margin, trading at a relatively cheap forward P/E of 5.7x.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "theme": "mega_cap_ai",
+      "verdict": "WATCHLIST",
+      "price": 578.85,
+      "high_52w": 796.25,
+      "drawdown_pct": -27.3,
+      "severity": "MODERATE",
+      "thesis": "Meta is a research-worthy opportunity due to its strong revenue growth, investments in AI research and development, and reasonable valuation.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     }
   ],
