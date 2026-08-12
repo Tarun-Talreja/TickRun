@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-12T14:14:01Z",
+  "generated_at": "2026-08-12T15:27:26Z",
   "pullback_alerts": [
     {
       "ticker": "NOW",
       "name": "ServiceNow, Inc.",
       "theme": "cybersecurity",
       "verdict": "WATCHLIST",
-      "price": 122.785,
+      "price": 123.11,
       "high_52w": 194.726,
-      "drawdown_pct": -36.9,
+      "drawdown_pct": -36.8,
       "severity": "STRONG",
       "thesis": "High-growth SaaS company with a strong market position, but high valuation and competitive industry make it a less attractive investment opportunity at current prices.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -18,23 +18,11 @@
       "name": "Intuitive Surgical, Inc.",
       "theme": "healthcare_innovation",
       "verdict": "WATCHLIST",
-      "price": 398.47,
+      "price": 400.04,
       "high_52w": 603.88,
-      "drawdown_pct": -34.0,
+      "drawdown_pct": -33.8,
       "severity": "MODERATE",
       "thesis": "High-quality medical device company with strong market position and growth potential, trading at a premium valuation.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "CLS",
-      "name": "Celestica, Inc.",
-      "theme": "datacenter_infra",
-      "verdict": "WATCHLIST",
-      "price": 327.555,
-      "high_52w": 474.03,
-      "drawdown_pct": -30.9,
-      "severity": "MODERATE",
-      "thesis": "High-growth compounder with a diverse customer base, but high valuation and net debt pose a risk.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -42,9 +30,9 @@
       "name": "International Business Machines Corporation",
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "price": 233.36,
+      "price": 232.9701,
       "high_52w": 332.46,
-      "drawdown_pct": -29.8,
+      "drawdown_pct": -29.9,
       "severity": "MODERATE",
       "thesis": "Large-cap AI infrastructure play with reasonable valuation multiples and recent contract wins.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -54,7 +42,7 @@
       "name": "BWX Technologies, Inc.",
       "theme": "nuclear_smr",
       "verdict": "WATCHLIST",
-      "price": 170.245,
+      "price": 170.17,
       "high_52w": 241.82,
       "drawdown_pct": -29.6,
       "severity": "MODERATE",
@@ -62,15 +50,15 @@
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
-      "ticker": "MU",
-      "name": "Micron Technology, Inc.",
-      "theme": "edge_ai_silicon",
-      "verdict": "RESEARCH-WORTHY",
-      "price": 919.28,
-      "high_52w": 1255.0,
-      "drawdown_pct": -26.8,
+      "ticker": "CLS",
+      "name": "Celestica, Inc.",
+      "theme": "datacenter_infra",
+      "verdict": "WATCHLIST",
+      "price": 338.7,
+      "high_52w": 474.03,
+      "drawdown_pct": -28.5,
       "severity": "MODERATE",
-      "thesis": "AI infrastructure play with strong revenue growth and high gross margin, trading at a relatively cheap forward P/E of 5.7x.",
+      "thesis": "High-growth compounder with a diverse customer base, but high valuation and net debt pose a risk.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -78,11 +66,23 @@
       "name": "Meta Platforms, Inc.",
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "price": 587.775,
+      "price": 584.023,
       "high_52w": 796.25,
-      "drawdown_pct": -26.2,
+      "drawdown_pct": -26.7,
       "severity": "MODERATE",
       "thesis": "Meta is a research-worthy opportunity due to its strong revenue growth, investments in AI research and development, and reasonable valuation.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "theme": "edge_ai_silicon",
+      "verdict": "RESEARCH-WORTHY",
+      "price": 923.26,
+      "high_52w": 1255.0,
+      "drawdown_pct": -26.4,
+      "severity": "MODERATE",
+      "thesis": "AI infrastructure play with strong revenue growth and high gross margin, trading at a relatively cheap forward P/E of 5.7x.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -90,23 +90,11 @@
       "name": "Coherent Corp.",
       "theme": "networking_infra",
       "verdict": "WATCHLIST",
-      "price": 342.255,
+      "price": 351.99,
       "high_52w": 440.0,
-      "drawdown_pct": -22.2,
+      "drawdown_pct": -20.0,
       "severity": "MODERATE",
       "thesis": "Coherent Corp. is a high-growth laser technology company with a strong presence in the AI infrastructure theme, but its valuation is relatively high and its negative free cash flow and net debt position may be a concern for investors.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "GEHC",
-      "name": "GE HealthCare Technologies Inc.",
-      "theme": "healthcare_innovation",
-      "verdict": "WATCHLIST",
-      "price": 71.74,
-      "high_52w": 89.77,
-      "drawdown_pct": -20.1,
-      "severity": "MODERATE",
-      "thesis": "Reasonable valuation at 13.3x forward earnings for a quality healthcare technology company with a strong product innovation pipeline.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     }
   ],
