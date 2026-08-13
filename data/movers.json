@@ -1,21 +1,26 @@
 {
-  "generated_at": "2026-08-13T15:33:14Z",
+  "generated_at": "2026-08-13T16:27:49Z",
   "movers": [
     {
       "ticker": "CBRS",
       "name": "Cerebras Systems Inc.",
       "verdict": "PASS",
-      "price": 226.48,
-      "pct_day": -13.58,
-      "pct_since": -3.0,
-      "primary_pct": -13.58,
+      "price": 229.19,
+      "pct_day": -12.54,
+      "pct_since": 1.2,
+      "primary_pct": -12.54,
       "direction": "down",
       "triggers": [
-        "-3.0% since last check",
-        "-13.6% on the day"
+        "-12.5% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
+        {
+          "title": "Stock market today: S&P 500 and Nasdaq gain on soft inflation data, Dow dips",
+          "publisher": "Yahoo Finance",
+          "date": "2026-08-13",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-sp-500-and-nasdaq-gain-on-soft-inflation-data-dow-dips-100145282.html"
+        },
         {
           "title": "Stocks rise on broad sector strength: AlphaCheck",
           "publisher": "Yahoo Finance",
@@ -23,65 +28,23 @@
           "url": "https://finance.yahoo.com/markets/article/stocks-rise-on-broad-sector-strength-alphacheck-135545759.html"
         },
         {
-          "title": "Cerebras stock falls on earnings disappointment despite guidance raise",
-          "publisher": "Proactive",
+          "title": "Top Midday Stories: Accelerant to be Taken Private by Thoma Bravo in $4 Billion Deal; Cisco Shares Fall Despite Strong Earnings, Guidance",
+          "publisher": "MT Newswires",
           "date": "2026-08-13",
-          "url": "https://www.proactiveinvestors.com/companies/news/1097021/cerebras-stock-falls-on-earnings-disappointment-despite-guidance-raise-1097021.html"
-        },
-        {
-          "title": "Stock Market Today: Dow Lags Nasdaq's Gain; Cisco Falls 7% On Earnings (Live Coverage)",
-          "publisher": "Investor's Business Daily",
-          "date": "2026-08-13",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-inflation-data-cisco-cerebras-earnings/?src=A00220&yptr=yahoo"
-        }
-      ]
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron Technology, Inc.",
-      "verdict": "RESEARCH-WORTHY",
-      "price": 976.015,
-      "pct_day": 7.1,
-      "pct_since": 4.25,
-      "primary_pct": 7.1,
-      "direction": "up",
-      "triggers": [
-        "+4.2% since last check",
-        "+7.1% on the day"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "AI infrastructure stocks surge after strong earnings from CoreWeave, Supermicro",
-          "publisher": "Yahoo Finance",
-          "date": "2026-08-12",
-          "url": "https://finance.yahoo.com/markets/article/ai-infrastructure-stocks-surge-after-strong-earnings-from-coreweave-supermicro-142304399.html"
-        },
-        {
-          "title": "Wall Street Analysts Predict 70% Upside for This AI Memory Stock in 2027",
-          "publisher": "BeInCrypto",
-          "date": "2026-08-13",
-          "url": "https://beincrypto.com/micron-stock-70-percent-upside-analysis/"
-        },
-        {
-          "title": "Micron Technology (MU): A Clear Beneficiary of the AI Infrastructure Buildout?",
-          "publisher": "Insider Monkey",
-          "date": "2026-08-13",
-          "url": "https://finance.yahoo.com/technology/ai/articles/micron-technology-mu-clear-beneficiary-134458056.html"
+          "url": "https://finance.yahoo.com/markets/stocks/articles/top-midday-stories-accelerant-taken-160019493.html"
         }
       ]
     },
     {
       "ticker": "CLS",
-      "name": "Celestica, Inc.",
+      "name": "Celestica Inc.",
       "verdict": "WATCHLIST",
-      "price": 361.34,
-      "pct_day": 6.45,
-      "pct_since": 3.77,
-      "primary_pct": 6.45,
+      "price": 361.445,
+      "pct_day": 6.48,
+      "pct_since": 0.03,
+      "primary_pct": 6.48,
       "direction": "up",
       "triggers": [
-        "+3.8% since last check",
         "+6.5% on the day"
       ],
       "reason": "No clear catalyst in current news.",
@@ -107,13 +70,47 @@
       ]
     },
     {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "verdict": "RESEARCH-WORTHY",
+      "price": 967.5,
+      "pct_day": 6.17,
+      "pct_since": -0.87,
+      "primary_pct": 6.17,
+      "direction": "up",
+      "triggers": [
+        "+6.2% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "AI infrastructure stocks surge after strong earnings from CoreWeave, Supermicro",
+          "publisher": "Yahoo Finance",
+          "date": "2026-08-12",
+          "url": "https://finance.yahoo.com/markets/article/ai-infrastructure-stocks-surge-after-strong-earnings-from-coreweave-supermicro-142304399.html"
+        },
+        {
+          "title": "Sandisk Unveils Multi-Year Financial Model and Growth Strategy, Memory Stocks Soar",
+          "publisher": "24/7 Wall St.",
+          "date": "2026-08-13",
+          "url": "https://247wallst.com/investing/2026/08/13/sandisk-unveils-multi-year-financial-model-and-growth-strategy-memory-stocks-soar/"
+        },
+        {
+          "title": "Micron Stock Keeps Rallying. Watch Out for This New Memory-Chip Rival.",
+          "publisher": "Barrons.com",
+          "date": "2026-08-13",
+          "url": "https://www.barrons.com/articles/micron-stock-chinese-memory-chip-threat-5e35bf6e?siteid=yhoof2&yptr=yahoo"
+        }
+      ]
+    },
+    {
       "ticker": "MRVL",
       "name": "Marvell Technology, Inc.",
       "verdict": "PASS",
-      "price": 229.025,
-      "pct_day": 5.5,
-      "pct_since": 0.51,
-      "primary_pct": 5.5,
+      "price": 228.965,
+      "pct_day": 5.47,
+      "pct_since": -0.03,
+      "primary_pct": 5.47,
       "direction": "up",
       "triggers": [
         "+5.5% on the day"
@@ -137,40 +134,6 @@
           "publisher": "Zacks",
           "date": "2026-08-12",
           "url": "https://finance.yahoo.com/markets/stocks/articles/alpha-omega-semiconductor-aosl-reports-211001432.html"
-        }
-      ]
-    },
-    {
-      "ticker": "CRDO",
-      "name": "Credo Technology Group Holding Ltd",
-      "verdict": "PASS",
-      "price": 281.85,
-      "pct_day": 5.11,
-      "pct_since": 1.56,
-      "primary_pct": 5.11,
-      "direction": "up",
-      "triggers": [
-        "+5.1% on the day"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Stock Market Today: Dow's Gain Vanishes; Credo Technology Approaches New Entry (Live Coverage)",
-          "publisher": "Investor's Business Daily",
-          "date": "2026-08-13",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-inflation-data-cisco-cerebras-earnings/?src=A00220&yptr=yahoo"
-        },
-        {
-          "title": "Credo Targets AI's Memory Wall With Open Chiplet Interconnect Standard",
-          "publisher": "Zacks",
-          "date": "2026-08-13",
-          "url": "https://finance.yahoo.com/technology/ai/articles/credo-targets-ais-memory-wall-132300053.html"
-        },
-        {
-          "title": "Dow Jones Futures: Cisco, Coherent Are Earnings Losers After Nebius, Lumentum, CoreWeave Lead AI Rally",
-          "publisher": "Investor's Business Daily",
-          "date": "2026-08-13",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-cisco-coherent-earnings-movers-nebius-lumentum-coreweave-ai-rally/?src=A00220&yptr=yahoo"
         }
       ]
     }
