@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-13T17:29:31Z",
+  "generated_at": "2026-08-13T18:18:19Z",
   "movers": [
     {
       "ticker": "CBRS",
       "name": "Cerebras Systems Inc.",
       "verdict": "PASS",
-      "price": 228.5,
-      "pct_day": -12.81,
-      "pct_since": -0.3,
-      "primary_pct": -12.81,
+      "price": 227.555,
+      "pct_day": -13.17,
+      "pct_since": -0.41,
+      "primary_pct": -13.17,
       "direction": "down",
       "triggers": [
-        "-12.8% on the day"
+        "-13.2% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -22,30 +22,64 @@
           "url": "https://finance.yahoo.com/markets/article/stocks-rise-on-broad-sector-strength-alphacheck-135545759.html"
         },
         {
-          "title": "Stock Market Today: Dow's Gain Vanishes But Nasdaq 100 Up; Seagate Retakes Key Level (Live Coverage)",
+          "title": "Stock Market Today: Nasdaq 100 Leads Upside; Sellers Yank Coach Bag Firm Lower (Live Coverage)",
           "publisher": "Investor's Business Daily",
           "date": "2026-08-13",
           "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-inflation-data-cisco-cerebras-earnings/?src=A00220&yptr=yahoo"
         },
         {
-          "title": "Cerebras Plunges 18% After Earnings Miss",
+          "title": "Cerebras Plummets 13% After Earnings. But Intel & AMD Barrel Ahead with Strong Gains.",
+          "publisher": "24/7 Wall St.",
+          "date": "2026-08-13",
+          "url": "https://247wallst.com/investing/2026/08/13/cerebras-plummets-13-after-earnings-but-intel-amd-barrel-ahead-with-strong-gains/"
+        }
+      ]
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "verdict": "WATCHLIST",
+      "price": 333.4575,
+      "pct_day": -6.24,
+      "pct_since": -1.77,
+      "primary_pct": -6.24,
+      "direction": "down",
+      "triggers": [
+        "-6.2% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "AI infrastructure stocks surge after strong earnings from CoreWeave, Supermicro",
+          "publisher": "Yahoo Finance",
+          "date": "2026-08-12",
+          "url": "https://finance.yahoo.com/markets/article/ai-infrastructure-stocks-surge-after-strong-earnings-from-coreweave-supermicro-142304399.html"
+        },
+        {
+          "title": "Analysts Revamps Coherent Targets After AI Surge",
           "publisher": "GuruFocus.com",
           "date": "2026-08-13",
-          "url": "https://finance.yahoo.com/technology/ai/articles/cerebras-plunges-18-earnings-miss-165256674.html"
+          "url": "https://finance.yahoo.com/technology/ai/articles/analysts-revamps-coherent-targets-ai-174430388.html"
+        },
+        {
+          "title": "Optics Stocks Divide: Coherent and Cisco Drop After Earnings While Nokia and Ciena Soar",
+          "publisher": "24/7 Wall St.",
+          "date": "2026-08-13",
+          "url": "https://247wallst.com/investing/2026/08/13/optics-stocks-divide-coherent-and-cisco-drop-after-earnings-while-nokia-and-ciena-soar/"
         }
       ]
     },
     {
       "ticker": "CLS",
-      "name": "Celestica Inc.",
+      "name": "Celestica, Inc.",
       "verdict": "WATCHLIST",
-      "price": 363.11,
-      "pct_day": 6.97,
-      "pct_since": 0.46,
-      "primary_pct": 6.97,
+      "price": 360.27,
+      "pct_day": 6.13,
+      "pct_since": -0.78,
+      "primary_pct": 6.13,
       "direction": "up",
       "triggers": [
-        "+7.0% on the day"
+        "+6.1% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -73,13 +107,13 @@
       "ticker": "MU",
       "name": "Micron Technology, Inc.",
       "verdict": "RESEARCH-WORTHY",
-      "price": 972.477,
-      "pct_day": 6.71,
-      "pct_since": 0.51,
-      "primary_pct": 6.71,
+      "price": 966.43,
+      "pct_day": 6.05,
+      "pct_since": -0.62,
+      "primary_pct": 6.05,
       "direction": "up",
       "triggers": [
-        "+6.7% on the day"
+        "+6.0% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -90,50 +124,16 @@
           "url": "https://finance.yahoo.com/markets/article/ai-infrastructure-stocks-surge-after-strong-earnings-from-coreweave-supermicro-142304399.html"
         },
         {
-          "title": "Micron Faces a New Burry Bet as China Memory Pressure Builds",
-          "publisher": "GuruFocus.com",
+          "title": "Stock Market Today: Nasdaq 100 Leads Upside; Sellers Yank Coach Bag Firm Lower (Live Coverage)",
+          "publisher": "Investor's Business Daily",
           "date": "2026-08-13",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/micron-faces-burry-bet-china-165751045.html"
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-inflation-data-cisco-cerebras-earnings/?src=A00220&yptr=yahoo"
         },
         {
-          "title": "Micron Just Lost Ground in Key Memory Market",
-          "publisher": "GuruFocus.com",
-          "date": "2026-08-13",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/micron-just-lost-ground-key-165356690.html"
-        }
-      ]
-    },
-    {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
-      "verdict": "PASS",
-      "price": 229.2681,
-      "pct_day": 5.61,
-      "pct_since": 0.13,
-      "primary_pct": 5.61,
-      "direction": "up",
-      "triggers": [
-        "+5.6% on the day"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Down 37% From Its Highs, Is Marvell Technology Stock a Buy on the Dip?",
-          "publisher": "Motley Fool",
-          "date": "2026-08-13",
-          "url": "https://www.fool.com/investing/2026/08/13/down-37-highs-marvell-buy-on-dip/"
-        },
-        {
-          "title": "Credo Targets AI's Memory Wall With Open Chiplet Interconnect Standard",
-          "publisher": "Zacks",
-          "date": "2026-08-13",
-          "url": "https://finance.yahoo.com/technology/ai/articles/credo-targets-ais-memory-wall-132300053.html"
-        },
-        {
-          "title": "3 Semiconductor Stocks to Buy Before the Next AI Earnings Wave in August",
+          "title": "Cerebras Plummets 13% After Earnings. But Intel & AMD Barrel Ahead with Strong Gains.",
           "publisher": "24/7 Wall St.",
           "date": "2026-08-13",
-          "url": "https://247wallst.com/investing/2026/08/13/3-semiconductor-stocks-to-buy-before-the-next-ai-earnings-wave-in-august/"
+          "url": "https://247wallst.com/investing/2026/08/13/cerebras-plummets-13-after-earnings-but-intel-amd-barrel-ahead-with-strong-gains/"
         }
       ]
     }
