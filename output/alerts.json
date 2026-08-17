@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-17T13:32:49Z",
+  "generated_at": "2026-08-17T14:18:35Z",
   "pullback_alerts": [
     {
       "ticker": "NOW",
       "name": "ServiceNow, Inc.",
       "theme": "cybersecurity",
       "verdict": "WATCHLIST",
-      "price": 121.81,
+      "price": 120.38,
       "high_52w": 194.726,
-      "drawdown_pct": -37.4,
+      "drawdown_pct": -38.2,
       "severity": "STRONG",
       "thesis": "High-growth SaaS company with a strong market position, but high valuation and competitive industry make it a less attractive investment opportunity at current prices.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -18,7 +18,7 @@
       "name": "Intuitive Surgical, Inc.",
       "theme": "healthcare_innovation",
       "verdict": "WATCHLIST",
-      "price": 393.035,
+      "price": 393.19,
       "high_52w": 603.88,
       "drawdown_pct": -34.9,
       "severity": "MODERATE",
@@ -26,27 +26,27 @@
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
-      "ticker": "CLS",
-      "name": "Celestica, Inc.",
-      "theme": "datacenter_infra",
-      "verdict": "WATCHLIST",
-      "price": 337.205,
-      "high_52w": 474.03,
-      "drawdown_pct": -28.9,
-      "severity": "MODERATE",
-      "thesis": "High-growth compounder with a diverse customer base, but high valuation and net debt pose a risk.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
       "ticker": "BWXT",
       "name": "BWX Technologies, Inc.",
       "theme": "nuclear_smr",
       "verdict": "WATCHLIST",
-      "price": 172.1625,
+      "price": 173.095,
       "high_52w": 241.82,
-      "drawdown_pct": -28.8,
+      "drawdown_pct": -28.4,
       "severity": "MODERATE",
       "thesis": "Nuclear energy company with strong growth prospects at 32.2x forward earnings for 18% growth.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "CLS",
+      "name": "Celestica Inc.",
+      "theme": "datacenter_infra",
+      "verdict": "WATCHLIST",
+      "price": 341.45,
+      "high_52w": 474.03,
+      "drawdown_pct": -28.0,
+      "severity": "MODERATE",
+      "thesis": "High-growth compounder with a diverse customer base, but high valuation and net debt pose a risk.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -54,9 +54,9 @@
       "name": "Meta Platforms, Inc.",
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "price": 583.8825,
+      "price": 579.2,
       "high_52w": 790.8,
-      "drawdown_pct": -26.2,
+      "drawdown_pct": -26.8,
       "severity": "MODERATE",
       "thesis": "Meta is a research-worthy opportunity due to its strong revenue growth, investments in AI research and development, and reasonable valuation.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -66,11 +66,23 @@
       "name": "Coherent Corp.",
       "theme": "networking_infra",
       "verdict": "WATCHLIST",
-      "price": 335.5,
+      "price": 341.98,
       "high_52w": 440.0,
-      "drawdown_pct": -23.8,
+      "drawdown_pct": -22.3,
       "severity": "MODERATE",
       "thesis": "Coherent Corp. is a high-growth laser technology company with a strong presence in the AI infrastructure theme, but its valuation is relatively high and its negative free cash flow and net debt position may be a concern for investors.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "theme": "edge_ai_silicon",
+      "verdict": "WATCHLIST",
+      "price": 394.2605,
+      "high_52w": 495.0,
+      "drawdown_pct": -20.4,
+      "severity": "MODERATE",
+      "thesis": "High-growth semiconductor company with strong margins and free cash flow generation, trading at a premium valuation.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     }
   ],
