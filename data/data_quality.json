@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-17T16:59:18Z",
+  "generated_at": "2026-08-17T17:24:39Z",
   "checked": 58,
   "flagged": 0,
   "quality": {
-    "AAPL": {
-      "ok": true,
-      "flags": []
-    },
     "AMD": {
       "ok": true,
       "flags": []
     },
     "ADP": {
+      "ok": true,
+      "flags": []
+    },
+    "AAPL": {
       "ok": true,
       "flags": []
     },
@@ -27,11 +27,11 @@
       "ok": true,
       "flags": []
     },
-    "BWXT": {
+    "CBRS": {
       "ok": true,
       "flags": []
     },
-    "CBRS": {
+    "BWXT": {
       "ok": true,
       "flags": []
     },
@@ -43,10 +43,6 @@
       "ok": true,
       "flags": []
     },
-    "CMCSA": {
-      "ok": true,
-      "flags": []
-    },
     "COHR": {
       "ok": true,
       "flags": []
@@ -55,7 +51,7 @@
       "ok": true,
       "flags": []
     },
-    "DHR": {
+    "CMCSA": {
       "ok": true,
       "flags": []
     },
@@ -63,7 +59,11 @@
       "ok": true,
       "flags": []
     },
-    "EIX": {
+    "DHR": {
+      "ok": true,
+      "flags": []
+    },
+    "ETN": {
       "ok": true,
       "flags": []
     },
@@ -71,7 +71,7 @@
       "ok": true,
       "flags": []
     },
-    "ETN": {
+    "EIX": {
       "ok": true,
       "flags": []
     },
@@ -87,15 +87,7 @@
       "ok": true,
       "flags": []
     },
-    "GIS": {
-      "ok": true,
-      "flags": []
-    },
     "IBM": {
-      "ok": true,
-      "flags": []
-    },
-    "ISRG": {
       "ok": true,
       "flags": []
     },
@@ -103,15 +95,23 @@
       "ok": true,
       "flags": []
     },
+    "GIS": {
+      "ok": true,
+      "flags": []
+    },
+    "ISRG": {
+      "ok": true,
+      "flags": []
+    },
     "LITE": {
       "ok": true,
       "flags": []
     },
-    "LLY": {
+    "LMB": {
       "ok": true,
       "flags": []
     },
-    "LMB": {
+    "LLY": {
       "ok": true,
       "flags": []
     },
@@ -123,15 +123,11 @@
       "ok": true,
       "flags": []
     },
-    "MKTX": {
-      "ok": true,
-      "flags": []
-    },
     "META": {
       "ok": true,
       "flags": []
     },
-    "MSFT": {
+    "MKTX": {
       "ok": true,
       "flags": []
     },
@@ -139,15 +135,15 @@
       "ok": true,
       "flags": []
     },
-    "MU": {
-      "ok": true,
-      "flags": []
-    },
     "NBIS": {
       "ok": true,
       "flags": []
     },
-    "NOW": {
+    "MU": {
+      "ok": true,
+      "flags": []
+    },
+    "MSFT": {
       "ok": true,
       "flags": []
     },
@@ -155,11 +151,15 @@
       "ok": true,
       "flags": []
     },
-    "NVT": {
+    "NOW": {
       "ok": true,
       "flags": []
     },
     "NVDA": {
+      "ok": true,
+      "flags": []
+    },
+    "NVT": {
       "ok": true,
       "flags": []
     },
@@ -171,11 +171,11 @@
       "ok": true,
       "flags": []
     },
-    "PAYX": {
+    "POWL": {
       "ok": true,
       "flags": []
     },
-    "POWL": {
+    "PAYX": {
       "ok": true,
       "flags": []
     },
@@ -191,11 +191,15 @@
       "ok": true,
       "flags": []
     },
+    "TLN": {
+      "ok": true,
+      "flags": []
+    },
     "SPY": {
       "ok": true,
       "flags": []
     },
-    "TLN": {
+    "TSM": {
       "ok": true,
       "flags": []
     },
@@ -203,7 +207,7 @@
       "ok": true,
       "flags": []
     },
-    "TSM": {
+    "V": {
       "ok": true,
       "flags": []
     },
@@ -212,10 +216,6 @@
       "flags": []
     },
     "VRT": {
-      "ok": true,
-      "flags": []
-    },
-    "V": {
       "ok": true,
       "flags": []
     },
