@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-08-18T20:53:16Z",
-  "quotes_updated": "2026-08-18T20:46:16Z",
+  "last_built": "2026-08-18T22:24:08Z",
+  "quotes_updated": "2026-08-18T22:17:06Z",
   "portfolio": {
     "total_value": 0,
     "core": [
@@ -18,7 +18,7 @@
         "pnl_pct": null,
         "pct_change_1d": -0.81,
         "drawdown_from_high": -1.6,
-        "pe": 26.999016,
+        "pe": null,
         "forward_pe": null
       }
     ],
@@ -774,8 +774,8 @@
         "no_pullback_gate": false,
         "price": 940.76,
         "pct_change_1d": -7.02,
-        "market_cap": 1062487916544,
-        "cap_tier": "mega",
+        "market_cap": null,
+        "cap_tier": "unknown",
         "drawdown_from_high": -25.0,
         "revenue_growth": 345.7,
         "op_margin": 80.4,
@@ -1054,7 +1054,7 @@
         "revenue_growth": 21.4,
         "op_margin": 16.6,
         "pe": 43.834347,
-        "forward_pe": 26.92131,
+        "forward_pe": 26.90146,
         "short_percent_float": 1.76,
         "short_ratio": 2.9,
         "high_proximity_warning": true,
@@ -1434,7 +1434,7 @@
         "drawdown_from_high": -22.5,
         "revenue_growth": -3.3,
         "op_margin": 35.9,
-        "pe": 13.313008,
+        "pe": 12.476191,
         "forward_pe": 10.571387,
         "short_percent_float": 6.13,
         "short_ratio": 3.9,
@@ -2584,8 +2584,8 @@
           "no_pullback_gate": false,
           "price": 940.76,
           "pct_change_1d": -7.02,
-          "market_cap": 1062487916544,
-          "cap_tier": "mega",
+          "market_cap": null,
+          "cap_tier": "unknown",
           "drawdown_from_high": -25.0,
           "revenue_growth": 345.7,
           "op_margin": 80.4,
@@ -2660,7 +2660,7 @@
           "revenue_growth": 21.4,
           "op_margin": 16.6,
           "pe": 43.834347,
-          "forward_pe": 26.92131,
+          "forward_pe": 26.90146,
           "short_percent_float": 1.76,
           "short_ratio": 2.9,
           "high_proximity_warning": true,
@@ -3802,7 +3802,7 @@
           "drawdown_from_high": -22.5,
           "revenue_growth": -3.3,
           "op_margin": 35.9,
-          "pe": 13.313008,
+          "pe": 12.476191,
           "forward_pe": 10.571387,
           "short_percent_float": 6.13,
           "short_ratio": 3.9,
@@ -4589,8 +4589,8 @@
           "no_pullback_gate": false,
           "price": 940.76,
           "pct_change_1d": -7.02,
-          "market_cap": 1062487916544,
-          "cap_tier": "mega",
+          "market_cap": null,
+          "cap_tier": "unknown",
           "drawdown_from_high": -25.0,
           "revenue_growth": 345.7,
           "op_margin": 80.4,
@@ -5332,7 +5332,7 @@
           "revenue_growth": 21.4,
           "op_margin": 16.6,
           "pe": 43.834347,
-          "forward_pe": 26.92131,
+          "forward_pe": 26.90146,
           "short_percent_float": 1.76,
           "short_ratio": 2.9,
           "high_proximity_warning": true,
@@ -5798,7 +5798,7 @@
           "drawdown_from_high": -22.5,
           "revenue_growth": -3.3,
           "op_margin": 35.9,
-          "pe": 13.313008,
+          "pe": 12.476191,
           "forward_pe": 10.571387,
           "short_percent_float": 6.13,
           "short_ratio": 3.9,
@@ -6419,7 +6419,7 @@
     "data_warnings": []
   },
   "analytics": {
-    "generated_at": "2026-08-18T20:53:16Z",
+    "generated_at": "2026-08-18T22:24:08Z",
     "funded": false,
     "total_value": 0.0,
     "total_invested": 0.0,
@@ -6455,7 +6455,7 @@
         "pnl_pct": null,
         "pct_change_1d": -3.83,
         "theme": "nuclear_smr",
-        "div_yield_pct": 0.65,
+        "div_yield_pct": null,
         "annual_dividend": 0.0
       },
       {
@@ -6516,7 +6516,7 @@
     "concentration_warnings": []
   },
   "track_record": {
-    "generated_at": "2026-08-18T20:53:16Z",
+    "generated_at": "2026-08-18T22:24:08Z",
     "tracked_since": "2026-04-25",
     "scoreboard": {
       "RESEARCH-WORTHY": {
@@ -9083,7 +9083,7 @@
     ]
   },
   "asset_location": {
-    "generated_at": "2026-08-18T20:53:16Z",
+    "generated_at": "2026-08-18T22:24:08Z",
     "rules": {
       "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
       "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
@@ -9133,16 +9133,6 @@
         "account": "ROTH",
         "priority": "high",
         "reason": "Highest-conviction growth pick (18% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
-      },
-      {
-        "ticker": "PAYX",
-        "name": "PAYX",
-        "theme": "quality_compounder",
-        "verdict": "WATCHLIST",
-        "div_yield_pct": 3.97,
-        "account": "ROTH",
-        "priority": "high",
-        "reason": "4.0% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
       },
       {
         "ticker": "AAPL",
@@ -9199,7 +9189,7 @@
         "name": "BWX Technologies, Inc.",
         "theme": "nuclear_smr",
         "verdict": "WATCHLIST",
-        "div_yield_pct": 0.64,
+        "div_yield_pct": null,
         "account": "ROTH",
         "priority": "medium",
         "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -9239,7 +9229,7 @@
         "name": "GEHC",
         "theme": "healthcare_innovation",
         "verdict": "WATCHLIST",
-        "div_yield_pct": 0.19,
+        "div_yield_pct": null,
         "account": "ROTH",
         "priority": "medium",
         "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -9269,7 +9259,7 @@
         "name": "LPLA",
         "theme": "financials",
         "verdict": "WATCHLIST",
-        "div_yield_pct": 0.33,
+        "div_yield_pct": null,
         "account": "ROTH",
         "priority": "medium",
         "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -9309,7 +9299,7 @@
         "name": "Micron Technology, Inc.",
         "theme": "edge_ai_silicon",
         "verdict": "WATCHLIST",
-        "div_yield_pct": 0.06,
+        "div_yield_pct": null,
         "account": "ROTH",
         "priority": "medium",
         "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -9329,7 +9319,7 @@
         "name": "NVIDIA Corporation",
         "theme": "mega_cap_ai",
         "verdict": "WATCHLIST",
-        "div_yield_pct": 0.46,
+        "div_yield_pct": null,
         "account": "ROTH",
         "priority": "medium",
         "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -9345,11 +9335,21 @@
         "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
       },
       {
+        "ticker": "PAYX",
+        "name": "PAYX",
+        "theme": "quality_compounder",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": null,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
         "ticker": "TSM",
         "name": "Taiwan Semiconductor Manufacturing Company",
         "theme": "edge_ai_silicon",
         "verdict": "WATCHLIST",
-        "div_yield_pct": 1.05,
+        "div_yield_pct": null,
         "account": "ROTH",
         "priority": "medium",
         "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -9398,16 +9398,6 @@
       }
     ],
     "tax_drag_overrides": [
-      {
-        "ticker": "PAYX",
-        "name": "PAYX",
-        "theme": "quality_compounder",
-        "verdict": "WATCHLIST",
-        "div_yield_pct": 3.97,
-        "account": "ROTH",
-        "priority": "high",
-        "reason": "4.0% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
-      },
       {
         "ticker": "INVH",
         "name": "INVH",
@@ -9569,7 +9559,7 @@
     ]
   },
   "daily_brief": {
-    "generated_at": "2026-08-18T20:19:02Z",
+    "generated_at": "2026-08-18T20:53:17Z",
     "date": "2026-08-18",
     "first_run": false,
     "items": [
@@ -9874,22 +9864,22 @@
         "reason": "No clear catalyst in current news.",
         "news": [
           {
+            "title": "Dow Jones Futures: Sandisk, Micron, Credo Lead Painful AI Losses; Market Rally Near Key Test",
+            "publisher": "Investor's Business Daily",
+            "date": "2026-08-18",
+            "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sandisk-micron-credo-ai-stocks-target-earnings/?src=A00220&yptr=yahoo"
+          },
+          {
+            "title": "Micron, Other Chip Stocks Drop During Dog Days Of Summer",
+            "publisher": "Investor's Business Daily",
+            "date": "2026-08-18",
+            "url": "https://www.investors.com/news/technology/chip-stocks-micron-nvidia-drop-dog-days-summer/?src=A00220&yptr=yahoo"
+          },
+          {
             "title": "Stock Market Today: Nasdaq Slides Along With Chip Names; Sandisk, Micron Lose Big",
             "publisher": "Investor's Business Daily",
             "date": "2026-08-18",
             "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-treasury-yields-nvidia-stock-nvda/?src=A00220&yptr=yahoo"
-          },
-          {
-            "title": "Credo (CRDO) Stock Could Be Overvalued Following Open Compute AI Push",
-            "publisher": "Simply Wall St.",
-            "date": "2026-08-18",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/credo-crdo-stock-could-overvalued-200824801.html"
-          },
-          {
-            "title": "Why Intel, Marvell Stocks Are Dropping After Chip Stocks Enter New Bull Market",
-            "publisher": "Barrons.com",
-            "date": "2026-08-18",
-            "url": "https://www.barrons.com/articles/intel-stock-marvell-chips-bull-market-1e739b69?siteid=yhoof2&yptr=yahoo"
           }
         ]
       },
@@ -9899,7 +9889,7 @@
         "verdict": "WATCHLIST",
         "price": 306.43,
         "pct_day": -12.75,
-        "pct_since": 0.1,
+        "pct_since": 0.0,
         "primary_pct": -12.75,
         "direction": "down",
         "triggers": [
@@ -9907,6 +9897,12 @@
         ],
         "reason": "No clear catalyst in current news.",
         "news": [
+          {
+            "title": "Micron, Other Chip Stocks Drop During Dog Days Of Summer",
+            "publisher": "Investor's Business Daily",
+            "date": "2026-08-18",
+            "url": "https://www.investors.com/news/technology/chip-stocks-micron-nvidia-drop-dog-days-summer/?src=A00220&yptr=yahoo"
+          },
           {
             "title": "Coherent, Teradyne, and Ciena Are the S&P 500\u2019s 3 Biggest Decliners on Tuesday",
             "publisher": "24/7 Wall St.",
@@ -9918,12 +9914,6 @@
             "publisher": "Barrons.com",
             "date": "2026-08-18",
             "url": "https://www.barrons.com/articles/stock-movers-36984052?siteid=yhoof2&yptr=yahoo"
-          },
-          {
-            "title": "Tech Stocks Slide With Bond Yields at Decade Highs",
-            "publisher": "The Wall Street Journal",
-            "date": "2026-08-18",
-            "url": "https://www.wsj.com/finance/investing/global-bond-rout-deepens-as-oil-holds-above-90-f0124f3d"
           }
         ]
       },
@@ -9948,16 +9938,16 @@
             "url": "https://247wallst.com/investing/2026/08/18/cerebras-intel-and-amd-shares-fall-ahead-of-tonights-supernova-event/"
           },
           {
+            "title": "An OpenAI Deal Could Be a Game Changer for Cerebras Stock After a Brutal Selloff",
+            "publisher": "Barchart",
+            "date": "2026-08-18",
+            "url": "https://www.barchart.com/story/news/3909482/an-openai-deal-could-be-a-game-changer-for-cerebras-stock-after-a-brutal-selloff"
+          },
+          {
             "title": "US Stock Market Today: S&P 500 Futures Edge Up As Inflation Worries Confront Weak Sales",
             "publisher": "Simply Wall St.",
             "date": "2026-08-18",
             "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-market-today-p-081208404.html"
-          },
-          {
-            "title": "CBRS Stock Pops 15% As Wedbush Flags 'Progression' In $20B OpenAI Deal, GPT-5.6 Sol Ultrafast Boost",
-            "publisher": "Stocktwits",
-            "date": "2026-08-18",
-            "url": "https://stocktwits.com/news-articles/markets/equity/cbrs-stock-pops-15-as-wedbush-flags-progression-in-20-b-open-ai-deal-gpt-5-6-sol-ultrafast-boost/cZYTw6ZRJSg"
           }
         ]
       },
@@ -9976,6 +9966,12 @@
         "reason": "No clear catalyst in current news.",
         "news": [
           {
+            "title": "Chip Stocks and Data Center Plays Just Got Clobbered",
+            "publisher": "The Wall Street Journal",
+            "date": "2026-08-18",
+            "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-08-18-2026/card/chip-stocks-and-data-center-plays-just-got-clobbered-5f5jfbygHPiLMaWHTCV9?siteid=yhoof2&yptr=yahoo"
+          },
+          {
             "title": "Terrestrial Energy\u2019s Lifetime Revenue Up 29%, Advancing in Texas A&M, DOE Fuel Program \u2013 Quarterly Update Report",
             "publisher": "Exec Edge",
             "date": "2026-08-13",
@@ -9986,12 +9982,6 @@
             "publisher": "Zacks",
             "date": "2026-08-13",
             "url": "https://finance.yahoo.com/energy/articles/zacks-analyst-blog-highlights-bloom-123000984.html"
-          },
-          {
-            "title": "Talen Energy (TLN) Stock May Already Be Priced Rich On Raised 2026 Guidance",
-            "publisher": "Simply Wall St.",
-            "date": "2026-08-12",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/talen-energy-tln-stock-may-151209300.html"
           }
         ]
       },
@@ -10035,7 +10025,7 @@
         "verdict": "WATCHLIST",
         "price": 310.59,
         "pct_day": -8.76,
-        "pct_since": 0.05,
+        "pct_since": 0.0,
         "primary_pct": -8.76,
         "direction": "down",
         "triggers": [
@@ -10078,22 +10068,22 @@
         "reason": "No clear catalyst in current news.",
         "news": [
           {
+            "title": "Marvell CEO Just Made a $1.8 Million Move",
+            "publisher": "GuruFocus.com",
+            "date": "2026-08-18",
+            "url": "https://finance.yahoo.com/technology/articles/marvell-ceo-just-made-1-211825247.html"
+          },
+          {
+            "title": "Marvell Technology, Vishay Intertechnology, and Allegro MicroSystems Shares Plummet, What You Need To Know",
+            "publisher": "StockStory",
+            "date": "2026-08-18",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/marvell-technology-vishay-intertechnology-allegro-205333954.html"
+          },
+          {
             "title": "Netflix, Salesforce, and Adobe Rally as Investors Rotate Out of Semiconductors and Into Beaten Down Stocks",
             "publisher": "24/7 Wall St.",
             "date": "2026-08-18",
             "url": "https://247wallst.com/investing/2026/08/18/netflix-salesforce-and-adobe-rally-as-investors-rotate-out-of-semiconductors-and-into-beaten-down-stocks/"
-          },
-          {
-            "title": "Tech Stocks Slide With Bond Yields at Decade Highs",
-            "publisher": "The Wall Street Journal",
-            "date": "2026-08-18",
-            "url": "https://www.wsj.com/finance/investing/global-bond-rout-deepens-as-oil-holds-above-90-f0124f3d"
-          },
-          {
-            "title": "Why Intel, Marvell Stocks Are Dropping After Chip Stocks Enter New Bull Market",
-            "publisher": "Barrons.com",
-            "date": "2026-08-18",
-            "url": "https://www.barrons.com/articles/intel-stock-marvell-chips-bull-market-1e739b69?siteid=yhoof2&yptr=yahoo"
           }
         ]
       },
@@ -10112,6 +10102,12 @@
         "reason": "No clear catalyst in current news.",
         "news": [
           {
+            "title": "Stock Market Today, Aug. 18: CoreWeave Falls as Debt-Financing Concerns and Capital Spending Pressures Rise With Interest Rates",
+            "publisher": "Motley Fool",
+            "date": "2026-08-18",
+            "url": "https://www.fool.com/coverage/stock-market-today/2026/08/18/stock-market-today-aug-18-coreweave-falls-as-debt-financing-concerns-and-capital-spending-pressures-rise-with-interest-rates/"
+          },
+          {
             "title": "Is This The Next CoreWeave Or Nebius Group? A Crusoe IPO Looms",
             "publisher": "Investor's Business Daily",
             "date": "2026-08-18",
@@ -10122,12 +10118,6 @@
             "publisher": "Barrons.com",
             "date": "2026-08-18",
             "url": "https://www.barrons.com/articles/convertible-bonds-ai-risk-return-ffcee519?siteid=yhoof2&yptr=yahoo"
-          },
-          {
-            "title": "A Double Good News For Nebius Stock Fans",
-            "publisher": "GuruFocus.com",
-            "date": "2026-08-18",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/double-good-news-nebius-stock-180154384.html"
           }
         ]
       },
@@ -10137,7 +10127,7 @@
         "verdict": "WATCHLIST",
         "price": 164.63,
         "pct_day": -7.1,
-        "pct_since": 0.02,
+        "pct_since": 0.0,
         "primary_pct": -7.1,
         "direction": "down",
         "triggers": [
@@ -10192,10 +10182,10 @@
             "url": "https://finance.yahoo.com/markets/article/global-bond-sell-off-pressures-stocks-alphacheck-135011383.html"
           },
           {
-            "title": "Netflix, Salesforce, and Adobe Rally as Investors Rotate Out of Semiconductors and Into Beaten Down Stocks",
-            "publisher": "24/7 Wall St.",
+            "title": "Dow Jones Futures: Sandisk, Micron, Credo Lead Painful AI Losses; Market Rally Near Key Test",
+            "publisher": "Investor's Business Daily",
             "date": "2026-08-18",
-            "url": "https://247wallst.com/investing/2026/08/18/netflix-salesforce-and-adobe-rally-as-investors-rotate-out-of-semiconductors-and-into-beaten-down-stocks/"
+            "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sandisk-micron-credo-ai-stocks-target-earnings/?src=A00220&yptr=yahoo"
           }
         ]
       },
@@ -10214,6 +10204,12 @@
         "reason": "See headlines (explanation limited to top movers).",
         "news": [
           {
+            "title": "Powell, Sterling, Vertiv, Nextpower, and Hubbell Shares Are Falling, What You Need To Know",
+            "publisher": "StockStory",
+            "date": "2026-08-18",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/powell-sterling-vertiv-nextpower-hubbell-211733824.html"
+          },
+          {
             "title": "3 High-Flying Stocks for Long-Term Investors",
             "publisher": "StockStory",
             "date": "2026-08-17",
@@ -10224,12 +10220,6 @@
             "publisher": "StockStory",
             "date": "2026-08-14",
             "url": "https://finance.yahoo.com/markets/stocks/articles/2-wall-street-favorite-stocks-161300361.html"
-          },
-          {
-            "title": "This $10 Billion ETF Owns the Companies Wiring America\u2019s $68 Billion Data Center Boom",
-            "publisher": "24/7 Wall St.",
-            "date": "2026-08-14",
-            "url": "https://247wallst.com/investing/etf/2026/08/14/this-10-billion-etf-owns-the-companies-wiring-americas-68-billion-data-center-boom/"
           }
         ]
       },
@@ -10239,7 +10229,7 @@
         "verdict": "PASS",
         "price": 1004.53,
         "pct_day": -6.9,
-        "pct_since": 0.01,
+        "pct_since": 0.0,
         "primary_pct": -6.9,
         "direction": "down",
         "triggers": [
@@ -10247,6 +10237,12 @@
         ],
         "reason": "See headlines (explanation limited to top movers).",
         "news": [
+          {
+            "title": "Fluence Energy, Bloom Energy, Redwire, Ameresco, and GE Vernova Shares Plummet, What You Need To Know",
+            "publisher": "StockStory",
+            "date": "2026-08-18",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/fluence-energy-bloom-energy-redwire-212533946.html"
+          },
           {
             "title": "Is This The Next CoreWeave Or Nebius Group? A Crusoe IPO Looms",
             "publisher": "Investor's Business Daily",
@@ -10258,12 +10254,6 @@
             "publisher": "24/7 Wall St.",
             "date": "2026-08-18",
             "url": "https://247wallst.com/investing/2026/08/18/behind-the-meter-energy-stocks-fall-tuesday-ftai-aviation-down-7-ge-vernova-down-6-caterpillar-down-4/"
-          },
-          {
-            "title": "GE Vernova (GEV) Is Up 8.9% After Backlog Surges To $176 Billion And Nuclear AI Deal",
-            "publisher": "Simply Wall St.",
-            "date": "2026-08-18",
-            "url": "https://finance.yahoo.com/energy/articles/ge-vernova-gev-8-9-131056565.html"
           }
         ]
       },
@@ -10282,6 +10272,12 @@
         "reason": "See headlines (explanation limited to top movers).",
         "news": [
           {
+            "title": "Powell, Sterling, Vertiv, Nextpower, and Hubbell Shares Are Falling, What You Need To Know",
+            "publisher": "StockStory",
+            "date": "2026-08-18",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/powell-sterling-vertiv-nextpower-hubbell-211733824.html"
+          },
+          {
             "title": "Ecolab's CoolIT Deal Raises AI Upside but Also Debt and Cost Risks",
             "publisher": "Zacks",
             "date": "2026-08-18",
@@ -10292,12 +10288,6 @@
             "publisher": "24/7 Wall St.",
             "date": "2026-08-18",
             "url": "https://247wallst.com/investing/2026/08/18/behind-the-meter-energy-stocks-fall-tuesday-ftai-aviation-down-7-ge-vernova-down-6-caterpillar-down-4/"
-          },
-          {
-            "title": "Vertiv Holdings (VRT) is Well Positioned for Key Tech Transitions",
-            "publisher": "Insider Monkey",
-            "date": "2026-08-18",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/vertiv-holdings-vrt-well-positioned-140249832.html"
           }
         ]
       },
@@ -10341,7 +10331,7 @@
         "verdict": "PASS",
         "price": 41.36,
         "pct_day": -5.74,
-        "pct_since": -0.06,
+        "pct_since": 0.0,
         "primary_pct": -5.74,
         "direction": "down",
         "triggers": [
@@ -10371,11 +10361,11 @@
       },
       {
         "ticker": "ETN",
-        "name": "Eaton Corporation plc",
+        "name": "Eaton Corporation, PLC",
         "verdict": "WATCHLIST",
         "price": 431.33,
         "pct_day": -5.29,
-        "pct_since": 0.01,
+        "pct_since": 0.0,
         "primary_pct": -5.29,
         "direction": "down",
         "triggers": [
@@ -10404,7 +10394,7 @@
         ]
       }
     ],
-    "movers_updated": "2026-08-18T20:53:16Z",
+    "movers_updated": "2026-08-18T22:24:07Z",
     "target_hits": [
       {
         "ticker": "NOW",
@@ -10622,6 +10612,14 @@
       {
         "ticker": "AVGO",
         "verdict": "RESEARCH-WORTHY",
+        "title": "Micron, Other Chip Stocks Drop During Dog Days Of Summer",
+        "publisher": "Investor's Business Daily",
+        "date": "2026-08-18",
+        "url": "https://www.investors.com/news/technology/chip-stocks-micron-nvidia-drop-dog-days-summer/?src=A00220&yptr=yahoo"
+      },
+      {
+        "ticker": "AVGO",
+        "verdict": "RESEARCH-WORTHY",
         "title": "Broadcom Stock Tumbles as $10.8 Billion AI Boom Meets Reality",
         "publisher": "GuruFocus.com",
         "date": "2026-08-18",
@@ -10658,14 +10656,6 @@
         "publisher": "Motley Fool",
         "date": "2026-08-18",
         "url": "https://www.fool.com/investing/2026/08/18/broadcom-s-stock-has-beaten-the-market-in-12-of-the-past-13-years-and-it-could-do-it-again-in-2026/"
-      },
-      {
-        "ticker": "AVGO",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "ARM Stock: The $2 Billion AI Signal Investors Shouldn\u2019t Ignore",
-        "publisher": "24/7 Wall St.",
-        "date": "2026-08-18",
-        "url": "https://247wallst.com/investing/2026/08/18/arm-stock-the-2-billion-ai-signal-investors-shouldnt-ignore/"
       },
       {
         "ticker": "ISRG",
@@ -10726,6 +10716,30 @@
       {
         "ticker": "AAPL",
         "verdict": "WATCHLIST",
+        "title": "Berkshire Boosts Alphabet Stake 83% as Buffett Makes Major AI Bet",
+        "publisher": "GuruFocus.com",
+        "date": "2026-08-18",
+        "url": "https://finance.yahoo.com/technology/ai/articles/berkshire-boosts-alphabet-stake-83-210009667.html"
+      },
+      {
+        "ticker": "AAPL",
+        "verdict": "WATCHLIST",
+        "title": "Apple Stock Jumps as Analyst Maps 30% Nvidia-Powered Upside",
+        "publisher": "GuruFocus.com",
+        "date": "2026-08-18",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/apple-stock-jumps-analyst-maps-205433966.html"
+      },
+      {
+        "ticker": "AAPL",
+        "verdict": "WATCHLIST",
+        "title": "Vanguard Handed 53 Funds a Fee Cut This Year and Skipped the VGT ETF Entirely",
+        "publisher": "24/7 Wall St.",
+        "date": "2026-08-18",
+        "url": "https://247wallst.com/investing/etf/2026/08/18/vanguard-handed-53-funds-a-fee-cut-this-year-and-skipped-the-vgt-etf-entirely/"
+      },
+      {
+        "ticker": "AAPL",
+        "verdict": "WATCHLIST",
         "title": "Apple Cuts EU App Fees to 5% Outside the App Store",
         "publisher": "GuruFocus.com",
         "date": "2026-08-18",
@@ -10738,30 +10752,6 @@
         "publisher": "Barrons.com",
         "date": "2026-08-18",
         "url": "https://www.barrons.com/articles/apple-app-store-fees-europe-antitrust-cbf85323?siteid=yhoof2&yptr=yahoo"
-      },
-      {
-        "ticker": "AAPL",
-        "verdict": "WATCHLIST",
-        "title": "Apple Overhauls EU App Store Policies to Settle Long-Standing Antitrust Dispute",
-        "publisher": "Stocktwits",
-        "date": "2026-08-18",
-        "url": "https://stocktwits.com/news-articles/markets/equity/apple-overhauls-eu-app-store-policies-to-settle-long-standing-antitrust-dispute/cZYcKHGRJjA"
-      },
-      {
-        "ticker": "AAPL",
-        "verdict": "WATCHLIST",
-        "title": "Apple overhauls its EU App Store fees, loosens rules for alternative app stores",
-        "publisher": "TechCrunch",
-        "date": "2026-08-18",
-        "url": "https://finance.yahoo.com/technology/articles/apple-overhauls-eu-app-store-171213924.html"
-      },
-      {
-        "ticker": "AAPL",
-        "verdict": "WATCHLIST",
-        "title": "Apple to Change Terms for App Developers to Appease EU\u2019s Antitrust Officials",
-        "publisher": "The Wall Street Journal",
-        "date": "2026-08-18",
-        "url": "https://www.wsj.com/tech/apple-to-change-terms-for-app-developers-to-appease-eus-antitrust-officials-0fd9c415?siteid=yhoof2&yptr=yahoo"
       },
       {
         "ticker": "MSFT",
@@ -10782,34 +10772,34 @@
       {
         "ticker": "MSFT",
         "verdict": "WATCHLIST",
-        "title": "Is This The Next CoreWeave Or Nebius Group? A Crusoe IPO Looms",
-        "publisher": "Investor's Business Daily",
+        "title": "Prediction: Microsoft Will Be Worth $5 Trillion by 2029. Here's the Math.",
+        "publisher": "Motley Fool",
         "date": "2026-08-18",
-        "url": "https://www.investors.com/news/is-this-the-next-coreweave-or-nebius-group-a-crusoe-ipo-looms/?src=A00220&yptr=yahoo"
+        "url": "https://www.fool.com/investing/2026/08/18/prediction-microsoft-will-be-worth-usd5-trillion-by-2029-here-s-the-math/"
       },
       {
         "ticker": "MSFT",
         "verdict": "WATCHLIST",
-        "title": "Q2 Earnings Roundup: Microsoft (NASDAQ:MSFT) And The Rest Of The Automation Software Segment",
-        "publisher": "StockStory",
+        "title": "AI Could Make Big Oil Even Bigger",
+        "publisher": "Oilprice.com",
         "date": "2026-08-18",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/q2-earnings-roundup-microsoft-nasdaq-191733756.html"
+        "url": "https://finance.yahoo.com/energy/articles/ai-could-big-oil-even-210000645.html"
       },
       {
         "ticker": "MSFT",
         "verdict": "WATCHLIST",
-        "title": "These Telltale Signs Cue Microsoft Investors Despite Earnings Surge; Is Microsoft A Sell Now?",
-        "publisher": "Investor's Business Daily",
+        "title": "Microsoft Stock Defies Tech Selloff as Azure Growth Holds the Line",
+        "publisher": "GuruFocus.com",
         "date": "2026-08-18",
-        "url": "https://www.investors.com/research/microsoft-msft-stock-buy-now-august-2026/?src=A00220&yptr=yahoo"
+        "url": "https://finance.yahoo.com/markets/stocks/articles/microsoft-stock-defies-tech-selloff-205301064.html"
       },
       {
         "ticker": "MSFT",
         "verdict": "WATCHLIST",
-        "title": "Snowflake's AI-driven data momentum justifies Buy rating: UBS",
-        "publisher": "Proactive",
+        "title": "Microsoft Faces Fresh China Blow Over Windows",
+        "publisher": "GuruFocus.com",
         "date": "2026-08-18",
-        "url": "https://www.proactiveinvestors.com/companies/news/1097219/snowflake-s-ai-driven-data-momentum-justifies-buy-rating-ubs-1097219.html"
+        "url": "https://finance.yahoo.com/technology/articles/microsoft-faces-fresh-china-blow-204842615.html"
       },
       {
         "ticker": "GOOGL",
@@ -10822,42 +10812,42 @@
       {
         "ticker": "GOOGL",
         "verdict": "WATCHLIST",
+        "title": "Berkshire Boosts Alphabet Stake 83% as Buffett Makes Major AI Bet",
+        "publisher": "GuruFocus.com",
+        "date": "2026-08-18",
+        "url": "https://finance.yahoo.com/technology/ai/articles/berkshire-boosts-alphabet-stake-83-210009667.html"
+      },
+      {
+        "ticker": "GOOGL",
+        "verdict": "WATCHLIST",
+        "title": "Wedbush Has a Message for AMD Investors After Google Move",
+        "publisher": "GuruFocus.com",
+        "date": "2026-08-18",
+        "url": "https://finance.yahoo.com/technology/ai/articles/wedbush-message-amd-investors-google-205547063.html"
+      },
+      {
+        "ticker": "GOOGL",
+        "verdict": "WATCHLIST",
+        "title": "Alphabet Stock Holds Firm as Cloud Revenue Explodes 82%",
+        "publisher": "GuruFocus.com",
+        "date": "2026-08-18",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/alphabet-stock-holds-firm-cloud-205213480.html"
+      },
+      {
+        "ticker": "GOOGL",
+        "verdict": "WATCHLIST",
+        "title": "How SpaceX\u2019s $60 Billion Cursor Acquisition Bolsters Musk\u2019s AI Ambitions",
+        "publisher": "Barrons.com",
+        "date": "2026-08-18",
+        "url": "https://www.barrons.com/articles/spacex-stock-price-ai-musk-cursor-e773d2aa?siteid=yhoof2&yptr=yahoo"
+      },
+      {
+        "ticker": "GOOGL",
+        "verdict": "WATCHLIST",
         "title": "Sector Update: Tech Stocks Fall Late Afternoon",
         "publisher": "MT Newswires",
         "date": "2026-08-18",
         "url": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-fall-afternoon-193526211.html"
-      },
-      {
-        "ticker": "GOOGL",
-        "verdict": "WATCHLIST",
-        "title": "Convertible Bonds Are the New AI Bet. The High Returns Hide Bigger Risks.",
-        "publisher": "Barrons.com",
-        "date": "2026-08-18",
-        "url": "https://www.barrons.com/articles/convertible-bonds-ai-risk-return-ffcee519?siteid=yhoof2&yptr=yahoo"
-      },
-      {
-        "ticker": "GOOGL",
-        "verdict": "WATCHLIST",
-        "title": "Nvidia, AMD, Micron Lead Chip Stocks Selloff as Iran Tensions Rattle Markets",
-        "publisher": "GuruFocus.com",
-        "date": "2026-08-18",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-amd-micron-lead-chip-180635152.html"
-      },
-      {
-        "ticker": "GOOGL",
-        "verdict": "WATCHLIST",
-        "title": "What Does The S&P 500 Earnings Boom Say About The Stock Market?",
-        "publisher": "Investor's Business Daily",
-        "date": "2026-08-18",
-        "url": "https://www.investors.com/news/sp-500-q2-earnings-amazon-google/?src=A00220&yptr=yahoo"
-      },
-      {
-        "ticker": "GOOGL",
-        "verdict": "WATCHLIST",
-        "title": "Sector Update: Tech Stocks Fall in Afternoon Trading",
-        "publisher": "MT Newswires",
-        "date": "2026-08-18",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-fall-afternoon-173201461.html"
       },
       {
         "ticker": "AMZN",
@@ -10870,6 +10860,30 @@
       {
         "ticker": "AMZN",
         "verdict": "WATCHLIST",
+        "title": "Tesla Just Landed a Major Win for Long-Delayed Semi",
+        "publisher": "GuruFocus.com",
+        "date": "2026-08-18",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-just-landed-major-win-212212407.html"
+      },
+      {
+        "ticker": "AMZN",
+        "verdict": "WATCHLIST",
+        "title": "Bank of America Has a Stark Warning on AI Spending",
+        "publisher": "GuruFocus.com",
+        "date": "2026-08-18",
+        "url": "https://finance.yahoo.com/technology/ai/articles/bank-america-stark-warning-ai-210907473.html"
+      },
+      {
+        "ticker": "AMZN",
+        "verdict": "WATCHLIST",
+        "title": "Hedge Funds Split on Amazon After a Big Q2 Rotation",
+        "publisher": "GuruFocus.com",
+        "date": "2026-08-18",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/hedge-funds-split-amazon-big-205740668.html"
+      },
+      {
+        "ticker": "AMZN",
+        "verdict": "WATCHLIST",
         "title": "NASA Taps Blue Origin, Firefly For Services. SpaceX Stock Hits Resistance.",
         "publisher": "Investor's Business Daily",
         "date": "2026-08-18",
@@ -10878,26 +10892,10 @@
       {
         "ticker": "AMZN",
         "verdict": "WATCHLIST",
-        "title": "Sector Update: Financial Stocks Mixed Tuesday",
-        "publisher": "MT Newswires",
+        "title": "This Stock Popped, Then Dropped on Its Big Plans for the Tesla Semi Truck",
+        "publisher": "Barrons.com",
         "date": "2026-08-18",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/sector-financial-stocks-mixed-tuesday-201025983.html"
-      },
-      {
-        "ticker": "AMZN",
-        "verdict": "WATCHLIST",
-        "title": "Swedish Trucking Company Inks Deal For Tesla Semi Truck Rollout",
-        "publisher": "Investor's Business Daily",
-        "date": "2026-08-18",
-        "url": "https://www.investors.com/news/tesla-semi-amazon-einride-ev-trucking-shipping-electric-vehicle/?src=A00220&yptr=yahoo"
-      },
-      {
-        "ticker": "AMZN",
-        "verdict": "WATCHLIST",
-        "title": "Boeing-Lockheed\u2019s ULA triples bond sale to $1.5 billion - report",
-        "publisher": "Investing.com",
-        "date": "2026-08-18",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/boeing-lockheed-ula-triples-bond-185553491.html"
+        "url": "https://www.barrons.com/articles/einride-stock-price-tesla-semi-truck-c4e436e9?siteid=yhoof2&yptr=yahoo"
       },
       {
         "ticker": "NVDA",
@@ -10910,82 +10908,98 @@
       {
         "ticker": "NVDA",
         "verdict": "WATCHLIST",
-        "title": "Stock Market Today: Nasdaq Slides Along With Chip Names; Sandisk, Micron Lose Big",
-        "publisher": "Investor's Business Daily",
-        "date": "2026-08-18",
-        "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-treasury-yields-nvidia-stock-nvda/?src=A00220&yptr=yahoo"
-      },
-      {
-        "ticker": "NVDA",
-        "verdict": "WATCHLIST",
-        "title": "Space Stocks Fall Tuesday: SpaceX Down 2%, Rocket Lab Down 3%, AST SpaceMobile Down 6%",
-        "publisher": "24/7 Wall St.",
-        "date": "2026-08-18",
-        "url": "https://247wallst.com/investing/2026/08/18/space-stocks-fall-tuesday-spacex-down-2-rocket-lab-down-3-ast-spacemobile-down-6/"
-      },
-      {
-        "ticker": "NVDA",
-        "verdict": "WATCHLIST",
-        "title": "Coherent, Teradyne, and Ciena Are the S&P 500\u2019s 3 Biggest Decliners on Tuesday",
-        "publisher": "24/7 Wall St.",
-        "date": "2026-08-18",
-        "url": "https://247wallst.com/investing/2026/08/18/coherent-teradyne-and-ciena-are-the-sp-500s-3-biggest-decliners-on-tuesday/"
-      },
-      {
-        "ticker": "NVDA",
-        "verdict": "WATCHLIST",
-        "title": "Nvidia Stock Drops as Bond Yields Attack AI Valuations",
-        "publisher": "GuruFocus.com",
-        "date": "2026-08-18",
-        "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-stock-drops-bond-yields-202537086.html"
-      },
-      {
-        "ticker": "NVDA",
-        "verdict": "WATCHLIST",
-        "title": "Where Will the Vanguard S&P 500 ETF Be in 20 Years? History Has Good and Bad News for Investors.",
+        "title": "Rocket Lab Wins One of Its Biggest Contracts Ever",
         "publisher": "Motley Fool",
         "date": "2026-08-18",
-        "url": "https://www.fool.com/investing/2026/08/18/where-will-the-vanguard-sp-500-etf-be-in-20-years/"
+        "url": "https://www.fool.com/investing/2026/08/18/rocket-lab-wins-one-of-its-biggest-contracts-ever/"
       },
       {
-        "ticker": "META",
+        "ticker": "NVDA",
         "verdict": "WATCHLIST",
-        "title": "Meta takes the stand in child safety trial: Takeaways from the first day",
-        "publisher": "Yahoo Finance Video",
+        "title": "Is Palantir the Next Trillion-Dollar Stock?",
+        "publisher": "Motley Fool",
         "date": "2026-08-18",
-        "url": "https://finance.yahoo.com/video/meta-takes-stand-child-safety-203000629.html"
+        "url": "https://www.fool.com/investing/2026/08/18/is-palantir-the-next-trillion-dollar-stock/"
       },
       {
-        "ticker": "META",
+        "ticker": "NVDA",
         "verdict": "WATCHLIST",
-        "title": "Update: Equities Fall For Third Day as Oil Stretches Gains Amid Middle East Anxiety",
-        "publisher": "MT Newswires",
+        "title": "Prediction: Microsoft Will Be Worth $5 Trillion by 2029. Here's the Math.",
+        "publisher": "Motley Fool",
         "date": "2026-08-18",
-        "url": "https://finance.yahoo.com/markets/articles/equities-fall-third-day-oil-202610757.html"
+        "url": "https://www.fool.com/investing/2026/08/18/prediction-microsoft-will-be-worth-usd5-trillion-by-2029-here-s-the-math/"
       },
       {
-        "ticker": "META",
+        "ticker": "NVDA",
         "verdict": "WATCHLIST",
-        "title": "Is This The Next CoreWeave Or Nebius Group? A Crusoe IPO Looms",
+        "title": "Robotics Stocks Punished Tuesday in AI Sell-Off: Ouster Down 10%, Aeva Technologies Down 12%, Symbotic Down 4%",
+        "publisher": "24/7 Wall St.",
+        "date": "2026-08-18",
+        "url": "https://247wallst.com/investing/2026/08/18/robotics-stocks-punished-tuesday-in-ai-sell-off-ouster-down-10-aeva-technologies-down-12-symbotic-down-4/"
+      },
+      {
+        "ticker": "NVDA",
+        "verdict": "WATCHLIST",
+        "title": "Micron, Other Chip Stocks Drop During Dog Days Of Summer",
         "publisher": "Investor's Business Daily",
         "date": "2026-08-18",
-        "url": "https://www.investors.com/news/is-this-the-next-coreweave-or-nebius-group-a-crusoe-ipo-looms/?src=A00220&yptr=yahoo"
+        "url": "https://www.investors.com/news/technology/chip-stocks-micron-nvidia-drop-dog-days-summer/?src=A00220&yptr=yahoo"
       },
       {
         "ticker": "META",
         "verdict": "WATCHLIST",
-        "title": "Meta Stock Sinks 3.8% as Legal and AI Costs Collide",
+        "title": "Meta social media addiction trial kicks off with major implications for company's future",
+        "publisher": "Yahoo Finance",
+        "date": "2026-08-18",
+        "url": "https://finance.yahoo.com/technology/article/meta-social-media-addiction-trial-kicks-off-with-major-implications-for-companys-future-215458217.html"
+      },
+      {
+        "ticker": "META",
+        "verdict": "WATCHLIST",
+        "title": "Why tech stock bulls may not shake this AI problem",
+        "publisher": "Yahoo Finance",
+        "date": "2026-08-18",
+        "url": "https://finance.yahoo.com/markets/article/why-tech-stock-bulls-may-not-shake-this-ai-problem-132840379.html"
+      },
+      {
+        "ticker": "META",
+        "verdict": "WATCHLIST",
+        "title": "Big Investors Send Conflicting Signal on Meta Platforms Stock",
         "publisher": "GuruFocus.com",
         "date": "2026-08-18",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/meta-stock-sinks-3-8-201921919.html"
+        "url": "https://finance.yahoo.com/markets/stocks/articles/big-investors-send-conflicting-signal-204606493.html"
       },
       {
         "ticker": "META",
         "verdict": "WATCHLIST",
-        "title": "Sector Update: Tech Stocks Fall Late Afternoon",
-        "publisher": "MT Newswires",
+        "title": "Meta Faces Up To $1.4 Trillion For \u201cAddictive\u201d Products",
+        "publisher": "Moby",
         "date": "2026-08-18",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-fall-afternoon-193526211.html"
+        "url": "https://app.moby.co/home/news/news-meta-faces-up-to-14-trillion-for-addictive-products?utm_source=yahoo_finance&utm_medium=rss"
+      },
+      {
+        "ticker": "META",
+        "verdict": "WATCHLIST",
+        "title": "When It Comes to Investing, Risk Is Loud. Opportunity Is Quiet.",
+        "publisher": "Barrons.com",
+        "date": "2026-08-18",
+        "url": "https://www.barrons.com/advisor/articles/investing-risk-avoidance-stocks-bonds-09db98e4?siteid=yhoof2&yptr=yahoo"
+      },
+      {
+        "ticker": "V",
+        "verdict": "WATCHLIST",
+        "title": "Visa\u2019s Search for a New Stablecoin Partner Reveals a Strategic Divide",
+        "publisher": "Forkast News",
+        "date": "2026-08-18",
+        "url": "https://finance.yahoo.com/markets/crypto/articles/visa-search-stablecoin-partner-reveals-220233895.html"
+      },
+      {
+        "ticker": "V",
+        "verdict": "WATCHLIST",
+        "title": "Top Analyst Reports for Visa, Lam Research & Caterpillar",
+        "publisher": "Zacks",
+        "date": "2026-08-18",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/top-analyst-reports-visa-lam-204100392.html"
       },
       {
         "ticker": "V",
@@ -10994,30 +11008,6 @@
         "publisher": "GuruFocus.com",
         "date": "2026-08-18",
         "url": "https://finance.yahoo.com/markets/stocks/articles/visa-stock-jumps-revenue-climbs-195927191.html"
-      },
-      {
-        "ticker": "V",
-        "verdict": "WATCHLIST",
-        "title": "Does Visa (V) Look Undervalued, Or Are Earnings Already Priced In?",
-        "publisher": "Simply Wall St.",
-        "date": "2026-08-18",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/does-visa-v-look-undervalued-161150207.html"
-      },
-      {
-        "ticker": "V",
-        "verdict": "WATCHLIST",
-        "title": "McDonald\u2019s Lost Money When Workers Missed Shifts. Here\u2019s the \u2018Crazy Beneficial\u2019 Solution That Finally Fixed It and Saved $35,000 a Month.",
-        "publisher": "Entrepreneur",
-        "date": "2026-08-18",
-        "url": "https://www.entrepreneur.com/buying-a-franchise/mcdonalds-was-losing-money-missed-shifts-heres-the-solution-that-saved-35000-a-month"
-      },
-      {
-        "ticker": "V",
-        "verdict": "WATCHLIST",
-        "title": "Visa In Search Of Stablecoin Partner After BVNK Sale",
-        "publisher": "CryptoProwl",
-        "date": "2026-08-18",
-        "url": "https://www.cryptoprowl.com/releases/visa-in-search-of-stablecoin-partner-after-bvnk-sale-6456"
       }
     ],
     "insider_alerts": [],
@@ -11182,16 +11172,6 @@
         "forward_pe": 31.316774,
         "verdict": "WATCHLIST",
         "next_action": "WAIT \u2014 High-growth AI infrastructure play with strong margins and free cash flow generation, trading at a premium valuation. Revisit at 20% below the 52-week high."
-      },
-      {
-        "ticker": "MU",
-        "name": "Micron Technology, Inc.",
-        "drawdown_pct": -25.0,
-        "price": 940.76,
-        "pe": 21.279348,
-        "forward_pe": 6.073746,
-        "verdict": "WATCHLIST",
-        "next_action": "WAIT \u2014 Undervalued AI infrastructure play with strong revenue growth and profitability. Revisit at 20% below the 52-week high."
       },
       {
         "ticker": "MRVL",
