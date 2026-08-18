@@ -1,17 +1,9 @@
 {
-  "generated_at": "2026-08-18T17:25:41Z",
+  "generated_at": "2026-08-18T17:57:55Z",
   "checked": 58,
   "flagged": 0,
   "quality": {
-    "AMD": {
-      "ok": true,
-      "flags": []
-    },
     "ADP": {
-      "ok": true,
-      "flags": []
-    },
-    "AAPL": {
       "ok": true,
       "flags": []
     },
@@ -19,11 +11,15 @@
       "ok": true,
       "flags": []
     },
-    "AVGO": {
+    "AAPL": {
       "ok": true,
       "flags": []
     },
     "ASML": {
+      "ok": true,
+      "flags": []
+    },
+    "AMD": {
       "ok": true,
       "flags": []
     },
@@ -35,7 +31,7 @@
       "ok": true,
       "flags": []
     },
-    "CBRS": {
+    "AVGO": {
       "ok": true,
       "flags": []
     },
@@ -47,7 +43,7 @@
       "ok": true,
       "flags": []
     },
-    "CMCSA": {
+    "CBRS": {
       "ok": true,
       "flags": []
     },
@@ -55,7 +51,7 @@
       "ok": true,
       "flags": []
     },
-    "CRDO": {
+    "CMCSA": {
       "ok": true,
       "flags": []
     },
@@ -63,11 +59,11 @@
       "ok": true,
       "flags": []
     },
-    "EIX": {
+    "ETN": {
       "ok": true,
       "flags": []
     },
-    "ETN": {
+    "CRDO": {
       "ok": true,
       "flags": []
     },
@@ -75,7 +71,11 @@
       "ok": true,
       "flags": []
     },
-    "GEHC": {
+    "GEV": {
+      "ok": true,
+      "flags": []
+    },
+    "EIX": {
       "ok": true,
       "flags": []
     },
@@ -83,7 +83,11 @@
       "ok": true,
       "flags": []
     },
-    "GEV": {
+    "IBM": {
+      "ok": true,
+      "flags": []
+    },
+    "GEHC": {
       "ok": true,
       "flags": []
     },
@@ -95,18 +99,6 @@
       "ok": true,
       "flags": []
     },
-    "IBM": {
-      "ok": true,
-      "flags": []
-    },
-    "ISRG": {
-      "ok": true,
-      "flags": []
-    },
-    "LITE": {
-      "ok": true,
-      "flags": []
-    },
     "LLY": {
       "ok": true,
       "flags": []
@@ -115,11 +107,15 @@
       "ok": true,
       "flags": []
     },
+    "ISRG": {
+      "ok": true,
+      "flags": []
+    },
     "LPLA": {
       "ok": true,
       "flags": []
     },
-    "MA": {
+    "LITE": {
       "ok": true,
       "flags": []
     },
@@ -135,15 +131,11 @@
       "ok": true,
       "flags": []
     },
+    "MA": {
+      "ok": true,
+      "flags": []
+    },
     "MSFT": {
-      "ok": true,
-      "flags": []
-    },
-    "MU": {
-      "ok": true,
-      "flags": []
-    },
-    "NBIS": {
       "ok": true,
       "flags": []
     },
@@ -155,11 +147,15 @@
       "ok": true,
       "flags": []
     },
+    "MU": {
+      "ok": true,
+      "flags": []
+    },
     "NVDA": {
       "ok": true,
       "flags": []
     },
-    "NVT": {
+    "NBIS": {
       "ok": true,
       "flags": []
     },
@@ -167,11 +163,11 @@
       "ok": true,
       "flags": []
     },
-    "PAYX": {
+    "PODD": {
       "ok": true,
       "flags": []
     },
-    "PODD": {
+    "NVT": {
       "ok": true,
       "flags": []
     },
@@ -183,6 +179,10 @@
       "ok": true,
       "flags": []
     },
+    "PAYX": {
+      "ok": true,
+      "flags": []
+    },
     "QQQ": {
       "ok": true,
       "flags": []
@@ -191,19 +191,7 @@
       "ok": true,
       "flags": []
     },
-    "STZ": {
-      "ok": true,
-      "flags": []
-    },
-    "TLN": {
-      "ok": true,
-      "flags": []
-    },
     "TSM": {
-      "ok": true,
-      "flags": []
-    },
-    "UNH": {
       "ok": true,
       "flags": []
     },
@@ -211,7 +199,15 @@
       "ok": true,
       "flags": []
     },
-    "V": {
+    "TLN": {
+      "ok": true,
+      "flags": []
+    },
+    "STZ": {
+      "ok": true,
+      "flags": []
+    },
+    "UNH": {
       "ok": true,
       "flags": []
     },
@@ -219,7 +215,7 @@
       "ok": true,
       "flags": []
     },
-    "VRT": {
+    "V": {
       "ok": true,
       "flags": []
     },
@@ -227,11 +223,15 @@
       "ok": true,
       "flags": []
     },
-    "ZBH": {
+    "VRT": {
       "ok": true,
       "flags": []
     },
     "^TNX": {
+      "ok": true,
+      "flags": []
+    },
+    "ZBH": {
       "ok": true,
       "flags": []
     }
