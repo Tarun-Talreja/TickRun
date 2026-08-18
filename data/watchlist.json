@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-17",
+  "last_updated": "2026-08-18",
   "candidates": [
     {
       "ticker": "AAPL",
@@ -124,18 +124,18 @@
       "name": "Broadcom Inc.",
       "theme": "edge_ai_silicon",
       "status": "research_complete",
-      "thesis": "High-growth semiconductor company with strong margins and free cash flow generation, trading at a premium valuation.",
+      "thesis": "High-growth AI infrastructure play with strong margins and solid balance sheet, but high valuation and net debt.",
       "added": "2026-05-28",
-      "verdict": "WATCHLIST",
+      "verdict": "RESEARCH-WORTHY",
       "buy_target": 371.25,
       "current_price": null,
-      "next_action": "WAIT \u2014 High-growth semiconductor company with strong margins and free cash flow generation, trading at a premium valuation. Revisit at 25% below the 52-week high.",
-      "research_file": "output/research/AVGO_2026-08-01.md",
-      "last_researched": "2026-08-01",
+      "next_action": "RESEARCH \u2014 High-growth AI infrastructure play with strong margins and solid balance sheet, but high valuation and net debt. Current levels already clear the entry bar.",
+      "research_file": "output/research/AVGO_2026-08-18.md",
+      "last_researched": "2026-08-18",
       "confidence": "MEDIUM",
-      "bear_check": "The strongest specific argument against buying AVGO right now is that the company's valuation is relatively expensive, with a trailing P/E of 64.6x and an EV/EBITDA of 45.1x, and its valuation multiples are on the higher end compared to its peers. This suggests that the market's growth expectations for AVGO may be overly optimistic, and any disappointment in future earnings could lead to a significant decline in the stock price. Furthermore, the company's high valuation multiples may not be justified by its revenue growth and high margins alone.\n\nCHANGES VERDICT: YES",
+      "bear_check": "The strongest specific argument against buying AVGO right now is that the company's high net debt of $45279M could become a significant burden if interest rates rise or the company's revenue growth slows, making it difficult to service its debt, and this risk is exacerbated by the fact that Broadcom's valuation is already relatively high, with a forward P/E of 20.1x and EV/EBITDA of 45.4x. Additionally, the recent AI financing news could potentially lead to increased competition and pricing pressure in the AI infrastructure space, which could negatively impact Broadcom's revenue growth. Furthermore, the company's high valuation multiple may not be sustainable if the overall market environment becomes less favorable.\n\nVERDICT: SELL\nCONFIDENCE: 70%",
       "llm_verdict": "RESEARCH-WORTHY",
-      "bear_downgraded": true,
+      "bear_downgraded": false,
       "buy_trigger_drawdown_pct": -25.0,
       "no_pullback_gate": false
     },
