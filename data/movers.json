@@ -1,20 +1,26 @@
 {
-  "generated_at": "2026-08-19T17:54:28Z",
+  "generated_at": "2026-08-19T18:26:33Z",
   "movers": [
     {
       "ticker": "NBIS",
       "name": "Nebius Group N.V.",
       "verdict": "PASS",
-      "price": 224.92,
-      "pct_day": -9.46,
-      "pct_since": -0.05,
-      "primary_pct": -9.46,
+      "price": 223.58,
+      "pct_day": -10.0,
+      "pct_since": -0.6,
+      "primary_pct": -10.0,
       "direction": "down",
       "triggers": [
-        "-9.5% on the day"
+        "-10.0% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
+        {
+          "title": "Nebius Stock Falls 14% on $4.5 Billion Convertible Offering",
+          "publisher": "GuruFocus.com",
+          "date": "2026-08-19",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nebius-stock-falls-14-4-181506505.html"
+        },
         {
           "title": "Sector Update: Tech Stocks Decline Wednesday Afternoon",
           "publisher": "MT Newswires",
@@ -26,46 +32,6 @@
           "publisher": "Motley Fool",
           "date": "2026-08-19",
           "url": "https://www.fool.com/investing/2026/08/19/why-nebius-group-stock-got-crushed-on-wednesday/"
-        },
-        {
-          "title": "Nebius (NBIS) Q2 2026 Earnings Call Transcript",
-          "publisher": "Motley Fool",
-          "date": "2026-08-19",
-          "url": "https://www.fool.com/earnings/call-transcripts/2026/08/19/nebius-nbis-q2-2026-earnings-call-transcript/"
-        }
-      ]
-    },
-    {
-      "ticker": "MRVL",
-      "name": "Marvell Technology, Inc.",
-      "verdict": "PASS",
-      "price": 233.425,
-      "pct_day": 8.07,
-      "pct_since": -0.3,
-      "primary_pct": 8.07,
-      "direction": "up",
-      "triggers": [
-        "+8.1% on the day"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Nvidia Stalls as Google's $12.2 Billion Custom-Chip Push Expands",
-          "publisher": "GuruFocus.com",
-          "date": "2026-08-19",
-          "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-stalls-googles-12-2-173648919.html"
-        },
-        {
-          "title": "Sector Update: Tech Stocks Decline Wednesday Afternoon",
-          "publisher": "MT Newswires",
-          "date": "2026-08-19",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-decline-wednesday-173218653.html"
-        },
-        {
-          "title": "Marvell Stock Jumps On Google Deal, Broadcom Slides",
-          "publisher": "Investor's Business Daily",
-          "date": "2026-08-19",
-          "url": "https://www.investors.com/news/technology/marvell-stock-jumps-on-google-chip-investment-deal/?src=A00220&yptr=yahoo"
         }
       ]
     },
@@ -73,13 +39,13 @@
       "ticker": "FLUT",
       "name": "Flutter Entertainment plc",
       "verdict": "PASS",
-      "price": 99.72,
-      "pct_day": 7.35,
-      "pct_since": 0.31,
-      "primary_pct": 7.35,
+      "price": 99.955,
+      "pct_day": 7.61,
+      "pct_since": 0.24,
+      "primary_pct": 7.61,
       "direction": "up",
       "triggers": [
-        "+7.3% on the day"
+        "+7.6% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -104,16 +70,50 @@
       ]
     },
     {
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "verdict": "PASS",
+      "price": 232.185,
+      "pct_day": 7.49,
+      "pct_since": -0.53,
+      "primary_pct": 7.49,
+      "direction": "up",
+      "triggers": [
+        "+7.5% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "Alphabet's $12.2 Billion Marvell Option Reshapes Its AI Chip Strategy",
+          "publisher": "GuruFocus.com",
+          "date": "2026-08-19",
+          "url": "https://finance.yahoo.com/technology/ai/articles/alphabets-12-2-billion-marvell-180351828.html"
+        },
+        {
+          "title": "Broadcom Falls 2% as Google Adds Marvell to Its AI Chip Bench",
+          "publisher": "GuruFocus.com",
+          "date": "2026-08-19",
+          "url": "https://finance.yahoo.com/technology/ai/articles/broadcom-falls-2-google-adds-180130465.html"
+        },
+        {
+          "title": "Marvell Stock Jumps On Google Deal, Broadcom Slides",
+          "publisher": "Investor's Business Daily",
+          "date": "2026-08-19",
+          "url": "https://www.investors.com/news/technology/marvell-stock-jumps-on-google-chip-investment-deal/?src=A00220&yptr=yahoo"
+        }
+      ]
+    },
+    {
       "ticker": "NOW",
       "name": "ServiceNow, Inc.",
       "verdict": "WATCHLIST",
-      "price": 128.09,
-      "pct_day": 7.2,
-      "pct_since": -0.18,
-      "primary_pct": 7.2,
+      "price": 128.275,
+      "pct_day": 7.35,
+      "pct_since": 0.14,
+      "primary_pct": 7.35,
       "direction": "up",
       "triggers": [
-        "+7.2% on the day"
+        "+7.3% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -138,50 +138,16 @@
       ]
     },
     {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "verdict": "WATCHLIST",
-      "price": 288.49,
-      "pct_day": -5.85,
-      "pct_since": -0.25,
-      "primary_pct": -5.85,
-      "direction": "down",
-      "triggers": [
-        "-5.8% on the day"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "5 Revealing Analyst Questions From Coherent\u2019s Q2 Earnings Call",
-          "publisher": "StockStory",
-          "date": "2026-08-19",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/5-revealing-analyst-questions-coherent-095002093.html"
-        },
-        {
-          "title": "2 Stocks to Buy That Stanley Druckenmiller Added While Exiting 5 Chip and Photonics Stocks",
-          "publisher": "Motley Fool",
-          "date": "2026-08-19",
-          "url": "https://www.fool.com/investing/2026/08/18/2-stocks-to-buy-that-stanley-druckenmiller-added-while-exiting-5-chip-and-photonics-stocks/"
-        },
-        {
-          "title": "Why AXT (AXTI) Is Up 11.6% After Indium Phosphide Supply Tightens Amid New AI Deals",
-          "publisher": "Simply Wall St.",
-          "date": "2026-08-18",
-          "url": "https://finance.yahoo.com/technology/ai/articles/why-axt-axti-11-6-231738218.html"
-        }
-      ]
-    },
-    {
       "ticker": "CRDO",
       "name": "Credo Technology Group Holding Ltd",
       "verdict": "PASS",
-      "price": 232.09,
-      "pct_day": -5.64,
-      "pct_since": 0.11,
-      "primary_pct": -5.64,
+      "price": 229.995,
+      "pct_day": -6.49,
+      "pct_since": -0.9,
+      "primary_pct": -6.49,
       "direction": "down",
       "triggers": [
-        "-5.6% on the day"
+        "-6.5% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -206,16 +172,50 @@
       ]
     },
     {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "verdict": "WATCHLIST",
+      "price": 286.775,
+      "pct_day": -6.41,
+      "pct_since": -0.59,
+      "primary_pct": -6.41,
+      "direction": "down",
+      "triggers": [
+        "-6.4% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "5 Revealing Analyst Questions From Coherent\u2019s Q2 Earnings Call",
+          "publisher": "StockStory",
+          "date": "2026-08-19",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/5-revealing-analyst-questions-coherent-095002093.html"
+        },
+        {
+          "title": "2 Stocks to Buy That Stanley Druckenmiller Added While Exiting 5 Chip and Photonics Stocks",
+          "publisher": "Motley Fool",
+          "date": "2026-08-19",
+          "url": "https://www.fool.com/investing/2026/08/18/2-stocks-to-buy-that-stanley-druckenmiller-added-while-exiting-5-chip-and-photonics-stocks/"
+        },
+        {
+          "title": "Why AXT (AXTI) Is Up 11.6% After Indium Phosphide Supply Tightens Amid New AI Deals",
+          "publisher": "Simply Wall St.",
+          "date": "2026-08-18",
+          "url": "https://finance.yahoo.com/technology/ai/articles/why-axt-axti-11-6-231738218.html"
+        }
+      ]
+    },
+    {
       "ticker": "DHR",
       "name": "Danaher Corporation",
       "verdict": "PASS",
-      "price": 210.605,
-      "pct_day": 5.52,
-      "pct_since": 0.46,
-      "primary_pct": 5.52,
+      "price": 211.655,
+      "pct_day": 6.05,
+      "pct_since": 0.5,
+      "primary_pct": 6.05,
       "direction": "up",
       "triggers": [
-        "+5.5% on the day"
+        "+6.0% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -240,36 +240,36 @@
       ]
     },
     {
-      "ticker": "CBRS",
-      "name": "Cerebras Systems Inc.",
-      "verdict": "PASS",
-      "price": 208.915,
-      "pct_day": -5.04,
-      "pct_since": -0.15,
-      "primary_pct": -5.04,
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "verdict": "WATCHLIST",
+      "price": 828.69,
+      "pct_day": -5.11,
+      "pct_since": -0.61,
+      "primary_pct": -5.11,
       "direction": "down",
       "triggers": [
-        "-5.0% on the day"
+        "-5.1% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
         {
-          "title": "Advanced Micro Devices (AMD) Raises $5b For AI As Its Valuation Debate Heats Up",
-          "publisher": "Simply Wall St.",
+          "title": "AAOI vs. Lumentum: Which Optical Networking Stock Is the Better Buy?",
+          "publisher": "Zacks",
           "date": "2026-08-19",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/advanced-micro-devices-amd-raises-170958547.html"
+          "url": "https://finance.yahoo.com/markets/stocks/articles/aaoi-vs-lumentum-optical-networking-165300750.html"
         },
         {
-          "title": "Cathie Wood Buys Cerebras After Its 29% Slide",
-          "publisher": "GuruFocus.com",
+          "title": "AXT's InP Demand Is Surging: Can It Become a Long-Term Growth Driver?",
+          "publisher": "Zacks",
           "date": "2026-08-19",
-          "url": "https://finance.yahoo.com/technology/ai/articles/cathie-wood-buys-cerebras-29-150225230.html"
+          "url": "https://finance.yahoo.com/markets/stocks/articles/axts-inp-demand-surging-become-150900839.html"
         },
         {
-          "title": "Cathie Wood Buys $8.8 Million of This Beaten-Down AI Stock",
-          "publisher": "GuruFocus.com",
+          "title": "C3.ai vs. Lumentum: What Recent Revenue Trajectories Tell Investors About These Artificial Intelligence Companies",
+          "publisher": "Motley Fool",
           "date": "2026-08-19",
-          "url": "https://finance.yahoo.com/technology/ai/articles/cathie-wood-buys-8-8-144250621.html"
+          "url": "https://www.fool.com/coverage/charts/2026/08/19/c3-ai-vs-lumentum-what-recent-revenue-trajectories-tell-investors-about-these-artificial-intelligence-companies/"
         }
       ]
     }
