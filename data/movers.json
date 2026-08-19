@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-19T19:34:47Z",
+  "generated_at": "2026-08-19T19:55:35Z",
   "movers": [
     {
       "ticker": "NBIS",
       "name": "Nebius Group N.V.",
       "verdict": "PASS",
-      "price": 219.145,
-      "pct_day": -11.79,
-      "pct_since": 0.41,
-      "primary_pct": -11.79,
+      "price": 216.545,
+      "pct_day": -12.83,
+      "pct_since": -1.19,
+      "primary_pct": -12.83,
       "direction": "down",
       "triggers": [
-        "-11.8% on the day"
+        "-12.8% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -39,16 +39,22 @@
       "ticker": "MRVL",
       "name": "Marvell Technology, Inc.",
       "verdict": "PASS",
-      "price": 235.2,
-      "pct_day": 8.89,
-      "pct_since": 0.56,
-      "primary_pct": 8.89,
+      "price": 236.38,
+      "pct_day": 9.44,
+      "pct_since": 0.5,
+      "primary_pct": 9.44,
       "direction": "up",
       "triggers": [
-        "+8.9% on the day"
+        "+9.4% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
+        {
+          "title": "Marvell Stock Jumps On Google Deal, Broadcom Slides",
+          "publisher": "Investor's Business Daily",
+          "date": "2026-08-19",
+          "url": "https://www.investors.com/news/technology/marvell-stock-jumps-on-google-chip-investment-deal/?src=A00220&yptr=yahoo"
+        },
         {
           "title": "Marvell Stock Rises 10% on Google Warrant Deal",
           "publisher": "GuruFocus.com",
@@ -56,50 +62,10 @@
           "url": "https://finance.yahoo.com/markets/stocks/articles/marvell-stock-rises-10-google-191520066.html"
         },
         {
-          "title": "Marvell Technology Shares Jump on AI Chip Deal With Google",
-          "publisher": "MT Newswires",
+          "title": "Why Is NVDA The Discount Option Among Its Peers?",
+          "publisher": "Trefis",
           "date": "2026-08-19",
-          "url": "https://finance.yahoo.com/technology/ai/articles/marvell-technology-shares-jump-ai-185544352.html"
-        },
-        {
-          "title": "Moderna, Merck, Micron, Marvell, Est\u00e9e Lauder, Honeywell Aerospace, and More Stocks That Explain Today\u2019s Market",
-          "publisher": "Barrons.com",
-          "date": "2026-08-19",
-          "url": "https://www.barrons.com/articles/stock-movers-882bea6d?siteid=yhoof2&yptr=yahoo"
-        }
-      ]
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "verdict": "WATCHLIST",
-      "price": 128.03,
-      "pct_day": 7.15,
-      "pct_since": 0.44,
-      "primary_pct": 7.15,
-      "direction": "up",
-      "triggers": [
-        "+7.2% on the day"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Why ServiceNow Stock Rallied Today",
-          "publisher": "Motley Fool",
-          "date": "2026-08-19",
-          "url": "https://www.fool.com/investing/2026/08/19/why-servicenow-stock-rallied-today/"
-        },
-        {
-          "title": "Software Stocks Are Bouncing Back From AI Fears. BofA Sees More Gains Ahead.",
-          "publisher": "Barrons.com",
-          "date": "2026-08-19",
-          "url": "https://www.barrons.com/articles/software-stocks-workday-figma-gitlab-6db115f6?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "title": "UiPath Stock Rises 44% in 6 Months: Should You Buy, Hold or Sell?",
-          "publisher": "Zacks",
-          "date": "2026-08-19",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/uipath-stock-rises-44-6-171800149.html"
+          "url": "https://www.trefis.com/articles/611930/why-is-nvda-the-discount-option-among-its-peers/2026-08-19"
         }
       ]
     },
@@ -107,13 +73,13 @@
       "ticker": "FLUT",
       "name": "Flutter Entertainment plc",
       "verdict": "PASS",
-      "price": 99.38,
-      "pct_day": 6.99,
-      "pct_since": -0.85,
-      "primary_pct": 6.99,
+      "price": 99.46,
+      "pct_day": 7.07,
+      "pct_since": 0.08,
+      "primary_pct": 7.07,
       "direction": "up",
       "triggers": [
-        "+7.0% on the day"
+        "+7.1% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -138,12 +104,46 @@
       ]
     },
     {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "verdict": "WATCHLIST",
+      "price": 127.5989,
+      "pct_day": 6.79,
+      "pct_since": -0.34,
+      "primary_pct": 6.79,
+      "direction": "up",
+      "triggers": [
+        "+6.8% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "Is ServiceNow (NOW) Quietly Becoming the Default Orchestrator for Enterprise AI Automation?",
+          "publisher": "Simply Wall St.",
+          "date": "2026-08-19",
+          "url": "https://finance.yahoo.com/technology/ai/articles/servicenow-now-quietly-becoming-default-191029416.html"
+        },
+        {
+          "title": "Why ServiceNow Stock Rallied Today",
+          "publisher": "Motley Fool",
+          "date": "2026-08-19",
+          "url": "https://www.fool.com/investing/2026/08/19/why-servicenow-stock-rallied-today/"
+        },
+        {
+          "title": "Software Stocks Are Bouncing Back From AI Fears. BofA Sees More Gains Ahead.",
+          "publisher": "Barrons.com",
+          "date": "2026-08-19",
+          "url": "https://www.barrons.com/articles/software-stocks-workday-figma-gitlab-6db115f6?siteid=yhoof2&yptr=yahoo"
+        }
+      ]
+    },
+    {
       "ticker": "COHR",
       "name": "Coherent Corp.",
       "verdict": "WATCHLIST",
-      "price": 286.99,
+      "price": 287.01,
       "pct_day": -6.34,
-      "pct_since": 0.44,
+      "pct_since": 0.01,
       "primary_pct": -6.34,
       "direction": "down",
       "triggers": [
@@ -175,13 +175,13 @@
       "ticker": "DHR",
       "name": "Danaher Corporation",
       "verdict": "PASS",
-      "price": 211.2,
-      "pct_day": 5.82,
-      "pct_since": -0.31,
-      "primary_pct": 5.82,
+      "price": 211.83,
+      "pct_day": 6.14,
+      "pct_since": 0.3,
+      "primary_pct": 6.14,
       "direction": "up",
       "triggers": [
-        "+5.8% on the day"
+        "+6.1% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -209,13 +209,13 @@
       "ticker": "LITE",
       "name": "Lumentum Holdings Inc.",
       "verdict": "WATCHLIST",
-      "price": 826.65,
-      "pct_day": -5.34,
-      "pct_since": 0.24,
-      "primary_pct": -5.34,
+      "price": 826.42,
+      "pct_day": -5.37,
+      "pct_since": -0.03,
+      "primary_pct": -5.37,
       "direction": "down",
       "triggers": [
-        "-5.3% on the day"
+        "-5.4% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -240,36 +240,36 @@
       ]
     },
     {
-      "ticker": "LLY",
-      "name": "Eli Lilly and Company",
+      "ticker": "CRDO",
+      "name": "Credo Technology Group Holding Ltd",
       "verdict": "PASS",
-      "price": 1287.27,
-      "pct_day": 5.02,
-      "pct_since": 0.23,
-      "primary_pct": 5.02,
-      "direction": "up",
+      "price": 233.41,
+      "pct_day": -5.11,
+      "pct_since": -0.55,
+      "primary_pct": -5.11,
+      "direction": "down",
       "triggers": [
-        "+5.0% on the day"
+        "-5.1% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
         {
-          "title": "Novo Nordisk (CPSE:NOVO B) Stock Still Looks Undervalued After Dutch Court Win",
-          "publisher": "Simply Wall St.",
-          "date": "2026-08-19",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/novo-nordisk-cpse-novo-b-170851709.html"
-        },
-        {
-          "title": "OPK Raises $125 Million Against Royalties: What Investors Should Know",
+          "title": "Credo Technology's Scale-Up Push: Can it Drive Long-Term Growth?",
           "publisher": "Zacks",
           "date": "2026-08-19",
-          "url": "https://finance.yahoo.com/healthcare/articles/opk-raises-125-million-against-165000534.html"
+          "url": "https://finance.yahoo.com/technology/articles/credo-technologys-scale-push-drive-160000696.html"
         },
         {
-          "title": "Eli Lilly, Novo Nordisk and Merck: Buy, Sell or Hold?",
+          "title": "Marvell Technology Rockets 13% on $12.2B Google Warrant; Broadcom Falls 3%, Alphabet Unmoved",
           "publisher": "24/7 Wall St.",
           "date": "2026-08-19",
-          "url": "https://247wallst.com/investing/2026/08/19/eli-lilly-novo-nordisk-and-merck-buy-sell-or-hold/"
+          "url": "https://247wallst.com/investing/2026/08/19/marvell-technology-rockets-13-on-12-2b-google-warrant-broadcom-falls-3-alphabet-unmoved/"
+        },
+        {
+          "title": "Prediction: The Tiny AI Stock Has a Massive Opportunity in Optical Computing",
+          "publisher": "24/7 Wall St.",
+          "date": "2026-08-19",
+          "url": "https://247wallst.com/investing/2026/08/19/prediction-the-tiny-ai-stock-has-a-massive-opportunity-in-optical-computing/"
         }
       ]
     }
