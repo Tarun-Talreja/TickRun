@@ -1,25 +1,12 @@
 {
-  "generated_at": "2026-08-18T10:56:12Z",
+  "generated_at": "2026-08-19T10:55:44Z",
   "horizon_days": 30,
   "counts": {
-    "total": 7,
+    "total": 6,
     "imminent": 2,
     "high_urgency": 0
   },
   "events": [
-    {
-      "ticker": "BWXT",
-      "type": "ex_dividend",
-      "date": "2026-08-18",
-      "name": "BWX Technologies, Inc.",
-      "verdict": "WATCHLIST",
-      "theme": "nuclear_smr",
-      "days_until": 0,
-      "price": null,
-      "drawdown_from_high": null,
-      "urgency": "medium",
-      "plan": "Ex-dividend date \u2014 buy before it to receive the dividend. Tax-free in the Roth, which is where this name is routed."
-    },
     {
       "ticker": "MSFT",
       "type": "ex_dividend",
@@ -27,7 +14,7 @@
       "name": "Microsoft Corporation",
       "verdict": "WATCHLIST",
       "theme": "mega_cap_ai",
-      "days_until": 2,
+      "days_until": 1,
       "price": null,
       "drawdown_from_high": null,
       "urgency": "medium",
@@ -44,10 +31,10 @@
       "name": "NVIDIA Corporation",
       "verdict": "WATCHLIST",
       "theme": "mega_cap_ai",
-      "days_until": 8,
+      "days_until": 7,
       "price": null,
       "drawdown_from_high": null,
-      "urgency": "low",
+      "urgency": "medium",
       "plan": "Re-read the thesis against what is being reported. Consensus EPS ~2.08. This is the quarter that either confirms the reason it is on the list or removes it."
     },
     {
@@ -59,13 +46,13 @@
       "eps_high": 3.33,
       "revenue_estimate": 29435187950,
       "name": "Broadcom Inc.",
-      "verdict": "WATCHLIST",
+      "verdict": "RESEARCH-WORTHY",
       "theme": "edge_ai_silicon",
-      "days_until": 15,
+      "days_until": 14,
       "price": null,
       "drawdown_from_high": null,
       "urgency": "low",
-      "plan": "Re-read the thesis against what is being reported. Consensus EPS ~3.24. This is the quarter that either confirms the reason it is on the list or removes it."
+      "plan": "Decide BEFORE the print. Consensus EPS ~3.24. If you would buy on a beat, size the order now; if a miss would break the thesis, write down what number does that. Reacting after the move is how you end up chasing."
     },
     {
       "ticker": "GOOGL",
@@ -74,7 +61,7 @@
       "name": "Alphabet Inc.",
       "verdict": "WATCHLIST",
       "theme": "mega_cap_ai",
-      "days_until": 17,
+      "days_until": 16,
       "price": null,
       "drawdown_from_high": null,
       "urgency": "low",
@@ -87,7 +74,7 @@
       "name": "ADP",
       "verdict": "WATCHLIST",
       "theme": "quality_compounder",
-      "days_until": 24,
+      "days_until": 23,
       "price": null,
       "drawdown_from_high": null,
       "urgency": "low",
@@ -100,7 +87,7 @@
       "name": "Taiwan Semiconductor Manufacturing Company",
       "verdict": "WATCHLIST",
       "theme": "edge_ai_silicon",
-      "days_until": 29,
+      "days_until": 28,
       "price": null,
       "drawdown_from_high": null,
       "urgency": "low",
@@ -109,30 +96,34 @@
   ],
   "imminent": [
     {
-      "ticker": "BWXT",
-      "type": "ex_dividend",
-      "date": "2026-08-18",
-      "name": "BWX Technologies, Inc.",
-      "verdict": "WATCHLIST",
-      "theme": "nuclear_smr",
-      "days_until": 0,
-      "price": null,
-      "drawdown_from_high": null,
-      "urgency": "medium",
-      "plan": "Ex-dividend date \u2014 buy before it to receive the dividend. Tax-free in the Roth, which is where this name is routed."
-    },
-    {
       "ticker": "MSFT",
       "type": "ex_dividend",
       "date": "2026-08-20",
       "name": "Microsoft Corporation",
       "verdict": "WATCHLIST",
       "theme": "mega_cap_ai",
-      "days_until": 2,
+      "days_until": 1,
       "price": null,
       "drawdown_from_high": null,
       "urgency": "medium",
       "plan": "Ex-dividend date \u2014 buy before it to receive the dividend. Tax-free in the Roth, which is where this name is routed."
+    },
+    {
+      "ticker": "NVDA",
+      "type": "earnings",
+      "date": "2026-08-26",
+      "eps_estimate": 2.0838,
+      "eps_low": 2.03128,
+      "eps_high": 2.2,
+      "revenue_estimate": 91936931570,
+      "name": "NVIDIA Corporation",
+      "verdict": "WATCHLIST",
+      "theme": "mega_cap_ai",
+      "days_until": 7,
+      "price": null,
+      "drawdown_from_high": null,
+      "urgency": "medium",
+      "plan": "Re-read the thesis against what is being reported. Consensus EPS ~2.08. This is the quarter that either confirms the reason it is on the list or removes it."
     }
   ]
 }
