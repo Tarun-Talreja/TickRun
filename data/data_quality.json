@@ -1,8 +1,12 @@
 {
-  "generated_at": "2026-08-19T16:24:20Z",
+  "generated_at": "2026-08-19T16:59:03Z",
   "checked": 58,
   "flagged": 0,
   "quality": {
+    "AMD": {
+      "ok": true,
+      "flags": []
+    },
     "AAPL": {
       "ok": true,
       "flags": []
@@ -23,10 +27,6 @@
       "ok": true,
       "flags": []
     },
-    "AMD": {
-      "ok": true,
-      "flags": []
-    },
     "BWXT": {
       "ok": true,
       "flags": []
@@ -39,7 +39,7 @@
       "ok": true,
       "flags": []
     },
-    "CMCSA": {
+    "CEG": {
       "ok": true,
       "flags": []
     },
@@ -51,7 +51,7 @@
       "ok": true,
       "flags": []
     },
-    "CEG": {
+    "CMCSA": {
       "ok": true,
       "flags": []
     },
@@ -67,6 +67,10 @@
       "ok": true,
       "flags": []
     },
+    "EIX": {
+      "ok": true,
+      "flags": []
+    },
     "FLUT": {
       "ok": true,
       "flags": []
@@ -79,19 +83,7 @@
       "ok": true,
       "flags": []
     },
-    "GIS": {
-      "ok": true,
-      "flags": []
-    },
-    "EIX": {
-      "ok": true,
-      "flags": []
-    },
     "GOOGL": {
-      "ok": true,
-      "flags": []
-    },
-    "ISRG": {
       "ok": true,
       "flags": []
     },
@@ -99,11 +91,7 @@
       "ok": true,
       "flags": []
     },
-    "LITE": {
-      "ok": true,
-      "flags": []
-    },
-    "LLY": {
+    "GIS": {
       "ok": true,
       "flags": []
     },
@@ -111,11 +99,27 @@
       "ok": true,
       "flags": []
     },
+    "ISRG": {
+      "ok": true,
+      "flags": []
+    },
+    "LITE": {
+      "ok": true,
+      "flags": []
+    },
     "LMB": {
       "ok": true,
       "flags": []
     },
+    "LLY": {
+      "ok": true,
+      "flags": []
+    },
     "LPLA": {
+      "ok": true,
+      "flags": []
+    },
+    "MA": {
       "ok": true,
       "flags": []
     },
@@ -135,15 +139,15 @@
       "ok": true,
       "flags": []
     },
-    "MA": {
-      "ok": true,
-      "flags": []
-    },
     "MU": {
       "ok": true,
       "flags": []
     },
     "NBIS": {
+      "ok": true,
+      "flags": []
+    },
+    "NFLX": {
       "ok": true,
       "flags": []
     },
@@ -163,31 +167,7 @@
       "ok": true,
       "flags": []
     },
-    "NFLX": {
-      "ok": true,
-      "flags": []
-    },
-    "PAYX": {
-      "ok": true,
-      "flags": []
-    },
     "PODD": {
-      "ok": true,
-      "flags": []
-    },
-    "QQQ": {
-      "ok": true,
-      "flags": []
-    },
-    "RDDT": {
-      "ok": true,
-      "flags": []
-    },
-    "SPY": {
-      "ok": true,
-      "flags": []
-    },
-    "STZ": {
       "ok": true,
       "flags": []
     },
@@ -195,15 +175,35 @@
       "ok": true,
       "flags": []
     },
+    "PAYX": {
+      "ok": true,
+      "flags": []
+    },
+    "RDDT": {
+      "ok": true,
+      "flags": []
+    },
+    "QQQ": {
+      "ok": true,
+      "flags": []
+    },
+    "STZ": {
+      "ok": true,
+      "flags": []
+    },
     "TLN": {
       "ok": true,
       "flags": []
     },
-    "TSM": {
+    "SPY": {
       "ok": true,
       "flags": []
     },
-    "UNH": {
+    "TW": {
+      "ok": true,
+      "flags": []
+    },
+    "TSM": {
       "ok": true,
       "flags": []
     },
@@ -219,11 +219,7 @@
       "ok": true,
       "flags": []
     },
-    "TW": {
-      "ok": true,
-      "flags": []
-    },
-    "VTI": {
+    "UNH": {
       "ok": true,
       "flags": []
     },
@@ -232,6 +228,10 @@
       "flags": []
     },
     "^TNX": {
+      "ok": true,
+      "flags": []
+    },
+    "VTI": {
       "ok": true,
       "flags": []
     }
