@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-08-20T22:21:14Z",
+  "generated_at": "2026-08-21T13:37:50Z",
   "pullback_alerts": [
     {
       "ticker": "ISRG",
       "name": "Intuitive Surgical, Inc.",
       "theme": "healthcare_innovation",
-      "verdict": "RESEARCH-WORTHY",
-      "price": 374.48,
+      "verdict": "WATCHLIST",
+      "price": 374.4975,
       "high_52w": 603.88,
       "drawdown_pct": -38.0,
       "severity": "STRONG",
-      "thesis": "High-growth medical technology company with a strong moat and reasonable valuation at 32.3x forward earnings.",
+      "thesis": "High-growth medical technology company with a strong track record of innovation and expanding manufacturing footprint.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -18,11 +18,11 @@
       "name": "Celestica Inc.",
       "theme": "datacenter_infra",
       "verdict": "WATCHLIST",
-      "price": 302.0,
+      "price": 301.19,
       "high_52w": 474.03,
-      "drawdown_pct": -36.3,
+      "drawdown_pct": -36.5,
       "severity": "STRONG",
-      "thesis": "Reasonable valuation for a growing AI infrastructure/data center power play with 62.4% TTM revenue growth and 9.8% operating margin.",
+      "thesis": "AI infrastructure play with strong revenue growth and reasonable valuation at 15.4x forward earnings.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -30,23 +30,11 @@
       "name": "BWX Technologies, Inc.",
       "theme": "nuclear_smr",
       "verdict": "WATCHLIST",
-      "price": 156.44,
+      "price": 158.535,
       "high_52w": 241.82,
-      "drawdown_pct": -35.3,
-      "severity": "STRONG",
-      "thesis": "Reasonably valued nuclear play with 18% YoY growth and a strong contract backlog.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "theme": "networking_infra",
-      "verdict": "WATCHLIST",
-      "price": 290.03,
-      "high_52w": 440.0,
-      "drawdown_pct": -34.1,
+      "drawdown_pct": -34.4,
       "severity": "MODERATE",
-      "thesis": "Coherent Corp. is a high-growth laser technology company with a strong presence in the AI infrastructure theme, but its valuation is relatively high and its negative free cash flow and net debt position may be a concern for investors.",
+      "thesis": "Fairly valued nuclear energy play with growth potential in SMRs and advanced reactors.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -54,11 +42,23 @@
       "name": "ServiceNow, Inc.",
       "theme": "cybersecurity",
       "verdict": "WATCHLIST",
-      "price": 129.75,
+      "price": 130.065,
       "high_52w": 194.726,
-      "drawdown_pct": -33.4,
+      "drawdown_pct": -33.2,
       "severity": "MODERATE",
       "thesis": "High-growth SaaS company with a strong market position, but high valuation and competitive industry make it a less attractive investment opportunity at current prices.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "theme": "networking_infra",
+      "verdict": "WATCHLIST",
+      "price": 294.6009,
+      "high_52w": 440.0,
+      "drawdown_pct": -33.0,
+      "severity": "MODERATE",
+      "thesis": "Coherent Corp. is a high-growth laser technology company with a strong presence in the AI infrastructure theme, but its valuation is relatively high and its negative free cash flow and net debt position may be a concern for investors.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -66,23 +66,23 @@
       "name": "Meta Platforms, Inc.",
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "price": 545.83,
+      "price": 548.795,
       "high_52w": 790.8,
-      "drawdown_pct": -31.0,
+      "drawdown_pct": -30.6,
       "severity": "MODERATE",
-      "thesis": "Meta is a leading technology company with a strong track record of revenue growth and profitability, and its investments in AI infrastructure position it for continued success.",
+      "thesis": "Meta is a leader in AI research and development, with a strong brand and large user base, but its valuation is not currently compelling.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
       "ticker": "AVGO",
       "name": "Broadcom Inc.",
       "theme": "edge_ai_silicon",
-      "verdict": "RESEARCH-WORTHY",
-      "price": 364.03,
+      "verdict": "WATCHLIST",
+      "price": 372.23,
       "high_52w": 495.0,
-      "drawdown_pct": -26.5,
+      "drawdown_pct": -24.8,
       "severity": "MODERATE",
-      "thesis": "High-growth AI infrastructure play with strong margins and solid balance sheet, but high valuation and net debt.",
+      "thesis": "Broadcom is a key player in the AI infrastructure space with strong revenue growth and a reasonable valuation.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -90,7 +90,7 @@
       "name": "Micron Technology, Inc.",
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
-      "price": 974.33,
+      "price": 973.875,
       "high_52w": 1255.0,
       "drawdown_pct": -22.4,
       "severity": "MODERATE",
