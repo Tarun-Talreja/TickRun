@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-21T18:24:30Z",
+  "generated_at": "2026-08-21T19:06:57Z",
   "movers": [
     {
       "ticker": "CBRS",
       "name": "Cerebras Systems Inc.",
       "verdict": "PASS",
-      "price": 198.87,
-      "pct_day": -5.23,
-      "pct_since": -0.29,
-      "primary_pct": -5.23,
+      "price": 198.06,
+      "pct_day": -5.62,
+      "pct_since": -0.41,
+      "primary_pct": -5.62,
       "direction": "down",
       "triggers": [
-        "-5.2% on the day"
+        "-5.6% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -39,16 +39,22 @@
       "ticker": "MRVL",
       "name": "Marvell Technology, Inc.",
       "verdict": "PASS",
-      "price": 237.9262,
-      "pct_day": -5.21,
-      "pct_since": 0.27,
-      "primary_pct": -5.21,
+      "price": 237.1,
+      "pct_day": -5.54,
+      "pct_since": -0.35,
+      "primary_pct": -5.54,
       "direction": "down",
       "triggers": [
-        "-5.2% on the day"
+        "-5.5% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
+        {
+          "title": "Marvell Quarterly Results Poised for Upside Led by AI, Customer Wins, Oppenheimer Says",
+          "publisher": "MT Newswires",
+          "date": "2026-08-21",
+          "url": "https://finance.yahoo.com/technology/ai/articles/marvell-quarterly-results-poised-upside-190123875.html"
+        },
         {
           "title": "Jensen Huang Thinks This Chip Stock Could Hit $1 Trillion. Google Just Gave Him Ammunition",
           "publisher": "Insider Monkey",
@@ -60,12 +66,6 @@
           "publisher": "TheStreet",
           "date": "2026-08-21",
           "url": "https://www.thestreet.com/investing/stocks/citi-resets-marvell-stock-price-target-ahead-of-earnings-mrvl"
-        },
-        {
-          "title": "Broadcom\u2019s AI Boom: Is a 2x Stock Gain Still Within Reach?",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-08-21",
-          "url": "https://247wallst.com/investing/2026/08/21/broadcoms-ai-boom-is-a-2x-stock-gain-still-within-reach/"
         }
       ]
     }
