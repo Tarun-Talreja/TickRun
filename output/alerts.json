@@ -1,28 +1,16 @@
 {
-  "generated_at": "2026-08-24T19:51:52Z",
+  "generated_at": "2026-08-24T20:18:57Z",
   "pullback_alerts": [
     {
       "ticker": "BWXT",
       "name": "BWX Technologies, Inc.",
       "theme": "nuclear_smr",
       "verdict": "WATCHLIST",
-      "price": 149.65,
+      "price": 149.52,
       "high_52w": 241.82,
-      "drawdown_pct": -38.1,
+      "drawdown_pct": -38.2,
       "severity": "STRONG",
       "thesis": "High-growth nuclear components and fuel supplier with strong industry tailwinds, trading at a premium valuation.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "CLS",
-      "name": "Celestica Inc.",
-      "theme": "datacenter_infra",
-      "verdict": "WATCHLIST",
-      "price": 294.0,
-      "high_52w": 474.03,
-      "drawdown_pct": -38.0,
-      "severity": "STRONG",
-      "thesis": "AI infrastructure play with 62.4% YoY revenue growth at a forward P/E of 15.2x.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -30,11 +18,23 @@
       "name": "Intuitive Surgical, Inc.",
       "theme": "healthcare_innovation",
       "verdict": "WATCHLIST",
-      "price": 374.88,
+      "price": 373.57,
       "high_52w": 603.88,
-      "drawdown_pct": -37.9,
+      "drawdown_pct": -38.1,
       "severity": "STRONG",
       "thesis": "High-growth medical device company with strong financials and potential for long-term expansion in the robotic-assisted surgery market.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "CLS",
+      "name": "Celestica, Inc.",
+      "theme": "datacenter_infra",
+      "verdict": "WATCHLIST",
+      "price": 294.57,
+      "high_52w": 474.03,
+      "drawdown_pct": -37.9,
+      "severity": "STRONG",
+      "thesis": "AI infrastructure play with 62.4% YoY revenue growth at a forward P/E of 15.2x.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -42,7 +42,7 @@
       "name": "Coherent Corp.",
       "theme": "networking_infra",
       "verdict": "WATCHLIST",
-      "price": 275.36,
+      "price": 275.49,
       "high_52w": 440.0,
       "drawdown_pct": -37.4,
       "severity": "STRONG",
@@ -54,9 +54,9 @@
       "name": "ServiceNow, Inc.",
       "theme": "cybersecurity",
       "verdict": "WATCHLIST",
-      "price": 128.795,
+      "price": 128.05,
       "high_52w": 194.726,
-      "drawdown_pct": -33.9,
+      "drawdown_pct": -34.2,
       "severity": "MODERATE",
       "thesis": "High-growth SaaS company with a strong platform, but high valuation multiple relative to operating margin.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -66,23 +66,11 @@
       "name": "Meta Platforms, Inc.",
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "price": 561.06,
+      "price": 559.02,
       "high_52w": 790.8,
-      "drawdown_pct": -29.1,
+      "drawdown_pct": -29.3,
       "severity": "MODERATE",
       "thesis": "Meta's reasonable valuation multiple and focus on AI infrastructure make it a potential buying opportunity.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron Technology, Inc.",
-      "theme": "edge_ai_silicon",
-      "verdict": "WATCHLIST",
-      "price": 909.5401,
-      "high_52w": 1255.0,
-      "drawdown_pct": -27.5,
-      "severity": "MODERATE",
-      "thesis": "Micron is a leading memory and storage company with a strong position in AI infrastructure, trading at a reasonable forward P/E of 6.2x.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -90,11 +78,23 @@
       "name": "Broadcom Inc.",
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
-      "price": 359.275,
+      "price": 358.76,
       "high_52w": 495.0,
-      "drawdown_pct": -27.4,
+      "drawdown_pct": -27.5,
       "severity": "MODERATE",
       "thesis": "Broadcom is a high-growth semiconductor company with a strong position in AI infrastructure, trading at a reasonable forward P/E multiple.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "theme": "edge_ai_silicon",
+      "verdict": "WATCHLIST",
+      "price": 910.43,
+      "high_52w": 1255.0,
+      "drawdown_pct": -27.5,
+      "severity": "MODERATE",
+      "thesis": "Micron is a leading memory and storage company with a strong position in AI infrastructure, trading at a reasonable forward P/E of 6.2x.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -102,9 +102,9 @@
       "name": "Advanced Micro Devices, Inc.",
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
-      "price": 456.17,
+      "price": 456.745,
       "high_52w": 584.73,
-      "drawdown_pct": -22.0,
+      "drawdown_pct": -21.9,
       "severity": "MODERATE",
       "thesis": "High-growth AI infrastructure play with strong margins and free cash flow generation, trading at a premium valuation.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
