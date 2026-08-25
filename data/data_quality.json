@@ -1,8 +1,12 @@
 {
-  "generated_at": "2026-08-25T18:27:11Z",
+  "generated_at": "2026-08-25T19:10:38Z",
   "checked": 58,
   "flagged": 0,
   "quality": {
+    "ADP": {
+      "ok": true,
+      "flags": []
+    },
     "AMD": {
       "ok": true,
       "flags": []
@@ -11,7 +15,7 @@
       "ok": true,
       "flags": []
     },
-    "ADP": {
+    "ASML": {
       "ok": true,
       "flags": []
     },
@@ -23,23 +27,11 @@
       "ok": true,
       "flags": []
     },
-    "ASML": {
-      "ok": true,
-      "flags": []
-    },
     "CBRS": {
       "ok": true,
       "flags": []
     },
     "BWXT": {
-      "ok": true,
-      "flags": []
-    },
-    "CEG": {
-      "ok": true,
-      "flags": []
-    },
-    "COHR": {
       "ok": true,
       "flags": []
     },
@@ -51,6 +43,14 @@
       "ok": true,
       "flags": []
     },
+    "CEG": {
+      "ok": true,
+      "flags": []
+    },
+    "COHR": {
+      "ok": true,
+      "flags": []
+    },
     "COST": {
       "ok": true,
       "flags": []
@@ -59,19 +59,19 @@
       "ok": true,
       "flags": []
     },
-    "DHR": {
-      "ok": true,
-      "flags": []
-    },
-    "FLUT": {
-      "ok": true,
-      "flags": []
-    },
     "EIX": {
       "ok": true,
       "flags": []
     },
+    "DHR": {
+      "ok": true,
+      "flags": []
+    },
     "ETN": {
+      "ok": true,
+      "flags": []
+    },
+    "FLUT": {
       "ok": true,
       "flags": []
     },
@@ -91,11 +91,11 @@
       "ok": true,
       "flags": []
     },
-    "INVH": {
+    "IBM": {
       "ok": true,
       "flags": []
     },
-    "IBM": {
+    "INVH": {
       "ok": true,
       "flags": []
     },
@@ -111,10 +111,6 @@
       "ok": true,
       "flags": []
     },
-    "LPLA": {
-      "ok": true,
-      "flags": []
-    },
     "LMB": {
       "ok": true,
       "flags": []
@@ -123,11 +119,15 @@
       "ok": true,
       "flags": []
     },
-    "MKTX": {
+    "LPLA": {
       "ok": true,
       "flags": []
     },
     "META": {
+      "ok": true,
+      "flags": []
+    },
+    "MKTX": {
       "ok": true,
       "flags": []
     },
@@ -147,11 +147,11 @@
       "ok": true,
       "flags": []
     },
-    "NOW": {
+    "NFLX": {
       "ok": true,
       "flags": []
     },
-    "NFLX": {
+    "NOW": {
       "ok": true,
       "flags": []
     },
@@ -203,15 +203,11 @@
       "ok": true,
       "flags": []
     },
-    "TW": {
-      "ok": true,
-      "flags": []
-    },
     "UNH": {
       "ok": true,
       "flags": []
     },
-    "VRT": {
+    "TW": {
       "ok": true,
       "flags": []
     },
@@ -219,11 +215,15 @@
       "ok": true,
       "flags": []
     },
-    "VTI": {
+    "VRT": {
       "ok": true,
       "flags": []
     },
     "VST": {
+      "ok": true,
+      "flags": []
+    },
+    "VTI": {
       "ok": true,
       "flags": []
     },
