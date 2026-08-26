@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T22:20:42Z",
+  "generated_at": "2026-08-26T13:45:28Z",
   "lookahead_days": 30,
   "upcoming_earnings": [
     {
@@ -41,6 +41,16 @@
       "verdict": "WATCHLIST",
       "thesis": "Broadcom is a high-quality semiconductor company with strong revenue growth and a reasonable valuation at 18.4x forward earnings.",
       "action": "Review thesis before earnings. Re-run research_ticker.py AVGO after."
+    },
+    {
+      "ticker": "GIS",
+      "name": "General Mills, Inc.",
+      "date": "2026-09-23",
+      "days_until": 27,
+      "theme": "defensive_income",
+      "verdict": "PASS",
+      "thesis": "General Mills is a stable, cash-generative consumer goods company with a modest valuation, but limited growth potential.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py GIS after."
     },
     {
       "ticker": "COST",
