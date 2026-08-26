@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-25T10:59:56Z",
+  "generated_at": "2026-08-26T11:02:05Z",
   "horizon_days": 30,
   "counts": {
     "total": 6,
-    "imminent": 1,
+    "imminent": 2,
     "high_urgency": 0
   },
   "events": [
@@ -18,7 +18,7 @@
       "name": "NVIDIA Corporation",
       "verdict": "WATCHLIST",
       "theme": "mega_cap_ai",
-      "days_until": 1,
+      "days_until": 0,
       "price": null,
       "drawdown_from_high": null,
       "urgency": "medium",
@@ -35,10 +35,10 @@
       "name": "Broadcom Inc.",
       "verdict": "WATCHLIST",
       "theme": "edge_ai_silicon",
-      "days_until": 8,
+      "days_until": 7,
       "price": null,
       "drawdown_from_high": null,
-      "urgency": "low",
+      "urgency": "medium",
       "plan": "Re-read the thesis against what is being reported. Consensus EPS ~3.24. This is the quarter that either confirms the reason it is on the list or removes it."
     },
     {
@@ -48,7 +48,7 @@
       "name": "Alphabet Inc.",
       "verdict": "WATCHLIST",
       "theme": "mega_cap_ai",
-      "days_until": 10,
+      "days_until": 9,
       "price": null,
       "drawdown_from_high": null,
       "urgency": "low",
@@ -61,7 +61,7 @@
       "name": "ADP",
       "verdict": "WATCHLIST",
       "theme": "quality_compounder",
-      "days_until": 17,
+      "days_until": 16,
       "price": null,
       "drawdown_from_high": null,
       "urgency": "low",
@@ -74,7 +74,7 @@
       "name": "Taiwan Semiconductor Manufacturing Company",
       "verdict": "WATCHLIST",
       "theme": "edge_ai_silicon",
-      "days_until": 22,
+      "days_until": 21,
       "price": null,
       "drawdown_from_high": null,
       "urgency": "low",
@@ -91,7 +91,7 @@
       "name": "Micron Technology, Inc.",
       "verdict": "WATCHLIST",
       "theme": "edge_ai_silicon",
-      "days_until": 29,
+      "days_until": 28,
       "price": null,
       "drawdown_from_high": null,
       "urgency": "low",
@@ -110,11 +110,28 @@
       "name": "NVIDIA Corporation",
       "verdict": "WATCHLIST",
       "theme": "mega_cap_ai",
-      "days_until": 1,
+      "days_until": 0,
       "price": null,
       "drawdown_from_high": null,
       "urgency": "medium",
       "plan": "Re-read the thesis against what is being reported. Consensus EPS ~2.09. This is the quarter that either confirms the reason it is on the list or removes it."
+    },
+    {
+      "ticker": "AVGO",
+      "type": "earnings",
+      "date": "2026-09-02",
+      "eps_estimate": 3.238,
+      "eps_low": 3.08,
+      "eps_high": 3.33,
+      "revenue_estimate": 29434507200,
+      "name": "Broadcom Inc.",
+      "verdict": "WATCHLIST",
+      "theme": "edge_ai_silicon",
+      "days_until": 7,
+      "price": null,
+      "drawdown_from_high": null,
+      "urgency": "medium",
+      "plan": "Re-read the thesis against what is being reported. Consensus EPS ~3.24. This is the quarter that either confirms the reason it is on the list or removes it."
     }
   ]
 }
