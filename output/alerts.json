@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T23:51:51Z",
+  "generated_at": "2026-08-27T02:48:54Z",
   "pullback_alerts": [
     {
       "ticker": "ISRG",
@@ -98,5 +98,27 @@
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     }
   ],
-  "stale_research": []
+  "stale_research": [
+    {
+      "ticker": "QQQ",
+      "last_researched": "2026-05-28",
+      "days_since": 91,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py QQQ"
+    },
+    {
+      "ticker": "SPY",
+      "last_researched": "2026-05-28",
+      "days_since": 91,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py SPY"
+    },
+    {
+      "ticker": "^TNX",
+      "last_researched": "2026-05-28",
+      "days_since": 91,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
+    }
+  ]
 }
