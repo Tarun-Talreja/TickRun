@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-27T20:41:33Z",
+  "generated_at": "2026-08-28T21:13:11Z",
   "horizon_days": 30,
   "counts": {
-    "total": 4,
-    "imminent": 1,
+    "total": 5,
+    "imminent": 2,
     "high_urgency": 0
   },
   "events": [
@@ -18,7 +18,7 @@
       "name": "Broadcom Inc.",
       "verdict": "WATCHLIST",
       "theme": "edge_ai_silicon",
-      "days_until": 6,
+      "days_until": 5,
       "price": null,
       "drawdown_from_high": null,
       "urgency": "medium",
@@ -31,7 +31,20 @@
       "name": "Alphabet Inc.",
       "verdict": "WATCHLIST",
       "theme": "mega_cap_ai",
-      "days_until": 8,
+      "days_until": 7,
+      "price": null,
+      "drawdown_from_high": null,
+      "urgency": "low",
+      "plan": "Ex-dividend date \u2014 buy before it to receive the dividend. Tax-free in the Roth, which is where this name is routed."
+    },
+    {
+      "ticker": "NVDA",
+      "type": "ex_dividend",
+      "date": "2026-09-10",
+      "name": "NVIDIA Corporation",
+      "verdict": "WATCHLIST",
+      "theme": "mega_cap_ai",
+      "days_until": 13,
       "price": null,
       "drawdown_from_high": null,
       "urgency": "low",
@@ -44,7 +57,7 @@
       "name": "ADP",
       "verdict": "WATCHLIST",
       "theme": "quality_compounder",
-      "days_until": 15,
+      "days_until": 14,
       "price": null,
       "drawdown_from_high": null,
       "urgency": "low",
@@ -57,7 +70,7 @@
       "name": "Taiwan Semiconductor Manufacturing Company",
       "verdict": "WATCHLIST",
       "theme": "edge_ai_silicon",
-      "days_until": 20,
+      "days_until": 19,
       "price": null,
       "drawdown_from_high": null,
       "urgency": "low",
@@ -76,11 +89,24 @@
       "name": "Broadcom Inc.",
       "verdict": "WATCHLIST",
       "theme": "edge_ai_silicon",
-      "days_until": 6,
+      "days_until": 5,
       "price": null,
       "drawdown_from_high": null,
       "urgency": "medium",
       "plan": "Re-read the thesis against what is being reported. Consensus EPS ~3.24. This is the quarter that either confirms the reason it is on the list or removes it."
+    },
+    {
+      "ticker": "GOOGL",
+      "type": "ex_dividend",
+      "date": "2026-09-04",
+      "name": "Alphabet Inc.",
+      "verdict": "WATCHLIST",
+      "theme": "mega_cap_ai",
+      "days_until": 7,
+      "price": null,
+      "drawdown_from_high": null,
+      "urgency": "low",
+      "plan": "Ex-dividend date \u2014 buy before it to receive the dividend. Tax-free in the Roth, which is where this name is routed."
     }
   ]
 }
