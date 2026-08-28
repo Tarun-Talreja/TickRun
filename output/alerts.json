@@ -1,28 +1,16 @@
 {
-  "generated_at": "2026-08-28T05:54:59Z",
+  "generated_at": "2026-08-28T22:48:46Z",
   "pullback_alerts": [
     {
       "ticker": "ISRG",
       "name": "Intuitive Surgical, Inc.",
       "theme": "healthcare_innovation",
       "verdict": "WATCHLIST",
-      "price": 367.07,
+      "price": 372.6,
       "high_52w": 603.88,
-      "drawdown_pct": -39.2,
+      "drawdown_pct": -38.3,
       "severity": "STRONG",
       "thesis": "High-growth medical device company with strong financials and potential for long-term expansion in the robotic-assisted surgery market.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "BWXT",
-      "name": "BWX Technologies, Inc.",
-      "theme": "nuclear_smr",
-      "verdict": "WATCHLIST",
-      "price": 155.85,
-      "high_52w": 241.82,
-      "drawdown_pct": -35.6,
-      "severity": "STRONG",
-      "thesis": "Nuclear energy play with strong revenue growth and profitability at a reasonable valuation.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -30,11 +18,23 @@
       "name": "Celestica Inc.",
       "theme": "datacenter_infra",
       "verdict": "WATCHLIST",
-      "price": 317.38,
+      "price": 298.7,
       "high_52w": 474.03,
-      "drawdown_pct": -33.0,
-      "severity": "MODERATE",
+      "drawdown_pct": -37.0,
+      "severity": "STRONG",
       "thesis": "AI infrastructure play with 62.4% YoY revenue growth at a forward P/E of 15.2x.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "BWXT",
+      "name": "BWX Technologies, Inc.",
+      "theme": "nuclear_smr",
+      "verdict": "WATCHLIST",
+      "price": 152.85,
+      "high_52w": 241.82,
+      "drawdown_pct": -36.8,
+      "severity": "STRONG",
+      "thesis": "Nuclear energy play with strong revenue growth and profitability at a reasonable valuation.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -42,23 +42,11 @@
       "name": "Coherent Corp.",
       "theme": "networking_infra",
       "verdict": "WATCHLIST",
-      "price": 295.39,
+      "price": 279.2,
       "high_52w": 440.0,
-      "drawdown_pct": -32.9,
-      "severity": "MODERATE",
+      "drawdown_pct": -36.5,
+      "severity": "STRONG",
       "thesis": "High-growth laser technology company with expanding margins, but high valuation and negative free cash flow.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "theme": "cybersecurity",
-      "verdict": "WATCHLIST",
-      "price": 138.43,
-      "high_52w": 194.726,
-      "drawdown_pct": -28.9,
-      "severity": "MODERATE",
-      "thesis": "High-growth software company with expanding AI capabilities, but high valuation multiples.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -66,9 +54,9 @@
       "name": "Meta Platforms, Inc.",
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "price": 571.1,
+      "price": 578.02,
       "high_52w": 790.8,
-      "drawdown_pct": -27.8,
+      "drawdown_pct": -26.9,
       "severity": "MODERATE",
       "thesis": "Reasonably valued AI infrastructure play with strong revenue growth and emerging technology investments.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -78,11 +66,23 @@
       "name": "Micron Technology, Inc.",
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
-      "price": 935.39,
+      "price": 932.86,
       "high_52w": 1255.0,
-      "drawdown_pct": -25.5,
+      "drawdown_pct": -25.7,
       "severity": "MODERATE",
       "thesis": "AI infrastructure play with strong growth and reasonable valuation at 5.9x forward earnings.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "theme": "cybersecurity",
+      "verdict": "WATCHLIST",
+      "price": 144.71,
+      "high_52w": 194.726,
+      "drawdown_pct": -25.7,
+      "severity": "MODERATE",
+      "thesis": "High-growth software company with expanding AI capabilities, but high valuation multiples.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -90,11 +90,35 @@
       "name": "Broadcom Inc.",
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
-      "price": 371.54,
+      "price": 368.79,
       "high_52w": 495.0,
-      "drawdown_pct": -24.9,
+      "drawdown_pct": -25.5,
       "severity": "MODERATE",
       "thesis": "Broadcom is a high-quality semiconductor company with strong revenue growth and a reasonable valuation at 18.4x forward earnings.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "theme": "edge_ai_silicon",
+      "verdict": "WATCHLIST",
+      "price": 465.58,
+      "high_52w": 584.73,
+      "drawdown_pct": -20.4,
+      "severity": "MODERATE",
+      "thesis": "AMD is a high-growth AI infrastructure play with a strong product portfolio, but its valuation is relatively expensive.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "GEHC",
+      "name": "GE HealthCare Technologies Inc.",
+      "theme": "healthcare_innovation",
+      "verdict": "WATCHLIST",
+      "price": 71.725,
+      "high_52w": 89.77,
+      "drawdown_pct": -20.1,
+      "severity": "MODERATE",
+      "thesis": "Reasonable valuation at 13.3x forward earnings for a quality healthcare technology company with a strong product innovation pipeline.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     }
   ],
