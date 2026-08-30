@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T03:27:31Z",
+  "generated_at": "2026-08-30T23:59:23Z",
   "checked": 58,
   "flagged": 0,
   "quality": {
@@ -31,11 +31,11 @@
       "ok": true,
       "flags": []
     },
-    "CEG": {
+    "CBRS": {
       "ok": true,
       "flags": []
     },
-    "CBRS": {
+    "CEG": {
       "ok": true,
       "flags": []
     },
@@ -43,11 +43,11 @@
       "ok": true,
       "flags": []
     },
-    "COHR": {
+    "CMCSA": {
       "ok": true,
       "flags": []
     },
-    "CMCSA": {
+    "COHR": {
       "ok": true,
       "flags": []
     },
@@ -59,19 +59,19 @@
       "ok": true,
       "flags": []
     },
-    "DHR": {
-      "ok": true,
-      "flags": []
-    },
     "EIX": {
       "ok": true,
       "flags": []
     },
-    "FLUT": {
+    "ETN": {
       "ok": true,
       "flags": []
     },
-    "ETN": {
+    "DHR": {
+      "ok": true,
+      "flags": []
+    },
+    "FLUT": {
       "ok": true,
       "flags": []
     },
@@ -83,11 +83,11 @@
       "ok": true,
       "flags": []
     },
-    "GIS": {
+    "GOOGL": {
       "ok": true,
       "flags": []
     },
-    "GOOGL": {
+    "GIS": {
       "ok": true,
       "flags": []
     },
@@ -131,11 +131,15 @@
       "ok": true,
       "flags": []
     },
+    "MSFT": {
+      "ok": true,
+      "flags": []
+    },
     "MRVL": {
       "ok": true,
       "flags": []
     },
-    "MSFT": {
+    "NBIS": {
       "ok": true,
       "flags": []
     },
@@ -147,7 +151,7 @@
       "ok": true,
       "flags": []
     },
-    "NBIS": {
+    "NVDA": {
       "ok": true,
       "flags": []
     },
@@ -159,19 +163,15 @@
       "ok": true,
       "flags": []
     },
-    "NVDA": {
-      "ok": true,
-      "flags": []
-    },
     "OKLO": {
       "ok": true,
       "flags": []
     },
-    "PODD": {
+    "PAYX": {
       "ok": true,
       "flags": []
     },
-    "PAYX": {
+    "PODD": {
       "ok": true,
       "flags": []
     },
@@ -207,11 +207,11 @@
       "ok": true,
       "flags": []
     },
-    "V": {
+    "UNH": {
       "ok": true,
       "flags": []
     },
-    "UNH": {
+    "V": {
       "ok": true,
       "flags": []
     },
@@ -227,11 +227,11 @@
       "ok": true,
       "flags": []
     },
-    "^TNX": {
+    "ZBH": {
       "ok": true,
       "flags": []
     },
-    "ZBH": {
+    "^TNX": {
       "ok": true,
       "flags": []
     }
