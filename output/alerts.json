@@ -1,28 +1,16 @@
 {
-  "generated_at": "2026-08-31T19:18:57Z",
+  "generated_at": "2026-08-31T23:15:53Z",
   "pullback_alerts": [
     {
       "ticker": "ISRG",
       "name": "Intuitive Surgical, Inc.",
       "theme": "healthcare_innovation",
       "verdict": "WATCHLIST",
-      "price": 375.32,
+      "price": 376.86,
       "high_52w": 603.88,
-      "drawdown_pct": -37.8,
+      "drawdown_pct": -37.6,
       "severity": "STRONG",
       "thesis": "High-growth medical device company with strong financials and potential for long-term expansion in the robotic-assisted surgery market.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "theme": "networking_infra",
-      "verdict": "WATCHLIST",
-      "price": 275.615,
-      "high_52w": 440.0,
-      "drawdown_pct": -37.4,
-      "severity": "STRONG",
-      "thesis": "High-growth laser technology company with expanding margins, but high valuation and negative free cash flow.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -30,11 +18,23 @@
       "name": "BWX Technologies, Inc.",
       "theme": "nuclear_smr",
       "verdict": "WATCHLIST",
-      "price": 152.19,
+      "price": 152.29,
       "high_52w": 241.82,
-      "drawdown_pct": -37.1,
+      "drawdown_pct": -37.0,
       "severity": "STRONG",
       "thesis": "Nuclear energy play with strong revenue growth and profitability at a reasonable valuation.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "theme": "networking_infra",
+      "verdict": "WATCHLIST",
+      "price": 277.83,
+      "high_52w": 440.0,
+      "drawdown_pct": -36.9,
+      "severity": "STRONG",
+      "thesis": "High-growth laser technology company with expanding margins, but high valuation and negative free cash flow.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -42,9 +42,9 @@
       "name": "Celestica Inc.",
       "theme": "datacenter_infra",
       "verdict": "WATCHLIST",
-      "price": 298.46,
+      "price": 299.4,
       "high_52w": 474.03,
-      "drawdown_pct": -37.0,
+      "drawdown_pct": -36.8,
       "severity": "STRONG",
       "thesis": "AI infrastructure play with 62.4% YoY revenue growth at a forward P/E of 15.2x.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -54,9 +54,9 @@
       "name": "Edison International",
       "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "price": 54.04,
+      "price": 53.98,
       "high_52w": 81.62,
-      "drawdown_pct": -33.8,
+      "drawdown_pct": -33.9,
       "severity": "MODERATE",
       "thesis": "Edison International offers a relatively cheap valuation at 8.7x trailing earnings for a stable utility company with 7.7% YoY revenue growth.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -66,9 +66,9 @@
       "name": "Meta Platforms, Inc.",
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "price": 573.29,
+      "price": 572.34,
       "high_52w": 790.8,
-      "drawdown_pct": -27.5,
+      "drawdown_pct": -27.6,
       "severity": "MODERATE",
       "thesis": "Reasonably valued AI infrastructure play with strong revenue growth and emerging technology investments.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -78,23 +78,11 @@
       "name": "Broadcom Inc.",
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
-      "price": 369.66,
+      "price": 370.34,
       "high_52w": 495.0,
-      "drawdown_pct": -25.3,
+      "drawdown_pct": -25.2,
       "severity": "MODERATE",
       "thesis": "Broadcom is a high-quality semiconductor company with strong revenue growth and a reasonable valuation at 18.4x forward earnings.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron Technology, Inc.",
-      "theme": "edge_ai_silicon",
-      "verdict": "WATCHLIST",
-      "price": 941.84,
-      "high_52w": 1255.0,
-      "drawdown_pct": -25.0,
-      "severity": "MODERATE",
-      "thesis": "AI infrastructure play with strong growth and reasonable valuation at 5.9x forward earnings.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -102,11 +90,23 @@
       "name": "ServiceNow, Inc.",
       "theme": "cybersecurity",
       "verdict": "WATCHLIST",
-      "price": 148.68,
+      "price": 147.99,
       "high_52w": 194.726,
-      "drawdown_pct": -23.6,
+      "drawdown_pct": -24.0,
       "severity": "MODERATE",
       "thesis": "High-growth software company with expanding AI capabilities, but high valuation multiples.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "theme": "edge_ai_silicon",
+      "verdict": "WATCHLIST",
+      "price": 958.73,
+      "high_52w": 1255.0,
+      "drawdown_pct": -23.6,
+      "severity": "MODERATE",
+      "thesis": "AI infrastructure play with strong growth and reasonable valuation at 5.9x forward earnings.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -114,23 +114,11 @@
       "name": "GE HealthCare Technologies Inc.",
       "theme": "healthcare_innovation",
       "verdict": "WATCHLIST",
-      "price": 71.39,
+      "price": 71.23,
       "high_52w": 89.77,
-      "drawdown_pct": -20.5,
+      "drawdown_pct": -20.7,
       "severity": "MODERATE",
       "thesis": "Reasonable valuation at 13.3x forward earnings for a quality healthcare technology company with a strong product innovation pipeline.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "theme": "edge_ai_silicon",
-      "verdict": "WATCHLIST",
-      "price": 467.52,
-      "high_52w": 584.73,
-      "drawdown_pct": -20.0,
-      "severity": "MODERATE",
-      "thesis": "AMD is a high-growth AI infrastructure play with a strong product portfolio, but its valuation is relatively expensive.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     }
   ],
