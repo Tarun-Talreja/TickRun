@@ -1,38 +1,37 @@
 {
-  "generated_at": "2026-09-01T20:00:35Z",
+  "generated_at": "2026-09-01T22:28:13Z",
   "movers": [
     {
       "ticker": "EIX",
       "name": "Edison International",
       "verdict": "WATCHLIST",
-      "price": 58.79,
-      "pct_day": 8.91,
-      "pct_since": 6.74,
-      "primary_pct": 8.91,
+      "price": 58.8,
+      "pct_day": 8.93,
+      "pct_since": 0.02,
+      "primary_pct": 8.93,
       "direction": "up",
       "triggers": [
-        "+6.7% since last check",
         "+8.9% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
         {
+          "title": "California Wildfire Legislation Postponed, Utility Stocks Bounce",
+          "publisher": "Investor's Business Daily",
+          "date": "2026-09-01",
+          "url": "https://www.investors.com/news/gavin-newsom-california-wildfire-bill-postponed-pge-edison-international/?src=A00220&yptr=yahoo"
+        },
+        {
+          "title": "PG&E Stock, Edison International Rise as California Lawmakers Kill Wildfire Bill",
+          "publisher": "Barrons.com",
+          "date": "2026-09-01",
+          "url": "https://www.barrons.com/articles/pge-stock-edison-international-california-wildfire-bill-4016fab7?siteid=yhoof2&yptr=yahoo"
+        },
+        {
           "title": "Sector Update: Energy Stocks Rise Tuesday Afternoon",
           "publisher": "MT Newswires",
           "date": "2026-09-01",
           "url": "https://finance.yahoo.com/energy/articles/sector-energy-stocks-rise-tuesday-175137526.html"
-        },
-        {
-          "title": "PG&E Shares Trim Losses Ahead of High-Stakes Wildfire Bill Vote",
-          "publisher": "Barrons.com",
-          "date": "2026-09-01",
-          "url": "https://www.barrons.com/articles/california-utility-stocks-pge-edison-international-sempra-wildlife-bill-598106fc?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "title": "California Wildfire Bill Fails to Address Utility Financing Risks, BofA Says, Downgrading PG&E, Edison International",
-          "publisher": "MT Newswires",
-          "date": "2026-09-01",
-          "url": "https://finance.yahoo.com/energy/articles/california-wildfire-bill-fails-address-154537559.html"
         }
       ]
     },
@@ -42,7 +41,7 @@
       "verdict": "PASS",
       "price": 44.79,
       "pct_day": 8.66,
-      "pct_since": 1.04,
+      "pct_since": 0.0,
       "primary_pct": 8.66,
       "direction": "up",
       "triggers": [
@@ -76,32 +75,31 @@
       "verdict": "PASS",
       "price": 206.63,
       "pct_day": -8.65,
-      "pct_since": -4.1,
+      "pct_since": 0.0,
       "primary_pct": -8.65,
       "direction": "down",
       "triggers": [
-        "-4.1% since last check",
         "-8.7% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
         {
-          "title": "Stock Market Today: Nasdaq Slumps As Oil Prices Hit $90; Credo, Dell Sink As Earnings Near (Live Coverage)",
+          "title": "Credo Technology Group Holding Ltd. Q1 2027 Earnings: Recap of $CRDO Earnings, Forecast",
+          "publisher": "TheStreet",
+          "date": "2026-09-01",
+          "url": "https://www.thestreet.com/latest-news/credo-technology-group-crdo-q1-2027-earnings-forecast"
+        },
+        {
+          "title": "Dow Jones Futures: Market Breaks Key Levels As Oil Prices Jump; Dell, Credo, Palo Alto Are Earnings Movers",
           "publisher": "Investor's Business Daily",
           "date": "2026-09-01",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-oil-prices-treasury-yields-nvidia-stock-micron-stock/?src=A00220&yptr=yahoo"
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-dell-credo-palo-alto-earnings-oil-prices-jump/?src=A00220&yptr=yahoo"
         },
         {
-          "title": "Wall Street Analysts Believe Credo Technology Group (CRDO) Could Rally 28.17%: Here's is How to Trade",
-          "publisher": "Zacks",
+          "title": "Credo Technology Stock Falls Despite Beating Fiscal Q1 Targets",
+          "publisher": "Investor's Business Daily",
           "date": "2026-09-01",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-analysts-believe-credo-135503893.html"
-        },
-        {
-          "title": "Stocks Down Pre-Bell as Traders Weigh Renewed US-Iran Tensions",
-          "publisher": "MT Newswires",
-          "date": "2026-09-01",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-down-pre-bell-traders-112443552.html"
+          "url": "https://www.investors.com/news/technology/credo-stock-crdo-fiscal-q1-2027-earnings/?src=A00220&yptr=yahoo"
         }
       ]
     },
@@ -111,7 +109,7 @@
       "verdict": "PASS",
       "price": 172.62,
       "pct_day": -6.31,
-      "pct_since": -1.26,
+      "pct_since": 0.0,
       "primary_pct": -6.31,
       "direction": "down",
       "triggers": [
@@ -143,16 +141,22 @@
       "ticker": "BWXT",
       "name": "BWX Technologies, Inc.",
       "verdict": "WATCHLIST",
-      "price": 161.629,
-      "pct_day": 6.13,
-      "pct_since": 2.61,
-      "primary_pct": 6.13,
+      "price": 161.54,
+      "pct_day": 6.07,
+      "pct_since": -0.06,
+      "primary_pct": 6.07,
       "direction": "up",
       "triggers": [
         "+6.1% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
+        {
+          "title": "BWX Technologies (BWXT) Lands Army Microreactor Role At Fort Campbell",
+          "publisher": "Simply Wall St.",
+          "date": "2026-09-01",
+          "url": "https://finance.yahoo.com/energy/articles/bwx-technologies-bwxt-lands-army-210625175.html"
+        },
         {
           "title": "Roblox Falls 3% as Cathie Wood\u2019s ARK Keeps Selling, Take-Two Interactive Barely Budges",
           "publisher": "24/7 Wall St.",
@@ -164,12 +168,40 @@
           "publisher": "Motley Fool",
           "date": "2026-09-01",
           "url": "https://www.fool.com/investing/2026/09/01/cathie-woods-ark-just-bought-76-million-of-nuclear/"
+        }
+      ]
+    },
+    {
+      "ticker": "OKLO",
+      "name": "Oklo Inc.",
+      "verdict": "PASS",
+      "price": 38.53,
+      "pct_day": -5.03,
+      "pct_since": -0.05,
+      "primary_pct": -5.03,
+      "direction": "down",
+      "triggers": [
+        "-5.0% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "Oklo Sinks 5% as PJM Pulls Its Meta-Backed Ohio Project, NuScale Power Barely Budges",
+          "publisher": "24/7 Wall St.",
+          "date": "2026-09-01",
+          "url": "https://247wallst.com/investing/2026/09/01/oklo-sinks-5-as-pjm-pulls-its-meta-backed-ohio-project-nuscale-power-barely-budges/"
         },
         {
-          "title": "The Army Just Put A Price On Five Nuclear Microreactors For U.S. Bases",
-          "publisher": "Investor's Business Daily",
+          "title": "What PJM's Decision Means for OKLO's Ohio Project Timeline",
+          "publisher": "Zacks",
+          "date": "2026-09-01",
+          "url": "https://finance.yahoo.com/energy/articles/pjms-decision-means-oklos-ohio-124900045.html"
+        },
+        {
+          "title": "PJM drops Oklo advanced nuclear project from interconnection study cycle",
+          "publisher": "Utility Dive",
           "date": "2026-08-31",
-          "url": "https://www.investors.com/news/nuclear-energy-army-funds-5-nuclear-microreactors-us-bases/?src=A00220&yptr=yahoo"
+          "url": "https://www.utilitydive.com/news/pjm-oklo-advanced-nuclear-ferc-interconnection/829150/"
         }
       ]
     },
@@ -179,7 +211,7 @@
       "verdict": "PASS",
       "price": 868.95,
       "pct_day": -5.01,
-      "pct_since": 1.15,
+      "pct_since": 0.0,
       "primary_pct": -5.01,
       "direction": "down",
       "triggers": [
