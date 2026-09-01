@@ -1,18 +1,52 @@
 {
-  "generated_at": "2026-09-01T17:04:02Z",
+  "generated_at": "2026-09-01T20:00:35Z",
   "movers": [
+    {
+      "ticker": "EIX",
+      "name": "Edison International",
+      "verdict": "WATCHLIST",
+      "price": 58.79,
+      "pct_day": 8.91,
+      "pct_since": 6.74,
+      "primary_pct": 8.91,
+      "direction": "up",
+      "triggers": [
+        "+6.7% since last check",
+        "+8.9% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "Sector Update: Energy Stocks Rise Tuesday Afternoon",
+          "publisher": "MT Newswires",
+          "date": "2026-09-01",
+          "url": "https://finance.yahoo.com/energy/articles/sector-energy-stocks-rise-tuesday-175137526.html"
+        },
+        {
+          "title": "PG&E Shares Trim Losses Ahead of High-Stakes Wildfire Bill Vote",
+          "publisher": "Barrons.com",
+          "date": "2026-09-01",
+          "url": "https://www.barrons.com/articles/california-utility-stocks-pge-edison-international-sempra-wildlife-bill-598106fc?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "title": "California Wildfire Bill Fails to Address Utility Financing Risks, BofA Says, Downgrading PG&E, Edison International",
+          "publisher": "MT Newswires",
+          "date": "2026-09-01",
+          "url": "https://finance.yahoo.com/energy/articles/california-wildfire-bill-fails-address-154537559.html"
+        }
+      ]
+    },
     {
       "ticker": "LMB",
       "name": "Limbach Holdings, Inc.",
       "verdict": "PASS",
-      "price": 44.33,
-      "pct_day": 7.54,
-      "pct_since": 7.54,
-      "primary_pct": 7.54,
+      "price": 44.79,
+      "pct_day": 8.66,
+      "pct_since": 1.04,
+      "primary_pct": 8.66,
       "direction": "up",
       "triggers": [
-        "+7.5% since last check",
-        "+7.5% on the day"
+        "+8.7% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -37,124 +71,26 @@
       ]
     },
     {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "verdict": "PASS",
-      "price": 859.11,
-      "pct_day": -6.08,
-      "pct_since": -6.08,
-      "primary_pct": -6.08,
-      "direction": "down",
-      "triggers": [
-        "-6.1% since last check",
-        "-6.1% on the day"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "Bond Woes Weigh on the AI Buildout, Dragging Tech Stocks",
-          "publisher": "Barrons.com",
-          "date": "2026-09-01",
-          "url": "https://www.barrons.com/livecoverage/stock-market-news-today-090126/card/bond-woes-weigh-on-the-ai-buildout-dragging-tech-stocks-oE9OToBRkQ1bniCHuw5X?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "title": "This Week In Cloud AI - AI-Driven Optical Networks Reshape Global Market Dynamics",
-          "publisher": "Simply Wall St.",
-          "date": "2026-09-01",
-          "url": "https://finance.yahoo.com/technology/ai/articles/week-cloud-ai-ai-driven-123732221.html"
-        },
-        {
-          "title": "LITE's AI Optics Push Boosts Growth Prospects Against MRVL & NVDA",
-          "publisher": "Zacks",
-          "date": "2026-08-31",
-          "url": "https://finance.yahoo.com/technology/ai/articles/lites-ai-optics-push-boosts-165200798.html"
-        }
-      ]
-    },
-    {
-      "ticker": "OKLO",
-      "name": "Oklo Inc.",
-      "verdict": "PASS",
-      "price": 38.42,
-      "pct_day": -5.3,
-      "pct_since": -5.3,
-      "primary_pct": -5.3,
-      "direction": "down",
-      "triggers": [
-        "-5.3% since last check",
-        "-5.3% on the day"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "What PJM's Decision Means for OKLO's Ohio Project Timeline",
-          "publisher": "Zacks",
-          "date": "2026-09-01",
-          "url": "https://finance.yahoo.com/energy/articles/pjms-decision-means-oklos-ohio-124900045.html"
-        },
-        {
-          "title": "PJM drops Oklo advanced nuclear project from interconnection study cycle",
-          "publisher": "Utility Dive",
-          "date": "2026-08-31",
-          "url": "https://www.utilitydive.com/news/pjm-oklo-advanced-nuclear-ferc-interconnection/829150/"
-        },
-        {
-          "title": "Oklo vs. X-Energy: Which One Actually Produces Nuclear Power First?",
-          "publisher": "Motley Fool",
-          "date": "2026-08-30",
-          "url": "https://www.fool.com/investing/2026/08/30/oklo-vs-x-energy-which-one-actually-produces-nucle/"
-        }
-      ]
-    },
-    {
-      "ticker": "CBRS",
-      "name": "Cerebras Systems Inc.",
-      "verdict": "PASS",
-      "price": 174.83,
-      "pct_day": -5.11,
-      "pct_since": -5.11,
-      "primary_pct": -5.11,
-      "direction": "down",
-      "triggers": [
-        "-5.1% since last check",
-        "-5.1% on the day"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": [
-        {
-          "title": "What Does Cerebras Systems (CBRS) CS 4 Launch Mean For Its AI Push?",
-          "publisher": "Simply Wall St.",
-          "date": "2026-08-31",
-          "url": "https://finance.yahoo.com/technology/ai/articles/does-cerebras-systems-cbrs-cs-222642362.html"
-        },
-        {
-          "title": "Cerebras Systems (CBRS) Stock Looks Fairly Valued With Book Value Steady And Growth Risk Unclear",
-          "publisher": "Simply Wall St.",
-          "date": "2026-08-31",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/cerebras-systems-cbrs-stock-looks-210533219.html"
-        },
-        {
-          "title": "The Biggest Risk To Cerebras Systems Stock Is Sitting Inside Its Backlog",
-          "publisher": "Trefis",
-          "date": "2026-08-31",
-          "url": "https://www.trefis.com/articles/613716/the-biggest-risk-to-cerebras-systems-stock-is-sitting-inside-its-backlog/2026-08-31"
-        }
-      ]
-    },
-    {
       "ticker": "CRDO",
       "name": "Credo Technology Group Holding Ltd",
       "verdict": "PASS",
-      "price": 215.46,
-      "pct_day": -4.74,
-      "pct_since": -4.74,
-      "primary_pct": -4.74,
+      "price": 206.63,
+      "pct_day": -8.65,
+      "pct_since": -4.1,
+      "primary_pct": -8.65,
       "direction": "down",
       "triggers": [
-        "-4.7% since last check"
+        "-4.1% since last check",
+        "-8.7% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
+        {
+          "title": "Stock Market Today: Nasdaq Slumps As Oil Prices Hit $90; Credo, Dell Sink As Earnings Near (Live Coverage)",
+          "publisher": "Investor's Business Daily",
+          "date": "2026-09-01",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-oil-prices-treasury-yields-nvidia-stock-micron-stock/?src=A00220&yptr=yahoo"
+        },
         {
           "title": "Wall Street Analysts Believe Credo Technology Group (CRDO) Could Rally 28.17%: Here's is How to Trade",
           "publisher": "Zacks",
@@ -166,46 +102,40 @@
           "publisher": "MT Newswires",
           "date": "2026-09-01",
           "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-down-pre-bell-traders-112443552.html"
-        },
-        {
-          "title": "Prediction: Marvell Stock Could Be on the Verge of Another Big Move",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-08-31",
-          "url": "https://247wallst.com/investing/2026/08/31/prediction-marvell-stock-could-be-on-the-verge-of-another-big-move/"
         }
       ]
     },
     {
-      "ticker": "POWL",
-      "name": "Powell Industries, Inc.",
+      "ticker": "CBRS",
+      "name": "Cerebras Systems Inc.",
       "verdict": "PASS",
-      "price": 172.43,
-      "pct_day": -4.06,
-      "pct_since": -4.06,
-      "primary_pct": -4.06,
+      "price": 172.62,
+      "pct_day": -6.31,
+      "pct_since": -1.26,
+      "primary_pct": -6.31,
       "direction": "down",
       "triggers": [
-        "-4.1% since last check"
+        "-6.3% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
         {
-          "title": "Stock Transaction: Powell Industries Richard Williams Sells 2,250 Shares",
-          "publisher": "Motley Fool",
-          "date": "2026-08-27",
-          "url": "https://www.fool.com/coverage/filings/2026/08/27/stock-transaction-powell-industries-richard-williams-sells-2-250-shares/"
+          "title": "Cerebras plans 165 MW Finland AI data center with first 50 MW under construction",
+          "publisher": "Blockspace",
+          "date": "2026-09-01",
+          "url": "https://blockspace.media/insight/cerebras-plans-finland-ai-data-center/"
         },
         {
-          "title": "This $11 Billion ETF Owns the Companies Wiring America\u2019s $68 Billion Data Center Boom",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-08-26",
-          "url": "https://247wallst.com/investing/etf/2026/08/26/this-11-billion-etf-owns-the-companies-wiring-americas-68-billion-data-center-boom/"
+          "title": "What Does Cerebras Systems (CBRS) CS 4 Launch Mean For Its AI Push?",
+          "publisher": "Simply Wall St.",
+          "date": "2026-08-31",
+          "url": "https://finance.yahoo.com/technology/ai/articles/does-cerebras-systems-cbrs-cs-222642362.html"
         },
         {
-          "title": "Powell Industries Eyes Record Revenue as Data Center Backlog Powers Growth",
-          "publisher": "MarketBeat",
-          "date": "2026-08-26",
-          "url": "https://www.marketbeat.com/instant-alerts/event-powell-industries-eyes-record-revenue-as-data-center-backlog-powers-growth-2026-08-26/?utm_source=yahoofinance&utm_medium=yahoofinance"
+          "title": "Cerebras Systems (CBRS) Stock Looks Fairly Valued With Book Value Steady And Growth Risk Unclear",
+          "publisher": "Simply Wall St.",
+          "date": "2026-08-31",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/cerebras-systems-cbrs-stock-looks-210533219.html"
         }
       ]
     },
@@ -213,13 +143,13 @@
       "ticker": "BWXT",
       "name": "BWX Technologies, Inc.",
       "verdict": "WATCHLIST",
-      "price": 157.52,
-      "pct_day": 3.43,
-      "pct_since": 3.43,
-      "primary_pct": 3.43,
+      "price": 161.629,
+      "pct_day": 6.13,
+      "pct_since": 2.61,
+      "primary_pct": 6.13,
       "direction": "up",
       "triggers": [
-        "+3.4% since last check"
+        "+6.1% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -244,104 +174,36 @@
       ]
     },
     {
-      "ticker": "ETN",
-      "name": "Eaton Corporation plc",
-      "verdict": "WATCHLIST",
-      "price": 388.42,
-      "pct_day": -3.35,
-      "pct_since": -3.35,
-      "primary_pct": -3.35,
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "verdict": "PASS",
+      "price": 868.95,
+      "pct_day": -5.01,
+      "pct_since": 1.15,
+      "primary_pct": -5.01,
       "direction": "down",
       "triggers": [
-        "-3.4% since last check"
+        "-5.0% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
         {
-          "title": "Is Eaton Corporation Stock Underperforming the Nasdaq?",
-          "publisher": "Barchart",
+          "title": "Deutsche Bank Names 2 Stocks for AI's Next Wave",
+          "publisher": "GuruFocus.com",
           "date": "2026-09-01",
-          "url": "https://www.barchart.com/story/news/4370054/is-eaton-corporation-stock-underperforming-the-nasdaq"
+          "url": "https://finance.yahoo.com/technology/ai/articles/deutsche-bank-names-2-stocks-190047460.html"
         },
         {
-          "title": "The Engine Behind GEV Stock Has Real Parts",
-          "publisher": "Trefis",
+          "title": "Deutsche Bank Names Lumentum and Coherent Top AI Picks as Spending Surges",
+          "publisher": "GuruFocus.com",
           "date": "2026-09-01",
-          "url": "https://www.trefis.com/articles/613701/the-engine-behind-gev-stock-has-real-parts/2026-08-31"
+          "url": "https://finance.yahoo.com/technology/ai/articles/deutsche-bank-names-lumentum-coherent-180035804.html"
         },
         {
-          "title": "Vertiv Stock Nearly Doubled On The Same Projects That Delayed Its Revenue",
-          "publisher": "Trefis",
-          "date": "2026-08-31",
-          "url": "https://www.trefis.com/articles/613715/vertiv-stock-nearly-doubled-on-the-same-projects-that-delayed-its-revenue/2026-08-31"
-        }
-      ]
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "verdict": "PASS",
-      "price": 199.62,
-      "pct_day": -3.25,
-      "pct_since": -3.25,
-      "primary_pct": -3.25,
-      "direction": "down",
-      "triggers": [
-        "-3.2% since last check"
-      ],
-      "reason": "See headlines (explanation limited to top movers).",
-      "news": [
-        {
-          "title": "Oracle Falls 4% as Bond Selloff Tests Its Debt-Funded AI Buildout, Nebius Slips",
-          "publisher": "24/7 Wall St.",
+          "title": "Lumentum Sets Up After 148% Gain; AI Summer Swoon Yields New Buy Point",
+          "publisher": "Investor's Business Daily",
           "date": "2026-09-01",
-          "url": "https://247wallst.com/investing/2026/09/01/oracle-falls-4-as-bond-selloff-tests-its-debt-funded-ai-buildout-nebius-slips/"
-        },
-        {
-          "title": "What to Understand Before Buying Nebius",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-09-01",
-          "url": "https://247wallst.com/investing/2026/09/01/what-to-understand-before-buying-nebius/"
-        },
-        {
-          "title": "Nebius vs. CoreWeave: Which Is the Better Artificial Intelligence (AI) Infrastructure Stock to Buy Right Now",
-          "publisher": "Motley Fool",
-          "date": "2026-09-01",
-          "url": "https://www.fool.com/investing/2026/09/01/nebius-vs-coreweave-which-is-the-better-artificial-intelligence-ai-infrastructure-stock-to-buy-right-now/"
-        }
-      ]
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "verdict": "WATCHLIST",
-      "price": 143.23,
-      "pct_day": -3.22,
-      "pct_since": -3.22,
-      "primary_pct": -3.22,
-      "direction": "down",
-      "triggers": [
-        "-3.2% since last check"
-      ],
-      "reason": "See headlines (explanation limited to top movers).",
-      "news": [
-        {
-          "title": "CrowdStrike Falls 7% Despite $2 Billion Optiv Milestone, Palo Alto Drops 6%",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-09-01",
-          "url": "https://247wallst.com/investing/2026/09/01/crowdstrike-falls-7-despite-2-billion-optiv-milestone-palo-alto-drops-6/"
-        },
-        {
-          "title": "FJTSY or NOW: Which Is the Better Value Stock Right Now?",
-          "publisher": "Zacks",
-          "date": "2026-09-01",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/fjtsy-now-better-value-stock-154003574.html"
-        },
-        {
-          "title": "S&P 500 biggest August 2026 winners: Moderna, software stocks",
-          "publisher": "Quartz",
-          "date": "2026-09-01",
-          "url": "https://qz.com/sp500-august-winners-moderna-cancer-vaccine-situational-awareness-090126"
+          "url": "https://www.investors.com/research/lumentum-lite-stock-ai-data-center/?src=A00220&yptr=yahoo"
         }
       ]
     }
