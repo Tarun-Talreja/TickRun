@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T23:39:06Z",
+  "generated_at": "2026-09-05T13:38:09Z",
   "rules": {
     "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
     "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
@@ -185,7 +185,7 @@
       "name": "MA",
       "theme": "quality_compounder",
       "verdict": "WATCHLIST",
-      "div_yield_pct": null,
+      "div_yield_pct": 0.6,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -297,7 +297,7 @@
       "name": "SPDR S&P 500 ETF",
       "theme": "uncategorized",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 1.01,
+      "div_yield_pct": 0.98,
       "account": "TAXABLE",
       "priority": "high",
       "reason": "Broad-market index fund \u2014 low turnover and mostly qualified dividends make it tax-efficient on its own. Holding it here preserves Roth space for assets that actually need shelter, and keeps it available before 59.5."
