@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-09-06T13:52:20Z",
-  "quotes_updated": "2026-09-06T13:51:22Z",
+  "last_built": "2026-09-06T23:18:50Z",
+  "quotes_updated": "2026-09-06T23:18:30Z",
   "portfolio": {
     "total_value": 0,
     "core": [
@@ -6331,61 +6331,56 @@
     }
   },
   "digest": {
-    "generated_at": "2026-08-30T23:59:24Z",
+    "generated_at": "2026-09-06T23:18:50Z",
     "narrative": null,
     "buy_ready": [],
     "movers": [
       {
+        "ticker": "CBRS",
+        "pct": 10.3,
+        "reason": "No clear catalyst in current news."
+      },
+      {
+        "ticker": "NBIS",
+        "pct": 7.48,
+        "reason": "No clear catalyst in current news."
+      },
+      {
         "ticker": "MRVL",
-        "pct": -10.28,
-        "reason": "No clear catalyst in current news."
-      },
-      {
-        "ticker": "FLUT",
-        "pct": 7.13,
-        "reason": "No clear catalyst in current news."
-      },
-      {
-        "ticker": "LITE",
-        "pct": -6.39,
-        "reason": "No clear catalyst in current news."
-      },
-      {
-        "ticker": "CLS",
-        "pct": -5.89,
-        "reason": "No clear catalyst in current news."
-      },
-      {
-        "ticker": "OKLO",
-        "pct": -5.62,
+        "pct": 7.05,
         "reason": "No clear catalyst in current news."
       },
       {
         "ticker": "COHR",
-        "pct": -5.48,
+        "pct": 6.6,
+        "reason": "No clear catalyst in current news."
+      },
+      {
+        "ticker": "MU",
+        "pct": 6.1,
+        "reason": "No clear catalyst in current news."
+      },
+      {
+        "ticker": "NFLX",
+        "pct": -5.35,
         "reason": "No clear catalyst in current news."
       }
     ],
     "upcoming_earnings": [
       {
-        "ticker": "CRDO",
-        "date": "2026-09-01",
-        "days_until": 1
-      },
-      {
-        "ticker": "AVGO",
-        "date": "2026-09-02",
-        "days_until": 2
-      },
-      {
         "ticker": "GIS",
         "date": "2026-09-23",
-        "days_until": 23
+        "days_until": 16
       },
       {
         "ticker": "COST",
         "date": "2026-09-24",
-        "days_until": 24
+        "days_until": 17
+      },
+      {
+        "ticker": "MU",
+        "date": "2026-09-30",
+        "days_until": 23
       }
     ],
     "sec_stakes": [],
@@ -9882,21 +9877,21 @@
       {
         "ticker": "QQQ",
         "last_researched": "2026-05-28",
-        "days_since": 99,
+        "days_since": 101,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py QQQ"
       },
       {
         "ticker": "SPY",
         "last_researched": "2026-05-28",
-        "days_since": 99,
+        "days_since": 101,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py SPY"
       },
       {
         "ticker": "^TNX",
         "last_researched": "2026-05-28",
-        "days_since": 99,
+        "days_since": 101,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
       }
@@ -9906,7 +9901,7 @@
         "ticker": "GIS",
         "name": "General Mills, Inc.",
         "date": "2026-09-23",
-        "days_until": 18,
+        "days_until": 16,
         "theme": "defensive_income",
         "verdict": "PASS",
         "thesis": "General Mills is a stable, cash-generative consumer goods company with a modest valuation, but limited growth potential.",
@@ -9916,7 +9911,7 @@
         "ticker": "COST",
         "name": "Costco Wholesale Corporation",
         "date": "2026-09-24",
-        "days_until": 19,
+        "days_until": 17,
         "theme": "uncategorized",
         "verdict": "PASS",
         "thesis": "Premium retailer with 52x PE and 3.7% operating margin. Exceptional business, wrong theme for this portfolio.",
@@ -9926,7 +9921,7 @@
         "ticker": "MU",
         "name": "Micron Technology, Inc.",
         "date": "2026-09-30",
-        "days_until": 25,
+        "days_until": 23,
         "theme": "edge_ai_silicon",
         "verdict": "WATCHLIST",
         "thesis": "AI infrastructure play with strong growth and reasonable valuation at 5.9x forward earnings.",
