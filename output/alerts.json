@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T22:10:20Z",
+  "generated_at": "2026-09-08T23:47:51Z",
   "pullback_alerts": [
     {
       "ticker": "ISRG",
@@ -124,18 +124,18 @@
   ],
   "stale_research": [
     {
-      "ticker": "QQQ",
-      "last_researched": "2026-05-28",
-      "days_since": 103,
-      "verdict": "WATCHLIST",
-      "action": "Re-run: python3 scripts/research_ticker.py QQQ"
-    },
-    {
       "ticker": "SPY",
       "last_researched": "2026-05-28",
       "days_since": 103,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py SPY"
+    },
+    {
+      "ticker": "QQQ",
+      "last_researched": "2026-05-28",
+      "days_since": 103,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py QQQ"
     },
     {
       "ticker": "^TNX",

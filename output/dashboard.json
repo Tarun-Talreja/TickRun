@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-09-08T22:10:31Z",
-  "quotes_updated": "2026-09-08T22:10:20Z",
+  "last_built": "2026-09-08T23:48:00Z",
+  "quotes_updated": "2026-09-08T23:47:51Z",
   "portfolio": {
     "total_value": 0,
     "core": [
@@ -1334,7 +1334,7 @@
         "revenue_growth": 12.5,
         "op_margin": 38.3,
         "pe": 23.912066,
-        "forward_pe": 18.296814,
+        "forward_pe": 18.302055,
         "short_percent_float": 6.06,
         "short_ratio": 6.4,
         "high_proximity_warning": true,
@@ -2841,7 +2841,7 @@
           "revenue_growth": 12.5,
           "op_margin": 38.3,
           "pe": 23.912066,
-          "forward_pe": 18.296814,
+          "forward_pe": 18.302055,
           "short_percent_float": 6.06,
           "short_ratio": 6.4,
           "high_proximity_warning": true,
@@ -5549,7 +5549,7 @@
           "revenue_growth": 12.5,
           "op_margin": 38.3,
           "pe": 23.912066,
-          "forward_pe": 18.296814,
+          "forward_pe": 18.302055,
           "short_percent_float": 6.06,
           "short_ratio": 6.4,
           "high_proximity_warning": true,
@@ -6393,7 +6393,7 @@
     "data_warnings": []
   },
   "analytics": {
-    "generated_at": "2026-09-08T22:10:30Z",
+    "generated_at": "2026-09-08T23:48:00Z",
     "funded": false,
     "total_value": 0.0,
     "total_invested": 0.0,
@@ -6490,7 +6490,7 @@
     "concentration_warnings": []
   },
   "track_record": {
-    "generated_at": "2026-09-08T22:10:31Z",
+    "generated_at": "2026-09-08T23:48:00Z",
     "tracked_since": "2026-04-25",
     "scoreboard": {
       "RESEARCH-WORTHY": {
@@ -9236,7 +9236,7 @@
     ]
   },
   "asset_location": {
-    "generated_at": "2026-09-08T22:10:31Z",
+    "generated_at": "2026-09-08T23:48:00Z",
     "rules": {
       "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
       "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
@@ -9712,7 +9712,7 @@
     ]
   },
   "daily_brief": {
-    "generated_at": "2026-09-08T19:40:42Z",
+    "generated_at": "2026-09-08T22:10:31Z",
     "date": "2026-09-08",
     "first_run": false,
     "items": [
@@ -9728,15 +9728,7 @@
         "priority": 3,
         "kind": "mover",
         "ticker": "LITE",
-        "headline": "LITE \u25b2 +11.6%",
-        "detail": null,
-        "action": "No catalyst found \u2014 check the ticker's news tab yourself before acting."
-      },
-      {
-        "priority": 3,
-        "kind": "mover",
-        "ticker": "COHR",
-        "headline": "COHR \u25b2 +8.1%",
+        "headline": "LITE \u25b2 +11.0%",
         "detail": null,
         "action": "No catalyst found \u2014 check the ticker's news tab yourself before acting."
       },
@@ -9744,15 +9736,15 @@
         "priority": 3,
         "kind": "mover",
         "ticker": "NBIS",
-        "headline": "NBIS \u25b2 +7.5%",
+        "headline": "NBIS \u25b2 +7.7%",
         "detail": null,
         "action": "No catalyst found \u2014 check the ticker's news tab yourself before acting."
       },
       {
         "priority": 3,
         "kind": "mover",
-        "ticker": "CLS",
-        "headline": "CLS \u25b2 +6.5%",
+        "ticker": "COHR",
+        "headline": "COHR \u25b2 +7.1%",
         "detail": null,
         "action": "No catalyst found \u2014 check the ticker's news tab yourself before acting."
       },
@@ -9760,7 +9752,15 @@
         "priority": 3,
         "kind": "mover",
         "ticker": "AMD",
-        "headline": "AMD \u25b2 +5.7%",
+        "headline": "AMD \u25b2 +5.9%",
+        "detail": null,
+        "action": "No catalyst found \u2014 check the ticker's news tab yourself before acting."
+      },
+      {
+        "priority": 3,
+        "kind": "mover",
+        "ticker": "CLS",
+        "headline": "CLS \u25b2 +5.6%",
         "detail": null,
         "action": "No catalyst found \u2014 check the ticker's news tab yourself before acting."
       },
@@ -9768,12 +9768,12 @@
         "priority": 3,
         "kind": "mover",
         "ticker": "STZ",
-        "headline": "STZ \u25bc -5.5%",
+        "headline": "STZ \u25bc -5.6%",
         "detail": null,
         "action": "No catalyst found \u2014 check the ticker's news tab yourself before acting."
       }
     ],
-    "hidden_count": 1,
+    "hidden_count": 0,
     "quiet_day": false
   },
   "signals": {
@@ -9901,18 +9901,18 @@
     ],
     "stale_research": [
       {
-        "ticker": "QQQ",
-        "last_researched": "2026-05-28",
-        "days_since": 103,
-        "verdict": "WATCHLIST",
-        "action": "Re-run: python3 scripts/research_ticker.py QQQ"
-      },
-      {
         "ticker": "SPY",
         "last_researched": "2026-05-28",
         "days_since": 103,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py SPY"
+      },
+      {
+        "ticker": "QQQ",
+        "last_researched": "2026-05-28",
+        "days_since": 103,
+        "verdict": "WATCHLIST",
+        "action": "Re-run: python3 scripts/research_ticker.py QQQ"
       },
       {
         "ticker": "^TNX",
@@ -10020,7 +10020,7 @@
         "verdict": "PASS",
         "price": 978.535,
         "pct_day": 11.04,
-        "pct_since": -0.48,
+        "pct_since": 0.0,
         "primary_pct": 11.04,
         "direction": "up",
         "triggers": [
@@ -10054,7 +10054,7 @@
         "verdict": "PASS",
         "price": 243.88,
         "pct_day": 7.73,
-        "pct_since": 0.2,
+        "pct_since": 0.0,
         "primary_pct": 7.73,
         "direction": "up",
         "triggers": [
@@ -10088,7 +10088,7 @@
         "verdict": "WATCHLIST",
         "price": 301.88,
         "pct_day": 7.1,
-        "pct_since": -0.88,
+        "pct_since": 0.0,
         "primary_pct": 7.1,
         "direction": "up",
         "triggers": [
@@ -10122,7 +10122,7 @@
         "verdict": "WATCHLIST",
         "price": 505.74,
         "pct_day": 5.9,
-        "pct_since": 0.16,
+        "pct_since": 0.0,
         "primary_pct": 5.9,
         "direction": "up",
         "triggers": [
@@ -10137,16 +10137,16 @@
             "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-oil-prices-amd-hpe-new-buys-apple-iphone-event/?src=A00220&yptr=yahoo"
           },
           {
+            "title": "Marvell Is Growing Faster And Its Margin Guide Is Standing Still",
+            "publisher": "Trefis",
+            "date": "2026-09-08",
+            "url": "https://www.trefis.com/articles/614565/marvell-is-growing-faster-and-its-margin-guide-is-standing-still/2026-09-08"
+          },
+          {
             "title": "QQQ vs QQQM: Same Index, Same Stocks, Different Fee \u2013 and the Math Says One Leaves You Thousands Richer",
             "publisher": "24/7 Wall St.",
             "date": "2026-09-08",
             "url": "https://247wallst.com/investing/etf/2026/09/08/qqq-vs-qqqm-same-index-same-stocks-different-fee-and-the-math-says-one-leaves-you-thousands-richer/"
-          },
-          {
-            "title": "AMD Just Put a $70 Billion Number on Its AI Ambitions",
-            "publisher": "GuruFocus.com",
-            "date": "2026-09-08",
-            "url": "https://finance.yahoo.com/technology/ai/articles/amd-just-put-70-billion-212844853.html"
           }
         ]
       },
@@ -10156,7 +10156,7 @@
         "verdict": "WATCHLIST",
         "price": 329.97,
         "pct_day": 5.64,
-        "pct_since": -0.79,
+        "pct_since": 0.0,
         "primary_pct": 5.64,
         "direction": "up",
         "triggers": [
@@ -10190,7 +10190,7 @@
         "verdict": "PASS",
         "price": 120.98,
         "pct_day": -5.62,
-        "pct_since": -0.17,
+        "pct_since": 0.0,
         "primary_pct": -5.62,
         "direction": "down",
         "triggers": [
@@ -10219,7 +10219,7 @@
         ]
       }
     ],
-    "movers_updated": "2026-09-08T22:10:30Z",
+    "movers_updated": "2026-09-08T23:48:00Z",
     "target_hits": [
       {
         "ticker": "ISRG",
@@ -10390,10 +10390,10 @@
       {
         "ticker": "AAPL",
         "verdict": "WATCHLIST",
-        "title": "Dow Jones Futures: Dow Skids But AMD, HPE Are New Buys; Apple iPhone Event Due",
-        "publisher": "Investor's Business Daily",
+        "title": "Apple\u2019s First Foldable iPhone Could Be Huge\u2014but Should You Be an Early Buyer?",
+        "publisher": "Benzinga",
         "date": "2026-09-08",
-        "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-oil-prices-amd-hpe-new-buys-apple-iphone-event/?src=A00220&yptr=yahoo"
+        "url": "https://tech.yahoo.com/ai/apple-intelligence/articles/apple-first-foldable-iphone-could-223056702.html"
       },
       {
         "ticker": "AAPL",
@@ -10438,6 +10438,14 @@
       {
         "ticker": "MSFT",
         "verdict": "WATCHLIST",
+        "title": "Microsoft\u2019s \u2018Useful Yield\u2019 Test Raises the Stakes for NVIDIA\u2019s AI Economics",
+        "publisher": "Insider Monkey",
+        "date": "2026-09-08",
+        "url": "https://finance.yahoo.com/technology/ai/articles/microsoft-useful-yield-test-raises-225832059.html"
+      },
+      {
+        "ticker": "MSFT",
+        "verdict": "WATCHLIST",
         "title": "Goldman's New AI Office Adds Just 1% to Its Engineering Army",
         "publisher": "GuruFocus.com",
         "date": "2026-09-08",
@@ -10468,20 +10476,36 @@
         "url": "https://www.investors.com/news/technology/google-stock-cloud-kurian-ai-chip-business/?src=A00220&yptr=yahoo"
       },
       {
-        "ticker": "MSFT",
-        "verdict": "WATCHLIST",
-        "title": "Will Direct TPU Sales Re-Rate Google Stock?",
-        "publisher": "Trefis",
-        "date": "2026-09-08",
-        "url": "https://www.trefis.com/articles/614509/will-direct-tpu-sales-re-rate-google-stock/2026-09-08"
-      },
-      {
         "ticker": "GOOGL",
         "verdict": "WATCHLIST",
         "title": "What investors 'really' need to see from Oracle earnings this week",
         "publisher": "Yahoo Finance Video",
         "date": "2026-09-08",
         "url": "https://finance.yahoo.com/video/investors-really-see-oracle-earnings-150710768.html"
+      },
+      {
+        "ticker": "GOOGL",
+        "verdict": "WATCHLIST",
+        "title": "Bill Ackman Sold His Remaining Alphabet Shares and Bought This Streaming Stock",
+        "publisher": "Insider Monkey",
+        "date": "2026-09-08",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/bill-ackman-sold-remaining-alphabet-231154144.html"
+      },
+      {
+        "ticker": "GOOGL",
+        "verdict": "WATCHLIST",
+        "title": "Jim Cramer Says Amazon and Alphabet Are Cheap. Their Cash Flows Complicate the Case",
+        "publisher": "Insider Monkey",
+        "date": "2026-09-08",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-says-amazon-alphabet-231012551.html"
+      },
+      {
+        "ticker": "GOOGL",
+        "verdict": "WATCHLIST",
+        "title": "Druckenmiller Exited Micron and Bought Alphabet. The AI Risks Moved With Him",
+        "publisher": "Insider Monkey",
+        "date": "2026-09-08",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/druckenmiller-exited-micron-bought-alphabet-230042923.html"
       },
       {
         "ticker": "GOOGL",
@@ -10498,30 +10522,6 @@
         "publisher": "MarketBeat",
         "date": "2026-09-08",
         "url": "https://www.marketbeat.com/instant-alerts/event-broadcom-ceo-sees-ai-value-flowing-to-frontier-models-and-custom-chips-2026-09-08/?utm_source=yahoofinance&utm_medium=yahoofinance"
-      },
-      {
-        "ticker": "GOOGL",
-        "verdict": "WATCHLIST",
-        "title": "Google DeepMind Maps All 9 Billion Human DNA Variants",
-        "publisher": "GuruFocus.com",
-        "date": "2026-09-08",
-        "url": "https://tech.yahoo.com/science/articles/google-deepmind-maps-9-billion-210048693.html"
-      },
-      {
-        "ticker": "GOOGL",
-        "verdict": "WATCHLIST",
-        "title": "Bank of America Spots Reassuring Signal for Google Stock",
-        "publisher": "GuruFocus.com",
-        "date": "2026-09-08",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/bank-america-spots-reassuring-signal-205753282.html"
-      },
-      {
-        "ticker": "GOOGL",
-        "verdict": "WATCHLIST",
-        "title": "Uber Stock Falls As Wall Street Sizes Up Tesla's Cybercab Rollout",
-        "publisher": "Investor's Business Daily",
-        "date": "2026-09-08",
-        "url": "https://www.investors.com/news/technology/uber-stock-tesla-cybercab-austin-rollout/?src=A00220&yptr=yahoo"
       },
       {
         "ticker": "AMZN",
@@ -10542,6 +10542,22 @@
       {
         "ticker": "AMZN",
         "verdict": "WATCHLIST",
+        "title": "Jim Cramer Says Amazon and Alphabet Are Cheap. Their Cash Flows Complicate the Case",
+        "publisher": "Insider Monkey",
+        "date": "2026-09-08",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-says-amazon-alphabet-231012551.html"
+      },
+      {
+        "ticker": "AMZN",
+        "verdict": "WATCHLIST",
+        "title": "S&P 500, Dow End Lower As Middle East Tensions Spur Oil Rally Ahead Of Key Inflation Data \u2014 META, QCOM, BE, AMZN, AVGO In Focus",
+        "publisher": "Stocktwits",
+        "date": "2026-09-08",
+        "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-dow-end-lower-as-middle-east-tensions-spur-oil-rally/cZtEOUNRJyE"
+      },
+      {
+        "ticker": "AMZN",
+        "verdict": "WATCHLIST",
         "title": "DAL Stock Drops: Jefferies Sees Possible Snag To In-Cabin Experience Owing To SPCX-VSAT Spectrum Fight",
         "publisher": "Stocktwits",
         "date": "2026-09-08",
@@ -10554,22 +10570,6 @@
         "publisher": "TheStreet",
         "date": "2026-09-08",
         "url": "https://www.thestreet.com/investing/the-trade-desk-ttd-cuts-15-percent-workforce"
-      },
-      {
-        "ticker": "AMZN",
-        "verdict": "WATCHLIST",
-        "title": "Goldman's New AI Office Adds Just 1% to Its Engineering Army",
-        "publisher": "GuruFocus.com",
-        "date": "2026-09-08",
-        "url": "https://finance.yahoo.com/technology/ai/articles/goldmans-ai-office-adds-just-213259052.html"
-      },
-      {
-        "ticker": "AMZN",
-        "verdict": "WATCHLIST",
-        "title": "Holtec Launches One of the Largest Nuclear IPOs Yet",
-        "publisher": "Barrons.com",
-        "date": "2026-09-08",
-        "url": "https://www.barrons.com/articles/holtec-nuclear-ipo-stock-hnuc-74f49c0f?siteid=yhoof2&yptr=yahoo"
       },
       {
         "ticker": "NVDA",
@@ -10590,6 +10590,22 @@
       {
         "ticker": "NVDA",
         "verdict": "WATCHLIST",
+        "title": "Why Braze Stock Tumbled by Over 5% on Tuesday",
+        "publisher": "Motley Fool",
+        "date": "2026-09-08",
+        "url": "https://www.fool.com/investing/2026/09/08/why-braze-stock-tumbled-by-over-5-on-tuesday/"
+      },
+      {
+        "ticker": "NVDA",
+        "verdict": "WATCHLIST",
+        "title": "Prediction: Sept. 10 Will Be a Big Day for Nvidia Shareholders. Here\u2019s What to Watch.",
+        "publisher": "Motley Fool",
+        "date": "2026-09-08",
+        "url": "https://www.fool.com/investing/2026/09/08/prediction-sept-10-will-be-a-big-day-for-nvidia-shareholders-here-s-what-to-watch/"
+      },
+      {
+        "ticker": "NVDA",
+        "verdict": "WATCHLIST",
         "title": "Dow Jones Futures: Dow Skids But AMD, HPE Are New Buys; Apple iPhone Event Due",
         "publisher": "Investor's Business Daily",
         "date": "2026-09-08",
@@ -10598,26 +10614,10 @@
       {
         "ticker": "NVDA",
         "verdict": "WATCHLIST",
-        "title": "Here's the One Storage Stock I'd Buy With $2,000",
+        "title": "Here's How Many Shares of Chevron You'd Need for $5,000 in Annual Passive Income",
         "publisher": "Motley Fool",
         "date": "2026-09-08",
-        "url": "https://www.fool.com/investing/2026/09/08/here-s-the-one-storage-stock-i-d-buy-with-usd2-000/"
-      },
-      {
-        "ticker": "NVDA",
-        "verdict": "WATCHLIST",
-        "title": "Why CRISPR Therapeutics Stock Rocked the Market Last Month",
-        "publisher": "Motley Fool",
-        "date": "2026-09-08",
-        "url": "https://www.fool.com/investing/2026/09/08/why-crispr-therapeutics-stock-rocked-the-market-la/"
-      },
-      {
-        "ticker": "NVDA",
-        "verdict": "WATCHLIST",
-        "title": "Nvidia Falls as Its Firmus Bet Lands OpenAI",
-        "publisher": "GuruFocus.com",
-        "date": "2026-09-08",
-        "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-falls-firmus-bet-lands-212513794.html"
+        "url": "https://www.fool.com/investing/2026/09/08/heres-how-many-shares-of-chevron-youd-need-for-500/"
       },
       {
         "ticker": "META",
@@ -10670,6 +10670,22 @@
       {
         "ticker": "AVGO",
         "verdict": "WATCHLIST",
+        "title": "S&P 500, Dow End Lower As Middle East Tensions Spur Oil Rally Ahead Of Key Inflation Data \u2014 META, QCOM, BE, AMZN, AVGO In Focus",
+        "publisher": "Stocktwits",
+        "date": "2026-09-08",
+        "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-dow-end-lower-as-middle-east-tensions-spur-oil-rally/cZtEOUNRJyE"
+      },
+      {
+        "ticker": "AVGO",
+        "verdict": "WATCHLIST",
+        "title": "Marvell Is Growing Faster And Its Margin Guide Is Standing Still",
+        "publisher": "Trefis",
+        "date": "2026-09-08",
+        "url": "https://www.trefis.com/articles/614565/marvell-is-growing-faster-and-its-margin-guide-is-standing-still/2026-09-08"
+      },
+      {
+        "ticker": "AVGO",
+        "verdict": "WATCHLIST",
         "title": "Nvidia vs. Broadcom: Comparing Recent Quarterly Revenue Trajectories",
         "publisher": "Motley Fool",
         "date": "2026-09-08",
@@ -10700,20 +10716,12 @@
         "url": "https://www.investors.com/research/ibd-stock-of-the-day/tsm-stock-buy-point-chip-stocks/?src=A00220&yptr=yahoo"
       },
       {
-        "ticker": "AVGO",
+        "ticker": "V",
         "verdict": "WATCHLIST",
-        "title": "Why Broadcom Stock Rallied Tuesday Morning",
-        "publisher": "Motley Fool",
+        "title": "Visa CEO Highlights Cross-Border Growth, AI Gains and Stablecoin Push",
+        "publisher": "MarketBeat",
         "date": "2026-09-08",
-        "url": "https://www.fool.com/investing/2026/09/08/why-broadcom-stock-rallied-tuesday-morning/"
-      },
-      {
-        "ticker": "AVGO",
-        "verdict": "WATCHLIST",
-        "title": "Jim Cramer Names 2 Stocks Set to Win From ChatGPT-6 Astra Boom",
-        "publisher": "BeInCrypto",
-        "date": "2026-09-08",
-        "url": "https://beincrypto.com/cramer-nvidia-broadcom-chatgpt-6-astra/"
+        "url": "https://www.marketbeat.com/instant-alerts/event-visa-ceo-highlights-cross-border-growth-ai-gains-and-stablecoin-push-2026-09-08/?utm_source=yahoofinance&utm_medium=yahoofinance"
       },
       {
         "ticker": "V",
@@ -10756,12 +10764,12 @@
         "url": "https://www.cryptoprowl.com/releases/visa-grows-stablecoin-card-network-7013"
       },
       {
-        "ticker": "V",
+        "ticker": "ASML",
         "verdict": "WATCHLIST",
-        "title": "Visa connects settlement data to blockchain lenders for stablecoin cards",
-        "publisher": "Quartz",
+        "title": "NVIDIA and ASML Back Mistral\u2019s \u20ac3 Billion Round. Their Payoffs Could Look Very Different",
+        "publisher": "Insider Monkey",
         "date": "2026-09-08",
-        "url": "https://qz.com/visa-settlement-data-blockchain-lenders-stablecoin-cards-090826"
+        "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-asml-back-mistral-3-230147307.html"
       },
       {
         "ticker": "ASML",
@@ -10770,14 +10778,6 @@
         "publisher": "GuruFocus.com",
         "date": "2026-09-08",
         "url": "https://finance.yahoo.com/technology/ai/articles/bank-america-sees-asml-stocks-205458524.html"
-      },
-      {
-        "ticker": "ASML",
-        "verdict": "WATCHLIST",
-        "title": "An AI chip machine so pricey, three rivals had to say yes",
-        "publisher": "TheStreet",
-        "date": "2026-09-08",
-        "url": "https://www.thestreet.com/technology/semiconductor-rivals-adopt-asml-equipment"
       }
     ],
     "insider_alerts": [],
