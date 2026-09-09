@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-09T16:56:55Z",
+  "generated_at": "2026-09-09T19:35:07Z",
   "pullback_alerts": [
     {
       "ticker": "ISRG",
       "name": "Intuitive Surgical, Inc.",
       "theme": "healthcare_innovation",
       "verdict": "WATCHLIST",
-      "price": 351.515,
+      "price": 352.615,
       "high_52w": 603.88,
-      "drawdown_pct": -41.8,
+      "drawdown_pct": -41.6,
       "severity": "STRONG",
       "thesis": "High-growth medical device company with strong financials and potential for long-term expansion in the robotic-assisted surgery market.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -18,9 +18,9 @@
       "name": "BWX Technologies, Inc.",
       "theme": "nuclear_smr",
       "verdict": "WATCHLIST",
-      "price": 158.26,
+      "price": 157.47,
       "high_52w": 241.82,
-      "drawdown_pct": -34.6,
+      "drawdown_pct": -34.9,
       "severity": "MODERATE",
       "thesis": "Nuclear energy play with strong revenue growth and profitability at a reasonable valuation.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -30,9 +30,9 @@
       "name": "ServiceNow, Inc.",
       "theme": "cybersecurity",
       "verdict": "WATCHLIST",
-      "price": 131.515,
+      "price": 131.805,
       "high_52w": 194.726,
-      "drawdown_pct": -32.5,
+      "drawdown_pct": -32.3,
       "severity": "MODERATE",
       "thesis": "High-growth software company with expanding AI capabilities, but high valuation multiples.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -42,23 +42,11 @@
       "name": "Coherent Corp.",
       "theme": "networking_infra",
       "verdict": "WATCHLIST",
-      "price": 307.57,
+      "price": 304.85,
       "high_52w": 440.0,
-      "drawdown_pct": -30.1,
+      "drawdown_pct": -30.7,
       "severity": "MODERATE",
       "thesis": "High-growth laser technology company with expanding margins, but high valuation and negative free cash flow.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "EIX",
-      "name": "Edison International",
-      "theme": "power_grid",
-      "verdict": "WATCHLIST",
-      "price": 58.11,
-      "high_52w": 81.62,
-      "drawdown_pct": -28.8,
-      "severity": "MODERATE",
-      "thesis": "Edison International offers a relatively cheap valuation at 8.7x trailing earnings for a stable utility company with 7.7% YoY revenue growth.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -66,23 +54,23 @@
       "name": "Celestica Inc.",
       "theme": "datacenter_infra",
       "verdict": "WATCHLIST",
-      "price": 345.325,
+      "price": 333.785,
       "high_52w": 474.03,
-      "drawdown_pct": -27.2,
+      "drawdown_pct": -29.6,
       "severity": "MODERATE",
       "thesis": "AI infrastructure play with 62.4% YoY revenue growth at a forward P/E of 15.2x.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
-      "ticker": "AVGO",
-      "name": "Broadcom Inc.",
-      "theme": "edge_ai_silicon",
+      "ticker": "EIX",
+      "name": "Edison International",
+      "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "price": 362.09,
-      "high_52w": 495.0,
-      "drawdown_pct": -26.9,
+      "price": 57.875,
+      "high_52w": 81.62,
+      "drawdown_pct": -29.1,
       "severity": "MODERATE",
-      "thesis": "Broadcom is a high-quality semiconductor company with strong revenue growth and a reasonable valuation at 18.4x forward earnings.",
+      "thesis": "Edison International offers a relatively cheap valuation at 8.7x trailing earnings for a stable utility company with 7.7% YoY revenue growth.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -90,28 +78,40 @@
       "name": "GE HealthCare Technologies Inc.",
       "theme": "healthcare_innovation",
       "verdict": "WATCHLIST",
-      "price": 65.8657,
+      "price": 65.29,
       "high_52w": 89.77,
-      "drawdown_pct": -26.6,
+      "drawdown_pct": -27.3,
       "severity": "MODERATE",
       "thesis": "Reasonable valuation at 13.3x forward earnings for a quality healthcare technology company with a strong product innovation pipeline.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "theme": "edge_ai_silicon",
+      "verdict": "WATCHLIST",
+      "price": 363.82,
+      "high_52w": 495.0,
+      "drawdown_pct": -26.5,
+      "severity": "MODERATE",
+      "thesis": "Broadcom is a high-quality semiconductor company with strong revenue growth and a reasonable valuation at 18.4x forward earnings.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     }
   ],
   "stale_research": [
-    {
-      "ticker": "SPY",
-      "last_researched": "2026-05-28",
-      "days_since": 104,
-      "verdict": "WATCHLIST",
-      "action": "Re-run: python3 scripts/research_ticker.py SPY"
-    },
     {
       "ticker": "QQQ",
       "last_researched": "2026-05-28",
       "days_since": 104,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py QQQ"
+    },
+    {
+      "ticker": "SPY",
+      "last_researched": "2026-05-28",
+      "days_since": 104,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py SPY"
     },
     {
       "ticker": "^TNX",
