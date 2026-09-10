@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-09-10T19:21:28Z",
+  "generated_at": "2026-09-10T21:43:36Z",
   "movers": [
     {
       "ticker": "OKLO",
       "name": "Oklo Inc.",
       "verdict": "PASS",
-      "price": 39.85,
-      "pct_day": -6.39,
-      "pct_since": -1.84,
-      "primary_pct": -6.39,
+      "price": 39.88,
+      "pct_day": -6.32,
+      "pct_since": 0.08,
+      "primary_pct": -6.32,
       "direction": "down",
       "triggers": [
-        "-6.4% on the day"
+        "-6.3% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -39,16 +39,22 @@
       "ticker": "RDDT",
       "name": "Reddit, Inc.",
       "verdict": "PASS",
-      "price": 155.615,
-      "pct_day": 6.27,
-      "pct_since": -0.31,
-      "primary_pct": 6.27,
+      "price": 155.34,
+      "pct_day": 6.08,
+      "pct_since": -0.18,
+      "primary_pct": 6.08,
       "direction": "up",
       "triggers": [
-        "+6.3% on the day"
+        "+6.1% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
+        {
+          "title": "Piper Sandler Spots Powerful Growth Signal for Reddit",
+          "publisher": "GuruFocus.com",
+          "date": "2026-09-10",
+          "url": "https://finance.yahoo.com/media-advertising/articles/piper-sandler-spots-powerful-growth-193728380.html"
+        },
         {
           "title": "AppLovin vs. Reddit: Which Technology Stock Is a Better Buy in 2026?",
           "publisher": "Motley Fool",
@@ -60,12 +66,6 @@
           "publisher": "StockStory",
           "date": "2026-09-10",
           "url": "https://finance.yahoo.com/markets/stocks/articles/2-p-500-stocks-exciting-174504808.html"
-        },
-        {
-          "title": "These Workers Make Six Figures Without College Degrees. One High School Dropout Is Pulling in $157K. Have They 'Cracked the Code?'",
-          "publisher": "Benzinga",
-          "date": "2026-09-10",
-          "url": "https://finance.yahoo.com/small-business/articles/workers-six-figures-without-college-173010356.html"
         }
       ]
     },
@@ -73,13 +73,13 @@
       "ticker": "VRT",
       "name": "Vertiv Holdings Co",
       "verdict": "PASS",
-      "price": 247.525,
-      "pct_day": -5.84,
-      "pct_since": -0.0,
-      "primary_pct": -5.84,
+      "price": 248.13,
+      "pct_day": -5.61,
+      "pct_since": 0.24,
+      "primary_pct": -5.61,
       "direction": "down",
       "triggers": [
-        "-5.8% on the day"
+        "-5.6% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
@@ -104,19 +104,59 @@
       ]
     },
     {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
       "verdict": "PASS",
-      "price": 228.23,
-      "pct_day": -5.04,
-      "pct_since": 0.29,
-      "primary_pct": -5.04,
+      "price": 935.7,
+      "pct_day": -5.39,
+      "pct_since": -0.49,
+      "primary_pct": -5.39,
       "direction": "down",
       "triggers": [
-        "-5.0% on the day"
+        "-5.4% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": [
+        {
+          "title": "GoPro Spikes 11% as Lumentum Eases and Coherent Holds Flat: Is This a Merger Trade or a Meme Trade?",
+          "publisher": "24/7 Wall St.",
+          "date": "2026-09-10",
+          "url": "https://247wallst.com/investing/2026/09/10/gopro-spikes-11-as-lumentum-eases-and-coherent-holds-flat-is-this-a-merger-trade-or-a-meme-trade/"
+        },
+        {
+          "title": "Why Is Lumentum (LITE) Up 6.1% Since Last Earnings Report?",
+          "publisher": "Zacks",
+          "date": "2026-09-10",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-lumentum-lite-6-1-153004763.html"
+        },
+        {
+          "title": "Top Funds Bet Billions As This AI Stock Lights Up A Buy Zone",
+          "publisher": "Investor's Business Daily",
+          "date": "2026-09-10",
+          "url": "https://www.investors.com/research/ibd-stock-analysis/lumentum-stock-lights-up-buy-zone-lite/?src=A00220&yptr=yahoo"
+        }
+      ]
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "verdict": "PASS",
+      "price": 228.11,
+      "pct_day": -5.09,
+      "pct_since": -0.05,
+      "primary_pct": -5.09,
+      "direction": "down",
+      "triggers": [
+        "-5.1% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": [
+        {
+          "title": "Michael Burry Dumps Nvidia and Palantir Put Options in Fresh Risk Warning",
+          "publisher": "GuruFocus.com",
+          "date": "2026-09-10",
+          "url": "https://finance.yahoo.com/markets/options/articles/michael-burry-dumps-nvidia-palantir-194635018.html"
+        },
         {
           "title": "NVIDIA CEO Sees $4 Trillion AI Infrastructure Boom as Demand Outpaces Supply",
           "publisher": "MarketBeat",
@@ -128,12 +168,6 @@
           "publisher": "24/7 Wall St.",
           "date": "2026-09-10",
           "url": "https://247wallst.com/investing/2026/09/10/coreweave-sinks-5-despite-burry-pulling-in-his-ai-short-oracle-eases-into-earnings-cloudflare-holds-steady/"
-        },
-        {
-          "title": "How Dangerous Are Top Neoclouds as Rate Hike Odds Increase?",
-          "publisher": "24/7 Wall St.",
-          "date": "2026-09-10",
-          "url": "https://247wallst.com/investing/2026/09/10/how-dangerous-are-top-neoclouds-as-rate-hike-odds-increase/"
         }
       ]
     }
