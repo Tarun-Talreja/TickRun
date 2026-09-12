@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-05T14:04:58Z",
+  "generated_at": "2026-09-12T14:29:15Z",
   "universe": "sp500",
   "scanned": 503,
-  "qualified": 422,
+  "qualified": 424,
   "discovered": [
     {
       "ticker": "EOG",
       "name": "EOG Resources, Inc.",
       "sector": "Energy",
-      "score": 85.1,
+      "score": 85.0,
       "quality": 32.0,
-      "value": 20.1,
+      "value": 20.0,
       "growth": 20,
       "health": 13.0,
       "passes_screens": [
@@ -19,40 +19,40 @@
         "Magic Formula",
         "Dividend Quality"
       ],
-      "market_cap": 76156395520,
-      "price": 145.19,
-      "forward_pe": 10.113852,
+      "market_cap": 78488141824,
+      "price": 147.36,
+      "forward_pe": 10.215577,
       "rev_growth": 0.587,
       "roe": 0.22507,
-      "drawdown_pct": -5.5
+      "drawdown_pct": -4.1
     },
     {
       "ticker": "INCY",
       "name": "Incyte Corporation",
       "sector": "Healthcare",
-      "score": 81.9,
+      "score": 82.4,
       "quality": 34.3,
-      "value": 12.7,
+      "value": 13.1,
       "growth": 20,
       "health": 15.0,
       "passes_screens": [
         "Quality",
         "Magic Formula"
       ],
-      "market_cap": 25691938816,
-      "price": 126.75,
-      "forward_pe": 14.264846,
+      "market_cap": 24621694976,
+      "price": 121.47,
+      "forward_pe": 13.670618,
       "rev_growth": 0.377,
       "roe": 0.30667,
-      "drawdown_pct": -4.4
+      "drawdown_pct": -8.4
     },
     {
       "ticker": "CF",
       "name": "CF Industries Holdings, Inc.",
       "sector": "Basic Materials",
-      "score": 80.9,
+      "score": 81.1,
       "quality": 32.0,
-      "value": 21.3,
+      "value": 21.4,
       "growth": 15.0,
       "health": 12.6,
       "passes_screens": [
@@ -60,12 +60,31 @@
         "GARP",
         "Magic Formula"
       ],
-      "market_cap": 20180940800,
-      "price": 133.35,
-      "forward_pe": 12.864122,
+      "market_cap": 20138565632,
+      "price": 133.07,
+      "forward_pe": 12.451683,
       "rev_growth": 0.176,
       "roe": 0.29867,
-      "drawdown_pct": -6.1
+      "drawdown_pct": -6.3
+    },
+    {
+      "ticker": "OXY",
+      "name": "Occidental Petroleum Corporation",
+      "sector": "Energy",
+      "score": 77.3,
+      "quality": 27.3,
+      "value": 18.9,
+      "growth": 20,
+      "health": 11.2,
+      "passes_screens": [
+        "GARP"
+      ],
+      "market_cap": 61437710336,
+      "price": 61.46,
+      "forward_pe": 15.3110285,
+      "rev_growth": 0.534,
+      "roe": 0.10629,
+      "drawdown_pct": -8.9
     },
     {
       "ticker": "APP",
@@ -73,98 +92,19 @@
       "sector": "Communication Services",
       "score": 77.2,
       "quality": 35,
-      "value": 13.9,
+      "value": 13.8,
       "growth": 20,
       "health": 8.3,
       "passes_screens": [
         "Quality",
         "GARP"
       ],
-      "market_cap": 107688771584,
-      "price": 320.56,
-      "forward_pe": 15.281652,
+      "market_cap": 108413378560,
+      "price": 323.96,
+      "forward_pe": 15.443736,
       "rev_growth": 0.528,
       "roe": 2.03686,
-      "drawdown_pct": -57.0
-    },
-    {
-      "ticker": "OXY",
-      "name": "Occidental Petroleum Corporation",
-      "sector": "Energy",
-      "score": 77.2,
-      "quality": 27.3,
-      "value": 18.8,
-      "growth": 20,
-      "health": 11.2,
-      "passes_screens": [
-        "GARP"
-      ],
-      "market_cap": 60018229248,
-      "price": 60.04,
-      "forward_pe": 15.648988,
-      "rev_growth": 0.534,
-      "roe": 0.10629,
-      "drawdown_pct": -11.0
-    },
-    {
-      "ticker": "TER",
-      "name": "Teradyne, Inc.",
-      "sector": "Technology",
-      "score": 76.6,
-      "quality": 34.5,
-      "value": 7.3,
-      "growth": 20,
-      "health": 14.8,
-      "passes_screens": [
-        "Quality",
-        "GARP"
-      ],
-      "market_cap": 55818338304,
-      "price": 357.03,
-      "forward_pe": 30.639856,
-      "rev_growth": 1.039,
-      "roe": 0.36465,
-      "drawdown_pct": -26.8
-    },
-    {
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "sector": "Energy",
-      "score": 76.4,
-      "quality": 25.8,
-      "value": 19.1,
-      "growth": 20,
-      "health": 11.5,
-      "passes_screens": [
-        "GARP",
-        "Dividend Quality"
-      ],
-      "market_cap": 161291567104,
-      "price": 134.26,
-      "forward_pe": 14.118809,
-      "rev_growth": 0.355,
-      "roe": 0.1418,
-      "drawdown_pct": -2.3
-    },
-    {
-      "ticker": "NXPI",
-      "name": "NXP Semiconductors N.V.",
-      "sector": "Technology",
-      "score": 76.4,
-      "quality": 32.5,
-      "value": 18.8,
-      "growth": 15.8,
-      "health": 9.4,
-      "passes_screens": [
-        "Quality",
-        "GARP"
-      ],
-      "market_cap": 57451827200,
-      "price": 227.835,
-      "forward_pe": 12.590971,
-      "rev_growth": 0.195,
-      "roe": 0.27921,
-      "drawdown_pct": -33.0
+      "drawdown_pct": -56.6
     },
     {
       "ticker": "WDC",
@@ -172,27 +112,107 @@
       "sector": "Technology",
       "score": 76.4,
       "quality": 33.1,
-      "value": 11.1,
+      "value": 11.0,
       "growth": 20,
       "health": 12.2,
       "passes_screens": [
         "Quality",
         "GARP"
       ],
-      "market_cap": 168538456064,
-      "price": 467.46,
-      "forward_pe": 14.723367,
+      "market_cap": 161226686464,
+      "price": 447.18,
+      "forward_pe": 14.084618,
       "rev_growth": 0.438,
       "roe": 1.30853,
-      "drawdown_pct": -41.6
+      "drawdown_pct": -44.1
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "sector": "Energy",
+      "score": 76.1,
+      "quality": 25.8,
+      "value": 18.8,
+      "growth": 20,
+      "health": 11.5,
+      "passes_screens": [
+        "GARP",
+        "Dividend Quality"
+      ],
+      "market_cap": 165003706368,
+      "price": 137.35,
+      "forward_pe": 14.169802,
+      "rev_growth": 0.355,
+      "roe": 0.1418,
+      "drawdown_pct": -1.1
+    },
+    {
+      "ticker": "NXPI",
+      "name": "NXP Semiconductors N.V.",
+      "sector": "Technology",
+      "score": 76.1,
+      "quality": 32.5,
+      "value": 18.4,
+      "growth": 15.8,
+      "health": 9.4,
+      "passes_screens": [
+        "Quality",
+        "GARP"
+      ],
+      "market_cap": 59667087360,
+      "price": 236.62,
+      "forward_pe": 13.076461,
+      "rev_growth": 0.195,
+      "roe": 0.27921,
+      "drawdown_pct": -30.4
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
+      "sector": "Technology",
+      "score": 75.7,
+      "quality": 34.5,
+      "value": 6.4,
+      "growth": 20,
+      "health": 14.8,
+      "passes_screens": [
+        "Quality",
+        "GARP"
+      ],
+      "market_cap": 59365711872,
+      "price": 379.72,
+      "forward_pe": 32.587082,
+      "rev_growth": 1.039,
+      "roe": 0.36465,
+      "drawdown_pct": -22.2
+    },
+    {
+      "ticker": "GOOG",
+      "name": "Alphabet Inc.",
+      "sector": "Communication Services",
+      "score": 74.9,
+      "quality": 34.8,
+      "value": 8.6,
+      "growth": 17.7,
+      "health": 13.9,
+      "passes_screens": [
+        "Quality",
+        "GARP"
+      ],
+      "market_cap": 4102531842048,
+      "price": 335.45,
+      "forward_pe": 22.553036,
+      "rev_growth": 0.242,
+      "roe": 0.48676,
+      "drawdown_pct": -17.1
     },
     {
       "ticker": "APA",
       "name": "APA Corporation",
       "sector": "Energy",
-      "score": 75.4,
+      "score": 74.8,
       "quality": 33.7,
-      "value": 22.2,
+      "value": 21.5,
       "growth": 10.7,
       "health": 8.9,
       "passes_screens": [
@@ -200,52 +220,32 @@
         "Magic Formula",
         "Dividend Quality"
       ],
-      "market_cap": 14984535040,
-      "price": 42.77,
-      "forward_pe": 10.137978,
+      "market_cap": 15671223296,
+      "price": 44.73,
+      "forward_pe": 10.276995,
       "rev_growth": 0.092,
       "roe": 0.26659,
-      "drawdown_pct": -6.3
-    },
-    {
-      "ticker": "GOOG",
-      "name": "Alphabet Inc.",
-      "sector": "Communication Services",
-      "score": 74.8,
-      "quality": 34.8,
-      "value": 8.5,
-      "growth": 17.7,
-      "health": 13.9,
-      "passes_screens": [
-        "Quality",
-        "GARP"
-      ],
-      "market_cap": 4100819517440,
-      "price": 335.31,
-      "forward_pe": 22.573368,
-      "rev_growth": 0.242,
-      "roe": 0.48676,
-      "drawdown_pct": -17.1
+      "drawdown_pct": -3.0
     },
     {
       "ticker": "CINF",
       "name": "Cincinnati Financial Corporation",
       "sector": "Financial Services",
-      "score": 73.7,
+      "score": 73.8,
       "quality": 26.8,
-      "value": 14.8,
+      "value": 14.9,
       "growth": 20,
       "health": 12.1,
       "passes_screens": [
         "Magic Formula",
         "Dividend Quality"
       ],
-      "market_cap": 26260094976,
-      "price": 171.1,
-      "forward_pe": 18.94539,
+      "market_cap": 26060572672,
+      "price": 169.8,
+      "forward_pe": 18.801447,
       "rev_growth": 0.316,
       "roe": 0.21484,
-      "drawdown_pct": -12.2
+      "drawdown_pct": -12.8
     },
     {
       "ticker": "TPL",
@@ -257,51 +257,50 @@
       "growth": 20,
       "health": 14.9,
       "passes_screens": [],
-      "market_cap": 24997804032,
-      "price": 362.42,
-      "forward_pe": 4.95651,
+      "market_cap": 25458554880,
+      "price": 369.1,
+      "forward_pe": 5.0478663,
       "rev_growth": 0.312,
       "roe": 0.36566,
-      "drawdown_pct": -33.8
-    },
-    {
-      "ticker": "LRCX",
-      "name": "Lam Research Corporation",
-      "sector": "Technology",
-      "score": 72.5,
-      "quality": 33.4,
-      "value": 6.1,
-      "growth": 20,
-      "health": 13.0,
-      "passes_screens": [
-        "Quality",
-        "GARP"
-      ],
-      "market_cap": 384968884224,
-      "price": 307.65,
-      "forward_pe": 26.584322,
-      "rev_growth": 0.3,
-      "roe": 0.65066004,
-      "drawdown_pct": -29.8
+      "drawdown_pct": -32.5
     },
     {
       "ticker": "SNDK",
       "name": "Sandisk Corporation",
       "sector": "Technology",
-      "score": 72.5,
+      "score": 73.2,
       "quality": 35,
-      "value": 10.6,
+      "value": 11.3,
       "growth": 12,
       "health": 14.9,
       "passes_screens": [
         "Quality"
       ],
-      "market_cap": 254769070080,
-      "price": 1740.0,
-      "forward_pe": 6.5729427,
+      "market_cap": 239153479680,
+      "price": 1633.35,
+      "forward_pe": 6.1700664,
       "rev_growth": 3.716,
       "roe": 0.9164,
-      "drawdown_pct": -26.1
+      "drawdown_pct": -30.6
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "sector": "Technology",
+      "score": 72.7,
+      "quality": 35,
+      "value": 2.8,
+      "growth": 20,
+      "health": 14.9,
+      "passes_screens": [
+        "Quality"
+      ],
+      "market_cap": 401863442432,
+      "price": 167.23,
+      "forward_pe": 71.89689,
+      "rev_growth": 0.928,
+      "roe": 0.38097,
+      "drawdown_pct": -19.4
     }
   ]
 }
