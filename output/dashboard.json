@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-09-13T14:46:06Z",
-  "quotes_updated": "2026-09-13T14:45:04Z",
+  "last_built": "2026-09-13T23:43:30Z",
+  "quotes_updated": "2026-09-13T23:43:11Z",
   "portfolio": {
     "total_value": 0,
     "core": [
@@ -6325,38 +6325,18 @@
     }
   },
   "digest": {
-    "generated_at": "2026-09-06T23:18:50Z",
+    "generated_at": "2026-09-13T23:43:30Z",
     "narrative": null,
     "buy_ready": [],
     "movers": [
       {
-        "ticker": "CBRS",
-        "pct": 10.3,
+        "ticker": "OKLO",
+        "pct": -9.18,
         "reason": "No clear catalyst in current news."
       },
       {
-        "ticker": "NBIS",
-        "pct": 7.48,
-        "reason": "No clear catalyst in current news."
-      },
-      {
-        "ticker": "MRVL",
-        "pct": 7.05,
-        "reason": "No clear catalyst in current news."
-      },
-      {
-        "ticker": "COHR",
-        "pct": 6.6,
-        "reason": "No clear catalyst in current news."
-      },
-      {
-        "ticker": "MU",
-        "pct": 6.1,
-        "reason": "No clear catalyst in current news."
-      },
-      {
-        "ticker": "NFLX",
-        "pct": -5.35,
+        "ticker": "CLS",
+        "pct": 6.56,
         "reason": "No clear catalyst in current news."
       }
     ],
@@ -6364,17 +6344,27 @@
       {
         "ticker": "GIS",
         "date": "2026-09-23",
-        "days_until": 16
+        "days_until": 9
+      },
+      {
+        "ticker": "PAYX",
+        "date": "2026-09-23",
+        "days_until": 9
       },
       {
         "ticker": "COST",
         "date": "2026-09-24",
-        "days_until": 17
+        "days_until": 10
       },
       {
         "ticker": "MU",
         "date": "2026-09-30",
-        "days_until": 23
+        "days_until": 16
+      },
+      {
+        "ticker": "STZ",
+        "date": "2026-10-06",
+        "days_until": 22
       }
     ],
     "sec_stakes": [],
@@ -9825,21 +9815,21 @@
       {
         "ticker": "QQQ",
         "last_researched": "2026-05-28",
-        "days_since": 106,
+        "days_since": 108,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py QQQ"
       },
       {
         "ticker": "SPY",
         "last_researched": "2026-05-28",
-        "days_since": 106,
+        "days_since": 108,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py SPY"
       },
       {
         "ticker": "^TNX",
         "last_researched": "2026-05-28",
-        "days_since": 106,
+        "days_since": 108,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
       }
@@ -9849,7 +9839,7 @@
         "ticker": "GIS",
         "name": "General Mills, Inc.",
         "date": "2026-09-23",
-        "days_until": 11,
+        "days_until": 9,
         "theme": "defensive_income",
         "verdict": "PASS",
         "thesis": "General Mills is a stable, cash-generative consumer goods company with a modest valuation, but limited growth potential.",
@@ -9859,7 +9849,7 @@
         "ticker": "PAYX",
         "name": "Paychex, Inc.",
         "date": "2026-09-23",
-        "days_until": 11,
+        "days_until": 9,
         "theme": "quality_compounder",
         "verdict": "WATCHLIST",
         "thesis": "Payroll for SMBs \u2014 44% op margin, 20% growth, 4.7% dividend yield, 16.8x fwd PE. -38.6% from ATH. High-quality at a genuinely cheap multiple with strong income.",
@@ -9869,7 +9859,7 @@
         "ticker": "COST",
         "name": "Costco Wholesale Corporation",
         "date": "2026-09-24",
-        "days_until": 12,
+        "days_until": 10,
         "theme": "uncategorized",
         "verdict": "PASS",
         "thesis": "Premium retailer with 52x PE and 3.7% operating margin. Exceptional business, wrong theme for this portfolio.",
@@ -9879,7 +9869,7 @@
         "ticker": "MU",
         "name": "Micron Technology, Inc.",
         "date": "2026-09-30",
-        "days_until": 18,
+        "days_until": 16,
         "theme": "edge_ai_silicon",
         "verdict": "WATCHLIST",
         "thesis": "AI infrastructure play with strong growth and reasonable valuation at 5.9x forward earnings.",
@@ -9889,7 +9879,7 @@
         "ticker": "STZ",
         "name": "Constellation Brands, Inc.",
         "date": "2026-10-06",
-        "days_until": 24,
+        "days_until": 22,
         "theme": "defensive_income",
         "verdict": "PASS",
         "thesis": "Constellation Brands offers a stable, dividend-paying investment opportunity in the consumer goods sector, with a diversified portfolio of brands and a strong position in the beverage market, but lacks direct exposure to high-growth themes.",
