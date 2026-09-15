@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-09-14T21:56:18Z",
-  "quotes_updated": "2026-09-14T21:56:08Z",
+  "last_built": "2026-09-15T00:10:55Z",
+  "quotes_updated": "2026-09-15T00:10:44Z",
   "portfolio": {
     "total_value": 0,
     "core": [
@@ -428,7 +428,7 @@
         "revenue_growth": 0.4,
         "op_margin": 7.1,
         "pe": 24.681467,
-        "forward_pe": 17.095774,
+        "forward_pe": 17.01221,
         "short_percent_float": 1.9,
         "short_ratio": 3.7,
         "high_proximity_warning": true,
@@ -3255,7 +3255,7 @@
           "revenue_growth": 0.4,
           "op_margin": 7.1,
           "pe": 24.681467,
-          "forward_pe": 17.095774,
+          "forward_pe": 17.01221,
           "short_percent_float": 1.9,
           "short_ratio": 3.7,
           "high_proximity_warning": true,
@@ -4743,7 +4743,7 @@
           "revenue_growth": 0.4,
           "op_margin": 7.1,
           "pe": 24.681467,
-          "forward_pe": 17.095774,
+          "forward_pe": 17.01221,
           "short_percent_float": 1.9,
           "short_ratio": 3.7,
           "high_proximity_warning": true,
@@ -6362,7 +6362,7 @@
     "data_warnings": []
   },
   "analytics": {
-    "generated_at": "2026-09-14T21:56:18Z",
+    "generated_at": "2026-09-15T00:10:55Z",
     "funded": false,
     "total_value": 0.0,
     "total_invested": 0.0,
@@ -6459,7 +6459,7 @@
     "concentration_warnings": []
   },
   "track_record": {
-    "generated_at": "2026-09-14T21:56:18Z",
+    "generated_at": "2026-09-15T00:10:55Z",
     "tracked_since": "2026-04-25",
     "scoreboard": {
       "RESEARCH-WORTHY": {
@@ -9204,7 +9204,7 @@
     ]
   },
   "asset_location": {
-    "generated_at": "2026-09-14T21:56:18Z",
+    "generated_at": "2026-09-15T00:10:55Z",
     "rules": {
       "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
       "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
@@ -9710,7 +9710,7 @@
     ]
   },
   "daily_brief": {
-    "generated_at": "2026-09-14T18:16:22Z",
+    "generated_at": "2026-09-14T21:56:18Z",
     "date": "2026-09-14",
     "first_run": false,
     "items": [
@@ -9726,23 +9726,7 @@
         "priority": 3,
         "kind": "mover",
         "ticker": "COHR",
-        "headline": "COHR \u25bc -10.8%",
-        "detail": null,
-        "action": "No catalyst found \u2014 check the ticker's news tab yourself before acting."
-      },
-      {
-        "priority": 3,
-        "kind": "mover",
-        "ticker": "NVT",
-        "headline": "NVT \u25bc -9.2%",
-        "detail": null,
-        "action": "No catalyst found \u2014 check the ticker's news tab yourself before acting."
-      },
-      {
-        "priority": 3,
-        "kind": "mover",
-        "ticker": "GEV",
-        "headline": "GEV \u25bc -8.5%",
+        "headline": "COHR \u25bc -12.7%",
         "detail": null,
         "action": "No catalyst found \u2014 check the ticker's news tab yourself before acting."
       },
@@ -9750,15 +9734,31 @@
         "priority": 3,
         "kind": "mover",
         "ticker": "LITE",
-        "headline": "LITE \u25bc -8.5%",
+        "headline": "LITE \u25bc -9.9%",
         "detail": null,
         "action": "No catalyst found \u2014 check the ticker's news tab yourself before acting."
       },
       {
         "priority": 3,
         "kind": "mover",
-        "ticker": "ETN",
-        "headline": "ETN \u25bc -7.7%",
+        "ticker": "NVT",
+        "headline": "NVT \u25bc -9.7%",
+        "detail": null,
+        "action": "No catalyst found \u2014 check the ticker's news tab yourself before acting."
+      },
+      {
+        "priority": 3,
+        "kind": "mover",
+        "ticker": "CLS",
+        "headline": "CLS \u25bc -8.8%",
+        "detail": null,
+        "action": "No catalyst found \u2014 check the ticker's news tab yourself before acting."
+      },
+      {
+        "priority": 3,
+        "kind": "mover",
+        "ticker": "GEV",
+        "headline": "GEV \u25bc -8.6%",
         "detail": null,
         "action": "No catalyst found \u2014 check the ticker's news tab yourself before acting."
       },
@@ -9766,12 +9766,12 @@
         "priority": 3,
         "kind": "mover",
         "ticker": "TLN",
-        "headline": "TLN \u25bc -7.7%",
+        "headline": "TLN \u25bc -8.4%",
         "detail": null,
         "action": "No catalyst found \u2014 check the ticker's news tab yourself before acting."
       }
     ],
-    "hidden_count": 9,
+    "hidden_count": 12,
     "quiet_day": false
   },
   "signals": {
@@ -9913,21 +9913,21 @@
       {
         "ticker": "QQQ",
         "last_researched": "2026-05-28",
-        "days_since": 109,
+        "days_since": 110,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py QQQ"
       },
       {
         "ticker": "SPY",
         "last_researched": "2026-05-28",
-        "days_since": 109,
+        "days_since": 110,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py SPY"
       },
       {
         "ticker": "^TNX",
         "last_researched": "2026-05-28",
-        "days_since": 109,
+        "days_since": 110,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
       }
@@ -10068,7 +10068,7 @@
         "verdict": "WATCHLIST",
         "price": 266.5,
         "pct_day": -12.73,
-        "pct_since": -2.21,
+        "pct_since": 0.0,
         "primary_pct": -12.73,
         "direction": "down",
         "triggers": [
@@ -10076,6 +10076,12 @@
         ],
         "reason": "No clear catalyst in current news.",
         "news": [
+          {
+            "title": "Which Tech Stocks Are Getting Hit Hardest Today",
+            "publisher": "The Wall Street Journal",
+            "date": "2026-09-14",
+            "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-14-2026/card/which-tech-stocks-are-getting-hit-hardest-today-NXMZGdwdwqjvnj32Ghbc?siteid=yhoof2&yptr=yahoo"
+          },
           {
             "title": "Oracle, Corning, Alphabet, GE Vernova, CrowdStrike, SpaceX, and More Stocks That Explain Today\u2019s Market",
             "publisher": "Barrons.com",
@@ -10087,12 +10093,6 @@
             "publisher": "StockStory",
             "date": "2026-09-14",
             "url": "https://finance.yahoo.com/markets/stocks/articles/2-p-500-stocks-impressive-185130142.html"
-          },
-          {
-            "title": "HPE Stock Is Downgraded After Rising 159% This Year. Why?",
-            "publisher": "Barrons.com",
-            "date": "2026-09-14",
-            "url": "https://www.barrons.com/articles/hpe-hewlett-packard-enterprise-stock-downgrade-4033b0b3?siteid=yhoof2&yptr=yahoo"
           }
         ]
       },
@@ -10102,7 +10102,7 @@
         "verdict": "PASS",
         "price": 835.03,
         "pct_day": -9.92,
-        "pct_since": -1.56,
+        "pct_since": 0.0,
         "primary_pct": -9.92,
         "direction": "down",
         "triggers": [
@@ -10110,6 +10110,12 @@
         ],
         "reason": "No clear catalyst in current news.",
         "news": [
+          {
+            "title": "Which Tech Stocks Are Getting Hit Hardest Today",
+            "publisher": "The Wall Street Journal",
+            "date": "2026-09-14",
+            "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-14-2026/card/which-tech-stocks-are-getting-hit-hardest-today-NXMZGdwdwqjvnj32Ghbc?siteid=yhoof2&yptr=yahoo"
+          },
           {
             "title": "HPE Stock Is Downgraded After Rising 159% This Year. Why?",
             "publisher": "Barrons.com",
@@ -10121,12 +10127,6 @@
             "publisher": "Barrons.com",
             "date": "2026-09-14",
             "url": "https://www.barrons.com/articles/corning-stock-ai-selloff-anthropic-openai-5da5fd40?siteid=yhoof2&yptr=yahoo"
-          },
-          {
-            "title": "Corning Tumbles 12% on $2B At-the-Market Equity Offering; Coherent Sinks 11%, Lumentum Drops 9%, Fabrinet Slides 6%",
-            "publisher": "24/7 Wall St.",
-            "date": "2026-09-14",
-            "url": "https://247wallst.com/investing/2026/09/14/corning-tumbles-12-on-2b-at-the-market-equity-offering-coherent-sinks-11-lumentum-drops-9-fabrinet-slides-6/"
           }
         ]
       },
@@ -10136,7 +10136,7 @@
         "verdict": "WATCHLIST",
         "price": 146.64,
         "pct_day": -9.69,
-        "pct_since": -0.57,
+        "pct_since": 0.0,
         "primary_pct": -9.69,
         "direction": "down",
         "triggers": [
@@ -10144,6 +10144,12 @@
         ],
         "reason": "No clear catalyst in current news.",
         "news": [
+          {
+            "title": "Vertiv Has Guided Itself Into A Steep Second Half",
+            "publisher": "Trefis",
+            "date": "2026-09-14",
+            "url": "https://www.trefis.com/articles/615230/vertiv-has-guided-itself-into-a-steep-second-half/2026-09-14"
+          },
           {
             "title": "Is it the Right Time to Buy TTMI Stock at a P/S Multiple of 2.59X?",
             "publisher": "Zacks",
@@ -10155,12 +10161,6 @@
             "publisher": "Zacks",
             "date": "2026-09-14",
             "url": "https://finance.yahoo.com/markets/stocks/articles/nvent-highlighted-zacks-bull-dicks-145000395.html"
-          },
-          {
-            "title": "Bull of the Day: nVent Electric (NVT)",
-            "publisher": "Zacks",
-            "date": "2026-09-14",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/bull-day-nvent-electric-nvt-090000270.html"
           }
         ]
       },
@@ -10170,7 +10170,7 @@
         "verdict": "WATCHLIST",
         "price": 316.08,
         "pct_day": -8.79,
-        "pct_since": -1.58,
+        "pct_since": 0.0,
         "primary_pct": -8.79,
         "direction": "down",
         "triggers": [
@@ -10204,7 +10204,7 @@
         "verdict": "PASS",
         "price": 874.76,
         "pct_day": -8.62,
-        "pct_since": -0.08,
+        "pct_since": 0.0,
         "primary_pct": -8.62,
         "direction": "down",
         "triggers": [
@@ -10212,6 +10212,12 @@
         ],
         "reason": "No clear catalyst in current news.",
         "news": [
+          {
+            "title": "EXCLUSIVE: Kevin Warsh\u2019s Hawkishness Is a \u2018Distraction From His Dovishness,\u2019 Truflation CEO Says",
+            "publisher": "Benzinga",
+            "date": "2026-09-14",
+            "url": "https://finance.yahoo.com/economy/policy/articles/exclusive-kevin-warsh-hawkishness-distraction-220008979.html"
+          },
           {
             "title": "Why Did GE Vernova Stock Fall Today?",
             "publisher": "Motley Fool",
@@ -10223,12 +10229,6 @@
             "publisher": "Barrons.com",
             "date": "2026-09-14",
             "url": "https://www.barrons.com/articles/stock-movers-259d1f80?siteid=yhoof2&yptr=yahoo"
-          },
-          {
-            "title": "Boy, We Were Wrong About SpaceX",
-            "publisher": "Barrons.com",
-            "date": "2026-09-14",
-            "url": "https://www.barrons.com/articles/spacex-stock-valuation-ai-e1607713?siteid=yhoof2&yptr=yahoo"
           }
         ]
       },
@@ -10238,7 +10238,7 @@
         "verdict": "PASS",
         "price": 286.52,
         "pct_day": -8.38,
-        "pct_since": -0.74,
+        "pct_since": 0.0,
         "primary_pct": -8.38,
         "direction": "down",
         "triggers": [
@@ -10272,7 +10272,7 @@
         "verdict": "PASS",
         "price": 150.09,
         "pct_day": -7.89,
-        "pct_since": -2.27,
+        "pct_since": 0.0,
         "primary_pct": -7.89,
         "direction": "down",
         "triggers": [
@@ -10306,7 +10306,7 @@
         "verdict": "PASS",
         "price": 237.39,
         "pct_day": -7.63,
-        "pct_since": -0.8,
+        "pct_since": 0.0,
         "primary_pct": -7.63,
         "direction": "down",
         "triggers": [
@@ -10315,22 +10315,22 @@
         "reason": "No clear catalyst in current news.",
         "news": [
           {
+            "title": "3 Stocks That Offer AI Exposure and Dividends",
+            "publisher": "Zacks",
+            "date": "2026-09-14",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/3-stocks-offer-ai-exposure-232700797.html"
+          },
+          {
+            "title": "Vertiv Has Guided Itself Into A Steep Second Half",
+            "publisher": "Trefis",
+            "date": "2026-09-14",
+            "url": "https://www.trefis.com/articles/615230/vertiv-has-guided-itself-into-a-steep-second-half/2026-09-14"
+          },
+          {
             "title": "Nasdaq Recovers, but Industrial Stocks Are Still Struggling",
             "publisher": "The Wall Street Journal",
             "date": "2026-09-14",
             "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-14-2026/card/nasdaq-recovers-but-industrial-stocks-are-still-struggling-wD171wDdrnMOF98iKMMQ?siteid=yhoof2&yptr=yahoo"
-          },
-          {
-            "title": "Vertiv vs. Broadcom: Which AI Infrastructure Stock Has More Upside?",
-            "publisher": "Zacks",
-            "date": "2026-09-14",
-            "url": "https://finance.yahoo.com/technology/ai/articles/vertiv-vs-broadcom-ai-infrastructure-164700745.html"
-          },
-          {
-            "title": "Is Vertiv (VRT) a Solid Growth Stock? 3 Reasons to Think \"Yes\"",
-            "publisher": "Zacks",
-            "date": "2026-09-14",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/vertiv-vrt-solid-growth-stock-164502413.html"
           }
         ]
       },
@@ -10340,7 +10340,7 @@
         "verdict": "WATCHLIST",
         "price": 393.16,
         "pct_day": -7.57,
-        "pct_since": 0.14,
+        "pct_since": 0.0,
         "primary_pct": -7.57,
         "direction": "down",
         "triggers": [
@@ -10348,6 +10348,12 @@
         ],
         "reason": "See headlines (explanation limited to top movers).",
         "news": [
+          {
+            "title": "Vertiv Has Guided Itself Into A Steep Second Half",
+            "publisher": "Trefis",
+            "date": "2026-09-14",
+            "url": "https://www.trefis.com/articles/615230/vertiv-has-guided-itself-into-a-steep-second-half/2026-09-14"
+          },
           {
             "title": "GE Vernova Stock Can Fall 50%, According to New Sell Rating",
             "publisher": "Barrons.com",
@@ -10359,12 +10365,6 @@
             "publisher": "Zacks",
             "date": "2026-09-14",
             "url": "https://finance.yahoo.com/energy/articles/fcels-microgrids-strengthen-power-reliability-175700137.html"
-          },
-          {
-            "title": "Eaton vs. Rivian Automotive: Which Industrials Stock Is a Better Buy in 2026?",
-            "publisher": "Motley Fool",
-            "date": "2026-09-14",
-            "url": "https://www.fool.com/coverage/better-buy/2026/09/14/eaton-vs-rivian-automotive-which-industrials-stock-is-a-better-buy-in-2026/"
           }
         ]
       },
@@ -10374,7 +10374,7 @@
         "verdict": "WATCHLIST",
         "price": 142.35,
         "pct_day": 7.41,
-        "pct_since": -0.17,
+        "pct_since": 0.0,
         "primary_pct": 7.41,
         "direction": "up",
         "triggers": [
@@ -10408,7 +10408,7 @@
         "verdict": "PASS",
         "price": 218.82,
         "pct_day": -7.32,
-        "pct_since": -2.06,
+        "pct_since": 0.0,
         "primary_pct": -7.32,
         "direction": "down",
         "triggers": [
@@ -10417,22 +10417,22 @@
         "reason": "See headlines (explanation limited to top movers).",
         "news": [
           {
-            "title": "Oracle, Corning, Alphabet, GE Vernova, CrowdStrike, SpaceX, and More Stocks That Explain Today\u2019s Market",
-            "publisher": "Barrons.com",
+            "title": "Applied Materials, Lam Research, Monolithic Power Systems, Marvell Technology, and MACOM Shares Are Falling, What You Need To Know",
+            "publisher": "StockStory",
             "date": "2026-09-14",
-            "url": "https://www.barrons.com/articles/stock-movers-259d1f80?siteid=yhoof2&yptr=yahoo"
+            "url": "https://finance.yahoo.com/markets/stocks/articles/applied-materials-lam-research-monolithic-235530873.html"
           },
           {
-            "title": "Marvell stock plunges as a new threat hits the AI trade",
-            "publisher": "GuruFocus.com",
+            "title": "Stocks to Watch Monday Recap: Nvidia, Oracle, SoftBank",
+            "publisher": "The Wall Street Journal",
             "date": "2026-09-14",
-            "url": "https://finance.yahoo.com/technology/ai/articles/marvell-stock-plunges-threat-hits-190920265.html"
+            "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-14-2026/card/stocks-to-watch-monday-nvidia-oracle-softbank-z8oHxWLCC1rwQAwr0oUs?siteid=yhoof2&yptr=yahoo"
           },
           {
-            "title": "HPE Stock Is Downgraded After Rising 159% This Year. Why?",
-            "publisher": "Barrons.com",
+            "title": "Which Tech Stocks Are Getting Hit Hardest Today",
+            "publisher": "The Wall Street Journal",
             "date": "2026-09-14",
-            "url": "https://www.barrons.com/articles/hpe-hewlett-packard-enterprise-stock-downgrade-4033b0b3?siteid=yhoof2&yptr=yahoo"
+            "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-14-2026/card/which-tech-stocks-are-getting-hit-hardest-today-NXMZGdwdwqjvnj32Ghbc?siteid=yhoof2&yptr=yahoo"
           }
         ]
       },
@@ -10442,7 +10442,7 @@
         "verdict": "WATCHLIST",
         "price": 1575.15,
         "pct_day": -7.25,
-        "pct_since": -1.13,
+        "pct_since": 0.0,
         "primary_pct": -7.25,
         "direction": "down",
         "triggers": [
@@ -10451,22 +10451,22 @@
         "reason": "See headlines (explanation limited to top movers).",
         "news": [
           {
+            "title": "Stocks to Watch Monday Recap: Nvidia, Oracle, SoftBank",
+            "publisher": "The Wall Street Journal",
+            "date": "2026-09-14",
+            "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-14-2026/card/stocks-to-watch-monday-nvidia-oracle-softbank-z8oHxWLCC1rwQAwr0oUs?siteid=yhoof2&yptr=yahoo"
+          },
+          {
             "title": "Update: Semiconductors Help Push US Equity Indexes Lower While Benchmark Treasury Yield Hits 5%",
             "publisher": "MT Newswires",
             "date": "2026-09-14",
             "url": "https://finance.yahoo.com/markets/stocks/articles/semiconductors-help-push-us-equity-212047694.html"
           },
           {
-            "title": "Samsung Stock Falls as $18.7 Billion Power Proposal Highlights AI Infrastructure Costs",
-            "publisher": "GuruFocus.com",
+            "title": "Tech, Media & Telecom Roundup: Market Talk",
+            "publisher": "The Wall Street Journal",
             "date": "2026-09-14",
-            "url": "https://finance.yahoo.com/technology/ai/articles/samsung-stock-falls-18-7-190452708.html"
-          },
-          {
-            "title": "ASML Eyes 110+ EUV Machines as JPM Stresses 'Strong' AI Demand",
-            "publisher": "Benzinga Prediction Markets",
-            "date": "2026-09-14",
-            "url": "https://www.benzinga.com/markets/prediction-markets/26/09/61775072/asml-euv-2028-ai-demand?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral"
+            "url": "https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-e3a3c244?siteid=yhoof2&yptr=yahoo"
           }
         ]
       },
@@ -10476,7 +10476,7 @@
         "verdict": "PASS",
         "price": 264.57,
         "pct_day": -7.09,
-        "pct_since": -0.27,
+        "pct_since": 0.0,
         "primary_pct": -7.09,
         "direction": "down",
         "triggers": [
@@ -10484,6 +10484,12 @@
         ],
         "reason": "See headlines (explanation limited to top movers).",
         "news": [
+          {
+            "title": "Here's Why Constellation Energy Corporation (CEG) Fell More Than Broader Market",
+            "publisher": "Zacks",
+            "date": "2026-09-14",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/heres-why-constellation-energy-corporation-214505410.html"
+          },
           {
             "title": "Vistra\u2019s Price Has Edged Downward Throught 2026: One Analyst Says It\u2019s Due to Double Soon.",
             "publisher": "24/7 Wall St.",
@@ -10495,12 +10501,6 @@
             "publisher": "Utility Dive",
             "date": "2026-09-14",
             "url": "https://www.utilitydive.com/news/constellation-energy-purchase-609-mw-rhode-island-gas-plant-shell/830270/"
-          },
-          {
-            "title": "Shell Just Sold a $715 Million Stake in a Major New England Asset to Constellation Energy. Here's What Investors Need to Know.",
-            "publisher": "Motley Fool",
-            "date": "2026-09-12",
-            "url": "https://www.fool.com/investing/2026/09/12/shell-just-sold-a-usd715-million-stake-in-a-major-new-england-asset-to-constellation-energy-here-s-what-investors-need-to-know/"
           }
         ]
       },
@@ -10510,7 +10510,7 @@
         "verdict": "PASS",
         "price": 170.7,
         "pct_day": -6.47,
-        "pct_since": -0.61,
+        "pct_since": 0.0,
         "primary_pct": -6.47,
         "direction": "down",
         "triggers": [
@@ -10544,7 +10544,7 @@
         "verdict": "PASS",
         "price": 181.21,
         "pct_day": -5.59,
-        "pct_since": -1.03,
+        "pct_since": 0.0,
         "primary_pct": -5.59,
         "direction": "down",
         "triggers": [
@@ -10578,7 +10578,7 @@
         "verdict": "PASS",
         "price": 212.19,
         "pct_day": -5.5,
-        "pct_since": -2.28,
+        "pct_since": 0.0,
         "primary_pct": -5.5,
         "direction": "down",
         "triggers": [
@@ -10612,7 +10612,7 @@
         "verdict": "WATCHLIST",
         "price": 924.03,
         "pct_day": -5.25,
-        "pct_since": -0.81,
+        "pct_since": 0.0,
         "primary_pct": -5.25,
         "direction": "down",
         "triggers": [
@@ -10627,10 +10627,10 @@
             "url": "https://finance.yahoo.com/video/tech-pulls-back-ai-concerns-143900977.html"
           },
           {
-            "title": "Update: Semiconductors Help Push US Equity Indexes Lower While Benchmark Treasury Yield Hits 5%",
-            "publisher": "MT Newswires",
+            "title": "Tech stocks slump after AI execs call for industry slowdown",
+            "publisher": "CBS News",
             "date": "2026-09-14",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/semiconductors-help-push-us-equity-212047694.html"
+            "url": "https://www.cbsnews.com/news/tech-stock-selloff-ai-warning/"
           },
           {
             "title": "Dow Jones Futures: Nvidia, Micron, Sandisk Dive On AI Fears; Fed Rate Hike Looms",
@@ -10646,7 +10646,7 @@
         "verdict": "PASS",
         "price": 140.73,
         "pct_day": -5.16,
-        "pct_since": -0.31,
+        "pct_since": 0.0,
         "primary_pct": -5.16,
         "direction": "down",
         "triggers": [
@@ -10654,6 +10654,12 @@
         ],
         "reason": "See headlines (explanation limited to top movers).",
         "news": [
+          {
+            "title": "Vistra Corp. (VST) Suffers a Larger Drop Than the General Market: Key Insights",
+            "publisher": "Zacks",
+            "date": "2026-09-14",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/vistra-corp-vst-suffers-larger-214505880.html"
+          },
           {
             "title": "Elon Musk Says AI Data Centers Are Lowering Electricity Prices for Consumers. Here\u2019s What We Found When We Ran the Numbers.",
             "publisher": "24/7 Wall St.",
@@ -10665,17 +10671,11 @@
             "publisher": "Zacks",
             "date": "2026-09-14",
             "url": "https://finance.yahoo.com/markets/stocks/articles/ge-vernovas-rising-free-cash-141000232.html"
-          },
-          {
-            "title": "Vistra\u2019s Price Has Edged Downward Throught 2026: One Analyst Says It\u2019s Due to Double Soon.",
-            "publisher": "24/7 Wall St.",
-            "date": "2026-09-14",
-            "url": "https://247wallst.com/investing/2026/09/14/vistras-price-has-edged-downward-throught-2026-one-analyst-says-its-due-to-double-soon/"
           }
         ]
       }
     ],
-    "movers_updated": "2026-09-14T21:56:18Z",
+    "movers_updated": "2026-09-15T00:10:55Z",
     "target_hits": [
       {
         "ticker": "EIX",
@@ -10882,6 +10882,22 @@
       {
         "ticker": "AAPL",
         "verdict": "WATCHLIST",
+        "title": "PayPal takes No. 1 in tech power ranking",
+        "publisher": "TheStreet",
+        "date": "2026-09-14",
+        "url": "https://www.thestreet.com/crypto/markets/paypal-takes-no-1-in-tech-power-ranking"
+      },
+      {
+        "ticker": "AAPL",
+        "verdict": "WATCHLIST",
+        "title": "Maryland Seeks To Reinstate Digital Ad Tax",
+        "publisher": "MediaPost",
+        "date": "2026-09-14",
+        "url": "https://www.mediapost.com/publications/article/417948/maryland-seeks-to-reinstate-digital-ad-tax.html"
+      },
+      {
+        "ticker": "AAPL",
+        "verdict": "WATCHLIST",
         "title": "OpenAI Left Exposed After Apple's Surprise Legal Break",
         "publisher": "GuruFocus.com",
         "date": "2026-09-14",
@@ -10912,22 +10928,6 @@
         "url": "https://qz.com/x-corp-spacexai-drop-antitrust-lawsuit-apple-091426"
       },
       {
-        "ticker": "AAPL",
-        "verdict": "WATCHLIST",
-        "title": "Apple iPhone 18 Pro pre-orders point to mixed demand signals, brokers say",
-        "publisher": "Proactive",
-        "date": "2026-09-14",
-        "url": "https://www.proactiveinvestors.com/companies/news/1098513/apple-iphone-18-pro-pre-orders-point-to-mixed-demand-signals-brokers-say-1098513.html"
-      },
-      {
-        "ticker": "AAPL",
-        "verdict": "WATCHLIST",
-        "title": "Apple's Foldable Phone Has Arrived. Here's Why I Don't Think It'll Send the Stock Soaring",
-        "publisher": "Motley Fool",
-        "date": "2026-09-14",
-        "url": "https://www.fool.com/investing/2026/09/14/apple-s-foldable-phone-has-arrived-here-s-why-i-don-t-think-it-ll-send-the-stock-soaring/"
-      },
-      {
         "ticker": "MSFT",
         "verdict": "WATCHLIST",
         "title": "Tech stocks today: AI warnings send shock through chip stocks",
@@ -10954,26 +10954,26 @@
       {
         "ticker": "MSFT",
         "verdict": "WATCHLIST",
-        "title": "Big Tech Issued About $220 Billion of Bonds. Alphabet and Meta Show How AI Is Warping the Credit Market",
-        "publisher": "Insider Monkey",
+        "title": "Microsoft Just Made a Move That Could Put More Pressure on Its Azure Business. Here's Why It Could Turn Out Great for the Stock",
+        "publisher": "Motley Fool",
         "date": "2026-09-14",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/big-tech-issued-220-billion-212946047.html"
+        "url": "https://www.fool.com/investing/2026/09/14/microsoft-just-made-a-move-that-could-put-more-pressure-on-its-azure-business-here-s-why-it-could-turn-out-great-for-the-stock/"
       },
       {
         "ticker": "MSFT",
         "verdict": "WATCHLIST",
-        "title": "Amazon and Microsoft Can Buy GPUs. But U.S. Construction Is Short 439,000 Workers",
-        "publisher": "Insider Monkey",
+        "title": "S&P 500, Nasdaq, Dow Drop On Chipmaker Weakness, Treasury Yield Pressure \u2014 MSFT, NFLX, ORCL, CRWD, RBLX In Focus",
+        "publisher": "Stocktwits",
         "date": "2026-09-14",
-        "url": "https://finance.yahoo.com/technology/ai/articles/amazon-microsoft-buy-gpus-u-212115814.html"
+        "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-dow-drop-on-chipmaker-weakness/cZtm0WRRBTI"
       },
       {
         "ticker": "MSFT",
         "verdict": "WATCHLIST",
-        "title": "Microsoft Publishes AI Limits Days Into the Slowdown Debate",
-        "publisher": "GuruFocus.com",
+        "title": "Talk of AI pause slams Nvidia, AMD and Intel as fears of doomsday scenarios spread",
+        "publisher": "LA Times",
         "date": "2026-09-14",
-        "url": "https://tech.yahoo.com/ai/copilot/articles/microsoft-publishes-ai-limits-days-211518223.html"
+        "url": "https://finance.yahoo.com/technology/ai/articles/talk-ai-pause-slams-nvidia-214716918.html"
       },
       {
         "ticker": "GOOGL",
@@ -10994,6 +10994,14 @@
       {
         "ticker": "GOOGL",
         "verdict": "WATCHLIST",
+        "title": "'We owe it to humanity to try': Anthropic's CEO Just Called For Global AI Slowdown. Elon Musk, Sam Altman, and Google\u2019s AI Chief Agree.",
+        "publisher": "Motley Fool",
+        "date": "2026-09-14",
+        "url": "https://www.fool.com/investing/2026/09/14/we-owe-it-to-humanity-to-try-anthropics-ceo-just-called-for-global-ai-slowdown-elon-musk-sam-altman-and-googles-ai-chief-agree/"
+      },
+      {
+        "ticker": "GOOGL",
+        "verdict": "WATCHLIST",
         "title": "Big Tech Issued About $220 Billion of Bonds. Alphabet and Meta Show How AI Is Warping the Credit Market",
         "publisher": "Insider Monkey",
         "date": "2026-09-14",
@@ -11002,26 +11010,18 @@
       {
         "ticker": "GOOGL",
         "verdict": "WATCHLIST",
+        "title": "Maryland Seeks To Reinstate Digital Ad Tax",
+        "publisher": "MediaPost",
+        "date": "2026-09-14",
+        "url": "https://www.mediapost.com/publications/article/417948/maryland-seeks-to-reinstate-digital-ad-tax.html"
+      },
+      {
+        "ticker": "GOOGL",
+        "verdict": "WATCHLIST",
         "title": "Stock Market Today: Dow Falls, Cyber Plays Soar Amid AI Fears; Bessent Makes This Move On Iran (Live Coverage)",
         "publisher": "Investor's Business Daily",
         "date": "2026-09-14",
         "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-oil-prices-nvidia-nvda-stock-ai-warning/?src=A00220&yptr=yahoo"
-      },
-      {
-        "ticker": "GOOGL",
-        "verdict": "WATCHLIST",
-        "title": "Oracle, Corning, Alphabet, GE Vernova, CrowdStrike, SpaceX, and More Stocks That Explain Today\u2019s Market",
-        "publisher": "Barrons.com",
-        "date": "2026-09-14",
-        "url": "https://www.barrons.com/articles/stock-movers-259d1f80?siteid=yhoof2&yptr=yahoo"
-      },
-      {
-        "ticker": "GOOGL",
-        "verdict": "WATCHLIST",
-        "title": "Is META Stock\u2019s $130B AI Buildout Your Ticket to an 8.7% Yield?",
-        "publisher": "Trefis",
-        "date": "2026-09-14",
-        "url": "https://www.trefis.com/articles/615208/is-meta-stocks-130b-ai-buildout-your-ticket-to-an-8-7-yield/2026-09-14"
       },
       {
         "ticker": "AMZN",
@@ -11038,6 +11038,14 @@
         "publisher": "Yahoo Finance Video",
         "date": "2026-09-14",
         "url": "https://finance.yahoo.com/video/could-dario-amodeis-ai-safety-135823957.html"
+      },
+      {
+        "ticker": "AMZN",
+        "verdict": "WATCHLIST",
+        "title": "The Gulf\u2019s AI Nightmare Came Courtesy of an Iranian Drone",
+        "publisher": "The Wall Street Journal",
+        "date": "2026-09-14",
+        "url": "https://www.wsj.com/world/middle-east/the-gulfs-ai-nightmare-came-courtesy-of-an-iranian-drone-3f313cb3?siteid=yhoof2&yptr=yahoo"
       },
       {
         "ticker": "AMZN",
@@ -11064,14 +11072,6 @@
         "url": "https://finance.yahoo.com/technology/ai/articles/amazon-microsoft-buy-gpus-u-212115814.html"
       },
       {
-        "ticker": "AMZN",
-        "verdict": "WATCHLIST",
-        "title": "Is META Stock\u2019s $130B AI Buildout Your Ticket to an 8.7% Yield?",
-        "publisher": "Trefis",
-        "date": "2026-09-14",
-        "url": "https://www.trefis.com/articles/615208/is-meta-stocks-130b-ai-buildout-your-ticket-to-an-8-7-yield/2026-09-14"
-      },
-      {
         "ticker": "NVDA",
         "verdict": "WATCHLIST",
         "title": "Tech pulls back on AI concerns, cybersecurity takes a step up",
@@ -11090,34 +11090,34 @@
       {
         "ticker": "NVDA",
         "verdict": "WATCHLIST",
-        "title": "Why S&P Global Stock Beat the Market on Monday",
+        "title": "Prediction: Interactive Brokers Ends 2026 With More Than 6 Million Customer Accounts",
         "publisher": "Motley Fool",
         "date": "2026-09-14",
-        "url": "https://www.fool.com/investing/2026/09/14/why-sp-global-stock-beat-the-market-on-monday/"
+        "url": "https://www.fool.com/investing/2026/09/14/prediction-interactive-brokers-ends-2026-with-more-than-6-million-customer-accounts/"
       },
       {
         "ticker": "NVDA",
         "verdict": "WATCHLIST",
-        "title": "Trump calls Nvidia CEO onstage to dismiss AI regulation concerns",
-        "publisher": "Investing.com",
+        "title": "IREN Stock Slips, But A Top Wall Street Bank Is Bullish With Double-Upgrade And 50% Upside",
+        "publisher": "Stocktwits",
         "date": "2026-09-14",
-        "url": "https://www.yahoo.com/news/politics/articles/trump-calls-nvidia-ceo-onstage-213324066.html"
+        "url": "https://stocktwits.com/news-articles/markets/equity/iren-stock-slips-but-a-top-wall-street-bank-is-bullish/cZtmjA6RBTB"
       },
       {
         "ticker": "NVDA",
         "verdict": "WATCHLIST",
-        "title": "Oklo Has Massive Potential Due to Artificial Intelligence, but the Stock Is Sinking. Here's What I'd Do",
+        "title": "Microsoft Just Made a Move That Could Put More Pressure on Its Azure Business. Here's Why It Could Turn Out Great for the Stock",
         "publisher": "Motley Fool",
         "date": "2026-09-14",
-        "url": "https://www.fool.com/investing/2026/09/14/oklo-has-massive-potential-due-to-artificial-intelligence-but-the-stock-is-sinking-here-s-what-i-d-do/"
+        "url": "https://www.fool.com/investing/2026/09/14/microsoft-just-made-a-move-that-could-put-more-pressure-on-its-azure-business-here-s-why-it-could-turn-out-great-for-the-stock/"
       },
       {
         "ticker": "NVDA",
         "verdict": "WATCHLIST",
-        "title": "New Fed Chair Warsh Vowed a Policy Overhaul to Crush Inflation When He Took Office. Has He Followed Through?",
-        "publisher": "Motley Fool",
+        "title": "Tech stocks slump after AI execs call for industry slowdown",
+        "publisher": "CBS News",
         "date": "2026-09-14",
-        "url": "https://www.fool.com/investing/2026/09/14/new-fed-chair-warsh-policy-crush-inflation/"
+        "url": "https://www.cbsnews.com/news/tech-stock-selloff-ai-warning/"
       },
       {
         "ticker": "META",
@@ -11178,6 +11178,14 @@
       {
         "ticker": "AVGO",
         "verdict": "WATCHLIST",
+        "title": "3 Stocks That Offer AI Exposure and Dividends",
+        "publisher": "Zacks",
+        "date": "2026-09-14",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/3-stocks-offer-ai-exposure-232700797.html"
+      },
+      {
+        "ticker": "AVGO",
+        "verdict": "WATCHLIST",
         "title": "Broadcom Drops Over 4% as $21.7 Billion AI Forecast Meets Slowdown Fears",
         "publisher": "GuruFocus.com",
         "date": "2026-09-14",
@@ -11208,12 +11216,12 @@
         "url": "https://finance.yahoo.com/news/ai-warning-sends-nvidia-amd-190909953.html"
       },
       {
-        "ticker": "AVGO",
+        "ticker": "V",
         "verdict": "WATCHLIST",
-        "title": "Nvidia Stock Drops. It\u2019s Still the Best Chip Bet in an AI Slowdown.",
-        "publisher": "Barrons.com",
+        "title": "Visa (V) Increases Despite Market Slip: Here's What You Need to Know",
+        "publisher": "Zacks",
         "date": "2026-09-14",
-        "url": "https://www.barrons.com/articles/nvidia-stock-price-ai-chip-slowdown-6db14d5e?siteid=yhoof2&yptr=yahoo"
+        "url": "https://finance.yahoo.com/markets/stocks/articles/visa-v-increases-despite-market-214503356.html"
       },
       {
         "ticker": "V",
@@ -11256,12 +11264,12 @@
         "url": "https://finance.yahoo.com/markets/stocks/articles/2-profitable-stocks-long-term-090308156.html"
       },
       {
-        "ticker": "V",
+        "ticker": "ASML",
         "verdict": "WATCHLIST",
-        "title": "AI agents to start spending your money with Visa, Mastercard",
-        "publisher": "TheStreet",
+        "title": "Stocks to Watch Monday Recap: Nvidia, Oracle, SoftBank",
+        "publisher": "The Wall Street Journal",
         "date": "2026-09-14",
-        "url": "https://www.thestreet.com/investing/stocks/ai-agents-to-start-spending-your-money-with-visa-mastercard"
+        "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-14-2026/card/stocks-to-watch-monday-nvidia-oracle-softbank-z8oHxWLCC1rwQAwr0oUs?siteid=yhoof2&yptr=yahoo"
       },
       {
         "ticker": "ASML",
@@ -11270,14 +11278,6 @@
         "publisher": "MT Newswires",
         "date": "2026-09-14",
         "url": "https://finance.yahoo.com/markets/stocks/articles/semiconductors-help-push-us-equity-212047694.html"
-      },
-      {
-        "ticker": "ASML",
-        "verdict": "WATCHLIST",
-        "title": "Samsung Stock Falls as $18.7 Billion Power Proposal Highlights AI Infrastructure Costs",
-        "publisher": "GuruFocus.com",
-        "date": "2026-09-14",
-        "url": "https://finance.yahoo.com/technology/ai/articles/samsung-stock-falls-18-7-190452708.html"
       }
     ],
     "insider_alerts": [],
@@ -11398,7 +11398,7 @@
         "drawdown_pct": -16.9,
         "price": 383.55,
         "pe": 24.681467,
-        "forward_pe": 17.095774,
+        "forward_pe": 17.01221,
         "verdict": "PASS",
         "next_action": "DROP \u2014 no theme fit, regulatory overhang, 2% growth. Outside mandate."
       },
