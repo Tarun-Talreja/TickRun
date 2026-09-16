@@ -1,28 +1,16 @@
 {
-  "generated_at": "2026-09-15T23:54:53Z",
+  "generated_at": "2026-09-16T17:23:55Z",
   "pullback_alerts": [
     {
       "ticker": "BWXT",
       "name": "BWX Technologies, Inc.",
       "theme": "nuclear_smr",
       "verdict": "WATCHLIST",
-      "price": 146.7,
+      "price": 146.63,
       "high_52w": 241.82,
-      "drawdown_pct": -39.3,
+      "drawdown_pct": -39.4,
       "severity": "STRONG",
       "thesis": "Nuclear energy play with strong revenue growth and profitability at a reasonable valuation.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "theme": "networking_infra",
-      "verdict": "WATCHLIST",
-      "price": 271.17,
-      "high_52w": 440.0,
-      "drawdown_pct": -38.4,
-      "severity": "STRONG",
-      "thesis": "High-growth laser technology company with expanding margins, but high valuation and negative free cash flow.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -30,23 +18,23 @@
       "name": "Intuitive Surgical, Inc.",
       "theme": "healthcare_innovation",
       "verdict": "WATCHLIST",
-      "price": 377.16,
+      "price": 383.7343,
       "high_52w": 603.88,
-      "drawdown_pct": -37.5,
+      "drawdown_pct": -36.5,
       "severity": "STRONG",
       "thesis": "High-growth medical device company with strong financials and potential for long-term expansion in the robotic-assisted surgery market.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
-      "ticker": "CLS",
-      "name": "Celestica Inc.",
-      "theme": "datacenter_infra",
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "theme": "networking_infra",
       "verdict": "WATCHLIST",
-      "price": 316.81,
-      "high_52w": 474.03,
-      "drawdown_pct": -33.2,
+      "price": 287.81,
+      "high_52w": 440.0,
+      "drawdown_pct": -34.6,
       "severity": "MODERATE",
-      "thesis": "AI infrastructure play with 62.4% YoY revenue growth at a forward P/E of 15.2x.",
+      "thesis": "High-growth laser technology company with expanding margins, but high valuation and negative free cash flow.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -54,11 +42,23 @@
       "name": "Edison International",
       "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "price": 54.56,
+      "price": 55.11,
       "high_52w": 81.62,
-      "drawdown_pct": -33.2,
+      "drawdown_pct": -32.5,
       "severity": "MODERATE",
       "thesis": "Edison International offers a relatively cheap valuation at 8.7x trailing earnings for a stable utility company with 7.7% YoY revenue growth.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "CLS",
+      "name": "Celestica Inc.",
+      "theme": "datacenter_infra",
+      "verdict": "WATCHLIST",
+      "price": 325.015,
+      "high_52w": 474.03,
+      "drawdown_pct": -31.4,
+      "severity": "MODERATE",
+      "thesis": "AI infrastructure play with 62.4% YoY revenue growth at a forward P/E of 15.2x.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -66,9 +66,9 @@
       "name": "Broadcom Inc.",
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
-      "price": 339.27,
+      "price": 340.28,
       "high_52w": 495.0,
-      "drawdown_pct": -31.5,
+      "drawdown_pct": -31.3,
       "severity": "MODERATE",
       "thesis": "Broadcom is a high-quality semiconductor company with strong revenue growth and a reasonable valuation at 18.4x forward earnings.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -78,9 +78,9 @@
       "name": "GE HealthCare Technologies Inc.",
       "theme": "healthcare_innovation",
       "verdict": "WATCHLIST",
-      "price": 64.07,
+      "price": 63.795,
       "high_52w": 89.77,
-      "drawdown_pct": -28.6,
+      "drawdown_pct": -28.9,
       "severity": "MODERATE",
       "thesis": "Reasonable valuation at 13.3x forward earnings for a quality healthcare technology company with a strong product innovation pipeline.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -90,9 +90,9 @@
       "name": "ServiceNow, Inc.",
       "theme": "cybersecurity",
       "verdict": "WATCHLIST",
-      "price": 141.9,
+      "price": 141.105,
       "high_52w": 194.726,
-      "drawdown_pct": -27.1,
+      "drawdown_pct": -27.5,
       "severity": "MODERATE",
       "thesis": "High-growth software company with expanding AI capabilities, but high valuation multiples.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -102,35 +102,11 @@
       "name": "Micron Technology, Inc.",
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
-      "price": 927.6,
+      "price": 930.29,
       "high_52w": 1255.0,
-      "drawdown_pct": -26.1,
+      "drawdown_pct": -25.9,
       "severity": "MODERATE",
       "thesis": "AI infrastructure play with strong growth and reasonable valuation at 5.9x forward earnings.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "NVT",
-      "name": "nVent Electric plc",
-      "theme": "power_grid",
-      "verdict": "WATCHLIST",
-      "price": 146.8,
-      "high_52w": 184.64,
-      "drawdown_pct": -20.5,
-      "severity": "MODERATE",
-      "thesis": "Reasonably valued data center power play with strong backlog growth.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "ASML",
-      "name": "ASML Holding N.V.",
-      "theme": "edge_ai_silicon",
-      "verdict": "WATCHLIST",
-      "price": 1591.48,
-      "high_52w": 1999.96,
-      "drawdown_pct": -20.4,
-      "severity": "MODERATE",
-      "thesis": "ASML is a high-growth, high-margin leader in the AI infrastructure theme, with a strong track record of revenue growth and profitability.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     }
   ],
@@ -138,21 +114,21 @@
     {
       "ticker": "QQQ",
       "last_researched": "2026-05-28",
-      "days_since": 110,
+      "days_since": 111,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py QQQ"
     },
     {
       "ticker": "SPY",
       "last_researched": "2026-05-28",
-      "days_since": 110,
+      "days_since": 111,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py SPY"
     },
     {
       "ticker": "^TNX",
       "last_researched": "2026-05-28",
-      "days_since": 110,
+      "days_since": 111,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
     }
