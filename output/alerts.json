@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T23:49:17Z",
+  "generated_at": "2026-09-20T23:39:20Z",
   "pullback_alerts": [
     {
       "ticker": "BWXT",
@@ -102,21 +102,21 @@
     {
       "ticker": "QQQ",
       "last_researched": "2026-05-28",
-      "days_since": 113,
+      "days_since": 115,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py QQQ"
     },
     {
       "ticker": "SPY",
       "last_researched": "2026-05-28",
-      "days_since": 113,
+      "days_since": 115,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py SPY"
     },
     {
       "ticker": "^TNX",
       "last_researched": "2026-05-28",
-      "days_since": 113,
+      "days_since": 115,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
     }

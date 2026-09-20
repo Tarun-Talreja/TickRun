@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-09-20T14:24:50Z",
-  "quotes_updated": "2026-09-20T14:23:51Z",
+  "last_built": "2026-09-20T23:39:21Z",
+  "quotes_updated": "2026-09-20T23:39:02Z",
   "portfolio": {
     "total_value": 0,
     "core": [
@@ -6328,18 +6328,13 @@
     }
   },
   "digest": {
-    "generated_at": "2026-09-13T23:43:30Z",
+    "generated_at": "2026-09-20T23:39:21Z",
     "narrative": null,
     "buy_ready": [],
     "movers": [
       {
-        "ticker": "OKLO",
-        "pct": -9.18,
-        "reason": "No clear catalyst in current news."
-      },
-      {
-        "ticker": "CLS",
-        "pct": 6.56,
+        "ticker": "COHR",
+        "pct": 7.22,
         "reason": "No clear catalyst in current news."
       }
     ],
@@ -6347,27 +6342,42 @@
       {
         "ticker": "GIS",
         "date": "2026-09-23",
-        "days_until": 9
+        "days_until": 2
       },
       {
         "ticker": "PAYX",
         "date": "2026-09-23",
-        "days_until": 9
+        "days_until": 2
       },
       {
         "ticker": "COST",
         "date": "2026-09-24",
-        "days_until": 10
+        "days_until": 3
       },
       {
         "ticker": "MU",
         "date": "2026-09-30",
-        "days_until": 16
+        "days_until": 9
       },
       {
         "ticker": "STZ",
         "date": "2026-10-06",
+        "days_until": 15
+      },
+      {
+        "ticker": "UNH",
+        "date": "2026-10-13",
         "days_until": 22
+      },
+      {
+        "ticker": "ASML",
+        "date": "2026-10-14",
+        "days_until": 23
+      },
+      {
+        "ticker": "NFLX",
+        "date": "2026-10-20",
+        "days_until": 29
       }
     ],
     "sec_stakes": [],
@@ -9896,21 +9906,21 @@
       {
         "ticker": "QQQ",
         "last_researched": "2026-05-28",
-        "days_since": 113,
+        "days_since": 115,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py QQQ"
       },
       {
         "ticker": "SPY",
         "last_researched": "2026-05-28",
-        "days_since": 113,
+        "days_since": 115,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py SPY"
       },
       {
         "ticker": "^TNX",
         "last_researched": "2026-05-28",
-        "days_since": 113,
+        "days_since": 115,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
       }
@@ -9920,7 +9930,7 @@
         "ticker": "GIS",
         "name": "General Mills, Inc.",
         "date": "2026-09-23",
-        "days_until": 4,
+        "days_until": 2,
         "theme": "defensive_income",
         "verdict": "PASS",
         "thesis": "General Mills is a stable, cash-generative consumer goods company with a modest valuation, but limited growth potential.",
@@ -9930,7 +9940,7 @@
         "ticker": "PAYX",
         "name": "Paychex, Inc.",
         "date": "2026-09-23",
-        "days_until": 4,
+        "days_until": 2,
         "theme": "quality_compounder",
         "verdict": "WATCHLIST",
         "thesis": "Payroll for SMBs \u2014 44% op margin, 20% growth, 4.7% dividend yield, 16.8x fwd PE. -38.6% from ATH. High-quality at a genuinely cheap multiple with strong income.",
@@ -9940,7 +9950,7 @@
         "ticker": "COST",
         "name": "Costco Wholesale Corporation",
         "date": "2026-09-24",
-        "days_until": 5,
+        "days_until": 3,
         "theme": "uncategorized",
         "verdict": "PASS",
         "thesis": "Premium retailer with 52x PE and 3.7% operating margin. Exceptional business, wrong theme for this portfolio.",
@@ -9950,7 +9960,7 @@
         "ticker": "MU",
         "name": "Micron Technology, Inc.",
         "date": "2026-09-30",
-        "days_until": 11,
+        "days_until": 9,
         "theme": "edge_ai_silicon",
         "verdict": "WATCHLIST",
         "thesis": "AI infrastructure play with strong growth and reasonable valuation at 5.9x forward earnings.",
@@ -9960,7 +9970,7 @@
         "ticker": "STZ",
         "name": "Constellation Brands, Inc.",
         "date": "2026-10-06",
-        "days_until": 17,
+        "days_until": 15,
         "theme": "defensive_income",
         "verdict": "PASS",
         "thesis": "Constellation Brands offers a stable, dividend-paying investment opportunity in the consumer goods sector, with a diversified portfolio of brands and a strong position in the beverage market, but lacks direct exposure to high-growth themes.",
@@ -9970,7 +9980,7 @@
         "ticker": "UNH",
         "name": "UnitedHealth Group Incorporated",
         "date": "2026-10-13",
-        "days_until": 24,
+        "days_until": 22,
         "theme": "uncategorized",
         "verdict": "PASS",
         "thesis": "Largest US health insurer. 2% revenue growth, 8% op margin. DOJ investigation ongoing. No AI infrastructure exposure.",
@@ -9980,11 +9990,21 @@
         "ticker": "ASML",
         "name": "ASML Holding N.V.",
         "date": "2026-10-14",
-        "days_until": 25,
+        "days_until": 23,
         "theme": "edge_ai_silicon",
         "verdict": "WATCHLIST",
         "thesis": "ASML is a high-growth, high-margin leader in the AI infrastructure theme, with a strong track record of revenue growth and profitability.",
         "action": "Review thesis before earnings. Re-run research_ticker.py ASML after."
+      },
+      {
+        "ticker": "NFLX",
+        "name": "Netflix, Inc.",
+        "date": "2026-10-20",
+        "days_until": 29,
+        "theme": "consumer_media",
+        "verdict": "PASS",
+        "thesis": "Netflix is a reasonably valued streaming service with consistent revenue growth and a solid business model, but it does not fit well into the desired themes.",
+        "action": "Review thesis before earnings. Re-run research_ticker.py NFLX after."
       }
     ],
     "sec_ownership_stakes": [],
