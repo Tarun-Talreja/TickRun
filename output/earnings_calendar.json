@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T18:23:26Z",
+  "generated_at": "2026-09-21T22:05:25Z",
   "lookahead_days": 30,
   "upcoming_earnings": [
     {
@@ -26,7 +26,7 @@
       "ticker": "COST",
       "name": "Costco Wholesale Corporation",
       "date": "2026-09-24",
-      "days_until": 3,
+      "days_until": 2,
       "theme": "uncategorized",
       "verdict": "PASS",
       "thesis": "Premium retailer with 52x PE and 3.7% operating margin. Exceptional business, wrong theme for this portfolio.",
@@ -36,7 +36,7 @@
       "ticker": "MU",
       "name": "Micron Technology, Inc.",
       "date": "2026-09-30",
-      "days_until": 9,
+      "days_until": 8,
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
       "thesis": "AI infrastructure play with strong growth and reasonable valuation at 5.9x forward earnings.",
@@ -46,7 +46,7 @@
       "ticker": "STZ",
       "name": "Constellation Brands, Inc.",
       "date": "2026-10-06",
-      "days_until": 15,
+      "days_until": 14,
       "theme": "defensive_income",
       "verdict": "PASS",
       "thesis": "Constellation Brands offers a stable, dividend-paying investment opportunity in the consumer goods sector, with a diversified portfolio of brands and a strong position in the beverage market, but lacks direct exposure to high-growth themes.",
@@ -76,11 +76,21 @@
       "ticker": "NFLX",
       "name": "Netflix, Inc.",
       "date": "2026-10-20",
-      "days_until": 29,
+      "days_until": 28,
       "theme": "consumer_media",
       "verdict": "PASS",
       "thesis": "Netflix is a reasonably valued streaming service with consistent revenue growth and a solid business model, but it does not fit well into the desired themes.",
       "action": "Review thesis before earnings. Re-run research_ticker.py NFLX after."
+    },
+    {
+      "ticker": "IBM",
+      "name": "International Business Machines Corporation",
+      "date": "2026-10-21",
+      "days_until": 29,
+      "theme": "mega_cap_ai",
+      "verdict": "PASS",
+      "thesis": "Large-cap technology company with a growing presence in AI infrastructure, valued at 17.9x forward earnings.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py IBM after."
     }
   ]
 }
