@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-23T17:35:17Z",
+  "generated_at": "2026-09-23T20:51:20Z",
   "lookahead_days": 30,
   "upcoming_earnings": [
     {
       "ticker": "COST",
       "name": "Costco Wholesale Corporation",
       "date": "2026-09-24",
-      "days_until": 1,
+      "days_until": 0,
       "theme": "uncategorized",
       "verdict": "PASS",
       "thesis": "Premium retailer with 52x PE and 3.7% operating margin. Exceptional business, wrong theme for this portfolio.",
@@ -16,7 +16,7 @@
       "ticker": "MU",
       "name": "Micron Technology, Inc.",
       "date": "2026-09-30",
-      "days_until": 7,
+      "days_until": 6,
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
       "thesis": "AI infrastructure play with strong growth and reasonable valuation at 5.9x forward earnings.",
@@ -26,7 +26,7 @@
       "ticker": "STZ",
       "name": "Constellation Brands, Inc.",
       "date": "2026-10-06",
-      "days_until": 13,
+      "days_until": 12,
       "theme": "defensive_income",
       "verdict": "PASS",
       "thesis": "Constellation Brands offers a stable, dividend-paying investment opportunity in the consumer goods sector, with a diversified portfolio of brands and a strong position in the beverage market, but lacks direct exposure to high-growth themes.",
@@ -63,6 +63,26 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py TSM after."
     },
     {
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical, Inc.",
+      "date": "2026-10-20",
+      "days_until": 26,
+      "theme": "healthcare_innovation",
+      "verdict": "WATCHLIST",
+      "thesis": "High-growth medical device company with strong financials and potential for long-term expansion in the robotic-assisted surgery market.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py ISRG after."
+    },
+    {
+      "ticker": "NFLX",
+      "name": "Netflix, Inc.",
+      "date": "2026-10-20",
+      "days_until": 26,
+      "theme": "consumer_media",
+      "verdict": "PASS",
+      "thesis": "Netflix is a reasonably valued streaming service with consistent revenue growth and a solid business model, but it does not fit well into the desired themes.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py NFLX after."
+    },
+    {
       "ticker": "DHR",
       "name": "Danaher Corporation",
       "date": "2026-10-21",
@@ -73,24 +93,14 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py DHR after."
     },
     {
-      "ticker": "ISRG",
-      "name": "Intuitive Surgical, Inc.",
-      "date": "2026-10-20",
+      "ticker": "IBM",
+      "name": "International Business Machines Corporation",
+      "date": "2026-10-21",
       "days_until": 27,
-      "theme": "healthcare_innovation",
-      "verdict": "WATCHLIST",
-      "thesis": "High-growth medical device company with strong financials and potential for long-term expansion in the robotic-assisted surgery market.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py ISRG after."
-    },
-    {
-      "ticker": "NFLX",
-      "name": "Netflix, Inc.",
-      "date": "2026-10-20",
-      "days_until": 27,
-      "theme": "consumer_media",
+      "theme": "mega_cap_ai",
       "verdict": "PASS",
-      "thesis": "Netflix is a reasonably valued streaming service with consistent revenue growth and a solid business model, but it does not fit well into the desired themes.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py NFLX after."
+      "thesis": "Large-cap technology company with a growing presence in AI infrastructure, valued at 17.9x forward earnings.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py IBM after."
     },
     {
       "ticker": "CMCSA",
@@ -101,16 +111,6 @@
       "verdict": "PASS",
       "thesis": "Comcast is a cheap media conglomerate with a strong balance sheet and promising wireless and streaming businesses, but facing significant risks from cord-cutting and intense competition.",
       "action": "Review thesis before earnings. Re-run research_ticker.py CMCSA after."
-    },
-    {
-      "ticker": "IBM",
-      "name": "International Business Machines Corporation",
-      "date": "2026-10-21",
-      "days_until": 28,
-      "theme": "mega_cap_ai",
-      "verdict": "PASS",
-      "thesis": "Large-cap technology company with a growing presence in AI infrastructure, valued at 17.9x forward earnings.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py IBM after."
     }
   ]
 }
