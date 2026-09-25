@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T00:15:00Z",
+  "generated_at": "2026-09-25T17:37:58Z",
   "lookahead_days": 30,
   "upcoming_earnings": [
     {
@@ -26,7 +26,7 @@
       "ticker": "UNH",
       "name": "UnitedHealth Group Incorporated",
       "date": "2026-10-13",
-      "days_until": 18,
+      "days_until": 17,
       "theme": "uncategorized",
       "verdict": "PASS",
       "thesis": "Largest US health insurer. 2% revenue growth, 8% op margin. DOJ investigation ongoing. No AI infrastructure exposure.",
@@ -36,7 +36,7 @@
       "ticker": "ASML",
       "name": "ASML Holding N.V.",
       "date": "2026-10-14",
-      "days_until": 19,
+      "days_until": 18,
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
       "thesis": "ASML is a high-growth, high-margin leader in the AI infrastructure theme, with a strong track record of revenue growth and profitability.",
@@ -46,11 +46,21 @@
       "ticker": "TSM",
       "name": "Taiwan Semiconductor Manufacturing Company Limited",
       "date": "2026-10-15",
-      "days_until": 20,
+      "days_until": 19,
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
       "thesis": "A leading AI infrastructure play with strong revenue growth and high profitability at a reasonable valuation.",
       "action": "Review thesis before earnings. Re-run research_ticker.py TSM after."
+    },
+    {
+      "ticker": "DHR",
+      "name": "Danaher Corporation",
+      "date": "2026-10-21",
+      "days_until": 25,
+      "theme": "healthcare_innovation",
+      "verdict": "PASS",
+      "thesis": "Danaher Corporation is a diversified science and technology company with a premium valuation and moderate growth prospects.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py DHR after."
     },
     {
       "ticker": "ISRG",
@@ -73,14 +83,14 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py NFLX after."
     },
     {
-      "ticker": "DHR",
-      "name": "Danaher Corporation",
-      "date": "2026-10-21",
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "date": "2026-10-22",
       "days_until": 26,
-      "theme": "healthcare_innovation",
+      "theme": "consumer_media",
       "verdict": "PASS",
-      "thesis": "Danaher Corporation is a diversified science and technology company with a premium valuation and moderate growth prospects.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py DHR after."
+      "thesis": "Comcast is a cheap media conglomerate with a strong balance sheet and promising wireless and streaming businesses, but facing significant risks from cord-cutting and intense competition.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py CMCSA after."
     },
     {
       "ticker": "IBM",
@@ -91,16 +101,6 @@
       "verdict": "PASS",
       "thesis": "Large-cap technology company with a growing presence in AI infrastructure, valued at 17.9x forward earnings.",
       "action": "Review thesis before earnings. Re-run research_ticker.py IBM after."
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "Comcast Corporation",
-      "date": "2026-10-22",
-      "days_until": 27,
-      "theme": "consumer_media",
-      "verdict": "PASS",
-      "thesis": "Comcast is a cheap media conglomerate with a strong balance sheet and promising wireless and streaming businesses, but facing significant risks from cord-cutting and intense competition.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py CMCSA after."
     }
   ]
 }
