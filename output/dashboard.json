@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-09-27T15:29:07Z",
-  "quotes_updated": "2026-09-27T15:28:05Z",
+  "last_built": "2026-09-28T00:04:42Z",
+  "quotes_updated": "2026-09-28T00:04:23Z",
   "portfolio": {
     "total_value": 0,
     "core": [
@@ -222,7 +222,7 @@
         "revenue_growth": 24.2,
         "op_margin": 34.0,
         "pe": 17.273733,
-        "forward_pe": 23.083103,
+        "forward_pe": 22.774998,
         "short_percent_float": 1.49,
         "short_ratio": 3.7,
         "high_proximity_warning": true,
@@ -528,7 +528,7 @@
         "revenue_growth": 21.3,
         "op_margin": 37.1,
         "pe": 60.23972,
-        "forward_pe": 29.599907,
+        "forward_pe": 29.602505,
         "short_percent_float": 0.38,
         "short_ratio": 1.2,
         "high_proximity_warning": true,
@@ -1194,7 +1194,7 @@
         "revenue_growth": 52.8,
         "op_margin": 18.8,
         "pe": 45.669445,
-        "forward_pe": 25.369604,
+        "forward_pe": 25.364828,
         "short_percent_float": 3.27,
         "short_ratio": 1.8,
         "high_proximity_warning": true,
@@ -2221,7 +2221,7 @@
           "revenue_growth": 24.2,
           "op_margin": 34.0,
           "pe": 17.273733,
-          "forward_pe": 23.083103,
+          "forward_pe": 22.774998,
           "short_percent_float": 1.49,
           "short_ratio": 3.7,
           "high_proximity_warning": true,
@@ -2440,7 +2440,7 @@
           "revenue_growth": 21.3,
           "op_margin": 37.1,
           "pe": 60.23972,
-          "forward_pe": 29.599907,
+          "forward_pe": 29.602505,
           "short_percent_float": 0.38,
           "short_ratio": 1.2,
           "high_proximity_warning": true,
@@ -2732,7 +2732,7 @@
           "revenue_growth": 52.8,
           "op_margin": 18.8,
           "pe": 45.669445,
-          "forward_pe": 25.369604,
+          "forward_pe": 25.364828,
           "short_percent_float": 3.27,
           "short_ratio": 1.8,
           "high_proximity_warning": true,
@@ -4223,7 +4223,7 @@
           "revenue_growth": 24.2,
           "op_margin": 34.0,
           "pe": 17.273733,
-          "forward_pe": 23.083103,
+          "forward_pe": 22.774998,
           "short_percent_float": 1.49,
           "short_ratio": 3.7,
           "high_proximity_warning": true,
@@ -4475,7 +4475,7 @@
           "revenue_growth": 21.3,
           "op_margin": 37.1,
           "pe": 60.23972,
-          "forward_pe": 29.599907,
+          "forward_pe": 29.602505,
           "short_percent_float": 0.38,
           "short_ratio": 1.2,
           "high_proximity_warning": true,
@@ -5362,7 +5362,7 @@
           "revenue_growth": 52.8,
           "op_margin": 18.8,
           "pe": 45.669445,
-          "forward_pe": 25.369604,
+          "forward_pe": 25.364828,
           "short_percent_float": 3.27,
           "short_ratio": 1.8,
           "high_proximity_warning": true,
@@ -6322,56 +6322,91 @@
     }
   },
   "digest": {
-    "generated_at": "2026-09-20T23:39:21Z",
+    "generated_at": "2026-09-28T00:04:42Z",
     "narrative": null,
     "buy_ready": [],
     "movers": [
       {
-        "ticker": "COHR",
-        "pct": 7.22,
+        "ticker": "CRDO",
+        "pct": 7.65,
+        "reason": "No clear catalyst in current news."
+      },
+      {
+        "ticker": "LPLA",
+        "pct": 3.83,
+        "reason": "No clear catalyst in current news."
+      },
+      {
+        "ticker": "MSFT",
+        "pct": 3.66,
+        "reason": "No clear catalyst in current news."
+      },
+      {
+        "ticker": "GIS",
+        "pct": -3.42,
+        "reason": "No clear catalyst in current news."
+      },
+      {
+        "ticker": "META",
+        "pct": -3.33,
+        "reason": "No clear catalyst in current news."
+      },
+      {
+        "ticker": "VRT",
+        "pct": 3.25,
         "reason": "No clear catalyst in current news."
       }
     ],
     "upcoming_earnings": [
       {
-        "ticker": "GIS",
-        "date": "2026-09-23",
-        "days_until": 2
-      },
-      {
-        "ticker": "PAYX",
-        "date": "2026-09-23",
-        "days_until": 2
-      },
-      {
-        "ticker": "COST",
-        "date": "2026-09-24",
-        "days_until": 3
-      },
-      {
         "ticker": "MU",
         "date": "2026-09-30",
-        "days_until": 9
+        "days_until": 2
       },
       {
         "ticker": "STZ",
         "date": "2026-10-06",
-        "days_until": 15
+        "days_until": 8
       },
       {
         "ticker": "UNH",
         "date": "2026-10-13",
-        "days_until": 22
+        "days_until": 15
       },
       {
         "ticker": "ASML",
         "date": "2026-10-14",
-        "days_until": 23
+        "days_until": 16
+      },
+      {
+        "ticker": "TSM",
+        "date": "2026-10-15",
+        "days_until": 17
+      },
+      {
+        "ticker": "ISRG",
+        "date": "2026-10-20",
+        "days_until": 22
       },
       {
         "ticker": "NFLX",
         "date": "2026-10-20",
-        "days_until": 29
+        "days_until": 22
+      },
+      {
+        "ticker": "DHR",
+        "date": "2026-10-21",
+        "days_until": 23
+      },
+      {
+        "ticker": "IBM",
+        "date": "2026-10-21",
+        "days_until": 23
+      },
+      {
+        "ticker": "CMCSA",
+        "date": "2026-10-22",
+        "days_until": 24
       }
     ],
     "sec_stakes": [],
@@ -9904,28 +9939,28 @@
       {
         "ticker": "ADP",
         "last_researched": "2026-06-25",
-        "days_since": 93,
+        "days_since": 95,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py ADP"
       },
       {
         "ticker": "QQQ",
         "last_researched": "2026-05-28",
-        "days_since": 121,
+        "days_since": 123,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py QQQ"
       },
       {
         "ticker": "SPY",
         "last_researched": "2026-05-28",
-        "days_since": 121,
+        "days_since": 123,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py SPY"
       },
       {
         "ticker": "^TNX",
         "last_researched": "2026-05-28",
-        "days_since": 121,
+        "days_since": 123,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
       }
@@ -9935,7 +9970,7 @@
         "ticker": "MU",
         "name": "Micron Technology, Inc.",
         "date": "2026-09-30",
-        "days_until": 4,
+        "days_until": 2,
         "theme": "edge_ai_silicon",
         "verdict": "WATCHLIST",
         "thesis": "AI infrastructure play with strong growth and reasonable valuation at 5.9x forward earnings.",
@@ -9945,7 +9980,7 @@
         "ticker": "STZ",
         "name": "Constellation Brands, Inc.",
         "date": "2026-10-06",
-        "days_until": 10,
+        "days_until": 8,
         "theme": "defensive_income",
         "verdict": "PASS",
         "thesis": "Constellation Brands offers a stable, dividend-paying investment opportunity in the consumer goods sector, with a diversified portfolio of brands and a strong position in the beverage market, but lacks direct exposure to high-growth themes.",
@@ -9955,7 +9990,7 @@
         "ticker": "UNH",
         "name": "UnitedHealth Group Incorporated",
         "date": "2026-10-13",
-        "days_until": 17,
+        "days_until": 15,
         "theme": "uncategorized",
         "verdict": "PASS",
         "thesis": "Largest US health insurer. 2% revenue growth, 8% op margin. DOJ investigation ongoing. No AI infrastructure exposure.",
@@ -9965,7 +10000,7 @@
         "ticker": "ASML",
         "name": "ASML Holding N.V.",
         "date": "2026-10-14",
-        "days_until": 18,
+        "days_until": 16,
         "theme": "edge_ai_silicon",
         "verdict": "WATCHLIST",
         "thesis": "ASML is a high-growth, high-margin leader in the AI infrastructure theme, with a strong track record of revenue growth and profitability.",
@@ -9975,7 +10010,7 @@
         "ticker": "TSM",
         "name": "Taiwan Semiconductor Manufacturing Company Limited",
         "date": "2026-10-15",
-        "days_until": 19,
+        "days_until": 17,
         "theme": "edge_ai_silicon",
         "verdict": "WATCHLIST",
         "thesis": "A leading AI infrastructure play with strong revenue growth and high profitability at a reasonable valuation.",
@@ -9985,7 +10020,7 @@
         "ticker": "ISRG",
         "name": "Intuitive Surgical, Inc.",
         "date": "2026-10-20",
-        "days_until": 24,
+        "days_until": 22,
         "theme": "healthcare_innovation",
         "verdict": "WATCHLIST",
         "thesis": "High-growth medical device company with strong financials and potential for long-term expansion in the robotic-assisted surgery market.",
@@ -9995,7 +10030,7 @@
         "ticker": "NFLX",
         "name": "Netflix, Inc.",
         "date": "2026-10-20",
-        "days_until": 24,
+        "days_until": 22,
         "theme": "consumer_media",
         "verdict": "PASS",
         "thesis": "Netflix is a reasonably valued streaming service with consistent revenue growth and a solid business model, but it does not fit well into the desired themes.",
@@ -10005,7 +10040,7 @@
         "ticker": "DHR",
         "name": "Danaher Corporation",
         "date": "2026-10-21",
-        "days_until": 25,
+        "days_until": 23,
         "theme": "healthcare_innovation",
         "verdict": "PASS",
         "thesis": "Danaher Corporation is a diversified science and technology company with a premium valuation and moderate growth prospects.",
@@ -10015,7 +10050,7 @@
         "ticker": "IBM",
         "name": "International Business Machines Corporation",
         "date": "2026-10-21",
-        "days_until": 25,
+        "days_until": 23,
         "theme": "mega_cap_ai",
         "verdict": "PASS",
         "thesis": "Large-cap technology company with a growing presence in AI infrastructure, valued at 17.9x forward earnings.",
@@ -10025,7 +10060,7 @@
         "ticker": "CMCSA",
         "name": "Comcast Corporation",
         "date": "2026-10-22",
-        "days_until": 26,
+        "days_until": 24,
         "theme": "consumer_media",
         "verdict": "PASS",
         "thesis": "Comcast is a cheap media conglomerate with a strong balance sheet and promising wireless and streaming businesses, but facing significant risks from cord-cutting and intense competition.",
@@ -10957,7 +10992,7 @@
         "drawdown_pct": -15.8,
         "price": 343.92,
         "pe": 17.273733,
-        "forward_pe": 23.083103,
+        "forward_pe": 22.774998,
         "verdict": "WATCHLIST",
         "next_action": "WAIT \u2014 Leader in AI research and development with strong revenue growth and free cash flow generation, trading at a reasonable valuation multiple. Revisit at 20% below the 52-week high."
       },
