@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-28T19:54:55Z",
+  "generated_at": "2026-09-29T00:03:52Z",
   "pullback_alerts": [
     {
       "ticker": "BWXT",
       "name": "BWX Technologies, Inc.",
       "theme": "nuclear_smr",
       "verdict": "WATCHLIST",
-      "price": 133.98,
+      "price": 134.35,
       "high_52w": 241.82,
-      "drawdown_pct": -44.6,
+      "drawdown_pct": -44.4,
       "severity": "STRONG",
       "thesis": "Nuclear energy play with strong revenue growth and profitability at a reasonable valuation.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -18,9 +18,9 @@
       "name": "Edison International",
       "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "price": 51.62,
+      "price": 51.47,
       "high_52w": 81.62,
-      "drawdown_pct": -36.8,
+      "drawdown_pct": -36.9,
       "severity": "STRONG",
       "thesis": "Edison International offers a relatively cheap valuation at 8.7x trailing earnings for a stable utility company with 7.7% YoY revenue growth.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -30,9 +30,9 @@
       "name": "Coherent Corp.",
       "theme": "networking_infra",
       "verdict": "WATCHLIST",
-      "price": 282.219,
+      "price": 282.45,
       "high_52w": 440.0,
-      "drawdown_pct": -35.9,
+      "drawdown_pct": -35.8,
       "severity": "STRONG",
       "thesis": "High-growth laser technology company with expanding margins, but high valuation and negative free cash flow.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -42,7 +42,7 @@
       "name": "ServiceNow, Inc.",
       "theme": "cybersecurity",
       "verdict": "WATCHLIST",
-      "price": 131.36,
+      "price": 131.45,
       "high_52w": 192.966,
       "drawdown_pct": -31.9,
       "severity": "MODERATE",
@@ -54,7 +54,7 @@
       "name": "Intuitive Surgical, Inc.",
       "theme": "healthcare_innovation",
       "verdict": "WATCHLIST",
-      "price": 414.91,
+      "price": 414.79,
       "high_52w": 603.88,
       "drawdown_pct": -31.3,
       "severity": "MODERATE",
@@ -66,7 +66,7 @@
       "name": "Broadcom Inc.",
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
-      "price": 349.355,
+      "price": 349.57,
       "high_52w": 495.0,
       "drawdown_pct": -29.4,
       "severity": "MODERATE",
@@ -78,9 +78,9 @@
       "name": "GE HealthCare Technologies Inc.",
       "theme": "healthcare_innovation",
       "verdict": "WATCHLIST",
-      "price": 66.85,
+      "price": 66.78,
       "high_52w": 89.77,
-      "drawdown_pct": -25.5,
+      "drawdown_pct": -25.6,
       "severity": "MODERATE",
       "thesis": "Reasonable valuation at 13.3x forward earnings for a quality healthcare technology company with a strong product innovation pipeline.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -90,9 +90,9 @@
       "name": "Celestica Inc.",
       "theme": "datacenter_infra",
       "verdict": "WATCHLIST",
-      "price": 356.83,
+      "price": 356.53,
       "high_52w": 474.03,
-      "drawdown_pct": -24.7,
+      "drawdown_pct": -24.8,
       "severity": "MODERATE",
       "thesis": "AI infrastructure play with 62.4% YoY revenue growth at a forward P/E of 15.2x.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -102,9 +102,9 @@
       "name": "Paychex, Inc.",
       "theme": "quality_compounder",
       "verdict": "WATCHLIST",
-      "price": 99.13,
+      "price": 99.3,
       "high_52w": 130.32,
-      "drawdown_pct": -23.9,
+      "drawdown_pct": -23.8,
       "severity": "MODERATE",
       "thesis": "Payroll for SMBs \u2014 44% op margin, 20% growth, 4.7% dividend yield, 16.8x fwd PE. -38.6% from ATH. High-quality at a genuinely cheap multiple with strong income.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -114,7 +114,7 @@
       "name": "LPL Financial Holdings Inc.",
       "theme": "financials",
       "verdict": "WATCHLIST",
-      "price": 312.64,
+      "price": 312.68,
       "high_52w": 400.16,
       "drawdown_pct": -21.9,
       "severity": "MODERATE",
@@ -126,28 +126,28 @@
     {
       "ticker": "ADP",
       "last_researched": "2026-06-25",
-      "days_since": 95,
+      "days_since": 96,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ADP"
     },
     {
       "ticker": "QQQ",
       "last_researched": "2026-05-28",
-      "days_since": 123,
+      "days_since": 124,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py QQQ"
     },
     {
       "ticker": "SPY",
       "last_researched": "2026-05-28",
-      "days_since": 123,
+      "days_since": 124,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py SPY"
     },
     {
       "ticker": "^TNX",
       "last_researched": "2026-05-28",
-      "days_since": 123,
+      "days_since": 124,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
     }
