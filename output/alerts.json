@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T22:26:35Z",
+  "generated_at": "2026-10-01T01:01:28Z",
   "pullback_alerts": [
     {
       "ticker": "BWXT",
@@ -126,28 +126,42 @@
     {
       "ticker": "ADP",
       "last_researched": "2026-06-25",
-      "days_since": 97,
+      "days_since": 98,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ADP"
     },
     {
+      "ticker": "LPLA",
+      "last_researched": "2026-07-02",
+      "days_since": 91,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py LPLA"
+    },
+    {
+      "ticker": "MA",
+      "last_researched": "2026-07-02",
+      "days_since": 91,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py MA"
+    },
+    {
       "ticker": "QQQ",
       "last_researched": "2026-05-28",
-      "days_since": 125,
+      "days_since": 126,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py QQQ"
     },
     {
       "ticker": "SPY",
       "last_researched": "2026-05-28",
-      "days_since": 125,
+      "days_since": 126,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py SPY"
     },
     {
       "ticker": "^TNX",
       "last_researched": "2026-05-28",
-      "days_since": 125,
+      "days_since": 126,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
     }
