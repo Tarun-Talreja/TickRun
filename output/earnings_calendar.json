@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T22:50:37Z",
+  "generated_at": "2026-10-07T01:11:37Z",
   "lookahead_days": 30,
   "upcoming_earnings": [
     {
@@ -113,16 +113,6 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py ADP after."
     },
     {
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc.",
-      "date": "2026-10-28",
-      "days_until": 21,
-      "theme": "mega_cap_ai",
-      "verdict": "WATCHLIST",
-      "thesis": "Leader in AI research and development with strong revenue growth and free cash flow generation, trading at a reasonable valuation multiple.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py GOOGL after."
-    },
-    {
       "ticker": "GEV",
       "name": "GE Vernova Inc.",
       "date": "2026-10-28",
@@ -131,6 +121,16 @@
       "verdict": "PASS",
       "thesis": "Premium-valued AI power play with a strong backlog and growth potential, but potentially fully valued at current multiples.",
       "action": "Review thesis before earnings. Re-run research_ticker.py GEV after."
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc.",
+      "date": "2026-10-28",
+      "days_until": 21,
+      "theme": "mega_cap_ai",
+      "verdict": "WATCHLIST",
+      "thesis": "Leader in AI research and development with strong revenue growth and free cash flow generation, trading at a reasonable valuation multiple.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py GOOGL after."
     },
     {
       "ticker": "EIX",
