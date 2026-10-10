@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T22:58:28Z",
+  "generated_at": "2026-10-10T01:26:55Z",
   "lookahead_days": 30,
   "upcoming_earnings": [
     {
@@ -123,16 +123,6 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py ADP after."
     },
     {
-      "ticker": "GEV",
-      "name": "GE Vernova Inc.",
-      "date": "2026-10-28",
-      "days_until": 18,
-      "theme": "power_grid",
-      "verdict": "PASS",
-      "thesis": "Premium-valued AI power play with a strong backlog and growth potential, but potentially fully valued at current multiples.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py GEV after."
-    },
-    {
       "ticker": "GEHC",
       "name": "GE HealthCare Technologies Inc.",
       "date": "2026-10-28",
@@ -141,6 +131,16 @@
       "verdict": "WATCHLIST",
       "thesis": "Reasonable valuation at 13.3x forward earnings for a quality healthcare technology company with a strong product innovation pipeline.",
       "action": "Review thesis before earnings. Re-run research_ticker.py GEHC after."
+    },
+    {
+      "ticker": "GEV",
+      "name": "GE Vernova Inc.",
+      "date": "2026-10-28",
+      "days_until": 18,
+      "theme": "power_grid",
+      "verdict": "PASS",
+      "thesis": "Premium-valued AI power play with a strong backlog and growth potential, but potentially fully valued at current multiples.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py GEV after."
     },
     {
       "ticker": "GOOGL",
