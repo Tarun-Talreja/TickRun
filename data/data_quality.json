@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-19T18:54:26Z",
+  "generated_at": "2026-10-19T22:41:39Z",
   "checked": 58,
   "flagged": 0,
   "quality": {
-    "AMD": {
-      "ok": true,
-      "flags": []
-    },
     "AAPL": {
       "ok": true,
       "flags": []
     },
     "ADP": {
+      "ok": true,
+      "flags": []
+    },
+    "AMD": {
       "ok": true,
       "flags": []
     },
@@ -27,6 +27,10 @@
       "ok": true,
       "flags": []
     },
+    "CBRS": {
+      "ok": true,
+      "flags": []
+    },
     "BWXT": {
       "ok": true,
       "flags": []
@@ -35,19 +39,15 @@
       "ok": true,
       "flags": []
     },
-    "CBRS": {
-      "ok": true,
-      "flags": []
-    },
     "CLS": {
       "ok": true,
       "flags": []
     },
-    "CMCSA": {
+    "COHR": {
       "ok": true,
       "flags": []
     },
-    "COHR": {
+    "CMCSA": {
       "ok": true,
       "flags": []
     },
@@ -63,10 +63,6 @@
       "ok": true,
       "flags": []
     },
-    "FLUT": {
-      "ok": true,
-      "flags": []
-    },
     "EIX": {
       "ok": true,
       "flags": []
@@ -75,11 +71,15 @@
       "ok": true,
       "flags": []
     },
-    "GEV": {
+    "FLUT": {
       "ok": true,
       "flags": []
     },
     "GEHC": {
+      "ok": true,
+      "flags": []
+    },
+    "GEV": {
       "ok": true,
       "flags": []
     },
@@ -95,11 +95,11 @@
       "ok": true,
       "flags": []
     },
-    "INVH": {
+    "ISRG": {
       "ok": true,
       "flags": []
     },
-    "ISRG": {
+    "INVH": {
       "ok": true,
       "flags": []
     },
@@ -107,11 +107,11 @@
       "ok": true,
       "flags": []
     },
-    "LLY": {
+    "LMB": {
       "ok": true,
       "flags": []
     },
-    "LMB": {
+    "LLY": {
       "ok": true,
       "flags": []
     },
@@ -119,11 +119,11 @@
       "ok": true,
       "flags": []
     },
-    "MA": {
+    "META": {
       "ok": true,
       "flags": []
     },
-    "META": {
+    "MA": {
       "ok": true,
       "flags": []
     },
@@ -143,11 +143,11 @@
       "ok": true,
       "flags": []
     },
-    "NFLX": {
+    "NBIS": {
       "ok": true,
       "flags": []
     },
-    "NBIS": {
+    "NFLX": {
       "ok": true,
       "flags": []
     },
@@ -155,11 +155,11 @@
       "ok": true,
       "flags": []
     },
-    "NVDA": {
+    "NVT": {
       "ok": true,
       "flags": []
     },
-    "NVT": {
+    "NVDA": {
       "ok": true,
       "flags": []
     },
@@ -171,11 +171,15 @@
       "ok": true,
       "flags": []
     },
+    "POWL": {
+      "ok": true,
+      "flags": []
+    },
     "PAYX": {
       "ok": true,
       "flags": []
     },
-    "POWL": {
+    "RDDT": {
       "ok": true,
       "flags": []
     },
@@ -183,7 +187,7 @@
       "ok": true,
       "flags": []
     },
-    "RDDT": {
+    "SPY": {
       "ok": true,
       "flags": []
     },
@@ -195,7 +199,7 @@
       "ok": true,
       "flags": []
     },
-    "SPY": {
+    "TSM": {
       "ok": true,
       "flags": []
     },
@@ -203,19 +207,7 @@
       "ok": true,
       "flags": []
     },
-    "TSM": {
-      "ok": true,
-      "flags": []
-    },
     "UNH": {
-      "ok": true,
-      "flags": []
-    },
-    "VRT": {
-      "ok": true,
-      "flags": []
-    },
-    "VST": {
       "ok": true,
       "flags": []
     },
@@ -223,7 +215,7 @@
       "ok": true,
       "flags": []
     },
-    "ZBH": {
+    "VRT": {
       "ok": true,
       "flags": []
     },
@@ -231,7 +223,15 @@
       "ok": true,
       "flags": []
     },
+    "VST": {
+      "ok": true,
+      "flags": []
+    },
     "^TNX": {
+      "ok": true,
+      "flags": []
+    },
+    "ZBH": {
       "ok": true,
       "flags": []
     }
