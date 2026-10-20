@@ -1,17 +1,47 @@
 {
-  "generated_at": "2026-10-20T00:52:57Z",
+  "generated_at": "2026-10-20T17:38:04Z",
   "movers": [
     {
-      "ticker": "CBRS",
-      "name": "Cerebras Systems Inc.",
+      "ticker": "LLY",
+      "name": "Eli Lilly and Company",
       "verdict": "PASS",
-      "price": 120.66,
-      "pct_day": -5.15,
-      "pct_since": 0.0,
-      "primary_pct": -5.15,
-      "direction": "down",
+      "price": 1296.045,
+      "pct_day": 4.49,
+      "pct_since": 4.49,
+      "primary_pct": 4.49,
+      "direction": "up",
       "triggers": [
-        "-5.2% on the day"
+        "+4.5% since last check"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": []
+    },
+    {
+      "ticker": "TW",
+      "name": "Tradeweb Markets Inc.",
+      "verdict": "PASS",
+      "price": 119.615,
+      "pct_day": 4.29,
+      "pct_since": 4.29,
+      "primary_pct": 4.29,
+      "direction": "up",
+      "triggers": [
+        "+4.3% since last check"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": []
+    },
+    {
+      "ticker": "UNH",
+      "name": "UnitedHealth Group Incorporated",
+      "verdict": "PASS",
+      "price": 421.375,
+      "pct_day": 3.56,
+      "pct_since": 3.56,
+      "primary_pct": 3.56,
+      "direction": "up",
+      "triggers": [
+        "+3.6% since last check"
       ],
       "reason": "No clear catalyst in current news.",
       "news": []
