@@ -1,8 +1,12 @@
 {
-  "generated_at": "2026-10-22T17:44:39Z",
+  "generated_at": "2026-10-22T20:59:22Z",
   "checked": 58,
   "flagged": 0,
   "quality": {
+    "AAPL": {
+      "ok": true,
+      "flags": []
+    },
     "AMD": {
       "ok": true,
       "flags": []
@@ -11,15 +15,7 @@
       "ok": true,
       "flags": []
     },
-    "AAPL": {
-      "ok": true,
-      "flags": []
-    },
     "AMZN": {
-      "ok": true,
-      "flags": []
-    },
-    "ASML": {
       "ok": true,
       "flags": []
     },
@@ -28,6 +24,10 @@
       "flags": []
     },
     "BWXT": {
+      "ok": true,
+      "flags": []
+    },
+    "ASML": {
       "ok": true,
       "flags": []
     },
@@ -51,11 +51,11 @@
       "ok": true,
       "flags": []
     },
-    "CRDO": {
+    "COST": {
       "ok": true,
       "flags": []
     },
-    "COST": {
+    "CRDO": {
       "ok": true,
       "flags": []
     },
@@ -75,10 +75,6 @@
       "ok": true,
       "flags": []
     },
-    "GIS": {
-      "ok": true,
-      "flags": []
-    },
     "GEV": {
       "ok": true,
       "flags": []
@@ -87,15 +83,19 @@
       "ok": true,
       "flags": []
     },
+    "GIS": {
+      "ok": true,
+      "flags": []
+    },
     "GOOGL": {
       "ok": true,
       "flags": []
     },
-    "INVH": {
+    "IBM": {
       "ok": true,
       "flags": []
     },
-    "IBM": {
+    "INVH": {
       "ok": true,
       "flags": []
     },
@@ -107,15 +107,15 @@
       "ok": true,
       "flags": []
     },
+    "LMB": {
+      "ok": true,
+      "flags": []
+    },
     "LLY": {
       "ok": true,
       "flags": []
     },
     "LPLA": {
-      "ok": true,
-      "flags": []
-    },
-    "LMB": {
       "ok": true,
       "flags": []
     },
@@ -131,19 +131,19 @@
       "ok": true,
       "flags": []
     },
-    "MRVL": {
-      "ok": true,
-      "flags": []
-    },
     "MSFT": {
       "ok": true,
       "flags": []
     },
-    "MU": {
+    "MRVL": {
       "ok": true,
       "flags": []
     },
     "NBIS": {
+      "ok": true,
+      "flags": []
+    },
+    "MU": {
       "ok": true,
       "flags": []
     },
@@ -159,15 +159,11 @@
       "ok": true,
       "flags": []
     },
-    "OKLO": {
-      "ok": true,
-      "flags": []
-    },
     "NVDA": {
       "ok": true,
       "flags": []
     },
-    "PODD": {
+    "OKLO": {
       "ok": true,
       "flags": []
     },
@@ -175,11 +171,11 @@
       "ok": true,
       "flags": []
     },
-    "POWL": {
+    "PODD": {
       "ok": true,
       "flags": []
     },
-    "QQQ": {
+    "POWL": {
       "ok": true,
       "flags": []
     },
@@ -187,11 +183,15 @@
       "ok": true,
       "flags": []
     },
-    "STZ": {
+    "QQQ": {
       "ok": true,
       "flags": []
     },
     "SPY": {
+      "ok": true,
+      "flags": []
+    },
+    "STZ": {
       "ok": true,
       "flags": []
     },
@@ -211,11 +211,11 @@
       "ok": true,
       "flags": []
     },
-    "VRT": {
+    "V": {
       "ok": true,
       "flags": []
     },
-    "V": {
+    "VRT": {
       "ok": true,
       "flags": []
     },
