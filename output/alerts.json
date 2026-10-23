@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T20:59:04Z",
+  "generated_at": "2026-10-23T00:22:09Z",
   "pullback_alerts": [
     {
       "ticker": "COHR",
@@ -174,42 +174,49 @@
     {
       "ticker": "ADP",
       "last_researched": "2026-06-25",
-      "days_since": 119,
+      "days_since": 120,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ADP"
     },
     {
       "ticker": "LPLA",
       "last_researched": "2026-07-02",
-      "days_since": 112,
+      "days_since": 113,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py LPLA"
     },
     {
       "ticker": "MA",
       "last_researched": "2026-07-02",
-      "days_since": 112,
+      "days_since": 113,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py MA"
     },
     {
+      "ticker": "PAYX",
+      "last_researched": "2026-07-24",
+      "days_since": 91,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py PAYX"
+    },
+    {
       "ticker": "QQQ",
       "last_researched": "2026-05-28",
-      "days_since": 147,
+      "days_since": 148,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py QQQ"
     },
     {
       "ticker": "SPY",
       "last_researched": "2026-05-28",
-      "days_since": 147,
+      "days_since": 148,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py SPY"
     },
     {
       "ticker": "^TNX",
       "last_researched": "2026-05-28",
-      "days_since": 147,
+      "days_since": 148,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
     }
