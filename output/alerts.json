@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T20:48:38Z",
+  "generated_at": "2026-10-24T00:11:43Z",
   "pullback_alerts": [
     {
       "ticker": "COHR",
@@ -174,49 +174,77 @@
     {
       "ticker": "ADP",
       "last_researched": "2026-06-25",
-      "days_since": 120,
+      "days_since": 121,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ADP"
     },
     {
+      "ticker": "EIX",
+      "last_researched": "2026-07-25",
+      "days_since": 91,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py EIX"
+    },
+    {
+      "ticker": "INVH",
+      "last_researched": "2026-07-25",
+      "days_since": 91,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py INVH"
+    },
+    {
       "ticker": "LPLA",
       "last_researched": "2026-07-02",
-      "days_since": 113,
+      "days_since": 114,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py LPLA"
     },
     {
       "ticker": "MA",
       "last_researched": "2026-07-02",
-      "days_since": 113,
+      "days_since": 114,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py MA"
     },
     {
+      "ticker": "NVDA",
+      "last_researched": "2026-07-25",
+      "days_since": 91,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py NVDA"
+    },
+    {
       "ticker": "PAYX",
       "last_researched": "2026-07-24",
-      "days_since": 91,
+      "days_since": 92,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py PAYX"
     },
     {
       "ticker": "QQQ",
       "last_researched": "2026-05-28",
-      "days_since": 148,
+      "days_since": 149,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py QQQ"
     },
     {
       "ticker": "SPY",
       "last_researched": "2026-05-28",
-      "days_since": 148,
+      "days_since": 149,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py SPY"
     },
     {
+      "ticker": "V",
+      "last_researched": "2026-07-25",
+      "days_since": 91,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py V"
+    },
+    {
       "ticker": "^TNX",
       "last_researched": "2026-05-28",
-      "days_since": 148,
+      "days_since": 149,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
     }
