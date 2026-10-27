@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-27T18:28:44Z",
+  "generated_at": "2026-10-27T22:29:15Z",
   "pullback_alerts": [
     {
       "ticker": "COHR",
       "name": "Coherent Corp.",
       "theme": "networking_infra",
       "verdict": "WATCHLIST",
-      "price": 235.395,
+      "price": 235.79,
       "high_52w": 440.0,
-      "drawdown_pct": -46.5,
+      "drawdown_pct": -46.4,
       "severity": "STRONG",
       "thesis": "High-growth laser technology company with expanding margins, but high valuation and negative free cash flow.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -18,9 +18,9 @@
       "name": "BWX Technologies, Inc.",
       "theme": "nuclear_smr",
       "verdict": "WATCHLIST",
-      "price": 134.14,
+      "price": 134.07,
       "high_52w": 241.82,
-      "drawdown_pct": -44.5,
+      "drawdown_pct": -44.6,
       "severity": "STRONG",
       "thesis": "Nuclear energy play with strong revenue growth and profitability at a reasonable valuation.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -30,9 +30,9 @@
       "name": "Celestica Inc.",
       "theme": "datacenter_infra",
       "verdict": "WATCHLIST",
-      "price": 278.765,
+      "price": 276.54,
       "high_52w": 474.03,
-      "drawdown_pct": -41.2,
+      "drawdown_pct": -41.7,
       "severity": "STRONG",
       "thesis": "AI infrastructure play with 62.4% YoY revenue growth at a forward P/E of 15.2x.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -42,7 +42,7 @@
       "name": "Broadcom Inc.",
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
-      "price": 342.7199,
+      "price": 342.33,
       "high_52w": 495.0,
       "drawdown_pct": -30.8,
       "severity": "MODERATE",
@@ -54,7 +54,7 @@
       "name": "Edison International",
       "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "price": 58.22,
+      "price": 58.19,
       "high_52w": 81.62,
       "drawdown_pct": -28.7,
       "severity": "MODERATE",
@@ -66,9 +66,9 @@
       "name": "nVent Electric plc",
       "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "price": 134.93,
+      "price": 134.53,
       "high_52w": 184.64,
-      "drawdown_pct": -26.9,
+      "drawdown_pct": -27.1,
       "severity": "MODERATE",
       "thesis": "Reasonably valued data center power play with strong backlog growth.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -78,9 +78,9 @@
       "name": "Intuitive Surgical, Inc.",
       "theme": "healthcare_innovation",
       "verdict": "WATCHLIST",
-      "price": 447.345,
+      "price": 445.88,
       "high_52w": 603.88,
-      "drawdown_pct": -25.9,
+      "drawdown_pct": -26.2,
       "severity": "MODERATE",
       "thesis": "High-growth medical device company with strong financials and potential for long-term expansion in the robotic-assisted surgery market.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -90,9 +90,9 @@
       "name": "Micron Technology, Inc.",
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
-      "price": 932.47,
+      "price": 928.76,
       "high_52w": 1255.0,
-      "drawdown_pct": -25.7,
+      "drawdown_pct": -26.0,
       "severity": "MODERATE",
       "thesis": "AI infrastructure play with strong growth and reasonable valuation at 5.9x forward earnings.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -102,9 +102,9 @@
       "name": "Alphabet Inc.",
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "price": 321.48,
+      "price": 320.58,
       "high_52w": 408.61,
-      "drawdown_pct": -21.3,
+      "drawdown_pct": -21.5,
       "severity": "MODERATE",
       "thesis": "Leader in AI research and development with strong revenue growth and free cash flow generation, trading at a reasonable valuation multiple.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -114,9 +114,9 @@
       "name": "GE HealthCare Technologies Inc.",
       "theme": "healthcare_innovation",
       "verdict": "WATCHLIST",
-      "price": 70.89,
+      "price": 71.11,
       "high_52w": 89.77,
-      "drawdown_pct": -21.0,
+      "drawdown_pct": -20.8,
       "severity": "MODERATE",
       "thesis": "Reasonable valuation at 13.3x forward earnings for a quality healthcare technology company with a strong product innovation pipeline.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -138,9 +138,9 @@
       "name": "Meta Platforms, Inc.",
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "price": 622.1,
+      "price": 620.19,
       "high_52w": 779.82,
-      "drawdown_pct": -20.2,
+      "drawdown_pct": -20.5,
       "severity": "MODERATE",
       "thesis": "Reasonably valued AI infrastructure play with strong revenue growth and emerging technology investments.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -162,18 +162,18 @@
       "action": "Re-run: python3 scripts/research_ticker.py ADP"
     },
     {
-      "ticker": "EIX",
-      "last_researched": "2026-07-25",
-      "days_since": 94,
-      "verdict": "WATCHLIST",
-      "action": "Re-run: python3 scripts/research_ticker.py EIX"
-    },
-    {
       "ticker": "ETN",
       "last_researched": "2026-07-26",
       "days_since": 93,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ETN"
+    },
+    {
+      "ticker": "EIX",
+      "last_researched": "2026-07-25",
+      "days_since": 94,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py EIX"
     },
     {
       "ticker": "GOOGL",
@@ -246,18 +246,18 @@
       "action": "Re-run: python3 scripts/research_ticker.py V"
     },
     {
-      "ticker": "^TNX",
-      "last_researched": "2026-05-28",
-      "days_since": 152,
-      "verdict": "WATCHLIST",
-      "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
-    },
-    {
       "ticker": "ZBH",
       "last_researched": "2026-07-26",
       "days_since": 93,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ZBH"
+    },
+    {
+      "ticker": "^TNX",
+      "last_researched": "2026-05-28",
+      "days_since": 152,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
     }
   ]
 }
