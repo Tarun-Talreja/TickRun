@@ -1,37 +1,7 @@
 {
-  "generated_at": "2026-10-28T00:54:29Z",
+  "generated_at": "2026-10-28T18:34:43Z",
   "lookahead_days": 30,
   "upcoming_earnings": [
-    {
-      "ticker": "ADP",
-      "name": "Automatic Data Processing, Inc.",
-      "date": "2026-10-28",
-      "days_until": 0,
-      "theme": "quality_compounder",
-      "verdict": "WATCHLIST",
-      "thesis": "Payroll + HR outsourcing \u2014 30% op margin, sticky multi-year contracts, 2.9% dividend, 18.8x fwd PE. -30% from ATH. Recession-resilient cash compounder.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py ADP after."
-    },
-    {
-      "ticker": "GEHC",
-      "name": "GE HealthCare Technologies Inc.",
-      "date": "2026-10-28",
-      "days_until": 0,
-      "theme": "healthcare_innovation",
-      "verdict": "WATCHLIST",
-      "thesis": "Reasonable valuation at 13.3x forward earnings for a quality healthcare technology company with a strong product innovation pipeline.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py GEHC after."
-    },
-    {
-      "ticker": "GEV",
-      "name": "GE Vernova Inc.",
-      "date": "2026-10-28",
-      "days_until": 0,
-      "theme": "power_grid",
-      "verdict": "PASS",
-      "thesis": "Premium-valued AI power play with a strong backlog and growth potential, but potentially fully valued at current multiples.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py GEV after."
-    },
     {
       "ticker": "GOOGL",
       "name": "Alphabet Inc.",
@@ -51,6 +21,26 @@
       "verdict": "WATCHLIST",
       "thesis": "Invitation Homes is a fairly valued single-family home REIT with stable cash flow generation and growth prospects.",
       "action": "Review thesis before earnings. Re-run research_ticker.py INVH after."
+    },
+    {
+      "ticker": "LLY",
+      "name": "Eli Lilly and Company",
+      "date": "2026-10-29",
+      "days_until": 0,
+      "theme": "uncategorized",
+      "verdict": "PASS",
+      "thesis": "GLP-1 drug leader (Mounjaro, Zepbound). 55% revenue growth, 82.8% gross margin. Exceptional business \u2014 no theme fit for this portfolio.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py LLY after."
+    },
+    {
+      "ticker": "MA",
+      "name": "Mastercard Incorporated",
+      "date": "2026-10-29",
+      "days_until": 0,
+      "theme": "quality_compounder",
+      "verdict": "WATCHLIST",
+      "thesis": "Payments toll road like Visa \u2014 61% op margin, 16% growth, 21x fwd PE. -19% from ATH. Every digital transaction pays Mastercard regardless of cycle. Quality compounder on a rare sale.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py MA after."
     },
     {
       "ticker": "MSFT",
@@ -73,14 +63,14 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py NOW after."
     },
     {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings Co",
-      "date": "2026-10-28",
+      "ticker": "TW",
+      "name": "Tradeweb Markets Inc.",
+      "date": "2026-10-29",
       "days_until": 0,
-      "theme": "power_grid",
+      "theme": "financials",
       "verdict": "PASS",
-      "thesis": "Data center infrastructure provider with strong growth at a premium valuation.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py VRT after."
+      "thesis": "Tradeweb Markets Inc. offers a stable and profitable business model in the financial services sector, though with limited direct exposure to target themes.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py TW after."
     },
     {
       "ticker": "AMZN",
@@ -103,24 +93,14 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py EIX after."
     },
     {
-      "ticker": "LLY",
-      "name": "Eli Lilly and Company",
-      "date": "2026-10-29",
+      "ticker": "NVT",
+      "name": "nVent Electric plc",
+      "date": "2026-10-30",
       "days_until": 1,
-      "theme": "uncategorized",
-      "verdict": "PASS",
-      "thesis": "GLP-1 drug leader (Mounjaro, Zepbound). 55% revenue growth, 82.8% gross margin. Exceptional business \u2014 no theme fit for this portfolio.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py LLY after."
-    },
-    {
-      "ticker": "MA",
-      "name": "Mastercard Incorporated",
-      "date": "2026-10-29",
-      "days_until": 1,
-      "theme": "quality_compounder",
+      "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "thesis": "Payments toll road like Visa \u2014 61% op margin, 16% growth, 21x fwd PE. -19% from ATH. Every digital transaction pays Mastercard regardless of cycle. Quality compounder on a rare sale.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py MA after."
+      "thesis": "Reasonably valued data center power play with strong backlog growth.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py NVT after."
     },
     {
       "ticker": "RDDT",
@@ -131,26 +111,6 @@
       "verdict": "PASS",
       "thesis": "social media platform with strong revenue growth and high margins, but limited exposure to target themes.",
       "action": "Review thesis before earnings. Re-run research_ticker.py RDDT after."
-    },
-    {
-      "ticker": "TW",
-      "name": "Tradeweb Markets Inc.",
-      "date": "2026-10-29",
-      "days_until": 1,
-      "theme": "financials",
-      "verdict": "PASS",
-      "thesis": "Tradeweb Markets Inc. offers a stable and profitable business model in the financial services sector, though with limited direct exposure to target themes.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py TW after."
-    },
-    {
-      "ticker": "NVT",
-      "name": "nVent Electric plc",
-      "date": "2026-10-30",
-      "days_until": 2,
-      "theme": "power_grid",
-      "verdict": "WATCHLIST",
-      "thesis": "Reasonably valued data center power play with strong backlog growth.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py NVT after."
     },
     {
       "ticker": "AAPL",
@@ -173,6 +133,26 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py BWXT after."
     },
     {
+      "ticker": "ETN",
+      "name": "Eaton Corporation plc",
+      "date": "2026-11-03",
+      "days_until": 5,
+      "theme": "power_grid",
+      "verdict": "WATCHLIST",
+      "thesis": "Diversified industrial equipment company with strong growth prospects in the data center and grid infrastructure sectors, trading at a forward P/E of 25.6x.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py ETN after."
+    },
+    {
+      "ticker": "TLN",
+      "name": "Talen Energy Corporation",
+      "date": "2026-11-03",
+      "days_until": 5,
+      "theme": "nuclear_smr",
+      "verdict": "PASS",
+      "thesis": "Talen Energy Corporation is a grid/nuclear play with strong revenue growth, reasonable valuation, and manageable debt, but requires closer examination of its debt and cash flow.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py TLN after."
+    },
+    {
       "ticker": "AMD",
       "name": "Advanced Micro Devices, Inc.",
       "date": "2026-11-03",
@@ -183,14 +163,14 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py AMD after."
     },
     {
-      "ticker": "ETN",
-      "name": "Eaton Corporation plc",
-      "date": "2026-11-03",
+      "ticker": "FLUT",
+      "name": "Flutter Entertainment plc",
+      "date": "2026-11-04",
       "days_until": 6,
-      "theme": "power_grid",
-      "verdict": "WATCHLIST",
-      "thesis": "Diversified industrial equipment company with strong growth prospects in the data center and grid infrastructure sectors, trading at a forward P/E of 25.6x.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py ETN after."
+      "theme": "consumer_media",
+      "verdict": "PASS",
+      "thesis": "Consumer discretionary stock with questionable financial health due to negative free cash flow and significant debt.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py FLUT after."
     },
     {
       "ticker": "LMB",
@@ -203,14 +183,24 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py LMB after."
     },
     {
-      "ticker": "TLN",
-      "name": "Talen Energy Corporation",
-      "date": "2026-11-03",
+      "ticker": "PODD",
+      "name": "Insulet Corporation",
+      "date": "2026-11-04",
       "days_until": 6,
-      "theme": "nuclear_smr",
+      "theme": "healthcare_innovation",
       "verdict": "PASS",
-      "thesis": "Talen Energy Corporation is a grid/nuclear play with strong revenue growth, reasonable valuation, and manageable debt, but requires closer examination of its debt and cash flow.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py TLN after."
+      "thesis": "High-growth medical technology company with a strong gross margin and operating margin, but high valuation multiples and uncertain theme fit.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py PODD after."
+    },
+    {
+      "ticker": "ZBH",
+      "name": "Zimmer Biomet Holdings, Inc.",
+      "date": "2026-11-04",
+      "days_until": 6,
+      "theme": "healthcare_innovation",
+      "verdict": "WATCHLIST",
+      "thesis": "Quality compounder in the healthcare sector with a reasonable valuation and strong profitability.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py ZBH after."
     },
     {
       "ticker": "COHR",
@@ -221,36 +211,6 @@
       "verdict": "WATCHLIST",
       "thesis": "High-growth laser technology company with expanding margins, but high valuation and negative free cash flow.",
       "action": "Review thesis before earnings. Re-run research_ticker.py COHR after."
-    },
-    {
-      "ticker": "FLUT",
-      "name": "Flutter Entertainment plc",
-      "date": "2026-11-04",
-      "days_until": 7,
-      "theme": "consumer_media",
-      "verdict": "PASS",
-      "thesis": "Consumer discretionary stock with questionable financial health due to negative free cash flow and significant debt.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py FLUT after."
-    },
-    {
-      "ticker": "PODD",
-      "name": "Insulet Corporation",
-      "date": "2026-11-04",
-      "days_until": 7,
-      "theme": "healthcare_innovation",
-      "verdict": "PASS",
-      "thesis": "High-growth medical technology company with a strong gross margin and operating margin, but high valuation multiples and uncertain theme fit.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py PODD after."
-    },
-    {
-      "ticker": "ZBH",
-      "name": "Zimmer Biomet Holdings, Inc.",
-      "date": "2026-11-04",
-      "days_until": 7,
-      "theme": "healthcare_innovation",
-      "verdict": "WATCHLIST",
-      "thesis": "Quality compounder in the healthcare sector with a reasonable valuation and strong profitability.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py ZBH after."
     },
     {
       "ticker": "LITE",
@@ -266,7 +226,7 @@
       "ticker": "OKLO",
       "name": "Oklo Inc.",
       "date": "2026-11-06",
-      "days_until": 9,
+      "days_until": 8,
       "theme": "nuclear_smr",
       "verdict": "PASS",
       "thesis": "Advanced nuclear power play with significant growth potential but unverified revenue and profitability.",
@@ -276,7 +236,7 @@
       "ticker": "VST",
       "name": "Vistra Corp.",
       "date": "2026-11-06",
-      "days_until": 9,
+      "days_until": 8,
       "theme": "nuclear_smr",
       "verdict": "PASS",
       "thesis": "Utility company with strong nuclear power generation presence, but expensive valuation and negative free cash flow.",
@@ -286,7 +246,7 @@
       "ticker": "CEG",
       "name": "Constellation Energy Corporation",
       "date": "2026-11-09",
-      "days_until": 12,
+      "days_until": 11,
       "theme": "nuclear_smr",
       "verdict": "PASS",
       "thesis": "Constellation Energy Corporation is a high-quality energy company with a strong theme fit, but its valuation is relatively high and its fundamentals are mixed.",

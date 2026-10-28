@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-28T00:54:29Z",
+  "generated_at": "2026-10-28T18:34:43Z",
   "pullback_alerts": [
     {
       "ticker": "COHR",
       "name": "Coherent Corp.",
       "theme": "networking_infra",
       "verdict": "WATCHLIST",
-      "price": 235.79,
+      "price": 237.04,
       "high_52w": 440.0,
-      "drawdown_pct": -46.4,
+      "drawdown_pct": -46.1,
       "severity": "STRONG",
       "thesis": "High-growth laser technology company with expanding margins, but high valuation and negative free cash flow.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -18,9 +18,9 @@
       "name": "BWX Technologies, Inc.",
       "theme": "nuclear_smr",
       "verdict": "WATCHLIST",
-      "price": 134.07,
+      "price": 134.5875,
       "high_52w": 241.82,
-      "drawdown_pct": -44.6,
+      "drawdown_pct": -44.3,
       "severity": "STRONG",
       "thesis": "Nuclear energy play with strong revenue growth and profitability at a reasonable valuation.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -30,11 +30,23 @@
       "name": "Celestica Inc.",
       "theme": "datacenter_infra",
       "verdict": "WATCHLIST",
-      "price": 276.54,
+      "price": 303.755,
       "high_52w": 474.03,
-      "drawdown_pct": -41.7,
+      "drawdown_pct": -35.9,
       "severity": "STRONG",
       "thesis": "AI infrastructure play with 62.4% YoY revenue growth at a forward P/E of 15.2x.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "LPLA",
+      "name": "LPL Financial Holdings Inc.",
+      "theme": "financials",
+      "verdict": "WATCHLIST",
+      "price": 274.58,
+      "high_52w": 400.16,
+      "drawdown_pct": -31.4,
+      "severity": "MODERATE",
+      "thesis": "LPL Financial \u2014 largest independent broker-dealer platform. 35% revenue growth (!), 10x fwd PE, -29% from ATH. Fast-growing, cheap, advisor-network scale moat.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -42,9 +54,9 @@
       "name": "Broadcom Inc.",
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
-      "price": 342.33,
+      "price": 349.9975,
       "high_52w": 495.0,
-      "drawdown_pct": -30.8,
+      "drawdown_pct": -29.3,
       "severity": "MODERATE",
       "thesis": "Broadcom is a high-quality semiconductor company with strong revenue growth and a reasonable valuation at 18.4x forward earnings.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -54,23 +66,11 @@
       "name": "Edison International",
       "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "price": 58.19,
+      "price": 58.81,
       "high_52w": 81.62,
-      "drawdown_pct": -28.7,
+      "drawdown_pct": -27.9,
       "severity": "MODERATE",
       "thesis": "Edison International offers a relatively cheap valuation at 8.7x trailing earnings for a stable utility company with 7.7% YoY revenue growth.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "NVT",
-      "name": "nVent Electric plc",
-      "theme": "power_grid",
-      "verdict": "WATCHLIST",
-      "price": 134.53,
-      "high_52w": 184.64,
-      "drawdown_pct": -27.1,
-      "severity": "MODERATE",
-      "thesis": "Reasonably valued data center power play with strong backlog growth.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -78,11 +78,23 @@
       "name": "Intuitive Surgical, Inc.",
       "theme": "healthcare_innovation",
       "verdict": "WATCHLIST",
-      "price": 445.88,
+      "price": 448.625,
       "high_52w": 603.88,
-      "drawdown_pct": -26.2,
+      "drawdown_pct": -25.7,
       "severity": "MODERATE",
       "thesis": "High-growth medical device company with strong financials and potential for long-term expansion in the robotic-assisted surgery market.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "NVT",
+      "name": "nVent Electric plc",
+      "theme": "power_grid",
+      "verdict": "WATCHLIST",
+      "price": 141.06,
+      "high_52w": 184.64,
+      "drawdown_pct": -23.6,
+      "severity": "MODERATE",
+      "thesis": "Reasonably valued data center power play with strong backlog growth.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -90,47 +102,23 @@
       "name": "Micron Technology, Inc.",
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
-      "price": 928.76,
+      "price": 973.365,
       "high_52w": 1255.0,
-      "drawdown_pct": -26.0,
+      "drawdown_pct": -22.4,
       "severity": "MODERATE",
       "thesis": "AI infrastructure play with strong growth and reasonable valuation at 5.9x forward earnings.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc.",
-      "theme": "mega_cap_ai",
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "theme": "cybersecurity",
       "verdict": "WATCHLIST",
-      "price": 320.58,
-      "high_52w": 408.61,
-      "drawdown_pct": -21.5,
+      "price": 150.6167,
+      "high_52w": 192.966,
+      "drawdown_pct": -21.9,
       "severity": "MODERATE",
-      "thesis": "Leader in AI research and development with strong revenue growth and free cash flow generation, trading at a reasonable valuation multiple.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "GEHC",
-      "name": "GE HealthCare Technologies Inc.",
-      "theme": "healthcare_innovation",
-      "verdict": "WATCHLIST",
-      "price": 71.11,
-      "high_52w": 89.77,
-      "drawdown_pct": -20.8,
-      "severity": "MODERATE",
-      "thesis": "Reasonable valuation at 13.3x forward earnings for a quality healthcare technology company with a strong product innovation pipeline.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "LPLA",
-      "name": "LPL Financial Holdings Inc.",
-      "theme": "financials",
-      "verdict": "WATCHLIST",
-      "price": 317.56,
-      "high_52w": 400.16,
-      "drawdown_pct": -20.6,
-      "severity": "MODERATE",
-      "thesis": "LPL Financial \u2014 largest independent broker-dealer platform. 35% revenue growth (!), 10x fwd PE, -29% from ATH. Fast-growing, cheap, advisor-network scale moat.",
+      "thesis": "High-growth software company with expanding AI capabilities, but high valuation multiples.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -138,11 +126,23 @@
       "name": "Meta Platforms, Inc.",
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "price": 620.19,
+      "price": 610.975,
       "high_52w": 779.82,
-      "drawdown_pct": -20.5,
+      "drawdown_pct": -21.7,
       "severity": "MODERATE",
       "thesis": "Reasonably valued AI infrastructure play with strong revenue growth and emerging technology investments.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc.",
+      "theme": "mega_cap_ai",
+      "verdict": "WATCHLIST",
+      "price": 323.82,
+      "high_52w": 408.61,
+      "drawdown_pct": -20.8,
+      "severity": "MODERATE",
+      "thesis": "Leader in AI research and development with strong revenue growth and free cash flow generation, trading at a reasonable valuation multiple.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     }
   ],
@@ -211,18 +211,18 @@
       "action": "Re-run: python3 scripts/research_ticker.py MSFT"
     },
     {
-      "ticker": "NVT",
-      "last_researched": "2026-07-29",
-      "days_since": 91,
-      "verdict": "WATCHLIST",
-      "action": "Re-run: python3 scripts/research_ticker.py NVT"
-    },
-    {
       "ticker": "NVDA",
       "last_researched": "2026-07-25",
       "days_since": 95,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py NVDA"
+    },
+    {
+      "ticker": "NVT",
+      "last_researched": "2026-07-29",
+      "days_since": 91,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py NVT"
     },
     {
       "ticker": "PAYX",
@@ -253,18 +253,18 @@
       "action": "Re-run: python3 scripts/research_ticker.py V"
     },
     {
-      "ticker": "^TNX",
-      "last_researched": "2026-05-28",
-      "days_since": 153,
-      "verdict": "WATCHLIST",
-      "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
-    },
-    {
       "ticker": "ZBH",
       "last_researched": "2026-07-26",
       "days_since": 94,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ZBH"
+    },
+    {
+      "ticker": "^TNX",
+      "last_researched": "2026-05-28",
+      "days_since": 153,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
     }
   ]
 }
