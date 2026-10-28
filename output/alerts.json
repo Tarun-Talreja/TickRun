@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T22:29:15Z",
+  "generated_at": "2026-10-28T00:54:29Z",
   "pullback_alerts": [
     {
       "ticker": "COHR",
@@ -150,114 +150,121 @@
     {
       "ticker": "AAPL",
       "last_researched": "2026-07-26",
-      "days_since": 93,
+      "days_since": 94,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py AAPL"
     },
     {
       "ticker": "ADP",
       "last_researched": "2026-06-25",
-      "days_since": 124,
+      "days_since": 125,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ADP"
     },
     {
-      "ticker": "ETN",
-      "last_researched": "2026-07-26",
-      "days_since": 93,
-      "verdict": "WATCHLIST",
-      "action": "Re-run: python3 scripts/research_ticker.py ETN"
-    },
-    {
       "ticker": "EIX",
       "last_researched": "2026-07-25",
-      "days_since": 94,
+      "days_since": 95,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py EIX"
     },
     {
+      "ticker": "ETN",
+      "last_researched": "2026-07-26",
+      "days_since": 94,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py ETN"
+    },
+    {
       "ticker": "GOOGL",
       "last_researched": "2026-07-28",
-      "days_since": 91,
+      "days_since": 92,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py GOOGL"
     },
     {
       "ticker": "INVH",
       "last_researched": "2026-07-25",
-      "days_since": 94,
+      "days_since": 95,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py INVH"
     },
     {
       "ticker": "LPLA",
       "last_researched": "2026-07-02",
-      "days_since": 117,
+      "days_since": 118,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py LPLA"
     },
     {
       "ticker": "MA",
       "last_researched": "2026-07-02",
-      "days_since": 117,
+      "days_since": 118,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py MA"
     },
     {
       "ticker": "MSFT",
       "last_researched": "2026-07-27",
-      "days_since": 92,
+      "days_since": 93,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py MSFT"
     },
     {
+      "ticker": "NVT",
+      "last_researched": "2026-07-29",
+      "days_since": 91,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py NVT"
+    },
+    {
       "ticker": "NVDA",
       "last_researched": "2026-07-25",
-      "days_since": 94,
+      "days_since": 95,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py NVDA"
     },
     {
       "ticker": "PAYX",
       "last_researched": "2026-07-24",
-      "days_since": 95,
+      "days_since": 96,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py PAYX"
     },
     {
       "ticker": "QQQ",
       "last_researched": "2026-05-28",
-      "days_since": 152,
+      "days_since": 153,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py QQQ"
     },
     {
       "ticker": "SPY",
       "last_researched": "2026-05-28",
-      "days_since": 152,
+      "days_since": 153,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py SPY"
     },
     {
       "ticker": "V",
       "last_researched": "2026-07-25",
-      "days_since": 94,
+      "days_since": 95,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py V"
     },
     {
-      "ticker": "ZBH",
-      "last_researched": "2026-07-26",
-      "days_since": 93,
-      "verdict": "WATCHLIST",
-      "action": "Re-run: python3 scripts/research_ticker.py ZBH"
-    },
-    {
       "ticker": "^TNX",
       "last_researched": "2026-05-28",
-      "days_since": 152,
+      "days_since": 153,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
+    },
+    {
+      "ticker": "ZBH",
+      "last_researched": "2026-07-26",
+      "days_since": 94,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py ZBH"
     }
   ]
 }

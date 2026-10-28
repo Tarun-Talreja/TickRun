@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-10-27T22:29:33Z",
-  "quotes_updated": "2026-10-27T22:29:14Z",
+  "last_built": "2026-10-28T00:54:47Z",
+  "quotes_updated": "2026-10-28T00:54:29Z",
   "portfolio": {
     "total_value": 0,
     "core": [
@@ -462,7 +462,7 @@
         "revenue_growth": 14.4,
         "op_margin": 66.1,
         "pe": 34.20085,
-        "forward_pe": 26.750309,
+        "forward_pe": 23.578032,
         "short_percent_float": 1.21,
         "short_ratio": 3.4,
         "high_proximity_warning": true,
@@ -2402,7 +2402,7 @@
           "revenue_growth": 14.4,
           "op_margin": 66.1,
           "pe": 34.20085,
-          "forward_pe": 26.750309,
+          "forward_pe": 23.578032,
           "short_percent_float": 1.21,
           "short_ratio": 3.4,
           "high_proximity_warning": true,
@@ -4898,7 +4898,7 @@
           "revenue_growth": 14.4,
           "op_margin": 66.1,
           "pe": 34.20085,
-          "forward_pe": 26.750309,
+          "forward_pe": 23.578032,
           "short_percent_float": 1.21,
           "short_ratio": 3.4,
           "high_proximity_warning": true,
@@ -6505,7 +6505,7 @@
     "data_warnings": []
   },
   "analytics": {
-    "generated_at": "2026-10-27T22:29:33Z",
+    "generated_at": "2026-10-28T00:54:47Z",
     "funded": false,
     "total_value": 0.0,
     "total_invested": 0.0,
@@ -6602,7 +6602,7 @@
     "concentration_warnings": []
   },
   "track_record": {
-    "generated_at": "2026-10-27T22:29:33Z",
+    "generated_at": "2026-10-28T00:54:47Z",
     "tracked_since": "2026-04-25",
     "scoreboard": {
       "RESEARCH-WORTHY": {
@@ -9350,7 +9350,7 @@
     ]
   },
   "asset_location": {
-    "generated_at": "2026-10-27T22:29:33Z",
+    "generated_at": "2026-10-28T00:54:47Z",
     "rules": {
       "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
       "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
@@ -10335,7 +10335,7 @@
     ]
   },
   "daily_brief": {
-    "generated_at": "2026-10-27T18:28:59Z",
+    "generated_at": "2026-10-27T22:29:33Z",
     "date": "2026-10-27",
     "first_run": false,
     "items": [
@@ -10550,114 +10550,121 @@
       {
         "ticker": "AAPL",
         "last_researched": "2026-07-26",
-        "days_since": 93,
+        "days_since": 94,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py AAPL"
       },
       {
         "ticker": "ADP",
         "last_researched": "2026-06-25",
-        "days_since": 124,
+        "days_since": 125,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py ADP"
       },
       {
-        "ticker": "ETN",
-        "last_researched": "2026-07-26",
-        "days_since": 93,
-        "verdict": "WATCHLIST",
-        "action": "Re-run: python3 scripts/research_ticker.py ETN"
-      },
-      {
         "ticker": "EIX",
         "last_researched": "2026-07-25",
-        "days_since": 94,
+        "days_since": 95,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py EIX"
       },
       {
+        "ticker": "ETN",
+        "last_researched": "2026-07-26",
+        "days_since": 94,
+        "verdict": "WATCHLIST",
+        "action": "Re-run: python3 scripts/research_ticker.py ETN"
+      },
+      {
         "ticker": "GOOGL",
         "last_researched": "2026-07-28",
-        "days_since": 91,
+        "days_since": 92,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py GOOGL"
       },
       {
         "ticker": "INVH",
         "last_researched": "2026-07-25",
-        "days_since": 94,
+        "days_since": 95,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py INVH"
       },
       {
         "ticker": "LPLA",
         "last_researched": "2026-07-02",
-        "days_since": 117,
+        "days_since": 118,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py LPLA"
       },
       {
         "ticker": "MA",
         "last_researched": "2026-07-02",
-        "days_since": 117,
+        "days_since": 118,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py MA"
       },
       {
         "ticker": "MSFT",
         "last_researched": "2026-07-27",
-        "days_since": 92,
+        "days_since": 93,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py MSFT"
       },
       {
+        "ticker": "NVT",
+        "last_researched": "2026-07-29",
+        "days_since": 91,
+        "verdict": "WATCHLIST",
+        "action": "Re-run: python3 scripts/research_ticker.py NVT"
+      },
+      {
         "ticker": "NVDA",
         "last_researched": "2026-07-25",
-        "days_since": 94,
+        "days_since": 95,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py NVDA"
       },
       {
         "ticker": "PAYX",
         "last_researched": "2026-07-24",
-        "days_since": 95,
+        "days_since": 96,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py PAYX"
       },
       {
         "ticker": "QQQ",
         "last_researched": "2026-05-28",
-        "days_since": 152,
+        "days_since": 153,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py QQQ"
       },
       {
         "ticker": "SPY",
         "last_researched": "2026-05-28",
-        "days_since": 152,
+        "days_since": 153,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py SPY"
       },
       {
         "ticker": "V",
         "last_researched": "2026-07-25",
-        "days_since": 94,
+        "days_since": 95,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py V"
       },
       {
-        "ticker": "ZBH",
-        "last_researched": "2026-07-26",
-        "days_since": 93,
-        "verdict": "WATCHLIST",
-        "action": "Re-run: python3 scripts/research_ticker.py ZBH"
-      },
-      {
         "ticker": "^TNX",
         "last_researched": "2026-05-28",
-        "days_since": 152,
+        "days_since": 153,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
+      },
+      {
+        "ticker": "ZBH",
+        "last_researched": "2026-07-26",
+        "days_since": 94,
+        "verdict": "WATCHLIST",
+        "action": "Re-run: python3 scripts/research_ticker.py ZBH"
       }
     ],
     "upcoming_earnings": [
@@ -11054,7 +11061,7 @@
         "verdict": "WATCHLIST",
         "price": 276.54,
         "pct_day": 12.12,
-        "pct_since": -0.8,
+        "pct_since": 0.0,
         "primary_pct": 12.12,
         "direction": "up",
         "triggers": [
@@ -11069,7 +11076,7 @@
         "verdict": "PASS",
         "price": 170.47,
         "pct_day": 11.22,
-        "pct_since": 0.25,
+        "pct_since": 0.0,
         "primary_pct": 11.22,
         "direction": "up",
         "triggers": [
@@ -11084,7 +11091,7 @@
         "verdict": "PASS",
         "price": 167.43,
         "pct_day": 10.77,
-        "pct_since": 0.7,
+        "pct_since": 0.0,
         "primary_pct": 10.77,
         "direction": "up",
         "triggers": [
@@ -11099,7 +11106,7 @@
         "verdict": "PASS",
         "price": 119.31,
         "pct_day": 10.1,
-        "pct_since": -0.91,
+        "pct_since": 0.0,
         "primary_pct": 10.1,
         "direction": "up",
         "triggers": [
@@ -11114,7 +11121,7 @@
         "verdict": "WATCHLIST",
         "price": 235.79,
         "pct_day": 6.45,
-        "pct_since": 0.17,
+        "pct_since": 0.0,
         "primary_pct": 6.45,
         "direction": "up",
         "triggers": [
@@ -11129,7 +11136,7 @@
         "verdict": "PASS",
         "price": 866.18,
         "pct_day": 5.88,
-        "pct_since": -0.29,
+        "pct_since": 0.0,
         "primary_pct": 5.88,
         "direction": "up",
         "triggers": [
@@ -11144,7 +11151,7 @@
         "verdict": "WATCHLIST",
         "price": 109.26,
         "pct_day": -5.57,
-        "pct_since": -0.04,
+        "pct_since": 0.0,
         "primary_pct": -5.57,
         "direction": "down",
         "triggers": [
@@ -11159,7 +11166,7 @@
         "verdict": "WATCHLIST",
         "price": 560.26,
         "pct_day": 5.45,
-        "pct_since": 0.09,
+        "pct_since": 0.0,
         "primary_pct": 5.45,
         "direction": "up",
         "triggers": [
@@ -11174,7 +11181,7 @@
         "verdict": "PASS",
         "price": 27.33,
         "pct_day": 5.36,
-        "pct_since": 0.76,
+        "pct_since": 0.0,
         "primary_pct": 5.36,
         "direction": "up",
         "triggers": [
@@ -11184,7 +11191,7 @@
         "news": []
       }
     ],
-    "movers_updated": "2026-10-27T22:29:33Z",
+    "movers_updated": "2026-10-28T00:54:47Z",
     "target_hits": [
       {
         "ticker": "BWXT",
