@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T22:55:40Z",
+  "generated_at": "2026-10-29T01:29:21Z",
   "checked": 58,
   "flagged": 0,
   "quality": {
@@ -31,11 +31,11 @@
       "ok": true,
       "flags": []
     },
-    "CEG": {
+    "CBRS": {
       "ok": true,
       "flags": []
     },
-    "CBRS": {
+    "CEG": {
       "ok": true,
       "flags": []
     },
@@ -43,11 +43,15 @@
       "ok": true,
       "flags": []
     },
+    "CMCSA": {
+      "ok": true,
+      "flags": []
+    },
     "COHR": {
       "ok": true,
       "flags": []
     },
-    "CMCSA": {
+    "COST": {
       "ok": true,
       "flags": []
     },
@@ -59,10 +63,6 @@
       "ok": true,
       "flags": []
     },
-    "COST": {
-      "ok": true,
-      "flags": []
-    },
     "EIX": {
       "ok": true,
       "flags": []
@@ -71,19 +71,11 @@
       "ok": true,
       "flags": []
     },
-    "ETN": {
-      "ok": true,
-      "flags": []
-    },
-    "GEHC": {
-      "ok": true,
-      "flags": []
-    },
     "GEV": {
       "ok": true,
       "flags": []
     },
-    "GIS": {
+    "GEHC": {
       "ok": true,
       "flags": []
     },
@@ -99,7 +91,19 @@
       "ok": true,
       "flags": []
     },
+    "ETN": {
+      "ok": true,
+      "flags": []
+    },
     "ISRG": {
+      "ok": true,
+      "flags": []
+    },
+    "LITE": {
+      "ok": true,
+      "flags": []
+    },
+    "GIS": {
       "ok": true,
       "flags": []
     },
@@ -107,7 +111,7 @@
       "ok": true,
       "flags": []
     },
-    "LITE": {
+    "LMB": {
       "ok": true,
       "flags": []
     },
@@ -116,10 +120,6 @@
       "flags": []
     },
     "MA": {
-      "ok": true,
-      "flags": []
-    },
-    "LMB": {
       "ok": true,
       "flags": []
     },
@@ -147,15 +147,15 @@
       "ok": true,
       "flags": []
     },
+    "NFLX": {
+      "ok": true,
+      "flags": []
+    },
     "NOW": {
       "ok": true,
       "flags": []
     },
     "NVDA": {
-      "ok": true,
-      "flags": []
-    },
-    "NFLX": {
       "ok": true,
       "flags": []
     },
@@ -191,11 +191,11 @@
       "ok": true,
       "flags": []
     },
-    "TLN": {
+    "STZ": {
       "ok": true,
       "flags": []
     },
-    "STZ": {
+    "TLN": {
       "ok": true,
       "flags": []
     },
@@ -211,11 +211,11 @@
       "ok": true,
       "flags": []
     },
-    "V": {
+    "VRT": {
       "ok": true,
       "flags": []
     },
-    "VRT": {
+    "V": {
       "ok": true,
       "flags": []
     },
@@ -227,11 +227,11 @@
       "ok": true,
       "flags": []
     },
-    "^TNX": {
+    "VTI": {
       "ok": true,
       "flags": []
     },
-    "VTI": {
+    "^TNX": {
       "ok": true,
       "flags": []
     }
