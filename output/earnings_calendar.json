@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-30T18:19:47Z",
+  "generated_at": "2026-10-30T22:32:02Z",
   "lookahead_days": 30,
   "upcoming_earnings": [
     {
       "ticker": "AAPL",
       "name": "Apple Inc.",
       "date": "2026-11-02",
-      "days_until": 3,
+      "days_until": 2,
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
       "thesis": "High-quality technology company with strong brand and cash flow generation, valued at a premium to its peers.",
@@ -16,11 +16,21 @@
       "ticker": "BWXT",
       "name": "BWX Technologies, Inc.",
       "date": "2026-11-02",
-      "days_until": 3,
+      "days_until": 2,
       "theme": "nuclear_smr",
       "verdict": "WATCHLIST",
       "thesis": "Nuclear energy play with strong revenue growth and profitability at a reasonable valuation.",
       "action": "Review thesis before earnings. Re-run research_ticker.py BWXT after."
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "date": "2026-11-03",
+      "days_until": 3,
+      "theme": "edge_ai_silicon",
+      "verdict": "WATCHLIST",
+      "thesis": "AMD is a high-growth AI infrastructure play with a strong product portfolio, but its valuation is relatively expensive.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py AMD after."
     },
     {
       "ticker": "ETN",
@@ -33,6 +43,16 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py ETN after."
     },
     {
+      "ticker": "LMB",
+      "name": "Limbach Holdings, Inc.",
+      "date": "2026-11-03",
+      "days_until": 3,
+      "theme": "datacenter_infra",
+      "verdict": "PASS",
+      "thesis": "Data center cooling infrastructure provider with a reasonable valuation at 14.3x forward earnings, poised for growth in the expanding data center market.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py LMB after."
+    },
+    {
       "ticker": "TLN",
       "name": "Talen Energy Corporation",
       "date": "2026-11-03",
@@ -43,14 +63,14 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py TLN after."
     },
     {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "date": "2026-11-03",
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "date": "2026-11-04",
       "days_until": 4,
-      "theme": "edge_ai_silicon",
+      "theme": "networking_infra",
       "verdict": "WATCHLIST",
-      "thesis": "AMD is a high-growth AI infrastructure play with a strong product portfolio, but its valuation is relatively expensive.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py AMD after."
+      "thesis": "High-growth laser technology company with expanding margins, but high valuation and negative free cash flow.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py COHR after."
     },
     {
       "ticker": "FLUT",
@@ -61,16 +81,6 @@
       "verdict": "PASS",
       "thesis": "Consumer discretionary stock with questionable financial health due to negative free cash flow and significant debt.",
       "action": "Review thesis before earnings. Re-run research_ticker.py FLUT after."
-    },
-    {
-      "ticker": "LMB",
-      "name": "Limbach Holdings, Inc.",
-      "date": "2026-11-03",
-      "days_until": 4,
-      "theme": "datacenter_infra",
-      "verdict": "PASS",
-      "thesis": "Data center cooling infrastructure provider with a reasonable valuation at 14.3x forward earnings, poised for growth in the expanding data center market.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py LMB after."
     },
     {
       "ticker": "PODD",
@@ -93,20 +103,10 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py ZBH after."
     },
     {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "date": "2026-11-04",
-      "days_until": 5,
-      "theme": "networking_infra",
-      "verdict": "WATCHLIST",
-      "thesis": "High-growth laser technology company with expanding margins, but high valuation and negative free cash flow.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py COHR after."
-    },
-    {
       "ticker": "LITE",
       "name": "Lumentum Holdings Inc.",
       "date": "2026-11-05",
-      "days_until": 6,
+      "days_until": 5,
       "theme": "networking_infra",
       "verdict": "PASS",
       "thesis": "expensive AI infrastructure play at 26.3x forward earnings for 109.3% growth.",
@@ -143,6 +143,16 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py CEG after."
     },
     {
+      "ticker": "CBRS",
+      "name": "Cerebras Systems Inc.",
+      "date": "2026-11-12",
+      "days_until": 12,
+      "theme": "edge_ai_silicon",
+      "verdict": "PASS",
+      "thesis": "High-growth AI infrastructure play with significant valuation expectations and current unprofitability.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py CBRS after."
+    },
+    {
       "ticker": "NBIS",
       "name": "Nebius Group N.V.",
       "date": "2026-11-12",
@@ -153,20 +163,10 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py NBIS after."
     },
     {
-      "ticker": "CBRS",
-      "name": "Cerebras Systems Inc.",
-      "date": "2026-11-12",
-      "days_until": 13,
-      "theme": "edge_ai_silicon",
-      "verdict": "PASS",
-      "thesis": "High-growth AI infrastructure play with significant valuation expectations and current unprofitability.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py CBRS after."
-    },
-    {
       "ticker": "NVDA",
       "name": "NVIDIA Corporation",
       "date": "2026-11-17",
-      "days_until": 18,
+      "days_until": 17,
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
       "thesis": "Leading AI infrastructure play with strong growth prospects and reasonable valuation at 16.1x forward earnings.",
