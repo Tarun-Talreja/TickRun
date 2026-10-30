@@ -1,17 +1,34 @@
 {
-  "generated_at": "2026-10-30T01:30:38Z",
+  "generated_at": "2026-10-30T18:20:04Z",
   "movers": [
     {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "verdict": "WATCHLIST",
-      "price": 109.67,
-      "pct_day": -26.95,
-      "pct_since": 0.0,
-      "primary_pct": -26.95,
+      "ticker": "RDDT",
+      "name": "Reddit, Inc.",
+      "verdict": "PASS",
+      "price": 90.015,
+      "pct_day": -30.54,
+      "pct_since": -30.54,
+      "primary_pct": -30.54,
       "direction": "down",
       "triggers": [
-        "-26.9% on the day"
+        "-30.5% since last check",
+        "-30.5% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": []
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "verdict": "WATCHLIST",
+      "price": 205.96,
+      "pct_day": -13.18,
+      "pct_since": -13.18,
+      "primary_pct": -13.18,
+      "direction": "down",
+      "triggers": [
+        "-13.2% since last check",
+        "-13.2% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": []
@@ -20,58 +37,30 @@
       "ticker": "MRVL",
       "name": "Marvell Technology, Inc.",
       "verdict": "PASS",
-      "price": 218.34,
-      "pct_day": -13.24,
-      "pct_since": 0.0,
-      "primary_pct": -13.24,
+      "price": 191.64,
+      "pct_day": -12.23,
+      "pct_since": -12.23,
+      "primary_pct": -12.23,
       "direction": "down",
       "triggers": [
-        "-13.2% on the day"
+        "-12.2% since last check",
+        "-12.2% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": []
     },
     {
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc.",
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
       "verdict": "WATCHLIST",
-      "price": 283.82,
-      "pct_day": -12.64,
-      "pct_since": 0.0,
-      "primary_pct": -12.64,
+      "price": 498.3,
+      "pct_day": -12.03,
+      "pct_since": -12.03,
+      "primary_pct": -12.03,
       "direction": "down",
       "triggers": [
-        "-12.6% on the day"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": []
-    },
-    {
-      "ticker": "LLY",
-      "name": "Eli Lilly and Company",
-      "verdict": "PASS",
-      "price": 1373.7,
-      "pct_day": 6.63,
-      "pct_since": 0.0,
-      "primary_pct": 6.63,
-      "direction": "up",
-      "triggers": [
-        "+6.6% on the day"
-      ],
-      "reason": "No clear catalyst in current news.",
-      "news": []
-    },
-    {
-      "ticker": "CLS",
-      "name": "Celestica Inc.",
-      "verdict": "WATCHLIST",
-      "price": 282.75,
-      "pct_day": -5.69,
-      "pct_since": 0.0,
-      "primary_pct": -5.69,
-      "direction": "down",
-      "triggers": [
-        "-5.7% on the day"
+        "-12.0% since last check",
+        "-12.0% on the day"
       ],
       "reason": "No clear catalyst in current news.",
       "news": []
@@ -80,15 +69,468 @@
       "ticker": "NBIS",
       "name": "Nebius Group N.V.",
       "verdict": "PASS",
-      "price": 171.99,
-      "pct_day": -5.68,
-      "pct_since": 0.0,
-      "primary_pct": -5.68,
+      "price": 151.7505,
+      "pct_day": -11.77,
+      "pct_since": -11.77,
+      "primary_pct": -11.77,
       "direction": "down",
       "triggers": [
-        "-5.7% on the day"
+        "-11.8% since last check",
+        "-11.8% on the day"
       ],
       "reason": "No clear catalyst in current news.",
+      "news": []
+    },
+    {
+      "ticker": "CRDO",
+      "name": "Credo Technology Group Holding Ltd",
+      "verdict": "PASS",
+      "price": 145.865,
+      "pct_day": -11.75,
+      "pct_since": -11.75,
+      "primary_pct": -11.75,
+      "direction": "down",
+      "triggers": [
+        "-11.8% since last check",
+        "-11.8% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": []
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings Inc.",
+      "verdict": "PASS",
+      "price": 822.03,
+      "pct_day": -10.6,
+      "pct_since": -10.6,
+      "primary_pct": -10.6,
+      "direction": "down",
+      "triggers": [
+        "-10.6% since last check",
+        "-10.6% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": []
+    },
+    {
+      "ticker": "NVT",
+      "name": "nVent Electric plc",
+      "verdict": "WATCHLIST",
+      "price": 125.37,
+      "pct_day": -9.25,
+      "pct_since": -9.25,
+      "primary_pct": -9.25,
+      "direction": "down",
+      "triggers": [
+        "-9.2% since last check",
+        "-9.2% on the day"
+      ],
+      "reason": "No clear catalyst in current news.",
+      "news": []
+    },
+    {
+      "ticker": "CLS",
+      "name": "Celestica Inc.",
+      "verdict": "WATCHLIST",
+      "price": 257.8524,
+      "pct_day": -8.81,
+      "pct_since": -8.81,
+      "primary_pct": -8.81,
+      "direction": "down",
+      "triggers": [
+        "-8.8% since last check",
+        "-8.8% on the day"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "POWL",
+      "name": "Powell Industries, Inc.",
+      "verdict": "PASS",
+      "price": 154.56,
+      "pct_day": -8.26,
+      "pct_since": -8.26,
+      "primary_pct": -8.26,
+      "direction": "down",
+      "triggers": [
+        "-8.3% since last check",
+        "-8.3% on the day"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "OKLO",
+      "name": "Oklo Inc.",
+      "verdict": "PASS",
+      "price": 24.64,
+      "pct_day": -8.09,
+      "pct_since": -8.09,
+      "primary_pct": -8.09,
+      "direction": "down",
+      "triggers": [
+        "-8.1% since last check",
+        "-8.1% on the day"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML Holding N.V.",
+      "verdict": "WATCHLIST",
+      "price": 1541.81,
+      "pct_day": -7.99,
+      "pct_since": -7.99,
+      "primary_pct": -7.99,
+      "direction": "down",
+      "triggers": [
+        "-8.0% since last check",
+        "-8.0% on the day"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "CBRS",
+      "name": "Cerebras Systems Inc.",
+      "verdict": "PASS",
+      "price": 106.315,
+      "pct_day": -7.68,
+      "pct_since": -7.68,
+      "primary_pct": -7.68,
+      "direction": "down",
+      "triggers": [
+        "-7.7% since last check",
+        "-7.7% on the day"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "verdict": "WATCHLIST",
+      "price": 866.345,
+      "pct_day": -7.27,
+      "pct_since": -7.27,
+      "primary_pct": -7.27,
+      "direction": "down",
+      "triggers": [
+        "-7.3% since last check",
+        "-7.3% on the day"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "verdict": "WATCHLIST",
+      "price": 321.22,
+      "pct_day": -6.89,
+      "pct_since": -6.89,
+      "primary_pct": -6.89,
+      "direction": "down",
+      "triggers": [
+        "-6.9% since last check",
+        "-6.9% on the day"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings Co",
+      "verdict": "PASS",
+      "price": 228.99,
+      "pct_day": -6.88,
+      "pct_since": -6.88,
+      "primary_pct": -6.88,
+      "direction": "down",
+      "triggers": [
+        "-6.9% since last check",
+        "-6.9% on the day"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor Manufacturing Company Limited",
+      "verdict": "WATCHLIST",
+      "price": 402.645,
+      "pct_day": -6.75,
+      "pct_since": -6.75,
+      "primary_pct": -6.75,
+      "direction": "down",
+      "triggers": [
+        "-6.8% since last check",
+        "-6.8% on the day"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "ETN",
+      "name": "Eaton Corporation plc",
+      "verdict": "WATCHLIST",
+      "price": 367.89,
+      "pct_day": -6.56,
+      "pct_since": -6.56,
+      "primary_pct": -6.56,
+      "direction": "down",
+      "triggers": [
+        "-6.6% since last check",
+        "-6.6% on the day"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "BWXT",
+      "name": "BWX Technologies, Inc.",
+      "verdict": "WATCHLIST",
+      "price": 130.0675,
+      "pct_day": -5.7,
+      "pct_since": -5.7,
+      "primary_pct": -5.7,
+      "direction": "down",
+      "triggers": [
+        "-5.7% since last check",
+        "-5.7% on the day"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "verdict": "WATCHLIST",
+      "price": 202.46,
+      "pct_day": -5.24,
+      "pct_since": -5.24,
+      "primary_pct": -5.24,
+      "direction": "down",
+      "triggers": [
+        "-5.2% since last check",
+        "-5.2% on the day"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "verdict": "WATCHLIST",
+      "price": 103.945,
+      "pct_day": -5.22,
+      "pct_since": -5.22,
+      "primary_pct": -5.22,
+      "direction": "down",
+      "triggers": [
+        "-5.2% since last check",
+        "-5.2% on the day"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "LMB",
+      "name": "Limbach Holdings, Inc.",
+      "verdict": "PASS",
+      "price": 48.86,
+      "pct_day": -5.07,
+      "pct_since": -5.07,
+      "primary_pct": -5.07,
+      "direction": "down",
+      "triggers": [
+        "-5.1% since last check",
+        "-5.1% on the day"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
+      "verdict": "WATCHLIST",
+      "price": 686.26,
+      "pct_day": -4.07,
+      "pct_since": -4.07,
+      "primary_pct": -4.07,
+      "direction": "down",
+      "triggers": [
+        "-4.1% since last check"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "GEV",
+      "name": "GE Vernova Inc.",
+      "verdict": "PASS",
+      "price": 852.01,
+      "pct_day": -4.04,
+      "pct_since": -4.04,
+      "primary_pct": -4.04,
+      "direction": "down",
+      "triggers": [
+        "-4.0% since last check"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "STZ",
+      "name": "Constellation Brands, Inc.",
+      "verdict": "PASS",
+      "price": 134.54,
+      "pct_day": 4.04,
+      "pct_since": 3.21,
+      "primary_pct": 4.04,
+      "direction": "up",
+      "triggers": [
+        "+3.2% since last check"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "LLY",
+      "name": "Eli Lilly and Company",
+      "verdict": "PASS",
+      "price": 1425.0,
+      "pct_day": 3.73,
+      "pct_since": 3.73,
+      "primary_pct": 3.73,
+      "direction": "up",
+      "triggers": [
+        "+3.7% since last check"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "ADP",
+      "name": "Automatic Data Processing, Inc.",
+      "verdict": "WATCHLIST",
+      "price": 296.37,
+      "pct_day": 3.6,
+      "pct_since": 3.6,
+      "primary_pct": 3.6,
+      "direction": "up",
+      "triggers": [
+        "+3.6% since last check"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "GIS",
+      "name": "General Mills, Inc.",
+      "verdict": "PASS",
+      "price": 34.51,
+      "pct_day": 3.57,
+      "pct_since": 3.57,
+      "primary_pct": 3.57,
+      "direction": "up",
+      "triggers": [
+        "+3.6% since last check"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "TW",
+      "name": "Tradeweb Markets Inc.",
+      "verdict": "PASS",
+      "price": 122.995,
+      "pct_day": 3.46,
+      "pct_since": 3.46,
+      "primary_pct": 3.46,
+      "direction": "up",
+      "triggers": [
+        "+3.5% since last check"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "TLN",
+      "name": "Talen Energy Corporation",
+      "verdict": "PASS",
+      "price": 337.06,
+      "pct_day": -3.38,
+      "pct_since": -3.38,
+      "primary_pct": -3.38,
+      "direction": "down",
+      "triggers": [
+        "-3.4% since last check"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "verdict": "PASS",
+      "price": 22.995,
+      "pct_day": 3.26,
+      "pct_since": 3.26,
+      "primary_pct": 3.26,
+      "direction": "up",
+      "triggers": [
+        "+3.3% since last check"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical, Inc.",
+      "verdict": "WATCHLIST",
+      "price": 434.735,
+      "pct_day": -3.13,
+      "pct_since": -3.13,
+      "primary_pct": -3.13,
+      "direction": "down",
+      "triggers": [
+        "-3.1% since last check"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "FLUT",
+      "name": "Flutter Entertainment plc",
+      "verdict": "PASS",
+      "price": 81.625,
+      "pct_day": 3.07,
+      "pct_since": 3.07,
+      "primary_pct": 3.07,
+      "direction": "up",
+      "triggers": [
+        "+3.1% since last check"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
+      "news": []
+    },
+    {
+      "ticker": "PAYX",
+      "name": "Paychex, Inc.",
+      "verdict": "WATCHLIST",
+      "price": 112.71,
+      "pct_day": 3.05,
+      "pct_since": 3.05,
+      "primary_pct": 3.05,
+      "direction": "up",
+      "triggers": [
+        "+3.0% since last check"
+      ],
+      "reason": "See headlines (explanation limited to top movers).",
       "news": []
     }
   ]
