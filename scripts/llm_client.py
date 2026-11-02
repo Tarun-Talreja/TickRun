@@ -77,9 +77,12 @@ def _probe():
     if not key:
         print("❌ NVIDIA_API_KEY not set")
         sys.exit(1)
+    # PROBE_MODELS="a,b,c" tests candidates without editing the chain.
+    models = [m.strip() for m in os.environ.get("PROBE_MODELS", "").split(",") if m.strip()]
+    models = models or NVIDIA_CHAT_MODELS
     ok = 0
     msgs = [{"role": "user", "content": "Reply with exactly: VERDICT: WATCHLIST"}]
-    for model in NVIDIA_CHAT_MODELS:
+    for model in models:
         t0 = time.time()
         try:
             text, _ = chat(key, msgs, max_tokens=200, timeout=60,
@@ -88,7 +91,7 @@ def _probe():
             print(f"✅ {model:45s} {time.time()-t0:5.1f}s  {text[:60]!r}")
         except RuntimeError as exc:
             print(f"❌ {model:45s} {time.time()-t0:5.1f}s  {str(exc)[-120:]}")
-    print(f"\n{ok}/{len(NVIDIA_CHAT_MODELS)} models answering")
+    print(f"\n{ok}/{len(models)} models answering")
     sys.exit(0 if ok else 1)
 
 
