@@ -49,20 +49,9 @@ except Exception:
     def _recent_news(ticker: str) -> str:  # graceful fallback
         return "No recent news available."
 
-# NVIDIA NIM settings
-NVIDIA_BASE_URL = "https://integrate.api.nvidia.com/v1"
-# Preferred → fallback. Heavy models may not be provisioned on free tier (404
-# "Function not found for account"), and even a provisioned model can return
-# InternalServerError/APITimeoutError under load — a 2-model chain meant that
-# when 70B (the ONLY fallback) was also struggling, 4 of 6 tickers in one batch
-# had nowhere left to go. Two more independently-hosted chat models added so a
-# transient outage on one doesn't take out the whole chain.
-NVIDIA_MODEL_CHAIN = [
-    "nvidia/llama-3.1-nemotron-ultra-253b-v1",   # 253B reasoning flagship (if account has access)
-    "meta/llama-3.3-70b-instruct",                # reliable free-tier default
-    "meta/llama-3.1-70b-instruct",                 # independent fallback if 3.3 is struggling
-    "nvidia/llama-3.1-nemotron-70b-instruct",      # NVIDIA-tuned 70B, last resort
-]
+# NVIDIA NIM model chain lives in llm_client.py — one list shared by every
+# script, so a model retirement is a one-line fix instead of a 10-week outage.
+from llm_client import NVIDIA_CHAT_MODELS as NVIDIA_MODEL_CHAIN, chat as _nim_chat
 NVIDIA_MODEL = NVIDIA_MODEL_CHAIN[0]   # may be overridden by --model
 
 # Anthropic fallback settings
@@ -106,67 +95,28 @@ def _detect_provider() -> tuple[str, str]:
 def _call_llm(provider: str, api_key: str, prompt: str) -> str:
     if provider == "nvidia":
         try:
-            from openai import (
-                OpenAI, NotFoundError, APITimeoutError, APIConnectionError,
-                RateLimitError, InternalServerError,
-            )
+            import openai  # noqa: F401
         except ImportError:
             print("Missing dependency: pip install openai")
             sys.exit(1)
 
-        # Any of these on one model should fall through to the next model in
-        # the chain, not crash the whole call. NotFoundError alone was the
-        # only thing caught here before, but the actual failure mode we hit
-        # in production was APITimeoutError: the 253B model timed out on 7 of
-        # 8 tickers in one batch, each burning ~3 min (2x LLM_TIMEOUT_SECONDS
-        # via the SDK's built-in retry) before an uncaught exception killed
-        # the whole ticker — no fallback to the fast, reliable 70B ever
-        # happened. That's a bigger loss than "unavailable for this account":
-        # it wastes the timeout AND drops the ticker.
-        RETRYABLE = (NotFoundError, APITimeoutError, APIConnectionError,
-                     RateLimitError, InternalServerError)
-
-        client = OpenAI(
-            base_url=NVIDIA_BASE_URL,
-            api_key=api_key,
-            timeout=LLM_TIMEOUT_SECONDS,
-            # 0, not 1: we already have a model-fallback loop below. Retrying
-            # the SAME (slow) model before moving to the next one just doubles
-            # the wasted time on exactly the failure mode we're trying to
-            # route around — a batch that hit this lost ~3 min per ticker to
-            # 2x90s of retrying 253B instead of ~90s then falling to 70B.
-            max_retries=0,
-        )
-
-        # Build the model attempt list: explicit NVIDIA_MODEL first (covers --model
-        # override), then any remaining fallbacks in the chain.
+        # Explicit NVIDIA_MODEL first (covers --model override), then the chain.
+        # llm_client.chat falls through on ANY per-model API error — the old
+        # loop here only caught NotFound/timeouts, so a 410 Gone crashed it.
         attempts = [NVIDIA_MODEL] + [m for m in NVIDIA_MODEL_CHAIN if m != NVIDIA_MODEL]
-        last_err = None
         sysmsg = (
             "detailed thinking off. You are a disciplined equity analyst. Follow the "
             "requested output structure exactly and ALWAYS end with the mandated "
             "VERDICT: and CONFIDENCE: lines."
         )
-        for model in attempts:
-            try:
-                response = client.chat.completions.create(
-                    model=model,
-                    messages=[
-                        {"role": "system", "content": sysmsg},
-                        {"role": "user", "content": prompt},
-                    ],
-                    max_tokens=MAX_TOKENS,
-                    temperature=0.3,
-                )
-                if model != attempts[0]:
-                    print(f"   (fell back to {model})")
-                return response.choices[0].message.content
-            except RETRYABLE as exc:
-                last_err = exc
-                reason = type(exc).__name__
-                print(f"   {model} failed ({reason}) — trying next...")
-                continue
-        raise RuntimeError(f"All NVIDIA models failed. Last error: {last_err}")
+        text, model = _nim_chat(
+            api_key,
+            [{"role": "system", "content": sysmsg}, {"role": "user", "content": prompt}],
+            max_tokens=MAX_TOKENS, temperature=0.3,
+            timeout=LLM_TIMEOUT_SECONDS, models=attempts,
+        )
+        print(f"   (answered by {model})")
+        return text
 
     elif provider == "anthropic":
         try:
@@ -486,7 +436,7 @@ def main():
     parser.add_argument("--save-only", action="store_true",
                         help="Save output but don't update watchlist.json")
     parser.add_argument("--model", type=str, default=None,
-                        help="Override model (e.g. meta/llama-3.3-70b-instruct for faster results)")
+                        help="Override model (e.g. deepseek-ai/deepseek-v4.1-flash for faster results)")
     args = parser.parse_args()
 
     ticker   = args.ticker.upper()

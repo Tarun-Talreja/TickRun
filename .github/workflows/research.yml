@@ -45,6 +45,10 @@ jobs:
         run: python scripts/refresh_quotes.py
 
       - name: Run daily LLM research (NVIDIA NIM, free)
+        id: research
+        # Let SEC/news/dashboard steps and the commit still run, then fail the
+        # job at the end (see "Fail if research produced nothing").
+        continue-on-error: true
         env:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API }}
         run: python scripts/research_batch.py --max ${{ github.event.inputs.max || 8 }}
@@ -82,6 +86,12 @@ jobs:
             data/news_cache.json
             output/research/
             output/dashboard.json
+
+      - name: Fail if research produced nothing
+        if: steps.research.outcome == 'failure'
+        run: |
+          echo "::error::research_batch.py landed 0 tickers — check the model chain (python scripts/llm_client.py) and the NVIDIA_API secret."
+          exit 1
 
       - name: Open issue on failure
         if: failure()

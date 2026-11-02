@@ -88,20 +88,15 @@ def _llm_reason(ticker: str, pct: float, headlines: list[str]) -> str | None:
         f"Headlines:\n{headlines_block}"
     )
     try:
-        client = OpenAI(
-            base_url="https://integrate.api.nvidia.com/v1",
-            api_key=key,
-            timeout=LLM_TIMEOUT_SECONDS,
-            max_retries=1,
-        )
-        r = client.chat.completions.create(
-            model="meta/llama-3.3-70b-instruct",
-            messages=[{"role": "user", "content": prompt}],
-            max_tokens=80,
-            temperature=0.2,
-        )
-        return r.choices[0].message.content.strip()
-    except Exception:
+        from llm_client import chat
+        # 200 not 80: reasoning models in the chain can spend tokens before the
+        # answer; the prompt itself still caps the reply at ~20 words.
+        text, _ = chat(key, [{"role": "user", "content": prompt}],
+                       max_tokens=200, temperature=0.2,
+                       timeout=LLM_TIMEOUT_SECONDS, verbose=False)
+        return text
+    except Exception as exc:
+        print(f"   ⚠ {ticker}: no LLM reason ({str(exc)[:120]})")
         return None
 
 

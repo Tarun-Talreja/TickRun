@@ -151,7 +151,9 @@ def main():
 
     if not (os.environ.get("NVIDIA_API_KEY") or os.environ.get("ANTHROPIC_API_KEY")):
         print("⚠ No NVIDIA_API_KEY or ANTHROPIC_API_KEY set — skipping daily research.")
-        sys.exit(0)   # exit 0 so the workflow doesn't fail
+        # In CI a missing key means the secret is broken — that must show red,
+        # not quietly skip research forever. Locally it's just "not configured".
+        sys.exit(1 if _in_ci() else 0)
 
     tickers = _select_tickers(args.max)
     if not tickers:
@@ -194,6 +196,14 @@ def main():
         print(f"   Landed (committed+pushed): {len(landed)}/{len(tickers)}")
     if failures:
         print(f"⚠ Failed: {', '.join(failures)}")
+
+    # Exit non-zero when NOTHING succeeded. This used to always exit 0, so when
+    # NVIDIA retired our models (2026-08-26) every run researched 0/8 tickers
+    # behind a green check for ~10 weeks. One bad ticker is noise; zero landed
+    # means the pipeline itself is broken and someone needs to look.
+    if not landed:
+        print("❌ No research landed this run — failing so the workflow shows red.")
+        sys.exit(1)
 
 
 if __name__ == "__main__":

@@ -50,14 +50,12 @@ def _narrative(facts: dict) -> str | None:
         f"{json.dumps(facts, indent=2)}"
     )
     try:
-        client = OpenAI(base_url="https://integrate.api.nvidia.com/v1", api_key=key)
-        r = client.chat.completions.create(
-            model="meta/llama-3.3-70b-instruct",
-            messages=[{"role": "user", "content": prompt}],
-            max_tokens=300, temperature=0.3,
-        )
-        return r.choices[0].message.content.strip()
-    except Exception:
+        from llm_client import chat
+        text, _ = chat(key, [{"role": "user", "content": prompt}],
+                       max_tokens=600, temperature=0.3, timeout=60)
+        return text
+    except Exception as exc:
+        print(f"⚠ weekly narrative skipped: {exc}")
         return None
 
 

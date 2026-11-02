@@ -1,0 +1,26 @@
+name: LLM Model Health Check
+
+# Manual probe: which NVIDIA NIM models in scripts/llm_client.py actually answer
+# with our key. Run this whenever research starts failing — NVIDIA retires
+# free-tier models without notice (meta/llama-3.3-70b-instruct went 410 on
+# 2026-08-26 and research silently died for ~10 weeks).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install openai
+      - name: Probe model chain
+        env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API }}
+        run: python scripts/llm_client.py

@@ -62,7 +62,6 @@ EMBED_MODEL_CHAIN = [
     "baai/bge-m3",
     "snowflake/arctic-embed-l",
 ]
-ANSWER_MODEL = "meta/llama-3.3-70b-instruct"
 
 CHUNK_WORDS   = 350    # ~450-500 tokens, safely inside the 512-token embed cap
 CHUNK_OVERLAP = 60     # keeps a claim from being split across a boundary
@@ -248,13 +247,10 @@ def _answer(question, passages, ticker, filing, api_key) -> str:
         f"QUESTION: {question}\n\n{ctx}"
     )
     try:
-        client = OpenAI(base_url=NVIDIA_BASE, api_key=api_key, timeout=180, max_retries=2)
-        r = client.chat.completions.create(
-            model=ANSWER_MODEL,
-            messages=[{"role": "user", "content": prompt}],
-            max_tokens=450, temperature=0.2,
-        )
-        return r.choices[0].message.content.strip()
+        from llm_client import chat
+        text, _ = chat(api_key, [{"role": "user", "content": prompt}],
+                       max_tokens=900, temperature=0.2, timeout=180)
+        return text
     except Exception as e:
         return f"Answer generation failed: {e}"
 

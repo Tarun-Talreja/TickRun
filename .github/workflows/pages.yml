@@ -7,6 +7,20 @@ on:
       - 'index.html'
       - 'output/**'
       - '.github/workflows/pages.yml'
+  # The data workflows commit with GITHUB_TOKEN, and GitHub never fires `push`
+  # workflows for GITHUB_TOKEN pushes — so the push trigger above alone left the
+  # live site frozen at 2026-07-26 while the repo data kept updating daily.
+  # workflow_run is exempt from that rule: redeploy whenever a data job finishes.
+  workflow_run:
+    workflows:
+      - "Quote Refresh + Alerts"
+      - "Daily LLM Research"
+      - "Catalyst Lookahead + Alerts"
+      - "Weekly Dashboard Rebuild"
+      - "Weekly Discovery Screener"
+      - "Quarterly Hedge Fund Signal"
+      - "Filing Deep-Dive (10-K RAG)"
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -25,7 +39,11 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      # Explicit ref: deploy the newest main (including the commit the data job
+      # just pushed), not the SHA the upstream run started from.
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Stage site files only
         run: |
