@@ -24,17 +24,18 @@ import time
 
 NVIDIA_BASE_URL = "https://integrate.api.nvidia.com/v1"
 
-# Ordered best-first. Every entry was in NVIDIA's /v1/models catalog on
-# 2026-11-02, but "listed" != "your free key can call it" (the 253B was listed
-# and still 404'd) — run this file as a script to see which actually answer.
+# Ordered best-first. Only models that ANSWERED a probe with our key on
+# 2026-11-02 (llm_health.yml). The catalog lists far more, but most 404 for a
+# free key and several (deepseek-v4.1-flash, glm-5.3-flash, gpt-oss-20b,
+# gemma-4-31b) timed out at 60s — a model that times out costs a full timeout
+# per ticker before falling through, so it's worse than not listing it.
+# Re-probe after any change: Actions → "LLM Model Health Check".
 NVIDIA_CHAT_MODELS = [
-    "nvidia/nemotron-3-super-120b-a12b",
-    "deepseek-ai/deepseek-v4.1-flash",
-    "moonshotai/kimi-k2.6",
-    "mistralai/mistral-large-4-1t-a52b",
-    "z-ai/glm-5.3-flash",
-    "nvidia/llama-3.1-nemotron-70b-instruct",
-    "openai/gpt-oss-20b",
+    "nvidia/nemotron-3-ultra-550b-a55b",      # flagship reasoning model, ~1.6s probe
+    "mistralai/mistral-large-4-1t-a52b",      # strong independent fallback (slower, 17-34s)
+    "minimaxai/minimax-m3.1-flash",           # fast, independent vendor
+    "nvidia/nemotron-3.5-lightning-30b-a3b",  # small but quick last resort
+    "stepfun-ai/step-5-preview",              # preview — may vanish, so last
 ]
 
 _THINK_RE = re.compile(r"<think>.*?</think>", re.DOTALL | re.IGNORECASE)
