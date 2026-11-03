@@ -48,7 +48,7 @@
       "thesis": "Wide-moat AI infrastructure compounder at 14.7x trailing P/E with 24.7% revenue growth, 31.8% operating margins, and [price omitted \u2014 see live data]B net cash, discounted for antitrust overhang and data-quality questions on FCF.",
       "added": "2026-04-25",
       "verdict": "WATCHLIST",
-      "buy_target": 280.96,
+      "buy_target": 278.93,
       "current_price": 316,
       "next_action": "WAIT \u2014 Wide-moat AI infrastructure compounder at 14.7x trailing P/E with 24.7% revenue growth, 31.8% operating margins, and [price omitted \u2014 see live data]B net cash, discounted for antitrust overhang and data-quality questions on FCF.",
       "research_file": "output/research/GOOGL_2026-11-03.md",
@@ -58,7 +58,7 @@
       "llm_verdict": "RESEARCH-WORTHY",
       "bear_downgraded": true,
       "buy_trigger_drawdown_pct": 0.0,
-      "no_pullback_gate": false
+      "no_pullback_gate": true
     },
     {
       "ticker": "AMZN",
@@ -248,7 +248,7 @@
       "thesis": "Quality compounder at 22x forward earnings with 20%+ revenue growth, 37% FCF margins, and 42% drawdown from high \u2014 fits \"quality on sale\" bucket.",
       "added": "2026-05-28",
       "verdict": "WATCHLIST",
-      "buy_target": 106.01,
+      "buy_target": 108.44,
       "current_price": null,
       "next_action": "WAIT \u2014 Quality compounder at 22x forward earnings with 20%+ revenue growth, 37% FCF margins, and 42% drawdown from high \u2014 fits \"quality on sale\" bucket.",
       "research_file": "output/research/NOW_2026-11-02.md",
@@ -258,7 +258,7 @@
       "bear_downgraded": true,
       "confidence": "MEDIUM",
       "buy_trigger_drawdown_pct": 0.0,
-      "no_pullback_gate": false,
+      "no_pullback_gate": true,
       "bear_check": "The entire bull case rests on unverified financial metrics \u2014 every key figure (revenue, margins, FCF, debt, share count) is explicitly marked \"unverified\" in the note, making the 34.9x EV/EBITDA and 22.1x forward P/E potentially meaningless. The 245% implied EPS growth (from 76.3x trailing to 22.1x forward P/E) is almost certainly distorted by one-time items or share-count changes the note itself flags as unverified, and no recent news exists to validate momentum.\n\nCHANGES VERDICT: YES"
     },
     {
@@ -427,7 +427,7 @@
       "thesis": "Constellation Energy Corporation is a high-quality energy company with a strong theme fit, but its valuation is relatively high and its fundamentals are mixed.",
       "added": "2026-05-28",
       "verdict": "PASS",
-      "buy_target": 307.98,
+      "buy_target": 304.62,
       "current_price": null,
       "next_action": "DROP \u2014 Constellation Energy Corporation is a high-quality energy company with a strong theme fit, but its valuation is relatively high and its fundamentals are mixed.",
       "research_file": "output/research/CEG_2026-08-08.md",
@@ -583,7 +583,7 @@
       "thesis": "Quality data center power play at 18x forward earnings with 44% revenue growth and 19% operating margins, 33% off highs.",
       "added": "2026-07-25",
       "verdict": "WATCHLIST",
-      "buy_target": 123.7,
+      "buy_target": 129.46,
       "current_price": null,
       "next_action": "WAIT \u2014 Quality data center power play at 18x forward earnings with 44% revenue growth and 19% operating margins, 33% off highs.",
       "research_file": "output/research/NVT_2026-11-02.md",
@@ -591,7 +591,7 @@
       "confidence": "MEDIUM",
       "buy_trigger_drawdown_pct": 0.0,
       "research_source": "deep_research_2026-07-25",
-      "no_pullback_gate": false,
+      "no_pullback_gate": true,
       "llm_verdict": "RESEARCH-WORTHY",
       "bear_downgraded": true,
       "bear_check": "The bull case's PEG of 0.4x is misleading because it divides forward P/E by revenue growth (43.7%) rather than earnings growth \u2014 with trailing P/E at 30.0x vs forward 17.9x, the market prices ~67% EPS growth, which requires massive margin expansion from 36% gross/18.7% operating margins on top of sustained 40%+ revenue growth. Any deceleration in hyperscale capex (the note's own flagged risk) would collapse both the revenue trajectory and the margin leverage assumption simultaneously, making the 17.9x forward P/E a value trap rather than a bargain.\n\nCHANGES VERDICT: YES"
@@ -839,7 +839,7 @@
       "thesis": "Quality compounder at 9.9x forward earnings with 17.8% revenue growth, sticky advisor platform, and buyback tailwind, but interest-rate-sensitive cash sweep revenue creates earnings risk.",
       "added": "2026-06-08",
       "verdict": "WATCHLIST",
-      "buy_target": 296.02,
+      "buy_target": 296.63,
       "current_price": null,
       "next_action": "WAIT \u2014 Quality compounder at 9.9x forward earnings with 17.8% revenue growth, sticky advisor platform, and buyback tailwind, but interest-rate-sensitive cash sweep revenue creates earnings risk.",
       "research_file": "output/research/LPLA_2026-11-03.md",
@@ -848,7 +848,8 @@
       "bear_check": "The bull case's reliance on a 9.9x forward P/E assumes EPS will roughly double, but this projection critically depends on ~$1.5\u20132B of high-margin net interest income from $100B+ client cash sweeps that will compress sharply as the Fed cuts rates \u2014 a revenue headwind the note acknowledges but likely underweights in magnitude and speed. With no offsetting catalyst in the headlines and peers trading at 12\u201314x forward earnings with less rate sensitivity, the valuation gap reflects an overly optimistic margin trajectory.\n\nCHANGES VERDICT: YES\nCONFIDENCE: 85%",
       "llm_verdict": "RESEARCH-WORTHY",
       "bear_downgraded": true,
-      "buy_trigger_drawdown_pct": 0.0
+      "buy_trigger_drawdown_pct": 0.0,
+      "no_pullback_gate": true
     },
     {
       "ticker": "TW",

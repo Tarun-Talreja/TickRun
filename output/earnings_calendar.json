@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T03:15:52Z",
+  "generated_at": "2026-11-03T19:53:56Z",
   "lookahead_days": 30,
   "upcoming_earnings": [
     {
@@ -13,14 +13,14 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py AMD after."
     },
     {
-      "ticker": "ETN",
-      "name": "Eaton Corporation plc",
-      "date": "2026-11-03",
+      "ticker": "FLUT",
+      "name": "Flutter Entertainment plc",
+      "date": "2026-11-04",
       "days_until": 0,
-      "theme": "power_grid",
-      "verdict": "WATCHLIST",
-      "thesis": "Diversified industrial equipment company with strong growth prospects in the data center and grid infrastructure sectors, trading at a forward P/E of 25.6x.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py ETN after."
+      "theme": "consumer_media",
+      "verdict": "PASS",
+      "thesis": "Consumer discretionary stock with questionable financial health due to negative free cash flow and significant debt.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py FLUT after."
     },
     {
       "ticker": "LMB",
@@ -33,14 +33,24 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py LMB after."
     },
     {
-      "ticker": "TLN",
-      "name": "Talen Energy Corporation",
-      "date": "2026-11-03",
+      "ticker": "PODD",
+      "name": "Insulet Corporation",
+      "date": "2026-11-04",
       "days_until": 0,
-      "theme": "nuclear_smr",
+      "theme": "healthcare_innovation",
       "verdict": "PASS",
-      "thesis": "Talen Energy Corporation is a grid/nuclear play with strong revenue growth, reasonable valuation, and manageable debt, but requires closer examination of its debt and cash flow.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py TLN after."
+      "thesis": "High-growth medical technology company with a strong gross margin and operating margin, but high valuation multiples and uncertain theme fit.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py PODD after."
+    },
+    {
+      "ticker": "ZBH",
+      "name": "Zimmer Biomet Holdings, Inc.",
+      "date": "2026-11-04",
+      "days_until": 0,
+      "theme": "healthcare_innovation",
+      "verdict": "WATCHLIST",
+      "thesis": "Quality compounder in the healthcare sector with a reasonable valuation and strong profitability.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py ZBH after."
     },
     {
       "ticker": "COHR",
@@ -53,40 +63,10 @@
       "action": "Review thesis before earnings. Re-run research_ticker.py COHR after."
     },
     {
-      "ticker": "FLUT",
-      "name": "Flutter Entertainment plc",
-      "date": "2026-11-04",
-      "days_until": 1,
-      "theme": "consumer_media",
-      "verdict": "PASS",
-      "thesis": "Consumer discretionary stock with questionable financial health due to negative free cash flow and significant debt.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py FLUT after."
-    },
-    {
-      "ticker": "PODD",
-      "name": "Insulet Corporation",
-      "date": "2026-11-04",
-      "days_until": 1,
-      "theme": "healthcare_innovation",
-      "verdict": "PASS",
-      "thesis": "High-growth medical technology company with a strong gross margin and operating margin, but high valuation multiples and uncertain theme fit.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py PODD after."
-    },
-    {
-      "ticker": "ZBH",
-      "name": "Zimmer Biomet Holdings, Inc.",
-      "date": "2026-11-04",
-      "days_until": 1,
-      "theme": "healthcare_innovation",
-      "verdict": "WATCHLIST",
-      "thesis": "Quality compounder in the healthcare sector with a reasonable valuation and strong profitability.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py ZBH after."
-    },
-    {
       "ticker": "OKLO",
       "name": "Oklo Inc.",
       "date": "2026-11-06",
-      "days_until": 3,
+      "days_until": 2,
       "theme": "nuclear_smr",
       "verdict": "PASS",
       "thesis": "Advanced nuclear power play with significant growth potential but unverified revenue and profitability.",
@@ -96,7 +76,7 @@
       "ticker": "VST",
       "name": "Vistra Corp.",
       "date": "2026-11-06",
-      "days_until": 3,
+      "days_until": 2,
       "theme": "nuclear_smr",
       "verdict": "PASS",
       "thesis": "Utility company with strong nuclear power generation presence, but expensive valuation and negative free cash flow.",
@@ -106,11 +86,21 @@
       "ticker": "CEG",
       "name": "Constellation Energy Corporation",
       "date": "2026-11-09",
-      "days_until": 6,
+      "days_until": 5,
       "theme": "nuclear_smr",
       "verdict": "PASS",
       "thesis": "Constellation Energy Corporation is a high-quality energy company with a strong theme fit, but its valuation is relatively high and its fundamentals are mixed.",
       "action": "Review thesis before earnings. Re-run research_ticker.py CEG after."
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "date": "2026-11-12",
+      "days_until": 8,
+      "theme": "mega_cap_ai",
+      "verdict": "PASS",
+      "thesis": "expensive AI cloud play at 72.5x trailing earnings for 683.9% growth, with significant profitability and cash flow risks.",
+      "action": "Review thesis before earnings. Re-run research_ticker.py NBIS after."
     },
     {
       "ticker": "CBRS",
@@ -121,16 +111,6 @@
       "verdict": "PASS",
       "thesis": "High-growth AI infrastructure play with significant valuation expectations and current unprofitability.",
       "action": "Review thesis before earnings. Re-run research_ticker.py CBRS after."
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "date": "2026-11-12",
-      "days_until": 9,
-      "theme": "mega_cap_ai",
-      "verdict": "PASS",
-      "thesis": "expensive AI cloud play at 72.5x trailing earnings for 683.9% growth, with significant profitability and cash flow risks.",
-      "action": "Review thesis before earnings. Re-run research_ticker.py NBIS after."
     },
     {
       "ticker": "NVDA",

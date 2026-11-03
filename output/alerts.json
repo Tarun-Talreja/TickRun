@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-03T03:15:52Z",
+  "generated_at": "2026-11-03T19:53:56Z",
   "pullback_alerts": [
     {
       "ticker": "COHR",
       "name": "Coherent Corp.",
       "theme": "networking_infra",
       "verdict": "WATCHLIST",
-      "price": 199.95,
+      "price": 205.91,
       "high_52w": 440.0,
-      "drawdown_pct": -54.6,
+      "drawdown_pct": -53.2,
       "severity": "STRONG",
       "thesis": "High-growth laser technology company with expanding margins, but high valuation and negative free cash flow.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -18,9 +18,9 @@
       "name": "Celestica Inc.",
       "theme": "datacenter_infra",
       "verdict": "WATCHLIST",
-      "price": 249.22,
+      "price": 258.36,
       "high_52w": 474.03,
-      "drawdown_pct": -47.4,
+      "drawdown_pct": -45.5,
       "severity": "STRONG",
       "thesis": "AI infrastructure play with 62.4% YoY revenue growth at a forward P/E of 15.2x.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -30,9 +30,9 @@
       "name": "BWX Technologies, Inc.",
       "theme": "nuclear_smr",
       "verdict": "WATCHLIST",
-      "price": 130.47,
+      "price": 132.73,
       "high_52w": 241.82,
-      "drawdown_pct": -46.0,
+      "drawdown_pct": -45.1,
       "severity": "STRONG",
       "thesis": "Nuclear energy play with strong revenue growth and profitability at a reasonable valuation.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -42,9 +42,9 @@
       "name": "ServiceNow, Inc.",
       "theme": "cybersecurity",
       "verdict": "WATCHLIST",
-      "price": 106.01,
-      "high_52w": 184.428,
-      "drawdown_pct": -42.5,
+      "price": 108.44,
+      "high_52w": 181.726,
+      "drawdown_pct": -40.3,
       "severity": "STRONG",
       "thesis": "Quality compounder at 22x forward earnings with 20%+ revenue growth, 37% FCF margins, and 42% drawdown from high \u2014 fits \"quality on sale\" bucket.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -54,9 +54,9 @@
       "name": "Broadcom Inc.",
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
-      "price": 322.23,
+      "price": 331.55,
       "high_52w": 495.0,
-      "drawdown_pct": -34.9,
+      "drawdown_pct": -33.0,
       "severity": "MODERATE",
       "thesis": "Broadcom is a high-quality semiconductor company with strong revenue growth and a reasonable valuation at 18.4x forward earnings.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -66,23 +66,11 @@
       "name": "Micron Technology, Inc.",
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
-      "price": 833.59,
+      "price": 848.07,
       "high_52w": 1255.0,
-      "drawdown_pct": -33.6,
+      "drawdown_pct": -32.4,
       "severity": "MODERATE",
       "thesis": "AI infrastructure play with strong growth and reasonable valuation at 5.9x forward earnings.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "NVT",
-      "name": "nVent Electric plc",
-      "theme": "power_grid",
-      "verdict": "WATCHLIST",
-      "price": 123.7,
-      "high_52w": 184.64,
-      "drawdown_pct": -33.0,
-      "severity": "MODERATE",
-      "thesis": "Quality data center power play at 18x forward earnings with 44% revenue growth and 19% operating margins, 33% off highs.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -90,35 +78,23 @@
       "name": "Alphabet Inc.",
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "price": 278.99,
+      "price": 278.93,
       "high_52w": 408.61,
       "drawdown_pct": -31.7,
       "severity": "MODERATE",
-      "thesis": "Leader in AI research and development with strong revenue growth and free cash flow generation, trading at a reasonable valuation multiple.",
+      "thesis": "Wide-moat AI infrastructure compounder at 14.7x trailing P/E with 24.7% revenue growth, 31.8% operating margins, and [price omitted \u2014 see live data]B net cash, discounted for antitrust overhang and data-quality questions on FCF.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "theme": "edge_ai_silicon",
+      "ticker": "NVT",
+      "name": "nVent Electric plc",
+      "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "price": 466.84,
-      "high_52w": 658.52,
-      "drawdown_pct": -29.1,
+      "price": 129.455,
+      "high_52w": 184.64,
+      "drawdown_pct": -29.9,
       "severity": "MODERATE",
-      "thesis": "AMD is a high-growth AI infrastructure play with a strong product portfolio, but its valuation is relatively expensive.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "ISRG",
-      "name": "Intuitive Surgical, Inc.",
-      "theme": "healthcare_innovation",
-      "verdict": "WATCHLIST",
-      "price": 436.87,
-      "high_52w": 603.88,
-      "drawdown_pct": -27.7,
-      "severity": "MODERATE",
-      "thesis": "High-growth medical device company with strong financials and potential for long-term expansion in the robotic-assisted surgery market.",
+      "thesis": "Quality data center power play at 18x forward earnings with 44% revenue growth and 19% operating margins, 33% off highs.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -126,11 +102,35 @@
       "name": "Edison International",
       "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "price": 59.71,
+      "price": 59.41,
       "high_52w": 81.62,
-      "drawdown_pct": -26.8,
+      "drawdown_pct": -27.2,
       "severity": "MODERATE",
       "thesis": "Edison International offers a relatively cheap valuation at 8.7x trailing earnings for a stable utility company with 7.7% YoY revenue growth.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical, Inc.",
+      "theme": "healthcare_innovation",
+      "verdict": "WATCHLIST",
+      "price": 442.395,
+      "high_52w": 603.88,
+      "drawdown_pct": -26.7,
+      "severity": "MODERATE",
+      "thesis": "High-growth medical device company with strong financials and potential for long-term expansion in the robotic-assisted surgery market.",
+      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "theme": "edge_ai_silicon",
+      "verdict": "WATCHLIST",
+      "price": 486.0049,
+      "high_52w": 658.52,
+      "drawdown_pct": -26.2,
+      "severity": "MODERATE",
+      "thesis": "AMD is a high-growth AI infrastructure play with a strong product portfolio, but its valuation is relatively expensive.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -138,11 +138,11 @@
       "name": "LPL Financial Holdings Inc.",
       "theme": "financials",
       "verdict": "WATCHLIST",
-      "price": 298.63,
+      "price": 296.635,
       "high_52w": 400.16,
-      "drawdown_pct": -25.4,
+      "drawdown_pct": -25.9,
       "severity": "MODERATE",
-      "thesis": "LPL Financial \u2014 largest independent broker-dealer platform. 35% revenue growth (!), 10x fwd PE, -29% from ATH. Fast-growing, cheap, advisor-network scale moat.",
+      "thesis": "Quality compounder at 9.9x forward earnings with 17.8% revenue growth, sticky advisor platform, and buyback tailwind, but interest-rate-sensitive cash sweep revenue creates earnings risk.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -150,23 +150,11 @@
       "name": "ASML Holding N.V.",
       "theme": "edge_ai_silicon",
       "verdict": "WATCHLIST",
-      "price": 1526.14,
+      "price": 1549.775,
       "high_52w": 1999.96,
-      "drawdown_pct": -23.7,
+      "drawdown_pct": -22.5,
       "severity": "MODERATE",
       "thesis": "ASML is a high-growth, high-margin leader in the AI infrastructure theme, with a strong track record of revenue growth and profitability.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "ETN",
-      "name": "Eaton Corporation plc",
-      "theme": "power_grid",
-      "verdict": "WATCHLIST",
-      "price": 366.07,
-      "high_52w": 478.0,
-      "drawdown_pct": -23.4,
-      "severity": "MODERATE",
-      "thesis": "Diversified industrial equipment company with strong growth prospects in the data center and grid infrastructure sectors, trading at a forward P/E of 25.6x.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -174,9 +162,9 @@
       "name": "Meta Platforms, Inc.",
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "price": 606.73,
+      "price": 620.285,
       "high_52w": 779.82,
-      "drawdown_pct": -22.2,
+      "drawdown_pct": -20.5,
       "severity": "MODERATE",
       "thesis": "Reasonably valued AI infrastructure play with strong revenue growth and emerging technology investments.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
@@ -226,25 +214,11 @@
       "action": "Re-run: python3 scripts/research_ticker.py ETN"
     },
     {
-      "ticker": "GOOGL",
-      "last_researched": "2026-07-28",
-      "days_since": 98,
-      "verdict": "WATCHLIST",
-      "action": "Re-run: python3 scripts/research_ticker.py GOOGL"
-    },
-    {
       "ticker": "INVH",
       "last_researched": "2026-07-25",
       "days_since": 101,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py INVH"
-    },
-    {
-      "ticker": "LPLA",
-      "last_researched": "2026-07-02",
-      "days_since": 124,
-      "verdict": "WATCHLIST",
-      "action": "Re-run: python3 scripts/research_ticker.py LPLA"
     },
     {
       "ticker": "MA",
@@ -296,18 +270,18 @@
       "action": "Re-run: python3 scripts/research_ticker.py V"
     },
     {
-      "ticker": "^TNX",
-      "last_researched": "2026-05-28",
-      "days_since": 159,
-      "verdict": "WATCHLIST",
-      "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
-    },
-    {
       "ticker": "ZBH",
       "last_researched": "2026-07-26",
       "days_since": 100,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ZBH"
+    },
+    {
+      "ticker": "^TNX",
+      "last_researched": "2026-05-28",
+      "days_since": 159,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
     }
   ]
 }
