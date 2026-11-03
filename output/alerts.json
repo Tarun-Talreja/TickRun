@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T22:00:48Z",
+  "generated_at": "2026-11-03T03:15:52Z",
   "pullback_alerts": [
     {
       "ticker": "COHR",
@@ -46,7 +46,7 @@
       "high_52w": 184.428,
       "drawdown_pct": -42.5,
       "severity": "STRONG",
-      "thesis": "High-growth software company with expanding AI capabilities, but high valuation multiples.",
+      "thesis": "Quality compounder at 22x forward earnings with 20%+ revenue growth, 37% FCF margins, and 42% drawdown from high \u2014 fits \"quality on sale\" bucket.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -82,7 +82,7 @@
       "high_52w": 184.64,
       "drawdown_pct": -33.0,
       "severity": "MODERATE",
-      "thesis": "Reasonably valued data center power play with strong backlog growth.",
+      "thesis": "Quality data center power play at 18x forward earnings with 44% revenue growth and 19% operating margins, 33% off highs.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -184,137 +184,130 @@
   ],
   "stale_research": [
     {
-      "ticker": "ADP",
-      "last_researched": "2026-06-25",
-      "days_since": 130,
-      "verdict": "WATCHLIST",
-      "action": "Re-run: python3 scripts/research_ticker.py ADP"
-    },
-    {
       "ticker": "AAPL",
       "last_researched": "2026-07-26",
-      "days_since": 99,
+      "days_since": 100,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py AAPL"
     },
     {
+      "ticker": "ADP",
+      "last_researched": "2026-06-25",
+      "days_since": 131,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py ADP"
+    },
+    {
       "ticker": "AMZN",
       "last_researched": "2026-08-02",
-      "days_since": 92,
+      "days_since": 93,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py AMZN"
     },
     {
       "ticker": "ASML",
       "last_researched": "2026-08-03",
-      "days_since": 91,
+      "days_since": 92,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ASML"
     },
     {
       "ticker": "EIX",
       "last_researched": "2026-07-25",
-      "days_since": 100,
+      "days_since": 101,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py EIX"
     },
     {
       "ticker": "ETN",
       "last_researched": "2026-07-26",
-      "days_since": 99,
+      "days_since": 100,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ETN"
     },
     {
       "ticker": "GOOGL",
       "last_researched": "2026-07-28",
-      "days_since": 97,
+      "days_since": 98,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py GOOGL"
     },
     {
       "ticker": "INVH",
       "last_researched": "2026-07-25",
-      "days_since": 100,
+      "days_since": 101,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py INVH"
     },
     {
       "ticker": "LPLA",
       "last_researched": "2026-07-02",
-      "days_since": 123,
+      "days_since": 124,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py LPLA"
     },
     {
       "ticker": "MA",
       "last_researched": "2026-07-02",
-      "days_since": 123,
+      "days_since": 124,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py MA"
     },
     {
       "ticker": "MSFT",
       "last_researched": "2026-07-27",
-      "days_since": 98,
+      "days_since": 99,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py MSFT"
     },
     {
       "ticker": "NVDA",
       "last_researched": "2026-07-25",
-      "days_since": 100,
+      "days_since": 101,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py NVDA"
     },
     {
-      "ticker": "NVT",
-      "last_researched": "2026-07-29",
-      "days_since": 96,
-      "verdict": "WATCHLIST",
-      "action": "Re-run: python3 scripts/research_ticker.py NVT"
-    },
-    {
       "ticker": "PAYX",
       "last_researched": "2026-07-24",
-      "days_since": 101,
+      "days_since": 102,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py PAYX"
     },
     {
       "ticker": "QQQ",
       "last_researched": "2026-05-28",
-      "days_since": 158,
+      "days_since": 159,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py QQQ"
     },
     {
       "ticker": "SPY",
       "last_researched": "2026-05-28",
-      "days_since": 158,
+      "days_since": 159,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py SPY"
     },
     {
       "ticker": "V",
       "last_researched": "2026-07-25",
-      "days_since": 100,
+      "days_since": 101,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py V"
     },
     {
-      "ticker": "ZBH",
-      "last_researched": "2026-07-26",
-      "days_since": 99,
-      "verdict": "WATCHLIST",
-      "action": "Re-run: python3 scripts/research_ticker.py ZBH"
-    },
-    {
       "ticker": "^TNX",
       "last_researched": "2026-05-28",
-      "days_since": 158,
+      "days_since": 159,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
+    },
+    {
+      "ticker": "ZBH",
+      "last_researched": "2026-07-26",
+      "days_since": 100,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py ZBH"
     }
   ]
 }
