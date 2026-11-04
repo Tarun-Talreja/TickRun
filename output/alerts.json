@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T00:17:00Z",
+  "generated_at": "2026-11-04T01:50:17Z",
   "pullback_alerts": [
     {
       "ticker": "COHR",
@@ -200,18 +200,18 @@
       "action": "Re-run: python3 scripts/research_ticker.py ASML"
     },
     {
-      "ticker": "ETN",
-      "last_researched": "2026-07-26",
-      "days_since": 101,
-      "verdict": "WATCHLIST",
-      "action": "Re-run: python3 scripts/research_ticker.py ETN"
-    },
-    {
       "ticker": "EIX",
       "last_researched": "2026-07-25",
       "days_since": 102,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py EIX"
+    },
+    {
+      "ticker": "ETN",
+      "last_researched": "2026-07-26",
+      "days_since": 101,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py ETN"
     },
     {
       "ticker": "INVH",
