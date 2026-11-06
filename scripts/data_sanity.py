@@ -14,7 +14,7 @@ Checks per ticker:
   - Missing critical fields (price, market cap)
   - Stale fetch (quote older than MAX_STALE_HOURS)
   - Financials reported in another currency (the TSM/ASML bug): no FX rate, or
-    P/Es that may mix currencies
+    a trailing P/E that may mix currencies
   - Impossible balance sheet or multiple (net cash above market cap, EV/EBITDA > 500)
 
 Output:
@@ -83,12 +83,12 @@ def _check_ticker(ticker: str, q: dict) -> list[dict]:
             pass
 
     # 6. Reports in another currency. Money fields are converted upstream, but
-    # P/Es come straight from Yahoo, which divides a USD price by an EPS whose
-    # currency it does not state.
+    # trailing P/E comes straight from Yahoo: ASML's 36.85 trailing EPS matches
+    # neither its EUR total (35.00) nor the USD equivalent (39.2).
     report_cur, quote_cur = q.get("financial_currency"), q.get("currency")
     if report_cur and quote_cur and report_cur != quote_cur:
         if q.get("fx_rate"):
-            flags.append({"level": "low", "msg": f"Reports in {report_cur}; figures converted to {quote_cur} at {q['fx_rate']:.4f}. P/Es may mix currencies — verify against filings"})
+            flags.append({"level": "low", "msg": f"Reports in {report_cur}; figures converted to {quote_cur} at {q['fx_rate']:.4f}. Trailing P/E may mix currencies — verify against filings"})
         else:
             flags.append({"level": "high", "msg": f"Reports in {report_cur} and no FX rate was available — company financials blanked"})
 

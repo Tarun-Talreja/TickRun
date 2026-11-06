@@ -52,6 +52,7 @@ except Exception:
 # NVIDIA NIM model chain lives in llm_client.py — one list shared by every
 # script, so a model retirement is a one-line fix instead of a 10-week outage.
 from llm_client import NVIDIA_CHAT_MODELS as NVIDIA_MODEL_CHAIN, chat as _nim_chat
+from fact_check import fact_check_section, find_unsupported, source_block
 NVIDIA_MODEL = NVIDIA_MODEL_CHAIN[0]   # may be overridden by --model
 
 # Anthropic fallback settings
@@ -207,8 +208,8 @@ def _build_prompt(ticker: str, quotes: dict) -> str:
     if report_cur and report_cur != q.get("currency"):
         currency_note = (
             f"\nCurrency: reports in {report_cur}; revenue, FCF, cash and debt above are "
-            f"converted to USD. Trailing and forward P/E come from Yahoo and may mix "
-            f"currencies, so do not build the case on them.\n"
+            f"converted to USD. Trailing P/E comes from Yahoo and may mix currencies, "
+            f"so do not build the case on it.\n"
         )
 
     # 52-week high gate warning
@@ -229,13 +230,13 @@ def _build_prompt(ticker: str, quotes: dict) -> str:
 - Price: ${_fmt(q.get('price'))}
 - Market cap: {mcap_str}
 - Revenue (TTM): {rev_str}
-- Revenue growth (YoY): {_fmt(q.get('revenue_growth'), suffix='%')}
+- Revenue growth (latest quarter vs a year ago, NOT trailing-twelve-month): {_fmt(q.get('revenue_growth'), suffix='%')}
 - Gross margin: {_fmt(q.get('gross_margin'), suffix='%')}
 - Operating margin: {_fmt(q.get('op_margin'), suffix='%')}
 - FCF (TTM): {fcf_str}
 - Net cash / net debt: {net_str}
 - Trailing P/E: {_fmt(q.get('pe'), suffix='x')}
-- Forward P/E: {_fmt(q.get('forward_pe'), suffix='x')}
+- Forward P/E (usually NEXT fiscal year's estimate, so it reads lower than this year's): {_fmt(q.get('forward_pe'), suffix='x')}
 - EV/EBITDA: {_fmt(q.get('ev_ebitda'), suffix='x')}
 - 52-week high: ${_fmt(q.get('high_52w'))} | Drawdown from high: {_fmt(drawdown, suffix='%')}
 
@@ -249,6 +250,8 @@ IMPORTANT GROUNDING RULES:
 - For any claim NOT supported by the data or headlines above (specific contract values,
   management quotes, customer names, analyst targets), write "unverified" — do NOT invent it.
 - Distinguish clearly between facts from the provided data vs. your general knowledge.
+- Do NOT quote peers' multiples or historical averages: you were not given them, and
+  figures from memory are often out of date. Compare qualitatively or write "unverified".
 
 MANDATORY OUTPUT FORMAT — your response MUST end with these four lines, EXACTLY,
 as the very last lines, with nothing after them:
@@ -371,6 +374,7 @@ def _update_watchlist(
     confidence: str | None = None, bear: str | None = None,
     thesis: str | None = None, drawdown_trigger_pct: float | None = None,
     live_buy_target: float | None = None,
+    unsupported_figures: list[str] | None = None,
 ):
     with open(WATCHLIST_PATH) as f:
         wl = json.load(f)
@@ -395,6 +399,7 @@ def _update_watchlist(
             candidate["research_file"]   = output_file
             candidate["last_researched"] = today
             candidate["status"]          = "research_complete"
+            candidate["unsupported_figures"] = unsupported_figures or []
             if confidence:
                 candidate["confidence"] = confidence
             if bear:
@@ -432,6 +437,7 @@ def _update_watchlist(
             "buy_target":      live_buy_target,
             "research_file":   output_file,
             "last_researched": today,
+            "unsupported_figures": unsupported_figures or [],
         })
 
     wl["last_updated"] = today
@@ -502,6 +508,11 @@ def main():
                 f.write(f"\n\n---\n\n## Bear-Case Check (devil's advocate)\n\n{bear}\n")
             print(f"\n{bear}\n")
 
+    unsupported = find_unsupported(f"{text}\n{bear or ''}", source_block(prompt))
+    with open(out_path, "a") as f:
+        f.write(fact_check_section(unsupported))
+    print(f"🔎  Fact-check: {len(unsupported)} figure(s) not in the source data: {unsupported}")
+
     if verdict:
         conf_str = f" (confidence: {confidence})" if confidence else ""
         print(f"✅  Verdict: {verdict}{conf_str}")
@@ -511,7 +522,7 @@ def main():
             final_verdict, downgraded = _update_watchlist(
                 ticker, verdict, f"output/research/{filename}", confidence, bear,
                 thesis=thesis, drawdown_trigger_pct=drawdown_trigger_pct,
-                live_buy_target=live_buy_target,
+                live_buy_target=live_buy_target, unsupported_figures=unsupported,
             )
             if downgraded:
                 print(f"⚠️  Bear check flipped the call — downgraded {verdict} → {final_verdict}")

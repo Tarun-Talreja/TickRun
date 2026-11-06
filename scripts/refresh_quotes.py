@@ -72,6 +72,19 @@ def _fx_rate(from_cur: str, to_cur: str) -> float | None:
         return None
 
 
+def _ttm_fcf(t) -> float | None:
+    """Operating cash flow minus capex, summed over the last four quarters.
+
+    Not info["freeCashflow"]: that is Yahoo's levered figure, which showed $42B
+    for NVDA when its filings give $127B, $3B for MSFT, and -$1.2B for GOOGL.
+    """
+    try:
+        quarters = t.quarterly_cashflow.loc["Free Cash Flow"].dropna().sort_index(ascending=False)
+    except KeyError:
+        return None
+    return float(quarters.iloc[:4].sum()) if len(quarters) >= 4 else None
+
+
 def _normalize_money(info: dict, fx: float | None) -> dict:
     """Company-level money fields, in the same currency as the quote.
 
@@ -154,7 +167,7 @@ def _fetch_with_retry(ticker: str) -> dict:
     quote_cur = info.get("currency")
     report_cur = info.get("financialCurrency") or quote_cur
     fx = 1.0 if report_cur == quote_cur else _fx_rate(report_cur, quote_cur)
-    money = _normalize_money(info, fx)
+    money = _normalize_money({**info, "freeCashflow": _ttm_fcf(t)}, fx)
 
     return {
         "ticker":               ticker,
