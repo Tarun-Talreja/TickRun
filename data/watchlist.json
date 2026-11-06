@@ -763,28 +763,26 @@
       "name": "Oklo Inc.",
       "theme": "nuclear_smr",
       "status": "research_complete",
-      "thesis": "Pre-revenue SMR pure-play with 9-year cash runway and NRC licensing progress, trading at 4,400x P/S \u2014 a binary bet on first commercial deployment by early 2030s.",
+      "thesis": "Pre-revenue SMR developer with $2.5B cash runway but no licensed product or commercial contracts; valuation reflects speculative optionality not fundamentals.",
       "added": "2026-05-28",
-      "verdict": "WATCHLIST",
-      "buy_target": 88.08,
+      "verdict": "PASS",
+      "buy_target": 11.74,
       "current_price": null,
-      "next_action": "WAIT \u2014 Pre-revenue SMR pure-play with 9-year cash runway and NRC licensing progress, trading at 4,400x P/S \u2014 a binary bet on first commercial deployment by early 2030s. Revisit at 25% below the 52-week high.",
+      "next_action": "DROP \u2014 Pre-revenue SMR developer with $2.5B cash runway but no licensed product or commercial contracts; valuation reflects speculative optionality not fundamentals.",
       "research_file": "output/research/OKLO_2026-11-06.md",
       "last_researched": "2026-11-06",
-      "llm_verdict": "WATCHLIST",
+      "llm_verdict": "PASS",
       "bear_downgraded": false,
       "confidence": "MEDIUM",
-      "rating_version": 2,
+      "rating_version": 3,
       "unsupported_figures": [
-        "$60M",
         "$276M",
         "4,400x",
-        "$10B",
-        "50%",
-        "25%"
+        "$1.9B"
       ],
       "bear_check": null,
-      "buy_trigger_drawdown_pct": -25.0
+      "buy_trigger_drawdown_pct": -90.0,
+      "fall_reason": "The stock fell 80% due to analyst target cuts citing execution and interest rate risks, combined with a broader AI/nuclear sector selloff."
     },
     {
       "ticker": "TLN",
