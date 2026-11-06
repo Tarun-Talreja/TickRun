@@ -58,7 +58,9 @@ NVIDIA_MODEL = NVIDIA_MODEL_CHAIN[0]   # may be overridden by --model
 # Anthropic fallback settings
 ANTHROPIC_MODEL = "claude-opus-4-7"
 
-MAX_TOKENS = 4000   # 8-section structured prompt needs room to reach the verdict (section 8)
+# 8-section structured prompt needs room to reach the verdict (section 8). 4000
+# left the current model cutting off mid-note on some tickers.
+MAX_TOKENS = 6000
 
 # Without a client timeout a single slow generation can hang until the whole
 # workflow is cancelled, which is what left most of the watchlist stale.

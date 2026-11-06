@@ -67,8 +67,8 @@ def chat(api_key: str, messages: list[dict], *, max_tokens: int,
             return text, model
         except (APIStatusError, APIConnectionError, ValueError) as exc:
             last_err = exc
-            code = getattr(exc, "status_code", "")
-            print(f"   {model} failed ({type(exc).__name__} {code}) — trying next...")
+            detail = getattr(exc, "status_code", None) or str(exc)[:60]
+            print(f"   {model} failed ({type(exc).__name__}: {detail}) — trying next...")
     raise RuntimeError(f"All NVIDIA models failed. Last error: {last_err}")
 
 
