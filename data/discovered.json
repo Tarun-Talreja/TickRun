@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T17:53:39Z",
+  "generated_at": "2026-11-06T18:12:13Z",
   "universe": "sp500",
   "scanned": 503,
   "qualified": 428,
@@ -8,21 +8,21 @@
       "ticker": "STX",
       "name": "Seagate Technology Holdings plc",
       "sector": "Technology",
-      "score": 81.3,
+      "score": 81.5,
       "quality": 33.4,
-      "value": 18.1,
+      "value": 18.3,
       "growth": 20,
       "health": 9.8,
       "passes_screens": [
         "Quality",
         "GARP"
       ],
-      "market_cap": 103231332352,
-      "price": 449.69,
-      "forward_pe": 6.882143,
+      "market_cap": 104733810688,
+      "price": 456.235,
+      "forward_pe": 6.9823084,
       "rev_growth": 0.61,
       "roe": 2.5935102,
-      "drawdown_pct": -60.7,
+      "drawdown_pct": -60.2,
       "new_this_week": false
     },
     {
@@ -38,33 +38,12 @@
         "GARP",
         "Magic Formula"
       ],
-      "market_cap": 97348788224,
-      "price": 349.065,
-      "forward_pe": 6.5252414,
+      "market_cap": 97336238080,
+      "price": 349.02,
+      "forward_pe": 6.5244,
       "rev_growth": 0.465,
       "roe": 0.46872002,
       "drawdown_pct": -24.4,
-      "new_this_week": false
-    },
-    {
-      "ticker": "LRCX",
-      "name": "Lam Research Corporation",
-      "sector": "Technology",
-      "score": 78.3,
-      "quality": 33.5,
-      "value": 11.5,
-      "growth": 20,
-      "health": 13.4,
-      "passes_screens": [
-        "Quality",
-        "GARP"
-      ],
-      "market_cap": 248883281920,
-      "price": 198.88,
-      "forward_pe": 16.25324,
-      "rev_growth": 0.544,
-      "roe": 0.7012,
-      "drawdown_pct": -54.6,
       "new_this_week": false
     },
     {
@@ -80,12 +59,12 @@
         "Quality",
         "Magic Formula"
       ],
-      "market_cap": 125856694272,
-      "price": 121.11,
-      "forward_pe": 12.11295,
+      "market_cap": 126199627776,
+      "price": 121.44,
+      "forward_pe": 12.145955,
       "rev_growth": 0.152,
       "roe": 0.27259,
-      "drawdown_pct": -10.5,
+      "drawdown_pct": -10.2,
       "new_this_week": false
     },
     {
@@ -100,13 +79,13 @@
       "passes_screens": [
         "GARP"
       ],
-      "market_cap": 93706690560,
-      "price": 905.835,
-      "forward_pe": 12.808358,
+      "market_cap": 93768237056,
+      "price": 906.43,
+      "forward_pe": 12.816794,
       "rev_growth": 0.363,
       "roe": 0.14948,
-      "drawdown_pct": -8.7,
-      "new_this_week": true
+      "drawdown_pct": -8.6,
+      "new_this_week": false
     },
     {
       "ticker": "AMAT",
@@ -121,9 +100,9 @@
         "Quality",
         "GARP"
       ],
-      "market_cap": 262585532416,
-      "price": 330.88,
-      "forward_pe": 17.830997,
+      "market_cap": 262371246080,
+      "price": 330.61,
+      "forward_pe": 17.816446,
       "rev_growth": 0.248,
       "roe": 0.41068,
       "drawdown_pct": -55.3,
@@ -133,7 +112,7 @@
       "ticker": "DECK",
       "name": "Deckers Outdoor Corporation",
       "sector": "Consumer Cyclical",
-      "score": 74.9,
+      "score": 74.8,
       "quality": 32.8,
       "value": 19.8,
       "growth": 8.6,
@@ -142,12 +121,12 @@
         "Quality",
         "Magic Formula"
       ],
-      "market_cap": 11622102016,
-      "price": 87.07,
-      "forward_pe": 10.645477,
+      "market_cap": 11641456640,
+      "price": 87.215,
+      "forward_pe": 10.663205,
       "rev_growth": 0.035,
       "roe": 0.44274,
-      "drawdown_pct": -28.8,
+      "drawdown_pct": -28.7,
       "new_this_week": false
     },
     {
@@ -162,13 +141,13 @@
       "passes_screens": [
         "GARP"
       ],
-      "market_cap": 35168108544,
-      "price": 999.255,
-      "forward_pe": 14.895406,
+      "market_cap": 35362557952,
+      "price": 1004.78,
+      "forward_pe": 14.977765,
       "rev_growth": 0.537,
       "roe": 0.58608,
-      "drawdown_pct": -51.8,
-      "new_this_week": true
+      "drawdown_pct": -51.6,
+      "new_this_week": false
     },
     {
       "ticker": "FOX",
@@ -183,12 +162,33 @@
         "GARP",
         "Magic Formula"
       ],
-      "market_cap": 25396662272,
-      "price": 60.21,
-      "forward_pe": 9.76907,
+      "market_cap": 25384009728,
+      "price": 60.18,
+      "forward_pe": 9.764202,
       "rev_growth": 0.223,
       "roe": 0.16568,
       "drawdown_pct": -11.7,
+      "new_this_week": false
+    },
+    {
+      "ticker": "MPWR",
+      "name": "Monolithic Power Systems, Inc.",
+      "sector": "Technology",
+      "score": 74.4,
+      "quality": 30.8,
+      "value": 8.6,
+      "growth": 20,
+      "health": 15.0,
+      "passes_screens": [
+        "Quality",
+        "GARP"
+      ],
+      "market_cap": 57667182592,
+      "price": 1182.48,
+      "forward_pe": 25.514912,
+      "rev_growth": 0.631,
+      "roe": 0.24466999,
+      "drawdown_pct": -31.0,
       "new_this_week": true
     },
     {
@@ -205,40 +205,40 @@
         "Magic Formula",
         "Dividend Quality"
       ],
-      "market_cap": 96578011136,
-      "price": 247.59,
-      "forward_pe": 7.8791475,
+      "market_cap": 96540958720,
+      "price": 247.495,
+      "forward_pe": 7.876124,
       "rev_growth": 0.464,
       "roe": 0.39835998,
       "drawdown_pct": -17.3,
-      "new_this_week": true
+      "new_this_week": false
     },
     {
       "ticker": "MPC",
       "name": "Marathon Petroleum Corporation",
       "sector": "Energy",
-      "score": 73.0,
+      "score": 73.1,
       "quality": 23.8,
-      "value": 22.7,
+      "value": 22.9,
       "growth": 20,
       "health": 6.4,
       "passes_screens": [
         "GARP",
         "Magic Formula"
       ],
-      "market_cap": 101438758912,
-      "price": 372.55,
-      "forward_pe": 6.0250783,
+      "market_cap": 101901639680,
+      "price": 374.25,
+      "forward_pe": 6.052572,
       "rev_growth": 0.609,
       "roe": 0.6046,
-      "drawdown_pct": -24.6,
-      "new_this_week": true
+      "drawdown_pct": -24.2,
+      "new_this_week": false
     },
     {
       "ticker": "EME",
       "name": "EMCOR Group, Inc.",
       "sector": "Industrials",
-      "score": 72.6,
+      "score": 72.7,
       "quality": 22.7,
       "value": 18.8,
       "growth": 19.5,
@@ -247,13 +247,13 @@
         "GARP",
         "Magic Formula"
       ],
-      "market_cap": 26357204992,
-      "price": 602.01,
-      "forward_pe": 14.901548,
+      "market_cap": 26319988736,
+      "price": 601.16,
+      "forward_pe": 14.880507,
       "rev_growth": 0.288,
       "roe": 0.40552,
-      "drawdown_pct": -36.8,
-      "new_this_week": true
+      "drawdown_pct": -36.9,
+      "new_this_week": false
     },
     {
       "ticker": "PFG",
@@ -270,13 +270,13 @@
         "Magic Formula",
         "Dividend Quality"
       ],
-      "market_cap": 23559983104,
-      "price": 110.935,
-      "forward_pe": 11.011476,
+      "market_cap": 23590778880,
+      "price": 111.08,
+      "forward_pe": 11.025869,
       "rev_growth": 0.254,
       "roe": 0.16107,
-      "drawdown_pct": -8.5,
-      "new_this_week": true
+      "drawdown_pct": -8.3,
+      "new_this_week": false
     },
     {
       "ticker": "HIG",
@@ -290,9 +290,9 @@
       "passes_screens": [
         "Magic Formula"
       ],
-      "market_cap": 36178354176,
-      "price": 135.1825,
-      "forward_pe": 9.932807,
+      "market_cap": 36112842752,
+      "price": 135.045,
+      "forward_pe": 9.91482,
       "rev_growth": 0.039,
       "roe": 0.23251,
       "drawdown_pct": -7.5,
@@ -304,19 +304,19 @@
       "sector": "Healthcare",
       "score": 69.8,
       "quality": 33.5,
-      "value": 13.4,
+      "value": 13.3,
       "growth": 8.5,
       "health": 14.4,
       "passes_screens": [
         "Quality"
       ],
-      "market_cap": 32638769152,
-      "price": 232.045,
-      "forward_pe": 17.544199,
+      "market_cap": 32681670656,
+      "price": 232.35,
+      "forward_pe": 17.567259,
       "rev_growth": 0.059,
       "roe": 0.26400998,
-      "drawdown_pct": -16.4,
-      "new_this_week": true
+      "drawdown_pct": -16.3,
+      "new_this_week": false
     }
   ]
 }
