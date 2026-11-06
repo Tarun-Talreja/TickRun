@@ -1,20 +1,20 @@
 {
-  "last_built": "2026-11-06T21:59:44Z",
-  "quotes_updated": "2026-11-06T21:50:38Z",
+  "last_built": "2026-11-06T22:04:08Z",
+  "quotes_updated": "2026-11-06T22:01:38Z",
   "health": {
     "stages": [
       {
         "name": "Quotes",
-        "updated_at": "2026-11-06T21:50:38Z",
+        "updated_at": "2026-11-06T22:01:38Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 0.2,
+        "age_hours": 0.0,
         "affects": "Prices and buy targets may be out of date"
       },
       {
         "name": "Research",
-        "updated_at": "2026-11-06T21:59:26Z",
-        "detail": "2/2 tickers",
+        "updated_at": "2026-11-06T22:03:57Z",
+        "detail": "1/1 tickers",
         "status": "ok",
         "age_hours": 0.0,
         "affects": "Ratings aren't being updated"
@@ -24,12 +24,12 @@
         "updated_at": "2026-11-06T16:51:48Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 5.1,
+        "age_hours": 5.2,
         "affects": "Upcoming earnings dates may be missing"
       },
       {
         "name": "SEC filings",
-        "updated_at": "2026-11-06T21:59:34Z",
+        "updated_at": "2026-11-06T22:04:02Z",
         "detail": null,
         "status": "ok",
         "age_hours": 0.0,
@@ -37,23 +37,23 @@
       },
       {
         "name": "Prices",
-        "updated_at": "2026-11-06T21:50:38Z",
+        "updated_at": "2026-11-06T22:01:38Z",
         "detail": "54/54 have data",
         "status": "ok",
-        "age_hours": 0.2,
+        "age_hours": 0.0,
         "affects": "Prices and buy targets may be missing"
       },
       {
         "name": "Company figures",
-        "updated_at": "2026-11-06T21:50:38Z",
+        "updated_at": "2026-11-06T22:01:38Z",
         "detail": "54/54 have data",
         "status": "ok",
-        "age_hours": 0.2,
+        "age_hours": 0.0,
         "affects": "Ratings can't check the numbers"
       },
       {
         "name": "News",
-        "updated_at": "2026-11-06T21:59:43Z",
+        "updated_at": "2026-11-06T22:04:07Z",
         "detail": "54/54 have data",
         "status": "ok",
         "age_hours": 0.0,
@@ -64,7 +64,7 @@
         "updated_at": "2026-11-06T21:56:53Z",
         "detail": "48/55 have data",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "Insider buying won't show on stocks or the radar"
       },
       {
@@ -72,7 +72,7 @@
         "updated_at": "2026-08-15T14:09:52Z",
         "detail": "28/31 have data",
         "status": "ok",
-        "age_hours": 1999.8,
+        "age_hours": 1999.9,
         "affects": "Hedge fund holdings may be out of date"
       },
       {
@@ -80,7 +80,7 @@
         "updated_at": "2026-11-06T19:00:43Z",
         "detail": "16/16 have data",
         "status": "ok",
-        "age_hours": 3.0,
+        "age_hours": 3.1,
         "affects": "The field briefing may be out of date"
       },
       {
@@ -96,7 +96,7 @@
         "updated_at": "2026-11-06T19:01:06Z",
         "detail": "12 found",
         "status": "ok",
-        "age_hours": 3.0,
+        "age_hours": 3.1,
         "affects": "The radar may be out of date"
       },
       {
@@ -104,7 +104,7 @@
         "updated_at": "2026-11-06T18:12:13Z",
         "detail": "428 found",
         "status": "ok",
-        "age_hours": 3.8,
+        "age_hours": 3.9,
         "affects": "New stock ideas may be out of date"
       },
       {
@@ -112,7 +112,7 @@
         "updated_at": "2026-11-06T21:57:45Z",
         "detail": "1 found",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "The AI summary may be out of date"
       },
       {
@@ -759,7 +759,7 @@
         "revenue_growth": 11.1,
         "op_margin": 4.0,
         "pe": 50.74952,
-        "forward_pe": 42.095592,
+        "forward_pe": 42.051052,
         "short_percent_float": 1.72,
         "short_ratio": 3.2,
         "high_proximity_warning": true,
@@ -814,7 +814,7 @@
         "data_flags": [
           {
             "level": "low",
-            "msg": "Reports in EUR; figures converted to USD at 1.1142. Trailing P/E may mix currencies \u2014 verify against filings"
+            "msg": "Reports in EUR; figures converted to USD at 1.1143. Trailing P/E may mix currencies \u2014 verify against filings"
           }
         ]
       },
@@ -1342,31 +1342,28 @@
         "name": "Vistra Corp.",
         "theme": "nuclear_smr",
         "status": "research_complete",
-        "thesis": "Cheap nuclear/gas power generator at 13x forward earnings with record EBITDA, raised guidance, and direct exposure to AI data center power demand in ERCOT/PJM.",
+        "thesis": "Cheap power generator at 9x EV/EBITDA with nuclear baseload exposure to AI data center demand in ERCOT/PJM.",
         "added": "2026-05-28",
         "verdict": "RESEARCH-WORTHY",
         "buy_target": 124.77,
         "current_price": 124.8,
-        "next_action": "RESEARCH \u2014 Cheap nuclear/gas power generator at 13x forward earnings with record EBITDA, raised guidance, and direct exposure to AI data center power demand in ERCOT/PJM. Worth a deep dive before any decision.",
+        "next_action": "RESEARCH \u2014 Cheap power generator at 9x EV/EBITDA with nuclear baseload exposure to AI data center demand in ERCOT/PJM. Worth a deep dive before any decision.",
         "research_file": "output/research/VST_2026-11-06.md",
         "last_researched": "2026-11-06",
-        "confidence": "MEDIUM",
-        "bear_check": "**Strongest argument against buying VST:** VST\u2019s 13.1x forward P/E depends on a sharp earnings rebound even though latest-quarter revenue is down 5.5% YoY, while $20.1B of net debt equals roughly 48% of its $41.9B market cap despite $2.255B of annual FCF. If power prices normalize or the rebound is delayed, leverage magnifies downside; an extended Comanche Peak outage would also threaten high-margin generation and data-center PPA commitments. The apparent cheapness therefore offers limited margin of safety if either forecast risk materializes.\n\n**Break assessment:** No break is present. The revenue contraction does not contradict the note\u2019s central claim of record EBITDA, raised guidance, and AI-linked demand, and the headlines report no fraud, restatement, auditor resignation, bankruptcy, largest-customer loss, or withdrawn guidance.\n\n**Drawdown assessment:** The supplied headlines do not explain the 37% decline; they instead describe a recent post-earnings rally, so explanations such as market rotation or power-price normalization remain unverified.\n\nBREAK: NONE\nEVIDENCE: none\nWHY_IT_FELL: unknown\nFALL_EVIDENCE: none\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
+        "confidence": "LOW",
+        "bear_check": "Vistra's ~60% EBITDA concentration in ERCOT creates acute regulatory risk: Texas market reforms, price caps, or winter-storm liability changes could compress margins across the entire fleet simultaneously. The company carries $20.1B in net debt (nearly half its market cap) while revenue declined 5.5% year-over-year in the latest quarter, raising questions about the sustainability of the implied 25% earnings growth baked into the 13.1x forward P/E. Nuclear regulatory overhang from the Talen/AWS deal scrutiny adds further uncertainty to the Comanche Peak relicensing thesis.\n\nWHY_IT_FELL: unknown\nFALL_EVIDENCE: none\nBREAK: NONE\nEVIDENCE: none",
         "llm_verdict": "RESEARCH-WORTHY",
         "bear_downgraded": false,
         "buy_trigger_drawdown_pct": -36.6,
         "no_pullback_gate": false,
         "rating_version": 3,
         "unsupported_figures": [
-          "40%",
-          "18x",
+          "25%",
           "$1.5B",
-          "4%",
-          "$800M",
-          "2.8x",
-          "48%"
+          "95%",
+          "60%"
         ],
-        "fall_reason": "The 36.6% drawdown from the 52-week high likely reflects earlier 2026 market rotation out of power/infrastructure names and ERCOT price normalization, not fundamental deterioration \u2014 recent Q3 results show record EBITDA and raised outlook.",
+        "fall_reason": null,
         "price": 124.8,
         "pct_change_1d": 10.55,
         "market_cap": 41887272960,
@@ -3222,7 +3219,7 @@
           "revenue_growth": 11.1,
           "op_margin": 4.0,
           "pe": 50.74952,
-          "forward_pe": 42.095592,
+          "forward_pe": 42.051052,
           "short_percent_float": 1.72,
           "short_ratio": 3.2,
           "high_proximity_warning": true,
@@ -4269,7 +4266,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in EUR; figures converted to USD at 1.1142. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in EUR; figures converted to USD at 1.1143. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -4611,31 +4608,28 @@
           "name": "Vistra Corp.",
           "theme": "nuclear_smr",
           "status": "research_complete",
-          "thesis": "Cheap nuclear/gas power generator at 13x forward earnings with record EBITDA, raised guidance, and direct exposure to AI data center power demand in ERCOT/PJM.",
+          "thesis": "Cheap power generator at 9x EV/EBITDA with nuclear baseload exposure to AI data center demand in ERCOT/PJM.",
           "added": "2026-05-28",
           "verdict": "RESEARCH-WORTHY",
           "buy_target": 124.77,
           "current_price": 124.8,
-          "next_action": "RESEARCH \u2014 Cheap nuclear/gas power generator at 13x forward earnings with record EBITDA, raised guidance, and direct exposure to AI data center power demand in ERCOT/PJM. Worth a deep dive before any decision.",
+          "next_action": "RESEARCH \u2014 Cheap power generator at 9x EV/EBITDA with nuclear baseload exposure to AI data center demand in ERCOT/PJM. Worth a deep dive before any decision.",
           "research_file": "output/research/VST_2026-11-06.md",
           "last_researched": "2026-11-06",
-          "confidence": "MEDIUM",
-          "bear_check": "**Strongest argument against buying VST:** VST\u2019s 13.1x forward P/E depends on a sharp earnings rebound even though latest-quarter revenue is down 5.5% YoY, while $20.1B of net debt equals roughly 48% of its $41.9B market cap despite $2.255B of annual FCF. If power prices normalize or the rebound is delayed, leverage magnifies downside; an extended Comanche Peak outage would also threaten high-margin generation and data-center PPA commitments. The apparent cheapness therefore offers limited margin of safety if either forecast risk materializes.\n\n**Break assessment:** No break is present. The revenue contraction does not contradict the note\u2019s central claim of record EBITDA, raised guidance, and AI-linked demand, and the headlines report no fraud, restatement, auditor resignation, bankruptcy, largest-customer loss, or withdrawn guidance.\n\n**Drawdown assessment:** The supplied headlines do not explain the 37% decline; they instead describe a recent post-earnings rally, so explanations such as market rotation or power-price normalization remain unverified.\n\nBREAK: NONE\nEVIDENCE: none\nWHY_IT_FELL: unknown\nFALL_EVIDENCE: none\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
+          "confidence": "LOW",
+          "bear_check": "Vistra's ~60% EBITDA concentration in ERCOT creates acute regulatory risk: Texas market reforms, price caps, or winter-storm liability changes could compress margins across the entire fleet simultaneously. The company carries $20.1B in net debt (nearly half its market cap) while revenue declined 5.5% year-over-year in the latest quarter, raising questions about the sustainability of the implied 25% earnings growth baked into the 13.1x forward P/E. Nuclear regulatory overhang from the Talen/AWS deal scrutiny adds further uncertainty to the Comanche Peak relicensing thesis.\n\nWHY_IT_FELL: unknown\nFALL_EVIDENCE: none\nBREAK: NONE\nEVIDENCE: none",
           "llm_verdict": "RESEARCH-WORTHY",
           "bear_downgraded": false,
           "buy_trigger_drawdown_pct": -36.6,
           "no_pullback_gate": false,
           "rating_version": 3,
           "unsupported_figures": [
-            "40%",
-            "18x",
+            "25%",
             "$1.5B",
-            "4%",
-            "$800M",
-            "2.8x",
-            "48%"
+            "95%",
+            "60%"
           ],
-          "fall_reason": "The 36.6% drawdown from the 52-week high likely reflects earlier 2026 market rotation out of power/infrastructure names and ERCOT price normalization, not fundamental deterioration \u2014 recent Q3 results show record EBITDA and raised outlook.",
+          "fall_reason": null,
           "price": 124.8,
           "pct_change_1d": 10.55,
           "market_cap": 41887272960,
@@ -6031,7 +6025,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in EUR; figures converted to USD at 1.1142. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in EUR; figures converted to USD at 1.1143. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -6442,7 +6436,7 @@
           "revenue_growth": 11.1,
           "op_margin": 4.0,
           "pe": 50.74952,
-          "forward_pe": 42.095592,
+          "forward_pe": 42.051052,
           "short_percent_float": 1.72,
           "short_ratio": 3.2,
           "high_proximity_warning": true,
@@ -6837,31 +6831,28 @@
           "name": "Vistra Corp.",
           "theme": "nuclear_smr",
           "status": "research_complete",
-          "thesis": "Cheap nuclear/gas power generator at 13x forward earnings with record EBITDA, raised guidance, and direct exposure to AI data center power demand in ERCOT/PJM.",
+          "thesis": "Cheap power generator at 9x EV/EBITDA with nuclear baseload exposure to AI data center demand in ERCOT/PJM.",
           "added": "2026-05-28",
           "verdict": "RESEARCH-WORTHY",
           "buy_target": 124.77,
           "current_price": 124.8,
-          "next_action": "RESEARCH \u2014 Cheap nuclear/gas power generator at 13x forward earnings with record EBITDA, raised guidance, and direct exposure to AI data center power demand in ERCOT/PJM. Worth a deep dive before any decision.",
+          "next_action": "RESEARCH \u2014 Cheap power generator at 9x EV/EBITDA with nuclear baseload exposure to AI data center demand in ERCOT/PJM. Worth a deep dive before any decision.",
           "research_file": "output/research/VST_2026-11-06.md",
           "last_researched": "2026-11-06",
-          "confidence": "MEDIUM",
-          "bear_check": "**Strongest argument against buying VST:** VST\u2019s 13.1x forward P/E depends on a sharp earnings rebound even though latest-quarter revenue is down 5.5% YoY, while $20.1B of net debt equals roughly 48% of its $41.9B market cap despite $2.255B of annual FCF. If power prices normalize or the rebound is delayed, leverage magnifies downside; an extended Comanche Peak outage would also threaten high-margin generation and data-center PPA commitments. The apparent cheapness therefore offers limited margin of safety if either forecast risk materializes.\n\n**Break assessment:** No break is present. The revenue contraction does not contradict the note\u2019s central claim of record EBITDA, raised guidance, and AI-linked demand, and the headlines report no fraud, restatement, auditor resignation, bankruptcy, largest-customer loss, or withdrawn guidance.\n\n**Drawdown assessment:** The supplied headlines do not explain the 37% decline; they instead describe a recent post-earnings rally, so explanations such as market rotation or power-price normalization remain unverified.\n\nBREAK: NONE\nEVIDENCE: none\nWHY_IT_FELL: unknown\nFALL_EVIDENCE: none\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
+          "confidence": "LOW",
+          "bear_check": "Vistra's ~60% EBITDA concentration in ERCOT creates acute regulatory risk: Texas market reforms, price caps, or winter-storm liability changes could compress margins across the entire fleet simultaneously. The company carries $20.1B in net debt (nearly half its market cap) while revenue declined 5.5% year-over-year in the latest quarter, raising questions about the sustainability of the implied 25% earnings growth baked into the 13.1x forward P/E. Nuclear regulatory overhang from the Talen/AWS deal scrutiny adds further uncertainty to the Comanche Peak relicensing thesis.\n\nWHY_IT_FELL: unknown\nFALL_EVIDENCE: none\nBREAK: NONE\nEVIDENCE: none",
           "llm_verdict": "RESEARCH-WORTHY",
           "bear_downgraded": false,
           "buy_trigger_drawdown_pct": -36.6,
           "no_pullback_gate": false,
           "rating_version": 3,
           "unsupported_figures": [
-            "40%",
-            "18x",
+            "25%",
             "$1.5B",
-            "4%",
-            "$800M",
-            "2.8x",
-            "48%"
+            "95%",
+            "60%"
           ],
-          "fall_reason": "The 36.6% drawdown from the 52-week high likely reflects earlier 2026 market rotation out of power/infrastructure names and ERCOT price normalization, not fundamental deterioration \u2014 recent Q3 results show record EBITDA and raised outlook.",
+          "fall_reason": null,
           "price": 124.8,
           "pct_change_1d": 10.55,
           "market_cap": 41887272960,
@@ -13175,7 +13166,7 @@
     }
   },
   "asset_location": {
-    "generated_at": "2026-11-06T21:59:44Z",
+    "generated_at": "2026-11-06T22:04:08Z",
     "rules": {
       "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
       "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
@@ -15764,6 +15755,14 @@
       {
         "ticker": "IBM",
         "verdict": "RESEARCH-WORTHY",
+        "title": "IBM and Red Hat turn to AI to tackle a growing backlog of software flaws",
+        "publisher": "IBM",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNcDhzRGZBbWM1SGxDWE9CSHBxOTlJS09JTEZLMGp6aEYxVU5GVEtVM01hU1BLcEFsNExXUGt6QldpeFNIdVpRbEQwOG91dGZ3UzhpS1FqWFcwbEhJSHRWZ1dXbmV1dVRkajVFQ2o5RzhjVlEwS0s5UTZFakZkeDJnX01FdERsYkdXaDhFUzhRbmRGLWtSVzFKNEZ2QQ?oc=5"
+      },
+      {
+        "ticker": "IBM",
+        "verdict": "RESEARCH-WORTHY",
         "title": "AI for business workflows on IBM Z: Governed decisions with z/OS Connect",
         "publisher": "IBM",
         "date": "2026-11-06",
@@ -15776,14 +15775,6 @@
         "publisher": "IBM",
         "date": "2026-11-06",
         "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRGE0NTBOU1NlVmJOWElUaGo2WEdicnh4bnRVcll4cFBVbW9kMHAxM29RSDR3UHhyZ3d2dmJmRjZyc212U0owOWZlWmpOMm9tSVBMTF8yZUtQRmRiSHNfZjlWWG1wVXdwRURzR1J1bFd2QUIzQzFlTExobnZXYmowMThHT052R2k2RlFCZXhkczYyY3owMTdNUXBwRVpYZGhPR1lITmF6TjBKMjZaMU9R?oc=5"
-      },
-      {
-        "ticker": "IBM",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "IBM\u2019s most advanced quantum computer unveiled at UChicago\u2019s Hyde Park Labs",
-        "publisher": "UChicago News",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQVY5Uk5ybFBQWFoyOVF3RmF0aGZmbnVLNUVRNFJDZVM4NVhuSHVhMkN3RGRXNGV4eUgzQkhKdTYwbEp3RkxTdTdXemIzUTNwcnRNazcyd2hLS0c2WUVrV0kyUGpNQ0owUnBsM2NLQ2FIeElCZWN5enRZWERkRS0xZnZGZHlfbi1UdUFjdkF5X19VR3RXTDZ2bHRYdUVmVlVUYzlr?oc=5"
       },
       {
         "ticker": "COHR",
@@ -15852,6 +15843,14 @@
       {
         "ticker": "VST",
         "verdict": "RESEARCH-WORTHY",
+        "title": "Vistra shares surge nearly 10% after earnings, driven by strong AI power demand",
+        "publisher": "XTB.com",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPUTF4cnFPbFBobDZZTTFvZVJyUXZnajlhTlQydjY1UExkQnQxRnZsaFdtNk9VY3c4cW9YVko1eUplX0RFeHRUX0doWDFxeEpaU2YxOTNabVBlNC1mX2VhWUVTN2VqbXY4Rkd1RDJoSkZWeXJtMklEaGRlbXc0UW4xRjZmb2ZhM1MzVFRiQWlMRVFnUGh0enBYRTFXZllxZzNBSWdIMmoxQkFFQTdud0NlT3RBQ19MbWEtbmdpNUlveVhFWHBtNGtxUnhqNlBYb0U5?oc=5"
+      },
+      {
+        "ticker": "VST",
+        "verdict": "RESEARCH-WORTHY",
         "title": "Vistra Corp. (VST) Stock Forecasts",
         "publisher": "Yahoo Finance",
         "date": "2026-11-06",
@@ -15864,14 +15863,6 @@
         "publisher": "Benzinga",
         "date": "2026-11-06",
         "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQYVRBWWJJeXoxNEEwaDNYbHBuZTU4OUNCUERZQzFGcE40SWx6M2VwVm9DTUNpZElITG1XSW0tS1B0cDdFX0hLbDZYQkdYUkJnaEp5clA2Z3ZSUWFOZmh0Qjl1b2M1YVh1V0tkUWp6SElzSTBiakJ2U2ZFNGU3TUs3SC1MNGRrTlAwVGdRNFJjT0FNa1paTjIxUm10RXZXbnJwek5TWUFnQzdPZ0FfeDdQN1JNQjBaSzFkZjZjaHhud1lVeEtDWlJQcms2VkcwMFlybzJIRE1VMHpGYWd4OWl6SUs5NHE?oc=5"
-      },
-      {
-        "ticker": "VST",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Vistra shares surge nearly 10% after earnings, driven by strong AI power demand",
-        "publisher": "XTB.com",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPYWVHbzB3X1VoeVR6NkdrMHNwcnVlU0l2amRfQl9qMmhRR0Y2OGk0STh6WUtKWnltQmxxVTlfajA3WVF4c0tpbVFtQ3U3alJQRE9CQl9xSkhrT3QxUm9GYjJCc3NyaFlCajZjcWJ4RUJ6eFhwNUliUC11OUN3M3RnbGdyVm9VZ1ZscENKODZwSDJMUmZGZTB0cVJsdVotN0JacjBTdVRMbHZyS1YtZGxJaUdzNUhxdXRoX25zejlfa1JYWUgwa1cwYTZZdkZWS1U?oc=5"
       },
       {
         "ticker": "VRT",
@@ -15920,14 +15911,6 @@
         "publisher": "Foreign Policy Journal",
         "date": "2026-11-06",
         "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQZkJxc2JXZEV0RGpEaFBMNDEyU1BXdTI4WGZYUHotZ205NzJkMU01RkhLbFY5enJrQTNPeERmbzZmVTlmVHhpMFFTT3U1UXJhVVBQSzVPZXVocGczeU5paUtBSWw5dnRfMUFEUllOSHpxNG84OW95Sm5LcTZnLVdXenU1OWFwRDZwNnlGRnRfWjFCanpyZmJRb2xBRC1fN2ZNXy1zOE5aR0VRQXo5X0E1TjRTMWZtckpua3d6TGU3RVd3b29QMUFhbjBFbWJTd1FIMWQybGczN1BReVUzaS1zRkRR?oc=5"
-      },
-      {
-        "ticker": "ETN",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Eaton Reports Record $8.9 Billion In Third Quarter 2026 Sales, Up 28%, And Raises Organic Growth Guidance",
-        "publisher": "Pulse 2.0",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOUm8xSGtZMlJma3Ntb29PT1Z1T1pmdFNOQWRQVzE1ZlkyRmJBWkVtbEtmclRsclVLYjdZOEM2WG1PYlhIREw1OEpyRWw1bG5jSXZOTTJEbG9vLVBlck1RTm43V1prV0E3Q3dKazdvZnBOekJZU0I5NWdDcko0ajAwN2RRb2JPZ0hISFloM2VYYWNIQVVObjB2dlUzdlo5c2VOaksyc3A3NjZzWHZQaTF6ZDdOM3M4LUpTdlQ0YktB?oc=5"
       },
       {
         "ticker": "BWXT",
@@ -16072,6 +16055,14 @@
         "publisher": "Yahoo Finance",
         "date": "2026-11-05",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOdHN4OWlLNmhhelZGaHNYQVdpSzVPWGRqc1ZNa1ZzZXpqTUx5eDZBVE9GdkhyTjRBMVg4UVpmNTBRMmhwMHplOXU4Y3IwRDVVeWowMG5QOEk4ZHp3NlRFR0NCQWRiR3U5Z2hSNlFNTHFYR2JRZHpuRTdNQlozUmtuZ01xVHVXYXVYZ1ZTOGN1MjBqY1JUZkdVNWNOTmQ?oc=5"
+      },
+      {
+        "ticker": "COHR",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Coherent Shares Rise 4% as AI Data Centre Demand Lifts Quarterly Revenue Nearly 50%",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-05",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWDlfc1hQaXBJQkRqeGhkS2d4SFpLYlJEWGt4TDRkUzNHakV6cDg3RnlGVW9MUTE2MnlyM0NpcTZVR2lBemwzSlhVbFlyWFpETVZGWDNoeTRBN0txVl81TzJMbUlVQ1gyLVJaMVJCa2hOSlpyMG1HUDcyLTNnQndlLVBNd1h0WkNpNVFncVlzdkNhUms?oc=5"
       }
     ],
     "insider_alerts": [
