@@ -34,6 +34,10 @@ jobs:
       - name: Fetch hedge fund / institutional holder signals
         run: python scripts/hedge_fund_signal.py
 
+      - name: Refresh quotes
+        # quotes_cache.json is gitignored, so a fresh checkout has no prices.
+        run: python scripts/refresh_quotes.py
+
       - name: Rebuild dashboard with new signals
         run: python scripts/build_dashboard.py
 

@@ -30,6 +30,10 @@ jobs:
       - name: Run professional multi-factor screener (S&P 500)
         run: python scripts/screener.py --universe sp500 --limit 15
 
+      - name: Refresh quotes
+        # quotes_cache.json is gitignored, so a fresh checkout has no prices.
+        run: python scripts/refresh_quotes.py
+
       - name: Rebuild dashboard with discoveries
         run: python scripts/build_dashboard.py
 

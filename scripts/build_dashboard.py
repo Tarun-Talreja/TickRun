@@ -19,6 +19,7 @@ Usage:
 
 import json
 import os
+import sys
 from datetime import datetime, timezone
 
 SCRIPT_DIR          = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -202,6 +203,11 @@ def main():
     watchlist = _load(WATCHLIST_PATH)
     themes    = _load(THEMES_PATH)
     quotes    = _load(QUOTES_PATH)
+    # Without this, a job that skipped refresh_quotes.py published a dashboard
+    # with 4 of 57 stocks priced. A failed job beats a blank live site.
+    if not quotes.get("tickers"):
+        print("❌ No quotes available — run refresh_quotes.py first. Dashboard not rebuilt.")
+        sys.exit(1)
     insider    = _load(INSIDER_PATH)
     hedge_fund = _load(HEDGE_FUND_PATH)
     alerts     = _load(ALERTS_PATH)

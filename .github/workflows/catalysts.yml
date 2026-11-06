@@ -32,6 +32,10 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Refresh quotes
+        # quotes_cache.json is gitignored, so a fresh checkout has no prices.
+        run: python scripts/refresh_quotes.py
+
       - name: Scan forward catalysts
         run: python scripts/catalyst_calendar.py
 
