@@ -1,28 +1,16 @@
 {
-  "generated_at": "2026-11-06T21:56:53Z",
+  "generated_at": "2026-11-06T23:36:12Z",
   "pullback_alerts": [
-    {
-      "ticker": "OKLO",
-      "name": "Oklo Inc.",
-      "theme": "nuclear_smr",
-      "verdict": "WATCHLIST",
-      "price": 23.55,
-      "high_52w": 117.44,
-      "drawdown_pct": -79.9,
-      "severity": "STRONG",
-      "thesis": "Pre-revenue SMR pure-play with 9-year cash runway and NRC licensing progress, trading at 4,400x P/S \u2014 a binary bet on first commercial deployment by early 2030s.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
     {
       "ticker": "CBRS",
       "name": "Cerebras Systems Inc.",
       "theme": "edge_ai_silicon",
-      "verdict": "RESEARCH-WORTHY",
+      "verdict": "RED FLAG",
       "price": 89.68,
       "high_52w": 386.34,
       "drawdown_pct": -76.8,
       "severity": "STRONG",
-      "thesis": "Pure-play AI wafer-scale hardware at 31x TTM revenue with 74% quarterly growth and 7-year cash runway, but -265% operating margin makes profitability timeline the key variable.",
+      "thesis": "AI hardware pure-play with 74% revenue growth but -265% operating margin, 35% gross margin, and active securities investigations creating binary legal risk.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -46,19 +34,19 @@
       "high_52w": 308.67,
       "drawdown_pct": -61.0,
       "severity": "STRONG",
-      "thesis": "AI data center connectivity pure-play at 12.4x forward P/E for 114% revenue growth with 67% gross margins and $738M net cash",
+      "thesis": "Profitable AI interconnect pure-play at 12x forward earnings with 115% revenue growth, 67% gross margins, and $738M net cash \u2014 if hyperscaler concentration risk is manageable.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
       "ticker": "POWL",
       "name": "Powell Industries, Inc.",
       "theme": "power_grid",
-      "verdict": "RESEARCH-WORTHY",
+      "verdict": "WATCHLIST",
       "price": 133.12,
       "high_52w": 328.0,
       "drawdown_pct": -59.4,
       "severity": "STRONG",
-      "thesis": "Electrical equipment manufacturer with 20%+ operating margins, $244M FCF, and $631M net cash trades at 19x forward earnings despite direct exposure to data center power infrastructure buildout.",
+      "thesis": "Cyclical electrical-equipment maker with net cash, 20%+ operating margins, and grid/data-center exposure trading at 19x forward earnings after a 59% drawdown; entry depends on confirming backlog durability and data-center revenue mix.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -70,7 +58,7 @@
       "high_52w": 354.88,
       "drawdown_pct": -58.7,
       "severity": "STRONG",
-      "thesis": "Quality diabetes tech compounder at 18.7x forward earnings with 19% revenue growth, 72% gross margins, and positive FCF after 59% drawdown.",
+      "thesis": "Quality diabetes device compounder at 19x forward earnings with 19% revenue growth, 72% gross margins, and positive FCF, discounted on conservative 2027 outlook.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -82,19 +70,7 @@
       "high_52w": 329.88,
       "drawdown_pct": -57.2,
       "severity": "STRONG",
-      "thesis": "AI infrastructure pure-play growing revenue 36.5% YoY with 52% gross margins, $1.7B FCF, and 19x forward P/E implying >100% EPS growth \u2014 attractive if AI capex cycle extends.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius Group N.V.",
-      "theme": "mega_cap_ai",
-      "verdict": "WATCHLIST",
-      "price": 129.49,
-      "high_52w": 299.86,
-      "drawdown_pct": -56.8,
-      "severity": "STRONG",
-      "thesis": "Pure-play AI infrastructure cloud with 454% YoY revenue growth and 74% gross margins, but burning $5.9B FCF annually with net debt position \u2014 needs visible path to cash flow breakeven to justify 136x EV/EBITDA.",
+      "thesis": "AI infrastructure custom-silicon leader at 19x forward earnings with 36% revenue growth and positive FCF, but 57% drawdown reflects Lumentum acquisition uncertainty.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -106,7 +82,7 @@
       "high_52w": 474.03,
       "drawdown_pct": -56.4,
       "severity": "STRONG",
-      "thesis": "Contract manufacturer riding AI server wave at 9x forward earnings with 80%+ quarterly growth, fortress balance sheet, but 11.5% gross margins and customer concentration cap upside.",
+      "thesis": "EMS leader capturing AI server buildout at 9x forward earnings with net cash balance sheet and 80%+ revenue growth.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -118,7 +94,7 @@
       "high_52w": 440.0,
       "drawdown_pct": -56.2,
       "severity": "STRONG",
-      "thesis": "AI optical interconnect leader trading at 13x forward earnings with 50% revenue growth, but negative FCF and high leverage require verification of cash conversion.",
+      "thesis": "AI optical pure-play at 13x forward earnings with 50% revenue growth but negative FCF and high leverage.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -130,7 +106,7 @@
       "high_52w": 1143.0,
       "drawdown_pct": -52.9,
       "severity": "STRONG",
-      "thesis": "Optical component leader with 136% quarterly revenue growth from AI data center demand trades at 13.4x forward P/E but 39.7x EV/EBITDA, requiring resolution of valuation discrepancy.",
+      "thesis": "Merger-arbitrage play on Marvell acquisition at 13.5x forward earnings with 136% quarterly revenue growth, but 53% below deal price on deal-break risk.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -142,7 +118,7 @@
       "high_52w": 379.935,
       "drawdown_pct": -51.9,
       "severity": "STRONG",
-      "thesis": "Pure-play AI data center power/cooling infrastructure at 18.7x forward earnings with 61% quarterly growth, 24% FCF margins, and net cash balance sheet.",
+      "thesis": "Pure-play AI data center power/cooling infrastructure at 18.6x forward earnings with 60%+ revenue growth and $3.1B FCF, but 52% drawdown reflects political policy fears.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -154,19 +130,19 @@
       "high_52w": 241.82,
       "drawdown_pct": -50.6,
       "severity": "STRONG",
-      "thesis": "Nuclear monopoly supplier trading at 23x forward earnings with 10% revenue growth and 12% operating margins, down 50% from highs.",
+      "thesis": "Nuclear pure-play with $8.6B backlog and $2.2B Army contract trading at 23x forward earnings despite 50% drawdown from highs on delayed commercial SMR orders.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
       "ticker": "NFLX",
       "name": "Netflix, Inc.",
       "theme": "consumer_media",
-      "verdict": "RESEARCH-WORTHY",
+      "verdict": "WATCHLIST",
       "price": 63.41,
       "high_52w": 116.733,
       "drawdown_pct": -45.7,
       "severity": "STRONG",
-      "thesis": "Wide-moat streaming leader at 17x EV/EBITDA with 12% revenue growth, 35% operating margins, and $11B+ FCF, down 45% from highs.",
+      "thesis": "Quality streaming compounder at 17x forward earnings with 12% revenue growth but decelerating for four straight quarters.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -178,7 +154,7 @@
       "high_52w": 1255.0,
       "drawdown_pct": -45.0,
       "severity": "STRONG",
-      "thesis": "Provided data appears corrupted \u2014 80% margins and $782B market cap are implausible for a cyclical memory manufacturer; cannot assess until verified against SEC filings.",
+      "thesis": "Data corruption makes analysis impossible; real Micron is a cyclical memory play facing Taiwan plant halt and Chinese competition at unknown true valuation.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -190,19 +166,19 @@
       "high_52w": 184.64,
       "drawdown_pct": -42.5,
       "severity": "STRONG",
-      "thesis": "Electrical infrastructure supplier benefiting from data center buildout at 15x forward earnings with 40%+ recent revenue growth.",
+      "thesis": "Electrification compounder at 15x forward earnings with 40%+ quarterly growth but guidance uncertainty capping multiple",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
       "ticker": "NOW",
       "name": "ServiceNow, Inc.",
       "theme": "cybersecurity",
-      "verdict": "RESEARCH-WORTHY",
+      "verdict": "WATCHLIST",
       "price": 101.97,
       "high_52w": 175.0,
       "drawdown_pct": -41.7,
       "severity": "STRONG",
-      "thesis": "Quality compounder at 21x forward earnings with 20% revenue growth, 31% FCF margins, and AI-driven upsell optionality.",
+      "thesis": "Quality compounder at 21x forward earnings with 20% growth and 73% gross margins, but AI disruption fears and recent billings miss create uncertainty.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -214,7 +190,7 @@
       "high_52w": 495.0,
       "drawdown_pct": -40.7,
       "severity": "STRONG",
-      "thesis": "AI infrastructure leader with 85% quarterly revenue growth, 44% FCF margins, and 15x forward P/E after a 40% drawdown.",
+      "thesis": "AI infrastructure leader with 75% gross margins and $39B FCF trading at 15x forward earnings despite 85% YoY quarterly revenue growth.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -226,19 +202,19 @@
       "high_52w": 196.8,
       "drawdown_pct": -36.6,
       "severity": "STRONG",
-      "thesis": "Cheapest nuclear-exposed power generator at 13x forward earnings with 2.3 GW of 24/7 capacity in AI-data-center corridors, 9x EBITDA, and $2.3B FCF covering debt 9x.",
+      "thesis": "Cheap power generator at 9x EV/EBITDA with nuclear baseload exposure to AI data center demand in ERCOT/PJM.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
       "ticker": "GEV",
       "name": "GE Vernova Inc.",
       "theme": "power_grid",
-      "verdict": "RESEARCH-WORTHY",
+      "verdict": "WATCHLIST",
       "price": 774.11,
       "high_52w": 1195.94,
       "drawdown_pct": -35.3,
       "severity": "STRONG",
-      "thesis": "High-quality energy transition pure-play at 20.5x trailing P/E with 27% revenue growth, 39% FCF margin (likely inflated), and net cash balance sheet \u2014 but forward P/E of 30x signals earnings deceleration risk.",
+      "thesis": "AI power pure-play at 30x forward earnings with 27% revenue growth but forward multiple implies earnings decline; 35% drawdown not yet a bargain.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -250,7 +226,7 @@
       "high_52w": 380.78,
       "drawdown_pct": -34.4,
       "severity": "MODERATE",
-      "thesis": "Largest US nuclear fleet at 18.7x forward earnings with 23% quarterly revenue growth, directly exposed to AI data center power demand",
+      "thesis": "Largest US nuclear fleet with 23% revenue growth and AI data center PPAs (Google 3.6 GW, Amazon) trading at 13.7x EV/EBITDA despite policy-driven 34% drawdown.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -262,7 +238,7 @@
       "high_52w": 658.52,
       "drawdown_pct": -31.8,
       "severity": "MODERATE",
-      "thesis": "AI infrastructure pure-play at 26.5x forward earnings with 44% revenue growth, positive FCF, and net cash.",
+      "thesis": "AI infrastructure leader with 45% revenue growth trading at 26.5x forward earnings, 32% below 52-week high.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -274,7 +250,7 @@
       "high_52w": 408.61,
       "drawdown_pct": -30.3,
       "severity": "MODERATE",
-      "thesis": "Quality AI compounder at 15x trailing earnings with 25% revenue growth, $115B net cash, and 30% drawdown from highs.",
+      "thesis": "Quality AI infrastructure compounder at 15x trailing earnings with 25% revenue growth, $115B net cash, but search disruption risk creates uncertainty.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -286,7 +262,7 @@
       "high_52w": 1999.96,
       "drawdown_pct": -28.8,
       "severity": "MODERATE",
-      "thesis": "Monopoly EUV supplier for advanced semiconductors trading at 22x forward earnings with 55% YoY revenue growth and $23B FCF, fitting AI infrastructure theme.",
+      "thesis": "Monopoly EUV supplier for AI chips at 22.5x forward earnings with 55% revenue growth and $23B FCF, down 29% on China export fears.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -298,7 +274,7 @@
       "high_52w": 478.0,
       "drawdown_pct": -28.5,
       "severity": "MODERATE",
-      "thesis": "Quality industrial compounder at 21x forward earnings with 28% revenue growth, $3.8B FCF, and direct exposure to data center power and grid modernization tailwinds.",
+      "thesis": "Quality power management leader with 28% quarterly revenue growth from AI data center buildout trading at 21x forward earnings and 2.5x net debt/EBITDA.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -310,19 +286,7 @@
       "high_52w": 49.59,
       "drawdown_pct": -28.4,
       "severity": "MODERATE",
-      "thesis": "Wide-moat consumer staples compounder trading at 11x forward earnings with 8% FCF yield and 29% drawdown, but revenue declining and leverage elevated at 4x net debt/EBITDA.",
-      "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
-    },
-    {
-      "ticker": "EIX",
-      "name": "Edison International",
-      "theme": "power_grid",
-      "verdict": "WATCHLIST",
-      "price": 59.37,
-      "high_52w": 81.62,
-      "drawdown_pct": -27.3,
-      "severity": "MODERATE",
-      "thesis": "Regulated California utility at 6.3x trailing P/E with 8% rate base CAGR tailwind, but negative FCF, 1.9x net debt/market cap, and inverse condemnation risk require FCF inflection proof before commitment.",
+      "thesis": "Defensive food compounder trading at 11x forward earnings with ~6% dividend yield, but organic revenue declining ~3% YoY and net debt at 4x EBITDA requires monitoring.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -334,7 +298,7 @@
       "high_52w": 332.46,
       "drawdown_pct": -26.3,
       "severity": "MODERATE",
-      "thesis": "Quality compounder with 58% gross margins, $14B FCF, and 4.7% revenue growth trading at 18.5x forward earnings; AI/hybrid cloud optionality embedded in a dividend-supported base.",
+      "thesis": "Quality compounder with AI/quantum optionality trading at 18.5x forward earnings, 58% gross margins, $14B FCF, and 4x net debt/FCF \u2014 26% off highs offers entry if FCF durability holds.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -346,43 +310,43 @@
       "high_52w": 400.16,
       "drawdown_pct": -26.2,
       "severity": "MODERATE",
-      "thesis": "Quality independent broker-dealer platform trading at 10x forward earnings with 18% revenue growth and $1B FCF, offering financials exposure at a 26% drawdown.",
+      "thesis": "Independent advisor platform at 10x forward earnings with 18% revenue growth and $1B FCF, discounted for Commonwealth integration risk.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
       "ticker": "CMCSA",
       "name": "Comcast Corporation",
       "theme": "consumer_media",
-      "verdict": "RESEARCH-WORTHY",
+      "verdict": "WATCHLIST",
       "price": 24.39,
       "high_52w": 32.86,
       "drawdown_pct": -25.8,
       "severity": "MODERATE",
-      "thesis": "Cheap quality compounder at 5x EV/EBITDA with 19.7% FCF yield despite -6% revenue decline; durable broadband moat and media assets provide downside protection.",
+      "thesis": "Cable/media giant with 19.7% FCF yield at 5.0x EV/EBITDA, but secular broadband decline and streaming losses cloud durability.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
       "ticker": "ISRG",
       "name": "Intuitive Surgical, Inc.",
       "theme": "healthcare_innovation",
-      "verdict": "RESEARCH-WORTHY",
+      "verdict": "WATCHLIST",
       "price": 452.8,
       "high_52w": 603.88,
       "drawdown_pct": -25.0,
       "severity": "MODERATE",
-      "thesis": "Wide-moat robotic surgery leader with 20%+ revenue growth, 66% gross margins, and $3.6B FCF trading at 36x forward earnings after a 25% drawdown.",
+      "thesis": "Quality surgical robotics compounder at 36x forward earnings with 20%+ revenue growth, but 2026 guidance reduction warrants caution",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
       "ticker": "TLN",
       "name": "Talen Energy Corporation",
       "theme": "nuclear_smr",
-      "verdict": "WATCHLIST",
+      "verdict": "RESEARCH-WORTHY",
       "price": 338.64,
       "high_52w": 449.841,
       "drawdown_pct": -24.7,
       "severity": "MODERATE",
-      "thesis": "Nuclear power generator with 96% YoY revenue growth trading at 11x forward earnings but 34x EV/EBITDA, high net debt 33x FCF.",
+      "thesis": "Nuclear-powered data center play with Amazon PPA, 11x forward earnings for 96% revenue growth, but 34x EV/EBITDA reflects $9.2B net debt requiring FCF conversion to de-risk.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -394,7 +358,7 @@
       "high_52w": 243.37,
       "drawdown_pct": -23.3,
       "severity": "MODERATE",
-      "thesis": "Pure-play AI infrastructure leader at 11.8x forward earnings with 105% latest-quarter revenue growth and 75% gross margins",
+      "thesis": "AI infrastructure leader trading at 12x forward earnings with 100%+ revenue growth, 66% operating margins, and $127B annual FCF, but faces material geopolitical/regulatory risk from China exposure.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -406,7 +370,7 @@
       "high_52w": 487.47,
       "drawdown_pct": -23.0,
       "severity": "MODERATE",
-      "thesis": "AI infrastructure monopoly at 16x forward earnings with 50%+ revenue growth, 66% gross margins, and $98B net cash, but existential Taiwan geopolitical risk.",
+      "thesis": "World's leading foundry at 16x forward earnings with 50%+ revenue growth, 66% gross margins, and $45B FCF, pure-play AI infrastructure enabler.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -418,7 +382,7 @@
       "high_52w": 779.82,
       "drawdown_pct": -21.8,
       "severity": "MODERATE",
-      "thesis": "AI infrastructure leader trading at 17x forward earnings with 26% revenue growth, 81% gross margins, and $28.6B FCF funding aggressive AI capex and buybacks.",
+      "thesis": "Quality compounder with 26% revenue growth trading at 17x forward earnings while investing heavily in AI infrastructure that could extend moat.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     }
   ],
