@@ -84,20 +84,28 @@
       "name": "NVIDIA Corporation",
       "theme": "mega_cap_ai",
       "status": "research_complete",
-      "thesis": "Pure-play AI infrastructure leader at 11x forward earnings with 100%+ revenue growth, 75% gross margins, and $42B FCF.",
+      "thesis": "Pure-play AI infrastructure leader trading at 11.4x forward earnings despite 105% YoY revenue growth and 66% operating margins.",
       "added": "2026-05-01",
       "verdict": "WATCHLIST",
       "buy_target": 181.6,
       "current_price": 198.45,
-      "next_action": "WAIT \u2014 Pure-play AI infrastructure leader at 11x forward earnings with 100%+ revenue growth, 75% gross margins, and $42B FCF.",
+      "next_action": "WAIT \u2014 Pure-play AI infrastructure leader trading at 11.4x forward earnings despite 105% YoY revenue growth and 66% operating margins.",
       "research_file": "output/research/NVDA_2026-11-06.md",
       "last_researched": "2026-11-06",
       "llm_verdict": "RESEARCH-WORTHY",
       "bear_downgraded": true,
-      "confidence": "HIGH",
-      "bear_check": "The bull case leans entirely on a forward P/E of 11.4x that already bakes in >100% earnings growth, yet the note admits the \"discount to peers\" claim is unverified and the sustainability of 2025 AI capex levels through 2027 is speculative. With top-three hyperscaler concentration ~40% of data center revenue (per the note's own bear case) and a 2-3 year design-win cycle, any single major customer shifting to internal silicon or a competitor would cause a revenue hole the current multiple cannot absorb. The valuation only works if hypergrowth persists flawlessly, leaving zero margin of safety for the inevitable cyclicality in semiconductor demand.\n\nCHANGES VERDICT: YES\nCONFIDENCE: 85%",
+      "confidence": "MEDIUM",
+      "bear_check": "The bull case's own identified \"single biggest specific risk\" \u2014 hyperscaler concentration likely exceeding 40% of data center revenue \u2014 directly undermines the forward 11.4x P/E valuation, which bakes in earnings doubling; a single major customer pausing capex or deploying internal silicon (as Google and Amazon are already doing) could slash the high-margin data center growth engine by half, making the \"low hurdle\" 9% earnings growth assumption dangerously optimistic. The note's repeated \"unverified\" flags on concentration, R&D, and peer multiples further weaken confidence in the precision of that forward multiple.\n\nCHANGES VERDICT: YES",
       "buy_trigger_drawdown_pct": 0.0,
-      "no_pullback_gate": true
+      "no_pullback_gate": true,
+      "unsupported_figures": [
+        "95%",
+        "$12.9B",
+        "9%",
+        "15%",
+        "40%",
+        "100%"
+      ]
     },
     {
       "ticker": "META",
