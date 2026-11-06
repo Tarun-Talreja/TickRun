@@ -4,7 +4,7 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "scripts"))
 
-from weekly_digest import fallback_summary, narrative_is_grounded
+from weekly_digest import fallback_summary, narrative_facts, narrative_is_grounded
 
 FACTS = {"movers": [{"ticker": "AMD", "pct": -17.3}],
          "field_news": {"Networking": "Marvell agreed to buy Lumentum for $115 billion."}}
@@ -30,3 +30,9 @@ class TestFallback:
 
     def test_nothing_to_say(self):
         assert fallback_summary({}) is None
+
+
+class TestNarrativeFacts:
+    def test_hides_targets_and_automated_mover_reasons(self):
+        facts = {"buy_ready_at_target": ["GOOGL"], "movers": [{"ticker": "LITE", "pct": -19, "reason": "no news"}]}
+        assert narrative_facts(facts) == {"movers": [{"ticker": "LITE", "pct": -19}]}

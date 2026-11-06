@@ -44,6 +44,13 @@ def narrative_is_grounded(text: str, facts: dict) -> bool:
     return not find_unsupported(text, raw + " " + " ".join(f"{n}% {n}x ${n}" for n in numbers))
 
 
+def narrative_facts(facts: dict) -> dict:
+    """Facts safe to summarise. A target is only the price when research ran, and a
+    mover's automated reason can say "no news" on the day a real deal was announced."""
+    movers = [{k: v for k, v in m.items() if k != "reason"} for m in facts.get("movers", [])]
+    return {**{k: v for k, v in facts.items() if k != "buy_ready_at_target"}, "movers": movers}
+
+
 def fallback_summary(fields: dict) -> str | None:
     """Field summaries that already passed their own check, so the card is never empty."""
     lines = [f"{f['name']}: {f['summary']}" for f in fields.values() if f.get("summary")]
@@ -127,7 +134,7 @@ def main():
                   for c in d.get("radar", {}).get("cards", [])[:MAX_RADAR_FACTS]],
     }
 
-    narrative = _narrative(facts) or fallback_summary(fields)
+    narrative = _narrative(narrative_facts(facts)) or fallback_summary(fields)
 
     digest = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
