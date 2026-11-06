@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T05:16:55Z",
+  "generated_at": "2026-11-06T05:37:22Z",
   "hits": [
     {
       "ticker": "BWXT",
@@ -33,17 +33,6 @@
       "buy_target": 493.89,
       "gap_pct": -18.1,
       "next_action": "WAIT \u2014 AMD is a high-growth AI infrastructure play with a strong product portfolio, but its valuation is relatively expensive. Revisit at 25% below the 52-week high."
-    },
-    {
-      "ticker": "TSM",
-      "name": "Taiwan Semiconductor Manufacturing Company",
-      "verdict": "WATCHLIST",
-      "confidence": "MEDIUM",
-      "theme": "edge_ai_silicon",
-      "price": 353.1,
-      "buy_target": 389.98,
-      "gap_pct": -9.5,
-      "next_action": "WAIT \u2014 World's only leading-edge foundry at 15x forward earnings with 50%+ revenue growth and 58% operating margins, discounted for Taiwan risk. Revisit at 20% below the 52-week high."
     },
     {
       "ticker": "META",
@@ -82,23 +71,34 @@
       "ticker": "NVDA",
       "name": "NVIDIA Corporation",
       "verdict": "WATCHLIST",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "theme": "mega_cap_ai",
       "price": 181.6,
       "buy_target": 181.6,
       "gap_pct": 0.0,
-      "next_action": "WAIT \u2014 Pure-play AI infrastructure leader at 11x forward earnings with 100%+ revenue growth, 75% gross margins, and $42B FCF."
+      "next_action": "WAIT \u2014 Pure-play AI infrastructure leader trading at 11.4x forward earnings despite 105% YoY revenue growth and 66% operating margins."
     },
     {
       "ticker": "ASML",
       "name": "ASML Holding N.V.",
       "verdict": "WATCHLIST",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "theme": "edge_ai_silicon",
       "price": 1356.65,
       "buy_target": 1356.65,
       "gap_pct": 0.0,
-      "next_action": "WAIT \u2014 Monopoly EUV supplier for AI chips at 21x forward earnings with 55% revenue growth, 44% operating margins, and $12B net cash."
+      "next_action": "WAIT \u2014 Monopoly EUV supplier for AI compute at 21x forward earnings with 55% quarterly growth, 44% operating margins, and $23.5B FCF, now 32% off 52-week high."
+    },
+    {
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor Manufacturing Company",
+      "verdict": "WATCHLIST",
+      "confidence": "MEDIUM",
+      "theme": "edge_ai_silicon",
+      "price": 353.1,
+      "buy_target": 353.1,
+      "gap_pct": 0.0,
+      "next_action": "WAIT \u2014 World's leading foundry at 15x forward earnings with 50%+ revenue growth driven by AI chip demand, but geopolitical risk warrants discount."
     },
     {
       "ticker": "NOW",

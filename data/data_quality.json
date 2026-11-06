@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-06T05:16:55Z",
+  "generated_at": "2026-11-06T05:37:22Z",
   "checked": 58,
   "flagged": 2,
   "quality": {
-    "AAPL": {
+    "AMD": {
       "ok": true,
       "flags": []
     },
-    "AMD": {
+    "AAPL": {
       "ok": true,
       "flags": []
     },
@@ -68,15 +68,15 @@
       "ok": true,
       "flags": []
     },
-    "EIX": {
-      "ok": true,
-      "flags": []
-    },
     "ETN": {
       "ok": true,
       "flags": []
     },
     "FLUT": {
+      "ok": true,
+      "flags": []
+    },
+    "EIX": {
       "ok": true,
       "flags": []
     },
@@ -88,11 +88,11 @@
       "ok": true,
       "flags": []
     },
-    "GOOGL": {
+    "GIS": {
       "ok": true,
       "flags": []
     },
-    "GIS": {
+    "GOOGL": {
       "ok": true,
       "flags": []
     },
@@ -124,7 +124,7 @@
       "ok": true,
       "flags": []
     },
-    "MA": {
+    "MKTX": {
       "ok": true,
       "flags": []
     },
@@ -132,7 +132,7 @@
       "ok": true,
       "flags": []
     },
-    "MKTX": {
+    "MA": {
       "ok": true,
       "flags": []
     },
@@ -140,11 +140,11 @@
       "ok": true,
       "flags": []
     },
-    "MSFT": {
+    "MU": {
       "ok": true,
       "flags": []
     },
-    "MU": {
+    "MSFT": {
       "ok": true,
       "flags": []
     },
@@ -156,15 +156,15 @@
       "ok": true,
       "flags": []
     },
-    "NOW": {
-      "ok": true,
-      "flags": []
-    },
     "NVDA": {
       "ok": true,
       "flags": []
     },
     "NVT": {
+      "ok": true,
+      "flags": []
+    },
+    "NOW": {
       "ok": true,
       "flags": []
     },
@@ -176,11 +176,11 @@
       "ok": true,
       "flags": []
     },
-    "PODD": {
+    "POWL": {
       "ok": true,
       "flags": []
     },
-    "POWL": {
+    "PODD": {
       "ok": true,
       "flags": []
     },
@@ -204,10 +204,6 @@
       "ok": true,
       "flags": []
     },
-    "TW": {
-      "ok": true,
-      "flags": []
-    },
     "TSM": {
       "ok": false,
       "flags": [
@@ -216,6 +212,10 @@
           "msg": "Reports in TWD; figures converted to USD at 0.0304. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
+    },
+    "TW": {
+      "ok": true,
+      "flags": []
     },
     "UNH": {
       "ok": true,
