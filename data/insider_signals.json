@@ -1,25 +1,25 @@
 {
-  "last_updated": "2026-11-02T01:05:40Z",
+  "last_updated": "2026-11-06T21:56:53Z",
   "tickers": {
     "AAPL": {
       "ticker": "AAPL",
-      "signal": "NO_DATA",
+      "signal": "SELLING",
       "buys": 0,
-      "sells": 0,
+      "sells": 18,
       "buy_value": 0.0,
-      "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:23Z"
+      "sell_value": 111016131.0,
+      "note": "0 buy(s), 18 sell(s) in past 6 months | $0 bought / $111,016,131 sold",
+      "fetched_at": "2026-11-06T21:56:22Z"
     },
     "MSFT": {
       "ticker": "MSFT",
-      "signal": "NO_DATA",
+      "signal": "SELLING",
       "buys": 0,
-      "sells": 0,
+      "sells": 9,
       "buy_value": 0.0,
-      "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:23Z"
+      "sell_value": 85913315.0,
+      "note": "0 buy(s), 9 sell(s) in past 6 months | $0 bought / $85,913,315 sold",
+      "fetched_at": "2026-11-06T21:56:23Z"
     },
     "GOOGL": {
       "ticker": "GOOGL",
@@ -29,57 +29,87 @@
       "buy_value": 0.0,
       "sell_value": 0.0,
       "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:24Z"
+      "fetched_at": "2026-11-06T21:56:23Z"
     },
     "AMZN": {
       "ticker": "AMZN",
-      "signal": "NO_DATA",
+      "signal": "SELLING",
       "buys": 0,
-      "sells": 0,
+      "sells": 21,
       "buy_value": 0.0,
-      "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:24Z"
+      "sell_value": 385530939.0,
+      "note": "0 buy(s), 21 sell(s) in past 6 months | $0 bought / $385,530,939 sold",
+      "fetched_at": "2026-11-06T21:56:24Z"
     },
     "NVDA": {
       "ticker": "NVDA",
-      "signal": "NO_DATA",
+      "signal": "SELLING",
       "buys": 0,
-      "sells": 0,
+      "sells": 9,
       "buy_value": 0.0,
-      "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:25Z"
+      "sell_value": 1370530832.0,
+      "note": "0 buy(s), 9 sell(s) in past 6 months | $0 bought / $1,370,530,832 sold",
+      "fetched_at": "2026-11-06T21:56:24Z"
     },
     "META": {
       "ticker": "META",
-      "signal": "NO_DATA",
+      "signal": "SELLING",
       "buys": 0,
-      "sells": 0,
+      "sells": 38,
       "buy_value": 0.0,
-      "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:26Z"
+      "sell_value": 141400323.0,
+      "note": "0 buy(s), 38 sell(s) in past 6 months | $0 bought / $141,400,323 sold",
+      "fetched_at": "2026-11-06T21:56:25Z"
     },
     "AVGO": {
       "ticker": "AVGO",
-      "signal": "NO_DATA",
+      "signal": "BEARISH",
+      "buys": 1,
+      "sells": 7,
+      "buy_value": 373570.0,
+      "sell_value": 283696980.0,
+      "note": "1 buy(s), 7 sell(s) in past 6 months | $373,570 bought / $283,696,980 sold",
+      "fetched_at": "2026-11-06T21:56:25Z"
+    },
+    "LLY": {
+      "ticker": "LLY",
+      "signal": "SELLING",
       "buys": 0,
-      "sells": 0,
+      "sells": 5,
       "buy_value": 0.0,
-      "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:26Z"
+      "sell_value": 25847695.0,
+      "note": "0 buy(s), 5 sell(s) in past 6 months | $0 bought / $25,847,695 sold",
+      "fetched_at": "2026-11-06T21:56:26Z"
+    },
+    "UNH": {
+      "ticker": "UNH",
+      "signal": "SELLING",
+      "buys": 0,
+      "sells": 2,
+      "buy_value": 0.0,
+      "sell_value": 660910.0,
+      "note": "0 buy(s), 2 sell(s) in past 6 months | $0 bought / $660,910 sold",
+      "fetched_at": "2026-11-06T21:56:26Z"
     },
     "V": {
       "ticker": "V",
-      "signal": "NO_DATA",
+      "signal": "SELLING",
       "buys": 0,
-      "sells": 0,
+      "sells": 14,
       "buy_value": 0.0,
-      "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:27Z"
+      "sell_value": 80362672.0,
+      "note": "0 buy(s), 14 sell(s) in past 6 months | $0 bought / $80,362,672 sold",
+      "fetched_at": "2026-11-06T21:56:27Z"
+    },
+    "COST": {
+      "ticker": "COST",
+      "signal": "SELLING",
+      "buys": 0,
+      "sells": 4,
+      "buy_value": 0.0,
+      "sell_value": 4649745.0,
+      "note": "0 buy(s), 4 sell(s) in past 6 months | $0 bought / $4,649,745 sold",
+      "fetched_at": "2026-11-06T21:56:28Z"
     },
     "ASML": {
       "ticker": "ASML",
@@ -89,187 +119,407 @@
       "buy_value": null,
       "sell_value": null,
       "note": "No insider transactions found",
-      "fetched_at": "2026-11-02T01:05:27Z"
+      "fetched_at": "2026-11-06T21:56:28Z"
     },
     "TSM": {
       "ticker": "TSM",
-      "signal": "NO_DATA",
-      "buys": 0,
+      "signal": "BULLISH",
+      "buys": 3,
       "sells": 0,
-      "buy_value": 0.0,
+      "buy_value": 16618.0,
       "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:28Z"
+      "note": "3 buy(s), 0 sell(s) in past 6 months | $16,618 bought / $0 sold",
+      "fetched_at": "2026-11-06T21:56:29Z"
     },
     "NOW": {
       "ticker": "NOW",
-      "signal": "NO_DATA",
+      "signal": "SELLING",
       "buys": 0,
-      "sells": 0,
+      "sells": 8,
       "buy_value": 0.0,
-      "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:28Z"
+      "sell_value": 3827775.0,
+      "note": "0 buy(s), 8 sell(s) in past 6 months | $0 bought / $3,827,775 sold",
+      "fetched_at": "2026-11-06T21:56:29Z"
     },
     "AMD": {
       "ticker": "AMD",
-      "signal": "NO_DATA",
+      "signal": "SELLING",
       "buys": 0,
-      "sells": 0,
+      "sells": 17,
       "buy_value": 0.0,
-      "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:29Z"
+      "sell_value": 248757339.0,
+      "note": "0 buy(s), 17 sell(s) in past 6 months | $0 bought / $248,757,339 sold",
+      "fetched_at": "2026-11-06T21:56:30Z"
+    },
+    "NBIS": {
+      "ticker": "NBIS",
+      "signal": "BEARISH",
+      "buys": 4,
+      "sells": 26,
+      "buy_value": 255050.0,
+      "sell_value": 303061499.0,
+      "note": "4 buy(s), 26 sell(s) in past 6 months | $255,050 bought / $303,061,499 sold",
+      "fetched_at": "2026-11-06T21:56:30Z"
+    },
+    "LITE": {
+      "ticker": "LITE",
+      "signal": "SELLING",
+      "buys": 0,
+      "sells": 27,
+      "buy_value": 0.0,
+      "sell_value": 98195658.0,
+      "note": "0 buy(s), 27 sell(s) in past 6 months | $0 bought / $98,195,658 sold",
+      "fetched_at": "2026-11-06T21:56:31Z"
+    },
+    "RDDT": {
+      "ticker": "RDDT",
+      "signal": "SELLING",
+      "buys": 0,
+      "sells": 18,
+      "buy_value": 0.0,
+      "sell_value": 77621322.0,
+      "note": "0 buy(s), 18 sell(s) in past 6 months | $0 bought / $77,621,322 sold",
+      "fetched_at": "2026-11-06T21:56:31Z"
     },
     "MU": {
       "ticker": "MU",
-      "signal": "NO_DATA",
+      "signal": "SELLING",
       "buys": 0,
-      "sells": 0,
+      "sells": 14,
       "buy_value": 0.0,
-      "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:30Z"
+      "sell_value": 247874637.0,
+      "note": "0 buy(s), 14 sell(s) in past 6 months | $0 bought / $247,874,637 sold",
+      "fetched_at": "2026-11-06T21:56:32Z"
+    },
+    "MRVL": {
+      "ticker": "MRVL",
+      "signal": "SELLING",
+      "buys": 0,
+      "sells": 13,
+      "buy_value": 0.0,
+      "sell_value": 20910516.0,
+      "note": "0 buy(s), 13 sell(s) in past 6 months | $0 bought / $20,910,516 sold",
+      "fetched_at": "2026-11-06T21:56:33Z"
+    },
+    "IBM": {
+      "ticker": "IBM",
+      "signal": "SELLING",
+      "buys": 0,
+      "sells": 1,
+      "buy_value": 0.0,
+      "sell_value": 5758088.0,
+      "note": "0 buy(s), 1 sell(s) in past 6 months | $0 bought / $5,758,088 sold",
+      "fetched_at": "2026-11-06T21:56:33Z"
     },
     "COHR": {
       "ticker": "COHR",
-      "signal": "NO_DATA",
+      "signal": "SELLING",
       "buys": 0,
-      "sells": 0,
+      "sells": 10,
       "buy_value": 0.0,
+      "sell_value": 9946235.0,
+      "note": "0 buy(s), 10 sell(s) in past 6 months | $0 bought / $9,946,235 sold",
+      "fetched_at": "2026-11-06T21:56:34Z"
+    },
+    "CEG": {
+      "ticker": "CEG",
+      "signal": "BULLISH",
+      "buys": 1,
+      "sells": 0,
+      "buy_value": 417931.0,
       "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:30Z"
+      "note": "1 buy(s), 0 sell(s) in past 6 months | $417,931 bought / $0 sold",
+      "fetched_at": "2026-11-06T21:56:34Z"
+    },
+    "VST": {
+      "ticker": "VST",
+      "signal": "BEARISH",
+      "buys": 2,
+      "sells": 10,
+      "buy_value": 1173069.0,
+      "sell_value": 25878803.0,
+      "note": "2 buy(s), 10 sell(s) in past 6 months | $1,173,069 bought / $25,878,803 sold",
+      "fetched_at": "2026-11-06T21:56:35Z"
+    },
+    "VRT": {
+      "ticker": "VRT",
+      "signal": "SELLING",
+      "buys": 0,
+      "sells": 1,
+      "buy_value": 0.0,
+      "sell_value": 3880209.0,
+      "note": "0 buy(s), 1 sell(s) in past 6 months | $0 bought / $3,880,209 sold",
+      "fetched_at": "2026-11-06T21:56:35Z"
+    },
+    "GEV": {
+      "ticker": "GEV",
+      "signal": "SELLING",
+      "buys": 0,
+      "sells": 2,
+      "buy_value": 0.0,
+      "sell_value": 7039655.0,
+      "note": "0 buy(s), 2 sell(s) in past 6 months | $0 bought / $7,039,655 sold",
+      "fetched_at": "2026-11-06T21:56:36Z"
     },
     "ETN": {
       "ticker": "ETN",
-      "signal": "NO_DATA",
+      "signal": "BEARISH",
+      "buys": 2,
+      "sells": 4,
+      "buy_value": 482359.0,
+      "sell_value": 8757296.0,
+      "note": "2 buy(s), 4 sell(s) in past 6 months | $482,359 bought / $8,757,296 sold",
+      "fetched_at": "2026-11-06T21:56:36Z"
+    },
+    "OKLO": {
+      "ticker": "OKLO",
+      "signal": "SELLING",
       "buys": 0,
-      "sells": 0,
+      "sells": 39,
       "buy_value": 0.0,
-      "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:31Z"
+      "sell_value": 90386665.0,
+      "note": "0 buy(s), 39 sell(s) in past 6 months | $0 bought / $90,386,665 sold",
+      "fetched_at": "2026-11-06T21:56:37Z"
+    },
+    "TLN": {
+      "ticker": "TLN",
+      "signal": "SELLING",
+      "buys": 0,
+      "sells": 1,
+      "buy_value": 0.0,
+      "sell_value": 988000.0,
+      "note": "0 buy(s), 1 sell(s) in past 6 months | $0 bought / $988,000 sold",
+      "fetched_at": "2026-11-06T21:56:38Z"
     },
     "BWXT": {
       "ticker": "BWXT",
-      "signal": "NO_DATA",
+      "signal": "SELLING",
       "buys": 0,
-      "sells": 0,
+      "sells": 3,
       "buy_value": 0.0,
-      "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:31Z"
+      "sell_value": 4278888.0,
+      "note": "0 buy(s), 3 sell(s) in past 6 months | $0 bought / $4,278,888 sold",
+      "fetched_at": "2026-11-06T21:56:38Z"
     },
     "NVT": {
       "ticker": "NVT",
-      "signal": "NO_DATA",
+      "signal": "SELLING",
       "buys": 0,
-      "sells": 0,
+      "sells": 6,
       "buy_value": 0.0,
-      "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:32Z"
+      "sell_value": 20766255.0,
+      "note": "0 buy(s), 6 sell(s) in past 6 months | $0 bought / $20,766,255 sold",
+      "fetched_at": "2026-11-06T21:56:39Z"
+    },
+    "POWL": {
+      "ticker": "POWL",
+      "signal": "SELLING",
+      "buys": 0,
+      "sells": 12,
+      "buy_value": 0.0,
+      "sell_value": 28716758.0,
+      "note": "0 buy(s), 12 sell(s) in past 6 months | $0 bought / $28,716,758 sold",
+      "fetched_at": "2026-11-06T21:56:39Z"
     },
     "MA": {
       "ticker": "MA",
-      "signal": "NO_DATA",
+      "signal": "SELLING",
       "buys": 0,
-      "sells": 0,
+      "sells": 16,
       "buy_value": 0.0,
-      "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:32Z"
+      "sell_value": 70792063.0,
+      "note": "0 buy(s), 16 sell(s) in past 6 months | $0 bought / $70,792,063 sold",
+      "fetched_at": "2026-11-06T21:56:40Z"
     },
     "ADP": {
       "ticker": "ADP",
-      "signal": "NO_DATA",
+      "signal": "SELLING",
       "buys": 0,
-      "sells": 0,
+      "sells": 12,
       "buy_value": 0.0,
-      "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:33Z"
+      "sell_value": 19551449.0,
+      "note": "0 buy(s), 12 sell(s) in past 6 months | $0 bought / $19,551,449 sold",
+      "fetched_at": "2026-11-06T21:56:40Z"
     },
     "PAYX": {
       "ticker": "PAYX",
-      "signal": "NO_DATA",
+      "signal": "SELLING",
       "buys": 0,
-      "sells": 0,
+      "sells": 5,
       "buy_value": 0.0,
-      "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:34Z"
+      "sell_value": 3775788.0,
+      "note": "0 buy(s), 5 sell(s) in past 6 months | $0 bought / $3,775,788 sold",
+      "fetched_at": "2026-11-06T21:56:41Z"
+    },
+    "DHR": {
+      "ticker": "DHR",
+      "signal": "SELLING",
+      "buys": 0,
+      "sells": 2,
+      "buy_value": 0.0,
+      "sell_value": 14518252.0,
+      "note": "0 buy(s), 2 sell(s) in past 6 months | $0 bought / $14,518,252 sold",
+      "fetched_at": "2026-11-06T21:56:42Z"
+    },
+    "GIS": {
+      "ticker": "GIS",
+      "signal": "SELLING",
+      "buys": 0,
+      "sells": 3,
+      "buy_value": 0.0,
+      "sell_value": 1155387.0,
+      "note": "0 buy(s), 3 sell(s) in past 6 months | $0 bought / $1,155,387 sold",
+      "fetched_at": "2026-11-06T21:56:42Z"
+    },
+    "STZ": {
+      "ticker": "STZ",
+      "signal": "SELLING",
+      "buys": 0,
+      "sells": 1,
+      "buy_value": 0.0,
+      "sell_value": 631259.0,
+      "note": "0 buy(s), 1 sell(s) in past 6 months | $0 bought / $631,259 sold",
+      "fetched_at": "2026-11-06T21:56:43Z"
     },
     "GEHC": {
       "ticker": "GEHC",
-      "signal": "NO_DATA",
-      "buys": 0,
+      "signal": "BULLISH",
+      "buys": 2,
       "sells": 0,
-      "buy_value": 0.0,
+      "buy_value": 742165.0,
       "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:34Z"
+      "note": "2 buy(s), 0 sell(s) in past 6 months | $742,165 bought / $0 sold",
+      "fetched_at": "2026-11-06T21:56:43Z"
     },
     "ZBH": {
       "ticker": "ZBH",
-      "signal": "NO_DATA",
+      "signal": "SELLING",
       "buys": 0,
-      "sells": 0,
+      "sells": 3,
       "buy_value": 0.0,
-      "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:35Z"
+      "sell_value": 1237244.0,
+      "note": "0 buy(s), 3 sell(s) in past 6 months | $0 bought / $1,237,244 sold",
+      "fetched_at": "2026-11-06T21:56:44Z"
     },
     "ISRG": {
       "ticker": "ISRG",
-      "signal": "NO_DATA",
+      "signal": "SELLING",
       "buys": 0,
-      "sells": 0,
+      "sells": 26,
       "buy_value": 0.0,
-      "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:35Z"
+      "sell_value": 27297154.0,
+      "note": "0 buy(s), 26 sell(s) in past 6 months | $0 bought / $27,297,154 sold",
+      "fetched_at": "2026-11-06T21:56:44Z"
+    },
+    "PODD": {
+      "ticker": "PODD",
+      "signal": "BULLISH",
+      "buys": 2,
+      "sells": 1,
+      "buy_value": 897883.0,
+      "sell_value": 59887.0,
+      "note": "2 buy(s), 1 sell(s) in past 6 months | $897,883 bought / $59,887 sold",
+      "fetched_at": "2026-11-06T21:56:45Z"
+    },
+    "MKTX": {
+      "ticker": "MKTX",
+      "signal": "SELLING",
+      "buys": 0,
+      "sells": 7,
+      "buy_value": 0.0,
+      "sell_value": 1092836.0,
+      "note": "0 buy(s), 7 sell(s) in past 6 months | $0 bought / $1,092,836 sold",
+      "fetched_at": "2026-11-06T21:56:45Z"
     },
     "LPLA": {
       "ticker": "LPLA",
-      "signal": "NO_DATA",
+      "signal": "SELLING",
       "buys": 0,
-      "sells": 0,
+      "sells": 5,
       "buy_value": 0.0,
-      "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:36Z"
+      "sell_value": 2173890.0,
+      "note": "0 buy(s), 5 sell(s) in past 6 months | $0 bought / $2,173,890 sold",
+      "fetched_at": "2026-11-06T21:56:46Z"
+    },
+    "TW": {
+      "ticker": "TW",
+      "signal": "SELLING",
+      "buys": 0,
+      "sells": 3,
+      "buy_value": 0.0,
+      "sell_value": 2541071.0,
+      "note": "0 buy(s), 3 sell(s) in past 6 months | $0 bought / $2,541,071 sold",
+      "fetched_at": "2026-11-06T21:56:47Z"
     },
     "INVH": {
       "ticker": "INVH",
       "signal": "NO_DATA",
       "buys": 0,
       "sells": 0,
+      "buy_value": null,
+      "sell_value": null,
+      "note": "No transactions in past 180 days",
+      "fetched_at": "2026-11-06T21:56:47Z"
+    },
+    "NFLX": {
+      "ticker": "NFLX",
+      "signal": "SELLING",
+      "buys": 0,
+      "sells": 13,
+      "buy_value": 0.0,
+      "sell_value": 53162049.0,
+      "note": "0 buy(s), 13 sell(s) in past 6 months | $0 bought / $53,162,049 sold",
+      "fetched_at": "2026-11-06T21:56:48Z"
+    },
+    "CMCSA": {
+      "ticker": "CMCSA",
+      "signal": "NO_DATA",
+      "buys": 0,
+      "sells": 0,
       "buy_value": 0.0,
       "sell_value": 0.0,
       "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:36Z"
+      "fetched_at": "2026-11-06T21:56:48Z"
     },
     "EIX": {
       "ticker": "EIX",
-      "signal": "NO_DATA",
+      "signal": "SELLING",
       "buys": 0,
-      "sells": 0,
+      "sells": 2,
       "buy_value": 0.0,
-      "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:37Z"
+      "sell_value": 65480.0,
+      "note": "0 buy(s), 2 sell(s) in past 6 months | $0 bought / $65,480 sold",
+      "fetched_at": "2026-11-06T21:56:49Z"
+    },
+    "CBRS": {
+      "ticker": "CBRS",
+      "signal": "SELLING",
+      "buys": 0,
+      "sells": 23,
+      "buy_value": 0.0,
+      "sell_value": 415300996.0,
+      "note": "0 buy(s), 23 sell(s) in past 6 months | $0 bought / $415,300,996 sold",
+      "fetched_at": "2026-11-06T21:56:50Z"
     },
     "CLS": {
       "ticker": "CLS",
-      "signal": "NO_DATA",
+      "signal": "SELLING",
       "buys": 0,
-      "sells": 0,
+      "sells": 13,
       "buy_value": 0.0,
-      "sell_value": 0.0,
-      "note": "0 buy(s), 0 sell(s) in past 6 months | $0 bought / $0 sold",
-      "fetched_at": "2026-11-02T01:05:38Z"
+      "sell_value": 152390844.0,
+      "note": "0 buy(s), 13 sell(s) in past 6 months | $0 bought / $152,390,844 sold",
+      "fetched_at": "2026-11-06T21:56:50Z"
+    },
+    "CRDO": {
+      "ticker": "CRDO",
+      "signal": "SELLING",
+      "buys": 0,
+      "sells": 36,
+      "buy_value": 0.0,
+      "sell_value": 202823940.0,
+      "note": "0 buy(s), 36 sell(s) in past 6 months | $0 bought / $202,823,940 sold",
+      "fetched_at": "2026-11-06T21:56:51Z"
     },
     "SPY": {
       "ticker": "SPY",
@@ -279,7 +529,7 @@
       "buy_value": null,
       "sell_value": null,
       "note": "No insider transactions found",
-      "fetched_at": "2026-11-02T01:05:38Z"
+      "fetched_at": "2026-11-06T21:56:51Z"
     },
     "QQQ": {
       "ticker": "QQQ",
@@ -289,7 +539,7 @@
       "buy_value": null,
       "sell_value": null,
       "note": "No insider transactions found",
-      "fetched_at": "2026-11-02T01:05:39Z"
+      "fetched_at": "2026-11-06T21:56:52Z"
     },
     "^TNX": {
       "ticker": "^TNX",
@@ -299,7 +549,7 @@
       "buy_value": null,
       "sell_value": null,
       "note": "No insider transactions found",
-      "fetched_at": "2026-11-02T01:05:39Z"
+      "fetched_at": "2026-11-06T21:56:53Z"
     }
   }
 }

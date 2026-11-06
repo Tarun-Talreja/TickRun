@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-06T21:27:08Z",
+  "generated_at": "2026-11-06T21:56:53Z",
   "checked": 58,
   "flagged": 2,
   "quality": {
-    "ADP": {
+    "AAPL": {
       "ok": true,
       "flags": []
     },
-    "AAPL": {
+    "ADP": {
       "ok": true,
       "flags": []
     },
@@ -19,24 +19,20 @@
       "ok": true,
       "flags": []
     },
+    "AVGO": {
+      "ok": true,
+      "flags": []
+    },
     "ASML": {
       "ok": false,
       "flags": [
         {
           "level": "low",
-          "msg": "Reports in EUR; figures converted to USD at 1.1145. Trailing P/E may mix currencies \u2014 verify against filings"
+          "msg": "Reports in EUR; figures converted to USD at 1.1141. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
     },
-    "AVGO": {
-      "ok": true,
-      "flags": []
-    },
     "BWXT": {
-      "ok": true,
-      "flags": []
-    },
-    "CBRS": {
       "ok": true,
       "flags": []
     },
@@ -44,11 +40,15 @@
       "ok": true,
       "flags": []
     },
-    "CMCSA": {
+    "CBRS": {
       "ok": true,
       "flags": []
     },
     "CLS": {
+      "ok": true,
+      "flags": []
+    },
+    "CMCSA": {
       "ok": true,
       "flags": []
     },
@@ -68,11 +68,11 @@
       "ok": true,
       "flags": []
     },
-    "EIX": {
+    "ETN": {
       "ok": true,
       "flags": []
     },
-    "ETN": {
+    "EIX": {
       "ok": true,
       "flags": []
     },
@@ -80,11 +80,11 @@
       "ok": true,
       "flags": []
     },
-    "GEHC": {
+    "GEV": {
       "ok": true,
       "flags": []
     },
-    "GEV": {
+    "GEHC": {
       "ok": true,
       "flags": []
     },
@@ -100,11 +100,11 @@
       "ok": true,
       "flags": []
     },
-    "ISRG": {
+    "INVH": {
       "ok": true,
       "flags": []
     },
-    "INVH": {
+    "ISRG": {
       "ok": true,
       "flags": []
     },
@@ -124,15 +124,15 @@
       "ok": true,
       "flags": []
     },
+    "META": {
+      "ok": true,
+      "flags": []
+    },
     "MA": {
       "ok": true,
       "flags": []
     },
     "MKTX": {
-      "ok": true,
-      "flags": []
-    },
-    "META": {
       "ok": true,
       "flags": []
     },
@@ -176,11 +176,11 @@
       "ok": true,
       "flags": []
     },
-    "PODD": {
+    "POWL": {
       "ok": true,
       "flags": []
     },
-    "POWL": {
+    "PODD": {
       "ok": true,
       "flags": []
     },
