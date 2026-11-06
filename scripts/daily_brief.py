@@ -160,8 +160,8 @@ def main():
                     "priority": 5, "kind": "verdict_change", "ticker": ticker,
                     "headline": f"{ticker} verdict changed: {old} → {v}",
                     "detail": "Research reassessed this name since your last check.",
-                    "action": ("Now buy-ready — worth a look." if v == "RESEARCH-WORTHY"
-                               else "No longer buy-ready — re-read why before adding more."),
+                    "action": ("Now worth a deep dive — research is not a buy call." if v == "RESEARCH-WORTHY"
+                               else "No longer rated worth researching — re-read why."),
                 })
 
     # 6. Data warnings — never act on a number the app itself distrusts

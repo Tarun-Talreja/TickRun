@@ -954,7 +954,7 @@ function renderHome(data){
   <div class="stat-row">
     <div class="stat-tile" style="animation-delay:.1s">
       <div class="stat-tile-val green">${buyReady.length}</div>
-      <div class="stat-tile-label">Buy-Ready</div>
+      <div class="stat-tile-label">To Research</div>
     </div>
     <div class="stat-tile" style="animation-delay:.15s">
       <div class="stat-tile-val ${earningsUrgent.length>0?'red':''}">${earningsUrgent.length}</div>
@@ -989,7 +989,7 @@ function renderHome(data){
     html+=`<div class="focus-card buy s-anim" style="animation-delay:.28s" onclick="openStock(${JSON.stringify(b).replace(/"/g,'&quot;')})">
       <span class="focus-icon">▲</span>
       <div class="focus-content">
-        <div class="focus-label buy">Buy-Ready</div>
+        <div class="focus-label buy">Worth Researching</div>
         <div class="focus-title">${esc(b.ticker)} · ${fp(b.current_price??b.price)}</div>
         <div class="focus-sub">${esc((b.next_action||'').substring(0,80))}</div>
       </div>
@@ -1010,7 +1010,7 @@ function renderHome(data){
   html+=`</div>
 
   <!-- Buy-ready stocks -->
-  <div class="sec-head"><span class="sec-head-label">Act Now</span><span class="sec-head-line"></span><span class="sec-head-count">${buyReady.length}</span></div>
+  <div class="sec-head"><span class="sec-head-label">Worth Researching</span><span class="sec-head-line"></span><span class="sec-head-count">${buyReady.length}</span></div>
   <div class="quick-section">`;
 
   buyReady.forEach((s,i)=>{
@@ -1102,7 +1102,7 @@ function renderWatchlist(data){
     </div>
     <div class="filter-row">
       <span class="filter-chip ${filter==='all'?'active':''}" onclick="setFilter('all')">All ${all.length}</span>
-      <span class="filter-chip ${filter==='buy'?'active':''}" onclick="setFilter('buy')">Buy-Ready ${(data.watchlist.by_verdict['RESEARCH-WORTHY']||[]).length}</span>
+      <span class="filter-chip ${filter==='buy'?'active':''}" onclick="setFilter('buy')">To Research ${(data.watchlist.by_verdict['RESEARCH-WORTHY']||[]).length}</span>
       <span class="filter-chip ${filter==='watch'?'active':''}" onclick="setFilter('watch')">Watching ${(data.watchlist.by_verdict['WATCHLIST']||[]).length}</span>
       <span class="filter-chip ${filter==='pass'?'active':''}" onclick="setFilter('pass')">Pass ${(data.watchlist.by_verdict['PASS']||[]).length}</span>
     </div>

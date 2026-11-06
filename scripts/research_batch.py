@@ -32,6 +32,8 @@ STATUS_PATH     = os.path.join(SCRIPT_DIR, "data", "research_status.json")
 
 STALE_DAYS      = 7      # re-research if older than this
 ALERT_THRESHOLD = -20.0  # drawdown that forces a re-research
+DIP_GAP_DAYS    = 3      # ...but no more often than this, or a selloff keeps
+                         # re-researching the same names and stale ones never run
 MAX_PER_RUN     = 8      # cap per run to respect free-tier limits
 # Stop STARTING tickers after this long. One ticker can take ~15 min when every
 # model times out (5 models x 90s, research + bear check), and on 2026-11-04 a
@@ -89,14 +91,14 @@ def _select_tickers(max_n: int) -> list[str]:
             score += 1000
         if verdict == "RESEARCH-WORTHY":
             score += 100
-        if drawdown is not None and drawdown <= ALERT_THRESHOLD:
+        dipping = (drawdown is not None and drawdown <= ALERT_THRESHOLD
+                   and stale_days >= DIP_GAP_DAYS)
+        if dipping:
             score += 50
         score += min(stale_days, 30)   # staleness adds up to 30
 
         # Include if: never actually researched, OR stale, OR freshly dipping
-        if (never_pipeline_researched
-                or stale_days >= STALE_DAYS
-                or (drawdown is not None and drawdown <= ALERT_THRESHOLD)):
+        if never_pipeline_researched or stale_days >= STALE_DAYS or dipping:
             scored.append((score, ticker))
 
     scored.sort(reverse=True)

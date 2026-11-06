@@ -383,7 +383,7 @@ def _synthesize_next_action(final_verdict: str, thesis: str | None, drawdown_pct
     """Deterministic, durable next_action — no dollar figures, so it never goes stale."""
     t = thesis or "see thesis"
     if final_verdict == "RESEARCH-WORTHY":
-        return f"RESEARCH — {t} Current levels already clear the entry bar."
+        return f"RESEARCH — {t} Worth a deep dive before any decision."
     if final_verdict == "WATCHLIST":
         if drawdown_pct is not None and drawdown_pct < 0:
             return f"WAIT — {t} Revisit at {abs(drawdown_pct):.0f}% below the 52-week high."
