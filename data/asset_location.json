@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-06T20:53:21Z",
+  "generated_at": "2026-11-06T21:04:50Z",
   "rules": {
     "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
     "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
     "high_yield_threshold_pct": 3.0
   },
   "counts": {
-    "roth": 49,
+    "roth": 52,
     "taxable": 2
   },
   "roth": [
@@ -25,7 +25,7 @@
       "name": "ASML Holding N.V.",
       "theme": "edge_ai_silicon",
       "verdict": "RESEARCH-WORTHY",
-      "div_yield_pct": 0.65,
+      "div_yield_pct": 0.66,
       "account": "ROTH",
       "priority": "high",
       "reason": "Highest-conviction growth pick (55% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
@@ -75,7 +75,7 @@
       "name": "CMCSA",
       "theme": "consumer_media",
       "verdict": "RESEARCH-WORTHY",
-      "div_yield_pct": 5.39,
+      "div_yield_pct": 5.38,
       "account": "ROTH",
       "priority": "high",
       "reason": "5.4% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
@@ -105,7 +105,7 @@
       "name": "EIX",
       "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 5.89,
+      "div_yield_pct": 5.9,
       "account": "ROTH",
       "priority": "high",
       "reason": "5.9% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
@@ -135,7 +135,7 @@
       "name": "GIS",
       "theme": "defensive_income",
       "verdict": "RESEARCH-WORTHY",
-      "div_yield_pct": 6.93,
+      "div_yield_pct": 6.89,
       "account": "ROTH",
       "priority": "high",
       "reason": "6.9% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
@@ -281,6 +281,16 @@
       "reason": "Highest-conviction growth pick (53% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
     },
     {
+      "ticker": "STZ",
+      "name": "STZ",
+      "theme": "defensive_income",
+      "verdict": "RESEARCH-WORTHY",
+      "div_yield_pct": 2.91,
+      "account": "ROTH",
+      "priority": "high",
+      "reason": "Highest-conviction growth pick (6% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+    },
+    {
       "ticker": "TLN",
       "name": "Talen Energy Corporation",
       "theme": "nuclear_smr",
@@ -295,7 +305,7 @@
       "name": "Taiwan Semiconductor Manufacturing Company",
       "theme": "edge_ai_silicon",
       "verdict": "RESEARCH-WORTHY",
-      "div_yield_pct": 1.0,
+      "div_yield_pct": 1.01,
       "account": "ROTH",
       "priority": "high",
       "reason": "Highest-conviction growth pick (51% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
@@ -335,7 +345,7 @@
       "name": "Apple Inc.",
       "theme": "mega_cap_ai",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 0.31,
+      "div_yield_pct": 0.32,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -376,6 +386,16 @@
       "theme": "uncategorized",
       "verdict": "WATCHLIST",
       "div_yield_pct": 0.56,
+      "account": "ROTH",
+      "priority": "medium",
+      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+    },
+    {
+      "ticker": "DHR",
+      "name": "DHR",
+      "theme": "healthcare_innovation",
+      "verdict": "WATCHLIST",
+      "div_yield_pct": 0.7,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -426,6 +446,16 @@
       "theme": "quality_compounder",
       "verdict": "WATCHLIST",
       "div_yield_pct": 0.53,
+      "account": "ROTH",
+      "priority": "medium",
+      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+    },
+    {
+      "ticker": "MKTX",
+      "name": "MKTX",
+      "theme": "financials",
+      "verdict": "WATCHLIST",
+      "div_yield_pct": 1.89,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -539,7 +569,7 @@
       "name": "GIS",
       "theme": "defensive_income",
       "verdict": "RESEARCH-WORTHY",
-      "div_yield_pct": 6.93,
+      "div_yield_pct": 6.89,
       "account": "ROTH",
       "priority": "high",
       "reason": "6.9% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
@@ -559,7 +589,7 @@
       "name": "CMCSA",
       "theme": "consumer_media",
       "verdict": "RESEARCH-WORTHY",
-      "div_yield_pct": 5.39,
+      "div_yield_pct": 5.38,
       "account": "ROTH",
       "priority": "high",
       "reason": "5.4% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
@@ -569,7 +599,7 @@
       "name": "EIX",
       "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "div_yield_pct": 5.89,
+      "div_yield_pct": 5.9,
       "account": "ROTH",
       "priority": "high",
       "reason": "5.9% yield is taxed every year in a taxable account whether or not you sell \u2014 there is no deferral. Note this overrides the 'boring goes taxable' instinct: the criterion is taxability, not volatility."
