@@ -314,26 +314,27 @@
       "name": "ASML Holding N.V.",
       "theme": "edge_ai_silicon",
       "status": "research_complete",
-      "thesis": "Monopoly EUV supplier for advanced semiconductors trading at 22x forward earnings with 55% YoY revenue growth and $23B FCF, fitting AI infrastructure theme.",
+      "thesis": "Monopoly EUV supplier for AI chips at 22.5x forward earnings with 55% revenue growth and $23B FCF, down 29% on China export fears.",
       "added": "2026-05-28",
       "verdict": "RESEARCH-WORTHY",
-      "buy_target": 1419.97,
+      "buy_target": 1423.97,
       "current_price": null,
-      "next_action": "RESEARCH \u2014 Monopoly EUV supplier for advanced semiconductors trading at 22x forward earnings with 55% YoY revenue growth and $23B FCF, fitting AI infrastructure theme. Worth a deep dive before any decision.",
+      "next_action": "RESEARCH \u2014 Monopoly EUV supplier for AI chips at 22.5x forward earnings with 55% revenue growth and $23B FCF, down 29% on China export fears. Worth a deep dive before any decision.",
       "research_file": "output/research/ASML_2026-11-06.md",
       "last_researched": "2026-11-06",
       "llm_verdict": "RESEARCH-WORTHY",
       "bear_downgraded": false,
       "confidence": "HIGH",
-      "buy_trigger_drawdown_pct": -29.0,
+      "buy_trigger_drawdown_pct": -28.8,
       "no_pullback_gate": false,
-      "bear_check": "The strongest argument against buying ASML is its heavy reliance on Chinese foundries for 30\u201340% of system sales, which creates a concentrated regulatory risk: expanding U.S. export controls could permanently block the most profitable EUV and High\u2011NA tools from that market, instantly removing roughly one\u2011third of addressable revenue. At 22.4\u00d7 forward earnings the stock already prices in ~35% annual earnings growth, leaving minimal margin for a cyclical downturn or a sudden loss of the China market.\n\nBREAK: NONE\nEVIDENCE: none",
+      "bear_check": "The strongest argument against buying ASML is that U.S. export controls could expand from EUV to DUV lithography tools, cutting off the Chinese market that represented roughly 30% of 2023 revenue and removing a major growth engine while competitors like Canon and Nikon capture trailing-node share. The 29% share-price decline reflects investor skepticism about the sustainability of AI-driven chip spending, and any slowdown in capital expenditure by TSMC, Samsung, or Intel would directly compress ASML's order backlog and high-margin EUV utilization.\n\nWHY_IT_FELL: ASML fell 29% from its high due to U.S. export restrictions on China sales and investor doubts about the sustainability of AI-driven chip spending.\nFALL_EVIDENCE: ASML shares fall on AI regulation fears after midterms\nBREAK: NONE\nEVIDENCE: none",
       "unsupported_figures": [
-        "35%",
-        "$11.5B",
-        "40%"
+        "$150M",
+        "$300M",
+        "30%"
       ],
-      "rating_version": 2
+      "rating_version": 3,
+      "fall_reason": "ASML fell 29% from its high due to U.S. export restrictions on China sales and investor doubts about the sustainability of AI-driven chip spending."
     },
     {
       "ticker": "TSM",
