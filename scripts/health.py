@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 
 # Hours a stage may go without a fresh result.
 MAX_AGE_HOURS = {"Quotes": 30, "Research": 36, "Catalysts": 36, "News": 30,
-                 "SEC filings": 30, "Screener": 8 * 24}
+                 "SEC filings": 30, "Screener": 8 * 24, "Field news": 30}
 # Market data stops on Friday night, so allow for the weekend until Monday.
 WEEKEND_SLACK_HOURS = 48
 MARKET_STAGES = {"Quotes", "News", "SEC filings"}
@@ -39,7 +39,8 @@ def _research_stage(research: dict, now: datetime) -> dict:
     return stage
 
 
-def build_health(now: datetime, *, quotes, research, catalysts, news, sec, screener) -> dict:
+def build_health(now: datetime, *, quotes, research, catalysts, news, sec, screener,
+                 field_news=None) -> dict:
     return {"stages": [
         _stage("Quotes", quotes, now),
         _research_stage(research, now),
@@ -47,4 +48,5 @@ def build_health(now: datetime, *, quotes, research, catalysts, news, sec, scree
         _stage("News", news, now),
         _stage("SEC filings", sec, now),
         _stage("Screener", screener, now),
+        _stage("Field news", field_news, now),
     ]}

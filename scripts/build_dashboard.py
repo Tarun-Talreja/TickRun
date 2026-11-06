@@ -43,6 +43,7 @@ ANALYTICS_PATH      = os.path.join(SCRIPT_DIR, "output", "portfolio_analytics.js
 TARGET_ALERTS_PATH  = os.path.join(SCRIPT_DIR, "data", "target_alerts.json")
 TRACK_RECORD_PATH   = os.path.join(SCRIPT_DIR, "output", "track_record.json")
 DISCOVERED_PATH     = os.path.join(SCRIPT_DIR, "data", "discovered.json")
+FIELD_NEWS_PATH     = os.path.join(SCRIPT_DIR, "data", "field_news.json")
 ASSET_LOCATION_PATH = os.path.join(SCRIPT_DIR, "data", "asset_location.json")
 CATALYSTS_PATH      = os.path.join(SCRIPT_DIR, "data", "catalysts.json")
 DAILY_BRIEF_PATH    = os.path.join(SCRIPT_DIR, "output", "daily_brief.json")
@@ -263,6 +264,7 @@ def main():
             news=news.get("generated_at"),
             sec=sec.get("generated_at"),
             screener=_load(DISCOVERED_PATH).get("generated_at"),
+            field_news=_load(FIELD_NEWS_PATH).get("generated_at"),
         ),
         "portfolio": {
             "total_value":  total_value,
@@ -288,6 +290,7 @@ def main():
         "analytics":       analytics,
         "track_record":    track_rec,
         "discovered":      _load(DISCOVERED_PATH),
+        "field_news":      _load(FIELD_NEWS_PATH),
         "asset_location":  _load(ASSET_LOCATION_PATH),
         "catalysts":       _load(CATALYSTS_PATH),
         "daily_brief":     _load(DAILY_BRIEF_PATH),

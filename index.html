@@ -312,6 +312,11 @@ html,body{
 .al-chip{font-size:10px;font-weight:600;padding:3px 7px;border-radius:5px;background:var(--bg3);color:var(--text1);cursor:help}
 .al-warn{margin-top:12px;padding:10px 12px;background:#ffaa0015;border:1px solid #ffaa0033;border-radius:8px;font-size:11px;color:#ffaa00;line-height:1.5}
 .disc-wrap{padding:12px 0 4px}
+.fn-item{margin:0 16px 6px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:10px 12px}
+.fn-name{font-size:13px;font-weight:600;cursor:pointer}
+.fn-sum{font-size:13px;line-height:1.45;margin-top:8px}
+.fn-srcs{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.fn-src{font-size:11px;color:var(--cyan);text-decoration:none}
 .disc-head{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);padding:0 16px 8px}
 .disc-note{font-weight:400;text-transform:none;letter-spacing:0;color:var(--text2);font-size:9px}
 .disc-scroll{display:flex;gap:8px;overflow-x:auto;padding:0 16px 4px;scrollbar-width:none}
@@ -1074,6 +1079,21 @@ function renderDiscovered(data){
   return h;
 }
 
+function renderFieldNews(data){
+  const fields = Object.values((data.field_news||{}).fields||{}).filter(f=>f.sources&&f.sources.length);
+  if(!fields.length) return '';
+  const safeLink = u => /^https:\/\//.test(u||'') ? esc(u) : '#';
+  const sourceLinks = f => f.sources.slice(0,3).map(s=>`<a class="fn-src" href="${safeLink(s.link)}" target="_blank" rel="noopener noreferrer">${esc(s.source||'source')} · ${esc(s.date)}</a>`).join('');
+  const headlines = f => f.sources.slice(0,3).map(s=>`<div class="fn-sum">${esc(s.title)}</div>`).join('');
+  let h=`<div class="disc-wrap"><div class="disc-head">📰 Field briefing <span class="disc-note">from this week's headlines</span></div>`;
+  fields.forEach(f=>{
+    h+=`<details class="fn-item"><summary class="fn-name">${esc(f.name)}</summary>
+      ${f.summary?`<div class="fn-sum">${esc(f.summary)}</div>`:headlines(f)}
+      <div class="fn-srcs">${sourceLinks(f)}</div></details>`;
+  });
+  return h+`</div>`;
+}
+
 function renderWatchlist(data){
   const all = data.watchlist.all;
   let activeFilter = 'all';
@@ -1110,7 +1130,7 @@ function renderWatchlist(data){
       <span class="filter-chip theme-chip ${theme==='all'?'active':''}" onclick="setTheme('all')">All Themes</span>
       ${themeKeys.map(t=>`<span class="filter-chip theme-chip ${theme===t?'active':''}" onclick="setTheme('${t}')" style="${theme===t?`background:${tc(t).color};border-color:${tc(t).color}`:`border-color:${tc(t).color}66`}"><span style="width:7px;height:7px;border-radius:50%;background:${tc(t).color};display:inline-block;margin-right:5px"></span>${esc(tc(t).label)} ${themeCounts[t]}</span>`).join('')}
     </div>
-    ${(filter==='all'&&theme==='all'&&searchQ==='')?renderDiscovered(data):''}
+    ${(filter==='all'&&theme==='all'&&searchQ==='')?renderFieldNews(data)+renderDiscovered(data):''}
     <div class="wl-list">`;
 
     stocks.forEach((s,i)=>{

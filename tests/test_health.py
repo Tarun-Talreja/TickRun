@@ -16,7 +16,7 @@ FRESH = "2026-11-04T17:00:00Z"
 
 def _stages(now=WEDNESDAY, quotes=FRESH, research=None):
     research = research or {"ran_at": FRESH, "attempted": 8, "landed": 7}
-    out = build_health(now, quotes=quotes, research=research, catalysts=FRESH,
+    out = build_health(now, field_news=FRESH, quotes=quotes, research=research, catalysts=FRESH,
                        news=FRESH, sec=FRESH, screener=FRESH)
     return {s["name"]: s for s in out["stages"]}
 

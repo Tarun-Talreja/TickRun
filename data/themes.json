@@ -10,7 +10,8 @@
         "EMR",
         "ETN"
       ],
-      "color": "#f59e0b"
+      "color": "#f59e0b",
+      "news_query": "(\"power grid\" OR transformers OR switchgear) electricity demand utilities"
     },
     "nuclear_smr": {
       "name": "Small Modular Nuclear / Uranium",
@@ -22,7 +23,8 @@
         "CCJ",
         "UEC"
       ],
-      "color": "#10b981"
+      "color": "#10b981",
+      "news_query": "(small modular reactor OR uranium OR \"nuclear power\") deal"
     },
     "edge_ai_silicon": {
       "name": "Edge AI / Specialty Silicon",
@@ -34,7 +36,8 @@
         "ACLS",
         "FORM"
       ],
-      "color": "#6366f1"
+      "color": "#6366f1",
+      "news_query": "(AI chips OR semiconductor equipment OR \"edge AI\") industry"
     },
     "cybersecurity": {
       "name": "Cybersecurity (AI Era)",
@@ -46,7 +49,8 @@
         "RBRK",
         "CYBR"
       ],
-      "color": "#ef4444"
+      "color": "#ef4444",
+      "news_query": "(cybersecurity OR ransomware OR \"data breach\") industry enterprise"
     },
     "robotics_automation": {
       "name": "Robotics / Industrial Automation",
@@ -57,7 +61,8 @@
         "AZTA",
         "KRNT"
       ],
-      "color": "#8b5cf6"
+      "color": "#8b5cf6",
+      "news_query": "(humanoid robots OR \"industrial automation\" OR warehouse robotics)"
     },
     "defense_tech": {
       "name": "Defense Tech / Drones",
@@ -68,7 +73,8 @@
         "PLTR",
         "ACHR"
       ],
-      "color": "#64748b"
+      "color": "#64748b",
+      "news_query": "(defense contract OR drones OR Pentagon) procurement"
     },
     "networking_infra": {
       "name": "Networking / Fiber Infrastructure",
@@ -79,7 +85,8 @@
         "CALX",
         "AAOI"
       ],
-      "color": "#0ea5e9"
+      "color": "#0ea5e9",
+      "news_query": "(\"data center\" networking OR \"optical transceivers\" OR fiber) AI"
     },
     "mega_cap_ai": {
       "name": "Mega-Cap AI Infrastructure",
@@ -91,7 +98,8 @@
         "AMZN",
         "AVGO"
       ],
-      "color": "#06b6d4"
+      "color": "#06b6d4",
+      "news_query": "(hyperscaler capex OR \"AI spending\") Microsoft Google Amazon Meta"
     },
     "platform_network": {
       "name": "Platform / Network Effect",
@@ -102,7 +110,8 @@
         "MA",
         "SPOT"
       ],
-      "color": "#a855f7"
+      "color": "#a855f7",
+      "news_query": "(payments OR marketplace OR \"ride hailing\") platform earnings"
     },
     "quality_compounder": {
       "name": "Quality Compounders",
@@ -114,7 +123,8 @@
         "PAYX",
         "DHR"
       ],
-      "color": "#0ea5e9"
+      "color": "#0ea5e9",
+      "news_query": "\"pricing power\" companies earnings"
     },
     "defensive_income": {
       "name": "Defensive / Dividend Income",
@@ -125,7 +135,8 @@
         "STZ",
         "CPB"
       ],
-      "color": "#84cc16"
+      "color": "#84cc16",
+      "news_query": "(consumer staples OR dividend increase) earnings"
     },
     "healthcare_innovation": {
       "name": "Healthcare Innovation",
@@ -135,7 +146,8 @@
         "DHR",
         "ZBH"
       ],
-      "color": "#ec4899"
+      "color": "#ec4899",
+      "news_query": "(medical device OR \"FDA approval\" OR diagnostics) company"
     },
     "financials": {
       "name": "Financials / Capital Markets",
@@ -144,7 +156,8 @@
         "MKTX",
         "LPLA"
       ],
-      "color": "#14b8a6"
+      "color": "#14b8a6",
+      "news_query": "(exchange OR brokerage OR \"capital markets\") trading volumes earnings"
     },
     "real_estate": {
       "name": "Real Estate / REITs",
@@ -152,7 +165,8 @@
       "example_tickers": [
         "INVH"
       ],
-      "color": "#a3a3a3"
+      "color": "#a3a3a3",
+      "news_query": "(REIT OR \"data center REIT\" OR \"single family rental\") earnings"
     },
     "consumer_media": {
       "name": "Consumer / Media / Entertainment",
@@ -162,7 +176,8 @@
         "FLUT",
         "CMCSA"
       ],
-      "color": "#f43f5e"
+      "color": "#f43f5e",
+      "news_query": "(streaming OR subscribers OR \"box office\") earnings"
     },
     "datacenter_infra": {
       "name": "Data Center Infrastructure",
@@ -170,7 +185,8 @@
       "example_tickers": [
         "LMB"
       ],
-      "color": "#f97316"
+      "color": "#f97316",
+      "news_query": "(\"data center\" construction OR cooling OR \"liquid cooling\") contractors"
     }
   }
 }
