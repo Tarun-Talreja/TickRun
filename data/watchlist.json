@@ -998,12 +998,12 @@
       "name": "DHR",
       "theme": "healthcare_innovation",
       "status": "research_complete",
-      "thesis": "Quality life sciences compounder at 22x EV/EBITDA with 22% FCF margins and 8% growth, but trading near 52-week high limits entry margin of safety.",
+      "thesis": "Quality healthcare compounder trading at 25x forward earnings with mid-single-digit organic growth, AI diagnostics optionality, and 3.9x debt/FCF leverage.",
       "added": "2026-06-08",
       "verdict": "WATCHLIST",
       "buy_target": 206.38,
       "current_price": null,
-      "next_action": "WAIT \u2014 Quality life sciences compounder at 22x EV/EBITDA with 22% FCF margins and 8% growth, but trading near 52-week high limits entry margin of safety. Revisit at 15% below the 52-week high.",
+      "next_action": "WAIT \u2014 Quality healthcare compounder trading at 25x forward earnings with mid-single-digit organic growth, AI diagnostics optionality, and 3.9x debt/FCF leverage. Revisit at 15% below the 52-week high.",
       "research_file": "output/research/DHR_2026-11-06.md",
       "last_researched": "2026-11-06",
       "llm_verdict": "WATCHLIST",
@@ -1011,15 +1011,16 @@
       "confidence": "MEDIUM",
       "buy_trigger_drawdown_pct": -15.0,
       "no_pullback_gate": false,
-      "rating_version": 2,
+      "rating_version": 3,
       "unsupported_figures": [
         "35%",
-        "22.4%",
         "3.9x",
-        "25%",
-        "22%"
+        "30%",
+        "5x",
+        "25%"
       ],
-      "bear_check": null
+      "bear_check": null,
+      "fall_reason": null
     },
     {
       "ticker": "GIS",
