@@ -366,12 +366,12 @@
       "name": "ServiceNow, Inc.",
       "theme": "cybersecurity",
       "status": "research_complete",
-      "thesis": "Quality compounder at 21x forward earnings with 20% revenue growth, 73% gross margins, and $4.75B FCF covering net debt.",
+      "thesis": "Quality SaaS compounder at 21x forward earnings for 20% growth with 31% FCF margins and net debt <1x FCF",
       "added": "2026-05-28",
       "verdict": "RESEARCH-WORTHY",
-      "buy_target": 102.32,
+      "buy_target": 101.85,
       "current_price": null,
-      "next_action": "RESEARCH \u2014 Quality compounder at 21x forward earnings with 20% revenue growth, 73% gross margins, and $4.75B FCF covering net debt. Worth a deep dive before any decision.",
+      "next_action": "RESEARCH \u2014 Quality SaaS compounder at 21x forward earnings for 20% growth with 31% FCF margins and net debt <1x FCF Worth a deep dive before any decision.",
       "research_file": "output/research/NOW_2026-11-06.md",
       "last_researched": "2026-11-06",
       "data_bug_corrected": true,
@@ -380,12 +380,16 @@
       "confidence": "MEDIUM",
       "buy_trigger_drawdown_pct": -41.8,
       "no_pullback_gate": true,
-      "bear_check": "The entire bull case rests on financial metrics explicitly marked \"unverified\" in the note \u2014 including revenue, growth, margins, FCF, and debt \u2014 meaning the 20% growth, 73% gross margin, and 21x forward P/E could all be materially different once checked against actual 10-K filings. With no recent news to validate momentum, buying now means committing capital to a thesis built on unconfirmed numbers.\n\nThe argument correctly identifies that every quantitative pillar of the bull case carries an \"unverified\" flag in the source document itself, creating a data-integrity risk that is specific and acknowledged rather than speculative. However, the figures could prove accurate upon verification, so the risk is one of reliance on unconfirmed data rather than a falsified thesis.\n\nBEAR_SEVERITY: MATERIAL",
+      "bear_check": "The strongest argument against buying NOW is its premium valuation (34\u00d7 EV/EBITDA, 21\u00d7 forward P/E) for a company growing at ~20% with no direct AI infrastructure exposure, where any deceleration below 15% growth could compress multiples toward 25\u00d7 and drive ~25% downside. The 41.8% drawdown from the 52\u2011week high signals market skepticism about the durability of that growth rate at this scale.\n\nBREAK: NONE\nEVIDENCE: none",
       "unsupported_figures": [
-        "30%",
+        "31%",
+        "0.8x",
         "15%",
-        "18x"
-      ]
+        "25x",
+        "25%",
+        "1x"
+      ],
+      "rating_version": 2
     },
     {
       "ticker": "AMD",
