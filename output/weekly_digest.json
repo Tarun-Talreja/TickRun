@@ -1,126 +1,143 @@
 {
-  "generated_at": "2026-11-02T01:05:41Z",
-  "narrative": null,
-  "buy_ready": [],
-  "movers": [
+  "generated_at": "2026-11-06T18:56:28Z",
+  "narrative": "Semiconductor and AI-related stocks including LITE, CRDO, MU, AMD, MRVL, and NBIS fell 15\u201319% in line with a broad market decline (Nasdaq 100 down 6.5%, S&P 500 down 4.4%) with no company-specific news cited. Meanwhile, GOOGL, META, AVGO, NOW, and LPLA reached buy-target levels, and earnings are imminent for OKLO and VST today, with NVDA, NBIS, CEG, CBRS, and POWL reporting over the next two weeks. Sector developments include Marvell\u2019s $115 billion deal for Lumentum, Microsoft\u2019s 20-year Texas power deal with Chevron, Agility Robotics\u2019 SPAC debut, and Cameco narrowing its uranium output forecast. New radar additions highlight MSFT, NVDA, VRT, GOOG, and MU for fundamentals and news flow, while ASML and TSM carry data warnings.",
+  "buy_ready": [
     {
-      "ticker": "RDDT",
-      "pct": -29.22,
-      "reason": "No clear catalyst in current news."
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc.",
+      "price": 286.08,
+      "buy_target": 282.76,
+      "at_or_below_target": true,
+      "confidence": "HIGH",
+      "theme": "mega_cap_ai"
     },
     {
-      "ticker": "COHR",
-      "pct": -11.34,
-      "reason": "No clear catalyst in current news."
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "price": 617.68,
+      "buy_target": 605.14,
+      "at_or_below_target": true,
+      "confidence": "MEDIUM",
+      "theme": "mega_cap_ai"
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "price": 291.93,
+      "buy_target": 291.56,
+      "at_or_below_target": true,
+      "confidence": "MEDIUM",
+      "theme": "edge_ai_silicon"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "price": 102.13,
+      "buy_target": 102.32,
+      "at_or_below_target": true,
+      "confidence": "MEDIUM",
+      "theme": "cybersecurity"
+    },
+    {
+      "ticker": "LPLA",
+      "name": "LPLA",
+      "price": 295.93,
+      "buy_target": 300.92,
+      "at_or_below_target": true,
+      "confidence": "MEDIUM",
+      "theme": "financials"
     },
     {
       "ticker": "AMD",
-      "pct": -10.88,
-      "reason": "No clear catalyst in current news."
-    },
-    {
-      "ticker": "NBIS",
-      "pct": -10.38,
-      "reason": "No clear catalyst in current news."
-    },
-    {
-      "ticker": "MRVL",
-      "pct": -10.05,
-      "reason": "No clear catalyst in current news."
+      "name": "Advanced Micro Devices, Inc.",
+      "price": 442.1701,
+      "buy_target": 404.33,
+      "at_or_below_target": false,
+      "confidence": "MEDIUM",
+      "theme": "edge_ai_silicon"
     },
     {
       "ticker": "NVT",
-      "pct": -8.81,
-      "reason": "No clear catalyst in current news."
+      "name": "nVent Electric plc",
+      "price": 104.23,
+      "buy_target": 98.41,
+      "at_or_below_target": false,
+      "confidence": "MEDIUM",
+      "theme": "power_grid"
+    }
+  ],
+  "movers": [
+    {
+      "ticker": "LITE",
+      "pct": -18.68,
+      "reason": "Moved with the broad market (Nasdaq 100 -6.5%, S&P 500 -4.4%); no company-specific news found."
+    },
+    {
+      "ticker": "CRDO",
+      "pct": -17.71,
+      "reason": "Moved with the broad market (Nasdaq 100 -6.5%, S&P 500 -4.4%); no company-specific news found."
+    },
+    {
+      "ticker": "MU",
+      "pct": -17.46,
+      "reason": "Moved with the broad market (Nasdaq 100 -6.5%, S&P 500 -4.4%); no company-specific news found."
+    },
+    {
+      "ticker": "AMD",
+      "pct": -17.26,
+      "reason": "Moved with the broad market (Nasdaq 100 -6.5%, S&P 500 -4.4%); no company-specific news found."
+    },
+    {
+      "ticker": "MRVL",
+      "pct": -16.43,
+      "reason": "Moved with the broad market (Nasdaq 100 -6.5%, S&P 500 -4.4%); no company-specific news found."
+    },
+    {
+      "ticker": "NBIS",
+      "pct": -14.94,
+      "reason": "Moved with the broad market (Nasdaq 100 -6.5%, S&P 500 -4.4%); no company-specific news found."
     }
   ],
   "upcoming_earnings": [
     {
-      "ticker": "AAPL",
-      "date": "2026-11-02",
-      "days_until": 0
-    },
-    {
-      "ticker": "BWXT",
-      "date": "2026-11-02",
-      "days_until": 0
-    },
-    {
-      "ticker": "AMD",
-      "date": "2026-11-03",
-      "days_until": 1
-    },
-    {
-      "ticker": "ETN",
-      "date": "2026-11-03",
-      "days_until": 1
-    },
-    {
-      "ticker": "LMB",
-      "date": "2026-11-03",
-      "days_until": 1
-    },
-    {
-      "ticker": "TLN",
-      "date": "2026-11-03",
-      "days_until": 1
-    },
-    {
-      "ticker": "COHR",
-      "date": "2026-11-04",
-      "days_until": 2
-    },
-    {
-      "ticker": "FLUT",
-      "date": "2026-11-04",
-      "days_until": 2
-    },
-    {
-      "ticker": "PODD",
-      "date": "2026-11-04",
-      "days_until": 2
-    },
-    {
-      "ticker": "ZBH",
-      "date": "2026-11-04",
-      "days_until": 2
-    },
-    {
-      "ticker": "LITE",
-      "date": "2026-11-05",
-      "days_until": 3
-    },
-    {
       "ticker": "OKLO",
       "date": "2026-11-06",
-      "days_until": 4
+      "days_until": 0
     },
     {
       "ticker": "VST",
       "date": "2026-11-06",
-      "days_until": 4
+      "days_until": 0
     },
     {
       "ticker": "CEG",
       "date": "2026-11-09",
-      "days_until": 7
+      "days_until": 3
     },
     {
       "ticker": "CBRS",
       "date": "2026-11-12",
-      "days_until": 10
+      "days_until": 6
     },
     {
       "ticker": "NBIS",
       "date": "2026-11-12",
+      "days_until": 6
+    },
+    {
+      "ticker": "POWL",
+      "date": "2026-11-16",
       "days_until": 10
     },
     {
       "ticker": "NVDA",
       "date": "2026-11-17",
-      "days_until": 15
+      "days_until": 11
     }
   ],
   "sec_stakes": [],
-  "data_warnings": []
+  "data_warnings": [
+    "ASML",
+    "TSM"
+  ]
 }
