@@ -63,26 +63,28 @@
       "name": "Alphabet Inc.",
       "theme": "mega_cap_ai",
       "status": "research_complete",
-      "thesis": "Quality AI compounder at 15x trailing earnings with 25% revenue growth, $115B net cash, and 30% drawdown from highs.",
+      "thesis": "Quality AI infrastructure compounder at 15x trailing earnings with 25% revenue growth, $115B net cash, but search disruption risk creates uncertainty.",
       "added": "2026-04-25",
       "verdict": "RESEARCH-WORTHY",
-      "buy_target": 286.03,
+      "buy_target": 284.8,
       "current_price": 316,
-      "next_action": "RESEARCH \u2014 Quality AI compounder at 15x trailing earnings with 25% revenue growth, $115B net cash, and 30% drawdown from highs. Worth a deep dive before any decision.",
+      "next_action": "RESEARCH \u2014 Quality AI infrastructure compounder at 15x trailing earnings with 25% revenue growth, $115B net cash, but search disruption risk creates uncertainty. Worth a deep dive before any decision.",
       "research_file": "output/research/GOOGL_2026-11-06.md",
       "last_researched": "2026-11-06",
-      "confidence": "MEDIUM",
-      "bear_check": "The market is pricing in a ~19% earnings decline (forward P/E 18.4x vs. trailing 14.9x) despite 24.7% revenue growth, signaling that AI-driven search disruption and DOJ antitrust remedies could compress margins faster than Cloud and YouTube growth can offset. This forward earnings pessimism is not explained by current trailing margins (60.9% gross, 31.8% operating) or strong free cash flow ($19.7B TTM), suggesting significant unquantified risks to the core search monopoly.\n\nBREAK: NONE\nEVIDENCE: none",
+      "confidence": "LOW",
+      "bear_check": "The core search advertising business (~$200B+ annually) faces structural risk from generative AI answer engines (Gemini, ChatGPT, Perplexity) displacing commercial queries, which could cause high-margin revenue decline that Cloud growth cannot fully offset, especially as AI capex accelerates in 2027.\n\nBREAK: NONE\nEVIDENCE: none\nWHY_IT_FELL: Alphabet fell 30% from its high after Q3 2026 revenue missed estimates due to AI-driven search disruption concerns and management guiding for significantly higher 2027 capital expenditures.\nFALL_EVIDENCE: Google Erases a Record $500 Billion as AI Eats Into Sales (Bloomberg.com)\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
       "llm_verdict": "RESEARCH-WORTHY",
       "bear_downgraded": false,
-      "buy_trigger_drawdown_pct": -30.0,
+      "buy_trigger_drawdown_pct": -30.3,
       "no_pullback_gate": true,
       "unsupported_figures": [
-        "75%",
+        "25x",
         "3.3%",
-        "19%"
+        "20%",
+        "$200B"
       ],
-      "rating_version": 2
+      "rating_version": 3,
+      "fall_reason": null
     },
     {
       "ticker": "AMZN",
