@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T01:00:19Z",
+  "generated_at": "2026-11-06T01:57:33Z",
   "pullback_alerts": [
     {
       "ticker": "COHR",
@@ -285,18 +285,18 @@
       "action": "Re-run: python3 scripts/research_ticker.py V"
     },
     {
-      "ticker": "ZBH",
-      "last_researched": "2026-07-26",
-      "days_since": 103,
-      "verdict": "WATCHLIST",
-      "action": "Re-run: python3 scripts/research_ticker.py ZBH"
-    },
-    {
       "ticker": "^TNX",
       "last_researched": "2026-05-28",
       "days_since": 162,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
+    },
+    {
+      "ticker": "ZBH",
+      "last_researched": "2026-07-26",
+      "days_since": 103,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py ZBH"
     }
   ]
 }
