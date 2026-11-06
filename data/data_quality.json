@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-06T06:20:17Z",
+  "generated_at": "2026-11-06T16:56:09Z",
   "checked": 58,
   "flagged": 2,
   "quality": {
-    "AAPL": {
+    "AMD": {
       "ok": true,
       "flags": []
     },
@@ -11,7 +11,7 @@
       "ok": true,
       "flags": []
     },
-    "AMD": {
+    "AAPL": {
       "ok": true,
       "flags": []
     },
@@ -28,7 +28,7 @@
       "flags": [
         {
           "level": "low",
-          "msg": "Reports in EUR; figures converted to USD at 1.1199. Trailing P/E may mix currencies \u2014 verify against filings"
+          "msg": "Reports in EUR; figures converted to USD at 1.1156. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
     },
@@ -36,11 +36,15 @@
       "ok": true,
       "flags": []
     },
+    "CEG": {
+      "ok": true,
+      "flags": []
+    },
     "CBRS": {
       "ok": true,
       "flags": []
     },
-    "CEG": {
+    "CLS": {
       "ok": true,
       "flags": []
     },
@@ -52,19 +56,15 @@
       "ok": true,
       "flags": []
     },
-    "CLS": {
-      "ok": true,
-      "flags": []
-    },
     "COST": {
       "ok": true,
       "flags": []
     },
-    "CRDO": {
+    "DHR": {
       "ok": true,
       "flags": []
     },
-    "DHR": {
+    "CRDO": {
       "ok": true,
       "flags": []
     },
@@ -172,15 +172,15 @@
       "ok": true,
       "flags": []
     },
-    "PAYX": {
-      "ok": true,
-      "flags": []
-    },
     "PODD": {
       "ok": true,
       "flags": []
     },
     "POWL": {
+      "ok": true,
+      "flags": []
+    },
+    "PAYX": {
       "ok": true,
       "flags": []
     },
@@ -204,6 +204,10 @@
       "ok": true,
       "flags": []
     },
+    "TW": {
+      "ok": true,
+      "flags": []
+    },
     "TSM": {
       "ok": false,
       "flags": [
@@ -213,19 +217,11 @@
         }
       ]
     },
-    "TW": {
-      "ok": true,
-      "flags": []
-    },
     "UNH": {
       "ok": true,
       "flags": []
     },
     "V": {
-      "ok": true,
-      "flags": []
-    },
-    "VST": {
       "ok": true,
       "flags": []
     },
@@ -238,6 +234,10 @@
       "flags": []
     },
     "ZBH": {
+      "ok": true,
+      "flags": []
+    },
+    "VST": {
       "ok": true,
       "flags": []
     },
