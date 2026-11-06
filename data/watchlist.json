@@ -588,12 +588,12 @@
       "name": "Coherent Corp.",
       "theme": "networking_infra",
       "status": "research_complete",
-      "thesis": "AI optical interconnect leader trading at 13x forward earnings with 50% revenue growth, but negative FCF and high leverage require verification of cash conversion.",
+      "thesis": "AI optical pure-play at 13x forward earnings with 50% revenue growth but negative FCF and high leverage.",
       "added": "2026-06-08",
       "verdict": "RESEARCH-WORTHY",
       "buy_target": 192.72,
       "current_price": null,
-      "next_action": "RESEARCH \u2014 AI optical interconnect leader trading at 13x forward earnings with 50% revenue growth, but negative FCF and high leverage require verification of cash conversion. Worth a deep dive before any decision.",
+      "next_action": "RESEARCH \u2014 AI optical pure-play at 13x forward earnings with 50% revenue growth but negative FCF and high leverage. Worth a deep dive before any decision.",
       "research_file": "output/research/COHR_2026-11-06.md",
       "last_researched": "2026-11-06",
       "llm_verdict": "RESEARCH-WORTHY",
@@ -601,14 +601,17 @@
       "confidence": "MEDIUM",
       "buy_trigger_drawdown_pct": -56.2,
       "no_pullback_gate": true,
-      "bear_check": "The strongest argument against buying COHR is its deeply negative free cash flow of -$1.84 billion over the trailing twelve months against $2.59 billion of net debt, creating a hard deadline of roughly two years to achieve cash-flow positivity before 2027\u20112028 debt maturities force refinancing or equity dilution at distressed prices. The wide divergence between a healthy 16.3% operating margin and massive cash burn signals heavy capex or working\u2011capital investment that must prove temporary, not structural.\n\nBREAK: NONE\nEVIDENCE: none",
-      "rating_version": 2,
+      "bear_check": "The combination of deeply negative free cash flow (-$1.8B TTM) and $2.6B net debt creates significant financial risk; the forward P/E of 13.3x assumes a perfect capex-to-FCF inflection that has not yet materialized, and hyperscaler concentration (>60% of Networking revenue) means a single customer's capex pause could slash revenue 20-30% overnight.\n\nWHY_IT_FELL: Sector-wide AI optical selloff despite strong company fundamentals.\nFALL_EVIDENCE: Applied Optoelectronics Sinks 16%, Coherent Tumbles 14% Despite Strong Outlook, Lumentum Plunges 13% as AI Optical Stocks Slide (Yahoo Finance)\nBREAK: NONE\nEVIDENCE: none",
+      "rating_version": 3,
       "unsupported_figures": [
         "$1,841M",
-        "200%",
-        "$1.84B",
-        "$1.84 billion"
-      ]
+        "$1.35B",
+        "$2B",
+        "60%",
+        "30%",
+        "$1.8B"
+      ],
+      "fall_reason": "Sector-wide AI optical selloff despite strong company fundamentals."
     },
     {
       "ticker": "CEG",
