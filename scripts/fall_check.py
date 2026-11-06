@@ -13,6 +13,14 @@ import re
 from bear_check import HEADLINES_MARKER, MIN_EVIDENCE_CHARS, _normalise
 
 FALL_THRESHOLD_PCT = -25.0
+# The quote has to be about a fall. VST's note cited a headline saying shares rose and
+# invented the reason for its fall, and a real quote alone let that through.
+_DOWN_RE = re.compile(
+    r"\b(?:plunge\w*|sinks?|sank|falls?|fell|drops?|tumbl\w+|slump\w*|slides?|selloff|sell-off|"
+    r"rout|crash\w*|declin\w+|weak\w*|miss(?:es)?|cuts?|lower\w*|down|worr\w+|concerns?|fears?|"
+    r"squeez\w+|hit|hurt\w*|loses?|losses)\b", re.IGNORECASE)
+_UP_RE = re.compile(r"\b(?:rises?|rose|surg\w+|soar\w*|jumps?|rall\w+|climbs?|gains?|pops?)\b",
+                    re.IGNORECASE)
 
 _REASON_RE = re.compile(r"^[\s*_#-]*WHY_IT_FELL[\s*_]*:[\s*_]*(.+)$", re.MULTILINE)
 _EVIDENCE_RE = re.compile(r"^[\s*_#-]*FALL_EVIDENCE[\s*_]*:[\s*_]*(.+)$", re.MULTILINE)
@@ -43,6 +51,8 @@ def verified_fall_reason(text: str, source: str) -> str | None:
         return None
     quote = _normalise(quotes[-1]).strip(' "“”\'`*-')
     if len(quote) < MIN_EVIDENCE_CHARS or quote not in _normalise(_headlines_only(source)):
+        return None
+    if not _DOWN_RE.search(quote) or _UP_RE.search(quote):
         return None
     return reasons[-1].strip()
 

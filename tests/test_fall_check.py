@@ -43,6 +43,17 @@ def test_evidence_from_the_rules_after_the_headlines_is_rejected():
     assert verified_fall_reason(_note("x", "RULES: be careful"), SOURCE) is None
 
 
+def test_headline_about_a_rise_cannot_explain_a_fall():
+    source = f"{HEADLINES_MARKER}]\n- Vistra Shares Rise 5% Despite Revenue Miss (Yahoo)\n"
+    note = _note("Market rotation.", "Vistra Shares Rise 5% Despite Revenue Miss")
+    assert verified_fall_reason(note, source) is None
+
+
+def test_neutral_headline_cannot_explain_a_fall():
+    source = f"{HEADLINES_MARKER}]\n- Vistra names a new chief financial officer (Yahoo)\n"
+    assert verified_fall_reason(_note("x", "Vistra names a new chief financial officer"), source) is None
+
+
 def test_missing_lines_mean_unexplained():
     assert verified_fall_reason("VERDICT: PASS", SOURCE) is None
 
