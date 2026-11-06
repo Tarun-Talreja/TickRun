@@ -213,20 +213,29 @@
       "name": "ASML Holding N.V.",
       "theme": "edge_ai_silicon",
       "status": "research_complete",
-      "thesis": "Monopoly EUV supplier for AI chips at 21x forward earnings with 55% revenue growth, 44% operating margins, and $12B net cash.",
+      "thesis": "Monopoly EUV supplier for AI compute at 21x forward earnings with 55% quarterly growth, 44% operating margins, and $23.5B FCF, now 32% off 52-week high.",
       "added": "2026-05-28",
       "verdict": "WATCHLIST",
       "buy_target": 1356.65,
       "current_price": null,
-      "next_action": "WAIT \u2014 Monopoly EUV supplier for AI chips at 21x forward earnings with 55% revenue growth, 44% operating margins, and $12B net cash.",
+      "next_action": "WAIT \u2014 Monopoly EUV supplier for AI compute at 21x forward earnings with 55% quarterly growth, 44% operating margins, and $23.5B FCF, now 32% off 52-week high.",
       "research_file": "output/research/ASML_2026-11-06.md",
       "last_researched": "2026-11-06",
       "llm_verdict": "RESEARCH-WORTHY",
       "bear_downgraded": true,
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "buy_trigger_drawdown_pct": 0.0,
       "no_pullback_gate": false,
-      "bear_check": "The bull case hinges on High-NA EUV ramps through 2030 but ignores that the note itself flags China as ~30% of 2023 system revenue (unverified) and the single biggest risk \u2014 expanded export controls could permanently excise the largest growth market, capping TAM at ~70% of current levels. Meanwhile, the 55% YoY revenue growth is already decelerating (forward P/E 21.4x vs trailing 36.8x), and critical inputs like China exposure and share-count trends remain unverified in the provided data.  \nCHANGES VERDICT: YES"
+      "bear_check": "The bull case severely underweights the existential geopolitical risk that 30-40% of system sales target Chinese foundries (SMIC, CXMT, YMTC) now facing tightening U.S./Dutch export bans on both EUV and advanced DUV tools; a full cutoff \u2014 increasingly probable given bipartisan pressure \u2014 would instantly evaporate the largest single demand pool for ASML's highest-margin products. Unlike cyclical downturns, this is a structural, policy-driven demand destruction that no R&D lead or monopoly moat can overcome, and the note's own \"unverified\" qualifier on the China exposure percentage suggests the true risk may be even larger.\n\nCHANGES VERDICT: YES",
+      "unsupported_figures": [
+        "$150",
+        "50%",
+        "$8.1B",
+        "50.8%",
+        "48.7%",
+        "$350M",
+        "40%"
+      ]
     },
     {
       "ticker": "TSM",
