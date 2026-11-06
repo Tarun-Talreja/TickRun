@@ -1,0 +1,59 @@
+name: Health Watch
+
+# Tries every data source on a known stock, then reports anything broken as one
+# GitHub issue, which GitHub emails. Daily, so a source going quiet is caught fast.
+on:
+  schedule:
+    - cron: '23 12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  actions: read
+
+concurrency:
+  group: health-watch
+  cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+
+      - name: Refresh quotes
+        # quotes_cache.json is gitignored, so a fresh checkout has no prices.
+        run: python scripts/refresh_quotes.py
+
+      - name: Test each data source
+        run: python scripts/self_test.py
+
+      - name: Sync with remote before commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -- output/dashboard.json
+          git pull --rebase --autostash origin main
+          python scripts/build_dashboard.py
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto: health watch"
+          file_pattern: >-
+            data/self_test.json
+            output/dashboard.json
+
+      - name: Report anything broken
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/health_alert.py

@@ -6,7 +6,7 @@ Data source: yfinance insider_transactions (Yahoo Finance Form 4 proxy).
 Output: data/insider_signals.json
 
 Signal levels:
-  RED_FLAG  — insiders selling, zero buys (strongest bearish signal)
+  SELLING   — sales and no open-market buys (routine at most large companies)
   BEARISH   — sell:buy ratio > 5:1
   NEUTRAL   — mixed activity
   BULLISH   — more buys than sells
@@ -36,11 +36,32 @@ OUTPUT_PATH    = os.path.join(SCRIPT_DIR, "data", "insider_signals.json")
 LOOKBACK_DAYS = 180
 
 
+def count_trades(df) -> tuple[int, int, float | None, float | None] | None:
+    """Open-market buys and sells with their dollar totals, or None if unreadable.
+
+    Yahoo left its Transaction column blank and moved the description to Text, so
+    every stock read as NO_DATA. Awards, gifts and option exercises count as neither:
+    only someone spending their own money, or selling, says anything.
+    """
+    column = next((c for c in ("Text", "Transaction") if c in df.columns), None)
+    if column is None:
+        return None
+    text = df[column].fillna("").astype(str).str.lower()
+    is_buy = text.str.contains(r"\bpurchase|\bbuy", regex=True)
+    is_sell = text.str.contains(r"\bsale\b|\bsell", regex=True)
+    if "Value" not in df.columns:
+        return int(is_buy.sum()), int(is_sell.sum()), None, None
+    value = pd.to_numeric(df["Value"], errors="coerce")
+    return (int(is_buy.sum()), int(is_sell.sum()),
+            float(value[is_buy].sum()), float(value[is_sell].sum()))
+
+
 def _classify(buys: int, sells: int, buy_value, sell_value) -> str:
     if buys == 0 and sells == 0:
         return "NO_DATA"
-    if buys == 0 and sells > 0:
-        return "RED_FLAG"
+    # Not a warning by itself: executives sell on schedule at most large companies.
+    if buys == 0:
+        return "SELLING"
     ratio = sells / buys
     if ratio > 5:
         return "BEARISH"
@@ -81,37 +102,10 @@ def _fetch_one(ticker: str) -> dict:
         if hasattr(df, "empty") and df.empty:
             return {**base, "note": f"No transactions in past {LOOKBACK_DAYS} days"}
 
-        # Find transaction type column
-        tx_col = next(
-            (
-                c for c in df.columns
-                if "transaction" in c.lower()
-                or c.lower() in ("trans", "type", "transactiontype")
-            ),
-            None,
-        )
-        if not tx_col:
+        counted = count_trades(df)
+        if counted is None:
             return {**base, "note": "Cannot identify transaction type column"}
-
-        tx = df[tx_col].astype(str).str.lower()
-        buy_mask  = tx.str.contains(r"purchase|buy|acquisition|grant", na=False, regex=True)
-        sell_mask = tx.str.contains(r"sale|sell|dispos", na=False, regex=True)
-
-        buys  = int(buy_mask.sum())
-        sells = int(sell_mask.sum())
-
-        # Optional: sum dollar values
-        val_col = next(
-            (c for c in df.columns if c.lower() in ("value", "amount", "dollarvalue")),
-            None,
-        )
-        buy_value = sell_value = None
-        if val_col:
-            try:
-                buy_value  = float(df.loc[buy_mask,  val_col].apply(pd.to_numeric, errors="coerce").sum())
-                sell_value = float(df.loc[sell_mask, val_col].apply(pd.to_numeric, errors="coerce").sum())
-            except Exception as exc:
-                print(f"⚠ {ticker}: insider dollar values unavailable: {str(exc)[:120]}")
+        buys, sells, buy_value, sell_value = counted
 
         signal = _classify(buys, sells, buy_value, sell_value)
 
@@ -149,7 +143,7 @@ def main():
     for i, ticker in enumerate(tickers, 1):
         rec = _fetch_one(ticker)
         results[ticker] = rec
-        icon = {"RED_FLAG": "🔴", "BEARISH": "🟡", "BULLISH": "🟢", "NEUTRAL": "⚪", "NO_DATA": "—", "ERROR": "⚠"}.get(rec["signal"], "?")
+        icon = {"SELLING": "⚪", "BEARISH": "🟡", "BULLISH": "🟢", "NEUTRAL": "⚪", "NO_DATA": "—", "ERROR": "⚠"}.get(rec["signal"], "?")
         print(f"  [{i:2d}/{len(tickers)}] {ticker:8s} {icon}  {rec['note']}")
         time.sleep(0.5)
 
@@ -160,12 +154,10 @@ def main():
     with open(OUTPUT_PATH, "w") as f:
         json.dump(output, f, indent=2)
 
-    red_flags = [t for t, r in results.items() if r["signal"] == "RED_FLAG"]
     bearish   = [t for t, r in results.items() if r["signal"] == "BEARISH"]
     bullish   = [t for t, r in results.items() if r["signal"] == "BULLISH"]
 
     print(f"\n✅ Insider signals → {OUTPUT_PATH}")
-    if red_flags: print(f"   🔴 RED FLAG:  {', '.join(red_flags)}")
     if bearish:   print(f"   🟡 BEARISH:   {', '.join(bearish)}")
     if bullish:   print(f"   🟢 BULLISH:   {', '.join(bullish)}")
 

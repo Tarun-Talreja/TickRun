@@ -16,8 +16,9 @@ FRESH = "2026-11-04T17:00:00Z"
 
 def _stages(now=WEDNESDAY, quotes=FRESH, research=None):
     research = research or {"ran_at": FRESH, "attempted": 8, "landed": 7}
-    out = build_health(now, field_news=FRESH, ratings=(1, 1), quotes=quotes, research=research, catalysts=FRESH,
-                       news=FRESH, sec=FRESH, screener=FRESH)
+    out = build_health(now, ratings=(1, 1), quotes=quotes, research=research, catalysts=FRESH,
+                       sec=FRESH, self_test={"ran_at": FRESH, "checks": []},
+                       content={"News": (FRESH, 5, 6), "Screener": (FRESH, 428), "Field news": (FRESH, 16, 16)})
     return {s["name"]: s for s in out["stages"]}
 
 
@@ -65,21 +66,60 @@ class TestLoadJson:
 class TestRatings:
     def test_all_current_is_ok(self):
         now = datetime(2026, 11, 6, 12, tzinfo=timezone.utc)
-        stage = build_health(now, quotes=None, research={}, catalysts=None, news=None, sec=None,
-                             screener=None, ratings=(54, 54))["stages"][-1]
+        stage = build_health(now, quotes=None, research={}, catalysts=None, sec=None,
+                             ratings=(54, 54))["stages"][-1]
         assert (stage["name"], stage["status"], stage["detail"]) == ("Ratings", "ok", "54/54 on current logic")
 
     def test_behind_is_stale(self):
         now = datetime(2026, 11, 6, 12, tzinfo=timezone.utc)
-        stage = build_health(now, quotes=None, research={}, catalysts=None, news=None, sec=None,
-                             screener=None, ratings=(40, 54))["stages"][-1]
+        stage = build_health(now, quotes=None, research={}, catalysts=None, sec=None,
+                             ratings=(40, 54))["stages"][-1]
         assert stage["status"] == "stale"
 
 
-def test_news_that_runs_but_finds_nothing_is_failing():
-    now = datetime(2026, 11, 4, 12, tzinfo=timezone.utc)
-    stages = build_health(now, quotes=None, research={}, catalysts=None, sec=None, screener=None,
-                          news="2026-11-04T10:00:00Z", news_coverage=(0, 54))["stages"]
-    news = next(s for s in stages if s["name"] == "News")
-    assert news["status"] == "failing"
-    assert news["detail"] == "0/54 stocks have headlines"
+def _content(name, *counts):
+    stages = build_health(WEDNESDAY, quotes=None, research={}, catalysts=None, sec=None,
+                          content={name: (FRESH, *counts)})["stages"]
+    return next(s for s in stages if s["name"] == name)
+
+
+class TestContent:
+    def test_on_time_but_empty_is_failing(self):
+        stage = _content("News", 0, 54)
+        assert (stage["status"], stage["detail"]) == ("failing", "0/54 have data")
+
+    def test_the_insider_outage_would_have_shown(self):
+        assert _content("Insider data", 0, 30)["status"] == "failing"
+
+    def test_a_few_gaps_are_fine(self):
+        assert _content("Insider data", 25, 30)["status"] == "ok"
+
+    def test_too_few_results_is_failing(self):
+        assert _content("Screener", 12)["status"] == "failing"
+        assert _content("Radar", 0)["status"] == "failing"
+
+    def test_empty_list_is_failing_except_for_a_calm_day_of_movers(self):
+        assert _content("Prices", 0, 0)["status"] == "failing"
+        assert _content("Movers", 0, 0)["status"] == "ok"
+
+    def test_old_data_stays_stale_rather_than_failing(self):
+        stages = build_health(WEDNESDAY, quotes=None, research={}, catalysts=None, sec=None,
+                              content={"News": ("2026-11-01T00:00:00Z", 0, 54)})["stages"]
+        assert next(s for s in stages if s["name"] == "News")["status"] == "stale"
+
+    def test_every_part_says_what_it_affects(self):
+        assert _content("Insider data", 0, 30)["affects"]
+
+
+class TestSelfTest:
+    def _stage(self, result):
+        stages = build_health(WEDNESDAY, quotes=None, research={}, catalysts=None, sec=None,
+                              self_test=result)["stages"]
+        return next(s for s in stages if s["name"] == "Self-test")
+
+    def test_a_failed_source_is_named(self):
+        stage = self._stage({"ran_at": FRESH, "checks": [{"name": "Stock news", "ok": False}]})
+        assert (stage["status"], stage["detail"]) == ("failing", "failed: Stock news")
+
+    def test_never_run_is_not_ok(self):
+        assert self._stage(None)["status"] == "unknown"

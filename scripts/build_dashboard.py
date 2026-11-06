@@ -26,12 +26,14 @@ from bear_check import RATING_VERSION
 from health import build_health
 from io_utils import load_json as _load
 from research_batch import SKIP_TICKERS
+from sec_filings import is_stake
 
 SCRIPT_DIR          = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PORTFOLIO_PATH      = os.path.join(SCRIPT_DIR, "data", "portfolio.json")
 WATCHLIST_PATH      = os.path.join(SCRIPT_DIR, "data", "watchlist.json")
 THEMES_PATH         = os.path.join(SCRIPT_DIR, "data", "themes.json")
 QUOTES_PATH         = os.path.join(SCRIPT_DIR, "data", "quotes_cache.json")
+SELF_TEST_PATH      = os.path.join(SCRIPT_DIR, "data", "self_test.json")
 INSIDER_PATH        = os.path.join(SCRIPT_DIR, "data", "insider_signals.json")
 HEDGE_FUND_PATH     = os.path.join(SCRIPT_DIR, "data", "hedge_fund_signals.json")
 ALERTS_PATH         = os.path.join(SCRIPT_DIR, "output", "alerts.json")
@@ -100,6 +102,37 @@ def _cap_tier(market_cap) -> str:
     if market_cap >= 1e9:
         return "mid"
     return "small"
+
+
+def _count(items, has_data) -> tuple[int, int]:
+    items = list(items)
+    return sum(1 for item in items if has_data(item)), len(items)
+
+
+def _content_counts(quotes: dict, news: dict, insiders: dict, funds: dict, movers: dict) -> dict:
+    """How much real data each part produced, for System Check."""
+    field = _load(FIELD_NEWS_PATH)
+    radar = _load(RADAR_PATH)
+    screen = _load(DISCOVERED_PATH)
+    digest = _load(DIGEST_PATH)
+    stocks = [q for t, q in quotes.get("tickers", {}).items()
+              if t not in SKIP_TICKERS and not t.startswith("^")]
+    return {
+        "Prices": (quotes.get("last_updated"), *_count(stocks, lambda q: q.get("price"))),
+        "Company figures": (quotes.get("last_updated"), *_count(stocks, lambda q: q.get("revenue_ttm"))),
+        "News": (news.get("generated_at"), *_count(news.get("news", {}).values(), bool)),
+        "Insider data": (insiders.get("last_updated"), *_count(
+            insiders.get("tickers", {}).values(),
+            lambda r: r.get("signal") not in ("NO_DATA", "ERROR", None))),
+        "Hedge funds": (funds.get("last_updated"), *_count(
+            funds.get("tickers", {}).values(), lambda r: r.get("status") == "ok")),
+        "Field news": (field.get("generated_at"), *_count(
+            field.get("fields", {}).values(), lambda f: f.get("sources"))),
+        "Movers": (movers.get("generated_at"), *_count(movers.get("movers", []), lambda m: m.get("news"))),
+        "Radar": (radar.get("generated_at"), len(radar.get("cards", []))),
+        "Screener": (screen.get("generated_at"), screen.get("qualified", 0)),
+        "AI summary": (digest.get("generated_at"), int(bool(digest.get("narrative")))),
+    }
 
 
 def _enrich_candidate(candidate: dict, quotes: dict, insider_signals: dict, hedge_fund_signals: dict) -> dict:
@@ -272,13 +305,10 @@ def main():
             quotes=quotes.get("last_updated"),
             research=_load(RESEARCH_STATUS_PATH),
             catalysts=_load(CATALYSTS_PATH).get("generated_at"),
-            news=news.get("generated_at"),
-            news_coverage=(sum(1 for items in news.get("news", {}).values() if items),
-                           len(news.get("news", {}))),
             sec=sec.get("generated_at"),
-            screener=_load(DISCOVERED_PATH).get("generated_at"),
-            field_news=_load(FIELD_NEWS_PATH).get("generated_at"),
             ratings=_rating_counts(candidates_enriched),
+            content=_content_counts(quotes, news, insider, hedge_fund, movers),
+            self_test=_load(SELF_TEST_PATH),
         ),
         "portfolio": {
             "total_value":  total_value,
@@ -315,7 +345,7 @@ def main():
             "upcoming_earnings":  earnings.get("upcoming_earnings", []),
             "sec_ownership_stakes": [
                 f for f in sec.get("filings", [])
-                if f.get("form", "").startswith("SC 13")
+                if is_stake(f.get("form", ""))
             ],
             "sec_material_events": [
                 f for f in sec.get("filings", [])

@@ -45,11 +45,20 @@ NOTABLE_FORMS = {
     "SC 13D/A":  ("ACTIVIST UPDATE", "Activist changed their 5%+ position"),
     "SC 13G":    ("PASSIVE 5% STAKE", "5%+ passive stake — institutional conviction"),
     "SC 13G/A":  ("PASSIVE UPDATE", "Passive holder changed their 5%+ position"),
+    # EDGAR has used these names since December 2024; "SC 13G" matched nothing after that.
+    "SCHEDULE 13D":   ("ACTIVIST STAKE", "5%+ stake with intent to influence — strongest signal"),
+    "SCHEDULE 13D/A": ("ACTIVIST UPDATE", "Activist changed their 5%+ position"),
+    "SCHEDULE 13G":   ("PASSIVE 5% STAKE", "5%+ passive stake — institutional conviction"),
+    "SCHEDULE 13G/A": ("PASSIVE UPDATE", "Passive holder changed their 5%+ position"),
     "4":         ("INSIDER TRADE", "Officer/director bought or sold — filed within 2 days"),
     "8-K":       ("MATERIAL EVENT", "Corporate event: M&A, guidance, exec change"),
 }
 
 LOOKBACK_DAYS = 14   # Only surface filings from the last 2 weeks
+
+
+def is_stake(form: str) -> bool:
+    return form.startswith(("SC 13", "SCHEDULE 13"))
 
 
 def _load_watchlist_tickers() -> list[str]:
@@ -141,7 +150,9 @@ def main():
         all_filings.extend(filings)
 
     # Sort: activist/passive stakes first, then by date (newest first)
-    priority = {"SC 13D": 0, "SC 13D/A": 1, "SC 13G": 2, "SC 13G/A": 3, "8-K": 4, "4": 5}
+    priority = {"SC 13D": 0, "SC 13D/A": 1, "SC 13G": 2, "SC 13G/A": 3,
+                "SCHEDULE 13D": 0, "SCHEDULE 13D/A": 1, "SCHEDULE 13G": 2, "SCHEDULE 13G/A": 3,
+                "8-K": 4, "4": 5}
     all_filings.sort(key=lambda f: (priority.get(f["form"], 9), f["filed_date"]), reverse=False)
     all_filings.sort(key=lambda f: f["filed_date"], reverse=True)
     all_filings.sort(key=lambda f: priority.get(f["form"], 9))
@@ -155,7 +166,7 @@ def main():
         json.dump(output, f, indent=2)
 
     # Summary
-    stakes = [f for f in all_filings if f["form"].startswith("SC 13")]
+    stakes = [f for f in all_filings if is_stake(f["form"])]
     insider = [f for f in all_filings if f["form"] == "4"]
     events = [f for f in all_filings if f["form"] == "8-K"]
 
