@@ -630,12 +630,12 @@
       "name": "nVent Electric plc",
       "theme": "power_grid",
       "status": "research_complete",
-      "thesis": "Electrical infrastructure compounder at 14x forward earnings with 40%+ recent quarterly growth, 19% operating margins, and FCF covering net debt in <2 years, benefiting from data center power build-out.",
+      "thesis": "Quality data center power play at 14x forward earnings with 40%+ quarterly growth and positive FCF",
       "added": "2026-07-25",
       "verdict": "RESEARCH-WORTHY",
       "buy_target": 98.41,
       "current_price": null,
-      "next_action": "RESEARCH \u2014 Electrical infrastructure compounder at 14x forward earnings with 40%+ recent quarterly growth, 19% operating margins, and FCF covering net debt in <2 years, benefiting from data center power build-out. Current levels already clear the entry bar.",
+      "next_action": "RESEARCH \u2014 Quality data center power play at 14x forward earnings with 40%+ quarterly growth and positive FCF Current levels already clear the entry bar.",
       "research_file": "output/research/NVT_2026-11-06.md",
       "last_researched": "2026-11-06",
       "confidence": "MEDIUM",
@@ -644,13 +644,17 @@
       "no_pullback_gate": true,
       "llm_verdict": "RESEARCH-WORTHY",
       "bear_downgraded": false,
-      "bear_check": "The 43.7% YoY quarterly revenue surge is almost certainly not organic \u2014 electrical equipment manufacturers rarely exceed 10% organic growth \u2014 yet the forward P/E of 14.1x (vs. 23.9x trailing) prices in ~70% earnings growth, implying the market mistakes acquisition- or pull-forward-driven revenue for sustainable momentum. The note itself leaves share count trend and peer multiples \"unverified,\" obscuring whether dilution or sector re-rating undermines the apparent cheapness.\n\nThis argument identifies a specific, quantifiable disconnect between the reported growth rate and industry norms, and ties it directly to the valuation assumption embedded in the P/E compression. It relies only on figures in the note (43.7% growth, 14.1x vs 23.9x P/E) and the admitted data gaps. It does not allege fraud or data errors, so it is not thesis-breaking; it is a material risk that the growth quality is overstated and the multiple is a trap.\n\nBEAR_SEVERITY: MATERIAL",
+      "bear_check": "The 43.7% YoY quarterly growth is a one-time AI capex pull-forward, not a sustainable run-rate; annualizing a peak quarter in a cyclical industrial to claim a \"$7B run-rate\" makes the 14.1x forward P/E a value trap, because if hyperscaler spending merely normalizes to historical 10-15% growth (as the note's own bear case admits), revenue could drop 20-30% from this peak and the forward P/E would re-rate to 20x+ on lower earnings. The note's assertion that \"half that rate\" still leaves the stock \"optically cheap\" ignores operating leverage working in reverse on a high-fixed-cost base.\n\nNeutral grading: The argument correctly identifies that the bull case relies on annualizing a cyclical peak quarter and assumes operating leverage only works upward, but it relies on the note's own unverified bear-case assumption of a 20-30% revenue decline rather than an independent data point.\n\nBEAR_SEVERITY: MATERIAL",
       "unsupported_figures": [
-        "1.9x",
-        "0.53x",
+        "41%",
+        "$7B",
+        "10%",
+        "15%",
+        "30%",
+        "20x",
+        "$1.5B",
         "70%",
-        "40%",
-        "10%"
+        "40%"
       ]
     },
     {
