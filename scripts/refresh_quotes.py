@@ -106,8 +106,7 @@ def _normalize_money(info: dict, fx: float | None) -> dict:
                 "fcf_ttm":     info.get("freeCashflow"),
                 "total_cash":  info.get("totalCash"),
                 "total_debt":  info.get("totalDebt"),
-                "ev_ebitda":   info.get("enterpriseToEbitda"),
-                "ev_sales":    info.get("enterpriseToRevenue")}
+                "ev_ebitda":   info.get("enterpriseToEbitda")}
 
     def convert(key):
         value = info.get(key)
@@ -122,8 +121,7 @@ def _normalize_money(info: dict, fx: float | None) -> dict:
             "fcf_ttm":     convert("freeCashflow"),
             "total_cash":  cash,
             "total_debt":  debt,
-            "ev_ebitda":   round(ev / ebitda, 1) if ev and ebitda and ebitda > 0 else None,
-            "ev_sales":    round(ev / revenue, 1) if ev and revenue else None}
+            "ev_ebitda":   round(ev / ebitda, 1) if ev and ebitda and ebitda > 0 else None}
 
 
 @retry(

@@ -43,6 +43,8 @@ import re
 import sys
 from datetime import datetime, timezone
 
+from io_utils import load_json as _load
+
 SCRIPT_DIR     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RESEARCH_DIR   = os.path.join(SCRIPT_DIR, "output", "research")
 QUOTES_PATH    = os.path.join(SCRIPT_DIR, "data", "quotes_cache.json")
@@ -61,13 +63,6 @@ REQUIRED_SECTIONS = [
 ]
 
 NUMERIC_TOLERANCE = 0.15   # allow 15% relative difference before flagging a mismatch
-
-
-def _load(path, default=None):
-    if os.path.exists(path):
-        with open(path) as f:
-            return json.load(f)
-    return default if default is not None else {}
 
 
 def _ticker_from_filename(path: str) -> str:

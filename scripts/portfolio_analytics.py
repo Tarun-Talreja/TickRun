@@ -20,8 +20,9 @@ Usage:
 
 import json
 import os
-import sys
 from datetime import datetime, timezone
+
+from io_utils import load_json as _load
 
 SCRIPT_DIR     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PORTFOLIO_PATH = os.path.join(SCRIPT_DIR, "data", "portfolio.json")
@@ -31,13 +32,6 @@ OUTPUT_PATH    = os.path.join(SCRIPT_DIR, "output", "portfolio_analytics.json")
 
 CONCENTRATION_WARN = 40.0   # % of invested value in one theme triggers a warning
 MAX_DIV_YIELD      = 25.0   # yields above this are treated as bad data (yfinance bug)
-
-
-def _load(path, default=None):
-    if os.path.exists(path):
-        with open(path) as f:
-            return json.load(f)
-    return default if default is not None else {}
 
 
 def _theme_map() -> dict:

@@ -28,6 +28,7 @@ SCRIPT_DIR     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WATCHLIST_PATH = os.path.join(SCRIPT_DIR, "data", "watchlist.json")
 QUOTES_PATH    = os.path.join(SCRIPT_DIR, "data", "quotes_cache.json")
 RESEARCH_SCRIPT = os.path.join(SCRIPT_DIR, "scripts", "research_ticker.py")
+STATUS_PATH     = os.path.join(SCRIPT_DIR, "data", "research_status.json")
 
 STALE_DAYS      = 7      # re-research if older than this
 ALERT_THRESHOLD = -20.0  # drawdown that forces a re-research
@@ -180,8 +181,7 @@ def main():
     started = time.monotonic()
     for i, ticker in enumerate(tickers):
         if time.monotonic() - started > RUN_BUDGET_SECONDS:
-            skipped = tickers[i:]
-            print(f"⏱ Time budget reached — leaving for next run: {', '.join(skipped)}")
+            print(f"⏱ Time budget reached — leaving for next run: {', '.join(tickers[i:])}")
             tickers = tickers[:i]
             break
         print(f"── {ticker} " + "─" * 40)
@@ -210,6 +210,14 @@ def main():
         print(f"   Landed (committed+pushed): {len(landed)}/{len(tickers)}")
     if failures:
         print(f"⚠ Failed: {', '.join(failures)}")
+
+    with open(STATUS_PATH, "w") as f:
+        json.dump({
+            "ran_at":    datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "attempted": len(tickers),
+            "landed":    len(landed),
+            "failed":    failures,
+        }, f, indent=2)
 
     if incremental and len(landed) * 2 < len(tickers):
         print(f"::warning::Only {len(landed)}/{len(tickers)} tickers landed — check the model chain.")

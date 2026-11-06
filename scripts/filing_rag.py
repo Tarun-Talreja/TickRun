@@ -229,10 +229,6 @@ def _retrieve(chunks, chunk_vecs, query, api_key, k=TOP_K, index_model=None):
 # ── Answering ────────────────────────────────────────────────────────────────
 
 def _answer(question, passages, ticker, filing, api_key) -> str:
-    try:
-        from openai import OpenAI
-    except ImportError:
-        return "openai package unavailable."
     # Cap each passage: the free-tier endpoint times out on long prompts, and
     # the answer only needs the relevant span, not the whole chunk.
     ctx = "\n\n".join(f"[Passage {i+1}]\n{p[:1200]}" for i, (p, _) in enumerate(passages))

@@ -38,8 +38,9 @@ Usage:
 
 import json
 import os
-import sys
 from datetime import datetime, timezone
+
+from io_utils import load_json as _load
 
 SCRIPT_DIR     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WATCHLIST_PATH = os.path.join(SCRIPT_DIR, "data", "watchlist.json")
@@ -54,13 +55,6 @@ BROAD_MARKET_ETFS = {"VOO", "VTI", "SPY", "QQQ", "IVV", "VXUS", "VEA", "VWO", "S
 HIGH_YIELD_PCT = 3.0
 # Yields above this are treated as bad data rather than trusted.
 MAX_PLAUSIBLE_YIELD = 25.0
-
-
-def _load(path, default=None):
-    if os.path.exists(path):
-        with open(path) as f:
-            return json.load(f)
-    return default if default is not None else {}
 
 
 def _classify(candidate: dict, quote: dict) -> dict:

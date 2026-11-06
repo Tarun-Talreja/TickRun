@@ -23,6 +23,8 @@ import os
 import sys
 from datetime import datetime, timezone
 
+from io_utils import load_json as _load
+
 SCRIPT_DIR     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QUOTES_PATH    = os.path.join(SCRIPT_DIR, "data", "quotes_cache.json")
 WATCHLIST_PATH = os.path.join(SCRIPT_DIR, "data", "watchlist.json")
@@ -46,16 +48,6 @@ try:
 except Exception:
     def fetch_news(ticker, limit=5):
         return []
-
-
-def _load(path, default):
-    if os.path.exists(path):
-        try:
-            with open(path) as f:
-                return json.load(f)
-        except Exception:
-            return default
-    return default
 
 
 def _verdict_map() -> dict:
@@ -88,10 +80,6 @@ def _llm_reason(ticker: str, pct: float, headlines: list[str], market_note: str 
     key = os.environ.get("NVIDIA_API_KEY") or os.environ.get("ANTHROPIC_API_KEY")
     if not key or not headlines:
         return None
-    try:
-        from openai import OpenAI
-    except ImportError:
-        return None
 
     direction = "up" if pct > 0 else "down"
     headlines_block = "\n".join(f"- {h}" for h in headlines)
@@ -115,7 +103,7 @@ def _llm_reason(ticker: str, pct: float, headlines: list[str], market_note: str 
         # answer; the prompt itself still caps the reply at ~20 words.
         text, _ = chat(key, [{"role": "user", "content": prompt}],
                        max_tokens=200, temperature=0.2,
-                       timeout=LLM_TIMEOUT_SECONDS, verbose=False)
+                       timeout=LLM_TIMEOUT_SECONDS)
         return text
     except Exception as exc:
         print(f"   ⚠ {ticker}: no LLM reason ({str(exc)[:120]})")

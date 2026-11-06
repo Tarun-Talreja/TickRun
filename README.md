@@ -117,8 +117,7 @@ TickRun/
 │   ├── screener.yml             ← Sat 8am ET (S&P 500 discovery)
 │   └── pages.yml                ← deploy dashboard to GitHub Pages
 ├── data/                        ← committed state (watchlist, caches, signals)
-├── output/                      ← dashboard.json + research notes + analytics
-└── legacy/                      ← the original 7-screen S&P 500 screener (archived)
+└── output/                      ← dashboard.json + research notes + analytics
 ```
 
 ---

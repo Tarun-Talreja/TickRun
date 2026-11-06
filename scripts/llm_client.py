@@ -41,14 +41,9 @@ NVIDIA_CHAT_MODELS = [
 _THINK_RE = re.compile(r"<think>.*?</think>", re.DOTALL | re.IGNORECASE)
 
 
-def _clean(text: str | None) -> str:
-    # Reasoning models may inline their scratchpad; never let it reach the UI.
-    return _THINK_RE.sub("", text or "").strip()
-
-
 def chat(api_key: str, messages: list[dict], *, max_tokens: int,
          temperature: float = 0.3, timeout: float = 90,
-         models: list[str] | None = None, verbose: bool = True) -> tuple[str, str]:
+         models: list[str] | None = None) -> tuple[str, str]:
     """Return (text, model_used). Raises RuntimeError only if every model fails."""
     from openai import OpenAI, APIStatusError, APIConnectionError
 
@@ -61,7 +56,8 @@ def chat(api_key: str, messages: list[dict], *, max_tokens: int,
                 model=model, messages=messages,
                 max_tokens=max_tokens, temperature=temperature,
             )
-            text = _clean(r.choices[0].message.content)
+            # Reasoning models may inline their scratchpad; never let it reach the UI.
+            text = _THINK_RE.sub("", r.choices[0].message.content or "").strip()
             if not text:
                 raise ValueError("empty completion")
             # A note cut off at the token limit loses its verdict lines, which
@@ -71,9 +67,8 @@ def chat(api_key: str, messages: list[dict], *, max_tokens: int,
             return text, model
         except (APIStatusError, APIConnectionError, ValueError) as exc:
             last_err = exc
-            if verbose:
-                code = getattr(exc, "status_code", "")
-                print(f"   {model} failed ({type(exc).__name__} {code}) — trying next...")
+            code = getattr(exc, "status_code", "")
+            print(f"   {model} failed ({type(exc).__name__} {code}) — trying next...")
     raise RuntimeError(f"All NVIDIA models failed. Last error: {last_err}")
 
 
@@ -90,8 +85,7 @@ def _probe():
     for model in models:
         t0 = time.time()
         try:
-            text, _ = chat(key, msgs, max_tokens=200, timeout=60,
-                           models=[model], verbose=False)
+            text, _ = chat(key, msgs, max_tokens=200, timeout=60, models=[model])
             ok += 1
             print(f"✅ {model:45s} {time.time()-t0:5.1f}s  {text[:60]!r}")
         except RuntimeError as exc:

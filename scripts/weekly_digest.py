@@ -24,23 +24,16 @@ import os
 import sys
 from datetime import datetime, timezone
 
+from io_utils import load_json as _load
+
 SCRIPT_DIR    = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DASHBOARD_PATH = os.path.join(SCRIPT_DIR, "output", "dashboard.json")
 OUTPUT_PATH    = os.path.join(SCRIPT_DIR, "output", "weekly_digest.json")
 
 
-def _load(path):
-    with open(path) as f:
-        return json.load(f)
-
-
 def _narrative(facts: dict) -> str | None:
     key = os.environ.get("NVIDIA_API_KEY") or os.environ.get("ANTHROPIC_API_KEY")
     if not key:
-        return None
-    try:
-        from openai import OpenAI
-    except ImportError:
         return None
 
     prompt = (

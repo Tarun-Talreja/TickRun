@@ -95,12 +95,6 @@ def _detect_provider() -> tuple[str, str]:
 
 def _call_llm(provider: str, api_key: str, prompt: str) -> str:
     if provider == "nvidia":
-        try:
-            import openai  # noqa: F401
-        except ImportError:
-            print("Missing dependency: pip install openai")
-            sys.exit(1)
-
         # Explicit NVIDIA_MODEL first (covers --model override), then the chain.
         # llm_client.chat falls through on ANY per-model API error — the old
         # loop here only caught NotFound/timeouts, so a 410 Gone crashed it.

@@ -2,7 +2,7 @@
 
 **Date:** 2026-04-25
 **Author:** TickRun pivot team
-**Status:** Awaiting confirmation
+**Status:** Built. Checked against the code on 2026-11-06; unticked items were not confirmed.
 
 ## Why this plan exists
 
@@ -146,7 +146,7 @@ The first run of the watchlist surfaced POWL, ALAB, ONTO, QLYS as RESEARCH-WORTH
 ## Phased rollout
 
 ### Phase 1 (this weekend, ~3 hours): Critical fixes
-- [ ] **Fix 1:** Add "% from 52-week high" gate to `research_ticker.py` and `build_dashboard.py`
+- [x] **Fix 1:** Add "% from 52-week high" gate to `research_ticker.py` and `build_dashboard.py`
 - [ ] **Fix 4 (partial):** Allow mega-caps in watchlist; update themes.json (already done in this commit)
 - [ ] Update co-work prompt (`prompts/stock_research.md`) to include current price context and require explicit "entry price" verdict
 - [ ] Re-rank existing watchlist with new gates
@@ -154,17 +154,17 @@ The first run of the watchlist surfaced POWL, ALAB, ONTO, QLYS as RESEARCH-WORTH
 **Acceptance:** Re-running the dashboard surfaces no name within 10% of its 52-week high as RESEARCH-WORTHY.
 
 ### Phase 2 (next week, ~4 hours): Smart money signals
-- [ ] **Fix 2:** Build `scripts/insider_check.py` (OpenInsider scrape or SEC EDGAR XML)
-- [ ] **Fix 3:** Extend `refresh_quotes.py` to capture short interest + 2-week change
+- [x] **Fix 2:** Build `scripts/insider_check.py` (OpenInsider scrape or SEC EDGAR XML)
+- [x] **Fix 3:** Extend `refresh_quotes.py` to capture short interest + 2-week change
 - [ ] Surface both signals in `build_dashboard.py` and the UI
 - [ ] Add a "smart money signals" tab to the dashboard
 
 **Acceptance:** Dashboard shows insider buy/sell ratio and short interest trend per watchlist name. ALAB-style red flags get surfaced automatically.
 
 ### Phase 3 (week after, ~4 hours): Hedge fund tracking
-- [ ] **Fix 5:** Build `scripts/hedge_fund_signal.py` for 13F monitoring
+- [x] **Fix 5:** Build `scripts/hedge_fund_signal.py` for 13F monitoring
 - [ ] Surface "new positions by name-brand funds" in dashboard
-- [ ] Quarterly automated run
+- [x] Quarterly automated run
 
 **Acceptance:** When Ackman initiates a new position in a small/mid-cap, dashboard surfaces it within 24 hours of 13F filing.
 

@@ -36,6 +36,8 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone, timedelta
 
+from io_utils import load_json as _load
+
 try:
     import yfinance as yf
 except ImportError:
@@ -51,16 +53,6 @@ OUTPUT_PATH    = os.path.join(SCRIPT_DIR, "data", "catalysts.json")
 HORIZON_DAYS = 30
 IMMINENT_DAYS = 7        # inside this window a catalyst is "act now" relevant
 MAX_WORKERS  = 4
-
-
-def _load(path, default=None):
-    if os.path.exists(path):
-        try:
-            with open(path) as f:
-                return json.load(f)
-        except Exception:
-            return default if default is not None else {}
-    return default if default is not None else {}
 
 
 def _as_date(v):

@@ -41,11 +41,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      # Explicit ref: deploy the newest main (including the commit the data job
-      # just pushed), not the SHA the upstream run started from.
       - uses: actions/checkout@v4
-        with:
-          ref: main
 
       - name: Stage site files only
         run: |

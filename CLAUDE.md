@@ -154,8 +154,8 @@ python3 -m http.server 8080
 4. **UBER thesis** — Bill Ackman's #1 position (18.5% of Pershing Square). 50% of bookings
    are delivery (insulated from autonomous vehicle FUD). Target $105 per Ackman.
 
-5. **Legacy files archived to `legacy/`** — fetch_daily.py, fetch_weekly.py, composite.py,
-   universe.py, and associated screens/schemas are no longer used but kept for reference.
+5. **Legacy screener removed** — fetch_daily.py, fetch_weekly.py, composite.py, universe.py
+   and their screens/schemas are gone from the tree; git history still has them.
 
 6. **yfinance dividend yield bug** — returns raw decimal (0.019 = 1.9%). Fixed in refresh_quotes.py
    by multiplying by 100 only when value < 1.

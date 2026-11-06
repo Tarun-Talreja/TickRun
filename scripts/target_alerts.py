@@ -16,8 +16,9 @@ Usage:
 
 import json
 import os
-import sys
 from datetime import datetime, timezone
+
+from io_utils import load_json as _load
 
 SCRIPT_DIR     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WATCHLIST_PATH = os.path.join(SCRIPT_DIR, "data", "watchlist.json")
@@ -25,13 +26,6 @@ QUOTES_PATH    = os.path.join(SCRIPT_DIR, "data", "quotes_cache.json")
 OUTPUT_PATH    = os.path.join(SCRIPT_DIR, "data", "target_alerts.json")
 
 TOLERANCE = 0.03   # within 3% of target counts as "hit"
-
-
-def _load(path, default=None):
-    if os.path.exists(path):
-        with open(path) as f:
-            return json.load(f)
-    return default if default is not None else {}
 
 
 def _refresh_live_targets(wl: dict, quotes: dict) -> bool:

@@ -944,6 +944,7 @@ function renderHome(data){
     <div class="home-sub" id="homeTs">—</div>
   </div>
   ${renderDailyBrief(data)}
+  ${renderHealth(data)}
   ${digest.narrative?`<div class="digest-card s-anim" style="animation-delay:.07s">
     <div class="digest-label">📋 This Week</div>
     <div class="digest-text">${esc(digest.narrative)}</div>
@@ -1522,6 +1523,24 @@ function renderSignals(data){
 }
 
 // ── RENDER PORTFOLIO ──────────────────────────────────────────────────────────
+function renderHealth(data){
+  const stages=(data.health||{}).stages||[];
+  if(!stages.length) return '';
+  // The build can't report its own staleness, so the page checks the site itself.
+  const siteHours=(Date.now()-new Date(data.last_built))/36e5;
+  const all=[...stages,{name:'Live site',status:siteHours>30?'stale':'ok',age_hours:siteHours}];
+  const bad=all.filter(s=>s.status!=='ok');
+  const COLOR={ok:'var(--green)',stale:'var(--amber)',unknown:'var(--text1)',failing:'var(--red)'};
+  const age=h=>h==null?'no data':h<1?'just now':h<48?`${Math.round(h)}h ago`:`${Math.round(h/24)}d ago`;
+  const rows=all.map(s=>`<div style="display:flex;justify-content:space-between;gap:12px;padding:3px 0;font-size:12px">
+    <span style="color:${COLOR[s.status]||'var(--text1)'}">● ${esc(s.name)}</span>
+    <span style="color:var(--text1)">${s.detail?esc(s.detail)+' · ':''}${age(s.age_hours)}${s.status==='ok'?'':' · '+esc(s.status)}</span></div>`).join('');
+  return `<details class="brief-card s-anim" style="animation-delay:.08s" ${bad.length?'open':''}>
+    <summary style="cursor:pointer;font-size:12px;font-weight:600;color:${bad.length?'var(--amber)':'var(--text1)'}">
+      ${bad.length?`System check: ${bad.length} need${bad.length===1?'s':''} attention (${esc(bad.map(s=>s.name).join(', '))})`:'System check: all stages working'}
+    </summary><div style="margin-top:8px">${rows}</div></details>`;
+}
+
 function renderDailyBrief(data){
   const b = data.daily_brief||{};
   const items = b.items||[];

@@ -22,6 +22,9 @@ import os
 import sys
 from datetime import datetime, timezone
 
+from health import build_health
+from io_utils import load_json as _load
+
 SCRIPT_DIR          = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PORTFOLIO_PATH      = os.path.join(SCRIPT_DIR, "data", "portfolio.json")
 WATCHLIST_PATH      = os.path.join(SCRIPT_DIR, "data", "watchlist.json")
@@ -43,15 +46,9 @@ DISCOVERED_PATH     = os.path.join(SCRIPT_DIR, "data", "discovered.json")
 ASSET_LOCATION_PATH = os.path.join(SCRIPT_DIR, "data", "asset_location.json")
 CATALYSTS_PATH      = os.path.join(SCRIPT_DIR, "data", "catalysts.json")
 DAILY_BRIEF_PATH    = os.path.join(SCRIPT_DIR, "output", "daily_brief.json")
+RESEARCH_STATUS_PATH = os.path.join(SCRIPT_DIR, "data", "research_status.json")
 OUTPUT_PATH         = os.path.join(SCRIPT_DIR, "output", "dashboard.json")
 os.makedirs(os.path.join(SCRIPT_DIR, "output"), exist_ok=True)
-
-
-def _load(path: str, default=None):
-    if os.path.exists(path):
-        with open(path) as f:
-            return json.load(f)
-    return default or {}
 
 
 def _enrich_holding(holding: dict, quotes: dict) -> dict:
@@ -258,6 +255,15 @@ def main():
     dashboard = {
         "last_built":    datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "quotes_updated": quotes.get("last_updated"),
+        "health": build_health(
+            datetime.now(timezone.utc),
+            quotes=quotes.get("last_updated"),
+            research=_load(RESEARCH_STATUS_PATH),
+            catalysts=_load(CATALYSTS_PATH).get("generated_at"),
+            news=news.get("generated_at"),
+            sec=sec.get("generated_at"),
+            screener=_load(DISCOVERED_PATH).get("generated_at"),
+        ),
         "portfolio": {
             "total_value":  total_value,
             "core":         core_enriched,

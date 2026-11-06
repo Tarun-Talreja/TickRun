@@ -35,6 +35,8 @@ import os
 import sys
 from datetime import datetime, timezone
 
+from io_utils import load_json as _load
+
 SCRIPT_DIR     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DASHBOARD_PATH = os.path.join(SCRIPT_DIR, "output", "dashboard.json")
 SNAPSHOT_PATH  = os.path.join(SCRIPT_DIR, "data", "brief_snapshot.json")
@@ -44,16 +46,6 @@ MAX_ITEMS   = 7      # a glance, not a report
 MOVER_PCT   = 5.0    # only surface moves this large
 CATALYST_DAYS = 2    # "today or tomorrow" urgency
 MAX_MOVERS  = 3      # a selloff moves everything; show the names that matter
-
-
-def _load(path, default=None):
-    if os.path.exists(path):
-        try:
-            with open(path) as f:
-                return json.load(f)
-        except Exception:
-            return default if default is not None else {}
-    return default if default is not None else {}
 
 
 def _current_state(d: dict) -> dict:

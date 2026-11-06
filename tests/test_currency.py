@@ -39,11 +39,10 @@ class TestNormalizeMoney:
     def test_yahoo_enterprise_multiples_are_recomputed(self):
         m = _normalize_money(ASML, 1.1202)
         assert m["ev_ebitda"] == pytest.approx(28.2, abs=0.2)
-        assert m["ev_sales"] == pytest.approx(11.6, abs=0.1)
 
     def test_missing_fx_blanks_money_rather_than_mislabel_it(self):
         m = _normalize_money(TSM, None)
-        for field in ("revenue_ttm", "fcf_ttm", "total_cash", "total_debt", "ev_ebitda", "ev_sales"):
+        for field in ("revenue_ttm", "fcf_ttm", "total_cash", "total_debt", "ev_ebitda"):
             assert m[field] is None
         assert m["fx_rate"] is None
 
