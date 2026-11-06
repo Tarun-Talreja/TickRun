@@ -403,24 +403,25 @@
       "name": "Advanced Micro Devices, Inc.",
       "theme": "edge_ai_silicon",
       "status": "research_complete",
-      "thesis": "AI infrastructure pure-play at 26.5x forward earnings with 44% revenue growth, positive FCF, and net cash.",
+      "thesis": "AI infrastructure leader with 45% revenue growth trading at 26.5x forward earnings, 32% below 52-week high.",
       "added": "2026-05-28",
       "verdict": "RESEARCH-WORTHY",
       "buy_target": 449.11,
       "current_price": null,
-      "next_action": "RESEARCH \u2014 AI infrastructure pure-play at 26.5x forward earnings with 44% revenue growth, positive FCF, and net cash. Worth a deep dive before any decision.",
+      "next_action": "RESEARCH \u2014 AI infrastructure leader with 45% revenue growth trading at 26.5x forward earnings, 32% below 52-week high. Worth a deep dive before any decision.",
       "research_file": "output/research/AMD_2026-11-06.md",
       "last_researched": "2026-11-06",
       "llm_verdict": "RESEARCH-WORTHY",
       "bear_downgraded": false,
-      "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying AMD is its absolute dependence on TSMC's Taiwan facilities for 100% of leading-edge AI accelerator (MI300) and server CPU (EPYC) production, with no qualified alternative source for at least two years; a prolonged geopolitical disruption would effectively zero out the company's highest-margin revenue stream. At 58.9\u00d7 EV/EBITDA and 96\u00d7 trailing earnings, the valuation embeds near-flawless execution and sustained hypergrowth, leaving minimal margin for supply-chain shocks or AI demand deceleration.\n\nBREAK: NONE\nEVIDENCE: none",
+      "confidence": "LOW",
+      "bear_check": "The stock trades at a trailing P/E of 95.9x and EV/EBITDA of 58.9x, requiring sustained 45% revenue growth and margin expansion to justify the forward P/E of 26.5x; any slowdown in AI infrastructure spending or loss of a key hyperscaler customer could cause significant multiple compression. Customer concentration risk is high, with the top three hyperscalers potentially accounting for over 50% of data center revenue, meaning a single design-win loss could reduce segment revenue by 15-20%.\n\nWHY_IT_FELL: Broad AI sector sell-off and chip stock rout, not company-specific deterioration.\nFALL_EVIDENCE: AMD Jumps 8%, Intel and NVIDIA Climb 5% as Chip Stocks Rebound From Worst Sell-Off Since 2020 (Yahoo Finance)\nBREAK: NONE\nEVIDENCE: none",
       "buy_trigger_drawdown_pct": -31.8,
       "no_pullback_gate": false,
       "unsupported_figures": [
-        "100%"
+        "20%"
       ],
-      "rating_version": 2
+      "rating_version": 3,
+      "fall_reason": null
     },
     {
       "ticker": "NBIS",
