@@ -1,7 +1,44 @@
 {
-  "generated_at": "2026-11-06T18:21:27Z",
+  "generated_at": "2026-11-06T18:33:03Z",
   "universe_as_of": "2026-11-06T18:12:13Z",
   "cards": [
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft Corporation",
+      "sector": "Technology",
+      "price": 533.225,
+      "drawdown_pct": -4.6,
+      "score": 70.6,
+      "new": true,
+      "tracked": true,
+      "rating": "WATCHLIST",
+      "reasons": [
+        {
+          "kind": "field_news",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNmtOMnRJVnZpV0VpVE1FdDZhSGJtLWtoY0Q0ODhXaVpfdzBmQU16X3A3MUw5TEo2T0VoRTBwZXlvX19kLXcyMFVXUE9yNGpxekRWcG4wOFQzYVJiMHJVWTEtY0JiOVhyeXlhaS1EX1ZaRDhPN1Q4S2tCOTlNT216eVl5WnhBeFpNa2RDOVBhWk1CdElYMWZ6eHZqSFBjN1k?oc=5",
+          "text": "In Power Grid / Electrification news: Microsoft and Chevron Sign 20-Year Power Deal For Texas Data Center"
+        },
+        {
+          "kind": "field_news",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOaXptT19ud3pjRV9XeE8tY0tLSFVVSVV1eGg3Z1BzUDdYSlVLUTlUX1dDWEFzUGo5X1dXVnJUT0NJa3VOODVCYkhOOXY3ckpicENSRE8waUZQaHpVSm9fTTNfZEVRWV9VNzNCZXFCR1FRalcyN2pnamNtQkNMSnBKTmJ6WHZrd0hvTEpR?oc=5",
+          "text": "In Mega-Cap AI Infrastructure news: IREN Delays Microsoft AI Builds, Plans $15B Capex [2026]"
+        },
+        {
+          "kind": "field_news",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNb3YxSi01QlpvU2xqQVk1TUZQVTdjQnlqOUZwaFUzZ2txZHBJaHZ5bTVNOXpRZGV0czNzQkRCamNqNXZ2cUFoZ1JsV1l0cGFKazh4SXpjSlJ0Q1pMR0IyVWhfQkZlbTAtWFJ1ZERpbDdfNzZqaVlZUjg2a2RKNlRfS0N4OFMwSmpERG9EWng5MC1XXy1ENURJMUNWTTEyR3Q0UkE3WnRSMVJmVDAwdlJoVDhXa0h1YXpyYjBR?oc=5",
+          "text": "In Data Center Infrastructure news: Microsoft declines option to expand Texas data center deal with Nscale, source says"
+        },
+        {
+          "kind": "fundamentals",
+          "text": "Strong fundamentals: scores 71/100"
+        },
+        {
+          "kind": "new",
+          "text": "New to the radar"
+        }
+      ],
+      "watch_outs": []
+    },
     {
       "ticker": "NVDA",
       "name": "NVIDIA Corporation",
@@ -70,29 +107,28 @@
       ]
     },
     {
-      "ticker": "MSFT",
-      "name": "Microsoft Corporation",
-      "sector": "Technology",
-      "price": 533.225,
-      "drawdown_pct": -4.6,
-      "score": 70.6,
+      "ticker": "GOOG",
+      "name": "Alphabet Inc.",
+      "sector": "Communication Services",
+      "price": 283.96,
+      "drawdown_pct": -29.8,
+      "score": 70.7,
       "new": true,
       "tracked": true,
-      "rating": "WATCHLIST",
+      "rating": null,
       "reasons": [
         {
           "kind": "field_news",
-          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNmtOMnRJVnZpV0VpVE1FdDZhSGJtLWtoY0Q0ODhXaVpfdzBmQU16X3A3MUw5TEo2T0VoRTBwZXlvX19kLXcyMFVXUE9yNGpxekRWcG4wOFQzYVJiMHJVWTEtY0JiOVhyeXlhaS1EX1ZaRDhPN1Q4S2tCOTlNT216eVl5WnhBeFpNa2RDOVBhWk1CdElYMWZ6eHZqSFBjN1k?oc=5",
-          "text": "In Power Grid / Electrification news: Microsoft and Chevron Sign 20-Year Power Deal For Texas Data Center"
-        },
-        {
-          "kind": "field_news",
-          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNb3YxSi01QlpvU2xqQVk1TUZQVTdjQnlqOUZwaFUzZ2txZHBJaHZ5bTVNOXpRZGV0czNzQkRCamNqNXZ2cUFoZ1JsV1l0cGFKazh4SXpjSlJ0Q1pMR0IyVWhfQkZlbTAtWFJ1ZERpbDdfNzZqaVlZUjg2a2RKNlRfS0N4OFMwSmpERG9EWng5MC1XXy1ENURJMUNWTTEyR3Q0UkE3WnRSMVJmVDAwdlJoVDhXa0h1YXpyYjBR?oc=5",
-          "text": "In Data Center Infrastructure news: Microsoft declines option to expand Texas data center deal with Nscale, source says"
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWmplNFEtTXU2b1NKbUJMa01Wd09UUGVIdGVFLS1UM053RUNzRlpKX0pOb3JTcWFzZjlUSkdobEcyVTM5V3U5WTJKWDNnWHN4ejF1dXpGcFZ5eXY5eVVWaHVfZGpSb3pVVW8zWnlWeG5LUlFsWHF4V2FiWlFEbW4wSUt1MDE4UDZUSmdCclYycFdwNERTWTk2MlpCb2hUbUg2Q3Zmc3Jn0gGrAUFVX3lxTE9Rc0NOODZwbWVUdjMwQTNON09qTzYtcFdOSy1MaVRsWTh5TW1jT2NVdndaeW55RkowcXlwOEpiUTVzLXBsWjhWbmtSRWVzZWJBSi1DWnAxUlA3elBKUGdvZFpEQlNBckpUUjNFeWVYbENaTDNDT0Fqczdyd3VoU1JQS2wzcXd6QkRSUUxPU1c0c0J6ak1NUEdGZGk1Sms0X2hBbC1LNUNmV0I0VQ?oc=5",
+          "text": "In Mega-Cap AI Infrastructure news: Hyperscalers and Apple surge after election results remove investor uncertainty"
         },
         {
           "kind": "fundamentals",
           "text": "Strong fundamentals: scores 71/100"
+        },
+        {
+          "kind": "on_sale",
+          "text": "Quality business 30% below its high"
         },
         {
           "kind": "new",
@@ -319,32 +355,6 @@
       "watch_outs": [
         "Down 59% from its high, so find out why first"
       ]
-    },
-    {
-      "ticker": "GOOG",
-      "name": "Alphabet Inc.",
-      "sector": "Communication Services",
-      "price": 283.96,
-      "drawdown_pct": -29.8,
-      "score": 70.7,
-      "new": true,
-      "tracked": true,
-      "rating": null,
-      "reasons": [
-        {
-          "kind": "fundamentals",
-          "text": "Strong fundamentals: scores 71/100"
-        },
-        {
-          "kind": "on_sale",
-          "text": "Quality business 30% below its high"
-        },
-        {
-          "kind": "new",
-          "text": "New to the radar"
-        }
-      ],
-      "watch_outs": []
     }
   ],
   "on_sale": [
