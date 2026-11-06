@@ -273,6 +273,8 @@ def main():
             research=_load(RESEARCH_STATUS_PATH),
             catalysts=_load(CATALYSTS_PATH).get("generated_at"),
             news=news.get("generated_at"),
+            news_coverage=(sum(1 for items in news.get("news", {}).values() if items),
+                           len(news.get("news", {}))),
             sec=sec.get("generated_at"),
             screener=_load(DISCOVERED_PATH).get("generated_at"),
             field_news=_load(FIELD_NEWS_PATH).get("generated_at"),

@@ -41,13 +41,11 @@ PROMPT_PATH    = os.path.join(SCRIPT_DIR, "prompts", "stock_research.md")
 OUTPUT_DIR     = os.path.join(SCRIPT_DIR, "output", "research")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# Real-news grounding (free, via yfinance) — keeps the LLM from hallucinating.
+# Real-news grounding — keeps the LLM from hallucinating. No fallback on purpose:
+# one here hid a dead feed for five weeks (see news_feed.py).
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-try:
-    from news_feed import get_recent_news as _recent_news
-except Exception:
-    def _recent_news(ticker: str) -> str:  # graceful fallback
-        return "No recent news available."
+from fall_check import cap_confidence, fall_rule, verified_fall_reason, warnings_section
+from news_feed import NO_NEWS, NewsUnavailable, get_recent_news as _recent_news
 
 # NVIDIA NIM model chain lives in llm_client.py — one list shared by every
 # script, so a model retirement is a one-line fix instead of a 10-week outage.
@@ -240,8 +238,8 @@ def _build_prompt(ticker: str, quotes: dict) -> str:
 Note: Data from yfinance, may lag 1-7 days. Cross-check with company IR or SEC filings.
 {currency_note}
 [Recent news headlines — {datetime.now(timezone.utc).strftime('%Y-%m-%d')}]
-{_recent_news(ticker)}
-
+{_recent_news(ticker, name=q.get('name'))}
+{fall_rule(drawdown)}
 IMPORTANT GROUNDING RULES:
 - Base your analysis ONLY on the fundamentals and news headlines above.
 - For any claim NOT supported by the data or headlines above (specific contract values,
@@ -252,6 +250,10 @@ IMPORTANT GROUNDING RULES:
 - This data is newer than your memory. A company can look very different now, so never
   call a figure corrupted or implausible because it differs from what you remember.
   Treat data as wrong only when two figures above contradict each other.
+- Headlines are newer than the fundamentals. If a headline reports results, guidance or
+  an event the figures don't reflect yet, say the figures lag and go by the headline.
+  Do not repeat a figure a headline shows is out of date, and do not ignore bad news
+  because the figures still look good.
 
 MANDATORY OUTPUT FORMAT — your response MUST end with these four lines, EXACTLY,
 as the very last lines, with nothing after them:
@@ -369,7 +371,7 @@ def _synthesize_next_action(final_verdict: str, thesis: str | None, drawdown_pct
 def _update_watchlist(
     ticker: str, verdict: str, output_file: str,
     confidence: str | None = None, bear: str | None = None,
-    bear_break: str | None = None,
+    bear_break: str | None = None, fall_reason: str | None = None,
     thesis: str | None = None, drawdown_trigger_pct: float | None = None,
     live_buy_target: float | None = None,
     unsupported_figures: list[str] | None = None,
@@ -397,6 +399,7 @@ def _update_watchlist(
             candidate["status"]          = "research_complete"
             candidate["rating_version"]  = RATING_VERSION
             candidate["unsupported_figures"] = unsupported_figures or []
+            candidate["fall_reason"] = fall_reason
             if confidence:
                 candidate["confidence"] = confidence
             # Clear on a rerun, or last time's argument stays on the stock page.
@@ -476,7 +479,12 @@ def main():
     model_label = NVIDIA_MODEL if provider == "nvidia" else ANTHROPIC_MODEL
     print(f"🔬  Researching {ticker} via {provider.upper()} ({model_label})...")
 
-    prompt = _build_prompt(ticker, quotes)
+    # A rating without news looks fine and isn't, so stop instead of guessing.
+    try:
+        prompt = _build_prompt(ticker, quotes)
+    except NewsUnavailable as exc:
+        print(f"❌  {exc} — not rating {ticker} without news.")
+        sys.exit(1)
     text   = _call_llm(provider, api_key, prompt)
 
     # Fail before anything is saved: a note with no verdict was being committed
@@ -496,7 +504,12 @@ def main():
 
     print(f"\n{text}\n")
 
-    confidence = _extract_confidence(text)
+    source = source_block(prompt)
+    fell_hard = bool(fall_rule(quotes.get("tickers", {}).get(ticker, {}).get("drawdown_from_high")))
+    fall_reason = verified_fall_reason(text, source) if fell_hard else None
+    no_news, fall_unexplained = NO_NEWS in source, fell_hard and not fall_reason
+    confidence = cap_confidence(_extract_confidence(text), no_news=no_news,
+                                fall_unexplained=fall_unexplained)
     thesis = _extract_thesis(text)
     drawdown_trigger_pct = _anchor_trigger(ticker, _extract_drawdown_trigger(text), quotes)
     live_buy_target = _live_buy_target(ticker, drawdown_trigger_pct, quotes)
@@ -515,6 +528,7 @@ def main():
     unsupported = find_unsupported(f"{text}\n{bear or ''}", source_block(prompt))
     with open(out_path, "a") as f:
         f.write(fact_check_section(unsupported))
+        f.write(warnings_section(no_news=no_news, fall_unexplained=fall_unexplained))
     print(f"🔎  Fact-check: {len(unsupported)} figure(s) not in the source data: {unsupported}")
 
     conf_str = f" (confidence: {confidence})" if confidence else ""
@@ -524,7 +538,7 @@ def main():
     if not args.save_only:
         final_verdict, downgraded = _update_watchlist(
             ticker, verdict, f"output/research/{filename}", confidence, bear, bear_break,
-            thesis=thesis, drawdown_trigger_pct=drawdown_trigger_pct,
+            fall_reason=fall_reason, thesis=thesis, drawdown_trigger_pct=drawdown_trigger_pct,
             live_buy_target=live_buy_target, unsupported_figures=unsupported,
         )
         if downgraded:

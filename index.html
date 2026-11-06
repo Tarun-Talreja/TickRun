@@ -1285,6 +1285,10 @@ function renderStockDetail(s){
     ${(s.unsupported_figures||[]).length?`<div style="font-size:12px;color:var(--red);margin-top:8px">Not in the source data, verify before relying on: ${esc(s.unsupported_figures.join(', '))}</div>`:''}
     ${s.last_researched?`<div style="margin-top:8px;font-size:9px;color:var(--text2)">Last researched: ${fDate(s.last_researched)}${s.confidence?` · Confidence: ${esc(s.confidence)}`:''}</div>`:''}
   </div>
+  ${s.fall_reason?`<div class="detail-section">
+    <div class="ds-title">Why It Fell</div>
+    <div class="thesis-box">${esc(s.fall_reason)}</div>
+  </div>`:''}
   ${s.bear_check?`<div class="detail-section">
     <div class="ds-title">🐻 Bear-Case Check</div>
     <div class="thesis-box" style="border-left:3px solid var(--red)">${esc(s.bear_check)}</div>

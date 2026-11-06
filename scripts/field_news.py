@@ -33,8 +33,9 @@ SCRIPT_DIR  = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 THEMES_PATH = os.path.join(SCRIPT_DIR, "data", "themes.json")
 OUTPUT_PATH = os.path.join(SCRIPT_DIR, "data", "field_news.json")
 
-FEED_URL = "https://news.google.com/rss/search?q={query}+when:7d&hl=en-US&gl=US&ceid=US:en"
+FEED_URL = "https://news.google.com/rss/search?q={query}+when:{days}d&hl=en-US&gl=US&ceid=US:en"
 HEADERS = {"User-Agent": "Mozilla/5.0 (TickRun field news)"}
+FEED_DAYS = 7
 MAX_HEADLINES = 12
 WORKERS = 4
 # Stock-tip listicles are about tickers, not about the field.
@@ -87,7 +88,7 @@ def best_headlines(items: list[dict], limit: int) -> list[dict]:
 
 def fetch_headlines(query: str) -> list[dict]:
     try:
-        response = requests.get(FEED_URL.format(query=quote(query)), headers=HEADERS, timeout=20)
+        response = requests.get(FEED_URL.format(query=quote(query), days=FEED_DAYS), headers=HEADERS, timeout=20)
         response.raise_for_status()
     except requests.RequestException as exc:
         print(f"⚠ feed failed for {query!r}: {str(exc)[:120]}")

@@ -74,3 +74,12 @@ class TestRatings:
         stage = build_health(now, quotes=None, research={}, catalysts=None, news=None, sec=None,
                              screener=None, ratings=(40, 54))["stages"][-1]
         assert stage["status"] == "stale"
+
+
+def test_news_that_runs_but_finds_nothing_is_failing():
+    now = datetime(2026, 11, 4, 12, tzinfo=timezone.utc)
+    stages = build_health(now, quotes=None, research={}, catalysts=None, sec=None, screener=None,
+                          news="2026-11-04T10:00:00Z", news_coverage=(0, 54))["stages"]
+    news = next(s for s in stages if s["name"] == "News")
+    assert news["status"] == "failing"
+    assert news["detail"] == "0/54 stocks have headlines"

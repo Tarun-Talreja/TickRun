@@ -47,13 +47,22 @@ def _ratings_stage(ratings: tuple[int, int] | None) -> dict:
             "status": "ok" if ratings and current == total else "stale"}
 
 
+def _news_stage(updated_at: str | None, now: datetime, coverage: tuple[int, int] | None) -> dict:
+    """Fresh isn't enough: the feed once ran daily for five weeks returning nothing."""
+    with_news, total = coverage or (0, 0)
+    stage = _stage("News", updated_at, now, f"{with_news}/{total} stocks have headlines")
+    if stage["status"] == "ok" and with_news * 2 < total:
+        return {**stage, "status": "failing"}
+    return stage
+
+
 def build_health(now: datetime, *, quotes, research, catalysts, news, sec, screener,
-                 field_news=None, ratings=None) -> dict:
+                 field_news=None, ratings=None, news_coverage=None) -> dict:
     return {"stages": [
         _stage("Quotes", quotes, now),
         _research_stage(research, now),
         _stage("Catalysts", catalysts, now),
-        _stage("News", news, now),
+        _news_stage(news, now, news_coverage),
         _stage("SEC filings", sec, now),
         _stage("Screener", screener, now),
         _stage("Field news", field_news, now),
