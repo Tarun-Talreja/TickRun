@@ -4,25 +4,8 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "scripts"))
 
-from research_ticker import _anchor_trigger, _bear_flips_verdict
+from research_ticker import _anchor_trigger
 from target_alerts import _refresh_live_targets
-
-
-class TestBearSeverity:
-    def test_thesis_breaking_downgrades(self):
-        assert _bear_flips_verdict("Revenue is overstated.\nBEAR_SEVERITY: THESIS-BREAKING")
-
-    def test_material_risk_does_not_downgrade(self):
-        assert not _bear_flips_verdict("Customers are concentrated.\nBEAR_SEVERITY: MATERIAL")
-
-    def test_ordinary_risk_does_not_downgrade(self):
-        assert not _bear_flips_verdict("BEAR_SEVERITY: ORDINARY")
-
-    def test_old_yes_no_format_no_longer_decides(self):
-        assert not _bear_flips_verdict("CHANGES VERDICT: YES")
-
-    def test_no_bear_text(self):
-        assert not _bear_flips_verdict(None)
 
 
 class TestAnchorTrigger:

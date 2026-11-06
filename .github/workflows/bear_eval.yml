@@ -1,0 +1,27 @@
+name: Bear Check Eval
+
+# Manual: measures the live bear check against real notes and planted breaks.
+# Run it after any change to scripts/bear_check.py or the model chain.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+      - name: Refresh quotes
+        run: python scripts/refresh_quotes.py
+      - name: Run eval
+        env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API }}
+        run: python scripts/bear_eval.py

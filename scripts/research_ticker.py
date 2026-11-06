@@ -52,6 +52,7 @@ except Exception:
 # NVIDIA NIM model chain lives in llm_client.py — one list shared by every
 # script, so a model retirement is a one-line fix instead of a 10-week outage.
 from llm_client import NVIDIA_CHAT_MODELS as NVIDIA_MODEL_CHAIN, chat as _nim_chat
+from bear_check import bear_prompt, verified_break
 from fact_check import fact_check_section, find_unsupported, source_block
 NVIDIA_MODEL = NVIDIA_MODEL_CHAIN[0]   # may be overridden by --model
 
@@ -227,8 +228,8 @@ def _build_prompt(ticker: str, quotes: dict) -> str:
 - Market cap: {mcap_str}
 - Revenue (TTM): {rev_str}
 - Revenue growth (latest quarter vs a year ago, NOT trailing-twelve-month): {_fmt(q.get('revenue_growth'), suffix='%')}
-- Gross margin: {_fmt(q.get('gross_margin'), suffix='%')}
-- Operating margin: {_fmt(q.get('op_margin'), suffix='%')}
+- Gross margin (trailing twelve months): {_fmt(q.get('gross_margin'), suffix='%')}
+- Operating margin (latest quarter, so not directly comparable with gross margin): {_fmt(q.get('op_margin'), suffix='%')}
 - FCF (TTM): {fcf_str}
 - Net cash / net debt: {net_str}
 - Trailing P/E: {_fmt(q.get('pe'), suffix='x')}
@@ -248,6 +249,9 @@ IMPORTANT GROUNDING RULES:
 - Distinguish clearly between facts from the provided data vs. your general knowledge.
 - Do NOT quote peers' multiples or historical averages: you were not given them, and
   figures from memory are often out of date. Compare qualitatively or write "unverified".
+- This data is newer than your memory. A company can look very different now, so never
+  call a figure corrupted or implausible because it differs from what you remember.
+  Treat data as wrong only when two figures above contradict each other.
 
 MANDATORY OUTPUT FORMAT — your response MUST end with these four lines, EXACTLY,
 as the very last lines, with nothing after them:
@@ -339,44 +343,13 @@ def _live_buy_target(ticker: str, drawdown_trigger_pct: float | None, quotes: di
     return round(high_52w * (1 + drawdown_trigger_pct / 100), 2)
 
 
-def _bear_check(provider, api_key, ticker, bull_text, news_block) -> str | None:
+def _bear_check(provider, api_key, ticker, bull_text, source) -> str | None:
     """Devil's-advocate second pass: argue AGAINST the buy to surface blind spots."""
-    prompt = (
-        f"Below is a bullish research note that concluded {ticker} is worth buying. "
-        f"You are a skeptical short-seller. In 2-3 sentences, give the STRONGEST "
-        f"specific argument AGAINST buying {ticker} right now — the thing the bull "
-        f"case is most likely underweighting. Base it ONLY on the note and these "
-        f"headlines; if you have no real counter-argument, say 'No strong bear case "
-        f"from available data.'\n\n"
-        f"Then step out of the short-seller role and grade your own argument neutrally. "
-        f"End with exactly one line:\n"
-        f"BEAR_SEVERITY: THESIS-BREAKING — a specific fact in the note or headlines shows "
-        f"the thesis is false or its data is wrong (e.g. figures that cannot be true, a "
-        f"reported event that removes the core business case).\n"
-        f"BEAR_SEVERITY: MATERIAL — a real, specific risk the note underweights.\n"
-        f"BEAR_SEVERITY: ORDINARY — a normal risk for this kind of stock.\n"
-        f"Every stock has real risks, so most arguments are MATERIAL or ORDINARY. Valuation "
-        f"concerns, speculation, concentration, competition and anything marked unverified "
-        f"are never THESIS-BREAKING."
-        f"\n\nHeadlines:\n{news_block}\n\nBullish note:\n{bull_text[:2500]}"
-    )
     try:
-        return _call_llm(provider, api_key, prompt)
+        return _call_llm(provider, api_key, bear_prompt(ticker, bull_text, source))
     except Exception as exc:
         print(f"⚠  Bear check skipped for {ticker}: {str(exc)[:160]}")
         return None
-
-
-def _bear_flips_verdict(bear_text: str | None) -> bool:
-    """True only if the bear case shows the thesis itself is wrong.
-
-    This used to ask "CHANGES VERDICT: YES/NO" straight after telling the model
-    to be a short-seller. It said YES in 75 of 75 notes, so every RESEARCH-WORTHY
-    call was downgraded and the app could never show a name as buy-ready.
-    """
-    if not bear_text:
-        return False
-    return bool(re.search(r"BEAR_SEVERITY:\s*THESIS-BREAKING", bear_text, re.IGNORECASE))
 
 
 def _synthesize_next_action(final_verdict: str, thesis: str | None, drawdown_pct: float | None) -> str:
@@ -396,6 +369,7 @@ def _synthesize_next_action(final_verdict: str, thesis: str | None, drawdown_pct
 def _update_watchlist(
     ticker: str, verdict: str, output_file: str,
     confidence: str | None = None, bear: str | None = None,
+    bear_break: str | None = None,
     thesis: str | None = None, drawdown_trigger_pct: float | None = None,
     live_buy_target: float | None = None,
     unsupported_figures: list[str] | None = None,
@@ -405,11 +379,9 @@ def _update_watchlist(
 
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
-    # Policy: a bear-case check that explicitly says it changes the call
-    # downgrades RESEARCH-WORTHY -> WATCHLIST automatically. Storing the bear
-    # text without acting on it (the previous behavior) meant 8 names were
-    # shown as buy-ready even though their own self-critique said not to buy.
-    downgraded = verdict == "RESEARCH-WORTHY" and _bear_flips_verdict(bear)
+    # Policy: a verified break (see bear_check.py) downgrades RESEARCH-WORTHY ->
+    # WATCHLIST automatically. An ordinary bear argument is shown, not acted on.
+    downgraded = verdict == "RESEARCH-WORTHY" and bool(bear_break)
     final_verdict = "WATCHLIST" if downgraded else verdict
 
     next_action = _synthesize_next_action(final_verdict, thesis, drawdown_trigger_pct)
@@ -426,8 +398,8 @@ def _update_watchlist(
             candidate["unsupported_figures"] = unsupported_figures or []
             if confidence:
                 candidate["confidence"] = confidence
-            if bear:
-                candidate["bear_check"] = bear.strip()
+            # Clear on a rerun, or last time's argument stays on the stock page.
+            candidate["bear_check"] = bear.strip() if bear else None
             # Overwrite the stale hand-written content every time real research
             # runs — this was the actual gap: verdict/confidence updated but
             # thesis/buy_target/next_action stayed frozen at whatever was first
@@ -529,10 +501,11 @@ def main():
     live_buy_target = _live_buy_target(ticker, drawdown_trigger_pct, quotes)
 
     # Devil's-advocate pass only for buy-ready names — surfaces blind spots
-    bear = None
+    bear = bear_break = None
     if verdict == "RESEARCH-WORTHY":
         print("🐻  Running bear-case check...")
-        bear = _bear_check(provider, api_key, ticker, text, _recent_news(ticker))
+        bear = _bear_check(provider, api_key, ticker, text, source_block(prompt))
+        bear_break = verified_break(bear, source_block(prompt))
         if bear:
             with open(out_path, "a") as f:
                 f.write(f"\n\n---\n\n## Bear-Case Check (devil's advocate)\n\n{bear}\n")
@@ -549,7 +522,7 @@ def main():
         print(f"📄  Thesis: {thesis}")
     if not args.save_only:
         final_verdict, downgraded = _update_watchlist(
-            ticker, verdict, f"output/research/{filename}", confidence, bear,
+            ticker, verdict, f"output/research/{filename}", confidence, bear, bear_break,
             thesis=thesis, drawdown_trigger_pct=drawdown_trigger_pct,
             live_buy_target=live_buy_target, unsupported_figures=unsupported,
         )

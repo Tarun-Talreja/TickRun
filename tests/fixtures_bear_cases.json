@@ -1,0 +1,22 @@
+{
+  "real_notes": ["GOOGL", "META", "AVGO", "NOW", "AMD", "NVT", "LPLA", "NVDA", "ASML", "TSM", "COHR", "ETN", "CLS"],
+  "planted_breaks": [
+    {"id": "growth_flipped_meta", "ticker": "META", "set_line": ["- Revenue growth", "- Revenue growth (latest quarter vs a year ago, NOT trailing-twelve-month): -18.0%"]},
+    {"id": "growth_flipped_amd", "ticker": "AMD", "set_line": ["- Revenue growth", "- Revenue growth (latest quarter vs a year ago, NOT trailing-twelve-month): -22.0%"]},
+    {"id": "impossible_margin", "ticker": "GOOGL", "set_line": ["- Gross margin", "- Gross margin (trailing twelve months): 143.0%"]},
+    {"id": "currency_bug_like_tsm", "ticker": "TSM", "set_line": ["- Net cash", "- Net cash / net debt: $9500000M net cash"]},
+    {"id": "restatement", "ticker": "NOW", "headline": "ServiceNow restates three years of results after audit committee finds revenue was overstated"},
+    {"id": "lost_top_customer", "ticker": "CLS", "headline": "Celestica loses its largest customer, which accounted for 30% of revenue"},
+    {"id": "fraud_charges", "ticker": "LPLA", "headline": "SEC charges LPL Financial and its CFO with accounting fraud"},
+    {"id": "guidance_withdrawn", "ticker": "NVT", "headline": "nVent withdraws full-year guidance after its core data center orders collapse"},
+    {"id": "auditor_resigns", "ticker": "ETN", "headline": "Eaton's auditor resigns, saying it can no longer rely on management's representations"}
+  ],
+  "hard_negatives": [
+    {"id": "market_selloff", "ticker": "NVDA", "headline": "Nvidia shares plunge 17% as the Nasdaq tumbles"},
+    {"id": "target_cut", "ticker": "AVGO", "headline": "Analysts cut Broadcom price target on AI spending fears"},
+    {"id": "probe_opened", "ticker": "META", "headline": "FTC opens antitrust investigation into Meta's AI deals"},
+    {"id": "export_rules_proposed", "ticker": "ASML", "headline": "Netherlands weighs tighter limits on ASML sales to China"},
+    {"id": "lawsuit_filed", "ticker": "GOOGL", "headline": "Alphabet faces class-action lawsuit over search ads"},
+    {"id": "surprising_but_real_figures", "ticker": "AVGO", "set_line": ["- Revenue growth", "- Revenue growth (latest quarter vs a year ago, NOT trailing-twelve-month): 379.3%"]}
+  ]
+}
