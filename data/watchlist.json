@@ -959,12 +959,12 @@
       "name": "PAYX",
       "theme": "quality_compounder",
       "status": "research_complete",
-      "thesis": "Quality payroll/HR compounder with 38% operating margins, 5.9% revenue growth, and strong FCF, trading at 18x forward earnings near 52-week high.",
+      "thesis": "Quality payroll/HR compounder with 74% gross margins, $2B FCF, and 5-6% growth trading at 18x forward earnings \u2014 durable but not cheap.",
       "added": "2026-06-08",
       "verdict": "WATCHLIST",
-      "buy_target": 102.38,
+      "buy_target": 108.78,
       "current_price": null,
-      "next_action": "WAIT \u2014 Quality payroll/HR compounder with 38% operating margins, 5.9% revenue growth, and strong FCF, trading at 18x forward earnings near 52-week high. Revisit at 20% below the 52-week high.",
+      "next_action": "WAIT \u2014 Quality payroll/HR compounder with 74% gross margins, $2B FCF, and 5-6% growth trading at 18x forward earnings \u2014 durable but not cheap. Revisit at 15% below the 52-week high.",
       "research_file": "output/research/PAYX_2026-11-06.md",
       "last_researched": "2026-11-06",
       "confidence": "HIGH",
@@ -972,12 +972,20 @@
       "llm_verdict": "WATCHLIST",
       "bear_downgraded": false,
       "unsupported_figures": [
-        "$1B",
-        "10%",
-        "1.8x"
+        "90%",
+        "95%",
+        "30%",
+        "3%",
+        "$100M",
+        "5%",
+        "2x",
+        "70%",
+        "25%",
+        "10%"
       ],
-      "buy_trigger_drawdown_pct": -20.0,
-      "rating_version": 2
+      "buy_trigger_drawdown_pct": -15.0,
+      "rating_version": 3,
+      "fall_reason": null
     },
     {
       "ticker": "DHR",
