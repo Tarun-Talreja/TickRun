@@ -4,7 +4,7 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "scripts"))
 
-from radar import (build_card, build_radar, match_company, news_reasons, on_sale, scorecard,
+from radar import (build_card, tracked_tickers, build_radar, match_company, news_reasons, on_sale, scorecard,
                    updated_log, watch_outs)
 
 TODAY = "2026-11-07"
@@ -147,3 +147,10 @@ class TestLogAndScorecard:
         card = scorecard(log, {"A": 12.0}, 550.0, TODAY)
         assert card["4w"] == {"count": 1, "avg_excess_pct": 10.0}
         assert card["12w"]["count"] == 0
+
+
+class TestTrackedTickers:
+    def test_other_share_class_counts_as_tracked(self):
+        universe = [stock("GOOG", name="Alphabet Inc."), stock("HWM", name="Howmet Aerospace Inc.")]
+        candidates = [{"ticker": "GOOGL", "name": "Alphabet Inc."}]
+        assert tracked_tickers(candidates, universe) == {"GOOGL", "GOOG"}

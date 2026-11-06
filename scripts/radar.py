@@ -62,6 +62,13 @@ def match_company(name: str, universe: list[dict]) -> str | None:
     return partial[0] if len(partial) == 1 else None
 
 
+def tracked_tickers(candidates: list[dict], universe: list[dict]) -> set[str]:
+    """Watchlist tickers, plus other share classes of those companies (GOOG for GOOGL)."""
+    names = {company_key(c.get("name") or c["ticker"]) for c in candidates}
+    twins = {s["ticker"] for s in universe if company_key(s.get("name") or "") in names}
+    return {c["ticker"] for c in candidates} | twins
+
+
 def on_sale(s: dict) -> bool:
     drawdown, quality = s.get("drawdown_pct"), s.get("quality")
     return (drawdown is not None and quality is not None
@@ -205,7 +212,7 @@ def main() -> None:
         sys.exit(1)
     news, log = load_json(FIELD_PATH), load_json(LOG_PATH)
     candidates = load_json(WATCHLIST_PATH).get("candidates", [])
-    tracked = {c["ticker"] for c in candidates}
+    tracked = tracked_tickers(candidates, universe)
     ratings = {c["ticker"]: c.get("verdict") for c in candidates}
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     spy = load_json(QUOTES_PATH).get("tickers", {}).get("SPY", {}).get("price")
