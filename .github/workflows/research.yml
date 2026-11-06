@@ -2,9 +2,10 @@ name: Daily LLM Research
 
 on:
   schedule:
-    # 5:41am ET daily. Weekdays-only couldn't keep the watchlist fresh:
-    # ~6 names/run × 5 days < 51 names re-going-stale every 7 days.
-    - cron: '41 9 * * *'
+    # Four runs overnight, up to about 32 names. The free models hold up then:
+    # overnight batches landed 8/8, while midday runs timed out on 2026-11-06.
+    # When nothing is due a run exits within a minute.
+    - cron: '41 3,5,7,9 * * *'
   workflow_dispatch:
     inputs:
       max:
@@ -84,7 +85,11 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Two jobs can rebuild this generated file at once, and the conflict used to
+          # lose the whole commit. Drop ours, pull, then rebuild on the latest data.
+          git checkout -- output/dashboard.json
           git pull --rebase --autostash origin main
+          python scripts/build_dashboard.py
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:

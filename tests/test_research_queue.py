@@ -73,3 +73,15 @@ def test_red_flag_is_rechecked_weekly(tmp_path, monkeypatch):
 
 def test_benchmarks_are_never_queued(tmp_path, monkeypatch):
     assert _queue(tmp_path, monkeypatch, [_rated("SPY", 0, version=0), _rated("^TNX", 0, version=0)], {}) == []
+
+
+def test_wrongly_held_back_names_go_first(tmp_path, monkeypatch):
+    held = {**_rated("NVDA", 0, version=0), "bear_downgraded": True}
+    flagged = _rated("MU", 0, "RED FLAG", 0)
+    plain = _rated("AAPL", 30, version=0)
+    assert sorted(_queue(tmp_path, monkeypatch, [plain, held, flagged], {}, max_n=2)) == ["MU", "NVDA"]
+
+
+def test_stops_after_repeated_total_failures():
+    assert not research_batch.models_look_down(research_batch.MAX_FAILS_IN_A_ROW - 1)
+    assert research_batch.models_look_down(research_batch.MAX_FAILS_IN_A_ROW)

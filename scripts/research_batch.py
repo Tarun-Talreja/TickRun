@@ -45,10 +45,18 @@ MAX_PER_RUN     = 8      # cap per run to respect free-tier limits
 # slow free tier ran into the job timeout, which cancelled the dashboard rebuild
 # and final commit too. Leftover tickers stay stale and lead tomorrow's queue.
 RUN_BUDGET_SECONDS = 20 * 60
+# One ticker with every model down costs ~7 minutes. On 2026-11-06 at midday the
+# free tier failed 3 in a row and landed nothing, so stop early and leave the
+# queue for the next overnight run.
+MAX_FAILS_IN_A_ROW = 2
 
 # Index/benchmark ETFs are tracked for context, not as buy candidates —
 # spending a research slot on them starves real names in the queue.
 SKIP_TICKERS = {"SPY", "QQQ", "VTI", "VOO", "DIA", "IWM"}
+
+
+def models_look_down(fails_in_a_row: int) -> bool:
+    return fails_in_a_row >= MAX_FAILS_IN_A_ROW
 
 
 def _days_since(date_str: str | None) -> int:
@@ -96,6 +104,9 @@ def _select_tickers(max_n: int) -> list[str]:
             score += 1000
         if old_logic:
             score += 500
+            # Most likely to be wrong: held back or flagged by the older logic.
+            if c.get("bear_downgraded") or verdict == "RED FLAG":
+                score += 200
         if verdict == "RESEARCH-WORTHY":
             score += 100
         dipping = (drawdown is not None and drawdown <= ALERT_THRESHOLD
@@ -188,12 +199,16 @@ def main():
         print("🔒 Incremental commit mode ON — each ticker lands as soon as it finishes.\n")
 
     print(f"🔬 Daily research queue ({len(tickers)}): {', '.join(tickers)}\n")
-    failures, landed = [], []
+    failures, landed, fails_in_a_row = [], [], 0
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     started = time.monotonic()
     for i, ticker in enumerate(tickers):
         if time.monotonic() - started > RUN_BUDGET_SECONDS:
             print(f"⏱ Time budget reached — leaving for next run: {', '.join(tickers[i:])}")
+            tickers = tickers[:i]
+            break
+        if models_look_down(fails_in_a_row):
+            print(f"🛑 {fails_in_a_row} failures in a row — leaving for next run: {', '.join(tickers[i:])}")
             tickers = tickers[:i]
             break
         print(f"── {ticker} " + "─" * 40)
@@ -203,6 +218,7 @@ def main():
         )
         if result.returncode != 0:
             failures.append(ticker)
+            fails_in_a_row += 1
             # A short pause after a failure — back-to-back-to-back API errors
             # in one batch (InternalServerError/APITimeoutError on 4 of 6
             # tickers) look like the free tier under momentary load; giving it
@@ -210,6 +226,7 @@ def main():
             # avoid compounding the same failure across the rest of the queue.
             time.sleep(5)
             continue
+        fails_in_a_row = 0
         if incremental:
             filename = f"{ticker}_{today}.md"
             if _commit_and_push_one(ticker, filename):

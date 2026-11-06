@@ -54,7 +54,11 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Two jobs can rebuild this generated file at once, and the conflict used to
+          # lose the whole commit. Drop ours, pull, then rebuild on the latest data.
+          git checkout -- output/dashboard.json
           git pull --rebase --autostash origin main
+          python scripts/build_dashboard.py
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
