@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T04:32:29Z",
+  "generated_at": "2026-11-06T05:16:33Z",
   "pullback_alerts": [
     {
       "ticker": "COHR",
@@ -215,18 +215,18 @@
       "action": "Re-run: python3 scripts/research_ticker.py AAPL"
     },
     {
-      "ticker": "AMZN",
-      "last_researched": "2026-08-02",
-      "days_since": 96,
-      "verdict": "WATCHLIST",
-      "action": "Re-run: python3 scripts/research_ticker.py AMZN"
-    },
-    {
       "ticker": "ADP",
       "last_researched": "2026-06-25",
       "days_since": 134,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ADP"
+    },
+    {
+      "ticker": "AMZN",
+      "last_researched": "2026-08-02",
+      "days_since": 96,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py AMZN"
     },
     {
       "ticker": "INVH",

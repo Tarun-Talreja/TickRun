@@ -1,13 +1,17 @@
 {
-  "generated_at": "2026-11-06T04:32:39Z",
+  "generated_at": "2026-11-06T05:16:55Z",
   "checked": 58,
   "flagged": 2,
   "quality": {
+    "AAPL": {
+      "ok": true,
+      "flags": []
+    },
     "AMD": {
       "ok": true,
       "flags": []
     },
-    "AAPL": {
+    "ADP": {
       "ok": true,
       "flags": []
     },
@@ -15,7 +19,7 @@
       "ok": true,
       "flags": []
     },
-    "ADP": {
+    "AVGO": {
       "ok": true,
       "flags": []
     },
@@ -24,19 +28,11 @@
       "flags": [
         {
           "level": "low",
-          "msg": "Reports in EUR; figures converted to USD at 1.1197. P/Es may mix currencies \u2014 verify against filings"
+          "msg": "Reports in EUR; figures converted to USD at 1.1201. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
     },
-    "AVGO": {
-      "ok": true,
-      "flags": []
-    },
     "BWXT": {
-      "ok": true,
-      "flags": []
-    },
-    "CEG": {
       "ok": true,
       "flags": []
     },
@@ -44,15 +40,19 @@
       "ok": true,
       "flags": []
     },
+    "CEG": {
+      "ok": true,
+      "flags": []
+    },
     "CLS": {
       "ok": true,
       "flags": []
     },
-    "COHR": {
+    "CMCSA": {
       "ok": true,
       "flags": []
     },
-    "CMCSA": {
+    "COHR": {
       "ok": true,
       "flags": []
     },
@@ -88,11 +88,11 @@
       "ok": true,
       "flags": []
     },
-    "GIS": {
+    "GOOGL": {
       "ok": true,
       "flags": []
     },
-    "GOOGL": {
+    "GIS": {
       "ok": true,
       "flags": []
     },
@@ -192,11 +192,11 @@
       "ok": true,
       "flags": []
     },
-    "STZ": {
+    "SPY": {
       "ok": true,
       "flags": []
     },
-    "SPY": {
+    "STZ": {
       "ok": true,
       "flags": []
     },
@@ -213,15 +213,15 @@
       "flags": [
         {
           "level": "low",
-          "msg": "Reports in TWD; figures converted to USD at 0.0304. P/Es may mix currencies \u2014 verify against filings"
+          "msg": "Reports in TWD; figures converted to USD at 0.0304. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
     },
-    "V": {
+    "UNH": {
       "ok": true,
       "flags": []
     },
-    "UNH": {
+    "V": {
       "ok": true,
       "flags": []
     },
@@ -233,11 +233,11 @@
       "ok": true,
       "flags": []
     },
-    "ZBH": {
+    "VTI": {
       "ok": true,
       "flags": []
     },
-    "VTI": {
+    "ZBH": {
       "ok": true,
       "flags": []
     },
