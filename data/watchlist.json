@@ -220,14 +220,25 @@
       "name": "UnitedHealth Group Incorporated",
       "theme": "uncategorized",
       "status": "research_complete",
-      "thesis": "Largest US health insurer. 2% revenue growth, 8% op margin. DOJ investigation ongoing. No AI infrastructure exposure.",
+      "thesis": "Wide-moat healthcare leader trading at 17x forward earnings with $22.8B FCF, 14% below 52-week high, fitting quality compounder/defensive healthcare theme.",
       "added": "2026-05-28",
-      "verdict": "PASS",
-      "buy_target": null,
+      "verdict": "RESEARCH-WORTHY",
+      "buy_target": 395.61,
       "current_price": null,
-      "next_action": "DROP \u2014 no theme fit, regulatory overhang, 2% growth. Outside mandate.",
-      "research_file": null,
-      "last_researched": "2026-05-28"
+      "next_action": "RESEARCH \u2014 Wide-moat healthcare leader trading at 17x forward earnings with $22.8B FCF, 14% below 52-week high, fitting quality compounder/defensive healthcare theme. Worth a deep dive before any decision.",
+      "research_file": "output/research/UNH_2026-11-06.md",
+      "last_researched": "2026-11-06",
+      "llm_verdict": "RESEARCH-WORTHY",
+      "bear_downgraded": false,
+      "rating_version": 2,
+      "unsupported_figures": [
+        "2.0x",
+        "30%",
+        "2x"
+      ],
+      "confidence": "MEDIUM",
+      "bear_check": "The latest quarter shows revenue declining -0.4% YoY with an operating margin of only 5.8%, which combined with $45.8B net debt (roughly 2x TTM FCF) leaves minimal cushion against medical cost inflation or Medicare Advantage rate pressure that could compress earnings further.\n\nBREAK: NONE\nEVIDENCE: none",
+      "buy_trigger_drawdown_pct": -14.3
     },
     {
       "ticker": "V",
