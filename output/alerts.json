@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T03:56:47Z",
+  "generated_at": "2026-11-06T04:32:29Z",
   "pullback_alerts": [
     {
       "ticker": "COHR",
@@ -106,7 +106,7 @@
       "high_52w": 1999.96,
       "drawdown_pct": -32.2,
       "severity": "MODERATE",
-      "thesis": "ASML is a high-growth, high-margin leader in the AI infrastructure theme, with a strong track record of revenue growth and profitability.",
+      "thesis": "Monopoly EUV supplier for AI chips at 21x forward earnings with 55% revenue growth, 44% operating margins, and $12B net cash.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -142,7 +142,7 @@
       "high_52w": 487.47,
       "drawdown_pct": -27.6,
       "severity": "MODERATE",
-      "thesis": "Foundational AI infrastructure play at 15x forward earnings with 50%+ revenue growth, 59% operating margins, and net cash exceeding market cap \u2014 if the cash figure is unrestricted.",
+      "thesis": "World's only leading-edge foundry at 15x forward earnings with 50%+ revenue growth and 58% operating margins, discounted for Taiwan risk.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -166,7 +166,7 @@
       "high_52w": 243.37,
       "drawdown_pct": -25.4,
       "severity": "MODERATE",
-      "thesis": "AI infrastructure pure-play at 11x forward earnings with 106% revenue growth, 66% operating margins, and [price omitted \u2014 see live data]B FCF \u2014 valuation prices in significant deceleration.",
+      "thesis": "Pure-play AI infrastructure leader at 11x forward earnings with 100%+ revenue growth, 75% gross margins, and $42B FCF.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -208,13 +208,6 @@
   ],
   "stale_research": [
     {
-      "ticker": "ADP",
-      "last_researched": "2026-06-25",
-      "days_since": 134,
-      "verdict": "WATCHLIST",
-      "action": "Re-run: python3 scripts/research_ticker.py ADP"
-    },
-    {
       "ticker": "AAPL",
       "last_researched": "2026-07-26",
       "days_since": 103,
@@ -229,11 +222,11 @@
       "action": "Re-run: python3 scripts/research_ticker.py AMZN"
     },
     {
-      "ticker": "ASML",
-      "last_researched": "2026-08-03",
-      "days_since": 95,
+      "ticker": "ADP",
+      "last_researched": "2026-06-25",
+      "days_since": 134,
       "verdict": "WATCHLIST",
-      "action": "Re-run: python3 scripts/research_ticker.py ASML"
+      "action": "Re-run: python3 scripts/research_ticker.py ADP"
     },
     {
       "ticker": "INVH",

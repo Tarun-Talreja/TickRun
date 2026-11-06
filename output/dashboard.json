@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-11-06T04:05:57Z",
-  "quotes_updated": "2026-11-06T04:02:59Z",
+  "last_built": "2026-11-06T04:32:39Z",
+  "quotes_updated": "2026-11-06T04:32:28Z",
   "portfolio": {
     "total_value": 0,
     "core": [
@@ -54,7 +54,7 @@
         "pnl_pct": null,
         "pct_change_1d": -2.47,
         "drawdown_from_high": -37.1,
-        "pe": 23.426197,
+        "pe": 24.013027,
         "forward_pe": 17.839582
       },
       {
@@ -71,7 +71,7 @@
         "pnl_pct": null,
         "pct_change_1d": -3.58,
         "drawdown_from_high": -4.2,
-        "pe": 27.971294,
+        "pe": 29.000542,
         "forward_pe": 22.164799
       },
       {
@@ -184,7 +184,7 @@
         "drawdown_from_high": -4.2,
         "revenue_growth": 18.8,
         "op_margin": 49.8,
-        "pe": 27.971294,
+        "pe": 29.000542,
         "forward_pe": 22.164799,
         "short_percent_float": 0.88,
         "short_ratio": 2.9,
@@ -532,8 +532,13 @@
         "high_proximity_warning": false,
         "conviction_holders": [],
         "hf_new_positions": [],
-        "data_ok": true,
-        "data_flags": []
+        "data_ok": false,
+        "data_flags": [
+          {
+            "level": "low",
+            "msg": "Reports in EUR; figures converted to USD at 1.1197. P/Es may mix currencies \u2014 verify against filings"
+          }
+        ]
       },
       {
         "ticker": "TSM",
@@ -568,8 +573,13 @@
         "high_proximity_warning": false,
         "conviction_holders": [],
         "hf_new_positions": [],
-        "data_ok": true,
-        "data_flags": []
+        "data_ok": false,
+        "data_flags": [
+          {
+            "level": "low",
+            "msg": "Reports in TWD; figures converted to USD at 0.0304. P/Es may mix currencies \u2014 verify against filings"
+          }
+        ]
       },
       {
         "ticker": "NOW",
@@ -664,12 +674,12 @@
         "no_pullback_gate": false,
         "price": 120.37,
         "pct_change_1d": -14.94,
-        "market_cap": 32723214336,
+        "market_cap": 30561726464,
         "cap_tier": "large",
         "drawdown_from_high": -59.9,
         "revenue_growth": 454.0,
         "op_margin": -0.2,
-        "pe": 94.03907,
+        "pe": 110.43119,
         "forward_pe": -33.45628,
         "short_percent_float": 20.18,
         "short_ratio": 2.6,
@@ -809,7 +819,7 @@
         "drawdown_from_high": -59.5,
         "revenue_growth": 36.5,
         "op_margin": 16.7,
-        "pe": 43.930923,
+        "pe": 52.578743,
         "forward_pe": 18.18796,
         "short_percent_float": 3.28,
         "short_ratio": 1.2,
@@ -913,7 +923,7 @@
         "drawdown_from_high": -37.1,
         "revenue_growth": 23.0,
         "op_margin": 8.7,
-        "pe": 23.426197,
+        "pe": 24.013027,
         "forward_pe": 17.839582,
         "short_percent_float": 3.75,
         "short_ratio": 3.0,
@@ -1219,7 +1229,7 @@
         "bear_check": "The strongest argument against buying POWL right now is that despite the record orders and backlog surge, the company's Q3 earnings and revenues missed estimates, which could indicate underlying issues with the business that are not being fully accounted for in the bullish narrative. This earnings miss, as reported by Zacks, suggests that the company's strong order backlog may not be translating to revenue and profitability as smoothly as expected. The bullish case may be underweighting the potential impact of this earnings miss on future growth prospects.\n\nCHANGES VERDICT: YES",
         "price": 125.06,
         "pct_change_1d": -12.61,
-        "market_cap": 4556256256,
+        "market_cap": 4556141568,
         "cap_tier": "mid",
         "drawdown_from_high": -61.9,
         "revenue_growth": 8.9,
@@ -1256,7 +1266,7 @@
         "drawdown_from_high": -3.8,
         "revenue_growth": 14.0,
         "op_margin": 60.5,
-        "pe": 34.323387,
+        "pe": 35.20773,
         "forward_pe": 28.331017,
         "short_percent_float": 0.81,
         "short_ratio": 2.3,
@@ -1539,7 +1549,7 @@
         "drawdown_from_high": -22.4,
         "revenue_growth": 21.7,
         "op_margin": 33.3,
-        "pe": 56.652958,
+        "pe": 58.273632,
         "forward_pe": 37.575478,
         "short_percent_float": 2.08,
         "short_ratio": 3.5,
@@ -1688,7 +1698,7 @@
         "bear_downgraded": false,
         "price": 127.56,
         "pct_change_1d": 0.45,
-        "market_cap": 27556562944,
+        "market_cap": 27811397632,
         "cap_tier": "large",
         "drawdown_from_high": -1.1,
         "revenue_growth": 14.9,
@@ -1898,7 +1908,7 @@
         "drawdown_from_high": -25.4,
         "revenue_growth": -15.0,
         "op_margin": 21.5,
-        "pe": 6.469713,
+        "pe": 6.5321894,
         "forward_pe": 9.355977,
         "short_percent_float": 6.38,
         "short_ratio": 3.4,
@@ -1966,7 +1976,7 @@
         "drawdown_from_high": -56.6,
         "revenue_growth": 82.5,
         "op_margin": 7.9,
-        "pe": 22.303686,
+        "pe": 19.4,
         "forward_pe": 9.244536,
         "short_percent_float": 3.35,
         "short_ratio": 1.9,
@@ -2013,7 +2023,7 @@
         "drawdown_from_high": -63.6,
         "revenue_growth": 114.7,
         "op_margin": 25.2,
-        "pe": 39.833336,
+        "pe": 48.418106,
         "forward_pe": 11.565949,
         "short_percent_float": 5.78,
         "short_ratio": 1.1,
@@ -2183,7 +2193,7 @@
           "drawdown_from_high": -4.2,
           "revenue_growth": 18.8,
           "op_margin": 49.8,
-          "pe": 27.971294,
+          "pe": 29.000542,
           "forward_pe": 22.164799,
           "short_percent_float": 0.88,
           "short_ratio": 2.9,
@@ -2444,8 +2454,13 @@
           "high_proximity_warning": false,
           "conviction_holders": [],
           "hf_new_positions": [],
-          "data_ok": true,
-          "data_flags": []
+          "data_ok": false,
+          "data_flags": [
+            {
+              "level": "low",
+              "msg": "Reports in EUR; figures converted to USD at 1.1197. P/Es may mix currencies \u2014 verify against filings"
+            }
+          ]
         },
         {
           "ticker": "TSM",
@@ -2480,8 +2495,13 @@
           "high_proximity_warning": false,
           "conviction_holders": [],
           "hf_new_positions": [],
-          "data_ok": true,
-          "data_flags": []
+          "data_ok": false,
+          "data_flags": [
+            {
+              "level": "low",
+              "msg": "Reports in TWD; figures converted to USD at 0.0304. P/Es may mix currencies \u2014 verify against filings"
+            }
+          ]
         },
         {
           "ticker": "NOW",
@@ -2726,7 +2746,7 @@
           "drawdown_from_high": -3.8,
           "revenue_growth": 14.0,
           "op_margin": 60.5,
-          "pe": 34.323387,
+          "pe": 35.20773,
           "forward_pe": 28.331017,
           "short_percent_float": 0.81,
           "short_ratio": 2.3,
@@ -2908,7 +2928,7 @@
           "drawdown_from_high": -22.4,
           "revenue_growth": 21.7,
           "op_margin": 33.3,
-          "pe": 56.652958,
+          "pe": 58.273632,
           "forward_pe": 37.575478,
           "short_percent_float": 2.08,
           "short_ratio": 3.5,
@@ -3026,7 +3046,7 @@
           "drawdown_from_high": -25.4,
           "revenue_growth": -15.0,
           "op_margin": 21.5,
-          "pe": 6.469713,
+          "pe": 6.5321894,
           "forward_pe": 9.355977,
           "short_percent_float": 6.38,
           "short_ratio": 3.4,
@@ -3063,7 +3083,7 @@
           "drawdown_from_high": -56.6,
           "revenue_growth": 82.5,
           "op_margin": 7.9,
-          "pe": 22.303686,
+          "pe": 19.4,
           "forward_pe": 9.244536,
           "short_percent_float": 3.35,
           "short_ratio": 1.9,
@@ -3279,12 +3299,12 @@
           "no_pullback_gate": false,
           "price": 120.37,
           "pct_change_1d": -14.94,
-          "market_cap": 32723214336,
+          "market_cap": 30561726464,
           "cap_tier": "large",
           "drawdown_from_high": -59.9,
           "revenue_growth": 454.0,
           "op_margin": -0.2,
-          "pe": 94.03907,
+          "pe": 110.43119,
           "forward_pe": -33.45628,
           "short_percent_float": 20.18,
           "short_ratio": 2.6,
@@ -3388,7 +3408,7 @@
           "drawdown_from_high": -59.5,
           "revenue_growth": 36.5,
           "op_margin": 16.7,
-          "pe": 43.930923,
+          "pe": 52.578743,
           "forward_pe": 18.18796,
           "short_percent_float": 3.28,
           "short_ratio": 1.2,
@@ -3456,7 +3476,7 @@
           "drawdown_from_high": -37.1,
           "revenue_growth": 23.0,
           "op_margin": 8.7,
-          "pe": 23.426197,
+          "pe": 24.013027,
           "forward_pe": 17.839582,
           "short_percent_float": 3.75,
           "short_ratio": 3.0,
@@ -3652,7 +3672,7 @@
           "bear_check": "The strongest argument against buying POWL right now is that despite the record orders and backlog surge, the company's Q3 earnings and revenues missed estimates, which could indicate underlying issues with the business that are not being fully accounted for in the bullish narrative. This earnings miss, as reported by Zacks, suggests that the company's strong order backlog may not be translating to revenue and profitability as smoothly as expected. The bullish case may be underweighting the potential impact of this earnings miss on future growth prospects.\n\nCHANGES VERDICT: YES",
           "price": 125.06,
           "pct_change_1d": -12.61,
-          "market_cap": 4556256256,
+          "market_cap": 4556141568,
           "cap_tier": "mid",
           "drawdown_from_high": -61.9,
           "revenue_growth": 8.9,
@@ -3858,7 +3878,7 @@
           "bear_downgraded": false,
           "price": 127.56,
           "pct_change_1d": 0.45,
-          "market_cap": 27556562944,
+          "market_cap": 27811397632,
           "cap_tier": "large",
           "drawdown_from_high": -1.1,
           "revenue_growth": 14.9,
@@ -4065,7 +4085,7 @@
           "drawdown_from_high": -63.6,
           "revenue_growth": 114.7,
           "op_margin": 25.2,
-          "pe": 39.833336,
+          "pe": 48.418106,
           "forward_pe": 11.565949,
           "short_percent_float": 5.78,
           "short_ratio": 1.1,
@@ -4187,7 +4207,7 @@
           "drawdown_from_high": -4.2,
           "revenue_growth": 18.8,
           "op_margin": 49.8,
-          "pe": 27.971294,
+          "pe": 29.000542,
           "forward_pe": 22.164799,
           "short_percent_float": 0.88,
           "short_ratio": 2.9,
@@ -4363,12 +4383,12 @@
           "no_pullback_gate": false,
           "price": 120.37,
           "pct_change_1d": -14.94,
-          "market_cap": 32723214336,
+          "market_cap": 30561726464,
           "cap_tier": "large",
           "drawdown_from_high": -59.9,
           "revenue_growth": 454.0,
           "op_margin": -0.2,
-          "pe": 94.03907,
+          "pe": 110.43119,
           "forward_pe": -33.45628,
           "short_percent_float": 20.18,
           "short_ratio": 2.6,
@@ -4481,8 +4501,13 @@
           "high_proximity_warning": false,
           "conviction_holders": [],
           "hf_new_positions": [],
-          "data_ok": true,
-          "data_flags": []
+          "data_ok": false,
+          "data_flags": [
+            {
+              "level": "low",
+              "msg": "Reports in EUR; figures converted to USD at 1.1197. P/Es may mix currencies \u2014 verify against filings"
+            }
+          ]
         },
         {
           "ticker": "TSM",
@@ -4517,8 +4542,13 @@
           "high_proximity_warning": false,
           "conviction_holders": [],
           "hf_new_positions": [],
-          "data_ok": true,
-          "data_flags": []
+          "data_ok": false,
+          "data_flags": [
+            {
+              "level": "low",
+              "msg": "Reports in TWD; figures converted to USD at 0.0304. P/Es may mix currencies \u2014 verify against filings"
+            }
+          ]
         },
         {
           "ticker": "AMD",
@@ -4618,7 +4648,7 @@
           "drawdown_from_high": -59.5,
           "revenue_growth": 36.5,
           "op_margin": 16.7,
-          "pe": 43.930923,
+          "pe": 52.578743,
           "forward_pe": 18.18796,
           "short_percent_float": 3.28,
           "short_ratio": 1.2,
@@ -4684,7 +4714,7 @@
           "drawdown_from_high": -63.6,
           "revenue_growth": 114.7,
           "op_margin": 25.2,
-          "pe": 39.833336,
+          "pe": 48.418106,
           "forward_pe": 11.565949,
           "short_percent_float": 5.78,
           "short_ratio": 1.1,
@@ -5081,7 +5111,7 @@
           "drawdown_from_high": -37.1,
           "revenue_growth": 23.0,
           "op_margin": 8.7,
-          "pe": 23.426197,
+          "pe": 24.013027,
           "forward_pe": 17.839582,
           "short_percent_float": 3.75,
           "short_ratio": 3.0,
@@ -5389,7 +5419,7 @@
           "bear_check": "The strongest argument against buying POWL right now is that despite the record orders and backlog surge, the company's Q3 earnings and revenues missed estimates, which could indicate underlying issues with the business that are not being fully accounted for in the bullish narrative. This earnings miss, as reported by Zacks, suggests that the company's strong order backlog may not be translating to revenue and profitability as smoothly as expected. The bullish case may be underweighting the potential impact of this earnings miss on future growth prospects.\n\nCHANGES VERDICT: YES",
           "price": 125.06,
           "pct_change_1d": -12.61,
-          "market_cap": 4556256256,
+          "market_cap": 4556141568,
           "cap_tier": "mid",
           "drawdown_from_high": -61.9,
           "revenue_growth": 8.9,
@@ -5427,7 +5457,7 @@
           "drawdown_from_high": -25.4,
           "revenue_growth": -15.0,
           "op_margin": 21.5,
-          "pe": 6.469713,
+          "pe": 6.5321894,
           "forward_pe": 9.355977,
           "short_percent_float": 6.38,
           "short_ratio": 3.4,
@@ -5463,7 +5493,7 @@
           "drawdown_from_high": -3.8,
           "revenue_growth": 14.0,
           "op_margin": 60.5,
-          "pe": 34.323387,
+          "pe": 35.20773,
           "forward_pe": 28.331017,
           "short_percent_float": 0.81,
           "short_ratio": 2.3,
@@ -5681,7 +5711,7 @@
           "drawdown_from_high": -22.4,
           "revenue_growth": 21.7,
           "op_margin": 33.3,
-          "pe": 56.652958,
+          "pe": 58.273632,
           "forward_pe": 37.575478,
           "short_percent_float": 2.08,
           "short_ratio": 3.5,
@@ -5901,7 +5931,7 @@
           "bear_downgraded": false,
           "price": 127.56,
           "pct_change_1d": 0.45,
-          "market_cap": 27556562944,
+          "market_cap": 27811397632,
           "cap_tier": "large",
           "drawdown_from_high": -1.1,
           "revenue_growth": 14.9,
@@ -6119,7 +6149,7 @@
           "drawdown_from_high": -56.6,
           "revenue_growth": 82.5,
           "op_margin": 7.9,
-          "pe": 22.303686,
+          "pe": 19.4,
           "forward_pe": 9.244536,
           "short_percent_float": 3.35,
           "short_ratio": 1.9,
@@ -6450,7 +6480,7 @@
     "data_warnings": []
   },
   "analytics": {
-    "generated_at": "2026-11-06T03:56:56Z",
+    "generated_at": "2026-11-06T04:32:39Z",
     "funded": false,
     "total_value": 0.0,
     "total_invested": 0.0,
@@ -6547,7 +6577,7 @@
     "concentration_warnings": []
   },
   "track_record": {
-    "generated_at": "2026-11-06T03:56:56Z",
+    "generated_at": "2026-11-06T04:32:39Z",
     "tracked_since": "2026-04-25",
     "scoreboard": {
       "RESEARCH-WORTHY": {
@@ -6574,9 +6604,9 @@
         }
       },
       "WATCHLIST": {
-        "count": 151,
-        "avg_return": -11.8,
-        "win_rate": 32,
+        "count": 154,
+        "avg_return": -11.6,
+        "win_rate": 31,
         "best": {
           "ticker": "MKTX",
           "verdict": "WATCHLIST",
@@ -7650,6 +7680,33 @@
         "confidence": "MEDIUM",
         "current_price": 60.88,
         "return_pct": 0.1
+      },
+      {
+        "ticker": "NVDA",
+        "verdict": "WATCHLIST",
+        "date": "2026-11-06",
+        "entry_price": 181.6,
+        "confidence": "HIGH",
+        "current_price": 181.6,
+        "return_pct": 0.0
+      },
+      {
+        "ticker": "ASML",
+        "verdict": "WATCHLIST",
+        "date": "2026-11-06",
+        "entry_price": 1356.65,
+        "confidence": "HIGH",
+        "current_price": 1356.65,
+        "return_pct": 0.0
+      },
+      {
+        "ticker": "TSM",
+        "verdict": "WATCHLIST",
+        "date": "2026-11-06",
+        "entry_price": 353.1,
+        "confidence": "MEDIUM",
+        "current_price": 353.1,
+        "return_pct": 0.0
       },
       {
         "ticker": "NVDA",
@@ -9404,7 +9461,7 @@
     ]
   },
   "asset_location": {
-    "generated_at": "2026-11-06T04:05:57Z",
+    "generated_at": "2026-11-06T04:32:39Z",
     "rules": {
       "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
       "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
@@ -10047,7 +10104,7 @@
         "high_52w": 1999.96,
         "drawdown_pct": -32.2,
         "severity": "MODERATE",
-        "thesis": "ASML is a high-growth, high-margin leader in the AI infrastructure theme, with a strong track record of revenue growth and profitability.",
+        "thesis": "Monopoly EUV supplier for AI chips at 21x forward earnings with 55% revenue growth, 44% operating margins, and $12B net cash.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -10083,7 +10140,7 @@
         "high_52w": 487.47,
         "drawdown_pct": -27.6,
         "severity": "MODERATE",
-        "thesis": "Foundational AI infrastructure play at 15x forward earnings with 50%+ revenue growth, 59% operating margins, and net cash exceeding market cap \u2014 if the cash figure is unrestricted.",
+        "thesis": "World's only leading-edge foundry at 15x forward earnings with 50%+ revenue growth and 58% operating margins, discounted for Taiwan risk.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -10107,7 +10164,7 @@
         "high_52w": 243.37,
         "drawdown_pct": -25.4,
         "severity": "MODERATE",
-        "thesis": "AI infrastructure pure-play at 11x forward earnings with 106% revenue growth, 66% operating margins, and [price omitted \u2014 see live data]B FCF \u2014 valuation prices in significant deceleration.",
+        "thesis": "Pure-play AI infrastructure leader at 11x forward earnings with 100%+ revenue growth, 75% gross margins, and $42B FCF.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -10149,13 +10206,6 @@
     ],
     "stale_research": [
       {
-        "ticker": "ADP",
-        "last_researched": "2026-06-25",
-        "days_since": 134,
-        "verdict": "WATCHLIST",
-        "action": "Re-run: python3 scripts/research_ticker.py ADP"
-      },
-      {
         "ticker": "AAPL",
         "last_researched": "2026-07-26",
         "days_since": 103,
@@ -10170,11 +10220,11 @@
         "action": "Re-run: python3 scripts/research_ticker.py AMZN"
       },
       {
-        "ticker": "ASML",
-        "last_researched": "2026-08-03",
-        "days_since": 95,
+        "ticker": "ADP",
+        "last_researched": "2026-06-25",
+        "days_since": 134,
         "verdict": "WATCHLIST",
-        "action": "Re-run: python3 scripts/research_ticker.py ASML"
+        "action": "Re-run: python3 scripts/research_ticker.py ADP"
       },
       {
         "ticker": "INVH",
@@ -10308,7 +10358,7 @@
         "days_until": 11,
         "theme": "mega_cap_ai",
         "verdict": "WATCHLIST",
-        "thesis": "AI infrastructure pure-play at 11x forward earnings with 106% revenue growth, 66% operating margins, and [price omitted \u2014 see live data]B FCF \u2014 valuation prices in significant deceleration.",
+        "thesis": "Pure-play AI infrastructure leader at 11x forward earnings with 100%+ revenue growth, 75% gross margins, and $42B FCF.",
         "action": "Review thesis before earnings. Re-run research_ticker.py NVDA after."
       }
     ],
@@ -10979,7 +11029,7 @@
         "news": []
       }
     ],
-    "movers_updated": "2026-11-06T03:56:56Z",
+    "movers_updated": "2026-11-06T04:32:39Z",
     "target_hits": [
       {
         "ticker": "BWXT",
@@ -11015,15 +11065,15 @@
         "next_action": "WAIT \u2014 AMD is a high-growth AI infrastructure play with a strong product portfolio, but its valuation is relatively expensive. Revisit at 25% below the 52-week high."
       },
       {
-        "ticker": "ASML",
-        "name": "ASML Holding N.V.",
+        "ticker": "TSM",
+        "name": "Taiwan Semiconductor Manufacturing Company",
         "verdict": "WATCHLIST",
-        "confidence": "HIGH",
+        "confidence": "MEDIUM",
         "theme": "edge_ai_silicon",
-        "price": 1356.65,
-        "buy_target": 1499.97,
-        "gap_pct": -9.6,
-        "next_action": "WAIT \u2014 ASML is a high-growth, high-margin leader in the AI infrastructure theme, with a strong track record of revenue growth and profitability. Revisit at 25% below the 52-week high."
+        "price": 353.1,
+        "buy_target": 389.98,
+        "gap_pct": -9.5,
+        "next_action": "WAIT \u2014 World's only leading-edge foundry at 15x forward earnings with 50%+ revenue growth and 58% operating margins, discounted for Taiwan risk. Revisit at 20% below the 52-week high."
       },
       {
         "ticker": "META",
@@ -11062,23 +11112,23 @@
         "ticker": "NVDA",
         "name": "NVIDIA Corporation",
         "verdict": "WATCHLIST",
-        "confidence": "MEDIUM",
+        "confidence": "HIGH",
         "theme": "mega_cap_ai",
         "price": 181.6,
         "buy_target": 181.6,
         "gap_pct": 0.0,
-        "next_action": "WAIT \u2014 AI infrastructure pure-play at 11x forward earnings with 106% revenue growth, 66% operating margins, and [price omitted \u2014 see live data]B FCF \u2014 valuation prices in significant deceleration."
+        "next_action": "WAIT \u2014 Pure-play AI infrastructure leader at 11x forward earnings with 100%+ revenue growth, 75% gross margins, and $42B FCF."
       },
       {
-        "ticker": "TSM",
-        "name": "Taiwan Semiconductor Manufacturing Company",
+        "ticker": "ASML",
+        "name": "ASML Holding N.V.",
         "verdict": "WATCHLIST",
-        "confidence": "MEDIUM",
+        "confidence": "HIGH",
         "theme": "edge_ai_silicon",
-        "price": 353.1,
-        "buy_target": 353.1,
+        "price": 1356.65,
+        "buy_target": 1356.65,
         "gap_pct": 0.0,
-        "next_action": "WAIT \u2014 Foundational AI infrastructure play at 15x forward earnings with 50%+ revenue growth, 59% operating margins, and net cash exceeding market cap \u2014 if the cash figure is unrestricted."
+        "next_action": "WAIT \u2014 Monopoly EUV supplier for AI chips at 21x forward earnings with 55% revenue growth, 44% operating margins, and $12B net cash."
       },
       {
         "ticker": "NOW",
@@ -11413,7 +11463,7 @@
         "name": "Marvell Technology, Inc.",
         "drawdown_pct": -59.5,
         "price": 133.55,
-        "pe": 43.930923,
+        "pe": 52.578743,
         "forward_pe": 18.18796,
         "verdict": "PASS",
         "next_action": "DROP \u2014 Marvell Technology is a semiconductor company with significant exposure to AI infrastructure and data center power, but its valuation appears expensive relative to its growth."
@@ -11453,7 +11503,7 @@
         "name": "Intuitive Surgical, Inc.",
         "drawdown_pct": -22.4,
         "price": 468.52,
-        "pe": 56.652958,
+        "pe": 58.273632,
         "forward_pe": 37.575478,
         "verdict": "WATCHLIST",
         "next_action": "WAIT \u2014 Wide-moat surgical robotics leader with 21.7% revenue growth, 33% operating margins, and [price omitted \u2014 see live data]B FCF trading at 37x forward earnings for durable procedure-driven recurring revenue."
