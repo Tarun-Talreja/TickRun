@@ -118,25 +118,30 @@
       "name": "NVIDIA Corporation",
       "theme": "mega_cap_ai",
       "status": "research_complete",
-      "thesis": "Pure-play AI infrastructure leader at 11.8x forward earnings with 105% latest-quarter revenue growth and 75% gross margins",
+      "thesis": "AI infrastructure leader trading at 12x forward earnings with 100%+ revenue growth, 66% operating margins, and $127B annual FCF, but faces material geopolitical/regulatory risk from China exposure.",
       "added": "2026-05-01",
       "verdict": "RESEARCH-WORTHY",
-      "buy_target": 187.39,
+      "buy_target": 186.66,
       "current_price": 198.45,
-      "next_action": "RESEARCH \u2014 Pure-play AI infrastructure leader at 11.8x forward earnings with 105% latest-quarter revenue growth and 75% gross margins Worth a deep dive before any decision.",
+      "next_action": "RESEARCH \u2014 AI infrastructure leader trading at 12x forward earnings with 100%+ revenue growth, 66% operating margins, and $127B annual FCF, but faces material geopolitical/regulatory risk from China exposure. Worth a deep dive before any decision.",
       "research_file": "output/research/NVDA_2026-11-06.md",
       "last_researched": "2026-11-06",
       "llm_verdict": "RESEARCH-WORTHY",
       "bear_downgraded": false,
       "confidence": "HIGH",
-      "bear_check": "The strongest argument against buying NVDA is that the 11.8x forward P/E implies the market expects earnings to collapse from current peak levels, and the bear case correctly identifies that 4-5 hyperscalers drive the 105% YoY growth \u2014 if they pause capex for even 2-3 quarters (as occurred in the 2018-19 crypto bust), data center revenue could drop 30%+ given semiconductor cyclicality, turning the \"cheap\" multiple into a value trap.\n\nBREAK: NONE\nEVIDENCE: none",
-      "buy_trigger_drawdown_pct": -23.0,
+      "bear_check": "The most compelling reason to avoid NVDA is the escalating geopolitical risk from U.S. export controls on advanced AI chips to China, which historically represented 20-25% of Data Center revenue; the November 2026 headlines revealing Republican requests for a briefing on \"Chinese spy allegations\" suggest potential tightening of licensing rules or entity-list additions that could permanently eliminate this massive addressable market. Unlike cyclical or competitive risks, a regulatory blockade is binary, exogenous, and not solvable by product innovation or pricing.\n\nBREAK: NONE\nEVIDENCE: none",
+      "buy_trigger_drawdown_pct": -23.3,
       "no_pullback_gate": true,
       "unsupported_figures": [
+        "$35.1B",
+        "$50B",
+        "60%",
+        "25%",
         "15%",
-        "30%"
+        "100%"
       ],
-      "rating_version": 2
+      "rating_version": 3,
+      "fall_reason": null
     },
     {
       "ticker": "META",
