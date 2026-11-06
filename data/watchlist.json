@@ -1347,12 +1347,12 @@
       "name": "FLUT",
       "theme": "consumer_media",
       "status": "research_complete",
-      "thesis": "Highly leveraged gambling operator with $11.1B net debt, 2% revenue growth, and negative operating margin trading at 12.4x forward earnings \u2014 not a quality compounder at any price.",
+      "thesis": "Highly leveraged gambling operator with declining profitability and a fresh guidance cut, trading at 12.7x forward earnings but facing structural FCF pressure from U.S. marketing intensity and regulatory headwinds.",
       "added": "2026-06-08",
       "verdict": "PASS",
       "buy_target": 47.15,
       "current_price": null,
-      "next_action": "DROP \u2014 Highly leveraged gambling operator with $11.1B net debt, 2% revenue growth, and negative operating margin trading at 12.4x forward earnings \u2014 not a quality compounder at any price.",
+      "next_action": "DROP \u2014 Highly leveraged gambling operator with declining profitability and a fresh guidance cut, trading at 12.7x forward earnings but facing structural FCF pressure from U.S. marketing intensity and regulatory headwinds.",
       "research_file": "output/research/FLUT_2026-11-06.md",
       "last_researched": "2026-11-06",
       "llm_verdict": "PASS",
@@ -1360,15 +1360,17 @@
       "confidence": "MEDIUM",
       "buy_trigger_drawdown_pct": -80.0,
       "no_pullback_gate": false,
-      "rating_version": 2,
+      "rating_version": 3,
       "unsupported_figures": [
-        "3.6%",
         "78%",
-        "$222M",
-        "43%",
-        "7.2x"
+        "27%",
+        "12%",
+        "$500M",
+        "21.5x",
+        "15%"
       ],
-      "bear_check": null
+      "bear_check": null,
+      "fall_reason": "Flutter missed Q3 2026 revenue and EBITDA estimates and cut its full-year outlook, triggering analyst target reductions."
     },
     {
       "ticker": "CMCSA",
