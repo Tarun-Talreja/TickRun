@@ -2,9 +2,9 @@ name: Daily LLM Research
 
 on:
   schedule:
-    # 7am ET daily (11:00 UTC). Weekdays-only couldn't keep the watchlist fresh:
+    # 5:41am ET daily. Weekdays-only couldn't keep the watchlist fresh:
     # ~6 names/run × 5 days < 51 names re-going-stale every 7 days.
-    - cron: '0 11 * * *'
+    - cron: '41 9 * * *'
   workflow_dispatch:
     inputs:
       max:
@@ -56,7 +56,8 @@ jobs:
         env:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API }}
           TICKERS: ${{ github.event.inputs.tickers }}
-        run: python scripts/research_batch.py --max ${{ github.event.inputs.max || 8 }} --tickers "$TICKERS"
+          MAX_TICKERS: ${{ github.event.inputs.max || 8 }}
+        run: python scripts/research_batch.py --max "$MAX_TICKERS" --tickers "$TICKERS"
 
       - name: Check SEC filings
         run: python scripts/sec_filings.py
@@ -68,6 +69,10 @@ jobs:
 
       - name: Asset location (Roth vs taxable)
         run: python scripts/asset_location.py
+        continue-on-error: true
+
+      - name: Data sanity check
+        run: python scripts/data_sanity.py
         continue-on-error: true
 
       - name: Rebuild dashboard
@@ -89,6 +94,7 @@ jobs:
             data/asset_location.json
             data/sec_filings.json
             data/news_cache.json
+            data/data_quality.json
             output/research/
             output/dashboard.json
 

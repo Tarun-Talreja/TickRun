@@ -2,8 +2,8 @@ name: Weekly Discovery Screener
 
 on:
   schedule:
-    # Saturdays 12:00 UTC (8am ET) — fresh ideas before the week
-    - cron: '0 12 * * 6'
+    # Saturdays about 8am ET — fresh ideas before the week
+    - cron: '13 12 * * 6'
   workflow_dispatch:
 
 permissions:

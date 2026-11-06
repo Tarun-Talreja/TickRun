@@ -366,7 +366,8 @@ def _bear_check(provider, api_key, ticker, bull_text, news_block) -> str | None:
     )
     try:
         return _call_llm(provider, api_key, prompt)
-    except Exception:
+    except Exception as exc:
+        print(f"⚠  Bear check skipped for {ticker}: {str(exc)[:160]}")
         return None
 
 

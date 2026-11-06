@@ -43,6 +43,7 @@ OUTPUT_PATH    = os.path.join(SCRIPT_DIR, "output", "daily_brief.json")
 MAX_ITEMS   = 7      # a glance, not a report
 MOVER_PCT   = 5.0    # only surface moves this large
 CATALYST_DAYS = 2    # "today or tomorrow" urgency
+MAX_MOVERS  = 3      # a selloff moves everything; show the names that matter
 
 
 def _load(path, default=None):
@@ -66,6 +67,44 @@ def _current_state(d: dict) -> dict:
         "data_bad":   sorted(c["ticker"] for c in d.get("watchlist", {}).get("all", [])
                              if c.get("data_ok") is False),
     }
+
+
+def _mover_items(movers: list[dict], verdicts: dict) -> list[dict]:
+    """Big moves, names you still track first, the rest collapsed into one line.
+
+    Listing by size alone filled the whole brief with PASS names on 2026-11-05
+    and hid 19 others, including everything on the watchlist.
+    """
+    NO_REASON = {"no clear catalyst in current news.",
+                 "see headlines (explanation limited to top movers).",
+                 ""}
+    big = [m for m in movers if abs(m.get("primary_pct") or 0) >= MOVER_PCT]
+    big.sort(key=lambda m: (verdicts.get(m["ticker"]) in ("PASS", "RED FLAG"),
+                            -abs(m["primary_pct"])))
+    items = []
+    for m in big[:MAX_MOVERS]:
+        pct = m["primary_pct"]
+        arrow = "▲" if pct > 0 else "▼"
+        reason = (m.get("reason") or "").strip()
+        has_reason = reason.lower() not in NO_REASON
+        items.append({
+            "priority": 3, "kind": "mover", "ticker": m["ticker"],
+            "headline": f"{m['ticker']} {arrow} {pct:+.1f}%",
+            # A real reason IS the detail. With no reason, don't repeat a
+            # dead-end sentence — say what to actually do about it instead.
+            "detail": reason if has_reason else None,
+            "action": ("Verdict unaffected unless this breaks your thesis." if has_reason
+                       else "No catalyst found — check the ticker's news tab yourself before acting."),
+        })
+    hidden = len(big) - len(items)
+    if hidden:
+        items.append({
+            "priority": 3, "kind": "mover_summary", "ticker": "",
+            "headline": f"{hidden} more names moved {MOVER_PCT:.0f}%+",
+            "detail": None,
+            "action": "Full list in Signals.",
+        })
+    return items
 
 
 def main():
@@ -107,24 +146,7 @@ def main():
                 })
 
     # 3. Big movers — reason already attached by move_explainer
-    NO_REASON = {"no clear catalyst in current news.",
-                 "see headlines (explanation limited to top movers).",
-                 ""}
-    for m in sig.get("price_movers", []):
-        pct = m.get("primary_pct") or 0
-        if abs(pct) >= MOVER_PCT:
-            arrow = "▲" if pct > 0 else "▼"
-            reason = (m.get("reason") or "").strip()
-            has_reason = reason.lower() not in NO_REASON
-            items.append({
-                "priority": 3, "kind": "mover", "ticker": m["ticker"],
-                "headline": f"{m['ticker']} {arrow} {pct:+.1f}%",
-                # A real reason IS the detail. With no reason, don't repeat a
-                # dead-end sentence — say what to actually do about it instead.
-                "detail": reason if has_reason else None,
-                "action": ("Verdict unaffected unless this breaks your thesis." if has_reason
-                           else "No catalyst found — check the ticker's news tab yourself before acting."),
-            })
+    items.extend(_mover_items(sig.get("price_movers", []), cur["verdicts"]))
 
     # 4. New 5%+ ownership stakes — the early smart-money signal
     for s in sig.get("sec_ownership_stakes", []):

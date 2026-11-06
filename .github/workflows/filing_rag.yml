@@ -46,7 +46,8 @@ jobs:
         if: ${{ github.event.inputs.ticker != '' }}
         env:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API }}
-        run: python scripts/filing_rag.py "${{ github.event.inputs.ticker }}"
+          TICKER: ${{ github.event.inputs.ticker }}
+        run: python scripts/filing_rag.py "$TICKER"
 
       - name: Sync with remote before commit
         if: ${{ github.event.inputs.ticker != '' }}

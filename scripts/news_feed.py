@@ -70,7 +70,8 @@ def _parse_item(item: dict) -> dict | None:
 def fetch_news(ticker: str, limit: int = DEFAULT_LIMIT) -> list[dict]:
     try:
         raw = yf.Ticker(ticker).news or []
-    except Exception:
+    except Exception as exc:
+        print(f"⚠ no news for {ticker}: {str(exc)[:120]}")
         return []
     items = []
     for it in raw:

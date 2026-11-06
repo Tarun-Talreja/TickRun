@@ -110,8 +110,8 @@ def _fetch_one(ticker: str) -> dict:
             try:
                 buy_value  = float(df.loc[buy_mask,  val_col].apply(pd.to_numeric, errors="coerce").sum())
                 sell_value = float(df.loc[sell_mask, val_col].apply(pd.to_numeric, errors="coerce").sum())
-            except Exception:
-                pass
+            except Exception as exc:
+                print(f"⚠ {ticker}: insider dollar values unavailable: {str(exc)[:120]}")
 
         signal = _classify(buys, sells, buy_value, sell_value)
 

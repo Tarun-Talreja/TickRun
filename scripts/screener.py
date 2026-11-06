@@ -104,8 +104,8 @@ def _fetch(sym: str) -> dict | None:
         try:
             with open(_cache_path(sym)) as f:
                 return json.load(f)
-        except Exception:
-            pass
+        except Exception as exc:
+            print(f"⚠ ignoring bad cache for {sym}: {str(exc)[:120]}")
     try:
         info = yf.Ticker(sym).info or {}
         if not info.get("marketCap"):
@@ -141,7 +141,8 @@ def _fetch(sym: str) -> dict | None:
         with open(_cache_path(sym), "w") as f:
             json.dump(rec, f)
         return rec
-    except Exception:
+    except Exception as exc:
+        print(f"⚠ skipping {sym}: {str(exc)[:120]}")
         return None
 
 

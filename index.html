@@ -813,7 +813,7 @@ html,body{
 <script>
 // ── UTILS ─────────────────────────────────────────────────────────────────────
 const $=id=>document.getElementById(id);
-const esc=s=>s?String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'):'';
+const esc=s=>s?String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'):'';
 const fp=v=>v==null?'—':'$'+Number(v).toFixed(2);
 const fn=(v,d=1)=>v==null?'—':Number(v).toFixed(d);
 const fpct=(v,d=1)=>v==null?'—':(v>0?'+':'')+Number(v).toFixed(d)+'%';
@@ -1066,7 +1066,7 @@ function renderDiscovered(data){
       </div>
       <div class="disc-nm">${esc((d.name||'').substring(0,22))}</div>
       <div class="disc-screens">${esc(screens)}</div>
-      <div class="disc-metrics">${d.forward_pe?`${d.forward_pe.toFixed(0)}× fwd`:''} ${rg!=='—'?`· ${rg} grw`:''}</div>
+      <div class="disc-metrics">${d.forward_pe?`${d.forward_pe.toFixed(0)}× next FY`:''} ${rg!=='—'?`· ${rg} grw`:''}</div>
     </div>`;
   });
   h+=`</div></div>`;
@@ -1137,7 +1137,7 @@ function renderWatchlist(data){
         </div>
         <div class="wl-card-metrics">
           ${s.pe?`<div class="wm"><div class="wm-label">P/E</div><div class="wm-val ${s.pe>100?'lo':s.pe<20?'hi':''}">${fn(s.pe,1)}×</div></div>`:''}
-          ${s.forward_pe?`<div class="wm"><div class="wm-label">Fwd P/E</div><div class="wm-val ${s.forward_pe<20?'hi':''}">${fn(s.forward_pe,1)}×</div></div>`:''}
+          ${s.forward_pe?`<div class="wm"><div class="wm-label">Next-FY P/E</div><div class="wm-val ${s.forward_pe<20?'hi':''}">${fn(s.forward_pe,1)}×</div></div>`:''}
           ${s.revenue_growth!=null?`<div class="wm"><div class="wm-label">Rev Grw</div><div class="wm-val ${s.revenue_growth>30?'hi':s.revenue_growth<5?'lo':'mid'}">${s.revenue_growth>0?'+':''}${s.revenue_growth}%</div></div>`:''}
           ${s.op_margin!=null?`<div class="wm"><div class="wm-label">Op Mgn</div><div class="wm-val ${s.op_margin>35?'hi':''}">${fn(s.op_margin,1)}%</div></div>`:''}
           ${s.buy_target?`<div class="wm"><div class="wm-label">Target</div><div class="wm-val" style="color:var(--green)">${fp(s.buy_target)}</div></div>`:''}
@@ -1219,7 +1219,7 @@ function renderStockDetail(s){
     <div class="dm-tile"><div class="dmt-label">Buy Target</div><div class="dmt-val hi">${s.buy_target?fp(s.buy_target):'—'}</div></div>
     <div class="dm-tile"><div class="dmt-label">Mkt Cap</div><div class="dmt-val" style="font-size:14px">${fBig(s.market_cap)}</div></div>
     <div class="dm-tile"><div class="dmt-label">P/E</div><div class="dmt-val ${s.pe>100?'lo':s.pe<20?'hi':''}">${s.pe?fn(s.pe,1)+'×':'—'}</div></div>
-    <div class="dm-tile"><div class="dmt-label">Fwd P/E</div><div class="dmt-val ${s.forward_pe&&s.forward_pe<20?'hi':''}">${s.forward_pe?fn(s.forward_pe,1)+'×':'—'}</div></div>
+    <div class="dm-tile"><div class="dmt-label">Next-FY P/E</div><div class="dmt-val ${s.forward_pe&&s.forward_pe<20?'hi':''}">${s.forward_pe?fn(s.forward_pe,1)+'×':'—'}</div></div>
     <div class="dm-tile"><div class="dmt-label">Rev Grw</div><div class="dmt-val ${s.revenue_growth>30?'hi':s.revenue_growth!=null&&s.revenue_growth<5?'lo':''}">${s.revenue_growth!=null?'+'+s.revenue_growth+'%':'—'}</div></div>
     <div class="dm-tile"><div class="dmt-label">Op Margin</div><div class="dmt-val ${s.op_margin>35?'hi':''}">${s.op_margin!=null?fn(s.op_margin,1)+'%':'—'}</div></div>
     <div class="dm-tile"><div class="dmt-label">Short %</div><div class="dmt-val ${s.short_percent_float>15?'lo':''}">${s.short_percent_float!=null?fn(s.short_percent_float,1)+'%':'—'}</div></div>
@@ -1431,7 +1431,7 @@ function renderSignals(data){
         </div>
         <div class="scb-row">
           <span class="scb-key">P/E</span><span class="scb-val">${s.pe?fn(s.pe,1)+'×':'—'}</span>
-          <span class="scb-key">Fwd P/E</span><span class="scb-val" style="color:var(--green)">${s.forward_pe?fn(s.forward_pe,1)+'×':'—'}</span>
+          <span class="scb-key">Next-FY P/E</span><span class="scb-val" style="color:var(--green)">${s.forward_pe?fn(s.forward_pe,1)+'×':'—'}</span>
         </div>
         <div class="scb-action">${esc(s.next_action)}</div>
       </div>

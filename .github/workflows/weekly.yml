@@ -2,7 +2,7 @@ name: Weekly Dashboard Rebuild
 
 on:
   schedule:
-    - cron: '0 22 * * 0'  # 6pm ET Sunday
+    - cron: '11 22 * * 0'  # 6pm ET Sunday, off the hour (GitHub delays :00 runs)
   workflow_dispatch:
 
 permissions:

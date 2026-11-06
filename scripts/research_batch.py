@@ -211,6 +211,9 @@ def main():
     if failures:
         print(f"⚠ Failed: {', '.join(failures)}")
 
+    if incremental and len(landed) * 2 < len(tickers):
+        print(f"::warning::Only {len(landed)}/{len(tickers)} tickers landed — check the model chain.")
+
     # Exit non-zero when NOTHING succeeded. This used to always exit 0, so when
     # NVIDIA retired our models (2026-08-26) every run researched 0/8 tickers
     # behind a green check for ~10 weeks. One bad ticker is noise; zero landed

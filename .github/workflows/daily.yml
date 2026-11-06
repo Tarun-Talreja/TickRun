@@ -5,9 +5,11 @@ on:
     # Every 30 min during US market hours. Cron is UTC (no DST), and the US is
     # on EDT (UTC-4) most of the trading year, so 13:30 UTC = 9:30am ET open.
     # 13:00-20:00 covers the full session incl. the open (was 14:00 — missed first 30m).
-    - cron: '0,30 13-20 * * 1-5'
-    # Plus end-of-day final at 6pm ET (22:00 UTC)
-    - cron: '0 22 * * 1-5'
+    # Minutes are off :00/:30 on purpose: GitHub delays or drops runs scheduled
+    # at those peak times, and :00/:30 gave about 3 runs a day, not 15.
+    - cron: '7,37 13-20 * * 1-5'
+    # Plus end-of-day final at 6pm ET
+    - cron: '7 22 * * 1-5'
   workflow_dispatch:
 
 permissions:

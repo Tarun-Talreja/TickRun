@@ -32,6 +32,7 @@ MOVERS_PATH    = os.path.join(SCRIPT_DIR, "data", "movers.json")
 # Thresholds
 MOVE_THRESHOLD = 3.0   # % change since last snapshot to flag (intraday spike)
 DAY_THRESHOLD  = 5.0   # % change on the day to flag regardless of snapshot
+MARKET_MOVE_PCT = 2.0  # an index move this big can explain a stock's move by itself
 
 # Cost/latency guards. On a broad market day 30+ names move >3%; one sequential
 # LLM call each blew past the workflow timeout. Only the biggest movers get an
@@ -62,7 +63,27 @@ def _verdict_map() -> dict:
     return {c["ticker"]: c.get("verdict", "") for c in wl.get("candidates", [])}
 
 
-def _llm_reason(ticker: str, pct: float, headlines: list[str]) -> str | None:
+def _market_note(quotes: dict) -> str:
+    spy = quotes.get("SPY", {}).get("pct_change_1d")
+    qqq = quotes.get("QQQ", {}).get("pct_change_1d")
+    if spy is None or qqq is None:
+        return ""
+    return f"Nasdaq 100 {qqq:+.1f}%, S&P 500 {spy:+.1f}%"
+
+
+def _market_reason(pct: float, quotes: dict) -> str | None:
+    """The market itself, when it moved hard the same way as the stock.
+
+    Headlines for a single ticker rarely mention the index, so on 2026-11-05,
+    with the Nasdaq 100 down 6.5%, every top faller read "No clear catalyst".
+    """
+    qqq = quotes.get("QQQ", {}).get("pct_change_1d")
+    if qqq is None or abs(qqq) < MARKET_MOVE_PCT or qqq * pct <= 0:
+        return None
+    return f"Moved with the broad market ({_market_note(quotes)}); no company-specific news found."
+
+
+def _llm_reason(ticker: str, pct: float, headlines: list[str], market_note: str = "") -> str | None:
     """One-sentence reason grounded ONLY in the provided headlines."""
     key = os.environ.get("NVIDIA_API_KEY") or os.environ.get("ANTHROPIC_API_KEY")
     if not key or not headlines:
@@ -75,7 +96,8 @@ def _llm_reason(ticker: str, pct: float, headlines: list[str]) -> str | None:
     direction = "up" if pct > 0 else "down"
     headlines_block = "\n".join(f"- {h}" for h in headlines)
     prompt = (
-        f"{ticker} moved {direction} {abs(pct):.1f}% today. Based ONLY on these "
+        f"{ticker} moved {direction} {abs(pct):.1f}% today. "
+        f"{'Market today: ' + market_note + '. ' if market_note else ''}Based ONLY on these "
         f"headlines, give the single most likely reason in ONE sentence (max 20 words).\n\n"
         f"A headline does NOT need to be ticker-specific to count as an answer. If the "
         f"headlines describe a broader sector or market move (e.g. 'tech stocks selloff', "
@@ -166,12 +188,16 @@ def main():
     for i, m in enumerate(movers):
         news = fetch_news(m["ticker"], 5)
         m["news"] = news[:3]
+        pct = m.get("primary_pct") or 0
+        market_reason = _market_reason(pct, quotes)
         if i < MAX_LLM_EXPLANATIONS:
             headlines = [n["title"] for n in news if n.get("title")]
-            reason = _llm_reason(m["ticker"], m.get("primary_pct") or 0, headlines)
-            m["reason"] = reason or "No clear catalyst in current news."
+            reason = _llm_reason(m["ticker"], pct, headlines, _market_note(quotes))
+            if not reason or reason.lower().startswith("no clear catalyst"):
+                reason = market_reason or "No clear catalyst in current news."
+            m["reason"] = reason
         else:
-            m["reason"] = "See headlines (explanation limited to top movers)."
+            m["reason"] = market_reason or "See headlines (explanation limited to top movers)."
 
     with open(MOVERS_PATH, "w") as f:
         json.dump({

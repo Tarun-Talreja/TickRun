@@ -7,7 +7,7 @@ name: Quarterly Hedge Fund Signal
 
 on:
   schedule:
-    - cron: '0 14 15 2,5,8,11 *'
+    - cron: '17 14 15 2,5,8,11 *'
   workflow_dispatch:
 
 permissions:

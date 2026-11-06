@@ -185,6 +185,7 @@ def main():
         try:
             d = datetime.fromisoformat(m["date"]).date()
         except Exception:
+            print(f"⚠ skipping macro event with a bad date: {m}")
             continue
         if today <= d <= horizon:
             days = (d - today).days

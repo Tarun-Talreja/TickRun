@@ -2,9 +2,10 @@ name: Catalyst Lookahead and Alerts
 
 on:
   schedule:
-    # 6:30am ET daily (10:30 UTC) — before the open, so an imminent catalyst
-    # reaches you while you can still act on it.
-    - cron: '30 10 * * *'
+    # 5:23am ET daily — before the open, so an imminent catalyst reaches you
+    # while you can still act on it. Early and off the hour because GitHub has
+    # been running these jobs hours late.
+    - cron: '23 9 * * *'
   workflow_dispatch:
 
 permissions:
