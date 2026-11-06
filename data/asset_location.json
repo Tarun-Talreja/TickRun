@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T05:57:55Z",
+  "generated_at": "2026-11-06T06:10:35Z",
   "rules": {
     "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
     "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
@@ -61,6 +61,16 @@
       "reason": "REIT \u2014 distributions are largely non-qualified and taxed as ordinary income, making this the most tax-inefficient asset class you hold. Sheltering it is worth more than sheltering an equivalent amount of growth stock."
     },
     {
+      "ticker": "LPLA",
+      "name": "LPLA",
+      "theme": "financials",
+      "verdict": "RESEARCH-WORTHY",
+      "div_yield_pct": 0.4,
+      "account": "ROTH",
+      "priority": "high",
+      "reason": "Highest-conviction growth pick (18% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+    },
+    {
       "ticker": "META",
       "name": "Meta Platforms, Inc.",
       "theme": "mega_cap_ai",
@@ -69,6 +79,16 @@
       "account": "ROTH",
       "priority": "high",
       "reason": "Highest-conviction growth pick (26% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "theme": "cybersecurity",
+      "verdict": "RESEARCH-WORTHY",
+      "div_yield_pct": null,
+      "account": "ROTH",
+      "priority": "high",
+      "reason": "Highest-conviction growth pick (20% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
     },
     {
       "ticker": "NVT",
@@ -191,16 +211,6 @@
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
     },
     {
-      "ticker": "LPLA",
-      "name": "LPLA",
-      "theme": "financials",
-      "verdict": "WATCHLIST",
-      "div_yield_pct": 0.4,
-      "account": "ROTH",
-      "priority": "medium",
-      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
-    },
-    {
       "ticker": "MA",
       "name": "MA",
       "theme": "quality_compounder",
@@ -226,16 +236,6 @@
       "theme": "edge_ai_silicon",
       "verdict": "RED FLAG",
       "div_yield_pct": 0.09,
-      "account": "ROTH",
-      "priority": "medium",
-      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "theme": "cybersecurity",
-      "verdict": "WATCHLIST",
-      "div_yield_pct": null,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."

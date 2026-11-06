@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-06T05:57:55Z",
+  "generated_at": "2026-11-06T06:10:35Z",
   "checked": 58,
   "flagged": 2,
   "quality": {
-    "ADP": {
+    "AMD": {
       "ok": true,
       "flags": []
     },
@@ -11,15 +11,15 @@
       "ok": true,
       "flags": []
     },
-    "AMD": {
-      "ok": true,
-      "flags": []
-    },
-    "AMZN": {
+    "ADP": {
       "ok": true,
       "flags": []
     },
     "AVGO": {
+      "ok": true,
+      "flags": []
+    },
+    "AMZN": {
       "ok": true,
       "flags": []
     },
@@ -80,7 +80,7 @@
       "ok": true,
       "flags": []
     },
-    "GEV": {
+    "GEHC": {
       "ok": true,
       "flags": []
     },
@@ -88,7 +88,7 @@
       "ok": true,
       "flags": []
     },
-    "GEHC": {
+    "GEV": {
       "ok": true,
       "flags": []
     },
@@ -116,19 +116,19 @@
       "ok": true,
       "flags": []
     },
-    "LPLA": {
-      "ok": true,
-      "flags": []
-    },
     "LMB": {
       "ok": true,
       "flags": []
     },
-    "MA": {
+    "LPLA": {
       "ok": true,
       "flags": []
     },
     "META": {
+      "ok": true,
+      "flags": []
+    },
+    "MA": {
       "ok": true,
       "flags": []
     },
@@ -144,10 +144,6 @@
       "ok": true,
       "flags": []
     },
-    "MU": {
-      "ok": true,
-      "flags": []
-    },
     "NBIS": {
       "ok": true,
       "flags": []
@@ -156,7 +152,11 @@
       "ok": true,
       "flags": []
     },
-    "NOW": {
+    "MU": {
+      "ok": true,
+      "flags": []
+    },
+    "NVT": {
       "ok": true,
       "flags": []
     },
@@ -164,7 +164,7 @@
       "ok": true,
       "flags": []
     },
-    "NVT": {
+    "NOW": {
       "ok": true,
       "flags": []
     },
@@ -213,7 +213,7 @@
       "flags": [
         {
           "level": "low",
-          "msg": "Reports in TWD; figures converted to USD at 0.0304. Trailing P/E may mix currencies \u2014 verify against filings"
+          "msg": "Reports in TWD; figures converted to USD at 0.0303. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
     },
