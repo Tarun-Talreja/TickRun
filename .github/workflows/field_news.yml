@@ -45,6 +45,11 @@ jobs:
       - name: Rebuild dashboard
         run: python scripts/build_dashboard.py
 
+      - name: Daily AI summary
+        env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API }}
+        run: python scripts/weekly_digest.py
+
       - name: Sync with remote before commit
         run: |
           git config user.name  "github-actions[bot]"
@@ -62,6 +67,7 @@ jobs:
             data/field_news.json
             data/radar.json
             data/radar_log.json
+            output/weekly_digest.json
             output/dashboard.json
 
       - name: Open issue on failure

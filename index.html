@@ -956,12 +956,14 @@ function renderHome(data){
     <div class="home-headline">Here's what needs<br>your attention today.</div>
     <div class="home-sub" id="homeTs">—</div>
   </div>
-  ${renderDailyBrief(data)}
-  ${renderHealth(data)}
-  ${digest.narrative?`<div class="digest-card s-anim" style="animation-delay:.07s">
-    <div class="digest-label">📋 This Week</div>
+  ${digest.narrative?`<div class="digest-card s-anim" style="animation-delay:.05s">
+    <div class="digest-label">✨ AI summary</div>
     <div class="digest-text">${esc(digest.narrative)}</div>
   </div>`:''}
+  ${renderDailyBrief(data)}
+  ${renderRadar(data)}
+  ${renderFieldNews(data)}
+  ${renderHealth(data)}
 
   <!-- Stat tiles -->
   <div class="stat-row">
@@ -1129,7 +1131,7 @@ function renderFieldNews(data){
   const headlines = f => f.sources.slice(0,3).map(s=>`<div class="fn-sum">${esc(s.title)}</div>`).join('');
   let h=`<div class="disc-wrap"><div class="disc-head">📰 Field briefing <span class="disc-note">from this week's headlines</span></div>`;
   fields.forEach(f=>{
-    h+=`<details class="fn-item"><summary class="fn-name">${esc(f.name)}</summary>
+    h+=`<details class="fn-item" open><summary class="fn-name">${esc(f.name)}</summary>
       ${f.summary?`<div class="fn-sum">${esc(f.summary)}</div>`:headlines(f)}
       <div class="fn-srcs">${sourceLinks(f)}</div></details>`;
   });
@@ -1172,7 +1174,7 @@ function renderWatchlist(data){
       <span class="filter-chip theme-chip ${theme==='all'?'active':''}" onclick="setTheme('all')">All Themes</span>
       ${themeKeys.map(t=>`<span class="filter-chip theme-chip ${theme===t?'active':''}" onclick="setTheme('${t}')" style="${theme===t?`background:${tc(t).color};border-color:${tc(t).color}`:`border-color:${tc(t).color}66`}"><span style="width:7px;height:7px;border-radius:50%;background:${tc(t).color};display:inline-block;margin-right:5px"></span>${esc(tc(t).label)} ${themeCounts[t]}</span>`).join('')}
     </div>
-    ${(filter==='all'&&theme==='all'&&searchQ==='')?renderRadar(data)+renderFieldNews(data)+renderDiscovered(data):''}
+    ${(filter==='all'&&theme==='all'&&searchQ==='')?renderDiscovered(data):''}
     <div class="wl-list">`;
 
     stocks.forEach((s,i)=>{
