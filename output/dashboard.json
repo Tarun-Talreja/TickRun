@@ -1,22 +1,22 @@
 {
-  "last_built": "2026-11-06T21:57:46Z",
-  "quotes_updated": "2026-11-06T21:56:21Z",
+  "last_built": "2026-11-06T21:59:44Z",
+  "quotes_updated": "2026-11-06T21:50:38Z",
   "health": {
     "stages": [
       {
         "name": "Quotes",
-        "updated_at": "2026-11-06T21:56:21Z",
+        "updated_at": "2026-11-06T21:50:38Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.2,
         "affects": "Prices and buy targets may be out of date"
       },
       {
         "name": "Research",
-        "updated_at": "2026-11-06T21:26:49Z",
-        "detail": "4/4 tickers",
+        "updated_at": "2026-11-06T21:59:26Z",
+        "detail": "2/2 tickers",
         "status": "ok",
-        "age_hours": 0.5,
+        "age_hours": 0.0,
         "affects": "Ratings aren't being updated"
       },
       {
@@ -29,34 +29,34 @@
       },
       {
         "name": "SEC filings",
-        "updated_at": "2026-11-06T21:26:55Z",
+        "updated_at": "2026-11-06T21:59:34Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 0.5,
+        "age_hours": 0.0,
         "affects": "New SEC filings won't show"
       },
       {
         "name": "Prices",
-        "updated_at": "2026-11-06T21:56:21Z",
+        "updated_at": "2026-11-06T21:50:38Z",
         "detail": "54/54 have data",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.2,
         "affects": "Prices and buy targets may be missing"
       },
       {
         "name": "Company figures",
-        "updated_at": "2026-11-06T21:56:21Z",
+        "updated_at": "2026-11-06T21:50:38Z",
         "detail": "54/54 have data",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.2,
         "affects": "Ratings can't check the numbers"
       },
       {
         "name": "News",
-        "updated_at": "2026-11-06T21:27:08Z",
-        "detail": "0/54 have data",
-        "status": "failing",
-        "age_hours": 0.5,
+        "updated_at": "2026-11-06T21:59:43Z",
+        "detail": "54/54 have data",
+        "status": "ok",
+        "age_hours": 0.0,
         "affects": "Ratings and mover reasons can miss recent news"
       },
       {
@@ -88,7 +88,7 @@
         "updated_at": "2026-11-06T05:37:21Z",
         "detail": "0/26 have data",
         "status": "failing",
-        "age_hours": 16.3,
+        "age_hours": 16.4,
         "affects": "Big moves may have no explanation"
       },
       {
@@ -96,7 +96,7 @@
         "updated_at": "2026-11-06T19:01:06Z",
         "detail": "12 found",
         "status": "ok",
-        "age_hours": 2.9,
+        "age_hours": 3.0,
         "affects": "The radar may be out of date"
       },
       {
@@ -120,14 +120,14 @@
         "updated_at": "2026-11-06T21:56:22Z",
         "detail": "6 sources passed",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "One of the data sources failed its daily test"
       },
       {
         "name": "Ratings",
         "updated_at": null,
         "age_hours": null,
-        "detail": "1/54 on current logic",
+        "detail": "2/54 on current logic",
         "status": "stale",
         "affects": "Some ratings still use older logic"
       }
@@ -814,7 +814,7 @@
         "data_flags": [
           {
             "level": "low",
-            "msg": "Reports in EUR; figures converted to USD at 1.1141. Trailing P/E may mix currencies \u2014 verify against filings"
+            "msg": "Reports in EUR; figures converted to USD at 1.1142. Trailing P/E may mix currencies \u2014 verify against filings"
           }
         ]
       },
@@ -996,7 +996,7 @@
         "bear_check": null,
         "price": 129.49,
         "pct_change_1d": 7.58,
-        "market_cap": 32877279232,
+        "market_cap": 35202535424,
         "cap_tier": "large",
         "drawdown_from_high": -56.8,
         "revenue_growth": 454.0,
@@ -1342,28 +1342,31 @@
         "name": "Vistra Corp.",
         "theme": "nuclear_smr",
         "status": "research_complete",
-        "thesis": "Cheapest nuclear-exposed power generator at 13x forward earnings with 2.3 GW of 24/7 capacity in AI-data-center corridors, 9x EBITDA, and $2.3B FCF covering debt 9x.",
+        "thesis": "Cheap nuclear/gas power generator at 13x forward earnings with record EBITDA, raised guidance, and direct exposure to AI data center power demand in ERCOT/PJM.",
         "added": "2026-05-28",
         "verdict": "RESEARCH-WORTHY",
-        "buy_target": 125.56,
+        "buy_target": 124.77,
         "current_price": 124.8,
-        "next_action": "RESEARCH \u2014 Cheapest nuclear-exposed power generator at 13x forward earnings with 2.3 GW of 24/7 capacity in AI-data-center corridors, 9x EBITDA, and $2.3B FCF covering debt 9x. Worth a deep dive before any decision.",
+        "next_action": "RESEARCH \u2014 Cheap nuclear/gas power generator at 13x forward earnings with record EBITDA, raised guidance, and direct exposure to AI data center power demand in ERCOT/PJM. Worth a deep dive before any decision.",
         "research_file": "output/research/VST_2026-11-06.md",
         "last_researched": "2026-11-06",
         "confidence": "MEDIUM",
-        "bear_check": "The strongest argument against buying VST is that revenue is already contracting (-5.5% YoY in the latest quarter) while the company carries $20.1B in net debt, and the core bull thesis depends on ERCOT scarcity pricing that regulators are actively trying to cap \u2014 if the Performance Credit Mechanism or similar reform succeeds, 40%+ of generation EBITDA could disappear, turning the current 13.2x forward P/E into a value trap rather than a bargain.\n\nBREAK: NONE\nEVIDENCE: none",
+        "bear_check": "**Strongest argument against buying VST:** VST\u2019s 13.1x forward P/E depends on a sharp earnings rebound even though latest-quarter revenue is down 5.5% YoY, while $20.1B of net debt equals roughly 48% of its $41.9B market cap despite $2.255B of annual FCF. If power prices normalize or the rebound is delayed, leverage magnifies downside; an extended Comanche Peak outage would also threaten high-margin generation and data-center PPA commitments. The apparent cheapness therefore offers limited margin of safety if either forecast risk materializes.\n\n**Break assessment:** No break is present. The revenue contraction does not contradict the note\u2019s central claim of record EBITDA, raised guidance, and AI-linked demand, and the headlines report no fraud, restatement, auditor resignation, bankruptcy, largest-customer loss, or withdrawn guidance.\n\n**Drawdown assessment:** The supplied headlines do not explain the 37% decline; they instead describe a recent post-earnings rally, so explanations such as market rotation or power-price normalization remain unverified.\n\nBREAK: NONE\nEVIDENCE: none\nWHY_IT_FELL: unknown\nFALL_EVIDENCE: none\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
         "llm_verdict": "RESEARCH-WORTHY",
         "bear_downgraded": false,
-        "buy_trigger_drawdown_pct": -36.2,
+        "buy_trigger_drawdown_pct": -36.6,
         "no_pullback_gate": false,
-        "rating_version": 2,
+        "rating_version": 3,
         "unsupported_figures": [
+          "40%",
           "18x",
-          "15%",
           "$1.5B",
-          "$100M",
-          "40%"
+          "4%",
+          "$800M",
+          "2.8x",
+          "48%"
         ],
+        "fall_reason": "The 36.6% drawdown from the 52-week high likely reflects earlier 2026 market rotation out of power/infrastructure names and ERCOT price normalization, not fundamental deterioration \u2014 recent Q3 results show record EBITDA and raised outlook.",
         "price": 124.8,
         "pct_change_1d": 10.55,
         "market_cap": 41887272960,
@@ -1728,7 +1731,7 @@
         ],
         "price": 133.12,
         "pct_change_1d": 6.44,
-        "market_cap": 4849780736,
+        "market_cap": 4849902592,
         "cap_tier": "mid",
         "drawdown_from_high": -59.4,
         "revenue_growth": 8.9,
@@ -2356,7 +2359,7 @@
         "bear_check": null,
         "price": 127.73,
         "pct_change_1d": 0.13,
-        "market_cap": 27848464384,
+        "market_cap": 27593289728,
         "cap_tier": "large",
         "drawdown_from_high": -1.0,
         "revenue_growth": 14.9,
@@ -3261,7 +3264,7 @@
           "bear_check": null,
           "price": 129.49,
           "pct_change_1d": 7.58,
-          "market_cap": 32877279232,
+          "market_cap": 35202535424,
           "cap_tier": "large",
           "drawdown_from_high": -56.8,
           "revenue_growth": 454.0,
@@ -3826,7 +3829,7 @@
           "bear_check": null,
           "price": 127.73,
           "pct_change_1d": 0.13,
-          "market_cap": 27848464384,
+          "market_cap": 27593289728,
           "cap_tier": "large",
           "drawdown_from_high": -1.0,
           "revenue_growth": 14.9,
@@ -4266,7 +4269,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in EUR; figures converted to USD at 1.1141. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in EUR; figures converted to USD at 1.1142. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -4608,28 +4611,31 @@
           "name": "Vistra Corp.",
           "theme": "nuclear_smr",
           "status": "research_complete",
-          "thesis": "Cheapest nuclear-exposed power generator at 13x forward earnings with 2.3 GW of 24/7 capacity in AI-data-center corridors, 9x EBITDA, and $2.3B FCF covering debt 9x.",
+          "thesis": "Cheap nuclear/gas power generator at 13x forward earnings with record EBITDA, raised guidance, and direct exposure to AI data center power demand in ERCOT/PJM.",
           "added": "2026-05-28",
           "verdict": "RESEARCH-WORTHY",
-          "buy_target": 125.56,
+          "buy_target": 124.77,
           "current_price": 124.8,
-          "next_action": "RESEARCH \u2014 Cheapest nuclear-exposed power generator at 13x forward earnings with 2.3 GW of 24/7 capacity in AI-data-center corridors, 9x EBITDA, and $2.3B FCF covering debt 9x. Worth a deep dive before any decision.",
+          "next_action": "RESEARCH \u2014 Cheap nuclear/gas power generator at 13x forward earnings with record EBITDA, raised guidance, and direct exposure to AI data center power demand in ERCOT/PJM. Worth a deep dive before any decision.",
           "research_file": "output/research/VST_2026-11-06.md",
           "last_researched": "2026-11-06",
           "confidence": "MEDIUM",
-          "bear_check": "The strongest argument against buying VST is that revenue is already contracting (-5.5% YoY in the latest quarter) while the company carries $20.1B in net debt, and the core bull thesis depends on ERCOT scarcity pricing that regulators are actively trying to cap \u2014 if the Performance Credit Mechanism or similar reform succeeds, 40%+ of generation EBITDA could disappear, turning the current 13.2x forward P/E into a value trap rather than a bargain.\n\nBREAK: NONE\nEVIDENCE: none",
+          "bear_check": "**Strongest argument against buying VST:** VST\u2019s 13.1x forward P/E depends on a sharp earnings rebound even though latest-quarter revenue is down 5.5% YoY, while $20.1B of net debt equals roughly 48% of its $41.9B market cap despite $2.255B of annual FCF. If power prices normalize or the rebound is delayed, leverage magnifies downside; an extended Comanche Peak outage would also threaten high-margin generation and data-center PPA commitments. The apparent cheapness therefore offers limited margin of safety if either forecast risk materializes.\n\n**Break assessment:** No break is present. The revenue contraction does not contradict the note\u2019s central claim of record EBITDA, raised guidance, and AI-linked demand, and the headlines report no fraud, restatement, auditor resignation, bankruptcy, largest-customer loss, or withdrawn guidance.\n\n**Drawdown assessment:** The supplied headlines do not explain the 37% decline; they instead describe a recent post-earnings rally, so explanations such as market rotation or power-price normalization remain unverified.\n\nBREAK: NONE\nEVIDENCE: none\nWHY_IT_FELL: unknown\nFALL_EVIDENCE: none\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
           "llm_verdict": "RESEARCH-WORTHY",
           "bear_downgraded": false,
-          "buy_trigger_drawdown_pct": -36.2,
+          "buy_trigger_drawdown_pct": -36.6,
           "no_pullback_gate": false,
-          "rating_version": 2,
+          "rating_version": 3,
           "unsupported_figures": [
+            "40%",
             "18x",
-            "15%",
             "$1.5B",
-            "$100M",
-            "40%"
+            "4%",
+            "$800M",
+            "2.8x",
+            "48%"
           ],
+          "fall_reason": "The 36.6% drawdown from the 52-week high likely reflects earlier 2026 market rotation out of power/infrastructure names and ERCOT price normalization, not fundamental deterioration \u2014 recent Q3 results show record EBITDA and raised outlook.",
           "price": 124.8,
           "pct_change_1d": 10.55,
           "market_cap": 41887272960,
@@ -4904,7 +4910,7 @@
           ],
           "price": 133.12,
           "pct_change_1d": 6.44,
-          "market_cap": 4849780736,
+          "market_cap": 4849902592,
           "cap_tier": "mid",
           "drawdown_from_high": -59.4,
           "revenue_growth": 8.9,
@@ -5869,7 +5875,7 @@
           "bear_check": null,
           "price": 129.49,
           "pct_change_1d": 7.58,
-          "market_cap": 32877279232,
+          "market_cap": 35202535424,
           "cap_tier": "large",
           "drawdown_from_high": -56.8,
           "revenue_growth": 454.0,
@@ -6025,7 +6031,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in EUR; figures converted to USD at 1.1141. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in EUR; figures converted to USD at 1.1142. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -6831,28 +6837,31 @@
           "name": "Vistra Corp.",
           "theme": "nuclear_smr",
           "status": "research_complete",
-          "thesis": "Cheapest nuclear-exposed power generator at 13x forward earnings with 2.3 GW of 24/7 capacity in AI-data-center corridors, 9x EBITDA, and $2.3B FCF covering debt 9x.",
+          "thesis": "Cheap nuclear/gas power generator at 13x forward earnings with record EBITDA, raised guidance, and direct exposure to AI data center power demand in ERCOT/PJM.",
           "added": "2026-05-28",
           "verdict": "RESEARCH-WORTHY",
-          "buy_target": 125.56,
+          "buy_target": 124.77,
           "current_price": 124.8,
-          "next_action": "RESEARCH \u2014 Cheapest nuclear-exposed power generator at 13x forward earnings with 2.3 GW of 24/7 capacity in AI-data-center corridors, 9x EBITDA, and $2.3B FCF covering debt 9x. Worth a deep dive before any decision.",
+          "next_action": "RESEARCH \u2014 Cheap nuclear/gas power generator at 13x forward earnings with record EBITDA, raised guidance, and direct exposure to AI data center power demand in ERCOT/PJM. Worth a deep dive before any decision.",
           "research_file": "output/research/VST_2026-11-06.md",
           "last_researched": "2026-11-06",
           "confidence": "MEDIUM",
-          "bear_check": "The strongest argument against buying VST is that revenue is already contracting (-5.5% YoY in the latest quarter) while the company carries $20.1B in net debt, and the core bull thesis depends on ERCOT scarcity pricing that regulators are actively trying to cap \u2014 if the Performance Credit Mechanism or similar reform succeeds, 40%+ of generation EBITDA could disappear, turning the current 13.2x forward P/E into a value trap rather than a bargain.\n\nBREAK: NONE\nEVIDENCE: none",
+          "bear_check": "**Strongest argument against buying VST:** VST\u2019s 13.1x forward P/E depends on a sharp earnings rebound even though latest-quarter revenue is down 5.5% YoY, while $20.1B of net debt equals roughly 48% of its $41.9B market cap despite $2.255B of annual FCF. If power prices normalize or the rebound is delayed, leverage magnifies downside; an extended Comanche Peak outage would also threaten high-margin generation and data-center PPA commitments. The apparent cheapness therefore offers limited margin of safety if either forecast risk materializes.\n\n**Break assessment:** No break is present. The revenue contraction does not contradict the note\u2019s central claim of record EBITDA, raised guidance, and AI-linked demand, and the headlines report no fraud, restatement, auditor resignation, bankruptcy, largest-customer loss, or withdrawn guidance.\n\n**Drawdown assessment:** The supplied headlines do not explain the 37% decline; they instead describe a recent post-earnings rally, so explanations such as market rotation or power-price normalization remain unverified.\n\nBREAK: NONE\nEVIDENCE: none\nWHY_IT_FELL: unknown\nFALL_EVIDENCE: none\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
           "llm_verdict": "RESEARCH-WORTHY",
           "bear_downgraded": false,
-          "buy_trigger_drawdown_pct": -36.2,
+          "buy_trigger_drawdown_pct": -36.6,
           "no_pullback_gate": false,
-          "rating_version": 2,
+          "rating_version": 3,
           "unsupported_figures": [
+            "40%",
             "18x",
-            "15%",
             "$1.5B",
-            "$100M",
-            "40%"
+            "4%",
+            "$800M",
+            "2.8x",
+            "48%"
           ],
+          "fall_reason": "The 36.6% drawdown from the 52-week high likely reflects earlier 2026 market rotation out of power/infrastructure names and ERCOT price normalization, not fundamental deterioration \u2014 recent Q3 results show record EBITDA and raised outlook.",
           "price": 124.8,
           "pct_change_1d": 10.55,
           "market_cap": 41887272960,
@@ -7219,7 +7228,7 @@
           ],
           "price": 133.12,
           "pct_change_1d": 6.44,
-          "market_cap": 4849780736,
+          "market_cap": 4849902592,
           "cap_tier": "mid",
           "drawdown_from_high": -59.4,
           "revenue_growth": 8.9,
@@ -7912,7 +7921,7 @@
           "bear_check": null,
           "price": 127.73,
           "pct_change_1d": 0.13,
-          "market_cap": 27848464384,
+          "market_cap": 27593289728,
           "cap_tier": "large",
           "drawdown_from_high": -1.0,
           "revenue_growth": 14.9,
@@ -13166,7 +13175,7 @@
     }
   },
   "asset_location": {
-    "generated_at": "2026-11-06T21:27:08Z",
+    "generated_at": "2026-11-06T21:59:44Z",
     "rules": {
       "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
       "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
@@ -13458,16 +13467,6 @@
         "reason": "Highest-conviction growth pick (9% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
       },
       {
-        "ticker": "RDDT",
-        "name": "Reddit, Inc.",
-        "theme": "platform_network",
-        "verdict": "RESEARCH-WORTHY",
-        "div_yield_pct": null,
-        "account": "ROTH",
-        "priority": "high",
-        "reason": "Highest-conviction growth pick (53% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
-      },
-      {
         "ticker": "STZ",
         "name": "STZ",
         "theme": "defensive_income",
@@ -13651,6 +13650,16 @@
         "ticker": "OKLO",
         "name": "Oklo Inc.",
         "theme": "nuclear_smr",
+        "verdict": "WATCHLIST",
+        "div_yield_pct": null,
+        "account": "ROTH",
+        "priority": "medium",
+        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+      },
+      {
+        "ticker": "RDDT",
+        "name": "Reddit, Inc.",
+        "theme": "platform_network",
         "verdict": "WATCHLIST",
         "div_yield_pct": null,
         "account": "ROTH",
@@ -14506,7 +14515,136 @@
         "action": "Review thesis before earnings. Re-run research_ticker.py MRVL after."
       }
     ],
-    "sec_ownership_stakes": [],
+    "sec_ownership_stakes": [
+      {
+        "ticker": "DHR",
+        "form": "SCHEDULE 13G",
+        "label": "PASSIVE 5% STAKE",
+        "meaning": "5%+ passive stake \u2014 institutional conviction",
+        "filed_date": "2026-11-05",
+        "url": "https://www.sec.gov/Archives/edgar/data/313616/000031506626002718/xslSCHEDULE_13G_X02/primary_doc.xml"
+      },
+      {
+        "ticker": "RDDT",
+        "form": "SCHEDULE 13G",
+        "label": "PASSIVE 5% STAKE",
+        "meaning": "5%+ passive stake \u2014 institutional conviction",
+        "filed_date": "2026-10-30",
+        "url": "https://www.sec.gov/Archives/edgar/data/1713445/000210012126001089/xslSCHEDULE_13G_X02/primary_doc.xml"
+      },
+      {
+        "ticker": "TSM",
+        "form": "SCHEDULE 13G",
+        "label": "PASSIVE 5% STAKE",
+        "meaning": "5%+ passive stake \u2014 institutional conviction",
+        "filed_date": "2026-10-27",
+        "url": "https://www.sec.gov/Archives/edgar/data/1046179/000201238326003352/xslSCHEDULE_13G_X02/primary_doc.xml"
+      },
+      {
+        "ticker": "POWL",
+        "form": "SCHEDULE 13G",
+        "label": "PASSIVE 5% STAKE",
+        "meaning": "5%+ passive stake \u2014 institutional conviction",
+        "filed_date": "2026-10-27",
+        "url": "https://www.sec.gov/Archives/edgar/data/80420/000144554626008034/xslSCHEDULE_13G_X02/primary_doc.xml"
+      },
+      {
+        "ticker": "CBRS",
+        "form": "SCHEDULE 13G/A",
+        "label": "PASSIVE UPDATE",
+        "meaning": "Passive holder changed their 5%+ position",
+        "filed_date": "2026-11-06",
+        "url": "https://www.sec.gov/Archives/edgar/data/2021728/000159588826000136/xslSCHEDULE_13G_X02/primary_doc.xml"
+      },
+      {
+        "ticker": "MRVL",
+        "form": "SCHEDULE 13G/A",
+        "label": "PASSIVE UPDATE",
+        "meaning": "Passive holder changed their 5%+ position",
+        "filed_date": "2026-11-05",
+        "url": "https://www.sec.gov/Archives/edgar/data/1835632/000031506626002798/xslSCHEDULE_13G_X02/primary_doc.xml"
+      },
+      {
+        "ticker": "COHR",
+        "form": "SCHEDULE 13G/A",
+        "label": "PASSIVE UPDATE",
+        "meaning": "Passive holder changed their 5%+ position",
+        "filed_date": "2026-11-05",
+        "url": "https://www.sec.gov/Archives/edgar/data/820318/000031506626002716/xslSCHEDULE_13G_X02/primary_doc.xml"
+      },
+      {
+        "ticker": "VST",
+        "form": "SCHEDULE 13G/A",
+        "label": "PASSIVE UPDATE",
+        "meaning": "Passive holder changed their 5%+ position",
+        "filed_date": "2026-11-05",
+        "url": "https://www.sec.gov/Archives/edgar/data/1692819/000031506626002865/xslSCHEDULE_13G_X02/primary_doc.xml"
+      },
+      {
+        "ticker": "GEV",
+        "form": "SCHEDULE 13G/A",
+        "label": "PASSIVE UPDATE",
+        "meaning": "Passive holder changed their 5%+ position",
+        "filed_date": "2026-11-05",
+        "url": "https://www.sec.gov/Archives/edgar/data/1996810/000031506626002757/xslSCHEDULE_13G_X02/primary_doc.xml"
+      },
+      {
+        "ticker": "MKTX",
+        "form": "SCHEDULE 13G/A",
+        "label": "PASSIVE UPDATE",
+        "meaning": "Passive holder changed their 5%+ position",
+        "filed_date": "2026-11-05",
+        "url": "https://www.sec.gov/Archives/edgar/data/1278021/000076321226000031/xslSCHEDULE_13G_X02/primary_doc.xml"
+      },
+      {
+        "ticker": "CBRS",
+        "form": "SCHEDULE 13G/A",
+        "label": "PASSIVE UPDATE",
+        "meaning": "Passive holder changed their 5%+ position",
+        "filed_date": "2026-11-05",
+        "url": "https://www.sec.gov/Archives/edgar/data/2021728/000031506626002909/xslSCHEDULE_13G_X02/primary_doc.xml"
+      },
+      {
+        "ticker": "RDDT",
+        "form": "SCHEDULE 13G/A",
+        "label": "PASSIVE UPDATE",
+        "meaning": "Passive holder changed their 5%+ position",
+        "filed_date": "2026-10-30",
+        "url": "https://www.sec.gov/Archives/edgar/data/1713445/000210011926001666/xslSCHEDULE_13G_X02/primary_doc.xml"
+      },
+      {
+        "ticker": "GIS",
+        "form": "SCHEDULE 13G/A",
+        "label": "PASSIVE UPDATE",
+        "meaning": "Passive holder changed their 5%+ position",
+        "filed_date": "2026-10-30",
+        "url": "https://www.sec.gov/Archives/edgar/data/40704/000210012126001032/xslSCHEDULE_13G_X02/primary_doc.xml"
+      },
+      {
+        "ticker": "RDDT",
+        "form": "SCHEDULE 13G/A",
+        "label": "PASSIVE UPDATE",
+        "meaning": "Passive holder changed their 5%+ position",
+        "filed_date": "2026-10-27",
+        "url": "https://www.sec.gov/Archives/edgar/data/1713445/000201238326003836/xslSCHEDULE_13G_X02/primary_doc.xml"
+      },
+      {
+        "ticker": "VRT",
+        "form": "SCHEDULE 13G/A",
+        "label": "PASSIVE UPDATE",
+        "meaning": "Passive holder changed their 5%+ position",
+        "filed_date": "2026-10-27",
+        "url": "https://www.sec.gov/Archives/edgar/data/1674101/000201238326003859/xslSCHEDULE_13G_X02/primary_doc.xml"
+      },
+      {
+        "ticker": "PODD",
+        "form": "SCHEDULE 13G/A",
+        "label": "PASSIVE UPDATE",
+        "meaning": "Passive holder changed their 5%+ position",
+        "filed_date": "2026-10-27",
+        "url": "https://www.sec.gov/Archives/edgar/data/1145197/000201238326003799/xslSCHEDULE_13G_X02/primary_doc.xml"
+      }
+    ],
     "sec_material_events": [
       {
         "ticker": "VST",
@@ -15534,7 +15672,408 @@
         "next_action": "WAIT \u2014 High-quality technology company with strong brand and cash flow generation, valued at a premium to its peers. Revisit at 10% below the 52-week high."
       }
     ],
-    "news": [],
+    "news": [
+      {
+        "ticker": "NVDA",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Nvidia stock oversold setup: Key levels after a 9% drop",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNjhTc0JFcEFDRDdXX3N3VDROUHZWS25HV0loYWVGV2tYaC05U3Vvc3hxdW91UERlREdKQVIxS2Y0c1M1UmE5LXUtdU9WT0pqVFJBRWZzRU0zS1hPWTByX2QtRUp3SFN2dGRyekZPSV9VdVY2NHBkSEJjdnc4T2JaRU9RdVhiaDdRY1VUR2NYWUI5cnVVMHJVaE1faGE?oc=5"
+      },
+      {
+        "ticker": "NVDA",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "AMD Jumps 8%, Intel and NVIDIA Climb 5% as Chip Stocks Rebound From Worst Sell-Off Since 2020",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMW1ORFRuT241UWRmRjRmYTlsWWFNV3dYUm9EMGU3dy1qdTVnRnRrODJOVnRZeFltam1icENSd1Z4UWlyRlhUT1dmQ2s3SGhkSTVSRmpmTFNBVDZPYlNic0VnRlo2UEpCVDlRV0pUUGxrcnJUcVlMbDZ0R3UxcHhLbmxWdDRXWGxLbVJpaDZaaFdvemc?oc=5"
+      },
+      {
+        "ticker": "NVDA",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Jensen Huang Says Nvidia's Next-Gen Vera Rubin Chips Will Generate $40 Billion in Revenue per Gigawatt, Up From $25 Billion for Grace Blackwell. What That Means for Nvidia's Growth Runway?",
+        "publisher": "The Motley Fool",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNcUFWdjA2ZXlKcFMtdk5DS0RtTHJ1N1dDSnpjN2VoMFpnZDN5MFU3WjVpUHFQMm9ZZy1nNEJSZ1pYM3g1dEkzWmJxcHZmaC1TY1Nkc2FIcFlOMl9OQWw2a3A1cXVZQ3NMclpadmZFQTdkYWVTS1dibjFSVDVXeGIwZTFtRHZHZHpnZUFXaWItMGJab09MblRnTw?oc=5"
+      },
+      {
+        "ticker": "AVGO",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Broadcom's AI Revenue Is Exploding. Here's What Investors Should Watch Next.",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVTNSR0JBRjZNeGhUcG1lSzhFMXFFUk9NUklYQ3JlczhVaDFoMEh6cGQyUG13eW5iN2FLRklTUTRTSWhvS0ZvaFBOT241VTlTdERzUllYUUlxRG80NVI3aDJUeDQxUk1oQUF3WUYydVl5SUQyc0xaakwyUUhOdlU4N1VNai1qWEhjN25acjdhWHNnTm9uRGhwQTQ1R1lHNGZONHc?oc=5"
+      },
+      {
+        "ticker": "AVGO",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Broadcom (AVGO) Stock Slides 35% from Peak, Testing Key Technical Support Around $325 Mark",
+        "publisher": "FXLeaders",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdDV4V1VVc0lsREZpeUY3NkdhdWhKX21oR0NuTmhRNHA0YjB3d211bmd6YjdsekxZTkh5S0tseXZ0Vi10U3FhNGN2OTBjLVRlSTlGS1NSdkRGZHMtUTgzdGRCbk1CdC14VXdOLXRjRE9DZDYzWDhrdEtiYVg1VkFYVWQ1dXp4a2FtYm5rLVBvVzU0Rnh3LUJXX0d5NF93UEx2dG9BQ2tacW1yclg2clF0dVJvam5ZbjJJVWtVMHlTWjVCb2lZWHhV?oc=5"
+      },
+      {
+        "ticker": "TSM",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "TSMC Surges 7% as Taiwan Restricts Short Selling to Halt Brutal Semiconductor Crash",
+        "publisher": "Benzinga",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNM2hZUDk1T3U3OEw2NkpBWHdaclZhNWlEUTZmVU9SOW8zVWctaXFJRFAwSzhlOUpDN0VOdHhLZ21FZ2kwQlliTVJxYnQ4LWJSYndSdWNsa3p3dUlSUldjRV9wZGFaQ25PaEtVSWFuUDFMUC16ZEJjZ2JlQzduZlExTGo0X0JJUnFHRWM4ZTZhVHEtb3hfRzhtREJXQVhxb0dvcjZZcEE1SmlPaFl0enU4Zi1ZaDM4ZDdra2pKdUtROVNSVXotSlB2TlFDczFwSG90?oc=5"
+      },
+      {
+        "ticker": "TSM",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Why did TSM stock drop 10%, and why is it bouncing? The midterm chip rout and Taiwan's short-selling curbs",
+        "publisher": "Nacionale",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPQXl5ZXlKWFZ1WFdZdWhPcTl1ZXBranZjbjBPUTRRRngzakc1RGJxTlRLR2VWTlo0Y3JYMFAxTnZ1N2V6dnZtcEtVdG5EcXZ3Z2pSYWFtcUJqbC1wM1FsSzhNV0dyVjFPemo1bXdXOFFyMHF4OGJZMUNCVFMyemE3YW5MazU1Sk1NUU5fRUFES3BFVEI0Qmp0NFB4WWR6WnBVaUU5QnVia1U4SEpHekE?oc=5"
+      },
+      {
+        "ticker": "NOW",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "ServiceNow cuts jobs in US, UK, India in AI restructuring",
+        "publisher": "Tech in Asia",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOUlFKMlJTOXRwaXE0a3JXNVNVNzVVdXVoLXNGN25DdjBDemFrWTBPTElENXBoZU1ObjBGMmtTNS1QLXZuZG52cG5TTWZqdjhRX25ESE1oaXdFdC14S1RQcUlzV01OZm1GQ0JPYWpKaE83d2Y3VUp3eDJvVW5rcmZvb2hWbGdVYlVORTBoZUVCM0w?oc=5"
+      },
+      {
+        "ticker": "AMD",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Can AMD Stock Fall 50%?",
+        "publisher": "Trefis",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQl9xUGNqZ1pXalUyZXRUTWxhR3RkTktfa3dQdFVBSHpXN2FESFhpYkFNMklRdnRFblBkZFJYb0xkbFdSM2EzRnRMT25aVFozempPNHlkLVVzX3F3d2dfSDI3dlBFWlh0T3hTSHM4WWgxWnNRQ2JXSHZLN3l1amItczlrVnhxSlB6?oc=5"
+      },
+      {
+        "ticker": "MRVL",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Marvell Technology, Inc. Announces Conference Call to Review Third Quarter of Fiscal Year 2027 Financial Results",
+        "publisher": "www.marketscreener.com",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPT1hIZGNTemVNZEowaXB1TU1XVGZfdHB3N0dMdV9xaG84NEc3eHRWck9Uc3VSV2hiX1h1YW5VOGtoLWdFYkg0TDBuQlZGXzlrTEZrTDRNbVpsa0VCcGpvS1JUTTNRUnUyWTFkSlBvYjhGWENISE9HbGtWUjFHSFV1SVJTQU5kUHdGZmxJMlo4RmRBUEYxX1M0Y1ZSV3ZBODI3U0FiU2NHeTV4NXdUQzlSWUR1NlZib2VpZDl5MXowX3NKZGJ3U0RzdUhzcHMzNnpBY0Z6X0I2eEE2eFpjX1F2R2pBa1NRUQ?oc=5"
+      },
+      {
+        "ticker": "IBM",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "IBM Stock Could Be More Than a \u2018Safe Haven.\u2019 Quantum Computing Is a Big Reason.",
+        "publisher": "Barron's",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObUp2MllRTVBhMUdlTWtVNFdkZWVMS1EwWEVEaVB1SU1sM2YyMHQ3UWZFWUdlaTk3MGg1TFJROWFvV3ZEQUJjN2poWEZ1UE94N0tZVERaNFNTNDF1czNuTlljYjBNbTI1X3NtdG9oY1Q3TldRVzlVN1U1Rk1qTWs4dFFCeEE?oc=5"
+      },
+      {
+        "ticker": "IBM",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "AI for business workflows on IBM Z: Governed decisions with z/OS Connect",
+        "publisher": "IBM",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5mN1Y2bmVXLWFoYU1nR244Zng3MFBhR3BlSE1lOFFIMENRQUNKUlBLMWlaWklsdlE1dUwxbGtmN3BZclZ3ajRnc0s2T2IwNG9XYVdVVlZ6ekN1dmhYTXNqaGNKUUJ2TVpISE9xRmZuamxSN1BY?oc=5"
+      },
+      {
+        "ticker": "IBM",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Forward deployed units: IBM Consulting\u2019s field model for scaling AI and transformation",
+        "publisher": "IBM",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRGE0NTBOU1NlVmJOWElUaGo2WEdicnh4bnRVcll4cFBVbW9kMHAxM29RSDR3UHhyZ3d2dmJmRjZyc212U0owOWZlWmpOMm9tSVBMTF8yZUtQRmRiSHNfZjlWWG1wVXdwRURzR1J1bFd2QUIzQzFlTExobnZXYmowMThHT052R2k2RlFCZXhkczYyY3owMTdNUXBwRVpYZGhPR1lITmF6TjBKMjZaMU9R?oc=5"
+      },
+      {
+        "ticker": "IBM",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "IBM\u2019s most advanced quantum computer unveiled at UChicago\u2019s Hyde Park Labs",
+        "publisher": "UChicago News",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQVY5Uk5ybFBQWFoyOVF3RmF0aGZmbnVLNUVRNFJDZVM4NVhuSHVhMkN3RGRXNGV4eUgzQkhKdTYwbEp3RkxTdTdXemIzUTNwcnRNazcyd2hLS0c2WUVrV0kyUGpNQ0owUnBsM2NLQ2FIeElCZWN5enRZWERkRS0xZnZGZHlfbi1UdUFjdkF5X19VR3RXTDZ2bHRYdUVmVlVUYzlr?oc=5"
+      },
+      {
+        "ticker": "COHR",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Coherent (COHR) Surges 11.86% Leading S&P 500 Rebound on November 06, 2026",
+        "publisher": "GuruFocus",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeFNfdTFtd0Fxdnh6bFVJamNBUmdCUGZrNzVadm5OTjV4LTRDbUNIYjZZSFd0X2ZlTmRJLVMtb0JTbUtHSlFMcmM5S3lfX2hWN1BJUVhjU1NLNGVhS2RfRlAyeGE4UkFfSDAyVmRISGN5SWU4Z1Z3NmlzcDNWMzFRUFNMMkVqLWlqbk9nbUxpSFJPWGMxTk04eWg1SVlOd3cwaUxYSndITzJ4d2c?oc=5"
+      },
+      {
+        "ticker": "CEG",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Here Is What The Trailing P/E Misses About Constellation Energy Stock",
+        "publisher": "Trefis",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNWlhpUW9IejBWQ21JWUlhV1FNblV3OXlyNURFQWc3UDRpWnlaeDIyZjFZLUZ3VzJETTFCNEthZHJpSFZVZlVGWTU4bFBTTGt0OXZRSjJZc1AzWWN2WlJwcVVXYk1PWmRlYVdxdk4xaUpCWjl2Y3FGSVdNd3VJX01BczVfQ3Q0MW4xNXl6MVRGSFNCRmpPZC1hOFRfeG9XN19pcE5JV2dzTTV4SHNsalR6dGxfNnpNT05hdGtQMnd0bXpCQjZXdFJBWg?oc=5"
+      },
+      {
+        "ticker": "CEG",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Constellation Energy (CEG) Set to Report Q3 Earnings on November 9",
+        "publisher": "GuruFocus",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQmVBTVhhX2d4aXVudURDSlltMkJlX1V3V0pRbTBYTU10UGtHMWxFWHhJME1UU1RJcU5saElDYWl3Z25aaE1JUFg2YlB3dGJKUUVfTS1RN1ZuYzJFa0NVZlo5ZHZ6SDhldFRkMVdZOGlPNzBqdHpnZFpSZnR5RlZMZE1oeGxLVUpNcmVEOGlCbVdybEVxaXVQY0xzeWRFN2dqdjZtbm13?oc=5"
+      },
+      {
+        "ticker": "CEG",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Constellation Energy Group, Inc. (CEG) call put ratio 1 call to 1.9 puts into quarter results",
+        "publisher": "StreetInsider",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPY3R5cGdHZnI1NURCUXp3YUNUb1BJN1dsVTh6S0l6RVJpLXNMdGdwOHFCeXUzRnZvLUZnaDdya3hTR3VGVWowa2pLRmUyekcxYzFuUG4tM2JJWUkxZDZsQ3Q0ZkJKeU1yUHZuTjZlYmh3UkstU1ZjQmw2X2hnY2hDMFdDNDFUQXhZeUdDQ3VLQWhMWGdSOHp3WWtyVWJKSFBrbjVrVnVIZS05TGEwRGRKWVpfTDh1dm5YVXh1U2IyRTBJSUY0R3R3TmszSU4wbjZ2Z1FOS19ucjhfa2lGTmpTUFkyMGY0Z2wzOWlwdFdRSW5CODQ?oc=5"
+      },
+      {
+        "ticker": "CEG",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Constellation Energy Fell 9% on the Midterm Sweep. Monday\u2019s Report Has to Defend Its Growth Estimates",
+        "publisher": "TIKR.com",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQ284R1JDQXlYcHFoX2NESnZoU3Y2Vnh4ekdWOVpKUld0ZVNicXd2a3pIWnNlcFNMSzdCbjBsLWxBYS05SGY3c2xpUWF1OVpnR1B3S0VzWkoyWVA5UmJOLWxSbDNEZTR2NDRvWnBHSlZ0dFpNWjk3WjB4UVYzMVdQTEJjUzBvYnRudlg0RlV1NVhHWDNQMzBwNzJuakUtal9mUXROaDBNMUxSUEZ4NmFYakRKTjZoSWhPSDVER25feU0tYTQ?oc=5"
+      },
+      {
+        "ticker": "VST",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Vistra Shares Rise 5% as Q3 Profit Surges Despite Revenue Miss, Raises 2026 Outlook",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcUFMNnk5VkxGYnVVQXlrNWtJMTRLX3lrYXBQbTdjX01YU2lBU2p2WWZaRl96MnNPXzgyN0lsRG91d3hZTXNDQ1g0eWl6MWVVMW52WGJpM011d2puMmZIRllWNFdMbTVyNUprbXYxZS0tYzJwY19qY3FidDlNRGxWN1NXOVY3MDQ?oc=5"
+      },
+      {
+        "ticker": "VST",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Vistra stock jumps despite revenue miss",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOM3d3TnVsOHBfSUNRNWZkTjBLUlpmSWhFSWpxRXUtYVFteHRDaGI2Y0VTUEJkam1IU3EzWHVucGJNdGFZdVA1bTFuS2p3UEczVi14VG51SnR1SldkOVhCM1VubVI1RW1SRE5NS2ZYd0VzbVF1ZjdhSmxyVjN3ajNQUm5VTzZybXVRTWl1a01lYXpWb2Q2U0c0Zzc3M1A4VklH?oc=5"
+      },
+      {
+        "ticker": "VST",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Vistra Stock Soars After Surprising Q3 Sales Results",
+        "publisher": "Benzinga",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVU0xSkdXaEo2bkh5UDJoQ2RoYmtvSmstOW5VZ0c3QkRCeVN4MVN6dy1Dc0NWMHpmWWVuMVQyV3lvM2pZRlg1MHI3a0tVbzdkV1NQMy1wM2lXWVFPb3BhLW04aFhXc29VWGhWQmZ6NlZHRVZPT29zRlpEaWIycklQVGlTUmREY0RiTmVaeTV1dHBNdU5oc25IV0hzR1haaU9xNDJ6dEluUkpTWjk4MTd4QlZLdw?oc=5"
+      },
+      {
+        "ticker": "VST",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Vistra Corp. (VST) Stock Forecasts",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPU0Q4ODlDbkFCa0JDZzJnd2p6R3B6NXJ4ZUdTV0dnaVd6emlMbTZmTFRvLWJQc2tTeHo4MkJUcWVZTnJ6eU16NC1QaVh6YnVGckp1U3JFdWZ5dzN3Q0hZOGdKeDJsejE4djVFdndQVnhhQ0ZhUWFhU2wzYUNMQ2dRZEhqRXctbmdGSmJ5Uw?oc=5"
+      },
+      {
+        "ticker": "VST",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Top Wall Street Forecasters Revamp Vistra Expectations Ahead Of Q3 Earnings",
+        "publisher": "Benzinga",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQYVRBWWJJeXoxNEEwaDNYbHBuZTU4OUNCUERZQzFGcE40SWx6M2VwVm9DTUNpZElITG1XSW0tS1B0cDdFX0hLbDZYQkdYUkJnaEp5clA2Z3ZSUWFOZmh0Qjl1b2M1YVh1V0tkUWp6SElzSTBiakJ2U2ZFNGU3TUs3SC1MNGRrTlAwVGdRNFJjT0FNa1paTjIxUm10RXZXbnJwek5TWUFnQzdPZ0FfeDdQN1JNQjBaSzFkZjZjaHhud1lVeEtDWlJQcms2VkcwMFlybzJIRE1VMHpGYWd4OWl6SUs5NHE?oc=5"
+      },
+      {
+        "ticker": "VST",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Vistra shares surge nearly 10% after earnings, driven by strong AI power demand",
+        "publisher": "XTB.com",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPYWVHbzB3X1VoeVR6NkdrMHNwcnVlU0l2amRfQl9qMmhRR0Y2OGk0STh6WUtKWnltQmxxVTlfajA3WVF4c0tpbVFtQ3U3alJQRE9CQl9xSkhrT3QxUm9GYjJCc3NyaFlCajZjcWJ4RUJ6eFhwNUliUC11OUN3M3RnbGdyVm9VZ1ZscENKODZwSDJMUmZGZTB0cVJsdVotN0JacjBTdVRMbHZyS1YtZGxJaUdzNUhxdXRoX25zejlfa1JYWUgwa1cwYTZZdkZWS1U?oc=5"
+      },
+      {
+        "ticker": "VRT",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "What Should Vertiv Stock Holders Take From Its Third-Quarter Report?",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPU0FKbWw2bm9heHk0REdJWWtrdlJVSXpxcHlnUGlVZFBUX1pjSUtsQ2FyV0RUVHNWVXBVc0FLa0ZDQ0ZZaUR0aDRRZ0RodDRtTmFLSHY0Z1JMcTlrU2VRQUVfX2FiVUtLRE1vdEVzZlVQWXFVMnpMWUdFRzR2bjczSUlXdWEtX1JDbWhreEZqYmE2NkRfTjRqODV1eUlBel9T?oc=5"
+      },
+      {
+        "ticker": "VRT",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "What Is Behind The Drop In Vertiv Stock?",
+        "publisher": "Trefis",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObjNRTUpXS1J0UndNZ3NXVF84dXJEY3pHQ2VUYmhrRmR4OUFtODFrN0FWa3BOOVk3dFBoWHBSQ0R5dnh5LW4wZlBoOHJFWHpGRVdYcTBPcUpwRjBCTTctRG12RkRwUEVwazJzSU1rQmgwTXpPT0RHZHl6T0ZxWEZSbk0yS0N4czYzckRTYVJIZEZsRmhjU0NuWHlOVlNKSVB4?oc=5"
+      },
+      {
+        "ticker": "VRT",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Vertiv Beat by $550 Million Last Week. It Has Lost 23% Since Tuesday\u2019s Vote",
+        "publisher": "TIKR.com",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOWWpKQk5YYVYyZjJxVzhJOGV4YU8xVkNPLWxKQ0Vha3dicnROeVdKU0RsTE1NVlJrMlpMdkxUWXNKcHpTZndzMWhnYUJqTnBXYnJ3OVZ1LXVVOWVobUpnT25vZTZVb1NfN3AyS212YXE0TzVrbnhteHVFclgzY24wLWFhRlhpTndJbVRfWWF3MGNibmJvdVQ4R2ZfMW9aQQ?oc=5"
+      },
+      {
+        "ticker": "GEV",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "GE Vernova Inc. (GEV) Stock Forecasts",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPR0lHRWhhdHBhSUp2Wmp4S085djRhckVRUGN2MmxqOU82TFZIT2ZaYW5nbV9xU2Y3UW5zRERqVllfX2VubERFemVlMG1ZRW9lUFdGdUZVN0ZXaHJ5bUtVeEdKUTNpN0pXem0xa1hfRFYtRHZaTVh6d2tzUENPQ1hsX0pJNzJ6M1J1Q1BMNw?oc=5"
+      },
+      {
+        "ticker": "GEV",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "GE Vernova Is Up 18% in 2026 After Three Guidance Raises: Take Profits, or Buy More?",
+        "publisher": "TIKR.com",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQY01OeHA3RXo4c0d0Z3NvZHhBcllOU0RTNXlpRFNGUnljMmc0X0RPLVd0Ti1hVEZpYUk2eHRCTUZROHZac3RLTHFrY3RUR21pXzR2THZzLVQ1aW52V1ktdlgwVjFRb08wd0U0bTJmTXZtVnVuRXpXRWVTY0xtd3JMTThBRjJRVlA2YmZEWGF3TWpFLUVfQXJ6VlpCWmlQRFkyVlVFLV96eXZSUQ?oc=5"
+      },
+      {
+        "ticker": "GEV",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "GE Vernova (NYSE: GEV) Looks Cheap On Earnings But Its Operating Margins Tell A More Complicated Story",
+        "publisher": "Foreign Policy Journal",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQZkJxc2JXZEV0RGpEaFBMNDEyU1BXdTI4WGZYUHotZ205NzJkMU01RkhLbFY5enJrQTNPeERmbzZmVTlmVHhpMFFTT3U1UXJhVVBQSzVPZXVocGczeU5paUtBSWw5dnRfMUFEUllOSHpxNG84OW95Sm5LcTZnLVdXenU1OWFwRDZwNnlGRnRfWjFCanpyZmJRb2xBRC1fN2ZNXy1zOE5aR0VRQXo5X0E1TjRTMWZtckpua3d6TGU3RVd3b29QMUFhbjBFbWJTd1FIMWQybGczN1BReVUzaS1zRkRR?oc=5"
+      },
+      {
+        "ticker": "ETN",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Eaton Reports Record $8.9 Billion In Third Quarter 2026 Sales, Up 28%, And Raises Organic Growth Guidance",
+        "publisher": "Pulse 2.0",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOUm8xSGtZMlJma3Ntb29PT1Z1T1pmdFNOQWRQVzE1ZlkyRmJBWkVtbEtmclRsclVLYjdZOEM2WG1PYlhIREw1OEpyRWw1bG5jSXZOTTJEbG9vLVBlck1RTm43V1prV0E3Q3dKazdvZnBOekJZU0I5NWdDcko0ajAwN2RRb2JPZ0hISFloM2VYYWNIQVVObjB2dlUzdlo5c2VOaksyc3A3NjZzWHZQaTF6ZDdOM3M4LUpTdlQ0YktB?oc=5"
+      },
+      {
+        "ticker": "BWXT",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "BWX Technologies Stock: Q3 2026 Results Confirm Progress (NYSE:BWXT)",
+        "publisher": "Seeking Alpha",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPX3FPa3p3VmJEY2RqUERtNXhFLUV1amVGSGF0cmItazd2WEpuT0I2a0I3cXNCS2tSaXlRM2laVElkUUNYVWxDNjRueGZ3U2l2UlFqQU9nY3NzWDRUVmZWZ1Y5N3RJRGFkRzZ1TXNCb3FFY05JeThleG9WRnFDdG5YaWEwdnItY0xlR1J3SWc4WHNOMUlH?oc=5"
+      },
+      {
+        "ticker": "PODD",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Insulet Q3 revenue rises 19% to $842 million as it lifts its margin outlook and authorizes a $1 billion buyback",
+        "publisher": "MLQ.ai",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNUkJIU1g1RDdpclhud3ltXzFkWjYwY2F1cG0wd251bUFJLUJQMXB2X3dIUmhlcXhXU3JLVzJxTWRYRkZ0dEhSU3ZDdlp6Qzhhek9FcFNsTjZPZ3I3MnR2c1hfdUtqT0V2T2JGLWtISmJ5TjFaQ2xiOFNzeXo2WjZFM3g0al9Ra2ZjQTVfN0RSbGhlU2VsTVZjT2F5UFJab1JHSHZoRHM5akZManZKVUFCekJPc3lvWVdyWTNZTVNQTHVNWUlOUXlkUw?oc=5"
+      },
+      {
+        "ticker": "CMCSA",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Charter Stock Sinks As Internet Subscriber Losses Worsen; Could A Comcast Merger Be The Next Move?",
+        "publisher": "Deadline",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOYzFNTW1ZM013ckUtUEFnbUFiR0pveEZVU1VQRWFucEhaVmpXUFAycUw1RnhXeGtwUnA4c0lkb3pTd1RBaFJkNXlHSVhaX0tOdjFGYlAzc0tyWVBfQU00VnE3ZDh2VFhFS3lQTEg1MlBFUUZtSVRmUFNWVnlscURubnVCUTZkai1pU213aVVIdXBOUQ?oc=5"
+      },
+      {
+        "ticker": "CMCSA",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Charter Shares Fall 5% as Internet Subscriber Losses Widen; Comcast Tie-Up in Focus",
+        "publisher": "Mezha.net",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPY2NJbTRXZTV3NDNvUzVBaHBma05rN1FJT0NQZ2s1bnVHZ1RxUGpGNkMtNTV4UVpRdk5CMWJRZ2IxSzVWb0h2TEhPOGxsdDl5dTVJODY2UkZIUUItN3RHejBoUjBRY1VxYmx4OG1Pdk9ieV9RTnhxWWJ1OUk0bUlNMXlkRWc?oc=5"
+      },
+      {
+        "ticker": "CRDO",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Credo: The Sell-Off Has Done Its Job (Rating Upgrade) (NASDAQ:CRDO)",
+        "publisher": "Seeking Alpha",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNVpaOXJqbGV4aFl4TlozbGFab2dvcjkwY251ZnU3Vng3ZW9HT2Uwa29QRl9qd2dkQ3ZEX2s4X0U2UU9tUklzTHlCQXVQWjdPZElqNnF5QXhlRmhKb0QwbDlPQkRMWnE5bGdsN0ZrbmtJOXZ3NEpkY2Z1X2tKYWR2NlB6Tnlma3FQQWtmQQ?oc=5"
+      },
+      {
+        "ticker": "NVDA",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Key Republicans seek briefing from Nvidia CEO over Chinese spy allegations-document",
+        "publisher": "Reuters",
+        "date": "2026-11-05",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNVFaekphR1ctQUxRQk5CTEFSNnZuTDNJR2FJLUg5UEdXbDZQUEY0UmphZ3JlWFdRLWxDWE4tZjRsQUpPMHhON0lnMTBZdHNocGVfUFJVUHUyd2k1UjlWa1RLQTA5MGh4SlFRUE5heWdZSC1NbkUtMmNrNEJpSHNyV3RFbHoteXZabVk4U0s4dzdoSlhpOWI2aDdSRmtFdk51bjRfOENZaFFrUFQxZDFSUWxOQ21pUHZNZ09fUWJ3Vi1MVW1KTDZVeXFQaw?oc=5"
+      },
+      {
+        "ticker": "META",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Meta President Says Midterm Results Will Make Building Data Centers Harder",
+        "publisher": "WSJ",
+        "date": "2026-11-05",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNYzg5N3pSbjNkUnV0NW5ZanYzTUlvN29XaERjb1dXelFEYjBNOFRLQ29idVBCRnZHMUZQdXRLYy1MQlh0Nzd1NDJzNWtwOWNRY0VvaDl0ZDMxOUZwOWktaC14MkctZlZ5ZENQMUtEdUphWTd2MmV2R0diM2NTQTlCdlR5QVVnR0R2aEsxMVRnd05uZW1RWXp0emc4aU5YOWlyQVZZUVVLdkZ1Nk84MUlxZQ?oc=5"
+      },
+      {
+        "ticker": "META",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Google, Meta and TikTok sue California over law designed to protect children from social media harms",
+        "publisher": "AP News",
+        "date": "2026-11-05",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRW5sSzVyZnVRRlhyY3EzR1lMVUpaR1RxNmNualRGQ3RheFZvVVF3SE5raEVHeDRIcERMWmQyNEpWc1pGMXY1Y3Nza1dyTzZBSXFLbU5Vdm9CWWdla3l6U2NDbmZXbnJFNWh5bmFmUUZZckk4SlNDY2dPTDhyOC1YX1lWYnVYR3ZfUVB1XzVsdWhmVFpGOC0wUC15eUhLRENObllENg?oc=5"
+      },
+      {
+        "ticker": "META",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Meta\u2019s Euro Bonds Jump on First Day of Trading After Record Sale",
+        "publisher": "Bloomberg.com",
+        "date": "2026-11-05",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMnd1Vkt4TmhWcHJZQWVraGhzNU0zTlEza2g1eTc0NTk0RUxHRkpVdG82V2MyN3ZNMDlEWDR0cDd5ZFFucFhIY2U2NW5PSEx6ZTA1bUFOQzN6V3JFYzgtUHFqMENzbU9PZkIxLVhySW81b1NWaTlnWHVJWUNOSURXcGdKVmwwR2JfYzRMQko0UEU0Z0EtWmh0YTQ1Ul9BVGlweEo3U29uMTdnY3A1R3hqWmhPUVAwUQ?oc=5"
+      },
+      {
+        "ticker": "AVGO",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Why is Broadcom stock tumbling today?",
+        "publisher": "Investing.com",
+        "date": "2026-11-05",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcHJEX2gxTFJVUlA3U25DX3VERXp3RkRJcXVORTVqc2UyQ2ZKUE5SejM2U05YTWF0cjZnd0ltWllsbDJ4cldOZnltYTE5bVo2ZjlRbno0bHBiNU9nU2ZMbVA3SnVwV2YzN0F0dDFlWkZhUW5FYWVrZ2xGRE5oakdETER4SDhjTG9oN0ZaQWdIWHcwTFdhbW9lMVR6VW9IRnc?oc=5"
+      },
+      {
+        "ticker": "AVGO",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Is Broadcom Stock a Buy After Marvell's $115 Billion Deal?",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-05",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQjdpcExLSzBnbXZYVFAzRUlmRGtMNEZ6dEFIRDZGaXF0TDRHb0NuSFE0cWJKdWV3cVdNaE1WQ3ZVU1VMTnhoZzQ1X1ZrYXdpV29DT2dPQ1g0dFNyc1Fzc3FBZjJSallXQkp0VjB5NmxJNXhrZzI5cVdDemZNOHVWelZrcTg1NXptdUJEN3hPLTRYQThrRENPUFFnUmM?oc=5"
+      },
+      {
+        "ticker": "ASML",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "ASML posts record quarter as Washington keeps its China chip deadline alive",
+        "publisher": "Startup Fortune",
+        "date": "2026-11-05",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNkdyMllaRE4yUFBPWGR6dkhhSWN4M0RickN3VlBGWlhyWXJKcE9iNTJZR08xVExuNWVuWnNkOWNTUW9abUFqcmpYaDJWdk11Sy1DVnF5cTJSaks0MG5VVGxRWVBBSWlZQkIwYUd0bVMzcHcyaWZVLXFDN3BNclJIN01DX1cyNTc4dkhSNHBPejVQYVp4djF5T3k1YS1JMS16NThfeGZn?oc=5"
+      },
+      {
+        "ticker": "MRVL",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Marvell Technology (MRVL) Stock Sees Fair Value Cut After Mixed Lumentum Deal Views",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-05",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWlpJRzNldmU5VWlWWi1DNVpYQUZCSkxIbWxKUDgtMFdPNjZtWS0xY1BQaHVicWlzN2Nqekt5SDNSWXBBMHB2WTdMc0NyT2NBU0VPYWtiRnh2Q05raS1uZEFnS0RmZzBJNVE0SW1CNW1Kc2VzQUd1eHBldEdLZHluV204MDNGdFB3UmpGYW1PWTE1RDdDcld0aFJFRUYtX1lW?oc=5"
+      },
+      {
+        "ticker": "MRVL",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Why is Marvell Technology stock tumbling today?",
+        "publisher": "Investing.com",
+        "date": "2026-11-05",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQUXh1eGpxSUNOSllBWkRLdHRiRmVlVmVjWldLa21DNk5FWnZQUmRsUnhlVlZLNmVMVW5iSS1aMjJpb3VmSnh5SWViQ3RPaUJ0WVpyRHRDUkVHT01mS1laRWNfMTNfdldyd0NwUm9tbVZGejFUd1VSeWZhTjlSaFE1QjRoWXY4MTJvU0kxTFJhdEJJRlJQclhBbXF0dGNIenluM0xRN2dKUEc1cmcx?oc=5"
+      },
+      {
+        "ticker": "IBM",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "IBM CEO: rationing AI is a slow way to lose",
+        "publisher": "Fortune",
+        "date": "2026-11-05",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPN25UMk54NW5oMnVRc3V4cnV1aHRqWkxYakNyRjlDOTBXenRROVpNOW8yOFFSc1FCb2V6d3o4R2FoNWZYcWdOaWhrekhseGJjUG9UTENIUExzRHlrU0VscFhva2djeS1VY1JqVmZpR3JOOG1jLWJtZDhJaXRsMTVQdHRLdUUwVVpNd292WGVjUHE4cUJTNnc?oc=5"
+      },
+      {
+        "ticker": "IBM",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "IBM, AMD, Oak Ridge National Laboratory launch quantum error correction platform",
+        "publisher": "Reuters",
+        "date": "2026-11-05",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQODR3T0kxZE10MmFBenJjWTB3d0pYSmtLaUpGNjZQZkZzamlkS2MwZFZKM250YTVmV29XR21hUFlYT3FVejZKY0piWTJJS3F5NHRDa0t3b0xqV0ZqdURJdktzc2hqNG5ENExRVUM2T0NfMVBMd1RBQnhZZlZDUTB4VUxHTmhLUGRRUWY3YzZmZEpKb2czdXAydS1yaENPZFFqZVBuYktRWjNMVXlmX2NSeHdHVnItRV9JLXhaWklDSlYwaVk?oc=5"
+      },
+      {
+        "ticker": "COHR",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Coherent (COHR) Raises Full Year Targets After Q1 Earnings Beat",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-05",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcTI2TDFOLUJvMmpJSHhnM0tGbUE2dXc0czF0Xy1rR2E0al9aaGtnWm9OalZnM3cxRzFjdXZMcGo0ZnFfUXFvNkFPY3lheUtCbjIyb19vLWVZRmR5cUo3Z3VlMG1QR1RLUzQ0LVBGclBLZXdRblpzeWQzMDQ5WVJHQUVDbk1DaUp1aE1sTDh0MHo5QThsOFVSUElGeU9iQQ?oc=5"
+      },
+      {
+        "ticker": "COHR",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Coherent (COHR) Stock Price Falls Despite Strong Q1 Earnings",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-05",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOdHN4OWlLNmhhelZGaHNYQVdpSzVPWGRqc1ZNa1ZzZXpqTUx5eDZBVE9GdkhyTjRBMVg4UVpmNTBRMmhwMHplOXU4Y3IwRDVVeWowMG5QOEk4ZHp3NlRFR0NCQWRiR3U5Z2hSNlFNTHFYR2JRZHpuRTdNQlozUmtuZ01xVHVXYXVYZ1ZTOGN1MjBqY1JUZkdVNWNOTmQ?oc=5"
+      }
+    ],
     "insider_alerts": [
       {
         "ticker": "AVGO",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T21:27:08Z",
+  "generated_at": "2026-11-06T21:59:44Z",
   "rules": {
     "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
     "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
@@ -291,16 +291,6 @@
       "reason": "Highest-conviction growth pick (9% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
     },
     {
-      "ticker": "RDDT",
-      "name": "Reddit, Inc.",
-      "theme": "platform_network",
-      "verdict": "RESEARCH-WORTHY",
-      "div_yield_pct": null,
-      "account": "ROTH",
-      "priority": "high",
-      "reason": "Highest-conviction growth pick (53% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
-    },
-    {
       "ticker": "STZ",
       "name": "STZ",
       "theme": "defensive_income",
@@ -484,6 +474,16 @@
       "ticker": "OKLO",
       "name": "Oklo Inc.",
       "theme": "nuclear_smr",
+      "verdict": "WATCHLIST",
+      "div_yield_pct": null,
+      "account": "ROTH",
+      "priority": "medium",
+      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+    },
+    {
+      "ticker": "RDDT",
+      "name": "Reddit, Inc.",
+      "theme": "platform_network",
       "verdict": "WATCHLIST",
       "div_yield_pct": null,
       "account": "ROTH",

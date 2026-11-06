@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T21:56:53Z",
+  "generated_at": "2026-11-06T21:59:44Z",
   "checked": 58,
   "flagged": 2,
   "quality": {
@@ -7,11 +7,11 @@
       "ok": true,
       "flags": []
     },
-    "ADP": {
+    "AMD": {
       "ok": true,
       "flags": []
     },
-    "AMD": {
+    "ADP": {
       "ok": true,
       "flags": []
     },
@@ -28,7 +28,7 @@
       "flags": [
         {
           "level": "low",
-          "msg": "Reports in EUR; figures converted to USD at 1.1141. Trailing P/E may mix currencies \u2014 verify against filings"
+          "msg": "Reports in EUR; figures converted to USD at 1.1142. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
     },
@@ -36,11 +36,11 @@
       "ok": true,
       "flags": []
     },
-    "CEG": {
+    "CBRS": {
       "ok": true,
       "flags": []
     },
-    "CBRS": {
+    "CEG": {
       "ok": true,
       "flags": []
     },
@@ -68,10 +68,6 @@
       "ok": true,
       "flags": []
     },
-    "ETN": {
-      "ok": true,
-      "flags": []
-    },
     "EIX": {
       "ok": true,
       "flags": []
@@ -80,11 +76,15 @@
       "ok": true,
       "flags": []
     },
-    "GEV": {
+    "ETN": {
       "ok": true,
       "flags": []
     },
     "GEHC": {
+      "ok": true,
+      "flags": []
+    },
+    "GEV": {
       "ok": true,
       "flags": []
     },
@@ -104,15 +104,15 @@
       "ok": true,
       "flags": []
     },
-    "ISRG": {
-      "ok": true,
-      "flags": []
-    },
     "LITE": {
       "ok": true,
       "flags": []
     },
     "LLY": {
+      "ok": true,
+      "flags": []
+    },
+    "ISRG": {
       "ok": true,
       "flags": []
     },
@@ -124,19 +124,19 @@
       "ok": true,
       "flags": []
     },
-    "META": {
-      "ok": true,
-      "flags": []
-    },
     "MA": {
       "ok": true,
       "flags": []
     },
-    "MKTX": {
+    "META": {
       "ok": true,
       "flags": []
     },
     "MRVL": {
+      "ok": true,
+      "flags": []
+    },
+    "MKTX": {
       "ok": true,
       "flags": []
     },
@@ -176,11 +176,11 @@
       "ok": true,
       "flags": []
     },
-    "POWL": {
+    "PODD": {
       "ok": true,
       "flags": []
     },
-    "PODD": {
+    "POWL": {
       "ok": true,
       "flags": []
     },
