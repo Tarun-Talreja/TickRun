@@ -661,25 +661,27 @@
       "name": "Vertiv Holdings Co",
       "theme": "power_grid",
       "status": "research_complete",
-      "thesis": "Pure-play AI data center power/cooling infrastructure at 18.7x forward earnings with 61% quarterly growth, 24% FCF margins, and net cash balance sheet.",
+      "thesis": "Pure-play AI data center power/cooling infrastructure at 18.6x forward earnings with 60%+ revenue growth and $3.1B FCF, but 52% drawdown reflects political policy fears.",
       "added": "2026-05-28",
       "verdict": "RESEARCH-WORTHY",
-      "buy_target": 184.27,
+      "buy_target": 182.75,
       "current_price": null,
-      "next_action": "RESEARCH \u2014 Pure-play AI data center power/cooling infrastructure at 18.7x forward earnings with 61% quarterly growth, 24% FCF margins, and net cash balance sheet. Worth a deep dive before any decision.",
+      "next_action": "RESEARCH \u2014 Pure-play AI data center power/cooling infrastructure at 18.6x forward earnings with 60%+ revenue growth and $3.1B FCF, but 52% drawdown reflects political policy fears. Worth a deep dive before any decision.",
       "research_file": "output/research/VRT_2026-11-06.md",
       "last_researched": "2026-11-06",
       "llm_verdict": "RESEARCH-WORTHY",
       "bear_downgraded": false,
       "confidence": "MEDIUM",
-      "bear_check": "The strongest argument against buying VRT is its extreme customer concentration in hyperscalers, where the top three cloud providers likely account for over 50% of revenue; a synchronized capex pullback by these few customers could slash revenue 30\u201140% given Vertiv\u2019s high fixed\u2011cost manufacturing base. This single\u2011point dependency creates asymmetric downside that is not reflected in the current valuation multiples.\n\nBREAK: NONE\nEVIDENCE: none",
-      "buy_trigger_drawdown_pct": -51.5,
+      "bear_check": "The single greatest risk is policy-driven demand destruction: a Democratic Congress could enact data center power restrictions, permitting delays, or carbon mandates that materially slow US hyperscaler buildouts \u2014 Vertiv's largest addressable market \u2014 as signaled by the 9% single-day drop on election headlines. This political risk is exogenous, unquantifiable, and could persist for years, potentially invalidating the growth thesis regardless of current execution. With customer concentration likely high (unverified but typical for hyperscaler suppliers), a single capex pause from a major customer could cut revenue sharply.\n\nWHY_IT_FELL: Stock fell 52% from high primarily due to post-election fears that Democratic Congress could impose regulations or power constraints on data centers, despite strong Q3 earnings beat.\nFALL_EVIDENCE: Vertiv Sinks 9%, GE Vernova Down 8% as Democrats Win Congress, Reviving Data Center Fears (TIKR.com)\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM\nBREAK: NONE\nEVIDENCE: none",
+      "buy_trigger_drawdown_pct": -51.9,
       "no_pullback_gate": false,
-      "rating_version": 2,
+      "rating_version": 3,
       "unsupported_figures": [
-        "50%",
-        "40%"
-      ]
+        "2x",
+        "84%",
+        "50%"
+      ],
+      "fall_reason": "Stock fell 52% from high primarily due to post-election fears that Democratic Congress could impose regulations or power constraints on data centers, despite strong Q3 earnings beat."
     },
     {
       "ticker": "GEV",
