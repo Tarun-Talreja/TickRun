@@ -11,11 +11,13 @@ on:
   # workflows for GITHUB_TOKEN pushes — so the push trigger above alone left the
   # live site frozen at 2026-07-26 while the repo data kept updating daily.
   # workflow_run is exempt from that rule: redeploy whenever a data job finishes.
+  # Names here are glob patterns: keep + ? * ! [ ] out of workflow names, or the
+  # filter silently never matches ("Quote Refresh + Alerts" did exactly that).
   workflow_run:
     workflows:
-      - "Quote Refresh + Alerts"
+      - "Quote Refresh and Alerts"
       - "Daily LLM Research"
-      - "Catalyst Lookahead + Alerts"
+      - "Catalyst Lookahead and Alerts"
       - "Weekly Dashboard Rebuild"
       - "Weekly Discovery Screener"
       - "Quarterly Hedge Fund Signal"

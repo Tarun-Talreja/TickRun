@@ -27,7 +27,7 @@ jobs:
   research:
     runs-on: ubuntu-latest
     # Was 20m and hit the cap repeatedly; each ticker runs research + bear check.
-    timeout-minutes: 35
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

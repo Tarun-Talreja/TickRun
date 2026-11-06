@@ -32,6 +32,11 @@ RESEARCH_SCRIPT = os.path.join(SCRIPT_DIR, "scripts", "research_ticker.py")
 STALE_DAYS      = 7      # re-research if older than this
 ALERT_THRESHOLD = -20.0  # drawdown that forces a re-research
 MAX_PER_RUN     = 8      # cap per run to respect free-tier limits
+# Stop STARTING tickers after this long. One ticker can take ~15 min when every
+# model times out (5 models x 90s, research + bear check), and on 2026-11-04 a
+# slow free tier ran into the job timeout, which cancelled the dashboard rebuild
+# and final commit too. Leftover tickers stay stale and lead tomorrow's queue.
+RUN_BUDGET_SECONDS = 20 * 60
 
 # Index/benchmark ETFs are tracked for context, not as buy candidates —
 # spending a research slot on them starves real names in the queue.
@@ -169,7 +174,13 @@ def main():
     print(f"🔬 Daily research queue ({len(tickers)}): {', '.join(tickers)}\n")
     failures, landed = [], []
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    for ticker in tickers:
+    started = time.monotonic()
+    for i, ticker in enumerate(tickers):
+        if time.monotonic() - started > RUN_BUDGET_SECONDS:
+            skipped = tickers[i:]
+            print(f"⏱ Time budget reached — leaving for next run: {', '.join(skipped)}")
+            tickers = tickers[:i]
+            break
         print(f"── {ticker} " + "─" * 40)
         result = subprocess.run(
             [sys.executable, RESEARCH_SCRIPT, ticker],
