@@ -49,6 +49,16 @@ class TestVerifiedBreak:
     def test_scrap_of_a_line_does_not_count(self):
         assert verified_break(bear("THESIS_CONTRADICTED", "-12"), SOURCE) is None
 
+    def test_contradiction_can_quote_two_lines(self):
+        text = bear("DATA_CONTRADICTION",
+                    "- Market cap: $50.0B; - Revenue growth (latest quarter vs a year ago, "
+                    "NOT trailing-twelve-month): -12.0%")
+        assert verified_break(text, SOURCE) == "DATA_CONTRADICTION"
+
+    def test_every_quoted_line_must_be_real(self):
+        text = bear("DATA_CONTRADICTION", "- Market cap: $50.0B; - Revenue (TTM): $900000M")
+        assert verified_break(text, SOURCE) is None
+
     def test_markdown_labels_still_parse(self):
         text = ("Argument.\n**BREAK:** BUSINESS_EVENT\n"
                 "**EVIDENCE:** Acme restates three years of results after audit review")

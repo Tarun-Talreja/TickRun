@@ -38,7 +38,8 @@ remember: this data is newer than your memory. Gross margin is trailing twelve
 months and operating margin is the latest quarter, so they may sit close together.
 
 THESIS_CONTRADICTED: the note's central claim says the opposite of the DATA (the note
-says revenue is growing fast, the DATA shows it shrinking).
+says revenue is growing fast, the DATA shows it shrinking). A figure that points the
+same way but is larger or smaller than the note says is not a contradiction.
 
 BUSINESS_EVENT: a HEADLINE reports something that has already happened and removes
 the core business case: fraud charges, restated results, an auditor resigning,
@@ -50,7 +51,7 @@ lawsuits or investigations with no finding yet, and anything marked unverified.
 
 End with exactly these two lines:
 BREAK: <NONE, DATA_CONTRADICTION, THESIS_CONTRADICTED or BUSINESS_EVENT>
-EVIDENCE: <the exact line copied from the DATA or HEADLINES, or none>
+EVIDENCE: <the exact line copied from the DATA or HEADLINES, or none. Separate two lines with ;>
 
 DATA AND HEADLINES:
 {source}
@@ -78,7 +79,8 @@ def verified_break(bear_text: str | None, source: str) -> str | None:
     quote = _EVIDENCE_RE.findall(bear_text)
     if not kind or not quote or kind[-1] not in BREAK_TYPES:
         return None
-    evidence = _normalise(quote[-1]).strip(' "“”\'`*-')
-    if len(evidence) < MIN_EVIDENCE_CHARS:
-        return None
-    return kind[-1] if evidence in _normalise(_evidence_scope(kind[-1], source)) else None
+    # A contradiction needs two lines, so a quote may hold several, split by ";".
+    parts = [_normalise(p).strip(' "“”\'`*-') for p in quote[-1].split(";")]
+    scope = _normalise(_evidence_scope(kind[-1], source))
+    real = all(len(p) >= MIN_EVIDENCE_CHARS and p in scope for p in parts)
+    return kind[-1] if real else None
