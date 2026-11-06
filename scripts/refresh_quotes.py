@@ -85,6 +85,24 @@ def _ttm_fcf(t) -> float | None:
     return float(quarters.iloc[:4].sum()) if len(quarters) >= 4 else None
 
 
+def _latest_op_margin(t, info: dict) -> float | None:
+    """Reported operating margin of the latest quarter, as a percent.
+
+    Not info["operatingMargins"]: Yahoo leaves some charges out of it, so META
+    showed 35.4% for a quarter it reported at 20.1%, and NOW 17.4% against 9.4%.
+    Falls back to Yahoo's figure when the statement has no operating income line.
+    """
+    try:
+        income = t.quarterly_income_stmt
+        latest = income.columns.max()
+        margin = income.loc["Operating Income", latest] / income.loc["Total Revenue", latest]
+    except (KeyError, TypeError, ValueError, ZeroDivisionError):
+        margin = None
+    if margin is None or margin != margin:
+        margin = info.get("operatingMargins")
+    return round(float(margin) * 100, 1) if margin else None
+
+
 def _normalize_money(info: dict, fx: float | None) -> dict:
     """Company-level money fields, in the same currency as the quote.
 
@@ -182,7 +200,7 @@ def _fetch_with_retry(ticker: str) -> dict:
         "forward_pe":           info.get("forwardPE"),
         "revenue_growth":       round(info.get("revenueGrowth", 0) * 100, 1) if info.get("revenueGrowth") else None,
         "gross_margin":         round(info.get("grossMargins", 0) * 100, 1) if info.get("grossMargins") else None,
-        "op_margin":            round(info.get("operatingMargins", 0) * 100, 1) if info.get("operatingMargins") else None,
+        "op_margin":            _latest_op_margin(t, info),
         **money,
         "div_yield_pct":        div_yield_pct,
         "short_percent_float":  round(info.get("shortPercentOfFloat", 0) * 100, 2) if info.get("shortPercentOfFloat") else None,
