@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-06T23:15:01Z",
+  "generated_at": "2026-11-06T23:29:43Z",
   "checked": 58,
   "flagged": 2,
   "quality": {
-    "AAPL": {
+    "AMD": {
       "ok": true,
       "flags": []
     },
-    "AMD": {
+    "AAPL": {
       "ok": true,
       "flags": []
     },
@@ -88,11 +88,11 @@
       "ok": true,
       "flags": []
     },
-    "GOOGL": {
+    "GIS": {
       "ok": true,
       "flags": []
     },
-    "GIS": {
+    "GOOGL": {
       "ok": true,
       "flags": []
     },
@@ -108,11 +108,11 @@
       "ok": true,
       "flags": []
     },
-    "LITE": {
+    "LLY": {
       "ok": true,
       "flags": []
     },
-    "LLY": {
+    "LITE": {
       "ok": true,
       "flags": []
     },
@@ -120,11 +120,11 @@
       "ok": true,
       "flags": []
     },
-    "MA": {
+    "LPLA": {
       "ok": true,
       "flags": []
     },
-    "LPLA": {
+    "MA": {
       "ok": true,
       "flags": []
     },
@@ -132,15 +132,11 @@
       "ok": true,
       "flags": []
     },
-    "MKTX": {
-      "ok": true,
-      "flags": []
-    },
     "MRVL": {
       "ok": true,
       "flags": []
     },
-    "MU": {
+    "MKTX": {
       "ok": true,
       "flags": []
     },
@@ -149,6 +145,10 @@
       "flags": []
     },
     "NBIS": {
+      "ok": true,
+      "flags": []
+    },
+    "MU": {
       "ok": true,
       "flags": []
     },
@@ -180,6 +180,10 @@
       "ok": true,
       "flags": []
     },
+    "QQQ": {
+      "ok": true,
+      "flags": []
+    },
     "POWL": {
       "ok": true,
       "flags": []
@@ -188,15 +192,7 @@
       "ok": true,
       "flags": []
     },
-    "QQQ": {
-      "ok": true,
-      "flags": []
-    },
     "SPY": {
-      "ok": true,
-      "flags": []
-    },
-    "TLN": {
       "ok": true,
       "flags": []
     },
@@ -204,11 +200,11 @@
       "ok": true,
       "flags": []
     },
-    "TW": {
+    "TLN": {
       "ok": true,
       "flags": []
     },
-    "UNH": {
+    "TW": {
       "ok": true,
       "flags": []
     },
@@ -221,7 +217,7 @@
         }
       ]
     },
-    "VRT": {
+    "UNH": {
       "ok": true,
       "flags": []
     },
@@ -233,15 +229,19 @@
       "ok": true,
       "flags": []
     },
+    "VRT": {
+      "ok": true,
+      "flags": []
+    },
     "VTI": {
       "ok": true,
       "flags": []
     },
-    "ZBH": {
+    "^TNX": {
       "ok": true,
       "flags": []
     },
-    "^TNX": {
+    "ZBH": {
       "ok": true,
       "flags": []
     }
