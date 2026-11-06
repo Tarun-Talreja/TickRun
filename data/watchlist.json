@@ -1065,25 +1065,27 @@
       "name": "LPLA",
       "theme": "financials",
       "status": "research_complete",
-      "thesis": "Quality independent broker-dealer compounding at ~18% revenue growth trading at 10x forward earnings with $1B FCF",
+      "thesis": "Quality independent broker-dealer platform trading at 10x forward earnings with 18% revenue growth and $1B FCF, offering financials exposure at a 26% drawdown.",
       "added": "2026-06-08",
       "verdict": "RESEARCH-WORTHY",
-      "buy_target": 300.92,
+      "buy_target": 296.52,
       "current_price": null,
-      "next_action": "RESEARCH \u2014 Quality independent broker-dealer compounding at ~18% revenue growth trading at 10x forward earnings with $1B FCF Worth a deep dive before any decision.",
+      "next_action": "RESEARCH \u2014 Quality independent broker-dealer platform trading at 10x forward earnings with 18% revenue growth and $1B FCF, offering financials exposure at a 26% drawdown. Worth a deep dive before any decision.",
       "research_file": "output/research/LPLA_2026-11-06.md",
       "last_researched": "2026-11-06",
       "confidence": "MEDIUM",
-      "bear_check": "The bull case frames LPLA\u2019s 29.6% gross margin as evidence of a \u201ccapital-light\u201d model with operating leverage, yet that margin implies over 70% of revenue flows directly to advisors as variable payouts, leaving the platform with minimal incremental margin capture. With operating margin at only 10.8% and net debt at 5.3\u00d7 FCF, a modest decline in short-term rates \u2014 which directly compresses the high-margin net interest income on client cash \u2014 could erase most operating earnings while the fixed debt burden remains.\n\nThis argument identifies a real structural contradiction (low gross margin vs. claimed operating leverage) and a specific rate-sensitive earnings driver the note acknowledges but underweights; it does not falsify the core business or data.\n\nBEAR_SEVERITY: MATERIAL",
+      "bear_check": "The implied ~70% earnings growth baked into the 10\u00d7 forward P/E versus 17\u00d7 trailing P/E is unrealistic for a capital-light platform with only 10.8% operating margin and no disclosed margin-expansion catalysts. The model\u2019s high sensitivity to equity markets and short-term rates, combined with $5.3\u202fB of net debt, creates asymmetric downside if asset-based and cash-sweep revenues compress simultaneously.\n\nBREAK: NONE\nEVIDENCE: none",
       "llm_verdict": "RESEARCH-WORTHY",
       "bear_downgraded": false,
-      "buy_trigger_drawdown_pct": -24.8,
+      "buy_trigger_drawdown_pct": -25.9,
       "no_pullback_gate": true,
       "unsupported_figures": [
         "70%",
-        "5.3x",
-        "10%"
-      ]
+        "4.3%",
+        "5.2x",
+        "20%"
+      ],
+      "rating_version": 2
     },
     {
       "ticker": "TW",
