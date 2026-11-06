@@ -11,6 +11,10 @@ on:
         description: 'How many tickers to research this run (catch-up runs can go higher)'
         required: false
         default: '8'
+      tickers:
+        description: 'Optional comma-separated tickers to research instead of the queue'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -51,7 +55,8 @@ jobs:
         continue-on-error: true
         env:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API }}
-        run: python scripts/research_batch.py --max ${{ github.event.inputs.max || 8 }}
+          TICKERS: ${{ github.event.inputs.tickers }}
+        run: python scripts/research_batch.py --max ${{ github.event.inputs.max || 8 }} --tickers "$TICKERS"
 
       - name: Check SEC filings
         run: python scripts/sec_filings.py

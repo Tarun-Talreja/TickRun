@@ -202,6 +202,15 @@ def _build_prompt(ticker: str, quotes: dict) -> str:
     else:
         net_str = "unverified"
 
+    report_cur = q.get("financial_currency")
+    currency_note = ""
+    if report_cur and report_cur != q.get("currency"):
+        currency_note = (
+            f"\nCurrency: reports in {report_cur}; revenue, FCF, cash and debt above are "
+            f"converted to USD. Trailing and forward P/E come from Yahoo and may mix "
+            f"currencies, so do not build the case on them.\n"
+        )
+
     # 52-week high gate warning
     drawdown = q.get("drawdown_from_high")
     gate_warning = ""
@@ -231,7 +240,7 @@ def _build_prompt(ticker: str, quotes: dict) -> str:
 - 52-week high: ${_fmt(q.get('high_52w'))} | Drawdown from high: {_fmt(drawdown, suffix='%')}
 
 Note: Data from yfinance, may lag 1-7 days. Cross-check with company IR or SEC filings.
-
+{currency_note}
 [Recent news headlines — {datetime.now(timezone.utc).strftime('%Y-%m-%d')}]
 {_recent_news(ticker)}
 
@@ -284,7 +293,11 @@ def _extract_thesis(text: str) -> str | None:
     thesis = m.group(1).strip()
     # Strip a leading dollar figure if the model ignored the instruction — better
     # to show nothing than to persist a price that will be wrong within days.
-    thesis = re.sub(r"\$\d[\d,]*\.?\d*", "[price omitted — see live data]", thesis)
+    # Company-level amounts like "$92B FCF" are not prices, so they stay.
+    thesis = re.sub(
+        r"\$\d[\d,]*\.?\d*(?![\d,.])(?!\s*(?:[BMT]\b|billion|million|trillion))",
+        "[price omitted — see live data]", thesis,
+    )
     return thesis or None
 
 

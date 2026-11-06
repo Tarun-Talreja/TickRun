@@ -19,6 +19,7 @@ import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
+from functools import lru_cache
 
 try:
     import yfinance as yf
@@ -60,6 +61,58 @@ def _collect_tickers() -> list[str]:
     return sorted(tickers)
 
 
+@lru_cache(maxsize=None)
+def _fx_rate(from_cur: str, to_cur: str) -> float | None:
+    """Latest close for from_cur→to_cur, or None if Yahoo has no rate."""
+    try:
+        closes = yf.Ticker(f"{from_cur}{to_cur}=X").history(period="5d")["Close"].dropna()
+        return float(closes.iloc[-1]) if len(closes) else None
+    except Exception as exc:
+        print(f"  ⚠ no FX rate {from_cur}→{to_cur}: {exc}")
+        return None
+
+
+def _normalize_money(info: dict, fx: float | None) -> dict:
+    """Company-level money fields, in the same currency as the quote.
+
+    Yahoo gives foreign filers' financials in their reporting currency while
+    price and market cap stay in USD, so TSM's NT$4.9T revenue reached the
+    research prompt as "$4.9T" and "net cash" came out larger than its market
+    cap. Its enterprise multiples are unusable for these names too (ASML showed
+    1,783x EV/EBITDA), so they are recomputed from market cap.
+
+    With no FX rate the fields are blanked: "unverified" beats a wrong number.
+    """
+    quote_cur = info.get("currency")
+    report_cur = info.get("financialCurrency") or quote_cur
+    money = {"currency": quote_cur, "financial_currency": report_cur, "fx_rate": fx}
+
+    if report_cur == quote_cur:
+        return {**money,
+                "revenue_ttm": info.get("totalRevenue"),
+                "fcf_ttm":     info.get("freeCashflow"),
+                "total_cash":  info.get("totalCash"),
+                "total_debt":  info.get("totalDebt"),
+                "ev_ebitda":   info.get("enterpriseToEbitda"),
+                "ev_sales":    info.get("enterpriseToRevenue")}
+
+    def convert(key):
+        value = info.get(key)
+        return value * fx if value is not None and fx else None
+
+    revenue, ebitda = convert("totalRevenue"), convert("ebitda")
+    cash, debt = convert("totalCash"), convert("totalDebt")
+    mcap = info.get("marketCap")
+    ev = mcap + debt - cash if None not in (mcap, cash, debt) else None
+    return {**money,
+            "revenue_ttm": revenue,
+            "fcf_ttm":     convert("freeCashflow"),
+            "total_cash":  cash,
+            "total_debt":  debt,
+            "ev_ebitda":   round(ev / ebitda, 1) if ev and ebitda and ebitda > 0 else None,
+            "ev_sales":    round(ev / revenue, 1) if ev and revenue else None}
+
+
 @retry(
     retry=retry_if_exception_type(Exception),
     stop=stop_after_attempt(3),
@@ -98,6 +151,11 @@ def _fetch_with_retry(ticker: str) -> dict:
             # discard implausible values rather than trusting ambiguous units.
             div_yield_pct = round(raw_yield, 2) if raw_yield < 25 else None
 
+    quote_cur = info.get("currency")
+    report_cur = info.get("financialCurrency") or quote_cur
+    fx = 1.0 if report_cur == quote_cur else _fx_rate(report_cur, quote_cur)
+    money = _normalize_money(info, fx)
+
     return {
         "ticker":               ticker,
         "name":                 info.get("longName") or info.get("shortName", ticker),
@@ -111,15 +169,10 @@ def _fetch_with_retry(ticker: str) -> dict:
         "drawdown_from_high":   drawdown_from_high,
         "pe":                   info.get("trailingPE"),
         "forward_pe":           info.get("forwardPE"),
-        "ev_ebitda":            info.get("enterpriseToEbitda"),
-        "ev_sales":             info.get("enterpriseToRevenue"),
-        "revenue_ttm":          info.get("totalRevenue"),
         "revenue_growth":       round(info.get("revenueGrowth", 0) * 100, 1) if info.get("revenueGrowth") else None,
         "gross_margin":         round(info.get("grossMargins", 0) * 100, 1) if info.get("grossMargins") else None,
         "op_margin":            round(info.get("operatingMargins", 0) * 100, 1) if info.get("operatingMargins") else None,
-        "fcf_ttm":              info.get("freeCashflow"),
-        "total_cash":           info.get("totalCash"),
-        "total_debt":           info.get("totalDebt"),
+        **money,
         "div_yield_pct":        div_yield_pct,
         "short_percent_float":  round(info.get("shortPercentOfFloat", 0) * 100, 2) if info.get("shortPercentOfFloat") else None,
         "short_ratio":          round(info.get("shortRatio", 0), 1) if info.get("shortRatio") else None,

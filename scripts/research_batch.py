@@ -152,6 +152,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--max", type=int, default=MAX_PER_RUN,
                         help=f"Max tickers to research (default {MAX_PER_RUN})")
+    parser.add_argument("--tickers", default="",
+                        help="Comma-separated tickers to research instead of the queue")
     args = parser.parse_args()
 
     if not (os.environ.get("NVIDIA_API_KEY") or os.environ.get("ANTHROPIC_API_KEY")):
@@ -160,7 +162,8 @@ def main():
         # not quietly skip research forever. Locally it's just "not configured".
         sys.exit(1 if _in_ci() else 0)
 
-    tickers = _select_tickers(args.max)
+    requested = [t.strip().upper() for t in args.tickers.split(",") if t.strip()]
+    tickers = requested or _select_tickers(args.max)
     if not tickers:
         print("✅ No tickers need re-research today.")
         sys.exit(0)

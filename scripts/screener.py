@@ -122,7 +122,10 @@ def _fetch(sym: str) -> dict | None:
             "rev_growth": info.get("revenueGrowth"),
             "earnings_growth": info.get("earningsGrowth"),
             "fcf": info.get("freeCashflow"),
-            "ev_ebitda": info.get("enterpriseToEbitda"),
+            # Yahoo's multiple is unusable when financials aren't in the quote currency.
+            "ev_ebitda": (info.get("enterpriseToEbitda")
+                          if info.get("financialCurrency", info.get("currency")) == info.get("currency")
+                          else None),
             "forward_pe": info.get("forwardPE"),
             "trailing_pe": info.get("trailingPE"),
             "peg": info.get("pegRatio") or info.get("trailingPegRatio"),

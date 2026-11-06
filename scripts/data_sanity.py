@@ -13,6 +13,9 @@ Checks per ticker:
   - Forward P/E wildly divergent from trailing (>10x apart) — possible bad field
   - Missing critical fields (price, market cap)
   - Stale fetch (quote older than MAX_STALE_HOURS)
+  - Financials reported in another currency (the TSM/ASML bug): no FX rate, or
+    P/Es that may mix currencies
+  - Impossible balance sheet or multiple (net cash above market cap, EV/EBITDA > 500)
 
 Output:
   data/data_quality.json  — per-ticker flags (read by build_dashboard.py)
@@ -32,6 +35,7 @@ OUTPUT_PATH  = os.path.join(SCRIPT_DIR, "data", "data_quality.json")
 
 MAX_STALE_HOURS = 48
 PE_ABSURD       = 1000
+EV_EBITDA_ABSURD = 500
 
 
 def _check_ticker(ticker: str, q: dict) -> list[dict]:
@@ -77,6 +81,24 @@ def _check_ticker(ticker: str, q: dict) -> list[dict]:
                 flags.append({"level": "med", "msg": f"Quote is {age_h:.0f}h old — refresh may have failed"})
         except (ValueError, TypeError):
             pass
+
+    # 6. Reports in another currency. Money fields are converted upstream, but
+    # P/Es come straight from Yahoo, which divides a USD price by an EPS whose
+    # currency it does not state.
+    report_cur, quote_cur = q.get("financial_currency"), q.get("currency")
+    if report_cur and quote_cur and report_cur != quote_cur:
+        if q.get("fx_rate"):
+            flags.append({"level": "low", "msg": f"Reports in {report_cur}; figures converted to {quote_cur} at {q['fx_rate']:.4f}. P/Es may mix currencies — verify against filings"})
+        else:
+            flags.append({"level": "high", "msg": f"Reports in {report_cur} and no FX rate was available — company financials blanked"})
+
+    # 7. Figures that cannot be true, whatever caused them
+    cash, debt, mcap = q.get("total_cash"), q.get("total_debt"), q.get("market_cap")
+    if None not in (cash, debt) and mcap and cash - debt > mcap:
+        flags.append({"level": "high", "msg": "Net cash exceeds market cap — likely a currency or unit error"})
+    ev_ebitda = q.get("ev_ebitda")
+    if ev_ebitda and ev_ebitda > EV_EBITDA_ABSURD:
+        flags.append({"level": "med", "msg": f"Extreme EV/EBITDA ({ev_ebitda:.0f}x) — verify before relying on it"})
 
     return flags
 
