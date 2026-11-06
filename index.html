@@ -144,8 +144,7 @@ html,body{
   background:var(--green-d);border:1px solid #00f08222;
   font-size:9px;font-weight:500;color:var(--green);letter-spacing:.06em;
 }
-.pulse{width:5px;height:5px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(0,240,130,.5)}60%{box-shadow:0 0 0 5px transparent}}
+.pulse{width:5px;height:5px;border-radius:50%;background:var(--green)}
 
 /* ── SCREEN STACK ── */
 .screens{
@@ -715,7 +714,7 @@ html,body{
   </div>
   <div class="intro-loading">
     <div class="intro-bar"><div class="intro-bar-fill"></div></div>
-    <div class="intro-bar-label">fetching live data</div>
+    <div class="intro-bar-label">loading latest data</div>
   </div>
 </div>
 
@@ -732,7 +731,7 @@ html,body{
       <span style="line-height:1"><span class="tick-part">TICK</span><span class="reja-part">REJA</span></span>
     </div>
     <div class="topbar-right">
-      <div class="live-chip"><span class="pulse"></span>LIVE</div>
+      <div class="live-chip"><span class="pulse"></span><span id="priceAge">Prices</span></div>
       <button class="hamburger" onclick="toggleDrawer()" aria-label="Menu">
         <div class="ham-line"></div>
         <div class="ham-line"></div>
@@ -908,15 +907,6 @@ function navigateTo(screen, data=null, pushHistory=true){
   if(screen==='stock' && data){
     selectedStock = data;
     renderStockDetail(data);
-    // Kick off an immediate live-price fetch for this single ticker — don't wait 60s
-    fetchOneTicker(data.ticker).then(q => {
-      if (q) {
-        liveCache[q.symbol] = { price: q.price, change: q.change, pct: q.pct };
-        selectedStock.current_price = q.price;
-        const el = document.querySelector('.detail-price');
-        if (el) el.textContent = '$' + q.price.toFixed(2);
-      }
-    }).catch(()=>{});
   }
 
   // Scroll to top
@@ -1032,7 +1022,7 @@ function renderHome(data){
     const price=s.current_price??s.price;
     const t=tc(s.theme);
     const ac=acClass(s.next_action||'');
-    html+=`<div class="stock-row s-anim" data-live="${esc(s.ticker)}" style="animation-delay:${.4+i*.06}s" onclick="openStock(${JSON.stringify(s).replace(/"/g,'&quot;')})">
+    html+=`<div class="stock-row s-anim" style="animation-delay:${.4+i*.06}s" onclick="openStock(${JSON.stringify(s).replace(/"/g,'&quot;')})">
       <span class="sr-dot" style="background:${t.color}"></span>
       <span class="sr-ticker">${esc(s.ticker)}</span>
       <span class="sr-name">${esc(s.name)}</span>
@@ -1183,7 +1173,7 @@ function renderWatchlist(data){
       const ddColor=dd&&Math.abs(dd)>=20?'var(--green)':dd&&Math.abs(dd)>=10?'var(--amber)':'var(--text2)';
       const t=tc(s.theme);
       const ac=acClass(s.next_action||'');
-      html+=`<div class="wl-card s-anim" data-live="${esc(s.ticker)}" style="animation-delay:${i*.04}s" onclick="openStock(${JSON.stringify(s).replace(/"/g,'&quot;')})">
+      html+=`<div class="wl-card s-anim" style="animation-delay:${i*.04}s" onclick="openStock(${JSON.stringify(s).replace(/"/g,'&quot;')})">
         <div class="wl-card-top">
           <div>
             <div style="display:flex;align-items:center;gap:7px;margin-bottom:3px">
@@ -1235,9 +1225,7 @@ function openStock(s){
 }
 
 function renderStockDetail(s){
-  // Prefer live price from Yahoo cache (most recent) over snapshot from quotes_cache.json
-  const liveQ = liveCache[s.ticker];
-  const price = (liveQ && liveQ.price != null) ? liveQ.price : (s.current_price ?? s.price);
+  const price = s.current_price ?? s.price;
   const dd = s.drawdown_from_high;
   const t = tc(s.theme);
   const ac = acClass(s.next_action||'');
@@ -1308,7 +1296,7 @@ function renderStockDetail(s){
 
 // ── RENDER SIGNALS ────────────────────────────────────────────────────────────
 // Per-section expand state for the Signals screen, so "Show all" persists
-// across re-renders (live price ticks, etc.) without resetting to collapsed.
+// across re-renders without resetting to collapsed.
 window._sigExpanded = window._sigExpanded || {};
 window.toggleSigSection = function(key){
   window._sigExpanded[key] = !window._sigExpanded[key];
@@ -1916,12 +1904,8 @@ runIntro();
     $('dn-watchlist').textContent=wlCount;
     $('dn-watchlist').style.display=wlCount>0?'flex':'none';
 
-    // Fetch live prices for all watchlist tickers — kick off immediately, don't wait
-    const tickers = DB.watchlist.all.map(s=>s.ticker).filter(Boolean);
-    fetchLivePrices(tickers);
-    // Refresh every 30 seconds (was 60) for snappier feel
-    setInterval(()=>fetchLivePrices(tickers), 30000);
-    // Also re-fetch dashboard.json every 5 minutes to pick up GitHub Action commits
+    renderPriceAge(DB.quotes_updated);
+    // Re-fetch dashboard.json every 5 minutes to pick up GitHub Action commits
     setInterval(async () => {
       try {
         const m = Math.floor(Date.now() / 60000);
@@ -1932,8 +1916,8 @@ runIntro();
             DB = fresh;
             console.log('[refresh] dashboard.json updated, re-rendering');
             renderHome(DB); renderWatchlist(DB); renderSignals(DB); renderPortfolio(DB); renderResearch(DB);
-            updateLivePricesInUI(); // re-apply live cache to fresh DOM
           }
+          renderPriceAge(DB.quotes_updated);
         }
       } catch(e){}
     }, 5 * 60 * 1000);
@@ -1957,101 +1941,22 @@ runIntro();
   }
 })();
 
-// ── LIVE PRICES via Yahoo Finance v8 chart endpoint (no auth required) ──────
-const liveCache = {};
-// allorigins/raw is our most reliable free CORS proxy.
-// corsproxy.io became paid-only in 2026 (returns {"error":"..."} on free tier).
-// Order matters: try the proxy that actually works first.
-const PROXIES = [
-  u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
-  u => `https://corsproxy.io/?${encodeURIComponent(u)}`,
-  u => `https://api.codetabs.com/v1/proxy/?quest=${encodeURIComponent(u)}`,
-];
+// ── PRICE AGE ───────────────────────────────────────────────────────────────
+// Prices come from the scheduled quote jobs. Browser-side live prices relied on free
+// CORS proxies that had all died, while the badge kept saying LIVE. Show the real age.
+const STALE_PRICE_HOURS = 2;
 
-async function fetchOneTicker(ticker){
-  // v8/finance/chart works without crumb auth, unlike v7/finance/quote
-  const yahooUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${ticker}?interval=1d&range=1d`;
-  for (const proxy of PROXIES) {
-    try {
-      const res = await fetch(proxy(yahooUrl), { cache: 'no-store' });
-      if (!res.ok) continue;
-      const text = await res.text();
-      // Some proxies return HTML error pages or JSON error envelopes — bail before parsing
-      if (!text || text[0] !== '{') continue;
-      let data;
-      try { data = JSON.parse(text); } catch { continue; }
-      // corsproxy.io paywall returns { error: "..." } with HTTP 200
-      if (data.error) continue;
-      const result = data?.chart?.result?.[0];
-      if (!result) continue;
-      const meta = result.meta || {};
-      const price = meta.regularMarketPrice;
-      const prevClose = meta.chartPreviousClose ?? meta.previousClose;
-      if (price == null) continue;
-      const change = prevClose ? price - prevClose : 0;
-      const pct = prevClose ? (change / prevClose) * 100 : 0;
-      return { symbol: ticker, price, change, pct };
-    } catch(e) { /* try next proxy */ }
-  }
-  console.warn(`[live] All proxies failed for ${ticker}`);
-  return null;
-}
-
-async function fetchLivePrices(tickers){
-  const dot = document.querySelector('.pulse');
-  if (dot) dot.style.background = 'var(--amber)'; // amber while fetching
-
-  const results = await Promise.all(tickers.map(fetchOneTicker));
-  let okCount = 0;
-  results.forEach(q => {
-    if (q) {
-      liveCache[q.symbol] = { price: q.price, change: q.change, pct: q.pct };
-      okCount++;
-    }
-  });
-  updateLivePricesInUI();
-
-  if (dot) {
-    if (okCount === tickers.length) dot.style.background = 'var(--green)';
-    else if (okCount > 0)            dot.style.background = 'var(--amber)';
-    else                              dot.style.background = 'var(--red)';
-    dot.title = `${okCount}/${tickers.length} live · last ${new Date().toLocaleTimeString()}`;
-  }
-
-  if (okCount === 0) console.warn('All live price proxies failed');
-}
-
-function updateLivePricesInUI(){
-  // Patch every element with data-live="TICKER" — covers home rows + watchlist cards
-  document.querySelectorAll('[data-live]').forEach(el=>{
-    const ticker = el.dataset.live;
-    const q = liveCache[ticker];
-    if(!q) return;
-    const priceEl = el.querySelector('.lp');
-    const changeEl = el.querySelector('.lc');
-    if(priceEl) priceEl.textContent = '$'+q.price.toFixed(2);
-    if(changeEl){
-      const s = q.change>=0?'+':'';
-      changeEl.textContent = s+q.pct.toFixed(2)+'%';
-      changeEl.style.color = q.change>=0?'var(--green)':'var(--red)';
-    }
-    // flash bg
-    el.style.transition='background .3s';
-    el.style.background = q.change>=0?'rgba(0,240,130,.07)':'rgba(255,68,85,.07)';
-    setTimeout(()=>el.style.background='', 700);
-  });
-
-  // Also update open stock detail if visible — re-render fully so all references
-  // (price, % from ATH, metrics) stay consistent
-  if(currentScreen==='stock' && selectedStock){
-    const q = liveCache[selectedStock.ticker];
-    if(q){
-      // Mutate selectedStock with the live price so the next render pass uses it
-      selectedStock.current_price = q.price;
-      const el = document.querySelector('.detail-price');
-      if(el) el.textContent = '$'+q.price.toFixed(2);
-    }
-  }
+function renderPriceAge(updatedAt){
+  const label=$('priceAge'), dot=document.querySelector('.pulse');
+  if(!label||!updatedAt) return;
+  const ts=new Date(updatedAt), now=new Date();
+  const time=ts.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
+  const sameDay=ts.toDateString()===now.toDateString();
+  label.textContent=`Prices ${sameDay?time:ts.toLocaleDateString('en-US',{month:'short',day:'numeric'})}`;
+  const stale=(now-ts)/36e5>STALE_PRICE_HOURS;
+  dot.style.background=stale?'var(--amber)':'var(--green)';
+  label.style.color=stale?'var(--amber)':'';
+  label.parentElement.title=`Delayed, not live. Last price update: ${ts.toLocaleString('en-US')}`;
 }
 
 // Expose for inline onclick
