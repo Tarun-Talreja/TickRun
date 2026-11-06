@@ -1,17 +1,21 @@
 {
-  "generated_at": "2026-11-06T22:04:08Z",
+  "generated_at": "2026-11-06T22:15:19Z",
   "checked": 58,
   "flagged": 2,
   "quality": {
-    "AAPL": {
-      "ok": true,
-      "flags": []
-    },
     "AMD": {
       "ok": true,
       "flags": []
     },
+    "AAPL": {
+      "ok": true,
+      "flags": []
+    },
     "ADP": {
+      "ok": true,
+      "flags": []
+    },
+    "AMZN": {
       "ok": true,
       "flags": []
     },
@@ -27,10 +31,6 @@
           "msg": "Reports in EUR; figures converted to USD at 1.1143. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
-    },
-    "AMZN": {
-      "ok": true,
-      "flags": []
     },
     "BWXT": {
       "ok": true,
@@ -56,11 +56,11 @@
       "ok": true,
       "flags": []
     },
-    "COST": {
+    "CRDO": {
       "ok": true,
       "flags": []
     },
-    "CRDO": {
+    "COST": {
       "ok": true,
       "flags": []
     },
@@ -88,11 +88,11 @@
       "ok": true,
       "flags": []
     },
-    "GOOGL": {
+    "GIS": {
       "ok": true,
       "flags": []
     },
-    "GIS": {
+    "GOOGL": {
       "ok": true,
       "flags": []
     },
@@ -104,11 +104,11 @@
       "ok": true,
       "flags": []
     },
-    "LITE": {
+    "ISRG": {
       "ok": true,
       "flags": []
     },
-    "ISRG": {
+    "LITE": {
       "ok": true,
       "flags": []
     },
@@ -120,11 +120,15 @@
       "ok": true,
       "flags": []
     },
+    "LPLA": {
+      "ok": true,
+      "flags": []
+    },
     "MA": {
       "ok": true,
       "flags": []
     },
-    "LPLA": {
+    "META": {
       "ok": true,
       "flags": []
     },
@@ -137,10 +141,6 @@
       "flags": []
     },
     "MSFT": {
-      "ok": true,
-      "flags": []
-    },
-    "META": {
       "ok": true,
       "flags": []
     },
@@ -204,10 +204,6 @@
       "ok": true,
       "flags": []
     },
-    "TW": {
-      "ok": true,
-      "flags": []
-    },
     "TSM": {
       "ok": false,
       "flags": [
@@ -217,15 +213,19 @@
         }
       ]
     },
+    "TW": {
+      "ok": true,
+      "flags": []
+    },
     "UNH": {
       "ok": true,
       "flags": []
     },
-    "V": {
+    "VRT": {
       "ok": true,
       "flags": []
     },
-    "VRT": {
+    "V": {
       "ok": true,
       "flags": []
     },
