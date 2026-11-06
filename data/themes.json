@@ -11,7 +11,7 @@
         "ETN"
       ],
       "color": "#f59e0b",
-      "news_query": "(\"power grid\" OR transformers OR switchgear) electricity demand utilities"
+      "news_query": "(utility OR utilities OR grid) (\"data center\" OR \"load growth\") (transformers OR switchgear OR interconnection OR FERC OR \"power deal\")"
     },
     "nuclear_smr": {
       "name": "Small Modular Nuclear / Uranium",
@@ -24,7 +24,7 @@
         "UEC"
       ],
       "color": "#10b981",
-      "news_query": "(small modular reactor OR uranium OR \"nuclear power\") deal"
+      "news_query": "(\"small modular reactor\" OR SMR OR uranium OR \"nuclear power\") (contract OR deal OR NRC OR approval OR Oklo OR Cameco OR Constellation)"
     },
     "edge_ai_silicon": {
       "name": "Edge AI / Specialty Silicon",
@@ -37,7 +37,7 @@
         "FORM"
       ],
       "color": "#6366f1",
-      "news_query": "(AI chips OR semiconductor equipment OR \"edge AI\") industry"
+      "news_query": "(semiconductor OR \"AI chip\" OR \"chip packaging\" OR HBM) (TSMC OR ASML OR Nvidia OR AMD OR Broadcom OR Micron OR \"export controls\")"
     },
     "cybersecurity": {
       "name": "Cybersecurity (AI Era)",
@@ -50,7 +50,7 @@
         "CYBR"
       ],
       "color": "#ef4444",
-      "news_query": "(cybersecurity OR ransomware OR \"data breach\") industry enterprise"
+      "news_query": "(CrowdStrike OR \"Palo Alto Networks\" OR Zscaler OR Fortinet OR SentinelOne OR \"major breach\" OR ransomware) (acquisition OR breach OR results OR attack)"
     },
     "robotics_automation": {
       "name": "Robotics / Industrial Automation",
@@ -62,7 +62,7 @@
         "KRNT"
       ],
       "color": "#8b5cf6",
-      "news_query": "(humanoid robots OR \"industrial automation\" OR warehouse robotics)"
+      "news_query": "(humanoid OR \"industrial automation\" OR \"warehouse robots\") (Tesla OR Rockwell OR Symbotic OR Fanuc OR ABB OR Agility OR orders)"
     },
     "defense_tech": {
       "name": "Defense Tech / Drones",
@@ -74,7 +74,7 @@
         "ACHR"
       ],
       "color": "#64748b",
-      "news_query": "(defense contract OR drones OR Pentagon) procurement"
+      "news_query": "(Pentagon OR \"defense budget\" OR \"defense contract\") (drones OR Anduril OR Lockheed OR RTX OR Northrop OR \"Palantir\" OR award) -Ukraine"
     },
     "networking_infra": {
       "name": "Networking / Fiber Infrastructure",
@@ -86,7 +86,7 @@
         "AAOI"
       ],
       "color": "#0ea5e9",
-      "news_query": "(\"data center\" networking OR \"optical transceivers\" OR fiber) AI"
+      "news_query": "(Arista OR Ciena OR Corning OR Lumentum OR Coherent OR \"optical transceivers\" OR \"fiber shortage\") AI \"data center\""
     },
     "mega_cap_ai": {
       "name": "Mega-Cap AI Infrastructure",
@@ -99,7 +99,7 @@
         "AVGO"
       ],
       "color": "#06b6d4",
-      "news_query": "(hyperscaler capex OR \"AI spending\") Microsoft Google Amazon Meta"
+      "news_query": "(hyperscaler OR \"capital expenditures\" OR capex OR \"AI spending\") (Microsoft OR Alphabet OR Amazon OR Meta) results"
     },
     "platform_network": {
       "name": "Platform / Network Effect",
@@ -111,7 +111,7 @@
         "SPOT"
       ],
       "color": "#a855f7",
-      "news_query": "(payments OR marketplace OR \"ride hailing\") platform earnings"
+      "news_query": "(Visa OR Mastercard OR Uber OR Airbnb OR DoorDash OR PayPal OR Shopify) (results OR guidance OR regulators OR antitrust OR \"payment volume\")"
     },
     "quality_compounder": {
       "name": "Quality Compounders",
@@ -124,7 +124,7 @@
         "DHR"
       ],
       "color": "#0ea5e9",
-      "news_query": "\"pricing power\" companies earnings"
+      "news_query": "(Costco OR \"Waste Management\" OR Danaher OR Paychex OR \"Automatic Data Processing\") (sales OR results OR guidance OR outlook)"
     },
     "defensive_income": {
       "name": "Defensive / Dividend Income",
@@ -136,7 +136,7 @@
         "CPB"
       ],
       "color": "#84cc16",
-      "news_query": "(consumer staples OR dividend increase) earnings"
+      "news_query": "(\"Procter & Gamble\" OR \"Coca-Cola\" OR PepsiCo OR \"General Mills\" OR \"Colgate-Palmolive\" OR \"Kimberly-Clark\") (results OR outlook OR prices OR dividend)"
     },
     "healthcare_innovation": {
       "name": "Healthcare Innovation",
@@ -147,7 +147,7 @@
         "ZBH"
       ],
       "color": "#ec4899",
-      "news_query": "(medical device OR \"FDA approval\" OR diagnostics) company"
+      "news_query": "(\"Intuitive Surgical\" OR \"Boston Scientific\" OR Medtronic OR \"Abbott Laboratories\" OR Insulet OR \"GE HealthCare\" OR \"Eli Lilly\" OR \"Zimmer Biomet\") (FDA OR results OR trial OR approval)"
     },
     "financials": {
       "name": "Financials / Capital Markets",
@@ -157,7 +157,7 @@
         "LPLA"
       ],
       "color": "#14b8a6",
-      "news_query": "(exchange OR brokerage OR \"capital markets\") trading volumes earnings"
+      "news_query": "(\"CME Group\" OR \"Intercontinental Exchange\" OR \"Charles Schwab\" OR MarketAxess OR Tradeweb OR \"LPL Financial\" OR \"Nasdaq Inc\") (volumes OR results OR deal OR SEC)"
     },
     "real_estate": {
       "name": "Real Estate / REITs",
@@ -166,7 +166,7 @@
         "INVH"
       ],
       "color": "#a3a3a3",
-      "news_query": "(REIT OR \"data center REIT\" OR \"single family rental\") earnings"
+      "news_query": "(REIT OR \"single-family rental\" OR \"data center REIT\") (Equinix OR Digital Realty OR Invitation Homes OR Prologis OR \"cap rates\" OR occupancy OR rents)"
     },
     "consumer_media": {
       "name": "Consumer / Media / Entertainment",
@@ -177,7 +177,7 @@
         "CMCSA"
       ],
       "color": "#f43f5e",
-      "news_query": "(streaming OR subscribers OR \"box office\") earnings"
+      "news_query": "(Netflix OR Disney OR Comcast OR Spotify OR Flutter OR \"Warner Bros\") (subscribers OR results OR deal OR streaming) -\"box office\""
     },
     "datacenter_infra": {
       "name": "Data Center Infrastructure",
@@ -186,7 +186,7 @@
         "LMB"
       ],
       "color": "#f97316",
-      "news_query": "(\"data center\" construction OR cooling OR \"liquid cooling\") contractors"
+      "news_query": "(\"data center\" OR \"liquid cooling\") (Vertiv OR \"Comfort Systems\" OR EMCOR OR Quanta OR Fluor OR contract OR backlog)"
     }
   }
 }

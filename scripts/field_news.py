@@ -40,6 +40,18 @@ WORKERS = 4
 # Stock-tip listicles are about tickers, not about the field.
 _LISTICLE_RE = re.compile(
     r"\b\d+\s+(?:\w+\s+){0,3}stocks?\b|should you buy|buy now|price target|top picks", re.IGNORECASE)
+# Call transcripts and market-report spam say nothing about what changed in a field.
+_NOISE_RE = re.compile(
+    r"earnings call|call transcript|call highlights|market size|market outlook|outlook on the|"
+    r"market report|cagr|growth trends|\btop \d+\b|\bbest \d+\b|undervalued|box office collection",
+    re.IGNORECASE)
+_SKIP_SOURCES = ("openpr", "ad-hoc-news", "kalkine", "kings research", "traders union", "pluang",
+                 "simply wall st", "stockstory", "24/7 wall st", "tradingview", "marketbeat",
+                 "stock titan", "moomoo", "chartmill", "tokenpost", "biggo", "oz arab")
+_TRUSTED_SOURCES = ("reuters", "bloomberg", "wsj", "wall street journal", "financial times",
+                    "cnbc", "associated press", "ap news", "barron", "fortune", "the information",
+                    "engineering news", "utility dive", "datacenterdynamics", "defense news",
+                    "breaking defense", "medtech dive", "stat news", "the verge", "techcrunch")
 
 
 def parse_feed(xml_bytes: bytes) -> list[dict]:
@@ -63,6 +75,16 @@ def parse_feed(xml_bytes: bytes) -> list[dict]:
     return sorted(found.values(), key=lambda h: h["date"], reverse=True)
 
 
+def best_headlines(items: list[dict], limit: int) -> list[dict]:
+    """Drop the noise, then put trusted sources first and newest first within each."""
+    def trusted(h: dict) -> bool:
+        return any(name in h["source"].lower() for name in _TRUSTED_SOURCES)
+    useful = [h for h in items
+              if not _NOISE_RE.search(h["title"])
+              and not any(name in h["source"].lower() for name in _SKIP_SOURCES)]
+    return sorted(useful, key=lambda h: (trusted(h), h["date"]), reverse=True)[:limit]
+
+
 def fetch_headlines(query: str) -> list[dict]:
     try:
         response = requests.get(FEED_URL.format(query=quote(query)), headers=HEADERS, timeout=20)
@@ -70,7 +92,7 @@ def fetch_headlines(query: str) -> list[dict]:
     except requests.RequestException as exc:
         print(f"⚠ feed failed for {query!r}: {str(exc)[:120]}")
         return []
-    return parse_feed(response.content)[:MAX_HEADLINES]
+    return best_headlines(parse_feed(response.content), MAX_HEADLINES)
 
 
 def _prompt(field: str, headlines: list[dict]) -> str:
@@ -124,7 +146,10 @@ def brief_field(field: str, headlines: list[dict], ask) -> dict:
 def _brief_theme(item: tuple[str, dict], key: str) -> tuple[str, dict]:
     theme_id, theme = item
     def ask(prompt: str) -> str:
-        text, _ = chat(key, [{"role": "user", "content": prompt}], max_tokens=1500, temperature=0.2)
+        # Reasoning models can spend the whole budget thinking and return nothing.
+        messages = [{"role": "system", "content": "detailed thinking off"},
+                    {"role": "user", "content": prompt}]
+        text, _ = chat(key, messages, max_tokens=3000, temperature=0.2)
         return text
     headlines = fetch_headlines(theme["news_query"])
     return theme_id, {"name": theme["name"], **brief_field(theme["name"], headlines, ask)}

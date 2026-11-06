@@ -4,7 +4,7 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "scripts"))
 
-from field_news import brief_field, parse_feed
+from field_news import best_headlines, brief_field, parse_feed
 
 FEED = b"""<?xml version="1.0"?><rss><channel>
 <item><title>Alliant targets 1 GW of new data-center contracts - Reuters</title>
@@ -79,3 +79,26 @@ class TestBriefField:
         def boom(prompt):
             raise AssertionError("should not call")
         assert brief_field("Power", [], boom)["sources"] == []
+
+
+def item(title, source="Local Paper", day="2026-11-05"):
+    return {"title": title, "source": source, "date": day, "link": "x"}
+
+
+class TestBestHeadlines:
+    def test_drops_transcripts_and_report_spam(self):
+        junk = ["BILL Q1 2027 Earnings Call Transcript", "Marex Q3 Earnings Call Highlights",
+                "Reprocessed Medical Devices Market Size Outlook 2033",
+                "Top 10 Transformer Manufacturers in 2026"]
+        kept = best_headlines([item(t) for t in junk] + [item("Eaton wins order")], 5)
+        assert [h["title"] for h in kept] == ["Eaton wins order"]
+
+    def test_drops_low_value_sources(self):
+        assert best_headlines([item("Stock faces test", "ad-hoc-news.de"), item("Press item", "openPR.com")], 5) == []
+
+    def test_trusted_source_beats_a_newer_story(self):
+        items = [item("Newer", day="2026-11-06"), item("Solid", "Reuters", "2026-11-03")]
+        assert [h["title"] for h in best_headlines(items, 5)] == ["Solid", "Newer"]
+
+    def test_respects_the_limit(self):
+        assert len(best_headlines([item(f"Story {i}") for i in range(9)], 4)) == 4
