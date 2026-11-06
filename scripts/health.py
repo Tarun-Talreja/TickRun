@@ -39,8 +39,16 @@ def _research_stage(research: dict, now: datetime) -> dict:
     return stage
 
 
+def _ratings_stage(ratings: tuple[int, int] | None) -> dict:
+    """How many ratings came from the current logic; old ones re-queue on their own."""
+    current, total = ratings or (0, 0)
+    return {"name": "Ratings", "updated_at": None, "age_hours": None,
+            "detail": f"{current}/{total} on current logic",
+            "status": "ok" if ratings and current == total else "stale"}
+
+
 def build_health(now: datetime, *, quotes, research, catalysts, news, sec, screener,
-                 field_news=None) -> dict:
+                 field_news=None, ratings=None) -> dict:
     return {"stages": [
         _stage("Quotes", quotes, now),
         _research_stage(research, now),
@@ -49,4 +57,5 @@ def build_health(now: datetime, *, quotes, research, catalysts, news, sec, scree
         _stage("SEC filings", sec, now),
         _stage("Screener", screener, now),
         _stage("Field news", field_news, now),
+        _ratings_stage(ratings),
     ]}

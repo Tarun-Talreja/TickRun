@@ -20,7 +20,8 @@ def _queue(tmp_path, monkeypatch, candidates, drawdowns, max_n=8):
 
 def _candidate(ticker, days_ago):
     date = (datetime.now(timezone.utc) - timedelta(days=days_ago)).strftime("%Y-%m-%d")
-    return {"ticker": ticker, "verdict": "WATCHLIST", "research_file": "x.md", "last_researched": date}
+    return {"ticker": ticker, "verdict": "WATCHLIST", "research_file": "x.md", "last_researched": date,
+            "rating_version": research_batch.RATING_VERSION}
 
 
 def test_name_researched_today_is_not_requeued_for_a_dip(tmp_path, monkeypatch):
@@ -34,3 +35,41 @@ def test_old_research_on_a_dipping_name_is_queued(tmp_path, monkeypatch):
 def test_stale_name_beats_recently_researched_dip(tmp_path, monkeypatch):
     candidates = [_candidate("AMD", 1), _candidate("AAPL", 90)]
     assert _queue(tmp_path, monkeypatch, candidates, {"AMD": -40, "AAPL": -5}) == ["AAPL"]
+
+
+def _rated(ticker, days_ago, verdict="WATCHLIST", version=None):
+    version = research_batch.RATING_VERSION if version is None else version
+    return {**_candidate(ticker, days_ago), "verdict": verdict, "rating_version": version}
+
+
+def test_rating_from_old_logic_is_requeued_even_if_fresh(tmp_path, monkeypatch):
+    old = _rated("NVDA", 0, version=research_batch.RATING_VERSION - 1)
+    assert _queue(tmp_path, monkeypatch, [old], {}) == ["NVDA"]
+
+
+def test_missing_version_counts_as_old(tmp_path, monkeypatch):
+    unversioned = {k: v for k, v in _candidate("NVDA", 0).items() if k != "rating_version"}
+    assert _queue(tmp_path, monkeypatch, [unversioned], {}) == ["NVDA"]
+
+
+def test_old_logic_outranks_ordinary_staleness(tmp_path, monkeypatch):
+    candidates = [_rated("AAPL", 30), _rated("NVDA", 0, version=0)]
+    assert _queue(tmp_path, monkeypatch, candidates, {}, max_n=1) == ["NVDA"]
+
+
+def test_pass_and_red_flag_on_old_logic_are_requeued(tmp_path, monkeypatch):
+    candidates = [_rated("X", 0, "PASS", 0), _rated("MU", 0, "RED FLAG", 0)]
+    assert sorted(_queue(tmp_path, monkeypatch, candidates, {})) == ["MU", "X"]
+
+
+def test_pass_waits_a_month_for_a_second_look(tmp_path, monkeypatch):
+    assert _queue(tmp_path, monkeypatch, [_rated("X", 20, "PASS")], {}) == []
+    assert _queue(tmp_path, monkeypatch, [_rated("X", 31, "PASS")], {}) == ["X"]
+
+
+def test_red_flag_is_rechecked_weekly(tmp_path, monkeypatch):
+    assert _queue(tmp_path, monkeypatch, [_rated("MU", 8, "RED FLAG")], {}) == ["MU"]
+
+
+def test_benchmarks_are_never_queued(tmp_path, monkeypatch):
+    assert _queue(tmp_path, monkeypatch, [_rated("SPY", 0, version=0), _rated("^TNX", 0, version=0)], {}) == []

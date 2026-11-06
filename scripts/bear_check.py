@@ -15,6 +15,11 @@ characters of the note, so it could not catch a figure that contradicted the dat
 
 import re
 
+# Bump when the research prompt, bear check or verdict rules change. Every rating
+# made under an older number goes back in the research queue on its own. Without
+# this, six stocks kept a downgrade from a check that had already been replaced.
+RATING_VERSION = 2
+
 BREAK_TYPES = ("DATA_CONTRADICTION", "THESIS_CONTRADICTED", "BUSINESS_EVENT")
 MIN_EVIDENCE_CHARS = 12   # shorter than this matches by luck, not because it's a real line
 HEADLINES_MARKER = "[Recent news headlines"

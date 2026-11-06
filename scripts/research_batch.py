@@ -2,12 +2,13 @@
 """
 scripts/research_batch.py — Run daily LLM research on the highest-priority names.
 
-Re-researches RESEARCH-WORTHY and WATCHLIST candidates that are either:
-  - Stale (last_researched > STALE_DAYS ago), OR
+Re-researches candidates that are any of:
+  - Rated under older logic (rating_version < RATING_VERSION), whatever the verdict
+  - Stale (older than STALE_DAYS, or PASS_STALE_DAYS for a PASS)
   - Showing a fresh pullback alert (drawdown <= ALERT_THRESHOLD)
 
 Uses research_ticker.py's provider logic (NVIDIA NIM free by default).
-Skips PASS verdicts and index benchmarks. Caps the run to MAX_PER_RUN
+Skips index benchmarks. Caps the run to MAX_PER_RUN
 tickers so the daily job stays within free-tier rate limits.
 
 Usage:
@@ -30,7 +31,11 @@ QUOTES_PATH    = os.path.join(SCRIPT_DIR, "data", "quotes_cache.json")
 RESEARCH_SCRIPT = os.path.join(SCRIPT_DIR, "scripts", "research_ticker.py")
 STATUS_PATH     = os.path.join(SCRIPT_DIR, "data", "research_status.json")
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from bear_check import RATING_VERSION
+
 STALE_DAYS      = 7      # re-research if older than this
+PASS_STALE_DAYS = 30     # a PASS gets a slower second look, or it stays PASS forever
 ALERT_THRESHOLD = -20.0  # drawdown that forces a re-research
 DIP_GAP_DAYS    = 3      # ...but no more often than this, or a selloff keeps
                          # re-researching the same names and stale ones never run
@@ -68,9 +73,7 @@ def _select_tickers(max_n: int) -> list[str]:
     for c in wl.get("candidates", []):
         ticker = c.get("ticker", "")
         verdict = c.get("verdict", "")
-        if ticker.startswith("^") or verdict == "PASS" or ticker in SKIP_TICKERS:
-            continue
-        if verdict not in ("RESEARCH-WORTHY", "WATCHLIST"):
+        if ticker.startswith("^") or ticker in SKIP_TICKERS:
             continue
 
         drawdown = quotes.get(ticker, {}).get("drawdown_from_high")
@@ -86,9 +89,13 @@ def _select_tickers(max_n: int) -> list[str]:
 
         # Priority score: bigger = more urgent. Never-researched names always
         # outrank everything else so the backlog actually drains.
+        old_logic = c.get("rating_version", 0) < RATING_VERSION
+
         score = 0
         if never_pipeline_researched:
             score += 1000
+        if old_logic:
+            score += 500
         if verdict == "RESEARCH-WORTHY":
             score += 100
         dipping = (drawdown is not None and drawdown <= ALERT_THRESHOLD
@@ -97,8 +104,11 @@ def _select_tickers(max_n: int) -> list[str]:
             score += 50
         score += min(stale_days, 30)   # staleness adds up to 30
 
-        # Include if: never actually researched, OR stale, OR freshly dipping
-        if never_pipeline_researched or stale_days >= STALE_DAYS or dipping:
+        if verdict == "PASS":
+            due = stale_days >= PASS_STALE_DAYS
+        else:
+            due = stale_days >= STALE_DAYS or dipping
+        if never_pipeline_researched or old_logic or due:
             scored.append((score, ticker))
 
     scored.sort(reverse=True)

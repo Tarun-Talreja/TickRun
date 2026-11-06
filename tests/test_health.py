@@ -16,7 +16,7 @@ FRESH = "2026-11-04T17:00:00Z"
 
 def _stages(now=WEDNESDAY, quotes=FRESH, research=None):
     research = research or {"ran_at": FRESH, "attempted": 8, "landed": 7}
-    out = build_health(now, field_news=FRESH, quotes=quotes, research=research, catalysts=FRESH,
+    out = build_health(now, field_news=FRESH, ratings=(1, 1), quotes=quotes, research=research, catalysts=FRESH,
                        news=FRESH, sec=FRESH, screener=FRESH)
     return {s["name"]: s for s in out["stages"]}
 
@@ -60,3 +60,17 @@ class TestLoadJson:
         path = tmp_path / "x.json"
         path.write_text(json.dumps({"a": 1}))
         assert load_json(str(path)) == {"a": 1}
+
+
+class TestRatings:
+    def test_all_current_is_ok(self):
+        now = datetime(2026, 11, 6, 12, tzinfo=timezone.utc)
+        stage = build_health(now, quotes=None, research={}, catalysts=None, news=None, sec=None,
+                             screener=None, ratings=(54, 54))["stages"][-1]
+        assert (stage["name"], stage["status"], stage["detail"]) == ("Ratings", "ok", "54/54 on current logic")
+
+    def test_behind_is_stale(self):
+        now = datetime(2026, 11, 6, 12, tzinfo=timezone.utc)
+        stage = build_health(now, quotes=None, research={}, catalysts=None, news=None, sec=None,
+                             screener=None, ratings=(40, 54))["stages"][-1]
+        assert stage["status"] == "stale"

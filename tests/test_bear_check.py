@@ -101,3 +101,17 @@ class TestEvalPlants:
         from bear_eval import apply_plant
         planted = apply_plant(SOURCE, {"set_line": ["- Market cap", "- Market cap: $9.0B"]})
         assert "- Market cap: $9.0B" in planted and "$50.0B" not in planted
+
+
+class TestEvalThresholds:
+    def test_passes_at_the_bar(self):
+        from bear_eval import passed
+        assert passed(caught=17, planted=18, false_alarms=1, clean=38)
+
+    def test_missing_too_many_breaks_fails(self):
+        from bear_eval import passed
+        assert not passed(caught=14, planted=18, false_alarms=0, clean=38)
+
+    def test_too_many_false_alarms_fails(self):
+        from bear_eval import passed
+        assert not passed(caught=18, planted=18, false_alarms=3, clean=38)

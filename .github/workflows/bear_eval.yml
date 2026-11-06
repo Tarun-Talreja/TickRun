@@ -1,12 +1,15 @@
 name: Bear Check Eval
 
-# Manual: measures the live bear check against real notes and planted breaks.
-# Run it after any change to scripts/bear_check.py or the model chain.
+# Measures the live bear check against real notes and planted breaks. Weekly,
+# because NVIDIA can change or retire a model without notice.
 on:
+  schedule:
+    - cron: '37 11 * * 0'
   workflow_dispatch:
 
 permissions:
   contents: read
+  issues: write
 
 jobs:
   eval:
@@ -25,3 +28,16 @@ jobs:
         env:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API }}
         run: python scripts/bear_eval.py
+
+      - name: Open issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Bear check eval failed — ${new Date().toISOString().slice(0,10)}`,
+              body: `Ratings may be unreliable until this is looked at. Run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              labels: ['automation-failure']
+            })

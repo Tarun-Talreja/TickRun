@@ -52,7 +52,7 @@ except Exception:
 # NVIDIA NIM model chain lives in llm_client.py — one list shared by every
 # script, so a model retirement is a one-line fix instead of a 10-week outage.
 from llm_client import NVIDIA_CHAT_MODELS as NVIDIA_MODEL_CHAIN, chat as _nim_chat
-from bear_check import bear_prompt, verified_break
+from bear_check import RATING_VERSION, bear_prompt, verified_break
 from fact_check import fact_check_section, find_unsupported, source_block
 NVIDIA_MODEL = NVIDIA_MODEL_CHAIN[0]   # may be overridden by --model
 
@@ -395,6 +395,7 @@ def _update_watchlist(
             candidate["research_file"]   = output_file
             candidate["last_researched"] = today
             candidate["status"]          = "research_complete"
+            candidate["rating_version"]  = RATING_VERSION
             candidate["unsupported_figures"] = unsupported_figures or []
             if confidence:
                 candidate["confidence"] = confidence

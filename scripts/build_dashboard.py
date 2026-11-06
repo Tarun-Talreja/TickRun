@@ -22,8 +22,10 @@ import os
 import sys
 from datetime import datetime, timezone
 
+from bear_check import RATING_VERSION
 from health import build_health
 from io_utils import load_json as _load
+from research_batch import SKIP_TICKERS
 
 SCRIPT_DIR          = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PORTFOLIO_PATH      = os.path.join(SCRIPT_DIR, "data", "portfolio.json")
@@ -76,6 +78,14 @@ def _enrich_holding(holding: dict, quotes: dict) -> dict:
         "pe":             q.get("pe"),
         "forward_pe":     q.get("forward_pe"),
     }
+
+
+def _rating_counts(candidates: list) -> tuple[int, int]:
+    """(ratings made by the current logic, ratings that should be)."""
+    rated = [c for c in candidates
+             if not c["ticker"].startswith("^") and c["ticker"] not in SKIP_TICKERS]
+    current = sum(c.get("rating_version", 0) >= RATING_VERSION for c in rated)
+    return current, len(rated)
 
 
 def _cap_tier(market_cap) -> str:
@@ -265,6 +275,7 @@ def main():
             sec=sec.get("generated_at"),
             screener=_load(DISCOVERED_PATH).get("generated_at"),
             field_news=_load(FIELD_NEWS_PATH).get("generated_at"),
+            ratings=_rating_counts(candidates_enriched),
         ),
         "portfolio": {
             "total_value":  total_value,
