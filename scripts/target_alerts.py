@@ -53,12 +53,13 @@ def _refresh_live_targets(wl: dict, quotes: dict) -> bool:
             # 0 means "no pullback required — current levels already clear the
             # bar". Applying the drawdown formula here would set the target to
             # the 52-week HIGH, making a buy-ready name render as a huge fake
-            # discount (e.g. "54% below target"). Anchor to the live price so
-            # the gap reads ~0% and the name shows as at-target, not on sale.
-            if not price:
+            # discount (e.g. "54% below target"). Set it from the price once and
+            # leave it: updating it each refresh made the name "at target"
+            # forever. New research stores a real drawdown instead of 0.
+            c["no_pullback_gate"] = True
+            if c.get("buy_target") or not price:
                 continue
             new_target = round(price, 2)
-            c["no_pullback_gate"] = True
         else:
             if not high:
                 continue

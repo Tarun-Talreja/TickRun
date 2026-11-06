@@ -314,6 +314,18 @@ def _extract_drawdown_trigger(text: str) -> float | None:
     return pct if -90 <= pct <= 0 else None
 
 
+def _anchor_trigger(ticker: str, drawdown_trigger_pct: float | None, quotes: dict) -> float | None:
+    """Turn "0 = today's price is fine" into today's actual drawdown.
+
+    A stored 0 made the target follow the live price, so the name read "at
+    target" forever, including after a further 13% drop. Locking in the drawdown
+    keeps the judgment fixed, so later moves show up as a real gap.
+    """
+    if drawdown_trigger_pct != 0:
+        return drawdown_trigger_pct
+    return quotes.get("tickers", {}).get(ticker, {}).get("drawdown_from_high") or 0.0
+
+
 def _live_buy_target(ticker: str, drawdown_trigger_pct: float | None, quotes: dict) -> float | None:
     """Recompute a buy target from the CURRENT 52-week high — never a stale price."""
     if drawdown_trigger_pct is None:
@@ -339,8 +351,18 @@ def _bear_check(provider, api_key, ticker, bull_text, news_block) -> str | None:
         f"specific argument AGAINST buying {ticker} right now — the thing the bull "
         f"case is most likely underweighting. Base it ONLY on the note and these "
         f"headlines; if you have no real counter-argument, say 'No strong bear case "
-        f"from available data.' Then end with: 'CHANGES VERDICT: YES' or "
-        f"'CHANGES VERDICT: NO'.\n\nHeadlines:\n{news_block}\n\nBullish note:\n{bull_text[:2500]}"
+        f"from available data.'\n\n"
+        f"Then step out of the short-seller role and grade your own argument neutrally. "
+        f"End with exactly one line:\n"
+        f"BEAR_SEVERITY: THESIS-BREAKING — a specific fact in the note or headlines shows "
+        f"the thesis is false or its data is wrong (e.g. figures that cannot be true, a "
+        f"reported event that removes the core business case).\n"
+        f"BEAR_SEVERITY: MATERIAL — a real, specific risk the note underweights.\n"
+        f"BEAR_SEVERITY: ORDINARY — a normal risk for this kind of stock.\n"
+        f"Every stock has real risks, so most arguments are MATERIAL or ORDINARY. Valuation "
+        f"concerns, speculation, concentration, competition and anything marked unverified "
+        f"are never THESIS-BREAKING."
+        f"\n\nHeadlines:\n{news_block}\n\nBullish note:\n{bull_text[:2500]}"
     )
     try:
         return _call_llm(provider, api_key, prompt)
@@ -349,10 +371,15 @@ def _bear_check(provider, api_key, ticker, bull_text, news_block) -> str | None:
 
 
 def _bear_flips_verdict(bear_text: str | None) -> bool:
-    """True if the devil's-advocate pass explicitly says the bear case changes the call."""
+    """True only if the bear case shows the thesis itself is wrong.
+
+    This used to ask "CHANGES VERDICT: YES/NO" straight after telling the model
+    to be a short-seller. It said YES in 75 of 75 notes, so every RESEARCH-WORTHY
+    call was downgraded and the app could never show a name as buy-ready.
+    """
     if not bear_text:
         return False
-    return bool(re.search(r"CHANGES VERDICT:\s*YES", bear_text, re.IGNORECASE))
+    return bool(re.search(r"BEAR_SEVERITY:\s*THESIS-BREAKING", bear_text, re.IGNORECASE))
 
 
 def _synthesize_next_action(final_verdict: str, thesis: str | None, drawdown_pct: float | None) -> str:
@@ -501,7 +528,7 @@ def main():
 
     confidence = _extract_confidence(text)
     thesis = _extract_thesis(text)
-    drawdown_trigger_pct = _extract_drawdown_trigger(text)
+    drawdown_trigger_pct = _anchor_trigger(ticker, _extract_drawdown_trigger(text), quotes)
     live_buy_target = _live_buy_target(ticker, drawdown_trigger_pct, quotes)
 
     # Devil's-advocate pass only for buy-ready names — surfaces blind spots
