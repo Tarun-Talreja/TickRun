@@ -64,6 +64,10 @@ def chat(api_key: str, messages: list[dict], *, max_tokens: int,
             text = _clean(r.choices[0].message.content)
             if not text:
                 raise ValueError("empty completion")
+            # A note cut off at the token limit loses its verdict lines, which
+            # are the last thing it writes.
+            if r.choices[0].finish_reason == "length":
+                raise ValueError("truncated completion")
             return text, model
         except (APIStatusError, APIConnectionError, ValueError) as exc:
             last_err = exc

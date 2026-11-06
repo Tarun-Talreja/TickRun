@@ -482,6 +482,13 @@ def main():
     prompt = _build_prompt(ticker, quotes)
     text   = _call_llm(provider, api_key, prompt)
 
+    # Fail before anything is saved: a note with no verdict was being committed
+    # and counted as landed while the watchlist kept the old research.
+    verdict = _extract_verdict(text)
+    if not verdict:
+        print(f"❌  No verdict in the response for {ticker} — nothing saved.")
+        sys.exit(1)
+
     today     = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     filename  = f"{ticker}_{today}.md"
     out_path  = os.path.join(OUTPUT_DIR, filename)
@@ -492,7 +499,6 @@ def main():
 
     print(f"\n{text}\n")
 
-    verdict = _extract_verdict(text)
     confidence = _extract_confidence(text)
     thesis = _extract_thesis(text)
     drawdown_trigger_pct = _extract_drawdown_trigger(text)
@@ -513,22 +519,19 @@ def main():
         f.write(fact_check_section(unsupported))
     print(f"🔎  Fact-check: {len(unsupported)} figure(s) not in the source data: {unsupported}")
 
-    if verdict:
-        conf_str = f" (confidence: {confidence})" if confidence else ""
-        print(f"✅  Verdict: {verdict}{conf_str}")
-        if thesis:
-            print(f"📄  Thesis: {thesis}")
-        if not args.save_only:
-            final_verdict, downgraded = _update_watchlist(
-                ticker, verdict, f"output/research/{filename}", confidence, bear,
-                thesis=thesis, drawdown_trigger_pct=drawdown_trigger_pct,
-                live_buy_target=live_buy_target, unsupported_figures=unsupported,
-            )
-            if downgraded:
-                print(f"⚠️  Bear check flipped the call — downgraded {verdict} → {final_verdict}")
-            print(f"📝  Updated watchlist.json → {ticker} = {final_verdict}{conf_str}")
-    else:
-        print("⚠   Could not extract a clear verdict from the response.")
+    conf_str = f" (confidence: {confidence})" if confidence else ""
+    print(f"✅  Verdict: {verdict}{conf_str}")
+    if thesis:
+        print(f"📄  Thesis: {thesis}")
+    if not args.save_only:
+        final_verdict, downgraded = _update_watchlist(
+            ticker, verdict, f"output/research/{filename}", confidence, bear,
+            thesis=thesis, drawdown_trigger_pct=drawdown_trigger_pct,
+            live_buy_target=live_buy_target, unsupported_figures=unsupported,
+        )
+        if downgraded:
+            print(f"⚠️  Bear check flipped the call — downgraded {verdict} → {final_verdict}")
+        print(f"📝  Updated watchlist.json → {ticker} = {final_verdict}{conf_str}")
 
     print(f"💾  Saved → {out_path}")
 
