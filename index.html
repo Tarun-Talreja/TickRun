@@ -312,6 +312,14 @@ html,body{
 .al-chip{font-size:10px;font-weight:600;padding:3px 7px;border-radius:5px;background:var(--bg3);color:var(--text1);cursor:help}
 .al-warn{margin-top:12px;padding:10px 12px;background:#ffaa0015;border:1px solid #ffaa0033;border-radius:8px;font-size:11px;color:#ffaa00;line-height:1.5}
 .disc-wrap{padding:12px 0 4px}
+.rd-sec{font-size:12px;font-weight:600;padding:8px 16px 6px}
+.rd-card{margin:0 16px 8px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:10px 12px}
+.rd-top{display:flex;align-items:center;gap:6px}
+.rd-px{margin-left:auto;font-size:12px}
+.rd-tag{font-size:10px;padding:1px 6px;border:1px solid var(--border);border-radius:8px;color:var(--cyan)}
+.rd-list{margin:6px 0 0 16px;padding:0;font-size:12px;line-height:1.45}
+.rd-warn{font-size:11px;font-weight:600;color:var(--amber);margin-top:8px}
+.rd-foot{font-size:11px;color:var(--text2);padding:4px 16px}
 .fn-item{margin:0 16px 6px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:10px 12px}
 .fn-name{font-size:13px;font-weight:600;cursor:pointer}
 .fn-sum{font-size:13px;line-height:1.45;margin-top:8px}
@@ -1079,6 +1087,40 @@ function renderDiscovered(data){
   return h;
 }
 
+function renderRadarCard(c){
+  const safeLink = u => /^https:\/\//.test(u||'') ? esc(u) : '';
+  const reasons=(c.reasons||[]).map(r=>{
+    const link=safeLink(r.link);
+    return `<li>${link?`<a class="fn-src" href="${link}" target="_blank" rel="noopener noreferrer">${esc(r.text)}</a>`:esc(r.text)}</li>`;
+  }).join('');
+  const cautions=(c.watch_outs||[]).map(w=>`<li>${esc(w)}</li>`).join('');
+  return `<div class="rd-card">
+    <div class="rd-top"><span class="disc-tk">${esc(c.ticker)}</span>
+      ${c.new?'<span class="rd-tag">New</span>':''}
+      ${c.tracked?'<span class="rd-tag">Tracked</span>':''}
+      ${c.rating?`<span class="rd-tag">${esc(c.rating)}</span>`:''}
+      <span class="rd-px">${c.price!=null?fp(c.price):''}</span></div>
+    <div class="disc-nm">${esc(c.name||'')}</div>
+    <ul class="rd-list">${reasons}</ul>
+    ${cautions?`<div class="rd-warn">Watch out</div><ul class="rd-list">${cautions}</ul>`:''}
+  </div>`;
+}
+
+function renderRadar(data){
+  const r=data.radar||{};
+  const cards=r.cards||[], sale=r.on_sale||[];
+  if(!cards.length&&!sale.length) return '';
+  const fresh=cards.filter(c=>c.new);
+  const section=(title,list)=>list.length?`<div class="rd-sec">${title}</div>${list.map(renderRadarCard).join('')}`:'';
+  const sc=(r.scorecard||{})['4w']||{};
+  const score=sc.count?`After 4 weeks, ${sc.count} picks averaged ${fpct(sc.avg_excess_pct)} vs SPY.`:'Too early to score against SPY.';
+  return `<div class="disc-wrap"><div class="disc-head">📡 Stock radar <span class="disc-note">leads to research, not buy calls</span></div>
+    ${section('New this week',fresh)}
+    ${section('Stocks to know',cards.filter(c=>!c.new))}
+    ${section('Quality on sale',sale)}
+    <div class="rd-foot">${esc(score)}</div></div>`;
+}
+
 function renderFieldNews(data){
   const fields = Object.values((data.field_news||{}).fields||{}).filter(f=>f.sources&&f.sources.length);
   if(!fields.length) return '';
@@ -1130,7 +1172,7 @@ function renderWatchlist(data){
       <span class="filter-chip theme-chip ${theme==='all'?'active':''}" onclick="setTheme('all')">All Themes</span>
       ${themeKeys.map(t=>`<span class="filter-chip theme-chip ${theme===t?'active':''}" onclick="setTheme('${t}')" style="${theme===t?`background:${tc(t).color};border-color:${tc(t).color}`:`border-color:${tc(t).color}66`}"><span style="width:7px;height:7px;border-radius:50%;background:${tc(t).color};display:inline-block;margin-right:5px"></span>${esc(tc(t).label)} ${themeCounts[t]}</span>`).join('')}
     </div>
-    ${(filter==='all'&&theme==='all'&&searchQ==='')?renderFieldNews(data)+renderDiscovered(data):''}
+    ${(filter==='all'&&theme==='all'&&searchQ==='')?renderRadar(data)+renderFieldNews(data)+renderDiscovered(data):''}
     <div class="wl-list">`;
 
     stocks.forEach((s,i)=>{

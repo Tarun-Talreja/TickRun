@@ -1,0 +1,81 @@
+name: Radar Weekly Research
+
+# After the Saturday screener, research the radar's top new names.
+on:
+  workflow_run:
+    workflows: ["Weekly Discovery Screener"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+# Shares the research group: both write watchlist.json.
+concurrency:
+  group: llm-research
+  cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  promote:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+
+      - name: Refresh quotes
+        run: python scripts/refresh_quotes.py
+
+      - name: Build radar
+        run: python scripts/radar.py
+
+      - name: Research and promote
+        env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API }}
+        run: python scripts/radar_promote.py
+
+      - name: Rebuild radar and dashboard
+        run: |
+          python scripts/radar.py
+          python scripts/build_dashboard.py
+
+      - name: Sync with remote before commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase --autostash origin main
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto: radar weekly research"
+          file_pattern: >-
+            data/radar.json
+            data/radar_log.json
+            data/watchlist.json
+            watchlist.md
+            output/research/*.md
+            output/dashboard.json
+
+      - name: Open issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Radar research failed — ${new Date().toISOString().slice(0,10)}`,
+              body: `Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              labels: ['automation-failure']
+            })

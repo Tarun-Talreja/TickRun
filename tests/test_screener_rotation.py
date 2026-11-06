@@ -67,3 +67,7 @@ class TestUpdateHistory:
     def test_name_off_the_list_starts_its_count_again(self):
         before = {"A": {"first_seen": "2026-10-01", "first_price": 8.0, "weeks_shown": 2}}
         assert update_history(before, [], TODAY)["A"]["weeks_shown"] == 0
+
+    def test_second_run_on_the_same_day_does_not_count_twice(self):
+        once = update_history({}, [stock("A")], TODAY)
+        assert update_history(once, [stock("A")], TODAY)["A"]["weeks_shown"] == 1

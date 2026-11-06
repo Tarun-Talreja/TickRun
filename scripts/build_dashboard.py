@@ -46,6 +46,7 @@ TARGET_ALERTS_PATH  = os.path.join(SCRIPT_DIR, "data", "target_alerts.json")
 TRACK_RECORD_PATH   = os.path.join(SCRIPT_DIR, "output", "track_record.json")
 DISCOVERED_PATH     = os.path.join(SCRIPT_DIR, "data", "discovered.json")
 FIELD_NEWS_PATH     = os.path.join(SCRIPT_DIR, "data", "field_news.json")
+RADAR_PATH          = os.path.join(SCRIPT_DIR, "data", "radar.json")
 ASSET_LOCATION_PATH = os.path.join(SCRIPT_DIR, "data", "asset_location.json")
 CATALYSTS_PATH      = os.path.join(SCRIPT_DIR, "data", "catalysts.json")
 DAILY_BRIEF_PATH    = os.path.join(SCRIPT_DIR, "output", "daily_brief.json")
@@ -302,6 +303,7 @@ def main():
         "track_record":    track_rec,
         "discovered":      _load(DISCOVERED_PATH),
         "field_news":      _load(FIELD_NEWS_PATH),
+        "radar":           _load(RADAR_PATH),
         "asset_location":  _load(ASSET_LOCATION_PATH),
         "catalysts":       _load(CATALYSTS_PATH),
         "daily_brief":     _load(DAILY_BRIEF_PATH),

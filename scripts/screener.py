@@ -52,6 +52,9 @@ SCRIPT_DIR     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WATCHLIST_PATH = os.path.join(SCRIPT_DIR, "data", "watchlist.json")
 OUTPUT_PATH    = os.path.join(SCRIPT_DIR, "data", "discovered.json")
 HISTORY_PATH   = os.path.join(SCRIPT_DIR, "data", "discovery_history.json")
+UNIVERSE_PATH  = os.path.join(SCRIPT_DIR, "data", "screen_universe.json")
+UNIVERSE_FIELDS = ("ticker", "name", "sector", "score", "quality", "price", "drawdown_pct",
+                   "forward_pe", "rev_growth", "fcf", "debt_equity")
 CACHE_DIR      = os.path.join(SCRIPT_DIR, "data", "screen_cache")
 os.makedirs(CACHE_DIR, exist_ok=True)
 
@@ -269,11 +272,11 @@ def pick_discoveries(ranked: list[dict], tracked: set[str], tracked_names: set[s
 def update_history(history: dict, shown: list[dict], today: str) -> dict:
     """New history: when each name first appeared, at what price, and when it rests."""
     shown_by_ticker = {r["ticker"]: r for r in shown}
-    updated = {t: {**h, "weeks_shown": 0} for t, h in history.items()}
+    updated = {t: {**h, "weeks_shown": 0} for t, h in history.items() if t not in shown_by_ticker}
     for ticker, r in shown_by_ticker.items():
         h = history.get(ticker, {})
-        weeks = h.get("weeks_shown", 0) + 1
-        entry = {**h, "first_seen": h.get("first_seen", today),
+        weeks = h.get("weeks_shown", 0) + (0 if h.get("last_shown") == today else 1)
+        entry = {**h, "first_seen": h.get("first_seen", today), "last_shown": today,
                  "first_price": h.get("first_price", r.get("price")), "weeks_shown": weeks}
         if weeks >= MAX_WEEKS_SHOWN:
             rest_until = date.fromisoformat(today) + timedelta(weeks=REST_WEEKS)
@@ -337,6 +340,9 @@ def main():
     }
     with open(OUTPUT_PATH, "w") as f:
         json.dump(out, f, indent=2)
+    with open(UNIVERSE_PATH, "w") as f:
+        json.dump({"generated_at": out["generated_at"],
+                   "stocks": [{k: r.get(k) for k in UNIVERSE_FIELDS} for r in results]}, f, indent=1)
     with open(HISTORY_PATH, "w") as f:
         json.dump(update_history(history, discovered, today), f, indent=2, sort_keys=True)
 
