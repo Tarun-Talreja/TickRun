@@ -38,34 +38,57 @@ NVIDIA_CHAT_MODELS = [
     "stepfun-ai/step-5-preview",              # preview — may vanish, so last
 ]
 
+MAX_STREAM_SECONDS = 240      # one model may write for this long
+CHAT_DEADLINE_SECONDS = 480   # no new model starts after this, so a ticker can't eat the run
+
 _THINK_RE = re.compile(r"<think>.*?</think>", re.DOTALL | re.IGNORECASE)
+
+
+def _stream(client, model: str, messages: list[dict], max_tokens: int, temperature: float) -> str:
+    """Full text of one completion. Raises ValueError if unusable.
+
+    Streaming, because the client timeout then means "no data for that long". Without
+    it a 90s timeout killed any model still writing, so at busy times every model failed.
+    """
+    started = time.monotonic()
+    parts, finish_reason = [], None
+    for chunk in client.chat.completions.create(model=model, messages=messages, stream=True,
+                                                max_tokens=max_tokens, temperature=temperature):
+        if time.monotonic() - started > MAX_STREAM_SECONDS:
+            raise ValueError("too slow")
+        if chunk.choices:
+            parts.append(chunk.choices[0].delta.content or "")
+            finish_reason = chunk.choices[0].finish_reason or finish_reason
+    # Reasoning models may inline their scratchpad; never let it reach the UI.
+    text = _THINK_RE.sub("", "".join(parts)).strip()
+    if not text:
+        raise ValueError("empty completion")
+    # A note cut off at the token limit loses its verdict lines, which
+    # are the last thing it writes.
+    if finish_reason == "length":
+        raise ValueError("truncated completion")
+    return text
 
 
 def chat(api_key: str, messages: list[dict], *, max_tokens: int,
          temperature: float = 0.3, timeout: float = 90,
          models: list[str] | None = None) -> tuple[str, str]:
     """Return (text, model_used). Raises RuntimeError only if every model fails."""
-    from openai import OpenAI, APIStatusError, APIConnectionError
+    import httpx
+    from openai import APIError, OpenAI
 
     client = OpenAI(base_url=NVIDIA_BASE_URL, api_key=api_key,
                     timeout=timeout, max_retries=0)
+    deadline = time.monotonic() + CHAT_DEADLINE_SECONDS
     last_err = None
     for model in models or NVIDIA_CHAT_MODELS:
+        if time.monotonic() > deadline:
+            print("   out of time for this request — not trying more models")
+            break
         try:
-            r = client.chat.completions.create(
-                model=model, messages=messages,
-                max_tokens=max_tokens, temperature=temperature,
-            )
-            # Reasoning models may inline their scratchpad; never let it reach the UI.
-            text = _THINK_RE.sub("", r.choices[0].message.content or "").strip()
-            if not text:
-                raise ValueError("empty completion")
-            # A note cut off at the token limit loses its verdict lines, which
-            # are the last thing it writes.
-            if r.choices[0].finish_reason == "length":
-                raise ValueError("truncated completion")
-            return text, model
-        except (APIStatusError, APIConnectionError, ValueError) as exc:
+            return _stream(client, model, messages, max_tokens, temperature), model
+        # httpx errors surface raw when a stream drops part-way.
+        except (APIError, httpx.HTTPError, ValueError) as exc:
             last_err = exc
             detail = getattr(exc, "status_code", None) or str(exc)[:60]
             print(f"   {model} failed ({type(exc).__name__}: {detail}) — trying next...")
