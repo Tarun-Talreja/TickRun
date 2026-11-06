@@ -1289,12 +1289,12 @@
       "name": "INVH",
       "theme": "real_estate",
       "status": "research_complete",
-      "thesis": "Defensive single-family rental REIT with positive FCF but minimal growth (1.3%), high leverage (~9x net debt/FCF), and an unexplained forward P/E of 37x vs trailing 24x.",
+      "thesis": "Scaled single-family rental REIT with durable moat and positive FCF, but near-zero growth and rising forward multiples suggest the market prices in portfolio contraction; a deeper pullback would compensate for interest-rate and housing-cycle risk.",
       "added": "2026-06-08",
       "verdict": "WATCHLIST",
       "buy_target": 23.17,
       "current_price": null,
-      "next_action": "WAIT \u2014 Defensive single-family rental REIT with positive FCF but minimal growth (1.3%), high leverage (~9x net debt/FCF), and an unexplained forward P/E of 37x vs trailing 24x. Revisit at 25% below the 52-week high.",
+      "next_action": "WAIT \u2014 Scaled single-family rental REIT with durable moat and positive FCF, but near-zero growth and rising forward multiples suggest the market prices in portfolio contraction; a deeper pullback would compensate for interest-rate and housing-cycle risk. Revisit at 25% below the 52-week high.",
       "research_file": "output/research/INVH_2026-11-06.md",
       "last_researched": "2026-11-06",
       "llm_verdict": "WATCHLIST",
@@ -1303,17 +1303,13 @@
       "buy_trigger_drawdown_pct": -25.0,
       "no_pullback_gate": false,
       "unsupported_figures": [
-        "90%",
-        "9x",
-        "$300",
-        "$87M",
-        "10%",
-        "35%",
-        "9.1x",
+        "3%",
+        "9.2x",
         "25%"
       ],
-      "rating_version": 2,
-      "bear_check": null
+      "rating_version": 3,
+      "bear_check": null,
+      "fall_reason": null
     },
     {
       "ticker": "NFLX",
