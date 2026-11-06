@@ -59,6 +59,16 @@ class TestVerifiedBreak:
         text = bear("DATA_CONTRADICTION", "- Market cap: $50.0B; - Revenue (TTM): $900000M")
         assert verified_break(text, SOURCE) is None
 
+    def test_thesis_break_may_also_quote_the_note(self):
+        text = bear("THESIS_CONTRADICTED",
+                    "Revenue growth (latest quarter vs a year ago, NOT trailing-twelve-month): "
+                    "-12.0%; Revenue growth (YoY): 26.1%")
+        assert verified_break(text, SOURCE) == "THESIS_CONTRADICTED"
+
+    def test_thesis_break_needs_a_real_data_line(self):
+        text = bear("THESIS_CONTRADICTED", "Revenue growth (YoY): 26.1%; none")
+        assert verified_break(text, SOURCE) is None
+
     def test_markdown_labels_still_parse(self):
         text = ("Argument.\n**BREAK:** BUSINESS_EVENT\n"
                 "**EVIDENCE:** Acme restates three years of results after audit review")

@@ -82,5 +82,8 @@ def verified_break(bear_text: str | None, source: str) -> str | None:
     # A contradiction needs two lines, so a quote may hold several, split by ";".
     parts = [_normalise(p).strip(' "“”\'`*-') for p in quote[-1].split(";")]
     scope = _normalise(_evidence_scope(kind[-1], source))
-    real = all(len(p) >= MIN_EVIDENCE_CHARS and p in scope for p in parts)
+    found = [len(p) >= MIN_EVIDENCE_CHARS and p in scope for p in parts]
+    # Two data lines must both be real. Other breaks need one real line, since
+    # the model often adds the note's own claim beside it.
+    real = all(found) if kind[-1] == "DATA_CONTRADICTION" else any(found)
     return kind[-1] if real else None
