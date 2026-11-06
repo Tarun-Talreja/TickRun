@@ -1233,12 +1233,12 @@
       "name": "INVH",
       "theme": "real_estate",
       "status": "research_complete",
-      "thesis": "Quality single-family rental REIT with $950M FCF and 23.7% operating margin, but 1.3% revenue growth and 54% debt-to-cap limit upside at 16.5x EV/EBITDA.",
+      "thesis": "Defensive single-family rental REIT with positive FCF but minimal growth (1.3%), high leverage (~9x net debt/FCF), and an unexplained forward P/E of 37x vs trailing 24x.",
       "added": "2026-06-08",
       "verdict": "WATCHLIST",
       "buy_target": 23.17,
       "current_price": null,
-      "next_action": "WAIT \u2014 Quality single-family rental REIT with $950M FCF and 23.7% operating margin, but 1.3% revenue growth and 54% debt-to-cap limit upside at 16.5x EV/EBITDA. Revisit at 25% below the 52-week high.",
+      "next_action": "WAIT \u2014 Defensive single-family rental REIT with positive FCF but minimal growth (1.3%), high leverage (~9x net debt/FCF), and an unexplained forward P/E of 37x vs trailing 24x. Revisit at 25% below the 52-week high.",
       "research_file": "output/research/INVH_2026-11-06.md",
       "last_researched": "2026-11-06",
       "llm_verdict": "WATCHLIST",
@@ -1247,13 +1247,17 @@
       "buy_trigger_drawdown_pct": -25.0,
       "no_pullback_gate": false,
       "unsupported_figures": [
+        "90%",
+        "9x",
+        "$300",
+        "$87M",
+        "10%",
         "35%",
-        "5.9%",
-        "11.6x",
-        "$174M",
-        "18%",
+        "9.1x",
         "25%"
-      ]
+      ],
+      "rating_version": 2,
+      "bear_check": null
     },
     {
       "ticker": "NFLX",
