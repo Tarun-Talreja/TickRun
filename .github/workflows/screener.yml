@@ -50,6 +50,7 @@ jobs:
           commit_message: "Auto: weekly discovery screen"
           file_pattern: >-
             data/discovered.json
+            data/discovery_history.json
             output/dashboard.json
 
       - name: Open issue on failure

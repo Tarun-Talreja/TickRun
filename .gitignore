@@ -10,6 +10,8 @@ venv/
 # yfinance per-ticker cache (rebuilt daily by CI)
 data/cache/
 data/quotes_cache.json
+# Committed copies never expired: a fresh checkout makes every file look new.
+data/screen_cache/
 # Research output files are committed (useful record)
 # but the raw cache bloats git history.
 

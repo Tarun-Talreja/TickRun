@@ -31,10 +31,11 @@ Requirements:
 import argparse
 import json
 import os
+import re
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 
 try:
     import yfinance as yf
@@ -43,9 +44,14 @@ except ImportError:
     print("Missing dependency: pip install yfinance requests")
     sys.exit(1)
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from io_utils import load_json
+from refresh_quotes import _ttm_fcf
+
 SCRIPT_DIR     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WATCHLIST_PATH = os.path.join(SCRIPT_DIR, "data", "watchlist.json")
 OUTPUT_PATH    = os.path.join(SCRIPT_DIR, "data", "discovered.json")
+HISTORY_PATH   = os.path.join(SCRIPT_DIR, "data", "discovery_history.json")
 CACHE_DIR      = os.path.join(SCRIPT_DIR, "data", "screen_cache")
 os.makedirs(CACHE_DIR, exist_ok=True)
 
@@ -53,6 +59,12 @@ CACHE_TTL_HOURS = 24 * 5
 MAX_WORKERS     = 8
 TOP_N           = 15
 MIN_MARKET_CAP  = 2e9
+
+# The ranking moves slowly, so without these EOG sat at #1 for 13 straight weeks
+# and 11 of the 15 slots went to two sectors.
+MAX_PER_SECTOR  = 3
+MAX_WEEKS_SHOWN = 4
+REST_WEEKS      = 12
 
 HEADERS = {"User-Agent": "TickRun Screener tarun888099@gmail.com"}
 
@@ -107,7 +119,8 @@ def _fetch(sym: str) -> dict | None:
         except Exception as exc:
             print(f"⚠ ignoring bad cache for {sym}: {str(exc)[:120]}")
     try:
-        info = yf.Ticker(sym).info or {}
+        t = yf.Ticker(sym)
+        info = t.info or {}
         if not info.get("marketCap"):
             return None
         rec = {
@@ -121,7 +134,8 @@ def _fetch(sym: str) -> dict | None:
             "profit_margin": info.get("profitMargins"),
             "rev_growth": info.get("revenueGrowth"),
             "earnings_growth": info.get("earningsGrowth"),
-            "fcf": info.get("freeCashflow"),
+            # OCF minus capex; Yahoo's levered figure showed GOOGL as burning cash.
+            "fcf": fcf if (fcf := _ttm_fcf(t)) is not None else info.get("freeCashflow"),
             # Yahoo's multiple is unusable when financials aren't in the quote currency.
             "ev_ebitda": (info.get("enterpriseToEbitda")
                           if info.get("financialCurrency", info.get("currency")) == info.get("currency")
@@ -220,10 +234,52 @@ def _score(r: dict) -> dict:
 
 # ── Main ─────────────────────────────────────────────────────────────────────
 
-def _watchlist_tickers() -> set[str]:
+def _watchlist() -> tuple[set[str], set[str]]:
     with open(WATCHLIST_PATH) as f:
-        wl = json.load(f)
-    return {c["ticker"] for c in wl.get("candidates", [])}
+        candidates = json.load(f).get("candidates", [])
+    return ({c["ticker"] for c in candidates},
+            {company_key(c.get("name") or c["ticker"]) for c in candidates})
+
+
+def company_key(name: str) -> str:
+    """Same key for a company's share classes, so GOOG can't pose as a find next to GOOGL."""
+    words = re.sub(r"[^a-z0-9 ]", " ", name.lower()).split()
+    suffixes = {"inc", "corp", "corporation", "co", "company", "plc", "ltd", "class", "a", "b", "c"}
+    return " ".join(w for w in words if w not in suffixes)
+
+
+def pick_discoveries(ranked: list[dict], tracked: set[str], tracked_names: set[str],
+                     history: dict, today: str, limit: int) -> list[dict]:
+    """Best names, skipping tracked and resting ones and capping each sector."""
+    picks, seen, per_sector = [], set(tracked_names), {}
+    for r in ranked:
+        key, sector = company_key(r.get("name") or r["ticker"]), r.get("sector")
+        if (r["ticker"] in tracked or key in seen
+                or history.get(r["ticker"], {}).get("rest_until", "") > today
+                or per_sector.get(sector, 0) >= MAX_PER_SECTOR):
+            continue
+        picks.append(r)
+        seen.add(key)
+        per_sector[sector] = per_sector.get(sector, 0) + 1
+        if len(picks) == limit:
+            break
+    return picks
+
+
+def update_history(history: dict, shown: list[dict], today: str) -> dict:
+    """New history: when each name first appeared, at what price, and when it rests."""
+    shown_by_ticker = {r["ticker"]: r for r in shown}
+    updated = {t: {**h, "weeks_shown": 0} for t, h in history.items()}
+    for ticker, r in shown_by_ticker.items():
+        h = history.get(ticker, {})
+        weeks = h.get("weeks_shown", 0) + 1
+        entry = {**h, "first_seen": h.get("first_seen", today),
+                 "first_price": h.get("first_price", r.get("price")), "weeks_shown": weeks}
+        if weeks >= MAX_WEEKS_SHOWN:
+            rest_until = date.fromisoformat(today) + timedelta(weeks=REST_WEEKS)
+            entry = {**entry, "weeks_shown": 0, "rest_until": rest_until.isoformat()}
+        updated[ticker] = entry
+    return updated
 
 
 def main():
@@ -235,7 +291,9 @@ def main():
     args = parser.parse_args()
 
     universe = _load_universe(args.universe)[: args.max_scan]
-    already  = _watchlist_tickers()
+    tracked, tracked_names = _watchlist()
+    today    = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    history  = load_json(HISTORY_PATH, {})
     print(f"🔎 Screening {len(universe)} names (professional multi-factor model)...")
 
     results = []
@@ -255,9 +313,8 @@ def main():
             r.update(_score(r))
             results.append(r)
 
-    # Rank, drop names already tracked
     results.sort(key=lambda x: x["score"], reverse=True)
-    discovered = [r for r in results if r["ticker"] not in already][: args.limit]
+    discovered = pick_discoveries(results, tracked, tracked_names, history, today, args.limit)
 
     out = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -273,12 +330,15 @@ def main():
                 "market_cap": r["market_cap"], "price": r.get("price"),
                 "forward_pe": r.get("forward_pe"), "rev_growth": r.get("rev_growth"),
                 "roe": r.get("roe"), "drawdown_pct": r.get("drawdown_pct"),
+                "new_this_week": r["ticker"] not in history,
             }
             for r in discovered
         ],
     }
     with open(OUTPUT_PATH, "w") as f:
         json.dump(out, f, indent=2)
+    with open(HISTORY_PATH, "w") as f:
+        json.dump(update_history(history, discovered, today), f, indent=2, sort_keys=True)
 
     print(f"\n🆕 Top {len(discovered)} discoveries NOT in your watchlist:")
     for r in discovered:
