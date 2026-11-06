@@ -140,16 +140,16 @@
       "name": "Broadcom Inc.",
       "theme": "edge_ai_silicon",
       "status": "research_complete",
-      "thesis": "AI infrastructure leader with 54% operating margins and $39B FCF trading at 15x forward earnings despite 85% quarterly revenue growth.",
+      "thesis": "AI networking and custom silicon leader with 85% YoY revenue growth, 54% operating margins, and 15x forward earnings despite $35B net debt covered by $39B annual FCF.",
       "added": "2026-05-28",
       "verdict": "RESEARCH-WORTHY",
       "buy_target": 291.56,
       "current_price": null,
-      "next_action": "RESEARCH \u2014 AI infrastructure leader with 54% operating margins and $39B FCF trading at 15x forward earnings despite 85% quarterly revenue growth. Current levels already clear the entry bar.",
+      "next_action": "RESEARCH \u2014 AI networking and custom silicon leader with 85% YoY revenue growth, 54% operating margins, and 15x forward earnings despite $35B net debt covered by $39B annual FCF. Worth a deep dive before any decision.",
       "research_file": "output/research/AVGO_2026-11-06.md",
       "last_researched": "2026-11-06",
       "confidence": "MEDIUM",
-      "bear_check": "The bull case flags but likely underweights its own quantified concentration risk: 3\u20134 hyperscalers constitute the majority of custom AI accelerator revenue, and the 2\u20133 year design-win cycle means losing one socket would instantly and persistently erase 20\u201330% of AI semiconductor revenue. At a 15\u00d7 forward P/E that assumes AI-driven earnings tripling, the binary dependence on each hyperscaler's continued socket commitment \u2014 with no near-term revenue replacement mechanism given the design cycle \u2014 represents an undiscounted existential risk.\n\nThe argument correctly identifies a specific, quantified risk the note itself highlights, but the risk is already partially priced in and the company's diversification across networking chips and software provides some buffer.\n\nBEAR_SEVERITY: MATERIAL",
+      "bear_check": "The bull case rests on unverified estimates that three hyperscalers (Google, Meta, ByteDance) contribute >50% of AI semiconductor revenue, creating extreme concentration where any capex reduction or in-house silicon migration would disproportionately crash the 85.5% YoY growth trajectory. The forward valuation bakes in ~148% earnings growth with no margin for normalization, while $35.4B net debt and multiple unverified segment assumptions leave minimal cushion if AI networking demand decelerates.\n\n**Neutral grading**: The argument correctly identifies customer concentration as the core vulnerability highlighted in the note itself, but the \"unverified\" tag on the >50% figure and the note's explicit acknowledgment of this risk prevent it from being a hidden flaw. The growth sustainability concern is valid but inherent to any hypergrowth stock. The debt level is manageable at current FCF but becomes problematic only under severe downside scenarios.\n\nBEAR_SEVERITY: MATERIAL",
       "llm_verdict": "RESEARCH-WORTHY",
       "bear_downgraded": false,
       "buy_trigger_drawdown_pct": -41.1,
@@ -157,8 +157,13 @@
       "unsupported_figures": [
         "60%",
         "40%",
-        "$14B",
-        "30%"
+        "80%",
+        "148%",
+        "$10B",
+        "$48.4B",
+        "100%",
+        "50%",
+        "20%"
       ]
     },
     {
