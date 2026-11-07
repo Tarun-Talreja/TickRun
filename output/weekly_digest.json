@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-11-06T21:57:45Z",
-  "narrative": "Major AI and semiconductor stocks plunged, with LITE, CRDO, MU, AMD, MRVL, and NBIS all falling 15% to 19% as AI spending fears wiped $2 trillion off the Nasdaq in October. Microsoft faced AI build delays and a $5 billion capex shortfall while also signing a 20-year power deal with Chevron and declining a Texas data center expansion. Marvell agreed to a $115 billion acquisition of Lumentum for AI data center connectivity, and Arista Networks posted 58.5% revenue growth driven by AI networking demand. Several of the hardest-hit names \u2014 including NBIS and MRVL \u2014 have earnings due within the next 10 to 24 days.",
+  "generated_at": "2026-11-07T16:37:25Z",
+  "narrative": "Six stocks surged sharply, led by OKLO jumping 22.7% alongside double-digit gains in COHR, AMD, VST, CBRS, and NVT. Major structural shifts accelerated across sectors: Marvell agreed to buy Lumentum for roughly $115 billion to target AI data center connectivity, Microsoft and Chevron signed a 20-year Texas power deal, and Ontario awarded contracts for the G7's first small modular reactors. Institutional ownership filings (Schedule 13G/A) were updated for over a dozen names including CBRS, COHR, VST, and MRVL, while earnings loom for CEG in two days and NVDA in ten. New radar additions highlight Microsoft, Micron, Texas Pacific Land, Vertiv, and Sandisk based on fundamentals and sector catalysts.",
   "buy_ready": [
     {
       "ticker": "GOOGL",
       "name": "Alphabet Inc.",
       "price": 284.78,
-      "buy_target": 286.03,
+      "buy_target": 284.8,
       "at_or_below_target": true,
-      "confidence": "MEDIUM",
+      "confidence": "LOW",
       "theme": "mega_cap_ai"
     },
     {
       "ticker": "NVDA",
       "name": "NVIDIA Corporation",
       "price": 186.64,
-      "buy_target": 187.39,
+      "buy_target": 186.66,
       "at_or_below_target": true,
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "theme": "mega_cap_ai"
     },
     {
@@ -26,23 +26,23 @@
       "price": 610.15,
       "buy_target": 609.82,
       "at_or_below_target": true,
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "theme": "mega_cap_ai"
     },
     {
       "ticker": "AVGO",
       "name": "Broadcom Inc.",
       "price": 293.69,
-      "buy_target": 294.03,
+      "buy_target": 371.25,
       "at_or_below_target": true,
-      "confidence": "MEDIUM",
+      "confidence": "LOW",
       "theme": "edge_ai_silicon"
     },
     {
       "ticker": "ASML",
       "name": "ASML Holding N.V.",
       "price": 1424.75,
-      "buy_target": 1419.97,
+      "buy_target": 1423.97,
       "at_or_below_target": true,
       "confidence": "HIGH",
       "theme": "edge_ai_silicon"
@@ -51,9 +51,9 @@
       "ticker": "TSM",
       "name": "Taiwan Semiconductor Manufacturing Company",
       "price": 375.44,
-      "buy_target": 374.86,
+      "buy_target": 375.35,
       "at_or_below_target": true,
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "theme": "edge_ai_silicon"
     },
     {
@@ -71,25 +71,25 @@
       "price": 449.04,
       "buy_target": 449.11,
       "at_or_below_target": true,
-      "confidence": "MEDIUM",
+      "confidence": "LOW",
       "theme": "edge_ai_silicon"
     },
     {
       "ticker": "MRVL",
       "name": "Marvell Technology, Inc.",
       "price": 141.2,
-      "buy_target": 139.21,
+      "buy_target": 141.19,
       "at_or_below_target": true,
-      "confidence": "MEDIUM",
+      "confidence": "LOW",
       "theme": "edge_ai_silicon"
     },
     {
       "ticker": "IBM",
       "name": "International Business Machines Corporation",
       "price": 245.0,
-      "buy_target": 245.36,
+      "buy_target": 245.02,
       "at_or_below_target": true,
-      "confidence": "MEDIUM",
+      "confidence": "LOW",
       "theme": "mega_cap_ai"
     },
     {
@@ -105,7 +105,7 @@
       "ticker": "CEG",
       "name": "Constellation Energy Corporation",
       "price": 249.95,
-      "buy_target": 251.31,
+      "buy_target": 249.79,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
       "theme": "nuclear_smr"
@@ -114,16 +114,16 @@
       "ticker": "VST",
       "name": "Vistra Corp.",
       "price": 124.8,
-      "buy_target": 125.56,
+      "buy_target": 124.77,
       "at_or_below_target": true,
-      "confidence": "MEDIUM",
+      "confidence": "LOW",
       "theme": "nuclear_smr"
     },
     {
       "ticker": "VRT",
       "name": "Vertiv Holdings Co",
       "price": 182.86,
-      "buy_target": 184.27,
+      "buy_target": 182.75,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
       "theme": "power_grid"
@@ -132,7 +132,7 @@
       "ticker": "GEV",
       "name": "GE Vernova Inc.",
       "price": 774.11,
-      "buy_target": 779.75,
+      "buy_target": 773.77,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
       "theme": "power_grid"
@@ -141,106 +141,52 @@
       "ticker": "ETN",
       "name": "Eaton Corporation plc",
       "price": 341.72,
-      "buy_target": 341.29,
+      "buy_target": 341.77,
       "at_or_below_target": true,
-      "confidence": "MEDIUM",
+      "confidence": "LOW",
       "theme": "power_grid"
     },
     {
-      "ticker": "BWXT",
-      "name": "BWX Technologies, Inc.",
-      "price": 119.52,
-      "buy_target": 119.46,
+      "ticker": "TLN",
+      "name": "Talen Energy Corporation",
+      "price": 338.64,
+      "buy_target": 337.38,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
       "theme": "nuclear_smr"
     },
     {
-      "ticker": "NVT",
-      "name": "nVent Electric plc",
-      "price": 106.22,
-      "buy_target": 107.28,
-      "at_or_below_target": true,
-      "confidence": "MEDIUM",
-      "theme": "power_grid"
-    },
-    {
-      "ticker": "POWL",
-      "name": "Powell Industries, Inc.",
-      "price": 133.12,
-      "buy_target": 133.17,
-      "at_or_below_target": true,
-      "confidence": "MEDIUM",
-      "theme": "power_grid"
-    },
-    {
-      "ticker": "GIS",
-      "name": "GIS",
-      "price": 35.51,
-      "buy_target": 35.21,
-      "at_or_below_target": true,
-      "confidence": "MEDIUM",
-      "theme": "defensive_income"
-    },
-    {
       "ticker": "STZ",
       "name": "STZ",
       "price": 141.97,
-      "buy_target": 141.79,
-      "at_or_below_target": true,
-      "confidence": "HIGH",
-      "theme": "defensive_income"
-    },
-    {
-      "ticker": "ISRG",
-      "name": "Intuitive Surgical, Inc.",
-      "price": 452.8,
-      "buy_target": 452.91,
+      "buy_target": 141.96,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
-      "theme": "healthcare_innovation"
+      "theme": "defensive_income"
     },
     {
       "ticker": "PODD",
       "name": "Insulet Corporation",
       "price": 146.51,
-      "buy_target": 145.5,
+      "buy_target": 146.57,
       "at_or_below_target": true,
-      "confidence": "MEDIUM",
+      "confidence": "LOW",
       "theme": "healthcare_innovation"
     },
     {
-      "ticker": "LPLA",
-      "name": "LPLA",
-      "price": 295.51,
-      "buy_target": 296.52,
+      "ticker": "LMB",
+      "name": "LMB",
+      "price": 53.45,
+      "buy_target": 53.45,
       "at_or_below_target": true,
-      "confidence": "MEDIUM",
-      "theme": "financials"
-    },
-    {
-      "ticker": "NFLX",
-      "name": "NFLX",
-      "price": 63.41,
-      "buy_target": 63.62,
-      "at_or_below_target": true,
-      "confidence": "MEDIUM",
-      "theme": "consumer_media"
-    },
-    {
-      "ticker": "CMCSA",
-      "name": "CMCSA",
-      "price": 24.39,
-      "buy_target": 24.48,
-      "at_or_below_target": true,
-      "confidence": "MEDIUM",
-      "theme": "consumer_media"
+      "confidence": "LOW",
+      "theme": "datacenter_infra"
     },
     {
       "ticker": "CLS",
       "name": "Celestica Inc.",
       "price": 206.68,
-      "buy_target": 205.73,
+      "buy_target": 206.68,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
       "theme": "datacenter_infra"
@@ -249,51 +195,42 @@
       "ticker": "CRDO",
       "name": "Credo Technology Group Holding Ltd",
       "price": 120.51,
-      "buy_target": 120.07,
+      "buy_target": 120.38,
       "at_or_below_target": true,
-      "confidence": "MEDIUM",
-      "theme": "edge_ai_silicon"
-    },
-    {
-      "ticker": "CBRS",
-      "name": "CBRS",
-      "price": 89.68,
-      "buy_target": 57.95,
-      "at_or_below_target": false,
       "confidence": "MEDIUM",
       "theme": "edge_ai_silicon"
     }
   ],
   "movers": [
     {
-      "ticker": "LITE",
-      "pct": -18.68,
-      "reason": "Moved with the broad market (Nasdaq 100 -6.5%, S&P 500 -4.4%); no company-specific news found."
+      "ticker": "OKLO",
+      "pct": 22.66,
+      "reason": "No clear catalyst in current news."
     },
     {
-      "ticker": "CRDO",
-      "pct": -17.71,
-      "reason": "Moved with the broad market (Nasdaq 100 -6.5%, S&P 500 -4.4%); no company-specific news found."
-    },
-    {
-      "ticker": "MU",
-      "pct": -17.46,
-      "reason": "Moved with the broad market (Nasdaq 100 -6.5%, S&P 500 -4.4%); no company-specific news found."
+      "ticker": "COHR",
+      "pct": 13.58,
+      "reason": "No clear catalyst in current news."
     },
     {
       "ticker": "AMD",
-      "pct": -17.26,
-      "reason": "Moved with the broad market (Nasdaq 100 -6.5%, S&P 500 -4.4%); no company-specific news found."
+      "pct": 11.04,
+      "reason": "No clear catalyst in current news."
     },
     {
-      "ticker": "MRVL",
-      "pct": -16.43,
-      "reason": "Moved with the broad market (Nasdaq 100 -6.5%, S&P 500 -4.4%); no company-specific news found."
+      "ticker": "VST",
+      "pct": 10.55,
+      "reason": "Strong Q3 earnings, raised 2026 outlook, and surging AI power demand drove the surge."
     },
     {
-      "ticker": "NBIS",
-      "pct": -14.94,
-      "reason": "Moved with the broad market (Nasdaq 100 -6.5%, S&P 500 -4.4%); no company-specific news found."
+      "ticker": "CBRS",
+      "pct": 9.75,
+      "reason": "No clear catalyst in current news."
+    },
+    {
+      "ticker": "NVT",
+      "pct": 7.97,
+      "reason": "No clear catalyst in current news."
     }
   ],
   "upcoming_earnings": [
@@ -328,7 +265,93 @@
       "days_until": 24
     }
   ],
-  "sec_stakes": [],
+  "sec_stakes": [
+    {
+      "ticker": "DHR",
+      "form": "SCHEDULE 13G",
+      "filed": "2026-11-05"
+    },
+    {
+      "ticker": "RDDT",
+      "form": "SCHEDULE 13G",
+      "filed": "2026-10-30"
+    },
+    {
+      "ticker": "TSM",
+      "form": "SCHEDULE 13G",
+      "filed": "2026-10-27"
+    },
+    {
+      "ticker": "POWL",
+      "form": "SCHEDULE 13G",
+      "filed": "2026-10-27"
+    },
+    {
+      "ticker": "CBRS",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-11-06"
+    },
+    {
+      "ticker": "MRVL",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-11-05"
+    },
+    {
+      "ticker": "COHR",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-11-05"
+    },
+    {
+      "ticker": "VST",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-11-05"
+    },
+    {
+      "ticker": "GEV",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-11-05"
+    },
+    {
+      "ticker": "MKTX",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-11-05"
+    },
+    {
+      "ticker": "LMB",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-11-05"
+    },
+    {
+      "ticker": "CBRS",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-11-05"
+    },
+    {
+      "ticker": "RDDT",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-10-30"
+    },
+    {
+      "ticker": "GIS",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-10-30"
+    },
+    {
+      "ticker": "RDDT",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-10-27"
+    },
+    {
+      "ticker": "VRT",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-10-27"
+    },
+    {
+      "ticker": "PODD",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-10-27"
+    }
+  ],
   "data_warnings": [
     "ASML",
     "TSM"
