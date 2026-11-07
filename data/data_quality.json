@@ -1,8 +1,12 @@
 {
-  "generated_at": "2026-11-07T03:18:11Z",
+  "generated_at": "2026-11-07T03:30:24Z",
   "checked": 58,
   "flagged": 2,
   "quality": {
+    "AMD": {
+      "ok": true,
+      "flags": []
+    },
     "AAPL": {
       "ok": true,
       "flags": []
@@ -11,11 +15,11 @@
       "ok": true,
       "flags": []
     },
-    "AMD": {
+    "AMZN": {
       "ok": true,
       "flags": []
     },
-    "AMZN": {
+    "AVGO": {
       "ok": true,
       "flags": []
     },
@@ -27,10 +31,6 @@
           "msg": "Reports in EUR; figures converted to USD at 1.1228. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
-    },
-    "AVGO": {
-      "ok": true,
-      "flags": []
     },
     "BWXT": {
       "ok": true,
@@ -48,15 +48,11 @@
       "ok": true,
       "flags": []
     },
-    "COHR": {
-      "ok": true,
-      "flags": []
-    },
     "CMCSA": {
       "ok": true,
       "flags": []
     },
-    "CRDO": {
+    "COHR": {
       "ok": true,
       "flags": []
     },
@@ -64,7 +60,15 @@
       "ok": true,
       "flags": []
     },
+    "CRDO": {
+      "ok": true,
+      "flags": []
+    },
     "DHR": {
+      "ok": true,
+      "flags": []
+    },
+    "EIX": {
       "ok": true,
       "flags": []
     },
@@ -73,10 +77,6 @@
       "flags": []
     },
     "ETN": {
-      "ok": true,
-      "flags": []
-    },
-    "EIX": {
       "ok": true,
       "flags": []
     },
@@ -96,15 +96,11 @@
       "ok": true,
       "flags": []
     },
-    "INVH": {
-      "ok": true,
-      "flags": []
-    },
     "IBM": {
       "ok": true,
       "flags": []
     },
-    "LITE": {
+    "INVH": {
       "ok": true,
       "flags": []
     },
@@ -112,15 +108,19 @@
       "ok": true,
       "flags": []
     },
+    "LITE": {
+      "ok": true,
+      "flags": []
+    },
     "LLY": {
       "ok": true,
       "flags": []
     },
-    "LMB": {
+    "LPLA": {
       "ok": true,
       "flags": []
     },
-    "LPLA": {
+    "LMB": {
       "ok": true,
       "flags": []
     },
@@ -152,11 +152,11 @@
       "ok": true,
       "flags": []
     },
-    "NFLX": {
+    "NOW": {
       "ok": true,
       "flags": []
     },
-    "NOW": {
+    "NFLX": {
       "ok": true,
       "flags": []
     },
@@ -192,11 +192,11 @@
       "ok": true,
       "flags": []
     },
-    "STZ": {
+    "SPY": {
       "ok": true,
       "flags": []
     },
-    "SPY": {
+    "STZ": {
       "ok": true,
       "flags": []
     },
@@ -217,11 +217,11 @@
         }
       ]
     },
-    "V": {
+    "UNH": {
       "ok": true,
       "flags": []
     },
-    "UNH": {
+    "V": {
       "ok": true,
       "flags": []
     },
