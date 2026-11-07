@@ -26,7 +26,13 @@ CASES_PATH = os.path.join(SCRIPT_DIR, "tests", "fixtures_bear_cases.json")
 TRIALS = 2
 WORKERS = 4
 MIN_CATCH_RATE = 0.85        # free models are noisy, so allow the odd miss
+SKIPPED = "SKIPPED"
+MAX_SKIPPED_RATE = 0.2
 MAX_FALSE_ALARM_RATE = 0.05
+
+
+def too_many_skipped(skipped: int, attempted: int) -> bool:
+    return skipped > attempted * MAX_SKIPPED_RATE
 
 
 def passed(caught: int, planted: int, false_alarms: int, clean: int) -> bool:
@@ -62,7 +68,11 @@ def _run(job: tuple[dict, bool]) -> tuple[str, bool, str | None, str]:
     case, want_break = job
     source = apply_plant(_real_source(case["ticker"]), case)
     key = os.environ["NVIDIA_API_KEY"]
-    text = _call_llm("nvidia", key, bear_prompt(case["ticker"], _latest_note(case["ticker"]), source))
+    try:
+        text = _call_llm("nvidia", key, bear_prompt(case["ticker"], _latest_note(case["ticker"]), source))
+    except RuntimeError as exc:
+        # A model outage says nothing about the check, so it can't count either way.
+        return case["id"], want_break, SKIPPED, str(exc)[:160]
     found = verified_break(text, source)
     return case["id"], want_break, found, text[-260:].replace("\n", " | ")
 
@@ -75,7 +85,14 @@ def main() -> None:
     jobs += [(c, False) for c in cases["hard_negatives"]]
 
     with ThreadPoolExecutor(WORKERS) as pool:
-        results = list(pool.map(_run, jobs * TRIALS))
+        attempts = list(pool.map(_run, jobs * TRIALS))
+
+    results = [r for r in attempts if r[2] != SKIPPED]
+    skipped = len(attempts) - len(results)
+    print(f"Skipped (models unavailable): {skipped}/{len(attempts)}")
+    if too_many_skipped(skipped, len(attempts)):
+        print("Too few cases ran to give a score.")
+        sys.exit(1)
 
     wrong = [r for r in results if bool(r[2]) != r[1]]
     caught = sum(1 for r in results if r[1] and r[2])

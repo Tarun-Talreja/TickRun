@@ -115,3 +115,9 @@ class TestEvalThresholds:
     def test_too_many_false_alarms_fails(self):
         from bear_eval import passed
         assert not passed(caught=18, planted=18, false_alarms=3, clean=38)
+
+
+def test_a_model_outage_only_blocks_the_eval_score_when_it_is_widespread():
+    from bear_eval import too_many_skipped
+    assert not too_many_skipped(5, 56)
+    assert too_many_skipped(30, 56)
