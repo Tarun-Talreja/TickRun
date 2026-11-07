@@ -1473,27 +1473,30 @@
       "name": "EIX",
       "theme": "power_grid",
       "status": "research_complete",
-      "thesis": "Regulated utility with grid exposure but burdened by wildfire liabilities, negative FCF, and high leverage; cheap multiples reflect existential risk not growth.",
+      "thesis": "Regulated utility trading at 6.5x trailing P/E with 20% operating margins but negative FCF and $42.5B net debt, discounted for wildfire bankruptcy risk.",
       "added": "2026-06-08",
       "verdict": "PASS",
       "buy_target": 48.97,
       "current_price": null,
-      "next_action": "DROP \u2014 Regulated utility with grid exposure but burdened by wildfire liabilities, negative FCF, and high leverage; cheap multiples reflect existential risk not growth.",
-      "research_file": "output/research/EIX_2026-11-06.md",
-      "last_researched": "2026-11-06",
+      "next_action": "DROP \u2014 Regulated utility trading at 6.5x trailing P/E with 20% operating margins but negative FCF and $42.5B net debt, discounted for wildfire bankruptcy risk.",
+      "research_file": "output/research/EIX_2026-11-07.md",
+      "last_researched": "2026-11-07",
       "llm_verdict": "PASS",
       "bear_downgraded": false,
       "confidence": "LOW",
       "buy_trigger_drawdown_pct": -40.0,
       "no_pullback_gate": false,
-      "rating_version": 3,
+      "rating_version": 4,
       "unsupported_figures": [
+        "20x",
+        "$983M",
         "$132M",
-        "2x",
-        "30%"
+        "86%"
       ],
       "bear_check": null,
-      "fall_reason": null
+      "fall_reason": null,
+      "rated_quarter_end": "2026-09-30",
+      "rated_next_earnings": 1793304000
     },
     {
       "ticker": "CBRS",
