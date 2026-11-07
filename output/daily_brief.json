@@ -1,8 +1,16 @@
 {
-  "generated_at": "2026-11-07T01:56:25Z",
+  "generated_at": "2026-11-07T15:47:48Z",
   "date": "2026-11-07",
   "first_run": false,
   "items": [
+    {
+      "priority": 1,
+      "kind": "catalyst",
+      "ticker": "CEG",
+      "headline": "CEG earnings in 2d \u00b7 consensus EPS 3.89",
+      "detail": "Decide BEFORE the print. Consensus EPS ~3.89. If you would buy on a beat, size the order now; if a miss would break the thesis, write down what number does that. Reacting after the move is how you end up chasing.",
+      "action": "Decide your number before the print \u2014 not after."
+    },
     {
       "priority": 3,
       "kind": "mover",
@@ -36,14 +44,22 @@
       "action": "Full list in Signals."
     },
     {
+      "priority": 4,
+      "kind": "sec_stake",
+      "ticker": "LMB",
+      "headline": "LMB \u2014 PASSIVE UPDATE filed 2026-11-05",
+      "detail": "Passive holder changed their 5%+ position",
+      "action": "Read the filing before treating this as a signal \u2014 a stake alone isn't a buy/sell call."
+    },
+    {
       "priority": 5,
       "kind": "verdict_change",
-      "ticker": "MU",
-      "headline": "MU verdict changed: RED FLAG \u2192 WATCHLIST",
+      "ticker": "NOW",
+      "headline": "NOW verdict changed: WATCHLIST \u2192 RESEARCH-WORTHY",
       "detail": "Research reassessed this name since your last check.",
-      "action": "No longer rated worth researching \u2014 re-read why."
+      "action": "Now worth a deep dive \u2014 research is not a buy call."
     }
   ],
-  "hidden_count": 0,
+  "hidden_count": 7,
   "quiet_day": false
 }
