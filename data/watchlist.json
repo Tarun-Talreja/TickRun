@@ -541,25 +541,29 @@
       "name": "Marvell Technology, Inc.",
       "theme": "edge_ai_silicon",
       "status": "research_complete",
-      "thesis": "AI infrastructure custom-silicon leader at 19x forward earnings with 36% revenue growth and positive FCF, but 57% drawdown reflects Lumentum acquisition uncertainty.",
+      "thesis": "AI infrastructure play with custom silicon and optical interconnect exposure trading at 19x forward earnings despite 36% revenue growth, but Lumentum acquisition uncertainty clouds near-term execution.",
       "added": "2026-06-08",
       "verdict": "RESEARCH-WORTHY",
       "buy_target": 141.19,
       "current_price": null,
-      "next_action": "RESEARCH \u2014 AI infrastructure custom-silicon leader at 19x forward earnings with 36% revenue growth and positive FCF, but 57% drawdown reflects Lumentum acquisition uncertainty. Worth a deep dive before any decision.",
-      "research_file": "output/research/MRVL_2026-11-06.md",
-      "last_researched": "2026-11-06",
+      "next_action": "RESEARCH \u2014 AI infrastructure play with custom silicon and optical interconnect exposure trading at 19x forward earnings despite 36% revenue growth, but Lumentum acquisition uncertainty clouds near-term execution. Worth a deep dive before any decision.",
+      "research_file": "output/research/MRVL_2026-11-07.md",
+      "last_researched": "2026-11-07",
       "llm_verdict": "RESEARCH-WORTHY",
       "bear_downgraded": false,
-      "confidence": "MEDIUM",
-      "bear_check": "The Lumentum acquisition poses significant integration risk and potential overpayment for cyclical optical assets, which could dilute Marvell's high-margin custom ASIC focus and increase leverage. The market's 57% drawdown reflects deep skepticism about the deal's strategic rationale, and if optical demand weakens or synergies miss, the combined entity's earnings power may fall short of the ~140% EPS growth implied by the forward P/E discount. Customer concentration among a few hyperscalers further amplifies downside if design wins slow.\n\nWHY_IT_FELL: The stock fell 57% from its 52-week high on market skepticism toward the Lumentum acquisition, with analysts and investors questioning the strategic rationale and price paid for optical assets in a cyclical downturn.\nFALL_EVIDENCE: Marvell Technology (MRVL) Stock Sees Fair Value Cut After Mixed Lumentum Deal Views\nBREAK: NONE\nEVIDENCE: none",
+      "confidence": "LOW",
+      "bear_check": "Marvell's trailing P/E of 46.4x implies a ~29% net margin on TTM revenue, yet the latest quarter's operating margin is only 16.7%, suggesting either trailing earnings are inflated by one-time items or the market expects an implausibly immediate margin expansion. Meanwhile, the Lumentum acquisition \u2014 which triggered a 57% share-price collapse \u2014 risks distracting management and adding integration costs while competitors like Broadcom and Nvidia lock up hyperscaler sockets.\n\nWHY_IT_FELL: The stock fell 57% from its high after the market reacted negatively to the announced Lumentum acquisition, viewing it as a risky diversion from Marvell's core custom silicon franchise.\nFALL_EVIDENCE: Marvell Technology Is Acquiring Lumentum. Why Does the Market Hate the Move? (The Motley Fool, 2026-11-02)\n\nBREAK: NONE\nEVIDENCE: none",
       "buy_trigger_drawdown_pct": -57.2,
       "no_pullback_gate": false,
-      "rating_version": 3,
+      "rating_version": 4,
       "unsupported_figures": [
-        "140%"
+        "0.8x",
+        "29%",
+        "20%"
       ],
-      "fall_reason": "The stock fell 57% from its 52-week high on market skepticism toward the Lumentum acquisition, with analysts and investors questioning the strategic rationale and price paid for optical assets in a cyclical downturn."
+      "fall_reason": null,
+      "rated_quarter_end": "2026-07-31",
+      "rated_next_earnings": 1796158800
     },
     {
       "ticker": "IBM",
