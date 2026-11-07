@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T02:56:46Z",
+  "generated_at": "2026-11-07T03:08:23Z",
   "rules": {
     "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
     "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
@@ -189,16 +189,6 @@
       "account": "ROTH",
       "priority": "high",
       "reason": "Highest-conviction growth pick (106% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
-    },
-    {
-      "ticker": "NVT",
-      "name": "nVent Electric plc",
-      "theme": "power_grid",
-      "verdict": "RESEARCH-WORTHY",
-      "div_yield_pct": 0.79,
-      "account": "ROTH",
-      "priority": "high",
-      "reason": "Highest-conviction growth pick (44% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
     },
     {
       "ticker": "PAYX",
@@ -446,6 +436,16 @@
       "theme": "cybersecurity",
       "verdict": "WATCHLIST",
       "div_yield_pct": null,
+      "account": "ROTH",
+      "priority": "medium",
+      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+    },
+    {
+      "ticker": "NVT",
+      "name": "nVent Electric plc",
+      "theme": "power_grid",
+      "verdict": "WATCHLIST",
+      "div_yield_pct": 0.79,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
