@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T23:48:53Z",
+  "generated_at": "2026-11-07T01:52:03Z",
   "pullback_alerts": [
     {
       "ticker": "CBRS",
@@ -149,12 +149,12 @@
       "ticker": "MU",
       "name": "Micron Technology, Inc.",
       "theme": "edge_ai_silicon",
-      "verdict": "RED FLAG",
+      "verdict": "WATCHLIST",
       "price": 690.0,
       "high_52w": 1255.0,
       "drawdown_pct": -45.0,
       "severity": "STRONG",
-      "thesis": "Data corruption makes analysis impossible; real Micron is a cyclical memory play facing Taiwan plant halt and Chinese competition at unknown true valuation.",
+      "thesis": "Cyclical memory leader with massive AI/HBM tailwind trading at 3.3x forward earnings and 6.8x EV/EBITDA, but 80% margins and 379% growth likely mark a cycle peak \u2014 entry only if drawdown deepens or margins prove structural.",
       "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
     },
     {
@@ -390,21 +390,21 @@
     {
       "ticker": "QQQ",
       "last_researched": "2026-05-28",
-      "days_since": 162,
+      "days_since": 163,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py QQQ"
     },
     {
       "ticker": "SPY",
       "last_researched": "2026-05-28",
-      "days_since": 162,
+      "days_since": 163,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py SPY"
     },
     {
       "ticker": "^TNX",
       "last_researched": "2026-05-28",
-      "days_since": 162,
+      "days_since": 163,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
     }

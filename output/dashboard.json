@@ -1,11 +1,11 @@
 {
-  "last_built": "2026-11-06T23:53:24Z",
-  "quotes_updated": "2026-11-06T23:48:53Z",
+  "last_built": "2026-11-07T01:56:26Z",
+  "quotes_updated": "2026-11-07T01:52:03Z",
   "health": {
     "stages": [
       {
         "name": "Quotes",
-        "updated_at": "2026-11-06T23:48:53Z",
+        "updated_at": "2026-11-07T01:52:03Z",
         "detail": null,
         "status": "ok",
         "age_hours": 0.1,
@@ -16,7 +16,7 @@
         "updated_at": "2026-11-06T23:34:27Z",
         "detail": "6/6 tickers",
         "status": "ok",
-        "age_hours": 0.3,
+        "age_hours": 2.4,
         "affects": "Ratings aren't being updated"
       },
       {
@@ -24,12 +24,12 @@
         "updated_at": "2026-11-06T16:51:48Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 7.0,
+        "age_hours": 9.1,
         "affects": "Upcoming earnings dates may be missing"
       },
       {
         "name": "SEC filings",
-        "updated_at": "2026-11-06T23:48:56Z",
+        "updated_at": "2026-11-07T01:52:05Z",
         "detail": null,
         "status": "ok",
         "age_hours": 0.1,
@@ -37,7 +37,7 @@
       },
       {
         "name": "Prices",
-        "updated_at": "2026-11-06T23:48:53Z",
+        "updated_at": "2026-11-07T01:52:03Z",
         "detail": "54/54 have data",
         "status": "ok",
         "age_hours": 0.1,
@@ -45,7 +45,7 @@
       },
       {
         "name": "Company figures",
-        "updated_at": "2026-11-06T23:48:53Z",
+        "updated_at": "2026-11-07T01:52:03Z",
         "detail": "54/54 have data",
         "status": "ok",
         "age_hours": 0.1,
@@ -53,7 +53,7 @@
       },
       {
         "name": "News",
-        "updated_at": "2026-11-06T23:49:01Z",
+        "updated_at": "2026-11-07T01:52:10Z",
         "detail": "51/51 have data",
         "status": "ok",
         "age_hours": 0.1,
@@ -64,7 +64,7 @@
         "updated_at": "2026-11-06T21:56:53Z",
         "detail": "48/55 have data",
         "status": "ok",
-        "age_hours": 1.9,
+        "age_hours": 4.0,
         "affects": "Insider buying won't show on stocks or the radar"
       },
       {
@@ -72,7 +72,7 @@
         "updated_at": "2026-08-15T14:09:52Z",
         "detail": "28/31 have data",
         "status": "ok",
-        "age_hours": 2001.7,
+        "age_hours": 2003.8,
         "affects": "Hedge fund holdings may be out of date"
       },
       {
@@ -80,12 +80,12 @@
         "updated_at": "2026-11-06T19:00:43Z",
         "detail": "16/16 have data",
         "status": "ok",
-        "age_hours": 4.9,
+        "age_hours": 6.9,
         "affects": "The field briefing may be out of date"
       },
       {
         "name": "Movers",
-        "updated_at": "2026-11-06T23:53:23Z",
+        "updated_at": "2026-11-07T01:56:25Z",
         "detail": "16/16 have data",
         "status": "ok",
         "age_hours": 0.0,
@@ -96,7 +96,7 @@
         "updated_at": "2026-11-06T19:01:06Z",
         "detail": "12 found",
         "status": "ok",
-        "age_hours": 4.9,
+        "age_hours": 6.9,
         "affects": "The radar may be out of date"
       },
       {
@@ -104,7 +104,7 @@
         "updated_at": "2026-11-06T18:12:13Z",
         "detail": "428 found",
         "status": "ok",
-        "age_hours": 5.7,
+        "age_hours": 7.7,
         "affects": "New stock ideas may be out of date"
       },
       {
@@ -112,7 +112,7 @@
         "updated_at": "2026-11-06T21:57:45Z",
         "detail": "1 found",
         "status": "ok",
-        "age_hours": 1.9,
+        "age_hours": 4.0,
         "affects": "The AI summary may be out of date"
       },
       {
@@ -120,15 +120,15 @@
         "updated_at": "2026-11-06T21:56:22Z",
         "detail": "6 sources passed",
         "status": "ok",
-        "age_hours": 2.0,
+        "age_hours": 4.0,
         "affects": "One of the data sources failed its daily test"
       },
       {
         "name": "Ratings",
         "updated_at": null,
         "age_hours": null,
-        "detail": "54/54 on current logic",
-        "status": "ok",
+        "detail": "1/54 on current logic",
+        "status": "stale",
         "affects": "Some ratings still use older logic"
       }
     ]
@@ -826,7 +826,7 @@
         "data_flags": [
           {
             "level": "low",
-            "msg": "Reports in EUR; figures converted to USD at 1.1143. Trailing P/E may mix currencies \u2014 verify against filings"
+            "msg": "Reports in EUR; figures converted to USD at 1.1228. Trailing P/E may mix currencies \u2014 verify against filings"
           }
         ]
       },
@@ -883,7 +883,7 @@
         "data_flags": [
           {
             "level": "low",
-            "msg": "Reports in TWD; figures converted to USD at 0.0305. Trailing P/E may mix currencies \u2014 verify against filings"
+            "msg": "Reports in TWD; figures converted to USD at 0.0302. Trailing P/E may mix currencies \u2014 verify against filings"
           }
         ]
       },
@@ -970,7 +970,7 @@
         "revenue_growth": 44.7,
         "op_margin": 21.2,
         "pe": 95.94872,
-        "forward_pe": 26.54911,
+        "forward_pe": 26.012634,
         "short_percent_float": 2.33,
         "short_ratio": 1.7,
         "high_proximity_warning": false,
@@ -1014,7 +1014,7 @@
         "fall_reason": "Microsoft project delays and spending cuts triggered a broad neocloud selloff, amplified by debt-market caution on financing risk.",
         "price": 129.49,
         "pct_change_1d": 7.58,
-        "market_cap": 32877279232,
+        "market_cap": 35202535424,
         "cap_tier": "large",
         "drawdown_from_high": -56.8,
         "revenue_growth": 454.0,
@@ -1132,26 +1132,33 @@
         "name": "Micron Technology, Inc.",
         "theme": "edge_ai_silicon",
         "status": "research_complete",
-        "thesis": "Data corruption makes analysis impossible; real Micron is a cyclical memory play facing Taiwan plant halt and Chinese competition at unknown true valuation.",
+        "thesis": "Cyclical memory leader with massive AI/HBM tailwind trading at 3.3x forward earnings and 6.8x EV/EBITDA, but 80% margins and 379% growth likely mark a cycle peak \u2014 entry only if drawdown deepens or margins prove structural.",
         "added": "2026-06-08",
-        "verdict": "RED FLAG",
-        "buy_target": 627.5,
+        "verdict": "WATCHLIST",
+        "buy_target": 564.75,
         "current_price": 690.0,
-        "next_action": "AVOID \u2014 Data corruption makes analysis impossible; real Micron is a cyclical memory play facing Taiwan plant halt and Chinese competition at unknown true valuation.",
-        "research_file": "output/research/MU_2026-11-06.md",
-        "last_researched": "2026-11-06",
-        "confidence": "HIGH",
+        "next_action": "WAIT \u2014 Cyclical memory leader with massive AI/HBM tailwind trading at 3.3x forward earnings and 6.8x EV/EBITDA, but 80% margins and 379% growth likely mark a cycle peak \u2014 entry only if drawdown deepens or margins prove structural. Revisit at 55% below the 52-week high.",
+        "research_file": "output/research/MU_2026-11-07.md",
+        "last_researched": "2026-11-07",
+        "confidence": "MEDIUM",
         "bear_check": null,
-        "llm_verdict": "RED FLAG",
+        "llm_verdict": "WATCHLIST",
         "bear_downgraded": false,
-        "buy_trigger_drawdown_pct": -50.0,
+        "buy_trigger_drawdown_pct": -55.0,
         "no_pullback_gate": true,
-        "rating_version": 3,
+        "rating_version": 4,
         "unsupported_figures": [
-          "$100B",
-          "$25B"
+          "12x",
+          "$11.3B",
+          "60%",
+          "50%",
+          "30%",
+          "$11B",
+          "25%"
         ],
-        "fall_reason": "Micron shares plunged 17% amid a broader semiconductor selloff and a Taiwan plant halt due to labor disputes.",
+        "fall_reason": "Micron plunged 17% amid a broad semiconductor selloff, a Taiwan plant halt due to labor disputes, and rising concerns over Chinese DRAM competition.",
+        "rated_quarter_end": "2026-08-31",
+        "rated_next_earnings": 1790798400,
         "price": 690.0,
         "pct_change_1d": 5.12,
         "market_cap": 780682002432,
@@ -1765,7 +1772,7 @@
         "fall_reason": "The headlines describe only share-price underperformance vs. the broader market without citing a specific earnings miss, guidance cut, or contract loss.",
         "price": 133.12,
         "pct_change_1d": 6.44,
-        "market_cap": 4849780736,
+        "market_cap": 4849902592,
         "cap_tier": "mid",
         "drawdown_from_high": -59.4,
         "revenue_growth": 8.9,
@@ -1815,7 +1822,7 @@
         "revenue_growth": 14.0,
         "op_margin": 61.0,
         "pe": 34.154892,
-        "forward_pe": 28.191936,
+        "forward_pe": 28.191427,
         "short_percent_float": 0.81,
         "short_ratio": 2.3,
         "high_proximity_warning": true,
@@ -2417,7 +2424,7 @@
         "fall_reason": null,
         "price": 127.73,
         "pct_change_1d": 0.13,
-        "market_cap": 27848464384,
+        "market_cap": 27593289728,
         "cap_tier": "large",
         "drawdown_from_high": -1.0,
         "revenue_growth": 14.9,
@@ -3439,6 +3446,59 @@
           "data_flags": []
         },
         {
+          "ticker": "MU",
+          "name": "Micron Technology, Inc.",
+          "theme": "edge_ai_silicon",
+          "status": "research_complete",
+          "thesis": "Cyclical memory leader with massive AI/HBM tailwind trading at 3.3x forward earnings and 6.8x EV/EBITDA, but 80% margins and 379% growth likely mark a cycle peak \u2014 entry only if drawdown deepens or margins prove structural.",
+          "added": "2026-06-08",
+          "verdict": "WATCHLIST",
+          "buy_target": 564.75,
+          "current_price": 690.0,
+          "next_action": "WAIT \u2014 Cyclical memory leader with massive AI/HBM tailwind trading at 3.3x forward earnings and 6.8x EV/EBITDA, but 80% margins and 379% growth likely mark a cycle peak \u2014 entry only if drawdown deepens or margins prove structural. Revisit at 55% below the 52-week high.",
+          "research_file": "output/research/MU_2026-11-07.md",
+          "last_researched": "2026-11-07",
+          "confidence": "MEDIUM",
+          "bear_check": null,
+          "llm_verdict": "WATCHLIST",
+          "bear_downgraded": false,
+          "buy_trigger_drawdown_pct": -55.0,
+          "no_pullback_gate": true,
+          "rating_version": 4,
+          "unsupported_figures": [
+            "12x",
+            "$11.3B",
+            "60%",
+            "50%",
+            "30%",
+            "$11B",
+            "25%"
+          ],
+          "fall_reason": "Micron plunged 17% amid a broad semiconductor selloff, a Taiwan plant halt due to labor disputes, and rising concerns over Chinese DRAM competition.",
+          "rated_quarter_end": "2026-08-31",
+          "rated_next_earnings": 1790798400,
+          "price": 690.0,
+          "pct_change_1d": 5.12,
+          "market_cap": 780682002432,
+          "cap_tier": "mega",
+          "drawdown_from_high": -45.0,
+          "revenue_growth": 379.3,
+          "op_margin": 80.7,
+          "pe": 9.2829275,
+          "forward_pe": 3.321132,
+          "short_percent_float": 2.0,
+          "short_ratio": 0.8,
+          "high_proximity_warning": false,
+          "insider_signal": "SELLING",
+          "insider_note": "0 buy(s), 14 sell(s) in past 6 months | $0 bought / $247,874,637 sold",
+          "insider_buys": 0,
+          "insider_sells": 14,
+          "conviction_holders": [],
+          "hf_new_positions": [],
+          "data_ok": true,
+          "data_flags": []
+        },
+        {
           "ticker": "GEV",
           "name": "GE Vernova Inc.",
           "theme": "power_grid",
@@ -3518,7 +3578,7 @@
           "fall_reason": "The headlines describe only share-price underperformance vs. the broader market without citing a specific earnings miss, guidance cut, or contract loss.",
           "price": 133.12,
           "pct_change_1d": 6.44,
-          "market_cap": 4849780736,
+          "market_cap": 4849902592,
           "cap_tier": "mid",
           "drawdown_from_high": -59.4,
           "revenue_growth": 8.9,
@@ -3568,7 +3628,7 @@
           "revenue_growth": 14.0,
           "op_margin": 61.0,
           "pe": 34.154892,
-          "forward_pe": 28.191936,
+          "forward_pe": 28.191427,
           "short_percent_float": 0.81,
           "short_ratio": 2.3,
           "high_proximity_warning": true,
@@ -3967,7 +4027,7 @@
           "fall_reason": null,
           "price": 127.73,
           "pct_change_1d": 0.13,
-          "market_cap": 27848464384,
+          "market_cap": 27593289728,
           "cap_tier": "large",
           "drawdown_from_high": -1.0,
           "revenue_growth": 14.9,
@@ -4439,7 +4499,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in EUR; figures converted to USD at 1.1143. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in EUR; figures converted to USD at 1.1228. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -4496,7 +4556,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in TWD; figures converted to USD at 0.0305. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in TWD; figures converted to USD at 0.0302. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -4532,7 +4592,7 @@
           "revenue_growth": 44.7,
           "op_margin": 21.2,
           "pe": 95.94872,
-          "forward_pe": 26.54911,
+          "forward_pe": 26.012634,
           "short_percent_float": 2.33,
           "short_ratio": 1.7,
           "high_proximity_warning": false,
@@ -5355,7 +5415,7 @@
           "fall_reason": "Microsoft project delays and spending cuts triggered a broad neocloud selloff, amplified by debt-market caution on financing risk.",
           "price": 129.49,
           "pct_change_1d": 7.58,
-          "market_cap": 32877279232,
+          "market_cap": 35202535424,
           "cap_tier": "large",
           "drawdown_from_high": -56.8,
           "revenue_growth": 454.0,
@@ -5554,52 +5614,6 @@
         }
       ],
       "RED FLAG": [
-        {
-          "ticker": "MU",
-          "name": "Micron Technology, Inc.",
-          "theme": "edge_ai_silicon",
-          "status": "research_complete",
-          "thesis": "Data corruption makes analysis impossible; real Micron is a cyclical memory play facing Taiwan plant halt and Chinese competition at unknown true valuation.",
-          "added": "2026-06-08",
-          "verdict": "RED FLAG",
-          "buy_target": 627.5,
-          "current_price": 690.0,
-          "next_action": "AVOID \u2014 Data corruption makes analysis impossible; real Micron is a cyclical memory play facing Taiwan plant halt and Chinese competition at unknown true valuation.",
-          "research_file": "output/research/MU_2026-11-06.md",
-          "last_researched": "2026-11-06",
-          "confidence": "HIGH",
-          "bear_check": null,
-          "llm_verdict": "RED FLAG",
-          "bear_downgraded": false,
-          "buy_trigger_drawdown_pct": -50.0,
-          "no_pullback_gate": true,
-          "rating_version": 3,
-          "unsupported_figures": [
-            "$100B",
-            "$25B"
-          ],
-          "fall_reason": "Micron shares plunged 17% amid a broader semiconductor selloff and a Taiwan plant halt due to labor disputes.",
-          "price": 690.0,
-          "pct_change_1d": 5.12,
-          "market_cap": 780682002432,
-          "cap_tier": "mega",
-          "drawdown_from_high": -45.0,
-          "revenue_growth": 379.3,
-          "op_margin": 80.7,
-          "pe": 9.2829275,
-          "forward_pe": 3.321132,
-          "short_percent_float": 2.0,
-          "short_ratio": 0.8,
-          "high_proximity_warning": false,
-          "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 14 sell(s) in past 6 months | $0 bought / $247,874,637 sold",
-          "insider_buys": 0,
-          "insider_sells": 14,
-          "conviction_holders": [],
-          "hf_new_positions": [],
-          "data_ok": true,
-          "data_flags": []
-        },
         {
           "ticker": "CBRS",
           "name": "CBRS",
@@ -5977,7 +5991,7 @@
           "fall_reason": "Microsoft project delays and spending cuts triggered a broad neocloud selloff, amplified by debt-market caution on financing risk.",
           "price": 129.49,
           "pct_change_1d": 7.58,
-          "market_cap": 32877279232,
+          "market_cap": 35202535424,
           "cap_tier": "large",
           "drawdown_from_high": -56.8,
           "revenue_growth": 454.0,
@@ -6135,7 +6149,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in EUR; figures converted to USD at 1.1143. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in EUR; figures converted to USD at 1.1228. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -6192,7 +6206,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in TWD; figures converted to USD at 0.0305. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in TWD; figures converted to USD at 0.0302. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -6228,7 +6242,7 @@
           "revenue_growth": 44.7,
           "op_margin": 21.2,
           "pe": 95.94872,
-          "forward_pe": 26.54911,
+          "forward_pe": 26.012634,
           "short_percent_float": 2.33,
           "short_ratio": 1.7,
           "high_proximity_warning": false,
@@ -6246,26 +6260,33 @@
           "name": "Micron Technology, Inc.",
           "theme": "edge_ai_silicon",
           "status": "research_complete",
-          "thesis": "Data corruption makes analysis impossible; real Micron is a cyclical memory play facing Taiwan plant halt and Chinese competition at unknown true valuation.",
+          "thesis": "Cyclical memory leader with massive AI/HBM tailwind trading at 3.3x forward earnings and 6.8x EV/EBITDA, but 80% margins and 379% growth likely mark a cycle peak \u2014 entry only if drawdown deepens or margins prove structural.",
           "added": "2026-06-08",
-          "verdict": "RED FLAG",
-          "buy_target": 627.5,
+          "verdict": "WATCHLIST",
+          "buy_target": 564.75,
           "current_price": 690.0,
-          "next_action": "AVOID \u2014 Data corruption makes analysis impossible; real Micron is a cyclical memory play facing Taiwan plant halt and Chinese competition at unknown true valuation.",
-          "research_file": "output/research/MU_2026-11-06.md",
-          "last_researched": "2026-11-06",
-          "confidence": "HIGH",
+          "next_action": "WAIT \u2014 Cyclical memory leader with massive AI/HBM tailwind trading at 3.3x forward earnings and 6.8x EV/EBITDA, but 80% margins and 379% growth likely mark a cycle peak \u2014 entry only if drawdown deepens or margins prove structural. Revisit at 55% below the 52-week high.",
+          "research_file": "output/research/MU_2026-11-07.md",
+          "last_researched": "2026-11-07",
+          "confidence": "MEDIUM",
           "bear_check": null,
-          "llm_verdict": "RED FLAG",
+          "llm_verdict": "WATCHLIST",
           "bear_downgraded": false,
-          "buy_trigger_drawdown_pct": -50.0,
+          "buy_trigger_drawdown_pct": -55.0,
           "no_pullback_gate": true,
-          "rating_version": 3,
+          "rating_version": 4,
           "unsupported_figures": [
-            "$100B",
-            "$25B"
+            "12x",
+            "$11.3B",
+            "60%",
+            "50%",
+            "30%",
+            "$11B",
+            "25%"
           ],
-          "fall_reason": "Micron shares plunged 17% amid a broader semiconductor selloff and a Taiwan plant halt due to labor disputes.",
+          "fall_reason": "Micron plunged 17% amid a broad semiconductor selloff, a Taiwan plant halt due to labor disputes, and rising concerns over Chinese DRAM competition.",
+          "rated_quarter_end": "2026-08-31",
+          "rated_next_earnings": 1790798400,
           "price": 690.0,
           "pct_change_1d": 5.12,
           "market_cap": 780682002432,
@@ -7359,7 +7380,7 @@
           "fall_reason": "The headlines describe only share-price underperformance vs. the broader market without citing a specific earnings miss, guidance cut, or contract loss.",
           "price": 133.12,
           "pct_change_1d": 6.44,
-          "market_cap": 4849780736,
+          "market_cap": 4849902592,
           "cap_tier": "mid",
           "drawdown_from_high": -59.4,
           "revenue_growth": 8.9,
@@ -7458,7 +7479,7 @@
           "revenue_growth": 14.0,
           "op_margin": 61.0,
           "pe": 34.154892,
-          "forward_pe": 28.191936,
+          "forward_pe": 28.191427,
           "short_percent_float": 0.81,
           "short_ratio": 2.3,
           "high_proximity_warning": true,
@@ -8066,7 +8087,7 @@
           "fall_reason": null,
           "price": 127.73,
           "pct_change_1d": 0.13,
-          "market_cap": 27848464384,
+          "market_cap": 27593289728,
           "cap_tier": "large",
           "drawdown_from_high": -1.0,
           "revenue_growth": 14.9,
@@ -8375,9 +8396,9 @@
     "counts": {
       "total": 57,
       "research_worthy": 23,
-      "watchlist": 27,
+      "watchlist": 28,
       "pass": 5,
-      "red_flag": 2
+      "red_flag": 1
     }
   },
   "themes": {
@@ -8907,7 +8928,7 @@
     ]
   },
   "analytics": {
-    "generated_at": "2026-11-06T23:53:23Z",
+    "generated_at": "2026-11-07T01:56:25Z",
     "funded": false,
     "total_value": 0.0,
     "total_invested": 0.0,
@@ -9004,7 +9025,7 @@
     "concentration_warnings": []
   },
   "track_record": {
-    "generated_at": "2026-11-06T23:53:23Z",
+    "generated_at": "2026-11-07T01:56:25Z",
     "tracked_since": "2026-04-25",
     "scoreboard": {
       "RESEARCH-WORTHY": {
@@ -9031,8 +9052,8 @@
         }
       },
       "WATCHLIST": {
-        "count": 177,
-        "avg_return": -8.8,
+        "count": 178,
+        "avg_return": -8.7,
         "win_rate": 29,
         "best": {
           "ticker": "MKTX",
@@ -10547,6 +10568,15 @@
         "entry_price": 120.51,
         "confidence": "MEDIUM",
         "current_price": 120.51,
+        "return_pct": 0.0
+      },
+      {
+        "ticker": "MU",
+        "verdict": "WATCHLIST",
+        "date": "2026-11-07",
+        "entry_price": 690.0,
+        "confidence": "MEDIUM",
+        "current_price": 690.0,
         "return_pct": 0.0
       },
       {
@@ -13748,7 +13778,7 @@
     }
   },
   "asset_location": {
-    "generated_at": "2026-11-06T23:53:23Z",
+    "generated_at": "2026-11-07T01:56:25Z",
     "rules": {
       "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
       "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
@@ -14173,7 +14203,7 @@
         "ticker": "MU",
         "name": "Micron Technology, Inc.",
         "theme": "edge_ai_silicon",
-        "verdict": "RED FLAG",
+        "verdict": "WATCHLIST",
         "div_yield_pct": 0.09,
         "account": "ROTH",
         "priority": "medium",
@@ -14476,8 +14506,8 @@
     ]
   },
   "daily_brief": {
-    "generated_at": "2026-11-06T23:53:23Z",
-    "date": "2026-11-06",
+    "generated_at": "2026-11-07T01:56:25Z",
+    "date": "2026-11-07",
     "first_run": false,
     "items": [
       {
@@ -14493,15 +14523,15 @@
         "kind": "mover",
         "ticker": "AMD",
         "headline": "AMD \u25b2 +11.0%",
-        "detail": "Strong Q3 earnings beat and raised AI-driven data center guidance fueled the surge.",
-        "action": "Verdict unaffected unless this breaks your thesis."
+        "detail": null,
+        "action": "No catalyst found \u2014 check the ticker's news tab yourself before acting."
       },
       {
         "priority": 3,
         "kind": "mover",
         "ticker": "VST",
         "headline": "VST \u25b2 +10.6%",
-        "detail": "Strong Q3 earnings, raised 2026 outlook, and surging AI power demand drove the post-earnings surge.",
+        "detail": "Strong Q3 earnings, raised 2026 outlook, and surging AI power demand drove the surge.",
         "action": "Verdict unaffected unless this breaks your thesis."
       },
       {
@@ -14511,6 +14541,14 @@
         "headline": "13 more names moved 5%+",
         "detail": null,
         "action": "Full list in Signals."
+      },
+      {
+        "priority": 5,
+        "kind": "verdict_change",
+        "ticker": "MU",
+        "headline": "MU verdict changed: RED FLAG \u2192 WATCHLIST",
+        "detail": "Research reassessed this name since your last check.",
+        "action": "No longer rated worth researching \u2014 re-read why."
       }
     ],
     "hidden_count": 0,
@@ -14666,12 +14704,12 @@
         "ticker": "MU",
         "name": "Micron Technology, Inc.",
         "theme": "edge_ai_silicon",
-        "verdict": "RED FLAG",
+        "verdict": "WATCHLIST",
         "price": 690.0,
         "high_52w": 1255.0,
         "drawdown_pct": -45.0,
         "severity": "STRONG",
-        "thesis": "Data corruption makes analysis impossible; real Micron is a cyclical memory play facing Taiwan plant halt and Chinese competition at unknown true valuation.",
+        "thesis": "Cyclical memory leader with massive AI/HBM tailwind trading at 3.3x forward earnings and 6.8x EV/EBITDA, but 80% margins and 379% growth likely mark a cycle peak \u2014 entry only if drawdown deepens or margins prove structural.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -14907,21 +14945,21 @@
       {
         "ticker": "QQQ",
         "last_researched": "2026-05-28",
-        "days_since": 162,
+        "days_since": 163,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py QQQ"
       },
       {
         "ticker": "SPY",
         "last_researched": "2026-05-28",
-        "days_since": 162,
+        "days_since": 163,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py SPY"
       },
       {
         "ticker": "^TNX",
         "last_researched": "2026-05-28",
-        "days_since": 162,
+        "days_since": 163,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
       }
@@ -15528,6 +15566,12 @@
         "reason": "No clear catalyst in current news.",
         "news": [
           {
+            "title": "Oklo manufacturing partnership lifts shares as earnings beat lands",
+            "publisher": "Financial-News.co.uk",
+            "date": "2026-11-07",
+            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQV3ctR252aE52dWNkNmxvVEhxOG9RUWpoYXdJX0VZR2JzSW1CZmFpbUVQZTFzX25WZjhIRmpra20weGFSOU42SzVua3pQZmJLbWVJREppcVM3czNXUE1ac0t5UzQ5T0dDdEUxSUtpakFJX2dXZngwRU5jVWpweklqMUZuSExoTDZCTDlCMkwyYXBYdWhDQ01SOEt2d1hDTUZCakE?oc=5"
+          },
+          {
             "title": "Oklo Stock Jumps on Promising Updates on Its Novel Nuclear Reactors",
             "publisher": "Barron's",
             "date": "2026-11-06",
@@ -15538,12 +15582,6 @@
             "publisher": "CNBC",
             "date": "2026-11-06",
             "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPOVVoN0NTMmRYa25fZXZlYkFmSlVWMXBGcVg0ZmUxaG94TEdReGY0Nl92WGhoMFBxc21NRnFDNVd0bGZnZ2xmYXJ5NlRHSFhGNy1BNDJZcjhrYWs0b24xNmdQSGxIZ1U3NjZZZ0dMUGduNDhaMGtqbjM0WkJKOUswdUliblo3dEFGQTNlNHBLWVpDVWE3eEJCQzZIaDZ6Zw?oc=5"
-          },
-          {
-            "title": "Oklo Inc. (OKLO) Reports Q3 Loss, Lags Revenue Estimates",
-            "publisher": "Yahoo Finance",
-            "date": "2026-11-06",
-            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSEg4OVBPWXNKc1FnSE1DaXdmRmY5RHlKUFkzUDNIV1RwZUlBVHpnZFc2MU5ieXpIWTJyQWJ6T3hPa3dXX01OSlpERTJtcW5BN2hPVnh4WWlYaENkeVNFcE14LVVUR0xtVWlDZlQ4MlBTRlpJcDVmWW5FTC1McEdaLVB5VVpRdkZHUXoxbDIyc001UWs?oc=5"
           }
         ]
       },
@@ -15593,7 +15631,7 @@
         "triggers": [
           "+11.0% on the day"
         ],
-        "reason": "Strong Q3 earnings beat and raised AI-driven data center guidance fueled the surge.",
+        "reason": "No clear catalyst in current news.",
         "news": [
           {
             "title": "AMD shares rise as AI-driven data-center strength fuels growth outlook",
@@ -15608,10 +15646,10 @@
             "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFAyZGQ0QXhqYkxYQUljejlZY0ZzU3lmNU0wRXZIaVZrS0hHQlZCM1ZCTDNiWHhlYkdSYXU2c1JzT2xsMEpUN3RlX3dfNEdIOFhVQjh5UzJ3d1NxTWQ2VEdfQzVNQWpNWFA3OUVYYUNhSXN1ejlSVHdr?oc=5"
           },
           {
-            "title": "AMD's data center revenue nearly doubles in Q3 and CEO Su expects growth to accelerate",
-            "publisher": "CNBC",
+            "title": "AMD Forecast Exceeds Estimates After AI Chip Demand Soars",
+            "publisher": "Bloomberg.com",
             "date": "2026-11-03",
-            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBfVXVMaFFzOXpSSmhDS2xlZWZLZDk0V2w5MHpTSnZ3d2c5bkMzRDhwbzhURWpMMVcwX3ZiME8ybmU4UHR1ekdtVlUwRTYxcTI0T1dadVhheUQ0LVVpWnRqYjdmeDkxMGJKQXBkNUtpaEVKZVlXNEhYRQ?oc=5"
+            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYURlOUxxRUMybEdmbkJoTHZiZEVTTUtCN0gyZ1RsV0s3YlEteXR1NFZIWDNwXzJKTUdCRUpJY0RWNlRqVC02M0VaMFgtY0piUFNGSkhKQmZ3bTVwMHFERHN6ZExPSnVFbWdBWDYxQnNnX0RJRnF6QVlld0FBeDhySGlrUEZ4bEtmWkkybFFVRU9EcnhRd2F5c1M1eGc2OFk5VG95X0dUa1dWUGhPZzJJ?oc=5"
           }
         ]
       },
@@ -15627,7 +15665,7 @@
         "triggers": [
           "+10.6% on the day"
         ],
-        "reason": "Strong Q3 earnings, raised 2026 outlook, and surging AI power demand drove the post-earnings surge.",
+        "reason": "Strong Q3 earnings, raised 2026 outlook, and surging AI power demand drove the surge.",
         "news": [
           {
             "title": "Vistra Shares Rise 5% as Q3 Profit Surges Despite Revenue Miss, Raises 2026 Outlook",
@@ -15840,16 +15878,16 @@
             "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdU5ZNDZZVWh0LVlwUFhVZ3lDcGtIaDc2MjQwMjB6ZjFLUllIZUpiNG1PSkxJWk1KQXlvbUFCSWpxWWMxQ3dvdjhWN0g1aXZKbWdjR09heDJIak5NUHoxbU5lVWtsYkFDb25qWnQzT21ESnJnaGtab0NIV3NGRmxmaWc1QkRmaWRzRnQ2UzdnOA?oc=5"
           },
           {
+            "title": "Powell Industries Announces Date and Conference Call for Fiscal 2026 Fourth Quarter and Full Year Results",
+            "publisher": "GlobeNewswire",
+            "date": "2026-11-03",
+            "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQUzZXV21WTnZIaC04cXFSU2NzN2d0T3pBcW03SHA1dXBnSHE0ZUROM0JQLWlFb3V1Y3hWYVRYNTlEZTZpbWZDbmh4Z1B2a05pNjBaY1dQRUJwek84U2VEdkxLOGxhWENtb1ZLZks5UmJxQ2Q4c2l2d25XVFRhdDd6TnZQZzdZRm82RUNmaVZJYTBTb1VkUDNyNk1mWnUxSWdXNVB5TEdfU25WZTREam1VV0lMNm5yRlZXeWo3ZUsxYnVhMDVVQlpBdXFWTmNMT2NXTV9hbHFoX1RMcEdLNXo5VlhmWWhURl9NN1RJbkJ2eUlDMXBFVTdFUnlOSDJOZGVXekFRLWlRb3Y?oc=5"
+          },
+          {
             "title": "Powell Industries Inc (POWL) Shares Surge 3.3% -- What GF Score of 79 Tells Investors",
             "publisher": "GuruFocus",
             "date": "2026-10-21",
             "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOOVI1LUZ3WUVwOW5JYjF5V1QxUXNlNk94aV8zTE1aRkFDV0VHaFJZY2JOZkF4T2p0SEZaYUlScGh0YldRaTVoa2lzMUs1YXFvNHpta3dTbXR0MU94R2xIdXQ3RUlHOHh5T0lReC14M3ZpRTJfbFVvczV4bzVKVDlta1FVRHZod0cxZENuZ1dwWDIzVmpWX2hjZlZuZHVyYktCSkczQmNsMl92MFBJVFowd2xwWFJ6dThV?oc=5"
-          },
-          {
-            "title": "Powell Industries: A Record Backlog Isn't Enough To Make It A Buy (Rating Downgrade)",
-            "publisher": "Seeking Alpha",
-            "date": "2026-10-14",
-            "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOOGI5UEJ4M0h6Y0lUd1poNGFiWVllQkdtek1xWGQ4UDliV3pNY21VNTdCYzNqbWItOVdfVk1LeU5VUU5xb19vbjVTdjRKZmNMV2g0U1JLeFFHUHpmQVJQT0JmSTh6dFpyU1lqTVhYcmZIOWVDWHFWd2dabzV0ODdTNVVJdFN4Wk1nb0tYWFhhenpnUFhHRmd2b0R3NnozVWpCazJvaXdpRnQtQ0h1OTFiVXJQbVA5MUJPT3NTUFJR?oc=5"
           }
         ]
       },
@@ -15992,7 +16030,7 @@
       {
         "ticker": "MU",
         "name": "Micron Technology, Inc.",
-        "verdict": "RED FLAG",
+        "verdict": "WATCHLIST",
         "price": 690.0,
         "pct_day": 5.12,
         "pct_since": 0.0,
@@ -16058,7 +16096,7 @@
         ]
       }
     ],
-    "movers_updated": "2026-11-06T23:53:23Z",
+    "movers_updated": "2026-11-07T01:56:25Z",
     "target_hits": [
       {
         "ticker": "GOOGL",
@@ -16484,18 +16522,18 @@
       {
         "ticker": "CEG",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Constellation Energy (CEG) Set to Report Q3 Earnings on November 9",
-        "publisher": "GuruFocus",
+        "title": "Constellation Energy Earnings Ahead: What Past Reactions Say About The Stock",
+        "publisher": "Trefis",
         "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQmVBTVhhX2d4aXVudURDSlltMkJlX1V3V0pRbTBYTU10UGtHMWxFWHhJME1UU1RJcU5saElDYWl3Z25aaE1JUFg2YlB3dGJKUUVfTS1RN1ZuYzJFa0NVZlo5ZHZ6SDhldFRkMVdZOGlPNzBqdHpnZFpSZnR5RlZMZE1oeGxLVUpNcmVEOGlCbVdybEVxaXVQY0xzeWRFN2dqdjZtbm13?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPRmMzbTFGZWlESExrZjVkUzRzeTFTS1NQRE9SaEVYR0lhSFNMVFZNNUx3T3BkcnRscHlZbjRpSTVlc3o2Y0hwVURoRl9wdDE1ZEFQNlY2WnRMZDVrWEhsNVk2MFZndGRGNVFiNjNvNDJ0dkpLZFU3S1ZoMUM4a09tN094M1QxT1FLVGNGMElyX0JlQUFad2UyMzUtc2Y0N2ItSWVrcUxVNU5LLUlMYURTOXEtS1I5SFNiTkNvOGNndDZ6eXlIMFVHX3VCX1lZcm1h?oc=5"
       },
       {
         "ticker": "CEG",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Constellation Energy Group, Inc. (CEG) call put ratio 1 call to 1.9 puts into quarter results",
-        "publisher": "StreetInsider",
+        "title": "Constellation Energy (CEG) Set to Report Q3 Earnings on November 9",
+        "publisher": "GuruFocus",
         "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPY3R5cGdHZnI1NURCUXp3YUNUb1BJN1dsVTh6S0l6RVJpLXNMdGdwOHFCeXUzRnZvLUZnaDdya3hTR3VGVWowa2pLRmUyekcxYzFuUG4tM2JJWUkxZDZsQ3Q0ZkJKeU1yUHZuTjZlYmh3UkstU1ZjQmw2X2hnY2hDMFdDNDFUQXhZeUdDQ3VLQWhMWGdSOHp3WWtyVWJKSFBrbjVrVnVIZS05TGEwRGRKWVpfTDh1dm5YVXh1U2IyRTBJSUY0R3R3TmszSU4wbjZ2Z1FOS19ucjhfa2lGTmpTUFkyMGY0Z2wzOWlwdFdRSW5CODQ?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQmVBTVhhX2d4aXVudURDSlltMkJlX1V3V0pRbTBYTU10UGtHMWxFWHhJME1UU1RJcU5saElDYWl3Z25aaE1JUFg2YlB3dGJKUUVfTS1RN1ZuYzJFa0NVZlo5ZHZ6SDhldFRkMVdZOGlPNzBqdHpnZFpSZnR5RlZMZE1oeGxLVUpNcmVEOGlCbVdybEVxaXVQY0xzeWRFN2dqdjZtbm13?oc=5"
       },
       {
         "ticker": "CEG",
@@ -16586,6 +16624,14 @@
         "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZVRWTEpBMm01ektoV05HREJpV1llUGxMYXBad3QzM3BFYnNZZEtVZEFwdVVsVjI3NGRrTUxkYVA5OEZJanpxLWRLcnRzNzh6N3RBYjR5QWM1M0czLWlleDhZbjQzc2hacDRVM1Byd1cyT3BaQ19aN3VNaGZOUWtMLTVCcHMxbTlpa2s5N3E2b2ZrelY4eG9Qb1lsSE85WXNBMXB0M2M2bkJIRVRnS2dzQUpVTHpZVWx6aWEyZ2lNVlM?oc=5"
       },
       {
+        "ticker": "ETN",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Eaton Reports Record $8.9 Billion In Third Quarter 2026 Sales, Up 28%, And Raises Organic Growth Guidance",
+        "publisher": "Pulse 2.0",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOUm8xSGtZMlJma3Ntb29PT1Z1T1pmdFNOQWRQVzE1ZlkyRmJBWkVtbEtmclRsclVLYjdZOEM2WG1PYlhIREw1OEpyRWw1bG5jSXZOTTJEbG9vLVBlck1RTm43V1prV0E3Q3dKazdvZnBOekJZU0I5NWdDcko0ajAwN2RRb2JPZ0hISFloM2VYYWNIQVVObjB2dlUzdlo5c2VOaksyc3A3NjZzWHZQaTF6ZDdOM3M4LUpTdlQ0YktB?oc=5"
+      },
+      {
         "ticker": "BWXT",
         "verdict": "RESEARCH-WORTHY",
         "title": "BWX Technologies Stock: Q3 2026 Results Confirm Progress (NYSE:BWXT)",
@@ -16636,6 +16682,14 @@
       {
         "ticker": "AVGO",
         "verdict": "RESEARCH-WORTHY",
+        "title": "AVGO Stock Quote Price and Forecast",
+        "publisher": "CNN",
+        "date": "2026-11-05",
+        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1LY3VvVktnejctYWhud1RicWtyOTFwZVZoZC1pTktnSURqYWhQdlZ6X2ZaY05hN19kckJGWk5pQUFGdHJVaFF6SkV0TmNGMzkw?oc=5"
+      },
+      {
+        "ticker": "AVGO",
+        "verdict": "RESEARCH-WORTHY",
         "title": "Why is Broadcom stock tumbling today?",
         "publisher": "Investing.com",
         "date": "2026-11-05",
@@ -16648,14 +16702,6 @@
         "publisher": "Yahoo Finance",
         "date": "2026-11-05",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQjdpcExLSzBnbXZYVFAzRUlmRGtMNEZ6dEFIRDZGaXF0TDRHb0NuSFE0cWJKdWV3cVdNaE1WQ3ZVU1VMTnhoZzQ1X1ZrYXdpV29DT2dPQ1g0dFNyc1Fzc3FBZjJSallXQkp0VjB5NmxJNXhrZzI5cVdDemZNOHVWelZrcTg1NXptdUJEN3hPLTRYQThrRENPUFFnUmM?oc=5"
-      },
-      {
-        "ticker": "AVGO",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Broadcom (AVGO) Stock Slides 35% from Peak, Testing Key Technical Support Around $325 Mark",
-        "publisher": "FXLeaders",
-        "date": "2026-11-05",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdDV4V1VVc0lsREZpeUY3NkdhdWhKX21oR0NuTmhRNHA0YjB3d211bmd6YjdsekxZTkh5S0tseXZ0Vi10U3FhNGN2OTBjLVRlSTlGS1NSdkRGZHMtUTgzdGRCbk1CdC14VXdOLXRjRE9DZDYzWDhrdEtiYVg1VkFYVWQ1dXp4a2FtYm5rLVBvVzU0Rnh3LUJXX0d5NF93UEx2dG9BQ2tacW1yclg2clF0dVJvam5ZbjJJVWtVMHlTWjVCb2lZWHhV?oc=5"
       },
       {
         "ticker": "ASML",
@@ -16752,14 +16798,6 @@
         "publisher": "Yahoo Finance",
         "date": "2026-11-05",
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOTFJuU0RoWE9UMFFScDM2NEdybGwwdkpIV1R2N0s4eE9xZmFyclNlZDd5ejFlV2tIRURlcDhYMWZLQ0owUEdZQzNydlM5Q2RqNnpHMHk4UlV5a2Z0RUNmV0Z2ZU5YbzVDc3Z6amdvSDlwdl9BR1pxV2VTTjV4b1kyLWRPS1ZYNXB3d3M3VjAxUW9uN3RTR1dJZER3?oc=5"
-      },
-      {
-        "ticker": "PODD",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Insulet Sees Attractive Valuation Despite More Conservative 2027 Outlook, RBC Says",
-        "publisher": "Yahoo Finance",
-        "date": "2026-11-05",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPalJaZ3h4dm5xT0VZd1lJWW1ETjBUcExvZm81cFpMWl8zWGREQW1vVE1oY1RGa3M2em1nN3J4cUUydFlnZG4tLWd0RG9OVVdSeExCaV9LSks4TW9JZTAyaTNfcncwNm42OWRycHhlTDZISHpwYy0yd3p1OC11cWFfblJOQ1ZrRW8tZm5NdzAzbUlFWjJ4a1BnSDNHcjRDenh5U0k1Tw?oc=5"
       }
     ],
     "insider_alerts": [
@@ -16988,7 +17026,7 @@
         "drawdown_pct": -31.8,
         "price": 449.04,
         "pe": 95.94872,
-        "forward_pe": 26.54911,
+        "forward_pe": 26.012634,
         "verdict": "RESEARCH-WORTHY",
         "next_action": "RESEARCH \u2014 AI infrastructure leader with 45% revenue growth trading at 26.5x forward earnings, 32% below 52-week high. Worth a deep dive before any decision."
       },
@@ -16999,8 +17037,8 @@
         "price": 690.0,
         "pe": 9.2829275,
         "forward_pe": 3.321132,
-        "verdict": "RED FLAG",
-        "next_action": "AVOID \u2014 Data corruption makes analysis impossible; real Micron is a cyclical memory play facing Taiwan plant halt and Chinese competition at unknown true valuation."
+        "verdict": "WATCHLIST",
+        "next_action": "WAIT \u2014 Cyclical memory leader with massive AI/HBM tailwind trading at 3.3x forward earnings and 6.8x EV/EBITDA, but 80% margins and 379% growth likely mark a cycle peak \u2014 entry only if drawdown deepens or margins prove structural. Revisit at 55% below the 52-week high."
       },
       {
         "ticker": "MRVL",
