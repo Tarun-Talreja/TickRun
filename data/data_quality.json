@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-07T04:15:45Z",
+  "generated_at": "2026-11-07T04:41:04Z",
   "checked": 58,
   "flagged": 2,
   "quality": {
-    "AMD": {
+    "AAPL": {
       "ok": true,
       "flags": []
     },
-    "AAPL": {
+    "AMD": {
       "ok": true,
       "flags": []
     },
@@ -96,11 +96,11 @@
       "ok": true,
       "flags": []
     },
-    "INVH": {
+    "IBM": {
       "ok": true,
       "flags": []
     },
-    "IBM": {
+    "INVH": {
       "ok": true,
       "flags": []
     },
@@ -108,11 +108,11 @@
       "ok": true,
       "flags": []
     },
-    "LITE": {
+    "LLY": {
       "ok": true,
       "flags": []
     },
-    "LLY": {
+    "LITE": {
       "ok": true,
       "flags": []
     },
@@ -176,23 +176,11 @@
       "ok": true,
       "flags": []
     },
-    "POWL": {
-      "ok": true,
-      "flags": []
-    },
     "PODD": {
       "ok": true,
       "flags": []
     },
-    "QQQ": {
-      "ok": true,
-      "flags": []
-    },
-    "STZ": {
-      "ok": true,
-      "flags": []
-    },
-    "SPY": {
+    "POWL": {
       "ok": true,
       "flags": []
     },
@@ -200,11 +188,19 @@
       "ok": true,
       "flags": []
     },
-    "TLN": {
+    "QQQ": {
       "ok": true,
       "flags": []
     },
-    "TW": {
+    "SPY": {
+      "ok": true,
+      "flags": []
+    },
+    "STZ": {
+      "ok": true,
+      "flags": []
+    },
+    "TLN": {
       "ok": true,
       "flags": []
     },
@@ -216,6 +212,10 @@
           "msg": "Reports in TWD; figures converted to USD at 0.0302. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
+    },
+    "TW": {
+      "ok": true,
+      "flags": []
     },
     "UNH": {
       "ok": true,

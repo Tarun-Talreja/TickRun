@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-07T04:15:45Z",
+  "generated_at": "2026-11-07T04:41:04Z",
   "rules": {
     "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
     "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
     "high_yield_threshold_pct": 3.0
   },
   "counts": {
-    "roth": 49,
+    "roth": 50,
     "taxable": 2
   },
   "roth": [
@@ -101,6 +101,16 @@
       "reason": "Highest-conviction growth pick (28% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
     },
     {
+      "ticker": "GEV",
+      "name": "GE Vernova Inc.",
+      "theme": "power_grid",
+      "verdict": "RESEARCH-WORTHY",
+      "div_yield_pct": 0.26,
+      "account": "ROTH",
+      "priority": "high",
+      "reason": "Highest-conviction growth pick (27% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+    },
+    {
       "ticker": "GIS",
       "name": "GIS",
       "theme": "defensive_income",
@@ -139,6 +149,16 @@
       "account": "ROTH",
       "priority": "high",
       "reason": "REIT \u2014 distributions are largely non-qualified and taxed as ordinary income, making this the most tax-inefficient asset class you hold. Sheltering it is worth more than sheltering an equivalent amount of growth stock."
+    },
+    {
+      "ticker": "LMB",
+      "name": "LMB",
+      "theme": "datacenter_infra",
+      "verdict": "RESEARCH-WORTHY",
+      "div_yield_pct": null,
+      "account": "ROTH",
+      "priority": "high",
+      "reason": "Highest-conviction growth pick (25% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
     },
     {
       "ticker": "META",
@@ -336,16 +356,6 @@
       "theme": "healthcare_innovation",
       "verdict": "WATCHLIST",
       "div_yield_pct": 0.19,
-      "account": "ROTH",
-      "priority": "medium",
-      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
-    },
-    {
-      "ticker": "GEV",
-      "name": "GE Vernova Inc.",
-      "theme": "power_grid",
-      "verdict": "WATCHLIST",
-      "div_yield_pct": 0.26,
       "account": "ROTH",
       "priority": "medium",
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
