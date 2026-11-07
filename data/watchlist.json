@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-06",
+  "last_updated": "2026-11-07",
   "candidates": [
     {
       "ticker": "AAPL",
@@ -517,26 +517,33 @@
       "name": "Micron Technology, Inc.",
       "theme": "edge_ai_silicon",
       "status": "research_complete",
-      "thesis": "Data corruption makes analysis impossible; real Micron is a cyclical memory play facing Taiwan plant halt and Chinese competition at unknown true valuation.",
+      "thesis": "Cyclical memory leader with massive AI/HBM tailwind trading at 3.3x forward earnings and 6.8x EV/EBITDA, but 80% margins and 379% growth likely mark a cycle peak \u2014 entry only if drawdown deepens or margins prove structural.",
       "added": "2026-06-08",
-      "verdict": "RED FLAG",
-      "buy_target": 627.5,
+      "verdict": "WATCHLIST",
+      "buy_target": 564.75,
       "current_price": null,
-      "next_action": "AVOID \u2014 Data corruption makes analysis impossible; real Micron is a cyclical memory play facing Taiwan plant halt and Chinese competition at unknown true valuation.",
-      "research_file": "output/research/MU_2026-11-06.md",
-      "last_researched": "2026-11-06",
-      "confidence": "HIGH",
+      "next_action": "WAIT \u2014 Cyclical memory leader with massive AI/HBM tailwind trading at 3.3x forward earnings and 6.8x EV/EBITDA, but 80% margins and 379% growth likely mark a cycle peak \u2014 entry only if drawdown deepens or margins prove structural. Revisit at 55% below the 52-week high.",
+      "research_file": "output/research/MU_2026-11-07.md",
+      "last_researched": "2026-11-07",
+      "confidence": "MEDIUM",
       "bear_check": null,
-      "llm_verdict": "RED FLAG",
+      "llm_verdict": "WATCHLIST",
       "bear_downgraded": false,
-      "buy_trigger_drawdown_pct": -50.0,
+      "buy_trigger_drawdown_pct": -55.0,
       "no_pullback_gate": true,
-      "rating_version": 3,
+      "rating_version": 4,
       "unsupported_figures": [
-        "$100B",
-        "$25B"
+        "12x",
+        "$11.3B",
+        "60%",
+        "50%",
+        "30%",
+        "$11B",
+        "25%"
       ],
-      "fall_reason": "Micron shares plunged 17% amid a broader semiconductor selloff and a Taiwan plant halt due to labor disputes."
+      "fall_reason": "Micron plunged 17% amid a broad semiconductor selloff, a Taiwan plant halt due to labor disputes, and rising concerns over Chinese DRAM competition.",
+      "rated_quarter_end": "2026-08-31",
+      "rated_next_earnings": 1790798400
     },
     {
       "ticker": "MRVL",
