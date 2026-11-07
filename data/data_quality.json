@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T03:08:23Z",
+  "generated_at": "2026-11-07T03:18:11Z",
   "checked": 58,
   "flagged": 2,
   "quality": {
@@ -19,10 +19,6 @@
       "ok": true,
       "flags": []
     },
-    "AVGO": {
-      "ok": true,
-      "flags": []
-    },
     "ASML": {
       "ok": false,
       "flags": [
@@ -31,6 +27,10 @@
           "msg": "Reports in EUR; figures converted to USD at 1.1228. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
+    },
+    "AVGO": {
+      "ok": true,
+      "flags": []
     },
     "BWXT": {
       "ok": true,
@@ -56,6 +56,10 @@
       "ok": true,
       "flags": []
     },
+    "CRDO": {
+      "ok": true,
+      "flags": []
+    },
     "COST": {
       "ok": true,
       "flags": []
@@ -64,11 +68,7 @@
       "ok": true,
       "flags": []
     },
-    "CRDO": {
-      "ok": true,
-      "flags": []
-    },
-    "EIX": {
+    "FLUT": {
       "ok": true,
       "flags": []
     },
@@ -76,7 +76,7 @@
       "ok": true,
       "flags": []
     },
-    "FLUT": {
+    "EIX": {
       "ok": true,
       "flags": []
     },
@@ -96,10 +96,6 @@
       "ok": true,
       "flags": []
     },
-    "ISRG": {
-      "ok": true,
-      "flags": []
-    },
     "INVH": {
       "ok": true,
       "flags": []
@@ -112,11 +108,15 @@
       "ok": true,
       "flags": []
     },
-    "LMB": {
+    "ISRG": {
       "ok": true,
       "flags": []
     },
     "LLY": {
+      "ok": true,
+      "flags": []
+    },
+    "LMB": {
       "ok": true,
       "flags": []
     },
@@ -176,11 +176,11 @@
       "ok": true,
       "flags": []
     },
-    "POWL": {
+    "PODD": {
       "ok": true,
       "flags": []
     },
-    "PODD": {
+    "POWL": {
       "ok": true,
       "flags": []
     },
@@ -192,6 +192,10 @@
       "ok": true,
       "flags": []
     },
+    "STZ": {
+      "ok": true,
+      "flags": []
+    },
     "SPY": {
       "ok": true,
       "flags": []
@@ -200,7 +204,7 @@
       "ok": true,
       "flags": []
     },
-    "STZ": {
+    "TW": {
       "ok": true,
       "flags": []
     },
@@ -213,15 +217,11 @@
         }
       ]
     },
-    "TW": {
+    "V": {
       "ok": true,
       "flags": []
     },
     "UNH": {
-      "ok": true,
-      "flags": []
-    },
-    "V": {
       "ok": true,
       "flags": []
     },
