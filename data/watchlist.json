@@ -1628,6 +1628,63 @@
       "next_action": "MACRO SIGNAL \u2014 current 4.48%. Watch for moves above 4.75% (equity headwind) or below 4.0% (equity tailwind).",
       "research_file": null,
       "last_researched": "2026-05-28"
+    },
+    {
+      "ticker": "TPL",
+      "name": "Texas Pacific Land Corporation",
+      "theme": "uncategorized",
+      "source": "radar",
+      "status": "research_complete",
+      "verdict": "RESEARCH-WORTHY",
+      "added": "2026-11-07",
+      "llm_verdict": "RESEARCH-WORTHY",
+      "bear_downgraded": false,
+      "research_file": "output/research/TPL_2026-11-07.md",
+      "last_researched": "2026-11-07",
+      "rating_version": 4,
+      "unsupported_figures": [
+        "80%",
+        "$60",
+        "5x",
+        "10x"
+      ],
+      "fall_reason": "The stock fell 50% from its high despite record Q3 results, likely due to valuation concerns over sustainability of royalty growth and commodity price sensitivity.",
+      "rated_quarter_end": "2026-09-30",
+      "rated_next_earnings": 1793826000,
+      "confidence": "MEDIUM",
+      "bear_check": "The extreme discrepancy between trailing P/E (32x) and forward P/E (3.7x) implies either a massive one-time gain inflating trailing earnings or forward estimates that assume implausible 5x earnings growth, making valuation unreliable. Revenue is overwhelmingly tied to Permian Basin drilling activity with no contractual floor, so a sustained oil price drop below $60/bbl would simultaneously crush royalty volumes and water sales. The 50% drawdown from highs despite record quarterly results suggests the market doubts the sustainability of current growth rates.\n\nWHY_IT_FELL: The stock fell 50% from its high despite record Q3 results, likely due to valuation concerns over sustainability of royalty growth and commodity price sensitivity.\nFALL_EVIDENCE: Texas Pacific Land Corp (TPL) Shares Fall 13.4% -- What GF Score of 88 Tells Investors (GuruFocus)\nBREAK: NONE\nEVIDENCE: none",
+      "thesis": "High-margin land royalty compounder at 23x EV/EBITDA with 35% revenue growth, but forward P/E of 3.7x signals estimate volatility.",
+      "next_action": "RESEARCH \u2014 High-margin land royalty compounder at 23x EV/EBITDA with 35% revenue growth, but forward P/E of 3.7x signals estimate volatility. Worth a deep dive before any decision.",
+      "buy_trigger_drawdown_pct": -50.2,
+      "buy_target": 272.51
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "theme": "uncategorized",
+      "source": "radar",
+      "status": "research_complete",
+      "verdict": "RESEARCH-WORTHY",
+      "added": "2026-11-07",
+      "llm_verdict": "RESEARCH-WORTHY",
+      "bear_downgraded": false,
+      "research_file": "output/research/APP_2026-11-07.md",
+      "last_researched": "2026-11-07",
+      "rating_version": 4,
+      "unsupported_figures": [
+        "14x",
+        "0.34x",
+        "30%"
+      ],
+      "fall_reason": null,
+      "rated_quarter_end": "2026-09-30",
+      "rated_next_earnings": 1793826000,
+      "confidence": "LOW",
+      "bear_check": "AppLovin's heavy reliance on mobile gaming advertisers makes it vulnerable to Apple's App Tracking Transparency and Google's Privacy Sandbox changes, which could degrade targeting efficacy and cause top advertisers to slash budgets by 30% or more, simultaneously crushing revenue and margins. The stock's 47% decline from its 52-week high signals that the market has previously priced in significant growth deceleration or platform-risk fears, and the current forward P/E of 18.9x already bakes in a sharp slowdown from 55% YoY growth.\n\nWHY_IT_FELL: The headlines provided only cover a recent post-earnings rally and do not explain the earlier 47% decline from the 52-week high.\nFALL_EVIDENCE: none\nBREAK: NONE\nEVIDENCE: none",
+      "thesis": "Quality ad-tech compounder at 19x forward earnings with 55% growth, 78% operating margins, and $4.9B FCF, but theme fit is low and platform-policy risk is high.",
+      "next_action": "RESEARCH \u2014 Quality ad-tech compounder at 19x forward earnings with 55% growth, 78% operating margins, and $4.9B FCF, but theme fit is low and platform-policy risk is high. Worth a deep dive before any decision.",
+      "buy_trigger_drawdown_pct": -47.0,
+      "buy_target": 391.15
     }
   ]
 }

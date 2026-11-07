@@ -77,6 +77,10 @@ CBRS
 CLS
 CRDO
 
+## Discovered by the radar
+TPL
+APP
+
 ## Index benchmarks (always include)
 SPY
 QQQ

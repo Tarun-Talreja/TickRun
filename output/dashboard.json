@@ -1,14 +1,14 @@
 {
-  "last_built": "2026-11-07T17:48:09Z",
-  "quotes_updated": "2026-11-07T17:48:07Z",
+  "last_built": "2026-11-07T17:53:37Z",
+  "quotes_updated": "2026-11-07T17:46:53Z",
   "health": {
     "stages": [
       {
         "name": "Quotes",
-        "updated_at": "2026-11-07T17:48:07Z",
+        "updated_at": "2026-11-07T17:46:53Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "Prices and buy targets may be out of date"
       },
       {
@@ -16,7 +16,7 @@
         "updated_at": "2026-11-07T05:37:55Z",
         "detail": "1/1 tickers",
         "status": "ok",
-        "age_hours": 12.2,
+        "age_hours": 12.3,
         "affects": "Ratings aren't being updated"
       },
       {
@@ -24,7 +24,7 @@
         "updated_at": "2026-11-07T15:47:47Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 2.0,
+        "age_hours": 2.1,
         "affects": "Upcoming earnings dates may be missing"
       },
       {
@@ -32,23 +32,23 @@
         "updated_at": "2026-11-07T10:39:59Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 7.1,
+        "age_hours": 7.2,
         "affects": "New SEC filings won't show"
       },
       {
         "name": "Prices",
-        "updated_at": "2026-11-07T17:48:07Z",
-        "detail": "54/54 have data",
+        "updated_at": "2026-11-07T17:46:53Z",
+        "detail": "59/59 have data",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "Prices and buy targets may be missing"
       },
       {
         "name": "Company figures",
-        "updated_at": "2026-11-07T17:48:07Z",
-        "detail": "54/54 have data",
+        "updated_at": "2026-11-07T17:46:53Z",
+        "detail": "59/59 have data",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "Ratings can't check the numbers"
       },
       {
@@ -56,7 +56,7 @@
         "updated_at": "2026-11-07T10:40:04Z",
         "detail": "53/53 have data",
         "status": "ok",
-        "age_hours": 7.1,
+        "age_hours": 7.2,
         "affects": "Ratings and mover reasons can miss recent news"
       },
       {
@@ -72,7 +72,7 @@
         "updated_at": "2026-08-15T14:09:52Z",
         "detail": "28/31 have data",
         "status": "ok",
-        "age_hours": 2019.6,
+        "age_hours": 2019.7,
         "affects": "Hedge fund holdings may be out of date"
       },
       {
@@ -80,7 +80,7 @@
         "updated_at": "2026-11-07T16:36:48Z",
         "detail": "16/16 have data",
         "status": "ok",
-        "age_hours": 1.2,
+        "age_hours": 1.3,
         "affects": "The field briefing may be out of date"
       },
       {
@@ -88,15 +88,15 @@
         "updated_at": "2026-11-07T01:56:25Z",
         "detail": "16/16 have data",
         "status": "ok",
-        "age_hours": 15.9,
+        "age_hours": 16.0,
         "affects": "Big moves may have no explanation"
       },
       {
         "name": "Radar",
-        "updated_at": "2026-11-07T16:37:09Z",
+        "updated_at": "2026-11-07T17:53:36Z",
         "detail": "12 found",
         "status": "ok",
-        "age_hours": 1.2,
+        "age_hours": 0.0,
         "affects": "The radar may be out of date"
       },
       {
@@ -104,7 +104,7 @@
         "updated_at": "2026-11-07T17:45:23Z",
         "detail": "428 found",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "New stock ideas may be out of date"
       },
       {
@@ -112,7 +112,7 @@
         "updated_at": "2026-11-07T16:37:25Z",
         "detail": "1 found",
         "status": "ok",
-        "age_hours": 1.2,
+        "age_hours": 1.3,
         "affects": "The AI summary may be out of date"
       },
       {
@@ -120,14 +120,14 @@
         "updated_at": "2026-11-07T17:48:09Z",
         "detail": "6 sources passed",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "One of the data sources failed its daily test"
       },
       {
         "name": "Ratings",
         "updated_at": null,
         "age_hours": null,
-        "detail": "54/54 on current logic",
+        "detail": "56/56 on current logic",
         "status": "ok",
         "affects": "Some ratings still use older logic"
       }
@@ -2980,6 +2980,93 @@
         "high_proximity_note": "Only 9.4% from 52-week high \u2014 entry timing risk",
         "data_ok": true,
         "data_flags": []
+      },
+      {
+        "ticker": "TPL",
+        "name": "Texas Pacific Land Corporation",
+        "theme": "uncategorized",
+        "source": "radar",
+        "status": "research_complete",
+        "verdict": "RESEARCH-WORTHY",
+        "added": "2026-11-07",
+        "llm_verdict": "RESEARCH-WORTHY",
+        "bear_downgraded": false,
+        "research_file": "output/research/TPL_2026-11-07.md",
+        "last_researched": "2026-11-07",
+        "rating_version": 4,
+        "unsupported_figures": [
+          "80%",
+          "$60",
+          "5x",
+          "10x"
+        ],
+        "fall_reason": "The stock fell 50% from its high despite record Q3 results, likely due to valuation concerns over sustainability of royalty growth and commodity price sensitivity.",
+        "rated_quarter_end": "2026-09-30",
+        "rated_next_earnings": 1793826000,
+        "confidence": "MEDIUM",
+        "bear_check": "The extreme discrepancy between trailing P/E (32x) and forward P/E (3.7x) implies either a massive one-time gain inflating trailing earnings or forward estimates that assume implausible 5x earnings growth, making valuation unreliable. Revenue is overwhelmingly tied to Permian Basin drilling activity with no contractual floor, so a sustained oil price drop below $60/bbl would simultaneously crush royalty volumes and water sales. The 50% drawdown from highs despite record quarterly results suggests the market doubts the sustainability of current growth rates.\n\nWHY_IT_FELL: The stock fell 50% from its high despite record Q3 results, likely due to valuation concerns over sustainability of royalty growth and commodity price sensitivity.\nFALL_EVIDENCE: Texas Pacific Land Corp (TPL) Shares Fall 13.4% -- What GF Score of 88 Tells Investors (GuruFocus)\nBREAK: NONE\nEVIDENCE: none",
+        "thesis": "High-margin land royalty compounder at 23x EV/EBITDA with 35% revenue growth, but forward P/E of 3.7x signals estimate volatility.",
+        "next_action": "RESEARCH \u2014 High-margin land royalty compounder at 23x EV/EBITDA with 35% revenue growth, but forward P/E of 3.7x signals estimate volatility. Worth a deep dive before any decision.",
+        "buy_trigger_drawdown_pct": -50.2,
+        "buy_target": 272.51,
+        "price": 272.36,
+        "current_price": 272.36,
+        "pct_change_1d": 0.07,
+        "market_cap": 18785943552,
+        "cap_tier": "large",
+        "drawdown_from_high": -50.2,
+        "revenue_growth": 34.6,
+        "op_margin": 76.0,
+        "pe": 32.004696,
+        "forward_pe": 3.7248356,
+        "short_percent_float": 7.22,
+        "short_ratio": 11.3,
+        "high_proximity_warning": false,
+        "data_ok": true,
+        "data_flags": []
+      },
+      {
+        "ticker": "APP",
+        "name": "AppLovin Corporation",
+        "theme": "uncategorized",
+        "source": "radar",
+        "status": "research_complete",
+        "verdict": "RESEARCH-WORTHY",
+        "added": "2026-11-07",
+        "llm_verdict": "RESEARCH-WORTHY",
+        "bear_downgraded": false,
+        "research_file": "output/research/APP_2026-11-07.md",
+        "last_researched": "2026-11-07",
+        "rating_version": 4,
+        "unsupported_figures": [
+          "14x",
+          "0.34x",
+          "30%"
+        ],
+        "fall_reason": null,
+        "rated_quarter_end": "2026-09-30",
+        "rated_next_earnings": 1793826000,
+        "confidence": "LOW",
+        "bear_check": "AppLovin's heavy reliance on mobile gaming advertisers makes it vulnerable to Apple's App Tracking Transparency and Google's Privacy Sandbox changes, which could degrade targeting efficacy and cause top advertisers to slash budgets by 30% or more, simultaneously crushing revenue and margins. The stock's 47% decline from its 52-week high signals that the market has previously priced in significant growth deceleration or platform-risk fears, and the current forward P/E of 18.9x already bakes in a sharp slowdown from 55% YoY growth.\n\nWHY_IT_FELL: The headlines provided only cover a recent post-earnings rally and do not explain the earlier 47% decline from the 52-week high.\nFALL_EVIDENCE: none\nBREAK: NONE\nEVIDENCE: none",
+        "thesis": "Quality ad-tech compounder at 19x forward earnings with 55% growth, 78% operating margins, and $4.9B FCF, but theme fit is low and platform-policy risk is high.",
+        "next_action": "RESEARCH \u2014 Quality ad-tech compounder at 19x forward earnings with 55% growth, 78% operating margins, and $4.9B FCF, but theme fit is low and platform-policy risk is high. Worth a deep dive before any decision.",
+        "buy_trigger_drawdown_pct": -47.0,
+        "buy_target": 391.15,
+        "price": 391.22,
+        "current_price": 391.22,
+        "pct_change_1d": 9.86,
+        "market_cap": 129619787776,
+        "cap_tier": "mega",
+        "drawdown_from_high": -47.0,
+        "revenue_growth": 55.5,
+        "op_margin": 78.2,
+        "pe": 26.34478,
+        "forward_pe": 18.896706,
+        "short_percent_float": 3.88,
+        "short_ratio": 2.1,
+        "high_proximity_warning": false,
+        "data_ok": true,
+        "data_flags": []
       }
     ],
     "by_verdict": {
@@ -5535,6 +5622,93 @@
           "insider_sells": 36,
           "data_ok": true,
           "data_flags": []
+        },
+        {
+          "ticker": "TPL",
+          "name": "Texas Pacific Land Corporation",
+          "theme": "uncategorized",
+          "source": "radar",
+          "status": "research_complete",
+          "verdict": "RESEARCH-WORTHY",
+          "added": "2026-11-07",
+          "llm_verdict": "RESEARCH-WORTHY",
+          "bear_downgraded": false,
+          "research_file": "output/research/TPL_2026-11-07.md",
+          "last_researched": "2026-11-07",
+          "rating_version": 4,
+          "unsupported_figures": [
+            "80%",
+            "$60",
+            "5x",
+            "10x"
+          ],
+          "fall_reason": "The stock fell 50% from its high despite record Q3 results, likely due to valuation concerns over sustainability of royalty growth and commodity price sensitivity.",
+          "rated_quarter_end": "2026-09-30",
+          "rated_next_earnings": 1793826000,
+          "confidence": "MEDIUM",
+          "bear_check": "The extreme discrepancy between trailing P/E (32x) and forward P/E (3.7x) implies either a massive one-time gain inflating trailing earnings or forward estimates that assume implausible 5x earnings growth, making valuation unreliable. Revenue is overwhelmingly tied to Permian Basin drilling activity with no contractual floor, so a sustained oil price drop below $60/bbl would simultaneously crush royalty volumes and water sales. The 50% drawdown from highs despite record quarterly results suggests the market doubts the sustainability of current growth rates.\n\nWHY_IT_FELL: The stock fell 50% from its high despite record Q3 results, likely due to valuation concerns over sustainability of royalty growth and commodity price sensitivity.\nFALL_EVIDENCE: Texas Pacific Land Corp (TPL) Shares Fall 13.4% -- What GF Score of 88 Tells Investors (GuruFocus)\nBREAK: NONE\nEVIDENCE: none",
+          "thesis": "High-margin land royalty compounder at 23x EV/EBITDA with 35% revenue growth, but forward P/E of 3.7x signals estimate volatility.",
+          "next_action": "RESEARCH \u2014 High-margin land royalty compounder at 23x EV/EBITDA with 35% revenue growth, but forward P/E of 3.7x signals estimate volatility. Worth a deep dive before any decision.",
+          "buy_trigger_drawdown_pct": -50.2,
+          "buy_target": 272.51,
+          "price": 272.36,
+          "current_price": 272.36,
+          "pct_change_1d": 0.07,
+          "market_cap": 18785943552,
+          "cap_tier": "large",
+          "drawdown_from_high": -50.2,
+          "revenue_growth": 34.6,
+          "op_margin": 76.0,
+          "pe": 32.004696,
+          "forward_pe": 3.7248356,
+          "short_percent_float": 7.22,
+          "short_ratio": 11.3,
+          "high_proximity_warning": false,
+          "data_ok": true,
+          "data_flags": []
+        },
+        {
+          "ticker": "APP",
+          "name": "AppLovin Corporation",
+          "theme": "uncategorized",
+          "source": "radar",
+          "status": "research_complete",
+          "verdict": "RESEARCH-WORTHY",
+          "added": "2026-11-07",
+          "llm_verdict": "RESEARCH-WORTHY",
+          "bear_downgraded": false,
+          "research_file": "output/research/APP_2026-11-07.md",
+          "last_researched": "2026-11-07",
+          "rating_version": 4,
+          "unsupported_figures": [
+            "14x",
+            "0.34x",
+            "30%"
+          ],
+          "fall_reason": null,
+          "rated_quarter_end": "2026-09-30",
+          "rated_next_earnings": 1793826000,
+          "confidence": "LOW",
+          "bear_check": "AppLovin's heavy reliance on mobile gaming advertisers makes it vulnerable to Apple's App Tracking Transparency and Google's Privacy Sandbox changes, which could degrade targeting efficacy and cause top advertisers to slash budgets by 30% or more, simultaneously crushing revenue and margins. The stock's 47% decline from its 52-week high signals that the market has previously priced in significant growth deceleration or platform-risk fears, and the current forward P/E of 18.9x already bakes in a sharp slowdown from 55% YoY growth.\n\nWHY_IT_FELL: The headlines provided only cover a recent post-earnings rally and do not explain the earlier 47% decline from the 52-week high.\nFALL_EVIDENCE: none\nBREAK: NONE\nEVIDENCE: none",
+          "thesis": "Quality ad-tech compounder at 19x forward earnings with 55% growth, 78% operating margins, and $4.9B FCF, but theme fit is low and platform-policy risk is high.",
+          "next_action": "RESEARCH \u2014 Quality ad-tech compounder at 19x forward earnings with 55% growth, 78% operating margins, and $4.9B FCF, but theme fit is low and platform-policy risk is high. Worth a deep dive before any decision.",
+          "buy_trigger_drawdown_pct": -47.0,
+          "buy_target": 391.15,
+          "price": 391.22,
+          "current_price": 391.22,
+          "pct_change_1d": 9.86,
+          "market_cap": 129619787776,
+          "cap_tier": "mega",
+          "drawdown_from_high": -47.0,
+          "revenue_growth": 55.5,
+          "op_margin": 78.2,
+          "pe": 26.34478,
+          "forward_pe": 18.896706,
+          "short_percent_float": 3.88,
+          "short_ratio": 2.1,
+          "high_proximity_warning": false,
+          "data_ok": true,
+          "data_flags": []
         }
       ],
       "PASS": [
@@ -6751,6 +6925,93 @@
           "short_ratio": null,
           "high_proximity_warning": true,
           "high_proximity_note": "Only 9.4% from 52-week high \u2014 entry timing risk",
+          "data_ok": true,
+          "data_flags": []
+        },
+        {
+          "ticker": "TPL",
+          "name": "Texas Pacific Land Corporation",
+          "theme": "uncategorized",
+          "source": "radar",
+          "status": "research_complete",
+          "verdict": "RESEARCH-WORTHY",
+          "added": "2026-11-07",
+          "llm_verdict": "RESEARCH-WORTHY",
+          "bear_downgraded": false,
+          "research_file": "output/research/TPL_2026-11-07.md",
+          "last_researched": "2026-11-07",
+          "rating_version": 4,
+          "unsupported_figures": [
+            "80%",
+            "$60",
+            "5x",
+            "10x"
+          ],
+          "fall_reason": "The stock fell 50% from its high despite record Q3 results, likely due to valuation concerns over sustainability of royalty growth and commodity price sensitivity.",
+          "rated_quarter_end": "2026-09-30",
+          "rated_next_earnings": 1793826000,
+          "confidence": "MEDIUM",
+          "bear_check": "The extreme discrepancy between trailing P/E (32x) and forward P/E (3.7x) implies either a massive one-time gain inflating trailing earnings or forward estimates that assume implausible 5x earnings growth, making valuation unreliable. Revenue is overwhelmingly tied to Permian Basin drilling activity with no contractual floor, so a sustained oil price drop below $60/bbl would simultaneously crush royalty volumes and water sales. The 50% drawdown from highs despite record quarterly results suggests the market doubts the sustainability of current growth rates.\n\nWHY_IT_FELL: The stock fell 50% from its high despite record Q3 results, likely due to valuation concerns over sustainability of royalty growth and commodity price sensitivity.\nFALL_EVIDENCE: Texas Pacific Land Corp (TPL) Shares Fall 13.4% -- What GF Score of 88 Tells Investors (GuruFocus)\nBREAK: NONE\nEVIDENCE: none",
+          "thesis": "High-margin land royalty compounder at 23x EV/EBITDA with 35% revenue growth, but forward P/E of 3.7x signals estimate volatility.",
+          "next_action": "RESEARCH \u2014 High-margin land royalty compounder at 23x EV/EBITDA with 35% revenue growth, but forward P/E of 3.7x signals estimate volatility. Worth a deep dive before any decision.",
+          "buy_trigger_drawdown_pct": -50.2,
+          "buy_target": 272.51,
+          "price": 272.36,
+          "current_price": 272.36,
+          "pct_change_1d": 0.07,
+          "market_cap": 18785943552,
+          "cap_tier": "large",
+          "drawdown_from_high": -50.2,
+          "revenue_growth": 34.6,
+          "op_margin": 76.0,
+          "pe": 32.004696,
+          "forward_pe": 3.7248356,
+          "short_percent_float": 7.22,
+          "short_ratio": 11.3,
+          "high_proximity_warning": false,
+          "data_ok": true,
+          "data_flags": []
+        },
+        {
+          "ticker": "APP",
+          "name": "AppLovin Corporation",
+          "theme": "uncategorized",
+          "source": "radar",
+          "status": "research_complete",
+          "verdict": "RESEARCH-WORTHY",
+          "added": "2026-11-07",
+          "llm_verdict": "RESEARCH-WORTHY",
+          "bear_downgraded": false,
+          "research_file": "output/research/APP_2026-11-07.md",
+          "last_researched": "2026-11-07",
+          "rating_version": 4,
+          "unsupported_figures": [
+            "14x",
+            "0.34x",
+            "30%"
+          ],
+          "fall_reason": null,
+          "rated_quarter_end": "2026-09-30",
+          "rated_next_earnings": 1793826000,
+          "confidence": "LOW",
+          "bear_check": "AppLovin's heavy reliance on mobile gaming advertisers makes it vulnerable to Apple's App Tracking Transparency and Google's Privacy Sandbox changes, which could degrade targeting efficacy and cause top advertisers to slash budgets by 30% or more, simultaneously crushing revenue and margins. The stock's 47% decline from its 52-week high signals that the market has previously priced in significant growth deceleration or platform-risk fears, and the current forward P/E of 18.9x already bakes in a sharp slowdown from 55% YoY growth.\n\nWHY_IT_FELL: The headlines provided only cover a recent post-earnings rally and do not explain the earlier 47% decline from the 52-week high.\nFALL_EVIDENCE: none\nBREAK: NONE\nEVIDENCE: none",
+          "thesis": "Quality ad-tech compounder at 19x forward earnings with 55% growth, 78% operating margins, and $4.9B FCF, but theme fit is low and platform-policy risk is high.",
+          "next_action": "RESEARCH \u2014 Quality ad-tech compounder at 19x forward earnings with 55% growth, 78% operating margins, and $4.9B FCF, but theme fit is low and platform-policy risk is high. Worth a deep dive before any decision.",
+          "buy_trigger_drawdown_pct": -47.0,
+          "buy_target": 391.15,
+          "price": 391.22,
+          "current_price": 391.22,
+          "pct_change_1d": 9.86,
+          "market_cap": 129619787776,
+          "cap_tier": "mega",
+          "drawdown_from_high": -47.0,
+          "revenue_growth": 55.5,
+          "op_margin": 78.2,
+          "pe": 26.34478,
+          "forward_pe": 18.896706,
+          "short_percent_float": 3.88,
+          "short_ratio": 2.1,
+          "high_proximity_warning": false,
           "data_ok": true,
           "data_flags": []
         }
@@ -8499,8 +8760,8 @@
       ]
     },
     "counts": {
-      "total": 57,
-      "research_worthy": 22,
+      "total": 59,
+      "research_worthy": 24,
       "watchlist": 31,
       "pass": 3,
       "red_flag": 1
@@ -13276,16 +13537,16 @@
     }
   },
   "radar": {
-    "generated_at": "2026-11-07T16:37:09Z",
-    "universe_as_of": "2026-11-06T18:12:13Z",
+    "generated_at": "2026-11-07T17:53:36Z",
+    "universe_as_of": "2026-11-07T17:45:23Z",
     "cards": [
       {
         "ticker": "MSFT",
         "name": "Microsoft Corporation",
         "sector": "Technology",
-        "price": 533.225,
-        "drawdown_pct": -4.6,
-        "score": 70.6,
+        "price": 530.61,
+        "drawdown_pct": -5.1,
+        "score": 70.8,
         "new": true,
         "tracked": true,
         "rating": "WATCHLIST",
@@ -13320,9 +13581,9 @@
         "ticker": "MU",
         "name": "Micron Technology, Inc.",
         "sector": "Technology",
-        "price": 681.72,
-        "drawdown_pct": -45.7,
-        "score": 95.2,
+        "price": 690.0,
+        "drawdown_pct": -45.0,
+        "score": 95.0,
         "new": true,
         "tracked": true,
         "rating": "WATCHLIST",
@@ -13338,7 +13599,7 @@
           },
           {
             "kind": "on_sale",
-            "text": "Quality business 46% below its high"
+            "text": "Quality business 45% below its high"
           },
           {
             "kind": "new",
@@ -13353,12 +13614,12 @@
         "ticker": "TPL",
         "name": "Texas Pacific Land Corporation",
         "sector": "Energy",
-        "price": 273.615,
-        "drawdown_pct": -50.0,
+        "price": 272.36,
+        "drawdown_pct": -50.2,
         "score": 79.9,
         "new": true,
-        "tracked": false,
-        "rating": null,
+        "tracked": true,
+        "rating": "RESEARCH-WORTHY",
         "reasons": [
           {
             "kind": "fundamentals",
@@ -13383,12 +13644,44 @@
         ]
       },
       {
+        "ticker": "CVX",
+        "name": "Chevron Corporation",
+        "sector": "Energy",
+        "price": 212.61,
+        "drawdown_pct": -10.1,
+        "score": 74.2,
+        "new": true,
+        "tracked": false,
+        "rating": "WATCHLIST",
+        "reasons": [
+          {
+            "kind": "field_news",
+            "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNmtOMnRJVnZpV0VpVE1FdDZhSGJtLWtoY0Q0ODhXaVpfdzBmQU16X3A3MUw5TEo2T0VoRTBwZXlvX19kLXcyMFVXUE9yNGpxekRWcG4wOFQzYVJiMHJVWTEtY0JiOVhyeXlhaS1EX1ZaRDhPN1Q4S2tCOTlNT216eVl5WnhBeFpNa2RDOVBhWk1CdElYMWZ6eHZqSFBjN1k?oc=5",
+            "text": "In Power Grid / Electrification news: Microsoft and Chevron Sign 20-Year Power Deal For Texas Data Center"
+          },
+          {
+            "kind": "field_news",
+            "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNmtOMnRJVnZpV0VpVE1FdDZhSGJtLWtoY0Q0ODhXaVpfdzBmQU16X3A3MUw5TEo2T0VoRTBwZXlvX19kLXcyMFVXUE9yNGpxekRWcG4wOFQzYVJiMHJVWTEtY0JiOVhyeXlhaS1EX1ZaRDhPN1Q4S2tCOTlNT216eVl5WnhBeFpNa2RDOVBhWk1CdElYMWZ6eHZqSFBjN1k?oc=5",
+            "text": "In Data Center Infrastructure news: Microsoft and Chevron Sign 20-Year Power Deal For Texas Data Center"
+          },
+          {
+            "kind": "fundamentals",
+            "text": "Strong fundamentals: scores 74/100"
+          },
+          {
+            "kind": "new",
+            "text": "New to the radar"
+          }
+        ],
+        "watch_outs": []
+      },
+      {
         "ticker": "VRT",
         "name": "Vertiv Holdings Co",
         "sector": "Industrials",
-        "price": 179.1909,
-        "drawdown_pct": -52.8,
-        "score": 71.0,
+        "price": 182.86,
+        "drawdown_pct": -51.9,
+        "score": 70.7,
         "new": true,
         "tracked": true,
         "rating": "RESEARCH-WORTHY",
@@ -13404,7 +13697,7 @@
           },
           {
             "kind": "on_sale",
-            "text": "Quality business 53% below its high"
+            "text": "Quality business 52% below its high"
           },
           {
             "kind": "new",
@@ -13412,27 +13705,27 @@
           }
         ],
         "watch_outs": [
-          "Down 53% from its high, so find out why first"
+          "Down 52% from its high, so find out why first"
         ]
       },
       {
         "ticker": "SNDK",
         "name": "Sandisk Corporation",
         "sector": "Technology",
-        "price": 822.43,
-        "drawdown_pct": -65.1,
-        "score": 88.6,
+        "price": 835.06,
+        "drawdown_pct": -64.5,
+        "score": 88.5,
         "new": true,
         "tracked": false,
-        "rating": null,
+        "rating": "WATCHLIST",
         "reasons": [
           {
             "kind": "fundamentals",
-            "text": "Strong fundamentals: scores 89/100"
+            "text": "Strong fundamentals: scores 88/100"
           },
           {
             "kind": "on_sale",
-            "text": "Quality business 65% below its high"
+            "text": "Quality business 64% below its high"
           },
           {
             "kind": "new",
@@ -13441,15 +13734,15 @@
         ],
         "watch_outs": [
           "Possible peak earnings: revenue up 378% in a quarter may not last",
-          "Down 65% from its high, so find out why first"
+          "Down 64% from its high, so find out why first"
         ]
       },
       {
         "ticker": "RDDT",
         "name": "Reddit, Inc.",
         "sector": "Communication Services",
-        "price": 94.655,
-        "drawdown_pct": -64.1,
+        "price": 95.1,
+        "drawdown_pct": -63.9,
         "score": 86.3,
         "new": true,
         "tracked": true,
@@ -13476,12 +13769,12 @@
         "ticker": "OXY",
         "name": "Occidental Petroleum Corporation",
         "sector": "Energy",
-        "price": 56.73,
-        "drawdown_pct": -15.9,
+        "price": 56.38,
+        "drawdown_pct": -16.4,
         "score": 79.8,
         "new": true,
         "tracked": false,
-        "rating": null,
+        "rating": "WATCHLIST",
         "reasons": [
           {
             "kind": "fundamentals",
@@ -13502,16 +13795,16 @@
         "ticker": "APP",
         "name": "AppLovin Corporation",
         "sector": "Communication Services",
-        "price": 390.945,
+        "price": 391.22,
         "drawdown_pct": -47.0,
-        "score": 76.2,
+        "score": 75.2,
         "new": true,
-        "tracked": false,
-        "rating": null,
+        "tracked": true,
+        "rating": "RESEARCH-WORTHY",
         "reasons": [
           {
             "kind": "fundamentals",
-            "text": "Strong fundamentals: scores 76/100"
+            "text": "Strong fundamentals: scores 75/100"
           },
           {
             "kind": "on_sale",
@@ -13528,9 +13821,9 @@
         "ticker": "DECK",
         "name": "Deckers Outdoor Corporation",
         "sector": "Consumer Cyclical",
-        "price": 87.215,
-        "drawdown_pct": -28.7,
-        "score": 74.8,
+        "price": 86.71,
+        "drawdown_pct": -29.1,
+        "score": 74.9,
         "new": true,
         "tracked": false,
         "rating": null,
@@ -13554,20 +13847,20 @@
         "ticker": "FIX",
         "name": "Comfort Systems USA, Inc.",
         "sector": "Industrials",
-        "price": 1004.78,
-        "drawdown_pct": -51.6,
-        "score": 74.7,
+        "price": 1017.5,
+        "drawdown_pct": -50.9,
+        "score": 74.4,
         "new": true,
         "tracked": false,
         "rating": null,
         "reasons": [
           {
             "kind": "fundamentals",
-            "text": "Strong fundamentals: scores 75/100"
+            "text": "Strong fundamentals: scores 74/100"
           },
           {
             "kind": "on_sale",
-            "text": "Quality business 52% below its high"
+            "text": "Quality business 51% below its high"
           },
           {
             "kind": "new",
@@ -13575,16 +13868,16 @@
           }
         ],
         "watch_outs": [
-          "Down 52% from its high, so find out why first"
+          "Down 51% from its high, so find out why first"
         ]
       },
       {
         "ticker": "EME",
         "name": "EMCOR Group, Inc.",
         "sector": "Industrials",
-        "price": 601.16,
-        "drawdown_pct": -36.9,
-        "score": 72.7,
+        "price": 608.45,
+        "drawdown_pct": -36.1,
+        "score": 72.6,
         "new": true,
         "tracked": false,
         "rating": null,
@@ -13595,7 +13888,7 @@
           },
           {
             "kind": "on_sale",
-            "text": "Quality business 37% below its high"
+            "text": "Quality business 36% below its high"
           },
           {
             "kind": "new",
@@ -13603,34 +13896,6 @@
           }
         ],
         "watch_outs": []
-      },
-      {
-        "ticker": "PODD",
-        "name": "Insulet Corporation",
-        "sector": "Healthcare",
-        "price": 144.14,
-        "drawdown_pct": -59.4,
-        "score": 71.4,
-        "new": true,
-        "tracked": true,
-        "rating": "RESEARCH-WORTHY",
-        "reasons": [
-          {
-            "kind": "fundamentals",
-            "text": "Strong fundamentals: scores 71/100"
-          },
-          {
-            "kind": "on_sale",
-            "text": "Quality business 59% below its high"
-          },
-          {
-            "kind": "new",
-            "text": "New to the radar"
-          }
-        ],
-        "watch_outs": [
-          "Down 59% from its high, so find out why first"
-        ]
       }
     ],
     "on_sale": [
@@ -13638,20 +13903,20 @@
         "ticker": "SNDK",
         "name": "Sandisk Corporation",
         "sector": "Technology",
-        "price": 822.43,
-        "drawdown_pct": -65.1,
-        "score": 88.6,
+        "price": 835.06,
+        "drawdown_pct": -64.5,
+        "score": 88.5,
         "new": true,
         "tracked": false,
-        "rating": null,
+        "rating": "WATCHLIST",
         "reasons": [
           {
             "kind": "fundamentals",
-            "text": "Strong fundamentals: scores 89/100"
+            "text": "Strong fundamentals: scores 88/100"
           },
           {
             "kind": "on_sale",
-            "text": "Quality business 65% below its high"
+            "text": "Quality business 64% below its high"
           },
           {
             "kind": "new",
@@ -13660,16 +13925,16 @@
         ],
         "watch_outs": [
           "Possible peak earnings: revenue up 378% in a quarter may not last",
-          "Down 65% from its high, so find out why first"
+          "Down 64% from its high, so find out why first"
         ]
       },
       {
         "ticker": "WDC",
         "name": "Western Digital Corporation",
         "sector": "Technology",
-        "price": 261.755,
-        "drawdown_pct": -67.3,
-        "score": 85.6,
+        "price": 263.78,
+        "drawdown_pct": -67.0,
+        "score": 85.9,
         "new": true,
         "tracked": false,
         "rating": null,
@@ -13696,9 +13961,9 @@
         "ticker": "TER",
         "name": "Teradyne, Inc.",
         "sector": "Technology",
-        "price": 213.63,
-        "drawdown_pct": -56.2,
-        "score": 83.3,
+        "price": 218.215,
+        "drawdown_pct": -55.3,
+        "score": 83.2,
         "new": true,
         "tracked": false,
         "rating": null,
@@ -13709,7 +13974,7 @@
           },
           {
             "kind": "on_sale",
-            "text": "Quality business 56% below its high"
+            "text": "Quality business 55% below its high"
           },
           {
             "kind": "new",
@@ -13717,75 +13982,16 @@
           }
         ],
         "watch_outs": [
-          "Down 56% from its high, so find out why first"
+          "Down 55% from its high, so find out why first"
         ]
-      },
-      {
-        "ticker": "TPL",
-        "name": "Texas Pacific Land Corporation",
-        "sector": "Energy",
-        "price": 273.615,
-        "drawdown_pct": -50.0,
-        "score": 79.9,
-        "new": true,
-        "tracked": false,
-        "rating": null,
-        "reasons": [
-          {
-            "kind": "fundamentals",
-            "text": "Strong fundamentals: scores 80/100"
-          },
-          {
-            "kind": "on_sale",
-            "text": "Quality business 50% below its high"
-          },
-          {
-            "kind": "insider",
-            "text": "Insiders bought: 89 buys, 1 sells in 6 months"
-          },
-          {
-            "kind": "new",
-            "text": "New to the radar"
-          }
-        ],
-        "watch_outs": [
-          "Possible peak earnings: 3.7x forward earnings can mean profits are expected to fall",
-          "Down 50% from its high, so find out why first"
-        ]
-      },
-      {
-        "ticker": "APP",
-        "name": "AppLovin Corporation",
-        "sector": "Communication Services",
-        "price": 390.945,
-        "drawdown_pct": -47.0,
-        "score": 76.2,
-        "new": true,
-        "tracked": false,
-        "rating": null,
-        "reasons": [
-          {
-            "kind": "fundamentals",
-            "text": "Strong fundamentals: scores 76/100"
-          },
-          {
-            "kind": "on_sale",
-            "text": "Quality business 47% below its high"
-          },
-          {
-            "kind": "new",
-            "text": "New to the radar"
-          }
-        ],
-        "watch_outs": []
       },
       {
         "ticker": "DECK",
         "name": "Deckers Outdoor Corporation",
         "sector": "Consumer Cyclical",
-        "price": 87.215,
-        "drawdown_pct": -28.7,
-        "score": 74.8,
+        "price": 86.71,
+        "drawdown_pct": -29.1,
+        "score": 74.9,
         "new": true,
         "tracked": false,
         "rating": null,
@@ -13809,20 +14015,20 @@
         "ticker": "FIX",
         "name": "Comfort Systems USA, Inc.",
         "sector": "Industrials",
-        "price": 1004.78,
-        "drawdown_pct": -51.6,
-        "score": 74.7,
+        "price": 1017.5,
+        "drawdown_pct": -50.9,
+        "score": 74.4,
         "new": true,
         "tracked": false,
         "rating": null,
         "reasons": [
           {
             "kind": "fundamentals",
-            "text": "Strong fundamentals: scores 75/100"
+            "text": "Strong fundamentals: scores 74/100"
           },
           {
             "kind": "on_sale",
-            "text": "Quality business 52% below its high"
+            "text": "Quality business 51% below its high"
           },
           {
             "kind": "new",
@@ -13830,16 +14036,16 @@
           }
         ],
         "watch_outs": [
-          "Down 52% from its high, so find out why first"
+          "Down 51% from its high, so find out why first"
         ]
       },
       {
         "ticker": "EME",
         "name": "EMCOR Group, Inc.",
         "sector": "Industrials",
-        "price": 601.16,
-        "drawdown_pct": -36.9,
-        "score": 72.7,
+        "price": 608.45,
+        "drawdown_pct": -36.1,
+        "score": 72.6,
         "new": true,
         "tracked": false,
         "rating": null,
@@ -13850,7 +14056,7 @@
           },
           {
             "kind": "on_sale",
-            "text": "Quality business 37% below its high"
+            "text": "Quality business 36% below its high"
           },
           {
             "kind": "new",
@@ -13863,7 +14069,7 @@
         "ticker": "HWM",
         "name": "Howmet Aerospace Inc.",
         "sector": "Industrials",
-        "price": 205.965,
+        "price": 205.81,
         "drawdown_pct": -33.6,
         "score": 65.8,
         "new": true,
@@ -13885,16 +14091,16 @@
         "ticker": "TMUS",
         "name": "T-Mobile US, Inc.",
         "sector": "Communication Services",
-        "price": 160.415,
-        "drawdown_pct": -28.6,
-        "score": 63.5,
+        "price": 162.01,
+        "drawdown_pct": -27.9,
+        "score": 63.4,
         "new": true,
         "tracked": false,
         "rating": null,
         "reasons": [
           {
             "kind": "on_sale",
-            "text": "Quality business 29% below its high"
+            "text": "Quality business 28% below its high"
           },
           {
             "kind": "new",
@@ -13904,6 +14110,50 @@
         "watch_outs": [
           "High debt: debt/equity 2.1x"
         ]
+      },
+      {
+        "ticker": "FCX",
+        "name": "Freeport-McMoRan Inc.",
+        "sector": "Basic Materials",
+        "price": 59.42,
+        "drawdown_pct": -25.9,
+        "score": 63.3,
+        "new": true,
+        "tracked": false,
+        "rating": null,
+        "reasons": [
+          {
+            "kind": "on_sale",
+            "text": "Quality business 26% below its high"
+          },
+          {
+            "kind": "new",
+            "text": "New to the radar"
+          }
+        ],
+        "watch_outs": []
+      },
+      {
+        "ticker": "EXE",
+        "name": "Expand Energy Corporation",
+        "sector": "Energy",
+        "price": 84.6,
+        "drawdown_pct": -33.2,
+        "score": 61.6,
+        "new": true,
+        "tracked": false,
+        "rating": null,
+        "reasons": [
+          {
+            "kind": "on_sale",
+            "text": "Quality business 33% below its high"
+          },
+          {
+            "kind": "new",
+            "text": "New to the radar"
+          }
+        ],
+        "watch_outs": []
       }
     ],
     "scorecard": {
@@ -17543,6 +17793,16 @@
         "forward_pe": 16.813652,
         "verdict": "WATCHLIST",
         "next_action": "WAIT \u2014 Quality streaming compounder with 12% revenue growth, 35% operating margins, and $11B FCF trading at 17x forward earnings, but growth decelerating for four straight quarters and data discrepancy clouds valuation. Revisit at 50% below the 52-week high."
+      },
+      {
+        "ticker": "APP",
+        "name": "AppLovin Corporation",
+        "drawdown_pct": -47.0,
+        "price": 391.22,
+        "pe": 26.34478,
+        "forward_pe": 18.896706,
+        "verdict": "RESEARCH-WORTHY",
+        "next_action": "RESEARCH \u2014 Quality ad-tech compounder at 19x forward earnings with 55% growth, 78% operating margins, and $4.9B FCF, but theme fit is low and platform-policy risk is high. Worth a deep dive before any decision."
       }
     ]
   }
