@@ -44,7 +44,9 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 # Real-news grounding — keeps the LLM from hallucinating. No fallback on purpose:
 # one here hid a dead feed for five weeks (see news_feed.py).
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from fall_check import cap_confidence, fall_rule, verified_fall_reason, warnings_section
+from fall_check import fall_rule, verified_fall_reason
+from note_checks import (RED_FLAG_RETRY, RED_FLAG_RULE, final_confidence, scrub_bull_case,
+                         verified_red_flag, warnings_section)
 from news_feed import NO_NEWS, NewsUnavailable, get_recent_news as _recent_news
 
 # NVIDIA NIM model chain lives in llm_client.py — one list shared by every
@@ -218,6 +220,10 @@ def _build_prompt(ticker: str, quotes: dict) -> str:
             f"assigned WATCHLIST. Do not assign RESEARCH-WORTHY regardless of fundamentals.\n"
         )
 
+    quarter_rev = q.get("latest_quarter_revenue")
+    quarter_str = (f"revenue ${quarter_rev / 1e9:,.2f}B, quarter ended {q.get('latest_quarter_end')}"
+                   if quarter_rev else "unverified")
+
     context = f"""
 {gate_warning}[Live fundamentals — {q.get('fetched_at', 'unknown')}]
 - Ticker: {ticker}
@@ -225,6 +231,7 @@ def _build_prompt(ticker: str, quotes: dict) -> str:
 - Price: ${_fmt(q.get('price'))}
 - Market cap: {mcap_str}
 - Revenue (TTM): {rev_str}
+- Latest reported quarter: {quarter_str}
 - Revenue growth (latest quarter vs a year ago, NOT trailing-twelve-month): {_fmt(q.get('revenue_growth'), suffix='%')}
 - Gross margin (trailing twelve months): {_fmt(q.get('gross_margin'), suffix='%')}
 - Operating margin (latest quarter, so not directly comparable with gross margin): {_fmt(q.get('op_margin'), suffix='%')}
@@ -254,7 +261,9 @@ IMPORTANT GROUNDING RULES:
   an event the figures don't reflect yet, say the figures lag and go by the headline.
   Do not repeat a figure a headline shows is out of date, and do not ignore bad news
   because the figures still look good.
-
+- A bull point with a figure or past year that isn't above gets removed by code, so
+  don't use one. Quote the latest quarter, not one you remember.
+{RED_FLAG_RULE}
 MANDATORY OUTPUT FORMAT — your response MUST end with these four lines, EXACTLY,
 as the very last lines, with nothing after them:
 VERDICT: <one of: RESEARCH-WORTHY | WATCHLIST | PASS | RED FLAG>
@@ -372,6 +381,7 @@ def _update_watchlist(
     ticker: str, verdict: str, output_file: str,
     confidence: str | None = None, bear: str | None = None,
     bear_break: str | None = None, fall_reason: str | None = None,
+    rated_quote: dict | None = None,
     thesis: str | None = None, drawdown_trigger_pct: float | None = None,
     live_buy_target: float | None = None,
     unsupported_figures: list[str] | None = None,
@@ -400,6 +410,9 @@ def _update_watchlist(
             candidate["rating_version"]  = RATING_VERSION
             candidate["unsupported_figures"] = unsupported_figures or []
             candidate["fall_reason"] = fall_reason
+            # What the rating knew, so results reported after it send it back to the queue.
+            candidate["rated_quarter_end"] = (rated_quote or {}).get("latest_quarter_end")
+            candidate["rated_next_earnings"] = (rated_quote or {}).get("next_earnings")
             if confidence:
                 candidate["confidence"] = confidence
             # Clear on a rerun, or last time's argument stays on the stock page.
@@ -486,13 +499,23 @@ def main():
         print(f"❌  {exc} — not rating {ticker} without news.")
         sys.exit(1)
     text   = _call_llm(provider, api_key, prompt)
+    source = source_block(prompt)
 
     # Fail before anything is saved: a note with no verdict was being committed
     # and counted as landed while the watchlist kept the old research.
     verdict = _extract_verdict(text)
+    red_flag_rejected = False
+    if verdict == "RED FLAG" and not verified_red_flag(text, source):
+        print(f"⚠  RED FLAG for {ticker} has no headline behind it, asking again...")
+        text = _call_llm(provider, api_key, prompt + RED_FLAG_RETRY)
+        verdict = _extract_verdict(text)
+        if verdict == "RED FLAG" and not verified_red_flag(text, source):
+            verdict, red_flag_rejected = "WATCHLIST", True
     if not verdict:
         print(f"❌  No verdict in the response for {ticker} — nothing saved.")
         sys.exit(1)
+
+    text, removed = scrub_bull_case(text, source)
 
     today     = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     filename  = f"{ticker}_{today}.md"
@@ -504,12 +527,13 @@ def main():
 
     print(f"\n{text}\n")
 
-    source = source_block(prompt)
-    fell_hard = bool(fall_rule(quotes.get("tickers", {}).get(ticker, {}).get("drawdown_from_high")))
+    rated_quote = quotes.get("tickers", {}).get(ticker, {})
+    fell_hard = bool(fall_rule(rated_quote.get("drawdown_from_high")))
     fall_reason = verified_fall_reason(text, source) if fell_hard else None
     no_news, fall_unexplained = NO_NEWS in source, fell_hard and not fall_reason
-    confidence = cap_confidence(_extract_confidence(text), no_news=no_news,
-                                fall_unexplained=fall_unexplained)
+    confidence = final_confidence(_extract_confidence(text), no_news=no_news,
+                                  fall_unexplained=fall_unexplained,
+                                  red_flag_rejected=red_flag_rejected, removed=removed)
     thesis = _extract_thesis(text)
     drawdown_trigger_pct = _anchor_trigger(ticker, _extract_drawdown_trigger(text), quotes)
     live_buy_target = _live_buy_target(ticker, drawdown_trigger_pct, quotes)
@@ -528,7 +552,8 @@ def main():
     unsupported = find_unsupported(f"{text}\n{bear or ''}", source_block(prompt))
     with open(out_path, "a") as f:
         f.write(fact_check_section(unsupported))
-        f.write(warnings_section(no_news=no_news, fall_unexplained=fall_unexplained))
+        f.write(warnings_section(no_news=no_news, fall_unexplained=fall_unexplained,
+                                 red_flag_rejected=red_flag_rejected, removed=removed))
     print(f"🔎  Fact-check: {len(unsupported)} figure(s) not in the source data: {unsupported}")
 
     conf_str = f" (confidence: {confidence})" if confidence else ""
@@ -538,7 +563,7 @@ def main():
     if not args.save_only:
         final_verdict, downgraded = _update_watchlist(
             ticker, verdict, f"output/research/{filename}", confidence, bear, bear_break,
-            fall_reason=fall_reason, thesis=thesis, drawdown_trigger_pct=drawdown_trigger_pct,
+            fall_reason=fall_reason, rated_quote=rated_quote, thesis=thesis, drawdown_trigger_pct=drawdown_trigger_pct,
             live_buy_target=live_buy_target, unsupported_figures=unsupported,
         )
         if downgraded:

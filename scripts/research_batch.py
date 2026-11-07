@@ -23,7 +23,7 @@ import os
 import subprocess
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 SCRIPT_DIR     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WATCHLIST_PATH = os.path.join(SCRIPT_DIR, "data", "watchlist.json")
@@ -39,6 +39,7 @@ PASS_STALE_DAYS = 30     # a PASS gets a slower second look, or it stays PASS fo
 ALERT_THRESHOLD = -20.0  # drawdown that forces a re-research
 DIP_GAP_DAYS    = 3      # ...but no more often than this, or a selloff keeps
                          # re-researching the same names and stale ones never run
+REPORT_LAG      = timedelta(hours=6)   # give the headlines time to appear
 MAX_PER_RUN     = 8      # cap per run to respect free-tier limits
 # Stop STARTING tickers after this long. One ticker can take ~15 min when every
 # model times out (5 models x 90s, research + bear check), and on 2026-11-04 a
@@ -53,6 +54,17 @@ MAX_FAILS_IN_A_ROW = 2
 # Index/benchmark ETFs are tracked for context, not as buy candidates —
 # spending a research slot on them starves real names in the queue.
 SKIP_TICKERS = {"SPY", "QQQ", "VTI", "VOO", "DIA", "IWM"}
+
+
+def has_new_results(c: dict, quote: dict, now: datetime) -> bool:
+    """Results came out after this rating: its earnings date passed, or a new quarter landed."""
+    earnings, rated_on = c.get("rated_next_earnings"), c.get("last_researched")
+    if earnings and rated_on:
+        reported = datetime.fromtimestamp(earnings, tz=timezone.utc)
+        if reported.strftime("%Y-%m-%d") >= rated_on and now >= reported + REPORT_LAG:
+            return True
+    rated, latest = c.get("rated_quarter_end"), quote.get("latest_quarter_end")
+    return bool(rated and latest and latest > rated)
 
 
 def models_look_down(fails_in_a_row: int) -> bool:
@@ -99,7 +111,11 @@ def _select_tickers(max_n: int) -> list[str]:
         # outrank everything else so the backlog actually drains.
         old_logic = c.get("rating_version", 0) < RATING_VERSION
 
+        new_results = has_new_results(c, quotes.get(ticker, {}), datetime.now(timezone.utc))
+
         score = 0
+        if new_results:
+            score += 150
         if never_pipeline_researched:
             score += 1000
         if old_logic:
@@ -119,7 +135,7 @@ def _select_tickers(max_n: int) -> list[str]:
             due = stale_days >= PASS_STALE_DAYS
         else:
             due = stale_days >= STALE_DAYS or dipping
-        if never_pipeline_researched or old_logic or due:
+        if never_pipeline_researched or old_logic or due or new_results:
             scored.append((score, ticker))
 
     scored.sort(reverse=True)

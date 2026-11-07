@@ -44,29 +44,22 @@ def _headlines_only(source: str) -> str:
     return source.partition(HEADLINES_MARKER)[2].split("\n\n")[0]
 
 
+def in_headlines(quote: str, source: str) -> str | None:
+    """The quote, normalised, if it really is one of the headlines given to the model."""
+    quote = _normalise(quote).strip(' "“”\'`*-')
+    if len(quote) < MIN_EVIDENCE_CHARS or quote not in _normalise(_headlines_only(source)):
+        return None
+    return quote
+
+
 def verified_fall_reason(text: str, source: str) -> str | None:
     """The stated reason, but only if its quoted headline is really in the list."""
     reasons, quotes = _REASON_RE.findall(text), _EVIDENCE_RE.findall(text)
     if not reasons or not quotes:
         return None
-    quote = _normalise(quotes[-1]).strip(' "“”\'`*-')
-    if len(quote) < MIN_EVIDENCE_CHARS or quote not in _normalise(_headlines_only(source)):
-        return None
-    if not _DOWN_RE.search(quote) or _UP_RE.search(quote):
+    quote = in_headlines(quotes[-1], source)
+    if not quote or not _DOWN_RE.search(quote) or _UP_RE.search(quote):
         return None
     return reasons[-1].strip()
 
 
-def cap_confidence(confidence: str | None, *, no_news: bool, fall_unexplained: bool) -> str | None:
-    return "LOW" if no_news or fall_unexplained else confidence
-
-
-def warnings_section(*, no_news: bool, fall_unexplained: bool) -> str:
-    lines = []
-    if no_news:
-        lines.append("- No headlines were found for this stock, so this rating did not use any news.")
-    if fall_unexplained:
-        lines.append("- This stock fell hard and the note gives no reason backed by a headline.")
-    if not lines:
-        return ""
-    return "\n\n---\n\n## Rating warnings\n\nConfidence was set to LOW:\n\n" + "\n".join(lines) + "\n"

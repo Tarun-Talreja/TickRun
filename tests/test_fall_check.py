@@ -4,7 +4,7 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
 from bear_check import HEADLINES_MARKER
-from fall_check import FALL_THRESHOLD_PCT, cap_confidence, fall_rule, verified_fall_reason
+from fall_check import FALL_THRESHOLD_PCT, fall_rule, verified_fall_reason
 
 SOURCE = (f"- Revenue: $3B\n{HEADLINES_MARKER} — 2026-11-06]\n"
           "- [2026-10-30] Reddit stock plunges 29% after weak outlook (CNBC)\n\nRULES: be careful")
@@ -60,9 +60,3 @@ def test_missing_lines_mean_unexplained():
 
 def test_unknown_reason_is_unexplained():
     assert verified_fall_reason(_note("unknown", "none"), SOURCE) is None
-
-
-def test_confidence_capped_only_when_something_is_missing():
-    assert cap_confidence("HIGH", no_news=True, fall_unexplained=False) == "LOW"
-    assert cap_confidence("MEDIUM", no_news=False, fall_unexplained=True) == "LOW"
-    assert cap_confidence("HIGH", no_news=False, fall_unexplained=False) == "HIGH"

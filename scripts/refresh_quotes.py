@@ -103,6 +103,17 @@ def _latest_op_margin(t, info: dict) -> float | None:
     return round(float(margin) * 100, 1) if margin else None
 
 
+def _latest_quarter(t, fx: float | None) -> dict:
+    """The newest reported quarter, so notes quote it instead of remembering one."""
+    try:
+        revenue = t.quarterly_income_stmt.loc["Total Revenue"].dropna()
+        latest = revenue.index.max()
+        return {"latest_quarter_end": latest.date().isoformat(),
+                "latest_quarter_revenue": float(revenue[latest]) * fx if fx else None}
+    except (KeyError, ValueError, AttributeError):
+        return {"latest_quarter_end": None, "latest_quarter_revenue": None}
+
+
 def _normalize_money(info: dict, fx: float | None) -> dict:
     """Company-level money fields, in the same currency as the quote.
 
@@ -202,6 +213,7 @@ def _fetch_with_retry(ticker: str) -> dict:
         "gross_margin":         round(info.get("grossMargins", 0) * 100, 1) if info.get("grossMargins") else None,
         "op_margin":            _latest_op_margin(t, info),
         **money,
+        **_latest_quarter(t, fx),
         "div_yield_pct":        div_yield_pct,
         "short_percent_float":  round(info.get("shortPercentOfFloat", 0) * 100, 2) if info.get("shortPercentOfFloat") else None,
         "short_ratio":          round(info.get("shortRatio", 0), 1) if info.get("shortRatio") else None,
