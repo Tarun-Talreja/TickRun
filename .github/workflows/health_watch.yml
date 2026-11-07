@@ -43,7 +43,7 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -- output/dashboard.json
-          git pull --rebase --autostash origin main
+          bash scripts/sync_with_main.sh
           python scripts/build_dashboard.py
 
       - uses: stefanzweifel/git-auto-commit-action@v5

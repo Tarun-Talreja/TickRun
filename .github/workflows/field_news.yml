@@ -57,7 +57,7 @@ jobs:
           # Two jobs can rebuild this generated file at once, and the conflict used to
           # lose the whole commit. Drop ours, pull, then rebuild on the latest data.
           git checkout -- output/dashboard.json
-          git pull --rebase --autostash origin main
+          bash scripts/sync_with_main.sh
           python scripts/build_dashboard.py
 
       - uses: stefanzweifel/git-auto-commit-action@v5
