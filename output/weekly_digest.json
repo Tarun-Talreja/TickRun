@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-07T16:37:25Z",
-  "narrative": "Six stocks surged sharply, led by OKLO jumping 22.7% alongside double-digit gains in COHR, AMD, VST, CBRS, and NVT. Major structural shifts accelerated across sectors: Marvell agreed to buy Lumentum for roughly $115 billion to target AI data center connectivity, Microsoft and Chevron signed a 20-year Texas power deal, and Ontario awarded contracts for the G7's first small modular reactors. Institutional ownership filings (Schedule 13G/A) were updated for over a dozen names including CBRS, COHR, VST, and MRVL, while earnings loom for CEG in two days and NVDA in ten. New radar additions highlight Microsoft, Micron, Texas Pacific Land, Vertiv, and Sandisk based on fundamentals and sector catalysts.",
+  "generated_at": "2026-11-08T16:48:09Z",
+  "narrative": "OKLO led a group of notable gainers with a 22.7% rise, while COHR, AMD, VST, and CBRS also climbed between 9.8% and 13.6%. Marvell agreed to acquire Lumentum in a landmark deal valued at roughly $115 billion to bolster AI data center connectivity, and Microsoft walked away from expansion talks with Nscale while IREN delayed Microsoft-related builds despite planning $15 billion in capital spending. A wave of amended Schedule 13G filings hit for CBRS, COHR, VST, MRVL, and POWL, signaling updated institutional stakes ahead of earnings from CEG in two days, CBRS and NBIS in five, and NVDA in ten. Federal and congressional scrutiny of data center energy demands intensified, Ontario awarded contracts for the G7's first small modular reactor, and the Pentagon committed $450 million to scale domestic drone production toward one million units annually.",
   "buy_ready": [
     {
       "ticker": "GOOGL",
@@ -199,6 +199,24 @@
       "at_or_below_target": true,
       "confidence": "MEDIUM",
       "theme": "edge_ai_silicon"
+    },
+    {
+      "ticker": "TPL",
+      "name": "Texas Pacific Land Corporation",
+      "price": 272.36,
+      "buy_target": 272.51,
+      "at_or_below_target": true,
+      "confidence": "MEDIUM",
+      "theme": "uncategorized"
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "price": 391.22,
+      "buy_target": 391.15,
+      "at_or_below_target": true,
+      "confidence": "LOW",
+      "theme": "uncategorized"
     }
   ],
   "movers": [
@@ -273,6 +291,11 @@
     },
     {
       "ticker": "RDDT",
+      "form": "SCHEDULE 13G",
+      "filed": "2026-10-30"
+    },
+    {
+      "ticker": "TPL",
       "form": "SCHEDULE 13G",
       "filed": "2026-10-30"
     },
