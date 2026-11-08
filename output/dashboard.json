@@ -1,14 +1,14 @@
 {
-  "last_built": "2026-11-07T17:53:37Z",
-  "quotes_updated": "2026-11-07T17:46:53Z",
+  "last_built": "2026-11-08T10:44:14Z",
+  "quotes_updated": "2026-11-08T10:44:02Z",
   "health": {
     "stages": [
       {
         "name": "Quotes",
-        "updated_at": "2026-11-07T17:46:53Z",
+        "updated_at": "2026-11-08T10:44:02Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 0.1,
+        "age_hours": 0.0,
         "affects": "Prices and buy targets may be out of date"
       },
       {
@@ -16,7 +16,7 @@
         "updated_at": "2026-11-07T05:37:55Z",
         "detail": "1/1 tickers",
         "status": "ok",
-        "age_hours": 12.3,
+        "age_hours": 29.1,
         "affects": "Ratings aren't being updated"
       },
       {
@@ -24,39 +24,39 @@
         "updated_at": "2026-11-07T15:47:47Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 2.1,
+        "age_hours": 18.9,
         "affects": "Upcoming earnings dates may be missing"
       },
       {
         "name": "SEC filings",
-        "updated_at": "2026-11-07T10:39:59Z",
+        "updated_at": "2026-11-08T10:44:08Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 7.2,
+        "age_hours": 0.0,
         "affects": "New SEC filings won't show"
       },
       {
         "name": "Prices",
-        "updated_at": "2026-11-07T17:46:53Z",
-        "detail": "59/59 have data",
+        "updated_at": "2026-11-08T10:44:02Z",
+        "detail": "56/56 have data",
         "status": "ok",
-        "age_hours": 0.1,
+        "age_hours": 0.0,
         "affects": "Prices and buy targets may be missing"
       },
       {
         "name": "Company figures",
-        "updated_at": "2026-11-07T17:46:53Z",
-        "detail": "59/59 have data",
+        "updated_at": "2026-11-08T10:44:02Z",
+        "detail": "56/56 have data",
         "status": "ok",
-        "age_hours": 0.1,
+        "age_hours": 0.0,
         "affects": "Ratings can't check the numbers"
       },
       {
         "name": "News",
-        "updated_at": "2026-11-07T10:40:04Z",
-        "detail": "53/53 have data",
+        "updated_at": "2026-11-08T10:44:14Z",
+        "detail": "55/55 have data",
         "status": "ok",
-        "age_hours": 7.2,
+        "age_hours": 0.0,
         "affects": "Ratings and mover reasons can miss recent news"
       },
       {
@@ -64,7 +64,7 @@
         "updated_at": "2026-11-06T21:56:53Z",
         "detail": "48/55 have data",
         "status": "ok",
-        "age_hours": 19.9,
+        "age_hours": 36.8,
         "affects": "Insider buying won't show on stocks or the radar"
       },
       {
@@ -72,7 +72,7 @@
         "updated_at": "2026-08-15T14:09:52Z",
         "detail": "28/31 have data",
         "status": "ok",
-        "age_hours": 2019.7,
+        "age_hours": 2036.6,
         "affects": "Hedge fund holdings may be out of date"
       },
       {
@@ -80,15 +80,15 @@
         "updated_at": "2026-11-07T16:36:48Z",
         "detail": "16/16 have data",
         "status": "ok",
-        "age_hours": 1.3,
+        "age_hours": 18.1,
         "affects": "The field briefing may be out of date"
       },
       {
         "name": "Movers",
         "updated_at": "2026-11-07T01:56:25Z",
         "detail": "16/16 have data",
-        "status": "ok",
-        "age_hours": 16.0,
+        "status": "stale",
+        "age_hours": 32.8,
         "affects": "Big moves may have no explanation"
       },
       {
@@ -96,7 +96,7 @@
         "updated_at": "2026-11-07T17:53:36Z",
         "detail": "12 found",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 16.8,
         "affects": "The radar may be out of date"
       },
       {
@@ -104,7 +104,7 @@
         "updated_at": "2026-11-07T17:45:23Z",
         "detail": "428 found",
         "status": "ok",
-        "age_hours": 0.1,
+        "age_hours": 17.0,
         "affects": "New stock ideas may be out of date"
       },
       {
@@ -112,7 +112,7 @@
         "updated_at": "2026-11-07T16:37:25Z",
         "detail": "1 found",
         "status": "ok",
-        "age_hours": 1.3,
+        "age_hours": 18.1,
         "affects": "The AI summary may be out of date"
       },
       {
@@ -120,7 +120,7 @@
         "updated_at": "2026-11-07T17:48:09Z",
         "detail": "6 sources passed",
         "status": "ok",
-        "age_hours": 0.1,
+        "age_hours": 16.9,
         "affects": "One of the data sources failed its daily test"
       },
       {
@@ -728,7 +728,7 @@
         "revenue_growth": 13.2,
         "op_margin": 63.7,
         "pe": 34.306007,
-        "forward_pe": 24.677958,
+        "forward_pe": 24.654982,
         "short_percent_float": 1.19,
         "short_ratio": 3.2,
         "high_proximity_warning": true,
@@ -1543,7 +1543,7 @@
         "revenue_growth": 28.0,
         "op_margin": 17.8,
         "pe": 34.137863,
-        "forward_pe": 20.909742,
+        "forward_pe": 20.878994,
         "short_percent_float": 1.94,
         "short_ratio": 3.5,
         "high_proximity_warning": false,
@@ -1686,7 +1686,7 @@
         "revenue_growth": 10.0,
         "op_margin": 11.1,
         "pe": 29.36609,
-        "forward_pe": 22.937946,
+        "forward_pe": 22.89949,
         "short_percent_float": 4.64,
         "short_ratio": 2.6,
         "high_proximity_warning": false,
@@ -2596,7 +2596,7 @@
         "revenue_growth": 2.1,
         "op_margin": -16.8,
         "pe": null,
-        "forward_pe": 13.107337,
+        "forward_pe": 13.30803,
         "short_percent_float": 11.18,
         "short_ratio": 5.0,
         "high_proximity_warning": false,
@@ -2895,93 +2895,6 @@
         "data_flags": []
       },
       {
-        "ticker": "SPY",
-        "name": "SPDR S&P 500 ETF",
-        "theme": "uncategorized",
-        "status": "monitoring",
-        "thesis": "S&P 500 benchmark ETF. Used as portfolio performance reference only \u2014 not a buy candidate.",
-        "added": "2026-05-28",
-        "verdict": "WATCHLIST",
-        "buy_target": null,
-        "current_price": 735.29,
-        "next_action": "BENCHMARK ONLY \u2014 track for relative performance comparison.",
-        "research_file": null,
-        "last_researched": "2026-05-28",
-        "price": 735.29,
-        "pct_change_1d": 0.31,
-        "market_cap": null,
-        "cap_tier": "unknown",
-        "drawdown_from_high": -5.9,
-        "revenue_growth": null,
-        "op_margin": null,
-        "pe": 23.39276,
-        "forward_pe": null,
-        "short_percent_float": null,
-        "short_ratio": null,
-        "high_proximity_warning": true,
-        "high_proximity_note": "Only 5.9% from 52-week high \u2014 entry timing risk",
-        "data_ok": true,
-        "data_flags": []
-      },
-      {
-        "ticker": "QQQ",
-        "name": "Invesco QQQ Trust (Nasdaq-100)",
-        "theme": "uncategorized",
-        "status": "monitoring",
-        "thesis": "Nasdaq-100 benchmark ETF. Used as portfolio performance reference only \u2014 not a buy candidate.",
-        "added": "2026-05-28",
-        "verdict": "WATCHLIST",
-        "buy_target": null,
-        "current_price": 656.1,
-        "next_action": "BENCHMARK ONLY \u2014 track for relative performance comparison.",
-        "research_file": null,
-        "last_researched": "2026-05-28",
-        "price": 656.1,
-        "pct_change_1d": 1.4,
-        "market_cap": null,
-        "cap_tier": "unknown",
-        "drawdown_from_high": -14.0,
-        "revenue_growth": null,
-        "op_margin": null,
-        "pe": 27.024878,
-        "forward_pe": null,
-        "short_percent_float": null,
-        "short_ratio": null,
-        "high_proximity_warning": true,
-        "high_proximity_note": "Only 14.0% from 52-week high \u2014 entry timing risk",
-        "data_ok": true,
-        "data_flags": []
-      },
-      {
-        "ticker": "^TNX",
-        "name": "10-Year Treasury Yield",
-        "theme": "uncategorized",
-        "status": "monitoring",
-        "thesis": "10-year Treasury yield. High yield (>4.5%) compresses equity multiples; falling yield is a tailwind for growth stocks. Monitor as macro context for entry decisions.",
-        "added": "2026-05-28",
-        "verdict": "WATCHLIST",
-        "buy_target": null,
-        "current_price": 4.859,
-        "next_action": "MACRO SIGNAL \u2014 current 4.48%. Watch for moves above 4.75% (equity headwind) or below 4.0% (equity tailwind).",
-        "research_file": null,
-        "last_researched": "2026-05-28",
-        "price": 4.859,
-        "pct_change_1d": 0.45,
-        "market_cap": null,
-        "cap_tier": "unknown",
-        "drawdown_from_high": -9.4,
-        "revenue_growth": null,
-        "op_margin": null,
-        "pe": null,
-        "forward_pe": null,
-        "short_percent_float": null,
-        "short_ratio": null,
-        "high_proximity_warning": true,
-        "high_proximity_note": "Only 9.4% from 52-week high \u2014 entry timing risk",
-        "data_ok": true,
-        "data_flags": []
-      },
-      {
         "ticker": "TPL",
         "name": "Texas Pacific Land Corporation",
         "theme": "uncategorized",
@@ -3065,6 +2978,93 @@
         "short_percent_float": 3.88,
         "short_ratio": 2.1,
         "high_proximity_warning": false,
+        "data_ok": true,
+        "data_flags": []
+      },
+      {
+        "ticker": "SPY",
+        "name": "SPDR S&P 500 ETF",
+        "theme": "uncategorized",
+        "status": "monitoring",
+        "thesis": "S&P 500 benchmark ETF. Used as portfolio performance reference only \u2014 not a buy candidate.",
+        "added": "2026-05-28",
+        "verdict": "WATCHLIST",
+        "buy_target": null,
+        "current_price": 735.29,
+        "next_action": "BENCHMARK ONLY \u2014 track for relative performance comparison.",
+        "research_file": null,
+        "last_researched": "2026-05-28",
+        "price": 735.29,
+        "pct_change_1d": 0.31,
+        "market_cap": null,
+        "cap_tier": "unknown",
+        "drawdown_from_high": -5.9,
+        "revenue_growth": null,
+        "op_margin": null,
+        "pe": 23.39276,
+        "forward_pe": null,
+        "short_percent_float": null,
+        "short_ratio": null,
+        "high_proximity_warning": true,
+        "high_proximity_note": "Only 5.9% from 52-week high \u2014 entry timing risk",
+        "data_ok": true,
+        "data_flags": []
+      },
+      {
+        "ticker": "QQQ",
+        "name": "Invesco QQQ Trust (Nasdaq-100)",
+        "theme": "uncategorized",
+        "status": "monitoring",
+        "thesis": "Nasdaq-100 benchmark ETF. Used as portfolio performance reference only \u2014 not a buy candidate.",
+        "added": "2026-05-28",
+        "verdict": "WATCHLIST",
+        "buy_target": null,
+        "current_price": 656.1,
+        "next_action": "BENCHMARK ONLY \u2014 track for relative performance comparison.",
+        "research_file": null,
+        "last_researched": "2026-05-28",
+        "price": 656.1,
+        "pct_change_1d": 1.4,
+        "market_cap": null,
+        "cap_tier": "unknown",
+        "drawdown_from_high": -14.0,
+        "revenue_growth": null,
+        "op_margin": null,
+        "pe": 27.024878,
+        "forward_pe": null,
+        "short_percent_float": null,
+        "short_ratio": null,
+        "high_proximity_warning": true,
+        "high_proximity_note": "Only 14.0% from 52-week high \u2014 entry timing risk",
+        "data_ok": true,
+        "data_flags": []
+      },
+      {
+        "ticker": "^TNX",
+        "name": "10-Year Treasury Yield",
+        "theme": "uncategorized",
+        "status": "monitoring",
+        "thesis": "10-year Treasury yield. High yield (>4.5%) compresses equity multiples; falling yield is a tailwind for growth stocks. Monitor as macro context for entry decisions.",
+        "added": "2026-05-28",
+        "verdict": "WATCHLIST",
+        "buy_target": null,
+        "current_price": 4.859,
+        "next_action": "MACRO SIGNAL \u2014 current 4.48%. Watch for moves above 4.75% (equity headwind) or below 4.0% (equity tailwind).",
+        "research_file": null,
+        "last_researched": "2026-05-28",
+        "price": 4.859,
+        "pct_change_1d": 0.45,
+        "market_cap": null,
+        "cap_tier": "unknown",
+        "drawdown_from_high": -9.4,
+        "revenue_growth": null,
+        "op_margin": null,
+        "pe": null,
+        "forward_pe": null,
+        "short_percent_float": null,
+        "short_ratio": null,
+        "high_proximity_warning": true,
+        "high_proximity_note": "Only 9.4% from 52-week high \u2014 entry timing risk",
         "data_ok": true,
         "data_flags": []
       }
@@ -3358,7 +3358,7 @@
           "revenue_growth": 13.2,
           "op_margin": 63.7,
           "pe": 34.306007,
-          "forward_pe": 24.677958,
+          "forward_pe": 24.654982,
           "short_percent_float": 1.19,
           "short_ratio": 3.2,
           "high_proximity_warning": true,
@@ -3603,7 +3603,7 @@
           "revenue_growth": 10.0,
           "op_margin": 11.1,
           "pe": 29.36609,
-          "forward_pe": 22.937946,
+          "forward_pe": 22.89949,
           "short_percent_float": 4.64,
           "short_ratio": 2.6,
           "high_proximity_warning": false,
@@ -4417,7 +4417,7 @@
           "revenue_growth": 2.1,
           "op_margin": -16.8,
           "pe": null,
-          "forward_pe": 13.107337,
+          "forward_pe": 13.30803,
           "short_percent_float": 11.18,
           "short_ratio": 5.0,
           "high_proximity_warning": false,
@@ -5312,7 +5312,7 @@
           "revenue_growth": 28.0,
           "op_margin": 17.8,
           "pe": 34.137863,
-          "forward_pe": 20.909742,
+          "forward_pe": 20.878994,
           "short_percent_float": 1.94,
           "short_ratio": 3.5,
           "high_proximity_warning": false,
@@ -6842,93 +6842,6 @@
           "data_flags": []
         },
         {
-          "ticker": "SPY",
-          "name": "SPDR S&P 500 ETF",
-          "theme": "uncategorized",
-          "status": "monitoring",
-          "thesis": "S&P 500 benchmark ETF. Used as portfolio performance reference only \u2014 not a buy candidate.",
-          "added": "2026-05-28",
-          "verdict": "WATCHLIST",
-          "buy_target": null,
-          "current_price": 735.29,
-          "next_action": "BENCHMARK ONLY \u2014 track for relative performance comparison.",
-          "research_file": null,
-          "last_researched": "2026-05-28",
-          "price": 735.29,
-          "pct_change_1d": 0.31,
-          "market_cap": null,
-          "cap_tier": "unknown",
-          "drawdown_from_high": -5.9,
-          "revenue_growth": null,
-          "op_margin": null,
-          "pe": 23.39276,
-          "forward_pe": null,
-          "short_percent_float": null,
-          "short_ratio": null,
-          "high_proximity_warning": true,
-          "high_proximity_note": "Only 5.9% from 52-week high \u2014 entry timing risk",
-          "data_ok": true,
-          "data_flags": []
-        },
-        {
-          "ticker": "QQQ",
-          "name": "Invesco QQQ Trust (Nasdaq-100)",
-          "theme": "uncategorized",
-          "status": "monitoring",
-          "thesis": "Nasdaq-100 benchmark ETF. Used as portfolio performance reference only \u2014 not a buy candidate.",
-          "added": "2026-05-28",
-          "verdict": "WATCHLIST",
-          "buy_target": null,
-          "current_price": 656.1,
-          "next_action": "BENCHMARK ONLY \u2014 track for relative performance comparison.",
-          "research_file": null,
-          "last_researched": "2026-05-28",
-          "price": 656.1,
-          "pct_change_1d": 1.4,
-          "market_cap": null,
-          "cap_tier": "unknown",
-          "drawdown_from_high": -14.0,
-          "revenue_growth": null,
-          "op_margin": null,
-          "pe": 27.024878,
-          "forward_pe": null,
-          "short_percent_float": null,
-          "short_ratio": null,
-          "high_proximity_warning": true,
-          "high_proximity_note": "Only 14.0% from 52-week high \u2014 entry timing risk",
-          "data_ok": true,
-          "data_flags": []
-        },
-        {
-          "ticker": "^TNX",
-          "name": "10-Year Treasury Yield",
-          "theme": "uncategorized",
-          "status": "monitoring",
-          "thesis": "10-year Treasury yield. High yield (>4.5%) compresses equity multiples; falling yield is a tailwind for growth stocks. Monitor as macro context for entry decisions.",
-          "added": "2026-05-28",
-          "verdict": "WATCHLIST",
-          "buy_target": null,
-          "current_price": 4.859,
-          "next_action": "MACRO SIGNAL \u2014 current 4.48%. Watch for moves above 4.75% (equity headwind) or below 4.0% (equity tailwind).",
-          "research_file": null,
-          "last_researched": "2026-05-28",
-          "price": 4.859,
-          "pct_change_1d": 0.45,
-          "market_cap": null,
-          "cap_tier": "unknown",
-          "drawdown_from_high": -9.4,
-          "revenue_growth": null,
-          "op_margin": null,
-          "pe": null,
-          "forward_pe": null,
-          "short_percent_float": null,
-          "short_ratio": null,
-          "high_proximity_warning": true,
-          "high_proximity_note": "Only 9.4% from 52-week high \u2014 entry timing risk",
-          "data_ok": true,
-          "data_flags": []
-        },
-        {
           "ticker": "TPL",
           "name": "Texas Pacific Land Corporation",
           "theme": "uncategorized",
@@ -7014,6 +6927,93 @@
           "high_proximity_warning": false,
           "data_ok": true,
           "data_flags": []
+        },
+        {
+          "ticker": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "theme": "uncategorized",
+          "status": "monitoring",
+          "thesis": "S&P 500 benchmark ETF. Used as portfolio performance reference only \u2014 not a buy candidate.",
+          "added": "2026-05-28",
+          "verdict": "WATCHLIST",
+          "buy_target": null,
+          "current_price": 735.29,
+          "next_action": "BENCHMARK ONLY \u2014 track for relative performance comparison.",
+          "research_file": null,
+          "last_researched": "2026-05-28",
+          "price": 735.29,
+          "pct_change_1d": 0.31,
+          "market_cap": null,
+          "cap_tier": "unknown",
+          "drawdown_from_high": -5.9,
+          "revenue_growth": null,
+          "op_margin": null,
+          "pe": 23.39276,
+          "forward_pe": null,
+          "short_percent_float": null,
+          "short_ratio": null,
+          "high_proximity_warning": true,
+          "high_proximity_note": "Only 5.9% from 52-week high \u2014 entry timing risk",
+          "data_ok": true,
+          "data_flags": []
+        },
+        {
+          "ticker": "QQQ",
+          "name": "Invesco QQQ Trust (Nasdaq-100)",
+          "theme": "uncategorized",
+          "status": "monitoring",
+          "thesis": "Nasdaq-100 benchmark ETF. Used as portfolio performance reference only \u2014 not a buy candidate.",
+          "added": "2026-05-28",
+          "verdict": "WATCHLIST",
+          "buy_target": null,
+          "current_price": 656.1,
+          "next_action": "BENCHMARK ONLY \u2014 track for relative performance comparison.",
+          "research_file": null,
+          "last_researched": "2026-05-28",
+          "price": 656.1,
+          "pct_change_1d": 1.4,
+          "market_cap": null,
+          "cap_tier": "unknown",
+          "drawdown_from_high": -14.0,
+          "revenue_growth": null,
+          "op_margin": null,
+          "pe": 27.024878,
+          "forward_pe": null,
+          "short_percent_float": null,
+          "short_ratio": null,
+          "high_proximity_warning": true,
+          "high_proximity_note": "Only 14.0% from 52-week high \u2014 entry timing risk",
+          "data_ok": true,
+          "data_flags": []
+        },
+        {
+          "ticker": "^TNX",
+          "name": "10-Year Treasury Yield",
+          "theme": "uncategorized",
+          "status": "monitoring",
+          "thesis": "10-year Treasury yield. High yield (>4.5%) compresses equity multiples; falling yield is a tailwind for growth stocks. Monitor as macro context for entry decisions.",
+          "added": "2026-05-28",
+          "verdict": "WATCHLIST",
+          "buy_target": null,
+          "current_price": 4.859,
+          "next_action": "MACRO SIGNAL \u2014 current 4.48%. Watch for moves above 4.75% (equity headwind) or below 4.0% (equity tailwind).",
+          "research_file": null,
+          "last_researched": "2026-05-28",
+          "price": 4.859,
+          "pct_change_1d": 0.45,
+          "market_cap": null,
+          "cap_tier": "unknown",
+          "drawdown_from_high": -9.4,
+          "revenue_growth": null,
+          "op_margin": null,
+          "pe": null,
+          "forward_pe": null,
+          "short_percent_float": null,
+          "short_ratio": null,
+          "high_proximity_warning": true,
+          "high_proximity_note": "Only 9.4% from 52-week high \u2014 entry timing risk",
+          "data_ok": true,
+          "data_flags": []
         }
       ],
       "platform_network": [
@@ -7053,7 +7053,7 @@
           "revenue_growth": 13.2,
           "op_margin": 63.7,
           "pe": 34.306007,
-          "forward_pe": 24.677958,
+          "forward_pe": 24.654982,
           "short_percent_float": 1.19,
           "short_ratio": 3.2,
           "high_proximity_warning": true,
@@ -7488,7 +7488,7 @@
           "revenue_growth": 10.0,
           "op_margin": 11.1,
           "pe": 29.36609,
-          "forward_pe": 22.937946,
+          "forward_pe": 22.89949,
           "short_percent_float": 4.64,
           "short_ratio": 2.6,
           "high_proximity_warning": false,
@@ -7628,7 +7628,7 @@
           "revenue_growth": 28.0,
           "op_margin": 17.8,
           "pe": 34.137863,
-          "forward_pe": 20.909742,
+          "forward_pe": 20.878994,
           "short_percent_float": 1.94,
           "short_ratio": 3.5,
           "high_proximity_warning": false,
@@ -8600,7 +8600,7 @@
           "revenue_growth": 2.1,
           "op_margin": -16.8,
           "pe": null,
-          "forward_pe": 13.107337,
+          "forward_pe": 13.30803,
           "short_percent_float": 11.18,
           "short_ratio": 5.0,
           "high_proximity_warning": false,
@@ -14168,14 +14168,14 @@
     }
   },
   "asset_location": {
-    "generated_at": "2026-11-07T10:40:04Z",
+    "generated_at": "2026-11-08T10:44:14Z",
     "rules": {
       "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
       "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
       "high_yield_threshold_pct": 3.0
     },
     "counts": {
-      "roth": 51,
+      "roth": 53,
       "taxable": 2
     },
     "roth": [
@@ -14188,6 +14188,16 @@
         "account": "ROTH",
         "priority": "high",
         "reason": "Highest-conviction growth pick (45% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+      },
+      {
+        "ticker": "APP",
+        "name": "AppLovin Corporation",
+        "theme": "uncategorized",
+        "verdict": "RESEARCH-WORTHY",
+        "div_yield_pct": null,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "Highest-conviction growth pick (56% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
       },
       {
         "ticker": "ASML",
@@ -14408,6 +14418,16 @@
         "account": "ROTH",
         "priority": "high",
         "reason": "Highest-conviction growth pick (96% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+      },
+      {
+        "ticker": "TPL",
+        "name": "Texas Pacific Land Corporation",
+        "theme": "uncategorized",
+        "verdict": "RESEARCH-WORTHY",
+        "div_yield_pct": 0.88,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "Highest-conviction growth pick (35% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
       },
       {
         "ticker": "TSM",
@@ -15706,6 +15726,14 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1713445/000210012126001089/xslSCHEDULE_13G_X02/primary_doc.xml"
       },
       {
+        "ticker": "TPL",
+        "form": "SCHEDULE 13G",
+        "label": "PASSIVE 5% STAKE",
+        "meaning": "5%+ passive stake \u2014 institutional conviction",
+        "filed_date": "2026-10-30",
+        "url": "https://www.sec.gov/Archives/edgar/data/1811074/000210012126001131/xslSCHEDULE_13G_X02/primary_doc.xml"
+      },
+      {
         "ticker": "TSM",
         "form": "SCHEDULE 13G",
         "label": "PASSIVE 5% STAKE",
@@ -15946,6 +15974,22 @@
         "meaning": "Corporate event: M&A, guidance, exec change",
         "filed_date": "2026-11-04",
         "url": "https://www.sec.gov/Archives/edgar/data/1635327/000119312526446166/d141532d8k.htm"
+      },
+      {
+        "ticker": "TPL",
+        "form": "8-K",
+        "label": "MATERIAL EVENT",
+        "meaning": "Corporate event: M&A, guidance, exec change",
+        "filed_date": "2026-11-04",
+        "url": "https://www.sec.gov/Archives/edgar/data/1811074/000181107426000075/tpl-20261104.htm"
+      },
+      {
+        "ticker": "APP",
+        "form": "8-K",
+        "label": "MATERIAL EVENT",
+        "meaning": "Corporate event: M&A, guidance, exec change",
+        "filed_date": "2026-11-04",
+        "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100826000068/app-20261029.htm"
       },
       {
         "ticker": "AMD",
@@ -17094,6 +17138,78 @@
     ],
     "news": [
       {
+        "ticker": "TSM",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "TSMC Shares Jump 6% on Nvidia Memory Chip Report",
+        "publisher": "News Karnataka",
+        "date": "2026-11-08",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQVDhhV2JPNG5xX3FjcU1lbEdvU254ZUMzNkxKVzRqV3FfVkNpekJNM3NyX0hUR1J5dmtwYm5wYVczRHIzUHNmUjhadGVoVklTSUI0b2lSSzlUaWhXLVV1bnpCcUQxZ2VEU0lzV1lUWmVpYk9kT2h6RktDNE1GMm0yWWhXMlBtbUNTSjFRNlQyVllBdUQ1cVVKNjl3?oc=5"
+      },
+      {
+        "ticker": "NOW",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "ServiceNow: A 27% Drop On A Beat, And Fair Value Barely Moved. (NYSE:NOW)",
+        "publisher": "Seeking Alpha",
+        "date": "2026-11-08",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNQ3lqbVhXd2wtVm5zWTI5X1pmY1RwUWNPSHBtOHA3R0xDZEZEX1NWVVJRLUlfMWlsdFpkaURodzBzTk9IRkdPemRhdzVUaUxnY2tUZVFFc3U1Rjd4bjRVeWVMOTVfcDJwWVd5NW9ZNnJsa1dwNGFCOEtGMnhndVhtSk10SVZzLWljQUJPMThtXy0wX3hqTjA2Y29QOFNHZTFfR3UtdXlFVnNqX1E?oc=5"
+      },
+      {
+        "ticker": "AMD",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "AMD Stock Just Fell Below the Price I Said I'd Pay for It.",
+        "publisher": "The Motley Fool",
+        "date": "2026-11-08",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNUZsRWVuUHliYXA1VjB0QVlPUWI3RjEtMU1Nc2YzVmNHV3FWVjk5bjl3aUdDN2VvWnRraHp0dUNJcFJ1SU1JVjNPNHIweDN3RHhtRmNWRVhhOS1BVmthaWpma0ZxUWdBbGJrblhCaTBadG1PQjNSSE1zc1AxZm9jSlFJaS1xdERjaUQ1VnVtam5wV1FlT3NBY3pyall5NXlpTHc?oc=5"
+      },
+      {
+        "ticker": "IBM",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "IBM SPSS Statistics Subscription: Plans & Access",
+        "publisher": "CASRAI",
+        "date": "2026-11-08",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9OWjhOb3dXcEtRZzVWZVFfd3VvOHNkOFBTVG1vWVY5MFhqZkpHUU9wSkVoLVdVYlF4NlphR09oS3VxbW9VcEFNUDF4NXFydzExcWY2WlJZc2c2NVBXRU1JUEpPRXYwUkc5YlE?oc=5"
+      },
+      {
+        "ticker": "COHR",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Coherent Stock Fell 8% in a Week. J.P. Morgan Sees 100% Upside From Here",
+        "publisher": "TIKR.com",
+        "date": "2026-11-08",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNS0JDVldWbmRUTnQ4LWhxM2oyMHB1QlJyNnl1RGxnd3AwVUlXaU9Fa01LWDVfWEp4ZFBHeXhhZnhpaFVmeE40N3llY1JWOExTUWUxa3drbjYyV296TkRURVNRNHVreENHaDI4WFlsdk5peTRIdlo4NTVXUEJMQmNId0x3RmdLcGJQdms4RkIwdTZwUnJ1OTMwTlV3?oc=5"
+      },
+      {
+        "ticker": "CRDO",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Credo Technology: Recent Drop Turns My Hold Into A Buy (Rating Upgrade)",
+        "publisher": "Seeking Alpha",
+        "date": "2026-11-08",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOeUV1dXM4T0pQRTF0N1ZleWJQRTl5bWI5cDJRM2t3cS1lZ0dqbWJZdmVUMFk3dEhORVEtZFZGb3duTG1mcVg2V2VJUTB4bjhvQ0lwSy1BcURYSWNNOEFCNXZqc3JWalJUS19EdkQzU2lucThDZDZjVTNxYURkZWlfTTBqcDQ0d1NiSjVmMEFValkzU0hzRkdUM0s0aTN3XzhvNmc4YmlyYWNrWmFfU0E?oc=5"
+      },
+      {
+        "ticker": "META",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Meta chief strategy officer Dave Wehner leaves to join AI infrastructure startup Fireworks as CFO",
+        "publisher": "CNBC",
+        "date": "2026-11-07",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1Sb1hhMXlCOTNYWFJTOFIzRVZpeEM2MDQtUVpoSnk0ZVNlVWktUHp5d1V3STE1SW9vNkxabXBQQlFXc21ha2RnU3JnZGhGeXI4RUpJaUhuSUdTb2V2djEzR3FzRnJpc0Z0TmpVT1FRSFNabmFqbVE?oc=5"
+      },
+      {
+        "ticker": "META",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Meta Strategy Chief Dave Wehner to Become Fireworks CFO",
+        "publisher": "The Information",
+        "date": "2026-11-07",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTkU4b2c1eWpibHE3NEdhcXYzQldTTlJDN3NOcEhkZnpuMXNHOTczR01FWHd4X2lld2xUZTZqT3NXYXNodTVGS2Q2VHpFNzhKQzAwUzFxcWlxTGw1ZWY2TzF4T3A1WTB6QXdOUG5hTVFPOGtjWW51M2FKNXprSWE0QXpqT2p5eDhTdGhYdUpTRy14Y0VsdjZZRmxzdXdYMEFIR3E0T213?oc=5"
+      },
+      {
+        "ticker": "AVGO",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "AVGO Stock Week Ahead (November 9\u201313): What Comes After a 9.93% Weekly Loss",
+        "publisher": "JournalArta",
+        "date": "2026-11-07",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQRmhPNGhCRjNUclJ6TkVhWjlSY28yTGtLVXBrck50N3RtMERxQjBJdnZ6RlRKbGttOElVT3hjN0RXUGFBUmZZc1J2OWhoYkhZS24xaWpZXzllY2tuZGNzdG50c0dsZGFPV1l6bzRQMUNzeEZTeUhVN0FGd1NFSEp1eG1TcXUtN1lyaW94R3REZWZRcWFjOE85WU9CNEkyUFRDTGwzLWxHYTJ3QUMxaGlF?oc=5"
+      },
+      {
         "ticker": "AVGO",
         "verdict": "RESEARCH-WORTHY",
         "title": "Broadcom (AVGO) Drops 40% From Peak, Eyes Critical $300 Support Line",
@@ -17102,12 +17218,124 @@
         "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPRXJBT01KeGV3UlFDUDhuei11QXFpR1FuN3hkMGp4RVlUaG9FZGVVUUgwUGxBRGRGcnBiZHNVY0NNMXlibkcxVEFicEJrN3VMMGlVbWctaUhvMFVfZWdoYTIxS0IxalhQQmJMSHpocnlqdnkwOGp5QmwtRllJWXhTUVRUbFdDemcwNjdJUzIzSHRNRF9yT1I3Zi1GTUFMMmVweE1PZER2aWVJdw?oc=5"
       },
       {
+        "ticker": "AVGO",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Broadcom Stock Price Forecast: Marvell\u2019s Acquisition of Lumentum May Threaten Its Lead in AI Optical Communications",
+        "publisher": "TradingKey",
+        "date": "2026-11-07",
+        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQM3phRG4tWTJYclJheFltYzVRal9qaGRYVlNSUGFjMnMwaFJ3Y0VnOFhkak9CZWJGXzhQQ3pDeGNmSVp5eWhMTk5kQm5RaWNPblBxMFZEY1p1VzlNVThOXzZBbXhKUDctaTFsRlFwbHpfaER5Tm9ZTDhRMXBrZlV2anBvYXdtRmNIcXdoeE1JZkpYaVBGM1hSV3pWLUswNzNWUTRZWnVFeUJxV2RXa2Fjd0FyMkx5a2d4LUF0OS0wbDhUVW5COHNtdDVDZnBGS2diUHhhOENvd215UHpNRExGd0E1blcwbDFU?oc=5"
+      },
+      {
+        "ticker": "TSM",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "TSMC stock jumps over 6% as Nvidia asks chipmaker to make memory chips",
+        "publisher": "India Today",
+        "date": "2026-11-07",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNRlNiaHhwRUJ2VUNZRzVLNnBhSVdJVHo2ZldhUUZuRWYxYk83ZWVqNnhMOUVjRjlzYlpQeldEWjR4blZLT0JYU1hDTWVDWnFCQ2xnRHcyQkNWYTlsa2o4eFNHNnVWM2k4M1NsQms2aFk0alQxRV9heU0zVXlNbTZWQzdDaXJQU0NXR1p3aXYyWWRQVFhScWFDY1daOEZBVzd6MjBOQW5ObURMc0VCOHFmQzlSWk9xSWQ3S2RTTThEbjVGUV9CUkItaVZxbE9Qc1NQU1HSAdcBQVVfeXFMTmVWV0ZtVkNBN1dKRTZlbHhJV2haWmp1clEtaHFSQ2tXRzJTVkgxWTMwLUlrcDFmaHNaWlQ3SVBIZGVaOUxKVU5kTW1YajN4WHBHbl9aUjcyZFpDYXhVbnhub3NoSV9DbWpnUFJUZU9FRm1RWEt5bzF1RjRnaFlQYUlBTTZFemVLeUJ2ZDN3dmZFWDV2bzdfeFhVNUR3ajV6NWhvdjlrRUFBY1JucWllNlI4bHpnWVpqQWVxLXpVd01lWE9FNF9EOW1COU1hMjl4N2R0OWJlblE?oc=5"
+      },
+      {
+        "ticker": "AMD",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Why Did AMD Stock Jump?",
+        "publisher": "Trefis",
+        "date": "2026-11-07",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOclk5czdxelNiNl9fWkFHWjJSRGJNN3FxMGpNV1dTX0ZjNHQ1eVl1WEJMdnlsSmtDby1ranFIXzlkS1VFVlRIUUlYdm9yVHRzNFlFellEUlgxSFBjcTNfNGlLNWt6ajROZWdORlNXTkQydllYYnNURDhFOUE5M1pZVGVEbjI3bGpleHhoNQ?oc=5"
+      },
+      {
+        "ticker": "AMD",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "AMD: AI Panic Meets Outsized CPU/GPU Gains - Upgrade To Buy",
+        "publisher": "Seeking Alpha",
+        "date": "2026-11-07",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYkVYYnN6QkpYa3VnNXBjWkV1NjdtMlJzV3ZEaFVOcm9WY2JCekU5S2E1Nlhxbk16bVdVTGJuS1RnbEhCeDE5NGpJbHRXTHhxT2VtOFBQR2JRR2FLR0p6aGo0SEpQZ25VdnROc0p5TllTWDdZZHRZbVNDYjYyV2JwQ05NdU9LdUFBSVJOZGVaam1VRlVHTUhzcXhMdzU?oc=5"
+      },
+      {
+        "ticker": "MRVL",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Why Marvell Technology Stock Plunged 28.1% This Week",
+        "publisher": "The Motley Fool",
+        "date": "2026-11-07",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNemE1NkxFUXVWMk02WmpOZkJvbFo5WHVVc3dWRndoZzVSWTNRQWZOVmVBTzYzNmx4WlJseUJBNDNLVEZ1WWE4V3g3N2tnTnRjdW11eUtoQXBwbmZET3JwNE16WVpaWTdqbmFudWxlN0x3RlloRGNnTVN3OWlKNWxOa01sUFJmYTNHNF9jRXZBVy0wOUNDZzRBMk5FalhIa2dUcURJQ3VrMjhubUk?oc=5"
+      },
+      {
+        "ticker": "MRVL",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Marvell Technology\u2019s $115B Lumentum Deal Accelerates AI Cloud Infrastructure and Fintech Data Demands",
+        "publisher": "Crowdfund Insider",
+        "date": "2026-11-07",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOUUM4cWgtTGswa0ItZFNBSUNUdzY0dnkxTUJGb3ZGWk95WmNtSFJLY1d5VGhSSDlrQTRibS1LT2MyYXd2X3JaSEl5NXV2STN3WGNaYldMRm1TYnR1Uzk2dW5uVS1Yb3FUb0E0Q293am1xYXhxTUplOTkzSjlqaWhSZVlRWFVQbVRFMzI4N2pCMFJwYmdPT2pSNTFiWHgwMG54MVduSG9OZlF0RGVBa0t6czF1WnJTekotV0dMZ3ZUd2k1ZFN1RENuczFKQ0xOUjdwRGVRNElPQVNCWE43eXF3enVR?oc=5"
+      },
+      {
+        "ticker": "COHR",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Why Did Coherent Stock Jump?",
+        "publisher": "Trefis",
+        "date": "2026-11-07",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPM1lSTWtHeDE2dV9STndhUVFZd3FBNklpVmhwMUpNcXl2UmlicGstNDNrVjJKbUFNcVpaTDdZUnl0SlNJRXNPcUV1aWg4Rm5RZjFmTVVaMDl6eEU1aWk2azdMd0tsR0pZYWpEY2tlSUc4U1lvQkFnVXBFcHJ2Q1AyYkJEa3RtMDJOSXBOQWh6R3RjZw?oc=5"
+      },
+      {
         "ticker": "VST",
         "verdict": "RESEARCH-WORTHY",
         "title": "Vistra (VST) Stock Climbs After Record Q3 Earnings Power",
         "publisher": "Yahoo Finance",
         "date": "2026-11-07",
         "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPODhZUDZDZ2NuV2NfV3IyNDVMSWdJU0dlS3V6aUpaUFRHaEM5SF9FS2hWcFcwdFlsOHZrcE9BV0lVNkN0c0pNSE5vSUJUelVkZFotX29fVHhac3hVQWNybkhzcmJTOGc1U3dyQk5TR2t2YUtMd2ZrMGtGUWRHUWJxSnNNbzIyNnZhaVgtSUZOX2JxRVQ4d3gwVHF4RQ?oc=5"
+      },
+      {
+        "ticker": "VST",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Vistra: Q3 Confirms The Midterm Fear Is The Opportunity (NYSE:VST)",
+        "publisher": "Seeking Alpha",
+        "date": "2026-11-07",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRlh2YXJxQ01pTDJ6aXYwU3dpYkdoLVgtNjJWT3BPU2lSSzg0QWI0THVVS0tHUlFoZnU4aUZXTTktbUl4SDNFR2ZiUy1aNkxCdE4yM3RGUFFUR1RlbEdDellLN1VGN2xpTWlfZUVfWF92cm5vU1VHcmlLYkIyZlNYWG91WmVnUkgydG4tb2llRXJLLTdkVF9MNWFQNA?oc=5"
+      },
+      {
+        "ticker": "GEV",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Is GE Vernova (GEV) Trading At A Premium After Its $9b Deal?",
+        "publisher": "Yahoo Finance Singapore",
+        "date": "2026-11-07",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNLWNqOVFuSGlMYjRvY2lUb1N1a1pvN2lzYXg3N1FTWDdWRmhoSjhpVGdRUlBoY0tUTDhfVGM2YkFYYXpsLUFCejJUMFlkQWVCd3psWmw1U1VEM0dZSDFmN0VRT3dRWVB0VS1pc3ZVR3pTVlo2RVFoeEpyU3FGZ3FSTnF4a3AxQQ?oc=5"
+      },
+      {
+        "ticker": "ETN",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Did Raised Guidance Just Shift Eaton (ETN) Investment Narrative?",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-07",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPU3VEOUVfYU9HTmNSV2J2R2dPbHA5dFRDUVQtMnZCeHB2eE1kc0c3VGdjdkdFSDRDdy1NelpRV1dPYXpwbGJmcU1QaHNuRWl5RlJtT0kxMEppc0NtTjdmN2xaVzB0SEp5SWNGb2RPekJ1MkJsMG1pNjVkNXJZSnh4S0VtVlpBMTFmSTQyRGZiRFZpVGc4aW0tTktiOA?oc=5"
+      },
+      {
+        "ticker": "TPL",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Texas Pacific Land: Record Royalties Improve The Outlook While New Projects Require A Wider Valuation Margin",
+        "publisher": "Seeking Alpha",
+        "date": "2026-11-07",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNeHJjcnZJR0FqN09BQmR1TGJFZzRUa3lFV2FPSHV4ZWJxVl9MWms3OUhkS1NsbkoyaGZBRWNCZWxhVFJXRlZTdW82SHFwV2JDaElabnEyc1hRWEMwcFFSbVBDdnlBNnFSN1pWazUwdi1ZMmdhTGd3WGVxVmtMeEpEazl6b3NkSkNrZlhwM0JfS2s2RlFMbFZXWWxISUJ2WXhsRkh3RmYyQnpLeEJhbnJxZ0VXWEJXZnJEMzFsb05WZ1dKUW1FaVI2MHBka2Q4LVRJYkNqaDljQVRsZGh3Ui0ydVpB?oc=5"
+      },
+      {
+        "ticker": "APP",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "AppLovin: I Missed A Once In A Lifetime Opportunity (Rating Downgrade)",
+        "publisher": "Seeking Alpha",
+        "date": "2026-11-07",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNaV9yTHRFa1NfbjdlZ1hpZ3RBdEFtZDhjTzFLYy1VcmhUejVlbENLNF83RjMwWlF5U0lsclViNF9yblJldGhZejdhRm05MDBINGFxUng2TmNBNGNBTnVYU2prZVRZVDJBTU54ZGhnZmZmb05ha3kzbG8yZ3FYSGJkMGtmX281V0k0OUVXVFFhVnlBWEdEdFpFMHZHeFV3R05Sb0RoMUx3bFBhb2Mt?oc=5"
+      },
+      {
+        "ticker": "APP",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Applovin Corporation (APP) Stock Forecasts",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-07",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTnFBUnBqZW1rdFI0cXJUQ2xqWFZsY0JFdG83T0pJdnR0eFUyNkdfeG53T0VPRkVWQXVubGxjZnJzTnNjdDlneUM0R2prVTRGTGdlbmNyUFVSVV84bGZGOFMyNS1yNlF0WU9jc0t6SjhucVBxS2lzWVdueVpzNUhnNk5WWXYxMEFZQ3N2bA?oc=5"
+      },
+      {
+        "ticker": "GOOGL",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Alphabet Acquires Qualcomm Stake Through Modular Purchase",
+        "publisher": "The Information",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQjlTcXZtdTBHZTdNa2U4bk9lbWR2UTVCYjQxa1RocHBMdnZqS2w2NnlPRXZGQnVGYmZpYlJ1cHY2VVl2OXFzQldMdDdiQVhpQjlaekJSOHBkUDU3VEZ1VnpDLXBId05SSnNiZUpYZUhUSXlwVFFKSGI5NXE0QllvVXZKdFpXbXM?oc=5"
       },
       {
         "ticker": "NVDA",
@@ -17120,18 +17348,18 @@
       {
         "ticker": "NVDA",
         "verdict": "RESEARCH-WORTHY",
-        "title": "AMD Jumps 8%, Intel and NVIDIA Climb 5% as Chip Stocks Rebound From Worst Sell-Off Since 2020",
-        "publisher": "Yahoo Finance",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMW1ORFRuT241UWRmRjRmYTlsWWFNV3dYUm9EMGU3dy1qdTVnRnRrODJOVnRZeFltam1icENSd1Z4UWlyRlhUT1dmQ2s3SGhkSTVSRmpmTFNBVDZPYlNic0VnRlo2UEpCVDlRV0pUUGxrcnJUcVlMbDZ0R3UxcHhLbmxWdDRXWGxLbVJpaDZaaFdvemc?oc=5"
-      },
-      {
-        "ticker": "NVDA",
-        "verdict": "RESEARCH-WORTHY",
         "title": "NVDAB Plunges As AI Regulatory Fears Drive Nvidia Stock Selloff",
         "publisher": "MarketForces Africa",
         "date": "2026-11-06",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQQjV1dUpIQUdGOWE0aElYQm9JdzZYWnV4VEQ1TWs1R2Mxd2YwbUt6a0hjQ0xoT1E4VHItT2FURDI5WXpuR2J2Tm9abkZyRjNKTzREUmhhb2p5akdZVFhFbG1qckszc0JWRE40MjBtb2ZiM2I3U0pkT1F3RFhGQVN0QVBhd2ZRSU9wcW9iSXdKTV82VlFk?oc=5"
+      },
+      {
+        "ticker": "NVDA",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Jensen Huang Says Nvidia's Next-Gen Vera Rubin Chips Will Generate $40 Billion in Revenue per Gigawatt, Up From $25 Billion for Grace Blackwell. What That Means for Nvidia's Growth Runway?",
+        "publisher": "The Motley Fool",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNcUFWdjA2ZXlKcFMtdk5DS0RtTHJ1N1dDSnpjN2VoMFpnZDN5MFU3WjVpUHFQMm9ZZy1nNEJSZ1pYM3g1dEkzWmJxcHZmaC1TY1Nkc2FIcFlOMl9OQWw2a3A1cXVZQ3NMclpadmZFQTdkYWVTS1dibjFSVDVXeGIwZTFtRHZHZHpnZUFXaWItMGJab09MblRnTw?oc=5"
       },
       {
         "ticker": "AVGO",
@@ -17142,20 +17370,12 @@
         "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVTNSR0JBRjZNeGhUcG1lSzhFMXFFUk9NUklYQ3JlczhVaDFoMEh6cGQyUG13eW5iN2FLRklTUTRTSWhvS0ZvaFBOT241VTlTdERzUllYUUlxRG80NVI3aDJUeDQxUk1oQUF3WUYydVl5SUQyc0xaakwyUUhOdlU4N1VNai1qWEhjN25acjdhWHNnTm9uRGhwQTQ1R1lHNGZONHc?oc=5"
       },
       {
-        "ticker": "TSM",
+        "ticker": "NOW",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Why did TSM stock drop 10%, and why is it bouncing? The midterm chip rout and Taiwan's short-selling curbs",
-        "publisher": "Nacionale",
+        "title": "ServiceNow layoffs hit UK, US and India as company restructures workforce",
+        "publisher": "People Matters - HR News",
         "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPQXl5ZXlKWFZ1WFdZdWhPcTl1ZXBranZjbjBPUTRRRngzakc1RGJxTlRLR2VWTlo0Y3JYMFAxTnZ1N2V6dnZtcEtVdG5EcXZ3Z2pSYWFtcUJqbC1wM1FsSzhNV0dyVjFPemo1bXdXOFFyMHF4OGJZMUNCVFMyemE3YW5MazU1Sk1NUU5fRUFES3BFVEI0Qmp0NFB4WWR6WnBVaUU5QnVia1U4SEpHekE?oc=5"
-      },
-      {
-        "ticker": "TSM",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "TSMC Surges 7% as Taiwan Restricts Short Selling to Halt Brutal Semiconductor Crash",
-        "publisher": "Benzinga",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNM2hZUDk1T3U3OEw2NkpBWHdaclZhNWlEUTZmVU9SOW8zVWctaXFJRFAwSzhlOUpDN0VOdHhLZ21FZ2kwQlliTVJxYnQ4LWJSYndSdWNsa3p3dUlSUldjRV9wZGFaQ25PaEtVSWFuUDFMUC16ZEJjZ2JlQzduZlExTGo0X0JJUnFHRWM4ZTZhVHEtb3hfRzhtREJXQVhxb0dvcjZZcEE1SmlPaFl0enU4Zi1ZaDM4ZDdra2pKdUtROVNSVXotSlB2TlFDczFwSG90?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQLVR3eWNjSUNwNVdFY3VrdHVaNjcwWmpxNHNoSFBzRDF6M21TeUZZanRLTWowMkZDTEE0ZE9ONWNaLUJUa1JUTGxmQVYwRFdFY2pvcTUtV3pHVUg1eXFzdjF4Mlc5bmU5ZjJQZWJzaGotMEVqX2NhRVRUZFRQR2dmSkhGNGJwTUo2bUF1RjFMalNnYVhKLXFheFlxcElJN1Z1aWpKUXVDY1JkaTF4Qkh6SWZ3WVM0czByQ09NX2NUbFkyRm8?oc=5"
       },
       {
         "ticker": "NOW",
@@ -17174,14 +17394,6 @@
         "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQl9xUGNqZ1pXalUyZXRUTWxhR3RkTktfa3dQdFVBSHpXN2FESFhpYkFNMklRdnRFblBkZFJYb0xkbFdSM2EzRnRMT25aVFozempPNHlkLVVzX3F3d2dfSDI3dlBFWlh0T3hTSHM4WWgxWnNRQ2JXSHZLN3l1amItczlrVnhxSlB6?oc=5"
       },
       {
-        "ticker": "AMD",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Palantir and AMD Just Reported Earnings. History Says This Will Happen to Both Stocks Next.",
-        "publisher": "Yahoo Finance",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPQXRLdVl5dmxQRDZqZHlBRG80dHNLUGRWYU9GMFhMaHJ3UlJLVVZwWnFWM0pENlpkVFZBc0czR0NHaW1KYk9ZcDZCei1FenQwQS0zaDBqaElZWXJySmdyMkl4OC14QU5IRHhCMWlEOTdTZnQzMDA2dGYtQl9iemU4Z05nTjVETWwycFp5bDRqTkEzb1FrQk9pb3dIUjZyNUlOU0E?oc=5"
-      },
-      {
         "ticker": "MRVL",
         "verdict": "RESEARCH-WORTHY",
         "title": "Marvell Technology, Inc. Announces Conference Call to Review Third Quarter of Fiscal Year 2027 Financial Results",
@@ -17192,34 +17404,26 @@
       {
         "ticker": "IBM",
         "verdict": "RESEARCH-WORTHY",
+        "title": "IBM recognized as the Company to Beat for Context Engineering Services by Gartner\u00ae as of October 2026",
+        "publisher": "IBM",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOcF81MWhNcEljTE9hMkx4VHFuV3VWRzZsODlIaDNGMDBMcjgzTmh2WHU2ckh6bWQxWVpSUTlTVUdvaXVZXzV3dlNrOUY5WjI2SUVBRW04cWdvcVZhLWdzaVNjdWdiTl9DblpRcWJramY5THFrVTNGM3A3YlJmR2pyMng4REVBeGE4aVp3aHJxaUpNVnJRSzE4SXh5S01yckphVlNvY1oxZUtwYVpsUFQtVW9Ib3Jhd1RZcFJWVlVucHdGOTUzVFV5VUY2Z0ZtUW5fWGZMNQ?oc=5"
+      },
+      {
+        "ticker": "IBM",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Supermicro, IBM, and NVIDIA Cut Inference Latency 56x With KV Cache on Shared Storage",
+        "publisher": "The Futurum Group",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNU2hrakxLTy1ybmYzWmEyRTVxNHhpdUV5WHBEYjh1WlBLRVZSVU5mSG1IOTE2UUhjZWxoZmxCVHZJT1dPczU2VW1TdUo4bDM3ZVJSTlhMRzZGWGw1WEhHXzA2ZEZ6aWJNeE9wZDhpNXgtYmZmbk5iQlBxQWMxSHNBVThPRktDQUpUb1ZtSWJDSVRMMTJKS3NwaDEzMjJ6U0dTMWwwRUVnWlRkUUo1SWpiSDNYR0JZMHZ4REE?oc=5"
+      },
+      {
+        "ticker": "IBM",
+        "verdict": "RESEARCH-WORTHY",
         "title": "IBM Stock Could Be More Than a \u2018Safe Haven.\u2019 Quantum Computing Is a Big Reason.",
         "publisher": "Barron's",
         "date": "2026-11-06",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObUp2MllRTVBhMUdlTWtVNFdkZWVMS1EwWEVEaVB1SU1sM2YyMHQ3UWZFWUdlaTk3MGg1TFJROWFvV3ZEQUJjN2poWEZ1UE94N0tZVERaNFNTNDF1czNuTlljYjBNbTI1X3NtdG9oY1Q3TldRVzlVN1U1Rk1qTWs4dFFCeEE?oc=5"
-      },
-      {
-        "ticker": "IBM",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "IBM and Red Hat turn to AI to tackle a growing backlog of software flaws",
-        "publisher": "IBM",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNcDhzRGZBbWM1SGxDWE9CSHBxOTlJS09JTEZLMGp6aEYxVU5GVEtVM01hU1BLcEFsNExXUGt6QldpeFNIdVpRbEQwOG91dGZ3UzhpS1FqWFcwbEhJSHRWZ1dXbmV1dVRkajVFQ2o5RzhjVlEwS0s5UTZFakZkeDJnX01FdERsYkdXaDhFUzhRbmRGLWtSVzFKNEZ2QQ?oc=5"
-      },
-      {
-        "ticker": "IBM",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "AI for business workflows on IBM Z: Governed decisions with z/OS Connect",
-        "publisher": "IBM",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5mN1Y2bmVXLWFoYU1nR244Zng3MFBhR3BlSE1lOFFIMENRQUNKUlBLMWlaWklsdlE1dUwxbGtmN3BZclZ3ajRnc0s2T2IwNG9XYVdVVlZ6ekN1dmhYTXNqaGNKUUJ2TVpISE9xRmZuamxSN1BY?oc=5"
-      },
-      {
-        "ticker": "IBM",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Forward deployed units: IBM Consulting\u2019s field model for scaling AI and transformation",
-        "publisher": "IBM",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRGE0NTBOU1NlVmJOWElUaGo2WEdicnh4bnRVcll4cFBVbW9kMHAxM29RSDR3UHhyZ3d2dmJmRjZyc212U0owOWZlWmpOMm9tSVBMTF8yZUtQRmRiSHNfZjlWWG1wVXdwRURzR1J1bFd2QUIzQzFlTExobnZXYmowMThHT052R2k2RlFCZXhkczYyY3owMTdNUXBwRVpYZGhPR1lITmF6TjBKMjZaMU9R?oc=5"
       },
       {
         "ticker": "COHR",
@@ -17246,6 +17450,14 @@
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeFNfdTFtd0Fxdnh6bFVJamNBUmdCUGZrNzVadm5OTjV4LTRDbUNIYjZZSFd0X2ZlTmRJLVMtb0JTbUtHSlFMcmM5S3lfX2hWN1BJUVhjU1NLNGVhS2RfRlAyeGE4UkFfSDAyVmRISGN5SWU4Z1Z3NmlzcDNWMzFRUFNMMkVqLWlqbk9nbUxpSFJPWGMxTk04eWg1SVlOd3cwaUxYSndITzJ4d2c?oc=5"
       },
       {
+        "ticker": "COHR",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Coherent Q1 FY 2027: PhotonLink Wins Broaden AI Infrastructure Reach",
+        "publisher": "The Futurum Group",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNaGR0Q0ZDNXRzUElINWV3d1lubkJSZXlBakRQU0YwcFpxamRGZHFoZGZ5djZaS0s4MTAzZjlGSFhTekQ4SWtpNGxCQWpsdEUtSGI2NG5NWUtGV2NhbDB1RWV5Z0RWa3VwaV9YZTVKWlJnOHBZTlBTSEp5di1MbW1OTnNoUWlERHozVFJVRHJmWTBvcVNvbTZlTDVfX1cwRVoydUhxdg?oc=5"
+      },
+      {
         "ticker": "CEG",
         "verdict": "RESEARCH-WORTHY",
         "title": "Here Is What The Trailing P/E Misses About Constellation Energy Stock",
@@ -17270,14 +17482,6 @@
         "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQmVBTVhhX2d4aXVudURDSlltMkJlX1V3V0pRbTBYTU10UGtHMWxFWHhJME1UU1RJcU5saElDYWl3Z25aaE1JUFg2YlB3dGJKUUVfTS1RN1ZuYzJFa0NVZlo5ZHZ6SDhldFRkMVdZOGlPNzBqdHpnZFpSZnR5RlZMZE1oeGxLVUpNcmVEOGlCbVdybEVxaXVQY0xzeWRFN2dqdjZtbm13?oc=5"
       },
       {
-        "ticker": "CEG",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Constellation Energy Fell 9% on the Midterm Sweep. Monday\u2019s Report Has to Defend Its Growth Estimates",
-        "publisher": "TIKR.com",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQ284R1JDQXlYcHFoX2NESnZoU3Y2Vnh4ekdWOVpKUld0ZVNicXd2a3pIWnNlcFNMSzdCbjBsLWxBYS05SGY3c2xpUWF1OVpnR1B3S0VzWkoyWVA5UmJOLWxSbDNEZTR2NDRvWnBHSlZ0dFpNWjk3WjB4UVYzMVdQTEJjUzBvYnRudlg0RlV1NVhHWDNQMzBwNzJuakUtal9mUXROaDBNMUxSUEZ4NmFYakRKTjZoSWhPSDVER25feU0tYTQ?oc=5"
-      },
-      {
         "ticker": "VST",
         "verdict": "RESEARCH-WORTHY",
         "title": "Vistra Shares Rise 5% as Q3 Profit Surges Despite Revenue Miss, Raises 2026 Outlook",
@@ -17296,7 +17500,7 @@
       {
         "ticker": "VST",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Vistra Stock Soars After Surprising Q3 Sales Results",
+        "title": "Vistra Stock Soars After Surprising Q3 Sales Results - Vistra (NYSE:VST)",
         "publisher": "Benzinga",
         "date": "2026-11-06",
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVU0xSkdXaEo2bkh5UDJoQ2RoYmtvSmstOW5VZ0c3QkRCeVN4MVN6dy1Dc0NWMHpmWWVuMVQyV3lvM2pZRlg1MHI3a0tVbzdkV1NQMy1wM2lXWVFPb3BhLW04aFhXc29VWGhWQmZ6NlZHRVZPT29zRlpEaWIycklQVGlTUmREY0RiTmVaeTV1dHBNdU5oc25IV0hzR1haaU9xNDJ6dEluUkpTWjk4MTd4QlZLdw?oc=5"
@@ -17304,18 +17508,10 @@
       {
         "ticker": "VST",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Vistra shares surge nearly 10% after earnings, driven by strong AI power demand",
-        "publisher": "XTB.com",
+        "title": "Top Wall Street Forecasters Revamp Vistra Expectations Ahead Of Q3 Earnings",
+        "publisher": "Benzinga",
         "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPUTF4cnFPbFBobDZZTTFvZVJyUXZnajlhTlQydjY1UExkQnQxRnZsaFdtNk9VY3c4cW9YVko1eUplX0RFeHRUX0doWDFxeEpaU2YxOTNabVBlNC1mX2VhWUVTN2VqbXY4Rkd1RDJoSkZWeXJtMklEaGRlbXc0UW4xRjZmb2ZhM1MzVFRiQWlMRVFnUGh0enBYRTFXZllxZzNBSWdIMmoxQkFFQTdud0NlT3RBQ19MbWEtbmdpNUlveVhFWHBtNGtxUnhqNlBYb0U5?oc=5"
-      },
-      {
-        "ticker": "VST",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Vistra Corp. (VST) Stock Forecasts",
-        "publisher": "Yahoo Finance",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPU0Q4ODlDbkFCa0JDZzJnd2p6R3B6NXJ4ZUdTV0dnaVd6emlMbTZmTFRvLWJQc2tTeHo4MkJUcWVZTnJ6eU16NC1QaVh6YnVGckp1U3JFdWZ5dzN3Q0hZOGdKeDJsejE4djVFdndQVnhhQ0ZhUWFhU2wzYUNMQ2dRZEhqRXctbmdGSmJ5Uw?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQYVRBWWJJeXoxNEEwaDNYbHBuZTU4OUNCUERZQzFGcE40SWx6M2VwVm9DTUNpZElITG1XSW0tS1B0cDdFX0hLbDZYQkdYUkJnaEp5clA2Z3ZSUWFOZmh0Qjl1b2M1YVh1V0tkUWp6SElzSTBiakJ2U2ZFNGU3TUs3SC1MNGRrTlAwVGdRNFJjT0FNa1paTjIxUm10RXZXbnJwek5TWUFnQzdPZ0FfeDdQN1JNQjBaSzFkZjZjaHhud1lVeEtDWlJQcms2VkcwMFlybzJIRE1VMHpGYWd4OWl6SUs5NHE?oc=5"
       },
       {
         "ticker": "VRT",
@@ -17340,158 +17536,6 @@
         "publisher": "TIKR.com",
         "date": "2026-11-06",
         "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOWWpKQk5YYVYyZjJxVzhJOGV4YU8xVkNPLWxKQ0Vha3dicnROeVdKU0RsTE1NVlJrMlpMdkxUWXNKcHpTZndzMWhnYUJqTnBXYnJ3OVZ1LXVVOWVobUpnT25vZTZVb1NfN3AyS212YXE0TzVrbnhteHVFclgzY24wLWFhRlhpTndJbVRfWWF3MGNibmJvdVQ4R2ZfMW9aQQ?oc=5"
-      },
-      {
-        "ticker": "GEV",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "GE Vernova Inc. (GEV) Stock Forecasts",
-        "publisher": "Yahoo Finance",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPR0lHRWhhdHBhSUp2Wmp4S085djRhckVRUGN2MmxqOU82TFZIT2ZaYW5nbV9xU2Y3UW5zRERqVllfX2VubERFemVlMG1ZRW9lUFdGdUZVN0ZXaHJ5bUtVeEdKUTNpN0pXem0xa1hfRFYtRHZaTVh6d2tzUENPQ1hsX0pJNzJ6M1J1Q1BMNw?oc=5"
-      },
-      {
-        "ticker": "GEV",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "GE Vernova Is Up 18% in 2026 After Three Guidance Raises: Take Profits, or Buy More?",
-        "publisher": "TIKR.com",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQY01OeHA3RXo4c0d0Z3NvZHhBcllOU0RTNXlpRFNGUnljMmc0X0RPLVd0Ti1hVEZpYUk2eHRCTUZROHZac3RLTHFrY3RUR21pXzR2THZzLVQ1aW52V1ktdlgwVjFRb08wd0U0bTJmTXZtVnVuRXpXRWVTY0xtd3JMTThBRjJRVlA2YmZEWGF3TWpFLUVfQXJ6VlpCWmlQRFkyVlVFLV96eXZSUQ?oc=5"
-      },
-      {
-        "ticker": "ETN",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "What Should Eaton Stock Holders Take From The September Quarter?",
-        "publisher": "Trefis",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZVRWTEpBMm01ektoV05HREJpV1llUGxMYXBad3QzM3BFYnNZZEtVZEFwdVVsVjI3NGRrTUxkYVA5OEZJanpxLWRLcnRzNzh6N3RBYjR5QWM1M0czLWlleDhZbjQzc2hacDRVM1Byd1cyT3BaQ19aN3VNaGZOUWtMLTVCcHMxbTlpa2s5N3E2b2ZrelY4eG9Qb1lsSE85WXNBMXB0M2M2bkJIRVRnS2dzQUpVTHpZVWx6aWEyZ2lNVlM?oc=5"
-      },
-      {
-        "ticker": "PODD",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Insulet Q3 revenue rises 19% to $842 million as it lifts its margin outlook and authorizes a $1 billion buyback",
-        "publisher": "MLQ.ai",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNUkJIU1g1RDdpclhud3ltXzFkWjYwY2F1cG0wd251bUFJLUJQMXB2X3dIUmhlcXhXU3JLVzJxTWRYRkZ0dEhSU3ZDdlp6Qzhhek9FcFNsTjZPZ3I3MnR2c1hfdUtqT0V2T2JGLWtISmJ5TjFaQ2xiOFNzeXo2WjZFM3g0al9Ra2ZjQTVfN0RSbGhlU2VsTVZjT2F5UFJab1JHSHZoRHM5akZManZKVUFCekJPc3lvWVdyWTNZTVNQTHVNWUlOUXlkUw?oc=5"
-      },
-      {
-        "ticker": "CRDO",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Credo: The Sell-Off Has Done Its Job (Rating Upgrade) (NASDAQ:CRDO)",
-        "publisher": "Seeking Alpha",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNVpaOXJqbGV4aFl4TlozbGFab2dvcjkwY251ZnU3Vng3ZW9HT2Uwa29QRl9qd2dkQ3ZEX2s4X0U2UU9tUklzTHlCQXVQWjdPZElqNnF5QXhlRmhKb0QwbDlPQkRMWnE5bGdsN0ZrbmtJOXZ3NEpkY2Z1X2tKYWR2NlB6Tnlma3FQQWtmQQ?oc=5"
-      },
-      {
-        "ticker": "NVDA",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Key Republicans seek briefing from Nvidia CEO over Chinese spy allegations-document",
-        "publisher": "Reuters",
-        "date": "2026-11-05",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNVFaekphR1ctQUxRQk5CTEFSNnZuTDNJR2FJLUg5UEdXbDZQUEY0UmphZ3JlWFdRLWxDWE4tZjRsQUpPMHhON0lnMTBZdHNocGVfUFJVUHUyd2k1UjlWa1RLQTA5MGh4SlFRUE5heWdZSC1NbkUtMmNrNEJpSHNyV3RFbHoteXZabVk4U0s4dzdoSlhpOWI2aDdSRmtFdk51bjRfOENZaFFrUFQxZDFSUWxOQ21pUHZNZ09fUWJ3Vi1MVW1KTDZVeXFQaw?oc=5"
-      },
-      {
-        "ticker": "META",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Google, Meta and TikTok sue California over law designed to protect children from social media harms",
-        "publisher": "AP News",
-        "date": "2026-11-05",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRW5sSzVyZnVRRlhyY3EzR1lMVUpaR1RxNmNualRGQ3RheFZvVVF3SE5raEVHeDRIcERMWmQyNEpWc1pGMXY1Y3Nza1dyTzZBSXFLbU5Vdm9CWWdla3l6U2NDbmZXbnJFNWh5bmFmUUZZckk4SlNDY2dPTDhyOC1YX1lWYnVYR3ZfUVB1XzVsdWhmVFpGOC0wUC15eUhLRENObllENg?oc=5"
-      },
-      {
-        "ticker": "META",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Meta\u2019s Euro Bonds Jump on First Day of Trading After Record Sale",
-        "publisher": "Bloomberg.com",
-        "date": "2026-11-05",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMnd1Vkt4TmhWcHJZQWVraGhzNU0zTlEza2g1eTc0NTk0RUxHRkpVdG82V2MyN3ZNMDlEWDR0cDd5ZFFucFhIY2U2NW5PSEx6ZTA1bUFOQzN6V3JFYzgtUHFqMENzbU9PZkIxLVhySW81b1NWaTlnWHVJWUNOSURXcGdKVmwwR2JfYzRMQko0UEU0Z0EtWmh0YTQ1Ul9BVGlweEo3U29uMTdnY3A1R3hqWmhPUVAwUQ?oc=5"
-      },
-      {
-        "ticker": "AVGO",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Why is Broadcom stock tumbling today?",
-        "publisher": "Investing.com",
-        "date": "2026-11-05",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcHJEX2gxTFJVUlA3U25DX3VERXp3RkRJcXVORTVqc2UyQ2ZKUE5SejM2U05YTWF0cjZnd0ltWllsbDJ4cldOZnltYTE5bVo2ZjlRbno0bHBiNU9nU2ZMbVA3SnVwV2YzN0F0dDFlWkZhUW5FYWVrZ2xGRE5oakdETER4SDhjTG9oN0ZaQWdIWHcwTFdhbW9lMVR6VW9IRnc?oc=5"
-      },
-      {
-        "ticker": "AVGO",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Is Broadcom Stock a Buy After Marvell's $115 Billion Deal?",
-        "publisher": "Yahoo Finance",
-        "date": "2026-11-05",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQjdpcExLSzBnbXZYVFAzRUlmRGtMNEZ6dEFIRDZGaXF0TDRHb0NuSFE0cWJKdWV3cVdNaE1WQ3ZVU1VMTnhoZzQ1X1ZrYXdpV29DT2dPQ1g0dFNyc1Fzc3FBZjJSallXQkp0VjB5NmxJNXhrZzI5cVdDemZNOHVWelZrcTg1NXptdUJEN3hPLTRYQThrRENPUFFnUmM?oc=5"
-      },
-      {
-        "ticker": "ASML",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "ASML posts record quarter as Washington keeps its China chip deadline alive",
-        "publisher": "Startup Fortune",
-        "date": "2026-11-05",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNkdyMllaRE4yUFBPWGR6dkhhSWN4M0RickN3VlBGWlhyWXJKcE9iNTJZR08xVExuNWVuWnNkOWNTUW9abUFqcmpYaDJWdk11Sy1DVnF5cTJSaks0MG5VVGxRWVBBSWlZQkIwYUd0bVMzcHcyaWZVLXFDN3BNclJIN01DX1cyNTc4dkhSNHBPejVQYVp4djF5T3k1YS1JMS16NThfeGZn?oc=5"
-      },
-      {
-        "ticker": "MRVL",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Marvell Technology (MRVL) Stock Sees Fair Value Cut After Mixed Lumentum Deal Views",
-        "publisher": "Yahoo Finance",
-        "date": "2026-11-05",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWlpJRzNldmU5VWlWWi1DNVpYQUZCSkxIbWxKUDgtMFdPNjZtWS0xY1BQaHVicWlzN2Nqekt5SDNSWXBBMHB2WTdMc0NyT2NBU0VPYWtiRnh2Q05raS1uZEFnS0RmZzBJNVE0SW1CNW1Kc2VzQUd1eHBldEdLZHluV204MDNGdFB3UmpGYW1PWTE1RDdDcld0aFJFRUYtX1lW?oc=5"
-      },
-      {
-        "ticker": "MRVL",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Why is Marvell Technology stock tumbling today?",
-        "publisher": "Investing.com",
-        "date": "2026-11-05",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQUXh1eGpxSUNOSllBWkRLdHRiRmVlVmVjWldLa21DNk5FWnZQUmRsUnhlVlZLNmVMVW5iSS1aMjJpb3VmSnh5SWViQ3RPaUJ0WVpyRHRDUkVHT01mS1laRWNfMTNfdldyd0NwUm9tbVZGejFUd1VSeWZhTjlSaFE1QjRoWXY4MTJvU0kxTFJhdEJJRlJQclhBbXF0dGNIenluM0xRN2dKUEc1cmcx?oc=5"
-      },
-      {
-        "ticker": "IBM",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "IBM CEO: rationing AI is a slow way to lose",
-        "publisher": "Fortune",
-        "date": "2026-11-05",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPN25UMk54NW5oMnVRc3V4cnV1aHRqWkxYakNyRjlDOTBXenRROVpNOW8yOFFSc1FCb2V6d3o4R2FoNWZYcWdOaWhrekhseGJjUG9UTENIUExzRHlrU0VscFhva2djeS1VY1JqVmZpR3JOOG1jLWJtZDhJaXRsMTVQdHRLdUUwVVpNd292WGVjUHE4cUJTNnc?oc=5"
-      },
-      {
-        "ticker": "IBM",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "IBM, AMD, Oak Ridge National Laboratory launch quantum error correction platform",
-        "publisher": "Reuters",
-        "date": "2026-11-05",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQODR3T0kxZE10MmFBenJjWTB3d0pYSmtLaUpGNjZQZkZzamlkS2MwZFZKM250YTVmV29XR21hUFlYT3FVejZKY0piWTJJS3F5NHRDa0t3b0xqV0ZqdURJdktzc2hqNG5ENExRVUM2T0NfMVBMd1RBQnhZZlZDUTB4VUxHTmhLUGRRUWY3YzZmZEpKb2czdXAydS1yaENPZFFqZVBuYktRWjNMVXlmX2NSeHdHVnItRV9JLXhaWklDSlYwaVk?oc=5"
-      },
-      {
-        "ticker": "COHR",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Coherent (COHR) Raises Full Year Targets After Q1 Earnings Beat",
-        "publisher": "Yahoo Finance",
-        "date": "2026-11-05",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcTI2TDFOLUJvMmpJSHhnM0tGbUE2dXc0czF0Xy1rR2E0al9aaGtnWm9OalZnM3cxRzFjdXZMcGo0ZnFfUXFvNkFPY3lheUtCbjIyb19vLWVZRmR5cUo3Z3VlMG1QR1RLUzQ0LVBGclBLZXdRblpzeWQzMDQ5WVJHQUVDbk1DaUp1aE1sTDh0MHo5QThsOFVSUElGeU9iQQ?oc=5"
-      },
-      {
-        "ticker": "COHR",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Coherent (COHR) Stock Price Falls Despite Strong Q1 Earnings",
-        "publisher": "Yahoo Finance",
-        "date": "2026-11-05",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOdHN4OWlLNmhhelZGaHNYQVdpSzVPWGRqc1ZNa1ZzZXpqTUx5eDZBVE9GdkhyTjRBMVg4UVpmNTBRMmhwMHplOXU4Y3IwRDVVeWowMG5QOEk4ZHp3NlRFR0NCQWRiR3U5Z2hSNlFNTHFYR2JRZHpuRTdNQlozUmtuZ01xVHVXYXVYZ1ZTOGN1MjBqY1JUZkdVNWNOTmQ?oc=5"
-      },
-      {
-        "ticker": "COHR",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Coherent Shares Rise 4% as AI Data Centre Demand Lifts Quarterly Revenue Nearly 50%",
-        "publisher": "Yahoo Finance",
-        "date": "2026-11-05",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWDlfc1hQaXBJQkRqeGhkS2d4SFpLYlJEWGt4TDRkUzNHakV6cDg3RnlGVW9MUTE2MnlyM0NpcTZVR2lBemwzSlhVbFlyWFpETVZGWDNoeTRBN0txVl81TzJMbUlVQ1gyLVJaMVJCa2hOSlpyMG1HUDcyLTNnQndlLVBNd1h0WkNpNVFncVlzdkNhUms?oc=5"
-      },
-      {
-        "ticker": "VRT",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Are Wall Street Analysts Predicting Vertiv Holdings Stock Will Climb or Sink?",
-        "publisher": "Yahoo Finance",
-        "date": "2026-11-05",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMnljNHlQUG1Vck1wenphb3E0QWpoMEFoRGh0TUY5ZW9nNWV1cmxfMmNBUV92eVROb01fM0lYakpFMXpnZE5ZWXFmRV9mdDNnbUF5V2NyMGlzTnZrM2RoSW44ak51Wkl0b0FjTXdlNThoQlcwc05iS2t6QVcyVnUxMGp5ZUZDaWdoX2N4SV9PRjdvWlN5SG96YVJ3UF9sQnUxd1E1X1JR?oc=5"
       }
     ],
     "insider_alerts": [
@@ -17770,7 +17814,7 @@
         "drawdown_pct": -28.5,
         "price": 341.72,
         "pe": 34.137863,
-        "forward_pe": 20.909742,
+        "forward_pe": 20.878994,
         "verdict": "RESEARCH-WORTHY",
         "next_action": "RESEARCH \u2014 Quality electrical equipment leader benefiting from AI data center power infrastructure buildout at 21x forward earnings with 28% revenue growth and strong FCF generation. Worth a deep dive before any decision."
       },

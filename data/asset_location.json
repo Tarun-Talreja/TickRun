@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-07T10:40:04Z",
+  "generated_at": "2026-11-08T10:44:14Z",
   "rules": {
     "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
     "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
     "high_yield_threshold_pct": 3.0
   },
   "counts": {
-    "roth": 51,
+    "roth": 53,
     "taxable": 2
   },
   "roth": [
@@ -19,6 +19,16 @@
       "account": "ROTH",
       "priority": "high",
       "reason": "Highest-conviction growth pick (45% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin Corporation",
+      "theme": "uncategorized",
+      "verdict": "RESEARCH-WORTHY",
+      "div_yield_pct": null,
+      "account": "ROTH",
+      "priority": "high",
+      "reason": "Highest-conviction growth pick (56% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
     },
     {
       "ticker": "ASML",
@@ -239,6 +249,16 @@
       "account": "ROTH",
       "priority": "high",
       "reason": "Highest-conviction growth pick (96% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+    },
+    {
+      "ticker": "TPL",
+      "name": "Texas Pacific Land Corporation",
+      "theme": "uncategorized",
+      "verdict": "RESEARCH-WORTHY",
+      "div_yield_pct": 0.88,
+      "account": "ROTH",
+      "priority": "high",
+      "reason": "Highest-conviction growth pick (35% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
     },
     {
       "ticker": "TSM",

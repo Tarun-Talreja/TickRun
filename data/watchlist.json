@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-07",
+  "last_updated": "2026-11-08",
   "candidates": [
     {
       "ticker": "AAPL",
@@ -1588,48 +1588,6 @@
       "rated_next_earnings": 1788292800
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF",
-      "theme": "uncategorized",
-      "status": "monitoring",
-      "thesis": "S&P 500 benchmark ETF. Used as portfolio performance reference only \u2014 not a buy candidate.",
-      "added": "2026-05-28",
-      "verdict": "WATCHLIST",
-      "buy_target": null,
-      "current_price": null,
-      "next_action": "BENCHMARK ONLY \u2014 track for relative performance comparison.",
-      "research_file": null,
-      "last_researched": "2026-05-28"
-    },
-    {
-      "ticker": "QQQ",
-      "name": "Invesco QQQ Trust (Nasdaq-100)",
-      "theme": "uncategorized",
-      "status": "monitoring",
-      "thesis": "Nasdaq-100 benchmark ETF. Used as portfolio performance reference only \u2014 not a buy candidate.",
-      "added": "2026-05-28",
-      "verdict": "WATCHLIST",
-      "buy_target": null,
-      "current_price": null,
-      "next_action": "BENCHMARK ONLY \u2014 track for relative performance comparison.",
-      "research_file": null,
-      "last_researched": "2026-05-28"
-    },
-    {
-      "ticker": "^TNX",
-      "name": "10-Year Treasury Yield",
-      "theme": "uncategorized",
-      "status": "monitoring",
-      "thesis": "10-year Treasury yield. High yield (>4.5%) compresses equity multiples; falling yield is a tailwind for growth stocks. Monitor as macro context for entry decisions.",
-      "added": "2026-05-28",
-      "verdict": "WATCHLIST",
-      "buy_target": null,
-      "current_price": null,
-      "next_action": "MACRO SIGNAL \u2014 current 4.48%. Watch for moves above 4.75% (equity headwind) or below 4.0% (equity tailwind).",
-      "research_file": null,
-      "last_researched": "2026-05-28"
-    },
-    {
       "ticker": "TPL",
       "name": "Texas Pacific Land Corporation",
       "theme": "uncategorized",
@@ -1685,6 +1643,48 @@
       "next_action": "RESEARCH \u2014 Quality ad-tech compounder at 19x forward earnings with 55% growth, 78% operating margins, and $4.9B FCF, but theme fit is low and platform-policy risk is high. Worth a deep dive before any decision.",
       "buy_trigger_drawdown_pct": -47.0,
       "buy_target": 391.15
+    },
+    {
+      "ticker": "SPY",
+      "name": "SPDR S&P 500 ETF",
+      "theme": "uncategorized",
+      "status": "monitoring",
+      "thesis": "S&P 500 benchmark ETF. Used as portfolio performance reference only \u2014 not a buy candidate.",
+      "added": "2026-05-28",
+      "verdict": "WATCHLIST",
+      "buy_target": null,
+      "current_price": null,
+      "next_action": "BENCHMARK ONLY \u2014 track for relative performance comparison.",
+      "research_file": null,
+      "last_researched": "2026-05-28"
+    },
+    {
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust (Nasdaq-100)",
+      "theme": "uncategorized",
+      "status": "monitoring",
+      "thesis": "Nasdaq-100 benchmark ETF. Used as portfolio performance reference only \u2014 not a buy candidate.",
+      "added": "2026-05-28",
+      "verdict": "WATCHLIST",
+      "buy_target": null,
+      "current_price": null,
+      "next_action": "BENCHMARK ONLY \u2014 track for relative performance comparison.",
+      "research_file": null,
+      "last_researched": "2026-05-28"
+    },
+    {
+      "ticker": "^TNX",
+      "name": "10-Year Treasury Yield",
+      "theme": "uncategorized",
+      "status": "monitoring",
+      "thesis": "10-year Treasury yield. High yield (>4.5%) compresses equity multiples; falling yield is a tailwind for growth stocks. Monitor as macro context for entry decisions.",
+      "added": "2026-05-28",
+      "verdict": "WATCHLIST",
+      "buy_target": null,
+      "current_price": null,
+      "next_action": "MACRO SIGNAL \u2014 current 4.48%. Watch for moves above 4.75% (equity headwind) or below 4.0% (equity tailwind).",
+      "research_file": null,
+      "last_researched": "2026-05-28"
     }
   ]
 }
