@@ -1,11 +1,11 @@
 {
-  "last_built": "2026-11-08T16:48:10Z",
-  "quotes_updated": "2026-11-08T16:47:44Z",
+  "last_built": "2026-11-08T17:59:33Z",
+  "quotes_updated": "2026-11-08T17:59:30Z",
   "health": {
     "stages": [
       {
         "name": "Quotes",
-        "updated_at": "2026-11-08T16:47:44Z",
+        "updated_at": "2026-11-08T17:59:30Z",
         "detail": null,
         "status": "ok",
         "age_hours": 0.0,
@@ -15,8 +15,8 @@
         "name": "Research",
         "updated_at": "2026-11-07T05:37:55Z",
         "detail": "1/1 tickers",
-        "status": "ok",
-        "age_hours": 35.2,
+        "status": "stale",
+        "age_hours": 36.4,
         "affects": "Ratings aren't being updated"
       },
       {
@@ -24,7 +24,7 @@
         "updated_at": "2026-11-08T16:07:53Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 0.7,
+        "age_hours": 1.9,
         "affects": "Upcoming earnings dates may be missing"
       },
       {
@@ -32,12 +32,12 @@
         "updated_at": "2026-11-08T10:44:08Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 6.1,
+        "age_hours": 7.3,
         "affects": "New SEC filings won't show"
       },
       {
         "name": "Prices",
-        "updated_at": "2026-11-08T16:47:44Z",
+        "updated_at": "2026-11-08T17:59:30Z",
         "detail": "56/56 have data",
         "status": "ok",
         "age_hours": 0.0,
@@ -45,7 +45,7 @@
       },
       {
         "name": "Company figures",
-        "updated_at": "2026-11-08T16:47:44Z",
+        "updated_at": "2026-11-08T17:59:30Z",
         "detail": "56/56 have data",
         "status": "ok",
         "age_hours": 0.0,
@@ -56,7 +56,7 @@
         "updated_at": "2026-11-08T10:44:14Z",
         "detail": "55/55 have data",
         "status": "ok",
-        "age_hours": 6.1,
+        "age_hours": 7.3,
         "affects": "Ratings and mover reasons can miss recent news"
       },
       {
@@ -64,7 +64,7 @@
         "updated_at": "2026-11-06T21:56:53Z",
         "detail": "48/55 have data",
         "status": "ok",
-        "age_hours": 42.9,
+        "age_hours": 44.0,
         "affects": "Insider buying won't show on stocks or the radar"
       },
       {
@@ -72,7 +72,7 @@
         "updated_at": "2026-08-15T14:09:52Z",
         "detail": "28/31 have data",
         "status": "ok",
-        "age_hours": 2042.6,
+        "age_hours": 2043.8,
         "affects": "Hedge fund holdings may be out of date"
       },
       {
@@ -80,7 +80,7 @@
         "updated_at": "2026-11-08T16:47:24Z",
         "detail": "16/16 have data",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 1.2,
         "affects": "The field briefing may be out of date"
       },
       {
@@ -88,7 +88,7 @@
         "updated_at": "2026-11-07T01:56:25Z",
         "detail": "16/16 have data",
         "status": "stale",
-        "age_hours": 38.9,
+        "age_hours": 40.1,
         "affects": "Big moves may have no explanation"
       },
       {
@@ -96,7 +96,7 @@
         "updated_at": "2026-11-08T16:47:46Z",
         "detail": "12 found",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 1.2,
         "affects": "The radar may be out of date"
       },
       {
@@ -104,7 +104,7 @@
         "updated_at": "2026-11-07T17:45:23Z",
         "detail": "428 found",
         "status": "ok",
-        "age_hours": 23.0,
+        "age_hours": 24.2,
         "affects": "New stock ideas may be out of date"
       },
       {
@@ -112,15 +112,15 @@
         "updated_at": "2026-11-08T16:48:09Z",
         "detail": "1 found",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 1.2,
         "affects": "The AI summary may be out of date"
       },
       {
         "name": "Self-test",
-        "updated_at": "2026-11-07T17:48:09Z",
+        "updated_at": "2026-11-08T17:59:32Z",
         "detail": "6 sources passed",
         "status": "ok",
-        "age_hours": 23.0,
+        "age_hours": 0.0,
         "affects": "One of the data sources failed its daily test"
       },
       {
@@ -1738,7 +1738,7 @@
         "revenue_growth": 43.7,
         "op_margin": 18.6,
         "pe": 25.781555,
-        "forward_pe": 15.233807,
+        "forward_pe": 15.1776905,
         "short_percent_float": 3.46,
         "short_ratio": 2.4,
         "high_proximity_warning": false,
@@ -3655,7 +3655,7 @@
           "revenue_growth": 43.7,
           "op_margin": 18.6,
           "pe": 25.781555,
-          "forward_pe": 15.233807,
+          "forward_pe": 15.1776905,
           "short_percent_float": 3.46,
           "short_ratio": 2.4,
           "high_proximity_warning": false,
@@ -7680,7 +7680,7 @@
           "revenue_growth": 43.7,
           "op_margin": 18.6,
           "pe": 25.781555,
-          "forward_pe": 15.233807,
+          "forward_pe": 15.1776905,
           "short_percent_float": 3.46,
           "short_ratio": 2.4,
           "high_proximity_warning": false,
