@@ -1,11 +1,11 @@
 {
-  "last_built": "2026-11-08T17:59:33Z",
-  "quotes_updated": "2026-11-08T17:59:30Z",
+  "last_built": "2026-11-09T01:42:23Z",
+  "quotes_updated": "2026-11-09T01:41:00Z",
   "health": {
     "stages": [
       {
         "name": "Quotes",
-        "updated_at": "2026-11-08T17:59:30Z",
+        "updated_at": "2026-11-09T01:41:00Z",
         "detail": null,
         "status": "ok",
         "age_hours": 0.0,
@@ -16,7 +16,7 @@
         "updated_at": "2026-11-07T05:37:55Z",
         "detail": "1/1 tickers",
         "status": "stale",
-        "age_hours": 36.4,
+        "age_hours": 44.1,
         "affects": "Ratings aren't being updated"
       },
       {
@@ -24,7 +24,7 @@
         "updated_at": "2026-11-08T16:07:53Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 1.9,
+        "age_hours": 9.6,
         "affects": "Upcoming earnings dates may be missing"
       },
       {
@@ -32,12 +32,12 @@
         "updated_at": "2026-11-08T10:44:08Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 7.3,
+        "age_hours": 15.0,
         "affects": "New SEC filings won't show"
       },
       {
         "name": "Prices",
-        "updated_at": "2026-11-08T17:59:30Z",
+        "updated_at": "2026-11-09T01:41:00Z",
         "detail": "56/56 have data",
         "status": "ok",
         "age_hours": 0.0,
@@ -45,7 +45,7 @@
       },
       {
         "name": "Company figures",
-        "updated_at": "2026-11-08T17:59:30Z",
+        "updated_at": "2026-11-09T01:41:00Z",
         "detail": "56/56 have data",
         "status": "ok",
         "age_hours": 0.0,
@@ -56,15 +56,15 @@
         "updated_at": "2026-11-08T10:44:14Z",
         "detail": "55/55 have data",
         "status": "ok",
-        "age_hours": 7.3,
+        "age_hours": 15.0,
         "affects": "Ratings and mover reasons can miss recent news"
       },
       {
         "name": "Insider data",
-        "updated_at": "2026-11-06T21:56:53Z",
-        "detail": "48/55 have data",
+        "updated_at": "2026-11-09T01:41:35Z",
+        "detail": "48/56 have data",
         "status": "ok",
-        "age_hours": 44.0,
+        "age_hours": 0.0,
         "affects": "Insider buying won't show on stocks or the radar"
       },
       {
@@ -72,7 +72,7 @@
         "updated_at": "2026-08-15T14:09:52Z",
         "detail": "28/31 have data",
         "status": "ok",
-        "age_hours": 2043.8,
+        "age_hours": 2051.5,
         "affects": "Hedge fund holdings may be out of date"
       },
       {
@@ -80,7 +80,7 @@
         "updated_at": "2026-11-08T16:47:24Z",
         "detail": "16/16 have data",
         "status": "ok",
-        "age_hours": 1.2,
+        "age_hours": 8.9,
         "affects": "The field briefing may be out of date"
       },
       {
@@ -88,7 +88,7 @@
         "updated_at": "2026-11-07T01:56:25Z",
         "detail": "16/16 have data",
         "status": "stale",
-        "age_hours": 40.1,
+        "age_hours": 47.8,
         "affects": "Big moves may have no explanation"
       },
       {
@@ -96,7 +96,7 @@
         "updated_at": "2026-11-08T16:47:46Z",
         "detail": "12 found",
         "status": "ok",
-        "age_hours": 1.2,
+        "age_hours": 8.9,
         "affects": "The radar may be out of date"
       },
       {
@@ -104,15 +104,15 @@
         "updated_at": "2026-11-07T17:45:23Z",
         "detail": "428 found",
         "status": "ok",
-        "age_hours": 24.2,
+        "age_hours": 32.0,
         "affects": "New stock ideas may be out of date"
       },
       {
         "name": "AI summary",
-        "updated_at": "2026-11-08T16:48:09Z",
+        "updated_at": "2026-11-09T01:42:22Z",
         "detail": "1 found",
         "status": "ok",
-        "age_hours": 1.2,
+        "age_hours": 0.0,
         "affects": "The AI summary may be out of date"
       },
       {
@@ -120,7 +120,7 @@
         "updated_at": "2026-11-08T17:59:32Z",
         "detail": "6 sources passed",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 7.7,
         "affects": "One of the data sources failed its daily test"
       },
       {
@@ -204,7 +204,7 @@
         "pct_change_1d": -0.99,
         "drawdown_from_high": -5.1,
         "pe": 27.693632,
-        "forward_pe": 21.944775
+        "forward_pe": 21.929937
       },
       {
         "ticker": "RDDT",
@@ -335,7 +335,7 @@
         "revenue_growth": 18.8,
         "op_margin": 49.8,
         "pe": 27.693632,
-        "forward_pe": 21.944775,
+        "forward_pe": 21.929937,
         "short_percent_float": 0.88,
         "short_ratio": 2.9,
         "high_proximity_warning": true,
@@ -541,9 +541,9 @@
         "high_proximity_warning": true,
         "high_proximity_note": "Only 21.8% from 52-week high \u2014 entry timing risk",
         "insider_signal": "SELLING",
-        "insider_note": "0 buy(s), 38 sell(s) in past 6 months | $0 bought / $141,400,323 sold",
+        "insider_note": "0 buy(s), 37 sell(s) in past 6 months | $0 bought / $140,460,217 sold",
         "insider_buys": 0,
-        "insider_sells": 38,
+        "insider_sells": 37,
         "conviction_holders": [],
         "hf_new_positions": [],
         "data_ok": true,
@@ -734,9 +734,9 @@
         "high_proximity_warning": true,
         "high_proximity_note": "Only 4.4% from 52-week high \u2014 entry timing risk",
         "insider_signal": "SELLING",
-        "insider_note": "0 buy(s), 14 sell(s) in past 6 months | $0 bought / $80,362,672 sold",
+        "insider_note": "0 buy(s), 13 sell(s) in past 6 months | $0 bought / $76,907,007 sold",
         "insider_buys": 0,
-        "insider_sells": 14,
+        "insider_sells": 13,
         "conviction_holders": [],
         "hf_new_positions": [],
         "data_ok": true,
@@ -835,7 +835,7 @@
         "data_flags": [
           {
             "level": "low",
-            "msg": "Reports in EUR; figures converted to USD at 1.1228. Trailing P/E may mix currencies \u2014 verify against filings"
+            "msg": "Reports in EUR; figures converted to USD at 1.1157. Trailing P/E may mix currencies \u2014 verify against filings"
           }
         ]
       },
@@ -889,7 +889,7 @@
         "data_flags": [
           {
             "level": "low",
-            "msg": "Reports in TWD; figures converted to USD at 0.0302. Trailing P/E may mix currencies \u2014 verify against filings"
+            "msg": "Reports in TWD; figures converted to USD at 0.0305. Trailing P/E may mix currencies \u2014 verify against filings"
           }
         ]
       },
@@ -978,9 +978,9 @@
         "short_ratio": 1.7,
         "high_proximity_warning": false,
         "insider_signal": "SELLING",
-        "insider_note": "0 buy(s), 17 sell(s) in past 6 months | $0 bought / $248,757,339 sold",
+        "insider_note": "0 buy(s), 16 sell(s) in past 6 months | $0 bought / $193,068,980 sold",
         "insider_buys": 0,
-        "insider_sells": 17,
+        "insider_sells": 16,
         "conviction_holders": [],
         "hf_new_positions": [],
         "data_ok": true,
@@ -1016,20 +1016,16 @@
         "rated_next_earnings": 1794490200,
         "price": 129.49,
         "pct_change_1d": 7.58,
-        "market_cap": 32877279232,
+        "market_cap": 35202535424,
         "cap_tier": "large",
         "drawdown_from_high": -56.8,
         "revenue_growth": 454.0,
         "op_margin": -30.2,
         "pe": 101.16407,
-        "forward_pe": -35.99114,
+        "forward_pe": -37.23074,
         "short_percent_float": 20.18,
         "short_ratio": 2.6,
         "high_proximity_warning": false,
-        "insider_signal": "BEARISH",
-        "insider_note": "4 buy(s), 26 sell(s) in past 6 months | $255,050 bought / $303,061,499 sold",
-        "insider_buys": 4,
-        "insider_sells": 26,
         "data_ok": true,
         "data_flags": []
       },
@@ -1075,9 +1071,9 @@
         "short_ratio": 1.6,
         "high_proximity_warning": false,
         "insider_signal": "SELLING",
-        "insider_note": "0 buy(s), 27 sell(s) in past 6 months | $0 bought / $98,195,658 sold",
+        "insider_note": "0 buy(s), 24 sell(s) in past 6 months | $0 bought / $84,576,620 sold",
         "insider_buys": 0,
-        "insider_sells": 27,
+        "insider_sells": 24,
         "conviction_holders": [],
         "hf_new_positions": [],
         "data_ok": true,
@@ -1171,9 +1167,9 @@
         "short_ratio": 0.8,
         "high_proximity_warning": false,
         "insider_signal": "SELLING",
-        "insider_note": "0 buy(s), 14 sell(s) in past 6 months | $0 bought / $247,874,637 sold",
+        "insider_note": "0 buy(s), 13 sell(s) in past 6 months | $0 bought / $246,300,567 sold",
         "insider_buys": 0,
-        "insider_sells": 14,
+        "insider_sells": 13,
         "conviction_holders": [],
         "hf_new_positions": [],
         "data_ok": true,
@@ -1220,9 +1216,9 @@
         "short_ratio": 1.2,
         "high_proximity_warning": false,
         "insider_signal": "SELLING",
-        "insider_note": "0 buy(s), 13 sell(s) in past 6 months | $0 bought / $20,910,516 sold",
+        "insider_note": "0 buy(s), 12 sell(s) in past 6 months | $0 bought / $19,581,066 sold",
         "insider_buys": 0,
-        "insider_sells": 13,
+        "insider_sells": 12,
         "data_ok": true,
         "data_flags": []
       },
@@ -1318,9 +1314,9 @@
         "short_ratio": 1.3,
         "high_proximity_warning": false,
         "insider_signal": "SELLING",
-        "insider_note": "0 buy(s), 10 sell(s) in past 6 months | $0 bought / $9,946,235 sold",
+        "insider_note": "0 buy(s), 8 sell(s) in past 6 months | $0 bought / $8,491,315 sold",
         "insider_buys": 0,
-        "insider_sells": 10,
+        "insider_sells": 8,
         "conviction_holders": [],
         "hf_new_positions": [],
         "data_ok": true,
@@ -1548,9 +1544,9 @@
         "short_ratio": 3.5,
         "high_proximity_warning": false,
         "insider_signal": "BEARISH",
-        "insider_note": "2 buy(s), 4 sell(s) in past 6 months | $482,359 bought / $8,757,296 sold",
-        "insider_buys": 2,
-        "insider_sells": 4,
+        "insider_note": "1 buy(s), 3 sell(s) in past 6 months | $92,162 bought / $8,556,804 sold",
+        "insider_buys": 1,
+        "insider_sells": 3,
         "conviction_holders": [],
         "hf_new_positions": [],
         "data_ok": true,
@@ -1595,10 +1591,6 @@
         "short_percent_float": 21.92,
         "short_ratio": 3.6,
         "high_proximity_warning": false,
-        "insider_signal": "SELLING",
-        "insider_note": "0 buy(s), 39 sell(s) in past 6 months | $0 bought / $90,386,665 sold",
-        "insider_buys": 0,
-        "insider_sells": 39,
         "data_ok": true,
         "data_flags": []
       },
@@ -1691,9 +1683,9 @@
         "short_ratio": 2.6,
         "high_proximity_warning": false,
         "insider_signal": "SELLING",
-        "insider_note": "0 buy(s), 3 sell(s) in past 6 months | $0 bought / $4,278,888 sold",
+        "insider_note": "0 buy(s), 1 sell(s) in past 6 months | $0 bought / $1,725,007 sold",
         "insider_buys": 0,
-        "insider_sells": 3,
+        "insider_sells": 1,
         "conviction_holders": [],
         "hf_new_positions": [],
         "data_ok": true,
@@ -1743,9 +1735,9 @@
         "short_ratio": 2.4,
         "high_proximity_warning": false,
         "insider_signal": "SELLING",
-        "insider_note": "0 buy(s), 6 sell(s) in past 6 months | $0 bought / $20,766,255 sold",
+        "insider_note": "0 buy(s), 3 sell(s) in past 6 months | $0 bought / $12,276,795 sold",
         "insider_buys": 0,
-        "insider_sells": 6,
+        "insider_sells": 3,
         "conviction_holders": [],
         "hf_new_positions": [],
         "data_ok": true,
@@ -1783,7 +1775,7 @@
         "rated_next_earnings": 1794862800,
         "price": 133.12,
         "pct_change_1d": 6.44,
-        "market_cap": 4849780736,
+        "market_cap": 4849902592,
         "cap_tier": "mid",
         "drawdown_from_high": -59.4,
         "revenue_growth": 8.9,
@@ -1794,9 +1786,9 @@
         "short_ratio": 5.3,
         "high_proximity_warning": false,
         "insider_signal": "SELLING",
-        "insider_note": "0 buy(s), 12 sell(s) in past 6 months | $0 bought / $28,716,758 sold",
+        "insider_note": "0 buy(s), 11 sell(s) in past 6 months | $0 bought / $27,907,540 sold",
         "insider_buys": 0,
-        "insider_sells": 12,
+        "insider_sells": 11,
         "data_ok": true,
         "data_flags": []
       },
@@ -1944,9 +1936,9 @@
         "high_proximity_warning": true,
         "high_proximity_note": "Only 8.5% from 52-week high \u2014 entry timing risk",
         "insider_signal": "SELLING",
-        "insider_note": "0 buy(s), 5 sell(s) in past 6 months | $0 bought / $3,775,788 sold",
+        "insider_note": "0 buy(s), 4 sell(s) in past 6 months | $0 bought / $3,734,478 sold",
         "insider_buys": 0,
-        "insider_sells": 5,
+        "insider_sells": 4,
         "conviction_holders": [],
         "hf_new_positions": [],
         "data_ok": true,
@@ -2043,9 +2035,9 @@
         "short_ratio": 3.4,
         "high_proximity_warning": false,
         "insider_signal": "SELLING",
-        "insider_note": "0 buy(s), 3 sell(s) in past 6 months | $0 bought / $1,155,387 sold",
+        "insider_note": "0 buy(s), 1 sell(s) in past 6 months | $0 bought / $197,192 sold",
         "insider_buys": 0,
-        "insider_sells": 3,
+        "insider_sells": 1,
         "data_ok": true,
         "data_flags": []
       },
@@ -2092,10 +2084,6 @@
         "short_ratio": 3.2,
         "high_proximity_warning": true,
         "high_proximity_note": "Only 15.8% from 52-week high \u2014 entry timing risk",
-        "insider_signal": "SELLING",
-        "insider_note": "0 buy(s), 1 sell(s) in past 6 months | $0 bought / $631,259 sold",
-        "insider_buys": 0,
-        "insider_sells": 1,
         "data_ok": true,
         "data_flags": []
       },
@@ -2146,8 +2134,8 @@
         "high_proximity_warning": true,
         "high_proximity_note": "Only 8.2% from 52-week high \u2014 entry timing risk",
         "insider_signal": "BULLISH",
-        "insider_note": "2 buy(s), 0 sell(s) in past 6 months | $742,165 bought / $0 sold",
-        "insider_buys": 2,
+        "insider_note": "1 buy(s), 0 sell(s) in past 6 months | $641,800 bought / $0 sold",
+        "insider_buys": 1,
         "insider_sells": 0,
         "conviction_holders": [],
         "hf_new_positions": [],
@@ -2247,9 +2235,9 @@
         "short_ratio": 3.5,
         "high_proximity_warning": false,
         "insider_signal": "SELLING",
-        "insider_note": "0 buy(s), 26 sell(s) in past 6 months | $0 bought / $27,297,154 sold",
+        "insider_note": "0 buy(s), 25 sell(s) in past 6 months | $0 bought / $27,118,374 sold",
         "insider_buys": 0,
-        "insider_sells": 26,
+        "insider_sells": 25,
         "conviction_holders": [],
         "hf_new_positions": [],
         "data_ok": true,
@@ -2351,9 +2339,9 @@
         "high_proximity_warning": true,
         "high_proximity_note": "Only 15.5% from 52-week high \u2014 entry timing risk",
         "insider_signal": "SELLING",
-        "insider_note": "0 buy(s), 7 sell(s) in past 6 months | $0 bought / $1,092,836 sold",
+        "insider_note": "0 buy(s), 6 sell(s) in past 6 months | $0 bought / $1,078,137 sold",
         "insider_buys": 0,
-        "insider_sells": 7,
+        "insider_sells": 6,
         "data_ok": true,
         "data_flags": []
       },
@@ -2451,7 +2439,7 @@
         "rated_next_earnings": 1793277000,
         "price": 127.73,
         "pct_change_1d": 0.13,
-        "market_cap": 27848464384,
+        "market_cap": 27593289728,
         "cap_tier": "large",
         "drawdown_from_high": -1.0,
         "revenue_growth": 14.9,
@@ -2600,6 +2588,10 @@
         "short_percent_float": 11.18,
         "short_ratio": 5.0,
         "high_proximity_warning": false,
+        "insider_signal": "SELLING",
+        "insider_note": "0 buy(s), 15 sell(s) in past 6 months | $0 bought / $801,006 sold",
+        "insider_buys": 0,
+        "insider_sells": 15,
         "data_ok": true,
         "data_flags": []
       },
@@ -2689,6 +2681,10 @@
         "short_percent_float": 10.67,
         "short_ratio": 4.2,
         "high_proximity_warning": false,
+        "insider_signal": "BULLISH",
+        "insider_note": "3 buy(s), 2 sell(s) in past 6 months | $515,920 bought / $644,569 sold",
+        "insider_buys": 3,
+        "insider_sells": 2,
         "data_ok": true,
         "data_flags": []
       },
@@ -2733,10 +2729,6 @@
         "short_percent_float": 6.38,
         "short_ratio": 3.4,
         "high_proximity_warning": false,
-        "insider_signal": "SELLING",
-        "insider_note": "0 buy(s), 2 sell(s) in past 6 months | $0 bought / $65,480 sold",
-        "insider_buys": 0,
-        "insider_sells": 2,
         "conviction_holders": [],
         "hf_new_positions": [],
         "data_ok": true,
@@ -2935,6 +2927,10 @@
         "short_percent_float": 7.22,
         "short_ratio": 11.3,
         "high_proximity_warning": false,
+        "insider_signal": "BEARISH",
+        "insider_note": "88 buy(s), 1 sell(s) in past 6 months | $38,422 bought / $1,601,064 sold",
+        "insider_buys": 88,
+        "insider_sells": 1,
         "data_ok": true,
         "data_flags": []
       },
@@ -2978,6 +2974,10 @@
         "short_percent_float": 3.88,
         "short_ratio": 2.1,
         "high_proximity_warning": false,
+        "insider_signal": "SELLING",
+        "insider_note": "0 buy(s), 11 sell(s) in past 6 months | $0 bought / $192,854,118 sold",
+        "insider_buys": 0,
+        "insider_sells": 11,
         "data_ok": true,
         "data_flags": []
       },
@@ -3162,7 +3162,7 @@
           "revenue_growth": 18.8,
           "op_margin": 49.8,
           "pe": 27.693632,
-          "forward_pe": 21.944775,
+          "forward_pe": 21.929937,
           "short_percent_float": 0.88,
           "short_ratio": 2.9,
           "high_proximity_warning": true,
@@ -3364,9 +3364,9 @@
           "high_proximity_warning": true,
           "high_proximity_note": "Only 4.4% from 52-week high \u2014 entry timing risk",
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 14 sell(s) in past 6 months | $0 bought / $80,362,672 sold",
+          "insider_note": "0 buy(s), 13 sell(s) in past 6 months | $0 bought / $76,907,007 sold",
           "insider_buys": 0,
-          "insider_sells": 14,
+          "insider_sells": 13,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -3463,9 +3463,9 @@
           "short_ratio": 1.6,
           "high_proximity_warning": false,
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 27 sell(s) in past 6 months | $0 bought / $98,195,658 sold",
+          "insider_note": "0 buy(s), 24 sell(s) in past 6 months | $0 bought / $84,576,620 sold",
           "insider_buys": 0,
-          "insider_sells": 27,
+          "insider_sells": 24,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -3559,9 +3559,9 @@
           "short_ratio": 0.8,
           "high_proximity_warning": false,
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 14 sell(s) in past 6 months | $0 bought / $247,874,637 sold",
+          "insider_note": "0 buy(s), 13 sell(s) in past 6 months | $0 bought / $246,300,567 sold",
           "insider_buys": 0,
-          "insider_sells": 14,
+          "insider_sells": 13,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -3608,9 +3608,9 @@
           "short_ratio": 2.6,
           "high_proximity_warning": false,
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 3 sell(s) in past 6 months | $0 bought / $4,278,888 sold",
+          "insider_note": "0 buy(s), 1 sell(s) in past 6 months | $0 bought / $1,725,007 sold",
           "insider_buys": 0,
-          "insider_sells": 3,
+          "insider_sells": 1,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -3660,9 +3660,9 @@
           "short_ratio": 2.4,
           "high_proximity_warning": false,
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 6 sell(s) in past 6 months | $0 bought / $20,766,255 sold",
+          "insider_note": "0 buy(s), 3 sell(s) in past 6 months | $0 bought / $12,276,795 sold",
           "insider_buys": 0,
-          "insider_sells": 6,
+          "insider_sells": 3,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -3700,7 +3700,7 @@
           "rated_next_earnings": 1794862800,
           "price": 133.12,
           "pct_change_1d": 6.44,
-          "market_cap": 4849780736,
+          "market_cap": 4849902592,
           "cap_tier": "mid",
           "drawdown_from_high": -59.4,
           "revenue_growth": 8.9,
@@ -3711,9 +3711,9 @@
           "short_ratio": 5.3,
           "high_proximity_warning": false,
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 12 sell(s) in past 6 months | $0 bought / $28,716,758 sold",
+          "insider_note": "0 buy(s), 11 sell(s) in past 6 months | $0 bought / $27,907,540 sold",
           "insider_buys": 0,
-          "insider_sells": 12,
+          "insider_sells": 11,
           "data_ok": true,
           "data_flags": []
         },
@@ -3861,9 +3861,9 @@
           "high_proximity_warning": true,
           "high_proximity_note": "Only 8.5% from 52-week high \u2014 entry timing risk",
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 5 sell(s) in past 6 months | $0 bought / $3,775,788 sold",
+          "insider_note": "0 buy(s), 4 sell(s) in past 6 months | $0 bought / $3,734,478 sold",
           "insider_buys": 0,
-          "insider_sells": 5,
+          "insider_sells": 4,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -3960,9 +3960,9 @@
           "short_ratio": 3.4,
           "high_proximity_warning": false,
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 3 sell(s) in past 6 months | $0 bought / $1,155,387 sold",
+          "insider_note": "0 buy(s), 1 sell(s) in past 6 months | $0 bought / $197,192 sold",
           "insider_buys": 0,
-          "insider_sells": 3,
+          "insider_sells": 1,
           "data_ok": true,
           "data_flags": []
         },
@@ -4013,8 +4013,8 @@
           "high_proximity_warning": true,
           "high_proximity_note": "Only 8.2% from 52-week high \u2014 entry timing risk",
           "insider_signal": "BULLISH",
-          "insider_note": "2 buy(s), 0 sell(s) in past 6 months | $742,165 bought / $0 sold",
-          "insider_buys": 2,
+          "insider_note": "1 buy(s), 0 sell(s) in past 6 months | $641,800 bought / $0 sold",
+          "insider_buys": 1,
           "insider_sells": 0,
           "conviction_holders": [],
           "hf_new_positions": [],
@@ -4114,9 +4114,9 @@
           "short_ratio": 3.5,
           "high_proximity_warning": false,
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 26 sell(s) in past 6 months | $0 bought / $27,297,154 sold",
+          "insider_note": "0 buy(s), 25 sell(s) in past 6 months | $0 bought / $27,118,374 sold",
           "insider_buys": 0,
-          "insider_sells": 26,
+          "insider_sells": 25,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -4172,9 +4172,9 @@
           "high_proximity_warning": true,
           "high_proximity_note": "Only 15.5% from 52-week high \u2014 entry timing risk",
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 7 sell(s) in past 6 months | $0 bought / $1,092,836 sold",
+          "insider_note": "0 buy(s), 6 sell(s) in past 6 months | $0 bought / $1,078,137 sold",
           "insider_buys": 0,
-          "insider_sells": 7,
+          "insider_sells": 6,
           "data_ok": true,
           "data_flags": []
         },
@@ -4272,7 +4272,7 @@
           "rated_next_earnings": 1793277000,
           "price": 127.73,
           "pct_change_1d": 0.13,
-          "market_cap": 27848464384,
+          "market_cap": 27593289728,
           "cap_tier": "large",
           "drawdown_from_high": -1.0,
           "revenue_growth": 14.9,
@@ -4421,6 +4421,10 @@
           "short_percent_float": 11.18,
           "short_ratio": 5.0,
           "high_proximity_warning": false,
+          "insider_signal": "SELLING",
+          "insider_note": "0 buy(s), 15 sell(s) in past 6 months | $0 bought / $801,006 sold",
+          "insider_buys": 0,
+          "insider_sells": 15,
           "data_ok": true,
           "data_flags": []
         },
@@ -4698,9 +4702,9 @@
           "high_proximity_warning": true,
           "high_proximity_note": "Only 21.8% from 52-week high \u2014 entry timing risk",
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 38 sell(s) in past 6 months | $0 bought / $141,400,323 sold",
+          "insider_note": "0 buy(s), 37 sell(s) in past 6 months | $0 bought / $140,460,217 sold",
           "insider_buys": 0,
-          "insider_sells": 38,
+          "insider_sells": 37,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -4797,7 +4801,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in EUR; figures converted to USD at 1.1228. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in EUR; figures converted to USD at 1.1157. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -4851,7 +4855,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in TWD; figures converted to USD at 0.0302. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in TWD; figures converted to USD at 0.0305. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -4940,9 +4944,9 @@
           "short_ratio": 1.7,
           "high_proximity_warning": false,
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 17 sell(s) in past 6 months | $0 bought / $248,757,339 sold",
+          "insider_note": "0 buy(s), 16 sell(s) in past 6 months | $0 bought / $193,068,980 sold",
           "insider_buys": 0,
-          "insider_sells": 17,
+          "insider_sells": 16,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -4989,9 +4993,9 @@
           "short_ratio": 1.2,
           "high_proximity_warning": false,
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 13 sell(s) in past 6 months | $0 bought / $20,910,516 sold",
+          "insider_note": "0 buy(s), 12 sell(s) in past 6 months | $0 bought / $19,581,066 sold",
           "insider_buys": 0,
-          "insider_sells": 13,
+          "insider_sells": 12,
           "data_ok": true,
           "data_flags": []
         },
@@ -5087,9 +5091,9 @@
           "short_ratio": 1.3,
           "high_proximity_warning": false,
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 10 sell(s) in past 6 months | $0 bought / $9,946,235 sold",
+          "insider_note": "0 buy(s), 8 sell(s) in past 6 months | $0 bought / $8,491,315 sold",
           "insider_buys": 0,
-          "insider_sells": 10,
+          "insider_sells": 8,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -5317,9 +5321,9 @@
           "short_ratio": 3.5,
           "high_proximity_warning": false,
           "insider_signal": "BEARISH",
-          "insider_note": "2 buy(s), 4 sell(s) in past 6 months | $482,359 bought / $8,757,296 sold",
-          "insider_buys": 2,
-          "insider_sells": 4,
+          "insider_note": "1 buy(s), 3 sell(s) in past 6 months | $92,162 bought / $8,556,804 sold",
+          "insider_buys": 1,
+          "insider_sells": 3,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -5416,10 +5420,6 @@
           "short_ratio": 3.2,
           "high_proximity_warning": true,
           "high_proximity_note": "Only 15.8% from 52-week high \u2014 entry timing risk",
-          "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 1 sell(s) in past 6 months | $0 bought / $631,259 sold",
-          "insider_buys": 0,
-          "insider_sells": 1,
           "data_ok": true,
           "data_flags": []
         },
@@ -5512,6 +5512,10 @@
           "short_percent_float": 10.67,
           "short_ratio": 4.2,
           "high_proximity_warning": false,
+          "insider_signal": "BULLISH",
+          "insider_note": "3 buy(s), 2 sell(s) in past 6 months | $515,920 bought / $644,569 sold",
+          "insider_buys": 3,
+          "insider_sells": 2,
           "data_ok": true,
           "data_flags": []
         },
@@ -5664,6 +5668,10 @@
           "short_percent_float": 7.22,
           "short_ratio": 11.3,
           "high_proximity_warning": false,
+          "insider_signal": "BEARISH",
+          "insider_note": "88 buy(s), 1 sell(s) in past 6 months | $38,422 bought / $1,601,064 sold",
+          "insider_buys": 88,
+          "insider_sells": 1,
           "data_ok": true,
           "data_flags": []
         },
@@ -5707,6 +5715,10 @@
           "short_percent_float": 3.88,
           "short_ratio": 2.1,
           "high_proximity_warning": false,
+          "insider_signal": "SELLING",
+          "insider_note": "0 buy(s), 11 sell(s) in past 6 months | $0 bought / $192,854,118 sold",
+          "insider_buys": 0,
+          "insider_sells": 11,
           "data_ok": true,
           "data_flags": []
         }
@@ -5742,20 +5754,16 @@
           "rated_next_earnings": 1794490200,
           "price": 129.49,
           "pct_change_1d": 7.58,
-          "market_cap": 32877279232,
+          "market_cap": 35202535424,
           "cap_tier": "large",
           "drawdown_from_high": -56.8,
           "revenue_growth": 454.0,
           "op_margin": -30.2,
           "pe": 101.16407,
-          "forward_pe": -35.99114,
+          "forward_pe": -37.23074,
           "short_percent_float": 20.18,
           "short_ratio": 2.6,
           "high_proximity_warning": false,
-          "insider_signal": "BEARISH",
-          "insider_note": "4 buy(s), 26 sell(s) in past 6 months | $255,050 bought / $303,061,499 sold",
-          "insider_buys": 4,
-          "insider_sells": 26,
           "data_ok": true,
           "data_flags": []
         },
@@ -5798,10 +5806,6 @@
           "short_percent_float": 21.92,
           "short_ratio": 3.6,
           "high_proximity_warning": false,
-          "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 39 sell(s) in past 6 months | $0 bought / $90,386,665 sold",
-          "insider_buys": 0,
-          "insider_sells": 39,
           "data_ok": true,
           "data_flags": []
         },
@@ -5846,10 +5850,6 @@
           "short_percent_float": 6.38,
           "short_ratio": 3.4,
           "high_proximity_warning": false,
-          "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 2 sell(s) in past 6 months | $0 bought / $65,480 sold",
-          "insider_buys": 0,
-          "insider_sells": 2,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -5996,7 +5996,7 @@
           "revenue_growth": 18.8,
           "op_margin": 49.8,
           "pe": 27.693632,
-          "forward_pe": 21.944775,
+          "forward_pe": 21.929937,
           "short_percent_float": 0.88,
           "short_ratio": 2.9,
           "high_proximity_warning": true,
@@ -6202,9 +6202,9 @@
           "high_proximity_warning": true,
           "high_proximity_note": "Only 21.8% from 52-week high \u2014 entry timing risk",
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 38 sell(s) in past 6 months | $0 bought / $141,400,323 sold",
+          "insider_note": "0 buy(s), 37 sell(s) in past 6 months | $0 bought / $140,460,217 sold",
           "insider_buys": 0,
-          "insider_sells": 38,
+          "insider_sells": 37,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -6240,20 +6240,16 @@
           "rated_next_earnings": 1794490200,
           "price": 129.49,
           "pct_change_1d": 7.58,
-          "market_cap": 32877279232,
+          "market_cap": 35202535424,
           "cap_tier": "large",
           "drawdown_from_high": -56.8,
           "revenue_growth": 454.0,
           "op_margin": -30.2,
           "pe": 101.16407,
-          "forward_pe": -35.99114,
+          "forward_pe": -37.23074,
           "short_percent_float": 20.18,
           "short_ratio": 2.6,
           "high_proximity_warning": false,
-          "insider_signal": "BEARISH",
-          "insider_note": "4 buy(s), 26 sell(s) in past 6 months | $255,050 bought / $303,061,499 sold",
-          "insider_buys": 4,
-          "insider_sells": 26,
           "data_ok": true,
           "data_flags": []
         },
@@ -6398,7 +6394,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in EUR; figures converted to USD at 1.1228. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in EUR; figures converted to USD at 1.1157. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -6452,7 +6448,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in TWD; figures converted to USD at 0.0302. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in TWD; figures converted to USD at 0.0305. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -6493,9 +6489,9 @@
           "short_ratio": 1.7,
           "high_proximity_warning": false,
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 17 sell(s) in past 6 months | $0 bought / $248,757,339 sold",
+          "insider_note": "0 buy(s), 16 sell(s) in past 6 months | $0 bought / $193,068,980 sold",
           "insider_buys": 0,
-          "insider_sells": 17,
+          "insider_sells": 16,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -6546,9 +6542,9 @@
           "short_ratio": 0.8,
           "high_proximity_warning": false,
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 14 sell(s) in past 6 months | $0 bought / $247,874,637 sold",
+          "insider_note": "0 buy(s), 13 sell(s) in past 6 months | $0 bought / $246,300,567 sold",
           "insider_buys": 0,
-          "insider_sells": 14,
+          "insider_sells": 13,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -6595,9 +6591,9 @@
           "short_ratio": 1.2,
           "high_proximity_warning": false,
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 13 sell(s) in past 6 months | $0 bought / $20,910,516 sold",
+          "insider_note": "0 buy(s), 12 sell(s) in past 6 months | $0 bought / $19,581,066 sold",
           "insider_buys": 0,
-          "insider_sells": 13,
+          "insider_sells": 12,
           "data_ok": true,
           "data_flags": []
         },
@@ -6882,6 +6878,10 @@
           "short_percent_float": 7.22,
           "short_ratio": 11.3,
           "high_proximity_warning": false,
+          "insider_signal": "BEARISH",
+          "insider_note": "88 buy(s), 1 sell(s) in past 6 months | $38,422 bought / $1,601,064 sold",
+          "insider_buys": 88,
+          "insider_sells": 1,
           "data_ok": true,
           "data_flags": []
         },
@@ -6925,6 +6925,10 @@
           "short_percent_float": 3.88,
           "short_ratio": 2.1,
           "high_proximity_warning": false,
+          "insider_signal": "SELLING",
+          "insider_note": "0 buy(s), 11 sell(s) in past 6 months | $0 bought / $192,854,118 sold",
+          "insider_buys": 0,
+          "insider_sells": 11,
           "data_ok": true,
           "data_flags": []
         },
@@ -7059,9 +7063,9 @@
           "high_proximity_warning": true,
           "high_proximity_note": "Only 4.4% from 52-week high \u2014 entry timing risk",
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 14 sell(s) in past 6 months | $0 bought / $80,362,672 sold",
+          "insider_note": "0 buy(s), 13 sell(s) in past 6 months | $0 bought / $76,907,007 sold",
           "insider_buys": 0,
-          "insider_sells": 14,
+          "insider_sells": 13,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -7204,9 +7208,9 @@
           "short_ratio": 1.6,
           "high_proximity_warning": false,
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 27 sell(s) in past 6 months | $0 bought / $98,195,658 sold",
+          "insider_note": "0 buy(s), 24 sell(s) in past 6 months | $0 bought / $84,576,620 sold",
           "insider_buys": 0,
-          "insider_sells": 27,
+          "insider_sells": 24,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -7256,9 +7260,9 @@
           "short_ratio": 1.3,
           "high_proximity_warning": false,
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 10 sell(s) in past 6 months | $0 bought / $9,946,235 sold",
+          "insider_note": "0 buy(s), 8 sell(s) in past 6 months | $0 bought / $8,491,315 sold",
           "insider_buys": 0,
-          "insider_sells": 10,
+          "insider_sells": 8,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -7397,10 +7401,6 @@
           "short_percent_float": 21.92,
           "short_ratio": 3.6,
           "high_proximity_warning": false,
-          "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 39 sell(s) in past 6 months | $0 bought / $90,386,665 sold",
-          "insider_buys": 0,
-          "insider_sells": 39,
           "data_ok": true,
           "data_flags": []
         },
@@ -7493,9 +7493,9 @@
           "short_ratio": 2.6,
           "high_proximity_warning": false,
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 3 sell(s) in past 6 months | $0 bought / $4,278,888 sold",
+          "insider_note": "0 buy(s), 1 sell(s) in past 6 months | $0 bought / $1,725,007 sold",
           "insider_buys": 0,
-          "insider_sells": 3,
+          "insider_sells": 1,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -7633,9 +7633,9 @@
           "short_ratio": 3.5,
           "high_proximity_warning": false,
           "insider_signal": "BEARISH",
-          "insider_note": "2 buy(s), 4 sell(s) in past 6 months | $482,359 bought / $8,757,296 sold",
-          "insider_buys": 2,
-          "insider_sells": 4,
+          "insider_note": "1 buy(s), 3 sell(s) in past 6 months | $92,162 bought / $8,556,804 sold",
+          "insider_buys": 1,
+          "insider_sells": 3,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -7685,9 +7685,9 @@
           "short_ratio": 2.4,
           "high_proximity_warning": false,
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 6 sell(s) in past 6 months | $0 bought / $20,766,255 sold",
+          "insider_note": "0 buy(s), 3 sell(s) in past 6 months | $0 bought / $12,276,795 sold",
           "insider_buys": 0,
-          "insider_sells": 6,
+          "insider_sells": 3,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -7725,7 +7725,7 @@
           "rated_next_earnings": 1794862800,
           "price": 133.12,
           "pct_change_1d": 6.44,
-          "market_cap": 4849780736,
+          "market_cap": 4849902592,
           "cap_tier": "mid",
           "drawdown_from_high": -59.4,
           "revenue_growth": 8.9,
@@ -7736,9 +7736,9 @@
           "short_ratio": 5.3,
           "high_proximity_warning": false,
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 12 sell(s) in past 6 months | $0 bought / $28,716,758 sold",
+          "insider_note": "0 buy(s), 11 sell(s) in past 6 months | $0 bought / $27,907,540 sold",
           "insider_buys": 0,
-          "insider_sells": 12,
+          "insider_sells": 11,
           "data_ok": true,
           "data_flags": []
         },
@@ -7783,10 +7783,6 @@
           "short_percent_float": 6.38,
           "short_ratio": 3.4,
           "high_proximity_warning": false,
-          "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 2 sell(s) in past 6 months | $0 bought / $65,480 sold",
-          "insider_buys": 0,
-          "insider_sells": 2,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -7938,9 +7934,9 @@
           "high_proximity_warning": true,
           "high_proximity_note": "Only 8.5% from 52-week high \u2014 entry timing risk",
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 5 sell(s) in past 6 months | $0 bought / $3,775,788 sold",
+          "insider_note": "0 buy(s), 4 sell(s) in past 6 months | $0 bought / $3,734,478 sold",
           "insider_buys": 0,
-          "insider_sells": 5,
+          "insider_sells": 4,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -8043,8 +8039,8 @@
           "high_proximity_warning": true,
           "high_proximity_note": "Only 8.2% from 52-week high \u2014 entry timing risk",
           "insider_signal": "BULLISH",
-          "insider_note": "2 buy(s), 0 sell(s) in past 6 months | $742,165 bought / $0 sold",
-          "insider_buys": 2,
+          "insider_note": "1 buy(s), 0 sell(s) in past 6 months | $641,800 bought / $0 sold",
+          "insider_buys": 1,
           "insider_sells": 0,
           "conviction_holders": [],
           "hf_new_positions": [],
@@ -8144,9 +8140,9 @@
           "short_ratio": 3.5,
           "high_proximity_warning": false,
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 26 sell(s) in past 6 months | $0 bought / $27,297,154 sold",
+          "insider_note": "0 buy(s), 25 sell(s) in past 6 months | $0 bought / $27,118,374 sold",
           "insider_buys": 0,
-          "insider_sells": 26,
+          "insider_sells": 25,
           "conviction_holders": [],
           "hf_new_positions": [],
           "data_ok": true,
@@ -8243,9 +8239,9 @@
           "short_ratio": 3.4,
           "high_proximity_warning": false,
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 3 sell(s) in past 6 months | $0 bought / $1,155,387 sold",
+          "insider_note": "0 buy(s), 1 sell(s) in past 6 months | $0 bought / $197,192 sold",
           "insider_buys": 0,
-          "insider_sells": 3,
+          "insider_sells": 1,
           "data_ok": true,
           "data_flags": []
         },
@@ -8292,10 +8288,6 @@
           "short_ratio": 3.2,
           "high_proximity_warning": true,
           "high_proximity_note": "Only 15.8% from 52-week high \u2014 entry timing risk",
-          "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 1 sell(s) in past 6 months | $0 bought / $631,259 sold",
-          "insider_buys": 0,
-          "insider_sells": 1,
           "data_ok": true,
           "data_flags": []
         }
@@ -8351,9 +8343,9 @@
           "high_proximity_warning": true,
           "high_proximity_note": "Only 15.5% from 52-week high \u2014 entry timing risk",
           "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 7 sell(s) in past 6 months | $0 bought / $1,092,836 sold",
+          "insider_note": "0 buy(s), 6 sell(s) in past 6 months | $0 bought / $1,078,137 sold",
           "insider_buys": 0,
-          "insider_sells": 7,
+          "insider_sells": 6,
           "data_ok": true,
           "data_flags": []
         },
@@ -8451,7 +8443,7 @@
           "rated_next_earnings": 1793277000,
           "price": 127.73,
           "pct_change_1d": 0.13,
-          "market_cap": 27848464384,
+          "market_cap": 27593289728,
           "cap_tier": "large",
           "drawdown_from_high": -1.0,
           "revenue_growth": 14.9,
@@ -8604,6 +8596,10 @@
           "short_percent_float": 11.18,
           "short_ratio": 5.0,
           "high_proximity_warning": false,
+          "insider_signal": "SELLING",
+          "insider_note": "0 buy(s), 15 sell(s) in past 6 months | $0 bought / $801,006 sold",
+          "insider_buys": 0,
+          "insider_sells": 15,
           "data_ok": true,
           "data_flags": []
         },
@@ -8695,6 +8691,10 @@
           "short_percent_float": 10.67,
           "short_ratio": 4.2,
           "high_proximity_warning": false,
+          "insider_signal": "BULLISH",
+          "insider_note": "3 buy(s), 2 sell(s) in past 6 months | $515,920 bought / $644,569 sold",
+          "insider_buys": 3,
+          "insider_sells": 2,
           "data_ok": true,
           "data_flags": []
         },
@@ -8958,8 +8958,8 @@
     }
   },
   "digest": {
-    "generated_at": "2026-11-08T16:48:09Z",
-    "narrative": "OKLO led a group of notable gainers with a 22.7% rise, while COHR, AMD, VST, and CBRS also climbed between 9.8% and 13.6%. Marvell agreed to acquire Lumentum in a landmark deal valued at roughly $115 billion to bolster AI data center connectivity, and Microsoft walked away from expansion talks with Nscale while IREN delayed Microsoft-related builds despite planning $15 billion in capital spending. A wave of amended Schedule 13G filings hit for CBRS, COHR, VST, MRVL, and POWL, signaling updated institutional stakes ahead of earnings from CEG in two days, CBRS and NBIS in five, and NVDA in ten. Federal and congressional scrutiny of data center energy demands intensified, Ontario awarded contracts for the G7's first small modular reactor, and the Pentagon committed $450 million to scale domestic drone production toward one million units annually.",
+    "generated_at": "2026-11-09T01:42:22Z",
+    "narrative": "Marvell agreed to acquire Lumentum in a landmark deal valued at approximately $115 billion to strengthen its AI data center connectivity position. OKLO led notable price gains with a 22.66% surge, while COHR, AMD, VST, and CBRS also rose sharply, and amended Schedule 13G filings revealed updated institutional stakes in several of these movers including COHR, VST, CBRS, and MRVL. Key earnings are imminent with CEG reporting today and NVDA in eight days, while structural shifts accelerated across power grid spending, small modular nuclear deployment, advanced chip packaging collaborations, and defense drone production scaling.",
     "buy_ready": [
       {
         "ticker": "GOOGL",
@@ -9214,32 +9214,32 @@
       {
         "ticker": "CEG",
         "date": "2026-11-09",
-        "days_until": 2
+        "days_until": 0
       },
       {
         "ticker": "CBRS",
         "date": "2026-11-12",
-        "days_until": 5
+        "days_until": 3
       },
       {
         "ticker": "NBIS",
         "date": "2026-11-12",
-        "days_until": 5
+        "days_until": 3
       },
       {
         "ticker": "POWL",
         "date": "2026-11-16",
-        "days_until": 9
+        "days_until": 7
       },
       {
         "ticker": "NVDA",
         "date": "2026-11-17",
-        "days_until": 10
+        "days_until": 8
       },
       {
         "ticker": "MRVL",
         "date": "2026-12-01",
-        "days_until": 24
+        "days_until": 22
       }
     ],
     "sec_stakes": [
@@ -15277,7 +15277,19 @@
         "high_52w": 386.34,
         "drawdown_pct": -76.8,
         "severity": "STRONG",
-        "thesis": "AI hardware pure-play with 74% revenue growth but -265% operating margin, 35% gross margin, and active securities investigations creating binary legal risk.",
+        "thesis": "Active fraud investigations and a short-seller report undermine confidence in financials despite 74% revenue growth and a $6.4B cash runway.",
+        "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+      },
+      {
+        "ticker": "FLUT",
+        "name": "Flutter Entertainment plc",
+        "theme": "consumer_media",
+        "verdict": "WATCHLIST",
+        "price": 81.7,
+        "high_52w": 235.77,
+        "drawdown_pct": -65.3,
+        "severity": "STRONG",
+        "thesis": "Cheap gambling stock at 12.7x forward earnings with positive FCF but high debt and slowing growth after guidance cut.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15289,7 +15301,7 @@
         "high_52w": 263.5,
         "drawdown_pct": -63.9,
         "severity": "STRONG",
-        "thesis": "Profitable high-margin social platform at 10x forward earnings with 50%+ growth, but thesis hinges on sustaining user engagement amid AI search disruption.",
+        "thesis": "High-margin social platform with $1.2B FCF and $3B net cash trading at 10x forward earnings despite 53% revenue growth, but Google AI search traffic headwinds cloud sustainability.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15301,7 +15313,7 @@
         "high_52w": 308.67,
         "drawdown_pct": -61.0,
         "severity": "STRONG",
-        "thesis": "Profitable AI interconnect pure-play at 12x forward earnings with 115% revenue growth, 67% gross margins, and $738M net cash \u2014 if hyperscaler concentration risk is manageable.",
+        "thesis": "Pure-play AI data center connectivity with 115% YoY revenue growth, 67% gross margins, and net cash, trading at 12x forward earnings after 61% drawdown.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15313,7 +15325,7 @@
         "high_52w": 328.0,
         "drawdown_pct": -59.4,
         "severity": "STRONG",
-        "thesis": "Cyclical electrical-equipment maker with net cash, 20%+ operating margins, and grid/data-center exposure trading at 19x forward earnings after a 59% drawdown; entry depends on confirming backlog durability and data-center revenue mix.",
+        "thesis": "Electrical-infrastructure contractor with 20%+ operating margins, $631M net cash, and data-center/grid tailwinds trades at 19x forward earnings after a 59% drawdown, but cyclical oil & gas exposure and unverified backlog quality warrant waiting for a wider margin of safety.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15325,7 +15337,7 @@
         "high_52w": 354.88,
         "drawdown_pct": -58.7,
         "severity": "STRONG",
-        "thesis": "Quality diabetes device compounder at 19x forward earnings with 19% revenue growth, 72% gross margins, and positive FCF, discounted on conservative 2027 outlook.",
+        "thesis": "Quality medtech compounder at 19x forward earnings with 19% growth, 72% gross margins, and $1B buyback authorization",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15337,7 +15349,7 @@
         "high_52w": 329.88,
         "drawdown_pct": -57.2,
         "severity": "STRONG",
-        "thesis": "AI infrastructure custom-silicon leader at 19x forward earnings with 36% revenue growth and positive FCF, but 57% drawdown reflects Lumentum acquisition uncertainty.",
+        "thesis": "AI infrastructure play with custom silicon and optical interconnect exposure trading at 19x forward earnings despite 36% revenue growth, but Lumentum acquisition uncertainty clouds near-term execution.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15349,7 +15361,7 @@
         "high_52w": 474.03,
         "drawdown_pct": -56.4,
         "severity": "STRONG",
-        "thesis": "EMS leader capturing AI server buildout at 9x forward earnings with net cash balance sheet and 80%+ revenue growth.",
+        "thesis": "EMS leader capturing AI server/netscale buildout at 9x forward earnings with 80%+ revenue growth, positive FCF, and $2.9B net cash.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15361,7 +15373,19 @@
         "high_52w": 440.0,
         "drawdown_pct": -56.2,
         "severity": "STRONG",
-        "thesis": "AI optical pure-play at 13x forward earnings with 50% revenue growth but negative FCF and high leverage.",
+        "thesis": "AI-optics pure-play at 13x forward earnings for 50% revenue growth, but negative FCF and $2.6B net debt require verification of cash conversion.",
+        "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+      },
+      {
+        "ticker": "LMB",
+        "name": "Limbach Holdings, Inc.",
+        "theme": "datacenter_infra",
+        "verdict": "RESEARCH-WORTHY",
+        "price": 53.45,
+        "high_52w": 114.95,
+        "drawdown_pct": -53.5,
+        "severity": "STRONG",
+        "thesis": "Specialty building systems contractor at 10.8x forward earnings with 25% revenue growth, positive FCF, and indirect data center/electrification tailwinds.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15373,7 +15397,7 @@
         "high_52w": 1143.0,
         "drawdown_pct": -52.9,
         "severity": "STRONG",
-        "thesis": "Merger-arbitrage play on Marvell acquisition at 13.5x forward earnings with 136% quarterly revenue growth, but 53% below deal price on deal-break risk.",
+        "thesis": "AI optical interconnect pure-play at 13.5x forward earnings with 136% YoY quarterly growth, but price dominated by a $115B Marvell merger that headlines indicate may collapse.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15385,19 +15409,43 @@
         "high_52w": 379.935,
         "drawdown_pct": -51.9,
         "severity": "STRONG",
-        "thesis": "Pure-play AI data center power/cooling infrastructure at 18.6x forward earnings with 60%+ revenue growth and $3.1B FCF, but 52% drawdown reflects political policy fears.",
+        "thesis": "AI infrastructure pure-play at 18.6x forward earnings with 60%+ revenue growth, expanding margins, and $3.1B FCF, discounted 52% from highs on political fears not fundamental deterioration.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
         "ticker": "BWXT",
         "name": "BWX Technologies, Inc.",
         "theme": "nuclear_smr",
-        "verdict": "RESEARCH-WORTHY",
+        "verdict": "WATCHLIST",
         "price": 119.52,
         "high_52w": 241.82,
         "drawdown_pct": -50.6,
         "severity": "STRONG",
-        "thesis": "Nuclear pure-play with $8.6B backlog and $2.2B Army contract trading at 23x forward earnings despite 50% drawdown from highs on delayed commercial SMR orders.",
+        "thesis": "Nuclear pure-play with $8.6B backlog (46% converting by 2027) and naval moat trading at 23x forward earnings after 50% drawdown, but commercial new-build delays cloud growth trajectory.",
+        "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+      },
+      {
+        "ticker": "TPL",
+        "name": "Texas Pacific Land Corporation",
+        "theme": "uncategorized",
+        "verdict": "RESEARCH-WORTHY",
+        "price": 272.36,
+        "high_52w": 547.2,
+        "drawdown_pct": -50.2,
+        "severity": "STRONG",
+        "thesis": "High-margin land royalty compounder at 23x EV/EBITDA with 35% revenue growth, but forward P/E of 3.7x signals estimate volatility.",
+        "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
+      },
+      {
+        "ticker": "APP",
+        "name": "AppLovin Corporation",
+        "theme": "uncategorized",
+        "verdict": "RESEARCH-WORTHY",
+        "price": 391.22,
+        "high_52w": 738.01,
+        "drawdown_pct": -47.0,
+        "severity": "STRONG",
+        "thesis": "Quality ad-tech compounder at 19x forward earnings with 55% growth, 78% operating margins, and $4.9B FCF, but theme fit is low and platform-policy risk is high.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15409,7 +15457,7 @@
         "high_52w": 116.733,
         "drawdown_pct": -45.7,
         "severity": "STRONG",
-        "thesis": "Quality streaming compounder at 17x forward earnings with 12% revenue growth but decelerating for four straight quarters.",
+        "thesis": "Quality streaming compounder with 12% revenue growth, 35% operating margins, and $11B FCF trading at 17x forward earnings, but growth decelerating for four straight quarters and data discrepancy clouds valuation.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15428,24 +15476,24 @@
         "ticker": "NVT",
         "name": "nVent Electric plc",
         "theme": "power_grid",
-        "verdict": "RESEARCH-WORTHY",
+        "verdict": "WATCHLIST",
         "price": 106.22,
         "high_52w": 184.64,
         "drawdown_pct": -42.5,
         "severity": "STRONG",
-        "thesis": "Electrification compounder at 15x forward earnings with 40%+ quarterly growth but guidance uncertainty capping multiple",
+        "thesis": "Industrial electrical solutions provider with 43% revenue growth trading at 15x forward earnings after guidance-driven 42% drawdown.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
         "ticker": "NOW",
         "name": "ServiceNow, Inc.",
         "theme": "cybersecurity",
-        "verdict": "WATCHLIST",
+        "verdict": "RESEARCH-WORTHY",
         "price": 101.97,
         "high_52w": 175.0,
         "drawdown_pct": -41.7,
         "severity": "STRONG",
-        "thesis": "Quality compounder at 21x forward earnings with 20% growth and 73% gross margins, but AI disruption fears and recent billings miss create uncertainty.",
+        "thesis": "Wide-moat workflow automation compounder growing 20%+ with 73% gross margins and $4.75B FCF trading at 21x forward earnings after 42% drawdown on disputed AI disruption fears.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15457,7 +15505,7 @@
         "high_52w": 495.0,
         "drawdown_pct": -40.7,
         "severity": "STRONG",
-        "thesis": "AI infrastructure leader with 75% gross margins and $39B FCF trading at 15x forward earnings despite 85% YoY quarterly revenue growth.",
+        "thesis": "AI infrastructure leader trading at 15x forward earnings with 85% YoY revenue growth and $39B FCF, but hyperscaler capex cycle risk looms.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15469,19 +15517,19 @@
         "high_52w": 196.8,
         "drawdown_pct": -36.6,
         "severity": "STRONG",
-        "thesis": "Cheap power generator at 9x EV/EBITDA with nuclear baseload exposure to AI data center demand in ERCOT/PJM.",
+        "thesis": "Cheap nuclear/thermal power play at 13x forward earnings with AI data center demand tailwind and $2.3B FCF.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
         "ticker": "GEV",
         "name": "GE Vernova Inc.",
         "theme": "power_grid",
-        "verdict": "WATCHLIST",
+        "verdict": "RESEARCH-WORTHY",
         "price": 774.11,
         "high_52w": 1195.94,
         "drawdown_pct": -35.3,
         "severity": "STRONG",
-        "thesis": "AI power pure-play at 30x forward earnings with 27% revenue growth but forward multiple implies earnings decline; 35% drawdown not yet a bargain.",
+        "thesis": "8.3% FCF yield and 27% revenue growth in a power/grid pure-play benefiting from AI data center electrification, but forward P/E > trailing P/E warrants verification.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15493,7 +15541,7 @@
         "high_52w": 380.78,
         "drawdown_pct": -34.4,
         "severity": "MODERATE",
-        "thesis": "Largest US nuclear fleet with 23% revenue growth and AI data center PPAs (Google 3.6 GW, Amazon) trading at 13.7x EV/EBITDA despite policy-driven 34% drawdown.",
+        "thesis": "Nuclear pure-play with 23% revenue growth and positive FCF trading at 18.6x forward earnings, benefiting from AI data center power demand but facing policy uncertainty.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15505,7 +15553,7 @@
         "high_52w": 658.52,
         "drawdown_pct": -31.8,
         "severity": "MODERATE",
-        "thesis": "AI infrastructure leader with 45% revenue growth trading at 26.5x forward earnings, 32% below 52-week high.",
+        "thesis": "AI infrastructure pure-play with data center revenue doubling, 44% YoY growth, and 26x forward earnings for a wide-moat semiconductor leader.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15517,7 +15565,7 @@
         "high_52w": 408.61,
         "drawdown_pct": -30.3,
         "severity": "MODERATE",
-        "thesis": "Quality AI infrastructure compounder at 15x trailing earnings with 25% revenue growth, $115B net cash, but search disruption risk creates uncertainty.",
+        "thesis": "Wide-moat AI infrastructure compounder at 14.9x trailing earnings with 24.7% revenue growth and $115B net cash, but AI disruption of search creates earnings uncertainty reflected in 18.5x forward P/E.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15529,7 +15577,7 @@
         "high_52w": 1999.96,
         "drawdown_pct": -28.8,
         "severity": "MODERATE",
-        "thesis": "Monopoly EUV supplier for AI chips at 22.5x forward earnings with 55% revenue growth and $23B FCF, down 29% on China export fears.",
+        "thesis": "Monopoly EUV lithography supplier with 55% revenue growth, 44% operating margins, and order visibility through 2030 trading at 22.5x forward P/E after 29% drawdown.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15541,19 +15589,19 @@
         "high_52w": 478.0,
         "drawdown_pct": -28.5,
         "severity": "MODERATE",
-        "thesis": "Quality power management leader with 28% quarterly revenue growth from AI data center buildout trading at 21x forward earnings and 2.5x net debt/EBITDA.",
+        "thesis": "Quality electrical equipment leader benefiting from AI data center power infrastructure buildout at 21x forward earnings with 28% revenue growth and strong FCF generation.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
         "ticker": "GIS",
         "name": "General Mills, Inc.",
         "theme": "defensive_income",
-        "verdict": "RESEARCH-WORTHY",
+        "verdict": "WATCHLIST",
         "price": 35.51,
         "high_52w": 49.59,
         "drawdown_pct": -28.4,
         "severity": "MODERATE",
-        "thesis": "Defensive food compounder trading at 11x forward earnings with ~6% dividend yield, but organic revenue declining ~3% YoY and net debt at 4x EBITDA requires monitoring.",
+        "thesis": "Defensive consumer staples compounder at 11x forward earnings with 3.5%+ yield, but revenue declining 3% YoY and $13B net debt limit upside.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15565,19 +15613,19 @@
         "high_52w": 332.46,
         "drawdown_pct": -26.3,
         "severity": "MODERATE",
-        "thesis": "Quality compounder with AI/quantum optionality trading at 18.5x forward earnings, 58% gross margins, $14B FCF, and 4x net debt/FCF \u2014 26% off highs offers entry if FCF durability holds.",
+        "thesis": "Mature tech conglomerate with 58% gross margins, $14B FCF, and hybrid cloud/quantum optionality trading at 18.5x forward earnings despite 26% drawdown.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
         "ticker": "LPLA",
         "name": "LPL Financial Holdings Inc.",
         "theme": "financials",
-        "verdict": "RESEARCH-WORTHY",
+        "verdict": "WATCHLIST",
         "price": 295.51,
         "high_52w": 400.16,
         "drawdown_pct": -26.2,
         "severity": "MODERATE",
-        "thesis": "Independent advisor platform at 10x forward earnings with 18% revenue growth and $1B FCF, discounted for Commonwealth integration risk.",
+        "thesis": "Quality independent broker-dealer platform at 10x forward earnings with 18% revenue growth and $1B FCF, but Commonwealth integration risk (83% retention, -26% recruited assets) clouds near-term outlook.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15589,7 +15637,7 @@
         "high_52w": 32.86,
         "drawdown_pct": -25.8,
         "severity": "MODERATE",
-        "thesis": "Cable/media giant with 19.7% FCF yield at 5.0x EV/EBITDA, but secular broadband decline and streaming losses cloud durability.",
+        "thesis": "Cheap cable incumbent at 5x EV/EBITDA with 19% FCF yield, but -6% revenue decline and Charter's subscriber losses signal structural headwinds that could make this a value trap.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15601,7 +15649,7 @@
         "high_52w": 603.88,
         "drawdown_pct": -25.0,
         "severity": "MODERATE",
-        "thesis": "Quality surgical robotics compounder at 36x forward earnings with 20%+ revenue growth, but 2026 guidance reduction warrants caution",
+        "thesis": "Wide-moat surgical robotics compounder with 20%+ revenue growth and $3.6B FCF, but 36x forward P/E prices in perfection; a deeper pullback would improve risk-reward.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15613,7 +15661,7 @@
         "high_52w": 449.841,
         "drawdown_pct": -24.7,
         "severity": "MODERATE",
-        "thesis": "Nuclear-powered data center play with Amazon PPA, 11x forward earnings for 96% revenue growth, but 34x EV/EBITDA reflects $9.2B net debt requiring FCF conversion to de-risk.",
+        "thesis": "Nuclear-powered AI data center play at 11x forward earnings with 96% revenue growth, but 35.6x EV/EBITDA and $9.2B net debt require scrutiny",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15625,7 +15673,7 @@
         "high_52w": 243.37,
         "drawdown_pct": -23.3,
         "severity": "MODERATE",
-        "thesis": "AI infrastructure leader trading at 12x forward earnings with 100%+ revenue growth, 66% operating margins, and $127B annual FCF, but faces material geopolitical/regulatory risk from China exposure.",
+        "thesis": "AI infrastructure leader with 100%+ revenue growth trading at 12x forward earnings, but geopolitical risk warrants verification.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15637,7 +15685,7 @@
         "high_52w": 487.47,
         "drawdown_pct": -23.0,
         "severity": "MODERATE",
-        "thesis": "World's leading foundry at 16x forward earnings with 50%+ revenue growth, 66% gross margins, and $45B FCF, pure-play AI infrastructure enabler.",
+        "thesis": "World's leading foundry at 16x forward earnings with 50%+ revenue growth, 66% gross margins, and $97B net cash, capturing nearly all advanced AI chip manufacturing.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       },
       {
@@ -15649,7 +15697,7 @@
         "high_52w": 779.82,
         "drawdown_pct": -21.8,
         "severity": "MODERATE",
-        "thesis": "Quality compounder with 26% revenue growth trading at 17x forward earnings while investing heavily in AI infrastructure that could extend moat.",
+        "thesis": "Wide-moat digital advertising compounder with 26% revenue growth trading at 17x forward earnings while investing heavily in AI infrastructure that could unlock new revenue streams.",
         "action": "Consider deploying if thesis intact. Verify with research_ticker.py first."
       }
     ],
@@ -15657,21 +15705,21 @@
       {
         "ticker": "QQQ",
         "last_researched": "2026-05-28",
-        "days_since": 163,
+        "days_since": 165,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py QQQ"
       },
       {
         "ticker": "SPY",
         "last_researched": "2026-05-28",
-        "days_since": 163,
+        "days_since": 165,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py SPY"
       },
       {
         "ticker": "^TNX",
         "last_researched": "2026-05-28",
-        "days_since": 163,
+        "days_since": 165,
         "verdict": "WATCHLIST",
         "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
       }
@@ -15681,60 +15729,60 @@
         "ticker": "CEG",
         "name": "Constellation Energy Corporation",
         "date": "2026-11-09",
-        "days_until": 2,
+        "days_until": 0,
         "theme": "nuclear_smr",
         "verdict": "RESEARCH-WORTHY",
-        "thesis": "Largest US nuclear fleet with 23% revenue growth and AI data center PPAs (Google 3.6 GW, Amazon) trading at 13.7x EV/EBITDA despite policy-driven 34% drawdown.",
+        "thesis": "Nuclear pure-play with 23% revenue growth and positive FCF trading at 18.6x forward earnings, benefiting from AI data center power demand but facing policy uncertainty.",
         "action": "Review thesis before earnings. Re-run research_ticker.py CEG after."
       },
       {
         "ticker": "CBRS",
         "name": "Cerebras Systems Inc.",
         "date": "2026-11-12",
-        "days_until": 5,
+        "days_until": 3,
         "theme": "edge_ai_silicon",
         "verdict": "RED FLAG",
-        "thesis": "AI hardware pure-play with 74% revenue growth but -265% operating margin, 35% gross margin, and active securities investigations creating binary legal risk.",
+        "thesis": "Active fraud investigations and a short-seller report undermine confidence in financials despite 74% revenue growth and a $6.4B cash runway.",
         "action": "Review thesis before earnings. Re-run research_ticker.py CBRS after."
       },
       {
         "ticker": "NBIS",
         "name": "Nebius Group N.V.",
         "date": "2026-11-12",
-        "days_until": 5,
+        "days_until": 3,
         "theme": "mega_cap_ai",
         "verdict": "PASS",
-        "thesis": "AI neocloud growing 454% YoY at 74% gross margin but burning $5.9B FCF annually with $2.2B net debt, facing Microsoft project delays and capital-market skepticism.",
+        "thesis": "AI neocloud with 454% YoY growth and 74% gross margins but burning $5.9B FCF annually against $2.2B net debt, dependent on Microsoft anchor tenancy now facing spending cuts.",
         "action": "Review thesis before earnings. Re-run research_ticker.py NBIS after."
       },
       {
         "ticker": "POWL",
         "name": "Powell Industries, Inc.",
         "date": "2026-11-16",
-        "days_until": 9,
+        "days_until": 7,
         "theme": "power_grid",
         "verdict": "WATCHLIST",
-        "thesis": "Cyclical electrical-equipment maker with net cash, 20%+ operating margins, and grid/data-center exposure trading at 19x forward earnings after a 59% drawdown; entry depends on confirming backlog durability and data-center revenue mix.",
+        "thesis": "Electrical-infrastructure contractor with 20%+ operating margins, $631M net cash, and data-center/grid tailwinds trades at 19x forward earnings after a 59% drawdown, but cyclical oil & gas exposure and unverified backlog quality warrant waiting for a wider margin of safety.",
         "action": "Review thesis before earnings. Re-run research_ticker.py POWL after."
       },
       {
         "ticker": "NVDA",
         "name": "NVIDIA Corporation",
         "date": "2026-11-17",
-        "days_until": 10,
+        "days_until": 8,
         "theme": "mega_cap_ai",
         "verdict": "RESEARCH-WORTHY",
-        "thesis": "AI infrastructure leader trading at 12x forward earnings with 100%+ revenue growth, 66% operating margins, and $127B annual FCF, but faces material geopolitical/regulatory risk from China exposure.",
+        "thesis": "AI infrastructure leader with 100%+ revenue growth trading at 12x forward earnings, but geopolitical risk warrants verification.",
         "action": "Review thesis before earnings. Re-run research_ticker.py NVDA after."
       },
       {
         "ticker": "MRVL",
         "name": "Marvell Technology, Inc.",
         "date": "2026-12-01",
-        "days_until": 24,
+        "days_until": 22,
         "theme": "edge_ai_silicon",
         "verdict": "RESEARCH-WORTHY",
-        "thesis": "AI infrastructure custom-silicon leader at 19x forward earnings with 36% revenue growth and positive FCF, but 57% drawdown reflects Lumentum acquisition uncertainty.",
+        "thesis": "AI infrastructure play with custom silicon and optical interconnect exposure trading at 19x forward earnings despite 36% revenue growth, but Lumentum acquisition uncertainty clouds near-term execution.",
         "action": "Review thesis before earnings. Re-run research_ticker.py MRVL after."
       }
     ],
@@ -17579,15 +17627,6 @@
         "verdict": "RESEARCH-WORTHY"
       },
       {
-        "ticker": "NBIS",
-        "name": "Nebius Group N.V.",
-        "signal": "BEARISH",
-        "note": "4 buy(s), 26 sell(s) in past 6 months | $255,050 bought / $303,061,499 sold",
-        "buys": 4,
-        "sells": 26,
-        "verdict": "PASS"
-      },
-      {
         "ticker": "VST",
         "name": "Vistra Corp.",
         "signal": "BEARISH",
@@ -17600,9 +17639,18 @@
         "ticker": "ETN",
         "name": "Eaton Corporation plc",
         "signal": "BEARISH",
-        "note": "2 buy(s), 4 sell(s) in past 6 months | $482,359 bought / $8,757,296 sold",
-        "buys": 2,
-        "sells": 4,
+        "note": "1 buy(s), 3 sell(s) in past 6 months | $92,162 bought / $8,556,804 sold",
+        "buys": 1,
+        "sells": 3,
+        "verdict": "RESEARCH-WORTHY"
+      },
+      {
+        "ticker": "TPL",
+        "name": "Texas Pacific Land Corporation",
+        "signal": "BEARISH",
+        "note": "88 buy(s), 1 sell(s) in past 6 months | $38,422 bought / $1,601,064 sold",
+        "buys": 88,
+        "sells": 1,
         "verdict": "RESEARCH-WORTHY"
       }
     ],

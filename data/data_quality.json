@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T10:44:14Z",
+  "generated_at": "2026-11-09T01:41:35Z",
   "checked": 60,
   "flagged": 2,
   "quality": {
@@ -15,11 +15,11 @@
       "ok": true,
       "flags": []
     },
-    "AMZN": {
+    "APP": {
       "ok": true,
       "flags": []
     },
-    "APP": {
+    "AMZN": {
       "ok": true,
       "flags": []
     },
@@ -28,7 +28,7 @@
       "flags": [
         {
           "level": "low",
-          "msg": "Reports in EUR; figures converted to USD at 1.1228. Trailing P/E may mix currencies \u2014 verify against filings"
+          "msg": "Reports in EUR; figures converted to USD at 1.1157. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
     },
@@ -52,11 +52,11 @@
       "ok": true,
       "flags": []
     },
-    "COHR": {
+    "CMCSA": {
       "ok": true,
       "flags": []
     },
-    "CMCSA": {
+    "COHR": {
       "ok": true,
       "flags": []
     },
@@ -144,11 +144,11 @@
       "ok": true,
       "flags": []
     },
-    "MSFT": {
+    "MU": {
       "ok": true,
       "flags": []
     },
-    "MU": {
+    "MSFT": {
       "ok": true,
       "flags": []
     },
@@ -176,15 +176,15 @@
       "ok": true,
       "flags": []
     },
-    "PAYX": {
-      "ok": true,
-      "flags": []
-    },
     "PODD": {
       "ok": true,
       "flags": []
     },
     "POWL": {
+      "ok": true,
+      "flags": []
+    },
+    "PAYX": {
       "ok": true,
       "flags": []
     },
@@ -217,7 +217,7 @@
       "flags": [
         {
           "level": "low",
-          "msg": "Reports in TWD; figures converted to USD at 0.0302. Trailing P/E may mix currencies \u2014 verify against filings"
+          "msg": "Reports in TWD; figures converted to USD at 0.0305. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
     },
@@ -241,15 +241,15 @@
       "ok": true,
       "flags": []
     },
+    "ZBH": {
+      "ok": true,
+      "flags": []
+    },
     "VTI": {
       "ok": true,
       "flags": []
     },
     "^TNX": {
-      "ok": true,
-      "flags": []
-    },
-    "ZBH": {
       "ok": true,
       "flags": []
     }

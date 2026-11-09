@@ -1,65 +1,65 @@
 {
-  "generated_at": "2026-11-07T01:52:03Z",
+  "generated_at": "2026-11-09T01:41:35Z",
   "lookahead_days": 30,
   "upcoming_earnings": [
     {
       "ticker": "CEG",
       "name": "Constellation Energy Corporation",
       "date": "2026-11-09",
-      "days_until": 2,
+      "days_until": 0,
       "theme": "nuclear_smr",
       "verdict": "RESEARCH-WORTHY",
-      "thesis": "Largest US nuclear fleet with 23% revenue growth and AI data center PPAs (Google 3.6 GW, Amazon) trading at 13.7x EV/EBITDA despite policy-driven 34% drawdown.",
+      "thesis": "Nuclear pure-play with 23% revenue growth and positive FCF trading at 18.6x forward earnings, benefiting from AI data center power demand but facing policy uncertainty.",
       "action": "Review thesis before earnings. Re-run research_ticker.py CEG after."
     },
     {
       "ticker": "CBRS",
       "name": "Cerebras Systems Inc.",
       "date": "2026-11-12",
-      "days_until": 5,
+      "days_until": 3,
       "theme": "edge_ai_silicon",
       "verdict": "RED FLAG",
-      "thesis": "AI hardware pure-play with 74% revenue growth but -265% operating margin, 35% gross margin, and active securities investigations creating binary legal risk.",
+      "thesis": "Active fraud investigations and a short-seller report undermine confidence in financials despite 74% revenue growth and a $6.4B cash runway.",
       "action": "Review thesis before earnings. Re-run research_ticker.py CBRS after."
     },
     {
       "ticker": "NBIS",
       "name": "Nebius Group N.V.",
       "date": "2026-11-12",
-      "days_until": 5,
+      "days_until": 3,
       "theme": "mega_cap_ai",
       "verdict": "PASS",
-      "thesis": "AI neocloud growing 454% YoY at 74% gross margin but burning $5.9B FCF annually with $2.2B net debt, facing Microsoft project delays and capital-market skepticism.",
+      "thesis": "AI neocloud with 454% YoY growth and 74% gross margins but burning $5.9B FCF annually against $2.2B net debt, dependent on Microsoft anchor tenancy now facing spending cuts.",
       "action": "Review thesis before earnings. Re-run research_ticker.py NBIS after."
     },
     {
       "ticker": "POWL",
       "name": "Powell Industries, Inc.",
       "date": "2026-11-16",
-      "days_until": 9,
+      "days_until": 7,
       "theme": "power_grid",
       "verdict": "WATCHLIST",
-      "thesis": "Cyclical electrical-equipment maker with net cash, 20%+ operating margins, and grid/data-center exposure trading at 19x forward earnings after a 59% drawdown; entry depends on confirming backlog durability and data-center revenue mix.",
+      "thesis": "Electrical-infrastructure contractor with 20%+ operating margins, $631M net cash, and data-center/grid tailwinds trades at 19x forward earnings after a 59% drawdown, but cyclical oil & gas exposure and unverified backlog quality warrant waiting for a wider margin of safety.",
       "action": "Review thesis before earnings. Re-run research_ticker.py POWL after."
     },
     {
       "ticker": "NVDA",
       "name": "NVIDIA Corporation",
       "date": "2026-11-17",
-      "days_until": 10,
+      "days_until": 8,
       "theme": "mega_cap_ai",
       "verdict": "RESEARCH-WORTHY",
-      "thesis": "AI infrastructure leader trading at 12x forward earnings with 100%+ revenue growth, 66% operating margins, and $127B annual FCF, but faces material geopolitical/regulatory risk from China exposure.",
+      "thesis": "AI infrastructure leader with 100%+ revenue growth trading at 12x forward earnings, but geopolitical risk warrants verification.",
       "action": "Review thesis before earnings. Re-run research_ticker.py NVDA after."
     },
     {
       "ticker": "MRVL",
       "name": "Marvell Technology, Inc.",
       "date": "2026-12-01",
-      "days_until": 24,
+      "days_until": 22,
       "theme": "edge_ai_silicon",
       "verdict": "RESEARCH-WORTHY",
-      "thesis": "AI infrastructure custom-silicon leader at 19x forward earnings with 36% revenue growth and positive FCF, but 57% drawdown reflects Lumentum acquisition uncertainty.",
+      "thesis": "AI infrastructure play with custom silicon and optical interconnect exposure trading at 19x forward earnings despite 36% revenue growth, but Lumentum acquisition uncertainty clouds near-term execution.",
       "action": "Review thesis before earnings. Re-run research_ticker.py MRVL after."
     }
   ]
