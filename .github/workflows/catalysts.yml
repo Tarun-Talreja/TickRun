@@ -73,21 +73,30 @@ jobs:
             const fs = require('fs');
             const data = JSON.parse(fs.readFileSync('data/catalysts.json', 'utf8'));
             const imminent = (data.imminent || []).filter(e => e.urgency !== 'low');
+            const today = new Date().toISOString().slice(0, 10);
+            const title = `📅 Catalysts ahead — ${today}`;
+
+            // Only today's reminder stays open; older ones are out of date.
+            const existing = await github.paginate(github.rest.issues.listForRepo, {
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'catalyst', per_page: 100,
+            });
+            for (const old of existing.filter(i => i.title !== title)) {
+              await github.rest.issues.update({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: old.number, state: 'closed', state_reason: 'completed',
+              });
+              core.info(`Closed old reminder #${old.number}`);
+            }
+
             if (!imminent.length) {
               core.info('No imminent catalysts worth alerting on.');
               return;
             }
 
-            const today = new Date().toISOString().slice(0, 10);
-            const title = `📅 Catalysts ahead — ${today}`;
-
             // One issue per day: if today's already exists, update it rather
             // than stacking duplicates every run.
-            const existing = await github.rest.issues.listForRepo({
-              owner: context.repo.owner, repo: context.repo.repo,
-              state: 'open', labels: 'catalyst',
-            });
-            const dupe = existing.data.find(i => i.title === title);
+            const dupe = existing.find(i => i.title === title);
 
             const fmt = e => {
               const mark = e.urgency === 'high' ? '🔴' : '🟡';
