@@ -1,11 +1,11 @@
 {
-  "last_built": "2026-11-09T01:42:23Z",
-  "quotes_updated": "2026-11-09T01:41:00Z",
+  "last_built": "2026-11-09T06:18:05Z",
+  "quotes_updated": "2026-11-09T06:17:57Z",
   "health": {
     "stages": [
       {
         "name": "Quotes",
-        "updated_at": "2026-11-09T01:41:00Z",
+        "updated_at": "2026-11-09T06:17:57Z",
         "detail": null,
         "status": "ok",
         "age_hours": 0.0,
@@ -13,10 +13,10 @@
       },
       {
         "name": "Research",
-        "updated_at": "2026-11-07T05:37:55Z",
-        "detail": "1/1 tickers",
-        "status": "stale",
-        "age_hours": 44.1,
+        "updated_at": "2026-11-09T06:17:57Z",
+        "detail": "nothing due",
+        "status": "ok",
+        "age_hours": 0.0,
         "affects": "Ratings aren't being updated"
       },
       {
@@ -24,20 +24,20 @@
         "updated_at": "2026-11-08T16:07:53Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 9.6,
+        "age_hours": 14.2,
         "affects": "Upcoming earnings dates may be missing"
       },
       {
         "name": "SEC filings",
-        "updated_at": "2026-11-08T10:44:08Z",
+        "updated_at": "2026-11-09T06:17:59Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 15.0,
+        "age_hours": 0.0,
         "affects": "New SEC filings won't show"
       },
       {
         "name": "Prices",
-        "updated_at": "2026-11-09T01:41:00Z",
+        "updated_at": "2026-11-09T06:17:57Z",
         "detail": "56/56 have data",
         "status": "ok",
         "age_hours": 0.0,
@@ -45,7 +45,7 @@
       },
       {
         "name": "Company figures",
-        "updated_at": "2026-11-09T01:41:00Z",
+        "updated_at": "2026-11-09T06:17:57Z",
         "detail": "56/56 have data",
         "status": "ok",
         "age_hours": 0.0,
@@ -53,10 +53,10 @@
       },
       {
         "name": "News",
-        "updated_at": "2026-11-08T10:44:14Z",
+        "updated_at": "2026-11-09T06:18:04Z",
         "detail": "55/55 have data",
         "status": "ok",
-        "age_hours": 15.0,
+        "age_hours": 0.0,
         "affects": "Ratings and mover reasons can miss recent news"
       },
       {
@@ -64,7 +64,7 @@
         "updated_at": "2026-11-09T01:41:35Z",
         "detail": "48/56 have data",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 4.6,
         "affects": "Insider buying won't show on stocks or the radar"
       },
       {
@@ -72,7 +72,7 @@
         "updated_at": "2026-08-15T14:09:52Z",
         "detail": "28/31 have data",
         "status": "ok",
-        "age_hours": 2051.5,
+        "age_hours": 2056.1,
         "affects": "Hedge fund holdings may be out of date"
       },
       {
@@ -80,15 +80,15 @@
         "updated_at": "2026-11-08T16:47:24Z",
         "detail": "16/16 have data",
         "status": "ok",
-        "age_hours": 8.9,
+        "age_hours": 13.5,
         "affects": "The field briefing may be out of date"
       },
       {
         "name": "Movers",
         "updated_at": "2026-11-07T01:56:25Z",
         "detail": "16/16 have data",
-        "status": "stale",
-        "age_hours": 47.8,
+        "status": "ok",
+        "age_hours": 52.4,
         "affects": "Big moves may have no explanation"
       },
       {
@@ -96,7 +96,7 @@
         "updated_at": "2026-11-08T16:47:46Z",
         "detail": "12 found",
         "status": "ok",
-        "age_hours": 8.9,
+        "age_hours": 13.5,
         "affects": "The radar may be out of date"
       },
       {
@@ -104,7 +104,7 @@
         "updated_at": "2026-11-07T17:45:23Z",
         "detail": "428 found",
         "status": "ok",
-        "age_hours": 32.0,
+        "age_hours": 36.5,
         "affects": "New stock ideas may be out of date"
       },
       {
@@ -112,7 +112,7 @@
         "updated_at": "2026-11-09T01:42:22Z",
         "detail": "1 found",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 4.6,
         "affects": "The AI summary may be out of date"
       },
       {
@@ -120,7 +120,7 @@
         "updated_at": "2026-11-08T17:59:32Z",
         "detail": "6 sources passed",
         "status": "ok",
-        "age_hours": 7.7,
+        "age_hours": 12.3,
         "affects": "One of the data sources failed its daily test"
       },
       {
@@ -835,7 +835,7 @@
         "data_flags": [
           {
             "level": "low",
-            "msg": "Reports in EUR; figures converted to USD at 1.1157. Trailing P/E may mix currencies \u2014 verify against filings"
+            "msg": "Reports in EUR; figures converted to USD at 1.1167. Trailing P/E may mix currencies \u2014 verify against filings"
           }
         ]
       },
@@ -889,7 +889,7 @@
         "data_flags": [
           {
             "level": "low",
-            "msg": "Reports in TWD; figures converted to USD at 0.0305. Trailing P/E may mix currencies \u2014 verify against filings"
+            "msg": "Reports in TWD; figures converted to USD at 0.0304. Trailing P/E may mix currencies \u2014 verify against filings"
           }
         ]
       },
@@ -2677,7 +2677,7 @@
         "revenue_growth": 24.9,
         "op_margin": 6.8,
         "pe": 20.878906,
-        "forward_pe": 10.782818,
+        "forward_pe": 10.957989,
         "short_percent_float": 10.67,
         "short_ratio": 4.2,
         "high_proximity_warning": false,
@@ -4801,7 +4801,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in EUR; figures converted to USD at 1.1157. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in EUR; figures converted to USD at 1.1167. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -4855,7 +4855,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in TWD; figures converted to USD at 0.0305. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in TWD; figures converted to USD at 0.0304. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -5508,7 +5508,7 @@
           "revenue_growth": 24.9,
           "op_margin": 6.8,
           "pe": 20.878906,
-          "forward_pe": 10.782818,
+          "forward_pe": 10.957989,
           "short_percent_float": 10.67,
           "short_ratio": 4.2,
           "high_proximity_warning": false,
@@ -6394,7 +6394,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in EUR; figures converted to USD at 1.1157. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in EUR; figures converted to USD at 1.1167. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -6448,7 +6448,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in TWD; figures converted to USD at 0.0305. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in TWD; figures converted to USD at 0.0304. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -8687,7 +8687,7 @@
           "revenue_growth": 24.9,
           "op_margin": 6.8,
           "pe": 20.878906,
-          "forward_pe": 10.782818,
+          "forward_pe": 10.957989,
           "short_percent_float": 10.67,
           "short_ratio": 4.2,
           "high_proximity_warning": false,
@@ -14185,7 +14185,7 @@
     }
   },
   "asset_location": {
-    "generated_at": "2026-11-08T10:44:14Z",
+    "generated_at": "2026-11-09T06:18:04Z",
     "rules": {
       "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
       "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
@@ -16348,22 +16348,6 @@
         "meaning": "Corporate event: M&A, guidance, exec change",
         "filed_date": "2026-10-27",
         "url": "https://www.sec.gov/Archives/edgar/data/1030894/000110465926118978/tm2628147d1_8k.htm"
-      },
-      {
-        "ticker": "VRT",
-        "form": "8-K",
-        "label": "MATERIAL EVENT",
-        "meaning": "Corporate event: M&A, guidance, exec change",
-        "filed_date": "2026-10-26",
-        "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026067127/vrt-20261026.htm"
-      },
-      {
-        "ticker": "CLS",
-        "form": "8-K",
-        "label": "MATERIAL EVENT",
-        "meaning": "Corporate event: M&A, guidance, exec change",
-        "filed_date": "2026-10-26",
-        "url": "https://www.sec.gov/Archives/edgar/data/1030894/000103089426000049/cls-20261026.htm"
       }
     ],
     "price_movers": [
@@ -17216,6 +17200,70 @@
     ],
     "news": [
       {
+        "ticker": "NVDA",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Nvidia's out-of-hour shares fall as firm probes CEO Jensen Huang",
+        "publisher": "Reuters",
+        "date": "2026-11-09",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNcUVlREFfdFVvdmk1OXFEamNOcFVZTGJFX1gxZkhjYjhXNTFnZkJqUmpLLTliVmRCZUNtRGdHSDZ2cVBvRXlLdldZSG1rVmFfMFk5M1dKNnBnVnNnUzZ1NmVSNkRWakkyNktBZmhGbzJwYkh5YTZBekVPY3pyUU9lTXY1WGt4TkhLcHVPTldJb1k3MGVPdzBLcTIyVzNuRUpyRGt5cDJpMV91QzdjcWFtQy1MekMwU3lkRlNXUFNn?oc=5"
+      },
+      {
+        "ticker": "NVDA",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Nvidia Shares Dip on Robinhood as Huang Affair Spurs Board Probe",
+        "publisher": "Bloomberg.com",
+        "date": "2026-11-09",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdnRpX0RPT3RRQ3p4THN2ZXU2MHVWRjVrTjBteEM2cEV3RXZuU1pPQWdOdXNrZkZxcWZRdUhMWVdkWjJyM1BaVHQ1UVMzX1M3eGFEQzdpWWpPaDA4d20xSHVtWERFLVlMSHZwdWJNYUZSUHRtOEQtLXRsWWEyUU5UTlhpbkhIYnViNE1jY0g0R1l1ZGhWa25ZX2F6ZWYyRng4ZXVSd2FNQlRzendmSVJSb2RXeDR0dw?oc=5"
+      },
+      {
+        "ticker": "NVDA",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Nvidia falls about 3% in after-hours and perpetual futures trade",
+        "publisher": "Reuters",
+        "date": "2026-11-09",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQb0pTclA4c2pDZlE3NXExNGt0dU9JUDRTaU80SVhfU1FzV2pmSzhYZG9rdzdPaGZSRHV3LXEtaDAwX0ttREhYUGwtalVma1ktTlBCSUdzLUJETkhFVm5ETDVrNVF6OGswVE5EempEc01PSXlrbWRtUERvWDlwVk5KMnlmRmlNNDRYRS1ubHB2bl9oRXp6WFg1cGFYVVdzSnBaNE53?oc=5"
+      },
+      {
+        "ticker": "NVDA",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Asian Markets at Risk of Pressure on Nvidia Probe: Markets Wrap",
+        "publisher": "Bloomberg.com",
+        "date": "2026-11-09",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQR1JWME4tcFN3Vlh6UlhVeEN3c2FlRUFkUWRrczJ6OUZ1QWRkRndtMy1nZFhBaU5Lc0dzaXU2ZjJnNUtwN2RSa3dyLXlwUV9QanZmaC1Wb2xhbUVZekZhaXdXZkpSazFDVnJqZWIweWtvdGczQi0xTnB1aEhiSy00aVFsMWdYaE1sRkN3NlU2YmVJdzhv?oc=5"
+      },
+      {
+        "ticker": "NVDA",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Reactions to Nvidia's probe into CEO Jensen Huang",
+        "publisher": "Reuters",
+        "date": "2026-11-09",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNclQ2eGQ2Qk9RRTVocm9BdXA0a0dFMTdFVjI4cDNOR1NfbFVoc0ZlNjhXTU5UVHcwejhZaWgxandrNzh0ODd5ZWs5c0o0WmpPN2lNazlYU2pqcy1SS3dVY0VrbnVCXy1zcEFXN2tTYTU5dG5qc2FUZW14azNrRmthcElvYVhHMkxCZk9NcnNTZjZ1eURraEI4?oc=5"
+      },
+      {
+        "ticker": "NOW",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "ServiceNow Stock: Capitalizing On A 32% Post-Earnings Collapse (NYSE:NOW)",
+        "publisher": "Seeking Alpha",
+        "date": "2026-11-09",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTWl2MXNaQXdPZTFjbEVsRzFzM09rS2FwTHNmQTItclQyY1VQcTZ1U0JKSG1vSEY2anpvazFZNUhuQVVhSFZzaE5ZTkpjcVFHcjNPeW1MT0xoVmhTMFhwTFhmMUlvMFlRUE1odUZtVE9fZmZQLS1FeEJaWVpQSWlYTE5PTi1RYTdNOXQ5MVdTOFZqSWpmZkRXbXJWZEZHUDFlSVVWSDh3?oc=5"
+      },
+      {
+        "ticker": "AMD",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "AMD: $100 Billion Revenue Target Appears Set (NASDAQ:AMD)",
+        "publisher": "Seeking Alpha",
+        "date": "2026-11-09",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSzRpSFRhNzY1WC10YUlBX1ctaXg3SzNESnV5V3VJMmZ1T2xTZlYybVlyQjFMbGQ4MUctR3J0VWZCVjJKcktyWk5tWkYxM3hpZFBVcXEwS1puWmktdWpLSGRmM0JxaDlLOHZOTkZPdVNNSm1TWDR3UUkxNlMtSWh5dQ?oc=5"
+      },
+      {
+        "ticker": "NVDA",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy",
+        "publisher": "CNBC",
+        "date": "2026-11-08",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPd1BJNjAwTmc1dWhNWkFEblREai1hbkhYZFBjT2MxaWV1b283RXNKTnk1emdfY2p5LWlXOEo5M0hLWWhjTG1UVmdVV2xvS09sb0tlelBpalV1Z1lTdUZ1VWJ5Uzl4cFJqeXV2ZUF5WVpTSWFGeGU4eldfdHpScTMySHpZQk9fWGc?oc=5"
+      },
+      {
         "ticker": "TSM",
         "verdict": "RESEARCH-WORTHY",
         "title": "TSMC Shares Jump 6% on Nvidia Memory Chip Report",
@@ -17240,12 +17288,36 @@
         "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNUZsRWVuUHliYXA1VjB0QVlPUWI3RjEtMU1Nc2YzVmNHV3FWVjk5bjl3aUdDN2VvWnRraHp0dUNJcFJ1SU1JVjNPNHIweDN3RHhtRmNWRVhhOS1BVmthaWpma0ZxUWdBbGJrblhCaTBadG1PQjNSSE1zc1AxZm9jSlFJaS1xdERjaUQ1VnVtam5wV1FlT3NBY3pyall5NXlpTHc?oc=5"
       },
       {
+        "ticker": "AMD",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Lisa Su Expects 80% Revenue Growth in 2027. AMD Stock Is Still a Strong Buy, But It Demands Flawless Execution.",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-08",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPWHFtTlVvRHlWRkhUR19QaTZFZkFjWWdCTkZZemJHRUxMZ2tFZXhTbENFS2l1Nm5zMkx0NHF1WTBlQ2R6Y2hrSDdJSE95TTZrTVFQSnF2bDBrU2dwYnR1QkUzMFlLVFRWQjVBQmZjTDZvTUI4MVlqZGNLQ0R2WkxEOXcyUHpEdHNhd3daejFmMzZ3YVFT?oc=5"
+      },
+      {
+        "ticker": "AMD",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "AMD, Palantir Beat on AI: $13.38B, $2.31B Revenue [2026]",
+        "publisher": "https://tech-insider.org/",
+        "date": "2026-11-08",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQOFc4YlNHWDJVX0NXREl5cS1ScEJCQ2lnN2N6cVVCR3V4RGlsLVgzRWxhS3hPWG44c2pkRW8temJvbHlmR3BoVUt1THlKMzA2WHFKV3FiRC1rMEc2blI3eThtN0FScVVhZEV0ZzNhazlURUVOUDJTMmZIcXVjeFlPRE01ZktDLWd5WVZhc1BVVQ?oc=5"
+      },
+      {
         "ticker": "IBM",
         "verdict": "RESEARCH-WORTHY",
-        "title": "IBM SPSS Statistics Subscription: Plans & Access",
-        "publisher": "CASRAI",
+        "title": "Doom delivers five minutes of terminal violence on an IBM mainframe",
+        "publisher": "The Register",
         "date": "2026-11-08",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9OWjhOb3dXcEtRZzVWZVFfd3VvOHNkOFBTVG1vWVY5MFhqZkpHUU9wSkVoLVdVYlF4NlphR09oS3VxbW9VcEFNUDF4NXFydzExcWY2WlJZc2c2NVBXRU1JUEpPRXYwUkc5YlE?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNU3VFRXVoZHk4Q0pUUzBEVDlvUHc2endWS0loS20tMkNGMGk5Sno5TVlIVUQxWkNPYm8zVzJEMVBFWWdld2Y0LWVRVjE5Z2h1OWFaWHR0akMwaXo1YmlTT1Z4N3BRUGVNS00yaWlOVXl2aWlBTzdHX3BmZUFrVENHRlM4U1dta1ZtSGpiV3hOREZLMklSTjF6V18walVlQmpBRHZPUENlUGctcGhvOW9kVWs2Q2FpV2RTSlFaTnVDSQ?oc=5"
+      },
+      {
+        "ticker": "IBM",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "IBM (IBM): Software Is Speeding Up, Yet Analysts\u2019 Average Upside Is 5%",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-08",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQR0J4OXdDRENEVkd0RVJBVWlCRW5wWm0xWTdXU2RIOF90ZDZCS20zSmo2bkNUalo0WVFUbEdENV9BM3JXWkp2OVFnY1JLaWlrb3pYWW1XTE90NERTLThadFVwLWx3VjB5LUl3cVNSMFAyT2xMV0pkRkJiYWFTRzdrWjY2Y1VTSk1RNzBYakVDdGpyZURKR0xfb3BB?oc=5"
       },
       {
         "ticker": "COHR",
@@ -17256,6 +17328,22 @@
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNS0JDVldWbmRUTnQ4LWhxM2oyMHB1QlJyNnl1RGxnd3AwVUlXaU9Fa01LWDVfWEp4ZFBHeXhhZnhpaFVmeE40N3llY1JWOExTUWUxa3drbjYyV296TkRURVNRNHVreENHaDI4WFlsdk5peTRIdlo4NTVXUEJMQmNId0x3RmdLcGJQdms4RkIwdTZwUnJ1OTMwTlV3?oc=5"
       },
       {
+        "ticker": "CEG",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Constellation Energy Stock Forecast: Monday Earnings Put $245.52 Reclaim in Focus",
+        "publisher": "TradingKey",
+        "date": "2026-11-08",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNMldxT1RtbnFwUkZBTmpSd295NC1QYVZsbDRQcy1lYlRYRmZOc0JkVjM4dHNOTlFYOHg5aXkzNHF4VnpLSl90X2lqWjVaZTR2eDFWbWlNakFRS2QtSlVkZ3FBTWUyYXBaTUhMSm01LVZZclQ2ZmFjb3pScHhkWkFET1d3ZlZNV0pfTjZlWVpoX1BrSDZUNXEtWldqRU5vNUNpT3FfR3RiNkZncVlOdGpzV0h2S0w1aGx4R2M1cHpOcUx3dFg2VTZkdXhB?oc=5"
+      },
+      {
+        "ticker": "VST",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Not Bloom Energy. Not Vistra. This AI Power Stock Just Posted a 96% Jump in Orders.",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-08",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQVY0S1pPS0ZaVV9ibjR6YXVxQnZXVEJhOXhoa0YwUy12dklqWkJnSVNGMkFaTGlKTWg0bXlNdG1nc2VhWlZ5cDNMOTJmRENVOG03cGcyc2VEQzFsTHVwTjFjcjJsT0trT2hoV0ZOaTBORGhxVTNSbnVmTzVuZHM1ZEp2alpfQkg5c3pYRA?oc=5"
+      },
+      {
         "ticker": "CRDO",
         "verdict": "RESEARCH-WORTHY",
         "title": "Credo Technology: Recent Drop Turns My Hold Into A Buy (Rating Upgrade)",
@@ -17264,20 +17352,20 @@
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOeUV1dXM4T0pQRTF0N1ZleWJQRTl5bWI5cDJRM2t3cS1lZ0dqbWJZdmVUMFk3dEhORVEtZFZGb3duTG1mcVg2V2VJUTB4bjhvQ0lwSy1BcURYSWNNOEFCNXZqc3JWalJUS19EdkQzU2lucThDZDZjVTNxYURkZWlfTTBqcDQ0d1NiSjVmMEFValkzU0hzRkdUM0s0aTN3XzhvNmc4YmlyYWNrWmFfU0E?oc=5"
       },
       {
+        "ticker": "APP",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "AppLovin Shares Surge as Revenue Continues to Soar. Is It Too Late to Buy the Stock?",
+        "publisher": "The Motley Fool",
+        "date": "2026-11-08",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQbl8wc1lwS1YzenBQOGpQUzVSX1pWX3ZEcjJjR0RvY3NOVDRINkhKNVJNNkpOcWRjeDZfRWhoMlY1Ni1OblFBVTFWQmp5NnVRNlZKcEduUjV3ZWw2R2FaR0FxQjNzc0EwMTRJZlcweWpHNkg5SE90MVZFRURaWGFvQ3pjZkVQRjBiU1NTQmFMN1k?oc=5"
+      },
+      {
         "ticker": "META",
         "verdict": "RESEARCH-WORTHY",
         "title": "Meta chief strategy officer Dave Wehner leaves to join AI infrastructure startup Fireworks as CFO",
         "publisher": "CNBC",
         "date": "2026-11-07",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1Sb1hhMXlCOTNYWFJTOFIzRVZpeEM2MDQtUVpoSnk0ZVNlVWktUHp5d1V3STE1SW9vNkxabXBQQlFXc21ha2RnU3JnZGhGeXI4RUpJaUhuSUdTb2V2djEzR3FzRnJpc0Z0TmpVT1FRSFNabmFqbVE?oc=5"
-      },
-      {
-        "ticker": "META",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Meta Strategy Chief Dave Wehner to Become Fireworks CFO",
-        "publisher": "The Information",
-        "date": "2026-11-07",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTkU4b2c1eWpibHE3NEdhcXYzQldTTlJDN3NOcEhkZnpuMXNHOTczR01FWHd4X2lld2xUZTZqT3NXYXNodTVGS2Q2VHpFNzhKQzAwUzFxcWlxTGw1ZWY2TzF4T3A1WTB6QXdOUG5hTVFPOGtjWW51M2FKNXprSWE0QXpqT2p5eDhTdGhYdUpTRy14Y0VsdjZZRmxzdXdYMEFIR3E0T213?oc=5"
       },
       {
         "ticker": "AVGO",
@@ -17296,28 +17384,12 @@
         "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPRXJBT01KeGV3UlFDUDhuei11QXFpR1FuN3hkMGp4RVlUaG9FZGVVUUgwUGxBRGRGcnBiZHNVY0NNMXlibkcxVEFicEJrN3VMMGlVbWctaUhvMFVfZWdoYTIxS0IxalhQQmJMSHpocnlqdnkwOGp5QmwtRllJWXhTUVRUbFdDemcwNjdJUzIzSHRNRF9yT1I3Zi1GTUFMMmVweE1PZER2aWVJdw?oc=5"
       },
       {
-        "ticker": "AVGO",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Broadcom Stock Price Forecast: Marvell\u2019s Acquisition of Lumentum May Threaten Its Lead in AI Optical Communications",
-        "publisher": "TradingKey",
-        "date": "2026-11-07",
-        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQM3phRG4tWTJYclJheFltYzVRal9qaGRYVlNSUGFjMnMwaFJ3Y0VnOFhkak9CZWJGXzhQQ3pDeGNmSVp5eWhMTk5kQm5RaWNPblBxMFZEY1p1VzlNVThOXzZBbXhKUDctaTFsRlFwbHpfaER5Tm9ZTDhRMXBrZlV2anBvYXdtRmNIcXdoeE1JZkpYaVBGM1hSV3pWLUswNzNWUTRZWnVFeUJxV2RXa2Fjd0FyMkx5a2d4LUF0OS0wbDhUVW5COHNtdDVDZnBGS2diUHhhOENvd215UHpNRExGd0E1blcwbDFU?oc=5"
-      },
-      {
         "ticker": "TSM",
         "verdict": "RESEARCH-WORTHY",
         "title": "TSMC stock jumps over 6% as Nvidia asks chipmaker to make memory chips",
         "publisher": "India Today",
         "date": "2026-11-07",
         "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNRlNiaHhwRUJ2VUNZRzVLNnBhSVdJVHo2ZldhUUZuRWYxYk83ZWVqNnhMOUVjRjlzYlpQeldEWjR4blZLT0JYU1hDTWVDWnFCQ2xnRHcyQkNWYTlsa2o4eFNHNnVWM2k4M1NsQms2aFk0alQxRV9heU0zVXlNbTZWQzdDaXJQU0NXR1p3aXYyWWRQVFhScWFDY1daOEZBVzd6MjBOQW5ObURMc0VCOHFmQzlSWk9xSWQ3S2RTTThEbjVGUV9CUkItaVZxbE9Qc1NQU1HSAdcBQVVfeXFMTmVWV0ZtVkNBN1dKRTZlbHhJV2haWmp1clEtaHFSQ2tXRzJTVkgxWTMwLUlrcDFmaHNaWlQ3SVBIZGVaOUxKVU5kTW1YajN4WHBHbl9aUjcyZFpDYXhVbnhub3NoSV9DbWpnUFJUZU9FRm1RWEt5bzF1RjRnaFlQYUlBTTZFemVLeUJ2ZDN3dmZFWDV2bzdfeFhVNUR3ajV6NWhvdjlrRUFBY1JucWllNlI4bHpnWVpqQWVxLXpVd01lWE9FNF9EOW1COU1hMjl4N2R0OWJlblE?oc=5"
-      },
-      {
-        "ticker": "AMD",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Why Did AMD Stock Jump?",
-        "publisher": "Trefis",
-        "date": "2026-11-07",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOclk5czdxelNiNl9fWkFHWjJSRGJNN3FxMGpNV1dTX0ZjNHQ1eVl1WEJMdnlsSmtDby1ranFIXzlkS1VFVlRIUUlYdm9yVHRzNFlFellEUlgxSFBjcTNfNGlLNWt6ajROZWdORlNXTkQydllYYnNURDhFOUE5M1pZVGVEbjI3bGpleHhoNQ?oc=5"
       },
       {
         "ticker": "AMD",
@@ -17368,14 +17440,6 @@
         "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRlh2YXJxQ01pTDJ6aXYwU3dpYkdoLVgtNjJWT3BPU2lSSzg0QWI0THVVS0tHUlFoZnU4aUZXTTktbUl4SDNFR2ZiUy1aNkxCdE4yM3RGUFFUR1RlbEdDellLN1VGN2xpTWlfZUVfWF92cm5vU1VHcmlLYkIyZlNYWG91WmVnUkgydG4tb2llRXJLLTdkVF9MNWFQNA?oc=5"
       },
       {
-        "ticker": "GEV",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Is GE Vernova (GEV) Trading At A Premium After Its $9b Deal?",
-        "publisher": "Yahoo Finance Singapore",
-        "date": "2026-11-07",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNLWNqOVFuSGlMYjRvY2lUb1N1a1pvN2lzYXg3N1FTWDdWRmhoSjhpVGdRUlBoY0tUTDhfVGM2YkFYYXpsLUFCejJUMFlkQWVCd3psWmw1U1VEM0dZSDFmN0VRT3dRWVB0VS1pc3ZVR3pTVlo2RVFoeEpyU3FGZ3FSTnF4a3AxQQ?oc=5"
-      },
-      {
         "ticker": "ETN",
         "verdict": "RESEARCH-WORTHY",
         "title": "Did Raised Guidance Just Shift Eaton (ETN) Investment Narrative?",
@@ -17400,44 +17464,12 @@
         "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNaV9yTHRFa1NfbjdlZ1hpZ3RBdEFtZDhjTzFLYy1VcmhUejVlbENLNF83RjMwWlF5U0lsclViNF9yblJldGhZejdhRm05MDBINGFxUng2TmNBNGNBTnVYU2prZVRZVDJBTU54ZGhnZmZmb05ha3kzbG8yZ3FYSGJkMGtmX281V0k0OUVXVFFhVnlBWEdEdFpFMHZHeFV3R05Sb0RoMUx3bFBhb2Mt?oc=5"
       },
       {
-        "ticker": "APP",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Applovin Corporation (APP) Stock Forecasts",
-        "publisher": "Yahoo Finance",
-        "date": "2026-11-07",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTnFBUnBqZW1rdFI0cXJUQ2xqWFZsY0JFdG83T0pJdnR0eFUyNkdfeG53T0VPRkVWQXVubGxjZnJzTnNjdDlneUM0R2prVTRGTGdlbmNyUFVSVV84bGZGOFMyNS1yNlF0WU9jc0t6SjhucVBxS2lzWVdueVpzNUhnNk5WWXYxMEFZQ3N2bA?oc=5"
-      },
-      {
         "ticker": "GOOGL",
         "verdict": "RESEARCH-WORTHY",
         "title": "Alphabet Acquires Qualcomm Stake Through Modular Purchase",
         "publisher": "The Information",
         "date": "2026-11-06",
         "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQjlTcXZtdTBHZTdNa2U4bk9lbWR2UTVCYjQxa1RocHBMdnZqS2w2NnlPRXZGQnVGYmZpYlJ1cHY2VVl2OXFzQldMdDdiQVhpQjlaekJSOHBkUDU3VEZ1VnpDLXBId05SSnNiZUpYZUhUSXlwVFFKSGI5NXE0QllvVXZKdFpXbXM?oc=5"
-      },
-      {
-        "ticker": "NVDA",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Nvidia stock oversold setup: Key levels after a 9% drop",
-        "publisher": "Yahoo Finance",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNjhTc0JFcEFDRDdXX3N3VDROUHZWS25HV0loYWVGV2tYaC05U3Vvc3hxdW91UERlREdKQVIxS2Y0c1M1UmE5LXUtdU9WT0pqVFJBRWZzRU0zS1hPWTByX2QtRUp3SFN2dGRyekZPSV9VdVY2NHBkSEJjdnc4T2JaRU9RdVhiaDdRY1VUR2NYWUI5cnVVMHJVaE1faGE?oc=5"
-      },
-      {
-        "ticker": "NVDA",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "NVDAB Plunges As AI Regulatory Fears Drive Nvidia Stock Selloff",
-        "publisher": "MarketForces Africa",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQQjV1dUpIQUdGOWE0aElYQm9JdzZYWnV4VEQ1TWs1R2Mxd2YwbUt6a0hjQ0xoT1E4VHItT2FURDI5WXpuR2J2Tm9abkZyRjNKTzREUmhhb2p5akdZVFhFbG1qckszc0JWRE40MjBtb2ZiM2I3U0pkT1F3RFhGQVN0QVBhd2ZRSU9wcW9iSXdKTV82VlFk?oc=5"
-      },
-      {
-        "ticker": "NVDA",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Jensen Huang Says Nvidia's Next-Gen Vera Rubin Chips Will Generate $40 Billion in Revenue per Gigawatt, Up From $25 Billion for Grace Blackwell. What That Means for Nvidia's Growth Runway?",
-        "publisher": "The Motley Fool",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNcUFWdjA2ZXlKcFMtdk5DS0RtTHJ1N1dDSnpjN2VoMFpnZDN5MFU3WjVpUHFQMm9ZZy1nNEJSZ1pYM3g1dEkzWmJxcHZmaC1TY1Nkc2FIcFlOMl9OQWw2a3A1cXVZQ3NMclpadmZFQTdkYWVTS1dibjFSVDVXeGIwZTFtRHZHZHpnZUFXaWItMGJab09MblRnTw?oc=5"
       },
       {
         "ticker": "AVGO",
@@ -17450,26 +17482,10 @@
       {
         "ticker": "NOW",
         "verdict": "RESEARCH-WORTHY",
-        "title": "ServiceNow layoffs hit UK, US and India as company restructures workforce",
-        "publisher": "People Matters - HR News",
+        "title": "ServiceNow Stocks Move Lower as New Layoff Round Follows 35% Sli",
+        "publisher": "GuruFocus",
         "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQLVR3eWNjSUNwNVdFY3VrdHVaNjcwWmpxNHNoSFBzRDF6M21TeUZZanRLTWowMkZDTEE0ZE9ONWNaLUJUa1JUTGxmQVYwRFdFY2pvcTUtV3pHVUg1eXFzdjF4Mlc5bmU5ZjJQZWJzaGotMEVqX2NhRVRUZFRQR2dmSkhGNGJwTUo2bUF1RjFMalNnYVhKLXFheFlxcElJN1Z1aWpKUXVDY1JkaTF4Qkh6SWZ3WVM0czByQ09NX2NUbFkyRm8?oc=5"
-      },
-      {
-        "ticker": "NOW",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "ServiceNow cuts jobs in US, UK, India in AI restructuring",
-        "publisher": "Tech in Asia",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOUlFKMlJTOXRwaXE0a3JXNVNVNzVVdXVoLXNGN25DdjBDemFrWTBPTElENXBoZU1ObjBGMmtTNS1QLXZuZG52cG5TTWZqdjhRX25ESE1oaXdFdC14S1RQcUlzV01OZm1GQ0JPYWpKaE83d2Y3VUp3eDJvVW5rcmZvb2hWbGdVYlVORTBoZUVCM0w?oc=5"
-      },
-      {
-        "ticker": "AMD",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Can AMD Stock Fall 50%?",
-        "publisher": "Trefis",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQl9xUGNqZ1pXalUyZXRUTWxhR3RkTktfa3dQdFVBSHpXN2FESFhpYkFNMklRdnRFblBkZFJYb0xkbFdSM2EzRnRMT25aVFozempPNHlkLVVzX3F3d2dfSDI3dlBFWlh0T3hTSHM4WWgxWnNRQ2JXSHZLN3l1amItczlrVnhxSlB6?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPU01XSXltMUsxVkhzNFg4OWVoMW5QUnNKMjVwRFFpb2Q2el9TQXc5NjlXemFzRmZhVzk3dV9hRndPUVl3Y3R4d0o1X0xDZXI2U2tUdWliR1RBbjJZdHYtVHBCVmIydGdLX3hGcTZGOVZrNTdycEVGNHg0QXpjTEN0MzNHWFJlZUJyRGJRTV9seUhCODY5V2hYX2VfWFY0VE81ZHNPNGFuMA?oc=5"
       },
       {
         "ticker": "MRVL",
@@ -17486,14 +17502,6 @@
         "publisher": "IBM",
         "date": "2026-11-06",
         "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOcF81MWhNcEljTE9hMkx4VHFuV3VWRzZsODlIaDNGMDBMcjgzTmh2WHU2ckh6bWQxWVpSUTlTVUdvaXVZXzV3dlNrOUY5WjI2SUVBRW04cWdvcVZhLWdzaVNjdWdiTl9DblpRcWJramY5THFrVTNGM3A3YlJmR2pyMng4REVBeGE4aVp3aHJxaUpNVnJRSzE4SXh5S01yckphVlNvY1oxZUtwYVpsUFQtVW9Ib3Jhd1RZcFJWVlVucHdGOTUzVFV5VUY2Z0ZtUW5fWGZMNQ?oc=5"
-      },
-      {
-        "ticker": "IBM",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Supermicro, IBM, and NVIDIA Cut Inference Latency 56x With KV Cache on Shared Storage",
-        "publisher": "The Futurum Group",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNU2hrakxLTy1ybmYzWmEyRTVxNHhpdUV5WHBEYjh1WlBLRVZSVU5mSG1IOTE2UUhjZWxoZmxCVHZJT1dPczU2VW1TdUo4bDM3ZVJSTlhMRzZGWGw1WEhHXzA2ZEZ6aWJNeE9wZDhpNXgtYmZmbk5iQlBxQWMxSHNBVThPRktDQUpUb1ZtSWJDSVRMMTJKS3NwaDEzMjJ6U0dTMWwwRUVnWlRkUUo1SWpiSDNYR0JZMHZ4REE?oc=5"
       },
       {
         "ticker": "IBM",
@@ -17584,36 +17592,12 @@
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVU0xSkdXaEo2bkh5UDJoQ2RoYmtvSmstOW5VZ0c3QkRCeVN4MVN6dy1Dc0NWMHpmWWVuMVQyV3lvM2pZRlg1MHI3a0tVbzdkV1NQMy1wM2lXWVFPb3BhLW04aFhXc29VWGhWQmZ6NlZHRVZPT29zRlpEaWIycklQVGlTUmREY0RiTmVaeTV1dHBNdU5oc25IV0hzR1haaU9xNDJ6dEluUkpTWjk4MTd4QlZLdw?oc=5"
       },
       {
-        "ticker": "VST",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Top Wall Street Forecasters Revamp Vistra Expectations Ahead Of Q3 Earnings",
-        "publisher": "Benzinga",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQYVRBWWJJeXoxNEEwaDNYbHBuZTU4OUNCUERZQzFGcE40SWx6M2VwVm9DTUNpZElITG1XSW0tS1B0cDdFX0hLbDZYQkdYUkJnaEp5clA2Z3ZSUWFOZmh0Qjl1b2M1YVh1V0tkUWp6SElzSTBiakJ2U2ZFNGU3TUs3SC1MNGRrTlAwVGdRNFJjT0FNa1paTjIxUm10RXZXbnJwek5TWUFnQzdPZ0FfeDdQN1JNQjBaSzFkZjZjaHhud1lVeEtDWlJQcms2VkcwMFlybzJIRE1VMHpGYWd4OWl6SUs5NHE?oc=5"
-      },
-      {
         "ticker": "VRT",
         "verdict": "RESEARCH-WORTHY",
         "title": "What Should Vertiv Stock Holders Take From Its Third-Quarter Report?",
-        "publisher": "Yahoo Finance",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPU0FKbWw2bm9heHk0REdJWWtrdlJVSXpxcHlnUGlVZFBUX1pjSUtsQ2FyV0RUVHNWVXBVc0FLa0ZDQ0ZZaUR0aDRRZ0RodDRtTmFLSHY0Z1JMcTlrU2VRQUVfX2FiVUtLRE1vdEVzZlVQWXFVMnpMWUdFRzR2bjczSUlXdWEtX1JDbWhreEZqYmE2NkRfTjRqODV1eUlBel9T?oc=5"
-      },
-      {
-        "ticker": "VRT",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "What Is Behind The Drop In Vertiv Stock?",
         "publisher": "Trefis",
         "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObjNRTUpXS1J0UndNZ3NXVF84dXJEY3pHQ2VUYmhrRmR4OUFtODFrN0FWa3BOOVk3dFBoWHBSQ0R5dnh5LW4wZlBoOHJFWHpGRVdYcTBPcUpwRjBCTTctRG12RkRwUEVwazJzSU1rQmgwTXpPT0RHZHl6T0ZxWEZSbk0yS0N4czYzckRTYVJIZEZsRmhjU0NuWHlOVlNKSVB4?oc=5"
-      },
-      {
-        "ticker": "VRT",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Vertiv Beat by $550 Million Last Week. It Has Lost 23% Since Tuesday\u2019s Vote",
-        "publisher": "TIKR.com",
-        "date": "2026-11-06",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOWWpKQk5YYVYyZjJxVzhJOGV4YU8xVkNPLWxKQ0Vha3dicnROeVdKU0RsTE1NVlJrMlpMdkxUWXNKcHpTZndzMWhnYUJqTnBXYnJ3OVZ1LXVVOWVobUpnT25vZTZVb1NfN3AyS212YXE0TzVrbnhteHVFclgzY24wLWFhRlhpTndJbVRfWWF3MGNibmJvdVQ4R2ZfMW9aQQ?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPbGZmUjlrZkpEX01hS1JGaTdRR052WDV4Nm9qV1o1QU9XbEs2dm13d3IzaGdqTWVNNEN2cGR4M19nWU1uUEdud1RuQTZIdzNaZXRZeDVfczFaLUxVNV9jY0NBejJrQ0J0UFpackJBOXVfdUM5cXRucUFjSWlsZXFIQy15NEFQeFBWSFFDZzlTZHpTTWJoTncyeG55b29xckFqcHhUUmFnZ2JvR0FyRnRseGZYUzBrdXppaXpXOUJ5OW5sOW1waFE?oc=5"
       }
     ],
     "insider_alerts": [
