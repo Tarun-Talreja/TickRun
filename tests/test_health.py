@@ -123,3 +123,21 @@ class TestSelfTest:
 
     def test_never_run_is_not_ok(self):
         assert self._stage(None)["status"] == "unknown"
+
+
+class TestQuietDays:
+    def test_research_with_nothing_due_is_ok(self):
+        stage = _stages(research={"ran_at": FRESH, "attempted": 0, "landed": 0})["Research"]
+        assert stage["status"] == "ok"
+        assert stage["detail"] == "nothing due"
+
+    def test_movers_get_weekend_slack(self):
+        friday_night = "2026-11-07T01:56:00Z"
+        monday_morning = datetime(2026, 11, 9, 6, 16, tzinfo=timezone.utc)
+        out = build_health(monday_morning, ratings=(1, 1), quotes=friday_night,
+                           research={"ran_at": "2026-11-08T10:44:00Z", "attempted": 0, "landed": 0},
+                           catalysts="2026-11-08T16:07:00Z", sec=friday_night,
+                           self_test={"ran_at": "2026-11-08T17:58:00Z", "checks": []},
+                           content={"Movers": (friday_night, 16, 16)})
+        movers = {s["name"]: s for s in out["stages"]}["Movers"]
+        assert movers["status"] == "ok"

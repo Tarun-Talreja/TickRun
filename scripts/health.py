@@ -42,7 +42,7 @@ AFFECTS = {
 }
 # Market data stops on Friday night, so allow for the weekend until Monday.
 WEEKEND_SLACK_HOURS = 48
-MARKET_STAGES = {"Quotes", "News", "SEC filings"}
+MARKET_STAGES = {"Quotes", "News", "SEC filings", "Movers"}
 SATURDAY, SUNDAY, MONDAY = 5, 6, 0
 
 
@@ -60,7 +60,8 @@ def _stage(name: str, updated_at: str | None, now: datetime, detail: str | None 
 
 def _research_stage(research: dict, now: datetime) -> dict:
     attempted, landed = research.get("attempted"), research.get("landed")
-    detail = f"{landed}/{attempted} tickers" if attempted else None
+    # Nothing due is a healthy run: every rating is current.
+    detail = f"{landed}/{attempted} tickers" if attempted else "nothing due"
     stage = _stage("Research", research.get("ran_at"), now, detail)
     if attempted and stage["status"] == "ok" and landed * 2 < attempted:
         return {**stage, "status": "failing"}

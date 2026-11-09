@@ -188,6 +188,17 @@ def _commit_and_push_one(ticker: str, filename: str) -> bool:
     return False
 
 
+def write_status(*, attempted: int, landed: list, failures: list) -> None:
+    """Record every run, including one with nothing due, so health can tell it ran."""
+    with open(STATUS_PATH, "w") as f:
+        json.dump({
+            "ran_at":    datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "attempted": attempted,
+            "landed":    len(landed),
+            "failed":    failures,
+        }, f, indent=2)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--max", type=int, default=MAX_PER_RUN,
@@ -206,6 +217,7 @@ def main():
     tickers = requested or _select_tickers(args.max)
     if not tickers:
         print("✅ No tickers need re-research today.")
+        write_status(attempted=0, landed=[], failures=[])
         sys.exit(0)
 
     incremental = _in_ci()
@@ -256,13 +268,7 @@ def main():
     if failures:
         print(f"⚠ Failed: {', '.join(failures)}")
 
-    with open(STATUS_PATH, "w") as f:
-        json.dump({
-            "ran_at":    datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "attempted": len(tickers),
-            "landed":    len(landed),
-            "failed":    failures,
-        }, f, indent=2)
+    write_status(attempted=len(tickers), landed=landed, failures=failures)
 
     if incremental and len(landed) * 2 < len(tickers):
         print(f"::warning::Only {len(landed)}/{len(tickers)} tickers landed — check the model chain.")
