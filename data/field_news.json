@@ -1,257 +1,222 @@
 {
-  "generated_at": "2026-11-08T16:47:24Z",
+  "generated_at": "2026-11-10T18:08:38Z",
   "fields": {
     "power_grid": {
       "name": "Power Grid / Electrification",
-      "summary": "Sempra expects a 20% increase in Oncor's spending plan due to load growth, while PJM revised its data center backstop procurement plan and CoreWeave committed to self-funding grid costs for its Texas facilities. Federal and congressional scrutiny of data center energy demands intensified after the midterms, the Senate advanced permitting text that delays transmission developers and retains a data-center cost rule, and a US regulator adopted an interventionist approach to accelerate data center connections.",
+      "summary": "U.S. regulators and grid operators are accelerating interventions to fast-track data center connections and address AI-driven power shortfalls, while major tech and energy firms are locking in long-term supply deals and the DOE launches new testing infrastructure. Transformer supply chains and cooling standards are simultaneously racing to keep pace with data center expansion globally.",
       "sources": [
         {
-          "title": "Sempra expects 20% increase to Oncor\u2019s spending plan, driven by load growth",
-          "source": "Utility Dive",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOTWdBUm45Mk9WT1RySmhNQ25odUJnb0pJajRLMU1Gc0hoUUQtT3U3UmRPaGY2MlVndS1BZDZIMFFqYl91RktEc2NsWjBkWGhQS3U1U3VpQ09qZUJLRlN0Z3RZMFlIeGhFeVp6X3c0VkEtSGg5LUd2SHhXRTNXc3pGUTJXSEI0dGVMNl9hZHJCTUFjMVFYa1VVQzFFaHRNZw?oc=5"
+          "title": "Nvidia\u2019s Data Center Vision Spurs Race to Reinvent Electric Transformers",
+          "source": "Bloomberg.com",
+          "date": "2026-11-09",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPU2MxVGFaT09uZmVnOTVrbjRFVnBfRTdHYXZHVXRobnMyVEtVQ3Z4RTNyNkc2Wm1Ic0c0VEJqVzIxMW8wSXhlM1dadm9LZC1iUVFBSkFOWmlGdGxldnk3emR3M0Y3OVFmV0FIdk4waG9OdUxiem1OeEphX1RGMWJ4Q1RhZlFZMC1feGZ3azFRYkFYYngzaGU5RFZCaGZjbWFBaTJDX0dMNGxQMDhuX0l5ZGJUdEZrMGxwNjNIUEJUckE?oc=5"
         },
         {
-          "title": "PJM\u2019s revised data center backstop procurement plan reduces utility risks: ICF",
-          "source": "Utility Dive",
-          "date": "2026-11-03",
-          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPS3laUmJuM1IyOEhVNmpZa2VvbGlvMEpoSnl2X1BmZTl4ejVDa2tYYlIzTE04d3lUSTVEaDBPTUFjaDNqWWlDaWpDdWZSUTd0Y1VfMUx3TTVFX1Y4Z3NHWnFqbV91a0FKU1dQTS12MkRiZGhhLWRjWVdVVEtqUF9iNmUwQUlkNEg2WG1CN0RyUjJmUTRw?oc=5"
-        },
-        {
-          "title": "CoreWeave says it will self-fund grid costs for its Texas data centers",
-          "source": "Crypto Briefing",
-          "date": "2026-11-08",
-          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80Z1VlVmo4MnhDZmVEMlYzS1dPTHE4bHpDZ3ZwMFFvOTJTQ2RwbUlxWEJBVlR1M1NQLTlGQVllOFFlWFNaaEFLUkxqcDAxMUZwanFiR05XX0R3YzY3S1pjTC1fcEQ1UzJGbzR4NW9CNV9raWc5bFpyNkpUUQ?oc=5"
-        },
-        {
-          "title": "Data Center Energy Demands and Grid Costs Face Heightened Federal and Congressional Scrutiny Following 2026 Midterm Elections",
-          "source": "Daily Kos",
-          "date": "2026-11-07",
-          "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQSEprYlh4Vy1NWENhUUFOdWpVblJWc2pQSW9fanB5U1d6dm95OFB5RFBjZ1g1UkFqVGQ4Y2poN3Q0VGRYaEl1SFpTMDZxaGZ1NVB0NTZNeTJrRExwU1JaSGV3WUNPOFJUaUlRZDFUZTJzTWhvUm5NcEdvaHh2UnEyOW5CNC05dFFKNDl1cjZrWjF1WVdCRWhnTjIwMWNWUVZ2VTUyaGJWMUVpUUFNMVJPODh5WldndUpaYy00NUN3MERsdUZxdWczQzh6ZTl3UVpwMmFveHg5VWU1OGRNTEE0MGNQSTBtbW15Z01zNTlwazJ1QjZJN3N2S2YtLUp3U1VvNGNJNzFuQ1p1c01DU1BVUmg3UFRnZy1M?oc=5"
-        },
-        {
-          "title": "Senate's final permitting text makes transmission developers wait a year for states, keeps data-center cost rule ahead of Monday vote",
-          "source": "MLQ.ai",
-          "date": "2026-11-07",
-          "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQR08wTDJBTG43a3Ruc0JiS283N2R1dmk4VVlEQVdpckF1WUlnbXpCc0tHVldfSUNnQlJzcDNSSk9EQUo4RUZfYTFIOUxOUlY5UUd2TkE0dlQ3MjMxY1FnTC1ZNUx6ek00NjZXSEU1Y1pTa1RtQ3VnMGoza0c2MTh4R2RXaVo3dThRTFZBZ3ozTWVPZnRHSTZGdUNUUDVOaFVvcXNVZG5MMDlIWW1Ta3M4aUN3dlA4NmJDcXoxVmlMX2VrM2Zrc1NvU2t1V3BOTVBZbUFMUS1xR0lzV1hiWE5JWXk3RHloQkk?oc=5"
+          "title": "PJM grid tackles AI power costs in race to avoid shortfalls",
+          "source": "Reuters",
+          "date": "2026-11-04",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQMnNfS1ZCV05CVG5ZU1VhU201MG5tclBDODZjdkxjTUdUZXIwQUJCSEI4QlZ3enZ4OTFlNVZhbFNmdEpLMnhfeUNrUzZnUzJJSTg0ckxYWlNSNnpVNDhEcm1yRlJrYnYyRE44amdObHdLMVI2V0kxUTB2MWxBNlFMbVc4YlJkLWkyWTEybTAtNERQVlUzX3hRb1pXSUtzVGdPRHVQSkNROUJZc21kMzRVUWFB?oc=5"
         },
         {
           "title": "US Regulator Makes \u2018Interventionist\u2019 Pivot to Speed Data Centers",
           "source": "EnergyNow.com",
-          "date": "2026-11-06",
+          "date": "2026-11-10",
           "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOUnd3WmlXcVpnQ1UtYklyTGl4V3pZMVV4cjRXLW5VcnhWcjFTZDBfb1FDZl9qYUp6U19JV0lSb0Nac0YyYXNmUFVMaXNPUlU2ZmFUSjJsLVBYWjRLTS1PaW9XZ3h4Yng3YTM4ZW5kd0xKcnM1ZWdmbzItVzhHcWRiVUNpT2NncTZ3TWFqWTRzZ2hLSFkxcGJrag?oc=5"
-        }
-      ],
-      "companies": [
-        "Sempra",
-        "Oncor",
-        "PJM",
-        "CoreWeave",
-        "Eaton"
-      ]
-    },
-    "nuclear_smr": {
-      "name": "Small Modular Nuclear / Uranium",
-      "summary": "Ontario awarded manufacturing contracts for the G7's first small modular reactor, and Czech utility \u010cEZ signed an agreement with Rolls-Royce SMR to prepare for its first unit. Meanwhile, Eagle Nuclear agreed to acquire Noble Plains Uranium, Kazakhstan outlined a 2035 target for two nuclear plants, and uranium trading startup Uranium Digital raised $16.5 million.",
-      "sources": [
-        {
-          "title": "Canada seeks nuclear contract in Turkey. Philippines and Thailand advance SMR plans",
-          "source": "oEnergetice.cz",
-          "date": "2026-11-08",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPU3M4YTVVaWhFdjExY2NpbWlDS3RhS3VMSlNWUUQzNnpNM1NVeW80c0pVNlZMSG5lcVlacXdtUlY2SlFldkZNS1R0SDhjTmVtTWppY3NrYkQ3WVd6N29Vbjg0UjBHRy1EUGhselBWZmFlcTlXMUJBb1JTSFYxWFlWN1hPZHcwdDNOLUJGT3hRVUxDMEhuUXlIN3lPa1FmaUtnQ1UybnJBVDhxeHpsTXpOLVJsWW9FYlAwVTdGMnVxQQ?oc=5"
         },
         {
-          "title": "Ontario Awards Contracts to GTHA Manufacturers to Build G7\u2019s First Small Modular Reactor",
-          "source": "ontario.ca",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNUi1Tck5fYUpVeVNGQ0JyMklOR2I3MFpEaWZVYU5sM29hZkdWRjZST1dhVDZHTFRnTGxMRkFsdWF2eTYxdzVlNzlkajhBWjA5b0hKbTBIUmJSb3NoX2V4TGFveHZ1T2loQVNmREhzNFVyN3JLVG9BRHJmYjZRZWV4UkIzQ2lEN2ptRE9yUndNdFRYUTlnTEl2Q3NzYWhlNjJpek94QWN0aGRfcC1ndm5NelFONUp0SkpjNmR5ZVo4SVFRVHBRT1pOZ1pYWDdSYjhK?oc=5"
+          "title": "Microsoft and Chevron Sign 20-Year Power Deal For Texas Data Center",
+          "source": "EnergyNow.com",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNmtOMnRJVnZpV0VpVE1FdDZhSGJtLWtoY0Q0ODhXaVpfdzBmQU16X3A3MUw5TEo2T0VoRTBwZXlvX19kLXcyMFVXUE9yNGpxekRWcG4wOFQzYVJiMHJVWTEtY0JiOVhyeXlhaS1EX1ZaRDhPN1Q4S2tCOTlNT216eVl5WnhBeFpNa2RDOVBhWk1CdElYMWZ6eHZqSFBjN1k?oc=5"
         },
         {
-          "title": "Kazakhstan Eyes Ambitious 2035 Goal for 2 Nuclear Power Plants",
-          "source": "The Diplomat \u2013 Asia-Pacific Current Affairs Magazine",
-          "date": "2026-11-05",
-          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOOV9tYzNEVEtoQjlzdmlZeEs0dEZLZHFwMS1LN2YwZ1BCcFFOVWZUU0NUTmY4S0Y3ZWhUeVFPVXY4amFnQlN4Nk5DbFFEd1NPeXFwOEFXeHoxQ1lXcERmSUFidWVCRnhLeENUcWFJR1RRblU4a3BFUzFIREJDc053YmcxM3QtWGFUa2xfNWlyQjZQUWtJcVJ2MVZoTQ?oc=5"
+          "title": "DOE opens test facility to help data centers improve grid reliability",
+          "source": "Daily Energy Insider",
+          "date": "2026-11-09",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNM3hnSzNlU2ROMDVBQ0R0UWhIbUFLMzQzOUtBa3NjbW5LazV2ZUFTZi1PbDRXcEJYb19ENmwxZmtRSElVRlpBbkJQZUdEZjRmSDZ2Q0ZwOWhlczNTRTZRdGVTeUJ0OEFFTk1Kczg3ZUg0STFqY3pZTUZ0UmVlODBXc1pvcHRNVkhNXy1iZVVtTnBPQUFjcEpabFNiQ3EwU3VFaFM2R09ueWRTd1JKdHY2X2dR?oc=5"
         },
         {
-          "title": "As Big Tech bets on nuclear power, startup Uranium Digital raises $16.5 million to modernize uranium trading",
-          "source": "Yahoo Finance UK",
-          "date": "2026-11-05",
-          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOT2pmQ3lUSDJ3NDgyZXBfTkxNTjNYVVFleFVncWxyNUNwbHNQcHdsZkwweWdYV2VhY3hwdlhycVFqbVhZamI5UmI5dmdfNGZhbkIzejNOY1BveFdJT2lWdFdGQWhPRV81SE04R21NbHJaZjB5R2VhLVl2R2xPSW1nSS1R?oc=5"
-        },
-        {
-          "title": "Czech power company \u010cEZ signs deal with Rolls-Royce SMR to prepare for first small nuclear reactor",
-          "source": "Alabama's 42",
-          "date": "2026-11-05",
-          "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNbnZpRjl3Y0t3RHp5XzR4MFVsdzg1bmFmR0FqZG5yN1RCNlppdFFlWWV1Wk1hb29lU2RDdHhMdzBjQVVLcEw1SHBXX0ZIZFFPblpXWUNLek1jU2Q5bTNpR2pZQ2FLbWJabThyS0ZsZ1NjRjBhNmtvYnNyeU5hUC14VlVrbHVGYUtsVlBUTlotUEFnaXFHTXRLeTQwZDFRMXRGVFFQQ05iQVVYSjBhcHVLOThTZFY4ZUM5SFBxQWJpa0dFUVVxdG5PZUJTVmQtcVNtZEgwVE1LMmtJbm_SAeABQVVfeXFMTm1CMUxuUTdlbm1pSmNfUWc2bV82dGRSSTMtMjlsMVoydVpBRGNJaUkyX09USi03VFdiRDBybGpaV2NGUXFBYmFOanlUVy1VNHEtMVA2cmtEVFpjMlRRZXhkZjhSREZQM0h4YVAwYXEybWo0dXlCdEJPdDZCUUpiZWVuY0tKSjJURmlXVU5FTVhBdW1hM1FuX3NUNHpRNi1IakRtQVhWRjU3aTNkbUNhQ0Q2ZXVzUWprV3czS2pWbGFLUGI5dDBTN1ZvaGlxcWg1djlrcHVWc3Q1OFdWRnowblE?oc=5"
-        },
-        {
-          "title": "Eagle Nuclear to Acquire Noble Plains Uranium in All-Stock Deal at 92% Premium",
-          "source": "NAI500",
-          "date": "2026-11-05",
-          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWUdRRzVhekJvTDRKYjUydHl0c2kzanNpQ3U4OHdYTjg5WjdaSDdWYlhyOGpKR0NlQjd0ZFNkTmdHOHNZRlRUTW9sdGpBYzRCd1V4em9zUzh0S0JzYUc4SDRGemd3NWRIdmNaSVozWG1XbDlkdzE0Z1FzOVg3M1RvQzBtSFBaV2RqTk1oaUdoVnN6MEsyRFFMMUFjb3R6NmFqN0puNWNiSmJGLXliaGhN?oc=5"
-        }
-      ],
-      "companies": [
-        "\u010cEZ",
-        "Rolls-Royce",
-        "Eagle Nuclear",
-        "Noble Plains Uranium"
-      ]
-    },
-    "edge_ai_silicon": {
-      "name": "Edge AI / Specialty Silicon",
-      "summary": "Advanced chip packaging emerged as a critical battleground amid the AI boom, prompting Samsung and TSMC to collaborate on a 3nm base die for Nvidia's custom HBM while TSMC expands its Arizona campus and Samsung's Texas plant prepares to produce AMD and Nvidia parts. Simultaneously, AMD forecasted strong AI chip demand, Nvidia launched power-efficient RTX Spark laptop GPUs, and U.S. lawmakers targeted Nvidia's AI chip exports, even as TSMC denied reports of entering the DRAM market.",
-      "sources": [
-        {
-          "title": "AI boom turns chip packaging into the next battleground for semiconductors",
-          "source": "Reuters",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVTRsRWo5SjhUM1lPV19Xc1ZKUjNWWEx1eTFkZEZLYmpjVG1FNFltZDRRdVBwZ3RBVnk0NlQtbDZmaWdmaFhSY0NFT3Rpa2YzZVRzNl8zSHNzcVdhR3RZdEpFeVNkMW93SDFrbTY5SE9NM3NneHpZOFYxN1FGOVU1ekxjSF9aZ2FyZnRXLU5aY2pFT0gtYTVwMEhfUmU2a2lOaURTeURqcDQ0M185ekd4ZWJwVHdiVWEwanduVElR?oc=5"
-        },
-        {
-          "title": "Nvidia\u2019s AI Chip Exports Emerge as Target in Democratic Congress",
-          "source": "Bloomberg.com",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPb1hFMFZLZ3NScUN5R1drUjBFWFZGSXA5a1JjYW9TTkp0UE5nYWNxekFRNlBQcG00X3NpRmZHVVJ4X25HM3pnaHYtMVgxSENsT0RrTmg4OURDNk12dmhyVDFZbHN6V2g3Y0hWY05HaWxKaVdoMXFxVlBEdUwteWEtVjB5YTdyNTBORnQ1azRXQnFFeVFWcFZfRzFpQTVVSkI3dXFUcFJYWjIwT3JRckcwRzVmdklOdw?oc=5"
-        },
-        {
-          "title": "TSMC considers making advanced memory chips, The Information reports",
-          "source": "Reuters",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPR3VDQTJfT19xV0p2UGZRSUVERlJKVE8xb0VENzVOMEM2UjhPd0ZUM1JISzRGbjJ5aEs0TmZnLVZVQVZlTUZyTEhfUnRJaFJyNmxwbFRhcXdHTExjQURvckJ3bUtTTUtYMmlzektZbGRQemdVMDFrNDhsMUtMdjMzREpIbm90ZjkwNWYyR3lyY2p6RW51cGNvc2czWEo2ampYSVhBaW5ZQm15TWQ0ZGFyOGFESlBEMzBKd2c?oc=5"
-        },
-        {
-          "title": "Samsung to make AMD, Nvidia chip parts at second Texas plant, Maeil Business reports",
-          "source": "Reuters",
-          "date": "2026-11-03",
-          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdnFHVnpXOTk4UEYwSlJ5WHhOaUNkVEtPN2o4N3hnSDl2MW12ejZscWRBNnAyRUdyUnhSbGlVdS12UGwzUDFnNlNiWmFzY3Bya3E0NjZIMDhBZzN3YWNJWlZMaGF6amFORVJiVXlONHZrOVFEcW5VbGV6bUF3cDdJbV83dnJXSXh0NnF1RUlkWkJkdWhsbEZRWVJkeXo5THhPLUl1LTFZUVgwM3JLZGhnTGsxeHJ0OFVTRktPOEZpVm9Cc2M5QkVUcTlrZw?oc=5"
-        },
-        {
-          "title": "AMD Forecast Exceeds Estimates After AI Chip Demand Soars",
-          "source": "Bloomberg",
-          "date": "2026-11-03",
-          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYURlOUxxRUMybEdmbkJoTHZiZEVTTUtCN0gyZ1RsV0s3YlEteXR1NFZIWDNwXzJKTUdCRUpJY0RWNlRqVC02M0VaMFgtY0piUFNGSkhKQmZ3bTVwMHFERHN6ZExPSnVFbWdBWDYxQnNnX0RJRnF6QVlld0FBeDhySGlrUEZ4bEtmWkkybFFVRU9EcnhRd2F5c1M1eGc2OFk5VG95X0dUa1dWUGhPZzJJ?oc=5"
-        },
-        {
-          "title": "TSMC\u2019s $265 Billion Campus Is Driving a Real Estate Boom in the Phoenix Suburbs",
-          "source": "Bloomberg",
-          "date": "2026-11-02",
-          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcTRqYm9vX2Q3QmNhOHlVckZhOThOdFZ0dXlYQmJLcm1ST0ZFdXZVN2FXSWJZV0hpM1ZWMjNmMGppRDU5OWFUVGVueENHSWg0N2hpVlZjTXhlelFUM2ZPT0w1UFJuOFZwNklDMmtRbmw0RmFQcU1oQmQ4SEZ6LXp3M1FNeXh1NEFtbDNxUURhcGlwMl9YVl9SUmRRbnhfT2k4bjNJWENrMlJ1NThtQV9iaGxURQ?oc=5"
-        },
-        {
-          "title": "NVIDIA\u2019s Development Of Custom HBM Drops Samsung\u2019s And TSMC\u2019s Foundry Rivalry, As Both Manufacturers Join Forces To Develop \u201cBase Die\u201d On The 3nm Node [Update]",
-          "source": "Wccftech",
-          "date": "2026-11-08",
-          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5BTkpLWnF6anJoSlk0V0pXOWpCYUJnSWYweVdzS2Q0MDRTZG53alNxSVhPNXVmSEZBSWt2VW9RSzItRkJ4Ul9ISGQxNllIYXVzTFZSTXZ5N3pZNy05RHNWU3J2bUs0R1dhc1Jzc3MwSFdYd1XSAXhBVV95cUxNREVfbGx3VXpvejk1WFFUVDFEVzdnZzZ0MjRGTFhCYl9MTEZuNFNteHBURmtPeGpHdkEtZjFGbW9vRWdtNGdkc2E4bW1aTExhWXpvMXhmdlY4OGdzMEMxeXpuYW9zakMzSGxvbzVDbVVLLW9uSFVDN3g?oc=5"
-        },
-        {
-          "title": "TSMC Denies Plans to Enter DRAM Market",
-          "source": "\uc870\uc120\uc77c\ubcf4",
-          "date": "2026-11-08",
-          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQTUzcXdqTFU4bnNZZ2d2bkM4a2hIVE9Va2Zxa0tTZExuQjhQdHZQWndaY1RZVW14a3BRcGlzSEpVRWtUXzlTbW1kWjByTTVKWDZOdXN5S1FsbDVaTDVoV3l3V29naFFjRFZJdUFpazBCcHZlamVYZGpjVFRWa2ZlZHpmZ1E5VDlE?oc=5"
-        },
-        {
-          "title": "Nvidia: RTX Spark Doubles Laptop GPU Power Efficiency",
-          "source": "THE ELEC, Korea Electronics Industry Media",
-          "date": "2026-11-08",
-          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9fZHZFR1NJbkNQdllnRGpXUWoxWm5rVzdiQXVlNmszTkg4RXVGM2IxMV83QjY2djRSWmg4STlsUVpWUGNMN2hiamhOQjBLU2lsLVZtdm9lN3BIVTNITnRMZFJoaTdQVkU?oc=5"
-        },
-        {
-          "title": "Nvidia: RTX Spark Is Expensive, but Demand Is Strong",
-          "source": "THE ELEC, Korea Electronics Industry Media",
-          "date": "2026-11-08",
-          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9iaXdaem9HTXQwblR1SUZwcGpneWN0bERMUEs2UHI3MVM3eXlLd2x2ejItenFyRkJUS19iOTJMdjU0S2pPQldRdEpraWpMcUc1dVJtT1RScElhY1ROSkRyVVNLeEpMclk?oc=5"
+          "title": "Bitzero receives key transformers for Norway data center expansion",
+          "source": "StreetInsider",
+          "date": "2026-11-09",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxONC03VUh1WGJJT1MxQjAtSFdlbXpIdEplZk15QWRsVFdWdzk1X1VUSmJHdVU2QmxJMUEzWjNFbS1tQVJzcjF2Zy1qNTZDS2cxUHd6S3JXRUQ1cVlzcDFUZ0FQelRfejFyZ2hidDE4cGJmV0lxYl9CS1ZPaE5XT0pYdzJNblNSakFnT2RLSTczUC1PU3ZCYWZKSnZ1bUtMeDVHbmdtY3d6S045NjRTWTFLSktSR2o5S0pkMVZzWmVmemVhekk?oc=5"
         }
       ],
       "companies": [
         "Nvidia",
+        "Entergy",
+        "Microsoft",
+        "Chevron",
+        "Bitzero"
+      ]
+    },
+    "nuclear_smr": {
+      "name": "Small Modular Nuclear / Uranium",
+      "summary": "The NRC issued a construction permit for X-energy's Texas SMR project while Fluor won the associated engineering contract and a Pembroke company secured a major SMR build deal. Turkey moved closer to a new nuclear agreement favoring Canada and South Korea, uranium contract prices reached a record high as explorers expanded drilling, and DISA Uranium completed a $5 million investment in Premier American Uranium.",
+      "sources": [
+        {
+          "title": "Turkey Nears New Nuclear Power Deal, Favors Canada and South Korea",
+          "source": "Bloomberg.com",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPYUo1eDU2MG41UWoya2pKX3lSZU90NnZsMkRHREJKN3JMTnNPcHBvTEdwNDNFanNZSVZMZGdfZzNLMHZ1QkJxT1E1Y0dKbmhFVGlFbnRZZWp6Ml9XbW0xUmkxWTRqbWRhdUVLNVJFRjc2TmVvTFpRR1UtVjNpQWNvU0x3SmRZbk9jLWNlb0lmY1JKMVZ6enZOVS1lWGIta2RUb1ptbDUyMFAwcmFyNzlvMDJB?oc=5"
+        },
+        {
+          "title": "Uranium Contract Prices Hit a Record as Two Explorers Ramp Up Drilling",
+          "source": "Streetwise Reports",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOcm93bERmOGNTSGZ1SWJqSGoyUDFtSFpVZDNMWXZ3c05zTUJQLUVyUG9uemYtcUZVWm9NYUh5dS1nYjBLUVBiM3J0OHlZT29JcnIxVmluMnpwOFJMNzJ5MEdCUC1KbTM2dVBRRWVOdFcwUG12OXVlaHpSQmlvRGRubzlkMFF1SXBZVks1SGVLMVZpbmVSZnN5Yktnb0l3RUNQaXY5VVVEZ3dBVHAzVWlCTU5pYnhLTXN4X0hkMlc2MjViUzdneWhF?oc=5"
+        },
+        {
+          "title": "NRC issues construction permit for X-energy\u2019s Texas SMR project",
+          "source": "ExchangeMonitor",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSnJ6VkpVTkF2VUFBZ0NJTE5HQUpSNHlQNk1lS3BaeTZQRWZ4YmRGRTN0NGlNSUJGYmJZZzRqNEdFY3I5UDdSaWZYNndWbWFWLVpDbF90OHhjVWx1cmNJQ3ZvRV9fLWlPbnJTbXo0OWQ1UkYxYkJWYTdHOGVJaUtwc2RRZVZFV2JfV0tRQXZ1ci1pT3FxQ1JNaVdNTQ?oc=5"
+        },
+        {
+          "title": "DISA Uranium closes $5M investment in Premier American Uranium",
+          "source": "Dealroom",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNOU9FM0lzWEU3WVFER19MS0tLYjhFX0ZGVTFwc3dWWFRiZnhhZVFyd19DWDh6NmZXTC1ZUi1vdEhVbm1PM2xrbUdGR0VHQjRsekJ3bkRFenFDUXlSaG1IVHJicXdsZlB3bHdwTzVSMVZ4Z1NZYjNUN2IyN1M1RjhjczRTUzc2WGw0MWVxY1hJUDBoWDhuRDJVWnN4Yw?oc=5"
+        },
+        {
+          "title": "Pembroke company wins major contract for small modular reactor build",
+          "source": "104.9 Pembroke Today",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9VWW9BLTZQVlNmeThrUDhHVHhwSEhlamdFbDR5NHl5WnBhcGJZZ2loQVNWQ21mT3piOWNLTHJUUVM5b1pUVUlWQ2lBd0g5emtQOGVrbVZkMDd1V1U?oc=5"
+        },
+        {
+          "title": "Fluor wins X-Energy advanced small modular reactor deal",
+          "source": "Construction Briefing",
+          "date": "2026-11-09",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeDVpV1hXVUFSYVBwR2hlelFmcjNxbUpJY09zRU1nTEJyWk5hWDMtUUU2dTZhbGZhSWxOajZvajdaQ1Z2TmxNRklSQXlwcS1paFlVUms5dWZNZUpzamRtM2FTMnhsb0xVc1VmdDNiMDdVNU43cGRFcDdXc19nbEJaNVNfTmZCVGRoWldvcWVlNlZLRHN1RUh3dEh5OTZYUnBrZWlYZEhEZEs5eHQzSXhubHZKdw?oc=5"
+        }
+      ],
+      "companies": [
+        "Fluor",
+        "Premier American Uranium"
+      ]
+    },
+    "edge_ai_silicon": {
+      "name": "Edge AI / Specialty Silicon",
+      "summary": "Google unveiled new AI chip variants amid surging cloud demand, while AMD's forecast exceeded estimates on soaring AI chip demand and its shares surged 13% as Wall Street revived the AI chip trade; simultaneously, a broad set of specialty semiconductor stocks including Allegro MicroSystems, Lattice Semiconductor, and Broadcom skyrocketed.",
+      "sources": [
+        {
+          "title": "Watch AMD Surges 13% as Wall Street Revives AI Chip Trade | Closing Bell",
+          "source": "Bloomberg.com",
+          "date": "2026-11-09",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVW5vcFZVNmtfcXNHTmozMGpHVW8yeEwxc2tLX1AtRFkxNjA1ZHk2a3cydkdqM01CZnlNSjI1M3l4RnFvaFZCRE1aR3d0MnNhYmh4bnpLcjkwei0wMjg5Ulkwb2t4aXNYc19jOGNmX0JiaUR5eDBITE40VHV6OC12SjNoalo1Smp3ckV6VWtiZjNXbHhHSldpc3JnbW5NdHJrRWhkOVF3?oc=5"
+        },
+        {
+          "title": "Google unveils new AI chip variants as cloud demand surges",
+          "source": "Reuters",
+          "date": "2026-11-09",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOd1JDNDVNcnh0MU5wSzdrUVhVY3FpSklfazJZVWEtbGwyUkxydzhTcUVhV2F5aHdHV29OUE9Ea1JkZm93d2xVcU1VMEdEZE1xamt3RlktMVlqLUNGRVlIalpNd3ZRS2Z2LVN3b24yNUcyV1lkQm01MmJ3eHJLZVk3a3ZDSkhHcllvVHVxX1c1d3YtRHV3Q1g5d241UGNpLXJpSXRwTUYzcEdPcUhmN2FqdnBRNVZUYlM1WmJF?oc=5"
+        },
+        {
+          "title": "Watch AMD Forecast Exceeds Estimates as AI Chip Demand Soars",
+          "source": "Bloomberg.com",
+          "date": "2026-11-03",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNdWVmOXl4LUxhNjdjNHZFT0ZXeUF1LWkySXp5Vmw4S0tFbmp5SHdLd2VCbTVqWHBld1BtQVg1ci1DMWNEUWJXc2ZLUUZfSXlDSlgtMVQ5VkZLc3NjTDl3OVMwNnlQblVLby1KWTJJaUVBSUtselFVamlRLVk4VU9XRWpSRTRGQUIwVHotMkVkWl9tS0x2R3ZxUTZmNjBTdG0ydU9LNmVUZEtyQ25ma0E?oc=5"
+        },
+        {
+          "title": "Allegro MicroSystems, IPG Photonics, Lattice Semiconductor, Entegris, and Broadcom shares skyrocket, what you need to know",
+          "source": "Yahoo Finance",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOLWZ1WTdkSV92X3VKYXhYcVVfV3JiT2ZHOFFNUDhoa296bWJzcGRlcmxUOHNXdUhRTHFxYmpKSkRLTjVPQlFzX096WTY1VS04YzhsZUpIQXhvRTU0bURCWFN2NlhxbmF4cnFqaWhnVmtndWFlRDBrS0thd0RtbXdqLXdZUFNLMkdyMXhhSHY2cmpvSzJvNDd4YUZSQUlEazhsRmF0b2Q3REtNWVk?oc=5"
+        }
+      ],
+      "companies": [
+        "Google",
         "AMD",
-        "TSMC",
-        "Samsung"
+        "Allegro MicroSystems",
+        "IPG Photonics",
+        "Lattice Semiconductor",
+        "Entegris",
+        "Broadcom"
       ]
     },
     "cybersecurity": {
       "name": "Cybersecurity (AI Era)",
-      "summary": null,
+      "summary": "Vanderbilt University suffered a major ransomware attack by the BYOD group forcing campus-wide device shutdowns, while Queens libraries continue recovering from a separate ransomware incident. Meanwhile, Palo Alto Networks highlighted AI-powered threat trends and ransomware recovery emerged as a client retention metric.",
       "sources": [
         {
-          "title": "EXCLUSIVE: Networking firm Extreme Networks explores sale, sources say",
-          "source": "Reuters",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUV9rWUpwdy1fcUotMk9WVEJyZldWdGVieWFDcGZSUmlwbVJRdUNVZG1veUEyNjZURzAtQURpQ2VyME5BbFhkUXFkaWFSZHhIdGFXbnljQm1MZng2Nmg0cmY2emVyVGhDeWtBUjdLcTl5em1jVmp4SGJnQlY3WTVoLU9pWkZRaTJPUVFVMlU0VWZvLTZ2TXhWUkYtSWFDYVdUQVhWVEV4c3lTeG5Td0p4dVc4SnM?oc=5"
+          "title": "BREAKING: Vanderbilt experiencing cybersecurity attack, VUIT responding",
+          "source": "The Vanderbilt Hustler",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSlU3Qld3ZFA4WmpMWm5DT3BwOXdSTlotbzRZWW5NcnE2bVN3RGc4Vzhpa1ZRUXIyRW5yMVFubm95aXZwZ1lKMTEwRllCNjd3bzJwYkFmTnUzNmlXZkRJSHZ6N1JIOFkzMXNLVUZwV1RobVhickp0RWhIZHFTdVJtbDZTWXR1SVRYaXNKa09HeWZrTkJ5VGVUd1o3cmRMYW8tRGxBNFh0cG5oc0QzVDlxNTRqZDA?oc=5"
         },
         {
-          "title": "Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M",
-          "source": "TechCrunch",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVWQwbXdfRjcyRjhQTVlBakRTeE5rbzFlRG5JM05ZSTExbUFiTGZ3eWswX3h0dFZ5RGVyUXJLTGlPZFNWYVNtaWRvVlRGYTFnYTJnWkNFVTBzeGl0SHAtbWVuX3pRekhRWGM1b082MVJGRnI3NXM1bmFqX2tiVVc3ajRpeXlRTWJHWl9KeVJxV1ZfcVNxb3ZHc3o4TmdLVERzUmFtMVpjajBTSHl1dV96dA?oc=5"
+          "title": "Vanderbilt University shuts down devices after cyber attack",
+          "source": "The Washington Post",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNOC1RcWk2WTJpaUV6dENrVi1fV2RmSmJOZ3ZhTlBpSU44cDJPQjlLOG1kWEVTaFRWT091bEJPRnJ6Z2dTVVhDcFI2TzRGOVo0eFBJTHl1TGU0dExLR29BQURyWVZqYy1RU3h4SlhDM3VyRGh0V0ZfSDR2dkx5dExPSUd6eWlMdWtOckszcFlJVGcxM3BOQ1B1bTU4QnpQX3dqYS1FWXBoRHhwT2FXR2VnYTR3?oc=5"
         },
         {
-          "title": "Palo Alto Networks in Talks to Pay $500 Million for AI Security Startup",
-          "source": "The Information",
-          "date": "2026-11-05",
-          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUTlob0JoVW9qam51VzQzV083MU1iX1VGYTQ4M0xvbGota0JraXpDNWlSb0hHQnN5S0NfSlkyNE9hRnV5Y2FjRmNqOTlZcThrV2xYWDFiU3BVX1V5eXFOdWNSZS1aUTlWZWJsU0Y2ZXhkSVJHSnlmMExLOGFMMkFvQWF5MFJLNDVIX2FlanBQYzNlMUpqdzMxV3dQeUhGSUczQXc?oc=5"
+          "title": "Queens libraries still reeling from ransomware attack as some services return",
+          "source": "Queens Daily Eagle",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOeDhxVjEzV1owV2pkVXpXdjhwaU9LeGZ6b2FxMm5ZdGJIYU93elF1ZWtEYjdPNlZ2T0swRXZSa1p6MVVHSEgtd2Z6QU5fc0t3RHFzYnJ5SjVnV0dxTzB1ZkNZNklkSlVLeWhvQ21jRnBKQjZSeDdYa3paSGozU3A4WU9fdUZQa0NFY3Z3Mnhxd1QxQW9PdUNoczlMUmgxWExkc1p2TVFaMDhKR2gtMV93OHRQX3hham8?oc=5"
         },
         {
-          "title": "Queens Public Library online system downed by ransomware hack, officials said",
-          "source": "Gothamist",
-          "date": "2026-11-08",
-          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdmZKUjJUUmU0dEoweXA5SmVTRks0UXN5bHVTVXI4a1RuRnRleUU1cVFTNTh5Z1BqaWFXeFZQOThDQ0JJVmJTem5CQW1VU3Z5Qk53RzZ1YTJmWGRfYmdITnh6b2FsbnRjTmE3X3hwdUY5OEYyWUt4VkJRdWFyTWFRaXRDVGpMeDlLMzItZVpBVGwzSkx2YnVvd3lZWGVjZklOUlYtY3hB?oc=5"
+          "title": "AI-Powered Cyber Threats & Attack Trends | Unit 42",
+          "source": "Palo Alto Networks",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVXRGMExtSjdWd0Fpd0JOZHVlUXNnS2hwMl9mbTlRQ2RpX3JHQzlDLUQxRkxKWk5PbldHY0NxQ2FjY1dWVUlLTi01LVJRc0I0WWlKb2YydXNtRVpsRURiUDduMjFJOWNETkQ0cnlGTGdReEpNZ0NQQXZsOXpSZk5yVHNzdzBDMkdtQzFSMklRbmFkeWtBTjlKSWlpM0NGdTBKdWhRSEx4VGtGODJhbExuWW4tZWgtbWtzanJZ?oc=5"
         },
         {
-          "title": "Winona County says it paid $128K after January ransomware attack",
-          "source": "news8000.com",
-          "date": "2026-11-07",
-          "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNZjlZek90ay1Wa3M1UmI1YWRIb3VOUGt1emQ1aDB2LTZFTjFBNndVZVJ2WHg3MWpYZVRpLWZpd3lhc2s1TVp2b2NVMzlkdU5vQ29qZWlqYXRFSlBia0M2anJsRUZZN21WU0FZNWg0aXkydmdhbzRvYllKaXRvTHhla0tENXhEUFJfQlBpd0otcGQxbE9IWWpUV2Mwb2JuY2k2NXlRT25sNUowMlpoX2dyNXFkLVFaeWhLaWp3WVowalBSZ2FMUXZ6dXpLUE1TR0RINGZDVm5ZSXJyclI0QmhiTjRrZGRSSlhweVB2T3RjOHIwYUNGZnJacA?oc=5"
+          "title": "Vanderbilt University reportedly targeted by BYOD Ransomware Group in Cyber Attack",
+          "source": "Cybersecurity Insiders",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPZDM1c1BRMlYzUTVwNVpMN0xtQXhYeEZrdFdybkZDUGFvWmJ3RWFLSjVPTzV3SFIxUXRTYTVUbk5kVkxKZEhYaUk1MEpWY0p2QUtFcXR2b3lESU5XUG5tZHNhMnltTENzc3RDVTN4NV9MVWRiVE5VaWEycVJJME51eHNHMWZkbUlObEV0Yno2eE0wS3ZLLXNhMjNyZm9wMWdBa243SU5NN1RyNUxhbWpjRTI4V3F0Ni1fTWdkWWlsYw?oc=5"
         },
         {
-          "title": "Queens Public Library hit by ransomware at 66 branches",
-          "source": "2-Spyware",
-          "date": "2026-11-07",
-          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMk92RjlydWEwdG0wQnNJLXlKNDA1TE1NWndBYmhJM3g5NF9feWhRRVZRWGNkb1RCSjgwU1lWSzMzbldKSmNNdkxWMGRES0NXWllPUXphOG4xSmEwb3BWaTl1WmpPQ0xaMmdfQ1hsRGMzV3NVRE94cUU2UGdCVGlWV3VnOA?oc=5"
+          "title": "Queens Public Library still recovering from ransomware attack",
+          "source": "QNS.com",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE84YlhuY3EzRFFFNER6UFk2U1VqeUoyWHZCSi0zMm9rZ2luNm56eWJwTWlPRldsNVl1Yjk4V3ZPUG9EOWk2TklRcE10dVVkcjRtdGwxaTBmdkZLNHB2cThPcUdDYkFjMURB?oc=5"
         },
         {
-          "title": "Palo Alto Networks in Talks to Acquire AI Security Startup Clutch for $500 Million",
-          "source": "Tekedia",
-          "date": "2026-11-07",
-          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQRXQxU015VTdtc1Q1RVd4Wng0ODQya1ZCdGh3Y2U0WFF0ZTJIdGtWVGZBbmk4VjFybnY5dkVZdzhBeXljdzR2QTRQekU2NmN4bGxUNUpwUVR4RHhFb3BoT3Vhc2lndWJsZDVLTXluZEkyeGp0dGswOXUxM2EzZFV5R3p5TTVTaDdsQ2R2ZElOdTB0c1pkZk9hZ1RyeEg2RHVtdmdpM2RyV251QQ?oc=5"
+          "title": "Vanderbilt University suffers potential ransomware attack, data breach",
+          "source": "Neowin",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQeW04S0MwQmtoVzFjcWZDOVB2Y3E4ZGtvQzZmZUFBZUtIaUZFMmFjWGRHSTVFQXhZOTR1aXJvTzZTNk04a21PajdBc295Ykk1VWNUM282VmRiRzdaZU1GbExIWldlUUxOVlIxZy1nWmhYRFZWem5BVjZENHZkS1VMRDg0cUMyMnFNMmlwOXYwbTFnSGYzcUkzWVdzR29rOGc?oc=5"
         },
         {
-          "title": "Queens library network down due to ransomware attack",
-          "source": "PIX11",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNU2hwTy16WHRLbU1OQXlTY2VRaWZWTzZQeFpJb2lXVW05T3paaGpUeC1mUC1kQmpELUREcEI4WUhoblNCYlEtY2I5c2gtc21hc1JVMTQ0azd1NmxwQmpyVTJ6U09QbTFsV2t5VDRwNkc0VFdoNlhFQlBMeFJkS0hBOVNnM2N1NHJvalk5SNIBkgFBVV95cUxQZ0hoN2JEY1RuSU1ETjdrUjFYNXp6SnlxRFpEb2g3RkJIZVZ2dmlKOHA0WUNYUjNLZXZhNEdKVERXM3g2Xy0wNU1MN0llTENpN0xjWTM0T2J4S1NoWi11eW4wcHRYek9LVk1HeEtVVjNCNWZJQWJINDB0RXJKUHkxajIzaUFKY2FocEQybVlfS1pSdw?oc=5"
+          "title": "Vanderbilt University asked campus to shut down devices amid claimed ransomware attack",
+          "source": "Quartz",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWXcxTFNyWkExUlQ2RmVOd01yYzFkaDl5b0E3UEMxTFhfV3ZHY21YZ0ItQlkxRjB2MzVfVFdnMWJLQXdnNGJuOVA2Y3FZVjBEc2tRcWRSaUFIZDhrR3JOa05wNkFXY215VXlhLWI1VGtEWDFGcHJhSWl2c1lRRXlQeDBzMkY?oc=5"
         },
         {
-          "title": "Queens Library Ransomware Hits All 66 Branches [2026]",
-          "source": "https://tech-insider.org/",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNYkdIUTJKcHlKTUlCamdZWUxCSC1Tcmd4c3RlbEVpbm04OVVRYWpDMDJSOFZOeVpvbmZjWEV0cGQtMS1ZdTNIM3VZVUV5SkcwbVgzdE9UOHppbmxiUGF4azNTSUZrMmVPN2dRZTdZbWswNTVxYWpRbDJVZFJfUmpYQ2Q1SXZFNnRSajNiaF9QLVk?oc=5"
+          "title": "Vanderbilt University reels following ransomware attack claimed by BYOD group",
+          "source": "CyberScoop",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9TbnllZkhMTXRwQkQ0TWFGa2NFa1FoaG9EVjM4OGNlZ3FWT0xjZzExY0N1R09zTUlJWHVGbTRwLXBIVjFlUThRSFBRYWt5VGVDbkxtLXFFVG5pWnpnYVVJaGlXM244NDctbGZRRlJlbmZTYmJrT0dZ?oc=5"
         },
         {
-          "title": "Palo Alto Networks Explores Clutch Security Acquisition",
-          "source": "Unite.AI",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQNFB6MHFralB0YU02NXZtbVlqOURRZnJKU1EzU2Qzc0tEVGIwcjNxYmotWE5DeXJENVhQRWdqWGx6MjAxdmZfMTIxd20yQWJpcEw3ekF1cUpDRmgtaTRSQTR1SUV2M09HUURyYlJlSGY1SE5majZjZHc3LVVxZ3ZvNjUzSQ?oc=5"
+          "title": "Vanderbilt University Battles Ransomware Attack on Campus Network",
+          "source": "Campus Security Today",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQRUMtZjVFTWdXTzNXQUFVNVplSjFTeUxtTy1sT3JiT0ZmaWw3cFI0cnE5d29KUmJuVlJ3ZF90S0xFWkVDVWFodkRPVTczVnQyNWY3ckhYM00zclcyWXVZekgxMWZuTG9XM3VoODVHSTc1andiLXhhT19IVlZDM1pNQ29BeTFHa0ZWZ0g2MTF2VHlQaG8zcENpQUV6TXNxYXVrbGFGOFV1dzFfT2V6VTBHV0Y2OXpZMk9MT2ZuaE5NYw?oc=5"
         },
         {
-          "title": "The Queens Public Library system is being held for ransom.",
-          "source": "Literary Hub",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMHhtY0JBTS1wNUVuY3JPSjU0RDgxTk1hQWt2aVRmekRVVjhrbVJCNU5FblRWNHVfSks4OWpiOUE2T2N0MWpCSEQ4MTNZcEQzSEVudFA2STd5M3gxaWdyNExyQmNSWlU3VUVoNnFtUGRUSGp4NF8yMzkyaEJQTXl0V1RUaw?oc=5"
+          "title": "Ransomware recovery is now a client retention metric",
+          "source": "BleepingComputer",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeWt2R1RiOE5WMjJmVEk4WHhKcVpZZlZhdDNvcGw4eXRwR1lwblRfMHVwbUpqaHk5dVU5Ny1HRXBTTUJsLW1JUlFXN0N3OGxfQzVyb1Z6dmNrUVRicFBzanFwbzlraUl5cl9fQkZQZHJ3UGpsSTNCaEI5clFtNE14S2FEUHl6ckpoNUl5RjFrSGxSTUV2Z0FiOXZfZHpoRWdNT0E?oc=5"
         },
         {
-          "title": "Palo Alto Networks Studies $500 Million Acquisition Of Clutch Security: how 6 outlets framed it",
-          "source": "NewsCord",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNWnZ2UzVfM2ZkS2VVbmluRWlWTlV3QjNFXzVZN1NxdkNheVYyMzZYTDMxODFHajNuaFlsWEk5Qlh5Z0VJS0djbmFEcWo3SDgzMFNuakE0ZnVqemdidGl3RHR5R2FXX0ppTFJhdUhpZjAzaEw3MVk1RWpBVlJIM2hNOTBJNW1aZW80cldNMVM5bm4wcVRTQlZ2Wks2X1hxaWNmMGExVkxzYlVoREJZN1M1YVVvcWM3OE9hUFU1VW9CakZ6XzVheUhERExZclVSTGNhRk41UVd3VVZxUWs?oc=5"
+          "title": "Landmark Group Ransomware Attack by N0n",
+          "source": "SOCRadar",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPQlRpSTBwMk1CaHppU0Q4S3p1a2RQOGMyS1VrSUdOaDBTeVdzcEEtOHE4RE4talQ4cWw4ZV9YRGJlSDJPdHk2ZnRXcnlrYTRQeTJZbFFoNFRVR29FS3AtXzcxbDYxbU9MUm1Hc25tYzdWcE9WX1Nya0hsbHd4VE1mbGZyV0RiNnVrcXYzdUtzaWFrN29a?oc=5"
         }
       ],
       "companies": []
     },
     "robotics_automation": {
       "name": "Robotics / Industrial Automation",
-      "summary": null,
+      "summary": "Agility Robotics completed an initial public offering and began trading on the Nasdaq under the ticker AGLT, becoming the first pure-play humanoid robot company listed on a U.S. stock exchange. The company also announced a pilot program with agricultural manufacturer AGCO at a Kansas plant.",
       "sources": [
         {
           "title": "Agility is the first pure humanoid robot company on the stock market. Are you buying?",
@@ -266,34 +231,10 @@
           "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPNEFfTDRRc2FDSEtON0h2MDNVTUszdjVCSk9YX3BDQ092VEQ5Qm12SzBJbnczWWxxY1F3R2NNZEVBMDFzbDNRVEhGamxPWnRqVWlfdV8wbktCUHlSV3lSMnBfbFc0djBack5mOWlLZzloOEMtbmktWDFjc0p5Nm12Z2ZiUlVOREU3MWlfUGVzMENPOXVtRlRkOG13YVlHRWZDX0Z4ME5YVlNMUHAyZFJ6djRYVDBGWTNvU21n?oc=5"
         },
         {
-          "title": "See How Tesla Tore Down The Model S Factory To Build Robots Instead",
-          "source": "InsideEVs",
-          "date": "2026-11-08",
-          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9xTkhlWGc5ZzJDSG9WR3QwS3RNN3pGSkR3UVlpM0Z5UFFVUGRhWVBBam96UzVkRGtLNE8zM3NJU20wb1QycWIwTXhKVWdpS3hFN1cwUU9pTTNETThtX0VOWWNpRlMwYU43c0xSdVkyVXBYakhhRVFSOUNjOE9SUQ?oc=5"
-        },
-        {
-          "title": "What Does Agility Robotics (AGLT) Gain From Its Expanded Humanoid Robot Rollout?",
-          "source": "Yahoo Finance",
-          "date": "2026-11-08",
-          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOV3ZSRG9Wc25KMndTQmpSYWxlY0hWaUg4eVQ1czNlVXBtS3l3NFNtS3dyNGxtUmcwY2k2VzZ3elU1UUNYQTRqTk53MURCVGkwQjhyM3pqaHJHXzhxM3JqTUpSRk1TU2RySG9XdS02ck5qMngxNGVJQUZQMl9HSmVOOW9yc2RqSjU1TnZsVjh4TXk3X0N3UWJQZENTQQ?oc=5"
-        },
-        {
-          "title": "Peggy Johnson took humanoid robots to Wall Street. Now she has to make them profitable.",
-          "source": "Business Insider",
-          "date": "2026-11-08",
-          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQc2R3TjRSOVVRR21VQ1FRQWxvN2pPdjRidUQ4ZFZ4Q3QxNDV5SXN2c25RcUxRX2ZuVk96VWdYMEtSM21pa25VRXVXQVlmdGJWSVBOTTJzcE52T2tVRnE0ZWpNdDZ3cjR5X243Qmp3ekpUdHBHREpudnYxR3VKS2swNzRXYWFMak50amN2RTg0c25sOFBhZWhpUzZiT2NUQQ?oc=5"
-        },
-        {
           "title": "AGCO, Agility Robotics plan humanoid robot pilot at Kansas plant",
           "source": "High Plains Journal",
           "date": "2026-11-08",
           "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9VemphS1Mza24xTkp3UldhSDNFbzFzNDJqaXhpSW4zSGdGcnJ1RkpRd0VjSkZmMFpzbkNEUXhIblJqeEk3bGxMYlhYRV9lNFo5SGpyM010NnhXcEFz?oc=5"
-        },
-        {
-          "title": "The humanoid robot race heats up after Agility Robotics begins to trade (AGLT:NASDAQ)",
-          "source": "Seeking Alpha",
-          "date": "2026-11-07",
-          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOWGJHUFZXc2xYc0dDSHdkaHhicmpzZldYU0lua0ZzWk5mU2RpU3E0b3hpR0o0MUIybmE0ZFRZZ3M2bEtBVWV0RjhjY3dmVTloRE9OZkhPOE9vS3RJMlVvVlpVY2RCU2VRa2JZWWczVXRZeFg5QTV0SERPOTVhMk90dkFDS3hYcXFwRXRnRENqWFZrcDJDVW9ORm4yTmE5TDlGU3RBb0FOdlJXd1V2bGc?oc=5"
         },
         {
           "title": "Salem humanoid robotics company Agility goes public on stock market",
@@ -302,122 +243,91 @@
           "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOcU94VTBpTW16MVRtNDBSZ2hnV3BqS3RIRXVFd0ZrazRyWFNpbnBGR0Q3bW5NRWt2ajV4NlJjRlMxWEF3YXFxeXZSUUFmTno1Und6MkN0UFdpZmUtQjRSUXFfcnhRVWNxMUxvcFhKVFFnQjFMN2M3aGV4bHZHWnpqbEYza05PMVN3R0kxOE1iai1DQklpYV91dWpVYjdVM2dOU1UtZGtRaDdwb2dvTEp3WXFDLVB2VV9vd1RYdw?oc=5"
         },
         {
-          "title": "Humanoid robotics firm Agility goes public in US robot bet",
-          "source": "Semafor",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOUDlDNUJuN0xSUEJ1TUhfYnQ2WHhMaEMwU0dIT2FFS2hVcHpISkNsZGZhS3ZPTUZDZkRUdUZuV1F1ZV9zQjMza2tZWHBBRXdHdl9yaEVNSk5jcE9qTmN4QWZhQkkzeGVSUmplUzI4eHNZNTVFTkdQTGtqbWE2MnU3b3htd0s?oc=5"
-        },
-        {
-          "title": "Humanoid Robotics Reaches Public Markets as Agility Begins Trading",
-          "source": "Machine Design",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQVmU3OXFscEJDVDVIUlk5NTZaVnM0Y1BZdWE4a3p5ckVRMlNCZkt3eC1aRHBrUXNySkNndG1fV3RiNWYzcm1FdXRCRUpxU3lEdndFNG56WFJMeWlqbURvb25FWHduTlZNUDJ0YWd0dTE3X1pSbE5ucVZBMVJ4aFlkdXRnamxLaVVTdmVSX050cXZWODNmS3k3c21DQ2tWZ1pnUWhXR2dLNTBpR193a3NmU3J0c2U2RWpNY2NQNkVwdmRoZnMxbnlQdHp3?oc=5"
-        },
-        {
-          "title": "Humanoid developer Agility debuts on Wall Street as it \u2018doubles down\u2019 on Pittsburgh",
-          "source": "Pittsburgh Post-Gazette",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOM25EdGExMTBmRFZmLVpzcWlod2hwQnV0am5nZ3U1NG94YW4tcFo0blVPZ3FwZmN5NDNudnF2Z1RWdExIeFRiV29VZVhOYTMwWEFUWXpIbWpsQ1IwejVBTWxKdlpIcUU5SmR5LUFsSk5NbUhNa05wQW04ZDNhdThydHVfNldGNHc1ZVZyV1FYU012UVl3NEVNdE1DYmNpNjd6b0ZVZUxQNlhZQ1VKazZmMDNYWUpXb00tUGc?oc=5"
-        },
-        {
-          "title": "Agility Robotics Goes Public With $2.5bn Valuation as Humanoid Robot Economics Face Scrutiny",
-          "source": "Tekedia",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOLTlVa1JkYVlpblNONmtzMThmRE9TUHVTWG9RQUtXeUczajdyRWZKeEFFUTF2ZHNuam5leHNLVXJzLWllYUZCcllwd2trVjhQbHpGVHk3NTZlVFVfNXg2R0FNazJmcmlmclFGZHFqOXYtV0lsc0psRW9uc2dXbGVMUHFBdnBOcDF5OHRrY0lWVy1jRktKRmk1RjhmYjF1N3JYczFKNVktR21kQkpLUzd0aFVWZ1FhNEk?oc=5"
+          "title": "Agility Robotics\u2019 Nasdaq debut invites scrutiny of humanoid robot market",
+          "source": "Ars Technica",
+          "date": "2026-11-05",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOcmp2QnJjbUhiWkhTQmhfZzgydGJIS1g3QkZsVnVyYjJvV19xUWpMVkNwS0dyWXBoOU56WThDRVZPMGk4cTExY1lEQTZaREtVNDdiSjB0a3NNOEtTb1F2MHg3aHJBdkN0V1RWTWhVUWRONmRkM1JrY29NeDBzZkw3ZFh1U2c0cV9KcGg3X0VHamxONS1yNk9oWU03dEs0TFNyM2FDTG1NVGpVZFU?oc=5"
         }
       ],
-      "companies": []
+      "companies": [
+        "Agility Robotics",
+        "Nvidia",
+        "AGCO"
+      ]
     },
     "defense_tech": {
       "name": "Defense Tech / Drones",
-      "summary": "The Pentagon signed a $450 million loan to help Neros scale domestic drone component production toward one million units annually. U.S. Central Command received a surge of more than 25,000 drones and counter-drone systems for Middle East operations.",
+      "summary": "The Pentagon committed up to $450 million to expand domestic drone manufacturing and delivered over 25,000 drones and counter-drone systems to forces in the Middle East, while also launching a new counter-drone evaluation partnership with the University of North Dakota.",
       "sources": [
         {
-          "title": "Neros Eyes Annual Production of One Million Drones With $450M Pentagon Loan",
-          "source": "The Defense Post",
+          "title": "Pentagon Commits Up to $450 Million to Expand U.S. Drone Manufacturing",
+          "source": "Dronelife",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNaC12NGkzbVVJaHBrVzRZd0ZLaVAxZDdwMTdYMHpPM0tEd01YMDN0aVgxWG90b3gxOEIzRk9oa3pOc2FKOEdtR2trV1VhUkRxS214UEthQkJwOTh6LTNKQk45X3lzNDZ1ZjJhOVlqS2Y2TmdYamdzVE5QQXBHSWxQcGdR?oc=5"
+        },
+        {
+          "title": "University of North Dakota to Help Pentagon Evaluate Counter-Drone Technologies",
+          "source": "Dronelife",
           "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9ER3RiMl9Rb3pNMnFRNzJySDI5Y2FFQWVUWVd6alJxZ1lKdUNWWGgwSnBpZGJaNzl5ZVE5cm5JMmUzOHlJVnl6TGcxVW5UMXRDZDREb05mcnZ6elUyaEliczhRbU5rLTRqWEh1bXFjX2o2djE3MDRJdtIBeEFVX3lxTE9ER3RiMl9Rb3pNMnFRNzJySDI5Y2FFQWVUWVd6alJxZ1lKdUNWWGgwSnBpZGJaNzl5ZVE5cm5JMmUzOHlJVnl6TGcxVW5UMXRDZDREb05mcnZ6elUyaEliczhRbU5rLTRqWEh1bXFjX2o2djE3MDRJdg?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPbWR1eFd5MWhRNlRnQ3FFSm9rQ2tqVWtLU0VIMTBGQVE1WktUR3Ftc0VyWG82ME1KSWVEMnVNMDJyVEFDQzZHNUtUN0pwU1RZdDVIbk5jWHVGVGNROTNGTU9PNHQ1SHJzY1lnVEU3cTJPYVN6VXo3NU9KcEtCalFPTW1JR213aDhqUmc?oc=5"
         },
         {
           "title": "Pentagon Delivers Over 25,000 Drones, Counter-Drone Systems to CENTCOM",
           "source": "MeriTalk",
           "date": "2026-11-05",
           "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORGpaSk9DekNVZ1BHaGtnTFk0eXJUMDZSeEtTRFNfT29ZN0FYbVFJRUliTlEwZXFlbVR1ZXZKZFByd1k3ck5wSXVFbjl2UVozZmEyejd1akV1cU5UTWF6ZWszeklzTjk0TVZ2M2RGQkF4bC1wQUR1dWNVQS1jZkx2ZWNTTGVBVkVJQUQ1b1ZWYzZlalhvOUJtUnowM2hqTXc0Wlo5dUhR?oc=5"
-        },
-        {
-          "title": "Pentagon delivers 'massive surge' of drones, counter-drone tech to US forces in Middle East",
-          "source": "The Express Tribune",
-          "date": "2026-11-05",
-          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPMXhzU0ZJdXdvaUx5MzZmSDJUcnI2eExxdGctcVNobEx0eG8tcVhWUFlOOUxFVVBzTUl3Yll3RU9RNW1PeVQ5YU9NMXlfcDNRUy1TWXJBM3RVM0pYRmkxWlc0WjhveW55bzNzZGY1eElvNjJTUlBhbGFaZmxvSHRwYm5rOGhiSHFseE1pQ0JaZVJ5YkNNRmthTkhfMVBrZHMwVzhnQ1NNQ0M5WGc4YjluTkh5cklXZTJ3NnVPc0pIQXhhQnPSAcsBQVVfeXFMTnNNZXVHQnNBSlpNN0d4c0MtejJmd3JpX2VZMTRpdlE0VU5QRklyNDlSNDlnX1Z2Rl9NdzE2MmJJN3lBOHZkMWxPOW1DMWJIdk1aa2lOT1pEb2hTbG5nSDBrcTRFNDFxamwxc2UxN2FhM1FvRGJUZ2thU2pHUUFaS0NYZ0NRVG9MQ3BXMV96cGJmckttXzBFZFBIdUlTaTkwMkt0S29MandlWV84dE5QS0dLYzRBankxSU90OUJub2lmQ0duMUpsd3RENEE?oc=5"
-        },
-        {
-          "title": "Pentagon Signs $450M Neros Loan to Mass-Produce Domestic Drone Components",
-          "source": "The SOFX Report",
-          "date": "2026-11-04",
-          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeU0wSURrSjBlMjg0X25EQkVWRkRTanNsUHVZSFFQeGw2Q21SRGFGWS1ZMDc0OU1WdGZ6SU90QmRzQndoOXFNbmZ6eFYzREVFUmNSeUl2VHgzYWN4UmNLUmFyLVRBYTdLYkZMWXZzSk9XckJmZGJ6VDZnQ3NpRU1TYXlpclRqVUpsYmlIeWFUb0hjeFdhSkVnYXh3?oc=5"
         }
       ],
-      "companies": [
-        "Lockheed Martin"
-      ]
+      "companies": []
     },
     "networking_infra": {
       "name": "Networking / Fiber Infrastructure",
-      "summary": "Marvell agreed to acquire Lumentum in a landmark deal valued at approximately $115 billion to strengthen its position in AI data center connectivity. Concurrently, Coherent reported PhotonLink design wins expanding its AI infrastructure reach, and Nokia signaled its intent to enter the AI optical networking market.",
+      "summary": "Microsoft is lobbying the Trump administration to abandon a planned ban on Chinese optical transceivers and data center technology, arguing against restrictions on these AI infrastructure components. Optical communication stocks rose on signs that concerns over AI data center supply constraints may be easing.",
       "sources": [
         {
-          "title": "Marvell doubles down on AI boom with costly $115 billion Lumentum deal",
+          "title": "EXCLUSIVE: Microsoft presses Trump to scuttle expected ban on Chinese data center technology",
           "source": "Reuters",
-          "date": "2026-11-02",
-          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOelFpUlRuWUdrd3oyYkZTNkxFMW9mQlBTY01YTl9ERVRsYTc1VGNWQjR1VF90aEcwY01sTDNXN3NiWVBZNTY4aGVFSlR3WlBlb0laSkptRS1EMF9fMGlna1BXSVExN2dFVGlTNWMyQzYyM1RsYm5pMGxXOWxhbmp1UGRYVjk3RVA0b25WWVZPcFZMS05IOE1CTUgzY1BsQWY3MW5DbDF1bGs1M185UlM4cjlB?oc=5"
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPYVBfNG04eWF0OFp6WHJFRFh3YjdHTHlhdU9xTkZiU3h1Qk9OdXpmM0FaZS1vcXJkdFdHRmE2a0ROLWRWYzNWUXhtcGpmVjREYjBJUC1nYzVSZkxPaHA5dVNNSlhpZzVlX2FOVElnZWNPZ0VuVS1sWEQ5cVNQYXYtT3MtUGppSTIzQ25YX0Q1UnFDbzZxc1RITGRRT1ZNeUFKQTZxWlJxc0E5Z0JjdVVEaXIxbmlqdGRZYzVsLWtRWTBuUlJsb3BTZVAwN1RYWlk?oc=5"
         },
         {
-          "title": "Lumentum CEO touts 'enormous' opportunity in massive AI connectivity deal with Marvell",
-          "source": "CNBC",
-          "date": "2026-11-02",
-          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE56UDJLTlRLck1UTTdLZE5Mb1M3OWFjekVJTDRUUmxxanRNR1N5UzRlcjZxMDM0Rnh3S2hKTGF1STVmN2s4SFNnODNYd0tGa2NRTmlSYnUtSTRDNmJtcDBUV2ZNV2txci1WUDVTTmxn?oc=5"
+          "title": "Microsoft pushes back against US plan to ban Chinese optical transceivers used in AI data centres: Report",
+          "source": "Moneycontrol.com",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNMHNoWTV0dDE5ZTAyWmlBOWpCVFRuLWREQ24xd0dJcVE5V184c1JFbnoyNDhDNGhOYk0zZmtMNTBXTWd3UXpuQjE0TXQtT2p5UW5jMGhRX0R3dzRNUVNRUUpzVkxHMjdHejV5Uk14ZTRELXB6MmIyMW1xQ0RaSjJvbFBLS0xldDJhN1dKM05UMDIxRW9KQW95NnFxWFB4T0tmclVkLUZDVXRHMkVLZDVUM0t6ejlVMGlnQ1YtOHJxdnNwdDV0TXZOcGM5eUxvOU9ZVkU3WUJZSXhaRmFBb3lGX2JQVERCMUJ4ZHNYLVUwYk5MeGfSAfgBQVVfeXFMUFEzcVU0M2hXdURIMkxEOHdIRl9VVTg1Yk05SUVNOVNfc0xsaFhVcDBtdXBKSi1acXJxNjQyS3h2VWQ0UTFDWV9Xa3RIekNxU2JIeExHU1dkcUJMRVViaUJLa2liQzdGb2ZqdUN1WkpVQnBpWEJ4TzNSOWdaYW9GeEJFTmxIQ1lVQ2JIYzlKaHR0enJGaFBoR2ExazR1bTJLZEIzanVkbEVjU1JaUDhmSzUwUlhtcnRFWUtROGRJS3FFMF9DcWpxSHVOSDNvSUREdFpHLWRmNnpZUFdlb2FJQktCY1UzRWVpUGgxeG4tcU82Zm9pNUthRGc?oc=5"
         },
         {
-          "title": "Marvell to Acquire Lumentum in Historic $115 Billion Deal",
-          "source": "Bloomberg",
-          "date": "2026-11-02",
-          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPV2FXN0VKVjBIUDlmNF8xMXBEcE9BQkRrQk5GR2k1dmNLMjlBMVlCSmRLc19PNXVCTUNZVUZRY3pQNzEtZGJuQlNwcnMxQWdqME8xa1FtOVkyendLS0RFSTV3cjNwQXJaYmVxTy1fREcyNk81S29pYWRGOTdLN3ljXzVVX1pIaDlTMXRGTHB1ck1qNEZnSUlsUkJIMWFJSmpHT1U5UjkyMEs?oc=5"
+          "title": "Optical communication stocks surge in early trading on easing AI data center concerns : Finance : JKN",
+          "source": "\uc7ac\uacbd\uc77c\ubcf4",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5jT3JkZmtqOVlfeUZKSk1TWV8zQVNZcFd3eFJLMTdieEZJNDJVT3pHY3lRLU96Zi0tUGlaaGtPbU45WVZRTV9HX1AxRTVwWkZkZVZacEJQMHNYdFh5dUJGc0pR?oc=5"
         },
         {
-          "title": "Marvell to buy Lumentum in US$115 billion deal in AI data-center bet",
-          "source": "BNN Bloomberg",
-          "date": "2026-11-02",
-          "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxORG5xWmwyVjBTMzRYLTNlYXJDblhmTVMyUGFfLWowYzg1TWJfVEtDUWVOVmFjUWFWOVhTaGNjTWt0RFJURUxLTVFzb3pmSV9pbXNuaWZQR2Y1NGowS29wNnl4enVQa1FKZ0pocXEtY0NJUlFhdk0xZkMzaTM1aXNIaF9oMHpSb0VyRHloZzBPUXVKdzAwVmlXSDJXWE5OWW1iWXZMT3dMSVZOQVB6Z0haRmNGNDVRODczRmlFekxCVFlOenFCSGZOUF9ZdEF4TkFjZTAyM2I3OA?oc=5"
-        },
-        {
-          "title": "Coherent Q1 FY 2027: PhotonLink Wins Broaden AI Infrastructure Reach",
-          "source": "The Futurum Group",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNaGR0Q0ZDNXRzUElINWV3d1lubkJSZXlBakRQU0YwcFpxamRGZHFoZGZ5djZaS0s4MTAzZjlGSFhTekQ4SWtpNGxCQWpsdEUtSGI2NG5NWUtGV2NhbDB1RWV5Z0RWa3VwaV9YZTVKWlJnOHBZTlBTSEp5di1MbW1OTnNoUWlERHozVFJVRHJmWTBvcVNvbTZlTDVfX1cwRVoydUhxdg?oc=5"
-        },
-        {
-          "title": "Nokia wants in on AI's optical gold rush, and it already has the lasers",
-          "source": "Fierce Network",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNX2l5OVZoamUyZ2t6SUtDaG5pSFQyUUdPREo0eWFEY1ZpVVFCYy1sQzU5QXl2cmVtWU9XSUJhUjExazJTUXVXU09INkhpd1JsVDMzZXU5YnZMaUkzTlNWMWk5V1dOSWtRWmRPWTYyQTh4REJiTFVPTVNnNHJDZHdUa1RpbW55ZUUwTkIwSU9nMVlKTHZaQV9RLXNFSjQ?oc=5"
+          "title": "Microsoft Pushes Trump Administration to Scrap Planned Ban on Chinese AI Data Center Parts",
+          "source": "TipRanks",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZXlmenpaeHRpbGdQeGI1MkllcWJMZHdYdHNpdEY0NHRXZ2x0LXV0ZEFITEFuZ1BzSWdBU1ZqdmNiVVZDcXNXY3gxcXNhRUIwb0Z6cFlzOG96bXFmZjZXMEtPOXBoZDUtTFZxY3FoTTdqb09aeU1YNGc0ZGNCb2xkOTJFYkVDYmVTTGNUdXJWMWo5Y2xJZ3dON0dHcmhtVTdiSGNrd2ZLdUxudHdTdThnRXpaeW10V0JyR2Zaeg?oc=5"
         }
       ],
       "companies": [
-        "Marvell",
-        "Lumentum",
-        "Coherent",
-        "Nokia"
+        "Microsoft"
       ]
     },
     "mega_cap_ai": {
       "name": "Mega-Cap AI Infrastructure",
-      "summary": "IREN delayed Microsoft AI infrastructure builds while planning $15 billion in capital expenditure, and Meta's AI capital expenditure reached $135 billion, exceeding its cash flow. A reported delay in Microsoft's AI spending also triggered share declines for IREN, Nebius, and CoreWeave.",
+      "summary": "Mega-cap AI infrastructure spending swelled to a projected $725 billion collectively, driven by record quarterly outlays from Meta and accelerating capex plans at Amazon, even as this surge outpaces operating cash flow. Meanwhile, Microsoft reportedly delayed $5 billion in data center investments, impacting related infrastructure partners.",
       "sources": [
         {
-          "title": "IREN Delays Microsoft AI Builds, Plans $15B Capex [2026]",
-          "source": "https://tech-insider.org/",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOaXptT19ud3pjRV9XeE8tY0tLSFVVSVV1eGg3Z1BzUDdYSlVLUTlUX1dDWEFzUGo5X1dXVnJUT0NJa3VOODVCYkhOOXY3ckpicENSRE8waUZQaHpVSm9fTTNfZEVRWV9VNzNCZXFCR1FRalcyN2pnamNtQkNMSnBKTmJ6WHZrd0hvTEpR?oc=5"
+          "title": "Microsoft, Meta And Google Just Silenced AI Spending Critics In One Earnings Night As Big Tech Capex Swells To $725B",
+          "source": "Stocktwits",
+          "date": "2026-11-07",
+          "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNQ2ZDQkRWWGZaNVdBV1UwS0FEY0RvVVJqUFUxNXd2eHpWM1haeXltLUNpaXB2TW5kcHlJRFo0WFNOQWZFaGNDZ2p3WlcwZjhPVndrYkQwWVAxR0tVVnotaFdDNnZHT1IxZ1BJVHJXZXFpVG5ROUlMcGZoR29iczhkOGM4VG9UMEVWWHJoUEY5TlBCN0RiTEotLTFWNVdFZHZpUmVBOHBuYWVaN0xYMEJzSkgtSno4WHhuc2x4TmpMUkV5bHJDaTNqVHFKalBIMl9pZ01MSjF2a0hpczUtYjMxUHk1OGt0VUxxbHRuaHZ3Nkt4ekRLTl9YZzVQX04wYjFUS25wLUZwWUJwTFU?oc=5"
+        },
+        {
+          "title": "Meta Q3 Earnings: $34.91B AI Capex, Muse Hits 10M [2026]",
+          "source": "shattered.io",
+          "date": "2026-11-07",
+          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4yQ05BZWc0bER2R0dzMEh3YThTT3hwOHBoXzNWblVKckVvR1BjUTZ6RXd0R3AxQlc0Z1F3dkFEZ2VtSXQxMGVOOHFnelU3aXZZZXVHTGlhZy1SRU5FeTBhQjFnLWNMUlR6cHlHQjY3X2R5ajRoelE?oc=5"
         },
         {
           "title": "Meta AI Capex Hits $135B, Outruns Cash Flow [2026]",
@@ -426,15 +336,23 @@
           "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeXdPOVNaRHI4N1Fnd0FEbUV5RGhMUGZPakhsaFBhcXAwTVM2WDQta0VBMUEzQXZKRlM0akNwOWtuOTlFVUljTTNFX3hRTFFLT1duMmUyQzc5cEZZQ2FUOFZmVFVha0R4ZW9WNlRhWHJlUHgySjczT09GLVFuQXRMUA?oc=5"
         },
         {
-          "title": "IREN Sinks 9% After Report Links It to Microsoft\u2019s AI Spending Delay; Nebius Tumbles 11%, CoreWeave Slides 7%",
+          "title": "Amazon Earnings Review: Capex Poised to Rise as Cloud Growth Accelerates",
+          "source": "Morningstar",
+          "date": "2026-11-05",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQTNNRFlIdTR4alBJVXVDN2M3RWhZLS1IVm5NX2VJUUQ0bkhzbGtIS2dEWGRGakdHNXJUYVhuM04wSjR2aG5IN0RZQmNhYTNyWG9mRWRQZEY0dkZJcEozY2h1OC1GRjJXTXhZVEdjVnNOMkd0Z2toSk5ZcXo0N3dZWHk0NGtpTlBTQ09vOG5HRQ?oc=5"
+        },
+        {
+          "title": "IREN delays behind part of Microsoft\u2019s $5 billion capex shortfall: The Information",
           "source": "Yahoo Finance",
           "date": "2026-11-05",
-          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNLTZxMUFOdFIwbXZKOVBWSldqVWdyYlFwT3VOV0VZNnA1c2QyT0o2QldFWTl4ZHg5dWFTUzI0TXdLc1J0anI2Q0djUWQtUXZMTy1OdG1MOUhjOWFGRzdRMVV0Q05PUWRCWEFPWnRFYlgxdzExTmhwT1RJV2JnUThZV1BYZ3JzQ3IwSGxtbWlHdlczcG8?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNYjJfajhDd0R3Umh3VFJQTDNLalNIdmhtMFJ5RDVsQ2VCMDZtZGJ2UmVRbFRYRklCOC1CTF9LTlBmaEVGWTNjVUhyUC1Lbno0MWI3U0FlekR2c2VlQ3lKaDFGbjlha3BnUGhFc2ZlUmI2QkMtUTl4TjAteFdJbzY1NjZaaGhHV2pielYzVkxtMEZFakt0VmpUMW1B?oc=5"
         }
       ],
       "companies": [
         "Microsoft",
         "Meta",
+        "Google",
+        "Amazon",
         "IREN",
         "Nebius",
         "CoreWeave"
@@ -442,14 +360,8 @@
     },
     "platform_network": {
       "name": "Platform / Network Effect",
-      "summary": "Airbnb reported its fastest revenue growth in over three years with a 19% jump and accelerating bookings, prompting raised guidance and a $12 billion buyback. Uber beat revenue expectations but faces more demand than supply, while DoorDash agreed to acquire Instacart for $17 billion and Shopify missed Q3 estimates.",
+      "summary": "DoorDash agreed to acquire Instacart for $17 billion, while Airbnb posted its fastest revenue growth in over three years with accelerating bookings and raised guidance alongside a $12 billion buyback. Uber reported having more demand than supply, and Shopify's results disappointed Wall Street.",
       "sources": [
-        {
-          "title": "Airbnb Posts 19% Revenue Jump as Chesky Hails \u2018Growth Mode\u2019",
-          "source": "Bloomberg.com",
-          "date": "2026-11-05",
-          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNanF1LUREaXp2ZjlPVWtPQ2t1S0twX2pBaHdzbkYwN1dFMDRXSjRzaEY5bWFOcUd5dGVuU0F0dktrSkx2YjMzUXlHZDdzN2JXM3NTVzBrS2t6alpIVTZicXoxV0ZSQVJhR0tIZjV1MXh0NzdqcnF1bWd0NHl2eGt4bVdMbU5vc0ZEVVpCYnpqT01kNGhuODl3ZE5qOXdGRGRkbzhwQ3IyVmFqTHc?oc=5"
-        },
         {
           "title": "Airbnb posts its fastest revenue growth in more than three years as bookings accelerate",
           "source": "CNBC",
@@ -469,22 +381,16 @@
           "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOOVRQRHY0S3pEcjVCUHM2QTBiUUQ2VzJwc2RsdWlhYl9VeVBOVlJ4SDFoNlg0UGc5ZU9tYlZWRVJud2J2d0V6cmpWV0YyU0NXc2JoTmVyR3Q4dGtPUWV0cFZNQUkySnY5bEs3VC00R3RQWmtuN2ZTTklWUnhqUGx1QTVJSjg3TFRDSkJZ?oc=5"
         },
         {
-          "title": "Uber beats on revenue, CEO tells CNBC the company is 'investing significantly' to add drivers",
-          "source": "CNBC",
-          "date": "2026-11-04",
-          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE83RG50WkF1VmFGcEhYemZfZl9jc0FOS3ZDYkxzdGZJck9hQktmNUtxNEIya29rd21qNGZMUG84cmx3dGFxWHduLVBKRVNYOTlJQThacDZ4dWpMck8xMWl0WC1kWDJ0T0NhZlFtOWdheEsyUdIBd0FVX3lxTE13UGhpWkVJZHZlSXBic1ZLS1ptdGV5UlVFSVVYN0dLbFowMXJrREYxb2FNRGFoYTNyb0ZmWlNnOGhGOWRFWDdWQ25EcGFCRmNQUjB4QUpYRG5aLUZnd3ZlTW96QkhHRWNDVHdCTmFTVXlWWTE0eHV3?oc=5"
-        },
-        {
-          "title": "Shopify falls over 8% after Q3 revenue and merchandise volume miss estimates",
-          "source": "CNBC",
-          "date": "2026-11-03",
-          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JODBadk4xRWxsNUoyR0E2YVlXRHhsNkRnbHdyLVp6dGV0M2h3VUtlWjVMbWt3TklNSTFaLUJvb2tJSERFY05aaTZrbkRPWHJobjBVLXlGYW96dk53LXBqRVI0QlVhNkkyU2JoY1VGaE00b1nSAXhBVV95cUxNSjNGdEZobC1VSEpOY001OHdnU1l2YlhnM3Y3ZXpVLTkwVGVaRXExajU5bFBDem5DR2gyWEZSeWV4OWx6QmFKVGw2QWlXbk5pZHl2eDRnQUpqTkx6aUNfaG5zTzE2M3R3ZUV3UFQ3TFotVGlsbzVLSmw?oc=5"
+          "title": "Shopify's Results Disappointed Wall Street: Buy, Sell, or Hold Before the Holiday Shopping Season?",
+          "source": "The Motley Fool Canada",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWmRqNmQ0NTJLWXRwLTRxR0lWVkFjc2hWVFRCN1cxNnNkZDA0cU9wMzJJamlkdUhmcG1DdlhHWUNHbklQWnRQMnlPWkE3X21MMGxTYVlYQXAxZi15VnBxY1ZCTDJfaFVxTjlzQktkbWYwRmJRbE1LSHZUTlJJZ2NVR2pRQ1FvMF9XeUhUR0QxejBDSHdLcXYzaUNoSENMZEZSVnJvb1VNckQ1T2R2OTk4U0hiUU1Fd203U1N6YUpMQmhpWlE?oc=5"
         },
         {
           "title": "Airbnb Raised Guidance While Travel Rivals Got Cautious",
           "source": "Money Morning",
           "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQOS15NDZ0SWJKdDZxemtRRWl2SjFIQV9GWFlQWXZrcG1MRHVzdl96OWV6a1BxMTlnTTFWRGNSNVlYSTFxbC1EYjFsNHA2LWFpeTRSLXZPWHFGcm9ZU2NiWkVtSG16S2VqMGtpY2tuLUVRNWhYNVpEcGNlMUFQZGJwRVVmSzBXNFFVR09RdUhn?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUVJ2NXhESWlpMkNHX2F4ZzJOM3d6VEZNcEF6dXJfc3FWU1p4RlFEUTU4RFBsWmZ4NFY3TmNwVS1hX3hqYXdlVnEyYi05NHRkYU9Kak1HMXhwcjEySENqV2Vnd3ZiTHBTTGM1ci1nM3ptb0lEQ0lkdnJsQUhPai1zWTFUSnhFdmQ0bDlkQzFR?oc=5"
         },
         {
           "title": "Airbnb Stocks Jump 12.27% After Results Beat and $12 Billion Buyback",
@@ -494,48 +400,57 @@
         }
       ],
       "companies": [
-        "ABNB",
-        "UBER",
-        "DASH",
-        "CART",
-        "SHOP"
+        "Airbnb",
+        "DoorDash",
+        "Instacart",
+        "Uber",
+        "Shopify"
       ]
     },
     "quality_compounder": {
       "name": "Quality Compounders",
-      "summary": "Costco reported 12.6% net sales growth for October with digital sales accelerating, sending shares up 3.25% toward a record high while broader consumer stocks slipped.",
+      "summary": "Costco reported double-digit October sales growth boosted by strong housewares comps and digital sales outpacing store comps. Waste Management provided 20% revenue growth guidance and a margin recovery outlook for FY27.",
       "sources": [
         {
-          "title": "Costco reports double-digital sales growth in October",
-          "source": "Chain Store Age",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQRkhZRmpPYUdtSEdiemFDaXRLR1V3RWYtdmhWdTJ3MGZfcUtZV0NPRllZMWVSZDUyQ0FLR3B3T0ZTUjZKNnFmQkE5cTQ4TGFUUTlnNVNNM3lKcUlVTWkzdVBlWEgtTlNZcjZXNXZVT2pKQlFfVnBqYndEaVNoYmJDaXB3?oc=5"
+          "title": "Costco reports double-digit October sales growth",
+          "source": "Retail Customer Experience",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOXdORGFfeVFPZTBlMWhJdmNMajN2WExQMFVuc1g1MmZvR0FQQkVETm5CcWdGV3RjXzBIRGs2cDBtZE96el9JcEtfcDdJd0tsaE9fXzFxNUQwSnlBZW9Xc2FHbTR1UV9WMW45ZXRjdU8teDI0Yk1IcDBVWDVuMWNHdDBnLXI4LXpzMVBXOWNLS252T2tJZS12X0FpOA?oc=5"
         },
         {
-          "title": "Costco's October Net Sales Jump 12.6% as Digital Growth Accelerates",
+          "title": "Waste Management Stock With 20% Revenue Growth Guidance and Margin Recovery Outlook for FY27 to Keep on Your Radar",
+          "source": "Trade Brains",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPTXhoNFdPU3pyY2R6LUVfVV9HRjNVMm1wMXoyZE1KN1NzeS1haUZLYlVqcXJMODFIWm54U0xfTEZETzVDWHRsMDMxaDB2NVNfZFlkdDhuRklSeS1BLXl4cWcxVzBDUWk5anBOOFhLZGVEdU1jbWFVU2JCb2NvS2FYNWItUnJfOVNaNGh4WG9TSUw2cHBIb2lZZ2xGb1lyWEVVZUNoTk11U3BhTHEyaG9YSzBiWjJFM2VEaFBfTDZDTkIwME81Q2VnRE12QWJfbmFiLW5qTkswOXB1bk5ENTdZR2ZpMi1tRm1RdWhHamxWVmZnUQ?oc=5"
+        },
+        {
+          "title": "Costco\u2019s October Sales Gain Boosted by Strong Housewares Comps",
+          "source": "HomePage News",
+          "date": "2026-11-09",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdFBtTnVYcFBLTS1rRGpiYkw3UFNNZGVNQlg3WjFYaFc4MHQ5UU41VnFSS18zVnBPUEZ4dlA1UENRZ0lZRkhOdS1Ga090YkJ0NktabWl2RC13MThpRHJfbG1wRGl3Z1RNc0VGUEt5UFFuNFdWUnFvUFJCd05BaUhPWV9PaDlhaXFCUHpRVGduaTgzWDdGNTZsbUE2RVpvOW5lM2otM2hISGlMT3c?oc=5"
+        },
+        {
+          "title": "Costco's Digital Sales Outpace Store Comps as Shopping Evolves",
           "source": "Yahoo Finance",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNR0ttUlJONWdhZXV2a2JfaWNoVnhFLXJfdjhONDNCNEFES3dhVDNaOWFXbzlkY0F0S2hKLU5DbE9CeHVMMDdXTl9BUUZVUTVuR0hJaW5fY2V4S3BFd3VsTktISTlkSmd1YWFJTld6WG82YlZzQmNWelVfT3ZSbG1hVnpFNmNwdjFlM1FiQ0RPdG5MTVpPcXAxYXdnMA?oc=5"
-        },
-        {
-          "title": "Costco\u2019s Sales Jump While Consumer Stocks Slip",
-          "source": "Finimize",
-          "date": "2026-11-05",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE53dDc3enNpcTRkVVRHN2J5STNMYUJDa0pyR1RxV1ZQam40RjM0V25TMkRZU1ZqWnFFOHk0MUpUSVdwcjBoZ052ZVFPYW9EVElLUDRBSFVZdHJRSmhuUlFXSzFLQUFJUkZkYlJMN1poX3k2Wjl4MVdfbFJPSFJoRE0?oc=5"
-        },
-        {
-          "title": "Costco Wholesale Corp Stock (COST) Moved Up by 3.25% on Nov 5: Key Drivers Unveiled",
-          "source": "TradingKey",
-          "date": "2026-11-05",
-          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWWFLUXhFXzJFVVp5M2FqOEVqcmZ1Rm1NdFJITmEyLTJsQV80ZlY2bHVBdWFDMlh1eWRuaEYzcDVVZ1JXUVI3VHdfZkRsdTl3dHh6Q0loSmlueThac2R5dEl1andzWnI4RkNSWWZxbGZBVUxILVNubTBVTi1XalBjdk5oMzVxR0xTTkc4?oc=5"
+          "date": "2026-11-09",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVFY5M0ZMY3piaUdyUjM0QS15UHhtNDBQQWpPenNCek9jbTJhLWloRVBlUTJ6NVp6VHA4VjdMVTYyc0xVTXVJa2xhRm5FTGdQVE1DT0RDWjM0VG5rZlNUWVNlMGZXNmJtR29iRTZYWFk4ckxBakZQcndjRTNtX0F3Y2lENmdKb1U3Rmp6M3FFYUVDVEQ5YURoSWhQYzBfeVg1TFE?oc=5"
         }
       ],
-      "companies": []
+      "companies": [
+        "Costco",
+        "Waste Management"
+      ]
     },
     "defensive_income": {
       "name": "Defensive / Dividend Income",
-      "summary": "Coca-Cola Europacific Partners flagged cost pressures while maintaining its outlook, and Hindustan Coca-Cola Beverages filed for a $1 billion IPO. Meanwhile, Coca-Cola shares rose 12% in a month to hit a 52-week high, and the company extended its dividend increase streak to 64 consecutive years.",
+      "summary": "PepsiCo announced plans to cut about 1,000 jobs in North America amid restructuring and lost contracts, while Coca-Cola Europacific Partners flagged cost pressures but maintained its outlook, and Colgate-Palmolive demonstrated dividend strength.",
       "sources": [
+        {
+          "title": "PepsiCo to cut about 1,000 jobs as North American business struggles",
+          "source": "CNBC",
+          "date": "2026-11-09",
+          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9KejhLQ3hPVC1TRDVDWVhnZUFHYnpTYVBJQjk3ME9DT2JxaUIzN2p5b2RxVkp4QlJJR1dEc00zVFh6ak1jaDVvS1lid0Jpd2tPUk94cjkwUWlKTS1hSnZVZEJZaDFzdG9rUTU5Y2RqbTA1blE5T3c?oc=5"
+        },
         {
           "title": "Bottler Coca-Cola Europacific Partners flags cost pressures, keeps outlook",
           "source": "Reuters",
@@ -543,157 +458,197 @@
           "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZWJxTjVpVnA3QTlSMXA5LU9WZTJUSVZnZ0E0aW1lVkMxc2FYcFFiNjdFcm9CWWo5T3NCanQwZGVrVEIxanpya3VjczNCWEdIeG1uY1Q3RHVxOS04ai1rVjVGVzhhM1RER2p2UFdsQ0NGQXl3MUY0aU81V2U5Y1pzQ3EwQjd0dHo2RnUwbG1Xb3Q5MmIzX1dkTVVmcjhXUm5xcDNfaUJmUEFPbFd6Y1pIRDg3ZEU3OWJnVXZZTUNPTHZ0bnlBRjRuNk1RNmhmanM?oc=5"
         },
         {
-          "title": "Hindustan Coca-Cola Beverages Files for $1 Billion IPO, Impactin",
+          "title": "PepsiCo to cut 1,000 jobs in North America amid losses of major contracts to Coca-Cola despite $5.4 billion revenue from Europe, Middle East and Africa",
+          "source": "Business Insider Africa",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNNlpXbzRicGo1UmRFQm5WbjRYTnU1eGQ1TVptRjNHajVuUm8xM0xucVFKLTNWUWpKRjdIbGFtdlFmU3BRd0JhbXFlNUdxbHIwSGVwVERWajBIekNyMFdraHFSTzFVLVRDSmtlZWhyOVZoQ1RyVFQwdHhLZUl3ZXRGWW1nYmhjRi16bGl1TFN4Q3pZcVo5aUlNVFhsVmVQNlJBSm8xeDBLdTdjOU1Hc1RmdkxDNGVSUEpmcGg1cGcwZjlmdnIwampNOGlJdGU2TkJ4eVlhdVdhcTdzUQ?oc=5"
+        },
+        {
+          "title": "Middle East Diplomacy Boosts Oil Sentiment as Colgate-Palmolive (CL) Shows Dividend Strength",
           "source": "GuruFocus",
-          "date": "2026-11-07",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPamNzUVNnZHNnal9nLXBmOFpnWWptUV91SHdTQzBHUHQybGQzUENjUTFIZVNHOTNtcEVlRGhkdEpMcGNHR29mWUdwTGJmcG9hQWpaeUZyV3o4WU5ObmRBUHZJaE9jUkZURjI1Q1c5ZnV3NEFMNzV4ZVZQbVlnMjVRUDRtTFZiSHlPakNYcmU1dWpUa0RiUEZHOFBBajhSeC05Vjhla0RTR2NhbnF6SjJmWjJKZUNKX0FsQXMtaGQtMA?oc=5"
-        },
-        {
-          "title": "Coca-Cola Soars 12% in a Month to a 52-Week High: \u201cAffordability Is Working\u201d",
-          "source": "TIKR.com",
-          "date": "2026-11-07",
-          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWkJ6MkF6R0ZvczE4b243a0hQaTIyM1RUdVk3NjdEWHpuMmM0dEtJT1hZblYza2Jyam92QkJxT2VCczdsMVNpWXRMNFRxX3Z5QVlTYk5lNEdad1MwVEVpQ2hwRGNGeThFSS1lVXlQQm11TkRnRXNDaC04cXlVT3NqaTJBZmRGNEhoME5WYldTNW5faGhEbG9USUs0WnQ0RE0?oc=5"
-        },
-        {
-          "title": "Coca-Cola Has Raised Its Dividend for 64 Straight Years. Here's What $10,000 Will Pay You in 2027.",
-          "source": "The Motley Fool",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVjducVBCR3RPVGdaX2M0VmplSllkcVVvU0RuS0RxQkIwTWRtNHRybmdjNkxyaFZYY0NLSk9GcjR1Z19lNWJyWTZjY1Y4eXFxbG53MjF1b0dqVmFRV2VabVVYNndkZjBPcW52c0VyRUNhMk1jN3lfVGpycnpEUW1IMXU3T1lhWWZwY1g1ZmdwWmJCbGJTTFB3RQ?oc=5"
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPQjM1STBoU2VXdDRudmtPem4zR2xncHU2WldlX3ZSTExocHFRMnFZX3pHUGNJbGVabENtUlhnek5vbHRWWTJrcjBpQXk3bFFwenZyNG83YmdsSEpHQVFXYWk0dVBGUV9HUUhXTk1fOWo4TkFsMUFTT0w3WmF3cGZZWktRUC1EZzcxRDR0MG13Z1UwbEprN3VMallLVEpmY1dvRkNZVFozWFAxV1BoYnYxN0h5WjFHa1hLclRfZFpHMlo0Mnp1azRJ?oc=5"
         }
       ],
       "companies": [
+        "PepsiCo",
         "Coca-Cola Europacific Partners",
-        "Hindustan Coca-Cola Beverages",
-        "Coca-Cola"
+        "Colgate-Palmolive"
       ]
     },
     "healthcare_innovation": {
       "name": "Healthcare Innovation",
-      "summary": "Eli Lilly partnered with Hims & Hers to expand access to branded GLP-1 obesity medicines and forced a compounding rival to drop weight-loss claims. Medtronic won an FDA label expansion for its Symplicity Spyral device but faces additional monopolization claims after a jury trial loss.",
+      "summary": "Eli Lilly's obesity pill showed significant improvement in sleep apnea in late-stage trials, paving the way for potential approval, while the FDA mandated new vision-loss warnings for GLP-1 drugs from Eli Lilly and Novo Nordisk. Medtronic received FDA clearance for a new neurovascular guidewire and a judge moved to slash an $88 million hernia mesh verdict against the company.",
       "sources": [
         {
-          "title": "Eli Lilly Partners With Hims & Hers to Expand GLP-1 Access",
-          "source": "Healthcare Digital",
-          "date": "2026-11-08",
-          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQWdSTVBoUkFnbG4zOGpYbDNHQjY4WVFDVUtFeGFtMGNpdVNrQ0JWdUlfQTFjRW1OREY5UTdncHVfRkZLTlA4V2IyaE55LVZidkZUU3BWczliX3lEOGVObHR6QlQ4Rk9JLV9SYnI3STBzelRQV2JseHVacXR0LTRFWThIZzlnQzd3bFo0U3loNThtV1lMcGZV?oc=5"
+          "title": "US judge to slash $88 million hernia mesh jury award against Medtronic",
+          "source": "Reuters",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMC1CSW5rSjJINm9qaEFJWVJsVHRVXzRKQjJLNFdxeHpmMHRwT05UdlluQnA2NENoenFkNjQzRHJCVXc0by1PcjNvcmJtS1VjaFZEbEs1WENqaTVrcVgyeVZweDZveHhfWkVKZVdIaEt4aWI2czlUaGdPSHYtMnN0TVVxbmkyT2pxLWpHTjZJTlBDSm9hZEgxVFpLSnhJc0FXc3p2VEZRb2gwVmg2YlZKWGl5WGVnSGdlb25j?oc=5"
         },
         {
-          "title": "Medtronic faces additional monopolisation claims following jury trial loss",
-          "source": "Global Competition Review",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxONlRGS3RZUDF2anV5eGVHMXA5aGJuMzg1OXBQSG9EM3VDV0l0MzBrWGRCUnk1Q3NxQmt2dkNicUg4UTAzWnU0MkNZQWZiRDBaYzR1aXJ5MndwSzg5RlNGRXlWNkw2SW1YZFdGNWhCSEM1N2duMTZPVnBLcFNqcGE4Q0tENmhNby02eTRpc0R4T1UwbXZqVjBIMDRsaTc3WnhGekhjOEZMNUJ1Q1R3LVNGd1dWR3pNcXlMczdrNjY5TVJ0Y3dY?oc=5"
+          "title": "Eli Lilly\u2019s Foundayo obesity pill eases sleep apnea in late-stage trial, paving way for approval",
+          "source": "CNBC",
+          "date": "2026-11-09",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE81N1VodWc0Qk4xVmE0V2pNcnc3UHpKd3VnMDVydmUzRjhWZm9uUXpsQVRsRHFEbzdGbzlObVhiZFlOQjE3WDFoS1JjWmFaQUMzUWlUZ01iakdCcVphX0JKOXVHSG1EeE9tTUdYUWZEOXM1a2hjTFJHZHI0QUkwUQ?oc=5"
         },
         {
-          "title": "Hims & Hers inks deal with Eli Lilly to offer branded weight loss drugs",
-          "source": "Fierce Healthcare",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQUkNISENyR1Z1N0JqLTRsaDhnU0lpbFVmajNHSUhBZzZSUEtHdy1GNy1ia1V3dklOakdqUVZETDhKdTVxc0lGRXItWXh6bEd0SWRPakU5am5kUWxad1lDWFgtOVdRNEZHejBqZGtOS3NhZTJXbTNXOVJaZ0FVOGVlQWc0UC1DMXZCa3c3NlBpVF9TNnV6dGdVVDlnX19qLTFKdk1sbWRPMkZFZw?oc=5"
+          "title": "US FDA orders new eye risk warnings for Ozempic, Zepbound",
+          "source": "Reuters",
+          "date": "2026-11-09",
+          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUG9HX0xJekVOS0FKR3BLMDJBSVJ6SEFrd2FSTU1aUmp1bTR0Vzl6V2Ewand4MTNVbGlTSXhFZEtGM19WZzhieEZrN3paaW1PWUVkZHlWdy1YalQ1OFlWblV4REdtc1hMQzlzTWJmWFRVRmNnNDdVY05oS292b00yTHQtZnh5djFrbTBpdGJDUnJ3akQ0ZlZoRzhaUXRDMXRURFhuM3lySkg4bnBmeDQyN0NjYXJIMDJJRW1LSUhxNHR0Zw?oc=5"
         },
         {
-          "title": "Eli Lilly forces compounding rival to shed weight loss claims",
-          "source": "Fierce Pharma",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMnhFOWxuVTM4Z2Vwb1NEQXNOV1V5MXhxWC1DLVVBVVRFMER3MEttZXkyX0hKV2ZCQ3ZtN3gyYXhQQjRYRi0ybWFLTVNVUzc2OEpncmJacW11WGhZYWVSNXZqQ2ttanl2WXBZY04tUWVsYlJJNmlJSGU5bWlOeE1fUWVDeFFtUTlMak9aR1VnOWFoMUlsX19aakxuNjlLUQ?oc=5"
-        },
-        {
-          "title": "Hims & Hers Partners with Eli Lilly to Sell Obesity Medicines",
-          "source": "Pharmaceutical Executive",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNUTZrcjlCV2VLVjRCc2E2N0lnMThiN1VzNzk3Y0dxcTU5dTBNVTVwNV9CTEFaM01jcWM2d2dWQTlEeGg2NFdDNG5tM2dodmhXQkswUDBTT3VmUTBnekxvZVc5SDR2MG5DNnExenZPTjFkWl9wZEl2T3pXeFBabXljc25NVjl5U0dYRnc?oc=5"
-        },
-        {
-          "title": "Medtronic (MDT) Wins FDA Label Expansion After Real World Symplicity Spyral Results",
-          "source": "Yahoo Finance Singapore",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNaUZYVjFaU04yQUZpcEdwb2stTjgtN1JmRERIWDlnMXZhZndMWHNURjFlSVNwOHphMnJJMjhrempoUEVKd2RDWHlOQk94RnZwVzZKSVFRbFZsSXAzXzRjenhRN20tWXRUaDR3ZGpCbERFc284MzNlUGpLNkthdlB5MjZDZw?oc=5"
+          "title": "Medtronic expands cSDH treatment options with US FDA clearance of Aristotle Mini guidewire",
+          "source": "NeuroNews International",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOMlpZV3hLMUJvRzB5UEVqT0ItTEpnTlBvUFZHSUh3UXg4Snl0eTg5YkU2ZzFreW5CanpkU1pCUlpGYU9jbG1Rb2hEcG93bHBfWENPUHBkSWsyY1lMQ3ZFbmYyRml4cWszNWNmdEdBclZLZmg4SmRCWHZ2cGtJTmY1UHVMb3N2cW5rczVFeUtoQVN3V0ZWMlNFV3l2UkJuNFQwLXpjQU81dU8tZTVuOU1HSmtpb25uYW1GTENhUV9pUFE1ejJJ?oc=5"
         }
       ],
       "companies": [
+        "Medtronic",
         "Eli Lilly",
-        "Hims & Hers",
-        "Medtronic"
+        "Novo Nordisk"
       ]
     },
     "financials": {
       "name": "Financials / Capital Markets",
-      "summary": "Tradeweb reported October 2026 trading volumes of $78.9 trillion, a 26.3% increase, while MarketAxess launched a new portfolio trading cost estimation service. ICE executive King sold 1,919 shares under a 10b5-1 plan, and equity indices stabilized after digesting election results.",
+      "summary": "LPL Financial added FHT Advisors and Impel Wealth Management to its platform, while Tradeweb partnered with BNY to expand ICD Portal investment options and Avalanche agreed to support NYSE's forthcoming digital alternative trading system. Schwab's trading activity index rose in October, and CME Group reported mixed foreign-exchange volumes for the month.",
       "sources": [
         {
-          "title": "Equity indices find stability as markets digest election results.",
-          "source": "CME Group",
-          "date": "2026-11-07",
-          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQ2haaFNwd2QycUdzMnI3ZTJtREw1MDNxXzJ5R1RLa25Udm8yLXZfeFlDZkdEZHVuc3lEdldXMTBfaFc4Y2paUURORmwyVFpjSF9jQ2pPTC02TGJvcmEtbTZwYmpHWWtxeWxtTlhSQ0o3Rk9Qd00weHlWSVFwR0VISlc0dDVJYTZMMWZEeHJXOWJrWnlYbTFDWFBtX3E2eDBTZExtYnVBSTV6TDQzNU9laVVR?oc=5"
-        },
-        {
-          "title": "Intercontinental Exchange (ICE) executive King sold 1,919 shares for $336K at $175.00 under a 10b5-1 plan",
+          "title": "LPL Financial Welcomes FHT Advisors and Impel Wealth Management",
           "source": "Quantisnow",
-          "date": "2026-11-06",
-          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPa0JaS3ZqX0h3bi1jVnhCNHFZVDhRN2I0a3k1MWdUcElIOGQ3U2dPMUlwVXhkLXdDTTRfR0VhZnh5WmU3S2dLWkxOZk9rbVpjMkZsQmJablRUU2NYZ2F4RXdGRzZnd0Y2Ul9CUDBJVkNCUTZUQjJ2d0puMHh2anYxRlFORlBsYnVyanpCRlNNQ2k5R0lKZllZQjVacW5QanQzdmN2cUxlNXI?oc=5"
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOV0VZUEJXVnFNOHZ1VXFxRFZqWXh5UV9RRWRsTko2R3hmZnluSzBiNEdqMENwd0xXaW5SMVRVSmtuNnViX19YbnVIbTdVdXZ3Si0ydjluYmtCdlNGMkItNTRIS1FneF83YnNoWFhOYXZCY25FNG00TlhqWEVyRDU4S3ZJdkxLalhQY2hiUFNWOUVLRlU0cklYYVBWaUxMY1BvRUpldF9VbWVuZw?oc=5"
         },
         {
-          "title": "Tradeweb Reports October 2026 Total Trading Volume of $78.9 Trillion and Average Daily Volume of $3.6 Trillion",
-          "source": "Tradeweb",
-          "date": "2026-11-05",
-          "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOdGIybU5zWVh1d2RBdVRSR0hpXzhFdi1wNnk2d0lhTjB2YUMxTWEyZXk3R3owRG1IcG1TTUpFdmI2bDJUbUtjWmkyUm9uWFNXWlJSaWZaYWl6SXRzUTAxZ01tRmpSQkcyM1Q3R3VqX2Y3U3VWQXE5VUtJSmg0UElieHBNbHN5SWdRM1QzZXFkZmFkZmNybVBrZzJUTUQ3cE0tdnNCa2pQbE9nYXh2UkttbDVsbDhlaDdsSWFCTlRXTDdZUnVwaS1Jb0VlX1Q5RlRXdTJRby1RX2RoMGFYaHhOMkhIRkdIeGpNc0dRNVIwd1pFMGRkZkRHVnVDTXl6MXpz?oc=5"
+          "title": "CME Group FX Volumes Mixed in October",
+          "source": "The Full FX",
+          "date": "2026-11-09",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ROG1lYlVHSy1mdjliYmV6YXZDbFRxcm5BelI4dUpsSExNUWFra0lKYmpscEd6X2hMVExrbHRkUzRYNU0xTzVJS25pRG9Sa04ta0Y0Y0o5Y2pRQVB6RlczdnVzMS12elVEWnBOSA?oc=5"
         },
         {
-          "title": "MarketAxess launches PT cost estimation service - The DESK - The leading source of information for bond traders",
-          "source": "The DESK \u2013 Fixed Income Trading",
-          "date": "2026-11-05",
-          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9yYjBlZFBBbF9pUzRNZjB4bU8weFZsNnVCM09oU1BqNjBnRVpXT0gzYmlxWUZ2RnZTbW9fdUxzSVZmNWNlWnV1Nm1zT0dXMjk1MjQ3NG1GbW1aRjJlbldoSzFtOWZmNmg5Z1Y4c3llOEluaTNidWhUd01hOWc?oc=5"
+          "title": "Schwab Trading Activity Index\u2122: STAX Score Rises in October Despite AI Selloff",
+          "source": "Quantisnow",
+          "date": "2026-11-09",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNekpZSF9TaklNbFJac29NaUFzLWtqMEdrSDVvb3Ytclp2QTBOeTlINTVadUZ0SDhQVFJ4ZkR4Z2FjdWVHQmhFbGZNcXUzRjN3T1V1SXloWEVRbnNBMEJNdHdmUmt2Um9aTlZrbDlTb2NFYWc2WFc1WVM5Zkh3czBGVzR6N1pmeGUwampXc2lYaDE1QnNfY1dNcFV0aGpFMkFGTU52Q0JjOE40bXZH?oc=5"
         },
         {
-          "title": "Tradeweb reports 26.3% rise in October trading volumes By Investing.com",
-          "source": "Investing.com UK",
-          "date": "2026-11-05",
-          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQX1lPN1p3Z1lCOE95cWhvd3NCY2s4UVlzejFXb19BcE9MNVVnbXlNSU9fOEpLV3owQmROSm9qaEFDQTBBWnQ5eU1GSVNkUXhlU291SlZvdDdQSjJNa2NZU0JDM2VDZkJYTjZQRkdpZ2RzRlJCQmgyQjZnQTRseG8xSy1BV1NtTklYaloyRWVKODNXRVhjellKUXdaYkltVG1ybVdSVm9TUGt5bnVWclZnaTN4MA?oc=5"
+          "title": "Avalanche to support NYSE's affiliated upcoming digital ATS: NYSE Content Update",
+          "source": "Quantisnow",
+          "date": "2026-11-09",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWXlyNFc0Q2pHaE9VY1pRTENXUW1wYl9pa0ZPeWUwdU5JRDVuZmJhY3BCcEx2WkI5aS01NWhwMFpvV05mVV9SZTVjMVA0eEthYnN3NGhRMkdnaGhGV01qZEJIeTh4a1MxTDkxZTBaSUprSVpib29ick5HRmJ1WHR0blNFbjV1RUJKbTM5S2RjRV9JT3gydFJiVGJjZ1l1dVQxVEFLLWF6ZzNYVnpaZklpRTg0eWc?oc=5"
+        },
+        {
+          "title": "Tradeweb Collaborates with BNY to Expand ICD Portal Investment Options",
+          "source": "Business Wire",
+          "date": "2026-11-09",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPTlZyTzZDRVg3VWVHMUc4eWtmZ005NHBqUDMtdncxaTFpWUtENFcyX0NWd2dXQjdqZmxOWGUwaTVHV2h0QjR5UjNPekdkSXRLSmcySnFoXzlKdkNJdmY2dFB1X3hZWm5xdm5Wakl2YmMwMkZVeGpUb3o2aVk5b2Q3bVFIMnRaUHNvdkJWMFZ2WUxLRmpMLW1pWk9tN1FUaWU4bXhJUF8yMHdwbEMxd0VWRHNVTHVHaXJnTUdZLVhVcnl1dVBYaGc?oc=5"
         }
       ],
       "companies": [
+        "LPL Financial",
+        "CME Group",
+        "Schwab",
         "Tradeweb",
-        "MarketAxess Holdings Inc.",
-        "Intercontinental Exchange"
+        "BNY"
       ]
     },
     "real_estate": {
       "name": "Real Estate / REITs",
-      "summary": "Several Indian REITs reported second-quarter results showing significant net operating income growth, with Knowledge Realty Trust NOI rising 15% and Brookfield India REIT NOI jumping 51%, while Knowledge Realty Trust and Bagmane REIT declared record or substantial distributions to unitholders.",
+      "summary": null,
       "sources": [
         {
-          "title": "Knowledge Realty Trust NOI up 15%, declares record Rs 764 cr distribution in Q2",
-          "source": "The Economic Times",
-          "date": "2026-11-03",
-          "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQS3RsZE5XTE5TMmpsbkUyaGU1YWs5dmMxc2lFWmpBd1ZibEYydUoxcjhNQXZOUEwzMFQ2VENfd2ZlLVA5eWswTFRULTlVTi1KQmxoVEx6MndNeDBaWUJtd3FqcEp2WDdaMFlNeWhlLWlpYm1IV0RpSEVGREwza0lUMlN1cURadk1MNjNTM292WF9lYzRiZDZsR0JJOTVza0JwdmtEQnpEa0tYZzRqVVg1dXJZZVhiMnIxVUF6Ri1YakpSSDNCVE53WXVVcllzYmM5RlJ2VDI5YmtRUUR4c0VtbFdnR010U0VTNU1MTWtSQ2RHNjRIeXY5RGZqeGhjSmNX0gGGAkFVX3lxTE1TeG1Mb21TLVcwbklZdFpNXy1vRGE3ZmNlX2UxZzd2R2pZbVh6OEQzZmcyODhHV0JVdUFrRFFJMnZoc1dyM04wZmY4N3ZSZy1PUm5GSjh0TE5qZTFxdXU5R0g5S3dMTm01ejJILXBTdmQtWWZHRGZmOC05akprV3pqSnByX2ZtY05ZMHY1ajBuSFcyYS1Uc1M1T0ZQUjlrVm5hbDhMNEdCUHFxTW14ZWxMc2xWYzN4eEhPeUdtMnJ1cjk5Tjk1WE5pT1FEd1BrbzBlMTlhRFRuZFBHZExqOUxkazhaU2JNWF9NeVdxUFN1NGkteTE5aXJfR2VwdWk2eFBXczB3ZGc?oc=5"
+          "title": "Digital Core REIT recasts USD818 million of credit facilities",
+          "source": "reitsweek",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOV2czSDM1Szh0RHNUZkJEdldKeHhONmxZc3duS3YtQWlzNHNSZ0lBUDlBeWR3ZG5QVm5wajduZndVZjJtRmFOZUZBWG9LclRZNVlFTldkR2FLeDZHYzM3RjVFUVdyNVpaQ1g2TUZTSTh3SHBwSE1mb3dZRkxvMGZVX2F6OEtKbG5oTzRfWWhGRFNJRjFUV3NCdVBoT3ZYVWNHS1E?oc=5"
         },
         {
-          "title": "Bagmane Prime Office REIT reports NOI of \u20b9684.39 crore in Q2 FY27",
-          "source": "ET Realty",
-          "date": "2026-11-03",
-          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQcnFuQ3Fsa19ZaVpoYjd3Z2dRcl81cmd6RER6RTZKcnBCeWlwcDlUZmZZZUxjMVZsc0oyZGZnZFFDT2FacDVOVW9VTTh6alpKQUFwck1xR01yOUNMdGpFa1Q4bnBlX0pLc2hZTEpYVExvT1l0d3I2TUd3Mnktb3IycHBmdWJnTlY2V2I5MkJEdnhtQ1FmN3prTzMyZjdxQ1hrSnJTQmtCRDV1aDV3dEVna3hsQm81OUx4cHBXWHRqWExjNTkyeEpqRC1BemFxeUXSAdQBQVVfeXFMTUl6VjF4TDN3T05Ga09SXzVIM1ROenQ0akMzR2VDTHVRb0NlSVo1OXNEYmJTQ3Z2eGIwWWxPN3VWNVlmU3dtX2lrSFVBaS03b1V0QmlGNy1HT3B5ZzVfQWFvcTlaN3A2ZmV1cDNCY1BGMlFRTmdlZmppenRRT2VyTDVYb01XZ1JDU2ZEZ3RVSldSc0s2S3pkQ1Z5b0kybjJyZTVPUWViczYyQjV3TlRDZTRVemhPa0U3bElfeTZzNUIwdmZXSlJaMUxQaDQ1cU1qcC1ERmQ?oc=5"
+          "title": "RNP Vs. RQI: The Lower Yield Is The Safer Pick (NYSE:RNP)",
+          "source": "Seeking Alpha",
+          "date": "2026-11-09",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNeHpLVFpqNTFhT2ZJclRMVFlwTTJDZHZ6SXRVZFRnbmtpNlZsYzFER2dHS1kzeE5oMTdsaE1pcWljQ0F6TGlXYkczblR3TmFUNXV3cEZ4STlLazZzbXRfNXlkMVd3UWpTNDQwcXdVeHh2SFM5QktHTTlqSlZuMnFEam1CeWdOa3pvb3dLc1Vn?oc=5"
         },
         {
-          "title": "Bagmane REIT declares Rs 527cr distribution to unitholders for September quarter",
-          "source": "The Economic Times",
-          "date": "2026-11-03",
-          "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOMm9RWW9RMlMtbHN6MjU5S0VJTFNqeWdJLXBla3ZVYVI2UEkyMXdHTjlIZGNMd3RFamZvdDdpQkloa1hnQmxaS2c4aEhxcjlHOWlqVHlIQ0w2N0JaMDVDU0NDWkNXSHFqSnZqeEVXSmRZeTV6aENsUncwVUJBRXlnenNPSTlZWUxYUFQ2N1lrVk5mMXhRQUtOR3U5aGU2Yk9STTFxQ0h1d2ZTMXRIYTExRWdERnRka200blFPdWN0RUNJNUg1Zk1xS2lkRDNHSmliOU1pd29rcmlVUmZ3X1hTY1lhSmsxRVNKbzFXejFMaDNTWVpCUVhCalVJX3pRdWRpSFVDMNIBigJBVV95cUxQV19NY2pPbmttVGlYbjltTU51M0VpdnNVYW8taFc5MnZwTnBBTmNvczZsd3FhUXI0UEtuRTk1SmhvSjdDVlhqbUlQNXVxM251TWF6bEFJeHdiUGc2LVN2YUJWSm5RMUJyZlJodzA1QUdHZ2Z3ZEk2aVBwUi01UUhfay1NRUVxOUktcWplandPa2d2NV93a1RzMlB2WFJodjJHbHViUTE4TUNkdldvaU9YTTNKQUdvdmlxWjl0T0xrVXd4d29oTFRGRFlnOEY3Y3hnMW82Skt6dGlLaDRiTU5UazlmbXQySzhXcmxBak5Zc3lSQzZmNHVackd4ZndaTnFYNGQySFVNWWJSUQ?oc=5"
+          "title": "Digital Realty Trust, Inc. (DLR) Stock Price, News, Quote & History",
+          "source": "Yahoo! Finance Canada",
+          "date": "2026-11-08",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBhSjJsbms1SjhybGlrc1dUZ2VPUlpxV0ZabzMyczM3Z3U5dGNscFRYbzd2ZHZuNnpJem5UMFd5SndnM2kyWWc3NG9USl9tTWVx?oc=5"
         },
         {
-          "title": "Brookfield India REIT\u2019s NOI rises 51% to \u20b9767.2 crore in Q2 FY27",
-          "source": "ET Realty",
-          "date": "2026-11-03",
-          "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNSUI3WVZSdEdlRXYyM2hnTHhfYXdJUHNpVzBta1YxYUw5eGRQUDg3eWM2dmJJaWZHbGYwVWozSmxTbFhiT2N3NktaT0xKaWw4eGZUeXg3bE9wYU9MZkc2VGtFZjFEaEdXTWtHVGpqMjI3X2tmVmNDdG1ONnVmLWpSMjJZazBMWmdyQkl6bEMxUU95aHZzUVdQa0pBYkJOdUxSa3NJb09EZkxEY3BscVh1bEgxVUhvV2ZoQU5XZnlibFA0RlpwaXdIYUNnVE13TmVXa2ZDSW8yZno5cGZEeHFqbGhYZC01aDFoRTNxYjZJZ0tDVExqZk1JSHNRSVVSMFNwalg5MdIB0AFBVV95cUxPWXBjdUhtTTFEbVBkZ2lTRm1fNnhNR0c0dmxWcEUxWEppZ1V4NVZsWS1RQVBBbzRiajJjUTQ0eWxoWU9Hci1hblVQVHNBSmEwSUV5M2tQLU5hUmNXbk9DUDU3OTZBcHFIZW5NenUzdTNNRmFzLVV1a0lybmhzQVA3aUJ1UFFHOE9JRlJ4ZGJGa2ZldnQ3eS1WXzJHUkpUMjJpVEgtT3k2bjlBNDV0VnhhYTBSUWwwMDh5emdKREFuZU9Ybko2a0VVOEM2eXJoMDhp?oc=5"
+          "title": "Goodman and Digital Realty start the race for NextDC",
+          "source": "Green Street News",
+          "date": "2026-11-08",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQOEN4c3BPMnU0d2FiYnZCYWRzYzIyZlkxMHFTR2pQYUswOFVVOXdHVEh1d3M2NWktUmVYZzdhQkIwYVE1WmYzMVFtNnZ1aDlFNGVpdHJvVjNwcFpIMm9Lb2dtUXVQTWhtS2pYZTNfV2NjU2FSSTI0eFlxbzNRMndNNzE2RUtJUnFGWXE2NG9FLTl4UUU?oc=5"
+        },
+        {
+          "title": "Equinix, Inc. (EQIX) Stock Price, News, Quote & History",
+          "source": "Yahoo! Finance Canada",
+          "date": "2026-11-08",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5LTVA2TVhWNlJYXzNQQVlrNnBoSDZ5VHI0ZFpfMTNYTW1hYzc0R3JlRHBVWVViMEpDaGl2NUFzQXV1Z0lfY2t4NVJuMGFvQ2p3aFE?oc=5"
+        },
+        {
+          "title": "Prologis Stock: Multiple Growth Drivers Support Further Upside (NYSE:PLD)",
+          "source": "Seeking Alpha",
+          "date": "2026-11-07",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNWFB2S2hyT3ZNSlBkMjc4ZzFOdk8weV9KcFpjUnpwcmpodkRlUVBfWDd2VVFHOUY2SmFsZUF4YzVxS21ZaWNRYXRrbHFiNXlTY2VId0hkdy1Ua21QaHY1UzlTUjZSYjViQ1RRc3A4UUEwTXIzVFNWMnlpWnplLTIwTG1qMTlBWGQxVXc0U0kwZW1Nc1ZHTkFWUGlDX00?oc=5"
+        },
+        {
+          "title": "The Largest Real Estate Companies by Market Cap in November 2026",
+          "source": "The Motley Fool",
+          "date": "2026-11-04",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0xR2tNOGc5SWd5bjRSNXJ0V2JTbV8zdVFMc0NDUW1VUnpjUXF2R3ZISUtuckI0VWxFd0tUbkJKUDVoQmF2RUhKZ3dRLTdoeVVTYnYyMlQ4eHF6cUdIMTR1eVBsMVZ0RklvQXh2Ug?oc=5"
+        },
+        {
+          "title": "Rates Slow Q3 Office REIT Earnings Despite NY Demand",
+          "source": "Law360",
+          "date": "2026-11-04",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQkZ0R1ZtbkNMX1ZLSmt3TWh4NFRxdU9VY210eDItODRqX0hqQjhtRG1yMGQ3MHZLcnFqaUcxbFpVTEtvM2gtVV90MW1rcDdtV19XRWU5WlIxM0xidHpFVEFQUXYtTVh0cnVlSjduamd2Um9vU19ybWNJLUUwU29jYXFqSTh3Zm1ydWNlbW5oOEVuTmdCenNSUlZlOFo3R0owS09ZVDJPVHpDQmhjT0J6YUpKLUrSAXNBVV95cUxNc0JpQW9yVmFCa09wUERmRXRxMndYZkdBTWdHckdSaGdwWDFBNzJVMEV0LXBkUjA4SFYxeDBudnBLdmpvSXZ6SVVHeWg4dXVuLTVuNUxoWWJKVVVNaTlrcUZ2blhXVjlOT2xKUl95bnlESWkw?oc=5"
+        },
+        {
+          "title": "Digital Realty: AI Bubble Pains Overly Exaggerated - Durable, Multi-Year Demand (NYSE:DLR)",
+          "source": "Seeking Alpha",
+          "date": "2026-11-04",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcnc2R19ZRERLWlFpY1lKY2dpSVdWOHRxQk1yZTY0YngtMzZrMFh3WFNHNjVFdGxUdk5sV3FtakVPejdzQnFkNk5WZ0N2eXBHR3dnNU5TczlldzZmZnRBTGFfTUNDMDFUV0ZNWF9wb3ZNc1pHdDlQZmQtNEZVVnpWLWZPeHZTZDdsOV85TGEzZkNYb01iT1QyT0hfV0x6OC1BUjQ2QWpNdHdQZUsxVHY4S1RhZEhXdTh2TXBN?oc=5"
         }
       ],
-      "companies": [
-        "Knowledge Realty Trust",
-        "Bagmane Prime Office REIT",
-        "Brookfield India REIT"
-      ]
+      "companies": []
     },
     "consumer_media": {
       "name": "Consumer / Media / Entertainment",
-      "summary": "Flutter reported earnings with U.S. revenue as a bright spot while Comcast's Peacock faces renewed patent claims; Verizon launched streaming bundle discounts, United Airlines added personalized Spotify inflight streaming, and Netflix secured early access to \"Insidious: Out of the Further,\" scored a historic hit with a two-part thriller, and streamed WWE Crown Jewel 2026.",
+      "summary": "Skydance reported disappointing Q3 earnings and announced a $6 billion cost-cutting plan while warning that the Warner Bros. film slate would underperform in Q4. Netflix and Comcast faced adverse rulings in streaming patent lawsuits, Disney partnered with Adobe to co-develop custom generative AI models, and Flutter posted earnings that missed estimates despite strong U.S. revenue growth.",
       "sources": [
+        {
+          "title": "Skydance Stock Tumbles After Earnings. Integrating Warner Bros. Will Be Hard.",
+          "source": "Barron's",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE85UGRNY3B0VUJGWlBXM3BDRXZZUjkwb0xqeEdrV1pzcThLTG95aWZfdklmV3JzOXlfbURYYmNBMWtTbFdjcDhTOWN2c3VYRE1vYmdaRzUxR255V2pWdnN6alRHRm5iazM3ZzlsWUwwbnAwcnhTTk9Xams5UQ?oc=5"
+        },
+        {
+          "title": "Netflix Fails to Escape Patent Case Over Streaming Technology",
+          "source": "Bloomberg Law News",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZDlUYVB1M2pPSWlHb3VlMzhSQ3IzNEVVQ0FTUTBRSHYxOEFDSzk3Z1ZBNks3X3owTHhoM28xaWRVRlFvUVI3UnFtai1xQjZlaHlXUWJ0M1prbVpSLXZhOWFMcS13bTNITEhDeEtMT2owZTEwSEtzczRTVmRwTExvVUF1RGFubEVzeE9KcEJPZlN0V0JiQS1DWDhJYXhFMDA?oc=5"
+        },
+        {
+          "title": "Skydance shares dip on Q3 results, expect Warner Bros. film slate to underperform in Q4",
+          "source": "CNBC",
+          "date": "2026-11-09",
+          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQbnFOZEZGNFJlRmVUcjZwS3Vwcl9MNk9mNm9yODlwRGFvWlN3dTEwNWQtVjc1a1dZZVNGaEtNeFpmVGc0Wjhnd2NSbDc1ajRpUnJtX054TmJ2Zk1rZmVMNWVSczVhNWpkSTUyR2h3YVIxb3AxZksxaUQxdVNSMFRramxRbXN0aTBKNUZIcDlBa1Q0WFlSNjhoM3RYdDlPQnprS0l3cEx0ZmYtdWNNZjlKeVEwYkRPS1NraktHckZqeFM4UldFSjEw?oc=5"
+        },
+        {
+          "title": "Skydance Plans to Cut $6 Billion in Costs Following Warner Bros. Deal",
+          "source": "WSJ",
+          "date": "2026-11-09",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNclVINEVyRk9HVHQwQWtLZzNPRExJSUxpcktfYXVvVmVvUDR3UWtJaTh3RGVCNE5LVUdtaThzdldQZ3ZudHNmRE5yVWNSd3RHOFlQY3ZvT1l0bTZLMjVwX1NFcWgxWWl5aTQyeDMydzNnZXg3d0wwWmU5WWltMGQ1RDhIRjRKa1R5NFNkWm5iMlZoMGpwMFJkdnpLVTI0SmFCaG9oVE50RENuRDZRUkFqTA?oc=5"
+        },
+        {
+          "title": "Disney, Adobe to co-develop custom AI models tailored for media giant",
+          "source": "Reuters",
+          "date": "2026-11-09",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORlk2TV9jQUFndDhlTS1XZzhXZjJFTERQaGIxamc0c09Xcnl4TlRaeDFuZ2FoTVd3Y0ZMdnVVZktNcDRzdGwxdDlnQXhFWkhUcFA0YUNIREZYTmpoTU9xV1pzeGVycHZRemRkLU1ES2pxU0NpeFVmbkVwYWVZemVJTWU0MHhiRG43b3IzNVgzZTB0bzFLN0VBUE9lZ0JKSEJ1NHdCNVJyYW84eHZyQ3NHTTJacHUtY1AwTHRiLQ?oc=5"
+        },
         {
           "title": "Flutter Results Miss the Mark. U.S. Revenue Was a Bright Spot.",
           "source": "Barron's",
@@ -705,65 +660,28 @@
           "source": "Bloomberg Law News",
           "date": "2026-11-04",
           "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVHVqbXl5R2c0S24tTkNUVDhXRExnenZpTS04b0s4Tk9XMUdSaDBNejJCajlBR3hPNWFZNUhoZDNudXhpeE9XSDE3S21KOVJ1dGY2X1RJN2tiMTZvLU1yUV9rMFJSWnZ3MDB2TTJDUEoyZzBqVDBTNHNmYkJkSFdIdG9aUlJ4czVPYVZNRUFNMmVWM0hlVnRfbVpydm1GN1VDNUE?oc=5"
-        },
-        {
-          "title": "Verizon Streaming Deals: Solid Savings on Netflix, Disney Plus, Apple Music and More",
-          "source": "CNET",
-          "date": "2026-11-08",
-          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPc1dWbnlZcDRIcUUzd0RDQk1ENWU5MUxMWlk0RUNheGNpMHE1NlpPQmZuZzRMVjlDV1lzZW5uQnphRVlXa3ZTeTRXSldkSk9IaGMxWlEtbG5oeEVXZGhzSVZzeDFLeDNDalg2bXM2anNyOHFwVEh3aGNmMUI1Ykc1Y2ZUYmlLcGEzVm51LWhHY1ZjOUJrWF8tUk94NU1Oem1nZVE?oc=5"
-        },
-        {
-          "title": "United Airlines introduces personalised Spotify streaming through inflight entertainment",
-          "source": "Future Travel Experience",
-          "date": "2026-11-08",
-          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPUTY3WUl2bXdXbGxteUIwZ3MyZjFLRjYxckJtdFNlZXgwZ19UVndTek1nZ1N5ZkdrZnJfN3Z4cTg2TEp0QjZwLTQzamtycE1LUXBjbzhNMnhtRnVrbFlFeC0wSWdLYTViSDFwUTEza2wzV2VUQjVxZGdoV21aZnN6QXE1WHNSdnVBQWxfNUFMOW1YUmNzbTlCeU1EendKaEkwcTNxMnBRUzhzUzBURkdnSXpFbUF2aWkzZXF0MGZDZFJYdXFkYnhjZmxEcWphSXVFaWc?oc=5"
-        },
-        {
-          "title": "\u2018Insidious: Out of the Further\u2019 Lands Netflix Streaming Debut Much Earlier Than Expected",
-          "source": "What's on Netflix",
-          "date": "2026-11-08",
-          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNeFlyR0ZpdWlkMXVSM0JzanJ5VkFvUmszV3pFQjM5Uk9vZ042V0llSFhNN3VtQlAwVjlnUi1uakV6ZzYzYThyMmF6c0lNejhESE5HVnI5d1E5WkJuQUlrWHVTTGdFNEFINjRTVTBSbnFaaWpacXlJVGhXX2N3bG5rZkI2ZEhwR1F2TVJrN2dhSWg5VlEtNmNZd2RJOEhsdFJ6QXVR?oc=5"
-        },
-        {
-          "title": "Netflix's 2-Part Thriller Series Is Officially One of the Biggest Streaming Hits in History",
-          "source": "Collider",
-          "date": "2026-11-07",
-          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOS093Z0NkLUE1TDRpdzNLaEhzNkxTdk9WR1M5RElwdThtNWRJWFA1dUUwYWJxT2ZyeHlyakQ1NGFxcHVkT3pKRXlKT1VPVlRoMHZtRm5ZZlBkWE1LMjlDcDhEVjNNZ1VELTItbzBoZ1M3V0RQU1Jlb3FJbXZ2dHlZNXc3SQ?oc=5"
-        },
-        {
-          "title": "WWE Crown Jewel 2026: Full Match Card, Results, and Highlights",
-          "source": "Netflix",
-          "date": "2026-11-07",
-          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPX1E5VXJmSGRSWjZ4c09VS1FEUFFESWtBSHROT19WRlFIel9reDBtd1Z2S2tpRGxjSEFjVVFGd2o4RXhhRkprMjBMWEkxVzk1SkczSzFzYi1JLU1xTVBxR0JkZ1hZdjZjRElUdGRxY21UVVkxUVV5Wi1HZnV2ekZiNXZCb1VXZVhlWTBkOG4xZDhrRDctcGpkTmxlNA?oc=5"
-        },
-        {
-          "title": "How to watch WWE Crown Jewel live stream: Unlock Netflix option and more from anywhere",
-          "source": "Business Insider",
-          "date": "2026-11-07",
-          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOWVJYWDgyNV82enZfMGgyX2ZIYktybDBLUzNESlZ3V0lyX0VGb0duU1NOUnhHbmdoWmQ4ejZzWWNtVjljSlhDMXZ4aC1NbXgtZWZsam52aDMyOExrUDdNS2dqWk9VYVRvR091QUZobnNLT2J1V0lmQmRSZ3pDaHB3cUR2YUJYdkgyNlE?oc=5"
         }
       ],
       "companies": [
-        "Flutter",
-        "Comcast",
-        "Verizon",
+        "Skydance",
+        "Warner Bros.",
         "Netflix",
+        "Comcast",
         "Disney",
-        "Apple",
-        "United Airlines",
-        "Spotify",
-        "WWE"
+        "Adobe",
+        "Flutter",
+        "Paramount"
       ]
     },
     "datacenter_infra": {
       "name": "Data Center Infrastructure",
-      "summary": "Fluor secured a $4B+ EPC contract for Terawulf's Kentucky data center campus and Caterpillar expanded engine production to meet data center demand, while Microsoft walked away from expansion talks with Nscale in Texas and the UK, Entergy advanced an Arkansas data center deal, and SEALSQ partnered with Eco Wave Power on an AI data center project.",
+      "summary": "Microsoft declined to expand its Texas data center deal with Nscale while signing a 20-year power agreement with Chevron for Texas capacity, Fluor secured a $4B+ EPC contract for Terawulf's Kentucky complex, and Vertiv partnered with Infineon on AI data center power semiconductors; meanwhile, Michigan's attorney general challenged DTE's Google data center contracts, Democrats gained control of Georgia Power's regulator, and Modine landed another major data center cooling deal.",
       "sources": [
         {
-          "title": "Entergy sees progress on Arkansas data center deal, strong Q3 sales",
-          "source": "Utility Dive",
-          "date": "2026-11-05",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPRmhZeFFqVURPMmQ4bVRILXRDd2dyOWV3Zm9lQzFtdnlCRS03c1BJZWZwMnhCY1pha2ZONmVFUUl2YnRpcmI4cnpJcDJKRVRxOG1YMm1aRFJuWnU4d25sQnh6VnIzS3owdTkwdGZGdjF6QXBrVkhpUDlKbklWcXZUQ18zUmtybkxCTGd6alBJN1FzbXZJWVZfdldzT1JyX3BUc1lQSzdUbXdnVnJCQkRHTA?oc=5"
+          "title": "Microsoft declines option to expand Texas data center deal with Nscale, source says",
+          "source": "Reuters",
+          "date": "2026-11-06",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNb3YxSi01QlpvU2xqQVk1TUZQVTdjQnlqOUZwaFUzZ2txZHBJaHZ5bTVNOXpRZGV0czNzQkRCamNqNXZ2cUFoZ1JsV1l0cGFKazh4SXpjSlJ0Q1pMR0IyVWhfQkZlbTAtWFJ1ZERpbDdfNzZqaVlZUjg2a2RKNlRfS0N4OFMwSmpERG9EWng5MC1XXy1ENURJMUNWTTEyR3Q0UkE3WnRSMVJmVDAwdlJoVDhXa0h1YXpyYjBR?oc=5"
         },
         {
           "title": "Fluor Wins EPC Contract for $4B-Plus Terawulf Data Center Complex in Kentucky",
@@ -772,39 +690,38 @@
           "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOeUxhVzN0NVNZejRKNXpJZmV6SlhCRlNHNm5MVHA3LU1RdlNZV1BVNklJR1liTlRpQVc3ekpVTy1rYXdvWDRFd1VXNTAxbk5SN1JVM3I5dnZCTnZ3VXdqTnVvQjluQlZ4UFNoY3lIdjFhZTVQWVJtOE43RnJXZlZCZ0RrRGVmWElMQmJOaHozQ09QRzRLTXNzcUJEZjV3d05seGNZQTNaUUJkU1lKT1NnOQ?oc=5"
         },
         {
-          "title": "Microsoft Declined to Expand Texas Data Center Offer With Nscale Before IPO",
-          "source": "Bloomberg.com",
-          "date": "2026-11-05",
-          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQS3RubWFETU1KTTUzTjBEbFBmNkxGMVZudnZWRDhnNnlXdlFXUHN4Rlg1MExaa2JzdGFwbEFoOWlsMjM5YmZOdnpFT1dBV2VlMEpqaFNERVZSM0hQLWo5NmU0YlF6X1RoTDhidl9yMHYxVVB1QzRpSXp2WGpDR214M1pOTldHQ083Y2FacktrV0gzWjBOQ2VhN2lxdXJoZi1qNDBOcUZiU2lfMnpEdnJaeHotd3RGbGE4NWk3WURGcGJQNzRN?oc=5"
+          "title": "Nessel challenges MPSC approval of DTE\u2019s Google data center contracts",
+          "source": "The Alpena News",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQejFlUl9zbnhDRjlaRC11OG1lQi11aEdDT2k4R3QwaE82M0lHbEl1SmtYdWNPcVFaZ2NCTVdmalJOMGtjZWkwOHk5RnVrTnpid1ZDS256aUlDcjRuaV9QUXlMejMyMDhPRnZBS1NzejYtZHd2ZGlMOGdmakxwakR4SHhrQ211bzhjeGhEbDZlck1uZy0xa3hmX25LdG5iNkFJd0c3MGR0LWtVR0gwLXQzQ2Z3?oc=5"
         },
         {
-          "title": "Caterpillar expands production of engines and turbines to meet data center demand",
-          "source": "Utility Dive",
-          "date": "2026-11-03",
-          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOT29vOVRJeC1KcEpDQUE1RzFGS2RsRXhvLUE4X0NObXVPSG5QSnU1ZTFBcnVXYlRUaDE1dlUtRE5YSXN2R1l4WndmeHdpQ0JWaDBuRWVZdm5MWHBVSy05Zkh0c3B5RFdham9mSUI3SE1ydVE2UmpmellsLWJ5cUxMNUNkNUFQcmk4SnA5MlNGVmdPTW1JOU1lcDM0ZGJhcV84MFNOOWZSM1lldw?oc=5"
+          "title": "BizTimes editor talks on Channel 12 about Modine getting another big data center deal",
+          "source": "BizTimes - Milwaukee Business News",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSDYyanp4QXZnNy1HakVmcUtCWXNaa2dxUkVlY3dNVnNVOVZIVFZmTjNxRnBhX0pJaF9rVTQ4LVBVRGpZSHlYaUhuUDFkaWg0LWNmd3o4YzF1RUpfd25wSHBvVWtmWE9QLXVsUzZMLUdBTEtpSUVhWlpCcW9uVWx2SDNTTmxjSHpYMUducDFVQ0xEeGVQSXprc3pRTzhHMmtZd1pDS2xOazNhSmc?oc=5"
         },
         {
-          "title": "SEALSQ x Eco Wave Power: 2-Firm AI Data Center Deal [2026]",
-          "source": "shattered.io",
-          "date": "2026-11-07",
-          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMnNNM25PT1pyRXJ3WlZrc2JQaUVublIxdXJ6Mngyd0tYb1pGN0JRWjlIeWk3RS1yMldlallfLXBfZHdxN0szTldzZ01oOEZZS2xTd0Q2LTBaVkQ0aGw0MmpLbDBmUEs4Z1JiMVFBRGM3aWp5V2VMZ3JwdVJFREV4TG9yUEkxSjBsRmhSa0NSTnM2dGxqNHJRbUMxaUF3TE1pQ1JqU3ZfcTVHdGM?oc=5"
+          "title": "Microsoft and Chevron Sign 20-Year Power Deal For Texas Data Center",
+          "source": "EnergyNow.com",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNmtOMnRJVnZpV0VpVE1FdDZhSGJtLWtoY0Q0ODhXaVpfdzBmQU16X3A3MUw5TEo2T0VoRTBwZXlvX19kLXcyMFVXUE9yNGpxekRWcG4wOFQzYVJiMHJVWTEtY0JiOVhyeXlhaS1EX1ZaRDhPN1Q4S2tCOTlNT216eVl5WnhBeFpNa2RDOVBhWk1CdElYMWZ6eHZqSFBjN1k?oc=5"
         },
         {
-          "title": "After Pulling Deal For Nscale\u2019s UK Data Center, Microsoft Rejects Texas Expansion Option: Report",
-          "source": "Stocktwits",
-          "date": "2026-11-07",
-          "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNbXVOcFdadThNU1VnX1VvN1djV19Jdm5CVGFGbFBxQ21WS2YxbmRvSzV5V3JWVGFHNE5kUTBPc2lKazZKVkp1aG03WEl5TTViUGloczB0MDlZZWE2OUYxU2I5WVZPemNkTWpGSG1iR0JOTnFOLWFudmJQN1dLSVVjcWlNY3JaN1BoX2t2OVZJdUtMSGtLbjFhRWhWNnRsd0J5ZTFOV2cxbEpyb3U2Sm1fSFJYeGFCUFpzZWhWaWhPUmx2dmRJNndWMlM1dTB0NUdlbFMtcURaU2llV3BVZHd2VnpSam51dw?oc=5"
+          "title": "Vertiv partners with Infineon to scale power semiconductors for AI data centers",
+          "source": "Data Center Dynamics",
+          "date": "2026-11-10",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbEFuYlF2eTdpSmxWd0NieFlrWk0tWGdNLTZzZmlWZnJiZ1hPdi1COFl4dmFMS0ZHcTBvRjhOc1REQjVqeXQtUEcyVjRxY2tBSHpkZXBFZWFHWkctZ3F3VTA4U0FrY1Nsc2Ixa2xuc0p5NUQ1ZjNhX3NfQkw0MlMyLWY0Q1E5aWpaS1M2aUFCeTVQRExlYjlqX0g2aUtRQjFPdTlSRU1OT1paMDNxLUk5eU84MXhfN1lrZUJkS3RhZC0?oc=5"
         }
       ],
       "companies": [
-        "Entergy",
-        "Fluor",
         "Microsoft",
-        "Caterpillar",
+        "Fluor",
         "Terawulf",
-        "Nscale",
-        "SEALSQ",
-        "Eco Wave Power"
+        "Modine",
+        "Chevron",
+        "Vertiv",
+        "Infineon"
       ]
     }
   }
