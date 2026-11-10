@@ -72,7 +72,7 @@
       "llm_verdict": "RESEARCH-WORTHY",
       "bear_downgraded": false,
       "buy_trigger_drawdown_pct": -30.3,
-      "no_pullback_gate": true,
+      "no_pullback_gate": false,
       "unsupported_figures": [
         "3.3%",
         "$40.5B",
@@ -135,7 +135,7 @@
       "confidence": "MEDIUM",
       "bear_check": "The strongest argument against buying NVDA is the escalating geopolitical risk: U.S. export restrictions on AI chips to China \u2014 historically ~20% of data center revenue \u2014 could expand materially following Republican requests for a briefing on Chinese spy allegations, permanently shrinking the addressable market while the stock's forward P/E of 11.7x already bakes in earnings doubling. Customer concentration among a few hyperscalers amplifies this risk, as any single major customer pulling back or facing its own regulatory constraints would disproportionately impact NVDA's growth trajectory.\n\nBREAK: NONE\nEVIDENCE: none",
       "buy_trigger_drawdown_pct": -23.3,
-      "no_pullback_gate": true,
+      "no_pullback_gate": false,
       "unsupported_figures": [
         "100%",
         "60%",
@@ -228,7 +228,8 @@
       "buy_trigger_drawdown_pct": -20.0,
       "fall_reason": null,
       "rated_quarter_end": "2026-09-30",
-      "rated_next_earnings": 1793277000
+      "rated_next_earnings": 1793277000,
+      "no_pullback_gate": false
     },
     {
       "ticker": "UNH",
@@ -258,7 +259,8 @@
       "buy_trigger_drawdown_pct": -14.6,
       "fall_reason": null,
       "rated_quarter_end": "2026-09-30",
-      "rated_next_earnings": 1791894600
+      "rated_next_earnings": 1791894600,
+      "no_pullback_gate": false
     },
     {
       "ticker": "V",
@@ -316,7 +318,8 @@
       "buy_trigger_drawdown_pct": -20.0,
       "fall_reason": null,
       "rated_quarter_end": "2026-08-31",
-      "rated_next_earnings": 1796936400
+      "rated_next_earnings": 1796936400,
+      "no_pullback_gate": false
     },
     {
       "ticker": "ASML",
@@ -363,7 +366,7 @@
       "confidence": "MEDIUM",
       "bear_check": "The strongest argument against buying TSM is its extreme geographic concentration: over 90% of advanced logic manufacturing capacity resides in Taiwan, meaning a Taiwan Strait blockade or conflict would halt production of virtually all leading-edge AI chips for 3\u20135 years with no viable alternative capacity, causing permanent revenue destruction and severe shareholder value impairment. This single-point-of-failure risk is structural, unhedgeable, and not reflected in the current valuation multiple.\n\nBREAK: NONE\nEVIDENCE: none",
       "buy_trigger_drawdown_pct": -20.3,
-      "no_pullback_gate": true,
+      "no_pullback_gate": false,
       "unsupported_figures": [
         "29.6%",
         "$11.4B",
@@ -392,7 +395,7 @@
       "bear_downgraded": false,
       "confidence": "MEDIUM",
       "buy_trigger_drawdown_pct": -41.7,
-      "no_pullback_gate": true,
+      "no_pullback_gate": false,
       "bear_check": "The strongest argument against buying NOW is that generative AI could structurally disrupt ServiceNow's core workflow automation moat by embedding agentic automation directly into productivity layers (Microsoft Copilot, OpenAI frameworks), evidenced by management guiding only ~20% subscription growth amid AI uncertainty and the market punishing the stock with a historic 27% single-day drop. The company's simultaneous layoffs and $127M retention awards signal internal uncertainty about the AI transition while debt of $3.8B limits flexibility if monetization lags.\n\nBREAK: NONE\nEVIDENCE: none\n\nWHY_IT_FELL: ServiceNow shares plunged 42% from highs after Q3 earnings revived fears that generative AI could disrupt its workflow automation platform, triggering its worst single-day drop ever.\nFALL_EVIDENCE: ServiceNow shares plunge 27% to worst day ever after earnings revive AI disruption fears (CNBC)\n\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
       "unsupported_figures": [
         "31%"
@@ -529,7 +532,7 @@
       "llm_verdict": "WATCHLIST",
       "bear_downgraded": false,
       "buy_trigger_drawdown_pct": -55.0,
-      "no_pullback_gate": true,
+      "no_pullback_gate": false,
       "rating_version": 4,
       "unsupported_figures": [
         "12x",
@@ -620,7 +623,7 @@
       "bear_downgraded": false,
       "confidence": "MEDIUM",
       "buy_trigger_drawdown_pct": -56.2,
-      "no_pullback_gate": true,
+      "no_pullback_gate": false,
       "bear_check": "The strongest argument against buying COHR is its deeply negative trailing free cash flow of \u2013$1.8\u202fbillion alongside $2.6\u202fbillion of net debt, meaning the company is funding capex, integration costs, and interest from a shrinking cash pile; if AI data-center spending decelerates before operations turn cash-positive, equity dilution or covenant pressure becomes a real risk. The forward P/E of 13.3\u00d7 prices in a ~200\u202f% EPS inflection that has no visible support in current cash-generation trends.\n\nBREAK: NONE\nEVIDENCE: none\n\nWHY_IT_FELL: The stock dropped over 10% after strong Q1 earnings, likely because guidance fell short of whisper expectations or macro jitters overshadowed the beat, before rebounding on analyst upgrades.\nFALL_EVIDENCE: Coherent (COHR) Shares Drop Over 10% Despite Strong Q1 Fiscal 20\n\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
       "rating_version": 4,
       "unsupported_figures": [
@@ -670,7 +673,7 @@
       "thesis": "Cheapest nuclear/AI power play at 14x forward earnings with 27% revenue growth, $2.6B FCF, and a contracted hyperscaler PPA, discounted for Texas regulatory risk.",
       "added": "2026-05-28",
       "verdict": "RESEARCH-WORTHY",
-      "buy_target": 133.82,
+      "buy_target": 128.72,
       "current_price": null,
       "next_action": "RESEARCH \u2014 Cheapest nuclear/AI power play at 14x forward earnings with 27% revenue growth, $2.6B FCF, and a contracted hyperscaler PPA, discounted for Texas regulatory risk. Worth a deep dive before any decision.",
       "research_file": "output/research/VST_2026-11-10.md",
@@ -763,7 +766,7 @@
       "bear_downgraded": false,
       "confidence": "LOW",
       "buy_trigger_drawdown_pct": -28.5,
-      "no_pullback_gate": true,
+      "no_pullback_gate": false,
       "bear_check": "The strongest argument against buying ETN is that its 28% revenue growth is heavily concentrated in AI data center electrical equipment, a capex cycle that could pause or shift toward lower-power architectures (e.g., liquid cooling reducing traditional gear content) with no disclosed long-term take-or-pay contracts to protect the highest-margin product lines. The 28.5% drawdown from the 52-week high despite record quarterly results and raised guidance signals the market prices in a high probability of AI spending deceleration that would disproportionately hit Eaton's core growth driver.\n\nBREAK: NONE\nEVIDENCE: none\n\nWHY_IT_FELL: Market concerns about AI data center spending sustainability despite strong Q3 results and raised guidance.\nFALL_EVIDENCE: Eaton Earnings Are Rock Solid. It Won't Be Enough to Ease AI Concerns. (Barron's)\n\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
       "rating_version": 4,
       "unsupported_figures": [
@@ -799,7 +802,8 @@
       "buy_trigger_drawdown_pct": -85.0,
       "fall_reason": null,
       "rated_quarter_end": "2026-09-30",
-      "rated_next_earnings": 1793971800
+      "rated_next_earnings": 1793971800,
+      "no_pullback_gate": false
     },
     {
       "ticker": "TLN",
@@ -876,7 +880,7 @@
       "confidence": "MEDIUM",
       "buy_trigger_drawdown_pct": -50.0,
       "research_source": "deep_research_2026-07-25",
-      "no_pullback_gate": true,
+      "no_pullback_gate": false,
       "llm_verdict": "WATCHLIST",
       "bear_downgraded": false,
       "bear_check": null,
@@ -948,7 +952,8 @@
       "rating_version": 4,
       "fall_reason": null,
       "rated_quarter_end": "2026-09-30",
-      "rated_next_earnings": 1793277000
+      "rated_next_earnings": 1793277000,
+      "no_pullback_gate": false
     },
     {
       "ticker": "ADP",
@@ -980,7 +985,8 @@
       "rating_version": 4,
       "fall_reason": null,
       "rated_quarter_end": "2026-09-30",
-      "rated_next_earnings": 1793190600
+      "rated_next_earnings": 1793190600,
+      "no_pullback_gate": false
     },
     {
       "ticker": "PAYX",
@@ -1010,7 +1016,8 @@
       "rating_version": 4,
       "fall_reason": null,
       "rated_quarter_end": "2026-08-31",
-      "rated_next_earnings": 1790166600
+      "rated_next_earnings": 1790166600,
+      "no_pullback_gate": false
     },
     {
       "ticker": "DHR",
@@ -1184,7 +1191,7 @@
       "confidence": "LOW",
       "buy_trigger_drawdown_pct": -30.0,
       "research_source": "deep_research_2026-07-25",
-      "no_pullback_gate": true,
+      "no_pullback_gate": false,
       "llm_verdict": "WATCHLIST",
       "bear_downgraded": false,
       "bear_check": null,
@@ -1278,7 +1285,7 @@
       "llm_verdict": "WATCHLIST",
       "bear_downgraded": false,
       "buy_trigger_drawdown_pct": -30.0,
-      "no_pullback_gate": true,
+      "no_pullback_gate": false,
       "unsupported_figures": [
         "$1.7 trillion",
         "$200B",
@@ -1300,7 +1307,7 @@
       "thesis": "High-margin financial infrastructure compounder at 27x forward earnings with 15% revenue growth, 93% gross margins, and $1.9B net cash.",
       "added": "2026-07-25",
       "verdict": "WATCHLIST",
-      "buy_target": 103.18,
+      "buy_target": 104.32,
       "current_price": null,
       "next_action": "WAIT \u2014 High-margin financial infrastructure compounder at 27x forward earnings with 15% revenue growth, 93% gross margins, and $1.9B net cash. Revisit at 20% below the 52-week high.",
       "research_file": "output/research/TW_2026-11-07.md",
@@ -1523,7 +1530,8 @@
       "buy_trigger_drawdown_pct": -90.0,
       "fall_reason": null,
       "rated_quarter_end": "2026-06-30",
-      "rated_next_earnings": 1794517200
+      "rated_next_earnings": 1794517200,
+      "no_pullback_gate": false
     },
     {
       "ticker": "CLS",
@@ -1541,7 +1549,7 @@
       "confidence": "MEDIUM",
       "buy_trigger_drawdown_pct": -56.4,
       "research_source": "deep_research_2026-07-25",
-      "no_pullback_gate": true,
+      "no_pullback_gate": false,
       "llm_verdict": "RESEARCH-WORTHY",
       "bear_downgraded": false,
       "bear_check": "Celestica's EMS model carries extreme customer concentration (top two hyperscalers likely >50% of CCS revenue) in a low-margin business where a single lost socket design win could erase 20-30% of AI revenue, and the 56% drawdown reflects market skepticism that 80%+ growth is sustainable given the cyclicality of AI capex cycles.\n\nWHY_IT_FELL: Broad AI hardware selloff hit Celestica alongside peers as investors rotated out of AI infrastructure names on macro concerns.\nFALL_EVIDENCE: Super Micro Sinks 10%, ASE Technology Holding Co. Down 17%, Celestica Down 13% as AI Hardware Selloff Deepens (TIKR.com)\nBREAK: NONE\nEVIDENCE: none",
@@ -1619,7 +1627,8 @@
       "thesis": "High-margin Permian royalty compounder at 23x EV/EBITDA with 35% YoY revenue growth, but forward P/E of 3.8x vs trailing 32.7x signals an unexplained earnings anomaly that must be resolved before conviction.",
       "next_action": "WAIT \u2014 High-margin Permian royalty compounder at 23x EV/EBITDA with 35% YoY revenue growth, but forward P/E of 3.8x vs trailing 32.7x signals an unexplained earnings anomaly that must be resolved before conviction. Revisit at 20% below the 52-week high.",
       "buy_trigger_drawdown_pct": -20.0,
-      "buy_target": 437.76
+      "buy_target": 437.76,
+      "no_pullback_gate": false
     },
     {
       "ticker": "APP",
@@ -1647,7 +1656,8 @@
       "thesis": "Quality ad-tech compounder at 19x forward earnings with 55% growth, 78% operating margins, and $4.9B FCF, but theme fit is low and platform-policy risk is high.",
       "next_action": "RESEARCH \u2014 Quality ad-tech compounder at 19x forward earnings with 55% growth, 78% operating margins, and $4.9B FCF, but theme fit is low and platform-policy risk is high. Worth a deep dive before any decision.",
       "buy_trigger_drawdown_pct": -47.0,
-      "buy_target": 391.15
+      "buy_target": 391.15,
+      "no_pullback_gate": false
     },
     {
       "ticker": "SPY",
