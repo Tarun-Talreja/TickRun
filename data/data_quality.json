@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T20:15:39Z",
+  "generated_at": "2026-11-12T02:06:10Z",
   "checked": 60,
   "flagged": 2,
   "quality": {
@@ -15,11 +15,11 @@
       "ok": true,
       "flags": []
     },
-    "APP": {
+    "AMZN": {
       "ok": true,
       "flags": []
     },
-    "AMZN": {
+    "APP": {
       "ok": true,
       "flags": []
     },
@@ -28,11 +28,15 @@
       "flags": [
         {
           "level": "low",
-          "msg": "Reports in EUR; figures converted to USD at 1.1096. Trailing P/E may mix currencies \u2014 verify against filings"
+          "msg": "Reports in EUR; figures converted to USD at 1.1099. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
     },
     "AVGO": {
+      "ok": true,
+      "flags": []
+    },
+    "CEG": {
       "ok": true,
       "flags": []
     },
@@ -44,7 +48,7 @@
       "ok": true,
       "flags": []
     },
-    "CEG": {
+    "CMCSA": {
       "ok": true,
       "flags": []
     },
@@ -56,11 +60,11 @@
       "ok": true,
       "flags": []
     },
-    "CMCSA": {
+    "COST": {
       "ok": true,
       "flags": []
     },
-    "COST": {
+    "EIX": {
       "ok": true,
       "flags": []
     },
@@ -72,11 +76,11 @@
       "ok": true,
       "flags": []
     },
-    "EIX": {
+    "ETN": {
       "ok": true,
       "flags": []
     },
-    "ETN": {
+    "GEHC": {
       "ok": true,
       "flags": []
     },
@@ -84,11 +88,11 @@
       "ok": true,
       "flags": []
     },
-    "GEV": {
+    "GIS": {
       "ok": true,
       "flags": []
     },
-    "GEHC": {
+    "GEV": {
       "ok": true,
       "flags": []
     },
@@ -97,10 +101,6 @@
       "flags": []
     },
     "IBM": {
-      "ok": true,
-      "flags": []
-    },
-    "GIS": {
       "ok": true,
       "flags": []
     },
@@ -152,6 +152,10 @@
       "ok": true,
       "flags": []
     },
+    "NOW": {
+      "ok": true,
+      "flags": []
+    },
     "NBIS": {
       "ok": true,
       "flags": []
@@ -160,15 +164,7 @@
       "ok": true,
       "flags": []
     },
-    "NOW": {
-      "ok": true,
-      "flags": []
-    },
     "NVDA": {
-      "ok": true,
-      "flags": []
-    },
-    "PAYX": {
       "ok": true,
       "flags": []
     },
@@ -177,6 +173,10 @@
       "flags": []
     },
     "OKLO": {
+      "ok": true,
+      "flags": []
+    },
+    "PAYX": {
       "ok": true,
       "flags": []
     },
@@ -229,15 +229,15 @@
       "ok": true,
       "flags": []
     },
-    "VRT": {
-      "ok": true,
-      "flags": []
-    },
     "V": {
       "ok": true,
       "flags": []
     },
     "VST": {
+      "ok": true,
+      "flags": []
+    },
+    "VRT": {
       "ok": true,
       "flags": []
     },
