@@ -1,11 +1,11 @@
 {
-  "last_built": "2026-11-12T02:06:10Z",
-  "quotes_updated": "2026-11-12T02:00:18Z",
+  "last_built": "2026-11-12T03:01:25Z",
+  "quotes_updated": "2026-11-12T02:54:28Z",
   "health": {
     "stages": [
       {
         "name": "Quotes",
-        "updated_at": "2026-11-12T02:00:18Z",
+        "updated_at": "2026-11-12T02:54:28Z",
         "detail": null,
         "status": "ok",
         "age_hours": 0.1,
@@ -16,7 +16,7 @@
         "updated_at": "2026-11-11T11:43:27Z",
         "detail": "0/2 tickers",
         "status": "failing",
-        "age_hours": 14.4,
+        "age_hours": 15.3,
         "affects": "Ratings aren't being updated"
       },
       {
@@ -24,12 +24,12 @@
         "updated_at": "2026-11-11T17:17:57Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 8.8,
+        "age_hours": 9.7,
         "affects": "Upcoming earnings dates may be missing"
       },
       {
         "name": "SEC filings",
-        "updated_at": "2026-11-12T02:00:24Z",
+        "updated_at": "2026-11-12T02:54:34Z",
         "detail": null,
         "status": "ok",
         "age_hours": 0.1,
@@ -37,7 +37,7 @@
       },
       {
         "name": "Prices",
-        "updated_at": "2026-11-12T02:00:18Z",
+        "updated_at": "2026-11-12T02:54:28Z",
         "detail": "56/56 have data",
         "status": "ok",
         "age_hours": 0.1,
@@ -45,7 +45,7 @@
       },
       {
         "name": "Company figures",
-        "updated_at": "2026-11-12T02:00:18Z",
+        "updated_at": "2026-11-12T02:54:28Z",
         "detail": "56/56 have data",
         "status": "ok",
         "age_hours": 0.1,
@@ -53,7 +53,7 @@
       },
       {
         "name": "News",
-        "updated_at": "2026-11-12T02:00:30Z",
+        "updated_at": "2026-11-12T02:54:40Z",
         "detail": "56/56 have data",
         "status": "ok",
         "age_hours": 0.1,
@@ -64,7 +64,7 @@
         "updated_at": "2026-11-09T01:41:35Z",
         "detail": "48/56 have data",
         "status": "ok",
-        "age_hours": 72.4,
+        "age_hours": 73.3,
         "affects": "Insider buying won't show on stocks or the radar"
       },
       {
@@ -72,7 +72,7 @@
         "updated_at": "2026-08-15T14:09:52Z",
         "detail": "28/31 have data",
         "status": "ok",
-        "age_hours": 2123.9,
+        "age_hours": 2124.9,
         "affects": "Hedge fund holdings may be out of date"
       },
       {
@@ -80,12 +80,12 @@
         "updated_at": "2026-11-10T18:08:38Z",
         "detail": "16/16 have data",
         "status": "stale",
-        "age_hours": 32.0,
+        "age_hours": 32.9,
         "affects": "The field briefing may be out of date"
       },
       {
         "name": "Movers",
-        "updated_at": "2026-11-12T02:06:09Z",
+        "updated_at": "2026-11-12T03:01:25Z",
         "detail": "12/12 have data",
         "status": "ok",
         "age_hours": 0.0,
@@ -96,7 +96,7 @@
         "updated_at": "2026-11-10T18:08:59Z",
         "detail": "12 found",
         "status": "stale",
-        "age_hours": 32.0,
+        "age_hours": 32.9,
         "affects": "The radar may be out of date"
       },
       {
@@ -104,7 +104,7 @@
         "updated_at": "2026-11-07T17:45:23Z",
         "detail": "428 found",
         "status": "ok",
-        "age_hours": 104.3,
+        "age_hours": 105.3,
         "affects": "New stock ideas may be out of date"
       },
       {
@@ -112,7 +112,7 @@
         "updated_at": "2026-11-10T18:09:32Z",
         "detail": "1 found",
         "status": "ok",
-        "age_hours": 31.9,
+        "age_hours": 32.9,
         "affects": "The AI summary may be out of date"
       },
       {
@@ -120,7 +120,7 @@
         "updated_at": "2026-11-11T19:45:11Z",
         "detail": "6 sources passed",
         "status": "ok",
-        "age_hours": 6.3,
+        "age_hours": 7.3,
         "affects": "One of the data sources failed its daily test"
       },
       {
@@ -630,7 +630,7 @@
         "drawdown_from_high": -1.1,
         "revenue_growth": 38.6,
         "op_margin": 53.7,
-        "pe": 46.650116,
+        "pe": 46.484154,
         "forward_pe": 28.43931,
         "short_percent_float": 0.81,
         "short_ratio": 2.8,
@@ -680,7 +680,7 @@
         "drawdown_from_high": -12.7,
         "revenue_growth": -0.4,
         "op_margin": 5.8,
-        "pe": 22.998857,
+        "pe": 23.117613,
         "forward_pe": 17.27079,
         "short_percent_float": 1.74,
         "short_ratio": 2.4,
@@ -837,7 +837,7 @@
         "data_flags": [
           {
             "level": "low",
-            "msg": "Reports in EUR; figures converted to USD at 1.1099. Trailing P/E may mix currencies \u2014 verify against filings"
+            "msg": "Reports in EUR; figures converted to USD at 1.1079. Trailing P/E may mix currencies \u2014 verify against filings"
           }
         ]
       },
@@ -876,7 +876,7 @@
         "drawdown_from_high": -15.2,
         "revenue_growth": 50.9,
         "op_margin": 58.7,
-        "pe": 26.788723,
+        "pe": 25.689869,
         "forward_pe": 17.675642,
         "short_percent_float": 0.66,
         "short_ratio": 2.8,
@@ -1312,7 +1312,7 @@
         "drawdown_from_high": -46.7,
         "revenue_growth": 49.9,
         "op_margin": 16.3,
-        "pe": 48.552795,
+        "pe": 44.41477,
         "forward_pe": 14.852896,
         "short_percent_float": 5.1,
         "short_ratio": 1.3,
@@ -2987,7 +2987,7 @@
         "drawdown_from_high": -45.2,
         "revenue_growth": 55.5,
         "op_margin": 78.2,
-        "pe": 27.257238,
+        "pe": 26.629604,
         "forward_pe": 19.403881,
         "short_percent_float": 3.83,
         "short_ratio": 2.5,
@@ -3279,7 +3279,7 @@
           "drawdown_from_high": -1.1,
           "revenue_growth": 38.6,
           "op_margin": 53.7,
-          "pe": 46.650116,
+          "pe": 46.484154,
           "forward_pe": 28.43931,
           "short_percent_float": 0.81,
           "short_ratio": 2.8,
@@ -3329,7 +3329,7 @@
           "drawdown_from_high": -12.7,
           "revenue_growth": -0.4,
           "op_margin": 5.8,
-          "pe": 22.998857,
+          "pe": 23.117613,
           "forward_pe": 17.27079,
           "short_percent_float": 1.74,
           "short_ratio": 2.4,
@@ -4922,7 +4922,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in EUR; figures converted to USD at 1.1099. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in EUR; figures converted to USD at 1.1079. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -4961,7 +4961,7 @@
           "drawdown_from_high": -15.2,
           "revenue_growth": 50.9,
           "op_margin": 58.7,
-          "pe": 26.788723,
+          "pe": 25.689869,
           "forward_pe": 17.675642,
           "short_percent_float": 0.66,
           "short_ratio": 2.8,
@@ -5208,7 +5208,7 @@
           "drawdown_from_high": -46.7,
           "revenue_growth": 49.9,
           "op_margin": 16.3,
-          "pe": 48.552795,
+          "pe": 44.41477,
           "forward_pe": 14.852896,
           "short_percent_float": 5.1,
           "short_ratio": 1.3,
@@ -5787,7 +5787,7 @@
           "drawdown_from_high": -45.2,
           "revenue_growth": 55.5,
           "op_margin": 78.2,
-          "pe": 27.257238,
+          "pe": 26.629604,
           "forward_pe": 19.403881,
           "short_percent_float": 3.83,
           "short_ratio": 2.5,
@@ -6430,7 +6430,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in EUR; figures converted to USD at 1.1099. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in EUR; figures converted to USD at 1.1079. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -6469,7 +6469,7 @@
           "drawdown_from_high": -15.2,
           "revenue_growth": 50.9,
           "op_margin": 58.7,
-          "pe": 26.788723,
+          "pe": 25.689869,
           "forward_pe": 17.675642,
           "short_percent_float": 0.66,
           "short_ratio": 2.8,
@@ -6766,7 +6766,7 @@
           "drawdown_from_high": -1.1,
           "revenue_growth": 38.6,
           "op_margin": 53.7,
-          "pe": 46.650116,
+          "pe": 46.484154,
           "forward_pe": 28.43931,
           "short_percent_float": 0.81,
           "short_ratio": 2.8,
@@ -6816,7 +6816,7 @@
           "drawdown_from_high": -12.7,
           "revenue_growth": -0.4,
           "op_margin": 5.8,
-          "pe": 22.998857,
+          "pe": 23.117613,
           "forward_pe": 17.27079,
           "short_percent_float": 1.74,
           "short_ratio": 2.4,
@@ -6971,7 +6971,7 @@
           "drawdown_from_high": -45.2,
           "revenue_growth": 55.5,
           "op_margin": 78.2,
-          "pe": 27.257238,
+          "pe": 26.629604,
           "forward_pe": 19.403881,
           "short_percent_float": 3.83,
           "short_ratio": 2.5,
@@ -7304,7 +7304,7 @@
           "drawdown_from_high": -46.7,
           "revenue_growth": 49.9,
           "op_margin": 16.3,
-          "pe": 48.552795,
+          "pe": 44.41477,
           "forward_pe": 14.852896,
           "short_percent_float": 5.1,
           "short_ratio": 1.3,
@@ -9365,7 +9365,7 @@
     ]
   },
   "analytics": {
-    "generated_at": "2026-11-12T02:06:10Z",
+    "generated_at": "2026-11-12T03:01:25Z",
     "funded": false,
     "total_value": 0.0,
     "total_invested": 0.0,
@@ -9462,7 +9462,7 @@
     "concentration_warnings": []
   },
   "track_record": {
-    "generated_at": "2026-11-12T02:06:10Z",
+    "generated_at": "2026-11-12T03:01:25Z",
     "tracked_since": "2026-04-25",
     "scoreboard": {
       "RESEARCH-WORTHY": {
@@ -14687,7 +14687,7 @@
     }
   },
   "asset_location": {
-    "generated_at": "2026-11-12T02:06:10Z",
+    "generated_at": "2026-11-12T03:01:25Z",
     "rules": {
       "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
       "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
@@ -15683,7 +15683,7 @@
     ]
   },
   "daily_brief": {
-    "generated_at": "2026-11-12T02:06:10Z",
+    "generated_at": "2026-11-12T03:01:25Z",
     "date": "2026-11-12",
     "first_run": false,
     "items": [
@@ -15720,14 +15720,6 @@
         "action": "Decide your number before the print \u2014 not after."
       },
       {
-        "priority": 2,
-        "kind": "new_target",
-        "ticker": "VRT",
-        "headline": "VRT newly at research target (+2.9%)",
-        "detail": "RESEARCH \u2014 Pure-play AI data center power/cooling infrastructure at 20x forward earnings with 60%+ revenue growth and positive FCF, down 47% on political fears.",
-        "action": "Worth reviewing today \u2014 this is new since yesterday."
-      },
-      {
         "priority": 3,
         "kind": "mover",
         "ticker": "MU",
@@ -15742,9 +15734,17 @@
         "headline": "LITE \u25b2 +10.7%",
         "detail": "Moved with the broad market (Nasdaq 100 +2.3%, S&P 500 +1.3%); no company-specific news found.",
         "action": "Verdict unaffected unless this breaks your thesis."
+      },
+      {
+        "priority": 3,
+        "kind": "mover",
+        "ticker": "MRVL",
+        "headline": "MRVL \u25b2 +9.3%",
+        "detail": "Moved with the broad market (Nasdaq 100 +2.3%, S&P 500 +1.3%); no company-specific news found.",
+        "action": "Verdict unaffected unless this breaks your thesis."
       }
     ],
-    "hidden_count": 2,
+    "hidden_count": 1,
     "quiet_day": false
   },
   "signals": {
@@ -16670,7 +16670,7 @@
         "verdict": "PASS",
         "price": 154.69,
         "pct_day": 15.44,
-        "pct_since": -1.22,
+        "pct_since": 0.0,
         "primary_pct": 15.44,
         "direction": "up",
         "triggers": [
@@ -16704,7 +16704,7 @@
         "verdict": "WATCHLIST",
         "price": 811.3,
         "pct_day": 11.89,
-        "pct_since": -0.46,
+        "pct_since": 0.0,
         "primary_pct": 11.89,
         "direction": "up",
         "triggers": [
@@ -16738,7 +16738,7 @@
         "verdict": "WATCHLIST",
         "price": 648.06,
         "pct_day": 10.67,
-        "pct_since": -1.3,
+        "pct_since": 0.0,
         "primary_pct": 10.67,
         "direction": "up",
         "triggers": [
@@ -16748,7 +16748,7 @@
         "news": [
           {
             "title": "Watch Lumentum Slips on Deal Reaction; Fossil Group Rallies on Outlook | Stock Movers",
-            "publisher": "Bloomberg",
+            "publisher": "Bloomberg.com",
             "date": "2026-11-11",
             "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOUzVWRi10dHZiMXZZblROOHlGaUE2YzdrMG1sMHM0UUZNaFFvdmVUSkl4U3o4VmV6NndVR0xsYm0wSmhRdVQ3ckFxc1lUd0N5TnRSelBOSUExODAwYkxlemtuc1phcEhNTFRyU3B1SWNYaVpjQWJjWW1qY21sN2dYdEg3S244ZlYyOGJaSjRzOFB2SXdLVExIN2pTQkF2UjY4dDVMNnprVDY4M0lMZFE?oc=5"
           },
@@ -16772,7 +16772,7 @@
         "verdict": "RESEARCH-WORTHY",
         "price": 168.8,
         "pct_day": 9.33,
-        "pct_since": -0.31,
+        "pct_since": 0.0,
         "primary_pct": 9.33,
         "direction": "up",
         "triggers": [
@@ -16806,7 +16806,7 @@
         "verdict": "RESEARCH-WORTHY",
         "price": 234.51,
         "pct_day": 9.25,
-        "pct_since": -0.98,
+        "pct_since": 0.0,
         "primary_pct": 9.25,
         "direction": "up",
         "triggers": [
@@ -16830,7 +16830,7 @@
             "title": "Coherent Rises 5% as CoreWeave\u2019s Beat-and-Raise Revives the AI Trade: \u201cA Breakout Quarter\u201d",
             "publisher": "TIKR.com",
             "date": "2026-11-11",
-            "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQYmJrUmZmUExGYVhOaUx1aVgwTGdOc0JVVm82ellSLXJyX3BrSFhyZGo1NS1MU3Q2bzRZdG84RW91VVVFNXRnUTdSQmtlZWMteWo5aFhYWkVSRW40eVAtT3d0ZDAtb29iZkJTVXg2WkQxQjdyQmdSQVlNSXpvVG1HdXBkUUcxQnQ4Mk9BUVZrYzB4TzFrOHZSU2t5aUVnMC1nVHdaVGRlMF9KVG1ycmtNd0Nn?oc=5"
+            "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOR3hvWV9FQkp0bnBrdU9BLXh1V1NRT2xKR1JkVmtYMU00X1JyR09venEwWGdQTUtMUWFwUy0yOXVVUTRTaTJLa3h0N3NqQ19MQmVCRDZTdVhNRE80MGdMUFBxVHVYc2poYnItRmRLd051UXR0UG4xd1NHaGI2MFV6U2hyYUVEdU1VYXZWWFZydXk4NTMzeUFTVHRVOXFKTkRzdXVMYVIzLVk2ajVCemJYVQ?oc=5"
           }
         ]
       },
@@ -16840,7 +16840,7 @@
         "verdict": "RESEARCH-WORTHY",
         "price": 141.41,
         "pct_day": 8.94,
-        "pct_since": -0.31,
+        "pct_since": 0.0,
         "primary_pct": 8.94,
         "direction": "up",
         "triggers": [
@@ -16874,7 +16874,7 @@
         "verdict": "RESEARCH-WORTHY",
         "price": 242.92,
         "pct_day": 8.5,
-        "pct_since": -0.34,
+        "pct_since": 0.0,
         "primary_pct": 8.5,
         "direction": "up",
         "triggers": [
@@ -16908,7 +16908,7 @@
         "verdict": "RED FLAG",
         "price": 101.08,
         "pct_day": 7.92,
-        "pct_since": 0.46,
+        "pct_since": 0.0,
         "primary_pct": 7.92,
         "direction": "up",
         "triggers": [
@@ -16916,6 +16916,12 @@
         ],
         "reason": "Moved with the broad market (Nasdaq 100 +2.3%, S&P 500 +1.3%); no company-specific news found.",
         "news": [
+          {
+            "title": "$1 Billion OpenAI Deal Puts Cerebras Systems (NASDAQ: CBRS) At The Center Of A High-Growth Stock Trio",
+            "publisher": "Foreign Policy Journal",
+            "date": "2026-11-12",
+            "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOa3hqUHRocnQzREtSb3dTUTNMRFo5TVV0VjdkcmJIa3AteWFqVmZkWmdYeGFCYWdFZ1duRFpvb3NhY1hVSGduVy1DeHNfaTR1U1E0eVZOYnVpMjJBbjBUY2dOMVRtQnlKX1puS1pLbTFuSjFiWHVWRnhZcHozZExLTnRpa2pJR3pjZV8yQnUtTE9vYlV1djl0dG5saUFmbmRjdGNUUnFBc2kza0hIYmZfSEdGZTRmNzF0ZzFmNl9hTm1yTlVpdnN5X1o3TnlDS2JhR0VfX1VWRm9fOG5EZnJB?oc=5"
+          },
           {
             "title": "Cerebras Systems Q3 2026 earnings preview: key metrics and risks to watch",
             "publisher": "Yahoo Finance",
@@ -16927,12 +16933,6 @@
             "publisher": "Quiver Quantitative",
             "date": "2026-11-11",
             "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOTGtpT2pVWTBMVXBMTE5tN1N0N1VJbGwwYkNYajhYWVg4VGpqcXVmRVVDbG9tc0hOVWdXc1hwcWhDZkNCNkpRY2RJZEhXMV92cFh4NUZvakFUMURTN2pRc0hZbE1KSjdIaTNLYlBMV2dUQ0o3MzMzeWY1TWhUTmZETXR5OG9GTDM2MVdzRUJyQ3BTYk9iV2V1SXQ2SGoyalNPN0hBc2FKcmlUQ2M?oc=5"
-          },
-          {
-            "title": "Cerebras Systems (CBRS) Set to Report Q3 Earnings Amid Strong Gu",
-            "publisher": "GuruFocus",
-            "date": "2026-11-11",
-            "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNdTNmUHJzUDc5ZmdKXzhzWEtxYzdmUkhsV2I1OFhtUU5wZmlIa3M2NEp0RzFHOGl6U0prZ01mVHJkY0ZBNXZmVEd2TnJwaVJsZjNBYXRUR2wzQUFWRm1URWVEY00xdEk2ZTA1S3BOVENNRjBtS3ZWX04zdVNoODFrcTloOEJySWFwT0tiRFk3R0w4QW0zZjB4aWZNckNuUUloa0ctZ2ZUY0xoZXNfR2pNOVVNLVcycG56TmNXaTZUSjVLcHMyRVY1TUc1ZUc3UQ?oc=5"
           }
         ]
       },
@@ -16942,7 +16942,7 @@
         "verdict": "RESEARCH-WORTHY",
         "price": 552.9,
         "pct_day": 7.32,
-        "pct_since": -0.55,
+        "pct_since": 0.0,
         "primary_pct": 7.32,
         "direction": "up",
         "triggers": [
@@ -16976,7 +16976,7 @@
         "verdict": "WATCHLIST",
         "price": 105.66,
         "pct_day": 7.08,
-        "pct_since": -0.18,
+        "pct_since": 0.0,
         "primary_pct": 7.08,
         "direction": "up",
         "triggers": [
@@ -17010,7 +17010,7 @@
         "verdict": "RESEARCH-WORTHY",
         "price": 206.51,
         "pct_day": 6.33,
-        "pct_since": -1.03,
+        "pct_since": 0.0,
         "primary_pct": 6.33,
         "direction": "up",
         "triggers": [
@@ -17022,7 +17022,7 @@
             "title": "Vertiv Beat Big, Then Got Crushed by the Midterms: Why Bernstein Sees 82% Upside",
             "publisher": "TIKR.com",
             "date": "2026-11-11",
-            "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNb2dPby03SXJFRmd6dWdDTzNFYkdfTGZURzY0ZFY5Mi1sSEx6RnoxV0xaM2VJNjlDVExIc2FLZm9qSUNrNm5zLTgyaXROQV93MDlrM2JnbFFGU1pTTDBlaDd3UnVMV25FTmZuUGZJQ2FiMEkzbEJlZ2ZJb1pKWDFEamhESkVoZmVCZUNCdVdiYWQyZkNSbnhPcDRDSXp2YUd4UHlOTW9Ycw?oc=5"
+            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTHpEQjIxU3JPblQ2bnpObVlldmhVVUVJcXJuNHVoTDBZMFg4dFFRS3c0eGxrUE84azVpdG44WkpVMFZpY0NHaTNSbDFVa2JwT2UxWk9ud1ZqU2gwQ3BfdnNndGhib2JUN0ZzNFJuQWhxX3RiN2t0c21Mc1JOcDZjclhtendUR0ZtdTJiR0lVTm1Tazl2Q1lkY2UyVWdoY3JrQzBtOVNn?oc=5"
           },
           {
             "title": "Does Earnings Beat Change The Bull Case For Vertiv Holdings Co (VRT)?",
@@ -17044,7 +17044,7 @@
         "verdict": "WATCHLIST",
         "price": 145.9,
         "pct_day": 5.56,
-        "pct_since": 0.42,
+        "pct_since": 0.0,
         "primary_pct": 5.56,
         "direction": "up",
         "triggers": [
@@ -17073,7 +17073,7 @@
         ]
       }
     ],
-    "movers_updated": "2026-11-12T02:06:09Z",
+    "movers_updated": "2026-11-12T03:01:25Z",
     "target_hits": [
       {
         "ticker": "POWL",
@@ -17387,10 +17387,18 @@
       {
         "ticker": "NVDA",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Nvidia Tumbles as Investors Consider Future Without CEO Huang",
-        "publisher": "Bloomberg",
+        "title": "Asian stocks fragile, Nvidia plummets as board to decide CEO's fate",
+        "publisher": "Reuters",
         "date": "2026-11-12",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSWt2M09CMmZEV2FtdDlsblRCTGFFZDZfcWNtSjdGQndIUlR1ajhVcFJGcTJuSzhQYzZsM0FyODI1dE9PaFR4TXU4dS10OERzWFhoSFhSeU8wNFh5RWgyNjM5QnRDVS1pZ2pHNUhseGVuUjdCTjJoajRQZjlmbzNkbkFscGFvTHRsV04zcldlcU5USkcyeExYemUwVkREeXR2SDdEWWNmOEhQeDREblduQlF3?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA1ODl5LXpyQ0RZanVjSnZGS1NjS1ljMjZvdW9xY3ZSSUxvNkY2Z3dCMThiSjdKNHI1TFRCZnBIRHdYY0UxTGh0QjRZX3Y2S25sY0k4M0dKN3VZdGNMSGk5N0tPUmVJa3ozWXRCcmluOWxVVjVfblRLdmttMA?oc=5"
+      },
+      {
+        "ticker": "NVDA",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Cramer's stance on Nvidia's stock amid reports that CEO Jensen Huang may be ousted",
+        "publisher": "CNBC",
+        "date": "2026-11-12",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNaW1tUGR6WFlEVmNGLXlEaVd2UnBSdkRKRlRxYUtieXVsbHh5WWRpNWUtMnp3WTRNUHhaYllYdG5MZEN4czNyUXJ6TVpyc2F6U0NBN3ZvM1pxWkJWSDREa0dJSlctQXQ1eGl4R3BHUTU3WEVIdTZWeGdOT0hVcHNzcVp5NklibXIwalRQWTkxcHBOdjNlXy1nSDVR?oc=5"
       },
       {
         "ticker": "NVDA",
@@ -17399,6 +17407,22 @@
         "publisher": "Barron's",
         "date": "2026-11-12",
         "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTmY5c05oNmptS3d1Z1B6aUtOaEkwMGxxbjBkendjRzNqU2lrclhPNlkxWEdlU2c5NnhUVVQ4a09vSVFOX3ZhNnNpUy1VeHo3aFlHdlAzZVdSLXQyWml3VE0xMnNNUnU5T2NCM2pHNjE2end6NjlRNVBYbkxKOGZOSTR3MU1aYk9IaWtMLQ?oc=5"
+      },
+      {
+        "ticker": "NVDA",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Nvidia\u2019s Disappearing Singapore Sales Deepen Mystery Around Megaspeed",
+        "publisher": "WSJ",
+        "date": "2026-11-12",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQTVMxMWYtSHpfTEN1dUVzcTRpZDBkRUR4ZVBENFJxODZHaEg5WHp0ekZFdENtZEZrNDl5eENKWW11LVJFSGd4T0Y0TVNEQU0wRUhoMW5HMVdsUmZmQThZVV9WdmVXc3ZGM0F5Wk1kRlM0TEFXbG51WUNyWGt3WXlRU1I2cmNoNmNocEtkdkktdU9NTVA1dUhiWHlYRG44aUxTM3VlVmdzOU41T3Z4aGxKbkw4VG5RZw?oc=5"
+      },
+      {
+        "ticker": "NVDA",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Nvidia Tumbles as Investors Consider Future Without CEO Huang",
+        "publisher": "Bloomberg.com",
+        "date": "2026-11-12",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSWt2M09CMmZEV2FtdDlsblRCTGFFZDZfcWNtSjdGQndIUlR1ajhVcFJGcTJuSzhQYzZsM0FyODI1dE9PaFR4TXU4dS10OERzWFhoSFhSeU8wNFh5RWgyNjM5QnRDVS1pZ2pHNUhseGVuUjdCTjJoajRQZjlmbzNkbkFscGFvTHRsV04zcldlcU5USkcyeExYemUwVkREeXR2SDdEWWNmOEhQeDREblduQlF3?oc=5"
       },
       {
         "ticker": "AVGO",
@@ -17417,28 +17441,12 @@
         "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxObTFTMVpaa04yajI5ay1ta1lWaWtQX0ZCb29TTTRkRS1QdlVoMzVLckpMS3ZnWWJkTlptbHp4c01XR1lvMEFwcW9IWDNxWFQxeldlZ2hLejhZS00zX2VTNE9mV1ZncElVclk0N1FBTFdOZHN0ZlppbUNPSS02TlgtZjdpcUlNZzl0a1BJcVhpMm0zeVQzNVNGb3RKN0RpQmJFRWtUU0w1SVYwdTNEMElSXw?oc=5"
       },
       {
-        "ticker": "NVDA",
+        "ticker": "VST",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Nvidia shares rebound as Jensen Huang faces scrutiny ahead of earnings",
-        "publisher": "CNBC",
-        "date": "2026-11-11",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNalRRWWRUS0VHb2Q4Y0dhNFdWY1BzTWlqWG8yOXBwZVJtRlFOck5iZlMzcmJlTHZnRkNaZ0hNUXBrTkptb0xqU3RBSUo5V09ERzlxb095YmRmRHNZaFVYVVhUY0ZxN1E4Q0twdFhLTzA0N0lDTnpXUGl3Szc2eHVUcw?oc=5"
-      },
-      {
-        "ticker": "NVDA",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Nvidia prepares to oust Jensen Huang, WSJ reports \u2014 stock sinks",
-        "publisher": "CNBC",
-        "date": "2026-11-11",
-        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9NaFFJVUxuMG1NR25FakxCNU9rUnpXUEl0UVE4ZTJUS0VUN2lEWjlsQVVJRTdMUWt1Vkd1RUsxcjZKa3JCaWFWN0JYbXk0TWpUM3M4SVQ1OGlJaTNQYWJsRnZVczF4NVpyeUZIQTVUQnRYVS0xX2RSQWhGWGs?oc=5"
-      },
-      {
-        "ticker": "NVDA",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Why Nvidia Stock Rose Despite Calls for CEO Jensen Huang to Step Down",
-        "publisher": "Barron's",
-        "date": "2026-11-11",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1UZzI1WVJLZk1fSkxrcWZvOHhNRm5YTWp6bkxqOFN0ZjBTVkJBd2w2dG92eXY5U21SZUdYLU1vQjFRcHpyNkpmTTRYSUdFeWNVZVJmaVpGdWFqNzJhYWtPYzZ2U1lrQWZDZ3BMdFZXTUFKR2hRbURCbEln?oc=5"
+        "title": "Vistra Has Lost 29% in a Year. CIBC Cut Its Target but Still Sees 30% Upside",
+        "publisher": "TIKR.com",
+        "date": "2026-11-12",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNXhENDdpdGhhejUwc3F0QnBoVC1HX2hKeHRoa1hqcy01WlRramdPdTlRVlRiTzZNd1VmRGhZbnNyWVEwdzNfYjlPRGdETmljVTl0dDIwei1obng1N2ViMEdUQWd4U19wZlVCV2xaS2VWakdGU3B2WTNqd2dIRDFVWW5qb2JXRmV2eUk1UTJBNjY4ZlV2Z09MaVNIeTEzNko2?oc=5"
       },
       {
         "ticker": "AVGO",
@@ -17475,18 +17483,18 @@
       {
         "ticker": "AMD",
         "verdict": "RESEARCH-WORTHY",
-        "title": "NVIDIA Rises 4% Despite Baird Downgrade and Huang Uncertainty; AMD Climbs 5%, Broadcom Gains 4%",
+        "title": "AMD Price Prediction: AI Boom and Record Revenue Set the Stage for Another Monster Rally",
         "publisher": "Yahoo Finance",
         "date": "2026-11-11",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQQjhGXzk1WWc5R3RyWExVNld2MWNZY1hKLTFyTDVuTnRobDFXUktfVDYzTTBHNVpMMDEzT1p3bXN6YUlmb0hYSTNVRDNVSmE2dTF6WS1iLWFPOVdSdG1GMjE1LTE3MnBUNlZueHRrdnVzbEtlUWplSks4a2JFLWV3TGhiWDhhN2tSbm84MENGNzhFcnNYZzJvdQ?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQeFhseWJoU2R4NEktS1c3SkF2U01zNlh6Zmk3X2ZsYV9FSE5aZkl2SVdFV3pNbGRFSHZubEVoYzZ1TXc5WVFkc1VGV2tKSl9tVkxLSUlTQWtxZUk3aFVtZ3VmOFk1VlVmOWtVRjZhd0pSSUNFYmxrdkNaRGZCSjZRaDhNbmFpU2N0ZVBlSGdveG81Z0NlRWpUOQ?oc=5"
       },
       {
         "ticker": "AMD",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Nasdaq Surges As AI Stocks Lead Tech Rebound; CRWV, AMD, TXN In Focus",
-        "publisher": "Investor's Business Daily",
+        "title": "NVIDIA Rises 4% Despite Baird Downgrade and Huang Uncertainty; AMD Climbs 5%, Broadcom Gains 4%",
+        "publisher": "Yahoo Finance",
         "date": "2026-11-11",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZ016VWE0SmtXTlJqOXhSTkVuVEh1T3YtWkJsMDZLMDZaMmNVLWVQMmdrNXctcjMyazlhMExxZTJibkNLdmdnMENiWWlMUlpDSmlOLV9FdV9FXzA0U1pra3RjRG9YeXdUMnFtSXdMR25pSGJEZVJXTTQtZ2F1LUxpVUM3Y3BuY1ZSU3dkd0U3cC00c2NiU1VvZkFSdmhpSDA?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQQjhGXzk1WWc5R3RyWExVNld2MWNZY1hKLTFyTDVuTnRobDFXUktfVDYzTTBHNVpMMDEzT1p3bXN6YUlmb0hYSTNVRDNVSmE2dTF6WS1iLWFPOVdSdG1GMjE1LTE3MnBUNlZueHRrdnVzbEtlUWplSks4a2JFLWV3TGhiWDhhN2tSbm84MENGNzhFcnNYZzJvdQ?oc=5"
       },
       {
         "ticker": "MRVL",
@@ -17534,7 +17542,7 @@
         "title": "Coherent Rises 5% as CoreWeave\u2019s Beat-and-Raise Revives the AI Trade: \u201cA Breakout Quarter\u201d",
         "publisher": "TIKR.com",
         "date": "2026-11-11",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQYmJrUmZmUExGYVhOaUx1aVgwTGdOc0JVVm82ellSLXJyX3BrSFhyZGo1NS1MU3Q2bzRZdG84RW91VVVFNXRnUTdSQmtlZWMteWo5aFhYWkVSRW40eVAtT3d0ZDAtb29iZkJTVXg2WkQxQjdyQmdSQVlNSXpvVG1HdXBkUUcxQnQ4Mk9BUVZrYzB4TzFrOHZSU2t5aUVnMC1nVHdaVGRlMF9KVG1ycmtNd0Nn?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOR3hvWV9FQkp0bnBrdU9BLXh1V1NRT2xKR1JkVmtYMU00X1JyR09venEwWGdQTUtMUWFwUy0yOXVVUTRTaTJLa3h0N3NqQ19MQmVCRDZTdVhNRE80MGdMUFBxVHVYc2poYnItRmRLd051UXR0UG4xd1NHaGI2MFV6U2hyYUVEdU1VYXZWWFZydXk4NTMzeUFTVHRVOXFKTkRzdXVMYVIzLVk2ajVCemJYVQ?oc=5"
       },
       {
         "ticker": "CEG",
@@ -17566,7 +17574,7 @@
         "title": "Vertiv Beat Big, Then Got Crushed by the Midterms: Why Bernstein Sees 82% Upside",
         "publisher": "TIKR.com",
         "date": "2026-11-11",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNb2dPby03SXJFRmd6dWdDTzNFYkdfTGZURzY0ZFY5Mi1sSEx6RnoxV0xaM2VJNjlDVExIc2FLZm9qSUNrNm5zLTgyaXROQV93MDlrM2JnbFFGU1pTTDBlaDd3UnVMV25FTmZuUGZJQ2FiMEkzbEJlZ2ZJb1pKWDFEamhESkVoZmVCZUNCdVdiYWQyZkNSbnhPcDRDSXp2YUd4UHlOTW9Ycw?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTHpEQjIxU3JPblQ2bnpObVlldmhVVUVJcXJuNHVoTDBZMFg4dFFRS3c0eGxrUE84azVpdG44WkpVMFZpY0NHaTNSbDFVa2JwT2UxWk9ud1ZqU2gwQ3BfdnNndGhib2JUN0ZzNFJuQWhxX3RiN2t0c21Mc1JOcDZjclhtendUR0ZtdTJiR0lVTm1Tazl2Q1lkY2UyVWdoY3JrQzBtOVNn?oc=5"
       },
       {
         "ticker": "GEV",
@@ -17575,6 +17583,14 @@
         "publisher": "Yahoo Finance",
         "date": "2026-11-11",
         "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNX0ROTzdSbFM3QUJtMXhCZWR4aHF1cnNSbXZKcHBPMG1SVDVSOHAwRUdIeTdwTV95Tk1xZlF2Y1dnY29qYVZrd1lLTXlaVmRSZUo2WFA5eW9zQWJ2cXd0X3pwMktSUkM2d3RVREx6enNzNk9QUUJ6SUYwbzliTUc5UXp5QlpuS0JGTlVCa0NDTlJvdw?oc=5"
+      },
+      {
+        "ticker": "GEV",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "GE Vernova Falls 4% as SoftBank\u2019s Ohio Data Center Undergoes \u201cA Thorough Reassessment\u201d",
+        "publisher": "TIKR.com",
+        "date": "2026-11-11",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQOG9haUNteFh1VjE4dFR0aEFqVEt0U0x1TDNaTDhlclBiQlNiZGxnYjMzUUVGbHF6V0pib1VQUXNveHlmQ2lfM0pzMGdYWEt0NVZ3Zzc4cnFfWDFmcFRVcWJyN1ZpVG04ckk5Zm40QlZZX0kwbllnYXNCTWpHLUowdnFOd1E5c1ZQb2lMUVFJbUlmR3hDd2JDYzBKYXRUb0ZDZWlaZ1JfV05SbjJH?oc=5"
       },
       {
         "ticker": "ETN",
@@ -17700,7 +17716,7 @@
         "ticker": "IBM",
         "verdict": "RESEARCH-WORTHY",
         "title": "IBM to End Immigration Sponsorship for Roles in Biggest Unit",
-        "publisher": "Bloomberg",
+        "publisher": "Bloomberg.com",
         "date": "2026-11-10",
         "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWkNVZ2FFbXVhdXZoalpCU2hEY3QwSEtHRVUwTzF3RkN1S0tTTXpyb1J6OUVyb1cxTnVEbW13ck8tanhTVklnNTJtZUVSMmFHajRjRVlYZms2RURjd0FBTlc2Smt2MEpLN2NMUGlrUlFfVWZrb0RsWlZWaEdPV2FrZmVCelVnM1pFZXpTM05DNEJJSkJ1NWFSUlRrRmo0aHNDeGxiZzY3czBnWDNFQVdhaQ?oc=5"
       },
@@ -17759,22 +17775,6 @@
         "publisher": "TIKR.com",
         "date": "2026-11-10",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWExpN0tVMi0tWkUtOW1mYl9IbXh0RmdrT0M5S214SDJfLU03STJnZVM5SXZaclY4eVpYWHB4enpna2llWldSMmhuWDJ0MEZOcWtpNzNVUHhsd2RLUi00Q1NNZFBCY2NDNVNTOVgtXzVUUzdmZ1dreVJndWZhZDAxNmZRLXRGZjFUMF9mY3pPRUpKQndnb3VmXw?oc=5"
-      },
-      {
-        "ticker": "VRT",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Vertiv falls as AI infrastructure names remain under pressure despite upbeat demand commentary",
-        "publisher": "Quiver Quantitative",
-        "date": "2026-11-10",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQcWUyZDY5MV9SaFh0R0lQdVNXNmdfaUVqb0xfZU02VXlnS01vQjlIcTd1cEQzVDBpYmVCR3VkUE5WSVpIU1pYNUFHWFNYUWhOMldFZmxiTUJCVFdjTHdNa2cwWmJaN3F2dzIyaVBTZk5KNFZUSWo3NEdnVVIwZTVIZmU4WHFYcGllWlNfTGhqbVROXzJ1UmxPb3JiSlFqa1JQQVZPMnhwR0xYUVJEc3F1MGVLNEtROVQwY01WSHRLaWd4Z3RaT3c?oc=5"
-      },
-      {
-        "ticker": "GEV",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "GE Vernova shares slide after SoftBank revises US data center project plans",
-        "publisher": "Reuters",
-        "date": "2026-11-10",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOdHljdVJwNjc2SGN6SWFvUl92aGU0LTJYWHhhMWxRSWdHQlRDZ0VjQjd3MTZOZmZEOUJ3amdfUVpSSEQ1QjUzcFROeVVNQTBNTzdDLXpnN3lncjdEUElvYnhTMF9QREo3ellITkIwaGhacjJfNFh6VFFXd0ZYQjRIOUI4Z3B6U2xCX2tRS01OVlUxc00tZDhMalJKTHh4QlItRFF4VlZ5MWI2bnljY1NQT1BaR0UtaGJYbHZ1UHdqNDNWbVpZUlE?oc=5"
       }
     ],
     "insider_alerts": [
@@ -17989,7 +17989,7 @@
         "name": "Taiwan Semiconductor Manufacturing Company",
         "drawdown_pct": -15.2,
         "price": 413.35,
-        "pe": 26.788723,
+        "pe": 25.689869,
         "forward_pe": 17.675642,
         "verdict": "RESEARCH-WORTHY",
         "next_action": "RESEARCH \u2014 Pure-play AI infrastructure foundry at 16.6x forward earnings with 50%+ revenue growth, 65% gross margins, and $97B net cash. Worth a deep dive before any decision."
@@ -18089,7 +18089,7 @@
         "name": "AppLovin Corporation",
         "drawdown_pct": -45.2,
         "price": 404.77,
-        "pe": 27.257238,
+        "pe": 26.629604,
         "forward_pe": 19.403881,
         "verdict": "RESEARCH-WORTHY",
         "next_action": "RESEARCH \u2014 Quality ad-tech compounder at 19x forward earnings with 55% growth, 78% operating margins, and $4.9B FCF, but theme fit is low and platform-policy risk is high. Worth a deep dive before any decision."
