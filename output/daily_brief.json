@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T17:40:18Z",
+  "generated_at": "2026-11-12T20:54:06Z",
   "date": "2026-11-12",
   "first_run": false,
   "items": [
@@ -36,30 +36,30 @@
       "action": "Decide your number before the print \u2014 not after."
     },
     {
-      "priority": 3,
-      "kind": "mover",
-      "ticker": "MU",
-      "headline": "MU \u25b2 +11.9%",
-      "detail": "Moved with the broad market (Nasdaq 100 +2.3%, S&P 500 +1.3%); no company-specific news found.",
-      "action": "Verdict unaffected unless this breaks your thesis."
-    },
-    {
-      "priority": 3,
-      "kind": "mover",
-      "ticker": "LITE",
-      "headline": "LITE \u25b2 +10.7%",
-      "detail": "Moved with the broad market (Nasdaq 100 +2.3%, S&P 500 +1.3%); no company-specific news found.",
-      "action": "Verdict unaffected unless this breaks your thesis."
-    },
-    {
-      "priority": 3,
-      "kind": "mover",
+      "priority": 2,
+      "kind": "new_target",
       "ticker": "MRVL",
-      "headline": "MRVL \u25b2 +9.3%",
-      "detail": "Moved with the broad market (Nasdaq 100 +2.3%, S&P 500 +1.3%); no company-specific news found.",
-      "action": "Verdict unaffected unless this breaks your thesis."
+      "headline": "MRVL newly at research target (-37.5%)",
+      "detail": "WAIT \u2014 AI custom silicon leader at 23x forward earnings with 36% revenue growth, but Lumentum acquisition overhang keeps multiple depressed until integration ri",
+      "action": "Worth reviewing today \u2014 this is new since yesterday."
+    },
+    {
+      "priority": 2,
+      "kind": "new_target",
+      "ticker": "APP",
+      "headline": "APP newly at research target (+1.0%)",
+      "detail": "RESEARCH \u2014 Quality ad-tech compounder at 19x forward earnings with 55% growth, 78% operating margins, and $4.9B FCF, but theme fit is low and platform-policy ri",
+      "action": "Worth reviewing today \u2014 this is new since yesterday."
+    },
+    {
+      "priority": 2,
+      "kind": "new_target",
+      "ticker": "META",
+      "headline": "META newly at research target (+1.9%)",
+      "detail": "RESEARCH \u2014 Wide-moat digital advertising compounder with 26% revenue growth trading at 17x forward earnings while investing heavily in AI infrastructure that co",
+      "action": "Worth reviewing today \u2014 this is new since yesterday."
     }
   ],
-  "hidden_count": 7,
+  "hidden_count": 6,
   "quiet_day": false
 }
