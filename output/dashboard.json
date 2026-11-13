@@ -1,14 +1,14 @@
 {
-  "last_built": "2026-11-13T01:49:39Z",
-  "quotes_updated": "2026-11-13T01:47:11Z",
+  "last_built": "2026-11-13T02:38:47Z",
+  "quotes_updated": "2026-11-13T02:35:30Z",
   "health": {
     "stages": [
       {
         "name": "Quotes",
-        "updated_at": "2026-11-13T01:47:11Z",
+        "updated_at": "2026-11-13T02:35:30Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "Prices and buy targets may be out of date"
       },
       {
@@ -16,7 +16,7 @@
         "updated_at": "2026-11-12T11:56:05Z",
         "detail": "8/8 tickers",
         "status": "ok",
-        "age_hours": 13.9,
+        "age_hours": 14.7,
         "affects": "Ratings aren't being updated"
       },
       {
@@ -24,39 +24,39 @@
         "updated_at": "2026-11-12T17:40:18Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 8.2,
+        "age_hours": 9.0,
         "affects": "Upcoming earnings dates may be missing"
       },
       {
         "name": "SEC filings",
-        "updated_at": "2026-11-13T01:47:13Z",
+        "updated_at": "2026-11-13T02:35:33Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "New SEC filings won't show"
       },
       {
         "name": "Prices",
-        "updated_at": "2026-11-13T01:47:11Z",
+        "updated_at": "2026-11-13T02:35:30Z",
         "detail": "56/56 have data",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "Prices and buy targets may be missing"
       },
       {
         "name": "Company figures",
-        "updated_at": "2026-11-13T01:47:11Z",
+        "updated_at": "2026-11-13T02:35:30Z",
         "detail": "56/56 have data",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "Ratings can't check the numbers"
       },
       {
         "name": "News",
-        "updated_at": "2026-11-13T01:47:18Z",
+        "updated_at": "2026-11-13T02:35:39Z",
         "detail": "56/56 have data",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "Ratings and mover reasons can miss recent news"
       },
       {
@@ -64,7 +64,7 @@
         "updated_at": "2026-11-09T01:41:35Z",
         "detail": "48/56 have data",
         "status": "ok",
-        "age_hours": 96.1,
+        "age_hours": 97.0,
         "affects": "Insider buying won't show on stocks or the radar"
       },
       {
@@ -72,7 +72,7 @@
         "updated_at": "2026-08-15T14:09:52Z",
         "detail": "28/31 have data",
         "status": "ok",
-        "age_hours": 2147.7,
+        "age_hours": 2148.5,
         "affects": "Hedge fund holdings may be out of date"
       },
       {
@@ -80,12 +80,12 @@
         "updated_at": "2026-11-12T18:32:16Z",
         "detail": "16/16 have data",
         "status": "ok",
-        "age_hours": 7.3,
+        "age_hours": 8.1,
         "affects": "The field briefing may be out of date"
       },
       {
         "name": "Movers",
-        "updated_at": "2026-11-13T01:49:38Z",
+        "updated_at": "2026-11-13T02:38:46Z",
         "detail": "5/5 have data",
         "status": "ok",
         "age_hours": 0.0,
@@ -96,7 +96,7 @@
         "updated_at": "2026-11-12T18:32:39Z",
         "detail": "12 found",
         "status": "ok",
-        "age_hours": 7.3,
+        "age_hours": 8.1,
         "affects": "The radar may be out of date"
       },
       {
@@ -104,7 +104,7 @@
         "updated_at": "2026-11-07T17:45:23Z",
         "detail": "428 found",
         "status": "ok",
-        "age_hours": 128.1,
+        "age_hours": 128.9,
         "affects": "New stock ideas may be out of date"
       },
       {
@@ -112,7 +112,7 @@
         "updated_at": "2026-11-12T18:33:08Z",
         "detail": "1 found",
         "status": "ok",
-        "age_hours": 7.3,
+        "age_hours": 8.1,
         "affects": "The AI summary may be out of date"
       },
       {
@@ -120,7 +120,7 @@
         "updated_at": "2026-11-12T20:10:06Z",
         "detail": "6 sources passed",
         "status": "ok",
-        "age_hours": 5.7,
+        "age_hours": 6.5,
         "affects": "One of the data sources failed its daily test"
       },
       {
@@ -829,7 +829,7 @@
         "data_flags": [
           {
             "level": "low",
-            "msg": "Reports in EUR; figures converted to USD at 1.1066. Trailing P/E may mix currencies \u2014 verify against filings"
+            "msg": "Reports in EUR; figures converted to USD at 1.1061. Trailing P/E may mix currencies \u2014 verify against filings"
           }
         ]
       },
@@ -5085,7 +5085,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in EUR; figures converted to USD at 1.1066. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in EUR; figures converted to USD at 1.1061. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -6396,7 +6396,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in EUR; figures converted to USD at 1.1066. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in EUR; figures converted to USD at 1.1061. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -9290,7 +9290,7 @@
     ]
   },
   "analytics": {
-    "generated_at": "2026-11-13T01:49:38Z",
+    "generated_at": "2026-11-13T02:38:47Z",
     "funded": false,
     "total_value": 0.0,
     "total_invested": 0.0,
@@ -9387,7 +9387,7 @@
     "concentration_warnings": []
   },
   "track_record": {
-    "generated_at": "2026-11-13T01:49:38Z",
+    "generated_at": "2026-11-13T02:38:47Z",
     "tracked_since": "2026-04-25",
     "scoreboard": {
       "RESEARCH-WORTHY": {
@@ -14705,7 +14705,7 @@
     }
   },
   "asset_location": {
-    "generated_at": "2026-11-13T01:49:38Z",
+    "generated_at": "2026-11-13T02:38:47Z",
     "rules": {
       "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
       "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
@@ -15727,7 +15727,7 @@
     ]
   },
   "daily_brief": {
-    "generated_at": "2026-11-13T01:49:39Z",
+    "generated_at": "2026-11-13T02:38:47Z",
     "date": "2026-11-13",
     "first_run": false,
     "items": [
@@ -15788,7 +15788,7 @@
         "action": "No catalyst found \u2014 check the ticker's news tab yourself before acting."
       }
     ],
-    "hidden_count": 3,
+    "hidden_count": 1,
     "quiet_day": false
   },
   "signals": {
@@ -16746,13 +16746,13 @@
         "verdict": "PASS",
         "price": 128.64,
         "pct_day": -16.84,
-        "pct_since": 1.07,
+        "pct_since": 0.0,
         "primary_pct": -16.84,
         "direction": "down",
         "triggers": [
           "-16.8% on the day"
         ],
-        "reason": "Company-specific earnings miss: weak 2026 outlook, higher capex, and revenue delays triggered the sharp decline.",
+        "reason": "No clear catalyst in current news.",
         "news": [
           {
             "title": "Nebius falls 16% as company expects increased 2026 capex spend, issues weak outlook",
@@ -16767,10 +16767,10 @@
             "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9FWHlJeHh0OVJrUlZ3bHhVTkJIeFFQcWg4a1hkZERkVzR2eU9GNTNHVHBsY2hHaXliZjBqQXJIQ0VLbUVaeHlBM3ZQWllrdURxRjdpZDBHTDlBdk9PMklWMFdnMFdoVlFkc2FUbHEyRHhoOVdMMFNJSg?oc=5"
           },
           {
-            "title": "Nebius Lowers Outlook, Addresses Worries Over Financing AI Buildout",
-            "publisher": "WSJ",
+            "title": "Nebius pares back 2026 revenue forecast on capacity delays, shares slump",
+            "publisher": "Reuters",
             "date": "2026-11-12",
-            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbHFWV0xZLWlDZVlxN0xkY2QwYnFzQjBNQzFUb0UtMWQ2S2FKd1BSSVpLYnN2RGlFaHQ3eHd5cFh2R21ReTBXbGVuWjZHYWVOUHpEd2hfZER4NWM1c1lrTDlVb2dndk50c1hMU3Fka0VxVXBqSFJxOG1ZbDJsLVVCVzZGdlEwMHpFQWRwMDgyNDRNdERNbnRnZ2luY1JQSEJ2SUdWS1JEZFFoVVFldmVXWFRHMA?oc=5"
+            "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOLVRoTHBBUU1FdUNaczFGcWo3MVRBRGZaWndRSXQ3NG45WG03cW1YM1dqRzQ3N3Z6VHNQMjZjRmEzV3MwOU9PckpOM25TYWZMTDNNTXZSNjBidE4yaUFYMjhWOTlEUzZLdjJvZjZUN0I0cDYwbThQMS1CdjViaEdsVUwwZDcyMHhCWHVQUVliaEZ6N1lacFdPT29DeU9qemY2OWg1Qm1wdw?oc=5"
           }
         ]
       },
@@ -16780,7 +16780,7 @@
         "verdict": "RESEARCH-WORTHY",
         "price": 585.3,
         "pct_day": 5.86,
-        "pct_since": 0.56,
+        "pct_since": 0.0,
         "primary_pct": 5.86,
         "direction": "up",
         "triggers": [
@@ -16814,7 +16814,7 @@
         "verdict": "WATCHLIST",
         "price": 99.55,
         "pct_day": -5.78,
-        "pct_since": -0.12,
+        "pct_since": 0.0,
         "primary_pct": -5.78,
         "direction": "down",
         "triggers": [
@@ -16848,7 +16848,7 @@
         "verdict": "RESEARCH-WORTHY",
         "price": 364.36,
         "pct_day": 5.54,
-        "pct_since": 0.66,
+        "pct_since": 0.0,
         "primary_pct": 5.54,
         "direction": "up",
         "triggers": [
@@ -16882,7 +16882,7 @@
         "verdict": "WATCHLIST",
         "price": 24.45,
         "pct_day": -5.45,
-        "pct_since": -1.15,
+        "pct_since": 0.0,
         "primary_pct": -5.45,
         "direction": "down",
         "triggers": [
@@ -16911,7 +16911,7 @@
         ]
       }
     ],
-    "movers_updated": "2026-11-13T01:49:38Z",
+    "movers_updated": "2026-11-13T02:38:46Z",
     "target_hits": [
       {
         "ticker": "POWL",
@@ -17313,18 +17313,18 @@
       {
         "ticker": "VST",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Vistra Has Lost 29% in a Year. CIBC Cut Its Target but Still Sees 30% Upside",
-        "publisher": "TIKR.com",
-        "date": "2026-11-12",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNXhENDdpdGhhejUwc3F0QnBoVC1HX2hKeHRoa1hqcy01WlRramdPdTlRVlRiTzZNd1VmRGhZbnNyWVEwdzNfYjlPRGdETmljVTl0dDIwei1obng1N2ViMEdUQWd4U19wZlVCV2xaS2VWakdGU3B2WTNqd2dIRDFVWW5qb2JXRmV2eUk1UTJBNjY4ZlV2Z09MaVNIeTEzNko2?oc=5"
-      },
-      {
-        "ticker": "VST",
-        "verdict": "RESEARCH-WORTHY",
         "title": "Vistra Is Still Down 17% This Year: Did Earnings Just Mark the Bottom?",
         "publisher": "TIKR.com",
         "date": "2026-11-12",
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbHRyWjE4Mi1zNGIzNW9OOEhhYnF6Wm9XSWlXNjNVQlJhbV9maHd3dWRpOXRKSFZ5VEstUi1zZ004TXB0SktyZE5uLXRhVVo5X3UxVHBOZ1ZBU2t3TUVqTU9sWDQ2eFJxMllHZGZYWk9oME5ORkF0SFZuYXpfUVRyQlVuN19GNVNCdEJkMFpzYmk0aGVDVWNENDdB?oc=5"
+      },
+      {
+        "ticker": "VST",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Vistra Has Lost 29% in a Year. CIBC Cut Its Target but Still Sees 30% Upside",
+        "publisher": "TIKR.com",
+        "date": "2026-11-12",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNXhENDdpdGhhejUwc3F0QnBoVC1HX2hKeHRoa1hqcy01WlRramdPdTlRVlRiTzZNd1VmRGhZbnNyWVEwdzNfYjlPRGdETmljVTl0dDIwei1obng1N2ViMEdUQWd4U19wZlVCV2xaS2VWakdGU3B2WTNqd2dIRDFVWW5qb2JXRmV2eUk1UTJBNjY4ZlV2Z09MaVNIeTEzNko2?oc=5"
       },
       {
         "ticker": "VRT",
