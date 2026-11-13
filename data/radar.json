@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T18:32:39Z",
+  "generated_at": "2026-11-13T17:59:30Z",
   "universe_as_of": "2026-11-07T17:45:23Z",
   "cards": [
     {
@@ -9,7 +9,7 @@
       "price": 530.61,
       "drawdown_pct": -5.1,
       "score": 70.8,
-      "new": true,
+      "new": false,
       "tracked": true,
       "rating": "WATCHLIST",
       "reasons": [
@@ -25,24 +25,45 @@
         },
         {
           "kind": "field_news",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPa1hKLTF4TTFaSGxmdjItVmF0YmxMRi1qakh2RVdjZmducGpleVpHdzRxNURGNkQ4TzVUU3BBS0hma2JORXlWTEE1NE9JN0t2X1YzdDZ0cXVaWHVVQ1JvcGR4ZThlWE5zM005R2JFanVOVFZNeXlOZW9hd3Z1MjdVLVoyV0UtNXktZ2cyajdB?oc=5",
-          "text": "In Mega-Cap AI Infrastructure news: Microsoft Spent $5.5B Less Than Expected and Azure Grew 48% Anyway"
-        },
-        {
-          "kind": "field_news",
-          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNb3YxSi01QlpvU2xqQVk1TUZQVTdjQnlqOUZwaFUzZ2txZHBJaHZ5bTVNOXpRZGV0czNzQkRCamNqNXZ2cUFoZ1JsV1l0cGFKazh4SXpjSlJ0Q1pMR0IyVWhfQkZlbTAtWFJ1ZERpbDdfNzZqaVlZUjg2a2RKNlRfS0N4OFMwSmpERG9EWng5MC1XXy1ENURJMUNWTTEyR3Q0UkE3WnRSMVJmVDAwdlJoVDhXa0h1YXpyYjBR?oc=5",
-          "text": "In Data Center Infrastructure news: Microsoft declines option to expand Texas data center deal with Nscale, source says"
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOTDJyVUx6MkpJbEpzUUFYQlRacC1pMmRiYUt0ZTNMQ3k1Y2xXTUowQ3lHaVE2XzlkbVhRa25DSHRYdXlpQXA3NWlWU3lHRS10WVAyU2hkYWx2eWxOM01sM2s1blhQWmNBV2Q3VGZPaTZ3T0FHWURtdS1vM2ExNEJGYUJaX1VoMTkyeUHSAY8BQVVfeXFMT2tTZnh4UXd6a0dCTGVYcGxzODNjZktGT1Y5aUxoV0hnQ2lkZTFKVHBzeE1GNEx6ZHRvU210cUtjekJLS1lIQUdNTmVsclBJT3dBUmlIdk50T24tRHR2OXMwS0VDRFFic0N1dkhWQ0EzN0JlNW41eDRGWGpEd3cwZ2M2YngtVzZnSDNETF9ELWs?oc=5",
+          "text": "In Mega-Cap AI Infrastructure news: Cerebras pops after beating on quarterly revenue and announcing Microsoft deal"
         },
         {
           "kind": "fundamentals",
           "text": "Strong fundamentals: scores 71/100"
-        },
-        {
-          "kind": "new",
-          "text": "New to the radar"
         }
       ],
       "watch_outs": []
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "sector": "Technology",
+      "price": 186.64,
+      "drawdown_pct": -23.3,
+      "score": 84.2,
+      "new": false,
+      "tracked": true,
+      "rating": "WATCHLIST",
+      "reasons": [
+        {
+          "kind": "field_news",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOel9hWjRUZklJbFd6aTB2dTExNkF5ZEttTDB6WnFIOS0wS2JCdXRSNnA2Z0RVVHFERlVNTWVvSnlIWHNWV0puM3hNNmxnQlpwX1lseTdieWUtdGRsNktIRklDVXUyckVqSDlKNFJ2b0JiMUE5MEhCLWlDcnhwMEFKV2k5dUhGaGk1WVBkZm5Ralg5R29TenFFLTdhZS10Y2s?oc=5",
+          "text": "In Edge AI / Specialty Silicon news: Watch Nvidia\u2019s AI Chip Share Set to Shrink: Akarca"
+        },
+        {
+          "kind": "field_news",
+          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPYVBfNG04eWF0OFp6WHJFRFh3YjdHTHlhdU9xTkZiU3h1Qk9OdXpmM0FaZS1vcXJkdFdHRmE2a0ROLWRWYzNWUXhtcGpmVjREYjBJUC1nYzVSZkxPaHA5dVNNSlhpZzVlX2FOVElnZWNPZ0VuVS1sWEQ5cVNQYXYtT3MtUGppSTIzQ25YX0Q1UnFDbzZxc1RITGRRT1ZNeUFKQTZxWlJxc0E5Z0JjdVVEaXIxbmlqdGRZYzVsLWtRWTBuUlJsb3BTZVAwN1RYWlk?oc=5",
+          "text": "In Networking / Fiber Infrastructure news: EXCLUSIVE: Microsoft presses Trump to scuttle ban on Chinese data center tech"
+        },
+        {
+          "kind": "fundamentals",
+          "text": "Strong fundamentals: scores 84/100"
+        }
+      ],
+      "watch_outs": [
+        "Possible peak earnings: revenue up 106% in a quarter may not last"
+      ]
     },
     {
       "ticker": "TPL",
@@ -51,7 +72,7 @@
       "price": 272.36,
       "drawdown_pct": -50.2,
       "score": 79.9,
-      "new": true,
+      "new": false,
       "tracked": true,
       "rating": "WATCHLIST",
       "reasons": [
@@ -66,10 +87,6 @@
         {
           "kind": "insider",
           "text": "Insiders bought: 86 buys, 1 sells in 6 months"
-        },
-        {
-          "kind": "new",
-          "text": "New to the radar"
         }
       ],
       "watch_outs": [
@@ -78,51 +95,20 @@
       ]
     },
     {
-      "ticker": "AVGO",
-      "name": "Broadcom Inc.",
-      "sector": "Technology",
-      "price": 293.69,
-      "drawdown_pct": -40.7,
-      "score": 79.2,
-      "new": true,
+      "ticker": "GOOG",
+      "name": "Alphabet Inc.",
+      "sector": "Communication Services",
+      "price": 283.93,
+      "drawdown_pct": -29.8,
+      "score": 70.6,
+      "new": false,
       "tracked": true,
-      "rating": "RESEARCH-WORTHY",
+      "rating": null,
       "reasons": [
         {
           "kind": "field_news",
-          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQRTAwaXg4dU5OQlg5SlhGRnFpeVI1dS1HNGYxZlU1VHJWTGVRNmFreFpSZ0VZd1MxeXdVSGd0ZVF1VjZycW40ODJteHRNaG1yT0RtdXpfcFlWdFQwS1htYjcwTk5oWlBsRFBpZ01NeHdxQW45b3lsWGNjUmlIMUR2bzlUYUZoell5eVRLRFFLUVVaOUY3eHRJdQ?oc=5",
-          "text": "In Edge AI / Specialty Silicon news: Nvidia CEO Exit Reports Sends Shockwaves Through AI Chip Stocks -- AMD and Broadcom Stocks Jump"
-        },
-        {
-          "kind": "fundamentals",
-          "text": "Strong fundamentals: scores 79/100"
-        },
-        {
-          "kind": "on_sale",
-          "text": "Quality business 41% below its high"
-        },
-        {
-          "kind": "new",
-          "text": "New to the radar"
-        }
-      ],
-      "watch_outs": []
-    },
-    {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings Co",
-      "sector": "Industrials",
-      "price": 182.86,
-      "drawdown_pct": -51.9,
-      "score": 70.7,
-      "new": true,
-      "tracked": true,
-      "rating": "RESEARCH-WORTHY",
-      "reasons": [
-        {
-          "kind": "field_news",
-          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcng2RmpPVEt5TERrZW5nZXlpbVkyMGFVSmRmRnIwTk1FY0VOLXlRY0MtV293VmdDRWpOazNkOExLd3J6bXpGbjkyUzBMcHFkYzRvaHo2Z3pYZ1NIbWZRWTVXUEppbldpQjc4LVVoMmVGY0c4SndlNFVQQUU5UFBRRVQ1MU1kUG9sUjQ5TlA0ckh6bVZl?oc=5",
-          "text": "In Data Center Infrastructure news: Vertiv expands liquid cooling ecosystem with Dow and Solenis"
+          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOYTBRVDhTNjJnV1ViWEVPank2WUc0RFBNbDdVbTJXbEZwb2NTeE9KaEJGWWNubDJUdWstQnRkUWlydHhMTlVUR1pJdHJHZzZMdEt1cS16V0ZoMGVxTVVRU2VfZnBDaV9TdEtHWENHcjVFY1N6VXVhSUZlTXJWNDFLaGJTUklETS1pcmpXOVJleWlfbXZvUlN3Zmp5OWU1WnU3allsdS0yU0NZNkpGaFpfRzk2RmhVNGdCQmkwSERVWVJYOXhfVEtmYUNsN3M?oc=5",
+          "text": "In Mega-Cap AI Infrastructure news: Democrats Could Target Data Center Tax Breaks in 2027. What It Means for Meta, Microsoft, Alphabet, and Amazon"
         },
         {
           "kind": "fundamentals",
@@ -130,16 +116,10 @@
         },
         {
           "kind": "on_sale",
-          "text": "Quality business 52% below its high"
-        },
-        {
-          "kind": "new",
-          "text": "New to the radar"
+          "text": "Quality business 30% below its high"
         }
       ],
-      "watch_outs": [
-        "Down 52% from its high, so find out why first"
-      ]
+      "watch_outs": []
     },
     {
       "ticker": "MU",
@@ -148,7 +128,7 @@
       "price": 690.0,
       "drawdown_pct": -45.0,
       "score": 95.0,
-      "new": true,
+      "new": false,
       "tracked": true,
       "rating": "WATCHLIST",
       "reasons": [
@@ -159,10 +139,6 @@
         {
           "kind": "on_sale",
           "text": "Quality business 45% below its high"
-        },
-        {
-          "kind": "new",
-          "text": "New to the radar"
         }
       ],
       "watch_outs": [
@@ -176,7 +152,7 @@
       "price": 95.1,
       "drawdown_pct": -63.9,
       "score": 86.3,
-      "new": true,
+      "new": false,
       "tracked": true,
       "rating": "WATCHLIST",
       "reasons": [
@@ -187,10 +163,6 @@
         {
           "kind": "on_sale",
           "text": "Quality business 64% below its high"
-        },
-        {
-          "kind": "new",
-          "text": "New to the radar"
         }
       ],
       "watch_outs": [
@@ -251,39 +223,13 @@
       "watch_outs": []
     },
     {
-      "ticker": "APP",
-      "name": "AppLovin Corporation",
-      "sector": "Communication Services",
-      "price": 391.22,
-      "drawdown_pct": -47.0,
-      "score": 75.2,
-      "new": true,
-      "tracked": true,
-      "rating": "RESEARCH-WORTHY",
-      "reasons": [
-        {
-          "kind": "fundamentals",
-          "text": "Strong fundamentals: scores 75/100"
-        },
-        {
-          "kind": "on_sale",
-          "text": "Quality business 47% below its high"
-        },
-        {
-          "kind": "new",
-          "text": "New to the radar"
-        }
-      ],
-      "watch_outs": []
-    },
-    {
       "ticker": "DECK",
       "name": "Deckers Outdoor Corporation",
       "sector": "Consumer Cyclical",
       "price": 86.71,
       "drawdown_pct": -29.1,
       "score": 74.9,
-      "new": true,
+      "new": false,
       "tracked": false,
       "rating": null,
       "reasons": [
@@ -294,10 +240,6 @@
         {
           "kind": "on_sale",
           "text": "Quality business 29% below its high"
-        },
-        {
-          "kind": "new",
-          "text": "New to the radar"
         }
       ],
       "watch_outs": []
@@ -309,7 +251,7 @@
       "price": 1017.5,
       "drawdown_pct": -50.9,
       "score": 74.4,
-      "new": true,
+      "new": false,
       "tracked": false,
       "rating": null,
       "reasons": [
@@ -320,10 +262,6 @@
         {
           "kind": "on_sale",
           "text": "Quality business 51% below its high"
-        },
-        {
-          "kind": "new",
-          "text": "New to the radar"
         }
       ],
       "watch_outs": [
@@ -353,6 +291,28 @@
         {
           "kind": "new",
           "text": "New to the radar"
+        }
+      ],
+      "watch_outs": []
+    },
+    {
+      "ticker": "EME",
+      "name": "EMCOR Group, Inc.",
+      "sector": "Industrials",
+      "price": 608.45,
+      "drawdown_pct": -36.1,
+      "score": 72.6,
+      "new": false,
+      "tracked": false,
+      "rating": null,
+      "reasons": [
+        {
+          "kind": "fundamentals",
+          "text": "Strong fundamentals: scores 73/100"
+        },
+        {
+          "kind": "on_sale",
+          "text": "Quality business 36% below its high"
         }
       ],
       "watch_outs": []
@@ -452,7 +412,7 @@
       "price": 86.71,
       "drawdown_pct": -29.1,
       "score": 74.9,
-      "new": true,
+      "new": false,
       "tracked": false,
       "rating": null,
       "reasons": [
@@ -463,10 +423,6 @@
         {
           "kind": "on_sale",
           "text": "Quality business 29% below its high"
-        },
-        {
-          "kind": "new",
-          "text": "New to the radar"
         }
       ],
       "watch_outs": []
@@ -478,7 +434,7 @@
       "price": 1017.5,
       "drawdown_pct": -50.9,
       "score": 74.4,
-      "new": true,
+      "new": false,
       "tracked": false,
       "rating": null,
       "reasons": [
@@ -489,10 +445,6 @@
         {
           "kind": "on_sale",
           "text": "Quality business 51% below its high"
-        },
-        {
-          "kind": "new",
-          "text": "New to the radar"
         }
       ],
       "watch_outs": [
@@ -506,7 +458,7 @@
       "price": 608.45,
       "drawdown_pct": -36.1,
       "score": 72.6,
-      "new": true,
+      "new": false,
       "tracked": false,
       "rating": null,
       "reasons": [
@@ -517,10 +469,6 @@
         {
           "kind": "on_sale",
           "text": "Quality business 36% below its high"
-        },
-        {
-          "kind": "new",
-          "text": "New to the radar"
         }
       ],
       "watch_outs": []
