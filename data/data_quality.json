@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T02:38:47Z",
+  "generated_at": "2026-11-13T11:40:54Z",
   "checked": 60,
   "flagged": 2,
   "quality": {
@@ -7,11 +7,11 @@
       "ok": true,
       "flags": []
     },
-    "AAPL": {
+    "ADP": {
       "ok": true,
       "flags": []
     },
-    "ADP": {
+    "AAPL": {
       "ok": true,
       "flags": []
     },
@@ -23,16 +23,20 @@
       "ok": true,
       "flags": []
     },
+    "AVGO": {
+      "ok": true,
+      "flags": []
+    },
     "ASML": {
       "ok": false,
       "flags": [
         {
           "level": "low",
-          "msg": "Reports in EUR; figures converted to USD at 1.1061. Trailing P/E may mix currencies \u2014 verify against filings"
+          "msg": "Reports in EUR; figures converted to USD at 1.1057. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
     },
-    "AVGO": {
+    "BWXT": {
       "ok": true,
       "flags": []
     },
@@ -40,19 +44,15 @@
       "ok": true,
       "flags": []
     },
-    "BWXT": {
-      "ok": true,
-      "flags": []
-    },
     "CEG": {
       "ok": true,
       "flags": []
     },
-    "CMCSA": {
+    "CLS": {
       "ok": true,
       "flags": []
     },
-    "CLS": {
+    "CMCSA": {
       "ok": true,
       "flags": []
     },
@@ -104,11 +104,11 @@
       "ok": true,
       "flags": []
     },
-    "INVH": {
+    "ISRG": {
       "ok": true,
       "flags": []
     },
-    "ISRG": {
+    "INVH": {
       "ok": true,
       "flags": []
     },
@@ -120,19 +120,19 @@
       "ok": true,
       "flags": []
     },
-    "LPLA": {
-      "ok": true,
-      "flags": []
-    },
     "LMB": {
       "ok": true,
       "flags": []
     },
-    "MA": {
+    "LPLA": {
       "ok": true,
       "flags": []
     },
     "META": {
+      "ok": true,
+      "flags": []
+    },
+    "MA": {
       "ok": true,
       "flags": []
     },
@@ -144,11 +144,11 @@
       "ok": true,
       "flags": []
     },
-    "MU": {
+    "MSFT": {
       "ok": true,
       "flags": []
     },
-    "MSFT": {
+    "MU": {
       "ok": true,
       "flags": []
     },
@@ -176,11 +176,11 @@
       "ok": true,
       "flags": []
     },
-    "PODD": {
+    "PAYX": {
       "ok": true,
       "flags": []
     },
-    "PAYX": {
+    "PODD": {
       "ok": true,
       "flags": []
     },
@@ -200,10 +200,6 @@
       "ok": true,
       "flags": []
     },
-    "TLN": {
-      "ok": true,
-      "flags": []
-    },
     "STZ": {
       "ok": true,
       "flags": []
@@ -212,7 +208,15 @@
       "ok": true,
       "flags": []
     },
+    "TLN": {
+      "ok": true,
+      "flags": []
+    },
     "TW": {
+      "ok": true,
+      "flags": []
+    },
+    "UNH": {
       "ok": true,
       "flags": []
     },
@@ -225,10 +229,6 @@
         }
       ]
     },
-    "UNH": {
-      "ok": true,
-      "flags": []
-    },
     "V": {
       "ok": true,
       "flags": []
@@ -237,11 +237,11 @@
       "ok": true,
       "flags": []
     },
-    "VTI": {
+    "VST": {
       "ok": true,
       "flags": []
     },
-    "VST": {
+    "VTI": {
       "ok": true,
       "flags": []
     },
