@@ -1,7 +1,23 @@
 {
-  "generated_at": "2026-11-12T20:47:14Z",
+  "generated_at": "2026-11-13T01:47:13Z",
   "lookback_days": 14,
   "filings": [
+    {
+      "ticker": "AMZN",
+      "form": "SCHEDULE 13G",
+      "label": "PASSIVE 5% STAKE",
+      "meaning": "5%+ passive stake \u2014 institutional conviction",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926126255/xslSCHEDULE_13G_X02/primary_doc.xml"
+    },
+    {
+      "ticker": "OKLO",
+      "form": "SCHEDULE 13G",
+      "label": "PASSIVE 5% STAKE",
+      "meaning": "5%+ passive stake \u2014 institutional conviction",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849056/000159588826000165/xslSCHEDULE_13G_X02/primary_doc.xml"
+    },
     {
       "ticker": "RDDT",
       "form": "SCHEDULE 13G",
@@ -25,22 +41,6 @@
       "meaning": "5%+ passive stake \u2014 institutional conviction",
       "filed_date": "2026-11-05",
       "url": "https://www.sec.gov/Archives/edgar/data/313616/000031506626002718/xslSCHEDULE_13G_X02/primary_doc.xml"
-    },
-    {
-      "ticker": "RDDT",
-      "form": "SCHEDULE 13G",
-      "label": "PASSIVE 5% STAKE",
-      "meaning": "5%+ passive stake \u2014 institutional conviction",
-      "filed_date": "2026-10-30",
-      "url": "https://www.sec.gov/Archives/edgar/data/1713445/000210012126001089/xslSCHEDULE_13G_X02/primary_doc.xml"
-    },
-    {
-      "ticker": "TPL",
-      "form": "SCHEDULE 13G",
-      "label": "PASSIVE 5% STAKE",
-      "meaning": "5%+ passive stake \u2014 institutional conviction",
-      "filed_date": "2026-10-30",
-      "url": "https://www.sec.gov/Archives/edgar/data/1811074/000210012126001131/xslSCHEDULE_13G_X02/primary_doc.xml"
     },
     {
       "ticker": "MKTX",
@@ -123,28 +123,20 @@
       "url": "https://www.sec.gov/Archives/edgar/data/2021728/000031506626002909/xslSCHEDULE_13G_X02/primary_doc.xml"
     },
     {
-      "ticker": "RDDT",
-      "form": "SCHEDULE 13G/A",
-      "label": "PASSIVE UPDATE",
-      "meaning": "Passive holder changed their 5%+ position",
-      "filed_date": "2026-10-30",
-      "url": "https://www.sec.gov/Archives/edgar/data/1713445/000210011926001666/xslSCHEDULE_13G_X02/primary_doc.xml"
-    },
-    {
-      "ticker": "GIS",
-      "form": "SCHEDULE 13G/A",
-      "label": "PASSIVE UPDATE",
-      "meaning": "Passive holder changed their 5%+ position",
-      "filed_date": "2026-10-30",
-      "url": "https://www.sec.gov/Archives/edgar/data/40704/000210012126001032/xslSCHEDULE_13G_X02/primary_doc.xml"
-    },
-    {
       "ticker": "NVDA",
       "form": "8-K",
       "label": "MATERIAL EVENT",
       "meaning": "Corporate event: M&A, guidance, exec change",
       "filed_date": "2026-11-12",
       "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm"
+    },
+    {
+      "ticker": "META",
+      "form": "8-K",
+      "label": "MATERIAL EVENT",
+      "meaning": "Corporate event: M&A, guidance, exec change",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm"
     },
     {
       "ticker": "MRVL",
@@ -163,12 +155,28 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1622536/000162253626000088/tln-20261109.htm"
     },
     {
+      "ticker": "ZBH",
+      "form": "8-K",
+      "label": "MATERIAL EVENT",
+      "meaning": "Corporate event: M&A, guidance, exec change",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/1136869/000119312526458323/d118853d8k.htm"
+    },
+    {
       "ticker": "INVH",
       "form": "8-K",
       "label": "MATERIAL EVENT",
       "meaning": "Corporate event: M&A, guidance, exec change",
       "filed_date": "2026-11-12",
       "url": "https://www.sec.gov/Archives/edgar/data/1687229/000119312526456656/d464876d8k.htm"
+    },
+    {
+      "ticker": "CBRS",
+      "form": "8-K",
+      "label": "MATERIAL EVENT",
+      "meaning": "Corporate event: M&A, guidance, exec change",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/2021728/000162828026073366/cbrs-20261112.htm"
     },
     {
       "ticker": "COST",
@@ -443,20 +451,60 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1035267/000103526726000074/isrg-20261029.htm"
     },
     {
-      "ticker": "NVT",
-      "form": "8-K",
-      "label": "MATERIAL EVENT",
-      "meaning": "Corporate event: M&A, guidance, exec change",
-      "filed_date": "2026-10-30",
-      "url": "https://www.sec.gov/Archives/edgar/data/1720635/000162828026068391/nvt-20261030.htm"
+      "ticker": "AAPL",
+      "form": "4",
+      "label": "INSIDER TRADE",
+      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126043484/xslF345X06/form4.xml"
     },
     {
-      "ticker": "CLS",
-      "form": "8-K",
-      "label": "MATERIAL EVENT",
-      "meaning": "Corporate event: M&A, guidance, exec change",
-      "filed_date": "2026-10-30",
-      "url": "https://www.sec.gov/Archives/edgar/data/1030894/000103089426000054/cls-20261030.htm"
+      "ticker": "MSFT",
+      "form": "4",
+      "label": "INSIDER TRADE",
+      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000234/xslF345X06/form4.xml"
+    },
+    {
+      "ticker": "AMZN",
+      "form": "4",
+      "label": "INSIDER TRADE",
+      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000042/xslF345X06/wk-form4_1794526071.xml"
+    },
+    {
+      "ticker": "META",
+      "form": "4",
+      "label": "INSIDER TRADE",
+      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326017401/xslF345X06/ownership.xml"
+    },
+    {
+      "ticker": "META",
+      "form": "4",
+      "label": "INSIDER TRADE",
+      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326017398/xslF345X06/ownership.xml"
+    },
+    {
+      "ticker": "V",
+      "form": "4",
+      "label": "INSIDER TRADE",
+      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000140/xslF345X06/form4.xml"
+    },
+    {
+      "ticker": "COST",
+      "form": "4",
+      "label": "INSIDER TRADE",
+      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000136/xslF345X06/form4.xml"
     },
     {
       "ticker": "COHR",
@@ -473,6 +521,118 @@
       "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
       "filed_date": "2026-11-12",
       "url": "https://www.sec.gov/Archives/edgar/data/820318/000089914026001275/xslF345X06/form4.xml"
+    },
+    {
+      "ticker": "NVT",
+      "form": "4",
+      "label": "INSIDER TRADE",
+      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/1720635/000089706926001919/xslF345X06/form4.xml"
+    },
+    {
+      "ticker": "ADP",
+      "form": "4",
+      "label": "INSIDER TRADE",
+      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/8670/000122520826008880/xslF345X06/doc4.xml"
+    },
+    {
+      "ticker": "ADP",
+      "form": "4",
+      "label": "INSIDER TRADE",
+      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/8670/000122520826008879/xslF345X06/doc4.xml"
+    },
+    {
+      "ticker": "ADP",
+      "form": "4",
+      "label": "INSIDER TRADE",
+      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/8670/000122520826008878/xslF345X06/doc4.xml"
+    },
+    {
+      "ticker": "ADP",
+      "form": "4",
+      "label": "INSIDER TRADE",
+      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/8670/000122520826008877/xslF345X06/doc4.xml"
+    },
+    {
+      "ticker": "ADP",
+      "form": "4",
+      "label": "INSIDER TRADE",
+      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/8670/000122520826008876/xslF345X06/doc4.xml"
+    },
+    {
+      "ticker": "ADP",
+      "form": "4",
+      "label": "INSIDER TRADE",
+      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/8670/000122520826008875/xslF345X06/doc4.xml"
+    },
+    {
+      "ticker": "ADP",
+      "form": "4",
+      "label": "INSIDER TRADE",
+      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/8670/000122520826008874/xslF345X06/doc4.xml"
+    },
+    {
+      "ticker": "ADP",
+      "form": "4",
+      "label": "INSIDER TRADE",
+      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/8670/000122520826008873/xslF345X06/doc4.xml"
+    },
+    {
+      "ticker": "ADP",
+      "form": "4",
+      "label": "INSIDER TRADE",
+      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/8670/000122520826008872/xslF345X06/doc4.xml"
+    },
+    {
+      "ticker": "ADP",
+      "form": "4",
+      "label": "INSIDER TRADE",
+      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/8670/000122520826008871/xslF345X06/doc4.xml"
+    },
+    {
+      "ticker": "ADP",
+      "form": "4",
+      "label": "INSIDER TRADE",
+      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/8670/000122520826008870/xslF345X06/doc4.xml"
+    },
+    {
+      "ticker": "ADP",
+      "form": "4",
+      "label": "INSIDER TRADE",
+      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/8670/000122520826008869/xslF345X06/doc4.xml"
+    },
+    {
+      "ticker": "STZ",
+      "form": "4",
+      "label": "INSIDER TRADE",
+      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
+      "filed_date": "2026-11-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/16918/000201342026000010/xslF345X06/wk-form4_1794520812.xml"
     },
     {
       "ticker": "ISRG",
@@ -1489,14 +1649,6 @@
       "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
       "filed_date": "2026-11-02",
       "url": "https://www.sec.gov/Archives/edgar/data/1751008/000184839526000015/xslF345X06/primarydocument.xml"
-    },
-    {
-      "ticker": "GOOGL",
-      "form": "4",
-      "label": "INSIDER TRADE",
-      "meaning": "Officer/director bought or sold \u2014 filed within 2 days",
-      "filed_date": "2026-10-30",
-      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526442116/xslF345X06/ownership.xml"
     }
   ]
 }
