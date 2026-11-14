@@ -78,6 +78,9 @@ CLS
 CRDO
 
 ## Discovered by the radar
+DECK
+FIX
+EME
 TPL
 APP
 

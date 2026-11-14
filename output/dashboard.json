@@ -1,14 +1,14 @@
 {
-  "last_built": "2026-11-14T18:01:12Z",
-  "quotes_updated": "2026-11-14T18:01:12Z",
+  "last_built": "2026-11-14T18:07:59Z",
+  "quotes_updated": "2026-11-14T18:02:27Z",
   "health": {
     "stages": [
       {
         "name": "Quotes",
-        "updated_at": "2026-11-14T18:01:12Z",
+        "updated_at": "2026-11-14T18:02:27Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "Prices and buy targets may be out of date"
       },
       {
@@ -16,7 +16,7 @@
         "updated_at": "2026-11-14T11:02:58Z",
         "detail": "8/8 tickers",
         "status": "ok",
-        "age_hours": 7.0,
+        "age_hours": 7.1,
         "affects": "Ratings aren't being updated"
       },
       {
@@ -24,7 +24,7 @@
         "updated_at": "2026-11-14T15:54:44Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 2.1,
+        "age_hours": 2.2,
         "affects": "Upcoming earnings dates may be missing"
       },
       {
@@ -32,23 +32,23 @@
         "updated_at": "2026-11-14T11:03:04Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 7.0,
+        "age_hours": 7.1,
         "affects": "New SEC filings won't show"
       },
       {
         "name": "Prices",
-        "updated_at": "2026-11-14T18:01:12Z",
-        "detail": "56/56 have data",
+        "updated_at": "2026-11-14T18:02:27Z",
+        "detail": "59/59 have data",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "Prices and buy targets may be missing"
       },
       {
         "name": "Company figures",
-        "updated_at": "2026-11-14T18:01:12Z",
-        "detail": "56/56 have data",
+        "updated_at": "2026-11-14T18:02:27Z",
+        "detail": "59/59 have data",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "Ratings can't check the numbers"
       },
       {
@@ -56,7 +56,7 @@
         "updated_at": "2026-11-14T11:03:09Z",
         "detail": "56/56 have data",
         "status": "ok",
-        "age_hours": 7.0,
+        "age_hours": 7.1,
         "affects": "Ratings and mover reasons can miss recent news"
       },
       {
@@ -64,7 +64,7 @@
         "updated_at": "2026-11-09T01:41:35Z",
         "detail": "48/56 have data",
         "status": "ok",
-        "age_hours": 136.3,
+        "age_hours": 136.4,
         "affects": "Insider buying won't show on stocks or the radar"
       },
       {
@@ -72,7 +72,7 @@
         "updated_at": "2026-08-15T14:09:52Z",
         "detail": "28/31 have data",
         "status": "ok",
-        "age_hours": 2187.9,
+        "age_hours": 2188.0,
         "affects": "Hedge fund holdings may be out of date"
       },
       {
@@ -80,7 +80,7 @@
         "updated_at": "2026-11-14T16:42:06Z",
         "detail": "16/16 have data",
         "status": "ok",
-        "age_hours": 1.3,
+        "age_hours": 1.4,
         "affects": "The field briefing may be out of date"
       },
       {
@@ -88,15 +88,15 @@
         "updated_at": "2026-11-14T02:23:33Z",
         "detail": "6/6 have data",
         "status": "ok",
-        "age_hours": 15.6,
+        "age_hours": 15.7,
         "affects": "Big moves may have no explanation"
       },
       {
         "name": "Radar",
-        "updated_at": "2026-11-14T16:42:29Z",
+        "updated_at": "2026-11-14T18:07:58Z",
         "detail": "12 found",
         "status": "ok",
-        "age_hours": 1.3,
+        "age_hours": 0.0,
         "affects": "The radar may be out of date"
       },
       {
@@ -104,7 +104,7 @@
         "updated_at": "2026-11-14T18:00:53Z",
         "detail": "429 found",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "New stock ideas may be out of date"
       },
       {
@@ -112,7 +112,7 @@
         "updated_at": "2026-11-14T16:45:47Z",
         "detail": "1 found",
         "status": "ok",
-        "age_hours": 1.3,
+        "age_hours": 1.4,
         "affects": "The AI summary may be out of date"
       },
       {
@@ -120,14 +120,14 @@
         "updated_at": "2026-11-13T19:53:52Z",
         "detail": "6 sources passed",
         "status": "ok",
-        "age_hours": 22.1,
+        "age_hours": 22.2,
         "affects": "One of the data sources failed its daily test"
       },
       {
         "name": "Ratings",
         "updated_at": null,
         "age_hours": null,
-        "detail": "56/56 on current logic",
+        "detail": "59/59 on current logic",
         "status": "ok",
         "affects": "Some ratings still use older logic"
       }
@@ -571,7 +571,7 @@
         "revenue_growth": 85.5,
         "op_margin": 54.3,
         "pe": 44.31801,
-        "forward_pe": 17.874178,
+        "forward_pe": 17.827318,
         "short_percent_float": 1.11,
         "short_ratio": 2.3,
         "high_proximity_warning": false,
@@ -1443,7 +1443,7 @@
         "drawdown_from_high": -46.8,
         "revenue_growth": 61.2,
         "op_margin": 23.0,
-        "pe": 37.770096,
+        "pe": 39.160854,
         "forward_pe": 20.37261,
         "short_percent_float": 2.88,
         "short_ratio": 1.6,
@@ -1772,7 +1772,7 @@
         "rated_next_earnings": 1794862800,
         "price": 142.72,
         "pct_change_1d": 0.67,
-        "market_cap": 5199655424,
+        "market_cap": 5199524864,
         "cap_tier": "mid",
         "drawdown_from_high": -56.5,
         "revenue_growth": 8.9,
@@ -2180,7 +2180,7 @@
         "revenue_growth": 3.1,
         "op_margin": 16.6,
         "pe": 26.063131,
-        "forward_pe": 11.497775,
+        "forward_pe": 11.492461,
         "short_percent_float": 5.49,
         "short_ratio": 3.8,
         "high_proximity_warning": true,
@@ -3076,6 +3076,134 @@
         "high_proximity_note": "Only 3.9% from 52-week high \u2014 entry timing risk",
         "data_ok": true,
         "data_flags": []
+      },
+      {
+        "ticker": "DECK",
+        "name": "Deckers Outdoor Corporation",
+        "theme": "uncategorized",
+        "source": "radar",
+        "status": "research_complete",
+        "verdict": "RESEARCH-WORTHY",
+        "added": "2026-11-14",
+        "llm_verdict": "RESEARCH-WORTHY",
+        "bear_downgraded": false,
+        "research_file": "output/research/DECK_2026-11-14.md",
+        "last_researched": "2026-11-14",
+        "rating_version": 4,
+        "unsupported_figures": [
+          "$1B",
+          "6%",
+          "5%",
+          "9x"
+        ],
+        "fall_reason": "The stock fell 29% after FQ2 sales missed estimates and the company lowered full-year revenue guidance, despite beating profit expectations and raising profit guidance.",
+        "rated_quarter_end": "2026-09-30",
+        "rated_next_earnings": 1792699200,
+        "confidence": "MEDIUM",
+        "bear_check": "The strongest argument against buying DECK is that its core growth engine, HOKA, appears to be structurally decelerating: revenue growth has slowed to just 3.5% YoY and management lowered full-year revenue guidance, which could compress the valuation multiple to low-growth levels (8-9x earnings) despite the seemingly cheap current multiples. The 29% drawdown reflects this guidance cut and sales miss, and further downside exists if HOKA's growth inflects negatively.\n\nWHY_IT_FELL: The stock fell 29% after FQ2 sales missed estimates and the company lowered full-year revenue guidance, despite beating profit expectations and raising profit guidance.\nFALL_EVIDENCE: Deckers Outdoor shares slide as FQ2 sales miss, lowered revenue outlook offsets profit beat (DECK:NYSE) (Seeking Alpha)\nBREAK: NONE\nEVIDENCE: none",
+        "thesis": "Quality compounder with 59% gross margins, 26% operating margins, $1B+ FCF, and net cash trading at 11x trailing earnings despite 3.5% revenue growth; the 29% drawdown reflects a sales miss and lowered revenue guidance, but raised profit guidance suggests margin resilience.",
+        "next_action": "RESEARCH \u2014 Quality compounder with 59% gross margins, 26% operating margins, $1B+ FCF, and net cash trading at 11x trailing earnings despite 3.5% revenue growth; the 29% drawdown reflects a sales miss and lowered revenue guidance, but raised profit guidance suggests margin resilience. Worth a deep dive before any decision.",
+        "buy_trigger_drawdown_pct": -29.0,
+        "buy_target": 86.83,
+        "price": 86.82,
+        "current_price": 86.82,
+        "pct_change_1d": 2.71,
+        "market_cap": 11588731904,
+        "cap_tier": "large",
+        "drawdown_from_high": -29.0,
+        "revenue_growth": 3.5,
+        "op_margin": 26.3,
+        "pe": 11.20258,
+        "forward_pe": 10.62706,
+        "short_percent_float": 9.28,
+        "short_ratio": 3.1,
+        "high_proximity_warning": false,
+        "data_ok": true,
+        "data_flags": []
+      },
+      {
+        "ticker": "FIX",
+        "name": "Comfort Systems USA, Inc.",
+        "theme": "uncategorized",
+        "source": "radar",
+        "status": "research_complete",
+        "verdict": "RESEARCH-WORTHY",
+        "added": "2026-11-14",
+        "llm_verdict": "RESEARCH-WORTHY",
+        "bear_downgraded": false,
+        "research_file": "output/research/FIX_2026-11-14.md",
+        "last_researched": "2026-11-14",
+        "rating_version": 4,
+        "unsupported_figures": [
+          "30%",
+          "10%"
+        ],
+        "fall_reason": "Stock fell after Q3 earnings despite a beat, due to CFO retirement and market skepticism that backlog growth justifies prior valuation.",
+        "rated_quarter_end": "2026-09-30",
+        "rated_next_earnings": 1792699200,
+        "confidence": "MEDIUM",
+        "bear_check": "The strongest argument against buying FIX is its extreme customer concentration in hyperscale data center operators: the top 3-5 tech giants drive a disproportionate share of revenue, and any 30% capex cut in 2027-2028 could slash FIX's project-based revenue by 25-40% with no long-term recurring contracts to cushion the fall.\n\nBREAK: NONE\nEVIDENCE: none\n\nWHY_IT_FELL: Stock fell after Q3 earnings despite a beat, due to CFO retirement and market skepticism that backlog growth justifies prior valuation.\nFALL_EVIDENCE: Comfort Systems USA drops 9% after earnings, CFO retirement (FIX:NYSE) (Seeking Alpha)\n\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
+        "thesis": "Mechanical/electrical contractor benefiting from AI data center buildout at 16.6x forward earnings with 53% quarterly revenue growth and $2.4B FCF.",
+        "next_action": "RESEARCH \u2014 Mechanical/electrical contractor benefiting from AI data center buildout at 16.6x forward earnings with 53% quarterly revenue growth and $2.4B FCF. Worth a deep dive before any decision.",
+        "buy_trigger_drawdown_pct": -46.4,
+        "buy_target": 1111.66,
+        "price": 1112.5,
+        "current_price": 1112.5,
+        "pct_change_1d": -1.38,
+        "market_cap": 38921818112,
+        "cap_tier": "large",
+        "drawdown_from_high": -46.4,
+        "revenue_growth": 53.7,
+        "op_margin": 16.5,
+        "pe": 24.028078,
+        "forward_pe": 16.56631,
+        "short_percent_float": 2.86,
+        "short_ratio": 1.6,
+        "high_proximity_warning": false,
+        "data_ok": true,
+        "data_flags": []
+      },
+      {
+        "ticker": "EME",
+        "name": "EMCOR Group, Inc.",
+        "theme": "uncategorized",
+        "source": "radar",
+        "status": "research_complete",
+        "verdict": "RESEARCH-WORTHY",
+        "added": "2026-11-14",
+        "llm_verdict": "RESEARCH-WORTHY",
+        "bear_downgraded": false,
+        "research_file": "output/research/EME_2026-11-14.md",
+        "last_researched": "2026-11-14",
+        "rating_version": 4,
+        "unsupported_figures": [
+          "5.1%",
+          "28%"
+        ],
+        "fall_reason": null,
+        "rated_quarter_end": "2026-09-30",
+        "rated_next_earnings": 1793277000,
+        "confidence": "LOW",
+        "bear_check": "The primary risk is fixed-price contract exposure in a tight labor market; wage inflation or supply-chain delays could cause cost overruns on the large backlog, compressing the already thin 19.6% gross margin to single digits and potentially turning free cash flow negative. This risk is amplified by the company's reliance on fixed-price contracts for a significant portion of its $20B+ backlog (unverified).\n\nWHY_IT_FELL: The stock fell ~31% from its high amid margin debate and cyclical concerns despite Q3 beat and raised guidance.\nFALL_EVIDENCE: EMCOR earnings on deck: Margin debate takes center stage\n\nBREAK: NONE\nEVIDENCE: none",
+        "thesis": "Quality industrial contractor at 16x forward earnings with 28% revenue growth, strong FCF, and direct exposure to data center power/grid infrastructure build-out.",
+        "next_action": "RESEARCH \u2014 Quality industrial contractor at 16x forward earnings with 28% revenue growth, strong FCF, and direct exposure to data center power/grid infrastructure build-out. Worth a deep dive before any decision.",
+        "buy_trigger_drawdown_pct": -30.7,
+        "buy_target": 659.71,
+        "price": 659.36,
+        "current_price": 659.36,
+        "pct_change_1d": -0.51,
+        "market_cap": 28868102144,
+        "cap_tier": "large",
+        "drawdown_from_high": -30.7,
+        "revenue_growth": 28.8,
+        "op_margin": 10.5,
+        "pe": 19.062157,
+        "forward_pe": 16.118694,
+        "short_percent_float": 1.73,
+        "short_ratio": 1.8,
+        "high_proximity_warning": false,
+        "data_ok": true,
+        "data_flags": []
       }
     ],
     "by_verdict": {
@@ -3936,7 +4064,7 @@
           "rated_next_earnings": 1794862800,
           "price": 142.72,
           "pct_change_1d": 0.67,
-          "market_cap": 5199655424,
+          "market_cap": 5199524864,
           "cap_tier": "mid",
           "drawdown_from_high": -56.5,
           "revenue_growth": 8.9,
@@ -4298,7 +4426,7 @@
           "revenue_growth": 3.1,
           "op_margin": 16.6,
           "pe": 26.063131,
-          "forward_pe": 11.497775,
+          "forward_pe": 11.492461,
           "short_percent_float": 5.49,
           "short_ratio": 3.8,
           "high_proximity_warning": true,
@@ -5077,7 +5205,7 @@
           "revenue_growth": 85.5,
           "op_margin": 54.3,
           "pe": 44.31801,
-          "forward_pe": 17.874178,
+          "forward_pe": 17.827318,
           "short_percent_float": 1.11,
           "short_ratio": 2.3,
           "high_proximity_warning": false,
@@ -5472,7 +5600,7 @@
           "drawdown_from_high": -46.8,
           "revenue_growth": 61.2,
           "op_margin": 23.0,
-          "pe": 37.770096,
+          "pe": 39.160854,
           "forward_pe": 20.37261,
           "short_percent_float": 2.88,
           "short_ratio": 1.6,
@@ -5823,6 +5951,134 @@
           "insider_note": "0 buy(s), 36 sell(s) in past 6 months | $0 bought / $202,823,940 sold",
           "insider_buys": 0,
           "insider_sells": 36,
+          "data_ok": true,
+          "data_flags": []
+        },
+        {
+          "ticker": "DECK",
+          "name": "Deckers Outdoor Corporation",
+          "theme": "uncategorized",
+          "source": "radar",
+          "status": "research_complete",
+          "verdict": "RESEARCH-WORTHY",
+          "added": "2026-11-14",
+          "llm_verdict": "RESEARCH-WORTHY",
+          "bear_downgraded": false,
+          "research_file": "output/research/DECK_2026-11-14.md",
+          "last_researched": "2026-11-14",
+          "rating_version": 4,
+          "unsupported_figures": [
+            "$1B",
+            "6%",
+            "5%",
+            "9x"
+          ],
+          "fall_reason": "The stock fell 29% after FQ2 sales missed estimates and the company lowered full-year revenue guidance, despite beating profit expectations and raising profit guidance.",
+          "rated_quarter_end": "2026-09-30",
+          "rated_next_earnings": 1792699200,
+          "confidence": "MEDIUM",
+          "bear_check": "The strongest argument against buying DECK is that its core growth engine, HOKA, appears to be structurally decelerating: revenue growth has slowed to just 3.5% YoY and management lowered full-year revenue guidance, which could compress the valuation multiple to low-growth levels (8-9x earnings) despite the seemingly cheap current multiples. The 29% drawdown reflects this guidance cut and sales miss, and further downside exists if HOKA's growth inflects negatively.\n\nWHY_IT_FELL: The stock fell 29% after FQ2 sales missed estimates and the company lowered full-year revenue guidance, despite beating profit expectations and raising profit guidance.\nFALL_EVIDENCE: Deckers Outdoor shares slide as FQ2 sales miss, lowered revenue outlook offsets profit beat (DECK:NYSE) (Seeking Alpha)\nBREAK: NONE\nEVIDENCE: none",
+          "thesis": "Quality compounder with 59% gross margins, 26% operating margins, $1B+ FCF, and net cash trading at 11x trailing earnings despite 3.5% revenue growth; the 29% drawdown reflects a sales miss and lowered revenue guidance, but raised profit guidance suggests margin resilience.",
+          "next_action": "RESEARCH \u2014 Quality compounder with 59% gross margins, 26% operating margins, $1B+ FCF, and net cash trading at 11x trailing earnings despite 3.5% revenue growth; the 29% drawdown reflects a sales miss and lowered revenue guidance, but raised profit guidance suggests margin resilience. Worth a deep dive before any decision.",
+          "buy_trigger_drawdown_pct": -29.0,
+          "buy_target": 86.83,
+          "price": 86.82,
+          "current_price": 86.82,
+          "pct_change_1d": 2.71,
+          "market_cap": 11588731904,
+          "cap_tier": "large",
+          "drawdown_from_high": -29.0,
+          "revenue_growth": 3.5,
+          "op_margin": 26.3,
+          "pe": 11.20258,
+          "forward_pe": 10.62706,
+          "short_percent_float": 9.28,
+          "short_ratio": 3.1,
+          "high_proximity_warning": false,
+          "data_ok": true,
+          "data_flags": []
+        },
+        {
+          "ticker": "FIX",
+          "name": "Comfort Systems USA, Inc.",
+          "theme": "uncategorized",
+          "source": "radar",
+          "status": "research_complete",
+          "verdict": "RESEARCH-WORTHY",
+          "added": "2026-11-14",
+          "llm_verdict": "RESEARCH-WORTHY",
+          "bear_downgraded": false,
+          "research_file": "output/research/FIX_2026-11-14.md",
+          "last_researched": "2026-11-14",
+          "rating_version": 4,
+          "unsupported_figures": [
+            "30%",
+            "10%"
+          ],
+          "fall_reason": "Stock fell after Q3 earnings despite a beat, due to CFO retirement and market skepticism that backlog growth justifies prior valuation.",
+          "rated_quarter_end": "2026-09-30",
+          "rated_next_earnings": 1792699200,
+          "confidence": "MEDIUM",
+          "bear_check": "The strongest argument against buying FIX is its extreme customer concentration in hyperscale data center operators: the top 3-5 tech giants drive a disproportionate share of revenue, and any 30% capex cut in 2027-2028 could slash FIX's project-based revenue by 25-40% with no long-term recurring contracts to cushion the fall.\n\nBREAK: NONE\nEVIDENCE: none\n\nWHY_IT_FELL: Stock fell after Q3 earnings despite a beat, due to CFO retirement and market skepticism that backlog growth justifies prior valuation.\nFALL_EVIDENCE: Comfort Systems USA drops 9% after earnings, CFO retirement (FIX:NYSE) (Seeking Alpha)\n\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
+          "thesis": "Mechanical/electrical contractor benefiting from AI data center buildout at 16.6x forward earnings with 53% quarterly revenue growth and $2.4B FCF.",
+          "next_action": "RESEARCH \u2014 Mechanical/electrical contractor benefiting from AI data center buildout at 16.6x forward earnings with 53% quarterly revenue growth and $2.4B FCF. Worth a deep dive before any decision.",
+          "buy_trigger_drawdown_pct": -46.4,
+          "buy_target": 1111.66,
+          "price": 1112.5,
+          "current_price": 1112.5,
+          "pct_change_1d": -1.38,
+          "market_cap": 38921818112,
+          "cap_tier": "large",
+          "drawdown_from_high": -46.4,
+          "revenue_growth": 53.7,
+          "op_margin": 16.5,
+          "pe": 24.028078,
+          "forward_pe": 16.56631,
+          "short_percent_float": 2.86,
+          "short_ratio": 1.6,
+          "high_proximity_warning": false,
+          "data_ok": true,
+          "data_flags": []
+        },
+        {
+          "ticker": "EME",
+          "name": "EMCOR Group, Inc.",
+          "theme": "uncategorized",
+          "source": "radar",
+          "status": "research_complete",
+          "verdict": "RESEARCH-WORTHY",
+          "added": "2026-11-14",
+          "llm_verdict": "RESEARCH-WORTHY",
+          "bear_downgraded": false,
+          "research_file": "output/research/EME_2026-11-14.md",
+          "last_researched": "2026-11-14",
+          "rating_version": 4,
+          "unsupported_figures": [
+            "5.1%",
+            "28%"
+          ],
+          "fall_reason": null,
+          "rated_quarter_end": "2026-09-30",
+          "rated_next_earnings": 1793277000,
+          "confidence": "LOW",
+          "bear_check": "The primary risk is fixed-price contract exposure in a tight labor market; wage inflation or supply-chain delays could cause cost overruns on the large backlog, compressing the already thin 19.6% gross margin to single digits and potentially turning free cash flow negative. This risk is amplified by the company's reliance on fixed-price contracts for a significant portion of its $20B+ backlog (unverified).\n\nWHY_IT_FELL: The stock fell ~31% from its high amid margin debate and cyclical concerns despite Q3 beat and raised guidance.\nFALL_EVIDENCE: EMCOR earnings on deck: Margin debate takes center stage\n\nBREAK: NONE\nEVIDENCE: none",
+          "thesis": "Quality industrial contractor at 16x forward earnings with 28% revenue growth, strong FCF, and direct exposure to data center power/grid infrastructure build-out.",
+          "next_action": "RESEARCH \u2014 Quality industrial contractor at 16x forward earnings with 28% revenue growth, strong FCF, and direct exposure to data center power/grid infrastructure build-out. Worth a deep dive before any decision.",
+          "buy_trigger_drawdown_pct": -30.7,
+          "buy_target": 659.71,
+          "price": 659.36,
+          "current_price": 659.36,
+          "pct_change_1d": -0.51,
+          "market_cap": 28868102144,
+          "cap_tier": "large",
+          "drawdown_from_high": -30.7,
+          "revenue_growth": 28.8,
+          "op_margin": 10.5,
+          "pe": 19.062157,
+          "forward_pe": 16.118694,
+          "short_percent_float": 1.73,
+          "short_ratio": 1.8,
+          "high_proximity_warning": false,
           "data_ok": true,
           "data_flags": []
         }
@@ -6339,7 +6595,7 @@
           "revenue_growth": 85.5,
           "op_margin": 54.3,
           "pe": 44.31801,
-          "forward_pe": 17.874178,
+          "forward_pe": 17.827318,
           "short_percent_float": 1.11,
           "short_ratio": 2.3,
           "high_proximity_warning": false,
@@ -7040,6 +7296,134 @@
           "high_proximity_note": "Only 3.9% from 52-week high \u2014 entry timing risk",
           "data_ok": true,
           "data_flags": []
+        },
+        {
+          "ticker": "DECK",
+          "name": "Deckers Outdoor Corporation",
+          "theme": "uncategorized",
+          "source": "radar",
+          "status": "research_complete",
+          "verdict": "RESEARCH-WORTHY",
+          "added": "2026-11-14",
+          "llm_verdict": "RESEARCH-WORTHY",
+          "bear_downgraded": false,
+          "research_file": "output/research/DECK_2026-11-14.md",
+          "last_researched": "2026-11-14",
+          "rating_version": 4,
+          "unsupported_figures": [
+            "$1B",
+            "6%",
+            "5%",
+            "9x"
+          ],
+          "fall_reason": "The stock fell 29% after FQ2 sales missed estimates and the company lowered full-year revenue guidance, despite beating profit expectations and raising profit guidance.",
+          "rated_quarter_end": "2026-09-30",
+          "rated_next_earnings": 1792699200,
+          "confidence": "MEDIUM",
+          "bear_check": "The strongest argument against buying DECK is that its core growth engine, HOKA, appears to be structurally decelerating: revenue growth has slowed to just 3.5% YoY and management lowered full-year revenue guidance, which could compress the valuation multiple to low-growth levels (8-9x earnings) despite the seemingly cheap current multiples. The 29% drawdown reflects this guidance cut and sales miss, and further downside exists if HOKA's growth inflects negatively.\n\nWHY_IT_FELL: The stock fell 29% after FQ2 sales missed estimates and the company lowered full-year revenue guidance, despite beating profit expectations and raising profit guidance.\nFALL_EVIDENCE: Deckers Outdoor shares slide as FQ2 sales miss, lowered revenue outlook offsets profit beat (DECK:NYSE) (Seeking Alpha)\nBREAK: NONE\nEVIDENCE: none",
+          "thesis": "Quality compounder with 59% gross margins, 26% operating margins, $1B+ FCF, and net cash trading at 11x trailing earnings despite 3.5% revenue growth; the 29% drawdown reflects a sales miss and lowered revenue guidance, but raised profit guidance suggests margin resilience.",
+          "next_action": "RESEARCH \u2014 Quality compounder with 59% gross margins, 26% operating margins, $1B+ FCF, and net cash trading at 11x trailing earnings despite 3.5% revenue growth; the 29% drawdown reflects a sales miss and lowered revenue guidance, but raised profit guidance suggests margin resilience. Worth a deep dive before any decision.",
+          "buy_trigger_drawdown_pct": -29.0,
+          "buy_target": 86.83,
+          "price": 86.82,
+          "current_price": 86.82,
+          "pct_change_1d": 2.71,
+          "market_cap": 11588731904,
+          "cap_tier": "large",
+          "drawdown_from_high": -29.0,
+          "revenue_growth": 3.5,
+          "op_margin": 26.3,
+          "pe": 11.20258,
+          "forward_pe": 10.62706,
+          "short_percent_float": 9.28,
+          "short_ratio": 3.1,
+          "high_proximity_warning": false,
+          "data_ok": true,
+          "data_flags": []
+        },
+        {
+          "ticker": "FIX",
+          "name": "Comfort Systems USA, Inc.",
+          "theme": "uncategorized",
+          "source": "radar",
+          "status": "research_complete",
+          "verdict": "RESEARCH-WORTHY",
+          "added": "2026-11-14",
+          "llm_verdict": "RESEARCH-WORTHY",
+          "bear_downgraded": false,
+          "research_file": "output/research/FIX_2026-11-14.md",
+          "last_researched": "2026-11-14",
+          "rating_version": 4,
+          "unsupported_figures": [
+            "30%",
+            "10%"
+          ],
+          "fall_reason": "Stock fell after Q3 earnings despite a beat, due to CFO retirement and market skepticism that backlog growth justifies prior valuation.",
+          "rated_quarter_end": "2026-09-30",
+          "rated_next_earnings": 1792699200,
+          "confidence": "MEDIUM",
+          "bear_check": "The strongest argument against buying FIX is its extreme customer concentration in hyperscale data center operators: the top 3-5 tech giants drive a disproportionate share of revenue, and any 30% capex cut in 2027-2028 could slash FIX's project-based revenue by 25-40% with no long-term recurring contracts to cushion the fall.\n\nBREAK: NONE\nEVIDENCE: none\n\nWHY_IT_FELL: Stock fell after Q3 earnings despite a beat, due to CFO retirement and market skepticism that backlog growth justifies prior valuation.\nFALL_EVIDENCE: Comfort Systems USA drops 9% after earnings, CFO retirement (FIX:NYSE) (Seeking Alpha)\n\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
+          "thesis": "Mechanical/electrical contractor benefiting from AI data center buildout at 16.6x forward earnings with 53% quarterly revenue growth and $2.4B FCF.",
+          "next_action": "RESEARCH \u2014 Mechanical/electrical contractor benefiting from AI data center buildout at 16.6x forward earnings with 53% quarterly revenue growth and $2.4B FCF. Worth a deep dive before any decision.",
+          "buy_trigger_drawdown_pct": -46.4,
+          "buy_target": 1111.66,
+          "price": 1112.5,
+          "current_price": 1112.5,
+          "pct_change_1d": -1.38,
+          "market_cap": 38921818112,
+          "cap_tier": "large",
+          "drawdown_from_high": -46.4,
+          "revenue_growth": 53.7,
+          "op_margin": 16.5,
+          "pe": 24.028078,
+          "forward_pe": 16.56631,
+          "short_percent_float": 2.86,
+          "short_ratio": 1.6,
+          "high_proximity_warning": false,
+          "data_ok": true,
+          "data_flags": []
+        },
+        {
+          "ticker": "EME",
+          "name": "EMCOR Group, Inc.",
+          "theme": "uncategorized",
+          "source": "radar",
+          "status": "research_complete",
+          "verdict": "RESEARCH-WORTHY",
+          "added": "2026-11-14",
+          "llm_verdict": "RESEARCH-WORTHY",
+          "bear_downgraded": false,
+          "research_file": "output/research/EME_2026-11-14.md",
+          "last_researched": "2026-11-14",
+          "rating_version": 4,
+          "unsupported_figures": [
+            "5.1%",
+            "28%"
+          ],
+          "fall_reason": null,
+          "rated_quarter_end": "2026-09-30",
+          "rated_next_earnings": 1793277000,
+          "confidence": "LOW",
+          "bear_check": "The primary risk is fixed-price contract exposure in a tight labor market; wage inflation or supply-chain delays could cause cost overruns on the large backlog, compressing the already thin 19.6% gross margin to single digits and potentially turning free cash flow negative. This risk is amplified by the company's reliance on fixed-price contracts for a significant portion of its $20B+ backlog (unverified).\n\nWHY_IT_FELL: The stock fell ~31% from its high amid margin debate and cyclical concerns despite Q3 beat and raised guidance.\nFALL_EVIDENCE: EMCOR earnings on deck: Margin debate takes center stage\n\nBREAK: NONE\nEVIDENCE: none",
+          "thesis": "Quality industrial contractor at 16x forward earnings with 28% revenue growth, strong FCF, and direct exposure to data center power/grid infrastructure build-out.",
+          "next_action": "RESEARCH \u2014 Quality industrial contractor at 16x forward earnings with 28% revenue growth, strong FCF, and direct exposure to data center power/grid infrastructure build-out. Worth a deep dive before any decision.",
+          "buy_trigger_drawdown_pct": -30.7,
+          "buy_target": 659.71,
+          "price": 659.36,
+          "current_price": 659.36,
+          "pct_change_1d": -0.51,
+          "market_cap": 28868102144,
+          "cap_tier": "large",
+          "drawdown_from_high": -30.7,
+          "revenue_growth": 28.8,
+          "op_margin": 10.5,
+          "pe": 19.062157,
+          "forward_pe": 16.118694,
+          "short_percent_float": 1.73,
+          "short_ratio": 1.8,
+          "high_proximity_warning": false,
+          "data_ok": true,
+          "data_flags": []
         }
       ],
       "platform_network": [
@@ -7564,7 +7948,7 @@
           "drawdown_from_high": -46.8,
           "revenue_growth": 61.2,
           "op_margin": 23.0,
-          "pe": 37.770096,
+          "pe": 39.160854,
           "forward_pe": 20.37261,
           "short_percent_float": 2.88,
           "short_ratio": 1.6,
@@ -7753,7 +8137,7 @@
           "rated_next_earnings": 1794862800,
           "price": 142.72,
           "pct_change_1d": 0.67,
-          "market_cap": 5199655424,
+          "market_cap": 5199524864,
           "cap_tier": "mid",
           "drawdown_from_high": -56.5,
           "revenue_growth": 8.9,
@@ -8116,7 +8500,7 @@
           "revenue_growth": 3.1,
           "op_margin": 16.6,
           "pe": 26.063131,
-          "forward_pe": 11.497775,
+          "forward_pe": 11.492461,
           "short_percent_float": 5.49,
           "short_ratio": 3.8,
           "high_proximity_warning": true,
@@ -8785,8 +9169,8 @@
       ]
     },
     "counts": {
-      "total": 59,
-      "research_worthy": 17,
+      "total": 62,
+      "research_worthy": 20,
       "watchlist": 40,
       "pass": 2,
       "red_flag": 0
@@ -14079,16 +14463,16 @@
     }
   },
   "radar": {
-    "generated_at": "2026-11-14T16:42:29Z",
-    "universe_as_of": "2026-11-07T17:45:23Z",
+    "generated_at": "2026-11-14T18:07:58Z",
+    "universe_as_of": "2026-11-14T18:00:53Z",
     "cards": [
       {
         "ticker": "MSFT",
         "name": "Microsoft Corporation",
         "sector": "Technology",
-        "price": 530.61,
-        "drawdown_pct": -5.1,
-        "score": 70.8,
+        "price": 523.88,
+        "drawdown_pct": -6.3,
+        "score": 71.1,
         "new": false,
         "tracked": true,
         "rating": "WATCHLIST",
@@ -14124,9 +14508,9 @@
         "ticker": "NVDA",
         "name": "NVIDIA Corporation",
         "sector": "Technology",
-        "price": 186.64,
-        "drawdown_pct": -23.3,
-        "score": 84.2,
+        "price": 162.85,
+        "drawdown_pct": -33.1,
+        "score": 86.1,
         "new": false,
         "tracked": true,
         "rating": "WATCHLIST",
@@ -14143,7 +14527,11 @@
           },
           {
             "kind": "fundamentals",
-            "text": "Strong fundamentals: scores 84/100"
+            "text": "Strong fundamentals: scores 86/100"
+          },
+          {
+            "kind": "on_sale",
+            "text": "Quality business 33% below its high"
           }
         ],
         "watch_outs": [
@@ -14154,20 +14542,20 @@
         "ticker": "TPL",
         "name": "Texas Pacific Land Corporation",
         "sector": "Energy",
-        "price": 272.36,
-        "drawdown_pct": -50.2,
-        "score": 79.9,
+        "price": 291.91,
+        "drawdown_pct": -46.7,
+        "score": 79.1,
         "new": false,
         "tracked": true,
         "rating": "WATCHLIST",
         "reasons": [
           {
             "kind": "fundamentals",
-            "text": "Strong fundamentals: scores 80/100"
+            "text": "Strong fundamentals: scores 79/100"
           },
           {
             "kind": "on_sale",
-            "text": "Quality business 50% below its high"
+            "text": "Quality business 47% below its high"
           },
           {
             "kind": "insider",
@@ -14175,17 +14563,16 @@
           }
         ],
         "watch_outs": [
-          "Possible peak earnings: 3.7x forward earnings can mean profits are expected to fall",
-          "Down 50% from its high, so find out why first"
+          "Possible peak earnings: 4.0x forward earnings can mean profits are expected to fall"
         ]
       },
       {
         "ticker": "CVX",
         "name": "Chevron Corporation",
         "sector": "Energy",
-        "price": 212.61,
-        "drawdown_pct": -10.1,
-        "score": 74.2,
+        "price": 219.89,
+        "drawdown_pct": -7.0,
+        "score": 73.2,
         "new": false,
         "tracked": false,
         "rating": "WATCHLIST",
@@ -14202,58 +14589,29 @@
           },
           {
             "kind": "fundamentals",
-            "text": "Strong fundamentals: scores 74/100"
+            "text": "Strong fundamentals: scores 73/100"
           }
         ],
         "watch_outs": []
       },
       {
-        "ticker": "VRT",
-        "name": "Vertiv Holdings Co",
-        "sector": "Industrials",
-        "price": 182.86,
-        "drawdown_pct": -51.9,
-        "score": 70.7,
-        "new": false,
-        "tracked": true,
-        "rating": "RESEARCH-WORTHY",
-        "reasons": [
-          {
-            "kind": "field_news",
-            "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNR2ViV21Rc0N0YTd6VmFaTkk0a0YwNDllNHhmZmE2a191RV9MV2NwX09Ib1UtYXVWcVFET3pvcTBtSWdaZmJheXg3dWZuMUoxX1JuZllqbUY1TjF6TVFBTXNBSEFJWDdsNllyNUhFUzNfQy1QZlhQbWtJWG0yeEZIS05OcWxqWE9NSUlfLUY5WEp4cUhLeVQxeVRkUHlDR2FuTW5kS2JjbWRVS2ZLVkRpdWVnN0ZvV1VqRlVXbmdBYy1hZEhZdEh2MXhWaFZHYjZCaVJYSTA4ZlhLczdwcjhITFdn0gHmAUFVX3lxTFB5X3hrc2M0QnFuU2NJNFNWcWF1RXd2TW40eS1scmZoRlNrNXFLazVodHI1aUJjQjZZZThJa0luclVQaVRacFRCcG1GV0hGWUdfVzhVWlFsVllReVlnMTVGcmVFbXFFVWJ5d0ZidWxSVWJJUXRvbndkc1gzQ2lYQVVuOTNwRXViTHJqMWllT3VhbndCSlBvaDViMlREalM4WUN6M2xSR2VWRHhTbEgxQllCeFI1VTQ5REVvSG5mdGUtanRyanRWbHFhY1VEa0lGLUU1SzlaMTFzSHBjY3ZONFBQdXN3MWJB?oc=5",
-            "text": "In Data Center Infrastructure news: Vertiv launches global ecosystem for AI liquid cooling"
-          },
-          {
-            "kind": "fundamentals",
-            "text": "Strong fundamentals: scores 71/100"
-          },
-          {
-            "kind": "on_sale",
-            "text": "Quality business 52% below its high"
-          }
-        ],
-        "watch_outs": [
-          "Down 52% from its high, so find out why first"
-        ]
-      },
-      {
         "ticker": "MU",
         "name": "Micron Technology, Inc.",
         "sector": "Technology",
-        "price": 690.0,
-        "drawdown_pct": -45.0,
-        "score": 95.0,
+        "price": 778.31,
+        "drawdown_pct": -38.0,
+        "score": 94.5,
         "new": false,
         "tracked": true,
         "rating": "WATCHLIST",
         "reasons": [
           {
             "kind": "fundamentals",
-            "text": "Strong fundamentals: scores 95/100"
+            "text": "Strong fundamentals: scores 94/100"
           },
           {
             "kind": "on_sale",
-            "text": "Quality business 45% below its high"
+            "text": "Quality business 38% below its high"
           }
         ],
         "watch_outs": [
@@ -14264,9 +14622,9 @@
         "ticker": "RDDT",
         "name": "Reddit, Inc.",
         "sector": "Communication Services",
-        "price": 95.1,
-        "drawdown_pct": -63.9,
-        "score": 86.3,
+        "price": 98.45,
+        "drawdown_pct": -62.6,
+        "score": 85.7,
         "new": false,
         "tracked": true,
         "rating": "WATCHLIST",
@@ -14277,27 +14635,27 @@
           },
           {
             "kind": "on_sale",
-            "text": "Quality business 64% below its high"
+            "text": "Quality business 63% below its high"
           }
         ],
         "watch_outs": [
-          "Down 64% from its high, so find out why first"
+          "Down 63% from its high, so find out why first"
         ]
       },
       {
         "ticker": "OXY",
         "name": "Occidental Petroleum Corporation",
         "sector": "Energy",
-        "price": 56.38,
-        "drawdown_pct": -16.4,
-        "score": 79.8,
+        "price": 58.75,
+        "drawdown_pct": -12.9,
+        "score": 75.5,
         "new": false,
         "tracked": false,
         "rating": "WATCHLIST",
         "reasons": [
           {
             "kind": "fundamentals",
-            "text": "Strong fundamentals: scores 80/100"
+            "text": "Strong fundamentals: scores 76/100"
           },
           {
             "kind": "insider",
@@ -14310,9 +14668,9 @@
         "ticker": "APP",
         "name": "AppLovin Corporation",
         "sector": "Communication Services",
-        "price": 391.22,
-        "drawdown_pct": -47.0,
-        "score": 75.2,
+        "price": 409.1,
+        "drawdown_pct": -44.6,
+        "score": 74.6,
         "new": false,
         "tracked": true,
         "rating": "WATCHLIST",
@@ -14323,7 +14681,7 @@
           },
           {
             "kind": "on_sale",
-            "text": "Quality business 47% below its high"
+            "text": "Quality business 45% below its high"
           }
         ],
         "watch_outs": []
@@ -14332,16 +14690,16 @@
         "ticker": "DECK",
         "name": "Deckers Outdoor Corporation",
         "sector": "Consumer Cyclical",
-        "price": 86.71,
-        "drawdown_pct": -29.1,
-        "score": 74.9,
+        "price": 86.82,
+        "drawdown_pct": -29.0,
+        "score": 74.4,
         "new": false,
-        "tracked": false,
-        "rating": null,
+        "tracked": true,
+        "rating": "RESEARCH-WORTHY",
         "reasons": [
           {
             "kind": "fundamentals",
-            "text": "Strong fundamentals: scores 75/100"
+            "text": "Strong fundamentals: scores 74/100"
           },
           {
             "kind": "on_sale",
@@ -14354,36 +14712,12 @@
         "ticker": "FIX",
         "name": "Comfort Systems USA, Inc.",
         "sector": "Industrials",
-        "price": 1017.5,
-        "drawdown_pct": -50.9,
-        "score": 74.4,
+        "price": 1112.5,
+        "drawdown_pct": -46.4,
+        "score": 73.2,
         "new": false,
-        "tracked": false,
-        "rating": null,
-        "reasons": [
-          {
-            "kind": "fundamentals",
-            "text": "Strong fundamentals: scores 74/100"
-          },
-          {
-            "kind": "on_sale",
-            "text": "Quality business 51% below its high"
-          }
-        ],
-        "watch_outs": [
-          "Down 51% from its high, so find out why first"
-        ]
-      },
-      {
-        "ticker": "EME",
-        "name": "EMCOR Group, Inc.",
-        "sector": "Industrials",
-        "price": 608.45,
-        "drawdown_pct": -36.1,
-        "score": 72.6,
-        "new": false,
-        "tracked": false,
-        "rating": null,
+        "tracked": true,
+        "rating": "RESEARCH-WORTHY",
         "reasons": [
           {
             "kind": "fundamentals",
@@ -14391,10 +14725,56 @@
           },
           {
             "kind": "on_sale",
-            "text": "Quality business 36% below its high"
+            "text": "Quality business 46% below its high"
           }
         ],
         "watch_outs": []
+      },
+      {
+        "ticker": "EME",
+        "name": "EMCOR Group, Inc.",
+        "sector": "Industrials",
+        "price": 659.36,
+        "drawdown_pct": -30.7,
+        "score": 71.5,
+        "new": false,
+        "tracked": true,
+        "rating": "RESEARCH-WORTHY",
+        "reasons": [
+          {
+            "kind": "fundamentals",
+            "text": "Strong fundamentals: scores 72/100"
+          },
+          {
+            "kind": "on_sale",
+            "text": "Quality business 31% below its high"
+          }
+        ],
+        "watch_outs": []
+      },
+      {
+        "ticker": "PODD",
+        "name": "Insulet Corporation",
+        "sector": "Healthcare",
+        "price": 152.48,
+        "drawdown_pct": -57.0,
+        "score": 70.7,
+        "new": false,
+        "tracked": true,
+        "rating": "RESEARCH-WORTHY",
+        "reasons": [
+          {
+            "kind": "fundamentals",
+            "text": "Strong fundamentals: scores 71/100"
+          },
+          {
+            "kind": "on_sale",
+            "text": "Quality business 57% below its high"
+          }
+        ],
+        "watch_outs": [
+          "Down 57% from its high, so find out why first"
+        ]
       }
     ],
     "on_sale": [
@@ -14402,9 +14782,9 @@
         "ticker": "SNDK",
         "name": "Sandisk Corporation",
         "sector": "Technology",
-        "price": 835.06,
-        "drawdown_pct": -64.5,
-        "score": 88.5,
+        "price": 885.01,
+        "drawdown_pct": -62.4,
+        "score": 88.3,
         "new": false,
         "tracked": false,
         "rating": "WATCHLIST",
@@ -14415,32 +14795,32 @@
           },
           {
             "kind": "on_sale",
-            "text": "Quality business 64% below its high"
+            "text": "Quality business 62% below its high"
           }
         ],
         "watch_outs": [
           "Possible peak earnings: revenue up 378% in a quarter may not last",
-          "Down 64% from its high, so find out why first"
+          "Down 62% from its high, so find out why first"
         ]
       },
       {
         "ticker": "WDC",
         "name": "Western Digital Corporation",
         "sector": "Technology",
-        "price": 263.78,
-        "drawdown_pct": -67.0,
-        "score": 85.9,
+        "price": 295.65,
+        "drawdown_pct": -63.0,
+        "score": 84.6,
         "new": true,
         "tracked": false,
         "rating": null,
         "reasons": [
           {
             "kind": "fundamentals",
-            "text": "Strong fundamentals: scores 86/100"
+            "text": "Strong fundamentals: scores 85/100"
           },
           {
             "kind": "on_sale",
-            "text": "Quality business 67% below its high"
+            "text": "Quality business 63% below its high"
           },
           {
             "kind": "new",
@@ -14448,102 +14828,32 @@
           }
         ],
         "watch_outs": [
-          "Possible peak earnings: 6.5x forward earnings can mean profits are expected to fall",
-          "Down 67% from its high, so find out why first"
+          "Possible peak earnings: 7.3x forward earnings can mean profits are expected to fall",
+          "Down 63% from its high, so find out why first"
         ]
       },
       {
         "ticker": "TER",
         "name": "Teradyne, Inc.",
         "sector": "Technology",
-        "price": 218.215,
-        "drawdown_pct": -55.3,
-        "score": 83.2,
+        "price": 249.55,
+        "drawdown_pct": -48.9,
+        "score": 81.2,
         "new": true,
         "tracked": false,
         "rating": null,
         "reasons": [
           {
             "kind": "fundamentals",
-            "text": "Strong fundamentals: scores 83/100"
+            "text": "Strong fundamentals: scores 81/100"
           },
           {
             "kind": "on_sale",
-            "text": "Quality business 55% below its high"
+            "text": "Quality business 49% below its high"
           },
           {
             "kind": "new",
             "text": "New to the radar"
-          }
-        ],
-        "watch_outs": [
-          "Down 55% from its high, so find out why first"
-        ]
-      },
-      {
-        "ticker": "DECK",
-        "name": "Deckers Outdoor Corporation",
-        "sector": "Consumer Cyclical",
-        "price": 86.71,
-        "drawdown_pct": -29.1,
-        "score": 74.9,
-        "new": false,
-        "tracked": false,
-        "rating": null,
-        "reasons": [
-          {
-            "kind": "fundamentals",
-            "text": "Strong fundamentals: scores 75/100"
-          },
-          {
-            "kind": "on_sale",
-            "text": "Quality business 29% below its high"
-          }
-        ],
-        "watch_outs": []
-      },
-      {
-        "ticker": "FIX",
-        "name": "Comfort Systems USA, Inc.",
-        "sector": "Industrials",
-        "price": 1017.5,
-        "drawdown_pct": -50.9,
-        "score": 74.4,
-        "new": false,
-        "tracked": false,
-        "rating": null,
-        "reasons": [
-          {
-            "kind": "fundamentals",
-            "text": "Strong fundamentals: scores 74/100"
-          },
-          {
-            "kind": "on_sale",
-            "text": "Quality business 51% below its high"
-          }
-        ],
-        "watch_outs": [
-          "Down 51% from its high, so find out why first"
-        ]
-      },
-      {
-        "ticker": "EME",
-        "name": "EMCOR Group, Inc.",
-        "sector": "Industrials",
-        "price": 608.45,
-        "drawdown_pct": -36.1,
-        "score": 72.6,
-        "new": false,
-        "tracked": false,
-        "rating": null,
-        "reasons": [
-          {
-            "kind": "fundamentals",
-            "text": "Strong fundamentals: scores 73/100"
-          },
-          {
-            "kind": "on_sale",
-            "text": "Quality business 36% below its high"
           }
         ],
         "watch_outs": []
@@ -14552,16 +14862,16 @@
         "ticker": "HWM",
         "name": "Howmet Aerospace Inc.",
         "sector": "Industrials",
-        "price": 205.81,
-        "drawdown_pct": -33.6,
-        "score": 65.8,
+        "price": 220.82,
+        "drawdown_pct": -28.8,
+        "score": 65.0,
         "new": true,
         "tracked": false,
         "rating": null,
         "reasons": [
           {
             "kind": "on_sale",
-            "text": "Quality business 34% below its high"
+            "text": "Quality business 29% below its high"
           },
           {
             "kind": "new",
@@ -14571,19 +14881,41 @@
         "watch_outs": []
       },
       {
-        "ticker": "TMUS",
-        "name": "T-Mobile US, Inc.",
-        "sector": "Communication Services",
-        "price": 162.01,
-        "drawdown_pct": -27.9,
-        "score": 63.4,
+        "ticker": "CMI",
+        "name": "Cummins Inc.",
+        "sector": "Industrials",
+        "price": 452.18,
+        "drawdown_pct": -38.7,
+        "score": 63.5,
         "new": true,
         "tracked": false,
         "rating": null,
         "reasons": [
           {
             "kind": "on_sale",
-            "text": "Quality business 28% below its high"
+            "text": "Quality business 39% below its high"
+          },
+          {
+            "kind": "new",
+            "text": "New to the radar"
+          }
+        ],
+        "watch_outs": []
+      },
+      {
+        "ticker": "LULU",
+        "name": "lululemon athletica inc.",
+        "sector": "Consumer Cyclical",
+        "price": 105.65,
+        "drawdown_pct": -53.2,
+        "score": 62.9,
+        "new": true,
+        "tracked": false,
+        "rating": null,
+        "reasons": [
+          {
+            "kind": "on_sale",
+            "text": "Quality business 53% below its high"
           },
           {
             "kind": "new",
@@ -14591,16 +14923,60 @@
           }
         ],
         "watch_outs": [
-          "High debt: debt/equity 2.1x"
+          "Down 53% from its high, so find out why first"
         ]
+      },
+      {
+        "ticker": "ODFL",
+        "name": "Old Dominion Freight Line, Inc.",
+        "sector": "Industrials",
+        "price": 174.54,
+        "drawdown_pct": -30.7,
+        "score": 62.9,
+        "new": true,
+        "tracked": false,
+        "rating": null,
+        "reasons": [
+          {
+            "kind": "on_sale",
+            "text": "Quality business 31% below its high"
+          },
+          {
+            "kind": "new",
+            "text": "New to the radar"
+          }
+        ],
+        "watch_outs": []
+      },
+      {
+        "ticker": "EXE",
+        "name": "Expand Energy Corporation",
+        "sector": "Energy",
+        "price": 88.53,
+        "drawdown_pct": -30.1,
+        "score": 62.5,
+        "new": true,
+        "tracked": false,
+        "rating": null,
+        "reasons": [
+          {
+            "kind": "on_sale",
+            "text": "Quality business 30% below its high"
+          },
+          {
+            "kind": "new",
+            "text": "New to the radar"
+          }
+        ],
+        "watch_outs": []
       },
       {
         "ticker": "FCX",
         "name": "Freeport-McMoRan Inc.",
         "sector": "Basic Materials",
-        "price": 59.42,
-        "drawdown_pct": -25.9,
-        "score": 63.3,
+        "price": 59.24,
+        "drawdown_pct": -26.2,
+        "score": 61.7,
         "new": true,
         "tracked": false,
         "rating": null,
@@ -14617,19 +14993,19 @@
         "watch_outs": []
       },
       {
-        "ticker": "EXE",
-        "name": "Expand Energy Corporation",
-        "sector": "Energy",
-        "price": 84.6,
-        "drawdown_pct": -33.2,
-        "score": 61.6,
+        "ticker": "HSY",
+        "name": "The Hershey Company",
+        "sector": "Consumer Defensive",
+        "price": 174.27,
+        "drawdown_pct": -27.2,
+        "score": 60.0,
         "new": true,
         "tracked": false,
         "rating": null,
         "reasons": [
           {
             "kind": "on_sale",
-            "text": "Quality business 33% below its high"
+            "text": "Quality business 27% below its high"
           },
           {
             "kind": "new",
@@ -17816,7 +18192,7 @@
         "drawdown_pct": -29.9,
         "price": 347.01,
         "pe": 44.31801,
-        "forward_pe": 17.874178,
+        "forward_pe": 17.827318,
         "verdict": "RESEARCH-WORTHY",
         "next_action": "RESEARCH \u2014 AI infrastructure leader with 85% YoY revenue growth, 75% gross margins, and 17.9x forward P/E after 30% drawdown from highs Worth a deep dive before any decision."
       },
