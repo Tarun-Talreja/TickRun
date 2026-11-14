@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-13T17:59:45Z",
-  "narrative": "Nvidia CEO Jensen Huang resigned, triggering a 25% stock plunge and expectations that its AI chip market share will shrink, while AMD surged 13% amid intensifying U.S.-China tensions over chip curbs and alleged smuggling networks. Regulators and legislators are accelerating data center interconnection and grid cost reforms as major corporations sign large off-grid power deals and startups raise capital for prefabricated facilities that bypass grid queues. Oklo and Centrus Energy signed multi-year uranium supply contracts for Ohio reactor deliveries starting in 2029, while Ghana committed over $200 million toward nuclear readiness and Paladin Energy launched a $359 million raise. Costco declared a $30 per share special dividend and a $4 billion buyback with double-digit October sales growth, while Eli Lilly secured China's first approval for an oral GLP-1 weight-loss pill, beating Novo Nordisk to market.",
+  "generated_at": "2026-11-14T16:45:47Z",
+  "narrative": "Power Grid / Electrification: US regulators and lawmakers moved to reshape how data centers connect to and pay for the grid, with a watchdog rebuking the largest grid operator, a federal regulator adopting an interventionist stance, and the Senate advancing a bill to make data centers cover both old and new grid costs. Meanwhile, Microsoft and Chevron signed a 20-year Texas power deal, and startups raised capital to build facilities designed to operate independently of the grid queue. Edge AI / Specialty Silicon: Nvidia underwent a leadership shakeup with CEO Jensen Huang's departure, which analysts and reports suggest will accelerate stricter U.S. export controls on AI chips to China and has intensified scrutiny of semiconductor smuggling networks involving Singapore. Cybersecurity (AI Era): The average retail ransomware recovery cost rose to $1.76 million while encryption rates increased despite faster recovery times, and new regulatory guidance suggests ransomware attacks without data theft may still trigger mandatory breach reporting. Major logistics firm Maersk disclosed a legacy-system breach with 100GB of data claimed stolen.",
   "buy_ready": [
     {
       "ticker": "META",
       "name": "Meta Platforms, Inc.",
-      "price": 637.95,
+      "price": 641.69,
       "buy_target": 623.86,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -14,16 +14,25 @@
     {
       "ticker": "AVGO",
       "name": "Broadcom Inc.",
-      "price": 344.93,
+      "price": 347.01,
       "buy_target": 371.25,
       "at_or_below_target": true,
       "confidence": "LOW",
       "theme": "edge_ai_silicon"
     },
     {
+      "ticker": "ASML",
+      "name": "ASML Holding N.V.",
+      "price": 1495.16,
+      "buy_target": 1495.97,
+      "at_or_below_target": true,
+      "confidence": "HIGH",
+      "theme": "edge_ai_silicon"
+    },
+    {
       "ticker": "TSM",
       "name": "Taiwan Semiconductor Manufacturing Company",
-      "price": 396.06,
+      "price": 398.73,
       "buy_target": 388.51,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -32,7 +41,7 @@
     {
       "ticker": "NOW",
       "name": "ServiceNow, Inc.",
-      "price": 101.55,
+      "price": 102.25,
       "buy_target": 102.72,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -41,7 +50,7 @@
     {
       "ticker": "COHR",
       "name": "Coherent Corp.",
-      "price": 212.24,
+      "price": 218.15,
       "buy_target": 231.88,
       "at_or_below_target": true,
       "confidence": "LOW",
@@ -50,7 +59,7 @@
     {
       "ticker": "CEG",
       "name": "Constellation Energy Corporation",
-      "price": 276.97,
+      "price": 280.2,
       "buy_target": 274.54,
       "at_or_below_target": true,
       "confidence": "LOW",
@@ -59,17 +68,17 @@
     {
       "ticker": "VST",
       "name": "Vistra Corp.",
-      "price": 131.21,
-      "buy_target": 128.72,
+      "price": 133.01,
+      "buy_target": 133.07,
       "at_or_below_target": true,
-      "confidence": "MEDIUM",
+      "confidence": "LOW",
       "theme": "nuclear_smr"
     },
     {
       "ticker": "VRT",
       "name": "Vertiv Holdings Co",
-      "price": 200.305,
-      "buy_target": 200.61,
+      "price": 202.07,
+      "buy_target": 202.13,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
       "theme": "power_grid"
@@ -77,7 +86,7 @@
     {
       "ticker": "GEV",
       "name": "GE Vernova Inc.",
-      "price": 793.57,
+      "price": 803.13,
       "buy_target": 818.02,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -86,7 +95,7 @@
     {
       "ticker": "ETN",
       "name": "Eaton Corporation plc",
-      "price": 351.06,
+      "price": 352.97,
       "buy_target": 358.98,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -95,7 +104,7 @@
     {
       "ticker": "STZ",
       "name": "STZ",
-      "price": 145.63,
+      "price": 145.61,
       "buy_target": 141.96,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -104,8 +113,8 @@
     {
       "ticker": "PODD",
       "name": "Insulet Corporation",
-      "price": 151.01,
-      "buy_target": 149.76,
+      "price": 152.48,
+      "buy_target": 152.6,
       "at_or_below_target": true,
       "confidence": "LOW",
       "theme": "healthcare_innovation"
@@ -113,7 +122,7 @@
     {
       "ticker": "CLS",
       "name": "Celestica Inc.",
-      "price": 236.375,
+      "price": 240.34,
       "buy_target": 254.08,
       "at_or_below_target": true,
       "confidence": "LOW",
@@ -122,25 +131,16 @@
     {
       "ticker": "CRDO",
       "name": "Credo Technology Group Holding Ltd",
-      "price": 129.91,
+      "price": 131.51,
       "buy_target": 139.83,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
       "theme": "edge_ai_silicon"
     },
     {
-      "ticker": "ASML",
-      "name": "ASML Holding N.V.",
-      "price": 1479.53,
-      "buy_target": 1423.97,
-      "at_or_below_target": false,
-      "confidence": "HIGH",
-      "theme": "edge_ai_silicon"
-    },
-    {
       "ticker": "AMD",
       "name": "Advanced Micro Devices, Inc.",
-      "price": 523.71,
+      "price": 534.06,
       "buy_target": 449.11,
       "at_or_below_target": false,
       "confidence": "LOW",
@@ -149,46 +149,42 @@
     {
       "ticker": "TLN",
       "name": "Talen Energy Corporation",
-      "price": 373.87,
+      "price": 376.01,
       "buy_target": 337.38,
       "at_or_below_target": false,
       "confidence": "MEDIUM",
       "theme": "nuclear_smr"
-    },
-    {
-      "ticker": "APP",
-      "name": "AppLovin Corporation",
-      "price": 409.74,
-      "buy_target": 391.15,
-      "at_or_below_target": false,
-      "confidence": "LOW",
-      "theme": "uncategorized"
     }
   ],
   "movers": [
     {
+      "ticker": "CBRS",
+      "pct": 11.22,
+      "reason": "Strong Q3 earnings and raised revenue guidance drove the stock higher despite broad market declines."
+    },
+    {
       "ticker": "NBIS",
-      "pct": -16.84,
+      "pct": -9.92,
       "reason": "No clear catalyst in current news."
     },
     {
       "ticker": "AMD",
-      "pct": 5.86,
+      "pct": -8.75,
       "reason": "No clear catalyst in current news."
     },
     {
-      "ticker": "RDDT",
-      "pct": -5.78,
+      "ticker": "COHR",
+      "pct": -6.0,
       "reason": "No clear catalyst in current news."
     },
     {
-      "ticker": "AVGO",
-      "pct": 5.54,
+      "ticker": "CRDO",
+      "pct": -5.94,
       "reason": "No clear catalyst in current news."
     },
     {
-      "ticker": "OKLO",
-      "pct": -5.45,
+      "ticker": "CLS",
+      "pct": -5.39,
       "reason": "No clear catalyst in current news."
     }
   ],
@@ -196,35 +192,40 @@
     {
       "ticker": "POWL",
       "date": "2026-11-16",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "ticker": "NVDA",
       "date": "2026-11-17",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "ticker": "CRDO",
       "date": "2026-12-01",
-      "days_until": 18
+      "days_until": 17
     },
     {
       "ticker": "MRVL",
       "date": "2026-12-01",
-      "days_until": 18
+      "days_until": 17
     },
     {
       "ticker": "AVGO",
       "date": "2026-12-09",
-      "days_until": 26
+      "days_until": 25
     },
     {
       "ticker": "COST",
       "date": "2026-12-10",
-      "days_until": 27
+      "days_until": 26
     }
   ],
   "sec_stakes": [
+    {
+      "ticker": "PODD",
+      "form": "SCHEDULE 13G",
+      "filed": "2026-11-13"
+    },
     {
       "ticker": "AMZN",
       "form": "SCHEDULE 13G",
@@ -249,6 +250,26 @@
       "ticker": "DHR",
       "form": "SCHEDULE 13G",
       "filed": "2026-11-05"
+    },
+    {
+      "ticker": "PAYX",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-11-13"
+    },
+    {
+      "ticker": "MKTX",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-11-13"
+    },
+    {
+      "ticker": "LPLA",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-11-13"
+    },
+    {
+      "ticker": "INVH",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-11-13"
     },
     {
       "ticker": "MKTX",
