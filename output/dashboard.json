@@ -1,14 +1,14 @@
 {
-  "last_built": "2026-11-14T18:07:59Z",
-  "quotes_updated": "2026-11-14T18:02:27Z",
+  "last_built": "2026-11-14T18:19:51Z",
+  "quotes_updated": "2026-11-14T18:19:49Z",
   "health": {
     "stages": [
       {
         "name": "Quotes",
-        "updated_at": "2026-11-14T18:02:27Z",
+        "updated_at": "2026-11-14T18:19:49Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 0.1,
+        "age_hours": 0.0,
         "affects": "Prices and buy targets may be out of date"
       },
       {
@@ -16,7 +16,7 @@
         "updated_at": "2026-11-14T11:02:58Z",
         "detail": "8/8 tickers",
         "status": "ok",
-        "age_hours": 7.1,
+        "age_hours": 7.3,
         "affects": "Ratings aren't being updated"
       },
       {
@@ -24,7 +24,7 @@
         "updated_at": "2026-11-14T15:54:44Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 2.2,
+        "age_hours": 2.4,
         "affects": "Upcoming earnings dates may be missing"
       },
       {
@@ -32,23 +32,23 @@
         "updated_at": "2026-11-14T11:03:04Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 7.1,
+        "age_hours": 7.3,
         "affects": "New SEC filings won't show"
       },
       {
         "name": "Prices",
-        "updated_at": "2026-11-14T18:02:27Z",
+        "updated_at": "2026-11-14T18:19:49Z",
         "detail": "59/59 have data",
         "status": "ok",
-        "age_hours": 0.1,
+        "age_hours": 0.0,
         "affects": "Prices and buy targets may be missing"
       },
       {
         "name": "Company figures",
-        "updated_at": "2026-11-14T18:02:27Z",
+        "updated_at": "2026-11-14T18:19:49Z",
         "detail": "59/59 have data",
         "status": "ok",
-        "age_hours": 0.1,
+        "age_hours": 0.0,
         "affects": "Ratings can't check the numbers"
       },
       {
@@ -56,7 +56,7 @@
         "updated_at": "2026-11-14T11:03:09Z",
         "detail": "56/56 have data",
         "status": "ok",
-        "age_hours": 7.1,
+        "age_hours": 7.3,
         "affects": "Ratings and mover reasons can miss recent news"
       },
       {
@@ -64,7 +64,7 @@
         "updated_at": "2026-11-09T01:41:35Z",
         "detail": "48/56 have data",
         "status": "ok",
-        "age_hours": 136.4,
+        "age_hours": 136.6,
         "affects": "Insider buying won't show on stocks or the radar"
       },
       {
@@ -72,7 +72,7 @@
         "updated_at": "2026-08-15T14:09:52Z",
         "detail": "28/31 have data",
         "status": "ok",
-        "age_hours": 2188.0,
+        "age_hours": 2188.2,
         "affects": "Hedge fund holdings may be out of date"
       },
       {
@@ -80,7 +80,7 @@
         "updated_at": "2026-11-14T16:42:06Z",
         "detail": "16/16 have data",
         "status": "ok",
-        "age_hours": 1.4,
+        "age_hours": 1.6,
         "affects": "The field briefing may be out of date"
       },
       {
@@ -88,7 +88,7 @@
         "updated_at": "2026-11-14T02:23:33Z",
         "detail": "6/6 have data",
         "status": "ok",
-        "age_hours": 15.7,
+        "age_hours": 15.9,
         "affects": "Big moves may have no explanation"
       },
       {
@@ -96,7 +96,7 @@
         "updated_at": "2026-11-14T18:07:58Z",
         "detail": "12 found",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.2,
         "affects": "The radar may be out of date"
       },
       {
@@ -104,7 +104,7 @@
         "updated_at": "2026-11-14T18:00:53Z",
         "detail": "429 found",
         "status": "ok",
-        "age_hours": 0.1,
+        "age_hours": 0.3,
         "affects": "New stock ideas may be out of date"
       },
       {
@@ -112,15 +112,15 @@
         "updated_at": "2026-11-14T16:45:47Z",
         "detail": "1 found",
         "status": "ok",
-        "age_hours": 1.4,
+        "age_hours": 1.6,
         "affects": "The AI summary may be out of date"
       },
       {
         "name": "Self-test",
-        "updated_at": "2026-11-13T19:53:52Z",
+        "updated_at": "2026-11-14T18:19:51Z",
         "detail": "6 sources passed",
         "status": "ok",
-        "age_hours": 22.2,
+        "age_hours": 0.0,
         "affects": "One of the data sources failed its daily test"
       },
       {
