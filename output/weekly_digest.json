@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-14T16:45:47Z",
-  "narrative": "Power Grid / Electrification: US regulators and lawmakers moved to reshape how data centers connect to and pay for the grid, with a watchdog rebuking the largest grid operator, a federal regulator adopting an interventionist stance, and the Senate advancing a bill to make data centers cover both old and new grid costs. Meanwhile, Microsoft and Chevron signed a 20-year Texas power deal, and startups raised capital to build facilities designed to operate independently of the grid queue. Edge AI / Specialty Silicon: Nvidia underwent a leadership shakeup with CEO Jensen Huang's departure, which analysts and reports suggest will accelerate stricter U.S. export controls on AI chips to China and has intensified scrutiny of semiconductor smuggling networks involving Singapore. Cybersecurity (AI Era): The average retail ransomware recovery cost rose to $1.76 million while encryption rates increased despite faster recovery times, and new regulatory guidance suggests ransomware attacks without data theft may still trigger mandatory breach reporting. Major logistics firm Maersk disclosed a legacy-system breach with 100GB of data claimed stolen.",
+  "generated_at": "2026-11-15T17:23:58Z",
+  "narrative": "Semiconductor and AI hardware stocks diverged sharply, with CBRS surging 11.2% while NBIS, AMD, COHR, CRDO, and CLS each fell 6\u201310% amid sector-defining news that included Nvidia\u2019s CEO resignation, Congressional moves to tighten chip export controls, and Microsoft securing a 20-year power deal with Chevron for a Texas data center. Nvidia reports earnings in three days, and POWL reports in two, while CRDO and MRVL are slated for early December. Multiple Schedule 13G/A filings signaled notable ownership changes in CBRS, COHR, MRVL, and other names. Across fields, regulators adopted a more interventionist stance on data-center grid connections, ransomware costs and tactics escalated, and the first U.S. pure-play humanoid robotics maker went public.",
   "buy_ready": [
     {
       "ticker": "META",
@@ -39,13 +39,22 @@
       "theme": "edge_ai_silicon"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "price": 102.25,
-      "buy_target": 102.72,
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "price": 534.06,
+      "buy_target": 526.82,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
-      "theme": "cybersecurity"
+      "theme": "edge_ai_silicon"
+    },
+    {
+      "ticker": "RDDT",
+      "name": "Reddit, Inc.",
+      "price": 98.45,
+      "buy_target": 98.55,
+      "at_or_below_target": true,
+      "confidence": "LOW",
+      "theme": "platform_network"
     },
     {
       "ticker": "COHR",
@@ -60,7 +69,7 @@
       "ticker": "CEG",
       "name": "Constellation Energy Corporation",
       "price": 280.2,
-      "buy_target": 274.54,
+      "buy_target": 280.25,
       "at_or_below_target": true,
       "confidence": "LOW",
       "theme": "nuclear_smr"
@@ -102,10 +111,37 @@
       "theme": "power_grid"
     },
     {
+      "ticker": "TLN",
+      "name": "Talen Energy Corporation",
+      "price": 376.01,
+      "buy_target": 376.07,
+      "at_or_below_target": true,
+      "confidence": "MEDIUM",
+      "theme": "nuclear_smr"
+    },
+    {
+      "ticker": "NVT",
+      "name": "nVent Electric plc",
+      "price": 114.69,
+      "buy_target": 114.66,
+      "at_or_below_target": true,
+      "confidence": "MEDIUM",
+      "theme": "power_grid"
+    },
+    {
+      "ticker": "POWL",
+      "name": "Powell Industries, Inc.",
+      "price": 142.72,
+      "buy_target": 142.68,
+      "at_or_below_target": true,
+      "confidence": "LOW",
+      "theme": "power_grid"
+    },
+    {
       "ticker": "STZ",
       "name": "STZ",
       "price": 145.61,
-      "buy_target": 141.96,
+      "buy_target": 145.67,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
       "theme": "defensive_income"
@@ -138,22 +174,31 @@
       "theme": "edge_ai_silicon"
     },
     {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "price": 534.06,
-      "buy_target": 449.11,
-      "at_or_below_target": false,
-      "confidence": "LOW",
-      "theme": "edge_ai_silicon"
+      "ticker": "DECK",
+      "name": "Deckers Outdoor Corporation",
+      "price": 86.82,
+      "buy_target": 86.83,
+      "at_or_below_target": true,
+      "confidence": "MEDIUM",
+      "theme": "uncategorized"
     },
     {
-      "ticker": "TLN",
-      "name": "Talen Energy Corporation",
-      "price": 376.01,
-      "buy_target": 337.38,
-      "at_or_below_target": false,
+      "ticker": "FIX",
+      "name": "Comfort Systems USA, Inc.",
+      "price": 1112.5,
+      "buy_target": 1111.66,
+      "at_or_below_target": true,
       "confidence": "MEDIUM",
-      "theme": "nuclear_smr"
+      "theme": "uncategorized"
+    },
+    {
+      "ticker": "EME",
+      "name": "EMCOR Group, Inc.",
+      "price": 659.36,
+      "buy_target": 659.71,
+      "at_or_below_target": true,
+      "confidence": "LOW",
+      "theme": "uncategorized"
     }
   ],
   "movers": [
@@ -223,6 +268,11 @@
   "sec_stakes": [
     {
       "ticker": "PODD",
+      "form": "SCHEDULE 13G",
+      "filed": "2026-11-13"
+    },
+    {
+      "ticker": "DECK",
       "form": "SCHEDULE 13G",
       "filed": "2026-11-13"
     },
