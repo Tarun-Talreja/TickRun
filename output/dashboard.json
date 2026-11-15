@@ -1,14 +1,14 @@
 {
-  "last_built": "2026-11-15T11:40:02Z",
-  "quotes_updated": "2026-11-15T11:27:28Z",
+  "last_built": "2026-11-15T16:29:14Z",
+  "quotes_updated": "2026-11-15T16:29:09Z",
   "health": {
     "stages": [
       {
         "name": "Quotes",
-        "updated_at": "2026-11-15T11:27:28Z",
+        "updated_at": "2026-11-15T16:29:09Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 0.2,
+        "age_hours": 0.0,
         "affects": "Prices and buy targets may be out of date"
       },
       {
@@ -16,15 +16,15 @@
         "updated_at": "2026-11-15T11:39:49Z",
         "detail": "8/8 tickers",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 4.8,
         "affects": "Ratings aren't being updated"
       },
       {
         "name": "Catalysts",
-        "updated_at": "2026-11-14T15:54:44Z",
+        "updated_at": "2026-11-15T16:29:13Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 19.8,
+        "age_hours": 0.0,
         "affects": "Upcoming earnings dates may be missing"
       },
       {
@@ -32,23 +32,23 @@
         "updated_at": "2026-11-15T11:39:56Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 4.8,
         "affects": "New SEC filings won't show"
       },
       {
         "name": "Prices",
-        "updated_at": "2026-11-15T11:27:28Z",
+        "updated_at": "2026-11-15T16:29:09Z",
         "detail": "59/59 have data",
         "status": "ok",
-        "age_hours": 0.2,
+        "age_hours": 0.0,
         "affects": "Prices and buy targets may be missing"
       },
       {
         "name": "Company figures",
-        "updated_at": "2026-11-15T11:27:28Z",
+        "updated_at": "2026-11-15T16:29:09Z",
         "detail": "59/59 have data",
         "status": "ok",
-        "age_hours": 0.2,
+        "age_hours": 0.0,
         "affects": "Ratings can't check the numbers"
       },
       {
@@ -56,7 +56,7 @@
         "updated_at": "2026-11-15T11:40:01Z",
         "detail": "59/59 have data",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 4.8,
         "affects": "Ratings and mover reasons can miss recent news"
       },
       {
@@ -64,7 +64,7 @@
         "updated_at": "2026-11-09T01:41:35Z",
         "detail": "48/56 have data",
         "status": "ok",
-        "age_hours": 154.0,
+        "age_hours": 158.8,
         "affects": "Insider buying won't show on stocks or the radar"
       },
       {
@@ -72,7 +72,7 @@
         "updated_at": "2026-08-15T14:09:52Z",
         "detail": "28/31 have data",
         "status": "ok",
-        "age_hours": 2205.5,
+        "age_hours": 2210.3,
         "affects": "Hedge fund holdings may be out of date"
       },
       {
@@ -80,7 +80,7 @@
         "updated_at": "2026-11-14T16:42:06Z",
         "detail": "16/16 have data",
         "status": "ok",
-        "age_hours": 19.0,
+        "age_hours": 23.8,
         "affects": "The field briefing may be out of date"
       },
       {
@@ -88,7 +88,7 @@
         "updated_at": "2026-11-14T02:23:33Z",
         "detail": "6/6 have data",
         "status": "ok",
-        "age_hours": 33.3,
+        "age_hours": 38.1,
         "affects": "Big moves may have no explanation"
       },
       {
@@ -96,7 +96,7 @@
         "updated_at": "2026-11-14T18:07:58Z",
         "detail": "12 found",
         "status": "ok",
-        "age_hours": 17.5,
+        "age_hours": 22.4,
         "affects": "The radar may be out of date"
       },
       {
@@ -104,7 +104,7 @@
         "updated_at": "2026-11-14T18:00:53Z",
         "detail": "429 found",
         "status": "ok",
-        "age_hours": 17.7,
+        "age_hours": 22.5,
         "affects": "New stock ideas may be out of date"
       },
       {
@@ -112,7 +112,7 @@
         "updated_at": "2026-11-14T16:45:47Z",
         "detail": "1 found",
         "status": "ok",
-        "age_hours": 18.9,
+        "age_hours": 23.7,
         "affects": "The AI summary may be out of date"
       },
       {
@@ -120,7 +120,7 @@
         "updated_at": "2026-11-14T18:19:51Z",
         "detail": "6 sources passed",
         "status": "ok",
-        "age_hours": 17.3,
+        "age_hours": 22.2,
         "affects": "One of the data sources failed its daily test"
       },
       {
@@ -525,7 +525,7 @@
         "revenue_growth": 26.1,
         "op_margin": 20.1,
         "pe": 21.893211,
-        "forward_pe": 18.031155,
+        "forward_pe": 18.086037,
         "short_percent_float": 3.41,
         "short_ratio": 3.4,
         "high_proximity_warning": true,
@@ -1449,7 +1449,7 @@
         "revenue_growth": 61.2,
         "op_margin": 23.0,
         "pe": 37.770096,
-        "forward_pe": 20.37261,
+        "forward_pe": 20.465128,
         "short_percent_float": 2.88,
         "short_ratio": 1.6,
         "high_proximity_warning": false,
@@ -2924,7 +2924,7 @@
         "revenue_growth": 3.5,
         "op_margin": 26.3,
         "pe": 11.499337,
-        "forward_pe": 10.62706,
+        "forward_pe": 10.592468,
         "short_percent_float": 9.28,
         "short_ratio": 3.1,
         "high_proximity_warning": false,
@@ -5066,7 +5066,7 @@
           "revenue_growth": 26.1,
           "op_margin": 20.1,
           "pe": 21.893211,
-          "forward_pe": 18.031155,
+          "forward_pe": 18.086037,
           "short_percent_float": 3.41,
           "short_ratio": 3.4,
           "high_proximity_warning": true,
@@ -5506,7 +5506,7 @@
           "revenue_growth": 61.2,
           "op_margin": 23.0,
           "pe": 37.770096,
-          "forward_pe": 20.37261,
+          "forward_pe": 20.465128,
           "short_percent_float": 2.88,
           "short_ratio": 1.6,
           "high_proximity_warning": false,
@@ -5993,7 +5993,7 @@
           "revenue_growth": 3.5,
           "op_margin": 26.3,
           "pe": 11.499337,
-          "forward_pe": 10.62706,
+          "forward_pe": 10.592468,
           "short_percent_float": 9.28,
           "short_ratio": 3.1,
           "high_proximity_warning": false,
@@ -6460,7 +6460,7 @@
           "revenue_growth": 26.1,
           "op_margin": 20.1,
           "pe": 21.893211,
-          "forward_pe": 18.031155,
+          "forward_pe": 18.086037,
           "short_percent_float": 3.41,
           "short_ratio": 3.4,
           "high_proximity_warning": true,
@@ -7148,7 +7148,7 @@
           "revenue_growth": 3.5,
           "op_margin": 26.3,
           "pe": 11.499337,
-          "forward_pe": 10.62706,
+          "forward_pe": 10.592468,
           "short_percent_float": 9.28,
           "short_ratio": 3.1,
           "high_proximity_warning": false,
@@ -7954,7 +7954,7 @@
           "revenue_growth": 61.2,
           "op_margin": 23.0,
           "pe": 37.770096,
-          "forward_pe": 20.37261,
+          "forward_pe": 20.465128,
           "short_percent_float": 2.88,
           "short_ratio": 1.6,
           "high_proximity_warning": false,
@@ -15678,27 +15678,14 @@
     ]
   },
   "catalysts": {
-    "generated_at": "2026-11-14T15:54:44Z",
+    "generated_at": "2026-11-15T16:29:13Z",
     "horizon_days": 30,
     "counts": {
-      "total": 17,
+      "total": 18,
       "imminent": 6,
-      "high_urgency": 0
+      "high_urgency": 1
     },
     "events": [
-      {
-        "ticker": "CEG",
-        "type": "ex_dividend",
-        "date": "2026-11-16",
-        "name": "Constellation Energy Corporation",
-        "verdict": "RESEARCH-WORTHY",
-        "theme": "nuclear_smr",
-        "days_until": 2,
-        "price": 280.2,
-        "drawdown_from_high": -26.4,
-        "urgency": "medium",
-        "plan": "Ex-dividend date \u2014 buy before it to receive the dividend. Tax-free in the Roth, which is where this name is routed."
-      },
       {
         "ticker": "POWL",
         "type": "earnings",
@@ -15708,13 +15695,26 @@
         "eps_high": 1.65,
         "revenue_estimate": 331394800,
         "name": "Powell Industries, Inc.",
-        "verdict": "WATCHLIST",
+        "verdict": "RESEARCH-WORTHY",
         "theme": "power_grid",
-        "days_until": 2,
+        "days_until": 1,
         "price": 142.72,
         "drawdown_from_high": -56.5,
+        "urgency": "high",
+        "plan": "Decide BEFORE the print. Consensus EPS ~1.57. If you would buy on a beat, size the order now; if a miss would break the thesis, write down what number does that. Reacting after the move is how you end up chasing."
+      },
+      {
+        "ticker": "CEG",
+        "type": "ex_dividend",
+        "date": "2026-11-16",
+        "name": "Constellation Energy Corporation",
+        "verdict": "RESEARCH-WORTHY",
+        "theme": "nuclear_smr",
+        "days_until": 1,
+        "price": 280.2,
+        "drawdown_from_high": -26.4,
         "urgency": "medium",
-        "plan": "Re-read the thesis against what is being reported. Consensus EPS ~1.57. This is the quarter that either confirms the reason it is on the list or removes it."
+        "plan": "Ex-dividend date \u2014 buy before it to receive the dividend. Tax-free in the Roth, which is where this name is routed."
       },
       {
         "ticker": "NVDA",
@@ -15727,7 +15727,7 @@
         "name": "NVIDIA Corporation",
         "verdict": "WATCHLIST",
         "theme": "mega_cap_ai",
-        "days_until": 3,
+        "days_until": 2,
         "price": 162.85,
         "drawdown_from_high": -33.1,
         "urgency": "medium",
@@ -15738,12 +15738,12 @@
         "type": "ex_dividend",
         "date": "2026-11-18",
         "name": "Powell Industries, Inc.",
-        "verdict": "WATCHLIST",
+        "verdict": "RESEARCH-WORTHY",
         "theme": "power_grid",
-        "days_until": 4,
+        "days_until": 3,
         "price": 142.72,
         "drawdown_from_high": -56.5,
-        "urgency": "low",
+        "urgency": "medium",
         "plan": "Ex-dividend date \u2014 buy before it to receive the dividend. Tax-free in the Roth, which is where this name is routed."
       },
       {
@@ -15753,7 +15753,7 @@
         "name": "Microsoft Corporation",
         "verdict": "WATCHLIST",
         "theme": "mega_cap_ai",
-        "days_until": 5,
+        "days_until": 4,
         "price": 523.88,
         "drawdown_from_high": -6.3,
         "urgency": "low",
@@ -15766,7 +15766,7 @@
         "name": "BWX Technologies, Inc.",
         "verdict": "WATCHLIST",
         "theme": "nuclear_smr",
-        "days_until": 5,
+        "days_until": 4,
         "price": 122.97,
         "drawdown_from_high": -49.1,
         "urgency": "low",
@@ -15779,9 +15779,22 @@
         "name": "Costco Wholesale Corporation",
         "verdict": "WATCHLIST",
         "theme": "uncategorized",
-        "days_until": 10,
+        "days_until": 9,
         "price": 1106.21,
         "drawdown_from_high": -0.3,
+        "urgency": "low",
+        "plan": "Ex-dividend date \u2014 buy before it to receive the dividend. Tax-free in the Roth, which is where this name is routed."
+      },
+      {
+        "ticker": "VRT",
+        "type": "ex_dividend",
+        "date": "2026-11-24",
+        "name": "Vertiv Holdings Co",
+        "verdict": "RESEARCH-WORTHY",
+        "theme": "power_grid",
+        "days_until": 9,
+        "price": 202.07,
+        "drawdown_from_high": -46.8,
         "urgency": "low",
         "plan": "Ex-dividend date \u2014 buy before it to receive the dividend. Tax-free in the Roth, which is where this name is routed."
       },
@@ -15796,7 +15809,7 @@
         "name": "Marvell Technology, Inc.",
         "verdict": "WATCHLIST",
         "theme": "edge_ai_silicon",
-        "days_until": 17,
+        "days_until": 16,
         "price": 156.76,
         "drawdown_from_high": -52.5,
         "urgency": "low",
@@ -15809,7 +15822,7 @@
         "name": "Tradeweb Markets Inc.",
         "verdict": "WATCHLIST",
         "theme": "financials",
-        "days_until": 17,
+        "days_until": 16,
         "price": 132.74,
         "drawdown_from_high": -0.6,
         "urgency": "low",
@@ -15826,7 +15839,7 @@
         "name": "Credo Technology Group Holding Ltd",
         "verdict": "RESEARCH-WORTHY",
         "theme": "edge_ai_silicon",
-        "days_until": 17,
+        "days_until": 16,
         "price": 131.51,
         "drawdown_from_high": -57.4,
         "urgency": "low",
@@ -15839,7 +15852,7 @@
         "name": "Texas Pacific Land Corporation",
         "verdict": "WATCHLIST",
         "theme": "uncategorized",
-        "days_until": 17,
+        "days_until": 16,
         "price": 291.91,
         "drawdown_from_high": -46.7,
         "urgency": "low",
@@ -15852,7 +15865,7 @@
         "name": "Alphabet Inc.",
         "verdict": "WATCHLIST",
         "theme": "mega_cap_ai",
-        "days_until": 23,
+        "days_until": 22,
         "price": 295.77,
         "drawdown_from_high": -27.6,
         "urgency": "low",
@@ -15865,7 +15878,7 @@
         "name": "UnitedHealth Group Incorporated",
         "verdict": "RESEARCH-WORTHY",
         "theme": "uncategorized",
-        "days_until": 23,
+        "days_until": 22,
         "price": 407.46,
         "drawdown_from_high": -11.7,
         "urgency": "low",
@@ -15882,11 +15895,28 @@
         "name": "Broadcom Inc.",
         "verdict": "RESEARCH-WORTHY",
         "theme": "edge_ai_silicon",
-        "days_until": 25,
+        "days_until": 24,
         "price": 347.01,
         "drawdown_from_high": -29.9,
         "urgency": "low",
         "plan": "Decide BEFORE the print. Consensus EPS ~3.84. If you would buy on a beat, size the order now; if a miss would break the thesis, write down what number does that. Reacting after the move is how you end up chasing."
+      },
+      {
+        "ticker": "COST",
+        "type": "earnings",
+        "date": "2026-12-10",
+        "eps_estimate": 4.89909,
+        "eps_low": 4.62,
+        "eps_high": 5.27,
+        "revenue_estimate": 74384044120,
+        "name": "Costco Wholesale Corporation",
+        "verdict": "WATCHLIST",
+        "theme": "uncategorized",
+        "days_until": 25,
+        "price": 1106.21,
+        "drawdown_from_high": -0.3,
+        "urgency": "low",
+        "plan": "Re-read the thesis against what is being reported. Consensus EPS ~4.90. This is the quarter that either confirms the reason it is on the list or removes it."
       },
       {
         "ticker": "TSM",
@@ -15895,28 +15925,11 @@
         "name": "Taiwan Semiconductor Manufacturing Company",
         "verdict": "RESEARCH-WORTHY",
         "theme": "edge_ai_silicon",
-        "days_until": 26,
+        "days_until": 25,
         "price": 398.73,
         "drawdown_from_high": -18.2,
         "urgency": "low",
         "plan": "Ex-dividend date \u2014 buy before it to receive the dividend. Tax-free in the Roth, which is where this name is routed."
-      },
-      {
-        "ticker": "COST",
-        "type": "earnings",
-        "date": "2026-12-10",
-        "eps_estimate": 4.91826,
-        "eps_low": 4.62,
-        "eps_high": 5.34,
-        "revenue_estimate": 74384044120,
-        "name": "Costco Wholesale Corporation",
-        "verdict": "WATCHLIST",
-        "theme": "uncategorized",
-        "days_until": 26,
-        "price": 1106.21,
-        "drawdown_from_high": -0.3,
-        "urgency": "low",
-        "plan": "Re-read the thesis against what is being reported. Consensus EPS ~4.92. This is the quarter that either confirms the reason it is on the list or removes it."
       },
       {
         "ticker": "ADP",
@@ -15925,7 +15938,7 @@
         "name": "ADP",
         "verdict": "WATCHLIST",
         "theme": "quality_compounder",
-        "days_until": 27,
+        "days_until": 26,
         "price": 309.93,
         "drawdown_from_high": -0.6,
         "urgency": "low",
@@ -15933,19 +15946,6 @@
       }
     ],
     "imminent": [
-      {
-        "ticker": "CEG",
-        "type": "ex_dividend",
-        "date": "2026-11-16",
-        "name": "Constellation Energy Corporation",
-        "verdict": "RESEARCH-WORTHY",
-        "theme": "nuclear_smr",
-        "days_until": 2,
-        "price": 280.2,
-        "drawdown_from_high": -26.4,
-        "urgency": "medium",
-        "plan": "Ex-dividend date \u2014 buy before it to receive the dividend. Tax-free in the Roth, which is where this name is routed."
-      },
       {
         "ticker": "POWL",
         "type": "earnings",
@@ -15955,13 +15955,26 @@
         "eps_high": 1.65,
         "revenue_estimate": 331394800,
         "name": "Powell Industries, Inc.",
-        "verdict": "WATCHLIST",
+        "verdict": "RESEARCH-WORTHY",
         "theme": "power_grid",
-        "days_until": 2,
+        "days_until": 1,
         "price": 142.72,
         "drawdown_from_high": -56.5,
+        "urgency": "high",
+        "plan": "Decide BEFORE the print. Consensus EPS ~1.57. If you would buy on a beat, size the order now; if a miss would break the thesis, write down what number does that. Reacting after the move is how you end up chasing."
+      },
+      {
+        "ticker": "CEG",
+        "type": "ex_dividend",
+        "date": "2026-11-16",
+        "name": "Constellation Energy Corporation",
+        "verdict": "RESEARCH-WORTHY",
+        "theme": "nuclear_smr",
+        "days_until": 1,
+        "price": 280.2,
+        "drawdown_from_high": -26.4,
         "urgency": "medium",
-        "plan": "Re-read the thesis against what is being reported. Consensus EPS ~1.57. This is the quarter that either confirms the reason it is on the list or removes it."
+        "plan": "Ex-dividend date \u2014 buy before it to receive the dividend. Tax-free in the Roth, which is where this name is routed."
       },
       {
         "ticker": "NVDA",
@@ -15974,7 +15987,7 @@
         "name": "NVIDIA Corporation",
         "verdict": "WATCHLIST",
         "theme": "mega_cap_ai",
-        "days_until": 3,
+        "days_until": 2,
         "price": 162.85,
         "drawdown_from_high": -33.1,
         "urgency": "medium",
@@ -15985,12 +15998,12 @@
         "type": "ex_dividend",
         "date": "2026-11-18",
         "name": "Powell Industries, Inc.",
-        "verdict": "WATCHLIST",
+        "verdict": "RESEARCH-WORTHY",
         "theme": "power_grid",
-        "days_until": 4,
+        "days_until": 3,
         "price": 142.72,
         "drawdown_from_high": -56.5,
-        "urgency": "low",
+        "urgency": "medium",
         "plan": "Ex-dividend date \u2014 buy before it to receive the dividend. Tax-free in the Roth, which is where this name is routed."
       },
       {
@@ -16000,7 +16013,7 @@
         "name": "Microsoft Corporation",
         "verdict": "WATCHLIST",
         "theme": "mega_cap_ai",
-        "days_until": 5,
+        "days_until": 4,
         "price": 523.88,
         "drawdown_from_high": -6.3,
         "urgency": "low",
@@ -16013,7 +16026,7 @@
         "name": "BWX Technologies, Inc.",
         "verdict": "WATCHLIST",
         "theme": "nuclear_smr",
-        "days_until": 5,
+        "days_until": 4,
         "price": 122.97,
         "drawdown_from_high": -49.1,
         "urgency": "low",
@@ -16022,24 +16035,32 @@
     ]
   },
   "daily_brief": {
-    "generated_at": "2026-11-14T15:54:44Z",
-    "date": "2026-11-14",
+    "generated_at": "2026-11-15T16:29:13Z",
+    "date": "2026-11-15",
     "first_run": false,
     "items": [
       {
         "priority": 1,
         "kind": "catalyst",
+        "ticker": "POWL",
+        "headline": "POWL earnings in 1d \u00b7 consensus EPS 1.57",
+        "detail": "Decide BEFORE the print. Consensus EPS ~1.57. If you would buy on a beat, size the order now; if a miss would break the thesis, write down what number does that. Reacting after the move is how you end up chasing.",
+        "action": "Decide your number before the print \u2014 not after."
+      },
+      {
+        "priority": 1,
+        "kind": "catalyst",
         "ticker": "CEG",
-        "headline": "CEG ex dividend in 2d",
+        "headline": "CEG ex dividend in 1d",
         "detail": "Ex-dividend date \u2014 buy before it to receive the dividend. Tax-free in the Roth, which is where this name is routed.",
         "action": "Decide your number before the print \u2014 not after."
       },
       {
         "priority": 1,
         "kind": "catalyst",
-        "ticker": "POWL",
-        "headline": "POWL earnings in 2d \u00b7 consensus EPS 1.57",
-        "detail": "Re-read the thesis against what is being reported. Consensus EPS ~1.57. This is the quarter that either confirms the reason it is on the list or removes it.",
+        "ticker": "NVDA",
+        "headline": "NVDA earnings in 2d \u00b7 consensus EPS 2.47",
+        "detail": "Re-read the thesis against what is being reported. Consensus EPS ~2.47. This is the quarter that either confirms the reason it is on the list or removes it.",
         "action": "Decide your number before the print \u2014 not after."
       },
       {
@@ -16073,17 +16094,9 @@
         "headline": "3 more names moved 5%+",
         "detail": null,
         "action": "Full list in Signals."
-      },
-      {
-        "priority": 5,
-        "kind": "verdict_change",
-        "ticker": "APP",
-        "headline": "APP verdict changed: RESEARCH-WORTHY \u2192 WATCHLIST",
-        "detail": "Research reassessed this name since your last check.",
-        "action": "No longer rated worth researching \u2014 re-read why."
       }
     ],
-    "hidden_count": 0,
+    "hidden_count": 5,
     "quiet_day": false
   },
   "signals": {
@@ -18231,7 +18244,7 @@
         "drawdown_pct": -17.7,
         "price": 641.69,
         "pe": 21.893211,
-        "forward_pe": 18.031155,
+        "forward_pe": 18.086037,
         "verdict": "RESEARCH-WORTHY",
         "next_action": "RESEARCH \u2014 Wide-moat digital advertising compounder trading at 17.5x forward earnings with 26% revenue growth, massive FCF, and optionality from AI infrastructure buildout and Reality Labs. Worth a deep dive before any decision."
       },
