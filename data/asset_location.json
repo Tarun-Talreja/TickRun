@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-14T11:03:09Z",
+  "generated_at": "2026-11-15T11:40:01Z",
   "rules": {
     "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
     "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
     "high_yield_threshold_pct": 3.0
   },
   "counts": {
-    "roth": 54,
+    "roth": 57,
     "taxable": 2
   },
   "roth": [
@@ -91,6 +91,26 @@
       "reason": "Highest-conviction growth pick (115% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
     },
     {
+      "ticker": "DECK",
+      "name": "Deckers Outdoor Corporation",
+      "theme": "uncategorized",
+      "verdict": "RESEARCH-WORTHY",
+      "div_yield_pct": null,
+      "account": "ROTH",
+      "priority": "high",
+      "reason": "Highest-conviction growth pick (4% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+    },
+    {
+      "ticker": "EME",
+      "name": "EMCOR Group, Inc.",
+      "theme": "uncategorized",
+      "verdict": "RESEARCH-WORTHY",
+      "div_yield_pct": 0.24,
+      "account": "ROTH",
+      "priority": "high",
+      "reason": "Highest-conviction growth pick (29% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+    },
+    {
       "ticker": "ETN",
       "name": "Eaton Corporation plc",
       "theme": "power_grid",
@@ -99,6 +119,16 @@
       "account": "ROTH",
       "priority": "high",
       "reason": "Highest-conviction growth pick (28% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+    },
+    {
+      "ticker": "FIX",
+      "name": "Comfort Systems USA, Inc.",
+      "theme": "uncategorized",
+      "verdict": "RESEARCH-WORTHY",
+      "div_yield_pct": 0.36,
+      "account": "ROTH",
+      "priority": "high",
+      "reason": "Highest-conviction growth pick (54% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
     },
     {
       "ticker": "GEV",
@@ -141,14 +171,14 @@
       "reason": "Highest-conviction growth pick (26% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "theme": "cybersecurity",
+      "ticker": "NVT",
+      "name": "nVent Electric plc",
+      "theme": "power_grid",
       "verdict": "RESEARCH-WORTHY",
-      "div_yield_pct": null,
+      "div_yield_pct": 0.73,
       "account": "ROTH",
       "priority": "high",
-      "reason": "Highest-conviction growth pick (20% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+      "reason": "Highest-conviction growth pick (44% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
     },
     {
       "ticker": "PAYX",
@@ -169,6 +199,26 @@
       "account": "ROTH",
       "priority": "high",
       "reason": "Highest-conviction growth pick (19% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+    },
+    {
+      "ticker": "POWL",
+      "name": "Powell Industries, Inc.",
+      "theme": "power_grid",
+      "verdict": "RESEARCH-WORTHY",
+      "div_yield_pct": 0.25,
+      "account": "ROTH",
+      "priority": "high",
+      "reason": "Highest-conviction growth pick (9% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+    },
+    {
+      "ticker": "RDDT",
+      "name": "Reddit, Inc.",
+      "theme": "platform_network",
+      "verdict": "RESEARCH-WORTHY",
+      "div_yield_pct": null,
+      "account": "ROTH",
+      "priority": "high",
+      "reason": "Highest-conviction growth pick (53% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
     },
     {
       "ticker": "STZ",
@@ -461,6 +511,16 @@
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
     },
     {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "theme": "cybersecurity",
+      "verdict": "WATCHLIST",
+      "div_yield_pct": null,
+      "account": "ROTH",
+      "priority": "medium",
+      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
+    },
+    {
       "ticker": "NVDA",
       "name": "NVIDIA Corporation",
       "theme": "mega_cap_ai",
@@ -471,39 +531,9 @@
       "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
     },
     {
-      "ticker": "NVT",
-      "name": "nVent Electric plc",
-      "theme": "power_grid",
-      "verdict": "WATCHLIST",
-      "div_yield_pct": 0.73,
-      "account": "ROTH",
-      "priority": "medium",
-      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
-    },
-    {
       "ticker": "OKLO",
       "name": "Oklo Inc.",
       "theme": "nuclear_smr",
-      "verdict": "WATCHLIST",
-      "div_yield_pct": null,
-      "account": "ROTH",
-      "priority": "medium",
-      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
-    },
-    {
-      "ticker": "POWL",
-      "name": "Powell Industries, Inc.",
-      "theme": "power_grid",
-      "verdict": "WATCHLIST",
-      "div_yield_pct": 0.25,
-      "account": "ROTH",
-      "priority": "medium",
-      "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
-    },
-    {
-      "ticker": "RDDT",
-      "name": "Reddit, Inc.",
-      "theme": "platform_network",
       "verdict": "WATCHLIST",
       "div_yield_pct": null,
       "account": "ROTH",
