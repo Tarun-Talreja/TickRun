@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-16T20:39:25Z",
-  "narrative": "SerDes stock CBRS jumped 11.22% amid multiple Schedule 13G/A filings, while Nvidia reports earnings tomorrow as the U.S. tightens export controls on advanced AI chips. Marvell Technology agreed to acquire Lumentum for $115 billion in a major AI infrastructure consolidation, and Alphabet shares suffered a record single-day drop amid AI spending concerns. Meta missed EPS by 14% and raised capex again as Big Tech capital spending swelled to $725 billion. Meanwhile, Microsoft lobbied against a potential FCC ban on Chinese optical gear, and Cerebras beat revenue while announcing a Microsoft deal.",
+  "generated_at": "2026-11-17T19:18:48Z",
+  "narrative": "Six semiconductor and AI-related stocks \u2014 LITE, CRDO, MU, NBIS, MRVL, and CBRS \u2014 fell between 7% and 8.5%, marking the most notable price moves. Nvidia reports earnings today, while Credo and Marvell are scheduled to report in two weeks. Regulatory pressure intensified as the U.S. moved to tighten export controls on AI chips and restrict Chinese optical transceivers for data centers, and Congress advanced stricter rules following a Nvidia-related scandal. Meanwhile, hyperscaler capital spending surged 85% year-over-year to $207 billion, and multiple major power deals were signed for AI data centers, including OpenAI\u2019s 457 MW agreement and a 20-year Microsoft-Chevron pact in Texas.",
   "buy_ready": [
     {
       "ticker": "META",
       "name": "Meta Platforms, Inc.",
-      "price": 625.56,
+      "price": 622.14,
       "buy_target": 623.86,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -14,7 +14,7 @@
     {
       "ticker": "AVGO",
       "name": "Broadcom Inc.",
-      "price": 331.69,
+      "price": 338.1364,
       "buy_target": 371.25,
       "at_or_below_target": true,
       "confidence": "LOW",
@@ -23,7 +23,7 @@
     {
       "ticker": "ASML",
       "name": "ASML Holding N.V.",
-      "price": 1412.2499,
+      "price": 1362.73,
       "buy_target": 1495.97,
       "at_or_below_target": true,
       "confidence": "HIGH",
@@ -32,16 +32,16 @@
     {
       "ticker": "TSM",
       "name": "Taiwan Semiconductor Manufacturing Company",
-      "price": 372.8612,
-      "buy_target": 388.51,
+      "price": 360.25,
+      "buy_target": 365.6,
       "at_or_below_target": true,
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "theme": "edge_ai_silicon"
     },
     {
       "ticker": "AMD",
       "name": "Advanced Micro Devices, Inc.",
-      "price": 501.6108,
+      "price": 491.835,
       "buy_target": 526.82,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -50,7 +50,7 @@
     {
       "ticker": "RDDT",
       "name": "Reddit, Inc.",
-      "price": 92.93,
+      "price": 95.525,
       "buy_target": 98.55,
       "at_or_below_target": true,
       "confidence": "LOW",
@@ -59,7 +59,7 @@
     {
       "ticker": "COHR",
       "name": "Coherent Corp.",
-      "price": 202.81,
+      "price": 208.575,
       "buy_target": 218.24,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -68,7 +68,7 @@
     {
       "ticker": "CEG",
       "name": "Constellation Energy Corporation",
-      "price": 274.595,
+      "price": 270.64,
       "buy_target": 280.25,
       "at_or_below_target": true,
       "confidence": "LOW",
@@ -77,8 +77,8 @@
     {
       "ticker": "VST",
       "name": "Vistra Corp.",
-      "price": 128.05,
-      "buy_target": 133.07,
+      "price": 127.72,
+      "buy_target": 130.23,
       "at_or_below_target": true,
       "confidence": "LOW",
       "theme": "nuclear_smr"
@@ -86,8 +86,8 @@
     {
       "ticker": "VRT",
       "name": "Vertiv Holdings Co",
-      "price": 187.18,
-      "buy_target": 202.13,
+      "price": 188.48,
+      "buy_target": 188.83,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
       "theme": "power_grid"
@@ -95,7 +95,7 @@
     {
       "ticker": "GEV",
       "name": "GE Vernova Inc.",
-      "price": 763.235,
+      "price": 767.96,
       "buy_target": 803.67,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -104,7 +104,7 @@
     {
       "ticker": "ETN",
       "name": "Eaton Corporation plc",
-      "price": 336.5,
+      "price": 334.65,
       "buy_target": 382.4,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -113,7 +113,7 @@
     {
       "ticker": "TLN",
       "name": "Talen Energy Corporation",
-      "price": 358.5,
+      "price": 353.16,
       "buy_target": 376.07,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -122,16 +122,25 @@
     {
       "ticker": "NVT",
       "name": "nVent Electric plc",
-      "price": 108.93,
+      "price": 107.97,
       "buy_target": 114.66,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
       "theme": "power_grid"
     },
     {
+      "ticker": "POWL",
+      "name": "Powell Industries, Inc.",
+      "price": 149.225,
+      "buy_target": 151.21,
+      "at_or_below_target": true,
+      "confidence": "LOW",
+      "theme": "power_grid"
+    },
+    {
       "ticker": "STZ",
       "name": "STZ",
-      "price": 146.61,
+      "price": 144.1,
       "buy_target": 145.67,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -140,8 +149,8 @@
     {
       "ticker": "PODD",
       "name": "Insulet Corporation",
-      "price": 145.945,
-      "buy_target": 152.6,
+      "price": 147.53,
+      "buy_target": 145.15,
       "at_or_below_target": true,
       "confidence": "LOW",
       "theme": "healthcare_innovation"
@@ -149,7 +158,7 @@
     {
       "ticker": "CLS",
       "name": "Celestica Inc.",
-      "price": 237.74,
+      "price": 236.7,
       "buy_target": 240.33,
       "at_or_below_target": true,
       "confidence": "LOW",
@@ -158,7 +167,7 @@
     {
       "ticker": "CRDO",
       "name": "Credo Technology Group Holding Ltd",
-      "price": 120.64,
+      "price": 121.46,
       "buy_target": 131.49,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -167,7 +176,7 @@
     {
       "ticker": "DECK",
       "name": "Deckers Outdoor Corporation",
-      "price": 83.55,
+      "price": 81.4899,
       "buy_target": 86.83,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -176,8 +185,8 @@
     {
       "ticker": "FIX",
       "name": "Comfort Systems USA, Inc.",
-      "price": 1054.22,
-      "buy_target": 1111.66,
+      "price": 1085.78,
+      "buy_target": 1057.73,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
       "theme": "uncategorized"
@@ -185,87 +194,83 @@
     {
       "ticker": "EME",
       "name": "EMCOR Group, Inc.",
-      "price": 635.1106,
-      "buy_target": 659.71,
+      "price": 642.83,
+      "buy_target": 638.77,
       "at_or_below_target": true,
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "theme": "uncategorized"
-    },
-    {
-      "ticker": "POWL",
-      "name": "Powell Industries, Inc.",
-      "price": 149.96,
-      "buy_target": 142.68,
-      "at_or_below_target": false,
-      "confidence": "LOW",
-      "theme": "power_grid"
     }
   ],
   "movers": [
     {
-      "ticker": "CBRS",
-      "pct": 11.22,
-      "reason": "Strong Q3 earnings and raised revenue guidance drove the stock higher despite broad market declines."
-    },
-    {
-      "ticker": "NBIS",
-      "pct": -9.92,
-      "reason": "No clear catalyst in current news."
-    },
-    {
-      "ticker": "AMD",
-      "pct": -8.75,
-      "reason": "No clear catalyst in current news."
-    },
-    {
-      "ticker": "COHR",
-      "pct": -6.0,
-      "reason": "No clear catalyst in current news."
+      "ticker": "LITE",
+      "pct": -8.48,
+      "reason": "Moved with the broad market (Nasdaq 100 -2.7%, S&P 500 -1.9%); no company-specific news found."
     },
     {
       "ticker": "CRDO",
-      "pct": -5.94,
-      "reason": "No clear catalyst in current news."
+      "pct": -8.21,
+      "reason": "Moved with the broad market (Nasdaq 100 -2.7%, S&P 500 -1.9%); no company-specific news found."
     },
     {
-      "ticker": "CLS",
-      "pct": -5.39,
-      "reason": "No clear catalyst in current news."
+      "ticker": "MU",
+      "pct": -7.62,
+      "reason": "Moved with the broad market (Nasdaq 100 -2.7%, S&P 500 -1.9%); no company-specific news found."
+    },
+    {
+      "ticker": "NBIS",
+      "pct": -7.55,
+      "reason": "Moved with the broad market (Nasdaq 100 -2.7%, S&P 500 -1.9%); no company-specific news found."
+    },
+    {
+      "ticker": "MRVL",
+      "pct": -7.27,
+      "reason": "Part of a broader chip/AI selloff triggered by Nvidia CEO exit, not MRVL-specific."
+    },
+    {
+      "ticker": "CBRS",
+      "pct": -7.11,
+      "reason": "Moved with the broad market (Nasdaq 100 -2.7%, S&P 500 -1.9%); no company-specific news found."
     }
   ],
   "upcoming_earnings": [
     {
-      "ticker": "POWL",
-      "date": "2026-11-16",
-      "days_until": 0
-    },
-    {
       "ticker": "NVDA",
       "date": "2026-11-17",
-      "days_until": 1
+      "days_until": 0
     },
     {
       "ticker": "CRDO",
       "date": "2026-12-01",
-      "days_until": 15
+      "days_until": 14
     },
     {
       "ticker": "MRVL",
       "date": "2026-12-01",
-      "days_until": 15
+      "days_until": 14
     },
     {
       "ticker": "AVGO",
       "date": "2026-12-09",
-      "days_until": 23
+      "days_until": 22
     },
     {
       "ticker": "COST",
       "date": "2026-12-10",
-      "days_until": 24
+      "days_until": 23
     }
   ],
   "sec_stakes": [
+    {
+      "ticker": "OKLO",
+      "form": "SCHEDULE 13G",
+      "filed": "2026-11-16"
+    },
+    {
+      "ticker": "PODD",
+      "form": "SCHEDULE 13G",
+      "filed": "2026-11-16"
+    },
     {
       "ticker": "PODD",
       "form": "SCHEDULE 13G",
@@ -300,6 +305,41 @@
       "ticker": "DHR",
       "form": "SCHEDULE 13G",
       "filed": "2026-11-05"
+    },
+    {
+      "ticker": "TW",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-11-16"
+    },
+    {
+      "ticker": "TW",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-11-16"
+    },
+    {
+      "ticker": "LMB",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-11-16"
+    },
+    {
+      "ticker": "CBRS",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-11-16"
+    },
+    {
+      "ticker": "CBRS",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-11-16"
+    },
+    {
+      "ticker": "CBRS",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-11-16"
+    },
+    {
+      "ticker": "CBRS",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2026-11-16"
     },
     {
       "ticker": "PAYX",
