@@ -1,38 +1,38 @@
 {
-  "generated_at": "2026-11-17T19:18:48Z",
-  "narrative": "Six semiconductor and AI-related stocks \u2014 LITE, CRDO, MU, NBIS, MRVL, and CBRS \u2014 fell between 7% and 8.5%, marking the most notable price moves. Nvidia reports earnings today, while Credo and Marvell are scheduled to report in two weeks. Regulatory pressure intensified as the U.S. moved to tighten export controls on AI chips and restrict Chinese optical transceivers for data centers, and Congress advanced stricter rules following a Nvidia-related scandal. Meanwhile, hyperscaler capital spending surged 85% year-over-year to $207 billion, and multiple major power deals were signed for AI data centers, including OpenAI\u2019s 457 MW agreement and a 20-year Microsoft-Chevron pact in Texas.",
+  "generated_at": "2026-11-18T18:59:44Z",
+  "narrative": "ServiceNow and UnitedHealth dropped sharply, falling 6.5% and 5.4% respectively, while regulators and corporations reshaped several key sectors: FERC rejected most large-load interconnection rules and PJM moved to halve data-center grid study times, Microsoft and Chevron signed a 20-year Texas power deal, and bipartisan legislation advanced to tighten AI chip export controls on China. Cybersecurity risks escalated as a ransomware gang threatened to leak alleged Nvidia data within days, the FBI linked an SEO poisoning campaign to $28 million in payments, and stolen FortiGate VPN credentials were exploited to breach corporate networks. Meanwhile, the Pentagon selected seven high-energy laser systems for live-fire counter-drone tests, the FDA cleared Medtronic's Hugo surgical robot and GE HealthCare's AI X-ray tool, and a wave of Schedule 13G filings hit names including Oklo, Insulet, Deckers, Amazon, and Marvell ahead of earnings from Credo, Marvell, Broadcom, and Costco in the next three weeks.",
   "buy_ready": [
     {
       "ticker": "META",
       "name": "Meta Platforms, Inc.",
-      "price": 622.14,
+      "price": 617.66,
       "buy_target": 623.86,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
       "theme": "mega_cap_ai"
     },
     {
-      "ticker": "AVGO",
-      "name": "Broadcom Inc.",
-      "price": 338.1364,
-      "buy_target": 371.25,
+      "ticker": "UNH",
+      "name": "UnitedHealth Group Incorporated",
+      "price": 352.45,
+      "buy_target": 407.61,
+      "at_or_below_target": true,
+      "confidence": "MEDIUM",
+      "theme": "uncategorized"
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML Holding N.V.",
+      "price": 1389.9045,
+      "buy_target": 1383.97,
       "at_or_below_target": true,
       "confidence": "LOW",
       "theme": "edge_ai_silicon"
     },
     {
-      "ticker": "ASML",
-      "name": "ASML Holding N.V.",
-      "price": 1362.73,
-      "buy_target": 1495.97,
-      "at_or_below_target": true,
-      "confidence": "HIGH",
-      "theme": "edge_ai_silicon"
-    },
-    {
       "ticker": "TSM",
       "name": "Taiwan Semiconductor Manufacturing Company",
-      "price": 360.25,
+      "price": 360.914,
       "buy_target": 365.6,
       "at_or_below_target": true,
       "confidence": "HIGH",
@@ -41,7 +41,7 @@
     {
       "ticker": "AMD",
       "name": "Advanced Micro Devices, Inc.",
-      "price": 491.835,
+      "price": 522.7,
       "buy_target": 526.82,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -50,16 +50,16 @@
     {
       "ticker": "RDDT",
       "name": "Reddit, Inc.",
-      "price": 95.525,
-      "buy_target": 98.55,
+      "price": 95.355,
+      "buy_target": 94.6,
       "at_or_below_target": true,
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "theme": "platform_network"
     },
     {
       "ticker": "COHR",
       "name": "Coherent Corp.",
-      "price": 208.575,
+      "price": 212.53,
       "buy_target": 218.24,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -68,7 +68,7 @@
     {
       "ticker": "CEG",
       "name": "Constellation Energy Corporation",
-      "price": 270.64,
+      "price": 266.42,
       "buy_target": 280.25,
       "at_or_below_target": true,
       "confidence": "LOW",
@@ -77,25 +77,16 @@
     {
       "ticker": "VST",
       "name": "Vistra Corp.",
-      "price": 127.72,
+      "price": 127.48,
       "buy_target": 130.23,
       "at_or_below_target": true,
       "confidence": "LOW",
       "theme": "nuclear_smr"
     },
     {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings Co",
-      "price": 188.48,
-      "buy_target": 188.83,
-      "at_or_below_target": true,
-      "confidence": "MEDIUM",
-      "theme": "power_grid"
-    },
-    {
       "ticker": "GEV",
       "name": "GE Vernova Inc.",
-      "price": 767.96,
+      "price": 780.63,
       "buy_target": 803.67,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -104,7 +95,7 @@
     {
       "ticker": "ETN",
       "name": "Eaton Corporation plc",
-      "price": 334.65,
+      "price": 341.305,
       "buy_target": 382.4,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -113,8 +104,8 @@
     {
       "ticker": "TLN",
       "name": "Talen Energy Corporation",
-      "price": 353.16,
-      "buy_target": 376.07,
+      "price": 362.79,
+      "buy_target": 354.92,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
       "theme": "nuclear_smr"
@@ -122,25 +113,16 @@
     {
       "ticker": "NVT",
       "name": "nVent Electric plc",
-      "price": 107.97,
-      "buy_target": 114.66,
+      "price": 110.23,
+      "buy_target": 109.12,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
       "theme": "power_grid"
     },
     {
-      "ticker": "POWL",
-      "name": "Powell Industries, Inc.",
-      "price": 149.225,
-      "buy_target": 151.21,
-      "at_or_below_target": true,
-      "confidence": "LOW",
-      "theme": "power_grid"
-    },
-    {
       "ticker": "STZ",
       "name": "STZ",
-      "price": 144.1,
+      "price": 143.575,
       "buy_target": 145.67,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -149,7 +131,7 @@
     {
       "ticker": "PODD",
       "name": "Insulet Corporation",
-      "price": 147.53,
+      "price": 141.17,
       "buy_target": 145.15,
       "at_or_below_target": true,
       "confidence": "LOW",
@@ -158,7 +140,7 @@
     {
       "ticker": "CLS",
       "name": "Celestica Inc.",
-      "price": 236.7,
+      "price": 244.5292,
       "buy_target": 240.33,
       "at_or_below_target": true,
       "confidence": "LOW",
@@ -167,97 +149,90 @@
     {
       "ticker": "CRDO",
       "name": "Credo Technology Group Holding Ltd",
-      "price": 121.46,
+      "price": 124.03,
       "buy_target": 131.49,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
       "theme": "edge_ai_silicon"
     },
     {
-      "ticker": "DECK",
-      "name": "Deckers Outdoor Corporation",
-      "price": 81.4899,
-      "buy_target": 86.83,
+      "ticker": "EME",
+      "name": "EMCOR Group, Inc.",
+      "price": 650.07,
+      "buy_target": 638.77,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
       "theme": "uncategorized"
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "price": 356.59,
+      "buy_target": 341.55,
+      "at_or_below_target": false,
+      "confidence": "HIGH",
+      "theme": "edge_ai_silicon"
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings Co",
+      "price": 195.5199,
+      "buy_target": 188.83,
+      "at_or_below_target": false,
+      "confidence": "MEDIUM",
+      "theme": "power_grid"
+    },
+    {
+      "ticker": "POWL",
+      "name": "Powell Industries, Inc.",
+      "price": 156.61,
+      "buy_target": 151.21,
+      "at_or_below_target": false,
+      "confidence": "LOW",
+      "theme": "power_grid"
     },
     {
       "ticker": "FIX",
       "name": "Comfort Systems USA, Inc.",
-      "price": 1085.78,
+      "price": 1150.385,
       "buy_target": 1057.73,
-      "at_or_below_target": true,
-      "confidence": "MEDIUM",
-      "theme": "uncategorized"
-    },
-    {
-      "ticker": "EME",
-      "name": "EMCOR Group, Inc.",
-      "price": 642.83,
-      "buy_target": 638.77,
-      "at_or_below_target": true,
+      "at_or_below_target": false,
       "confidence": "MEDIUM",
       "theme": "uncategorized"
     }
   ],
   "movers": [
     {
-      "ticker": "LITE",
-      "pct": -8.48,
-      "reason": "Moved with the broad market (Nasdaq 100 -2.7%, S&P 500 -1.9%); no company-specific news found."
+      "ticker": "NOW",
+      "pct": -6.51,
+      "reason": "No clear catalyst in current news."
     },
     {
-      "ticker": "CRDO",
-      "pct": -8.21,
-      "reason": "Moved with the broad market (Nasdaq 100 -2.7%, S&P 500 -1.9%); no company-specific news found."
-    },
-    {
-      "ticker": "MU",
-      "pct": -7.62,
-      "reason": "Moved with the broad market (Nasdaq 100 -2.7%, S&P 500 -1.9%); no company-specific news found."
-    },
-    {
-      "ticker": "NBIS",
-      "pct": -7.55,
-      "reason": "Moved with the broad market (Nasdaq 100 -2.7%, S&P 500 -1.9%); no company-specific news found."
-    },
-    {
-      "ticker": "MRVL",
-      "pct": -7.27,
-      "reason": "Part of a broader chip/AI selloff triggered by Nvidia CEO exit, not MRVL-specific."
-    },
-    {
-      "ticker": "CBRS",
-      "pct": -7.11,
-      "reason": "Moved with the broad market (Nasdaq 100 -2.7%, S&P 500 -1.9%); no company-specific news found."
+      "ticker": "UNH",
+      "pct": -5.42,
+      "reason": "No clear catalyst in current news."
     }
   ],
   "upcoming_earnings": [
     {
-      "ticker": "NVDA",
-      "date": "2026-11-17",
-      "days_until": 0
-    },
-    {
       "ticker": "CRDO",
       "date": "2026-12-01",
-      "days_until": 14
+      "days_until": 13
     },
     {
       "ticker": "MRVL",
       "date": "2026-12-01",
-      "days_until": 14
+      "days_until": 13
     },
     {
       "ticker": "AVGO",
       "date": "2026-12-09",
-      "days_until": 22
+      "days_until": 21
     },
     {
       "ticker": "COST",
       "date": "2026-12-10",
-      "days_until": 23
+      "days_until": 22
     }
   ],
   "sec_stakes": [
