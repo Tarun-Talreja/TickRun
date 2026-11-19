@@ -1,14 +1,14 @@
 {
-  "last_built": "2026-11-19T02:50:37Z",
-  "quotes_updated": "2026-11-19T02:47:08Z",
+  "last_built": "2026-11-19T03:20:07Z",
+  "quotes_updated": "2026-11-19T03:17:20Z",
   "health": {
     "stages": [
       {
         "name": "Quotes",
-        "updated_at": "2026-11-19T02:47:08Z",
+        "updated_at": "2026-11-19T03:17:20Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 0.1,
+        "age_hours": 0.0,
         "affects": "Prices and buy targets may be out of date"
       },
       {
@@ -16,7 +16,7 @@
         "updated_at": "2026-11-18T12:33:24Z",
         "detail": "7/8 tickers",
         "status": "ok",
-        "age_hours": 14.3,
+        "age_hours": 14.8,
         "affects": "Ratings aren't being updated"
       },
       {
@@ -24,39 +24,39 @@
         "updated_at": "2026-11-18T18:15:14Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 8.6,
+        "age_hours": 9.1,
         "affects": "Upcoming earnings dates may be missing"
       },
       {
         "name": "SEC filings",
-        "updated_at": "2026-11-19T02:47:14Z",
+        "updated_at": "2026-11-19T03:17:26Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 0.1,
+        "age_hours": 0.0,
         "affects": "New SEC filings won't show"
       },
       {
         "name": "Prices",
-        "updated_at": "2026-11-19T02:47:08Z",
+        "updated_at": "2026-11-19T03:17:20Z",
         "detail": "59/59 have data",
         "status": "ok",
-        "age_hours": 0.1,
+        "age_hours": 0.0,
         "affects": "Prices and buy targets may be missing"
       },
       {
         "name": "Company figures",
-        "updated_at": "2026-11-19T02:47:08Z",
+        "updated_at": "2026-11-19T03:17:20Z",
         "detail": "59/59 have data",
         "status": "ok",
-        "age_hours": 0.1,
+        "age_hours": 0.0,
         "affects": "Ratings can't check the numbers"
       },
       {
         "name": "News",
-        "updated_at": "2026-11-19T02:47:20Z",
+        "updated_at": "2026-11-19T03:17:33Z",
         "detail": "58/58 have data",
         "status": "ok",
-        "age_hours": 0.1,
+        "age_hours": 0.0,
         "affects": "Ratings and mover reasons can miss recent news"
       },
       {
@@ -64,7 +64,7 @@
         "updated_at": "2026-11-16T01:55:52Z",
         "detail": "52/60 have data",
         "status": "ok",
-        "age_hours": 72.9,
+        "age_hours": 73.4,
         "affects": "Insider buying won't show on stocks or the radar"
       },
       {
@@ -72,7 +72,7 @@
         "updated_at": "2026-11-15T19:48:08Z",
         "detail": "57/60 have data",
         "status": "ok",
-        "age_hours": 79.0,
+        "age_hours": 79.5,
         "affects": "Hedge fund holdings may be out of date"
       },
       {
@@ -80,12 +80,12 @@
         "updated_at": "2026-11-18T18:59:11Z",
         "detail": "16/16 have data",
         "status": "ok",
-        "age_hours": 7.9,
+        "age_hours": 8.3,
         "affects": "The field briefing may be out of date"
       },
       {
         "name": "Movers",
-        "updated_at": "2026-11-19T02:50:36Z",
+        "updated_at": "2026-11-19T03:20:06Z",
         "detail": "3/3 have data",
         "status": "ok",
         "age_hours": 0.0,
@@ -96,7 +96,7 @@
         "updated_at": "2026-11-18T18:59:35Z",
         "detail": "12 found",
         "status": "ok",
-        "age_hours": 7.9,
+        "age_hours": 8.3,
         "affects": "The radar may be out of date"
       },
       {
@@ -104,7 +104,7 @@
         "updated_at": "2026-11-14T18:00:53Z",
         "detail": "429 found",
         "status": "ok",
-        "age_hours": 104.8,
+        "age_hours": 105.3,
         "affects": "New stock ideas may be out of date"
       },
       {
@@ -112,7 +112,7 @@
         "updated_at": "2026-11-18T18:59:44Z",
         "detail": "1 found",
         "status": "ok",
-        "age_hours": 7.8,
+        "age_hours": 8.3,
         "affects": "The AI summary may be out of date"
       },
       {
@@ -120,7 +120,7 @@
         "updated_at": "2026-11-18T20:44:56Z",
         "detail": "6 sources passed",
         "status": "ok",
-        "age_hours": 6.1,
+        "age_hours": 6.6,
         "affects": "One of the data sources failed its daily test"
       },
       {
@@ -622,7 +622,7 @@
         "drawdown_from_high": -6.3,
         "revenue_growth": 38.6,
         "op_margin": 53.7,
-        "pe": 44.87991,
+        "pe": 45.938538,
         "forward_pe": 27.220984,
         "short_percent_float": 0.81,
         "short_ratio": 2.8,
@@ -672,7 +672,7 @@
         "drawdown_from_high": -24.2,
         "revenue_growth": -0.4,
         "op_margin": 5.8,
-        "pe": 19.972033,
+        "pe": 22.244757,
         "forward_pe": 14.997822,
         "short_percent_float": 1.74,
         "short_ratio": 2.4,
@@ -833,7 +833,7 @@
         "data_flags": [
           {
             "level": "low",
-            "msg": "Reports in EUR; figures converted to USD at 1.0971. Trailing P/E may mix currencies \u2014 verify against filings"
+            "msg": "Reports in EUR; figures converted to USD at 1.0959. Trailing P/E may mix currencies \u2014 verify against filings"
           }
         ]
       },
@@ -870,7 +870,7 @@
         "drawdown_from_high": -25.6,
         "revenue_growth": 50.9,
         "op_margin": 58.7,
-        "pe": 23.50097,
+        "pe": 23.304626,
         "forward_pe": 15.506329,
         "short_percent_float": 0.66,
         "short_ratio": 2.8,
@@ -1306,7 +1306,7 @@
         "drawdown_from_high": -51.6,
         "revenue_growth": 49.9,
         "op_margin": 16.3,
-        "pe": 44.066254,
+        "pe": 43.614754,
         "forward_pe": 13.480407,
         "short_percent_float": 5.1,
         "short_ratio": 1.3,
@@ -1501,7 +1501,7 @@
         "revenue_growth": 26.8,
         "op_margin": 11.0,
         "pe": 20.273561,
-        "forward_pe": 29.815813,
+        "forward_pe": 29.781315,
         "short_percent_float": 2.83,
         "short_ratio": 2.5,
         "high_proximity_warning": false,
@@ -1648,7 +1648,7 @@
         "revenue_growth": 96.1,
         "op_margin": 29.5,
         "pe": null,
-        "forward_pe": 11.192666,
+        "forward_pe": 11.641241,
         "short_percent_float": 10.86,
         "short_ratio": 3.9,
         "high_proximity_warning": true,
@@ -1798,11 +1798,11 @@
         "rated_next_earnings": 1794862800,
         "price": 154.95,
         "pct_change_1d": 2.77,
-        "market_cap": 5645225472,
+        "market_cap": 5645083648,
         "cap_tier": "mid",
         "drawdown_from_high": -52.8,
         "revenue_growth": 33.1,
-        "op_margin": 21.1,
+        "op_margin": 25.3,
         "pe": 25.653973,
         "forward_pe": 16.98903,
         "short_percent_float": 11.85,
@@ -2470,7 +2470,7 @@
         "drawdown_from_high": -5.2,
         "revenue_growth": 14.9,
         "op_margin": 43.4,
-        "pe": 29.941313,
+        "pe": 30.36905,
         "forward_pe": 27.011688,
         "short_percent_float": 3.22,
         "short_ratio": 2.3,
@@ -2563,7 +2563,7 @@
         "drawdown_from_high": -47.2,
         "revenue_growth": 11.8,
         "op_margin": 34.6,
-        "pe": 17.289017,
+        "pe": 17.239193,
         "forward_pe": 15.861736,
         "short_percent_float": 2.25,
         "short_ratio": 2.1,
@@ -2885,7 +2885,7 @@
         "drawdown_from_high": -48.7,
         "revenue_growth": 82.5,
         "op_margin": 7.9,
-        "pe": 22.954718,
+        "pe": 22.302475,
         "forward_pe": 10.911436,
         "short_percent_float": 3.71,
         "short_ratio": 1.6,
@@ -3186,7 +3186,7 @@
         "drawdown_from_high": -47.0,
         "revenue_growth": 55.5,
         "op_margin": 78.2,
-        "pe": 26.323906,
+        "pe": 26.866667,
         "forward_pe": 18.73894,
         "short_percent_float": 3.83,
         "short_ratio": 2.5,
@@ -3572,7 +3572,7 @@
           "drawdown_from_high": -6.3,
           "revenue_growth": 38.6,
           "op_margin": 53.7,
-          "pe": 44.87991,
+          "pe": 45.938538,
           "forward_pe": 27.220984,
           "short_percent_float": 0.81,
           "short_ratio": 2.8,
@@ -4537,7 +4537,7 @@
           "drawdown_from_high": -5.2,
           "revenue_growth": 14.9,
           "op_margin": 43.4,
-          "pe": 29.941313,
+          "pe": 30.36905,
           "forward_pe": 27.011688,
           "short_percent_float": 3.22,
           "short_ratio": 2.3,
@@ -4630,7 +4630,7 @@
           "drawdown_from_high": -47.2,
           "revenue_growth": 11.8,
           "op_margin": 34.6,
-          "pe": 17.289017,
+          "pe": 17.239193,
           "forward_pe": 15.861736,
           "short_percent_float": 2.25,
           "short_ratio": 2.1,
@@ -5010,7 +5010,7 @@
           "drawdown_from_high": -47.0,
           "revenue_growth": 55.5,
           "op_margin": 78.2,
-          "pe": 26.323906,
+          "pe": 26.866667,
           "forward_pe": 18.73894,
           "short_percent_float": 3.83,
           "short_ratio": 2.5,
@@ -5244,7 +5244,7 @@
           "drawdown_from_high": -24.2,
           "revenue_growth": -0.4,
           "op_margin": 5.8,
-          "pe": 19.972033,
+          "pe": 22.244757,
           "forward_pe": 14.997822,
           "short_percent_float": 1.74,
           "short_ratio": 2.4,
@@ -5304,7 +5304,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in EUR; figures converted to USD at 1.0971. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in EUR; figures converted to USD at 1.0959. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -5341,7 +5341,7 @@
           "drawdown_from_high": -25.6,
           "revenue_growth": 50.9,
           "op_margin": 58.7,
-          "pe": 23.50097,
+          "pe": 23.304626,
           "forward_pe": 15.506329,
           "short_percent_float": 0.66,
           "short_ratio": 2.8,
@@ -5492,7 +5492,7 @@
           "drawdown_from_high": -51.6,
           "revenue_growth": 49.9,
           "op_margin": 16.3,
-          "pe": 44.066254,
+          "pe": 43.614754,
           "forward_pe": 13.480407,
           "short_percent_float": 5.1,
           "short_ratio": 1.3,
@@ -5687,7 +5687,7 @@
           "revenue_growth": 26.8,
           "op_margin": 11.0,
           "pe": 20.273561,
-          "forward_pe": 29.815813,
+          "forward_pe": 29.781315,
           "short_percent_float": 2.83,
           "short_ratio": 2.5,
           "high_proximity_warning": false,
@@ -5786,7 +5786,7 @@
           "revenue_growth": 96.1,
           "op_margin": 29.5,
           "pe": null,
-          "forward_pe": 11.192666,
+          "forward_pe": 11.641241,
           "short_percent_float": 10.86,
           "short_ratio": 3.9,
           "high_proximity_warning": true,
@@ -5887,11 +5887,11 @@
           "rated_next_earnings": 1794862800,
           "price": 154.95,
           "pct_change_1d": 2.77,
-          "market_cap": 5645225472,
+          "market_cap": 5645083648,
           "cap_tier": "mid",
           "drawdown_from_high": -52.8,
           "revenue_growth": 33.1,
-          "op_margin": 21.1,
+          "op_margin": 25.3,
           "pe": 25.653973,
           "forward_pe": 16.98903,
           "short_percent_float": 11.85,
@@ -6041,7 +6041,7 @@
           "drawdown_from_high": -48.7,
           "revenue_growth": 82.5,
           "op_margin": 7.9,
-          "pe": 22.954718,
+          "pe": 22.302475,
           "forward_pe": 10.911436,
           "short_percent_float": 3.71,
           "short_ratio": 1.6,
@@ -6822,7 +6822,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in EUR; figures converted to USD at 1.0971. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in EUR; figures converted to USD at 1.0959. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -6859,7 +6859,7 @@
           "drawdown_from_high": -25.6,
           "revenue_growth": 50.9,
           "op_margin": 58.7,
-          "pe": 23.50097,
+          "pe": 23.304626,
           "forward_pe": 15.506329,
           "short_percent_float": 0.66,
           "short_ratio": 2.8,
@@ -7192,7 +7192,7 @@
           "drawdown_from_high": -6.3,
           "revenue_growth": 38.6,
           "op_margin": 53.7,
-          "pe": 44.87991,
+          "pe": 45.938538,
           "forward_pe": 27.220984,
           "short_percent_float": 0.81,
           "short_ratio": 2.8,
@@ -7242,7 +7242,7 @@
           "drawdown_from_high": -24.2,
           "revenue_growth": -0.4,
           "op_margin": 5.8,
-          "pe": 19.972033,
+          "pe": 22.244757,
           "forward_pe": 14.997822,
           "short_percent_float": 1.74,
           "short_ratio": 2.4,
@@ -7548,7 +7548,7 @@
           "drawdown_from_high": -47.0,
           "revenue_growth": 55.5,
           "op_margin": 78.2,
-          "pe": 26.323906,
+          "pe": 26.866667,
           "forward_pe": 18.73894,
           "short_percent_float": 3.83,
           "short_ratio": 2.5,
@@ -7887,7 +7887,7 @@
           "drawdown_from_high": -51.6,
           "revenue_growth": 49.9,
           "op_margin": 16.3,
-          "pe": 44.066254,
+          "pe": 43.614754,
           "forward_pe": 13.480407,
           "short_percent_float": 5.1,
           "short_ratio": 1.3,
@@ -8086,7 +8086,7 @@
           "revenue_growth": 96.1,
           "op_margin": 29.5,
           "pe": null,
-          "forward_pe": 11.192666,
+          "forward_pe": 11.641241,
           "short_percent_float": 10.86,
           "short_ratio": 3.9,
           "high_proximity_warning": true,
@@ -8233,7 +8233,7 @@
           "revenue_growth": 26.8,
           "op_margin": 11.0,
           "pe": 20.273561,
-          "forward_pe": 29.815813,
+          "forward_pe": 29.781315,
           "short_percent_float": 2.83,
           "short_ratio": 2.5,
           "high_proximity_warning": false,
@@ -8383,11 +8383,11 @@
           "rated_next_earnings": 1794862800,
           "price": 154.95,
           "pct_change_1d": 2.77,
-          "market_cap": 5645225472,
+          "market_cap": 5645083648,
           "cap_tier": "mid",
           "drawdown_from_high": -52.8,
           "revenue_growth": 33.1,
-          "op_margin": 21.1,
+          "op_margin": 25.3,
           "pe": 25.653973,
           "forward_pe": 16.98903,
           "short_percent_float": 11.85,
@@ -9107,7 +9107,7 @@
           "drawdown_from_high": -5.2,
           "revenue_growth": 14.9,
           "op_margin": 43.4,
-          "pe": 29.941313,
+          "pe": 30.36905,
           "forward_pe": 27.011688,
           "short_percent_float": 3.22,
           "short_ratio": 2.3,
@@ -9204,7 +9204,7 @@
           "drawdown_from_high": -47.2,
           "revenue_growth": 11.8,
           "op_margin": 34.6,
-          "pe": 17.289017,
+          "pe": 17.239193,
           "forward_pe": 15.861736,
           "short_percent_float": 2.25,
           "short_ratio": 2.1,
@@ -9398,7 +9398,7 @@
           "drawdown_from_high": -48.7,
           "revenue_growth": 82.5,
           "op_margin": 7.9,
-          "pe": 22.954718,
+          "pe": 22.302475,
           "forward_pe": 10.911436,
           "short_percent_float": 3.71,
           "short_ratio": 1.6,
@@ -10007,7 +10007,7 @@
     ]
   },
   "analytics": {
-    "generated_at": "2026-11-19T02:50:36Z",
+    "generated_at": "2026-11-19T03:20:06Z",
     "funded": false,
     "total_value": 0.0,
     "total_invested": 0.0,
@@ -10104,7 +10104,7 @@
     "concentration_warnings": []
   },
   "track_record": {
-    "generated_at": "2026-11-19T02:50:36Z",
+    "generated_at": "2026-11-19T03:20:06Z",
     "tracked_since": "2026-04-25",
     "scoreboard": {
       "RESEARCH-WORTHY": {
@@ -15781,7 +15781,7 @@
     }
   },
   "asset_location": {
-    "generated_at": "2026-11-19T02:50:36Z",
+    "generated_at": "2026-11-19T03:20:06Z",
     "rules": {
       "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
       "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
@@ -16725,7 +16725,7 @@
     ]
   },
   "daily_brief": {
-    "generated_at": "2026-11-19T02:50:36Z",
+    "generated_at": "2026-11-19T03:20:06Z",
     "date": "2026-11-19",
     "first_run": false,
     "items": [
@@ -16758,7 +16758,7 @@
         "kind": "mover",
         "ticker": "UNH",
         "headline": "UNH \u25bc -10.2%",
-        "detail": "Company-specific drop tied to a proposed Medicare audit, not broader market or earnings results.",
+        "detail": "Shares fell on Medicare audit proposal concerns, not earnings/results.",
         "action": "Verdict unaffected unless this breaks your thesis."
       },
       {
@@ -17690,7 +17690,7 @@
         "triggers": [
           "-10.2% on the day"
         ],
-        "reason": "Company-specific drop tied to a proposed Medicare audit, not broader market or earnings results.",
+        "reason": "Shares fell on Medicare audit proposal concerns, not earnings/results.",
         "news": [
           {
             "title": "UnitedHealth Shares Fall 10.2% Amid Medicare Audit Proposal",
@@ -17699,16 +17699,16 @@
             "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQkdVRE4wZFNLQ1YxanllYXBrOXFqSmJzR3ZFTDZkenJJVFpoT1h2WXN1UGk3dzQxVzdSUEg2OUppMDBjT3U5RVAzUjNDd2xuc2R1Qk1MV1VEOFVrUWhOWHVvU1BhaEZWaVFZX0ZUX01lMEhNUC12U3JfT0NjSjY4QTU1YURLcEJ1X0g0NXBPeUptMjF4b3UxQzh3?oc=5"
           },
           {
-            "title": "UnitedHealth Is Targeting 13% to 16% Long-Term Earnings Growth. Where Will the Stock Be in 5 Years?",
-            "publisher": "Yahoo Finance",
-            "date": "2026-11-18",
-            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNUGVGc05IMEJDZnhVN0U2aVQ4ZEdyUThDU3BwTHUzdHc5clM3OUxpU0JpallEY25xY1F0aGZRTThhM2VPSGNtUXdVR3JOVzh0NjBheHJFc3dKNk1FenJDWkhwclN2MlMtamdfMnRlQ0F4ZS1lNUJDc216aDVsYWhOUTB5RmdxaUZOdUNhQlREeElmeUpsM3pjN3VpREtVVnM?oc=5"
-          },
-          {
             "title": "UnitedHealth raises profit forecast as turnaround efforts gather pace",
             "publisher": "Reuters",
             "date": "2026-10-13",
             "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPSVdJVVh5M2RnVi1xMnB5NzZ6eXZWbnRIY2UwVTZQUjZBWlBuQ3R5aEdYcG9oY3hWdzlWS19tT1RSMEkzZkgtMUpjU0lqU1lLXzduUk9IbnJzMDN1WjhLYjdYS195eW96SXM4TnJvUGRlXzJ5WkprSkRVbXdKSi1XRWJoZVVncDdLQlE0WGRUUFFuWWJJYTlsUHpGUW9ZZXg0NDVmRnVqb1FaZU1EOS16VTkycTFqc1psVDVqb0I3aw?oc=5"
+          },
+          {
+            "title": "JPMorgan\u2019s Lisa Gill on UnitedHealth earnings: The stock slide has nothing to do with the results",
+            "publisher": "CNBC",
+            "date": "2026-10-13",
+            "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNZE9hR1B1Q3QwT3B6TllLZUgxaHlHbkdIdVY4RGFYX1J5SVZSSWEydHNHYmNDdVI1ZnBucnhxbEtaUDRXZWRhbmdwWENoS3JvcTNrb3BFNHphSEpOODhxaFNfbjVRS1U2azBTM2ViNmFOR0FHdjNvUU9Qc0p1RW85dFQ5M3I4c29rSXNycEJRTnF3T1JlaU5wb0VDNnhrNmlQUjNJVERzdkc0UTdEWmZMRjNkbjdlVnNNX2lhVVp2M2p1REdreDBGOEtIcFJIV3ZjX1poVk9n?oc=5"
           }
         ]
       },
@@ -17739,10 +17739,10 @@
             "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNb2pReHBfbEtlQjlKVWhnOE8yN21KX1c0dmtjRjAxa05vTnR0ZkpZQTBZWXZIRGk0SlR2S3VRaEM3WWRET3J4bE1tR21rXzBZanFja1RTWHEyY3V0OVlSRDhkS3E0NkVubmNBWDA0dmlmN2tXcHgyd1RINEdPd3dOTXIyTURra3pDNHNYUDhNQmhZU19kMmhyUHIzNUFjaWhyT0hUeWJZVHFyTVoyREg4d1c0R1pUTFF2eGFGS3FuRDNyTjJmWjYzeE1YcVE2THVSX2ZVVlNWN0JNMzN3a2tFVEd3?oc=5"
           },
           {
-            "title": "Cerebras Systems Delivers Record Revenue in Third Quarter 2026, Raises Full-Year Outlook",
-            "publisher": "Cerebras",
-            "date": "2026-11-12",
-            "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOUG5aNWJiMGl5Mkl4TFpsMnJFYVhpUV9uWXRrSjBRdDdiRU9YTkhJLXdiLWNkNTAzaGZZRmtrUmVKNkxaWk9jM1BBMU15Y2d6anI5amwxc05EclFJaTdOYjk4TDBvYzZVUWRiQlowU0V5WV9tQU1weEt4Y2RXQzVnOGxReExNci1uVl80WFBab1QySnJUV09FVjA0SkhpOFN2MVVGUERlOXlPdVd0emhDa0RsYThGRC10ZzF5MHlqY0Z2dw?oc=5"
+            "title": "Cerebras Systems (CBRS) Stock Jumps As Q3 Results Revive Valuation Debate",
+            "publisher": "Yahoo Finance",
+            "date": "2026-11-13",
+            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNFE0LVJUano2b1gza19BZnZEQmtGMndnSFBfNEFKcXpoSjdQQTFmMFJxWGJ6Y0xUVWt6ejdnVXpGNGNIbE42YlhNdVNEZ3RLdnQ1VlloOF94a0VYX3VYSXF6WnVzOGhNT3ljWFZQZ0ZGSld1RHlVUkxjQzZTMUVHV3E1X3d0Z2swTjUzQ2xuN1V1eF8yVS1uUllOWW1zajg?oc=5"
           }
         ]
       },
@@ -17767,21 +17767,21 @@
             "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPajBIQVJwYUNFRGNGRE43Zm9HQlVqZUp2X0l4OThSWGk1R0JfbHdWLW9MQWNib0otSzBya3YybmJPOXlwSjRrRi14QmkxWklOV1JsZEhpc1BDNkphOUdPTmVZT0ZiZUhfXzNNNmZWM21oY04weVJNY2VfOU1TRHJERElfYllUWVNJMHdkS291b2ZuQTlhSGpqZXVaeks4cF82bjZfVlJyWUJRWS13X3RCNkxlMVRob2JnNUNPMWdUT05xX1prUjF6NURIZ3JoNjhaM1EwT3BMRXVwb09zTGNZTA?oc=5"
           },
           {
-            "title": "AMD Shares Climb as CEO Lisa Su Brushes Off Nvidia's Huang Turmoil, But the Real Opening Isn't Demand",
-            "publisher": "Barchart.com",
-            "date": "2026-11-18",
-            "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPN1NUNGlyTGNwWHdmVDBTY2RVSWpGQkEtMnZ5bExGY0U1eHhOa2UxRFVKXzJJZXVaUktBeEppcFJaMnFsc1BhNGkyNUV1em9MdVdTM1JJQzNleGkzb0dFQmtlUlpyVi1haGRJb0tUQ0xRY1Ywd0ZyWXp0X0JQLVFTbDJ1eFFhMmJaVWFPLTNjaGtkN1pnODNQczkyVVV0YXNLdkw1ZnAwN294eGh1VVA4M3hIdXktbmlUNHJHd0xPRVdhRVJOTDhMTy1nNzk2TVliVE9sUjhSVDVhTDNw?oc=5"
-          },
-          {
             "title": "\u2018The Noise Will Work Itself Out in Time\u2019: AMD CEO Lisa Su Says Nvidia a \u2018Phenomenal Company\u2019 After Jensen",
             "publisher": "Benzinga",
             "date": "2026-11-18",
             "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOTF9haEtLSWctOVJPRjJYeVN1LWxxM0s0SFRkQ2NvV1hxME1GaDBBbjk5QmVKT1FYRnRyRm4tVnpLQ2k1blFjOXRpMzFuUEkxckgzWDJaeWF2QlFLY3F2Vm1iUnl1SndVMjN2NE1kSEt2VG9SZkFVZ0l1YWV4QmF5QTVSYTZINzVrYjdiQnlPRE5ETHRuQldCU2M5QkJOY0xxT0pYRmlzUWNibTdTenRHQUNXblpaSDhRQ3VYYklKcUU4US1tbkkybnJPbi1ZaVNyN2JMV2h4SE5Ib20tVGhIZm5rdHpwTFZqbmc4MWVvdER0YTE4eUp6QQ?oc=5"
+          },
+          {
+            "title": "AMD Shares Climb as CEO Lisa Su Brushes Off Nvidia's Huang Turmoil, But the Real Opening Isn't Demand",
+            "publisher": "Yahoo Finance",
+            "date": "2026-11-18",
+            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPN1ltcmpDdWkyNm5lYjB4djFCYXhmWUVMY01raHc4WkJ1bmVfdXJWQTEzSWN5QTk2ZmlqRmpGdW1sTURLSUlOcjhtRDVfSVYyc2tZUWdLU0VLSDRXMEd5SWJmLUN6S1RGSHYyTnF1Ul9BeTBRbUdaUFlIS01ac3NHY3VlWHpseW9mYm1NUUNjUTVvX2dL?oc=5"
           }
         ]
       }
     ],
-    "movers_updated": "2026-11-19T02:50:36Z",
+    "movers_updated": "2026-11-19T03:20:06Z",
     "target_hits": [
       {
         "ticker": "CBRS",
@@ -18238,6 +18238,30 @@
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNalZvX2pDb3VTNkpldDdwLWlvU2piTTB2Z1g4ZU5OSTZBTUZQTU1GbUNkZDBYZUlDaWExaG9tMWVnTHZ4MlFuT3JFSFkxRHktcmM5V0xrTkhBODN1MHFnMW04aWJ2OVJndzk1WlV0UFBxbHdiZjlEdnVpVHVCalhSYm10cmVERGFYTlpKOThsUkR6Zk9kVGhqc1kxSU5zaEFyRFVWVElZLXY5OVE?oc=5"
       },
       {
+        "ticker": "META",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Meta\u2019s $225 Billion AI Spending Forecast Comes With a Cash-Flow Question",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-18",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWmJMYjd0bnAyMVd5U2xRQ09qbGhvM3pDaGxLMnlDd1N4WTNBSVF0eHhHQWhHV3pzZWp0bURXZW03TGk3cEhqWVNwZHpPdVlHelJnMGVjN3hRU2o5eHgtRGNSbGRJcWRHOWk3UUZBUWJQd1dRbGwycVMyTXprWUpDN3prUnlKWExhT3I4Umc5R3lFQVR5elFR?oc=5"
+      },
+      {
+        "ticker": "META",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Lola CEO Steve Hafner on Meta\u2019s Muse: \u2018The More They Scale, the More Money They Will Lose\u2019",
+        "publisher": "Skift",
+        "date": "2026-11-18",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVjFRbUNxSnlkZGFoX1lFQV9XVDdjQ2xKeE5zYlE0T1VncDlaQUNENWVqQWU2VFRmakFORkxCUDhnTVFPc2RYQ1FvalFGMkFlTTVidk5XdDFrYmRoVGFBR2M3NTc4Q3JYNEZnUmV3NWNNRzdKS2l3dnFaNFRSY2hzSl96LUJadnJQS1JWalB5eEFKUGZZb1ZseXVxalVmck1hRTFmRHY5b3JBOWpaOUE3dHZSdVNadw?oc=5"
+      },
+      {
+        "ticker": "META",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Nvidia Says Meta, OpenAI and CoreWeave Adopt Vera, Expects CPU Revenue to More Than Double in 2028 as Phy",
+        "publisher": "Benzinga",
+        "date": "2026-11-18",
+        "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNaFhyZnkzTjJVZ0RKZWJlNkY4X0txdkNrNFJZM0d6TWJyWDBpckkzcW1fdzFGSGFwOVRpQzBPVl8xYl9oWG1LZ2FjeTVaU0VWdDJmUUk3dHpYN0tQNG93R0FxaVo2VmhMR0QxaFRCdEdpbjJMOGo3d2Zhb3pyYVpYbExXdm5JeXFIamlPSHctMjBmbXFIWXBkZzBuY2szajMtLWhfYm5jLU9wdk9XejZneUotTGZYcEltbVctd0RCN3lMNmZzeTE2cjhaNTVWWGlKT0FlVTRMZXViNTVHaE1aT253ajJ1X1BnRThDSm55LWIzRWZ4ZV9XbFpVVnBoc3F4ZWIyZkk4QXE2R29vVWVFTWRHMzdMVk8yYTV1NzhR?oc=5"
+      },
+      {
         "ticker": "AVGO",
         "verdict": "RESEARCH-WORTHY",
         "title": "AMD, Broadcom, CoreWeave stocks mixed on Nvidia Q3 earnings beat",
@@ -18252,14 +18276,6 @@
         "publisher": "Yahoo Finance",
         "date": "2026-11-18",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNUGVGc05IMEJDZnhVN0U2aVQ4ZEdyUThDU3BwTHUzdHc5clM3OUxpU0JpallEY25xY1F0aGZRTThhM2VPSGNtUXdVR3JOVzh0NjBheHJFc3dKNk1FenJDWkhwclN2MlMtamdfMnRlQ0F4ZS1lNUJDc216aDVsYWhOUTB5RmdxaUZOdUNhQlREeElmeUpsM3pjN3VpREtVVnM?oc=5"
-      },
-      {
-        "ticker": "UNH",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "UnitedHealth Keeps Raising Guidance. Here's What a $10,000 Investment Could Be Worth if the Turnaround Sticks.",
-        "publisher": "Yahoo Finance",
-        "date": "2026-11-18",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWi1YcWpIODFFU3RfMnhmM3FmcWZGTzBpMEhQNGlsQkZxNDEzU3NpcWd4Zk9WUEhRYWdkVUpJMlhBR3B2aUh1OUtwT1U4dy1xbWZmUnhlaGZoQUJVUUtlSzJWdUNUbHBKSHBETUlXTTVwdVdIczctR28tVWdiQV9McTBUN18wME9IYWZ0WkM1azRxcndFS2E0NjRYc0hTX1ZwR210cA?oc=5"
       },
       {
         "ticker": "ASML",
@@ -18278,6 +18294,14 @@
         "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPRGhfT1h2VHNtYVlES2FYa3lSdm40WmcxQ3d3TGl2bG9xZG5KbHFYeHlqZ044TEFjUHNZZDBvVjZxc3ZxdGxKQ18wc1lXNjVXZzItMUt2Ym50X1lfWk84eXJneUpZYUtIVEdwZFN0SlBXbnpPUWdnNmxPUGVBRDI2amdTUDdOU1Naal9ocl9iSlQ2TkJkVl81ZGlnaTFpcWRFX05XZDl2VzVhcXE1?oc=5"
       },
       {
+        "ticker": "TSM",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Taiwan Semiconductor Stock (TSM) Looks Too Cheap for Its Growth Outlook",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-18",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSHZ4N0lvQl9kcTU2ZlRNbUdrQkl5bUR6Y3Q2YkxMZXFDWWUyeE9rMWhkWEdRUkd3clA5MjE0aGFkZFAzRnNLVFE5SThEeWJYUWZudEd3SGh5SFFwdDF4Qk9HZWw0dTRzYWoyQmxvc3psN3dWRW4wQ2c2Ml9kbkQ1cEhJaDBidUh1VDN5T3hIRXIyTmZ6TThDVW1LR0pEZ1FoTEVZ?oc=5"
+      },
+      {
         "ticker": "AMD",
         "verdict": "RESEARCH-WORTHY",
         "title": "AMD, Broadcom, CoreWeave stocks mixed on Nvidia Q3 earnings beat",
@@ -18288,18 +18312,18 @@
       {
         "ticker": "AMD",
         "verdict": "RESEARCH-WORTHY",
-        "title": "AMD Shares Climb as CEO Lisa Su Brushes Off Nvidia's Huang Turmoil, But the Real Opening Isn't Demand",
-        "publisher": "Barchart.com",
-        "date": "2026-11-18",
-        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPN1NUNGlyTGNwWHdmVDBTY2RVSWpGQkEtMnZ5bExGY0U1eHhOa2UxRFVKXzJJZXVaUktBeEppcFJaMnFsc1BhNGkyNUV1em9MdVdTM1JJQzNleGkzb0dFQmtlUlpyVi1haGRJb0tUQ0xRY1Ywd0ZyWXp0X0JQLVFTbDJ1eFFhMmJaVWFPLTNjaGtkN1pnODNQczkyVVV0YXNLdkw1ZnAwN294eGh1VVA4M3hIdXktbmlUNHJHd0xPRVdhRVJOTDhMTy1nNzk2TVliVE9sUjhSVDVhTDNw?oc=5"
-      },
-      {
-        "ticker": "AMD",
-        "verdict": "RESEARCH-WORTHY",
         "title": "\u2018The Noise Will Work Itself Out in Time\u2019: AMD CEO Lisa Su Says Nvidia a \u2018Phenomenal Company\u2019 After Jensen",
         "publisher": "Benzinga",
         "date": "2026-11-18",
         "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOTF9haEtLSWctOVJPRjJYeVN1LWxxM0s0SFRkQ2NvV1hxME1GaDBBbjk5QmVKT1FYRnRyRm4tVnpLQ2k1blFjOXRpMzFuUEkxckgzWDJaeWF2QlFLY3F2Vm1iUnl1SndVMjN2NE1kSEt2VG9SZkFVZ0l1YWV4QmF5QTVSYTZINzVrYjdiQnlPRE5ETHRuQldCU2M5QkJOY0xxT0pYRmlzUWNibTdTenRHQUNXblpaSDhRQ3VYYklKcUU4US1tbkkybnJPbi1ZaVNyN2JMV2h4SE5Ib20tVGhIZm5rdHpwTFZqbmc4MWVvdER0YTE4eUp6QQ?oc=5"
+      },
+      {
+        "ticker": "AMD",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "AMD Shares Climb as CEO Lisa Su Brushes Off Nvidia's Huang Turmoil, But the Real Opening Isn't Demand",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-18",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPN1ltcmpDdWkyNm5lYjB4djFCYXhmWUVMY01raHc4WkJ1bmVfdXJWQTEzSWN5QTk2ZmlqRmpGdW1sTURLSUlOcjhtRDVfSVYyc2tZUWdLU0VLSDRXMEd5SWJmLUN6S1RGSHYyTnF1Ul9BeTBRbUdaUFlIS01ac3NHY3VlWHpseW9mYm1NUUNjUTVvX2dL?oc=5"
       },
       {
         "ticker": "AMD",
@@ -18406,14 +18430,6 @@
         "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZml6TWNkR3pWSDNqTVVCdE9kZ051S1BwOTdlcjhQSWh3TW5keFhnbEI3bG81R1VnTVVpTG1MZHpuRGRUc1dyQ3ZzWkRVaUxsdHhZZ0NKMkhUSHV6LVdRdTV1U3cyVTdwSHZ2el9SWGYzYU1WaU1nZDV1ZEhpWW02bVhaLXZONDJHYVN5YmRzeURMOFRqWGtfUFR5SzB2aUJaajk1WktNcTNsRGhDMEJGUjNLa0l0MkE?oc=5"
       },
       {
-        "ticker": "GEV",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "SoftBank Puts Ohio Under \u201cA Thorough Reassessment.\u201d GE Vernova\u2019s $16 Billion Cash Outlook Rests on Buyers Like It",
-        "publisher": "TIKR.com",
-        "date": "2026-11-18",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSk53YmNySFN1UnppVi1oZEJ4NnFlVFRIT2tXMktVYXRvaVVjbGk0anFCUUx3S3FOOVF1ckdyYTNqNFdrOHVpVlNGN3VmRDVweHVhX0NkeG5qUzhneUZyUlhDc3BKZkV1XzZhc1Y2T1ZRODBXeHJYUDNRTTZRaG5KV0l1cThfZ2hvdkFxNGIxNWdsTWJwZzc5azhDWC11Z25FYTF4dkRCbXY0VnhHVjRIOHZhZGMtQlJGbmtlbXZoS29oWEVKMWlyYjcyckpncGly?oc=5"
-      },
-      {
         "ticker": "ETN",
         "verdict": "RESEARCH-WORTHY",
         "title": "Erste Group downgrades Eaton stock rating on debt concerns",
@@ -18512,6 +18528,14 @@
       {
         "ticker": "AVGO",
         "verdict": "RESEARCH-WORTHY",
+        "title": "David Tepper Sold Every Broadcom Share Last Quarter and Bought More Micron and Nvidia. Broadcom Has Held Up Better Since",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-17",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQcDFoYXNVUUFZdDRFVmZXSGlxSHUwUzFabWhFNzhZMzBWWERNQ1Vsd2lPem9VM1AtM2tEY3lhUWlwaE5tQm5uUXV0VmVveW5EWEJxSVhvMFFyYkE5Wmp0OE45allEOUQxcFMwRFpGa1B0VFpLWnVtcG1GbG5UWUw5cDEzTURKMXQwSDZEdElTZVZYOWZQTWZCcEM0U2RfZw?oc=5"
+      },
+      {
+        "ticker": "AVGO",
+        "verdict": "RESEARCH-WORTHY",
         "title": "Broadcom Stock Is Up Tuesday: AI Chip Diversification, Dec. 9 Earnings, Analyst Targets",
         "publisher": "Benzinga",
         "date": "2026-11-17",
@@ -18528,26 +18552,18 @@
       {
         "ticker": "COHR",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Coherent Stock Pick of the Week at Smart Insider Following CEO, Chairman Share Purchases",
-        "publisher": "marketscreener.com",
-        "date": "2026-11-17",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPdnRYdk1Od3huV0hiUzZIWmFLTG4wMERPRFh1STJycXhCSEJwZGppSHBIUXdORUwyVTlJampkU1FNdWJ0a2NmTEZjai1xRG83aExPUDh4WVlhaEtFZmRxSlVLTks5Q0V1TU5TUUhTQS1pWHRpUnZNcHFkelhwV1VVX21TczVqNVRPTXNseHBrZ2tXV1BVNGVQTWZZLXNCdFp5U015LXpKQ1V3di1XVS00MXk4QS1fakJuMExRQ05IeUZvS2x3U1JDdjZpV2ZkRlZwSVY3NGVGWQ?oc=5"
-      },
-      {
-        "ticker": "COHR",
-        "verdict": "RESEARCH-WORTHY",
         "title": "Coherent Surges 10%, Lumentum Rises 8% Pre-Market as US Plans to Restrict Chinese Optical Module Imports",
         "publisher": "TradingKey",
         "date": "2026-11-17",
         "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPeUE5UU9Fd0xpNzhPR1A1cjd4U3JYaVBoU0YzQkYyZW45RE9UWHQtbzJuX2hSV3NFVEtjems1RlpYdk9KRGRKYzhYWnlmYVlCa1hwRzNCUFplakpBQWxEbjV4eGk0b05TRF9fSDEtbUZWc3pNV0NlMXJPQ3hhdGx5aTBfbDFqdmFKaFBrZW43cElwQkRrVWg4T0ZBY203NjJEc2ptVlZTX1l4OFZLNUphYTRVdG42Y0JtQVVFZWE1WHBrWGI4Vm9VY0Q4aXE0RHUyVFZ6Q1RWbmJmQ0RoZTZ0RA?oc=5"
       },
       {
-        "ticker": "CEG",
+        "ticker": "COHR",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Why Did Constellation Energy Stock Jump Over 10%?",
-        "publisher": "Trefis",
+        "title": "Coherent (COHR) Stock Price Prediction: Q1 growth meets a still-fragile tape",
+        "publisher": "Blockchain News",
         "date": "2026-11-17",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVXJBZ3hoVy1EZ1NtLVVuVHUwekN2R19NR01mc1ZPQmVpbFFKQmdSUWx1RlNUNnMxSWotVzd4OVNyNXVFSmRKcHV2MEkzaThnU0hqX2dBdFZhQmFmSWdnOENJUG5mb3pqTEdyWFZuOHlKUl83Uk4zSGRFS1hVd0lGV0xvaHlhdUhucWIxejZtSTgwMTBzNF9zOVRpSTB0aUM4R3B6WFVWVmpIajQ?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbkZxYzJDNlFNMVNEbW9GZ2F6aXgtR0hnNW5tTXZaWE53TTBRVS01YUdWTjdhenEzdDZyOXdSWk9TaUMtZ1NfdGFyYmttX0k1TGZIN0tFNjZHcVNjOWVjejFKNktKSW5uUHViQTdGd3d3NV9xRTc5UFFMajRRc3FTUEwzTzRRb0U1NHA0RURnS3NENnhLLUx1WWxBcU4?oc=5"
       },
       {
         "ticker": "CEG",
@@ -18556,6 +18572,14 @@
         "publisher": "Yahoo Finance",
         "date": "2026-11-17",
         "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPQkpyTW9SczNLTEJBVWp2WGYyS0QwX01FVy11MjVkelZkczMwWUpjS0p6UHJQZDU3MnFTaVZGb0Y4OGNNNDk4U2xDZGJQWll6YVZCQUZtMkFMVzZnT3NtMjlTVVU4UkdFeVVLS0NrXzBVMFZsSi1VejRsdTBTN0o4MkZpSUlENGJFQmtfbUZaZ3N4TlRBQ1NiOVlkMHhVN0pfMklLTXZ2WkVOUQ?oc=5"
+      },
+      {
+        "ticker": "CEG",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Why Did Constellation Energy Stock Jump Over 10%?",
+        "publisher": "Trefis",
+        "date": "2026-11-17",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVXJBZ3hoVy1EZ1NtLVVuVHUwekN2R19NR01mc1ZPQmVpbFFKQmdSUWx1RlNUNnMxSWotVzd4OVNyNXVFSmRKcHV2MEkzaThnU0hqX2dBdFZhQmFmSWdnOENJUG5mb3pqTEdyWFZuOHlKUl83Uk4zSGRFS1hVd0lGV0xvaHlhdUhucWIxejZtSTgwMTBzNF9zOVRpSTB0aUM4R3B6WFVWVmpIajQ?oc=5"
       },
       {
         "ticker": "VST",
@@ -18580,30 +18604,6 @@
         "publisher": "Blockchain News",
         "date": "2026-11-17",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSlVQSjE3YzhOVkZvVlF6NDFIbldlMTQ3NHlxR3VDcjl2MV92MFlKeVJwLUZPM0puMzN2NFFYOTBDSWZseTdqcS1ZcVZ5MGJmSW1fazV5MXhWVmpWWkRIbkx1N1BDUkp1dGViSmNqV2NBVk1UWVZPMzBKZkVjWmNXeFJ5NkFiRVJsTnZ2RGIyTHZXZVk3cXVkeXkxTWI2dUU?oc=5"
-      },
-      {
-        "ticker": "ETN",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Eaton (ETN) Stock on Monday: Slides 4.56%, Down 14% in a Month",
-        "publisher": "JournalArta",
-        "date": "2026-11-17",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTk5acUVTanNjdXAzSUxoRGJTTGkyVEhsUnRMWWRObzBvLWV1bjdBeGZXcnlUNTVva2UtX05jOEh1cW82VDVNZnNBb3NNTVhBb0J6UVltcmFRUHZPQWZRTklhSGFFcnNYVVVGOHV0ZENEakRwLXFLYjJPZ3cwNG5zcWhPY2M1UTNOdmxEa0xoZWxsZzdxVGJBSU9HTQ?oc=5"
-      },
-      {
-        "ticker": "POWL",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "POWL: Powell Industries FY2026 revenue rises 14% to $1.3 billion",
-        "publisher": "Quantisnow",
-        "date": "2026-11-17",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPaVNaNFNMSU1XeG9SdEVOVXl4SS1OWkhZTkNCa1RPNXVqaERKN3FZWFVGV0pjQV91U2tkNEszM2JEdjlfdHdUU0pzWmRkX3piZTByZnVOcFVxRms2Q2ktXzZadFdXM0c5WFQ4Y0xmV000a0EyV1VOYXBxX3R1MjZyZ21aTmVKUGI2NFc1VzhnVF8?oc=5"
-      },
-      {
-        "ticker": "POWL",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Powell Industries Q4 revenue rises 33% to $397 million",
-        "publisher": "Crypto Briefing",
-        "date": "2026-11-17",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPOGRkSnBJeF9vOGUwNS1WWlBiMEdwOVpNa0F6aEYwVVBGMGVIWHo2RENNb01jZkNJSlhLRVAyZGpKN0o0eHJqWUN1cXp6Q1lXQVR4X001dzFYOEItTW9iTnpEZW5zY2p4bmtZNWk2a25BVEpvMWZFSG5fclRTUDlYanRwSQ?oc=5"
       }
     ],
     "insider_alerts": [
@@ -18827,7 +18827,7 @@
         "name": "UnitedHealth Group Incorporated",
         "drawdown_pct": -24.2,
         "price": 349.91,
-        "pe": 19.972033,
+        "pe": 22.244757,
         "forward_pe": 14.997822,
         "verdict": "RESEARCH-WORTHY",
         "next_action": "RESEARCH \u2014 Wide-moat healthcare compounder at 17.5x forward earnings with 5.8% operating margin recovering, $22.8B FCF, and third guidance raise in 2026 \u2014 quality business on sale at -11.7% from 52-week high. Worth a deep dive before any decision."
@@ -18847,7 +18847,7 @@
         "name": "Taiwan Semiconductor Manufacturing Company",
         "drawdown_pct": -25.6,
         "price": 362.62,
-        "pe": 23.50097,
+        "pe": 23.304626,
         "forward_pe": 15.506329,
         "verdict": "RESEARCH-WORTHY",
         "next_action": "RESEARCH \u2014 World's leading foundry at 16x forward earnings with 50%+ revenue growth driven by AI infrastructure demand, but Taiwan geopolitical risk uncaptured in valuation. Worth a deep dive before any decision."
@@ -18898,7 +18898,7 @@
         "drawdown_pct": -35.4,
         "price": 772.22,
         "pe": 20.273561,
-        "forward_pe": 29.815813,
+        "forward_pe": 29.781315,
         "verdict": "RESEARCH-WORTHY",
         "next_action": "RESEARCH \u2014 Quality power equipment compounder with 27% revenue growth, 8% FCF yield, net cash balance, and direct AI/grid exposure trading at 21x trailing earnings but 31x forward earnings \u2014 a rare valuation divergence that warrants investigation. Worth a deep dive before any decision."
       },
@@ -18927,7 +18927,7 @@
         "name": "NFLX",
         "drawdown_pct": -47.2,
         "price": 59.82,
-        "pe": 17.289017,
+        "pe": 17.239193,
         "forward_pe": 15.861736,
         "verdict": "WATCHLIST",
         "next_action": "WAIT \u2014 Quality streaming compounder at 16.5x forward earnings with 12% revenue growth and $11.4B FCF, but advertising monetization stumble clouds near-term outlook. Revisit at 50% below the 52-week high."
@@ -18937,7 +18937,7 @@
         "name": "AppLovin Corporation",
         "drawdown_pct": -47.0,
         "price": 390.91,
-        "pe": 26.323906,
+        "pe": 26.866667,
         "forward_pe": 18.73894,
         "verdict": "WATCHLIST",
         "next_action": "WAIT \u2014 High-margin mobile ad platform growing 55% YoY at 20x forward earnings, but securities fraud lawsuits create headline risk. Revisit at 30% below the 52-week high."
