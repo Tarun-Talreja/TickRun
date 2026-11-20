@@ -1,11 +1,11 @@
 {
-  "last_built": "2026-11-20T02:40:01Z",
-  "quotes_updated": "2026-11-20T02:35:04Z",
+  "last_built": "2026-11-20T03:09:50Z",
+  "quotes_updated": "2026-11-20T03:04:17Z",
   "health": {
     "stages": [
       {
         "name": "Quotes",
-        "updated_at": "2026-11-20T02:35:04Z",
+        "updated_at": "2026-11-20T03:04:17Z",
         "detail": null,
         "status": "ok",
         "age_hours": 0.1,
@@ -16,7 +16,7 @@
         "updated_at": "2026-11-19T12:15:52Z",
         "detail": "8/8 tickers",
         "status": "ok",
-        "age_hours": 14.4,
+        "age_hours": 14.9,
         "affects": "Ratings aren't being updated"
       },
       {
@@ -24,12 +24,12 @@
         "updated_at": "2026-11-19T18:25:53Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 8.2,
+        "age_hours": 8.7,
         "affects": "Upcoming earnings dates may be missing"
       },
       {
         "name": "SEC filings",
-        "updated_at": "2026-11-20T02:35:09Z",
+        "updated_at": "2026-11-20T03:04:23Z",
         "detail": null,
         "status": "ok",
         "age_hours": 0.1,
@@ -37,7 +37,7 @@
       },
       {
         "name": "Prices",
-        "updated_at": "2026-11-20T02:35:04Z",
+        "updated_at": "2026-11-20T03:04:17Z",
         "detail": "59/59 have data",
         "status": "ok",
         "age_hours": 0.1,
@@ -45,7 +45,7 @@
       },
       {
         "name": "Company figures",
-        "updated_at": "2026-11-20T02:35:04Z",
+        "updated_at": "2026-11-20T03:04:17Z",
         "detail": "59/59 have data",
         "status": "ok",
         "age_hours": 0.1,
@@ -53,7 +53,7 @@
       },
       {
         "name": "News",
-        "updated_at": "2026-11-20T02:35:14Z",
+        "updated_at": "2026-11-20T03:04:32Z",
         "detail": "58/58 have data",
         "status": "ok",
         "age_hours": 0.1,
@@ -64,7 +64,7 @@
         "updated_at": "2026-11-16T01:55:52Z",
         "detail": "52/60 have data",
         "status": "ok",
-        "age_hours": 96.7,
+        "age_hours": 97.2,
         "affects": "Insider buying won't show on stocks or the radar"
       },
       {
@@ -72,7 +72,7 @@
         "updated_at": "2026-11-15T19:48:08Z",
         "detail": "57/60 have data",
         "status": "ok",
-        "age_hours": 102.9,
+        "age_hours": 103.4,
         "affects": "Hedge fund holdings may be out of date"
       },
       {
@@ -80,12 +80,12 @@
         "updated_at": "2026-11-19T19:07:55Z",
         "detail": "16/16 have data",
         "status": "ok",
-        "age_hours": 7.5,
+        "age_hours": 8.0,
         "affects": "The field briefing may be out of date"
       },
       {
         "name": "Movers",
-        "updated_at": "2026-11-20T02:40:00Z",
+        "updated_at": "2026-11-20T03:09:49Z",
         "detail": "6/6 have data",
         "status": "ok",
         "age_hours": 0.0,
@@ -96,7 +96,7 @@
         "updated_at": "2026-11-19T19:08:18Z",
         "detail": "12 found",
         "status": "ok",
-        "age_hours": 7.5,
+        "age_hours": 8.0,
         "affects": "The radar may be out of date"
       },
       {
@@ -104,7 +104,7 @@
         "updated_at": "2026-11-14T18:00:53Z",
         "detail": "429 found",
         "status": "ok",
-        "age_hours": 128.7,
+        "age_hours": 129.1,
         "affects": "New stock ideas may be out of date"
       },
       {
@@ -112,7 +112,7 @@
         "updated_at": "2026-11-19T19:08:39Z",
         "detail": "1 found",
         "status": "ok",
-        "age_hours": 7.5,
+        "age_hours": 8.0,
         "affects": "The AI summary may be out of date"
       },
       {
@@ -120,7 +120,7 @@
         "updated_at": "2026-11-19T20:50:10Z",
         "detail": "6 sources passed",
         "status": "ok",
-        "age_hours": 5.8,
+        "age_hours": 6.3,
         "affects": "One of the data sources failed its daily test"
       },
       {
@@ -204,7 +204,7 @@
         "pct_change_1d": -1.78,
         "drawdown_from_high": -10.9,
         "pe": 26.007307,
-        "forward_pe": 20.590195
+        "forward_pe": 20.58771
       },
       {
         "ticker": "RDDT",
@@ -335,7 +335,7 @@
         "revenue_growth": 18.8,
         "op_margin": 49.8,
         "pe": 26.007307,
-        "forward_pe": 20.590195,
+        "forward_pe": 20.58771,
         "short_percent_float": 0.82,
         "short_ratio": 2.8,
         "high_proximity_warning": true,
@@ -830,7 +830,7 @@
         "data_flags": [
           {
             "level": "low",
-            "msg": "Reports in EUR; figures converted to USD at 1.0973. Trailing P/E may mix currencies \u2014 verify against filings"
+            "msg": "Reports in EUR; figures converted to USD at 1.0972. Trailing P/E may mix currencies \u2014 verify against filings"
           }
         ]
       },
@@ -1789,7 +1789,7 @@
         "rated_next_earnings": 1794862800,
         "price": 158.75,
         "pct_change_1d": 2.45,
-        "market_cap": 5783669760,
+        "market_cap": 5783524352,
         "cap_tier": "mid",
         "drawdown_from_high": -51.6,
         "revenue_growth": 33.1,
@@ -3376,7 +3376,7 @@
           "revenue_growth": 18.8,
           "op_margin": 49.8,
           "pe": 26.007307,
-          "forward_pe": 20.590195,
+          "forward_pe": 20.58771,
           "short_percent_float": 0.82,
           "short_ratio": 2.8,
           "high_proximity_warning": true,
@@ -5296,7 +5296,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in EUR; figures converted to USD at 1.0973. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in EUR; figures converted to USD at 1.0972. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -5873,7 +5873,7 @@
           "rated_next_earnings": 1794862800,
           "price": 158.75,
           "pct_change_1d": 2.45,
-          "market_cap": 5783669760,
+          "market_cap": 5783524352,
           "cap_tier": "mid",
           "drawdown_from_high": -51.6,
           "revenue_growth": 33.1,
@@ -6422,7 +6422,7 @@
           "revenue_growth": 18.8,
           "op_margin": 49.8,
           "pe": 26.007307,
-          "forward_pe": 20.590195,
+          "forward_pe": 20.58771,
           "short_percent_float": 0.82,
           "short_ratio": 2.8,
           "high_proximity_warning": true,
@@ -6814,7 +6814,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in EUR; figures converted to USD at 1.0973. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in EUR; figures converted to USD at 1.0972. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -8368,7 +8368,7 @@
           "rated_next_earnings": 1794862800,
           "price": 158.75,
           "pct_change_1d": 2.45,
-          "market_cap": 5783669760,
+          "market_cap": 5783524352,
           "cap_tier": "mid",
           "drawdown_from_high": -51.6,
           "revenue_growth": 33.1,
@@ -9957,7 +9957,7 @@
     ]
   },
   "analytics": {
-    "generated_at": "2026-11-20T02:40:00Z",
+    "generated_at": "2026-11-20T03:09:50Z",
     "funded": false,
     "total_value": 0.0,
     "total_invested": 0.0,
@@ -10054,7 +10054,7 @@
     "concentration_warnings": []
   },
   "track_record": {
-    "generated_at": "2026-11-20T02:40:00Z",
+    "generated_at": "2026-11-20T03:09:50Z",
     "tracked_since": "2026-04-25",
     "scoreboard": {
       "RESEARCH-WORTHY": {
@@ -15768,7 +15768,7 @@
     }
   },
   "asset_location": {
-    "generated_at": "2026-11-20T02:40:00Z",
+    "generated_at": "2026-11-20T03:09:50Z",
     "rules": {
       "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
       "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
@@ -16713,7 +16713,7 @@
     ]
   },
   "daily_brief": {
-    "generated_at": "2026-11-20T02:40:00Z",
+    "generated_at": "2026-11-20T03:09:50Z",
     "date": "2026-11-20",
     "first_run": false,
     "items": [
@@ -16738,7 +16738,7 @@
         "kind": "mover",
         "ticker": "AMD",
         "headline": "AMD \u25bc -7.7%",
-        "detail": "Moved with the broad market (Nasdaq 100 -2.2%, S&P 500 -2.0%); no company-specific news found.",
+        "detail": "AMD fell due to a short-seller report raising China-related scrutiny concerns, not broader market moves.",
         "action": "Verdict unaffected unless this breaks your thesis."
       },
       {
@@ -16754,7 +16754,7 @@
         "kind": "mover",
         "ticker": "FLUT",
         "headline": "FLUT \u25bc -6.1%",
-        "detail": "Flutter Entertainment reported Q3 sales below estimates and cut guidance, prompting analyst target cuts.",
+        "detail": "Moved with the broad market (Nasdaq 100 -2.2%, S&P 500 -2.0%); no company-specific news found.",
         "action": "Verdict unaffected unless this breaks your thesis."
       },
       {
@@ -17739,16 +17739,16 @@
             "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbHFWV0xZLWlDZVlxN0xkY2QwYnFzQjBNQzFUb0UtMWQ2S2FKd1BSSVpLYnN2RGlFaHQ3eHd5cFh2R21ReTBXbGVuWjZHYWVOUHpEd2hfZER4NWM1c1lrTDlVb2dndk50c1hMU3Fka0VxVXBqSFJxOG1ZbDJsLVVCVzZGdlEwMHpFQWRwMDgyNDRNdERNbnRnZ2luY1JQSEJ2SUdWS1JEZFFoVVFldmVXWFRHMA?oc=5"
           },
           {
-            "title": "Nebius Stock\u2019s (NBIS) Q3 Sell-Off Looks Like an Opportunity",
-            "publisher": "Yahoo Finance",
-            "date": "2026-11-19",
-            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNeFpqX2dMTlZjZ2JaSGdjeEhtX0tyY01HVjkyVUo0RXlCclRPeURKMThxaG14cGpsWGExaXlpNjRua3VjZ25KcUlyRmV6NkIyLUVPdGQ1ak5RZnZBcnNkYm5QRFJVdnNfOTNuS2hLYTA2WkhCWElfaEF4djJBcnZVQ3htQzlZR3Qyd090U0VoeWZUMkNU?oc=5"
-          },
-          {
             "title": "Nebius falls 16% as company expects increased 2026 capex spend, issues weak outlook",
             "publisher": "CNBC",
             "date": "2026-11-12",
             "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE83ZXJVYWtlckdZSFQtN1YzNmgtenEyNVl6RnNEYjVYNDFqcS1rS2hmTjF5MGFBM1pLTkpCa1k3SXZiQTVqc3kwbVlCLVE5YXBBOGg0aXE4Wmc0ZmpPNDZfYUZkVjBJRjNsSTJDTlB4Qm1URlhmLXfSAXtBVV95cUxPUVUtT0JGRUhZVUEtNUNiZ3FxS3VTd1FJMThVMmxQWG96UWhQZlIwbTIzeHpqRk1zZ1d2SVMtZ0YyV1k4Z1g5d1Budk15NXl5Z0lQT3Y1YTFDWEV3b1VVd1d5WnRzOFhqcTViU0d4R0llaG1LUWcxcTlseEE?oc=5"
+          },
+          {
+            "title": "Nebius Stock Plummets After Earnings as CEO Warns of Revenue Delay",
+            "publisher": "Barron's",
+            "date": "2026-11-12",
+            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9FWHlJeHh0OVJrUlZ3bHhVTkJIeFFQcWg4a1hkZERkVzR2eU9GNTNHVHBsY2hHaXliZjBqQXJIQ0VLbUVaeHlBM3ZQWllrdURxRjdpZDBHTDlBdk9PMklWMFdnMFdoVlFkc2FUbHEyRHhoOVdMMFNJSg?oc=5"
           }
         ]
       },
@@ -17764,7 +17764,7 @@
         "triggers": [
           "-7.7% on the day"
         ],
-        "reason": "Moved with the broad market (Nasdaq 100 -2.2%, S&P 500 -2.0%); no company-specific news found.",
+        "reason": "AMD fell due to a short-seller report raising China-related scrutiny concerns, not broader market moves.",
         "news": [
           {
             "title": "AMD shares slide as report says China links could invite US scrutiny",
@@ -17779,10 +17779,10 @@
             "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5vOE1LWHU3SlUwbnlZRHlYTUpYZEJzTUJYRlMwdjVaRXdiTXg3NHJKSEVNcTNOVTVOLXFac0xDUUU2dy1OM0tFcERGUG1BSV9hX0Z0Wk41bTdEbW1fNmFMNjh2cEVyeE1ldHFvQ2hoMHUtVTExT0ZPb2Y2V09Kdw?oc=5"
           },
           {
-            "title": "Shares of AMD fall after Hunterbrook discloses short position",
-            "publisher": "CNBC",
+            "title": "AMD Shares Slump After Shortseller Raises China Concerns",
+            "publisher": "Bloomberg.com",
             "date": "2026-11-19",
-            "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQQVJGa0VlRGhKNzdQdnMyYWtMRXBWbFJLVDJLMWJiSlBlS1RISzZJcmpNUFRLUmJOUzJQOHZDUlQzWlZVYW5TOTI1VEVSMTVCQUlkRU9JdHJ6SFZsamhaUFZabFBaVXJjdVN2T0poWDZETHJkUmtWUmtDb1Z5Q0xXME5jT1JMY2prel9RN3FTYkdSV0FiM0ljazRZWG1PYWg5ZHZYY0Q2SQ?oc=5"
+            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbkp6di1ZYkMzQlhjTmkxbHFwNzIzLWMyc3NKXzBqSV9hZ05wODRRYUhjYl9pSmIyNENPaHpXWmlScUpaYXhfT3AyQ1hKYVhWZnhHRVp1a0g2dkVGWmpYa2lXdmdjaE1TUTQwbFlyNjJVNjVkRmlIbWt3WHhWYjNJWXNGSG9RcFkwYUFRZzdYMVNpQXVnZllfU0ZlZEc0QnFsQ1RnWk9tUmc5d2luUVVSaWRKMA?oc=5"
           }
         ]
       },
@@ -17832,7 +17832,7 @@
         "triggers": [
           "-6.1% on the day"
         ],
-        "reason": "Flutter Entertainment reported Q3 sales below estimates and cut guidance, prompting analyst target cuts.",
+        "reason": "Moved with the broad market (Nasdaq 100 -2.2%, S&P 500 -2.0%); no company-specific news found.",
         "news": [
           {
             "title": "Is Flutter Entertainment PLC (FLUT) a Bargain After 4.5% Drop? G",
@@ -17923,7 +17923,7 @@
         ]
       }
     ],
-    "movers_updated": "2026-11-20T02:40:00Z",
+    "movers_updated": "2026-11-20T03:09:49Z",
     "target_hits": [
       {
         "ticker": "CBRS",
@@ -18441,18 +18441,18 @@
       {
         "ticker": "AMD",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Shares of AMD fall after Hunterbrook discloses short position",
-        "publisher": "CNBC",
+        "title": "AMD Shares Slump After Shortseller Raises China Concerns",
+        "publisher": "Bloomberg.com",
         "date": "2026-11-19",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQQVJGa0VlRGhKNzdQdnMyYWtMRXBWbFJLVDJLMWJiSlBlS1RISzZJcmpNUFRLUmJOUzJQOHZDUlQzWlZVYW5TOTI1VEVSMTVCQUlkRU9JdHJ6SFZsamhaUFZabFBaVXJjdVN2T0poWDZETHJkUmtWUmtDb1Z5Q0xXME5jT1JMY2prel9RN3FTYkdSV0FiM0ljazRZWG1PYWg5ZHZYY0Q2SQ?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbkp6di1ZYkMzQlhjTmkxbHFwNzIzLWMyc3NKXzBqSV9hZ05wODRRYUhjYl9pSmIyNENPaHpXWmlScUpaYXhfT3AyQ1hKYVhWZnhHRVp1a0g2dkVGWmpYa2lXdmdjaE1TUTQwbFlyNjJVNjVkRmlIbWt3WHhWYjNJWXNGSG9RcFkwYUFRZzdYMVNpQXVnZllfU0ZlZEc0QnFsQ1RnWk9tUmc5d2luUVVSaWRKMA?oc=5"
       },
       {
         "ticker": "AMD",
         "verdict": "RESEARCH-WORTHY",
-        "title": "AMD Slides After Hunterbrook Shorts Stock, Cites Circular Deals",
-        "publisher": "Bloomberg.com",
+        "title": "Shares of AMD fall after Hunterbrook discloses short position",
+        "publisher": "CNBC",
         "date": "2026-11-19",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbkp6di1ZYkMzQlhjTmkxbHFwNzIzLWMyc3NKXzBqSV9hZ05wODRRYUhjYl9pSmIyNENPaHpXWmlScUpaYXhfT3AyQ1hKYVhWZnhHRVp1a0g2dkVGWmpYa2lXdmdjaE1TUTQwbFlyNjJVNjVkRmlIbWt3WHhWYjNJWXNGSG9RcFkwYUFRZzdYMVNpQXVnZllfU0ZlZEc0QnFsQ1RnWk9tUmc5d2luUVVSaWRKMA?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQQVJGa0VlRGhKNzdQdnMyYWtMRXBWbFJLVDJLMWJiSlBlS1RISzZJcmpNUFRLUmJOUzJQOHZDUlQzWlZVYW5TOTI1VEVSMTVCQUlkRU9JdHJ6SFZsamhaUFZabFBaVXJjdVN2T0poWDZETHJkUmtWUmtDb1Z5Q0xXME5jT1JMY2prel9RN3FTYkdSV0FiM0ljazRZWG1PYWg5ZHZYY0Q2SQ?oc=5"
       },
       {
         "ticker": "AMD",
