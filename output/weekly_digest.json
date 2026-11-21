@@ -1,29 +1,20 @@
 {
-  "generated_at": "2026-11-20T18:49:36Z",
-  "narrative": "The biggest change is a broad pullback in the listed movers, led by NBIS down 9.39%, with AMD down 7.72% and CBRS down 7.64%, and DECK, UNH, and FLUT also falling. Earnings are coming up soon, with CRDO and MRVL due in 11 days, followed by AVGO in 19 days, COST in 20 days, and GIS and MU in 27 days. New Schedule 13G filings and amendments cover OKLO, PODD, DECK, AMZN, RDDT, ADP, TW, LMB, CBRS, PAYX, MKTX, LPLA, and INVH, while field developments include grid interconnection reform, nuclear and uranium approvals, tighter AI chip export controls, ransomware activity, robotics and drone developments, and heavy data center spending, with ASML and TSM flagged by data warnings.",
+  "generated_at": "2026-11-21T17:47:06Z",
+  "narrative": "Major semiconductor and AI stocks including Nvidia, Broadcom, and Micron fell 13% to 16% as the U.S. tightened export controls on AI chips to block Chinese access, prompting TSMC and Samsung to halt some China shipments and sparking bipartisan pressure for further restrictions. Alphabet shares dropped 30% after heavy AI spending pushed its free cash flow negative, while Google simultaneously reduced reliance on Broadcom for AI chips and developed proprietary software to challenge Nvidia. Key earnings deadlines approach for Credence, Marvell, Broadcom, Costco, and Micron over the next month, and Poland advanced toward a $50 billion nuclear deal as India announced massive nuclear investment and enCore Energy prepared to start uranium extraction in December. Costco posted a 12.6% comparable sales surge amid panic buying, Rockwell Automation acquired Agilox to double its mobile robot business, and the Pentagon requested a record $75 billion for drone warfare.",
   "buy_ready": [
     {
       "ticker": "META",
       "name": "Meta Platforms, Inc.",
-      "price": 567.71,
+      "price": 560.84,
       "buy_target": 616.06,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
       "theme": "mega_cap_ai"
     },
     {
-      "ticker": "AVGO",
-      "name": "Broadcom Inc.",
-      "price": 305.47,
-      "buy_target": 341.55,
-      "at_or_below_target": true,
-      "confidence": "HIGH",
-      "theme": "edge_ai_silicon"
-    },
-    {
       "ticker": "UNH",
       "name": "UnitedHealth Group Incorporated",
-      "price": 346.2718,
+      "price": 339.85,
       "buy_target": 349.91,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -32,8 +23,8 @@
     {
       "ticker": "ASML",
       "name": "ASML Holding N.V.",
-      "price": 1278.63,
-      "buy_target": 1383.97,
+      "price": 1266.22,
+      "buy_target": 1265.97,
       "at_or_below_target": true,
       "confidence": "LOW",
       "theme": "edge_ai_silicon"
@@ -41,25 +32,16 @@
     {
       "ticker": "TSM",
       "name": "Taiwan Semiconductor Manufacturing Company",
-      "price": 323.685,
+      "price": 318.71,
       "buy_target": 351.95,
       "at_or_below_target": true,
       "confidence": "HIGH",
       "theme": "edge_ai_silicon"
     },
     {
-      "ticker": "RDDT",
-      "name": "Reddit, Inc.",
-      "price": 86.77,
-      "buy_target": 94.6,
-      "at_or_below_target": true,
-      "confidence": "MEDIUM",
-      "theme": "platform_network"
-    },
-    {
       "ticker": "COHR",
       "name": "Coherent Corp.",
-      "price": 185.22,
+      "price": 187.22,
       "buy_target": 212.96,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -68,7 +50,7 @@
     {
       "ticker": "CEG",
       "name": "Constellation Energy Corporation",
-      "price": 244.395,
+      "price": 237.41,
       "buy_target": 262.74,
       "at_or_below_target": true,
       "confidence": "LOW",
@@ -77,7 +59,7 @@
     {
       "ticker": "VST",
       "name": "Vistra Corp.",
-      "price": 117.545,
+      "price": 115.25,
       "buy_target": 124.14,
       "at_or_below_target": true,
       "confidence": "LOW",
@@ -86,7 +68,7 @@
     {
       "ticker": "VRT",
       "name": "Vertiv Holdings Co",
-      "price": 166.19,
+      "price": 166.24,
       "buy_target": 185.03,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -95,7 +77,7 @@
     {
       "ticker": "GEV",
       "name": "GE Vernova Inc.",
-      "price": 702.88,
+      "price": 699.33,
       "buy_target": 956.75,
       "at_or_below_target": true,
       "confidence": "LOW",
@@ -104,7 +86,7 @@
     {
       "ticker": "ETN",
       "name": "Eaton Corporation plc",
-      "price": 311.2801,
+      "price": 311.33,
       "buy_target": 338.42,
       "at_or_below_target": true,
       "confidence": "LOW",
@@ -113,25 +95,16 @@
     {
       "ticker": "TLN",
       "name": "Talen Energy Corporation",
-      "price": 332.645,
-      "buy_target": 354.92,
+      "price": 332.92,
+      "buy_target": 332.88,
       "at_or_below_target": true,
-      "confidence": "MEDIUM",
+      "confidence": "LOW",
       "theme": "nuclear_smr"
-    },
-    {
-      "ticker": "NVT",
-      "name": "nVent Electric plc",
-      "price": 101.45,
-      "buy_target": 109.12,
-      "at_or_below_target": true,
-      "confidence": "MEDIUM",
-      "theme": "power_grid"
     },
     {
       "ticker": "POWL",
       "name": "Powell Industries, Inc.",
-      "price": 149.47,
+      "price": 148.18,
       "buy_target": 154.82,
       "at_or_below_target": true,
       "confidence": "LOW",
@@ -140,16 +113,25 @@
     {
       "ticker": "STZ",
       "name": "STZ",
-      "price": 143.975,
+      "price": 141.87,
       "buy_target": 145.67,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
       "theme": "defensive_income"
     },
     {
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical, Inc.",
+      "price": 399.05,
+      "buy_target": 399.16,
+      "at_or_below_target": true,
+      "confidence": "LOW",
+      "theme": "healthcare_innovation"
+    },
+    {
       "ticker": "CLS",
       "name": "Celestica Inc.",
-      "price": 202.945,
+      "price": 201.8,
       "buy_target": 240.33,
       "at_or_below_target": true,
       "confidence": "LOW",
@@ -158,7 +140,7 @@
     {
       "ticker": "CRDO",
       "name": "Credo Technology Group Holding Ltd",
-      "price": 102.63,
+      "price": 99.86,
       "buy_target": 246.94,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -167,7 +149,7 @@
     {
       "ticker": "FIX",
       "name": "Comfort Systems USA, Inc.",
-      "price": 1038.88,
+      "price": 1042.47,
       "buy_target": 1113.73,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -176,7 +158,7 @@
     {
       "ticker": "EME",
       "name": "EMCOR Group, Inc.",
-      "price": 608.73,
+      "price": 603.32,
       "buy_target": 635.91,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
@@ -186,65 +168,65 @@
   "movers": [
     {
       "ticker": "NBIS",
-      "pct": -9.39,
-      "reason": "Moved with the broad market (Nasdaq 100 -2.2%, S&P 500 -2.0%); no company-specific news found."
+      "pct": -16.11,
+      "reason": "Moved with the broad market (Nasdaq 100 -5.7%, S&P 500 -3.6%); no company-specific news found."
     },
     {
-      "ticker": "AMD",
-      "pct": -7.72,
-      "reason": "AMD fell due to a short-seller report raising China-related scrutiny concerns, not broader market moves."
+      "ticker": "CLS",
+      "pct": -16.0,
+      "reason": "Part of a broader tech/AI selloff, not company-specific."
     },
     {
-      "ticker": "CBRS",
-      "pct": -7.64,
-      "reason": "Moved with the broad market (Nasdaq 100 -2.2%, S&P 500 -2.0%); no company-specific news found."
+      "ticker": "CRDO",
+      "pct": -15.2,
+      "reason": "Part of a broader tech/AI selloff (Nasdaq -5.7%), not company-specific."
     },
     {
-      "ticker": "FLUT",
-      "pct": -6.12,
-      "reason": "Moved with the broad market (Nasdaq 100 -2.2%, S&P 500 -2.0%); no company-specific news found."
+      "ticker": "NVDA",
+      "pct": -14.01,
+      "reason": "Moved with the broad market (Nasdaq 100 -5.7%, S&P 500 -3.6%); no company-specific news found."
     },
     {
-      "ticker": "DECK",
-      "pct": -5.56,
-      "reason": "Moved with the broad market (Nasdaq 100 -2.2%, S&P 500 -2.0%); no company-specific news found."
+      "ticker": "LITE",
+      "pct": -13.94,
+      "reason": "Moved with the broad market (Nasdaq 100 -5.7%, S&P 500 -3.6%); no company-specific news found."
     },
     {
-      "ticker": "UNH",
-      "pct": -5.55,
-      "reason": "Moved with the broad market (Nasdaq 100 -2.2%, S&P 500 -2.0%); no company-specific news found."
+      "ticker": "MU",
+      "pct": -13.89,
+      "reason": "Moved with the broad market (Nasdaq 100 -5.7%, S&P 500 -3.6%); no company-specific news found."
     }
   ],
   "upcoming_earnings": [
     {
       "ticker": "CRDO",
       "date": "2026-12-01",
-      "days_until": 11
+      "days_until": 10
     },
     {
       "ticker": "MRVL",
       "date": "2026-12-01",
-      "days_until": 11
+      "days_until": 10
     },
     {
       "ticker": "AVGO",
       "date": "2026-12-09",
-      "days_until": 19
+      "days_until": 18
     },
     {
       "ticker": "COST",
       "date": "2026-12-10",
-      "days_until": 20
+      "days_until": 19
     },
     {
       "ticker": "GIS",
       "date": "2026-12-17",
-      "days_until": 27
+      "days_until": 26
     },
     {
       "ticker": "MU",
       "date": "2026-12-17",
-      "days_until": 27
+      "days_until": 26
     }
   ],
   "sec_stakes": [
