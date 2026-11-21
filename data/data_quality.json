@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T03:16:36Z",
+  "generated_at": "2026-11-21T11:50:42Z",
   "checked": 63,
   "flagged": 2,
   "quality": {
@@ -7,11 +7,11 @@
       "ok": true,
       "flags": []
     },
-    "ADP": {
+    "AMD": {
       "ok": true,
       "flags": []
     },
-    "AMD": {
+    "ADP": {
       "ok": true,
       "flags": []
     },
@@ -84,7 +84,7 @@
       "ok": true,
       "flags": []
     },
-    "ETN": {
+    "FIX": {
       "ok": true,
       "flags": []
     },
@@ -92,7 +92,7 @@
       "ok": true,
       "flags": []
     },
-    "FIX": {
+    "ETN": {
       "ok": true,
       "flags": []
     },
@@ -124,11 +124,11 @@
       "ok": true,
       "flags": []
     },
-    "LLY": {
+    "LITE": {
       "ok": true,
       "flags": []
     },
-    "LITE": {
+    "LLY": {
       "ok": true,
       "flags": []
     },
@@ -148,15 +148,15 @@
       "ok": true,
       "flags": []
     },
+    "MSFT": {
+      "ok": true,
+      "flags": []
+    },
     "MKTX": {
       "ok": true,
       "flags": []
     },
     "MRVL": {
-      "ok": true,
-      "flags": []
-    },
-    "MSFT": {
       "ok": true,
       "flags": []
     },
@@ -168,19 +168,19 @@
       "ok": true,
       "flags": []
     },
-    "NOW": {
-      "ok": true,
-      "flags": []
-    },
     "NFLX": {
       "ok": true,
       "flags": []
     },
-    "NVDA": {
+    "NOW": {
       "ok": true,
       "flags": []
     },
     "NVT": {
+      "ok": true,
+      "flags": []
+    },
+    "NVDA": {
       "ok": true,
       "flags": []
     },
@@ -200,11 +200,11 @@
       "ok": true,
       "flags": []
     },
-    "QQQ": {
+    "RDDT": {
       "ok": true,
       "flags": []
     },
-    "RDDT": {
+    "QQQ": {
       "ok": true,
       "flags": []
     },
@@ -228,6 +228,10 @@
       "ok": true,
       "flags": []
     },
+    "UNH": {
+      "ok": true,
+      "flags": []
+    },
     "TSM": {
       "ok": false,
       "flags": [
@@ -237,15 +241,11 @@
         }
       ]
     },
-    "UNH": {
+    "VRT": {
       "ok": true,
       "flags": []
     },
     "V": {
-      "ok": true,
-      "flags": []
-    },
-    "VRT": {
       "ok": true,
       "flags": []
     },
@@ -257,11 +257,11 @@
       "ok": true,
       "flags": []
     },
-    "ZBH": {
+    "^TNX": {
       "ok": true,
       "flags": []
     },
-    "^TNX": {
+    "ZBH": {
       "ok": true,
       "flags": []
     }
