@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-21T17:46:25Z",
-  "universe_as_of": "2026-11-14T18:00:53Z",
+  "generated_at": "2026-11-21T19:19:12Z",
+  "universe_as_of": "2026-11-21T19:15:39Z",
   "cards": [
     {
       "ticker": "NVDA",
       "name": "NVIDIA Corporation",
       "sector": "Technology",
-      "price": 162.85,
-      "drawdown_pct": -33.1,
-      "score": 86.1,
+      "price": 125.53,
+      "drawdown_pct": -48.4,
+      "score": 90.6,
       "new": false,
       "tracked": true,
       "rating": "WATCHLIST",
@@ -20,154 +20,24 @@
         },
         {
           "kind": "fundamentals",
-          "text": "Strong fundamentals: scores 86/100"
+          "text": "Strong fundamentals: scores 91/100"
         },
         {
           "kind": "on_sale",
-          "text": "Quality business 33% below its high"
+          "text": "Quality business 48% below its high"
         }
       ],
       "watch_outs": [
-        "Possible peak earnings: revenue up 106% in a quarter may not last"
-      ]
-    },
-    {
-      "ticker": "TPL",
-      "name": "Texas Pacific Land Corporation",
-      "sector": "Energy",
-      "price": 291.91,
-      "drawdown_pct": -46.7,
-      "score": 79.1,
-      "new": false,
-      "tracked": true,
-      "rating": "WATCHLIST",
-      "reasons": [
-        {
-          "kind": "fundamentals",
-          "text": "Strong fundamentals: scores 79/100"
-        },
-        {
-          "kind": "on_sale",
-          "text": "Quality business 47% below its high"
-        },
-        {
-          "kind": "insider",
-          "text": "Insiders bought: 81 buys, 1 sells in 6 months"
-        }
-      ],
-      "watch_outs": [
-        "Possible peak earnings: 4.0x forward earnings can mean profits are expected to fall"
-      ]
-    },
-    {
-      "ticker": "AVGO",
-      "name": "Broadcom Inc.",
-      "sector": "Technology",
-      "price": 347.01,
-      "drawdown_pct": -29.9,
-      "score": 78.2,
-      "new": false,
-      "tracked": true,
-      "rating": "WATCHLIST",
-      "reasons": [
-        {
-          "kind": "field_news",
-          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5Cd2w3NzJtb0xha0ZJazRHS09nRUVPanNPN192RmRWOGVxdW52QThWZzVwbG9VVmNpT1F6MkZaQVdjV09aMU9razJCVUpfckppUllpQWZCN3hIeHh6VkhhLWRWRC11QWRkSjhMaFlQQ1pyWVFCZ0VsQ2RiWmw?oc=5",
-          "text": "In Edge AI / Specialty Silicon news: Broadcom Stock Falls on Report Google is Cutting AI Chip Shipments"
-        },
-        {
-          "kind": "fundamentals",
-          "text": "Strong fundamentals: scores 78/100"
-        },
-        {
-          "kind": "on_sale",
-          "text": "Quality business 30% below its high"
-        }
-      ],
-      "watch_outs": []
-    },
-    {
-      "ticker": "GOOG",
-      "name": "Alphabet Inc.",
-      "sector": "Communication Services",
-      "price": 292.52,
-      "drawdown_pct": -27.7,
-      "score": 70.4,
-      "new": false,
-      "tracked": true,
-      "rating": null,
-      "reasons": [
-        {
-          "kind": "field_news",
-          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNUVFCVWdHdXZ1M1h6Xzl4c0IxM2xjVVVWQmd4NDg3R3R6SS0xendybURvUkFZMnVCYkhFX1RRcXpQc3UySE9IRWVzYUJJZ3Y5UUxfVWcxZXQ2cmZkd01ZNlNjVy1NMWUzX1E0NTAwMGUwMWw0RTk3RlJWdEM5alRfRVdncF9SeUdWNlhGYQ?oc=5",
-          "text": "In Mega-Cap AI Infrastructure news: Alphabet Shares Fall 30% as AI Spending Pressures Cash Flow"
-        },
-        {
-          "kind": "fundamentals",
-          "text": "Strong fundamentals: scores 70/100"
-        },
-        {
-          "kind": "on_sale",
-          "text": "Quality business 28% below its high"
-        }
-      ],
-      "watch_outs": []
-    },
-    {
-      "ticker": "MU",
-      "name": "Micron Technology, Inc.",
-      "sector": "Technology",
-      "price": 778.31,
-      "drawdown_pct": -38.0,
-      "score": 94.5,
-      "new": false,
-      "tracked": true,
-      "rating": "PASS",
-      "reasons": [
-        {
-          "kind": "fundamentals",
-          "text": "Strong fundamentals: scores 94/100"
-        },
-        {
-          "kind": "on_sale",
-          "text": "Quality business 38% below its high"
-        }
-      ],
-      "watch_outs": [
-        "Possible peak earnings: revenue up 379% in a quarter may not last"
-      ]
-    },
-    {
-      "ticker": "RDDT",
-      "name": "Reddit, Inc.",
-      "sector": "Communication Services",
-      "price": 98.45,
-      "drawdown_pct": -62.6,
-      "score": 85.7,
-      "new": false,
-      "tracked": true,
-      "rating": "WATCHLIST",
-      "reasons": [
-        {
-          "kind": "fundamentals",
-          "text": "Strong fundamentals: scores 86/100"
-        },
-        {
-          "kind": "on_sale",
-          "text": "Quality business 63% below its high"
-        }
-      ],
-      "watch_outs": [
-        "Down 63% from its high, so find out why first"
+        "Possible peak earnings: revenue up 103% in a quarter may not last"
       ]
     },
     {
       "ticker": "META",
       "name": "Meta Platforms, Inc.",
       "sector": "Communication Services",
-      "price": 641.69,
-      "drawdown_pct": -17.7,
-      "score": 81.0,
+      "price": 560.84,
+      "drawdown_pct": -28.1,
+      "score": 82.7,
       "new": false,
       "tracked": true,
       "rating": "RESEARCH-WORTHY",
@@ -179,25 +49,244 @@
         },
         {
           "kind": "fundamentals",
-          "text": "Strong fundamentals: scores 81/100"
+          "text": "Strong fundamentals: scores 83/100"
+        },
+        {
+          "kind": "on_sale",
+          "text": "Quality business 28% below its high"
         }
       ],
       "watch_outs": []
     },
     {
+      "ticker": "TPL",
+      "name": "Texas Pacific Land Corporation",
+      "sector": "Energy",
+      "price": 267.44,
+      "drawdown_pct": -51.1,
+      "score": 80.2,
+      "new": false,
+      "tracked": true,
+      "rating": "WATCHLIST",
+      "reasons": [
+        {
+          "kind": "fundamentals",
+          "text": "Strong fundamentals: scores 80/100"
+        },
+        {
+          "kind": "on_sale",
+          "text": "Quality business 51% below its high"
+        },
+        {
+          "kind": "insider",
+          "text": "Insiders bought: 81 buys, 1 sells in 6 months"
+        }
+      ],
+      "watch_outs": [
+        "Possible peak earnings: 3.7x forward earnings can mean profits are expected to fall",
+        "Down 51% from its high, so find out why first"
+      ]
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "sector": "Technology",
+      "price": 304.41,
+      "drawdown_pct": -38.5,
+      "score": 79.0,
+      "new": false,
+      "tracked": true,
+      "rating": "WATCHLIST",
+      "reasons": [
+        {
+          "kind": "field_news",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5Cd2w3NzJtb0xha0ZJazRHS09nRUVPanNPN192RmRWOGVxdW52QThWZzVwbG9VVmNpT1F6MkZaQVdjV09aMU9razJCVUpfckppUllpQWZCN3hIeHh6VkhhLWRWRC11QWRkSjhMaFlQQ1pyWVFCZ0VsQ2RiWmw?oc=5",
+          "text": "In Edge AI / Specialty Silicon news: Broadcom Stock Falls on Report Google is Cutting AI Chip Shipments"
+        },
+        {
+          "kind": "fundamentals",
+          "text": "Strong fundamentals: scores 79/100"
+        },
+        {
+          "kind": "on_sale",
+          "text": "Quality business 38% below its high"
+        }
+      ],
+      "watch_outs": []
+    },
+    {
+      "ticker": "GOOG",
+      "name": "Alphabet Inc.",
+      "sector": "Communication Services",
+      "price": 264.0,
+      "drawdown_pct": -34.7,
+      "score": 72.1,
+      "new": false,
+      "tracked": true,
+      "rating": null,
+      "reasons": [
+        {
+          "kind": "field_news",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNUVFCVWdHdXZ1M1h6Xzl4c0IxM2xjVVVWQmd4NDg3R3R6SS0xendybURvUkFZMnVCYkhFX1RRcXpQc3UySE9IRWVzYUJJZ3Y5UUxfVWcxZXQ2cmZkd01ZNlNjVy1NMWUzX1E0NTAwMGUwMWw0RTk3RlJWdEM5alRfRVdncF9SeUdWNlhGYQ?oc=5",
+          "text": "In Mega-Cap AI Infrastructure news: Alphabet Shares Fall 30% as AI Spending Pressures Cash Flow"
+        },
+        {
+          "kind": "fundamentals",
+          "text": "Strong fundamentals: scores 72/100"
+        },
+        {
+          "kind": "on_sale",
+          "text": "Quality business 35% below its high"
+        }
+      ],
+      "watch_outs": []
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings Co",
+      "sector": "Industrials",
+      "price": 166.24,
+      "drawdown_pct": -56.2,
+      "score": 71.7,
+      "new": false,
+      "tracked": true,
+      "rating": "RESEARCH-WORTHY",
+      "reasons": [
+        {
+          "kind": "field_news",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQMVFISW9POTZlWElUQ0VZYXVQUWxHUlhXYS1XcXd4cnoybnRPMXBxTGZUSmhGRVRpRFEtR2Ezamk4dlFoZ0dqTUxwT2dQaU5pUklFX0VjU2lpdFpMdUp0QkwtcGdnNTg1d0c0Z2ZicTdxYzluM1JCVTNhWTc1RlROWDUzdjB6dw?oc=5",
+          "text": "In Data Center Infrastructure news: Vertiv Holdings Co (VRT) Deepens AI Data Center Liquid Cooling Push"
+        },
+        {
+          "kind": "fundamentals",
+          "text": "Strong fundamentals: scores 72/100"
+        },
+        {
+          "kind": "on_sale",
+          "text": "Quality business 56% below its high"
+        }
+      ],
+      "watch_outs": [
+        "Down 56% from its high, so find out why first"
+      ]
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "sector": "Technology",
+      "price": 594.51,
+      "drawdown_pct": -52.6,
+      "score": 95.7,
+      "new": false,
+      "tracked": true,
+      "rating": "PASS",
+      "reasons": [
+        {
+          "kind": "fundamentals",
+          "text": "Strong fundamentals: scores 96/100"
+        },
+        {
+          "kind": "on_sale",
+          "text": "Quality business 53% below its high"
+        }
+      ],
+      "watch_outs": [
+        "Possible peak earnings: revenue up 379% in a quarter may not last",
+        "Down 53% from its high, so find out why first"
+      ]
+    },
+    {
+      "ticker": "RDDT",
+      "name": "Reddit, Inc.",
+      "sector": "Communication Services",
+      "price": 85.33,
+      "drawdown_pct": -67.6,
+      "score": 87.7,
+      "new": false,
+      "tracked": true,
+      "rating": "WATCHLIST",
+      "reasons": [
+        {
+          "kind": "fundamentals",
+          "text": "Strong fundamentals: scores 88/100"
+        },
+        {
+          "kind": "on_sale",
+          "text": "Quality business 68% below its high"
+        }
+      ],
+      "watch_outs": [
+        "Down 68% from its high, so find out why first"
+      ]
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
+      "sector": "Basic Materials",
+      "price": 94.68,
+      "drawdown_pct": -30.0,
+      "score": 78.7,
+      "new": true,
+      "tracked": false,
+      "rating": "WATCHLIST",
+      "reasons": [
+        {
+          "kind": "fundamentals",
+          "text": "Strong fundamentals: scores 79/100"
+        },
+        {
+          "kind": "on_sale",
+          "text": "Quality business 30% below its high"
+        },
+        {
+          "kind": "new",
+          "text": "New to the radar"
+        }
+      ],
+      "watch_outs": []
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy Corporation",
+      "sector": "Energy",
+      "price": 334.18,
+      "drawdown_pct": -27.6,
+      "score": 77.1,
+      "new": true,
+      "tracked": false,
+      "rating": "WATCHLIST",
+      "reasons": [
+        {
+          "kind": "fundamentals",
+          "text": "Strong fundamentals: scores 77/100"
+        },
+        {
+          "kind": "on_sale",
+          "text": "Quality business 28% below its high"
+        },
+        {
+          "kind": "new",
+          "text": "New to the radar"
+        }
+      ],
+      "watch_outs": [
+        "Possible peak earnings: 6.5x forward earnings can mean profits are expected to fall"
+      ]
+    },
+    {
       "ticker": "OXY",
       "name": "Occidental Petroleum Corporation",
       "sector": "Energy",
-      "price": 58.75,
-      "drawdown_pct": -12.9,
-      "score": 75.5,
+      "price": 53.9,
+      "drawdown_pct": -20.1,
+      "score": 76.6,
       "new": false,
       "tracked": false,
       "rating": "WATCHLIST",
       "reasons": [
         {
           "kind": "fundamentals",
-          "text": "Strong fundamentals: scores 76/100"
+          "text": "Strong fundamentals: scores 77/100"
         },
         {
           "kind": "insider",
@@ -210,91 +299,23 @@
       "ticker": "DECK",
       "name": "Deckers Outdoor Corporation",
       "sector": "Consumer Cyclical",
-      "price": 86.82,
-      "drawdown_pct": -29.0,
-      "score": 74.4,
+      "price": 77.94,
+      "drawdown_pct": -36.3,
+      "score": 75.4,
       "new": false,
       "tracked": true,
       "rating": "WATCHLIST",
       "reasons": [
         {
           "kind": "fundamentals",
-          "text": "Strong fundamentals: scores 74/100"
+          "text": "Strong fundamentals: scores 75/100"
         },
         {
           "kind": "on_sale",
-          "text": "Quality business 29% below its high"
+          "text": "Quality business 36% below its high"
         }
       ],
       "watch_outs": []
-    },
-    {
-      "ticker": "FIX",
-      "name": "Comfort Systems USA, Inc.",
-      "sector": "Industrials",
-      "price": 1112.5,
-      "drawdown_pct": -46.4,
-      "score": 73.2,
-      "new": false,
-      "tracked": true,
-      "rating": "RESEARCH-WORTHY",
-      "reasons": [
-        {
-          "kind": "fundamentals",
-          "text": "Strong fundamentals: scores 73/100"
-        },
-        {
-          "kind": "on_sale",
-          "text": "Quality business 46% below its high"
-        }
-      ],
-      "watch_outs": []
-    },
-    {
-      "ticker": "EME",
-      "name": "EMCOR Group, Inc.",
-      "sector": "Industrials",
-      "price": 659.36,
-      "drawdown_pct": -30.7,
-      "score": 71.5,
-      "new": false,
-      "tracked": true,
-      "rating": "RESEARCH-WORTHY",
-      "reasons": [
-        {
-          "kind": "fundamentals",
-          "text": "Strong fundamentals: scores 72/100"
-        },
-        {
-          "kind": "on_sale",
-          "text": "Quality business 31% below its high"
-        }
-      ],
-      "watch_outs": []
-    },
-    {
-      "ticker": "PODD",
-      "name": "Insulet Corporation",
-      "sector": "Healthcare",
-      "price": 152.48,
-      "drawdown_pct": -57.0,
-      "score": 70.7,
-      "new": false,
-      "tracked": true,
-      "rating": "WATCHLIST",
-      "reasons": [
-        {
-          "kind": "fundamentals",
-          "text": "Strong fundamentals: scores 71/100"
-        },
-        {
-          "kind": "on_sale",
-          "text": "Quality business 57% below its high"
-        }
-      ],
-      "watch_outs": [
-        "Down 57% from its high, so find out why first"
-      ]
     }
   ],
   "on_sale": [
@@ -302,45 +323,45 @@
       "ticker": "SNDK",
       "name": "Sandisk Corporation",
       "sector": "Technology",
-      "price": 885.01,
-      "drawdown_pct": -62.4,
-      "score": 88.3,
+      "price": 79.24,
+      "drawdown_pct": -73.1,
+      "score": 89.4,
       "new": false,
       "tracked": false,
       "rating": "WATCHLIST",
       "reasons": [
         {
           "kind": "fundamentals",
-          "text": "Strong fundamentals: scores 88/100"
+          "text": "Strong fundamentals: scores 89/100"
         },
         {
           "kind": "on_sale",
-          "text": "Quality business 62% below its high"
+          "text": "Quality business 73% below its high"
         }
       ],
       "watch_outs": [
         "Possible peak earnings: revenue up 378% in a quarter may not last",
-        "Down 62% from its high, so find out why first"
+        "Down 73% from its high, so find out why first"
       ]
     },
     {
       "ticker": "WDC",
       "name": "Western Digital Corporation",
       "sector": "Technology",
-      "price": 295.65,
-      "drawdown_pct": -63.0,
-      "score": 84.6,
+      "price": 261.11,
+      "drawdown_pct": -67.4,
+      "score": 86.0,
       "new": true,
       "tracked": false,
       "rating": null,
       "reasons": [
         {
           "kind": "fundamentals",
-          "text": "Strong fundamentals: scores 85/100"
+          "text": "Strong fundamentals: scores 86/100"
         },
         {
           "kind": "on_sale",
-          "text": "Quality business 63% below its high"
+          "text": "Quality business 67% below its high"
         },
         {
           "kind": "new",
@@ -348,94 +369,28 @@
         }
       ],
       "watch_outs": [
-        "Possible peak earnings: 7.3x forward earnings can mean profits are expected to fall",
-        "Down 63% from its high, so find out why first"
+        "Possible peak earnings: 6.5x forward earnings can mean profits are expected to fall",
+        "Down 67% from its high, so find out why first"
       ]
     },
     {
       "ticker": "TER",
       "name": "Teradyne, Inc.",
       "sector": "Technology",
-      "price": 249.55,
-      "drawdown_pct": -48.9,
-      "score": 81.2,
+      "price": 204.775,
+      "drawdown_pct": -58.0,
+      "score": 84.5,
       "new": true,
       "tracked": false,
       "rating": null,
       "reasons": [
         {
           "kind": "fundamentals",
-          "text": "Strong fundamentals: scores 81/100"
+          "text": "Strong fundamentals: scores 84/100"
         },
         {
           "kind": "on_sale",
-          "text": "Quality business 49% below its high"
-        },
-        {
-          "kind": "new",
-          "text": "New to the radar"
-        }
-      ],
-      "watch_outs": []
-    },
-    {
-      "ticker": "HWM",
-      "name": "Howmet Aerospace Inc.",
-      "sector": "Industrials",
-      "price": 220.82,
-      "drawdown_pct": -28.8,
-      "score": 65.0,
-      "new": true,
-      "tracked": false,
-      "rating": null,
-      "reasons": [
-        {
-          "kind": "on_sale",
-          "text": "Quality business 29% below its high"
-        },
-        {
-          "kind": "new",
-          "text": "New to the radar"
-        }
-      ],
-      "watch_outs": []
-    },
-    {
-      "ticker": "CMI",
-      "name": "Cummins Inc.",
-      "sector": "Industrials",
-      "price": 452.18,
-      "drawdown_pct": -38.7,
-      "score": 63.5,
-      "new": true,
-      "tracked": false,
-      "rating": null,
-      "reasons": [
-        {
-          "kind": "on_sale",
-          "text": "Quality business 39% below its high"
-        },
-        {
-          "kind": "new",
-          "text": "New to the radar"
-        }
-      ],
-      "watch_outs": []
-    },
-    {
-      "ticker": "LULU",
-      "name": "lululemon athletica inc.",
-      "sector": "Consumer Cyclical",
-      "price": 105.65,
-      "drawdown_pct": -53.2,
-      "score": 62.9,
-      "new": true,
-      "tracked": false,
-      "rating": null,
-      "reasons": [
-        {
-          "kind": "on_sale",
-          "text": "Quality business 53% below its high"
+          "text": "Quality business 58% below its high"
         },
         {
           "kind": "new",
@@ -443,42 +398,24 @@
         }
       ],
       "watch_outs": [
-        "Down 53% from its high, so find out why first"
+        "Down 58% from its high, so find out why first"
       ]
     },
     {
-      "ticker": "ODFL",
-      "name": "Old Dominion Freight Line, Inc.",
-      "sector": "Industrials",
-      "price": 174.54,
-      "drawdown_pct": -30.7,
-      "score": 62.9,
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
+      "sector": "Basic Materials",
+      "price": 94.68,
+      "drawdown_pct": -30.0,
+      "score": 78.7,
       "new": true,
       "tracked": false,
-      "rating": null,
+      "rating": "WATCHLIST",
       "reasons": [
         {
-          "kind": "on_sale",
-          "text": "Quality business 31% below its high"
+          "kind": "fundamentals",
+          "text": "Strong fundamentals: scores 79/100"
         },
-        {
-          "kind": "new",
-          "text": "New to the radar"
-        }
-      ],
-      "watch_outs": []
-    },
-    {
-      "ticker": "EXE",
-      "name": "Expand Energy Corporation",
-      "sector": "Energy",
-      "price": 88.53,
-      "drawdown_pct": -30.1,
-      "score": 62.5,
-      "new": true,
-      "tracked": false,
-      "rating": null,
-      "reasons": [
         {
           "kind": "on_sale",
           "text": "Quality business 30% below its high"
@@ -491,16 +428,48 @@
       "watch_outs": []
     },
     {
-      "ticker": "FCX",
-      "name": "Freeport-McMoRan Inc.",
-      "sector": "Basic Materials",
-      "price": 59.24,
-      "drawdown_pct": -26.2,
-      "score": 61.7,
+      "ticker": "VLO",
+      "name": "Valero Energy Corporation",
+      "sector": "Energy",
+      "price": 334.18,
+      "drawdown_pct": -27.6,
+      "score": 77.1,
+      "new": true,
+      "tracked": false,
+      "rating": "WATCHLIST",
+      "reasons": [
+        {
+          "kind": "fundamentals",
+          "text": "Strong fundamentals: scores 77/100"
+        },
+        {
+          "kind": "on_sale",
+          "text": "Quality business 28% below its high"
+        },
+        {
+          "kind": "new",
+          "text": "New to the radar"
+        }
+      ],
+      "watch_outs": [
+        "Possible peak earnings: 6.5x forward earnings can mean profits are expected to fall"
+      ]
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum Corporation",
+      "sector": "Energy",
+      "price": 367.19,
+      "drawdown_pct": -25.7,
+      "score": 71.7,
       "new": true,
       "tracked": false,
       "rating": null,
       "reasons": [
+        {
+          "kind": "fundamentals",
+          "text": "Strong fundamentals: scores 72/100"
+        },
         {
           "kind": "on_sale",
           "text": "Quality business 26% below its high"
@@ -510,22 +479,90 @@
           "text": "New to the radar"
         }
       ],
-      "watch_outs": []
+      "watch_outs": [
+        "Possible peak earnings: 6.2x forward earnings can mean profits are expected to fall"
+      ]
     },
     {
-      "ticker": "HSY",
-      "name": "The Hershey Company",
-      "sector": "Consumer Defensive",
-      "price": 174.27,
-      "drawdown_pct": -27.2,
-      "score": 60.0,
+      "ticker": "HWM",
+      "name": "Howmet Aerospace Inc.",
+      "sector": "Industrials",
+      "price": 209.16,
+      "drawdown_pct": -32.5,
+      "score": 65.5,
       "new": true,
       "tracked": false,
       "rating": null,
       "reasons": [
         {
           "kind": "on_sale",
-          "text": "Quality business 27% below its high"
+          "text": "Quality business 32% below its high"
+        },
+        {
+          "kind": "new",
+          "text": "New to the radar"
+        }
+      ],
+      "watch_outs": []
+    },
+    {
+      "ticker": "CMI",
+      "name": "Cummins Inc.",
+      "sector": "Industrials",
+      "price": 403.61,
+      "drawdown_pct": -45.3,
+      "score": 64.8,
+      "new": true,
+      "tracked": false,
+      "rating": null,
+      "reasons": [
+        {
+          "kind": "on_sale",
+          "text": "Quality business 45% below its high"
+        },
+        {
+          "kind": "new",
+          "text": "New to the radar"
+        }
+      ],
+      "watch_outs": []
+    },
+    {
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan Inc.",
+      "sector": "Basic Materials",
+      "price": 45.99,
+      "drawdown_pct": -42.7,
+      "score": 63.5,
+      "new": true,
+      "tracked": false,
+      "rating": null,
+      "reasons": [
+        {
+          "kind": "on_sale",
+          "text": "Quality business 43% below its high"
+        },
+        {
+          "kind": "new",
+          "text": "New to the radar"
+        }
+      ],
+      "watch_outs": []
+    },
+    {
+      "ticker": "ODFL",
+      "name": "Old Dominion Freight Line, Inc.",
+      "sector": "Industrials",
+      "price": 168.09,
+      "drawdown_pct": -33.3,
+      "score": 63.5,
+      "new": true,
+      "tracked": false,
+      "rating": null,
+      "reasons": [
+        {
+          "kind": "on_sale",
+          "text": "Quality business 33% below its high"
         },
         {
           "kind": "new",
