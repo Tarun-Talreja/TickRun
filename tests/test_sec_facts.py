@@ -71,3 +71,20 @@ class TestTtm:
 def test_latest_value_takes_the_newest_period():
     rows = [_row("2025-01-01", "2025-12-31", 350), _row("2026-07-01", "2026-09-30", 340, form="10-Q")]
     assert latest_value(rows) == {"end": "2026-09-30", "value": 340}
+
+
+def test_picks_the_name_with_the_newest_annual_report():
+    facts = _facts(
+        PaymentsToAcquireProductiveAssets=[_row("2022-01-01", "2022-09-30", 5, form="10-Q")],
+        PaymentsToAcquireOtherPropertyPlantAndEquipment=[_row("2025-01-01", "2025-12-31", 9)],
+    )
+    name, _ = pick_concept(facts, ["PaymentsToAcquireProductiveAssets",
+                                   "PaymentsToAcquireOtherPropertyPlantAndEquipment"])
+    assert name == "PaymentsToAcquireOtherPropertyPlantAndEquipment"
+
+
+def test_latest_report_only_keeps_split_adjusted_years():
+    rows = [_row("2019-01-01", "2019-12-31", 100, filed="2020-02-01"),
+            _row("2024-01-01", "2024-12-31", 1000, filed="2026-02-01"),
+            _row("2025-01-01", "2025-12-31", 1010, filed="2026-02-01")]
+    assert annual_series(rows, latest_report_only=True) == {"2024-12-31": 1000, "2025-12-31": 1010}

@@ -54,14 +54,14 @@ CONCEPTS = {
     "operating_cash_flow": ["NetCashProvidedByUsedInOperatingActivities",
                             "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations"],
     "capex": ["PaymentsToAcquirePropertyPlantAndEquipment", "PaymentsToAcquireProductiveAssets",
-              "PaymentsToAcquirePropertyPlantAndEquipmentAndIntangibleAssets"],
+              "PaymentsToAcquirePropertyPlantAndEquipmentAndIntangibleAssets",
+              "PaymentsToAcquireOtherPropertyPlantAndEquipment"],
     "stock_comp": ["ShareBasedCompensation", "AllocatedShareBasedCompensationExpense"],
-    "eps_diluted": ["EarningsPerShareDiluted"],
     "diluted_shares": ["WeightedAverageNumberOfDilutedSharesOutstanding"],
 }
 # Additive over time, so a trailing-twelve-month figure can be built from them.
 FLOW_CONCEPTS = {"revenue", "operating_income", "net_income", "operating_cash_flow",
-                 "capex", "stock_comp", "eps_diluted"}
+                 "capex", "stock_comp"}
 
 
 def _days(start: str, end: str) -> int:
@@ -78,10 +78,17 @@ def _latest_filed(rows: list[dict]) -> dict:
     return best
 
 
-def annual_series(rows: list[dict]) -> dict[str, float]:
-    """Fiscal-year end -> value, full years from annual reports only."""
+def annual_series(rows: list[dict], latest_report_only: bool = False) -> dict[str, float]:
+    """Fiscal-year end -> value, full years from annual reports only.
+
+    latest_report_only keeps the years in the newest annual report. Share counts need
+    it: the latest report restates past years after a stock split, older ones don't.
+    """
     annual = [r for r in rows if r.get("form") in ANNUAL_FORMS and r.get("start")
               and FULL_YEAR_DAYS[0] <= _days(r["start"], r["end"]) <= FULL_YEAR_DAYS[1]]
+    if latest_report_only and annual:
+        newest = max(r.get("filed", "") for r in annual)
+        annual = [r for r in annual if r.get("filed", "") == newest]
     return {end: r["val"] for (_, end), r in sorted(_latest_filed(annual).items())}
 
 
@@ -146,6 +153,7 @@ def extract(facts: dict) -> dict:
             out["annual"][concept] = dict(sorted(years.items())[-YEARS_KEPT:])
             out["ttm"][concept] = ttm(rows)
         else:
+            out["annual"][concept] = annual_series(rows, latest_report_only=True)
             out["ttm"][concept] = latest_value(rows)
     return out
 

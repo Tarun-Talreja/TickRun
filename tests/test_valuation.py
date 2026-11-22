@@ -114,15 +114,14 @@ class TestValueTicker:
         annual = {
             "revenue": {"2021-12-31": 50, "2023-12-31": 70, "2025-12-31": 100},
             "operating_cash_flow": {y: 30 for y in years}, "capex": {y: 10 for y in years},
-            "stock_comp": {y: 2 for y in years}, "net_income": {y: 15 for y in years},
+            "stock_comp": {y: 2 for y in years},
+            "net_income": {"2021-12-31": 10, "2022-12-31": 12, "2023-12-31": 15, "2024-12-31": 15, "2025-12-31": 15},
+            "diluted_shares": {y: 10 for y in ("2021-12-31", "2022-12-31", "2023-12-31", "2024-12-31", "2025-12-31")},
             "operating_income": {"2023-12-31": 20, "2024-12-31": 21, "2025-12-31": 22},
-            "eps_diluted": {"2021-12-31": 1.0, "2022-12-31": 1.2, "2023-12-31": 1.5,
-                            "2024-12-31": 1.5, "2025-12-31": 1.5},
         }
         ttm = {"revenue": {"end": "2026-09-30", "value": 105},
                "operating_cash_flow": {"end": "2026-09-30", "value": 30},
                "capex": {"end": "2026-09-30", "value": 10}, "stock_comp": {"end": "2026-09-30", "value": 2},
-               "eps_diluted": {"end": "2026-09-30", "value": 1.5},
                "net_income": {"end": "2026-09-30", "value": 15},
                "diluted_shares": {"end": "2026-09-30", "value": 10}}
         return {"annual": {**annual, **over.pop("annual", {})}, "ttm": {**ttm, **over.pop("ttm", {})}}
@@ -132,7 +131,7 @@ class TestValueTicker:
 
     def test_prices_a_healthy_company(self):
         from valuation import value_ticker
-        out = value_ticker(self._record(), {"price": 20.0, "revenue_ttm": 104}, self.PRICES, 0.042,
+        out = value_ticker(self._record(), {"price": 40.0, "revenue_ttm": 104}, self.PRICES, 0.042,
                            self.TODAY, beta=1.2)
         assert out["status"] == "ok" and out["buy_below"] == round(out["base"] * 0.75, 2)
         assert out["inputs"]["median_past_pe"] == 20.0
@@ -164,3 +163,14 @@ class TestValueTicker:
         from valuation import value_ticker
         out = value_ticker({"annual": {}, "ttm": {}}, {"price": 20.0}, {}, 0.042, self.TODAY)
         assert "foreign" in out["reason"]
+
+
+def test_no_buy_price_when_the_market_expects_decline():
+    out = combine({"cash_flow": 70.0, "own_multiple": 50.0}, price=25.0, implied=-0.18)
+    assert out["status"] == "market_expects_decline" and out["buy_below"] is None
+    assert "shrink" in out["reason"]
+
+
+def test_eps_from_profit_and_shares_when_the_eps_field_stopped():
+    from valuation import eps_by_year
+    assert eps_by_year({"2025": 100.0, "2024": 80.0}, {"2025": 50.0, "2024": 40.0}) == {"2024": 2.0, "2025": 2.0}

@@ -147,6 +147,11 @@ def cash_flow_is_distorted(cash_flow: dict[str, float], profit: dict[str, float]
     return any(cash_flow[y] < 0 < profit[y] for y in years)
 
 
+def eps_by_year(net_income: dict[str, float], shares: dict[str, float]) -> dict[str, float]:
+    """Earnings per share from profit and diluted shares, for years with both."""
+    return {y: net_income[y] / shares[y] for y in sorted(shares) if y in net_income and shares[y] > 0}
+
+
 def own_multiple_value(past_pes: list[float], eps: float | None) -> float | None:
     positive = [pe for pe in past_pes if pe > 0]
     if eps is None or eps <= 0 or len(positive) < MIN_PE_YEARS:
@@ -154,7 +159,8 @@ def own_multiple_value(past_pes: list[float], eps: float | None) -> float | None
     return round(statistics.median(positive) * eps, 2)
 
 
-def combine(methods: dict[str, float | None], price: float, problems: list[str] | None = None) -> dict:
+def combine(methods: dict[str, float | None], price: float, problems: list[str] | None = None,
+            implied: float | None = None) -> dict:
     values = {k: round(v, 2) for k, v in methods.items() if v and v > 0}
     out = {"methods": values, "price": price, "status": "no_reliable_price",
            "low": None, "base": None, "high": None, "buy_below": None}
@@ -163,6 +169,12 @@ def combine(methods: dict[str, float | None], price: float, problems: list[str] 
                "base": round(statistics.mean(values.values()), 2)}
     if problems:
         return {**out, "reason": "; ".join(problems)}
+    if implied is not None and implied < 0:
+        # The value assumes past growth continues; the price says the market disagrees.
+        # Until news is judged (v2 phase 4), a value trap and a bargain look the same here.
+        return {**out, "status": "market_expects_decline",
+                "reason": f"today's price implies the business shrinks about {abs(implied):.0%} a year; "
+                          f"find out why before trusting a higher value"}
     if len(values) < 2:
         missing = [k.replace("_", " ") for k in methods if k not in values]
         return {**out, "reason": f"only one valuation method could be used (no {', '.join(missing)})"}
@@ -227,11 +239,14 @@ def value_ticker(record: dict, quote: dict, year_end_prices: dict[str, float],
     eps = net_margin * revenue_now / shares if net_margin is not None else None
     growth = growth_rate(revenue)
     distorted = cash_flow_is_distorted(annual.get("operating_cash_flow", {}), annual.get("net_income", {}))
-    pes = [year_end_prices[y] / e for y, e in sorted(annual.get("eps_diluted", {}).items())[-PE_YEARS:]
+    past_eps = eps_by_year(annual.get("net_income", {}), annual.get("diluted_shares", {}))
+    pes = [year_end_prices[y] / e for y, e in sorted(past_eps.items())[-PE_YEARS:]
            if e > 0 and year_end_prices.get(y)]
     usable = cash_ps > 0 and growth is not None and not distorted
     cash_value = dcf_per_share(cash_ps, growth, rate) if usable else None
-    result = combine({"cash_flow": cash_value, "own_multiple": own_multiple_value(pes, eps)}, price)
+    implied = implied_growth(price, cash_ps, rate) if usable else None
+    result = combine({"cash_flow": cash_value, "own_multiple": own_multiple_value(pes, eps)}, price,
+                     implied=implied)
     far_future = terminal_share(cash_ps, growth, rate) if usable else None
     notes = [
         *(["cash flow skipped: reported operating cash flow was negative in a profitable year"]
@@ -247,7 +262,7 @@ def value_ticker(record: dict, quote: dict, year_end_prices: dict[str, float],
         "eps_normalised": round(eps, 2) if eps else None,
         "median_past_pe": round(statistics.median(pes), 1) if len(pes) >= MIN_PE_YEARS else None,
         "terminal_share": round(far_future, 3) if far_future else None,
-        "implied_growth": implied_growth(price, cash_ps, rate),
+        "implied_growth": implied,
         "figures_as_of": ttm["revenue"]["end"], "sources": record.get("source", {})}}
 
 
@@ -290,7 +305,7 @@ def main() -> None:
     treasury, today = _treasury_yield(), datetime.now(timezone.utc).date()
     results = {}
     for ticker, record in sorted(fundamentals.items()):
-        ends = list(record.get("annual", {}).get("eps_diluted", {}))
+        ends = list(record.get("annual", {}).get("diluted_shares", {}))
         try:
             prices = _year_end_prices(ticker, ends) if ends else {}
             beta = _beta(ticker)
