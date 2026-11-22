@@ -1,11 +1,11 @@
 {
-  "last_built": "2026-11-22T18:00:57Z",
-  "quotes_updated": "2026-11-22T18:00:32Z",
+  "last_built": "2026-11-22T19:52:27Z",
+  "quotes_updated": "2026-11-22T19:52:24Z",
   "health": {
     "stages": [
       {
         "name": "Quotes",
-        "updated_at": "2026-11-22T18:00:32Z",
+        "updated_at": "2026-11-22T19:52:24Z",
         "detail": null,
         "status": "ok",
         "age_hours": 0.0,
@@ -16,7 +16,7 @@
         "updated_at": "2026-11-22T12:09:28Z",
         "detail": "8/8 tickers",
         "status": "ok",
-        "age_hours": 5.9,
+        "age_hours": 7.7,
         "affects": "Ratings aren't being updated"
       },
       {
@@ -24,7 +24,7 @@
         "updated_at": "2026-11-22T17:15:34Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 0.8,
+        "age_hours": 2.6,
         "affects": "Upcoming earnings dates may be missing"
       },
       {
@@ -32,12 +32,12 @@
         "updated_at": "2026-11-22T12:09:32Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 5.9,
+        "age_hours": 7.7,
         "affects": "New SEC filings won't show"
       },
       {
         "name": "Prices",
-        "updated_at": "2026-11-22T18:00:32Z",
+        "updated_at": "2026-11-22T19:52:24Z",
         "detail": "59/59 have data",
         "status": "ok",
         "age_hours": 0.0,
@@ -45,7 +45,7 @@
       },
       {
         "name": "Company figures",
-        "updated_at": "2026-11-22T18:00:32Z",
+        "updated_at": "2026-11-22T19:52:24Z",
         "detail": "59/59 have data",
         "status": "ok",
         "age_hours": 0.0,
@@ -56,7 +56,7 @@
         "updated_at": "2026-11-22T12:09:37Z",
         "detail": "58/58 have data",
         "status": "ok",
-        "age_hours": 5.9,
+        "age_hours": 7.7,
         "affects": "Ratings and mover reasons can miss recent news"
       },
       {
@@ -64,7 +64,7 @@
         "updated_at": "2026-11-16T01:55:52Z",
         "detail": "52/60 have data",
         "status": "ok",
-        "age_hours": 160.1,
+        "age_hours": 161.9,
         "affects": "Insider buying won't show on stocks or the radar"
       },
       {
@@ -72,7 +72,7 @@
         "updated_at": "2026-11-15T19:48:08Z",
         "detail": "57/60 have data",
         "status": "ok",
-        "age_hours": 166.2,
+        "age_hours": 168.1,
         "affects": "Hedge fund holdings may be out of date"
       },
       {
@@ -80,7 +80,7 @@
         "updated_at": "2026-11-22T18:00:11Z",
         "detail": "16/16 have data",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 1.9,
         "affects": "The field briefing may be out of date"
       },
       {
@@ -88,7 +88,7 @@
         "updated_at": "2026-11-21T03:16:36Z",
         "detail": "27/27 have data",
         "status": "ok",
-        "age_hours": 38.7,
+        "age_hours": 40.6,
         "affects": "Big moves may have no explanation"
       },
       {
@@ -96,7 +96,7 @@
         "updated_at": "2026-11-22T18:00:35Z",
         "detail": "12 found",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 1.9,
         "affects": "The radar may be out of date"
       },
       {
@@ -104,7 +104,7 @@
         "updated_at": "2026-11-21T19:15:39Z",
         "detail": "430 found",
         "status": "ok",
-        "age_hours": 22.8,
+        "age_hours": 24.6,
         "affects": "New stock ideas may be out of date"
       },
       {
@@ -112,15 +112,15 @@
         "updated_at": "2026-11-22T18:00:57Z",
         "detail": "1 found",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 1.9,
         "affects": "The AI summary may be out of date"
       },
       {
         "name": "Self-test",
-        "updated_at": "2026-11-21T19:31:49Z",
+        "updated_at": "2026-11-22T19:52:26Z",
         "detail": "6 sources passed",
         "status": "ok",
-        "age_hours": 22.5,
+        "age_hours": 0.0,
         "affects": "One of the data sources failed its daily test"
       },
       {
@@ -187,7 +187,7 @@
         "pct_change_1d": -5.8,
         "drawdown_from_high": -37.7,
         "pe": 19.084406,
-        "forward_pe": 17.733204
+        "forward_pe": 17.740519
       },
       {
         "ticker": "MSFT",
@@ -204,7 +204,7 @@
         "pct_change_1d": -2.77,
         "drawdown_from_high": -13.3,
         "pe": 25.2881,
-        "forward_pe": 20.020792
+        "forward_pe": 20.018377
       },
       {
         "ticker": "RDDT",
@@ -335,7 +335,7 @@
         "revenue_growth": 18.8,
         "op_margin": 49.8,
         "pe": 25.2881,
-        "forward_pe": 20.020792,
+        "forward_pe": 20.018377,
         "short_percent_float": 0.82,
         "short_ratio": 2.8,
         "high_proximity_warning": true,
@@ -577,7 +577,7 @@
         "revenue_growth": 85.5,
         "op_margin": 54.3,
         "pe": 38.877396,
-        "forward_pe": 15.702569,
+        "forward_pe": 15.67989,
         "short_percent_float": 1.11,
         "short_ratio": 2.3,
         "high_proximity_warning": false,
@@ -925,7 +925,7 @@
         "revenue_growth": 20.5,
         "op_margin": 9.4,
         "pe": 63.028778,
-        "forward_pe": 18.243341,
+        "forward_pe": 18.232368,
         "short_percent_float": 2.62,
         "short_ratio": 1.7,
         "high_proximity_warning": false,
@@ -1353,7 +1353,7 @@
         "revenue_growth": 45.4,
         "op_margin": 25.8,
         "pe": 19.084406,
-        "forward_pe": 17.733204,
+        "forward_pe": 17.740519,
         "short_percent_float": 3.34,
         "short_ratio": 2.5,
         "high_proximity_warning": false,
@@ -2113,7 +2113,7 @@
         "revenue_growth": 6.1,
         "op_margin": 32.5,
         "pe": 12.700984,
-        "forward_pe": 11.715353,
+        "forward_pe": 11.702877,
         "short_percent_float": 6.03,
         "short_ratio": 3.4,
         "high_proximity_warning": true,
@@ -2522,7 +2522,7 @@
         "revenue_growth": 1.3,
         "op_margin": 22.7,
         "pe": 23.008772,
-        "forward_pe": 37.26858,
+        "forward_pe": 38.080166,
         "short_percent_float": 4.69,
         "short_ratio": 3.5,
         "high_proximity_warning": true,
@@ -2757,7 +2757,7 @@
         "revenue_growth": -15.0,
         "op_margin": 20.1,
         "pe": 6.6142406,
-        "forward_pe": 9.578376,
+        "forward_pe": 9.578671,
         "short_percent_float": 5.62,
         "short_ratio": 3.5,
         "high_proximity_warning": false,
@@ -3382,7 +3382,7 @@
           "revenue_growth": 18.8,
           "op_margin": 49.8,
           "pe": 25.2881,
-          "forward_pe": 20.020792,
+          "forward_pe": 20.018377,
           "short_percent_float": 0.82,
           "short_ratio": 2.8,
           "high_proximity_warning": true,
@@ -3572,7 +3572,7 @@
           "revenue_growth": 85.5,
           "op_margin": 54.3,
           "pe": 38.877396,
-          "forward_pe": 15.702569,
+          "forward_pe": 15.67989,
           "short_percent_float": 1.11,
           "short_ratio": 2.3,
           "high_proximity_warning": false,
@@ -3773,7 +3773,7 @@
           "revenue_growth": 20.5,
           "op_margin": 9.4,
           "pe": 63.028778,
-          "forward_pe": 18.243341,
+          "forward_pe": 18.232368,
           "short_percent_float": 2.62,
           "short_ratio": 1.7,
           "high_proximity_warning": false,
@@ -4786,7 +4786,7 @@
           "revenue_growth": 1.3,
           "op_margin": 22.7,
           "pe": 23.008772,
-          "forward_pe": 37.26858,
+          "forward_pe": 38.080166,
           "short_percent_float": 4.69,
           "short_ratio": 3.5,
           "high_proximity_warning": true,
@@ -5595,7 +5595,7 @@
           "revenue_growth": 45.4,
           "op_margin": 25.8,
           "pe": 19.084406,
-          "forward_pe": 17.733204,
+          "forward_pe": 17.740519,
           "short_percent_float": 3.34,
           "short_ratio": 2.5,
           "high_proximity_warning": false,
@@ -5946,7 +5946,7 @@
           "revenue_growth": 6.1,
           "op_margin": 32.5,
           "pe": 12.700984,
-          "forward_pe": 11.715353,
+          "forward_pe": 11.702877,
           "short_percent_float": 6.03,
           "short_ratio": 3.4,
           "high_proximity_warning": true,
@@ -6332,7 +6332,7 @@
           "revenue_growth": -15.0,
           "op_margin": 20.1,
           "pe": 6.6142406,
-          "forward_pe": 9.578376,
+          "forward_pe": 9.578671,
           "short_percent_float": 5.62,
           "short_ratio": 3.5,
           "high_proximity_warning": false,
@@ -6434,7 +6434,7 @@
           "revenue_growth": 18.8,
           "op_margin": 49.8,
           "pe": 25.2881,
-          "forward_pe": 20.020792,
+          "forward_pe": 20.018377,
           "short_percent_float": 0.82,
           "short_ratio": 2.8,
           "high_proximity_warning": true,
@@ -6769,7 +6769,7 @@
           "revenue_growth": 85.5,
           "op_margin": 54.3,
           "pe": 38.877396,
-          "forward_pe": 15.702569,
+          "forward_pe": 15.67989,
           "short_percent_float": 1.11,
           "short_ratio": 2.3,
           "high_proximity_warning": false,
@@ -7787,7 +7787,7 @@
           "revenue_growth": 20.5,
           "op_margin": 9.4,
           "pe": 63.028778,
-          "forward_pe": 18.243341,
+          "forward_pe": 18.232368,
           "short_percent_float": 2.62,
           "short_ratio": 1.7,
           "high_proximity_warning": false,
@@ -7940,7 +7940,7 @@
           "revenue_growth": 45.4,
           "op_margin": 25.8,
           "pe": 19.084406,
-          "forward_pe": 17.733204,
+          "forward_pe": 17.740519,
           "short_percent_float": 3.34,
           "short_ratio": 2.5,
           "high_proximity_warning": false,
@@ -8443,7 +8443,7 @@
           "revenue_growth": -15.0,
           "op_margin": 20.1,
           "pe": 6.6142406,
-          "forward_pe": 9.578376,
+          "forward_pe": 9.578671,
           "short_percent_float": 5.62,
           "short_ratio": 3.5,
           "high_proximity_warning": false,
@@ -8954,7 +8954,7 @@
           "revenue_growth": 6.1,
           "op_margin": 32.5,
           "pe": 12.700984,
-          "forward_pe": 11.715353,
+          "forward_pe": 11.702877,
           "short_percent_float": 6.03,
           "short_ratio": 3.4,
           "high_proximity_warning": true,
@@ -9165,7 +9165,7 @@
           "revenue_growth": 1.3,
           "op_margin": 22.7,
           "pe": 23.008772,
-          "forward_pe": 37.26858,
+          "forward_pe": 38.080166,
           "short_percent_float": 4.69,
           "short_ratio": 3.5,
           "high_proximity_warning": true,
@@ -19812,7 +19812,7 @@
         "drawdown_pct": -38.5,
         "price": 304.41,
         "pe": 38.877396,
-        "forward_pe": 15.702569,
+        "forward_pe": 15.67989,
         "verdict": "WATCHLIST",
         "next_action": "WAIT \u2014 AI infrastructure leader at 15.7x forward earnings with 85% quarterly revenue growth, 75% gross margins, and FCF covering net debt in <1 year, but Google TPU cut risk creates customer-concentration overhang. Revisit at 20% below the 52-week high."
       },
