@@ -58,6 +58,7 @@ MIN_PE_YEARS = 3
 PE_YEARS = 5
 NORMALISE_YEARS = 3          # steady businesses: last three years plus the last twelve months
 CYCLE_YEARS = 6              # cyclical ones: every year on file, to span a cycle
+GROWTH_GAP = 0.03            # growth is never assumed within 3 points of the required return
 MAX_SPREAD = 2.5             # methods further apart than this ratio don't agree
 MAX_DATA_AGE_DAYS = 200      # last filed period older than this is stale
 MAX_REVENUE_GAP = 0.10       # SEC and Yahoo revenue must agree this closely
@@ -154,11 +155,34 @@ def eps_by_year(net_income: dict[str, float], shares: dict[str, float]) -> dict[
     return {y: net_income[y] / shares[y] for y in sorted(shares) if y in net_income and shares[y] > 0}
 
 
-def own_multiple_value(past_pes: list[float], eps: float | None) -> float | None:
-    positive = [pe for pe in past_pes if pe > 0]
-    if eps is None or eps <= 0 or len(positive) < MIN_PE_YEARS:
+def latest_growth(revenue: dict[str, float]) -> float | None:
+    """Revenue growth into the latest fiscal year."""
+    years = sorted(revenue.items())
+    if len(years) < 2 or years[-2][1] <= 0:
         return None
-    return round(statistics.median(positive) * eps, 2)
+    return years[-1][1] / years[-2][1] - 1
+
+
+def fair_multiple(past_pes: list[float], g_now: float | None, rate: float) -> tuple[float | None, str | None]:
+    """The stock's median past P/E, never above what its growth now can justify.
+
+    A business paying out all its earnings and growing at g is worth (1+g)/(r-g)
+    times earnings (Gordon growth model), so no P/E above that is credited. This
+    stops a multiple from a faster-growth era, like MKTX's 31x or TW's 53x, from
+    making a stock look cheap. Growth is capped GROWTH_GAP below the required return,
+    and unknown growth gets that widest ceiling.
+    """
+    positive = [pe for pe in past_pes if pe > 0]
+    if len(positive) < MIN_PE_YEARS:
+        return None, None
+    history = statistics.median(positive)
+    g = min(max(g_now, 0.0), rate - GROWTH_GAP) if g_now is not None else rate - GROWTH_GAP
+    ceiling = (1 + g) / (rate - g)
+    if history <= ceiling:
+        return history, None
+    capped = g_now is None or g_now > g
+    basis = f"growth above {g:.0%} isn't credited" if capped else f"{g:.0%} growth"
+    return ceiling, f"past P/E of {history:.0f}x cut to a {ceiling:.0f}x ceiling ({basis})"
 
 
 def combine(methods: dict[str, float | None], price: float, problems: list[str] | None = None,
@@ -279,8 +303,9 @@ def value_ticker(record: dict, quote: dict, year_end_prices: dict[str, float],
     usable = cash_ps > 0 and growth is not None and not distorted
     cash_value = dcf_per_share(cash_ps, growth, rate) if usable else None
     implied = implied_growth(price, cash_ps, rate) if usable else None
-    result = combine({"cash_flow": cash_value, "own_multiple": own_multiple_value(pes, eps)}, price,
-                     implied=implied)
+    multiple, multiple_note = fair_multiple(pes, latest_growth(revenue), rate)
+    own_value = multiple * eps if multiple and eps and eps > 0 else None
+    result = combine({"cash_flow": cash_value, "own_multiple": own_value}, price, implied=implied)
     far_future = terminal_share(cash_ps, growth, rate) if usable else None
     notes = [
         *(["cash flow skipped: reported operating cash flow was negative in a profitable year"]
@@ -289,12 +314,14 @@ def value_ticker(record: dict, quote: dict, year_end_prices: dict[str, float],
         *([f"{far_future:.0%} of the cash-flow value comes after year 10, so it rests on long-run guesses"]
           if far_future and far_future > MAX_TERMINAL_SHARE else []),
         *(["no beta available, so average market risk was assumed"] if beta is None else []),
+        *([multiple_note] if multiple_note else []),
     ]
     return {**result, "notes": notes, "inputs": {
         "owner_cash_per_share": round(cash_ps, 2), "cash_margin": round(cash_margin, 4) if cash_margin else None,
         "growth_used": growth, "discount_rate": rate, "beta": beta, "cyclical": cyclical,
         "eps_normalised": round(eps, 2) if eps else None,
         "median_past_pe": round(statistics.median(pes), 1) if len(pes) >= MIN_PE_YEARS else None,
+        "fair_pe": round(multiple, 1) if multiple else None,
         "terminal_share": round(far_future, 3) if far_future else None,
         "implied_growth": implied,
         "figures_as_of": ttm["revenue"]["end"], "sources": record.get("source", {})}}

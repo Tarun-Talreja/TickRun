@@ -7,7 +7,7 @@ import pytest
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
 from valuation import (MARGIN_OF_SAFETY, cash_flow_is_distorted, combine, dcf_per_share,
                        discount_rate, growth_rate, implied_growth, is_cyclical, normalised_margin,
-                       own_multiple_value, terminal_share)
+                       terminal_share)
 
 
 class TestDcf:
@@ -72,17 +72,6 @@ class TestInputs:
         assert cash_flow_is_distorted({"2023": -5.3, "2024": -2.5, "2025": 4.2},
                                       {"2023": 1.6, "2024": 3.75, "2025": 2.3})
         assert not cash_flow_is_distorted({"2024": 4.6, "2025": 4.1}, {"2024": 2.7, "2025": 0.9})
-
-
-class TestOwnMultiple:
-    def test_median_past_pe_times_normalised_eps(self):
-        assert own_multiple_value([20, 25, 30], eps=2.0) == 50.0
-
-    def test_needs_three_years_of_positive_pe(self):
-        assert own_multiple_value([20, 25], eps=2.0) is None
-
-    def test_no_value_from_a_loss(self):
-        assert own_multiple_value([20, 25, 30], eps=-1.0) is None
 
 
 class TestCombine:
@@ -209,3 +198,35 @@ class TestCompanyMeasure:
         from valuation import value_from_measure
         out = value_from_measure({**self.ENTRY, "filed": "2026-05-01"}, 3.4e8, 115.0, 0.118, self.TODAY)
         assert "too old" in out["reason"]
+
+
+class TestFairMultiple:
+    def test_slow_growth_caps_a_rich_history(self):
+        from valuation import fair_multiple
+        # MKTX-like: 31x history, 3.6% growth now, 8.91% required return.
+        pe, why = fair_multiple([28.0, 31.1, 34.0], g_now=0.036, rate=0.0891)
+        assert pe == pytest.approx(1.036 / (0.0891 - 0.036)) and "ceiling" in why
+
+    def test_fast_growth_is_still_capped(self):
+        from valuation import GROWTH_GAP, fair_multiple
+        # TW-like: 53x history; 19% growth is capped 3 points below the rate.
+        pe, _ = fair_multiple([50.0, 53.0, 60.0], g_now=0.19, rate=0.0891)
+        assert pe == pytest.approx((1 + 0.0891 - GROWTH_GAP) / GROWTH_GAP)
+
+    def test_modest_history_is_kept(self):
+        from valuation import fair_multiple
+        assert fair_multiple([14.0, 15.0, 16.0], g_now=0.06, rate=0.10) == (15.0, None)
+
+    def test_unknown_growth_uses_the_widest_ceiling(self):
+        from valuation import GROWTH_GAP, fair_multiple
+        pe, _ = fair_multiple([50.0, 53.0, 60.0], g_now=None, rate=0.10)
+        assert pe == pytest.approx((1 + 0.10 - GROWTH_GAP) / GROWTH_GAP)
+
+    def test_needs_three_years(self):
+        from valuation import fair_multiple
+        assert fair_multiple([20.0, 25.0], 0.05, 0.09) == (None, None)
+
+    def test_latest_growth(self):
+        from valuation import latest_growth
+        assert latest_growth({"2023": 100, "2024": 110, "2025": 121}) == pytest.approx(0.1)
+        assert latest_growth({"2025": 121}) is None
