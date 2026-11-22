@@ -174,3 +174,38 @@ def test_no_buy_price_when_the_market_expects_decline():
 def test_eps_from_profit_and_shares_when_the_eps_field_stopped():
     from valuation import eps_by_year
     assert eps_by_year({"2025": 100.0, "2024": 80.0}, {"2025": 50.0, "2024": 40.0}) == {"2024": 2.0, "2025": 2.0}
+
+
+class TestCompanyMeasure:
+    TODAY = __import__("datetime").date(2026, 11, 22)
+    ENTRY = {"filed": "2026-11-06", "url": "u",
+             "measure": {"name": "Adjusted FCF", "kind": "cash_flow_total", "low": 4.3e9, "high": 4.7e9,
+                         "mid": 4.5e9, "quote": "q"}}
+
+    def test_values_on_the_company_figure_with_one_method(self):
+        from valuation import TERMINAL_GROWTH, dcf_per_share, value_from_measure
+        out = value_from_measure(self.ENTRY, shares=3.4e8, price=160.0, rate=0.118, today=self.TODAY)
+        expected = dcf_per_share(4.5e9 / 3.4e8, TERMINAL_GROWTH, 0.118)
+        assert out["status"] == "ok" and out["base"] == round(expected, 2)
+        assert out["inputs"]["growth_used"] == TERMINAL_GROWTH
+
+    def test_price_below_the_no_growth_value_is_flagged(self):
+        from valuation import value_from_measure
+        out = value_from_measure(self.ENTRY, shares=3.4e8, price=115.0, rate=0.118, today=self.TODAY)
+        assert out["status"] == "market_expects_decline"
+
+    def test_earnings_per_share_is_used_as_is(self):
+        from valuation import value_from_measure
+        entry = {**self.ENTRY, "measure": {**self.ENTRY["measure"], "kind": "earnings_per_share", "mid": 12.65}}
+        out = value_from_measure(entry, shares=None, price=150.0, rate=0.105, today=self.TODAY)
+        assert out["inputs"]["per_share"] == 12.65
+
+    def test_missing_figure_gives_no_price(self):
+        from valuation import value_from_measure
+        out = value_from_measure({"filed": "2026-11-06", "measure": None}, 3.4e8, 115.0, 0.118, self.TODAY)
+        assert out["status"] == "no_reliable_price" and "wasn't found" in out["reason"]
+
+    def test_old_release_gives_no_price(self):
+        from valuation import value_from_measure
+        out = value_from_measure({**self.ENTRY, "filed": "2026-05-01"}, 3.4e8, 115.0, 0.118, self.TODAY)
+        assert "too old" in out["reason"]

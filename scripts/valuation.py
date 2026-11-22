@@ -61,6 +61,8 @@ CYCLE_YEARS = 6              # cyclical ones: every year on file, to span a cycl
 MAX_SPREAD = 2.5             # methods further apart than this ratio don't agree
 MAX_DATA_AGE_DAYS = 200      # last filed period older than this is stale
 MAX_REVENUE_GAP = 0.10       # SEC and Yahoo revenue must agree this closely
+MAX_RELEASE_AGE_DAYS = 120   # a company-reported figure from an older release is stale
+MEASURES_PATH = os.path.join(SCRIPT_DIR, "data", "company_measures.json")
 
 
 def dcf_parts(cash: float, growth: float, rate: float,
@@ -160,7 +162,7 @@ def own_multiple_value(past_pes: list[float], eps: float | None) -> float | None
 
 
 def combine(methods: dict[str, float | None], price: float, problems: list[str] | None = None,
-            implied: float | None = None) -> dict:
+            implied: float | None = None, min_methods: int = 2) -> dict:
     values = {k: round(v, 2) for k, v in methods.items() if v and v > 0}
     out = {"methods": values, "price": price, "status": "no_reliable_price",
            "low": None, "base": None, "high": None, "buy_below": None}
@@ -175,7 +177,7 @@ def combine(methods: dict[str, float | None], price: float, problems: list[str] 
         return {**out, "status": "market_expects_decline",
                 "reason": f"today's price implies the business shrinks about {abs(implied):.0%} a year; "
                           f"find out why before trusting a higher value"}
-    if len(values) < 2:
+    if len(values) < min_methods:
         missing = [k.replace("_", " ") for k in methods if k not in values]
         return {**out, "reason": f"only one valuation method could be used (no {', '.join(missing)})"}
     if out["high"] / out["low"] > MAX_SPREAD:
@@ -214,10 +216,42 @@ def _problems(record: dict, quote: dict, today: date) -> list[str]:
     return problems
 
 
+def value_from_measure(entry: dict, shares: float | None, price: float, rate: float, today: date) -> dict:
+    """Value from a company-reported figure, assuming only long-run growth.
+
+    One method is allowed here because the figure is the company's own, read word for
+    word from its filing. No growth beyond inflation is assumed: VST's measure already
+    excludes growth spending, so growing it as well would count the growth twice.
+    """
+    measure = entry.get("measure")
+    problems = []
+    if not measure:
+        problems.append(f"the company figure wasn't found in its {entry.get('filed')} release")
+    elif (today - date.fromisoformat(entry["filed"])).days > MAX_RELEASE_AGE_DAYS:
+        problems.append(f"the latest earnings release ({entry['filed']}) is too old")
+    if not shares and measure and measure["kind"] == "cash_flow_total":
+        problems.append("no share count on file")
+    if problems:
+        return {**combine({}, price, problems), "notes": [], "inputs": {}}
+    per_share = measure["mid"] / shares if measure["kind"] == "cash_flow_total" else measure["mid"]
+    implied = implied_growth(price, per_share, rate)
+    result = combine({"company_measure": dcf_per_share(per_share, TERMINAL_GROWTH, rate)}, price,
+                     implied=implied, min_methods=1)
+    return {**result, "notes": [f"valued on {measure['name']}, with no growth beyond inflation"],
+            "inputs": {"measure": measure, "release_filed": entry["filed"], "release_url": entry.get("url"),
+                       "per_share": round(per_share, 2), "discount_rate": rate, "growth_used": TERMINAL_GROWTH,
+                       "implied_growth": implied}}
+
+
 def value_ticker(record: dict, quote: dict, year_end_prices: dict[str, float],
-                 treasury: float | None, today: date, beta: float | None = None) -> dict:
+                 treasury: float | None, today: date, beta: float | None = None,
+                 measure: dict | None = None) -> dict:
     """Value one company from its filed figures. Every input is kept for the page to show."""
     price = quote.get("price")
+    if measure is not None and treasury is not None and price:
+        shares = ((record.get("ttm") or {}).get("diluted_shares") or {}).get("value")
+        result = value_from_measure(measure, shares, price, discount_rate(treasury, beta), today)
+        return {**result, "inputs": {**result["inputs"], "beta": beta}}
     problems = _problems(record, quote, today)
     if treasury is None:
         problems.append("no 10-year Treasury yield")
@@ -299,6 +333,7 @@ def _treasury_yield() -> float | None:
 def main() -> None:
     fundamentals = load_json(FUNDAMENTALS_PATH).get("tickers", {})
     quotes = load_json(QUOTES_PATH).get("tickers", {})
+    measures = load_json(MEASURES_PATH).get("tickers", {})
     if not fundamentals:
         print("No data/fundamentals.json — run scripts/sec_facts.py first.")
         sys.exit(1)
@@ -312,7 +347,8 @@ def main() -> None:
         except Exception as exc:
             print(f"⚠ {ticker}: price history unavailable ({str(exc)[:100]})")
             prices, beta = {}, None
-        results[ticker] = value_ticker(record, quotes.get(ticker, {}), prices, treasury, today, beta)
+        results[ticker] = value_ticker(record, quotes.get(ticker, {}), prices, treasury, today, beta,
+                                       measures.get(ticker))
     priced = sum(r["status"] == "ok" for r in results.values())
     with open(OUTPUT_PATH, "w") as f:
         json.dump({"generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
