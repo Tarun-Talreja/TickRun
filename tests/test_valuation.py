@@ -230,3 +230,26 @@ class TestFairMultiple:
         from valuation import latest_growth
         assert latest_growth({"2023": 100, "2024": 110, "2025": 121}) == pytest.approx(0.1)
         assert latest_growth({"2025": 121}) is None
+
+
+class TestOwnerCash:
+    ANNUAL = {"operating_cash_flow": {"2025": 100.0}, "capex": {"2025": 10.0},
+              "software_capex": {"2025": 5.0}, "stock_comp": {"2025": 3.0}}
+    TTM = {"operating_cash_flow": {"value": 110.0}, "capex": {"value": 12.0},
+           "software_capex": {"value": 6.0}, "stock_comp": {"value": 4.0}}
+
+    def test_subtracts_software_with_equipment(self):
+        from valuation import _owner_cash
+        years, now, note = _owner_cash(self.ANNUAL, self.TTM)
+        assert years == {"2025": 82.0} and now == 88.0 and note is None
+
+    def test_scales_up_when_yahoo_sees_more_spending(self):
+        from valuation import _owner_cash
+        # IBM-like: Yahoo's capital spending is 36/18 = 2x the filed figure.
+        years, now, note = _owner_cash(self.ANNUAL, self.TTM, yahoo_capex=36.0)
+        assert years == {"2025": 100 - 30 - 3} and now == 110 - 36 - 4 and "Yahoo" in note
+
+    def test_small_differences_are_left_alone(self):
+        from valuation import _owner_cash
+        _, now, note = _owner_cash(self.ANNUAL, self.TTM, yahoo_capex=19.0)
+        assert now == 88.0 and note is None

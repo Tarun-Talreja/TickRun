@@ -56,12 +56,16 @@ CONCEPTS = {
     "capex": ["PaymentsToAcquirePropertyPlantAndEquipment", "PaymentsToAcquireProductiveAssets",
               "PaymentsToAcquirePropertyPlantAndEquipmentAndIntangibleAssets",
               "PaymentsToAcquireOtherPropertyPlantAndEquipment"],
+    # Software a company builds for itself is capital spending too (ADP, MKTX, TW).
+    "software_capex": ["PaymentsToDevelopSoftware", "PaymentsForSoftware", "PaymentsToAcquireIntangibleAssets"],
     "stock_comp": ["ShareBasedCompensation", "AllocatedShareBasedCompensationExpense"],
     "diluted_shares": ["WeightedAverageNumberOfDilutedSharesOutstanding"],
 }
 # Additive over time, so a trailing-twelve-month figure can be built from them.
 FLOW_CONCEPTS = {"revenue", "operating_income", "net_income", "operating_cash_flow",
-                 "capex", "stock_comp"}
+                 "capex", "software_capex", "stock_comp"}
+# A field more than this far behind revenue was renamed; its old series would be stale.
+STALE_DAYS = 400
 
 
 def _days(start: str, end: str) -> int:
@@ -140,21 +144,31 @@ def latest_value(rows: list[dict]) -> dict | None:
     return {"end": newest["end"], "value": newest["val"]}
 
 
+def _is_stale(years: dict[str, float], newest: str | None) -> bool:
+    return bool(newest) and (not years or _days(max(years), newest) > STALE_DAYS)
+
+
 def extract(facts: dict) -> dict:
-    """Compact history for one company: annual values, trailing twelve months, source names."""
-    out = {"annual": {}, "ttm": {}, "source": {}}
+    """Compact history for one company: annual values, trailing twelve months, source names.
+
+    A field whose latest annual figure is over a year behind revenue's is dropped and
+    listed as stale: TPL's capital spending stopped in 2023 and EME's stock-based pay in
+    2011 under the names found, and using them would understate today's spending.
+    """
+    out = {"annual": {}, "ttm": {}, "source": {}, "stale": []}
+    revenue_end = max(annual_series(pick_concept(facts, CONCEPTS["revenue"])[1]), default=None)
     for concept, names in CONCEPTS.items():
         name, rows = pick_concept(facts, names)
         if not name:
             continue
+        flow = concept in FLOW_CONCEPTS
+        years = annual_series(rows, latest_report_only=not flow)
+        if _is_stale(years, revenue_end):
+            out["stale"].append(concept)
+            continue
         out["source"][concept] = name
-        if concept in FLOW_CONCEPTS:
-            years = annual_series(rows)
-            out["annual"][concept] = dict(sorted(years.items())[-YEARS_KEPT:])
-            out["ttm"][concept] = ttm(rows)
-        else:
-            out["annual"][concept] = annual_series(rows, latest_report_only=True)
-            out["ttm"][concept] = latest_value(rows)
+        out["annual"][concept] = dict(sorted(years.items())[-YEARS_KEPT:]) if flow else years
+        out["ttm"][concept] = ttm(rows) if flow else latest_value(rows)
     return out
 
 

@@ -62,6 +62,7 @@ GROWTH_GAP = 0.03            # growth is never assumed within 3 points of the re
 MAX_SPREAD = 2.5             # methods further apart than this ratio don't agree
 MAX_DATA_AGE_DAYS = 200      # last filed period older than this is stale
 MAX_REVENUE_GAP = 0.10       # SEC and Yahoo revenue must agree this closely
+CAPEX_GAP = 0.10             # Yahoo seeing this much more capital spending means some is missing
 MAX_RELEASE_AGE_DAYS = 120   # a company-reported figure from an older release is stale
 MEASURES_PATH = os.path.join(SCRIPT_DIR, "data", "company_measures.json")
 
@@ -211,13 +212,28 @@ def combine(methods: dict[str, float | None], price: float, problems: list[str] 
             "buy_below": round(out["base"] * (1 - MARGIN_OF_SAFETY), 2)}
 
 
-def _owner_cash(annual: dict, ttm: dict) -> tuple[dict[str, float], float | None]:
-    """Operating cash flow - capital spending - stock-based pay, per year and last twelve months."""
-    ocf, capex, comp = (annual.get(k, {}) for k in ("operating_cash_flow", "capex", "stock_comp"))
-    years = {y: ocf[y] - capex[y] - comp.get(y, 0) for y in ocf if y in capex}
-    now = [(ttm.get(k) or {}).get("value") for k in ("operating_cash_flow", "capex")]
-    comp_now = (ttm.get("stock_comp") or {}).get("value") or 0
-    return years, (now[0] - now[1] - comp_now if None not in now else None)
+def _owner_cash(annual: dict, ttm: dict, yahoo_capex: float | None = None
+                ) -> tuple[dict[str, float], float | None, str | None]:
+    """Operating cash flow - capital spending (equipment and software) - stock-based pay.
+
+    Some companies file part of their spending under their own field names (IBM's
+    software), which no general rule finds. When Yahoo's statements show over
+    CAPEX_GAP more spending than the filings, every year is scaled up to match.
+    """
+    ocf, capex, software, comp = (annual.get(k, {}) for k in
+                                  ("operating_cash_flow", "capex", "software_capex", "stock_comp"))
+    spent = {y: capex[y] + software.get(y, 0) for y in capex}
+    now_of = lambda k: (ttm.get(k) or {}).get("value")   # noqa: E731
+    spent_now = now_of("capex") + (now_of("software_capex") or 0) if now_of("capex") is not None else None
+    note, scale = None, 1.0
+    if yahoo_capex and spent_now and yahoo_capex > spent_now * (1 + CAPEX_GAP):
+        scale = yahoo_capex / spent_now
+        note = f"capital spending raised {scale:.1f}x to match Yahoo; some is filed under company-specific names"
+    years = {y: ocf[y] - spent[y] * scale - comp.get(y, 0) for y in ocf if y in spent}
+    ocf_now = now_of("operating_cash_flow")
+    now = (ocf_now - spent_now * scale - (now_of("stock_comp") or 0)
+           if ocf_now is not None and spent_now is not None else None)
+    return years, now, note
 
 
 def _problems(record: dict, quote: dict, today: date) -> list[str]:
@@ -289,7 +305,7 @@ def value_ticker(record: dict, quote: dict, year_end_prices: dict[str, float],
     rate = discount_rate(treasury, beta)
     cyclical = is_cyclical(annual.get("operating_income", {}), revenue)
     years = CYCLE_YEARS if cyclical else NORMALISE_YEARS
-    owner_years, owner_now = _owner_cash(annual, ttm)
+    owner_years, owner_now, capex_note = _owner_cash(annual, ttm, quote.get("capex_ttm"))
     cash_margin = normalised_margin(owner_years, revenue, years, owner_now, revenue_now)
     net_margin = normalised_margin(annual.get("net_income", {}), revenue, years,
                                    value_of("net_income"), revenue_now)
@@ -314,6 +330,9 @@ def value_ticker(record: dict, quote: dict, year_end_prices: dict[str, float],
         *([f"{far_future:.0%} of the cash-flow value comes after year 10, so it rests on long-run guesses"]
           if far_future and far_future > MAX_TERMINAL_SHARE else []),
         *(["no beta available, so average market risk was assumed"] if beta is None else []),
+        *([capex_note] if capex_note else []),
+        *([f"left out as out of date in the filings: {', '.join(record['stale'])}"]
+          if record.get("stale") else []),
         *([multiple_note] if multiple_note else []),
     ]
     return {**result, "notes": notes, "inputs": {

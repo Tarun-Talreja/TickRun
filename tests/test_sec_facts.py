@@ -88,3 +88,21 @@ def test_latest_report_only_keeps_split_adjusted_years():
             _row("2024-01-01", "2024-12-31", 1000, filed="2026-02-01"),
             _row("2025-01-01", "2025-12-31", 1010, filed="2026-02-01")]
     assert annual_series(rows, latest_report_only=True) == {"2024-12-31": 1000, "2025-12-31": 1010}
+
+
+def test_stale_concepts_are_dropped():
+    from sec_facts import extract
+    facts = _facts(
+        Revenues=[_row("2025-01-01", "2025-12-31", 100)],
+        PaymentsToAcquirePropertyPlantAndEquipment=[_row("2022-01-01", "2022-12-31", 9)],
+    )
+    out = extract(facts)
+    assert "capex" not in out["annual"] and "capex" in out["stale"]
+    assert out["annual"]["revenue"] == {"2025-12-31": 100}
+
+
+def test_software_spending_is_read():
+    from sec_facts import extract
+    facts = _facts(Revenues=[_row("2025-01-01", "2025-12-31", 100)],
+                   PaymentsToDevelopSoftware=[_row("2025-01-01", "2025-12-31", 5)])
+    assert extract(facts)["annual"]["software_capex"] == {"2025-12-31": 5}
