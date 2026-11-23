@@ -41,7 +41,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.retry.outputs.page_url || steps.last_try.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -56,5 +56,20 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: '_site'
+      # GitHub sometimes can't find the upload a second later ("Fetching artifact metadata
+      # failed"), so retry. The page reads prices from the repo, so this only delays page
+      # changes, but each failure was a false alarm.
       - id: deployment
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - if: steps.deployment.outcome == 'failure'
+        run: sleep 45
+      - id: retry
+        if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - if: steps.retry.outcome == 'failure'
+        run: sleep 180
+      - id: last_try
+        if: steps.retry.outcome == 'failure'
         uses: actions/deploy-pages@v4

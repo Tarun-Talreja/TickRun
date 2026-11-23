@@ -1196,7 +1196,6 @@ function renderWatchlist(data){
           ${s.forward_pe?`<div class="wm"><div class="wm-label">Next-FY P/E</div><div class="wm-val ${s.forward_pe<20?'hi':''}">${fn(s.forward_pe,1)}×</div></div>`:''}
           ${s.revenue_growth!=null?`<div class="wm"><div class="wm-label">Rev Grw</div><div class="wm-val ${s.revenue_growth>30?'hi':s.revenue_growth<5?'lo':'mid'}">${s.revenue_growth>0?'+':''}${s.revenue_growth}%</div></div>`:''}
           ${s.op_margin!=null?`<div class="wm"><div class="wm-label">Op Mgn</div><div class="wm-val ${s.op_margin>35?'hi':''}">${fn(s.op_margin,1)}%</div></div>`:''}
-          ${s.buy_target?`<div class="wm"><div class="wm-label">Target</div><div class="wm-val" style="color:var(--green)">${fp(s.buy_target)}</div></div>`:''}
         </div>
         <div class="wl-action-row">
           <span class="wl-action-icon" style="color:${acColor(s.next_action||'')}">${ac==='buy'?'▲':ac==='wait'?'◎':ac==='pass'?'✕':'→'}</span>
@@ -1270,7 +1269,6 @@ function renderStockDetail(s){
 
   <div class="detail-metrics-grid">
     <div class="dm-tile"><div class="dmt-label">Price</div><div class="dmt-val">${fp(price)}</div></div>
-    <div class="dm-tile"><div class="dmt-label">Buy Target</div><div class="dmt-val hi">${s.buy_target?fp(s.buy_target):'—'}</div></div>
     <div class="dm-tile"><div class="dmt-label">Mkt Cap</div><div class="dmt-val" style="font-size:14px">${fBig(s.market_cap)}</div></div>
     <div class="dm-tile"><div class="dmt-label">P/E</div><div class="dmt-val ${s.pe>100?'lo':s.pe<20?'hi':''}">${s.pe?fn(s.pe,1)+'×':'—'}</div></div>
     <div class="dm-tile"><div class="dmt-label">Next-FY P/E</div><div class="dmt-val ${s.forward_pe&&s.forward_pe<20?'hi':''}">${s.forward_pe?fn(s.forward_pe,1)+'×':'—'}</div></div>
@@ -1322,7 +1320,7 @@ function sigMoreBtn(cap){
 
 function renderSignals(data){
   const sig = data.signals;
-  const urgent = (sig.upcoming_earnings||[]).filter(e=>e.days_until<=3).length + (sig.pullback_alerts||[]).length + (sig.price_movers||[]).length + (sig.target_hits||[]).length;
+  const urgent = (sig.upcoming_earnings||[]).filter(e=>e.days_until<=3).length + (sig.pullback_alerts||[]).length + (sig.price_movers||[]).length;
 
   $('nb-signals').textContent = urgent;
   $('nb-signals').style.display = urgent>0?'flex':'none';
@@ -1358,28 +1356,6 @@ function renderSignals(data){
       </div>`;
     });
     html+=sigMoreBtn(catCap);
-    html+=`</div>`;
-  }
-
-  // ── Buy-target hits: the most actionable signal, shown first ──────────────
-  const tgtHits = sig.target_hits||[];
-  if(tgtHits.length){
-    const tgtCap = sigCap(tgtHits, 'targets', 5);
-    html+=`<div class="sig-section-title">🎯 At Research Target <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text2);font-size:10px">· app-suggested, not yours</span></div>`;
-    html+=`<div class="news-list">`;
-    tgtCap.shown.forEach((h,i)=>{
-      const below = h.gap_pct<=0;
-      html+=`<div class="mover-card s-anim" style="animation-delay:${i*0.03}s;border-left:3px solid var(--green)" onclick="openStock(${JSON.stringify(h).replace(/"/g,'&quot;')})">
-        <div class="news-head">
-          <span class="news-ticker">${esc(h.ticker)}</span>
-          ${vbadge(h.verdict)}
-          ${h.confidence?`<span class="conf-badge conf-${esc((h.confidence||'').toLowerCase())}">${esc(h.confidence)}</span>`:''}
-          <span class="mover-pct" style="color:var(--green);margin-left:auto">${fp(h.price)} ${below?'≤':'≈'} ${fp(h.buy_target)}</span>
-        </div>
-        <div class="mover-reason">${below?`<strong>${Math.abs(h.gap_pct)}% below the research target</strong> — `:'At the research target — '}${esc((h.next_action||'').substring(0,110))}</div>
-      </div>`;
-    });
-    html+=sigMoreBtn(tgtCap);
     html+=`</div>`;
   }
 
@@ -1585,7 +1561,12 @@ function healthStages(data){
   if(!stages.length) return [];
   // The build can't report its own staleness, so the page checks the site itself.
   const siteHours=(Date.now()-new Date(data.last_built))/36e5;
-  return [...stages,{name:'Live site',status:siteHours>30?'stale':'ok',age_hours:siteHours,
+  // Jobs that never ran can't report it either, so price age is also checked here.
+  const late=data.prices_due&&Date.now()>new Date(data.prices_due);
+  const priced=late?stages.map(x=>x.name==='Quotes'?{...x,status:'stale',
+    detail:`last price ${new Date(data.prices_as_of).toLocaleString('en-US',{weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})}`,
+    affects:'The market has traded since. Every price here is out of date'}:x):stages;
+  return [...priced,{name:'Live site',status:siteHours>30?'stale':'ok',age_hours:siteHours,
     affects:'Everything on this page may be out of date'}];
 }
 
@@ -1826,7 +1807,6 @@ function renderResearch(data){
           </div>` : ''}
         <div class="rs-meta">
           ${price ? `<span class="rs-meta-item">Price: <strong>${fp(price)}</strong></span>` : ''}
-          ${s.buy_target ? `<span class="rs-meta-item">Target: <strong style="color:var(--green)">${fp(s.buy_target)}</strong></span>` : ''}
           ${s.last_researched ? `<span class="rs-meta-item">Researched: <strong>${esc(s.last_researched)}</strong></span>` : ''}
         </div>
       </div>` : ''}
@@ -1924,7 +1904,7 @@ runIntro();
     $('dn-watchlist').textContent=wlCount;
     $('dn-watchlist').style.display=wlCount>0?'flex':'none';
 
-    renderPriceAge(DB.quotes_updated);
+    renderPriceAge(DB);
     // Re-fetch dashboard.json every 5 minutes to pick up GitHub Action commits
     setInterval(async () => {
       try {
@@ -1937,7 +1917,7 @@ runIntro();
             console.log('[refresh] dashboard.json updated, re-rendering');
             renderHome(DB); renderWatchlist(DB); renderSignals(DB); renderPortfolio(DB); renderResearch(DB);
           }
-          renderPriceAge(DB.quotes_updated);
+          renderPriceAge(DB);
         }
       } catch(e){}
     }, 5 * 60 * 1000);
@@ -1966,17 +1946,18 @@ runIntro();
 // CORS proxies that had all died, while the badge kept saying LIVE. Show the real age.
 const STALE_PRICE_HOURS = 2;
 
-function renderPriceAge(updatedAt){
+function renderPriceAge(data){
   const label=$('priceAge'), dot=document.querySelector('.pulse');
-  if(!label||!updatedAt) return;
-  const ts=new Date(updatedAt), now=new Date();
+  const asOf=data.prices_as_of||data.quotes_updated;   // market time; fetch time on older data
+  if(!label||!asOf) return;
+  const ts=new Date(asOf), now=new Date();
   const time=ts.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
   const sameDay=ts.toDateString()===now.toDateString();
-  label.textContent=`Prices ${sameDay?time:ts.toLocaleDateString('en-US',{month:'short',day:'numeric'})}`;
-  const stale=(now-ts)/36e5>STALE_PRICE_HOURS;
-  dot.style.background=stale?'var(--amber)':'var(--green)';
-  label.style.color=stale?'var(--amber)':'';
-  label.parentElement.title=`Delayed, not live. Last price update: ${ts.toLocaleString('en-US')}`;
+  const stale=data.prices_due?now>new Date(data.prices_due):(now-ts)/36e5>STALE_PRICE_HOURS;
+  label.textContent=`${stale?'OLD prices':'Prices'} ${sameDay?time:ts.toLocaleDateString('en-US',{month:'short',day:'numeric'})}`;
+  dot.style.background=stale?'var(--red)':'var(--green)';
+  label.style.color=stale?'var(--red)':'';
+  label.parentElement.title=`Delayed, not live. Market price from ${ts.toLocaleString('en-US')}`;
 }
 
 // Expose for inline onclick

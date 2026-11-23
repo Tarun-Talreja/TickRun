@@ -200,6 +200,7 @@ def _fetch_with_retry(ticker: str) -> dict:
         "ticker":               ticker,
         "name":                 info.get("longName") or info.get("shortName", ticker),
         "price":                price,
+        "price_time":           info.get("regularMarketTime"),
         "pct_change_1d":        pct_change_1d,
         "market_cap":           info.get("marketCap"),
         "sector":               info.get("sector"),

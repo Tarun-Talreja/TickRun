@@ -19,12 +19,14 @@ Usage:
 
 import json
 import os
+import re
 import sys
 from datetime import datetime, timezone
 
 from bear_check import RATING_VERSION
 from health import build_health
 from io_utils import load_json as _load
+from market_time import price_due_at, prices_as_of
 from research_batch import SKIP_TICKERS
 from sec_filings import is_stake
 
@@ -135,6 +137,21 @@ def _content_counts(quotes: dict, news: dict, insiders: dict, funds: dict, mover
     }
 
 
+_PULLBACK_RE = re.compile(r"\s*Revisit at \d+% below the 52-week high\.?\s*$")
+
+
+def without_targets(stock: dict) -> dict:
+    """The stock without its old target, until the valuation on v2-valuation replaces it.
+
+    The target is a % below the 52-week high, or the price on the day it was rated, so a
+    late price moved it and RDDT read $211 at $85. The stored data is left alone.
+    """
+    kept = {k: v for k, v in stock.items() if k not in ("buy_target", "buy_trigger_drawdown_pct")}
+    if kept.get("next_action"):
+        kept["next_action"] = _PULLBACK_RE.sub("", kept["next_action"])
+    return kept
+
+
 def _enrich_candidate(candidate: dict, quotes: dict, insider_signals: dict, hedge_fund_signals: dict) -> dict:
     ticker = candidate.get("ticker", "")
     q = quotes.get("tickers", {}).get(ticker, {})
@@ -209,7 +226,7 @@ def _enrich_candidate(candidate: dict, quotes: dict, insider_signals: dict, hedg
             "hf_new_positions":   hf.get("new_positions", []),
         })
 
-    return enriched
+    return without_targets(enriched)
 
 
 def _build_news_feed(news: dict, candidates: list) -> list:
@@ -297,12 +314,17 @@ def main():
         t = c.get("theme", "unknown")
         by_theme.setdefault(t, []).append(c)
 
+    as_of = prices_as_of(quotes.get("tickers", {}))
+    due = price_due_at(datetime.fromisoformat(as_of.replace("Z", "+00:00"))) if as_of else None
+
     dashboard = {
         "last_built":    datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "quotes_updated": quotes.get("last_updated"),
+        "prices_as_of": as_of,
+        "prices_due": due.strftime("%Y-%m-%dT%H:%M:%SZ") if due else None,
         "health": build_health(
             datetime.now(timezone.utc),
-            quotes=quotes.get("last_updated"),
+            quotes=as_of,
             research=_load(RESEARCH_STATUS_PATH),
             catalysts=_load(CATALYSTS_PATH).get("generated_at"),
             sec=sec.get("generated_at"),
@@ -353,8 +375,9 @@ def main():
             ],
             "price_movers": movers.get("movers", []),
             "movers_updated": movers.get("generated_at"),
-            "target_hits": tgt_alerts.get("hits", []),
-            "target_approaching": tgt_alerts.get("approaching", []),
+            # Hidden with the targets themselves; see without_targets.
+            "target_hits": [],
+            "target_approaching": [],
             "news": _build_news_feed(news, candidates_enriched),
             "insider_alerts": [
                 {

@@ -141,3 +141,15 @@ class TestQuietDays:
                            content={"Movers": (friday_night, 16, 16)})
         movers = {s["name"]: s for s in out["stages"]}["Movers"]
         assert movers["status"] == "ok"
+
+
+class TestPriceAge:
+    def _quotes(self, now, as_of):
+        return {s["name"]: s for s in build_health(
+            now, quotes=as_of, research={}, catalysts=None, sec=None)["stages"]}["Quotes"]["status"]
+
+    def test_mondays_do_not_excuse_fridays_prices(self):
+        assert self._quotes(datetime(2026, 11, 23, 22, 14, tzinfo=timezone.utc), "2026-11-20T21:00:00Z") == "stale"
+
+    def test_fridays_close_is_current_all_weekend(self):
+        assert self._quotes(datetime(2026, 11, 22, 22, 0, tzinfo=timezone.utc), "2026-11-20T21:00:00Z") == "ok"

@@ -9,6 +9,8 @@ reports on itself instead, from the data each stage leaves behind.
 
 from datetime import datetime, timezone
 
+from market_time import price_due_at
+
 # Hours a stage may go without a fresh result.
 MAX_AGE_HOURS = {"Quotes": 30, "Research": 36, "Catalysts": 36, "News": 30,
                  "SEC filings": 30, "Screener": 8 * 24, "Field news": 30,
@@ -23,7 +25,7 @@ MIN_SHARE = {"News": 0.5, "Prices": 0.9, "Company figures": 0.8, "Insider data":
 MIN_COUNT = {"Screener": 300, "Radar": 1, "AI summary": 1}
 # What goes wrong for you when a part is down, shown on Home and in the alert.
 AFFECTS = {
-    "Quotes": "Prices and buy targets may be out of date",
+    "Quotes": "The market has traded since these prices",
     "Prices": "Prices and buy targets may be missing",
     "Company figures": "Ratings can't check the numbers",
     "Research": "Ratings aren't being updated",
@@ -42,7 +44,7 @@ AFFECTS = {
 }
 # Market data stops on Friday night, so allow for the weekend until Monday.
 WEEKEND_SLACK_HOURS = 48
-MARKET_STAGES = {"Quotes", "News", "SEC filings", "Movers"}
+MARKET_STAGES = {"News", "SEC filings", "Movers"}
 SATURDAY, SUNDAY, MONDAY = 5, 6, 0
 
 
@@ -56,6 +58,15 @@ def _stage(name: str, updated_at: str | None, now: datetime, detail: str | None 
     if name in MARKET_STAGES and now.weekday() in (SATURDAY, SUNDAY, MONDAY):
         limit += WEEKEND_SLACK_HOURS
     return {**stage, "status": "ok" if age <= limit else "stale", "age_hours": round(age, 1)}
+
+
+def _quotes_stage(as_of: str | None, now: datetime) -> dict:
+    """Stale once the market has traded past the price, not by when it was fetched."""
+    stage = _stage("Quotes", as_of, now)
+    if not as_of:
+        return stage
+    due = price_due_at(datetime.fromisoformat(as_of.replace("Z", "+00:00")))
+    return {**stage, "status": "stale" if now > due else "ok"}
 
 
 def _research_stage(research: dict, now: datetime) -> dict:
@@ -100,7 +111,7 @@ def build_health(now: datetime, *, quotes, research, catalysts, sec, ratings=Non
                  content=None, self_test=None) -> dict:
     """content: {part name: (updated_at, how many have data, out of how many or None)}."""
     stages = [
-        _stage("Quotes", quotes, now),
+        _quotes_stage(quotes, now),
         _research_stage(research, now),
         _stage("Catalysts", catalysts, now),
         _stage("SEC filings", sec, now),
