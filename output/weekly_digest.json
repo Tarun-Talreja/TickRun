@@ -1,166 +1,166 @@
 {
-  "generated_at": "2026-11-23T02:36:31Z",
-  "narrative": "Major semiconductor and AI-related stocks dropped sharply, with NBIS, CLS, CRDO, NVDA, LITE, and MU all falling 13% to 16%. The declines coincide with new U.S. export controls tightening AI chip access for Chinese customers \u2014 prompting TSMC and Samsung to halt shipments \u2014 and a reported Google order cut for Broadcom's custom AI chips. Several of these names have earnings approaching, including CRDO and MRVL in eight days, AVGO in 16 days, and MU in 24 days. Meanwhile, field developments include PJM proposing faster grid interconnection rules for data centers, Poland advancing a $50 billion nuclear deal with Westinghouse and Bechtel, and DoorDash agreeing to a $17 billion Instacart acquisition that immediately drew antitrust scrutiny.",
+  "generated_at": "2026-11-23T22:12:41Z",
+  "narrative": "Major semiconductor and AI-related stocks fell sharply, with Nvidia, Micron, Broadcom, and three other chip names each dropping 13% to 16%. The declines coincided with new U.S. export controls that closed a manufacturing loophole for AI chips bound for China, prompting TSMC and Samsung to halt shipments to Chinese customers and triggering a reported cut to Broadcom orders from Google. Meanwhile, CrowdStrike agreed to buy Zscaler in a roughly $44 billion all-stock deal, and Tesla shifted its Model S line to produce Optimus robots while reserving its next-generation AI5 chip for the humanoid program. Several followed companies \u2014 including Micron, Credo, Marvell, Broadcom, and Costco \u2014 have earnings due within the next three weeks.",
   "buy_ready": [
-    {
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "price": 560.84,
-      "buy_target": 560.69,
-      "at_or_below_target": true,
-      "confidence": "MEDIUM",
-      "theme": "mega_cap_ai"
-    },
     {
       "ticker": "UNH",
       "name": "UnitedHealth Group Incorporated",
-      "price": 339.85,
+      "price": 336.08,
       "buy_target": 339.75,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
       "theme": "uncategorized"
     },
     {
-      "ticker": "ASML",
-      "name": "ASML Holding N.V.",
-      "price": 1266.22,
-      "buy_target": 1265.97,
-      "at_or_below_target": true,
-      "confidence": "LOW",
-      "theme": "edge_ai_silicon"
-    },
-    {
-      "ticker": "TSM",
-      "name": "Taiwan Semiconductor Manufacturing Company",
-      "price": 318.71,
-      "buy_target": 351.95,
-      "at_or_below_target": true,
-      "confidence": "HIGH",
-      "theme": "edge_ai_silicon"
-    },
-    {
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "price": 187.22,
-      "buy_target": 187.0,
-      "at_or_below_target": true,
-      "confidence": "MEDIUM",
-      "theme": "networking_infra"
-    },
-    {
-      "ticker": "CEG",
-      "name": "Constellation Energy Corporation",
-      "price": 237.41,
-      "buy_target": 237.23,
-      "at_or_below_target": true,
-      "confidence": "LOW",
-      "theme": "nuclear_smr"
-    },
-    {
-      "ticker": "VST",
-      "name": "Vistra Corp.",
-      "price": 115.25,
-      "buy_target": 124.14,
-      "at_or_below_target": true,
-      "confidence": "LOW",
-      "theme": "nuclear_smr"
-    },
-    {
-      "ticker": "VRT",
-      "name": "Vertiv Holdings Co",
-      "price": 166.24,
-      "buy_target": 185.03,
-      "at_or_below_target": true,
-      "confidence": "MEDIUM",
-      "theme": "power_grid"
-    },
-    {
       "ticker": "GEV",
       "name": "GE Vernova Inc.",
-      "price": 699.33,
+      "price": 756.71,
       "buy_target": 956.75,
       "at_or_below_target": true,
       "confidence": "MEDIUM",
       "theme": "power_grid"
     },
     {
+      "ticker": "STZ",
+      "name": "STZ",
+      "price": 137.82,
+      "buy_target": 141.79,
+      "at_or_below_target": true,
+      "confidence": "MEDIUM",
+      "theme": "defensive_income"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "price": 597.6,
+      "buy_target": 560.69,
+      "at_or_below_target": false,
+      "confidence": "MEDIUM",
+      "theme": "mega_cap_ai"
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML Holding N.V.",
+      "price": 1383.78,
+      "buy_target": 1265.97,
+      "at_or_below_target": false,
+      "confidence": "LOW",
+      "theme": "edge_ai_silicon"
+    },
+    {
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor Manufacturing Company",
+      "price": 363.6,
+      "buy_target": 318.81,
+      "at_or_below_target": false,
+      "confidence": "MEDIUM",
+      "theme": "edge_ai_silicon"
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "price": 215.81,
+      "buy_target": 187.0,
+      "at_or_below_target": false,
+      "confidence": "MEDIUM",
+      "theme": "networking_infra"
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy Corporation",
+      "price": 251.72,
+      "buy_target": 237.23,
+      "at_or_below_target": false,
+      "confidence": "LOW",
+      "theme": "nuclear_smr"
+    },
+    {
+      "ticker": "VST",
+      "name": "Vistra Corp.",
+      "price": 123.87,
+      "buy_target": 115.2,
+      "at_or_below_target": false,
+      "confidence": "LOW",
+      "theme": "nuclear_smr"
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings Co",
+      "price": 186.35,
+      "buy_target": 166.41,
+      "at_or_below_target": false,
+      "confidence": "MEDIUM",
+      "theme": "power_grid"
+    },
+    {
       "ticker": "ETN",
       "name": "Eaton Corporation plc",
-      "price": 311.33,
+      "price": 336.34,
       "buy_target": 311.18,
-      "at_or_below_target": true,
+      "at_or_below_target": false,
       "confidence": "MEDIUM",
       "theme": "power_grid"
     },
     {
       "ticker": "TLN",
       "name": "Talen Energy Corporation",
-      "price": 332.92,
+      "price": 364.83,
       "buy_target": 332.88,
-      "at_or_below_target": true,
+      "at_or_below_target": false,
       "confidence": "LOW",
       "theme": "nuclear_smr"
     },
     {
       "ticker": "POWL",
       "name": "Powell Industries, Inc.",
-      "price": 148.18,
+      "price": 161.98,
       "buy_target": 148.26,
-      "at_or_below_target": true,
+      "at_or_below_target": false,
       "confidence": "LOW",
       "theme": "power_grid"
     },
     {
-      "ticker": "STZ",
-      "name": "STZ",
-      "price": 141.87,
-      "buy_target": 145.67,
-      "at_or_below_target": true,
-      "confidence": "MEDIUM",
-      "theme": "defensive_income"
-    },
-    {
       "ticker": "ISRG",
       "name": "Intuitive Surgical, Inc.",
-      "price": 399.05,
+      "price": 416.23,
       "buy_target": 399.16,
-      "at_or_below_target": true,
+      "at_or_below_target": false,
       "confidence": "LOW",
       "theme": "healthcare_innovation"
     },
     {
       "ticker": "CLS",
       "name": "Celestica Inc.",
-      "price": 201.8,
-      "buy_target": 240.33,
-      "at_or_below_target": true,
-      "confidence": "LOW",
+      "price": 213.31,
+      "buy_target": 201.94,
+      "at_or_below_target": false,
+      "confidence": "MEDIUM",
       "theme": "datacenter_infra"
     },
     {
       "ticker": "CRDO",
       "name": "Credo Technology Group Holding Ltd",
-      "price": 99.86,
+      "price": 122.46,
       "buy_target": 100.01,
-      "at_or_below_target": true,
+      "at_or_below_target": false,
       "confidence": "MEDIUM",
       "theme": "edge_ai_silicon"
     },
     {
       "ticker": "FIX",
       "name": "Comfort Systems USA, Inc.",
-      "price": 1042.47,
-      "buy_target": 1113.73,
-      "at_or_below_target": true,
+      "price": 1158.53,
+      "buy_target": 1043.22,
+      "at_or_below_target": false,
       "confidence": "MEDIUM",
       "theme": "uncategorized"
     },
     {
       "ticker": "EME",
       "name": "EMCOR Group, Inc.",
-      "price": 603.32,
-      "buy_target": 635.91,
-      "at_or_below_target": true,
+      "price": 649.49,
+      "buy_target": 603.54,
+      "at_or_below_target": false,
       "confidence": "MEDIUM",
       "theme": "uncategorized"
     }
