@@ -27,6 +27,7 @@ from bear_check import RATING_VERSION
 from fact_check import drop_unsupported
 from health import build_health
 from io_utils import load_json as _load
+from market_split import panel, split_move
 from market_time import price_due_at, prices_as_of
 from rating_move import big_move
 from research_batch import SKIP_TICKERS
@@ -331,6 +332,7 @@ def main():
     valuations = _load(VALUATIONS_PATH)
     candidates_enriched = [
         {**without_made_up_figures(c),
+         "move_split": split_move(quotes["tickers"].get(c["ticker"], {}), quotes.get("market", {})),
          "moved_since_rating": big_move(c, quotes["tickers"].get(c["ticker"], {})),
          "valuation": valuation_view(valuations.get("tickers", {}).get(c["ticker"]), c.get("price"),
                                      valuations.get("generated_at"))}
@@ -402,6 +404,7 @@ def main():
         "radar":           with_live_prices(_load(RADAR_PATH), quotes.get("tickers", {})),
         "asset_location":  _load(ASSET_LOCATION_PATH),
         "catalysts":       _load(CATALYSTS_PATH),
+        "market_panel":    panel(quotes["tickers"], quotes.get("market", {}), SKIP_TICKERS),
         "summary_history": load_days(),
         "daily_brief":     _load(DAILY_BRIEF_PATH),
         "signals": {

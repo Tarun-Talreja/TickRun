@@ -952,6 +952,7 @@ function renderHome(data){
     <div class="digest-label">📋 Summary, prices from ${new Date(digest.prices_as_of).toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})}</div>
     <div class="digest-text">${esc(digest.narrative)}</div>
   </div>`:''}
+  ${renderMarketPanel(data)}
   ${renderDailyBrief(data)}
   ${renderSummaryHistory(data)}
   ${renderRadar(data)}
@@ -1310,6 +1311,7 @@ function renderStockDetail(s){
     ${(s.unsupported_figures||[]).length?`<div style="font-size:12px;color:var(--red);margin-top:8px">Figures in the full research note that weren’t in its source data (sentences using them are removed here): ${esc(s.unsupported_figures.join(', '))}</div>`:''}
     ${s.last_researched?`<div style="margin-top:8px;font-size:9px;color:var(--text2)">Last researched: ${fDate(s.last_researched)}${s.confidence?` · Confidence: ${esc(s.confidence)}`:''}</div>`:''}
   </div>
+  ${s.move_split?`<div class="detail-section"><div class="ds-title">What Moved It on ${fDate(s.move_split.session)}</div><div class="thesis-box">${moveSplit(s.move_split)}</div></div>`:''}
   ${renderValuation(s)}
   ${s.fall_reason?`<div class="detail-section">
     <div class="ds-title">Why It Fell</div>
@@ -1407,6 +1409,7 @@ function renderSignals(data){
           <span class="mover-pct" style="color:${col};margin-left:auto">${up?'▲':'▼'} ${pct>0?'+':''}${fn(pct,1)}%</span>
         </div>
         <div class="mover-reason">${esc(m.reason||'')}</div>
+        ${moveSplit((data.watchlist.all.find(x=>x.ticker===m.ticker)||{}).move_split)}
         ${safeUrl?`<a class="report-link" href="${esc(safeUrl)}" target="_blank" rel="noopener noreferrer">${esc(news0.title||'Read more')} ↗</a>`:''}
       </div>`;
     });
@@ -1619,6 +1622,28 @@ function renderHealth(data){
     <summary style="cursor:pointer;font-size:12px;font-weight:600;color:${bad.length?'var(--amber)':'var(--text1)'}">
       ${bad.length?`System check: ${bad.length} need${bad.length===1?'s':''} attention (${esc(bad.map(s=>s.name).join(', '))})`:'System check: all stages working'}
     </summary><div style="margin-top:8px">${rows}</div></details>`;
+}
+
+function signed(x){return `${x>0?'+':''}${x.toFixed(1)}`}
+function moveSplit(m){
+  if(!m) return '';
+  const group = m.group!=null?` Its group (${esc(m.group_name)} stocks) vs the market: <b>${signed(m.group)}</b>.`:'';
+  const rest = m.group!=null?'The stock vs its group':'The stock vs the market';
+  return `<div class="move-split" style="font-size:12px;color:var(--text2);margin-top:6px">${signed(m.pct)}% on ${fDate(m.session)}, in points. Market: <b>${signed(m.market)}</b>.${group} ${rest}: <b>${signed(m.own)}</b>.</div>`;
+}
+function renderMarketPanel(data){
+  const p = data.market_panel;
+  if(!p) return '';
+  const cell = (a,b)=>`<div style="flex:1 1 120px"><div style="font-size:10px;color:var(--text2)">${a}</div><div style="font-size:15px">${b}</div></div>`;
+  const pct = x=>x==null?'—':signed(x)+'%';
+  return `<div class="digest-card s-anim" id="market-panel" style="animation-delay:.055s">
+    <div class="digest-label">🌐 Market, ${fDate(p.session)}</div>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:8px">
+      ${cell('S&amp;P 500 (SPY)',pct(p.sp500))}${cell('Nasdaq 100 (QQQ)',pct(p.nasdaq100))}
+      ${p.treasury!=null?cell('10-yr Treasury yield',`${p.treasury.toFixed(2)}% <span style="font-size:11px;color:var(--text2)">was ${p.treasury_before.toFixed(2)}%</span>`):''}
+      ${cell('Followed stocks up',`${p.up} of ${p.counted}`)}
+      ${p.best?cell('Best group',`${esc(p.best.name)} ${pct(p.best.pct)}`):''}${p.worst?cell('Worst group',`${esc(p.worst.name)} ${pct(p.worst.pct)}`):''}
+    </div></div>`;
 }
 
 function renderSummaryHistory(data){

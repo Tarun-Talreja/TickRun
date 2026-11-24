@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-11-24T08:05:14Z",
-  "quotes_updated": "2026-11-24T08:05:02Z",
+  "last_built": "2026-11-24T08:12:29Z",
+  "quotes_updated": "2026-11-24T08:12:06Z",
   "prices_as_of": "2026-11-23T21:00:01Z",
   "prices_due": "2026-11-24T16:30:00Z",
   "health": {
@@ -10,7 +10,7 @@
         "updated_at": "2026-11-23T21:00:01Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 11.1,
+        "age_hours": 11.2,
         "affects": "The market has traded since these prices"
       },
       {
@@ -18,7 +18,7 @@
         "updated_at": "2026-11-23T13:52:17Z",
         "detail": "8/8 tickers",
         "status": "ok",
-        "age_hours": 18.2,
+        "age_hours": 18.3,
         "affects": "Ratings aren't being updated"
       },
       {
@@ -26,7 +26,7 @@
         "updated_at": "2026-11-24T01:10:45Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 6.9,
+        "age_hours": 7.0,
         "affects": "Upcoming earnings dates may be missing"
       },
       {
@@ -34,12 +34,12 @@
         "updated_at": "2026-11-24T08:05:05Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "New SEC filings won't show"
       },
       {
         "name": "Prices",
-        "updated_at": "2026-11-24T08:05:02Z",
+        "updated_at": "2026-11-24T08:12:06Z",
         "detail": "59/59 have data",
         "status": "ok",
         "age_hours": 0.0,
@@ -47,7 +47,7 @@
       },
       {
         "name": "Company figures",
-        "updated_at": "2026-11-24T08:05:02Z",
+        "updated_at": "2026-11-24T08:12:06Z",
         "detail": "59/59 have data",
         "status": "ok",
         "age_hours": 0.0,
@@ -58,7 +58,7 @@
         "updated_at": "2026-11-24T08:05:11Z",
         "detail": "57/57 have data",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "Ratings and mover reasons can miss recent news"
       },
       {
@@ -66,7 +66,7 @@
         "updated_at": "2026-11-23T02:36:07Z",
         "detail": "50/59 have data",
         "status": "ok",
-        "age_hours": 29.5,
+        "age_hours": 29.6,
         "affects": "Insider buying won't show on stocks or the radar"
       },
       {
@@ -74,7 +74,7 @@
         "updated_at": "2026-11-15T19:48:08Z",
         "detail": "57/60 have data",
         "status": "ok",
-        "age_hours": 204.3,
+        "age_hours": 204.4,
         "affects": "Hedge fund holdings may be out of date"
       },
       {
@@ -82,7 +82,7 @@
         "updated_at": "2026-11-23T22:12:00Z",
         "detail": "16/16 have data",
         "status": "ok",
-        "age_hours": 9.9,
+        "age_hours": 10.0,
         "affects": "The field briefing may be out of date"
       },
       {
@@ -90,7 +90,7 @@
         "updated_at": "2026-11-24T08:05:12Z",
         "detail": "28/28 have data",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "Big moves may have no explanation"
       },
       {
@@ -98,7 +98,7 @@
         "updated_at": "2026-11-24T07:32:04Z",
         "detail": "12 found",
         "status": "ok",
-        "age_hours": 0.6,
+        "age_hours": 0.7,
         "affects": "The radar may be out of date"
       },
       {
@@ -106,7 +106,7 @@
         "updated_at": "2026-11-21T19:15:39Z",
         "detail": "430 found",
         "status": "ok",
-        "age_hours": 60.8,
+        "age_hours": 60.9,
         "affects": "New stock ideas may be out of date"
       },
       {
@@ -114,7 +114,7 @@
         "updated_at": "2026-11-24T08:05:13Z",
         "detail": "1 found",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "The summary may be out of date"
       },
       {
@@ -122,7 +122,7 @@
         "updated_at": "2026-11-24T07:49:39Z",
         "detail": "59 found",
         "status": "ok",
-        "age_hours": 0.3,
+        "age_hours": 0.4,
         "affects": "Buy-below prices may be missing or out of date"
       },
       {
@@ -130,7 +130,7 @@
         "updated_at": "2026-11-24T00:06:42Z",
         "detail": "6 sources passed",
         "status": "ok",
-        "age_hours": 8.0,
+        "age_hours": 8.1,
         "affects": "One of the data sources failed its daily test"
       },
       {
@@ -197,7 +197,7 @@
         "pct_change_1d": 6.03,
         "drawdown_from_high": -33.9,
         "pe": 20.234728,
-        "forward_pe": 18.80208
+        "forward_pe": 18.809835
       },
       {
         "ticker": "MSFT",
@@ -214,7 +214,7 @@
         "pct_change_1d": 1.65,
         "drawdown_from_high": -11.9,
         "pe": 25.704594,
-        "forward_pe": 20.350533
+        "forward_pe": 20.348078
       },
       {
         "ticker": "RDDT",
@@ -308,6 +308,15 @@
           }
         ],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 1.9,
+          "market": 4.7,
+          "group": 2.4,
+          "group_name": "technology",
+          "fund": "RSPT",
+          "own": -5.2
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -384,7 +393,7 @@
         "revenue_growth": 18.8,
         "op_margin": 49.8,
         "pe": 25.704594,
-        "forward_pe": 20.350533,
+        "forward_pe": 20.348078,
         "short_percent_float": 0.82,
         "short_ratio": 2.8,
         "high_proximity_warning": true,
@@ -395,6 +404,15 @@
         "insider_sells": 10,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 1.6,
+          "market": 4.7,
+          "group": 2.4,
+          "group_name": "technology",
+          "fund": "RSPT",
+          "own": -5.5
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -472,12 +490,21 @@
         "revenue_growth": 24.7,
         "op_margin": 31.8,
         "pe": 14.731071,
-        "forward_pe": 18.441067,
+        "forward_pe": 18.443949,
         "short_percent_float": 1.49,
         "short_ratio": 2.7,
         "high_proximity_warning": false,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 6.3,
+          "market": 4.7,
+          "group": -2.2,
+          "group_name": "media and communication",
+          "fund": "RSPC",
+          "own": 3.8
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -566,6 +593,15 @@
         "insider_sells": 15,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 3.5,
+          "market": 4.7,
+          "group": -1.9,
+          "group_name": "consumer spending",
+          "fund": "RSPD",
+          "own": 0.7
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -656,6 +692,15 @@
         "insider_sells": 8,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 31.5,
+          "market": 4.7,
+          "group": 7.4,
+          "group_name": "chip",
+          "fund": "XSD",
+          "own": 19.4
+        },
         "moved_since_rating": {
           "pct": 31.5,
           "span": "in one day"
@@ -725,6 +770,15 @@
         "insider_sells": 38,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 6.5,
+          "market": 4.7,
+          "group": -2.2,
+          "group_name": "media and communication",
+          "fund": "RSPC",
+          "own": 4.0
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -800,7 +854,7 @@
         "revenue_growth": 85.5,
         "op_margin": 54.3,
         "pe": 40.044697,
-        "forward_pe": 16.174044,
+        "forward_pe": 16.150682,
         "short_percent_float": 1.11,
         "short_ratio": 2.3,
         "high_proximity_warning": false,
@@ -810,6 +864,15 @@
         "insider_sells": 7,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 3.0,
+          "market": 4.7,
+          "group": 7.4,
+          "group_name": "chip",
+          "fund": "XSD",
+          "own": -9.1
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -899,6 +962,15 @@
         "insider_sells": 5,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 1.3,
+          "market": 4.7,
+          "group": -2.7,
+          "group_name": "healthcare",
+          "fund": "RSPH",
+          "own": -0.7
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -985,6 +1057,15 @@
         "insider_sells": 2,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": -1.1,
+          "market": 4.7,
+          "group": -2.7,
+          "group_name": "healthcare",
+          "fund": "RSPH",
+          "own": -3.1
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "market_expects_decline",
@@ -1076,6 +1157,15 @@
         "insider_sells": 15,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 1.9,
+          "market": 4.7,
+          "group": -2.7,
+          "group_name": "financial",
+          "fund": "RSPF",
+          "own": -0.1
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -1141,6 +1231,15 @@
         "insider_sells": 5,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": -0.4,
+          "market": 4.7,
+          "group": -5.0,
+          "group_name": "everyday goods",
+          "fund": "RSPS",
+          "own": -0.1
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "ok",
@@ -1226,6 +1325,15 @@
         "high_proximity_warning": false,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 9.3,
+          "market": 4.7,
+          "group": 7.4,
+          "group_name": "chip",
+          "fund": "XSD",
+          "own": -2.8
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -1296,6 +1404,15 @@
         "insider_sells": 0,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 14.1,
+          "market": 4.7,
+          "group": 7.4,
+          "group_name": "chip",
+          "fund": "XSD",
+          "own": 2.0
+        },
         "moved_since_rating": {
           "pct": 14.1,
           "span": "in one day"
@@ -1357,7 +1474,7 @@
         "revenue_growth": 20.5,
         "op_margin": 9.4,
         "pe": 65.98561,
-        "forward_pe": 19.099182,
+        "forward_pe": 19.087694,
         "short_percent_float": 2.62,
         "short_ratio": 1.7,
         "high_proximity_warning": false,
@@ -1367,6 +1484,15 @@
         "insider_sells": 8,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 4.7,
+          "market": 4.7,
+          "group": 2.4,
+          "group_name": "technology",
+          "fund": "RSPT",
+          "own": -2.4
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "ok",
@@ -1446,7 +1572,7 @@
         "revenue_growth": 44.7,
         "op_margin": 21.2,
         "pe": 96.893166,
-        "forward_pe": 25.708899,
+        "forward_pe": 25.74175,
         "short_percent_float": 2.36,
         "short_ratio": 1.9,
         "high_proximity_warning": false,
@@ -1456,6 +1582,15 @@
         "insider_sells": 18,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 6.8,
+          "market": 4.7,
+          "group": 7.4,
+          "group_name": "chip",
+          "fund": "XSD",
+          "own": -5.2
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -1540,6 +1675,15 @@
         "short_percent_float": 19.8,
         "short_ratio": 2.4,
         "high_proximity_warning": false,
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 20.3,
+          "market": 4.7,
+          "group": -2.2,
+          "group_name": "media and communication",
+          "fund": "RSPC",
+          "own": 17.8
+        },
         "moved_since_rating": {
           "pct": 20.3,
           "span": "in one day"
@@ -1607,6 +1751,15 @@
         "insider_sells": 20,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 18.2,
+          "market": 4.7,
+          "group": 2.4,
+          "group_name": "technology",
+          "fund": "RSPT",
+          "own": 11.1
+        },
         "moved_since_rating": {
           "pct": 18.2,
           "span": "in one day"
@@ -1697,6 +1850,15 @@
         "insider_sells": 18,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 4.0,
+          "market": 4.7,
+          "group": -2.2,
+          "group_name": "media and communication",
+          "fund": "RSPC",
+          "own": 1.5
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -1775,6 +1937,15 @@
         "high_proximity_warning": false,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 19.0,
+          "market": 4.7,
+          "group": 7.4,
+          "group_name": "chip",
+          "fund": "XSD",
+          "own": 7.0
+        },
         "moved_since_rating": {
           "pct": 19.0,
           "span": "in one day"
@@ -1867,6 +2038,15 @@
         "insider_sells": 12,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 18.4,
+          "market": 4.7,
+          "group": 7.4,
+          "group_name": "chip",
+          "fund": "XSD",
+          "own": 6.3
+        },
         "moved_since_rating": {
           "pct": 18.4,
           "span": "in one day"
@@ -1958,6 +2138,15 @@
         "insider_sells": 1,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 3.8,
+          "market": 4.7,
+          "group": 2.4,
+          "group_name": "technology",
+          "fund": "RSPT",
+          "own": -3.3
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "ok",
@@ -2048,6 +2237,15 @@
         "insider_sells": 8,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 15.3,
+          "market": 4.7,
+          "group": 2.4,
+          "group_name": "technology",
+          "fund": "RSPT",
+          "own": 8.2
+        },
         "moved_since_rating": {
           "pct": 15.3,
           "span": "in one day"
@@ -2126,7 +2324,7 @@
         "revenue_growth": 45.4,
         "op_margin": 25.8,
         "pe": 20.234728,
-        "forward_pe": 18.80208,
+        "forward_pe": 18.809835,
         "short_percent_float": 3.34,
         "short_ratio": 2.5,
         "high_proximity_warning": false,
@@ -2136,6 +2334,15 @@
         "insider_sells": 0,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 6.0,
+          "market": 4.7,
+          "group": -3.1,
+          "group_name": "utility",
+          "fund": "RSPU",
+          "own": 4.4
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "ok",
@@ -2218,6 +2425,15 @@
         "insider_sells": 9,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 7.5,
+          "market": 4.7,
+          "group": -3.1,
+          "group_name": "utility",
+          "fund": "RSPU",
+          "own": 5.9
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "market_expects_decline",
@@ -2298,6 +2514,15 @@
         "insider_sells": 1,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 12.1,
+          "market": 4.7,
+          "group": -1.4,
+          "group_name": "industrial",
+          "fund": "RSPN",
+          "own": 8.8
+        },
         "moved_since_rating": {
           "pct": 12.1,
           "span": "in one day"
@@ -2383,7 +2608,7 @@
         "revenue_growth": 26.8,
         "op_margin": 11.0,
         "pe": 19.86637,
-        "forward_pe": 28.840828,
+        "forward_pe": 29.216965,
         "short_percent_float": 2.83,
         "short_ratio": 2.5,
         "high_proximity_warning": false,
@@ -2393,6 +2618,15 @@
         "insider_sells": 1,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 8.2,
+          "market": 4.7,
+          "group": -1.4,
+          "group_name": "industrial",
+          "fund": "RSPN",
+          "own": 4.9
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -2485,6 +2719,15 @@
         "insider_sells": 2,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 8.0,
+          "market": 4.7,
+          "group": -1.4,
+          "group_name": "industrial",
+          "fund": "RSPN",
+          "own": 4.8
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "ok",
@@ -2571,6 +2814,15 @@
         "insider_sells": 44,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 4.6,
+          "market": 4.7,
+          "group": -3.1,
+          "group_name": "utility",
+          "fund": "RSPU",
+          "own": 3.0
+        },
         "moved_since_rating": {
           "pct": -22.6,
           "span": "since it was rated"
@@ -2643,6 +2895,15 @@
         "insider_sells": 4,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 9.6,
+          "market": 4.7,
+          "group": -3.1,
+          "group_name": "utility",
+          "fund": "RSPU",
+          "own": 8.0
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "ok",
@@ -2725,6 +2986,15 @@
         "insider_sells": 1,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 6.7,
+          "market": 4.7,
+          "group": -1.4,
+          "group_name": "industrial",
+          "fund": "RSPN",
+          "own": 3.4
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "ok",
@@ -2817,6 +3087,15 @@
         "insider_sells": 3,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 9.9,
+          "market": 4.7,
+          "group": -1.4,
+          "group_name": "industrial",
+          "fund": "RSPN",
+          "own": 6.6
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "ok",
@@ -2905,6 +3184,15 @@
         "insider_sells": 9,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 9.3,
+          "market": 4.7,
+          "group": -1.4,
+          "group_name": "industrial",
+          "fund": "RSPN",
+          "own": 6.0
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "ok",
@@ -2995,6 +3283,15 @@
         "insider_sells": 16,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 1.6,
+          "market": 4.7,
+          "group": -2.7,
+          "group_name": "financial",
+          "fund": "RSPF",
+          "own": -0.4
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -3089,6 +3386,15 @@
         "insider_sells": 12,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 0.1,
+          "market": 4.7,
+          "group": 2.4,
+          "group_name": "technology",
+          "fund": "RSPT",
+          "own": -7.0
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "ok",
@@ -3181,6 +3487,15 @@
         "insider_sells": 4,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": -0.1,
+          "market": 4.7,
+          "group": 2.4,
+          "group_name": "technology",
+          "fund": "RSPT",
+          "own": -7.2
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "ok",
@@ -3271,6 +3586,15 @@
         "insider_sells": 4,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 2.4,
+          "market": 4.7,
+          "group": -2.7,
+          "group_name": "healthcare",
+          "fund": "RSPH",
+          "own": 0.4
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "ok",
@@ -3367,6 +3691,15 @@
         "insider_sells": 2,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": -1.9,
+          "market": 4.7,
+          "group": -5.0,
+          "group_name": "everyday goods",
+          "fund": "RSPS",
+          "own": -1.6
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "market_expects_decline",
@@ -3448,7 +3781,7 @@
         "drawdown_from_high": -18.3,
         "revenue_growth": 6.1,
         "op_margin": 32.5,
-        "pe": 12.702305,
+        "pe": 12.338407,
         "forward_pe": 11.372696,
         "short_percent_float": 6.03,
         "short_ratio": 3.4,
@@ -3460,6 +3793,15 @@
         "insider_sells": 9,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": -2.9,
+          "market": 4.7,
+          "group": -5.0,
+          "group_name": "everyday goods",
+          "fund": "RSPS",
+          "own": -2.6
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -3524,6 +3866,15 @@
         "high_proximity_note": "Only 9.4% from 52-week high \u2014 entry timing risk",
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 0.8,
+          "market": 4.7,
+          "group": -2.7,
+          "group_name": "healthcare",
+          "fund": "RSPH",
+          "own": -1.2
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -3614,6 +3965,15 @@
         "insider_sells": 3,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 4.8,
+          "market": 4.7,
+          "group": -2.7,
+          "group_name": "healthcare",
+          "fund": "RSPH",
+          "own": 2.8
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -3703,6 +4063,15 @@
         "insider_sells": 25,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 4.3,
+          "market": 4.7,
+          "group": -2.7,
+          "group_name": "healthcare",
+          "fund": "RSPH",
+          "own": 2.3
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -3792,6 +4161,15 @@
         "insider_sells": 1,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 0.5,
+          "market": 4.7,
+          "group": -2.7,
+          "group_name": "healthcare",
+          "fund": "RSPH",
+          "own": -1.5
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -3888,6 +4266,15 @@
         "insider_sells": 7,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 0.0,
+          "market": 4.7,
+          "group": -2.7,
+          "group_name": "financial",
+          "fund": "RSPF",
+          "own": -2.0
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "ok",
@@ -3981,6 +4368,15 @@
         "insider_sells": 5,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 4.1,
+          "market": 4.7,
+          "group": -2.7,
+          "group_name": "financial",
+          "fund": "RSPF",
+          "own": 2.1
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -4071,6 +4467,15 @@
         "insider_sells": 2,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": -0.2,
+          "market": 4.7,
+          "group": -2.7,
+          "group_name": "financial",
+          "fund": "RSPF",
+          "own": -2.2
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "ok",
@@ -4151,13 +4556,22 @@
         "revenue_growth": 1.3,
         "op_margin": 22.7,
         "pe": 23.377193,
-        "forward_pe": 37.865334,
+        "forward_pe": 38.689915,
         "short_percent_float": 4.69,
         "short_ratio": 3.5,
         "high_proximity_warning": true,
         "high_proximity_note": "Only 13.7% from 52-week high \u2014 entry timing risk",
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 1.6,
+          "market": 4.7,
+          "group": -3.3,
+          "group_name": "real estate",
+          "fund": "RSPR",
+          "own": 0.2
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -4244,6 +4658,15 @@
         "insider_sells": 14,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 2.4,
+          "market": 4.7,
+          "group": -2.2,
+          "group_name": "media and communication",
+          "fund": "RSPC",
+          "own": -0.1
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -4333,6 +4756,15 @@
         "insider_sells": 18,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 0.3,
+          "market": 4.7,
+          "group": -1.9,
+          "group_name": "consumer spending",
+          "fund": "RSPD",
+          "own": -2.4
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -4420,6 +4852,15 @@
         "high_proximity_warning": false,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": -0.7,
+          "market": 4.7,
+          "group": -2.2,
+          "group_name": "media and communication",
+          "fund": "RSPC",
+          "own": -3.2
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "market_expects_decline",
@@ -4510,6 +4951,15 @@
         "insider_sells": 2,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 5.2,
+          "market": 4.7,
+          "group": -1.4,
+          "group_name": "industrial",
+          "fund": "RSPN",
+          "own": 1.9
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "ok",
@@ -4590,10 +5040,19 @@
         "revenue_growth": -15.0,
         "op_margin": 20.1,
         "pe": 6.6333685,
-        "forward_pe": 9.606076,
+        "forward_pe": 9.606373,
         "short_percent_float": 5.62,
         "short_ratio": 3.5,
         "high_proximity_warning": false,
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 0.3,
+          "market": 4.7,
+          "group": -3.1,
+          "group_name": "utility",
+          "fund": "RSPU",
+          "own": -1.3
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -4721,6 +5180,15 @@
           }
         ],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 19.2,
+          "market": 4.7,
+          "group": 7.4,
+          "group_name": "chip",
+          "fund": "XSD",
+          "own": 7.1
+        },
         "moved_since_rating": {
           "pct": 19.2,
           "span": "in one day"
@@ -4786,6 +5254,15 @@
         "insider_sells": 12,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 5.7,
+          "market": 4.7,
+          "group": 2.4,
+          "group_name": "technology",
+          "fund": "RSPT",
+          "own": -1.4
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -4879,6 +5356,15 @@
         "insider_sells": 36,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 22.6,
+          "market": 4.7,
+          "group": 7.4,
+          "group_name": "chip",
+          "fund": "XSD",
+          "own": 10.5
+        },
         "moved_since_rating": {
           "pct": 22.6,
           "span": "in one day"
@@ -4964,6 +5450,15 @@
         "high_proximity_warning": false,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 4.6,
+          "market": 4.7,
+          "group": -1.9,
+          "group_name": "consumer spending",
+          "fund": "RSPD",
+          "own": 1.9
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "market_expects_decline",
@@ -5055,6 +5550,15 @@
         "insider_sells": 4,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 11.1,
+          "market": 4.7,
+          "group": -1.4,
+          "group_name": "industrial",
+          "fund": "RSPN",
+          "own": 7.9
+        },
         "moved_since_rating": {
           "pct": 11.1,
           "span": "in one day"
@@ -5147,6 +5651,15 @@
         "insider_sells": 1,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 7.7,
+          "market": 4.7,
+          "group": -1.4,
+          "group_name": "industrial",
+          "fund": "RSPN",
+          "own": 4.4
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "ok",
@@ -5245,6 +5758,15 @@
         "insider_sells": 1,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": -3.5,
+          "market": 4.7,
+          "group": -5.7,
+          "group_name": "energy",
+          "fund": "RSPG",
+          "own": -2.5
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -5335,6 +5857,15 @@
         "insider_sells": 8,
         "conviction_holders": [],
         "hf_new_positions": [],
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 7.4,
+          "market": 4.7,
+          "group": -2.2,
+          "group_name": "media and communication",
+          "fund": "RSPC",
+          "own": 4.9
+        },
         "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
@@ -5408,6 +5939,15 @@
         "high_proximity_warning": true,
         "high_proximity_note": "Only 7.6% from 52-week high \u2014 entry timing risk",
         "bear_check": null,
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 4.7,
+          "market": 4.7,
+          "group": null,
+          "group_name": null,
+          "fund": null,
+          "own": 0.0
+        },
         "moved_since_rating": null,
         "valuation": null,
         "data_ok": true,
@@ -5440,6 +5980,15 @@
         "high_proximity_warning": true,
         "high_proximity_note": "Only 14.7% from 52-week high \u2014 entry timing risk",
         "bear_check": null,
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 7.0,
+          "market": 4.7,
+          "group": null,
+          "group_name": null,
+          "fund": null,
+          "own": 2.3
+        },
         "moved_since_rating": null,
         "valuation": null,
         "data_ok": true,
@@ -5472,6 +6021,15 @@
         "high_proximity_warning": true,
         "high_proximity_note": "Only 8.3% from 52-week high \u2014 entry timing risk",
         "bear_check": null,
+        "move_split": {
+          "session": "2026-11-23",
+          "pct": 0.1,
+          "market": 4.7,
+          "group": null,
+          "group_name": null,
+          "fund": null,
+          "own": -4.6
+        },
         "moved_since_rating": null,
         "valuation": null,
         "data_ok": true,
@@ -5535,6 +6093,15 @@
             }
           ],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 1.9,
+            "market": 4.7,
+            "group": 2.4,
+            "group_name": "technology",
+            "fund": "RSPT",
+            "own": -5.2
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -5611,7 +6178,7 @@
           "revenue_growth": 18.8,
           "op_margin": 49.8,
           "pe": 25.704594,
-          "forward_pe": 20.350533,
+          "forward_pe": 20.348078,
           "short_percent_float": 0.82,
           "short_ratio": 2.8,
           "high_proximity_warning": true,
@@ -5622,6 +6189,15 @@
           "insider_sells": 10,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 1.6,
+            "market": 4.7,
+            "group": 2.4,
+            "group_name": "technology",
+            "fund": "RSPT",
+            "own": -5.5
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -5699,12 +6275,21 @@
           "revenue_growth": 24.7,
           "op_margin": 31.8,
           "pe": 14.731071,
-          "forward_pe": 18.441067,
+          "forward_pe": 18.443949,
           "short_percent_float": 1.49,
           "short_ratio": 2.7,
           "high_proximity_warning": false,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 6.3,
+            "market": 4.7,
+            "group": -2.2,
+            "group_name": "media and communication",
+            "fund": "RSPC",
+            "own": 3.8
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -5793,6 +6378,15 @@
           "insider_sells": 15,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 3.5,
+            "market": 4.7,
+            "group": -1.9,
+            "group_name": "consumer spending",
+            "fund": "RSPD",
+            "own": 0.7
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -5883,6 +6477,15 @@
           "insider_sells": 8,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 31.5,
+            "market": 4.7,
+            "group": 7.4,
+            "group_name": "chip",
+            "fund": "XSD",
+            "own": 19.4
+          },
           "moved_since_rating": {
             "pct": 31.5,
             "span": "in one day"
@@ -5936,7 +6539,7 @@
           "revenue_growth": 85.5,
           "op_margin": 54.3,
           "pe": 40.044697,
-          "forward_pe": 16.174044,
+          "forward_pe": 16.150682,
           "short_percent_float": 1.11,
           "short_ratio": 2.3,
           "high_proximity_warning": false,
@@ -5946,6 +6549,15 @@
           "insider_sells": 7,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 3.0,
+            "market": 4.7,
+            "group": 7.4,
+            "group_name": "chip",
+            "fund": "XSD",
+            "own": -9.1
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -6035,6 +6647,15 @@
           "insider_sells": 5,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 1.3,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "healthcare",
+            "fund": "RSPH",
+            "own": -0.7
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -6125,6 +6746,15 @@
           "insider_sells": 15,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 1.9,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "financial",
+            "fund": "RSPF",
+            "own": -0.1
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -6190,6 +6820,15 @@
           "insider_sells": 5,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": -0.4,
+            "market": 4.7,
+            "group": -5.0,
+            "group_name": "everyday goods",
+            "fund": "RSPS",
+            "own": -0.1
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -6270,7 +6909,7 @@
           "revenue_growth": 20.5,
           "op_margin": 9.4,
           "pe": 65.98561,
-          "forward_pe": 19.099182,
+          "forward_pe": 19.087694,
           "short_percent_float": 2.62,
           "short_ratio": 1.7,
           "high_proximity_warning": false,
@@ -6280,6 +6919,15 @@
           "insider_sells": 8,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 4.7,
+            "market": 4.7,
+            "group": 2.4,
+            "group_name": "technology",
+            "fund": "RSPT",
+            "own": -2.4
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -6359,7 +7007,7 @@
           "revenue_growth": 44.7,
           "op_margin": 21.2,
           "pe": 96.893166,
-          "forward_pe": 25.708899,
+          "forward_pe": 25.74175,
           "short_percent_float": 2.36,
           "short_ratio": 1.9,
           "high_proximity_warning": false,
@@ -6369,6 +7017,15 @@
           "insider_sells": 18,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 6.8,
+            "market": 4.7,
+            "group": 7.4,
+            "group_name": "chip",
+            "fund": "XSD",
+            "own": -5.2
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -6461,6 +7118,15 @@
           "insider_sells": 20,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 18.2,
+            "market": 4.7,
+            "group": 2.4,
+            "group_name": "technology",
+            "fund": "RSPT",
+            "own": 11.1
+          },
           "moved_since_rating": {
             "pct": 18.2,
             "span": "in one day"
@@ -6551,6 +7217,15 @@
           "insider_sells": 18,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 4.0,
+            "market": 4.7,
+            "group": -2.2,
+            "group_name": "media and communication",
+            "fund": "RSPC",
+            "own": 1.5
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -6637,6 +7312,15 @@
           "insider_sells": 12,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 18.4,
+            "market": 4.7,
+            "group": 7.4,
+            "group_name": "chip",
+            "fund": "XSD",
+            "own": 6.3
+          },
           "moved_since_rating": {
             "pct": 18.4,
             "span": "in one day"
@@ -6728,6 +7412,15 @@
           "insider_sells": 1,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 3.8,
+            "market": 4.7,
+            "group": 2.4,
+            "group_name": "technology",
+            "fund": "RSPT",
+            "own": -3.3
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -6816,6 +7509,15 @@
           "insider_sells": 44,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 4.6,
+            "market": 4.7,
+            "group": -3.1,
+            "group_name": "utility",
+            "fund": "RSPU",
+            "own": 3.0
+          },
           "moved_since_rating": {
             "pct": -22.6,
             "span": "since it was rated"
@@ -6881,6 +7583,15 @@
           "insider_sells": 1,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 6.7,
+            "market": 4.7,
+            "group": -1.4,
+            "group_name": "industrial",
+            "fund": "RSPN",
+            "own": 3.4
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -6973,6 +7684,15 @@
           "insider_sells": 3,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 9.9,
+            "market": 4.7,
+            "group": -1.4,
+            "group_name": "industrial",
+            "fund": "RSPN",
+            "own": 6.6
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -7062,6 +7782,15 @@
           "insider_sells": 16,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 1.6,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "financial",
+            "fund": "RSPF",
+            "own": -0.4
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -7156,6 +7885,15 @@
           "insider_sells": 12,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 0.1,
+            "market": 4.7,
+            "group": 2.4,
+            "group_name": "technology",
+            "fund": "RSPT",
+            "own": -7.0
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -7248,6 +7986,15 @@
           "insider_sells": 4,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": -0.1,
+            "market": 4.7,
+            "group": 2.4,
+            "group_name": "technology",
+            "fund": "RSPT",
+            "own": -7.2
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -7338,6 +8085,15 @@
           "insider_sells": 4,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 2.4,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "healthcare",
+            "fund": "RSPH",
+            "own": 0.4
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -7434,6 +8190,15 @@
           "insider_sells": 2,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": -1.9,
+            "market": 4.7,
+            "group": -5.0,
+            "group_name": "everyday goods",
+            "fund": "RSPS",
+            "own": -1.6
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "market_expects_decline",
@@ -7525,6 +8290,15 @@
           "high_proximity_note": "Only 9.4% from 52-week high \u2014 entry timing risk",
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 0.8,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "healthcare",
+            "fund": "RSPH",
+            "own": -1.2
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -7615,6 +8389,15 @@
           "insider_sells": 3,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 4.8,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "healthcare",
+            "fund": "RSPH",
+            "own": 2.8
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -7707,6 +8490,15 @@
           "insider_sells": 1,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 0.5,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "healthcare",
+            "fund": "RSPH",
+            "own": -1.5
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -7803,6 +8595,15 @@
           "insider_sells": 7,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 0.0,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "financial",
+            "fund": "RSPF",
+            "own": -2.0
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -7896,6 +8697,15 @@
           "insider_sells": 5,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 4.1,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "financial",
+            "fund": "RSPF",
+            "own": 2.1
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -7986,6 +8796,15 @@
           "insider_sells": 2,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": -0.2,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "financial",
+            "fund": "RSPF",
+            "own": -2.2
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -8066,13 +8885,22 @@
           "revenue_growth": 1.3,
           "op_margin": 22.7,
           "pe": 23.377193,
-          "forward_pe": 37.865334,
+          "forward_pe": 38.689915,
           "short_percent_float": 4.69,
           "short_ratio": 3.5,
           "high_proximity_warning": true,
           "high_proximity_note": "Only 13.7% from 52-week high \u2014 entry timing risk",
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 1.6,
+            "market": 4.7,
+            "group": -3.3,
+            "group_name": "real estate",
+            "fund": "RSPR",
+            "own": 0.2
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -8159,6 +8987,15 @@
           "insider_sells": 14,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 2.4,
+            "market": 4.7,
+            "group": -2.2,
+            "group_name": "media and communication",
+            "fund": "RSPC",
+            "own": -0.1
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -8246,6 +9083,15 @@
           "high_proximity_warning": false,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": -0.7,
+            "market": 4.7,
+            "group": -2.2,
+            "group_name": "media and communication",
+            "fund": "RSPC",
+            "own": -3.2
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "market_expects_decline",
@@ -8336,6 +9182,15 @@
           "insider_sells": 2,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 5.2,
+            "market": 4.7,
+            "group": -1.4,
+            "group_name": "industrial",
+            "fund": "RSPN",
+            "own": 1.9
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -8462,6 +9317,15 @@
             }
           ],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 19.2,
+            "market": 4.7,
+            "group": 7.4,
+            "group_name": "chip",
+            "fund": "XSD",
+            "own": 7.1
+          },
           "moved_since_rating": {
             "pct": 19.2,
             "span": "in one day"
@@ -8523,6 +9387,15 @@
           "high_proximity_warning": false,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 4.6,
+            "market": 4.7,
+            "group": -1.9,
+            "group_name": "consumer spending",
+            "fund": "RSPD",
+            "own": 1.9
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "market_expects_decline",
@@ -8623,6 +9496,15 @@
           "insider_sells": 1,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": -3.5,
+            "market": 4.7,
+            "group": -5.7,
+            "group_name": "energy",
+            "fund": "RSPG",
+            "own": -2.5
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -8713,6 +9595,15 @@
           "insider_sells": 8,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 7.4,
+            "market": 4.7,
+            "group": -2.2,
+            "group_name": "media and communication",
+            "fund": "RSPC",
+            "own": 4.9
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -8786,6 +9677,15 @@
           "high_proximity_warning": true,
           "high_proximity_note": "Only 7.6% from 52-week high \u2014 entry timing risk",
           "bear_check": null,
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 4.7,
+            "market": 4.7,
+            "group": null,
+            "group_name": null,
+            "fund": null,
+            "own": 0.0
+          },
           "moved_since_rating": null,
           "valuation": null,
           "data_ok": true,
@@ -8818,6 +9718,15 @@
           "high_proximity_warning": true,
           "high_proximity_note": "Only 14.7% from 52-week high \u2014 entry timing risk",
           "bear_check": null,
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 7.0,
+            "market": 4.7,
+            "group": null,
+            "group_name": null,
+            "fund": null,
+            "own": 2.3
+          },
           "moved_since_rating": null,
           "valuation": null,
           "data_ok": true,
@@ -8850,6 +9759,15 @@
           "high_proximity_warning": true,
           "high_proximity_note": "Only 8.3% from 52-week high \u2014 entry timing risk",
           "bear_check": null,
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 0.1,
+            "market": 4.7,
+            "group": null,
+            "group_name": null,
+            "fund": null,
+            "own": -4.6
+          },
           "moved_since_rating": null,
           "valuation": null,
           "data_ok": true,
@@ -8906,6 +9824,15 @@
           "insider_sells": 38,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 6.5,
+            "market": 4.7,
+            "group": -2.2,
+            "group_name": "media and communication",
+            "fund": "RSPC",
+            "own": 4.0
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -8989,6 +9916,15 @@
           "insider_sells": 2,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": -1.1,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "healthcare",
+            "fund": "RSPH",
+            "own": -3.1
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "market_expects_decline",
@@ -9076,6 +10012,15 @@
           "high_proximity_warning": false,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 9.3,
+            "market": 4.7,
+            "group": 7.4,
+            "group_name": "chip",
+            "fund": "XSD",
+            "own": -2.8
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -9146,6 +10091,15 @@
           "insider_sells": 0,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 14.1,
+            "market": 4.7,
+            "group": 7.4,
+            "group_name": "chip",
+            "fund": "XSD",
+            "own": 2.0
+          },
           "moved_since_rating": {
             "pct": 14.1,
             "span": "in one day"
@@ -9217,6 +10171,15 @@
           "insider_sells": 8,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 15.3,
+            "market": 4.7,
+            "group": 2.4,
+            "group_name": "technology",
+            "fund": "RSPT",
+            "own": 8.2
+          },
           "moved_since_rating": {
             "pct": 15.3,
             "span": "in one day"
@@ -9295,7 +10258,7 @@
           "revenue_growth": 45.4,
           "op_margin": 25.8,
           "pe": 20.234728,
-          "forward_pe": 18.80208,
+          "forward_pe": 18.809835,
           "short_percent_float": 3.34,
           "short_ratio": 2.5,
           "high_proximity_warning": false,
@@ -9305,6 +10268,15 @@
           "insider_sells": 0,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 6.0,
+            "market": 4.7,
+            "group": -3.1,
+            "group_name": "utility",
+            "fund": "RSPU",
+            "own": 4.4
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -9387,6 +10359,15 @@
           "insider_sells": 9,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 7.5,
+            "market": 4.7,
+            "group": -3.1,
+            "group_name": "utility",
+            "fund": "RSPU",
+            "own": 5.9
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "market_expects_decline",
@@ -9467,6 +10448,15 @@
           "insider_sells": 1,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 12.1,
+            "market": 4.7,
+            "group": -1.4,
+            "group_name": "industrial",
+            "fund": "RSPN",
+            "own": 8.8
+          },
           "moved_since_rating": {
             "pct": 12.1,
             "span": "in one day"
@@ -9552,7 +10542,7 @@
           "revenue_growth": 26.8,
           "op_margin": 11.0,
           "pe": 19.86637,
-          "forward_pe": 28.840828,
+          "forward_pe": 29.216965,
           "short_percent_float": 2.83,
           "short_ratio": 2.5,
           "high_proximity_warning": false,
@@ -9562,6 +10552,15 @@
           "insider_sells": 1,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 8.2,
+            "market": 4.7,
+            "group": -1.4,
+            "group_name": "industrial",
+            "fund": "RSPN",
+            "own": 4.9
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -9654,6 +10653,15 @@
           "insider_sells": 2,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 8.0,
+            "market": 4.7,
+            "group": -1.4,
+            "group_name": "industrial",
+            "fund": "RSPN",
+            "own": 4.8
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -9748,6 +10756,15 @@
           "insider_sells": 4,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 9.6,
+            "market": 4.7,
+            "group": -3.1,
+            "group_name": "utility",
+            "fund": "RSPU",
+            "own": 8.0
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -9829,6 +10846,15 @@
           "insider_sells": 9,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 9.3,
+            "market": 4.7,
+            "group": -1.4,
+            "group_name": "industrial",
+            "fund": "RSPN",
+            "own": 6.0
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -9911,7 +10937,7 @@
           "drawdown_from_high": -18.3,
           "revenue_growth": 6.1,
           "op_margin": 32.5,
-          "pe": 12.702305,
+          "pe": 12.338407,
           "forward_pe": 11.372696,
           "short_percent_float": 6.03,
           "short_ratio": 3.4,
@@ -9923,6 +10949,15 @@
           "insider_sells": 9,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": -2.9,
+            "market": 4.7,
+            "group": -5.0,
+            "group_name": "everyday goods",
+            "fund": "RSPS",
+            "own": -2.6
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -9982,6 +11017,15 @@
           "insider_sells": 25,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 4.3,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "healthcare",
+            "fund": "RSPH",
+            "own": 2.3
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -10071,6 +11115,15 @@
           "insider_sells": 12,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 5.7,
+            "market": 4.7,
+            "group": 2.4,
+            "group_name": "technology",
+            "fund": "RSPT",
+            "own": -1.4
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -10164,6 +11217,15 @@
           "insider_sells": 36,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 22.6,
+            "market": 4.7,
+            "group": 7.4,
+            "group_name": "chip",
+            "fund": "XSD",
+            "own": 10.5
+          },
           "moved_since_rating": {
             "pct": 22.6,
             "span": "in one day"
@@ -10253,6 +11315,15 @@
           "insider_sells": 4,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 11.1,
+            "market": 4.7,
+            "group": -1.4,
+            "group_name": "industrial",
+            "fund": "RSPN",
+            "own": 7.9
+          },
           "moved_since_rating": {
             "pct": 11.1,
             "span": "in one day"
@@ -10345,6 +11416,15 @@
           "insider_sells": 1,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 7.7,
+            "market": 4.7,
+            "group": -1.4,
+            "group_name": "industrial",
+            "fund": "RSPN",
+            "own": 4.4
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -10430,6 +11510,15 @@
           "short_percent_float": 19.8,
           "short_ratio": 2.4,
           "high_proximity_warning": false,
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 20.3,
+            "market": 4.7,
+            "group": -2.2,
+            "group_name": "media and communication",
+            "fund": "RSPC",
+            "own": 17.8
+          },
           "moved_since_rating": {
             "pct": 20.3,
             "span": "in one day"
@@ -10487,6 +11576,15 @@
           "high_proximity_warning": false,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 19.0,
+            "market": 4.7,
+            "group": 7.4,
+            "group_name": "chip",
+            "fund": "XSD",
+            "own": 7.0
+          },
           "moved_since_rating": {
             "pct": 19.0,
             "span": "in one day"
@@ -10577,6 +11675,15 @@
           "insider_sells": 18,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 0.3,
+            "market": 4.7,
+            "group": -1.9,
+            "group_name": "consumer spending",
+            "fund": "RSPD",
+            "own": -2.4
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -10659,10 +11766,19 @@
           "revenue_growth": -15.0,
           "op_margin": 20.1,
           "pe": 6.6333685,
-          "forward_pe": 9.606076,
+          "forward_pe": 9.606373,
           "short_percent_float": 5.62,
           "short_ratio": 3.5,
           "high_proximity_warning": false,
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 0.3,
+            "market": 4.7,
+            "group": -3.1,
+            "group_name": "utility",
+            "fund": "RSPU",
+            "own": -1.3
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -10767,6 +11883,15 @@
             }
           ],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 1.9,
+            "market": 4.7,
+            "group": 2.4,
+            "group_name": "technology",
+            "fund": "RSPT",
+            "own": -5.2
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -10843,7 +11968,7 @@
           "revenue_growth": 18.8,
           "op_margin": 49.8,
           "pe": 25.704594,
-          "forward_pe": 20.350533,
+          "forward_pe": 20.348078,
           "short_percent_float": 0.82,
           "short_ratio": 2.8,
           "high_proximity_warning": true,
@@ -10854,6 +11979,15 @@
           "insider_sells": 10,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 1.6,
+            "market": 4.7,
+            "group": 2.4,
+            "group_name": "technology",
+            "fund": "RSPT",
+            "own": -5.5
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -10931,12 +12065,21 @@
           "revenue_growth": 24.7,
           "op_margin": 31.8,
           "pe": 14.731071,
-          "forward_pe": 18.441067,
+          "forward_pe": 18.443949,
           "short_percent_float": 1.49,
           "short_ratio": 2.7,
           "high_proximity_warning": false,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 6.3,
+            "market": 4.7,
+            "group": -2.2,
+            "group_name": "media and communication",
+            "fund": "RSPC",
+            "own": 3.8
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -11025,6 +12168,15 @@
           "insider_sells": 15,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 3.5,
+            "market": 4.7,
+            "group": -1.9,
+            "group_name": "consumer spending",
+            "fund": "RSPD",
+            "own": 0.7
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -11115,6 +12267,15 @@
           "insider_sells": 8,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 31.5,
+            "market": 4.7,
+            "group": 7.4,
+            "group_name": "chip",
+            "fund": "XSD",
+            "own": 19.4
+          },
           "moved_since_rating": {
             "pct": 31.5,
             "span": "in one day"
@@ -11184,6 +12345,15 @@
           "insider_sells": 38,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 6.5,
+            "market": 4.7,
+            "group": -2.2,
+            "group_name": "media and communication",
+            "fund": "RSPC",
+            "own": 4.0
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -11265,6 +12435,15 @@
           "short_percent_float": 19.8,
           "short_ratio": 2.4,
           "high_proximity_warning": false,
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 20.3,
+            "market": 4.7,
+            "group": -2.2,
+            "group_name": "media and communication",
+            "fund": "RSPC",
+            "own": 17.8
+          },
           "moved_since_rating": {
             "pct": 20.3,
             "span": "in one day"
@@ -11329,6 +12508,15 @@
           "insider_sells": 1,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 3.8,
+            "market": 4.7,
+            "group": 2.4,
+            "group_name": "technology",
+            "fund": "RSPT",
+            "own": -3.3
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -11408,7 +12596,7 @@
           "revenue_growth": 85.5,
           "op_margin": 54.3,
           "pe": 40.044697,
-          "forward_pe": 16.174044,
+          "forward_pe": 16.150682,
           "short_percent_float": 1.11,
           "short_ratio": 2.3,
           "high_proximity_warning": false,
@@ -11418,6 +12606,15 @@
           "insider_sells": 7,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 3.0,
+            "market": 4.7,
+            "group": 7.4,
+            "group_name": "chip",
+            "fund": "XSD",
+            "own": -9.1
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -11502,6 +12699,15 @@
           "high_proximity_warning": false,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 9.3,
+            "market": 4.7,
+            "group": 7.4,
+            "group_name": "chip",
+            "fund": "XSD",
+            "own": -2.8
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -11572,6 +12778,15 @@
           "insider_sells": 0,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 14.1,
+            "market": 4.7,
+            "group": 7.4,
+            "group_name": "chip",
+            "fund": "XSD",
+            "own": 2.0
+          },
           "moved_since_rating": {
             "pct": 14.1,
             "span": "in one day"
@@ -11630,7 +12845,7 @@
           "revenue_growth": 44.7,
           "op_margin": 21.2,
           "pe": 96.893166,
-          "forward_pe": 25.708899,
+          "forward_pe": 25.74175,
           "short_percent_float": 2.36,
           "short_ratio": 1.9,
           "high_proximity_warning": false,
@@ -11640,6 +12855,15 @@
           "insider_sells": 18,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 6.8,
+            "market": 4.7,
+            "group": 7.4,
+            "group_name": "chip",
+            "fund": "XSD",
+            "own": -5.2
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -11722,6 +12946,15 @@
           "high_proximity_warning": false,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 19.0,
+            "market": 4.7,
+            "group": 7.4,
+            "group_name": "chip",
+            "fund": "XSD",
+            "own": 7.0
+          },
           "moved_since_rating": {
             "pct": 19.0,
             "span": "in one day"
@@ -11814,6 +13047,15 @@
           "insider_sells": 12,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 18.4,
+            "market": 4.7,
+            "group": 7.4,
+            "group_name": "chip",
+            "fund": "XSD",
+            "own": 6.3
+          },
           "moved_since_rating": {
             "pct": 18.4,
             "span": "in one day"
@@ -11943,6 +13185,15 @@
             }
           ],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 19.2,
+            "market": 4.7,
+            "group": 7.4,
+            "group_name": "chip",
+            "fund": "XSD",
+            "own": 7.1
+          },
           "moved_since_rating": {
             "pct": 19.2,
             "span": "in one day"
@@ -12012,6 +13263,15 @@
           "insider_sells": 36,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 22.6,
+            "market": 4.7,
+            "group": 7.4,
+            "group_name": "chip",
+            "fund": "XSD",
+            "own": 10.5
+          },
           "moved_since_rating": {
             "pct": 22.6,
             "span": "in one day"
@@ -12104,6 +13364,15 @@
           "insider_sells": 5,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 1.3,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "healthcare",
+            "fund": "RSPH",
+            "own": -0.7
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -12190,6 +13459,15 @@
           "insider_sells": 2,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": -1.1,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "healthcare",
+            "fund": "RSPH",
+            "own": -3.1
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "market_expects_decline",
@@ -12284,6 +13562,15 @@
           "insider_sells": 5,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": -0.4,
+            "market": 4.7,
+            "group": -5.0,
+            "group_name": "everyday goods",
+            "fund": "RSPS",
+            "own": -0.1
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -12369,6 +13656,15 @@
           "high_proximity_warning": false,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 4.6,
+            "market": 4.7,
+            "group": -1.9,
+            "group_name": "consumer spending",
+            "fund": "RSPD",
+            "own": 1.9
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "market_expects_decline",
@@ -12460,6 +13756,15 @@
           "insider_sells": 4,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 11.1,
+            "market": 4.7,
+            "group": -1.4,
+            "group_name": "industrial",
+            "fund": "RSPN",
+            "own": 7.9
+          },
           "moved_since_rating": {
             "pct": 11.1,
             "span": "in one day"
@@ -12552,6 +13857,15 @@
           "insider_sells": 1,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 7.7,
+            "market": 4.7,
+            "group": -1.4,
+            "group_name": "industrial",
+            "fund": "RSPN",
+            "own": 4.4
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -12650,6 +13964,15 @@
           "insider_sells": 1,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": -3.5,
+            "market": 4.7,
+            "group": -5.7,
+            "group_name": "energy",
+            "fund": "RSPG",
+            "own": -2.5
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -12740,6 +14063,15 @@
           "insider_sells": 8,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 7.4,
+            "market": 4.7,
+            "group": -2.2,
+            "group_name": "media and communication",
+            "fund": "RSPC",
+            "own": 4.9
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -12813,6 +14145,15 @@
           "high_proximity_warning": true,
           "high_proximity_note": "Only 7.6% from 52-week high \u2014 entry timing risk",
           "bear_check": null,
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 4.7,
+            "market": 4.7,
+            "group": null,
+            "group_name": null,
+            "fund": null,
+            "own": 0.0
+          },
           "moved_since_rating": null,
           "valuation": null,
           "data_ok": true,
@@ -12845,6 +14186,15 @@
           "high_proximity_warning": true,
           "high_proximity_note": "Only 14.7% from 52-week high \u2014 entry timing risk",
           "bear_check": null,
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 7.0,
+            "market": 4.7,
+            "group": null,
+            "group_name": null,
+            "fund": null,
+            "own": 2.3
+          },
           "moved_since_rating": null,
           "valuation": null,
           "data_ok": true,
@@ -12877,6 +14227,15 @@
           "high_proximity_warning": true,
           "high_proximity_note": "Only 8.3% from 52-week high \u2014 entry timing risk",
           "bear_check": null,
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 0.1,
+            "market": 4.7,
+            "group": null,
+            "group_name": null,
+            "fund": null,
+            "own": -4.6
+          },
           "moved_since_rating": null,
           "valuation": null,
           "data_ok": true,
@@ -12929,6 +14288,15 @@
           "insider_sells": 15,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 1.9,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "financial",
+            "fund": "RSPF",
+            "own": -0.1
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -12989,6 +14357,15 @@
           "insider_sells": 18,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 4.0,
+            "market": 4.7,
+            "group": -2.2,
+            "group_name": "media and communication",
+            "fund": "RSPC",
+            "own": 1.5
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -13068,7 +14445,7 @@
           "revenue_growth": 20.5,
           "op_margin": 9.4,
           "pe": 65.98561,
-          "forward_pe": 19.099182,
+          "forward_pe": 19.087694,
           "short_percent_float": 2.62,
           "short_ratio": 1.7,
           "high_proximity_warning": false,
@@ -13078,6 +14455,15 @@
           "insider_sells": 8,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 4.7,
+            "market": 4.7,
+            "group": 2.4,
+            "group_name": "technology",
+            "fund": "RSPT",
+            "own": -2.4
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -13173,6 +14559,15 @@
           "insider_sells": 20,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 18.2,
+            "market": 4.7,
+            "group": 2.4,
+            "group_name": "technology",
+            "fund": "RSPT",
+            "own": 11.1
+          },
           "moved_since_rating": {
             "pct": 18.2,
             "span": "in one day"
@@ -13266,6 +14661,15 @@
           "insider_sells": 8,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 15.3,
+            "market": 4.7,
+            "group": 2.4,
+            "group_name": "technology",
+            "fund": "RSPT",
+            "own": 8.2
+          },
           "moved_since_rating": {
             "pct": 15.3,
             "span": "in one day"
@@ -13346,7 +14750,7 @@
           "revenue_growth": 45.4,
           "op_margin": 25.8,
           "pe": 20.234728,
-          "forward_pe": 18.80208,
+          "forward_pe": 18.809835,
           "short_percent_float": 3.34,
           "short_ratio": 2.5,
           "high_proximity_warning": false,
@@ -13356,6 +14760,15 @@
           "insider_sells": 0,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 6.0,
+            "market": 4.7,
+            "group": -3.1,
+            "group_name": "utility",
+            "fund": "RSPU",
+            "own": 4.4
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -13438,6 +14851,15 @@
           "insider_sells": 9,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 7.5,
+            "market": 4.7,
+            "group": -3.1,
+            "group_name": "utility",
+            "fund": "RSPU",
+            "own": 5.9
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "market_expects_decline",
@@ -13519,6 +14941,15 @@
           "insider_sells": 44,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 4.6,
+            "market": 4.7,
+            "group": -3.1,
+            "group_name": "utility",
+            "fund": "RSPU",
+            "own": 3.0
+          },
           "moved_since_rating": {
             "pct": -22.6,
             "span": "since it was rated"
@@ -13591,6 +15022,15 @@
           "insider_sells": 4,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 9.6,
+            "market": 4.7,
+            "group": -3.1,
+            "group_name": "utility",
+            "fund": "RSPU",
+            "own": 8.0
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -13673,6 +15113,15 @@
           "insider_sells": 1,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 6.7,
+            "market": 4.7,
+            "group": -1.4,
+            "group_name": "industrial",
+            "fund": "RSPN",
+            "own": 3.4
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -13763,6 +15212,15 @@
           "insider_sells": 1,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 12.1,
+            "market": 4.7,
+            "group": -1.4,
+            "group_name": "industrial",
+            "fund": "RSPN",
+            "own": 8.8
+          },
           "moved_since_rating": {
             "pct": 12.1,
             "span": "in one day"
@@ -13848,7 +15306,7 @@
           "revenue_growth": 26.8,
           "op_margin": 11.0,
           "pe": 19.86637,
-          "forward_pe": 28.840828,
+          "forward_pe": 29.216965,
           "short_percent_float": 2.83,
           "short_ratio": 2.5,
           "high_proximity_warning": false,
@@ -13858,6 +15316,15 @@
           "insider_sells": 1,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 8.2,
+            "market": 4.7,
+            "group": -1.4,
+            "group_name": "industrial",
+            "fund": "RSPN",
+            "own": 4.9
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -13950,6 +15417,15 @@
           "insider_sells": 2,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 8.0,
+            "market": 4.7,
+            "group": -1.4,
+            "group_name": "industrial",
+            "fund": "RSPN",
+            "own": 4.8
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -14039,6 +15515,15 @@
           "insider_sells": 3,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 9.9,
+            "market": 4.7,
+            "group": -1.4,
+            "group_name": "industrial",
+            "fund": "RSPN",
+            "own": 6.6
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -14127,6 +15612,15 @@
           "insider_sells": 9,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 9.3,
+            "market": 4.7,
+            "group": -1.4,
+            "group_name": "industrial",
+            "fund": "RSPN",
+            "own": 6.0
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -14208,10 +15702,19 @@
           "revenue_growth": -15.0,
           "op_margin": 20.1,
           "pe": 6.6333685,
-          "forward_pe": 9.606076,
+          "forward_pe": 9.606373,
           "short_percent_float": 5.62,
           "short_ratio": 3.5,
           "high_proximity_warning": false,
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 0.3,
+            "market": 4.7,
+            "group": -3.1,
+            "group_name": "utility",
+            "fund": "RSPU",
+            "own": -1.3
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -14304,6 +15807,15 @@
           "insider_sells": 16,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 1.6,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "financial",
+            "fund": "RSPF",
+            "own": -0.4
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -14398,6 +15910,15 @@
           "insider_sells": 12,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 0.1,
+            "market": 4.7,
+            "group": 2.4,
+            "group_name": "technology",
+            "fund": "RSPT",
+            "own": -7.0
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -14490,6 +16011,15 @@
           "insider_sells": 4,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": -0.1,
+            "market": 4.7,
+            "group": 2.4,
+            "group_name": "technology",
+            "fund": "RSPT",
+            "own": -7.2
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -14582,6 +16112,15 @@
           "insider_sells": 4,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 2.4,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "healthcare",
+            "fund": "RSPH",
+            "own": 0.4
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -14673,6 +16212,15 @@
           "high_proximity_note": "Only 9.4% from 52-week high \u2014 entry timing risk",
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 0.8,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "healthcare",
+            "fund": "RSPH",
+            "own": -1.2
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -14763,6 +16311,15 @@
           "insider_sells": 3,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 4.8,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "healthcare",
+            "fund": "RSPH",
+            "own": 2.8
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -14852,6 +16409,15 @@
           "insider_sells": 25,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 4.3,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "healthcare",
+            "fund": "RSPH",
+            "own": 2.3
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -14941,6 +16507,15 @@
           "insider_sells": 1,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 0.5,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "healthcare",
+            "fund": "RSPH",
+            "own": -1.5
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -15040,6 +16615,15 @@
           "insider_sells": 2,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": -1.9,
+            "market": 4.7,
+            "group": -5.0,
+            "group_name": "everyday goods",
+            "fund": "RSPS",
+            "own": -1.6
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "market_expects_decline",
@@ -15121,7 +16705,7 @@
           "drawdown_from_high": -18.3,
           "revenue_growth": 6.1,
           "op_margin": 32.5,
-          "pe": 12.702305,
+          "pe": 12.338407,
           "forward_pe": 11.372696,
           "short_percent_float": 6.03,
           "short_ratio": 3.4,
@@ -15133,6 +16717,15 @@
           "insider_sells": 9,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": -2.9,
+            "market": 4.7,
+            "group": -5.0,
+            "group_name": "everyday goods",
+            "fund": "RSPS",
+            "own": -2.6
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -15203,6 +16796,15 @@
           "insider_sells": 7,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 0.0,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "financial",
+            "fund": "RSPF",
+            "own": -2.0
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -15296,6 +16898,15 @@
           "insider_sells": 5,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 4.1,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "financial",
+            "fund": "RSPF",
+            "own": 2.1
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -15386,6 +16997,15 @@
           "insider_sells": 2,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": -0.2,
+            "market": 4.7,
+            "group": -2.7,
+            "group_name": "financial",
+            "fund": "RSPF",
+            "own": -2.2
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -15468,13 +17088,22 @@
           "revenue_growth": 1.3,
           "op_margin": 22.7,
           "pe": 23.377193,
-          "forward_pe": 37.865334,
+          "forward_pe": 38.689915,
           "short_percent_float": 4.69,
           "short_ratio": 3.5,
           "high_proximity_warning": true,
           "high_proximity_note": "Only 13.7% from 52-week high \u2014 entry timing risk",
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 1.6,
+            "market": 4.7,
+            "group": -3.3,
+            "group_name": "real estate",
+            "fund": "RSPR",
+            "own": 0.2
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -15563,6 +17192,15 @@
           "insider_sells": 14,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 2.4,
+            "market": 4.7,
+            "group": -2.2,
+            "group_name": "media and communication",
+            "fund": "RSPC",
+            "own": -0.1
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -15652,6 +17290,15 @@
           "insider_sells": 18,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 0.3,
+            "market": 4.7,
+            "group": -1.9,
+            "group_name": "consumer spending",
+            "fund": "RSPD",
+            "own": -2.4
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -15739,6 +17386,15 @@
           "high_proximity_warning": false,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": -0.7,
+            "market": 4.7,
+            "group": -2.2,
+            "group_name": "media and communication",
+            "fund": "RSPC",
+            "own": -3.2
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "market_expects_decline",
@@ -15831,6 +17487,15 @@
           "insider_sells": 2,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 5.2,
+            "market": 4.7,
+            "group": -1.4,
+            "group_name": "industrial",
+            "fund": "RSPN",
+            "own": 1.9
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "ok",
@@ -15920,6 +17585,15 @@
           "insider_sells": 12,
           "conviction_holders": [],
           "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 5.7,
+            "market": 4.7,
+            "group": 2.4,
+            "group_name": "technology",
+            "fund": "RSPT",
+            "own": -1.4
+          },
           "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
@@ -23564,6 +25238,23 @@
       }
     ]
   },
+  "market_panel": {
+    "session": "2026-11-23",
+    "sp500": 4.71,
+    "nasdaq100": 7.0,
+    "treasury": 4.92,
+    "treasury_before": 4.91,
+    "up": 52,
+    "counted": 60,
+    "best": {
+      "name": "chip",
+      "pct": 12.08
+    },
+    "worst": {
+      "name": "energy",
+      "pct": -0.97
+    }
+  },
   "summary_history": {
     "2026-11-23": {
       "narrative": "Mon Nov 23: the S&P 500 rose 4.7% and the Nasdaq 100 rose 7.0%. Biggest moves you follow: NVDA +31.5%, CRDO +22.6%, NBIS +20.3%, CBRS +19.2%. NVDA, Nov 23 headline: \u201cTrump sealed deal for Nvidia to rehire Jensen Huang as CEO\u201d (CNBC). Earnings next: CRDO Tue Dec 1, MRVL Tue Dec 1.",
@@ -26084,7 +27775,7 @@
         "drawdown_pct": -31.0,
         "price": 282.1,
         "pe": 14.731071,
-        "forward_pe": 18.441067,
+        "forward_pe": 18.443949,
         "verdict": "WATCHLIST",
         "next_action": "WAIT \u2014 Wide-moat compounder at 15x trailing earnings with 25% revenue growth and $115B net cash, but AI search disruption risk clouds durability."
       },
@@ -26114,7 +27805,7 @@
         "drawdown_pct": -36.7,
         "price": 313.55,
         "pe": 40.044697,
-        "forward_pe": 16.174044,
+        "forward_pe": 16.150682,
         "verdict": "WATCHLIST",
         "next_action": "WAIT \u2014 AI infrastructure leader at 15.7x forward earnings with 85% quarterly revenue growth, 75% gross margins, and FCF covering net debt in <1 year, but Google TPU cut risk creates customer-concentration overhang."
       },
@@ -26154,7 +27845,7 @@
         "drawdown_pct": -31.1,
         "price": 453.46,
         "pe": 96.893166,
-        "forward_pe": 25.708899,
+        "forward_pe": 25.74175,
         "verdict": "WATCHLIST",
         "next_action": "WAIT \u2014 AI infrastructure leader with 45% YoY revenue growth and $7B FCF, but trading at 71x EV/EBITDA with geopolitical risk from China exposure."
       },
@@ -26194,7 +27885,7 @@
         "drawdown_pct": -36.7,
         "price": 756.71,
         "pe": 19.86637,
-        "forward_pe": 28.840828,
+        "forward_pe": 29.216965,
         "verdict": "RESEARCH-WORTHY",
         "next_action": "RESEARCH \u2014 Worth a deep dive before any decision. [1 sentence(s) removed: figures not in the source data.]"
       },

@@ -33,6 +33,9 @@ except ImportError:
     print("Missing dependency: pip install tenacity")
     sys.exit(1)
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from market_split import SYMBOLS, day_changes
+
 SCRIPT_DIR     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PORTFOLIO_PATH = os.path.join(SCRIPT_DIR, "data", "portfolio.json")
 WATCHLIST_PATH = os.path.join(SCRIPT_DIR, "data", "watchlist.json")
@@ -257,6 +260,17 @@ def _fetch_one(ticker: str) -> dict:
         }
 
 
+def _market_day() -> dict:
+    """Index, group-fund and Treasury changes, fetched with the stocks so the times match."""
+    try:
+        frame = yf.download(SYMBOLS, period="7d", auto_adjust=False, progress=False)["Close"]
+        return day_changes({s: {d.strftime("%Y-%m-%d"): float(v) for d, v in frame[s].dropna().items()}
+                            for s in frame.columns})
+    except Exception as exc:   # no comparison is shown then, rather than a wrong one
+        print(f"⚠ market comparison unavailable: {str(exc)[:120]}")
+        return {}
+
+
 def main():
     tickers = _collect_tickers()
     if not tickers:
@@ -282,6 +296,7 @@ def main():
     output = {
         "last_updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "tickers":      results,
+        "market":       _market_day(),
     }
     with open(OUTPUT_PATH, "w") as f:
         json.dump(output, f, indent=2)

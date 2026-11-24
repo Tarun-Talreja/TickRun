@@ -1,6 +1,6 @@
 # Plan: telling company news from market moves
 
-**Status:** proposed 2026-11-24, not built. Replaces the order inside Phase 4 of PLAN_V2.md.
+**Status:** proposed 2026-11-24, steps 1 and 5 built 2026-11-24. Replaces the order inside Phase 4 of PLAN_V2.md.
 
 ## What you would see
 
