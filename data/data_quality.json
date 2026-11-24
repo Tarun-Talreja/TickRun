@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T20:31:11Z",
+  "generated_at": "2026-11-24T20:45:56Z",
   "checked": 63,
   "flagged": 2,
   "quality": {
@@ -52,10 +52,6 @@
       "ok": true,
       "flags": []
     },
-    "COHR": {
-      "ok": true,
-      "flags": []
-    },
     "CMCSA": {
       "ok": true,
       "flags": []
@@ -64,7 +60,7 @@
       "ok": true,
       "flags": []
     },
-    "CRDO": {
+    "COHR": {
       "ok": true,
       "flags": []
     },
@@ -76,6 +72,10 @@
       "ok": true,
       "flags": []
     },
+    "CRDO": {
+      "ok": true,
+      "flags": []
+    },
     "EIX": {
       "ok": true,
       "flags": []
@@ -84,19 +84,19 @@
       "ok": true,
       "flags": []
     },
-    "FIX": {
-      "ok": true,
-      "flags": []
-    },
     "ETN": {
       "ok": true,
       "flags": []
     },
-    "FLUT": {
+    "FIX": {
       "ok": true,
       "flags": []
     },
     "GEHC": {
+      "ok": true,
+      "flags": []
+    },
+    "FLUT": {
       "ok": true,
       "flags": []
     },
@@ -128,11 +128,11 @@
       "ok": true,
       "flags": []
     },
-    "LMB": {
+    "LLY": {
       "ok": true,
       "flags": []
     },
-    "LLY": {
+    "LMB": {
       "ok": true,
       "flags": []
     },
@@ -172,11 +172,11 @@
       "ok": true,
       "flags": []
     },
-    "NOW": {
+    "NVDA": {
       "ok": true,
       "flags": []
     },
-    "NVDA": {
+    "NOW": {
       "ok": true,
       "flags": []
     },
@@ -192,11 +192,11 @@
       "ok": true,
       "flags": []
     },
-    "POWL": {
+    "PODD": {
       "ok": true,
       "flags": []
     },
-    "PODD": {
+    "POWL": {
       "ok": true,
       "flags": []
     },
@@ -228,18 +228,18 @@
       "ok": true,
       "flags": []
     },
-    "UNH": {
-      "ok": true,
-      "flags": []
-    },
     "TSM": {
       "ok": false,
       "flags": [
         {
           "level": "low",
-          "msg": "Reports in TWD; figures converted to USD at 0.0303. Trailing P/E may mix currencies \u2014 verify against filings"
+          "msg": "Reports in TWD; figures converted to USD at 0.0304. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
+    },
+    "UNH": {
+      "ok": true,
+      "flags": []
     },
     "V": {
       "ok": true,
@@ -257,11 +257,11 @@
       "ok": true,
       "flags": []
     },
-    "^TNX": {
+    "ZBH": {
       "ok": true,
       "flags": []
     },
-    "ZBH": {
+    "^TNX": {
       "ok": true,
       "flags": []
     }
