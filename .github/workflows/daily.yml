@@ -87,6 +87,12 @@ jobs:
       - name: Assemble dashboard.json
         run: python scripts/build_dashboard.py
 
+      - name: AI summary, when prices have moved on
+        env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API }}
+        run: python scripts/weekly_digest.py --if-needed
+        continue-on-error: true
+
       - name: Daily brief (what changed since yesterday)
         run: python scripts/daily_brief.py
         continue-on-error: true
@@ -118,6 +124,7 @@ jobs:
             data/verdict_history.json
             output/dashboard.json
             output/daily_brief.json
+            output/weekly_digest.json
             data/brief_snapshot.json
             output/portfolio_analytics.json
             output/track_record.json

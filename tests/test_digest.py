@@ -1,10 +1,11 @@
 """The home-screen summary may only state figures it was given, and must always exist."""
 import os
 import sys
+from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "scripts"))
 
-from weekly_digest import fallback_summary, narrative_facts, narrative_is_grounded
+from weekly_digest import already_written, current_movers, fallback_summary, narrative_facts, narrative_is_grounded
 
 FACTS = {"movers": [{"ticker": "AMD", "pct": -17.3}],
          "field_news": {"Networking": "Marvell agreed to buy Lumentum for $115 billion."}}
@@ -33,6 +34,19 @@ class TestFallback:
 
 
 class TestNarrativeFacts:
-    def test_hides_targets_and_automated_mover_reasons(self):
-        facts = {"buy_ready_at_target": ["GOOGL"], "movers": [{"ticker": "LITE", "pct": -19, "reason": "no news"}]}
-        assert narrative_facts(facts) == {"movers": [{"ticker": "LITE", "pct": -19}]}
+    def test_hides_targets(self):
+        assert narrative_facts({"buy_ready_at_target": ["GOOGL"], "movers": []}) == {"movers": []}
+
+
+class TestFreshness:
+    def test_movers_older_than_the_prices_are_left_out(self):
+        sig = {"movers_updated": "2026-11-23T13:36:00Z", "price_movers": [{"ticker": "NVDA"}]}
+        assert current_movers(sig, "2026-11-23T21:00:01Z") is None
+        assert current_movers(sig, "2026-11-20T21:00:00Z")[0]["ticker"] == "NVDA"
+
+    def test_rewritten_for_a_new_session_but_not_for_the_same_price(self):
+        old = {"prices_as_of": "2026-11-20T21:00:00Z", "generated_at": "2026-11-23T14:00:00Z"}
+        now = datetime(2026, 11, 23, 15, tzinfo=timezone.utc)
+        assert already_written(old, "2026-11-20T21:00:00Z", now)
+        assert not already_written(old, "2026-11-23T14:50:00Z", now)
+        assert not already_written({}, "2026-11-23T14:50:00Z", now)

@@ -948,8 +948,8 @@ function renderHome(data){
     <div class="home-sub" id="homeTs">—</div>
   </div>
   ${renderHealthBanner(data)}
-  ${digest.narrative?`<div class="digest-card s-anim" style="animation-delay:.05s">
-    <div class="digest-label">✨ AI summary</div>
+  ${(digest.narrative&&(digest.prices_as_of||'').slice(0,10)===(data.prices_as_of||'').slice(0,10))?`<div class="digest-card s-anim" style="animation-delay:.05s">
+    <div class="digest-label">✨ AI summary, prices from ${new Date(digest.prices_as_of).toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})}</div>
     <div class="digest-text">${esc(digest.narrative)}</div>
   </div>`:''}
   ${renderDailyBrief(data)}

@@ -23,7 +23,7 @@ import json
 import os
 import re
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from fact_check import find_unsupported
@@ -35,6 +35,7 @@ DASHBOARD_PATH = os.path.join(SCRIPT_DIR, "output", "dashboard.json")
 OUTPUT_PATH    = os.path.join(SCRIPT_DIR, "output", "weekly_digest.json")
 FALLBACK_FIELDS = 3
 MAX_RADAR_FACTS = 5
+MIN_GAP = timedelta(hours=3)
 
 
 def narrative_is_grounded(text: str, facts: dict) -> bool:
@@ -45,10 +46,27 @@ def narrative_is_grounded(text: str, facts: dict) -> bool:
 
 
 def narrative_facts(facts: dict) -> dict:
-    """Facts safe to summarise. A target is only the price when research ran, and a
-    mover's automated reason can say "no news" on the day a real deal was announced."""
-    movers = [{k: v for k, v in m.items() if k != "reason"} for m in facts.get("movers", [])]
-    return {**{k: v for k, v in facts.items() if k != "buy_ready_at_target"}, "movers": movers}
+    """Facts safe to summarise. A target is only the price when research ran."""
+    return {k: v for k, v in facts.items() if k != "buy_ready_at_target"}
+
+
+def current_movers(sig: dict, prices_as_of: str | None) -> list[dict] | None:
+    """Movers worked out from these prices, or None when they predate them: on 2026-11-23,
+    after a 5% rally, the summary still led with Friday's falls."""
+    if not prices_as_of or (sig.get("movers_updated") or "") < prices_as_of:
+        return None
+    return [{"ticker": m["ticker"], "pct": m.get("pct_day"), "reason": m.get("reason")}
+            for m in sig.get("price_movers", [])[:6]]
+
+
+def already_written(previous: dict, prices_as_of: str | None, now: datetime) -> bool:
+    """This price is covered, or the day's summary is recent enough."""
+    covered = previous.get("prices_as_of")
+    if not covered or not prices_as_of:
+        return False
+    written = datetime.fromisoformat(previous["generated_at"].replace("Z", "+00:00"))
+    return covered == prices_as_of or (
+        covered[:10] == prices_as_of[:10] and now - written < MIN_GAP)
 
 
 def fallback_summary(fields: dict) -> str | None:
@@ -67,7 +85,8 @@ def _narrative(facts: dict) -> str | None:
         "Based ONLY on these facts, write a 3-4 sentence plain-English summary of what "
         "changed for someone following these stocks and fields. Lead with the most "
         "important change. Give no advice to buy or sell, and do not add any fact or "
-        f"figure that isn't listed here.\n\n{json.dumps(facts, indent=2)}"
+        f"figure that isn't listed here. Say one thing caused another only if a listed "
+        f"headline says so. Movers are one-day moves.\n\n{json.dumps(facts, indent=2)}"
     )
     messages = [{"role": "system", "content": "detailed thinking off"},
                 {"role": "user", "content": prompt}]
@@ -89,6 +108,11 @@ def main():
 
     d = _load(DASHBOARD_PATH)
     sig = d.get("signals", {})
+    prices_as_of = d.get("prices_as_of")
+    if "--if-needed" in sys.argv and already_written(
+            _load(OUTPUT_PATH), prices_as_of, datetime.now(timezone.utc)):
+        print("Summary already covers these prices.")
+        return
     wl  = d.get("watchlist", {})
     fields = d.get("field_news", {}).get("fields", {})
 
@@ -107,10 +131,9 @@ def main():
         })
     buy_ready.sort(key=lambda x: not x["at_or_below_target"])
 
-    movers = [
-        {"ticker": m["ticker"], "pct": m.get("pct_day"), "reason": m.get("reason")}
-        for m in sig.get("price_movers", [])[:6]
-    ]
+    movers = current_movers(sig, prices_as_of)
+    if movers is None:
+        print("⚠ movers predate the prices, left out of the summary")
     earnings = [
         {"ticker": e["ticker"], "date": e.get("date"), "days_until": e.get("days_until")}
         for e in sig.get("upcoming_earnings", [])
@@ -125,7 +148,7 @@ def main():
 
     facts = {
         "buy_ready_at_target": [b["ticker"] for b in buy_ready if b["at_or_below_target"]],
-        "movers": movers,
+        "movers": movers or [],
         "upcoming_earnings": earnings,
         "sec_stakes": stakes,
         "data_warnings": data_warnings,
@@ -140,7 +163,8 @@ def main():
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "narrative":    narrative,
         "buy_ready":    buy_ready,
-        "movers":       movers,
+        "movers":       movers or [],
+        "prices_as_of": None if movers is None else prices_as_of,
         "upcoming_earnings": earnings,
         "sec_stakes":   stakes,
         "data_warnings": data_warnings,
@@ -152,7 +176,7 @@ def main():
     if narrative:
         print(f"\n{narrative}\n")
     print(f"Buy-ready at target: {', '.join(facts['buy_ready_at_target']) or 'none'}")
-    print(f"Movers: {', '.join(m['ticker'] for m in movers) or 'none'}")
+    print(f"Movers: {', '.join(m['ticker'] for m in movers or []) or 'none'}")
     print(f"Earnings ahead: {', '.join(e['ticker'] for e in earnings) or 'none'}")
     if data_warnings:
         print(f"⚠ Data warnings: {', '.join(data_warnings)}")
