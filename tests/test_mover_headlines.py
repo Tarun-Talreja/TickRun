@@ -5,7 +5,7 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
 from catalyst_calendar import _plan, _urgency
 from daily_brief import _mover_items
-from move_explainer import NO_HEADLINE, explain
+from move_explainer import NO_HEADLINE, explain, pick_headline
 
 RALLY = {"SPY": {"pct_change_1d": 4.7}, "QQQ": {"pct_change_1d": 7.0}}
 
