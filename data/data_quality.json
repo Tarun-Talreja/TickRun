@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-24T18:00:36Z",
+  "generated_at": "2026-11-24T18:16:13Z",
   "checked": 63,
   "flagged": 2,
   "quality": {
-    "AAPL": {
+    "AMD": {
       "ok": true,
       "flags": []
     },
-    "AMD": {
+    "AAPL": {
       "ok": true,
       "flags": []
     },
@@ -28,15 +28,15 @@
       "flags": [
         {
           "level": "low",
-          "msg": "Reports in EUR; figures converted to USD at 1.0977. Trailing P/E may mix currencies \u2014 verify against filings"
+          "msg": "Reports in EUR; figures converted to USD at 1.0975. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
     },
-    "BWXT": {
+    "AVGO": {
       "ok": true,
       "flags": []
     },
-    "AVGO": {
+    "BWXT": {
       "ok": true,
       "flags": []
     },
@@ -56,11 +56,11 @@
       "ok": true,
       "flags": []
     },
-    "COST": {
+    "COHR": {
       "ok": true,
       "flags": []
     },
-    "COHR": {
+    "COST": {
       "ok": true,
       "flags": []
     },
@@ -120,11 +120,11 @@
       "ok": true,
       "flags": []
     },
-    "ISRG": {
+    "LITE": {
       "ok": true,
       "flags": []
     },
-    "LITE": {
+    "ISRG": {
       "ok": true,
       "flags": []
     },
@@ -156,11 +156,11 @@
       "ok": true,
       "flags": []
     },
-    "MU": {
+    "MSFT": {
       "ok": true,
       "flags": []
     },
-    "MSFT": {
+    "MU": {
       "ok": true,
       "flags": []
     },
@@ -168,11 +168,11 @@
       "ok": true,
       "flags": []
     },
-    "NOW": {
+    "NFLX": {
       "ok": true,
       "flags": []
     },
-    "NFLX": {
+    "NOW": {
       "ok": true,
       "flags": []
     },
@@ -184,15 +184,7 @@
       "ok": true,
       "flags": []
     },
-    "PAYX": {
-      "ok": true,
-      "flags": []
-    },
     "OKLO": {
-      "ok": true,
-      "flags": []
-    },
-    "QQQ": {
       "ok": true,
       "flags": []
     },
@@ -200,7 +192,15 @@
       "ok": true,
       "flags": []
     },
+    "PAYX": {
+      "ok": true,
+      "flags": []
+    },
     "POWL": {
+      "ok": true,
+      "flags": []
+    },
+    "QQQ": {
       "ok": true,
       "flags": []
     },
@@ -237,11 +237,11 @@
       "ok": true,
       "flags": []
     },
-    "V": {
+    "UNH": {
       "ok": true,
       "flags": []
     },
-    "UNH": {
+    "V": {
       "ok": true,
       "flags": []
     },
@@ -249,11 +249,11 @@
       "ok": true,
       "flags": []
     },
-    "VTI": {
+    "VST": {
       "ok": true,
       "flags": []
     },
-    "VST": {
+    "VTI": {
       "ok": true,
       "flags": []
     },
