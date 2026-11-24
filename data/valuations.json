@@ -1,0 +1,2139 @@
+{
+ "generated_at": "2026-11-24T07:34:49Z",
+ "treasury_10y": 0.0492,
+ "margin_of_safety": 0.25,
+ "equity_premium": 0.05,
+ "tickers": {
+  "AAPL": {
+   "methods": {
+    "cash_flow": 126.79,
+    "own_multiple": 308.79
+   },
+   "price": 349.08,
+   "status": "no_reliable_price",
+   "low": 126.79,
+   "base": 217.79,
+   "high": 308.79,
+   "buy_below": null,
+   "no_growth_value": 93.64,
+   "reason": "the methods disagree too much to trust (cash flow $127, own multiple $309)",
+   "notes": [
+    "left out as out of date in the filings: software_capex",
+    "past P/E of 37x cut to a 36x ceiling (growth above 7% isn't credited)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 7.85,
+    "cash_margin": 0.2414,
+    "growth_used": 0.0553,
+    "discount_rate": 0.1037,
+    "beta": 1.09,
+    "cyclical": false,
+    "eps_normalised": 8.63,
+    "median_past_pe": 37.4,
+    "fair_pe": 35.8,
+    "terminal_share": 0.496,
+    "implied_growth": 0.2465,
+    "figures_as_of": "2026-09-26",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "ADP": {
+   "methods": {
+    "cash_flow": 224.26,
+    "own_multiple": 293.0
+   },
+   "price": 302.11,
+   "status": "ok",
+   "low": 224.26,
+   "base": 258.63,
+   "high": 293.0,
+   "buy_below": 193.97,
+   "no_growth_value": 158.55,
+   "reason": null,
+   "notes": [
+    "growth cut from 7.9% to 6.1%, the latest quarter's pace"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 10.98,
+    "cash_margin": 0.196,
+    "growth_used": 0.061,
+    "discount_rate": 0.0892,
+    "beta": 0.79,
+    "cyclical": false,
+    "eps_normalised": 11.17,
+    "median_past_pe": 26.2,
+    "fair_pe": 26.2,
+    "terminal_share": 0.566,
+    "implied_growth": 0.1144,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquireOtherPropertyPlantAndEquipment",
+     "software_capex": "PaymentsToAcquireIntangibleAssets",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "AMD": {
+   "methods": {
+    "cash_flow": 38.17,
+    "own_multiple": 131.16
+   },
+   "price": 453.46,
+   "status": "no_reliable_price",
+   "low": 38.17,
+   "base": 84.66,
+   "high": 131.16,
+   "buy_below": null,
+   "no_growth_value": 18.27,
+   "reason": "the methods disagree too much to trust (cash flow $38, own multiple $131)",
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file",
+    "past P/E of 125x cut to a 37x ceiling (growth above 12% isn't credited)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 2.34,
+    "cash_margin": 0.0852,
+    "growth_used": 0.15,
+    "discount_rate": 0.1492,
+    "beta": 2.54,
+    "cyclical": true,
+    "eps_normalised": 3.52,
+    "median_past_pe": 124.9,
+    "fair_pe": 37.3,
+    "terminal_share": 0.388,
+    "implied_growth": null,
+    "figures_as_of": "2026-09-26",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "AMZN": {
+   "methods": {
+    "own_multiple": 207.93
+   },
+   "price": 255.39,
+   "status": "no_reliable_price",
+   "low": 207.93,
+   "base": 207.93,
+   "high": 207.93,
+   "buy_below": null,
+   "no_growth_value": null,
+   "reason": "only one valuation method could be used (no cash flow)",
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file",
+    "growth cut from 13.2% to 12.1%, the latest quarter's pace",
+    "past P/E of 40x cut to a 36x ceiling (growth above 9% isn't credited)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": -1.65,
+    "cash_margin": -0.0226,
+    "growth_used": 0.121,
+    "discount_rate": 0.1242,
+    "beta": 1.5,
+    "cyclical": true,
+    "eps_normalised": 5.7,
+    "median_past_pe": 39.7,
+    "fair_pe": 36.5,
+    "terminal_share": null,
+    "implied_growth": null,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquireProductiveAssets",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "APP": {
+   "methods": {
+    "cash_flow": 106.69,
+    "own_multiple": 217.77
+   },
+   "price": 373.92,
+   "status": "no_reliable_price",
+   "low": 106.69,
+   "base": 162.23,
+   "high": 217.77,
+   "buy_below": null,
+   "no_growth_value": 51.06,
+   "reason": "the methods disagree too much to trust (cash flow $107, own multiple $218)",
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file",
+    "past P/E of 69x cut to a 37x ceiling (growth above 12% isn't credited)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 6.53,
+    "cash_margin": 0.2889,
+    "growth_used": 0.15,
+    "discount_rate": 0.1492,
+    "beta": 2.5,
+    "cyclical": true,
+    "eps_normalised": 5.84,
+    "median_past_pe": 69.1,
+    "fair_pe": 37.3,
+    "terminal_share": 0.388,
+    "implied_growth": 0.4157,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "software_capex": "PaymentsToAcquireIntangibleAssets",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "ASML": {
+   "methods": {},
+   "price": 1383.78,
+   "status": "no_reliable_price",
+   "low": null,
+   "base": null,
+   "high": null,
+   "buy_below": null,
+   "no_growth_value": null,
+   "reason": "no recent revenue on file",
+   "notes": [],
+   "inputs": {}
+  },
+  "AVGO": {
+   "methods": {
+    "cash_flow": 141.89
+   },
+   "price": 313.55,
+   "status": "no_reliable_price",
+   "low": 141.89,
+   "base": 141.89,
+   "high": 141.89,
+   "buy_below": null,
+   "no_growth_value": 65.3,
+   "reason": "only one valuation method could be used (no own multiple)",
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 6.82,
+    "cash_margin": 0.374,
+    "growth_used": 0.15,
+    "discount_rate": 0.1247,
+    "beta": 1.51,
+    "cyclical": true,
+    "eps_normalised": 4.2,
+    "median_past_pe": null,
+    "fair_pe": null,
+    "terminal_share": 0.466,
+    "implied_growth": 0.3092,
+    "figures_as_of": "2026-08-02",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "BWXT": {
+   "methods": {
+    "cash_flow": 78.59,
+    "own_multiple": 141.58
+   },
+   "price": 115.83,
+   "status": "ok",
+   "low": 78.59,
+   "base": 110.09,
+   "high": 141.58,
+   "buy_below": 82.57,
+   "no_growth_value": 48.46,
+   "reason": null,
+   "notes": [
+    "left out as out of date in the filings: software_capex",
+    "past P/E of 36x cut to a 35x ceiling (growth above 6% isn't credited)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 3.35,
+    "cash_margin": 0.0857,
+    "growth_used": 0.0854,
+    "discount_rate": 0.0892,
+    "beta": 0.72,
+    "cyclical": false,
+    "eps_normalised": 4.01,
+    "median_past_pe": 36.3,
+    "fair_pe": 35.3,
+    "terminal_share": 0.579,
+    "implied_growth": 0.1557,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "CBRS": {
+   "methods": {},
+   "price": 98.51,
+   "status": "no_reliable_price",
+   "low": null,
+   "base": null,
+   "high": null,
+   "buy_below": null,
+   "no_growth_value": null,
+   "reason": "no recent revenue on file",
+   "notes": [],
+   "inputs": {}
+  },
+  "CEG": {
+   "methods": {
+    "company_measure": 168.95
+   },
+   "price": 251.72,
+   "status": "ok",
+   "low": 168.95,
+   "base": 168.95,
+   "high": 168.95,
+   "buy_below": 126.71,
+   "no_growth_value": 147.36,
+   "reason": null,
+   "notes": [
+    "valued on Adjusted operating earnings per share (company guidance, used as a cash proxy), with no growth beyond inflation"
+   ],
+   "inputs": {
+    "measure": {
+     "name": "Adjusted operating earnings per share (company guidance, used as a cash proxy)",
+     "kind": "earnings_per_share",
+     "low": 12.5,
+     "high": 12.8,
+     "mid": 12.65,
+     "quote": "aising midpoint and narrowing full-year Adjusted (non-GAAP) Operating Earnings guidance range to $12.50 - $12.80 per share"
+    },
+    "release_filed": "2026-11-09",
+    "release_url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000116/ceg-20261109991.htm",
+    "per_share": 12.65,
+    "discount_rate": 0.1057,
+    "growth_used": 0.025,
+    "implied_growth": 0.0986,
+    "beta": 1.13
+   }
+  },
+  "CLS": {
+   "methods": {
+    "cash_flow": 76.15,
+    "own_multiple": 186.38
+   },
+   "price": 213.31,
+   "status": "no_reliable_price",
+   "low": 76.15,
+   "base": 131.26,
+   "high": 186.38,
+   "buy_below": null,
+   "no_growth_value": 34.54,
+   "reason": "the methods disagree too much to trust (cash flow $76, own multiple $186)",
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 3.32,
+    "cash_margin": 0.0215,
+    "growth_used": 0.15,
+    "discount_rate": 0.1162,
+    "beta": 1.34,
+    "cyclical": true,
+    "eps_normalised": 7.28,
+    "median_past_pe": 25.6,
+    "fair_pe": 25.6,
+    "terminal_share": 0.497,
+    "implied_growth": 0.356,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquireProductiveAssets",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "CMCSA": {
+   "methods": {
+    "cash_flow": 57.02,
+    "own_multiple": 37.24
+   },
+   "price": 24.72,
+   "status": "market_expects_decline",
+   "low": 37.24,
+   "base": 47.13,
+   "high": 57.02,
+   "buy_below": null,
+   "no_growth_value": 57.02,
+   "reason": "today's price implies the business shrinks about 14% a year; find out why before trusting a higher value",
+   "notes": [
+    "growth cut from 0.6% to 0.0%, the latest quarter's pace"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 3.95,
+    "cash_margin": 0.115,
+    "growth_used": 0.0,
+    "discount_rate": 0.0892,
+    "beta": 0.71,
+    "cyclical": false,
+    "eps_normalised": 4.39,
+    "median_past_pe": 8.5,
+    "fair_pe": 8.5,
+    "terminal_share": 0.529,
+    "implied_growth": -0.1447,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "software_capex": "PaymentsToAcquireIntangibleAssets",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "COHR": {
+   "methods": {},
+   "price": 215.81,
+   "status": "no_reliable_price",
+   "low": null,
+   "base": null,
+   "high": null,
+   "buy_below": null,
+   "no_growth_value": null,
+   "reason": "only one valuation method could be used (no cash flow, own multiple)",
+   "notes": [
+    "left out as out of date in the filings: operating_income"
+   ],
+   "inputs": {
+    "owner_cash_per_share": -4.01,
+    "cash_margin": -0.1025,
+    "growth_used": 0.15,
+    "discount_rate": 0.1492,
+    "beta": 2.23,
+    "cyclical": false,
+    "eps_normalised": 2.06,
+    "median_past_pe": null,
+    "fair_pe": null,
+    "terminal_share": null,
+    "implied_growth": null,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "software_capex": "PaymentsToAcquireIntangibleAssets",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "COST": {
+   "methods": {
+    "cash_flow": 412.61,
+    "own_multiple": 719.65
+   },
+   "price": 1097.91,
+   "status": "ok",
+   "low": 412.61,
+   "base": 566.13,
+   "high": 719.65,
+   "buy_below": 424.6,
+   "no_growth_value": 247.08,
+   "reason": null,
+   "notes": [
+    "past P/E of 52x cut to a 35x ceiling (growth above 6% isn't credited)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 17.73,
+    "cash_margin": 0.026,
+    "growth_used": 0.0912,
+    "discount_rate": 0.0917,
+    "beta": 0.85,
+    "cyclical": false,
+    "eps_normalised": 20.33,
+    "median_past_pe": 51.8,
+    "fair_pe": 35.4,
+    "terminal_share": 0.57,
+    "implied_growth": 0.2742,
+    "figures_as_of": "2026-08-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "CRDO": {
+   "methods": {},
+   "price": 122.46,
+   "status": "no_reliable_price",
+   "low": null,
+   "base": null,
+   "high": null,
+   "buy_below": null,
+   "no_growth_value": null,
+   "reason": "only one valuation method could be used (no cash flow, own multiple)",
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file"
+   ],
+   "inputs": {
+    "owner_cash_per_share": -2.01,
+    "cash_margin": -0.2453,
+    "growth_used": 0.15,
+    "discount_rate": 0.1492,
+    "beta": 3.29,
+    "cyclical": true,
+    "eps_normalised": -0.12,
+    "median_past_pe": null,
+    "fair_pe": null,
+    "terminal_share": null,
+    "implied_growth": null,
+    "figures_as_of": "2026-08-01",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "DECK": {
+   "methods": {
+    "cash_flow": 111.77,
+    "own_multiple": 113.12
+   },
+   "price": 81.54,
+   "status": "market_expects_decline",
+   "low": 111.77,
+   "base": 112.44,
+   "high": 113.12,
+   "buy_below": null,
+   "no_growth_value": 92.27,
+   "reason": "today's price implies the business shrinks about 2% a year; find out why before trusting a higher value",
+   "notes": [
+    "growth cut from 15.0% to 3.5%, the latest quarter's pace",
+    "left out as out of date in the filings: software_capex",
+    "past P/E of 18x cut to a 15x ceiling (4% growth)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 7.83,
+    "cash_margin": 0.1922,
+    "growth_used": 0.035,
+    "discount_rate": 0.1047,
+    "beta": 1.11,
+    "cyclical": false,
+    "eps_normalised": 7.62,
+    "median_past_pe": 17.7,
+    "fair_pe": 14.8,
+    "terminal_share": 0.479,
+    "implied_growth": -0.0225,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "DHR": {
+   "methods": {
+    "cash_flow": 124.42,
+    "own_multiple": 104.91
+   },
+   "price": 225.66,
+   "status": "ok",
+   "low": 104.91,
+   "base": 114.66,
+   "high": 124.42,
+   "buy_below": 86.0,
+   "no_growth_value": 111.17,
+   "reason": null,
+   "notes": [
+    "past P/E of 43x cut to a 17x ceiling (3% growth)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 7.7,
+    "cash_margin": 0.2129,
+    "growth_used": 0.0197,
+    "discount_rate": 0.0892,
+    "beta": 0.8,
+    "cyclical": false,
+    "eps_normalised": 6.14,
+    "median_past_pe": 43.4,
+    "fair_pe": 17.1,
+    "terminal_share": 0.541,
+    "implied_growth": 0.1259,
+    "figures_as_of": "2026-09-25",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "EIX": {
+   "methods": {
+    "own_multiple": 67.47
+   },
+   "price": 62.42,
+   "status": "no_reliable_price",
+   "low": 67.47,
+   "base": 67.47,
+   "high": 67.47,
+   "buy_below": null,
+   "no_growth_value": null,
+   "reason": "only one valuation method could be used (no cash flow)",
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file",
+    "growth cut from 7.3% to 0.0%, the latest quarter's pace",
+    "past P/E of 23x cut to a 11x ceiling (0% growth)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": -7.24,
+    "cash_margin": -0.1509,
+    "growth_used": 0.0,
+    "discount_rate": 0.0892,
+    "beta": 0.55,
+    "cyclical": true,
+    "eps_normalised": 6.02,
+    "median_past_pe": 23.0,
+    "fair_pe": 11.2,
+    "terminal_share": null,
+    "implied_growth": null,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "Revenues",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "AllocatedShareBasedCompensationExpense",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "EME": {
+   "methods": {
+    "cash_flow": 710.55,
+    "own_multiple": 487.37
+   },
+   "price": 649.49,
+   "status": "ok",
+   "low": 487.37,
+   "base": 598.96,
+   "high": 710.55,
+   "buy_below": 449.22,
+   "no_growth_value": 333.14,
+   "reason": null,
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file",
+    "left out as out of date in the filings: stock_comp"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 29.09,
+    "cash_margin": 0.0653,
+    "growth_used": 0.1407,
+    "discount_rate": 0.1072,
+    "beta": 1.16,
+    "cyclical": true,
+    "eps_normalised": 23.1,
+    "median_past_pe": 21.1,
+    "fair_pe": 21.1,
+    "terminal_share": 0.528,
+    "implied_growth": 0.1237,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "Revenues",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquireProductiveAssets",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "ETN": {
+   "methods": {
+    "cash_flow": 198.72,
+    "own_multiple": 351.81
+   },
+   "price": 336.34,
+   "status": "ok",
+   "low": 198.72,
+   "base": 275.26,
+   "high": 351.81,
+   "buy_below": 206.44,
+   "no_growth_value": 122.04,
+   "reason": null,
+   "notes": [
+    "left out as out of date in the filings: operating_income, stock_comp"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 10.54,
+    "cash_margin": 0.1283,
+    "growth_used": 0.0898,
+    "discount_rate": 0.1062,
+    "beta": 1.14,
+    "cyclical": false,
+    "eps_normalised": 11.54,
+    "median_past_pe": 30.5,
+    "fair_pe": 30.5,
+    "terminal_share": 0.505,
+    "implied_growth": 0.1892,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "FIX": {
+   "methods": {
+    "cash_flow": 694.53,
+    "own_multiple": 794.08
+   },
+   "price": 1158.53,
+   "status": "ok",
+   "low": 694.53,
+   "base": 744.31,
+   "high": 794.08,
+   "buy_below": 558.23,
+   "no_growth_value": 323.09,
+   "reason": null,
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 35.78,
+    "cash_margin": 0.1005,
+    "growth_used": 0.15,
+    "discount_rate": 0.1312,
+    "beta": 1.64,
+    "cyclical": true,
+    "eps_normalised": 27.35,
+    "median_past_pe": 29.0,
+    "fair_pe": 29.0,
+    "terminal_share": 0.444,
+    "implied_growth": 0.2529,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "Revenues",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "FLUT": {
+   "methods": {
+    "cash_flow": 44.38
+   },
+   "price": 67.42,
+   "status": "no_reliable_price",
+   "low": 44.38,
+   "base": 44.38,
+   "high": 44.38,
+   "buy_below": null,
+   "no_growth_value": 39.57,
+   "reason": "only one valuation method could be used (no own multiple)",
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file",
+    "growth cut from 15.0% to 2.1%, the latest quarter's pace",
+    "capital spending raised 1.2x to match Yahoo; some is filed under company-specific names",
+    "left out as out of date in the filings: net_income"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 3.42,
+    "cash_margin": 0.0347,
+    "growth_used": 0.021,
+    "discount_rate": 0.1062,
+    "beta": 1.14,
+    "cyclical": true,
+    "eps_normalised": null,
+    "median_past_pe": null,
+    "fair_pe": null,
+    "terminal_share": 0.464,
+    "implied_growth": 0.0982,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerIncludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "software_capex": "PaymentsForSoftware",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "GEHC": {
+   "methods": {
+    "own_multiple": 81.87
+   },
+   "price": 81.31,
+   "status": "no_reliable_price",
+   "low": 81.87,
+   "base": 81.87,
+   "high": 81.87,
+   "buy_below": null,
+   "no_growth_value": null,
+   "reason": "only one valuation method could be used (no cash flow)",
+   "notes": [
+    "left out as out of date in the filings: operating_cash_flow"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 0.0,
+    "cash_margin": null,
+    "growth_used": 0.0407,
+    "discount_rate": 0.0892,
+    "beta": 0.77,
+    "cyclical": false,
+    "eps_normalised": 4.54,
+    "median_past_pe": 18.0,
+    "fair_pe": 18.0,
+    "terminal_share": null,
+    "implied_growth": null,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "capex": "PaymentsToAcquireProductiveAssets",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "GEV": {
+   "methods": {
+    "cash_flow": 325.09
+   },
+   "price": 756.71,
+   "status": "no_reliable_price",
+   "low": 325.09,
+   "base": 325.09,
+   "high": 325.09,
+   "buy_below": null,
+   "no_growth_value": 201.98,
+   "reason": "only one valuation method could be used (no own multiple)",
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 16.63,
+    "cash_margin": 0.102,
+    "growth_used": 0.0868,
+    "discount_rate": 0.1022,
+    "beta": 1.06,
+    "cyclical": true,
+    "eps_normalised": 9.87,
+    "median_past_pe": null,
+    "fair_pe": null,
+    "terminal_share": 0.52,
+    "implied_growth": 0.2467,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquireProductiveAssets",
+     "stock_comp": "AllocatedShareBasedCompensationExpense",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "GIS": {
+   "methods": {
+    "cash_flow": 53.87
+   },
+   "price": 35.07,
+   "status": "market_expects_decline",
+   "low": 53.87,
+   "base": 53.87,
+   "high": 53.87,
+   "buy_below": null,
+   "no_growth_value": 53.87,
+   "reason": "today's price implies the business shrinks about 7% a year; find out why before trusting a higher value",
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file",
+    "growth cut from 0.3% to 0.0%, the latest quarter's pace"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 3.73,
+    "cash_margin": 0.1096,
+    "growth_used": 0.0,
+    "discount_rate": 0.0892,
+    "beta": -0.01,
+    "cyclical": true,
+    "eps_normalised": 2.87,
+    "median_past_pe": null,
+    "fair_pe": null,
+    "terminal_share": 0.529,
+    "implied_growth": -0.0744,
+    "figures_as_of": "2026-08-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "GOOGL": {
+   "methods": {
+    "cash_flow": 92.11,
+    "own_multiple": 311.73
+   },
+   "price": 282.1,
+   "status": "no_reliable_price",
+   "low": 92.11,
+   "base": 201.92,
+   "high": 311.73,
+   "buy_below": null,
+   "no_growth_value": 41.37,
+   "reason": "the methods disagree too much to trust (cash flow $92, own multiple $312)",
+   "notes": [],
+   "inputs": {
+    "owner_cash_per_share": 3.76,
+    "cash_margin": 0.0983,
+    "growth_used": 0.15,
+    "discount_rate": 0.1107,
+    "beta": 1.23,
+    "cyclical": false,
+    "eps_normalised": 12.94,
+    "median_past_pe": 24.1,
+    "fair_pe": 24.1,
+    "terminal_share": 0.518,
+    "implied_growth": 0.3727,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "Revenues",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "IBM": {
+   "methods": {
+    "cash_flow": 221.3,
+    "own_multiple": 242.83
+   },
+   "price": 233.0,
+   "status": "ok",
+   "low": 221.3,
+   "base": 232.06,
+   "high": 242.83,
+   "buy_below": 174.05,
+   "no_growth_value": 174.99,
+   "reason": null,
+   "notes": [
+    "capital spending raised 1.5x to match Yahoo; some is filed under company-specific names",
+    "past P/E of 27x cut to a 25x ceiling (5% growth)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 12.11,
+    "cash_margin": 0.1652,
+    "growth_used": 0.0412,
+    "discount_rate": 0.0892,
+    "beta": 0.76,
+    "cyclical": false,
+    "eps_normalised": 9.79,
+    "median_past_pe": 26.5,
+    "fair_pe": 24.8,
+    "terminal_share": 0.555,
+    "implied_growth": 0.0503,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "Revenues",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "INVH": {
+   "methods": {
+    "own_multiple": 13.46
+   },
+   "price": 26.65,
+   "status": "no_reliable_price",
+   "low": 13.46,
+   "base": 13.46,
+   "high": 13.46,
+   "buy_below": null,
+   "no_growth_value": null,
+   "reason": "only one valuation method could be used (no cash flow)",
+   "notes": [
+    "growth cut from 8.4% to 1.3%, the latest quarter's pace",
+    "left out as out of date in the filings: operating_income, capex",
+    "past P/E of 40x cut to a 13x ceiling (1% growth)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 0.0,
+    "cash_margin": null,
+    "growth_used": 0.013,
+    "discount_rate": 0.0897,
+    "beta": 0.81,
+    "cyclical": false,
+    "eps_normalised": 1.02,
+    "median_past_pe": 40.3,
+    "fair_pe": 13.2,
+    "terminal_share": null,
+    "implied_growth": null,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "Revenues",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "ISRG": {
+   "methods": {
+    "cash_flow": 88.71,
+    "own_multiple": 316.16
+   },
+   "price": 416.23,
+   "status": "no_reliable_price",
+   "low": 88.71,
+   "base": 202.44,
+   "high": 316.16,
+   "buy_below": null,
+   "no_growth_value": 40.58,
+   "reason": "the methods disagree too much to trust (cash flow $89, own multiple $316)",
+   "notes": [
+    "past P/E of 72x cut to a 36x ceiling (growth above 9% isn't credited)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 4.1,
+    "cash_margin": 0.1262,
+    "growth_used": 0.15,
+    "discount_rate": 0.1212,
+    "beta": 1.44,
+    "cyclical": false,
+    "eps_normalised": 8.69,
+    "median_past_pe": 71.9,
+    "fair_pe": 36.4,
+    "terminal_share": 0.479,
+    "implied_growth": 0.4682,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquireProductiveAssets",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "LITE": {
+   "methods": {
+    "cash_flow": 12.1
+   },
+   "price": 544.38,
+   "status": "no_reliable_price",
+   "low": 12.1,
+   "base": 12.1,
+   "high": 12.1,
+   "buy_below": null,
+   "no_growth_value": 6.7,
+   "reason": "only one valuation method could be used (no own multiple)",
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 0.74,
+    "cash_margin": 0.0202,
+    "growth_used": 0.1158,
+    "discount_rate": 0.1317,
+    "beta": 1.65,
+    "cyclical": true,
+    "eps_normalised": -21.95,
+    "median_past_pe": null,
+    "fair_pe": null,
+    "terminal_share": 0.425,
+    "implied_growth": null,
+    "figures_as_of": "2026-09-26",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerIncludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "software_capex": "PaymentsToAcquireIntangibleAssets",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "LLY": {
+   "methods": {
+    "cash_flow": 70.33,
+    "own_multiple": 874.03
+   },
+   "price": 1364.6,
+   "status": "no_reliable_price",
+   "low": 70.33,
+   "base": 472.18,
+   "high": 874.03,
+   "buy_below": null,
+   "no_growth_value": 30.36,
+   "reason": "the methods disagree too much to trust (cash flow $70, own multiple $874)",
+   "notes": [
+    "capital spending raised 1.7x to match Yahoo; some is filed under company-specific names",
+    "left out as out of date in the filings: software_capex",
+    "past P/E of 66x cut to a 35x ceiling (growth above 6% isn't credited)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 2.1,
+    "cash_margin": 0.0217,
+    "growth_used": 0.15,
+    "discount_rate": 0.0892,
+    "beta": 0.39,
+    "cyclical": false,
+    "eps_normalised": 24.76,
+    "median_past_pe": 65.9,
+    "fair_pe": 35.3,
+    "terminal_share": 0.61,
+    "implied_growth": null,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "Revenues",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquireOtherPropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "LMB": {
+   "methods": {
+    "cash_flow": 34.62,
+    "own_multiple": 53.83
+   },
+   "price": 55.62,
+   "status": "ok",
+   "low": 34.62,
+   "base": 44.22,
+   "high": 53.83,
+   "buy_below": 33.16,
+   "no_growth_value": 30.12,
+   "reason": null,
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 2.93,
+    "cash_margin": 0.0483,
+    "growth_used": 0.0262,
+    "discount_rate": 0.1172,
+    "beta": 1.36,
+    "cyclical": true,
+    "eps_normalised": 2.08,
+    "median_past_pe": 25.9,
+    "fair_pe": 25.9,
+    "terminal_share": 0.423,
+    "implied_growth": 0.1162,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "Revenues",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "LPLA": {
+   "methods": {
+    "own_multiple": 461.77
+   },
+   "price": 275.47,
+   "status": "no_reliable_price",
+   "low": 461.77,
+   "base": 461.77,
+   "high": 461.77,
+   "buy_below": null,
+   "no_growth_value": null,
+   "reason": "only one valuation method could be used (no cash flow)",
+   "notes": [
+    "cash flow skipped: reported operating cash flow was negative in a profitable year"
+   ],
+   "inputs": {
+    "owner_cash_per_share": -2.8,
+    "cash_margin": -0.0109,
+    "growth_used": 0.15,
+    "discount_rate": 0.0892,
+    "beta": 0.54,
+    "cyclical": false,
+    "eps_normalised": 19.85,
+    "median_past_pe": 23.3,
+    "fair_pe": 23.3,
+    "terminal_share": null,
+    "implied_growth": null,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "Revenues",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "MA": {
+   "methods": {
+    "cash_flow": 587.74
+   },
+   "price": 635.48,
+   "status": "no_reliable_price",
+   "low": 587.74,
+   "base": 587.74,
+   "high": 587.74,
+   "buy_below": null,
+   "no_growth_value": 267.91,
+   "reason": "only one valuation method could be used (no own multiple)",
+   "notes": [
+    "growth cut from 15.0% to 14.0%, the latest quarter's pace",
+    "capital spending raised 1.8x to match Yahoo; some is filed under company-specific names",
+    "left out as out of date in the filings: net_income"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 18.55,
+    "cash_margin": 0.4518,
+    "growth_used": 0.14,
+    "discount_rate": 0.0892,
+    "beta": 0.77,
+    "cyclical": false,
+    "eps_normalised": null,
+    "median_past_pe": null,
+    "fair_pe": null,
+    "terminal_share": 0.606,
+    "implied_growth": 0.1543,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "Revenues",
+     "operating_income": "OperatingIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "META": {
+   "methods": {
+    "cash_flow": 326.88,
+    "own_multiple": 739.61
+   },
+   "price": 597.6,
+   "status": "no_reliable_price",
+   "low": 326.88,
+   "base": 533.25,
+   "high": 739.61,
+   "buy_below": null,
+   "no_growth_value": 147.49,
+   "reason": "the methods disagree too much to trust (cash flow $327, own multiple $740)",
+   "notes": [],
+   "inputs": {
+    "owner_cash_per_share": 13.75,
+    "cash_margin": 0.1462,
+    "growth_used": 0.15,
+    "discount_rate": 0.1132,
+    "beta": 1.28,
+    "cyclical": false,
+    "eps_normalised": 30.13,
+    "median_past_pe": 24.5,
+    "fair_pe": 24.5,
+    "terminal_share": 0.508,
+    "implied_growth": 0.2681,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "MKTX": {
+   "methods": {
+    "cash_flow": 126.43,
+    "own_multiple": 99.99
+   },
+   "price": 165.43,
+   "status": "ok",
+   "low": 99.99,
+   "base": 113.21,
+   "high": 126.43,
+   "buy_below": 84.91,
+   "no_growth_value": 120.77,
+   "reason": null,
+   "notes": [
+    "growth cut from 4.2% to 0.8%, the latest quarter's pace",
+    "past P/E of 31x cut to a 12x ceiling (1% growth)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 8.36,
+    "cash_margin": 0.3386,
+    "growth_used": 0.008,
+    "discount_rate": 0.0892,
+    "beta": 0.8,
+    "cyclical": false,
+    "eps_normalised": 8.06,
+    "median_past_pe": 31.1,
+    "fair_pe": 12.4,
+    "terminal_share": 0.534,
+    "implied_growth": 0.0553,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "software_capex": "PaymentsToDevelopSoftware",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "MRVL": {
+   "methods": {
+    "cash_flow": 16.64
+   },
+   "price": 144.74,
+   "status": "no_reliable_price",
+   "low": 16.64,
+   "base": 16.64,
+   "high": 16.64,
+   "buy_below": null,
+   "no_growth_value": 7.97,
+   "reason": "only one valuation method could be used (no own multiple)",
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 1.02,
+    "cash_margin": 0.0977,
+    "growth_used": 0.15,
+    "discount_rate": 0.1492,
+    "beta": 2.33,
+    "cyclical": true,
+    "eps_normalised": 0.1,
+    "median_past_pe": null,
+    "fair_pe": null,
+    "terminal_share": 0.388,
+    "implied_growth": null,
+    "figures_as_of": "2026-08-01",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "software_capex": "PaymentsToAcquireIntangibleAssets",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "MSFT": {
+   "methods": {
+    "cash_flow": 244.14,
+    "own_multiple": 637.86
+   },
+   "price": 492.5,
+   "status": "no_reliable_price",
+   "low": 244.14,
+   "base": 441.0,
+   "high": 637.86,
+   "buy_below": null,
+   "no_growth_value": 110.3,
+   "reason": "the methods disagree too much to trust (cash flow $244, own multiple $638)",
+   "notes": [
+    "past P/E of 36x cut to a 36x ceiling (growth above 7% isn't credited)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 8.97,
+    "cash_margin": 0.1928,
+    "growth_used": 0.1457,
+    "discount_rate": 0.1012,
+    "beta": 1.04,
+    "cyclical": false,
+    "eps_normalised": 17.86,
+    "median_past_pe": 36.5,
+    "fair_pe": 35.7,
+    "terminal_share": 0.555,
+    "implied_growth": 0.2806,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "MU": {
+   "methods": {
+    "cash_flow": 158.52,
+    "own_multiple": 442.55
+   },
+   "price": 707.7,
+   "status": "no_reliable_price",
+   "low": 158.52,
+   "base": 300.54,
+   "high": 442.55,
+   "buy_below": null,
+   "no_growth_value": 75.87,
+   "reason": "the methods disagree too much to trust (cash flow $159, own multiple $443)",
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 9.7,
+    "cash_margin": 0.0832,
+    "growth_used": 0.15,
+    "discount_rate": 0.1492,
+    "beta": 2.4,
+    "cyclical": true,
+    "eps_normalised": 27.53,
+    "median_past_pe": 16.1,
+    "fair_pe": 16.1,
+    "terminal_share": 0.388,
+    "implied_growth": 0.4698,
+    "figures_as_of": "2026-09-03",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "NBIS": {
+   "methods": {},
+   "price": 97.8,
+   "status": "no_reliable_price",
+   "low": null,
+   "base": null,
+   "high": null,
+   "buy_below": null,
+   "no_growth_value": null,
+   "reason": "no recent revenue on file",
+   "notes": [],
+   "inputs": {}
+  },
+  "NFLX": {
+   "methods": {
+    "cash_flow": 38.47,
+    "own_multiple": 99.03
+   },
+   "price": 58.1,
+   "status": "no_reliable_price",
+   "low": 38.47,
+   "base": 68.75,
+   "high": 99.03,
+   "buy_below": null,
+   "no_growth_value": 21.0,
+   "reason": "the methods disagree too much to trust (cash flow $38, own multiple $99)",
+   "notes": [
+    "growth cut from 12.6% to 11.8%, the latest quarter's pace",
+    "left out as out of date in the filings: software_capex",
+    "past P/E of 40x cut to a 37x ceiling (growth above 10% isn't credited)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 2.3,
+    "cash_margin": 0.1962,
+    "growth_used": 0.118,
+    "discount_rate": 0.1297,
+    "beta": 1.61,
+    "cyclical": false,
+    "eps_normalised": 2.7,
+    "median_past_pe": 40.5,
+    "fair_pe": 36.7,
+    "terminal_share": 0.432,
+    "implied_growth": 0.1997,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "Revenues",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "NOW": {
+   "methods": {
+    "cash_flow": 58.48,
+    "own_multiple": 49.74
+   },
+   "price": 91.72,
+   "status": "ok",
+   "low": 49.74,
+   "base": 54.11,
+   "high": 58.48,
+   "buy_below": 40.58,
+   "no_growth_value": 25.68,
+   "reason": null,
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file",
+    "past P/E of 92x cut to a 36x ceiling (growth above 7% isn't credited)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 2.01,
+    "cash_margin": 0.1354,
+    "growth_used": 0.15,
+    "discount_rate": 0.0982,
+    "beta": 0.98,
+    "cyclical": true,
+    "eps_normalised": 1.4,
+    "median_past_pe": 91.7,
+    "fair_pe": 35.6,
+    "terminal_share": 0.57,
+    "implied_growth": 0.2354,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "software_capex": "PaymentsToAcquireIntangibleAssets",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "NVDA": {
+   "methods": {},
+   "price": 165.05,
+   "status": "no_reliable_price",
+   "low": null,
+   "base": null,
+   "high": null,
+   "buy_below": null,
+   "no_growth_value": null,
+   "reason": "SEC and Yahoo revenue differ by 16%",
+   "notes": [],
+   "inputs": {}
+  },
+  "NVT": {
+   "methods": {
+    "cash_flow": 95.8,
+    "own_multiple": 97.56
+   },
+   "price": 111.92,
+   "status": "ok",
+   "low": 95.8,
+   "base": 96.68,
+   "high": 97.56,
+   "buy_below": 72.51,
+   "no_growth_value": 45.28,
+   "reason": null,
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 4.44,
+    "cash_margin": 0.1377,
+    "growth_used": 0.1427,
+    "discount_rate": 0.1182,
+    "beta": 1.38,
+    "cyclical": true,
+    "eps_normalised": 4.13,
+    "median_past_pe": 23.6,
+    "fair_pe": 23.6,
+    "terminal_share": 0.486,
+    "implied_growth": 0.1729,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "OKLO": {
+   "methods": {},
+   "price": 20.77,
+   "status": "no_reliable_price",
+   "low": null,
+   "base": null,
+   "high": null,
+   "buy_below": null,
+   "no_growth_value": null,
+   "reason": "no recent revenue on file",
+   "notes": [],
+   "inputs": {}
+  },
+  "PAYX": {
+   "methods": {
+    "cash_flow": 115.76,
+    "own_multiple": 138.39
+   },
+   "price": 112.54,
+   "status": "ok",
+   "low": 115.76,
+   "base": 127.07,
+   "high": 138.39,
+   "buy_below": 95.3,
+   "no_growth_value": 82.77,
+   "reason": null,
+   "notes": [
+    "growth cut from 9.9% to 5.9%, the latest quarter's pace"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 5.73,
+    "cash_margin": 0.3095,
+    "growth_used": 0.059,
+    "discount_rate": 0.0892,
+    "beta": 0.8,
+    "cyclical": false,
+    "eps_normalised": 5.38,
+    "median_past_pe": 25.7,
+    "fair_pe": 25.7,
+    "terminal_share": 0.565,
+    "implied_growth": 0.054,
+    "figures_as_of": "2026-08-31",
+    "sources": {
+     "revenue": "Revenues",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "PODD": {
+   "methods": {
+    "own_multiple": 134.38
+   },
+   "price": 133.79,
+   "status": "no_reliable_price",
+   "low": 134.38,
+   "base": 134.38,
+   "high": 134.38,
+   "buy_below": null,
+   "no_growth_value": null,
+   "reason": "only one valuation method could be used (no cash flow)",
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file",
+    "past P/E of 77x cut to a 36x ceiling (growth above 7% isn't credited)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": -0.68,
+    "cash_margin": -0.0148,
+    "growth_used": 0.15,
+    "discount_rate": 0.1017,
+    "beta": 1.05,
+    "cyclical": true,
+    "eps_normalised": 3.76,
+    "median_past_pe": 77.4,
+    "fair_pe": 35.7,
+    "terminal_share": null,
+    "implied_growth": null,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "Revenues",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "software_capex": "PaymentsForSoftware",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "POWL": {
+   "methods": {
+    "cash_flow": 123.25,
+    "own_multiple": 77.37
+   },
+   "price": 161.98,
+   "status": "ok",
+   "low": 77.37,
+   "base": 100.31,
+   "high": 123.25,
+   "buy_below": 75.23,
+   "no_growth_value": 55.36,
+   "reason": null,
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 5.03,
+    "cash_margin": 0.1464,
+    "growth_used": 0.15,
+    "discount_rate": 0.1107,
+    "beta": 1.23,
+    "cyclical": true,
+    "eps_normalised": 3.77,
+    "median_past_pe": 20.5,
+    "fair_pe": 20.5,
+    "terminal_share": 0.518,
+    "implied_growth": 0.2027,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "software_capex": "PaymentsToAcquireIntangibleAssets",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "RDDT": {
+   "methods": {},
+   "price": 88.76,
+   "status": "no_reliable_price",
+   "low": null,
+   "base": null,
+   "high": null,
+   "buy_below": null,
+   "no_growth_value": null,
+   "reason": "only one valuation method could be used (no cash flow, own multiple)",
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file"
+   ],
+   "inputs": {
+    "owner_cash_per_share": -1.32,
+    "cash_margin": -0.0862,
+    "growth_used": 0.15,
+    "discount_rate": 0.1492,
+    "beta": 2.27,
+    "cyclical": true,
+    "eps_normalised": -0.49,
+    "median_past_pe": null,
+    "fair_pe": null,
+    "terminal_share": null,
+    "implied_growth": null,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "STZ": {
+   "methods": {},
+   "price": 137.82,
+   "status": "no_reliable_price",
+   "low": null,
+   "base": null,
+   "high": null,
+   "buy_below": null,
+   "no_growth_value": null,
+   "reason": "no share count on file",
+   "notes": [],
+   "inputs": {}
+  },
+  "TLN": {
+   "methods": {
+    "company_measure": 287.67
+   },
+   "price": 364.83,
+   "status": "ok",
+   "low": 287.67,
+   "base": 287.67,
+   "high": 287.67,
+   "buy_below": 215.75,
+   "no_growth_value": 252.81,
+   "reason": null,
+   "notes": [
+    "valued on Adjusted free cash flow (company guidance), with no growth beyond inflation"
+   ],
+   "inputs": {
+    "measure": {
+     "name": "Adjusted free cash flow (company guidance)",
+     "kind": "cash_flow_total",
+     "low": 1225000000.0,
+     "high": 1325000000.0,
+     "mid": 1275000000.0,
+     "quote": "8 (including the ASR). Reaffirming 2026 Adjusted EBITDA and Adjusted Free Cash Flow guidance ranges to $2,050 million - $2,200 million and $1,225 million - $1,325 million"
+    },
+    "release_filed": "2026-11-03",
+    "release_url": "https://www.sec.gov/Archives/edgar/data/1622536/000162253626000084/a20261103q32026earningsrel.htm",
+    "per_share": 27.27,
+    "discount_rate": 0.1282,
+    "growth_used": 0.025,
+    "implied_growth": 0.0711,
+    "beta": 1.58
+   }
+  },
+  "TPL": {
+   "methods": {
+    "own_multiple": 308.89
+   },
+   "price": 258.07,
+   "status": "no_reliable_price",
+   "low": 308.89,
+   "base": 308.89,
+   "high": 308.89,
+   "buy_below": null,
+   "no_growth_value": null,
+   "reason": "only one valuation method could be used (no cash flow)",
+   "notes": [
+    "left out as out of date in the filings: capex",
+    "past P/E of 41x cut to a 35x ceiling (growth above 6% isn't credited)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 0.0,
+    "cash_margin": null,
+    "growth_used": 0.15,
+    "discount_rate": 0.0892,
+    "beta": 0.58,
+    "cyclical": false,
+    "eps_normalised": 8.75,
+    "median_past_pe": 41.2,
+    "fair_pe": 35.3,
+    "terminal_share": null,
+    "implied_growth": null,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "software_capex": "PaymentsToAcquireIntangibleAssets",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "TSM": {
+   "methods": {},
+   "price": 363.6,
+   "status": "no_reliable_price",
+   "low": null,
+   "base": null,
+   "high": null,
+   "buy_below": null,
+   "no_growth_value": null,
+   "reason": "no filed US figures (foreign companies file differently)",
+   "notes": [],
+   "inputs": {}
+  },
+  "TW": {
+   "methods": {
+    "cash_flow": 158.7,
+    "own_multiple": 128.8
+   },
+   "price": 126.12,
+   "status": "ok",
+   "low": 128.8,
+   "base": 143.75,
+   "high": 158.7,
+   "buy_below": 107.81,
+   "no_growth_value": 68.87,
+   "reason": null,
+   "notes": [
+    "growth cut from 15.0% to 14.9%, the latest quarter's pace",
+    "past P/E of 53x cut to a 35x ceiling (growth above 6% isn't credited)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 4.77,
+    "cash_margin": 0.4435,
+    "growth_used": 0.149,
+    "discount_rate": 0.0892,
+    "beta": 0.56,
+    "cyclical": false,
+    "eps_normalised": 3.65,
+    "median_past_pe": 53.0,
+    "fair_pe": 35.3,
+    "terminal_share": 0.61,
+    "implied_growth": 0.1072,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "software_capex": "PaymentsForSoftware",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "UNH": {
+   "methods": {
+    "cash_flow": 418.92,
+    "own_multiple": 270.69
+   },
+   "price": 336.08,
+   "status": "market_expects_decline",
+   "low": 270.69,
+   "base": 344.81,
+   "high": 418.92,
+   "buy_below": null,
+   "no_growth_value": 418.92,
+   "reason": "today's price implies the business shrinks about 4% a year; find out why before trusting a higher value",
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file",
+    "growth cut from 11.7% to 0.0%, the latest quarter's pace",
+    "past P/E of 25x cut to a 11x ceiling (0% growth)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 29.0,
+    "cash_margin": 0.0584,
+    "growth_used": 0.0,
+    "discount_rate": 0.0892,
+    "beta": 0.52,
+    "cyclical": true,
+    "eps_normalised": 24.15,
+    "median_past_pe": 24.9,
+    "fair_pe": 11.2,
+    "terminal_share": 0.529,
+    "implied_growth": -0.0383,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "Revenues",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "V": {
+   "methods": {},
+   "price": 409.4,
+   "status": "no_reliable_price",
+   "low": null,
+   "base": null,
+   "high": null,
+   "buy_below": null,
+   "no_growth_value": null,
+   "reason": "no share count on file",
+   "notes": [],
+   "inputs": {}
+  },
+  "VRT": {
+   "methods": {
+    "cash_flow": 51.73,
+    "own_multiple": 67.95
+   },
+   "price": 186.35,
+   "status": "ok",
+   "low": 51.73,
+   "base": 59.84,
+   "high": 67.95,
+   "buy_below": 44.88,
+   "no_growth_value": 24.76,
+   "reason": null,
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file",
+    "past P/E of 47x cut to a 37x ceiling (growth above 12% isn't credited)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 3.16,
+    "cash_margin": 0.0947,
+    "growth_used": 0.15,
+    "discount_rate": 0.1492,
+    "beta": 2.11,
+    "cyclical": true,
+    "eps_normalised": 1.82,
+    "median_past_pe": 47.5,
+    "fair_pe": 37.3,
+    "terminal_share": 0.388,
+    "implied_growth": 0.4218,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "software_capex": "PaymentsForSoftware",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  },
+  "VST": {
+   "methods": {
+    "company_measure": 154.09
+   },
+   "price": 123.87,
+   "status": "market_expects_decline",
+   "low": 154.09,
+   "base": 154.09,
+   "high": 154.09,
+   "buy_below": null,
+   "no_growth_value": 134.98,
+   "reason": "today's price implies the business shrinks about 2% a year; find out why before trusting a higher value",
+   "notes": [
+    "valued on Adjusted free cash flow before growth (company guidance), with no growth beyond inflation"
+   ],
+   "inputs": {
+    "measure": {
+     "name": "Adjusted free cash flow before growth (company guidance)",
+     "kind": "cash_flow_total",
+     "low": 4300000000.0,
+     "high": 4700000000.0,
+     "mid": 4500000000.0,
+     "quote": "ntation expenditures 22 22 - - 22 22 Other, net 5 5 - - 5 5 Adjusted free cash flow before growth guidance $ 4,300 $ 4,700"
+    },
+    "release_filed": "2026-11-06",
+    "release_url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000023/vistra-20260930xearningsre.htm",
+    "per_share": 13.25,
+    "discount_rate": 0.1182,
+    "growth_used": 0.025,
+    "implied_growth": -0.0162,
+    "beta": 1.38
+   }
+  },
+  "ZBH": {
+   "methods": {
+    "cash_flow": 122.41,
+    "own_multiple": 56.17
+   },
+   "price": 105.98,
+   "status": "no_reliable_price",
+   "low": 56.17,
+   "base": 89.29,
+   "high": 122.41,
+   "buy_below": null,
+   "no_growth_value": 102.56,
+   "reason": "the methods disagree too much to trust (cash flow $122, own multiple $56)",
+   "notes": [
+    "profit margins vary a lot, so they were averaged over every year on file",
+    "growth cut from 6.1% to 3.1%, the latest quarter's pace",
+    "past P/E of 25x cut to a 18x ceiling (3% growth)"
+   ],
+   "inputs": {
+    "owner_cash_per_share": 7.1,
+    "cash_margin": 0.1602,
+    "growth_used": 0.031,
+    "discount_rate": 0.0892,
+    "beta": 0.47,
+    "cyclical": true,
+    "eps_normalised": 3.17,
+    "median_past_pe": 24.9,
+    "fair_pe": 17.7,
+    "terminal_share": 0.548,
+    "implied_growth": 0.0057,
+    "figures_as_of": "2026-09-30",
+    "sources": {
+     "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "operating_income": "OperatingIncomeLoss",
+     "net_income": "NetIncomeLoss",
+     "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+     "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "software_capex": "PaymentsToAcquireIntangibleAssets",
+     "stock_comp": "ShareBasedCompensation",
+     "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,5517 @@
+{
+ "generated_at": "2026-11-24T07:25:54Z",
+ "tickers": {
+  "AAPL": {
+   "annual": {
+    "revenue": {
+     "2021-09-25": 365817000000,
+     "2022-09-24": 394328000000,
+     "2023-09-30": 383285000000,
+     "2024-09-28": 391035000000,
+     "2025-09-27": 416161000000,
+     "2026-09-26": 478834000000
+    },
+    "operating_income": {
+     "2021-09-25": 108949000000,
+     "2022-09-24": 119437000000,
+     "2023-09-30": 114301000000,
+     "2024-09-28": 123216000000,
+     "2025-09-27": 133050000000,
+     "2026-09-26": 158063000000
+    },
+    "net_income": {
+     "2021-09-25": 94680000000,
+     "2022-09-24": 99803000000,
+     "2023-09-30": 96995000000,
+     "2024-09-28": 93736000000,
+     "2025-09-27": 112010000000,
+     "2026-09-26": 132175000000
+    },
+    "operating_cash_flow": {
+     "2021-09-25": 104038000000,
+     "2022-09-24": 122151000000,
+     "2023-09-30": 110543000000,
+     "2024-09-28": 118254000000,
+     "2025-09-27": 111482000000,
+     "2026-09-26": 145097000000
+    },
+    "capex": {
+     "2021-09-25": 11085000000,
+     "2022-09-24": 10708000000,
+     "2023-09-30": 10959000000,
+     "2024-09-28": 9447000000,
+     "2025-09-27": 12715000000,
+     "2026-09-26": 9041000000
+    },
+    "stock_comp": {
+     "2021-09-25": 7906000000,
+     "2022-09-24": 9038000000,
+     "2023-09-30": 10833000000,
+     "2024-09-28": 11688000000,
+     "2025-09-27": 12863000000,
+     "2026-09-26": 13789000000
+    },
+    "diluted_shares": {
+     "2024-09-28": 15408095000,
+     "2025-09-27": 15004697000,
+     "2026-09-26": 14720306000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-26",
+     "value": 478834000000
+    },
+    "operating_income": {
+     "end": "2026-09-26",
+     "value": 158063000000
+    },
+    "net_income": {
+     "end": "2026-09-26",
+     "value": 132175000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-26",
+     "value": 145097000000
+    },
+    "capex": {
+     "end": "2026-09-26",
+     "value": 9041000000
+    },
+    "stock_comp": {
+     "end": "2026-09-26",
+     "value": 13789000000
+    },
+    "diluted_shares": {
+     "end": "2026-09-26",
+     "value": 14720306000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [
+    "software_capex"
+   ],
+   "cik": "0000320193",
+   "name": "Apple Inc."
+  },
+  "ADP": {
+   "annual": {
+    "revenue": {
+     "2021-06-30": 15005400000,
+     "2022-06-30": 16498300000,
+     "2023-06-30": 18012200000,
+     "2024-06-30": 19202600000,
+     "2025-06-30": 20560900000,
+     "2026-06-30": 21947400000
+    },
+    "net_income": {
+     "2021-06-30": 2598500000,
+     "2022-06-30": 2948900000,
+     "2023-06-30": 3412000000,
+     "2024-06-30": 3752000000,
+     "2025-06-30": 4079700000,
+     "2026-06-30": 4413500000
+    },
+    "operating_cash_flow": {
+     "2021-06-30": 3093300000,
+     "2022-06-30": 3099500000,
+     "2023-06-30": 4207600000,
+     "2024-06-30": 4157600000,
+     "2025-06-30": 4939700000,
+     "2026-06-30": 5441200000
+    },
+    "capex": {
+     "2021-06-30": 178600000,
+     "2022-06-30": 174400000,
+     "2023-06-30": 206300000,
+     "2024-06-30": 208400000,
+     "2025-06-30": 168700000,
+     "2026-06-30": 196600000
+    },
+    "software_capex": {
+     "2021-06-30": 327300000,
+     "2022-06-30": 379000000,
+     "2023-06-30": 365300000,
+     "2024-06-30": 355000000,
+     "2025-06-30": 378300000,
+     "2026-06-30": 468500000
+    },
+    "stock_comp": {
+     "2021-06-30": 175300000,
+     "2022-06-30": 201700000,
+     "2023-06-30": 220400000,
+     "2024-06-30": 243500000,
+     "2025-06-30": 266100000,
+     "2026-06-30": 242600000
+    },
+    "diluted_shares": {
+     "2024-06-30": 412200000,
+     "2025-06-30": 408700000,
+     "2026-06-30": 403300000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 22262900000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 4525700000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 5449900000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 202600000
+    },
+    "software_capex": {
+     "end": "2026-09-30",
+     "value": 491500000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 251100000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 397600000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquireOtherPropertyPlantAndEquipment",
+    "software_capex": "PaymentsToAcquireIntangibleAssets",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0000008670",
+   "name": "AUTOMATIC DATA PROCESSING, INC."
+  },
+  "AMD": {
+   "annual": {
+    "revenue": {
+     "2020-12-26": 9763000000,
+     "2021-12-25": 16434000000,
+     "2022-12-31": 23601000000,
+     "2023-12-30": 22680000000,
+     "2024-12-28": 25785000000,
+     "2025-12-27": 34639000000
+    },
+    "operating_income": {
+     "2020-12-26": 1369000000,
+     "2021-12-25": 3648000000,
+     "2022-12-31": 1264000000,
+     "2023-12-30": 401000000,
+     "2024-12-28": 1900000000,
+     "2025-12-27": 3694000000
+    },
+    "net_income": {
+     "2020-12-26": 2490000000,
+     "2021-12-25": 3162000000,
+     "2022-12-31": 1320000000,
+     "2023-12-30": 854000000,
+     "2024-12-28": 1641000000,
+     "2025-12-27": 4335000000
+    },
+    "operating_cash_flow": {
+     "2020-12-26": 1071000000,
+     "2021-12-25": 3521000000,
+     "2022-12-31": 3565000000,
+     "2023-12-30": 1667000000,
+     "2024-12-28": 3041000000,
+     "2025-12-27": 7709000000
+    },
+    "capex": {
+     "2020-12-26": 294000000,
+     "2021-12-25": 301000000,
+     "2022-12-31": 450000000,
+     "2023-12-30": 546000000,
+     "2024-12-28": 636000000,
+     "2025-12-27": 974000000
+    },
+    "stock_comp": {
+     "2020-12-26": 274000000,
+     "2021-12-25": 379000000,
+     "2022-12-31": 1081000000,
+     "2023-12-30": 1384000000,
+     "2024-12-28": 1407000000,
+     "2025-12-27": 1638000000
+    },
+    "diluted_shares": {
+     "2023-12-30": 1625000000,
+     "2024-12-28": 1637000000,
+     "2025-12-27": 1636000000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-26",
+     "value": 45436000000
+    },
+    "operating_income": {
+     "end": "2026-09-26",
+     "value": 8050000000
+    },
+    "net_income": {
+     "end": "2026-09-26",
+     "value": 7619000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-26",
+     "value": 9123000000
+    },
+    "capex": {
+     "end": "2026-09-26",
+     "value": 2067000000
+    },
+    "stock_comp": {
+     "end": "2026-09-26",
+     "value": 1999000000
+    },
+    "diluted_shares": {
+     "end": "2026-09-26",
+     "value": 1657000000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0000002488",
+   "name": "ADVANCED MICRO DEVICES INC"
+  },
+  "AMZN": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 386064000000,
+     "2021-12-31": 469822000000,
+     "2022-12-31": 513983000000,
+     "2023-12-31": 574785000000,
+     "2024-12-31": 637959000000,
+     "2025-12-31": 716924000000
+    },
+    "operating_income": {
+     "2020-12-31": 22899000000,
+     "2021-12-31": 24879000000,
+     "2022-12-31": 12248000000,
+     "2023-12-31": 36852000000,
+     "2024-12-31": 68593000000,
+     "2025-12-31": 79975000000
+    },
+    "net_income": {
+     "2020-12-31": 21331000000,
+     "2021-12-31": 33364000000,
+     "2022-12-31": -2722000000,
+     "2023-12-31": 30425000000,
+     "2024-12-31": 59248000000,
+     "2025-12-31": 77670000000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 66064000000,
+     "2021-12-31": 46327000000,
+     "2022-12-31": 46752000000,
+     "2023-12-31": 84946000000,
+     "2024-12-31": 115877000000,
+     "2025-12-31": 139514000000
+    },
+    "capex": {
+     "2020-12-31": 40140000000,
+     "2021-12-31": 61053000000,
+     "2022-12-31": 63645000000,
+     "2023-12-31": 52729000000,
+     "2024-12-31": 82999000000,
+     "2025-12-31": 131819000000
+    },
+    "stock_comp": {
+     "2020-12-31": 9208000000,
+     "2021-12-31": 12757000000,
+     "2022-12-31": 19621000000,
+     "2023-12-31": 24023000000,
+     "2024-12-31": 22011000000,
+     "2025-12-31": 19467000000
+    },
+    "diluted_shares": {
+     "2023-12-31": 10492000000,
+     "2024-12-31": 10721000000,
+     "2025-12-31": 10827000000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 797455000000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 104366000000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 135967000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 177123000000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 226880000000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 19275000000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 10903000000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquireProductiveAssets",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001018724",
+   "name": "AMAZON.COM, INC."
+  },
+  "APP": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 1451086000,
+     "2021-12-31": 2793104000,
+     "2022-12-31": 2817058000,
+     "2023-12-31": 1841762000,
+     "2024-12-31": 3224058000,
+     "2025-12-31": 5480717000
+    },
+    "operating_income": {
+     "2020-12-31": -62042000,
+     "2021-12-31": 150016000,
+     "2022-12-31": -47791000,
+     "2023-12-31": 772411000,
+     "2024-12-31": 1910956000,
+     "2025-12-31": 4151914000
+    },
+    "net_income": {
+     "2020-12-31": -125187000,
+     "2021-12-31": 35446000,
+     "2022-12-31": -192746000,
+     "2023-12-31": 356711000,
+     "2024-12-31": 1579776000,
+     "2025-12-31": 3333751000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 222883000,
+     "2021-12-31": 361851000,
+     "2022-12-31": 412773000,
+     "2023-12-31": 1061510000,
+     "2024-12-31": 2099011000,
+     "2025-12-31": 3971094000
+    },
+    "capex": {
+     "2019-12-31": 3358000,
+     "2020-12-31": 3241000,
+     "2021-12-31": 1390000,
+     "2022-12-31": 662000,
+     "2023-12-31": 4246000,
+     "2024-12-31": 4776000
+    },
+    "software_capex": {
+     "2023-12-31": 63899000,
+     "2024-12-31": 25553000,
+     "2025-12-31": 28318000
+    },
+    "stock_comp": {
+     "2020-12-31": 62387000,
+     "2021-12-31": 133177000,
+     "2022-12-31": 191612000,
+     "2023-12-31": 363107000,
+     "2024-12-31": 369367000,
+     "2025-12-31": 210421000
+    },
+    "diluted_shares": {
+     "2023-12-31": 362589000,
+     "2024-12-31": 347808000,
+     "2025-12-31": 341970000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 7608894000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 5918421000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 5013309000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 4903009000
+    },
+    "capex": {
+     "end": "2024-12-31",
+     "value": 4776000
+    },
+    "software_capex": {
+     "end": "2025-12-31",
+     "value": 28318000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 333392000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 336829000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "software_capex": "PaymentsToAcquireIntangibleAssets",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001751008",
+   "name": "AppLovin Corporation"
+  },
+  "ASML": {
+   "annual": {
+    "revenue": {},
+    "operating_income": {},
+    "net_income": {},
+    "operating_cash_flow": {},
+    "capex": {},
+    "software_capex": {},
+    "stock_comp": {},
+    "diluted_shares": {}
+   },
+   "ttm": {
+    "revenue": null,
+    "operating_income": null,
+    "net_income": null,
+    "operating_cash_flow": null,
+    "capex": null,
+    "software_capex": null,
+    "stock_comp": null,
+    "diluted_shares": {
+     "end": "2025-12-31",
+     "value": 388900000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "software_capex": "PaymentsToAcquireIntangibleAssets",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0000937966",
+   "name": "ASML HOLDING NV"
+  },
+  "AVGO": {
+   "annual": {
+    "revenue": {
+     "2020-11-01": 23888000000,
+     "2021-10-31": 27450000000,
+     "2022-10-30": 33203000000,
+     "2023-10-29": 35819000000,
+     "2024-11-03": 51574000000,
+     "2025-11-02": 63887000000
+    },
+    "operating_income": {
+     "2020-11-01": 4014000000,
+     "2021-10-31": 8519000000,
+     "2022-10-30": 14225000000,
+     "2023-10-29": 16207000000,
+     "2024-11-03": 13463000000,
+     "2025-11-02": 25484000000
+    },
+    "net_income": {
+     "2016-10-30": -1739000000,
+     "2017-10-29": 1692000000,
+     "2018-11-04": 12259000000,
+     "2022-10-30": 11495000000,
+     "2023-10-29": 14082000000,
+     "2024-11-03": 5895000000
+    },
+    "operating_cash_flow": {
+     "2020-11-01": 12061000000,
+     "2021-10-31": 13764000000,
+     "2022-10-30": 16736000000,
+     "2023-10-29": 18085000000,
+     "2024-11-03": 19962000000,
+     "2025-11-02": 27537000000
+    },
+    "capex": {
+     "2020-11-01": 463000000,
+     "2021-10-31": 443000000,
+     "2022-10-30": 424000000,
+     "2023-10-29": 452000000,
+     "2024-11-03": 548000000,
+     "2025-11-02": 623000000
+    },
+    "stock_comp": {
+     "2020-11-01": 1976000000,
+     "2021-10-31": 1704000000,
+     "2022-10-30": 1533000000,
+     "2023-10-29": 2171000000,
+     "2024-11-03": 5741000000,
+     "2025-11-02": 7568000000
+    },
+    "diluted_shares": {
+     "2023-10-29": 4272000000,
+     "2024-11-03": 4778000000,
+     "2025-11-02": 4853000000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-08-02",
+     "value": 89104000000
+    },
+    "operating_income": {
+     "end": "2026-08-02",
+     "value": 42814000000
+    },
+    "net_income": {
+     "end": "2024-11-03",
+     "value": 5895000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-08-02",
+     "value": 40653000000
+    },
+    "capex": {
+     "end": "2026-08-02",
+     "value": 1250000000
+    },
+    "stock_comp": {
+     "end": "2026-08-02",
+     "value": 8482000000
+    },
+    "diluted_shares": {
+     "end": "2026-08-02",
+     "value": 4884000000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001730168",
+   "name": "Broadcom Inc."
+  },
+  "BWXT": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 2123516000,
+     "2021-12-31": 2124074000,
+     "2022-12-31": 2232834000,
+     "2023-12-31": 2496309000,
+     "2024-12-31": 2703654000,
+     "2025-12-31": 3198425000
+    },
+    "operating_income": {
+     "2020-12-31": 358552000,
+     "2021-12-31": 345848000,
+     "2022-12-31": 348571000,
+     "2023-12-31": 383059000,
+     "2024-12-31": 380607000,
+     "2025-12-31": 404459000
+    },
+    "net_income": {
+     "2020-12-31": 278670000,
+     "2021-12-31": 305871000,
+     "2022-12-31": 238191000,
+     "2023-12-31": 245849000,
+     "2024-12-31": 281941000,
+     "2025-12-31": 328945000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 196442000,
+     "2021-12-31": 386026000,
+     "2022-12-31": 244704000,
+     "2023-12-31": 363701000,
+     "2024-12-31": 408428000,
+     "2025-12-31": 479848000
+    },
+    "capex": {
+     "2020-12-31": 255027000,
+     "2021-12-31": 311052000,
+     "2022-12-31": 198312000,
+     "2023-12-31": 151286000,
+     "2024-12-31": 153647000,
+     "2025-12-31": 184557000
+    },
+    "stock_comp": {
+     "2020-12-31": 16844000,
+     "2021-12-31": 18613000,
+     "2022-12-31": 14127000,
+     "2023-12-31": 15896000,
+     "2024-12-31": 21680000,
+     "2025-12-31": 26072000
+    },
+    "diluted_shares": {
+     "2023-12-31": 91874537,
+     "2024-12-31": 91859732,
+     "2025-12-31": 91856013
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 3600656000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 444963000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 374786000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 578713000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 206392000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 35238000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 91969199
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [
+    "software_capex"
+   ],
+   "cik": "0001486957",
+   "name": "BWX TECHNOLOGIES, INC."
+  },
+  "CBRS": {
+   "annual": {
+    "revenue": {},
+    "operating_income": {},
+    "net_income": {},
+    "operating_cash_flow": {},
+    "capex": {},
+    "stock_comp": {},
+    "diluted_shares": {}
+   },
+   "ttm": {
+    "revenue": null,
+    "operating_income": null,
+    "net_income": null,
+    "operating_cash_flow": null,
+    "capex": null,
+    "stock_comp": null,
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 151532000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0002021728",
+   "name": "Cerebras Systems Inc."
+  },
+  "CEG": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 17603000000,
+     "2021-12-31": 19649000000,
+     "2022-12-31": 24440000000,
+     "2023-12-31": 24918000000,
+     "2024-12-31": 23568000000,
+     "2025-12-31": 25533000000
+    },
+    "operating_income": {
+     "2020-12-31": 256000000,
+     "2021-12-31": -346000000,
+     "2022-12-31": 495000000,
+     "2023-12-31": 1610000000,
+     "2024-12-31": 4352000000,
+     "2025-12-31": 3086000000
+    },
+    "net_income": {
+     "2020-12-31": 589000000,
+     "2021-12-31": -205000000,
+     "2022-12-31": -160000000,
+     "2023-12-31": 1623000000,
+     "2024-12-31": 3749000000,
+     "2025-12-31": 2319000000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 584000000,
+     "2021-12-31": -1338000000,
+     "2022-12-31": -2353000000,
+     "2023-12-31": -5301000000,
+     "2024-12-31": -2464000000,
+     "2025-12-31": 4237000000
+    },
+    "capex": {
+     "2020-12-31": 1747000000,
+     "2021-12-31": 1329000000,
+     "2022-12-31": 1689000000,
+     "2023-12-31": 2422000000,
+     "2024-12-31": 2565000000,
+     "2025-12-31": 2949000000
+    },
+    "stock_comp": {
+     "2020-12-31": 27000000,
+     "2021-12-31": 47000000,
+     "2022-12-31": 116000000,
+     "2023-12-31": 178000000,
+     "2024-12-31": 332000000,
+     "2025-12-31": 385000000
+    },
+    "diluted_shares": {
+     "2023-12-31": 324000000,
+     "2024-12-31": 315000000,
+     "2025-12-31": 314000000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-06-30",
+     "value": 31270000000
+    },
+    "operating_income": {
+     "end": "2026-06-30",
+     "value": 4596000000
+    },
+    "net_income": {
+     "end": "2026-06-30",
+     "value": 3465000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-06-30",
+     "value": 4206000000
+    },
+    "capex": {
+     "end": "2026-06-30",
+     "value": 3897000000
+    },
+    "stock_comp": {
+     "end": "2025-12-31",
+     "value": 385000000
+    },
+    "diluted_shares": {
+     "end": "2026-06-30",
+     "value": 357000000
+    }
+   },
+   "source": {
+    "revenue": "Revenues",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "AllocatedShareBasedCompensationExpense",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001868275",
+   "name": "CONSTELLATION ENERGY CORPORATION"
+  },
+  "CLS": {
+   "annual": {
+    "revenue": {
+     "2022-12-31": 7250000000,
+     "2023-12-31": 7961000000,
+     "2024-12-31": 9646000000,
+     "2025-12-31": 12390900000
+    },
+    "operating_income": {
+     "2022-12-31": 289300000,
+     "2023-12-31": 338300000,
+     "2024-12-31": 599300000,
+     "2025-12-31": 1040700000
+    },
+    "net_income": {
+     "2022-12-31": 180100000,
+     "2023-12-31": 244400000,
+     "2024-12-31": 428000000,
+     "2025-12-31": 832500000
+    },
+    "operating_cash_flow": {
+     "2022-12-31": 211100000,
+     "2023-12-31": 326200000,
+     "2024-12-31": 473900000,
+     "2025-12-31": 659500000
+    },
+    "capex": {
+     "2022-12-31": 109000000,
+     "2023-12-31": 125100000,
+     "2024-12-31": 170900000,
+     "2025-12-31": 201200000
+    },
+    "stock_comp": {
+     "2022-12-31": 51000000,
+     "2023-12-31": 55600000,
+     "2024-12-31": 57400000,
+     "2025-12-31": 69800000
+    },
+    "diluted_shares": {
+     "2023-12-31": 120300000,
+     "2024-12-31": 118700000,
+     "2025-12-31": 116200000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 18230200000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 1504800000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 1245800000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 1407500000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 862100000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 84100000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 117900000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquireProductiveAssets",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001030894",
+   "name": "CELESTICA INC."
+  },
+  "CMCSA": {
+   "annual": {
+    "revenue": {
+     "2022-12-31": 121427000000,
+     "2023-12-31": 121572000000,
+     "2024-12-31": 123731000000,
+     "2025-12-31": 123707000000
+    },
+    "operating_income": {
+     "2020-12-31": 17493000000,
+     "2021-12-31": 20817000000,
+     "2022-12-31": 14041000000,
+     "2023-12-31": 23314000000,
+     "2024-12-31": 23297000000,
+     "2025-12-31": 20672000000
+    },
+    "net_income": {
+     "2020-12-31": 10534000000,
+     "2021-12-31": 14159000000,
+     "2022-12-31": 5370000000,
+     "2023-12-31": 15388000000,
+     "2024-12-31": 16192000000,
+     "2025-12-31": 19998000000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 24737000000,
+     "2021-12-31": 29146000000,
+     "2022-12-31": 26413000000,
+     "2023-12-31": 28501000000,
+     "2024-12-31": 27673000000,
+     "2025-12-31": 33643000000
+    },
+    "capex": {
+     "2020-12-31": 9179000000,
+     "2021-12-31": 9174000000,
+     "2022-12-31": 10626000000,
+     "2023-12-31": 12242000000,
+     "2024-12-31": 12181000000,
+     "2025-12-31": 11750000000
+    },
+    "software_capex": {
+     "2020-12-31": 2455000000,
+     "2021-12-31": 2883000000,
+     "2022-12-31": 3141000000,
+     "2023-12-31": 3298000000,
+     "2024-12-31": 2949000000,
+     "2025-12-31": 2658000000
+    },
+    "stock_comp": {
+     "2020-12-31": 1193000000,
+     "2021-12-31": 1315000000,
+     "2022-12-31": 1336000000,
+     "2023-12-31": 1241000000,
+     "2024-12-31": 1288000000,
+     "2025-12-31": 1288000000
+    },
+    "diluted_shares": {
+     "2023-12-31": 4148000000,
+     "2024-12-31": 3908000000,
+     "2025-12-31": 3709000000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 123005000000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 18104000000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 11316000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 31727000000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 12060000000
+    },
+    "software_capex": {
+     "end": "2026-09-30",
+     "value": 2583000000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 1408000000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 3583000000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "software_capex": "PaymentsToAcquireIntangibleAssets",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001166691",
+   "name": "COMCAST\u00a0CORPORATION"
+  },
+  "COHR": {
+   "annual": {
+    "revenue": {
+     "2021-06-30": 3105891000,
+     "2022-06-30": 3316616000,
+     "2023-06-30": 5160100000,
+     "2024-06-30": 4707688000,
+     "2025-06-30": 5810115000,
+     "2026-06-30": 7118181000
+    },
+    "net_income": {
+     "2021-06-30": 297552000,
+     "2022-06-30": 234759000,
+     "2023-06-30": -259458000,
+     "2024-06-30": -156154000,
+     "2025-06-30": 49364000,
+     "2026-06-30": 804998000
+    },
+    "operating_cash_flow": {
+     "2021-06-30": 574353000,
+     "2022-06-30": 413332000,
+     "2023-06-30": 634025000,
+     "2024-06-30": 545731000,
+     "2025-06-30": 633600000,
+     "2026-06-30": 79514000
+    },
+    "capex": {
+     "2021-06-30": 146337000,
+     "2022-06-30": 314332000,
+     "2023-06-30": 436060000,
+     "2024-06-30": 346816000,
+     "2025-06-30": 440836000,
+     "2026-06-30": 1102909000
+    },
+    "software_capex": {
+     "2018-06-30": 0,
+     "2019-06-30": 0,
+     "2020-06-30": 3750000,
+     "2024-06-30": 0,
+     "2025-06-30": 0,
+     "2026-06-30": 7174000
+    },
+    "stock_comp": {
+     "2021-06-30": 70953000,
+     "2022-06-30": 73214000,
+     "2023-06-30": 148872000,
+     "2024-06-30": 126049000,
+     "2025-06-30": 160239000,
+     "2026-06-30": 186468000
+    },
+    "diluted_shares": {
+     "2024-06-30": 151642000,
+     "2025-06-30": 154755000,
+     "2026-06-30": 195387000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 7907127000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 963322000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": -59122000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 1774510000
+    },
+    "software_capex": {
+     "end": "2026-06-30",
+     "value": 7174000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 216711000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 202026000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "software_capex": "PaymentsToAcquireIntangibleAssets",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [
+    "operating_income"
+   ],
+   "cik": "0000820318",
+   "name": "Coherent Corp."
+  },
+  "COST": {
+   "annual": {
+    "revenue": {
+     "2021-08-29": 195929000000,
+     "2022-08-28": 226954000000,
+     "2023-09-03": 242290000000,
+     "2024-09-01": 254453000000,
+     "2025-08-31": 275235000000,
+     "2026-08-30": 303154000000
+    },
+    "operating_income": {
+     "2021-08-29": 6708000000,
+     "2022-08-28": 7793000000,
+     "2023-09-03": 8114000000,
+     "2024-09-01": 9285000000,
+     "2025-08-31": 10383000000,
+     "2026-08-30": 11685000000
+    },
+    "net_income": {
+     "2021-08-29": 5007000000,
+     "2022-08-28": 5844000000,
+     "2023-09-03": 6292000000,
+     "2024-09-01": 7367000000,
+     "2025-08-31": 8099000000,
+     "2026-08-30": 9226000000
+    },
+    "operating_cash_flow": {
+     "2021-08-29": 8958000000,
+     "2022-08-28": 7392000000,
+     "2023-09-03": 11068000000,
+     "2024-09-01": 11339000000,
+     "2025-08-31": 13335000000,
+     "2026-08-30": 15817000000
+    },
+    "capex": {
+     "2021-08-29": 3588000000,
+     "2022-08-28": 3891000000,
+     "2023-09-03": 4323000000,
+     "2024-09-01": 4710000000,
+     "2025-08-31": 5498000000,
+     "2026-08-30": 6435000000
+    },
+    "stock_comp": {
+     "2021-08-29": 665000000,
+     "2022-08-28": 724000000,
+     "2023-09-03": 774000000,
+     "2024-09-01": 818000000,
+     "2025-08-31": 860000000,
+     "2026-08-30": 924000000
+    },
+    "diluted_shares": {
+     "2024-09-01": 444759000,
+     "2025-08-31": 444803000,
+     "2026-08-30": 444427000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-08-30",
+     "value": 303154000000
+    },
+    "operating_income": {
+     "end": "2026-08-30",
+     "value": 11685000000
+    },
+    "net_income": {
+     "end": "2026-08-30",
+     "value": 9226000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-08-30",
+     "value": 15817000000
+    },
+    "capex": {
+     "end": "2026-08-30",
+     "value": 6435000000
+    },
+    "stock_comp": {
+     "end": "2026-08-30",
+     "value": 924000000
+    },
+    "diluted_shares": {
+     "end": "2026-08-30",
+     "value": 444427000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0000909832",
+   "name": "COSTCO WHOLESALE CORP /NEW"
+  },
+  "CRDO": {
+   "annual": {
+    "revenue": {
+     "2021-04-30": 58697000,
+     "2022-04-30": 106477000,
+     "2023-04-29": 184194000,
+     "2024-04-27": 192970000,
+     "2025-05-03": 436775000,
+     "2026-05-02": 1335116000
+    },
+    "operating_income": {
+     "2021-04-30": -25234000,
+     "2022-04-30": -21968000,
+     "2023-04-29": -21235000,
+     "2024-04-27": -37058000,
+     "2025-05-03": 37124000,
+     "2026-05-02": 445005000
+    },
+    "net_income": {
+     "2021-04-30": -27511000,
+     "2022-04-30": -22176000,
+     "2023-04-29": -16547000,
+     "2024-04-27": -28369000,
+     "2025-05-03": 52183000,
+     "2026-05-02": 472279000
+    },
+    "operating_cash_flow": {
+     "2021-04-30": -42361000,
+     "2022-04-30": -30832000,
+     "2023-04-29": -24615000,
+     "2024-04-27": 32737000,
+     "2025-05-03": 65083000,
+     "2026-05-02": 464292000
+    },
+    "capex": {
+     "2021-04-30": 6056000,
+     "2022-04-30": 17580000,
+     "2023-04-29": 21713000,
+     "2024-04-27": 15652000,
+     "2025-05-03": 36061000,
+     "2026-05-02": 57296000
+    },
+    "stock_comp": {
+     "2021-04-30": 2570000,
+     "2022-04-30": 9188000,
+     "2023-04-29": 23516000,
+     "2024-04-27": 39022000,
+     "2025-05-03": 77355000,
+     "2026-05-02": 182638000
+    },
+    "diluted_shares": {
+     "2024-04-27": 155091000,
+     "2025-05-03": 181158000,
+     "2026-05-02": 188232000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-08-01",
+     "value": 1591045000
+    },
+    "operating_income": {
+     "end": "2026-08-01",
+     "value": 504963000
+    },
+    "net_income": {
+     "end": "2026-08-01",
+     "value": 538305000
+    },
+    "operating_cash_flow": {
+     "end": "2026-08-01",
+     "value": 500355000
+    },
+    "capex": {
+     "end": "2026-08-01",
+     "value": 61757000
+    },
+    "stock_comp": {
+     "end": "2026-08-01",
+     "value": 235162000
+    },
+    "diluted_shares": {
+     "end": "2026-08-01",
+     "value": 194378000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001807794",
+   "name": "Credo Technology Group Holding Ltd"
+  },
+  "DECK": {
+   "annual": {
+    "revenue": {
+     "2021-03-31": 2545641000,
+     "2022-03-31": 3150339000,
+     "2023-03-31": 3627286000,
+     "2024-03-31": 4287763000,
+     "2025-03-31": 4985612000,
+     "2026-03-31": 5472296000
+    },
+    "operating_income": {
+     "2021-03-31": 504205000,
+     "2022-03-31": 564707000,
+     "2023-03-31": 652751000,
+     "2024-03-31": 927514000,
+     "2025-03-31": 1179092000,
+     "2026-03-31": 1262903000
+    },
+    "net_income": {
+     "2021-03-31": 382575000,
+     "2022-03-31": 451949000,
+     "2023-03-31": 516822000,
+     "2024-03-31": 759563000,
+     "2025-03-31": 966091000,
+     "2026-03-31": 1024071000
+    },
+    "operating_cash_flow": {
+     "2021-03-31": 596217000,
+     "2022-03-31": 172353000,
+     "2023-03-31": 537422000,
+     "2024-03-31": 1033184000,
+     "2025-03-31": 1044523000,
+     "2026-03-31": 1181955000
+    },
+    "capex": {
+     "2021-03-31": 32218000,
+     "2022-03-31": 51017000,
+     "2023-03-31": 81025000,
+     "2024-03-31": 89365000,
+     "2025-03-31": 86171000,
+     "2026-03-31": 84623000
+    },
+    "stock_comp": {
+     "2021-03-31": 22701000,
+     "2022-03-31": 26816000,
+     "2023-03-31": 26897000,
+     "2024-03-31": 37288000,
+     "2025-03-31": 37943000,
+     "2026-03-31": 44835000
+    },
+    "diluted_shares": {
+     "2024-03-31": 156285000,
+     "2025-03-31": 152670000,
+     "2026-03-31": 145805000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 5577003000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 1315852000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 1059823000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 1128460000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 75867000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 46051000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 136923000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [
+    "software_capex"
+   ],
+   "cik": "0000910521",
+   "name": "DECKERS OUTDOOR CORP"
+  },
+  "DHR": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 22284000000,
+     "2021-12-31": 24802000000,
+     "2022-12-31": 26643000000,
+     "2023-12-31": 23890000000,
+     "2024-12-31": 23875000000,
+     "2025-12-31": 24568000000
+    },
+    "operating_income": {
+     "2020-12-31": 4231000000,
+     "2021-12-31": 6377000000,
+     "2022-12-31": 7536000000,
+     "2023-12-31": 5202000000,
+     "2024-12-31": 4863000000,
+     "2025-12-31": 4690000000
+    },
+    "net_income": {
+     "2020-12-31": 3646000000,
+     "2021-12-31": 6433000000,
+     "2022-12-31": 7209000000,
+     "2023-12-31": 4764000000,
+     "2024-12-31": 3899000000,
+     "2025-12-31": 3614000000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 6208000000,
+     "2021-12-31": 8358000000,
+     "2022-12-31": 8519000000,
+     "2023-12-31": 7164000000,
+     "2024-12-31": 6688000000,
+     "2025-12-31": 6416000000
+    },
+    "capex": {
+     "2020-12-31": 791000000,
+     "2021-12-31": 1240000000,
+     "2022-12-31": 1118000000,
+     "2023-12-31": 1383000000,
+     "2024-12-31": 1392000000,
+     "2025-12-31": 1156000000
+    },
+    "stock_comp": {
+     "2020-12-31": 187000000,
+     "2021-12-31": 184000000,
+     "2022-12-31": 295000000,
+     "2023-12-31": 306000000,
+     "2024-12-31": 288000000,
+     "2025-12-31": 298000000
+    },
+    "diluted_shares": {
+     "2023-12-31": 743100000,
+     "2024-12-31": 737200000,
+     "2025-12-31": 716100000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-25",
+     "value": 25608000000
+    },
+    "operating_income": {
+     "end": "2026-09-25",
+     "value": 5218000000
+    },
+    "net_income": {
+     "end": "2026-09-25",
+     "value": 4331000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-25",
+     "value": 6859000000
+    },
+    "capex": {
+     "end": "2026-09-25",
+     "value": 1132000000
+    },
+    "stock_comp": {
+     "end": "2026-09-25",
+     "value": 329000000
+    },
+    "diluted_shares": {
+     "end": "2026-09-25",
+     "value": 708500000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0000313616",
+   "name": "DANAHER CORPORATION"
+  },
+  "EIX": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 13578000000,
+     "2021-12-31": 14905000000,
+     "2022-12-31": 17220000000,
+     "2023-12-31": 16338000000,
+     "2024-12-31": 17599000000,
+     "2025-12-31": 19317000000
+    },
+    "operating_income": {
+     "2020-12-31": 1217000000,
+     "2021-12-31": 1477000000,
+     "2022-12-31": 1483000000,
+     "2023-12-31": 2627000000,
+     "2024-12-31": 2930000000,
+     "2025-12-31": 7093000000
+    },
+    "net_income": {
+     "2018-12-31": -423000000,
+     "2019-12-31": 1284000000,
+     "2020-12-31": 739000000,
+     "2023-12-31": 1197000000,
+     "2024-12-31": 1284000000,
+     "2025-12-31": 4459000000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 1263000000,
+     "2021-12-31": 11000000,
+     "2022-12-31": 3216000000,
+     "2023-12-31": 3401000000,
+     "2024-12-31": 5014000000,
+     "2025-12-31": 5800000000
+    },
+    "capex": {
+     "2020-12-31": 5484000000,
+     "2021-12-31": 5505000000,
+     "2022-12-31": 5778000000,
+     "2023-12-31": 5448000000,
+     "2024-12-31": 5707000000,
+     "2025-12-31": 6515000000
+    },
+    "stock_comp": {
+     "2020-12-31": 29000000,
+     "2021-12-31": 39000000,
+     "2022-12-31": 42000000,
+     "2023-12-31": 46000000,
+     "2024-12-31": 57000000,
+     "2025-12-31": 57000000
+    },
+    "diluted_shares": {
+     "2023-12-31": 385000000,
+     "2024-12-31": 388000000,
+     "2025-12-31": 386000000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 18559000000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 5898000000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 3637000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 6965000000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 7097000000
+    },
+    "stock_comp": {
+     "end": "2025-12-31",
+     "value": 57000000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 387000000
+    }
+   },
+   "source": {
+    "revenue": "Revenues",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "AllocatedShareBasedCompensationExpense",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0000827052",
+   "name": "EDISON INTERNATIONAL"
+  },
+  "EME": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 8797061000,
+     "2021-12-31": 9903580000,
+     "2022-12-31": 11076120000,
+     "2023-12-31": 12582873000,
+     "2024-12-31": 14566116000,
+     "2025-12-31": 16986422000
+    },
+    "operating_income": {
+     "2020-12-31": 256834000,
+     "2021-12-31": 530800000,
+     "2022-12-31": 564877000,
+     "2023-12-31": 875756000,
+     "2024-12-31": 1344863000,
+     "2025-12-31": 1713418000
+    },
+    "net_income": {
+     "2020-12-31": 132943000,
+     "2021-12-31": 383532000,
+     "2022-12-31": 406122000,
+     "2023-12-31": 632994000,
+     "2024-12-31": 1007145000,
+     "2025-12-31": 1272817000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 806366000,
+     "2021-12-31": 318817000,
+     "2022-12-31": 497933000,
+     "2023-12-31": 899655000,
+     "2024-12-31": 1407894000,
+     "2025-12-31": 1302063000
+    },
+    "capex": {
+     "2020-12-31": 47969000,
+     "2021-12-31": 36192000,
+     "2022-12-31": 49289000,
+     "2023-12-31": 78404000,
+     "2024-12-31": 74950000,
+     "2025-12-31": 112750000
+    },
+    "diluted_shares": {
+     "2023-12-31": 47564258,
+     "2024-12-31": 46808293,
+     "2025-12-31": 45145767
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 19837766000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 2070731000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 1543715000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 1611035000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 128933000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 44491534
+    }
+   },
+   "source": {
+    "revenue": "Revenues",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquireProductiveAssets",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [
+    "stock_comp"
+   ],
+   "cik": "0000105634",
+   "name": "EMCOR Group, Inc."
+  },
+  "ETN": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 17858000000,
+     "2021-12-31": 19628000000,
+     "2022-12-31": 20752000000,
+     "2023-12-31": 23196000000,
+     "2024-12-31": 24878000000,
+     "2025-12-31": 27448000000
+    },
+    "net_income": {
+     "2020-12-31": 1410000000,
+     "2021-12-31": 2144000000,
+     "2022-12-31": 2462000000,
+     "2023-12-31": 3218000000,
+     "2024-12-31": 3794000000,
+     "2025-12-31": 4087000000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 2944000000,
+     "2021-12-31": 2163000000,
+     "2022-12-31": 2533000000,
+     "2023-12-31": 3624000000,
+     "2024-12-31": 4327000000,
+     "2025-12-31": 4472000000
+    },
+    "capex": {
+     "2020-12-31": 389000000,
+     "2021-12-31": 575000000,
+     "2022-12-31": 598000000,
+     "2023-12-31": 757000000,
+     "2024-12-31": 808000000,
+     "2025-12-31": 919000000
+    },
+    "diluted_shares": {
+     "2023-12-31": 401100000,
+     "2024-12-31": 399400000,
+     "2025-12-31": 391200000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 31984000000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 3897000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 4908000000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 1113000000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 389400000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [
+    "operating_income",
+    "stock_comp"
+   ],
+   "cik": "0001551182",
+   "name": "EATON CORPORATION plc"
+  },
+  "FIX": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 2856659000,
+     "2021-12-31": 3073636000,
+     "2022-12-31": 4140364000,
+     "2023-12-31": 5206760000,
+     "2024-12-31": 7027476000,
+     "2025-12-31": 9101641000
+    },
+    "operating_income": {
+     "2020-12-31": 190651000,
+     "2021-12-31": 188438000,
+     "2022-12-31": 253849000,
+     "2023-12-31": 418388000,
+     "2024-12-31": 749369000,
+     "2025-12-31": 1314589000
+    },
+    "net_income": {
+     "2020-12-31": 150139000,
+     "2021-12-31": 143348000,
+     "2022-12-31": 245947000,
+     "2023-12-31": 323398000,
+     "2024-12-31": 522433000,
+     "2025-12-31": 1022558000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 286510000,
+     "2021-12-31": 180151000,
+     "2022-12-31": 301531000,
+     "2023-12-31": 639568000,
+     "2024-12-31": 849057000,
+     "2025-12-31": 1186356000
+    },
+    "capex": {
+     "2020-12-31": 24131000,
+     "2021-12-31": 22330000,
+     "2022-12-31": 48359000,
+     "2023-12-31": 94838000,
+     "2024-12-31": 111071000,
+     "2025-12-31": 154903000
+    },
+    "stock_comp": {
+     "2020-12-31": 6934000,
+     "2021-12-31": 10593000,
+     "2022-12-31": 10532000,
+     "2023-12-31": 12939000,
+     "2024-12-31": 16646000,
+     "2025-12-31": 21809000
+    },
+    "diluted_shares": {
+     "2023-12-31": 35895000,
+     "2024-12-31": 35775000,
+     "2025-12-31": 35413000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 12543357000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 2094998000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 1631830000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 3006920000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 565527000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 37311000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 35221000
+    }
+   },
+   "source": {
+    "revenue": "Revenues",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001035983",
+   "name": "COMFORT SYSTEMS USA,\u00a0INC."
+  },
+  "FLUT": {
+   "annual": {
+    "revenue": {
+     "2022-12-31": 9463000000,
+     "2023-12-31": 11790000000,
+     "2024-12-31": 14048000000,
+     "2025-12-31": 16383000000
+    },
+    "operating_income": {
+     "2022-12-31": -88000000,
+     "2023-12-31": -549000000,
+     "2024-12-31": 869000000,
+     "2025-12-31": 36000000
+    },
+    "operating_cash_flow": {
+     "2022-12-31": 1163000000,
+     "2023-12-31": 937000000,
+     "2024-12-31": 1602000000,
+     "2025-12-31": 1184000000
+    },
+    "capex": {
+     "2022-12-31": 122000000,
+     "2023-12-31": 159000000,
+     "2024-12-31": 144000000,
+     "2025-12-31": 105000000
+    },
+    "software_capex": {
+     "2022-12-31": 207000000,
+     "2023-12-31": 268000000,
+     "2024-12-31": 381000000,
+     "2025-12-31": 510000000
+    },
+    "stock_comp": {
+     "2022-12-31": 132000000,
+     "2023-12-31": 180000000,
+     "2024-12-31": 196000000,
+     "2025-12-31": 246000000
+    },
+    "diluted_shares": {
+     "2023-12-31": 177000000,
+     "2024-12-31": 180000000,
+     "2025-12-31": 177000000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 17241000000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": -998000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 1332000000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 95000000
+    },
+    "software_capex": {
+     "end": "2026-09-30",
+     "value": 594000000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 241000000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 175000000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerIncludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "software_capex": "PaymentsForSoftware",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [
+    "net_income"
+   ],
+   "cik": "0001635327",
+   "name": "Flutter Entertainment plc"
+  },
+  "GEHC": {
+   "annual": {
+    "revenue": {
+     "2021-12-31": 17585000000,
+     "2022-12-31": 18341000000,
+     "2023-12-31": 19552000000,
+     "2024-12-31": 19672000000,
+     "2025-12-31": 20625000000
+    },
+    "operating_income": {
+     "2021-12-31": 2795000000,
+     "2022-12-31": 2522000000,
+     "2023-12-31": 2435000000,
+     "2024-12-31": 2625000000,
+     "2025-12-31": 2763000000
+    },
+    "net_income": {
+     "2021-12-31": 2247000000,
+     "2022-12-31": 1916000000,
+     "2023-12-31": 1568000000,
+     "2024-12-31": 1993000000,
+     "2025-12-31": 2084000000
+    },
+    "capex": {
+     "2021-12-31": 248000000,
+     "2022-12-31": 310000000,
+     "2023-12-31": 387000000,
+     "2024-12-31": 401000000,
+     "2025-12-31": 482000000
+    },
+    "stock_comp": {
+     "2021-12-31": 76000000,
+     "2022-12-31": 67000000,
+     "2023-12-31": 114000000,
+     "2024-12-31": 125000000,
+     "2025-12-31": 130000000
+    },
+    "diluted_shares": {
+     "2023-12-31": 458000000,
+     "2024-12-31": 459000000,
+     "2025-12-31": 458000000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 21637000000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 2885000000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 2153000000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 526000000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 152000000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 455000000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "capex": "PaymentsToAcquireProductiveAssets",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [
+    "operating_cash_flow"
+   ],
+   "cik": "0001932393",
+   "name": "GE HEALTHCARE TECHNOLOGIES INC."
+  },
+  "GEV": {
+   "annual": {
+    "revenue": {
+     "2022-12-31": 29654000000,
+     "2023-12-31": 33239000000,
+     "2024-12-31": 34935000000,
+     "2025-12-31": 38068000000
+    },
+    "operating_income": {
+     "2022-12-31": -2881000000,
+     "2023-12-31": -923000000,
+     "2024-12-31": 471000000,
+     "2025-12-31": 1388000000
+    },
+    "net_income": {
+     "2022-12-31": -2736000000,
+     "2023-12-31": -438000000,
+     "2024-12-31": 1552000000,
+     "2025-12-31": 4884000000
+    },
+    "operating_cash_flow": {
+     "2022-12-31": -114000000,
+     "2023-12-31": 1186000000,
+     "2024-12-31": 2583000000,
+     "2025-12-31": 4987000000
+    },
+    "capex": {
+     "2022-12-31": 513000000,
+     "2023-12-31": 744000000,
+     "2024-12-31": 883000000,
+     "2025-12-31": 1277000000
+    },
+    "stock_comp": {
+     "2024-12-31": 155000000,
+     "2025-12-31": 257000000
+    },
+    "diluted_shares": {
+     "2023-12-31": 274000000,
+     "2024-12-31": 278000000,
+     "2025-12-31": 276000000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 44040000000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 2828000000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 10368000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 19216000000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 2101000000
+    },
+    "stock_comp": {
+     "end": "2025-12-31",
+     "value": 257000000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 270000000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquireProductiveAssets",
+    "stock_comp": "AllocatedShareBasedCompensationExpense",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001996810",
+   "name": "GE Vernova Inc."
+  },
+  "GIS": {
+   "annual": {
+    "revenue": {
+     "2021-05-30": 18127000000,
+     "2022-05-29": 18992800000,
+     "2023-05-28": 20094200000,
+     "2024-05-26": 19857200000,
+     "2025-05-25": 19486600000,
+     "2026-05-31": 18424600000
+    },
+    "operating_income": {
+     "2021-05-30": 3144800000,
+     "2022-05-29": 3475800000,
+     "2023-05-28": 3433800000,
+     "2024-05-26": 3431700000,
+     "2025-05-25": 3304800000,
+     "2026-05-31": 885800000
+    },
+    "net_income": {
+     "2021-05-30": 2339800000,
+     "2022-05-29": 2707300000,
+     "2023-05-28": 2593900000,
+     "2024-05-26": 2496600000,
+     "2025-05-25": 2295200000,
+     "2026-05-31": -87600000
+    },
+    "operating_cash_flow": {
+     "2021-05-30": 2983200000,
+     "2022-05-29": 3316100000,
+     "2023-05-28": 2778600000,
+     "2024-05-26": 3302600000,
+     "2025-05-25": 2918200000,
+     "2026-05-31": 2166200000
+    },
+    "capex": {
+     "2021-05-30": 530800000,
+     "2022-05-29": 568700000,
+     "2023-05-28": 689500000,
+     "2024-05-26": 774100000,
+     "2025-05-25": 625300000,
+     "2026-05-31": 539900000
+    },
+    "stock_comp": {
+     "2021-05-30": 89900000,
+     "2022-05-29": 98700000,
+     "2023-05-28": 111700000,
+     "2024-05-26": 95300000,
+     "2025-05-25": 91700000,
+     "2026-05-31": 79400000
+    },
+    "diluted_shares": {
+     "2024-05-26": 579500000,
+     "2025-05-25": 557500000,
+     "2026-05-31": 537700000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-08-30",
+     "value": 18296600000
+    },
+    "operating_income": {
+     "end": "2026-08-30",
+     "value": -206400000
+    },
+    "net_income": {
+     "end": "2026-08-30",
+     "value": -894800000
+    },
+    "operating_cash_flow": {
+     "end": "2026-08-30",
+     "value": 2067000000
+    },
+    "capex": {
+     "end": "2026-08-30",
+     "value": 520900000
+    },
+    "stock_comp": {
+     "end": "2026-08-30",
+     "value": 86100000
+    },
+    "diluted_shares": {
+     "end": "2026-08-30",
+     "value": 537900000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0000040704",
+   "name": "GENERAL MILLS, INC."
+  },
+  "GOOGL": {
+   "annual": {
+    "revenue": {
+     "2019-12-31": 161857000000,
+     "2020-12-31": 182527000000,
+     "2021-12-31": 257637000000,
+     "2023-12-31": 307394000000,
+     "2024-12-31": 350018000000,
+     "2025-12-31": 402836000000
+    },
+    "operating_income": {
+     "2020-12-31": 41224000000,
+     "2021-12-31": 78714000000,
+     "2022-12-31": 74842000000,
+     "2023-12-31": 84293000000,
+     "2024-12-31": 112390000000,
+     "2025-12-31": 129039000000
+    },
+    "net_income": {
+     "2020-12-31": 40269000000,
+     "2021-12-31": 76033000000,
+     "2022-12-31": 59972000000,
+     "2023-12-31": 73795000000,
+     "2024-12-31": 100118000000,
+     "2025-12-31": 132170000000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 65124000000,
+     "2021-12-31": 91652000000,
+     "2022-12-31": 91495000000,
+     "2023-12-31": 101746000000,
+     "2024-12-31": 125299000000,
+     "2025-12-31": 164713000000
+    },
+    "capex": {
+     "2020-12-31": 22281000000,
+     "2021-12-31": 24640000000,
+     "2022-12-31": 31485000000,
+     "2023-12-31": 32251000000,
+     "2024-12-31": 52535000000,
+     "2025-12-31": 91447000000
+    },
+    "stock_comp": {
+     "2020-12-31": 12991000000,
+     "2021-12-31": 15376000000,
+     "2022-12-31": 19362000000,
+     "2023-12-31": 22460000000,
+     "2024-12-31": 22785000000,
+     "2025-12-31": 24953000000
+    },
+    "diluted_shares": {
+     "2023-12-31": 12722000000,
+     "2024-12-31": 12447000000,
+     "2025-12-31": 12230000000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 471098000000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 156976000000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 235694000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 179551000000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 159804000000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 30409000000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 12324000000
+    }
+   },
+   "source": {
+    "revenue": "Revenues",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001652044",
+   "name": "Alphabet Inc."
+  },
+  "IBM": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 55179000000,
+     "2021-12-31": 57350000000,
+     "2022-12-31": 60530000000,
+     "2023-12-31": 61860000000,
+     "2024-12-31": 62753000000,
+     "2025-12-31": 67535000000
+    },
+    "net_income": {
+     "2020-12-31": 5590000000,
+     "2021-12-31": 5743000000,
+     "2022-12-31": 1639000000,
+     "2023-12-31": 7502000000,
+     "2024-12-31": 6023000000,
+     "2025-12-31": 10593000000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 18197000000,
+     "2021-12-31": 12796000000,
+     "2022-12-31": 10435000000,
+     "2023-12-31": 13931000000,
+     "2024-12-31": 13445000000,
+     "2025-12-31": 13193000000
+    },
+    "capex": {
+     "2020-12-31": 2618000000,
+     "2021-12-31": 2062000000,
+     "2022-12-31": 1346000000,
+     "2023-12-31": 1245000000,
+     "2024-12-31": 1048000000,
+     "2025-12-31": 1091000000
+    },
+    "stock_comp": {
+     "2020-12-31": 937000000,
+     "2021-12-31": 982000000,
+     "2022-12-31": 987000000,
+     "2023-12-31": 1133000000,
+     "2024-12-31": 1311000000,
+     "2025-12-31": 1715000000
+    },
+    "diluted_shares": {
+     "2023-12-31": 922073828,
+     "2024-12-31": 937161224,
+     "2025-12-31": 948675228
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 69868000000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 11171000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 15831000000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 1175000000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 1969000000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 952972693
+    }
+   },
+   "source": {
+    "revenue": "Revenues",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0000051143",
+   "name": "INTERNATIONAL BUSINESS MACHINES CORP"
+  },
+  "INVH": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 1822828000,
+     "2021-12-31": 1996615000,
+     "2022-12-31": 2238121000,
+     "2023-12-31": 2432278000,
+     "2024-12-31": 2618942000,
+     "2025-12-31": 2729296000
+    },
+    "net_income": {
+     "2020-12-31": 196212000,
+     "2021-12-31": 261425000,
+     "2022-12-31": 383329000,
+     "2023-12-31": 519470000,
+     "2024-12-31": 453917000,
+     "2025-12-31": 587924000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 696712000,
+     "2021-12-31": 907660000,
+     "2022-12-31": 1023587000,
+     "2023-12-31": 1107088000,
+     "2024-12-31": 1081805000,
+     "2025-12-31": 1206230000
+    },
+    "stock_comp": {
+     "2020-12-31": 17090000,
+     "2021-12-31": 27170000,
+     "2022-12-31": 28962000,
+     "2023-12-31": 29503000,
+     "2024-12-31": 27918000,
+     "2025-12-31": 27830000
+    },
+    "diluted_shares": {
+     "2023-12-31": 613288708,
+     "2024-12-31": 613631617,
+     "2025-12-31": 613177806
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 2898190000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 682396000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 1189226000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 38801000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 595690705
+    }
+   },
+   "source": {
+    "revenue": "Revenues",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [
+    "operating_income",
+    "capex"
+   ],
+   "cik": "0001687229",
+   "name": "Invitation Homes Inc."
+  },
+  "ISRG": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 4358400000,
+     "2021-12-31": 5710100000,
+     "2022-12-31": 6222200000,
+     "2023-12-31": 7124100000,
+     "2024-12-31": 8352100000,
+     "2025-12-31": 10064700000
+    },
+    "operating_income": {
+     "2020-12-31": 1049800000,
+     "2021-12-31": 1821000000,
+     "2022-12-31": 1577100000,
+     "2023-12-31": 1766800000,
+     "2024-12-31": 2348900000,
+     "2025-12-31": 2945500000
+    },
+    "net_income": {
+     "2020-12-31": 1060600000,
+     "2021-12-31": 1704600000,
+     "2022-12-31": 1322300000,
+     "2023-12-31": 1798000000,
+     "2024-12-31": 2322600000,
+     "2025-12-31": 2856000000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 1484800000,
+     "2021-12-31": 2089400000,
+     "2022-12-31": 1490800000,
+     "2023-12-31": 1813800000,
+     "2024-12-31": 2415000000,
+     "2025-12-31": 3030500000
+    },
+    "capex": {
+     "2020-12-31": 341500000,
+     "2021-12-31": 339500000,
+     "2022-12-31": 532400000,
+     "2023-12-31": 1064200000,
+     "2024-12-31": 1111200000,
+     "2025-12-31": 539800000
+    },
+    "stock_comp": {
+     "2020-12-31": 395400000,
+     "2021-12-31": 449200000,
+     "2022-12-31": 513200000,
+     "2023-12-31": 592800000,
+     "2024-12-31": 676800000,
+     "2025-12-31": 788200000
+    },
+    "diluted_shares": {
+     "2023-12-31": 357400000,
+     "2024-12-31": 362000000,
+     "2025-12-31": 362700000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 11578000000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 3284100000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 2957200000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 4089500000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 491500000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 835300000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 356200000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquireProductiveAssets",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001035267",
+   "name": "Intuitive Surgical, Inc."
+  },
+  "LITE": {
+   "annual": {
+    "revenue": {
+     "2021-07-03": 1742800000,
+     "2022-07-02": 1712600000,
+     "2023-07-01": 1767000000,
+     "2024-06-29": 1359200000,
+     "2025-06-28": 1645000000,
+     "2026-06-27": 3014000000
+    },
+    "operating_income": {
+     "2021-07-03": 527000000,
+     "2022-07-02": 303300000,
+     "2023-07-01": -115700000,
+     "2024-06-29": -434000000,
+     "2025-06-28": -180100000,
+     "2026-06-27": 524800000
+    },
+    "net_income": {
+     "2021-07-03": 397300000,
+     "2022-07-02": 198900000,
+     "2023-07-01": -131600000,
+     "2024-06-29": -546500000,
+     "2025-06-28": 25900000,
+     "2026-06-27": -6935100000
+    },
+    "operating_cash_flow": {
+     "2021-07-03": 738700000,
+     "2022-07-02": 459300000,
+     "2023-07-01": 179800000,
+     "2024-06-29": 24700000,
+     "2025-06-28": 126300000,
+     "2026-06-27": 751400000
+    },
+    "capex": {
+     "2021-07-03": 84800000,
+     "2022-07-02": 91200000,
+     "2023-07-01": 128500000,
+     "2024-06-29": 133000000,
+     "2025-06-28": 231000000,
+     "2026-06-27": 451300000
+    },
+    "software_capex": {
+     "2022-07-02": 0,
+     "2023-07-01": 0,
+     "2024-06-29": 4000000,
+     "2025-06-28": 0,
+     "2026-06-27": 0
+    },
+    "stock_comp": {
+     "2021-07-03": 92900000,
+     "2022-07-02": 103100000,
+     "2023-07-01": 148400000,
+     "2024-06-29": 128800000,
+     "2025-06-28": 177200000,
+     "2026-06-27": 170200000
+    },
+    "diluted_shares": {
+     "2024-06-29": 67300000,
+     "2025-06-28": 69600000,
+     "2026-06-27": 74600000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-26",
+     "value": 3742800000
+    },
+    "operating_income": {
+     "end": "2026-09-26",
+     "value": 877900000
+    },
+    "net_income": {
+     "end": "2026-09-26",
+     "value": -6579000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-26",
+     "value": 961200000
+    },
+    "capex": {
+     "end": "2026-09-26",
+     "value": 604900000
+    },
+    "software_capex": {
+     "end": "2026-06-27",
+     "value": 0
+    },
+    "stock_comp": {
+     "end": "2026-09-26",
+     "value": 260300000
+    },
+    "diluted_shares": {
+     "end": "2026-09-26",
+     "value": 101700000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerIncludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "software_capex": "PaymentsToAcquireIntangibleAssets",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001633978",
+   "name": "Lumentum Holdings Inc."
+  },
+  "LLY": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 24539800000,
+     "2021-12-31": 28318400000,
+     "2022-12-31": 28541400000,
+     "2023-12-31": 34124000000,
+     "2024-12-31": 45043000000,
+     "2025-12-31": 65179000000
+    },
+    "net_income": {
+     "2020-12-31": 6193700000,
+     "2021-12-31": 5581700000,
+     "2022-12-31": 6244800000,
+     "2023-12-31": 5240000000,
+     "2024-12-31": 10590000000,
+     "2025-12-31": 20640000000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 6499600000,
+     "2021-12-31": 7365900000,
+     "2022-12-31": 7585700000,
+     "2023-12-31": 4240000000,
+     "2024-12-31": 8818000000,
+     "2025-12-31": 16813000000
+    },
+    "capex": {
+     "2020-12-31": 1387900000,
+     "2021-12-31": 1309800000,
+     "2022-12-31": 1854300000,
+     "2023-12-31": 3448000000,
+     "2024-12-31": 5058000000,
+     "2025-12-31": 7841000000
+    },
+    "stock_comp": {
+     "2020-12-31": 308100000,
+     "2021-12-31": 342800000,
+     "2022-12-31": 371100000,
+     "2023-12-31": 629000000,
+     "2024-12-31": 646000000,
+     "2025-12-31": 626000000
+    },
+    "diluted_shares": {
+     "2023-12-31": 903300000,
+     "2024-12-31": 904100000,
+     "2025-12-31": 899300000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 86462000000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 27580000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 30645000000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 10984000000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 698000000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 894400000
+    }
+   },
+   "source": {
+    "revenue": "Revenues",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquireOtherPropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [
+    "software_capex"
+   ],
+   "cik": "0000059478",
+   "name": "ELI LILLY AND COMPANY"
+  },
+  "LMB": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 568209000,
+     "2021-12-31": 490351000,
+     "2022-12-31": 496782000,
+     "2023-12-31": 516350000,
+     "2024-12-31": 518781000,
+     "2025-12-31": 646804000
+    },
+    "operating_income": {
+     "2020-12-31": 17155000,
+     "2021-12-31": 13990000,
+     "2022-12-31": 12010000,
+     "2023-12-31": 29284000,
+     "2024-12-31": 38624000,
+     "2025-12-31": 49454000
+    },
+    "net_income": {
+     "2020-12-31": 5807000,
+     "2021-12-31": 6714000,
+     "2022-12-31": 6799000,
+     "2023-12-31": 20754000,
+     "2024-12-31": 30875000,
+     "2025-12-31": 39064000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 39815000,
+     "2021-12-31": -24233000,
+     "2022-12-31": 35373000,
+     "2023-12-31": 57366000,
+     "2024-12-31": 36783000,
+     "2025-12-31": 45700000
+    },
+    "capex": {
+     "2020-12-31": 1483000,
+     "2021-12-31": 791000,
+     "2022-12-31": 993000,
+     "2023-12-31": 2266000,
+     "2024-12-31": 7524000,
+     "2025-12-31": 3807000
+    },
+    "stock_comp": {
+     "2020-12-31": 1068000,
+     "2021-12-31": 2601000,
+     "2022-12-31": 2742000,
+     "2023-12-31": 4910000,
+     "2024-12-31": 5773000,
+     "2025-12-31": 7016000
+    },
+    "diluted_shares": {
+     "2023-12-31": 11812098,
+     "2024-12-31": 12027398,
+     "2025-12-31": 12079583
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 729648000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 41004000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 30877000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 59323000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 2032000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 7300000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 12028816
+    }
+   },
+   "source": {
+    "revenue": "Revenues",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001606163",
+   "name": "LIMBACH HOLDINGS, INC."
+  },
+  "LPLA": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 5871640000,
+     "2021-12-31": 7720830000,
+     "2022-12-31": 8600825000,
+     "2023-12-31": 10052848000,
+     "2024-12-31": 12385107000,
+     "2025-12-31": 16989479000
+    },
+    "net_income": {
+     "2020-12-31": 472640000,
+     "2021-12-31": 459866000,
+     "2022-12-31": 845702000,
+     "2023-12-31": 1066250000,
+     "2024-12-31": 1058616000,
+     "2025-12-31": 863024000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 789941000,
+     "2021-12-31": 453134000,
+     "2022-12-31": 1945577000,
+     "2023-12-31": 512611000,
+     "2024-12-31": 277589000,
+     "2025-12-31": -411404000
+    },
+    "capex": {
+     "2020-12-31": 155532000,
+     "2021-12-31": 215987000,
+     "2022-12-31": 306596000,
+     "2023-12-31": 403286000,
+     "2024-12-31": 562531000,
+     "2025-12-31": 570376000
+    },
+    "stock_comp": {
+     "2020-12-31": 33975000,
+     "2021-12-31": 44175000,
+     "2022-12-31": 52608000,
+     "2023-12-31": 68669000,
+     "2024-12-31": 91761000,
+     "2025-12-31": 79362000
+    },
+    "diluted_shares": {
+     "2023-12-31": 77861000,
+     "2024-12-31": 75427000,
+     "2025-12-31": 79061000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 20401557000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 1392945000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 1774509000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 766578000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 89076000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 79814000
+    }
+   },
+   "source": {
+    "revenue": "Revenues",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001397911",
+   "name": "LPL Financial Holdings Inc."
+  },
+  "MA": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 15301000000,
+     "2021-12-31": 18884000000,
+     "2022-12-31": 22237000000,
+     "2023-12-31": 25098000000,
+     "2024-12-31": 28167000000,
+     "2025-12-31": 32791000000
+    },
+    "operating_income": {
+     "2020-12-31": 8081000000,
+     "2021-12-31": 10082000000,
+     "2022-12-31": 12264000000,
+     "2023-12-31": 14008000000,
+     "2024-12-31": 15582000000,
+     "2025-12-31": 18897000000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 7224000000,
+     "2021-12-31": 9463000000,
+     "2022-12-31": 11195000000,
+     "2023-12-31": 11980000000,
+     "2024-12-31": 14780000000,
+     "2025-12-31": 17648000000
+    },
+    "capex": {
+     "2020-12-31": 339000000,
+     "2021-12-31": 407000000,
+     "2022-12-31": 442000000,
+     "2023-12-31": 371000000,
+     "2024-12-31": 474000000,
+     "2025-12-31": 489000000
+    },
+    "stock_comp": {
+     "2020-12-31": 254000000,
+     "2021-12-31": 273000000,
+     "2022-12-31": 295000000,
+     "2023-12-31": 460000000,
+     "2024-12-31": 526000000,
+     "2025-12-31": 597000000
+    },
+    "diluted_shares": {
+     "2023-12-31": 946000000,
+     "2024-12-31": 927000000,
+     "2025-12-31": 906000000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 36288000000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 21266000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 16861000000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 779000000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 637000000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 884000000
+    }
+   },
+   "source": {
+    "revenue": "Revenues",
+    "operating_income": "OperatingIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [
+    "net_income"
+   ],
+   "cik": "0001141391",
+   "name": "Mastercard Incorporated"
+  },
+  "META": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 85965000000,
+     "2021-12-31": 117929000000,
+     "2022-12-31": 116609000000,
+     "2023-12-31": 134902000000,
+     "2024-12-31": 164501000000,
+     "2025-12-31": 200966000000
+    },
+    "operating_income": {
+     "2020-12-31": 32671000000,
+     "2021-12-31": 46753000000,
+     "2022-12-31": 28944000000,
+     "2023-12-31": 46751000000,
+     "2024-12-31": 69380000000,
+     "2025-12-31": 83276000000
+    },
+    "net_income": {
+     "2020-12-31": 29146000000,
+     "2021-12-31": 39370000000,
+     "2022-12-31": 23200000000,
+     "2023-12-31": 39098000000,
+     "2024-12-31": 62360000000,
+     "2025-12-31": 60458000000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 38747000000,
+     "2021-12-31": 57683000000,
+     "2022-12-31": 50475000000,
+     "2023-12-31": 71113000000,
+     "2024-12-31": 91328000000,
+     "2025-12-31": 115800000000
+    },
+    "capex": {
+     "2020-12-31": 15163000000,
+     "2021-12-31": 18690000000,
+     "2022-12-31": 31186000000,
+     "2023-12-31": 27045000000,
+     "2024-12-31": 37256000000,
+     "2025-12-31": 69691000000
+    },
+    "stock_comp": {
+     "2020-12-31": 6536000000,
+     "2021-12-31": 9164000000,
+     "2022-12-31": 11992000000,
+     "2023-12-31": 14027000000,
+     "2024-12-31": 16690000000,
+     "2025-12-31": 20427000000
+    },
+    "diluted_shares": {
+     "2023-12-31": 2629000000,
+     "2024-12-31": 2614000000,
+     "2025-12-31": 2574000000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 241605000000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 79380000000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 75249000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 133087000000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 104438000000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 26943000000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 2568000000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001326801",
+   "name": "Meta Platforms, Inc."
+  },
+  "MKTX": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 689125000,
+     "2021-12-31": 698951000,
+     "2022-12-31": 718300000,
+     "2023-12-31": 752547000,
+     "2024-12-31": 817097000,
+     "2025-12-31": 846268000
+    },
+    "operating_income": {
+     "2020-12-31": 374728000,
+     "2021-12-31": 337235000,
+     "2022-12-31": 326876000,
+     "2023-12-31": 315019000,
+     "2024-12-31": 340870000,
+     "2025-12-31": 341838000
+    },
+    "net_income": {
+     "2020-12-31": 299377000,
+     "2021-12-31": 257888000,
+     "2022-12-31": 250224000,
+     "2023-12-31": 258055000,
+     "2024-12-31": 274181000,
+     "2025-12-31": 246627000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 404489000,
+     "2021-12-31": 282091000,
+     "2022-12-31": 289231000,
+     "2023-12-31": 333767000,
+     "2024-12-31": 385237000,
+     "2025-12-31": 382139000
+    },
+    "capex": {
+     "2020-12-31": 15010000,
+     "2021-12-31": 17493000,
+     "2022-12-31": 13142000,
+     "2023-12-31": 9326000,
+     "2024-12-31": 9942000,
+     "2025-12-31": 8204000
+    },
+    "software_capex": {
+     "2020-12-31": 30618000,
+     "2021-12-31": 33123000,
+     "2022-12-31": 38730000,
+     "2023-12-31": 43122000,
+     "2024-12-31": 46623000,
+     "2025-12-31": 49810000
+    },
+    "stock_comp": {
+     "2020-12-31": 25613000,
+     "2021-12-31": 27314000,
+     "2022-12-31": 29864000,
+     "2023-12-31": 29190000,
+     "2024-12-31": 29684000,
+     "2025-12-31": 30918000
+    },
+    "diluted_shares": {
+     "2023-12-31": 37654000,
+     "2024-12-31": 37672000,
+     "2025-12-31": 37137000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 871611000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 341206000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 292082000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 357442000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 5069000
+    },
+    "software_capex": {
+     "end": "2026-09-30",
+     "value": 51372000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 33393000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 35302000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "software_capex": "PaymentsToDevelopSoftware",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001278021",
+   "name": "MARKETAXESS HOLDINGS INC."
+  },
+  "MRVL": {
+   "annual": {
+    "revenue": {
+     "2021-01-30": 2968900000,
+     "2022-01-29": 4462400000,
+     "2023-01-28": 5919600000,
+     "2024-02-03": 5507700000,
+     "2025-02-01": 5767300000,
+     "2026-01-31": 8194600000
+    },
+    "operating_income": {
+     "2021-01-30": -258400000,
+     "2022-01-29": -347700000,
+     "2023-01-28": 238000000,
+     "2024-02-03": -567700000,
+     "2025-02-01": -720300000,
+     "2026-01-31": 1322900000
+    },
+    "net_income": {
+     "2021-01-30": -277300000,
+     "2022-01-29": -421000000,
+     "2023-01-28": -163500000,
+     "2024-02-03": -933400000,
+     "2025-02-01": -885000000,
+     "2026-01-31": 2670100000
+    },
+    "operating_cash_flow": {
+     "2021-01-30": 817300000,
+     "2022-01-29": 819300000,
+     "2023-01-28": 1288800000,
+     "2024-02-03": 1370500000,
+     "2025-02-01": 1681200000,
+     "2026-01-31": 1750500000
+    },
+    "capex": {
+     "2021-01-30": 106800000,
+     "2022-01-29": 169200000,
+     "2023-01-28": 206200000,
+     "2024-02-03": 336300000,
+     "2025-02-01": 284600000,
+     "2026-01-31": 354100000
+    },
+    "software_capex": {
+     "2021-01-30": 12700000,
+     "2022-01-29": 17700000,
+     "2023-01-28": 11100000,
+     "2024-02-03": 13900000,
+     "2025-02-01": 7000000,
+     "2026-01-31": 4500000
+    },
+    "stock_comp": {
+     "2021-01-30": 241500000,
+     "2022-01-29": 460700000,
+     "2023-01-28": 552400000,
+     "2024-02-03": 609800000,
+     "2025-02-01": 597400000,
+     "2026-01-31": 590800000
+    },
+    "diluted_shares": {
+     "2024-02-03": 861300000,
+     "2025-02-01": 865500000,
+     "2026-01-31": 869700000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-08-01",
+     "value": 9450300000
+    },
+    "operating_income": {
+     "end": "2026-08-01",
+     "value": 1561300000
+    },
+    "net_income": {
+     "end": "2026-08-01",
+     "value": 2639900000
+    },
+    "operating_cash_flow": {
+     "end": "2026-08-01",
+     "value": 2200300000
+    },
+    "capex": {
+     "end": "2026-08-01",
+     "value": 470200000
+    },
+    "software_capex": {
+     "end": "2026-08-01",
+     "value": 7300000
+    },
+    "stock_comp": {
+     "end": "2026-08-01",
+     "value": 828900000
+    },
+    "diluted_shares": {
+     "end": "2026-08-01",
+     "value": 907100000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "software_capex": "PaymentsToAcquireIntangibleAssets",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001835632",
+   "name": "MARVELL TECHNOLOGY, INC"
+  },
+  "MSFT": {
+   "annual": {
+    "revenue": {
+     "2021-06-30": 168088000000,
+     "2022-06-30": 198270000000,
+     "2023-06-30": 211915000000,
+     "2024-06-30": 245122000000,
+     "2025-06-30": 281724000000,
+     "2026-06-30": 331839000000
+    },
+    "operating_income": {
+     "2021-06-30": 69916000000,
+     "2022-06-30": 83383000000,
+     "2023-06-30": 88523000000,
+     "2024-06-30": 109433000000,
+     "2025-06-30": 128528000000,
+     "2026-06-30": 155237000000
+    },
+    "net_income": {
+     "2021-06-30": 61271000000,
+     "2022-06-30": 72738000000,
+     "2023-06-30": 72361000000,
+     "2024-06-30": 88136000000,
+     "2025-06-30": 101832000000,
+     "2026-06-30": 133749000000
+    },
+    "operating_cash_flow": {
+     "2021-06-30": 76740000000,
+     "2022-06-30": 89035000000,
+     "2023-06-30": 87582000000,
+     "2024-06-30": 118548000000,
+     "2025-06-30": 136162000000,
+     "2026-06-30": 182935000000
+    },
+    "capex": {
+     "2021-06-30": 20622000000,
+     "2022-06-30": 23886000000,
+     "2023-06-30": 28107000000,
+     "2024-06-30": 44477000000,
+     "2025-06-30": 64551000000,
+     "2026-06-30": 115948000000
+    },
+    "stock_comp": {
+     "2021-06-30": 6118000000,
+     "2022-06-30": 7502000000,
+     "2023-06-30": 9611000000,
+     "2024-06-30": 10734000000,
+     "2025-06-30": 11974000000,
+     "2026-06-30": 12405000000
+    },
+    "diluted_shares": {
+     "2024-06-30": 7469000000,
+     "2025-06-30": 7465000000,
+     "2026-06-30": 7453000000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 346445000000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 163191000000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 142631000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 195878000000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 135921000000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 12556000000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 7446000000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0000789019",
+   "name": "MICROSOFT CORP"
+  },
+  "MU": {
+   "annual": {
+    "revenue": {
+     "2021-09-02": 27705000000,
+     "2022-09-01": 30758000000,
+     "2023-08-31": 15540000000,
+     "2024-08-29": 25111000000,
+     "2025-08-28": 37378000000,
+     "2026-09-03": 133188000000
+    },
+    "operating_income": {
+     "2021-09-02": 6283000000,
+     "2022-09-01": 9702000000,
+     "2023-08-31": -5745000000,
+     "2024-08-29": 1304000000,
+     "2025-08-28": 9770000000,
+     "2026-09-03": 99340000000
+    },
+    "net_income": {
+     "2021-09-02": 5861000000,
+     "2022-09-01": 8687000000,
+     "2023-08-31": -5833000000,
+     "2024-08-29": 778000000,
+     "2025-08-28": 8539000000,
+     "2026-09-03": 84969000000
+    },
+    "operating_cash_flow": {
+     "2021-09-02": 12468000000,
+     "2022-09-01": 15181000000,
+     "2023-08-31": 1559000000,
+     "2024-08-29": 8507000000,
+     "2025-08-28": 17525000000,
+     "2026-09-03": 89675000000
+    },
+    "capex": {
+     "2021-09-02": 10030000000,
+     "2022-09-01": 12067000000,
+     "2023-08-31": 7676000000,
+     "2024-08-29": 8386000000,
+     "2025-08-28": 15857000000,
+     "2026-09-03": 30712000000
+    },
+    "stock_comp": {
+     "2021-09-02": 378000000,
+     "2022-09-01": 514000000,
+     "2023-08-31": 596000000,
+     "2024-08-29": 833000000,
+     "2025-08-28": 972000000,
+     "2026-09-03": 1333000000
+    },
+    "diluted_shares": {
+     "2024-08-29": 1118000000,
+     "2025-08-28": 1125000000,
+     "2026-09-03": 1143000000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-03",
+     "value": 133188000000
+    },
+    "operating_income": {
+     "end": "2026-09-03",
+     "value": 99340000000
+    },
+    "net_income": {
+     "end": "2026-09-03",
+     "value": 84969000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-03",
+     "value": 89675000000
+    },
+    "capex": {
+     "end": "2026-09-03",
+     "value": 30712000000
+    },
+    "stock_comp": {
+     "end": "2026-09-03",
+     "value": 1333000000
+    },
+    "diluted_shares": {
+     "end": "2026-09-03",
+     "value": 1143000000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0000723125",
+   "name": "Micron Technology, Inc."
+  },
+  "NBIS": {
+   "annual": {
+    "revenue": {},
+    "operating_income": {},
+    "net_income": {},
+    "operating_cash_flow": {},
+    "capex": {},
+    "stock_comp": {},
+    "diluted_shares": {}
+   },
+   "ttm": {
+    "revenue": null,
+    "operating_income": null,
+    "net_income": null,
+    "operating_cash_flow": null,
+    "capex": null,
+    "stock_comp": null,
+    "diluted_shares": {
+     "end": "2025-12-31",
+     "value": 247679946
+    }
+   },
+   "source": {
+    "revenue": "Revenues",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001513845",
+   "name": "NEBIUS GROUP\u00a0N.V."
+  },
+  "NFLX": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 24996056000,
+     "2021-12-31": 29697844000,
+     "2022-12-31": 31615550000,
+     "2023-12-31": 33723297000,
+     "2024-12-31": 39000966000,
+     "2025-12-31": 45183036000
+    },
+    "operating_income": {
+     "2020-12-31": 4585289000,
+     "2021-12-31": 6194509000,
+     "2022-12-31": 5632831000,
+     "2023-12-31": 6954003000,
+     "2024-12-31": 10417614000,
+     "2025-12-31": 13326603000
+    },
+    "net_income": {
+     "2020-12-31": 2761395000,
+     "2021-12-31": 5116228000,
+     "2022-12-31": 4491924000,
+     "2023-12-31": 5407990000,
+     "2024-12-31": 8711631000,
+     "2025-12-31": 10981201000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 2427077000,
+     "2021-12-31": 392610000,
+     "2022-12-31": 2026257000,
+     "2023-12-31": 7274301000,
+     "2024-12-31": 7361364000,
+     "2025-12-31": 10149273000
+    },
+    "capex": {
+     "2020-12-31": 497923000,
+     "2021-12-31": 524585000,
+     "2022-12-31": 407729000,
+     "2023-12-31": 348552000,
+     "2024-12-31": 439538000,
+     "2025-12-31": 688220000
+    },
+    "stock_comp": {
+     "2020-12-31": 415180000,
+     "2021-12-31": 403220000,
+     "2022-12-31": 575452000,
+     "2023-12-31": 339368000,
+     "2024-12-31": 272588000,
+     "2025-12-31": 368449000
+    },
+    "diluted_shares": {
+     "2023-12-31": 4494966000,
+     "2024-12-31": 4392608000,
+     "2025-12-31": 4343863000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 49734633000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 15564870000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 14766653000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 12307938000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 932875000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 540064000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 4251298000
+    }
+   },
+   "source": {
+    "revenue": "Revenues",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [
+    "software_capex"
+   ],
+   "cik": "0001065280",
+   "name": "Netflix, Inc."
+  },
+  "NOW": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 4519000000,
+     "2021-12-31": 5896000000,
+     "2022-12-31": 7245000000,
+     "2023-12-31": 8971000000,
+     "2024-12-31": 10984000000,
+     "2025-12-31": 13278000000
+    },
+    "operating_income": {
+     "2020-12-31": 199000000,
+     "2021-12-31": 257000000,
+     "2022-12-31": 355000000,
+     "2023-12-31": 762000000,
+     "2024-12-31": 1364000000,
+     "2025-12-31": 1824000000
+    },
+    "net_income": {
+     "2020-12-31": 119000000,
+     "2021-12-31": 230000000,
+     "2022-12-31": 325000000,
+     "2023-12-31": 1731000000,
+     "2024-12-31": 1425000000,
+     "2025-12-31": 1748000000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 1786000000,
+     "2021-12-31": 2191000000,
+     "2022-12-31": 2723000000,
+     "2023-12-31": 3398000000,
+     "2024-12-31": 4267000000,
+     "2025-12-31": 5444000000
+    },
+    "capex": {
+     "2020-12-31": 419000000,
+     "2021-12-31": 392000000,
+     "2022-12-31": 550000000,
+     "2023-12-31": 694000000,
+     "2024-12-31": 852000000,
+     "2025-12-31": 868000000
+    },
+    "software_capex": {
+     "2020-12-31": 13000000,
+     "2021-12-31": 7000000,
+     "2022-12-31": 0,
+     "2023-12-31": 3000000,
+     "2024-12-31": 40000000,
+     "2025-12-31": 43000000
+    },
+    "stock_comp": {
+     "2020-12-31": 870000000,
+     "2021-12-31": 1131000000,
+     "2022-12-31": 1401000000,
+     "2023-12-31": 1604000000,
+     "2024-12-31": 1746000000,
+     "2025-12-31": 1955000000
+    },
+    "diluted_shares": {
+     "2023-12-31": 1027953000,
+     "2024-12-31": 1042113000,
+     "2025-12-31": 1046691000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 15431000000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 1493000000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 1445000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 5334000000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 584000000
+    },
+    "software_capex": {
+     "end": "2026-09-30",
+     "value": 0
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 2323000000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 1038593000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "software_capex": "PaymentsToAcquireIntangibleAssets",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001373715",
+   "name": "SERVICENOW, INC."
+  },
+  "NVDA": {
+   "annual": {
+    "revenue": {
+     "2021-01-31": 16675000000,
+     "2022-01-30": 26914000000,
+     "2023-01-29": 26974000000,
+     "2024-01-28": 60922000000,
+     "2025-01-26": 130497000000,
+     "2026-01-25": 215938000000
+    },
+    "operating_income": {
+     "2021-01-31": 4532000000,
+     "2022-01-30": 10041000000,
+     "2023-01-29": 4224000000,
+     "2024-01-28": 32972000000,
+     "2025-01-26": 81453000000,
+     "2026-01-25": 130387000000
+    },
+    "net_income": {
+     "2021-01-31": 4332000000,
+     "2022-01-30": 9752000000,
+     "2023-01-29": 4368000000,
+     "2024-01-28": 29760000000,
+     "2025-01-26": 72880000000,
+     "2026-01-25": 120067000000
+    },
+    "operating_cash_flow": {
+     "2021-01-31": 5822000000,
+     "2022-01-30": 9108000000,
+     "2023-01-29": 5641000000,
+     "2024-01-28": 28090000000,
+     "2025-01-26": 64089000000,
+     "2026-01-25": 102718000000
+    },
+    "capex": {
+     "2022-01-30": 976000000,
+     "2023-01-29": 1833000000,
+     "2024-01-28": 1069000000,
+     "2025-01-26": 3236000000,
+     "2026-01-25": 6042000000
+    },
+    "stock_comp": {
+     "2021-01-31": 1397000000,
+     "2022-01-30": 2004000000,
+     "2023-01-29": 2709000000,
+     "2024-01-28": 3549000000,
+     "2025-01-26": 4737000000,
+     "2026-01-25": 6386000000
+    },
+    "diluted_shares": {
+     "2024-01-28": 24940000000,
+     "2025-01-26": 24804000000,
+     "2026-01-25": 24514000000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-07-26",
+     "value": 302970000000
+    },
+    "operating_income": {
+     "end": "2026-07-26",
+     "value": 197579000000
+    },
+    "net_income": {
+     "end": "2026-07-26",
+     "value": 192880000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-07-26",
+     "value": 134360000000
+    },
+    "capex": {
+     "end": "2026-07-26",
+     "value": 7354000000
+    },
+    "stock_comp": {
+     "end": "2026-07-26",
+     "value": 7241000000
+    },
+    "diluted_shares": {
+     "end": "2026-07-26",
+     "value": 24338000000
+    }
+   },
+   "source": {
+    "revenue": "Revenues",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquireProductiveAssets",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001045810",
+   "name": "NVIDIA CORP"
+  },
+  "NVT": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 1998600000,
+     "2021-12-31": 2462000000,
+     "2022-12-31": 2295100000,
+     "2023-12-31": 2668900000,
+     "2024-12-31": 3006100000,
+     "2025-12-31": 3893100000
+    },
+    "operating_income": {
+     "2020-12-31": 38400000,
+     "2021-12-31": 355400000,
+     "2022-12-31": 309000000,
+     "2023-12-31": 462700000,
+     "2024-12-31": 527100000,
+     "2025-12-31": 616800000
+    },
+    "net_income": {
+     "2020-12-31": -47200000,
+     "2021-12-31": 272900000,
+     "2022-12-31": 399800000,
+     "2023-12-31": 567100000,
+     "2024-12-31": 331800000,
+     "2025-12-31": 710200000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 344000000,
+     "2021-12-31": 373300000,
+     "2022-12-31": 394600000,
+     "2023-12-31": 528100000,
+     "2024-12-31": 643100000,
+     "2025-12-31": 465200000
+    },
+    "capex": {
+     "2020-12-31": 40000000,
+     "2021-12-31": 39500000,
+     "2022-12-31": 40500000,
+     "2023-12-31": 65600000,
+     "2024-12-31": 74000000,
+     "2025-12-31": 93300000
+    },
+    "stock_comp": {
+     "2020-12-31": 13900000,
+     "2021-12-31": 16600000,
+     "2022-12-31": 23300000,
+     "2023-12-31": 21800000,
+     "2024-12-31": 27300000,
+     "2025-12-31": 37500000
+    },
+    "diluted_shares": {
+     "2023-12-31": 168200000,
+     "2024-12-31": 168200000,
+     "2025-12-31": 164600000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 5294900000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 942500000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 679500000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 773900000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 131300000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 37600000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 164000000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001720635",
+   "name": "nVent Electric plc"
+  },
+  "OKLO": {
+   "annual": {
+    "revenue": {},
+    "operating_income": {
+     "2022-12-31": -1809484,
+     "2023-12-31": -18636000,
+     "2024-12-31": -52801000,
+     "2025-12-31": -139294000
+    },
+    "net_income": {
+     "2022-12-31": 3925770,
+     "2023-12-31": -32173000,
+     "2024-12-31": -73616000,
+     "2025-12-31": -105663000
+    },
+    "operating_cash_flow": {
+     "2022-12-31": -954691,
+     "2023-12-31": -15998000,
+     "2024-12-31": -38390000,
+     "2025-12-31": -82174000
+    },
+    "capex": {
+     "2023-12-31": 83000,
+     "2024-12-31": 352000,
+     "2025-12-31": 33205000
+    },
+    "software_capex": {},
+    "stock_comp": {
+     "2023-12-31": 777000,
+     "2024-12-31": 12484000,
+     "2025-12-31": 41795000
+    },
+    "diluted_shares": {
+     "2024-12-31": 98910013,
+     "2025-12-31": 146351775
+    }
+   },
+   "ttm": {
+    "revenue": null,
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": -252279000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": -164793000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": -144370000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 307824000
+    },
+    "software_capex": null,
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 68123000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 178453225
+    }
+   },
+   "source": {
+    "revenue": "Revenues",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "software_capex": "PaymentsToAcquireIntangibleAssets",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001849056",
+   "name": "Oklo Inc."
+  },
+  "PAYX": {
+   "annual": {
+    "revenue": {
+     "2021-05-31": 4056800000,
+     "2022-05-31": 4611700000,
+     "2023-05-31": 5007100000,
+     "2024-05-31": 5278300000,
+     "2025-05-31": 5571700000,
+     "2026-05-31": 6512000000
+    },
+    "operating_income": {
+     "2021-05-31": 1460700000,
+     "2022-05-31": 1840000000,
+     "2023-05-31": 2033100000,
+     "2024-05-31": 2174100000,
+     "2025-05-31": 2207700000,
+     "2026-05-31": 2510500000
+    },
+    "net_income": {
+     "2013-05-31": 569000000,
+     "2014-05-31": 627500000,
+     "2015-05-31": 674900000,
+     "2024-05-31": 1690400000,
+     "2025-05-31": 1657300000,
+     "2026-05-31": 1760100000
+    },
+    "operating_cash_flow": {
+     "2021-05-31": 1260300000,
+     "2022-05-31": 1589700000,
+     "2023-05-31": 1706200000,
+     "2024-05-31": 1897700000,
+     "2025-05-31": 1900900000,
+     "2026-05-31": 2556700000
+    },
+    "capex": {
+     "2021-05-31": 118400000,
+     "2022-05-31": 133800000,
+     "2023-05-31": 143000000,
+     "2024-05-31": 161400000,
+     "2025-05-31": 191800000,
+     "2026-05-31": 234900000
+    },
+    "stock_comp": {
+     "2021-05-31": 52500000,
+     "2022-05-31": 52800000,
+     "2023-05-31": 62600000,
+     "2024-05-31": 61100000,
+     "2025-05-31": 111800000,
+     "2026-05-31": 96100000
+    },
+    "diluted_shares": {
+     "2024-05-31": 362100000,
+     "2025-05-31": 362000000,
+     "2026-05-31": 360000000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-08-31",
+     "value": 6602500000
+    },
+    "operating_income": {
+     "end": "2026-08-31",
+     "value": 2587800000
+    },
+    "net_income": {
+     "end": "2026-08-31",
+     "value": 1806000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-08-31",
+     "value": 2251800000
+    },
+    "capex": {
+     "end": "2026-08-31",
+     "value": 235100000
+    },
+    "stock_comp": {
+     "end": "2026-08-31",
+     "value": 88600000
+    },
+    "diluted_shares": {
+     "end": "2026-08-31",
+     "value": 356600000
+    }
+   },
+   "source": {
+    "revenue": "Revenues",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0000723531",
+   "name": "Paychex, Inc."
+  },
+  "PODD": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 904400000,
+     "2021-12-31": 1098800000,
+     "2022-12-31": 1305300000,
+     "2023-12-31": 1697100000,
+     "2024-12-31": 2071600000,
+     "2025-12-31": 2708100000
+    },
+    "operating_income": {
+     "2020-12-31": 51500000,
+     "2021-12-31": 126000000,
+     "2022-12-31": 37600000,
+     "2023-12-31": 220100000,
+     "2024-12-31": 308900000,
+     "2025-12-31": 473800000
+    },
+    "net_income": {
+     "2020-12-31": 6800000,
+     "2021-12-31": 16800000,
+     "2022-12-31": 4600000,
+     "2023-12-31": 206300000,
+     "2024-12-31": 418300000,
+     "2025-12-31": 247100000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 84000000,
+     "2021-12-31": -68100000,
+     "2022-12-31": 119000000,
+     "2023-12-31": 145700000,
+     "2024-12-31": 430200000,
+     "2025-12-31": 569300000
+    },
+    "capex": {
+     "2020-12-31": 129000000,
+     "2021-12-31": 111900000,
+     "2022-12-31": 122900000,
+     "2023-12-31": 75600000,
+     "2024-12-31": 124900000,
+     "2025-12-31": 191600000
+    },
+    "software_capex": {
+     "2020-12-31": 37500000,
+     "2021-12-31": 10800000,
+     "2022-12-31": 12900000,
+     "2023-12-31": 8500000,
+     "2024-12-31": 9100000,
+     "2025-12-31": 19200000
+    },
+    "stock_comp": {
+     "2020-12-31": 35900000,
+     "2021-12-31": 34400000,
+     "2022-12-31": 40900000,
+     "2023-12-31": 48400000,
+     "2024-12-31": 69300000,
+     "2025-12-31": 62700000
+    },
+    "diluted_shares": {
+     "2023-12-31": 73633000,
+     "2024-12-31": 73891000,
+     "2025-12-31": 71886000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 3189200000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 587800000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 428700000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 509000000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 249000000
+    },
+    "software_capex": {
+     "end": "2026-09-30",
+     "value": 18800000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 81800000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 69699000
+    }
+   },
+   "source": {
+    "revenue": "Revenues",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "software_capex": "PaymentsForSoftware",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001145197",
+   "name": "INSULET CORPORATION"
+  },
+  "POWL": {
+   "annual": {
+    "revenue": {
+     "2021-09-30": 470559000,
+     "2022-09-30": 532582000,
+     "2023-09-30": 699308000,
+     "2024-09-30": 1012356000,
+     "2025-09-30": 1104318000,
+     "2026-09-30": 1256246000
+    },
+    "operating_income": {
+     "2021-09-30": 1019000,
+     "2022-09-30": 7224000,
+     "2023-09-30": 62520000,
+     "2024-09-30": 178773000,
+     "2025-09-30": 217860000,
+     "2026-09-30": 264988000
+    },
+    "net_income": {
+     "2021-09-30": 631000,
+     "2022-09-30": 13737000,
+     "2023-09-30": 54525000,
+     "2024-09-30": 149848000,
+     "2025-09-30": 180747000,
+     "2026-09-30": 220985000
+    },
+    "operating_cash_flow": {
+     "2021-09-30": -30461000,
+     "2022-09-30": -3582000,
+     "2023-09-30": 182553000,
+     "2024-09-30": 108661000,
+     "2025-09-30": 167937000,
+     "2026-09-30": 433690000
+    },
+    "capex": {
+     "2021-09-30": 2931000,
+     "2022-09-30": 2451000,
+     "2023-09-30": 7819000,
+     "2024-09-30": 11983000,
+     "2025-09-30": 13149000,
+     "2026-09-30": 18461000
+    },
+    "software_capex": {
+     "2022-09-30": 0,
+     "2023-09-30": 0,
+     "2024-09-30": 250000,
+     "2025-09-30": 0,
+     "2026-09-30": 0
+    },
+    "stock_comp": {
+     "2021-09-30": 2583000,
+     "2022-09-30": 4090000,
+     "2023-09-30": 4599000,
+     "2024-09-30": 4747000,
+     "2025-09-30": 4635000,
+     "2026-09-30": 6790000
+    },
+    "diluted_shares": {
+     "2024-09-30": 36563000,
+     "2025-09-30": 36502000,
+     "2026-09-30": 36581000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 1256246000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 264988000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 220985000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 433690000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 18461000
+    },
+    "software_capex": {
+     "end": "2026-09-30",
+     "value": 0
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 6790000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 36581000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "software_capex": "PaymentsToAcquireIntangibleAssets",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0000080420",
+   "name": "Powell Industries, Inc."
+  },
+  "RDDT": {
+   "annual": {
+    "revenue": {
+     "2022-12-31": 666701000,
+     "2023-12-31": 804029000,
+     "2024-12-31": 1300205000,
+     "2025-12-31": 2202506000
+    },
+    "operating_income": {
+     "2022-12-31": -172162000,
+     "2023-12-31": -140161000,
+     "2024-12-31": -560568000,
+     "2025-12-31": 441984000
+    },
+    "net_income": {
+     "2022-12-31": -158550000,
+     "2023-12-31": -90824000,
+     "2024-12-31": -484276000,
+     "2025-12-31": 529721000
+    },
+    "operating_cash_flow": {
+     "2022-12-31": -94021000,
+     "2023-12-31": -75114000,
+     "2024-12-31": 222068000,
+     "2025-12-31": 690875000
+    },
+    "capex": {
+     "2022-12-31": 6233000,
+     "2023-12-31": 9724000,
+     "2024-12-31": 6248000,
+     "2025-12-31": 6706000
+    },
+    "stock_comp": {
+     "2022-12-31": 55310000,
+     "2023-12-31": 47598000,
+     "2024-12-31": 801646000,
+     "2025-12-31": 343180000
+    },
+    "diluted_shares": {
+     "2023-12-31": 59138086,
+     "2024-12-31": 145472389,
+     "2025-12-31": 202107978
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 3088880000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 908042000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 991696000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 1204733000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 6617000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 385772000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 202186014
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001713445",
+   "name": "Reddit, Inc."
+  },
+  "STZ": {
+   "annual": {
+    "revenue": {
+     "2021-02-28": 8614900000,
+     "2022-02-28": 8820700000,
+     "2023-02-28": 9452600000,
+     "2024-02-29": 9961800000,
+     "2025-02-28": 10208700000,
+     "2026-02-28": 9139000000
+    },
+    "operating_income": {
+     "2021-02-28": 2791100000,
+     "2022-02-28": 2331700000,
+     "2023-02-28": 2842900000,
+     "2024-02-29": 3169700000,
+     "2025-02-28": 354900000,
+     "2026-02-28": 2721400000
+    },
+    "net_income": {
+     "2021-02-28": 1998000000,
+     "2022-02-28": -40400000,
+     "2023-02-28": -71000000,
+     "2024-02-29": 1727400000,
+     "2025-02-28": -81400000,
+     "2026-02-28": 1686700000
+    },
+    "operating_cash_flow": {
+     "2021-02-28": 2806500000,
+     "2022-02-28": 2705400000,
+     "2023-02-28": 2756900000,
+     "2024-02-29": 2780000000,
+     "2025-02-28": 3152200000,
+     "2026-02-28": 2669000000
+    },
+    "capex": {
+     "2021-02-28": 864600000,
+     "2022-02-28": 1026800000,
+     "2023-02-28": 1035400000,
+     "2024-02-29": 1269100000,
+     "2025-02-28": 1214100000,
+     "2026-02-28": 875000000
+    },
+    "stock_comp": {
+     "2021-02-28": 63000000,
+     "2022-02-28": 44900000,
+     "2023-02-28": 68500000,
+     "2024-02-29": 63600000,
+     "2025-02-28": 72200000,
+     "2026-02-28": 67700000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-08-31",
+     "value": 9208700000
+    },
+    "operating_income": {
+     "end": "2026-08-31",
+     "value": 2783900000
+    },
+    "net_income": {
+     "end": "2026-08-31",
+     "value": 1924200000
+    },
+    "operating_cash_flow": {
+     "end": "2026-08-31",
+     "value": 2658300000
+    },
+    "capex": {
+     "end": "2026-08-31",
+     "value": 819000000
+    },
+    "stock_comp": {
+     "end": "2026-08-31",
+     "value": 70500000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation"
+   },
+   "stale": [],
+   "cik": "0000016918",
+   "name": "CONSTELLATION BRANDS, INC."
+  },
+  "TLN": {
+   "annual": {
+    "revenue": {
+     "2022-12-31": 3089000000,
+     "2024-12-31": 2115000000,
+     "2025-12-31": 2581000000
+    },
+    "operating_income": {
+     "2013-12-31": -293000000,
+     "2014-12-31": 397000000,
+     "2015-12-31": -39000000,
+     "2022-12-31": 241000000,
+     "2024-12-31": 226000000,
+     "2025-12-31": -90000000
+    },
+    "net_income": {
+     "2013-12-31": -230000000,
+     "2014-12-31": 410000000,
+     "2015-12-31": -341000000,
+     "2024-12-31": 998000000,
+     "2025-12-31": -219000000
+    },
+    "operating_cash_flow": {
+     "2013-12-31": 410000000,
+     "2014-12-31": 462000000,
+     "2015-12-31": 768000000,
+     "2022-12-31": 187000000,
+     "2024-12-31": 256000000,
+     "2025-12-31": 704000000
+    },
+    "capex": {
+     "2013-12-31": 583000000,
+     "2014-12-31": 416000000,
+     "2015-12-31": 451000000,
+     "2022-12-31": 232000000,
+     "2024-12-31": 85000000,
+     "2025-12-31": 98000000
+    },
+    "stock_comp": {
+     "2022-12-31": 0,
+     "2024-12-31": 33000000,
+     "2025-12-31": 526000000
+    },
+    "diluted_shares": {
+     "2024-12-31": 56486000,
+     "2025-12-31": 45692000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 3952000000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 80000000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": -254000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 770000000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 374000000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 604000000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 46757000
+    }
+   },
+   "source": {
+    "revenue": "Revenues",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [
+    "software_capex"
+   ],
+   "cik": "0001622536",
+   "name": "Talen Energy Corporation"
+  },
+  "TPL": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 302564000,
+     "2021-12-31": 450958000,
+     "2022-12-31": 667422000,
+     "2023-12-31": 631595000,
+     "2024-12-31": 705823000,
+     "2025-12-31": 798190000
+    },
+    "operating_income": {
+     "2020-12-31": 217261000,
+     "2021-12-31": 362393000,
+     "2022-12-31": 562307000,
+     "2023-12-31": 486053000,
+     "2024-12-31": 539138000,
+     "2025-12-31": 592161000
+    },
+    "net_income": {
+     "2020-12-31": 176049000,
+     "2021-12-31": 269980000,
+     "2022-12-31": 446362000,
+     "2023-12-31": 405645000,
+     "2024-12-31": 453960000,
+     "2025-12-31": 481376000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 207037000,
+     "2021-12-31": 265163000,
+     "2022-12-31": 447149000,
+     "2023-12-31": 418288000,
+     "2024-12-31": 490672000,
+     "2025-12-31": 545910000
+    },
+    "software_capex": {
+     "2021-12-31": 0,
+     "2022-12-31": 0,
+     "2023-12-31": 21403000,
+     "2024-12-31": 0,
+     "2025-12-31": 0
+    },
+    "stock_comp": {
+     "2020-12-31": 0,
+     "2021-12-31": 28000,
+     "2022-12-31": 8432000,
+     "2023-12-31": 10343000,
+     "2024-12-31": 12498000,
+     "2025-12-31": 15131000
+    },
+    "diluted_shares": {
+     "2023-12-31": 69179535,
+     "2024-12-31": 69059252,
+     "2025-12-31": 69027492
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 967846000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 731174000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 587546000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 640932000
+    },
+    "software_capex": {
+     "end": "2025-12-31",
+     "value": 0
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 17375000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 69019458
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "software_capex": "PaymentsToAcquireIntangibleAssets",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [
+    "capex"
+   ],
+   "cik": "0001811074",
+   "name": "Texas Pacific Land Corporation"
+  },
+  "TSM": {
+   "annual": {},
+   "ttm": {},
+   "source": {},
+   "stale": [],
+   "cik": "0001046179",
+   "name": "Taiwan Semiconductor Manufacturing Company Limited"
+  },
+  "TW": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 892659000,
+     "2021-12-31": 1076447000,
+     "2022-12-31": 1188781000,
+     "2023-12-31": 1338219000,
+     "2024-12-31": 1725949000,
+     "2025-12-31": 2052429000
+    },
+    "operating_income": {
+     "2020-12-31": 263355000,
+     "2021-12-31": 358828000,
+     "2022-12-31": 412573000,
+     "2023-12-31": 505269000,
+     "2024-12-31": 678028000,
+     "2025-12-31": 835338000
+    },
+    "net_income": {
+     "2020-12-31": 166296000,
+     "2021-12-31": 226828000,
+     "2022-12-31": 309338000,
+     "2023-12-31": 364866000,
+     "2024-12-31": 501507000,
+     "2025-12-31": 812792000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 443234000,
+     "2021-12-31": 578021000,
+     "2022-12-31": 632822000,
+     "2023-12-31": 746089000,
+     "2024-12-31": 897741000,
+     "2025-12-31": 1167646000
+    },
+    "capex": {
+     "2020-12-31": 11490000,
+     "2021-12-31": 16878000,
+     "2022-12-31": 23214000,
+     "2023-12-31": 18529000,
+     "2024-12-31": 40960000,
+     "2025-12-31": 40552000
+    },
+    "software_capex": {
+     "2020-12-31": 31046000,
+     "2021-12-31": 34470000,
+     "2022-12-31": 36882000,
+     "2023-12-31": 43235000,
+     "2024-12-31": 47909000,
+     "2025-12-31": 62541000
+    },
+    "stock_comp": {
+     "2020-12-31": 39286000,
+     "2021-12-31": 51943000,
+     "2022-12-31": 66644000,
+     "2023-12-31": 65128000,
+     "2024-12-31": 89649000,
+     "2025-12-31": 103537000
+    },
+    "diluted_shares": {
+     "2023-12-31": 212668808,
+     "2024-12-31": 214924763,
+     "2025-12-31": 214898240
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 2282438000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 1006958000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 909051000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 1201204000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 46646000
+    },
+    "software_capex": {
+     "end": "2026-09-30",
+     "value": 71675000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 109547000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 212332878
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "software_capex": "PaymentsForSoftware",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001758730",
+   "name": "Tradeweb Markets Inc."
+  },
+  "UNH": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 257141000000,
+     "2021-12-31": 287597000000,
+     "2022-12-31": 324162000000,
+     "2023-12-31": 371622000000,
+     "2024-12-31": 400278000000,
+     "2025-12-31": 447567000000
+    },
+    "operating_income": {
+     "2020-12-31": 22405000000,
+     "2021-12-31": 23970000000,
+     "2022-12-31": 28435000000,
+     "2023-12-31": 32358000000,
+     "2024-12-31": 32287000000,
+     "2025-12-31": 18964000000
+    },
+    "net_income": {
+     "2020-12-31": 15403000000,
+     "2021-12-31": 17285000000,
+     "2022-12-31": 20120000000,
+     "2023-12-31": 22381000000,
+     "2024-12-31": 14405000000,
+     "2025-12-31": 12056000000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 22174000000,
+     "2021-12-31": 22343000000,
+     "2022-12-31": 26206000000,
+     "2023-12-31": 29068000000,
+     "2024-12-31": 24204000000,
+     "2025-12-31": 19697000000
+    },
+    "capex": {
+     "2020-12-31": 2051000000,
+     "2021-12-31": 2454000000,
+     "2022-12-31": 2802000000,
+     "2023-12-31": 3386000000,
+     "2024-12-31": 3499000000,
+     "2025-12-31": 3622000000
+    },
+    "stock_comp": {
+     "2020-12-31": 679000000,
+     "2021-12-31": 800000000,
+     "2022-12-31": 925000000,
+     "2023-12-31": 1059000000,
+     "2024-12-31": 1018000000,
+     "2025-12-31": 971000000
+    },
+    "diluted_shares": {
+     "2023-12-31": 938000000,
+     "2024-12-31": 929000000,
+     "2025-12-31": 911000000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 449662000000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 23924000000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 15884000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 26195000000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 3369000000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 1019000000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 906000000
+    }
+   },
+   "source": {
+    "revenue": "Revenues",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0000731766",
+   "name": "UnitedHealth Group Incorporated"
+  },
+  "V": {
+   "annual": {
+    "revenue": {
+     "2021-09-30": 24105000000,
+     "2022-09-30": 29310000000,
+     "2023-09-30": 32653000000,
+     "2024-09-30": 35926000000,
+     "2025-09-30": 40000000000,
+     "2026-09-30": 45903000000
+    },
+    "operating_income": {
+     "2021-09-30": 15804000000,
+     "2022-09-30": 18813000000,
+     "2023-09-30": 21000000000,
+     "2024-09-30": 23595000000,
+     "2025-09-30": 23994000000,
+     "2026-09-30": 28110000000
+    },
+    "net_income": {
+     "2021-09-30": 12311000000,
+     "2022-09-30": 14957000000,
+     "2023-09-30": 17273000000,
+     "2024-09-30": 19743000000,
+     "2025-09-30": 20058000000,
+     "2026-09-30": 23504000000
+    },
+    "operating_cash_flow": {
+     "2021-09-30": 15227000000,
+     "2022-09-30": 18849000000,
+     "2023-09-30": 20755000000,
+     "2024-09-30": 19950000000,
+     "2025-09-30": 23059000000,
+     "2026-09-30": 23728000000
+    },
+    "capex": {
+     "2021-09-30": 705000000,
+     "2022-09-30": 970000000,
+     "2023-09-30": 1059000000,
+     "2024-09-30": 1257000000,
+     "2025-09-30": 1482000000,
+     "2026-09-30": 1671000000
+    },
+    "stock_comp": {
+     "2021-09-30": 542000000,
+     "2022-09-30": 602000000,
+     "2023-09-30": 765000000,
+     "2024-09-30": 850000000,
+     "2025-09-30": 897000000,
+     "2026-09-30": 928000000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 45903000000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 28110000000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 23504000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 23728000000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 1671000000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 928000000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquireProductiveAssets",
+    "stock_comp": "ShareBasedCompensation"
+   },
+   "stale": [
+    "software_capex"
+   ],
+   "cik": "0001403161",
+   "name": "VISA INC."
+  },
+  "VRT": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 4370600000,
+     "2021-12-31": 4998100000,
+     "2022-12-31": 5691500000,
+     "2023-12-31": 6863200000,
+     "2024-12-31": 8011800000,
+     "2025-12-31": 10229900000
+    },
+    "operating_income": {
+     "2020-12-31": 213500000,
+     "2021-12-31": 259900000,
+     "2022-12-31": 223400000,
+     "2023-12-31": 872200000,
+     "2024-12-31": 1367400000,
+     "2025-12-31": 1829700000
+    },
+    "net_income": {
+     "2020-12-31": -327300000,
+     "2021-12-31": 119600000,
+     "2022-12-31": 76600000,
+     "2023-12-31": 460200000,
+     "2024-12-31": 495800000,
+     "2025-12-31": 1332800000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 208900000,
+     "2021-12-31": 210900000,
+     "2022-12-31": -152800000,
+     "2023-12-31": 900500000,
+     "2024-12-31": 1319300000,
+     "2025-12-31": 2113800000
+    },
+    "capex": {
+     "2020-12-31": 44400000,
+     "2021-12-31": 73400000,
+     "2022-12-31": 100000000,
+     "2023-12-31": 127900000,
+     "2024-12-31": 167000000,
+     "2025-12-31": 220000000
+    },
+    "software_capex": {
+     "2020-12-31": 8300000,
+     "2021-12-31": 11200000,
+     "2022-12-31": 11000000,
+     "2023-12-31": 6700000,
+     "2024-12-31": 17100000,
+     "2025-12-31": 6400000
+    },
+    "stock_comp": {
+     "2020-12-31": 13000000,
+     "2021-12-31": 23200000,
+     "2022-12-31": 24700000,
+     "2023-12-31": 25000000,
+     "2024-12-31": 34600000,
+     "2025-12-31": 45900000
+    },
+    "diluted_shares": {
+     "2023-12-31": 386226267,
+     "2024-12-31": 386325058,
+     "2025-12-31": 390652824
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 13116600000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 2641700000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 2098000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 3665500000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 518300000
+    },
+    "software_capex": {
+     "end": "2026-09-30",
+     "value": 7000000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 57700000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 392640125
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "software_capex": "PaymentsForSoftware",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001674101",
+   "name": "Vertiv Holdings Co"
+  },
+  "VST": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 11443000000,
+     "2021-12-31": 12077000000,
+     "2022-12-31": 13728000000,
+     "2023-12-31": 14779000000,
+     "2024-12-31": 17224000000,
+     "2025-12-31": 17738000000
+    },
+    "operating_income": {
+     "2020-12-31": 1519000000,
+     "2021-12-31": -1515000000,
+     "2022-12-31": -1177000000,
+     "2023-12-31": 2661000000,
+     "2024-12-31": 4081000000,
+     "2025-12-31": 1906000000
+    },
+    "net_income": {
+     "2020-12-31": 636000000,
+     "2021-12-31": -1274000000,
+     "2022-12-31": -1227000000,
+     "2023-12-31": 1493000000,
+     "2024-12-31": 2659000000,
+     "2025-12-31": 944000000
+    },
+    "operating_cash_flow": {
+     "2020-12-31": 3337000000,
+     "2021-12-31": -206000000,
+     "2022-12-31": 485000000,
+     "2023-12-31": 5453000000,
+     "2024-12-31": 4563000000,
+     "2025-12-31": 4070000000
+    },
+    "capex": {
+     "2020-12-31": 1259000000,
+     "2021-12-31": 1033000000,
+     "2022-12-31": 1301000000,
+     "2023-12-31": 1676000000,
+     "2024-12-31": 2078000000,
+     "2025-12-31": 2752000000
+    },
+    "software_capex": {
+     "2020-12-31": 504000000,
+     "2021-12-31": 605000000,
+     "2022-12-31": 1303000000,
+     "2023-12-31": 1071000000,
+     "2024-12-31": 1226000000,
+     "2025-12-31": 1189000000
+    },
+    "stock_comp": {
+     "2020-12-31": 65000000,
+     "2021-12-31": 47000000,
+     "2022-12-31": 63000000,
+     "2023-12-31": 77000000,
+     "2024-12-31": 100000000,
+     "2025-12-31": 113000000
+    },
+    "diluted_shares": {
+     "2023-12-31": 375193110,
+     "2024-12-31": 352567060,
+     "2025-12-31": 345656067
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 20588000000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 4232000000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 2707000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 5762000000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 3155000000
+    },
+    "software_capex": {
+     "end": "2026-09-30",
+     "value": 929000000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 127000000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 339637973
+    }
+   },
+   "source": {
+    "revenue": "Revenues",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "software_capex": "PaymentsToAcquireIntangibleAssets",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001692819",
+   "name": "Vistra Corp."
+  },
+  "ZBH": {
+   "annual": {
+    "revenue": {
+     "2020-12-31": 6127500000,
+     "2021-12-31": 6827300000,
+     "2022-12-31": 6939900000,
+     "2023-12-31": 7394200000,
+     "2024-12-31": 7678600000,
+     "2025-12-31": 8231500000
+    },
+    "operating_income": {
+     "2020-12-31": 83100000,
+     "2021-12-31": 860300000,
+     "2022-12-31": 696300000,
+     "2023-12-31": 1277700000,
+     "2024-12-31": 1285700000,
+     "2025-12-31": 1098100000
+    },
+    "net_income": {
+     "2020-12-31": -138900000,
+     "2021-12-31": 401600000,
+     "2022-12-31": 231400000,
+     "2023-12-31": 1024000000,
+     "2024-12-31": 903800000,
+     "2025-12-31": 705100000
+    },
+    "operating_cash_flow": {
+     "2019-12-31": 1585800000,
+     "2020-12-31": 1204500000,
+     "2021-12-31": 1499200000,
+     "2023-12-31": 1581600000,
+     "2024-12-31": 1499400000,
+     "2025-12-31": 1697100000
+    },
+    "capex": {
+     "2020-12-31": 111900000,
+     "2021-12-31": 143600000,
+     "2022-12-31": 187900000,
+     "2023-12-31": 291100000,
+     "2024-12-31": 203800000,
+     "2025-12-31": 224500000
+    },
+    "software_capex": {
+     "2012-12-31": 900000,
+     "2021-12-31": 8400000,
+     "2022-12-31": 29700000,
+     "2023-12-31": 103400000,
+     "2024-12-31": 153000000,
+     "2025-12-31": 52400000
+    },
+    "stock_comp": {
+     "2020-12-31": 73800000,
+     "2021-12-31": 76000000,
+     "2022-12-31": 105000000,
+     "2023-12-31": 99800000,
+     "2024-12-31": 101000000,
+     "2025-12-31": 90200000
+    },
+    "diluted_shares": {
+     "2023-12-31": 209700000,
+     "2024-12-31": 203900000,
+     "2025-12-31": 198700000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-09-30",
+     "value": 8570400000
+    },
+    "operating_income": {
+     "end": "2026-09-30",
+     "value": 1161300000
+    },
+    "net_income": {
+     "end": "2026-09-30",
+     "value": 767400000
+    },
+    "operating_cash_flow": {
+     "end": "2026-09-30",
+     "value": 1884600000
+    },
+    "capex": {
+     "end": "2026-09-30",
+     "value": 241100000
+    },
+    "software_capex": {
+     "end": "2026-09-30",
+     "value": 136200000
+    },
+    "stock_comp": {
+     "end": "2026-09-30",
+     "value": 97100000
+    },
+    "diluted_shares": {
+     "end": "2026-09-30",
+     "value": 193400000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "software_capex": "PaymentsToAcquireIntangibleAssets",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0001136869",
+   "name": "ZIMMER BIOMET HOLDINGS, INC."
+  }
+ },
+ "missing": [
+  "QQQ",
+  "SPY",
+  "TSM"
+ ]
+}

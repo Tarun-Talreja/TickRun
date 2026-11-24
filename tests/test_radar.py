@@ -140,11 +140,12 @@ class TestLogAndScorecard:
 
     def test_too_early_means_no_score(self):
         log = {"A": {"first_seen": "2026-11-01", "price": 10.0, "spy": 500.0}}
-        assert scorecard(log, {"A": 20.0}, 500.0, TODAY)["4w"]["count"] == 0
+        assert scorecard(log, {"A": {"2026-11-01": 10.0, TODAY: 20.0}, "SPY": {"2026-11-01": 500.0, TODAY: 500.0}}, TODAY)["4w"]["count"] == 0
 
     def test_excess_return_against_spy(self):
-        log = {"A": {"first_seen": "2026-10-01", "price": 10.0, "spy": 500.0}}
-        card = scorecard(log, {"A": 12.0}, 550.0, TODAY)
+        log = {"A": {"first_seen": "2026-10-01", "price": 99.0, "spy": 1.0}}
+        closes = {"A": {"2026-09-30": 10.0, TODAY: 12.0}, "SPY": {"2026-09-30": 500.0, TODAY: 550.0}}
+        card = scorecard(log, closes, TODAY)
         assert card["4w"] == {"count": 1, "avg_excess_pct": 10.0}
         assert card["12w"]["count"] == 0
 

@@ -413,6 +413,7 @@ def _update_watchlist(
             # What the rating knew, so results reported after it send it back to the queue.
             candidate["rated_quarter_end"] = (rated_quote or {}).get("latest_quarter_end")
             candidate["rated_next_earnings"] = (rated_quote or {}).get("next_earnings")
+            candidate["rated_price"] = (rated_quote or {}).get("price")
             if confidence:
                 candidate["confidence"] = confidence
             # Clear on a rerun, or last time's argument stays on the stock page.

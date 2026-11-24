@@ -18,7 +18,7 @@ Usage:
 import json
 import os
 import sys
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from io_utils import load_json
@@ -175,17 +175,30 @@ def updated_log(log: dict, cards: list[dict], today: str, spy: float | None) -> 
     return {**log, **fresh}
 
 
-def scorecard(log: dict, prices: dict, spy_now: float | None, today: str) -> dict:
-    """Average return minus SPY for picks old enough to judge, per time window."""
+def _close_on(closes: dict[str, float], day: str) -> float | None:
+    """Close on that day, or the last one before it."""
+    before = [d for d in closes if d <= day]
+    return closes[max(before)] if before else None
+
+
+def scorecard(log: dict, closes: dict[str, dict[str, float]], today: str) -> dict:
+    """Average return minus SPY for picks old enough to judge, per time window.
+
+    Stock and SPY closes come from the same days. The log's own prices don't: they
+    mixed the weekly screen's price with a newer SPY price.
+    """
+    spy = closes.get("SPY", {})
     now = date.fromisoformat(today)
     out = {}
     for label, days in SCORE_WINDOWS.items():
         excess = []
         for ticker, entry in log.items():
-            price, first, spy = prices.get(ticker), entry.get("price"), entry.get("spy")
+            mine, day = closes.get(ticker, {}), entry["first_seen"]
+            first, price = _close_on(mine, day), _close_on(mine, today)
+            spy_first, spy_now = _close_on(spy, day), _close_on(spy, today)
             old_enough = (now - date.fromisoformat(entry["first_seen"])).days >= days
-            if old_enough and price and first and spy and spy_now:
-                excess.append((price / first - spy_now / spy) * 100)
+            if old_enough and price and first and spy_first and spy_now:
+                excess.append((price / first - spy_now / spy_first) * 100)
         average = round(sum(excess) / len(excess), 1) if excess else None
         out[label] = {"count": len(excess), "avg_excess_pct": average}
     return out
@@ -205,6 +218,18 @@ def _insiders(tickers: list[str]) -> dict:
     return {t: _fetch_one(t) for t in tickers}
 
 
+def _closes(tickers: list[str], start: str) -> dict[str, dict[str, float]]:
+    """Split- and dividend-adjusted daily closes, from a week before start."""
+    import yfinance as yf
+    begin = (date.fromisoformat(start) - timedelta(days=7)).isoformat()
+    try:
+        frame = yf.download(tickers, start=begin, auto_adjust=True, progress=False)["Close"]
+    except Exception as exc:   # no prices means no score, never a wrong one
+        print(f"⚠ scorecard prices unavailable: {str(exc)[:120]}")
+        return {}
+    return {t: {d.strftime("%Y-%m-%d"): float(v) for d, v in frame[t].dropna().items()} for t in frame.columns}
+
+
 def main() -> None:
     universe = load_json(UNIVERSE_PATH).get("stocks", [])
     if not universe:
@@ -220,14 +245,14 @@ def main() -> None:
     insiders = _insiders(_finalists(universe, news, log, tracked))
     radar = build_radar(universe, news, log, insiders, tracked, ratings, today)
     new_log = updated_log(log, radar["cards"], today, spy)
-    prices = {s["ticker"]: s.get("price") for s in universe}
+    closes = _closes(sorted({*new_log, "SPY"}), min((e["first_seen"] for e in new_log.values()), default=today))
 
     with open(LOG_PATH, "w") as f:
         json.dump(new_log, f, indent=2, sort_keys=True)
     with open(OUTPUT_PATH, "w") as f:
         json.dump({"generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                    "universe_as_of": load_json(UNIVERSE_PATH).get("generated_at"),
-                   **radar, "scorecard": scorecard(new_log, prices, spy, today)}, f, indent=2)
+                   **radar, "scorecard": scorecard(new_log, closes, today)}, f, indent=2)
     print(f"📡 Radar: {len(radar['cards'])} cards, {len(radar['on_sale'])} on sale")
     for c in radar["cards"]:
         print(f"  {c['ticker']:6s} {' + '.join(r['kind'] for r in c['reasons'])}")

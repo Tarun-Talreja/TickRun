@@ -54,7 +54,8 @@ def main():
         if verdict not in TRACK_VERDICTS or not researched:
             continue
         q = quotes.get(ticker, {})
-        price = q.get("price")
+        # The price the rating was made at; this job can run days later.
+        price = c.get("rated_price") or q.get("price")
         if not price:
             continue
         key = (ticker, verdict, researched)

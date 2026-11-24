@@ -24,11 +24,14 @@ import sys
 from datetime import datetime, timezone
 
 from bear_check import RATING_VERSION
+from fact_check import drop_unsupported
 from health import build_health
 from io_utils import load_json as _load
 from market_time import price_due_at, prices_as_of
+from rating_move import big_move
 from research_batch import SKIP_TICKERS
 from sec_filings import is_stake
+from valuation_view import valuation_view
 
 SCRIPT_DIR          = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PORTFOLIO_PATH      = os.path.join(SCRIPT_DIR, "data", "portfolio.json")
@@ -55,6 +58,7 @@ ASSET_LOCATION_PATH = os.path.join(SCRIPT_DIR, "data", "asset_location.json")
 CATALYSTS_PATH      = os.path.join(SCRIPT_DIR, "data", "catalysts.json")
 DAILY_BRIEF_PATH    = os.path.join(SCRIPT_DIR, "output", "daily_brief.json")
 RESEARCH_STATUS_PATH = os.path.join(SCRIPT_DIR, "data", "research_status.json")
+VALUATIONS_PATH     = os.path.join(SCRIPT_DIR, "data", "valuations.json")
 OUTPUT_PATH         = os.path.join(SCRIPT_DIR, "output", "dashboard.json")
 os.makedirs(os.path.join(SCRIPT_DIR, "output"), exist_ok=True)
 
@@ -134,6 +138,7 @@ def _content_counts(quotes: dict, news: dict, insiders: dict, funds: dict, mover
         "Radar": (radar.get("generated_at"), len(radar.get("cards", []))),
         "Screener": (screen.get("generated_at"), screen.get("qualified", 0)),
         "Home summary": (digest.get("generated_at"), int(bool(digest.get("narrative")))),
+        "Valuation": (_load(VALUATIONS_PATH).get("generated_at"), len(_load(VALUATIONS_PATH).get("tickers", {}))),
     }
 
 
@@ -160,7 +165,7 @@ def with_live_prices(radar: dict, quotes: dict) -> dict:
 
 
 def without_targets(stock: dict) -> dict:
-    """The stock without its old target, until the valuation on v2-valuation replaces it.
+    """The stock without its old target, which the valuation replaced.
 
     The target is a % below the 52-week high, or the price on the day it was rated, so a
     late price moved it and RDDT read $211 at $85. The stored data is left alone.
@@ -169,6 +174,15 @@ def without_targets(stock: dict) -> dict:
     if kept.get("next_action"):
         kept["next_action"] = _PULLBACK_RE.sub("", kept["next_action"])
     return kept
+
+
+def without_made_up_figures(stock: dict) -> dict:
+    figures = stock.get("unsupported_figures") or []
+    action, dash, thesis = (stock.get("next_action") or "").partition(" — ")
+    cleaned = drop_unsupported(thesis, figures)
+    return {**stock, "thesis": drop_unsupported(stock.get("thesis"), figures),
+            "bear_check": drop_unsupported(stock.get("bear_check"), figures),
+            "next_action": f"{action}{dash}{cleaned}" if dash else stock.get("next_action")}
 
 
 def _enrich_candidate(candidate: dict, quotes: dict, insider_signals: dict, hedge_fund_signals: dict) -> dict:
@@ -312,6 +326,14 @@ def main():
     candidates_enriched = [
         _enrich_candidate(c, quotes, insider, hedge_fund)
         for c in watchlist.get("candidates", [])
+    ]
+    valuations = _load(VALUATIONS_PATH)
+    candidates_enriched = [
+        {**without_made_up_figures(c),
+         "moved_since_rating": big_move(c, quotes["tickers"].get(c["ticker"], {})),
+         "valuation": valuation_view(valuations.get("tickers", {}).get(c["ticker"]), c.get("price"),
+                                     valuations.get("generated_at"))}
+        for c in candidates_enriched
     ]
 
     # Attach data-quality flags so the UI can warn on unreliable data

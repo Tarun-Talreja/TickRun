@@ -45,3 +45,10 @@ def test_ttm_capex_needs_four_quarters():
     from refresh_quotes import _ttm_capex
     flows = pd.DataFrame({"Capital Expenditure": [-5, -4]}, index=pd.to_datetime(["2026-09-30", "2026-06-30"])).T
     assert _ttm_capex(SimpleNamespace(quarterly_cashflow=flows)) is None
+
+
+def test_ttm_capex_needs_consecutive_quarters():
+    from refresh_quotes import _ttm_capex
+    columns = pd.to_datetime(["2026-09-30", "2026-03-31", "2025-12-31", "2025-09-30"])
+    flows = pd.DataFrame({"Capital Expenditure": [-5, -4, -3, -2]}, index=columns).T
+    assert _ttm_capex(SimpleNamespace(quarterly_cashflow=flows)) is None

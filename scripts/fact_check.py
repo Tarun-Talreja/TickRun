@@ -69,6 +69,24 @@ def source_block(prompt: str) -> str:
     return prompt[start:end if end != -1 else len(prompt)]
 
 
+_SENTENCE_RE = re.compile(r"(?<=[.!?])\s+(?=[A-Z\"(*])|\n+")
+
+
+def drop_unsupported(text: str | None, figures: list[str]) -> str | None:
+    """The text without sentences that use a figure the source data never contained."""
+    if not text or not figures:
+        return text
+    patterns = [re.compile(rf"(?<![\d.,]){re.escape(f.strip(" ,."))}(?!\d)") for f in figures]
+    sentences = [s for s in _SENTENCE_RE.split(text) if s.strip()]
+    kept = [s for s in sentences if not any(p.search(s) for p in patterns)]
+    if len(kept) == len(sentences):
+        return text
+    if not kept:
+        return "No summary: its figures weren't in the source data."
+    note = f"[{len(sentences) - len(kept)} sentence(s) removed: figures not in the source data.]"
+    return " ".join([*kept, note])
+
+
 def fact_check_section(unsupported: list[str]) -> str:
     if not unsupported:
         return "\n\n---\n\n## Fact-check\n\nEvery figure traced to the source data.\n"

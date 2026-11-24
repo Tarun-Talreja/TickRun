@@ -37,6 +37,7 @@ import sys
 from datetime import date, datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from company_measures import MEASURES
 from io_utils import load_json
 
 SCRIPT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -59,11 +60,15 @@ PE_YEARS = 5
 NORMALISE_YEARS = 3          # steady businesses: last three years plus the last twelve months
 CYCLE_YEARS = 6              # cyclical ones: every year on file, to span a cycle
 GROWTH_GAP = 0.03            # growth is never assumed within 3 points of the required return
-MAX_SPREAD = 2.5             # methods further apart than this ratio don't agree
+MAX_SPREAD = 2.0             # methods further apart than this ratio don't agree
+CAP_GAP = 0.15               # price x shares must match the market value this closely
+SHARE_JUMP = 1.4             # a bigger share-count change within a year looks like a split
 MAX_DATA_AGE_DAYS = 200      # last filed period older than this is stale
-MAX_REVENUE_GAP = 0.10       # SEC and Yahoo revenue must agree this closely
+MAX_REVENUE_GAP = 0.05       # SEC and Yahoo revenue must agree this closely
 CAPEX_GAP = 0.10             # Yahoo seeing this much more capital spending means some is missing
 MAX_RELEASE_AGE_DAYS = 120   # a company-reported figure from an older release is stale
+# A failed download must not fall back to the cash flow these companies' rule exists to avoid.
+NO_MEASURE = {"filed": None, "measure": None}
 MEASURES_PATH = os.path.join(SCRIPT_DIR, "data", "company_measures.json")
 
 
@@ -164,6 +169,16 @@ def latest_growth(revenue: dict[str, float]) -> float | None:
     return years[-1][1] / years[-2][1] - 1
 
 
+def capped_by_now(growth: float | None, quarter_pct: float | None) -> tuple[float | None, str | None]:
+    """Growth no faster than the latest quarter's: PAYX's 10% a year came from buying Paycor."""
+    if growth is None or quarter_pct is None:
+        return growth, None
+    now = max(quarter_pct / 100, 0.0)
+    if growth <= now:
+        return growth, None
+    return round(now, 4), f"growth cut from {growth:.1%} to {now:.1%}, the latest quarter's pace"
+
+
 def fair_multiple(past_pes: list[float], g_now: float | None, rate: float) -> tuple[float | None, str | None]:
     """The stock's median past P/E, never above what its growth now can justify.
 
@@ -187,20 +202,24 @@ def fair_multiple(past_pes: list[float], g_now: float | None, rate: float) -> tu
 
 
 def combine(methods: dict[str, float | None], price: float, problems: list[str] | None = None,
-            implied: float | None = None, min_methods: int = 2) -> dict:
+            implied: float | None = None, min_methods: int = 2,
+            no_growth_value: float | None = None) -> dict:
     values = {k: round(v, 2) for k, v in methods.items() if v and v > 0}
     out = {"methods": values, "price": price, "status": "no_reliable_price",
-           "low": None, "base": None, "high": None, "buy_below": None}
+           "low": None, "base": None, "high": None, "buy_below": None,
+           "no_growth_value": round(no_growth_value, 2) if no_growth_value else None}
     if values:
         out = {**out, "low": min(values.values()), "high": max(values.values()),
                "base": round(statistics.mean(values.values()), 2)}
     if problems:
         return {**out, "reason": "; ".join(problems)}
-    if implied is not None and implied < 0:
+    # implied is None when the price is below even a 50% yearly decline, so check the price too.
+    if (implied is not None and implied < 0) or (no_growth_value and price < no_growth_value):
+        pace = f" about {abs(implied):.0%} a year" if implied is not None else ""
         # The value assumes past growth continues; the price says the market disagrees.
         # Until news is judged (v2 phase 4), a value trap and a bargain look the same here.
         return {**out, "status": "market_expects_decline",
-                "reason": f"today's price implies the business shrinks about {abs(implied):.0%} a year; "
+                "reason": f"today's price implies the business shrinks{pace}; "
                           f"find out why before trusting a higher value"}
     if len(values) < min_methods:
         missing = [k.replace("_", " ") for k in methods if k not in values]
@@ -251,12 +270,28 @@ def _problems(record: dict, quote: dict, today: date) -> list[str]:
         gap = abs(revenue["value"] - yahoo) / yahoo
         if gap > MAX_REVENUE_GAP:
             problems.append(f"SEC and Yahoo revenue differ by {gap:.0%}")
-    if not (ttm.get("diluted_shares") or {}).get("value"):
+    shares = (ttm.get("diluted_shares") or {}).get("value")
+    if not shares:
         problems.append("no share count on file")
+    return problems + _share_problems(shares, record["annual"].get("diluted_shares", {}), quote)
+
+
+def _share_problems(shares: float | None, annual_shares: dict[str, float], quote: dict) -> list[str]:
+    """A split, merger or second share class makes every per-share figure wrong."""
+    problems, price, cap = [], quote.get("price"), quote.get("market_cap")
+    if not shares:
+        return problems
+    if price and cap and abs(price * shares / cap - 1) > CAP_GAP:
+        problems.append(f"the filed share count doesn't match its market value (off by {abs(price * shares / cap - 1):.0%})")
+    if annual_shares:
+        ratio = shares / annual_shares[max(annual_shares)]
+        if not 1 / SHARE_JUMP <= ratio <= SHARE_JUMP:
+            problems.append("the share count changed sharply since the last annual report, which looks like a split")
     return problems
 
 
-def value_from_measure(entry: dict, shares: float | None, price: float, rate: float, today: date) -> dict:
+def value_from_measure(entry: dict, shares: float | None, price: float, rate: float, today: date,
+                       share_problems: list[str] | None = None) -> dict:
     """Value from a company-reported figure, assuming only long-run growth.
 
     One method is allowed here because the figure is the company's own, read word for
@@ -264,9 +299,9 @@ def value_from_measure(entry: dict, shares: float | None, price: float, rate: fl
     excludes growth spending, so growing it as well would count the growth twice.
     """
     measure = entry.get("measure")
-    problems = []
+    problems = list(share_problems or [])
     if not measure:
-        problems.append(f"the company figure wasn't found in its {entry.get('filed')} release")
+        problems.append("the company's own cash-flow figure wasn't found in its latest earnings release")
     elif (today - date.fromisoformat(entry["filed"])).days > MAX_RELEASE_AGE_DAYS:
         problems.append(f"the latest earnings release ({entry['filed']}) is too old")
     if not shares and measure and measure["kind"] == "cash_flow_total":
@@ -276,7 +311,8 @@ def value_from_measure(entry: dict, shares: float | None, price: float, rate: fl
     per_share = measure["mid"] / shares if measure["kind"] == "cash_flow_total" else measure["mid"]
     implied = implied_growth(price, per_share, rate)
     result = combine({"company_measure": dcf_per_share(per_share, TERMINAL_GROWTH, rate)}, price,
-                     implied=implied, min_methods=1)
+                     implied=implied, min_methods=1,
+                     no_growth_value=dcf_per_share(per_share, 0.0, rate))
     return {**result, "notes": [f"valued on {measure['name']}, with no growth beyond inflation"],
             "inputs": {"measure": measure, "release_filed": entry["filed"], "release_url": entry.get("url"),
                        "per_share": round(per_share, 2), "discount_rate": rate, "growth_used": TERMINAL_GROWTH,
@@ -290,7 +326,8 @@ def value_ticker(record: dict, quote: dict, year_end_prices: dict[str, float],
     price = quote.get("price")
     if measure is not None and treasury is not None and price:
         shares = ((record.get("ttm") or {}).get("diluted_shares") or {}).get("value")
-        result = value_from_measure(measure, shares, price, discount_rate(treasury, beta), today)
+        result = value_from_measure(measure, shares, price, discount_rate(treasury, beta), today,
+                                    _share_problems(shares, {}, quote))
         return {**result, "inputs": {**result["inputs"], "beta": beta}}
     problems = _problems(record, quote, today)
     if treasury is None:
@@ -311,7 +348,8 @@ def value_ticker(record: dict, quote: dict, year_end_prices: dict[str, float],
                                    value_of("net_income"), revenue_now)
     cash_ps = cash_margin * revenue_now / shares if cash_margin is not None else 0.0
     eps = net_margin * revenue_now / shares if net_margin is not None else None
-    growth = growth_rate(revenue)
+    growth, growth_note = capped_by_now(growth_rate(revenue), quote.get("revenue_growth"))
+    g_now, _ = capped_by_now(latest_growth(revenue), quote.get("revenue_growth"))
     distorted = cash_flow_is_distorted(annual.get("operating_cash_flow", {}), annual.get("net_income", {}))
     past_eps = eps_by_year(annual.get("net_income", {}), annual.get("diluted_shares", {}))
     pes = [year_end_prices[y] / e for y, e in sorted(past_eps.items())[-PE_YEARS:]
@@ -319,17 +357,19 @@ def value_ticker(record: dict, quote: dict, year_end_prices: dict[str, float],
     usable = cash_ps > 0 and growth is not None and not distorted
     cash_value = dcf_per_share(cash_ps, growth, rate) if usable else None
     implied = implied_growth(price, cash_ps, rate) if usable else None
-    multiple, multiple_note = fair_multiple(pes, latest_growth(revenue), rate)
+    multiple, multiple_note = fair_multiple(pes, g_now, rate)
     own_value = multiple * eps if multiple and eps and eps > 0 else None
-    result = combine({"cash_flow": cash_value, "own_multiple": own_value}, price, implied=implied)
+    result = combine({"cash_flow": cash_value, "own_multiple": own_value}, price, implied=implied,
+                     no_growth_value=dcf_per_share(cash_ps, 0.0, rate) if usable else None)
     far_future = terminal_share(cash_ps, growth, rate) if usable else None
     notes = [
         *(["cash flow skipped: reported operating cash flow was negative in a profitable year"]
           if distorted else []),
-        *(["cyclical business: margins averaged over every year on file"] if cyclical else []),
+        *(["profit margins vary a lot, so they were averaged over every year on file"] if cyclical else []),
         *([f"{far_future:.0%} of the cash-flow value comes after year 10, so it rests on long-run guesses"]
           if far_future and far_future > MAX_TERMINAL_SHARE else []),
         *(["no beta available, so average market risk was assumed"] if beta is None else []),
+        *([growth_note] if growth_note else []),
         *([capex_note] if capex_note else []),
         *([f"left out as out of date in the filings: {', '.join(record['stale'])}"]
           if record.get("stale") else []),
@@ -394,7 +434,7 @@ def main() -> None:
             print(f"⚠ {ticker}: price history unavailable ({str(exc)[:100]})")
             prices, beta = {}, None
         results[ticker] = value_ticker(record, quotes.get(ticker, {}), prices, treasury, today, beta,
-                                       measures.get(ticker))
+                                       measures.get(ticker) or (NO_MEASURE if ticker in MEASURES else None))
     priced = sum(r["status"] == "ok" for r in results.values())
     with open(OUTPUT_PATH, "w") as f:
         json.dump({"generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),

@@ -16,13 +16,13 @@ MAX_AGE_HOURS = {"Quotes": 30, "Research": 36, "Catalysts": 36, "News": 30,
                  "SEC filings": 30, "Screener": 8 * 24, "Field news": 30,
                  "Prices": 30, "Company figures": 30, "Insider data": 9 * 24,
                  "Hedge funds": 100 * 24, "Movers": 30, "Radar": 30, "Home summary": 36,
-                 "Self-test": 3 * 24}
+                 "Valuation": 4 * 24, "Self-test": 3 * 24}
 # Running on time proves nothing: the news job did that for five weeks and returned
 # nothing. So each part also has to produce real data. A share is the part of the list
 # that must have data; a count is how many results there must be at least.
 MIN_SHARE = {"News": 0.5, "Prices": 0.9, "Company figures": 0.8, "Insider data": 0.5,
              "Hedge funds": 0.5, "Field news": 0.75, "Movers": 0.5}
-MIN_COUNT = {"Screener": 300, "Radar": 1, "Home summary": 1}
+MIN_COUNT = {"Screener": 300, "Radar": 1, "Home summary": 1, "Valuation": 40}
 # What goes wrong for you when a part is down, shown on Home and in the alert.
 AFFECTS = {
     "Quotes": "The market has traded since these prices",
@@ -40,6 +40,7 @@ AFFECTS = {
     "Movers": "Big moves may have no explanation",
     "Radar": "The radar may be out of date",
     "Home summary": "The summary may be out of date",
+    "Valuation": "Buy-below prices may be missing or out of date",
     "Self-test": "One of the data sources failed its daily test",
 }
 # Market data stops on Friday night, so allow for the weekend until Monday.

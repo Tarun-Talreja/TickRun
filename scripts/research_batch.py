@@ -33,6 +33,7 @@ STATUS_PATH     = os.path.join(SCRIPT_DIR, "data", "research_status.json")
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from bear_check import RATING_VERSION
+from rating_move import big_move
 
 STALE_DAYS      = 7      # re-research if older than this
 PASS_STALE_DAYS = 30     # a PASS gets a slower second look, or it stays PASS forever
@@ -113,7 +114,11 @@ def _select_tickers(max_n: int) -> list[str]:
 
         new_results = has_new_results(c, quotes.get(ticker, {}), datetime.now(timezone.utc))
 
+        moved = big_move(c, quotes.get(ticker, {})) is not None
+
         score = 0
+        if moved:
+            score += 120
         if new_results:
             score += 150
         if never_pipeline_researched:
@@ -135,7 +140,7 @@ def _select_tickers(max_n: int) -> list[str]:
             due = stale_days >= PASS_STALE_DAYS
         else:
             due = stale_days >= STALE_DAYS or dipping
-        if never_pipeline_researched or old_logic or due or new_results:
+        if never_pipeline_researched or old_logic or due or new_results or moved:
             scored.append((score, ticker))
 
     scored.sort(reverse=True)

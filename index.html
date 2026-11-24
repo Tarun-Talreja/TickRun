@@ -1225,6 +1225,29 @@ function openStock(s){
   navigateTo('stock', full);
 }
 
+function renderValuation(s){
+  const v = s.valuation;
+  const row = (a,b)=>`<div style="display:flex;justify-content:space-between;gap:12px;padding:5px 0;border-bottom:1px solid var(--bg3)"><span style="color:var(--text2)">${a}</span><span style="text-align:right">${b}</span></div>`;
+  const wrap = body=>`<div class="detail-section"><div class="ds-title">What It May Be Worth</div><div class="thesis-box" id="valuation-box">${body}</div></div>`;
+  if(!v) return wrap('No reliable price: this one hasn’t been valued.');
+  const i = v.inputs||{};
+  const names = {cash_flow:'From its cash flow',own_multiple:'From its own past P/E',company_measure:'From the company’s own guidance'};
+  const methods = Object.entries(v.methods||{}).map(([k,x])=>row(names[k]||esc(k),fp(x))).join('');
+  const asOf = i.figures_as_of?`Company figures through ${fDate(i.figures_as_of)}.`:i.release_filed?`Company release filed ${fDate(i.release_filed)}.`:'';
+  const pct = x=>(x*100).toFixed(1)+'%';
+  const assume = i.discount_rate?`Assumes ${pct(i.growth_used??0)} yearly growth for five years and a ${pct(i.discount_rate)} required yearly return. `:'';
+  const notes = (v.notes||[]).map(n=>`<li>${esc(n)}</li>`).join('');
+  const foot = `<div style="margin-top:8px;font-size:11px;color:var(--text2)">${v.status==='ok'?assume:''}${asOf} Valued ${fDate(v.valued_on)}. A rule-based estimate, not a forecast or advice.</div>${notes?`<ul style="margin:6px 0 0 16px;font-size:11px;color:var(--text2)">${notes}</ul>`:''}`;
+  if(v.status!=='ok'){
+    const title = v.status==='market_expects_decline'?'No buy-below price: the market expects a decline':'No reliable price';
+    return wrap(`<b>${title}</b><div style="margin-top:4px">${esc(v.reason||'')}</div>${methods?`<details style="margin-top:8px"><summary style="cursor:pointer;color:var(--text2);font-size:12px">Figures not trusted</summary>${methods}</details>`:''}${foot}`);
+  }
+  const g = v.gap_pct;
+  const line = g>0?`Today’s price is ${g.toFixed(0)}% above it.`:`Today’s price is ${Math.abs(g).toFixed(0)}% below it. Check for news these filed figures don’t include.`;
+  const one = Object.keys(v.methods||{}).length===1?'<div style="margin-top:4px;color:var(--amber);font-size:12px">Only one method was used, so trust this less.</div>':'';
+  return wrap(`${row('Buy-below price','<b>'+fp(v.buy_below)+'</b>')}<div style="margin:4px 0">${line}</div>${one}${row('Estimated value (middle)',fp(v.base))}${methods}${foot}`);
+}
+
 function renderStockDetail(s){
   const price = s.current_price ?? s.price;
   const dd = s.drawdown_from_high;
@@ -1263,8 +1286,9 @@ function renderStockDetail(s){
     </div>
     ${tags?`<div class="signal-tags">${tags}</div>`:''}
     <div class="detail-action-box ${dabClass}">
-      <div class="dab-label">${ac==='buy'?'▲ Next Action — Buy':ac==='wait'?'◎ Next Action — Wait':ac==='pass'?'✕ Pass':'→ Research'}</div>
+      <div class="dab-label">${ac==='buy'?'▲ AI Rating':ac==='wait'?'◎ AI Rating: Wait':ac==='pass'?'✕ AI Rating: Pass':'→ AI Rating'}</div>
       <div class="dab-action">${esc(s.next_action||'No action defined.')}</div>
+      ${s.moved_since_rating?`<div style="margin-top:8px;font-size:12px;color:var(--amber)">⚠ Out of date: the price moved ${s.moved_since_rating.pct>0?'+':''}${s.moved_since_rating.pct}% ${esc(s.moved_since_rating.span)}. This rating is from ${fDate(s.last_researched)} and is queued to be redone.</div>`:''}
     </div>
   </div>
 
@@ -1282,9 +1306,10 @@ function renderStockDetail(s){
   <div class="detail-section">
     <div class="ds-title">Investment Thesis</div>
     <div class="thesis-box">${esc(s.thesis||'No thesis recorded yet.')}</div>
-    ${(s.unsupported_figures||[]).length?`<div style="font-size:12px;color:var(--red);margin-top:8px">Not in the source data, verify before relying on: ${esc(s.unsupported_figures.join(', '))}</div>`:''}
+    ${(s.unsupported_figures||[]).length?`<div style="font-size:12px;color:var(--red);margin-top:8px">Figures in the full research note that weren’t in its source data (sentences using them are removed here): ${esc(s.unsupported_figures.join(', '))}</div>`:''}
     ${s.last_researched?`<div style="margin-top:8px;font-size:9px;color:var(--text2)">Last researched: ${fDate(s.last_researched)}${s.confidence?` · Confidence: ${esc(s.confidence)}`:''}</div>`:''}
   </div>
+  ${renderValuation(s)}
   ${s.fall_reason?`<div class="detail-section">
     <div class="ds-title">Why It Fell</div>
     <div class="thesis-box">${esc(s.fall_reason)}</div>

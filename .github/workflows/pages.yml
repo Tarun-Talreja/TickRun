@@ -16,6 +16,7 @@ on:
   workflow_run:
     workflows:
       - "Quote Refresh and Alerts"
+      - "Daily Valuation"
       - "Daily LLM Research"
       - "Catalyst Lookahead and Alerts"
       - "Weekly Dashboard Rebuild"

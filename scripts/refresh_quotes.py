@@ -72,6 +72,11 @@ def _fx_rate(from_cur: str, to_cur: str) -> float | None:
         return None
 
 
+def _four_in_a_row(quarters) -> bool:
+    """Yahoo leaves quarters blank (ETN's June 2026), and four with a gap aren't a year."""
+    return len(quarters) >= 4 and (quarters.index[0] - quarters.index[3]).days <= 300
+
+
 def _ttm_fcf(t) -> float | None:
     """Operating cash flow minus capex, summed over the last four quarters.
 
@@ -82,7 +87,7 @@ def _ttm_fcf(t) -> float | None:
         quarters = t.quarterly_cashflow.loc["Free Cash Flow"].dropna().sort_index(ascending=False)
     except KeyError:
         return None
-    return float(quarters.iloc[:4].sum()) if len(quarters) >= 4 else None
+    return float(quarters.iloc[:4].sum()) if _four_in_a_row(quarters) else None
 
 
 def _ttm_capex(t) -> float | None:
@@ -95,7 +100,7 @@ def _ttm_capex(t) -> float | None:
         quarters = t.quarterly_cashflow.loc["Capital Expenditure"].dropna().sort_index(ascending=False)
     except KeyError:
         return None
-    return float(-quarters.iloc[:4].sum()) if len(quarters) >= 4 else None
+    return float(-quarters.iloc[:4].sum()) if _four_in_a_row(quarters) else None
 
 
 def _latest_op_margin(t, info: dict) -> float | None:
