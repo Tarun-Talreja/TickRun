@@ -1,0 +1,50 @@
+name: Market Tick
+
+# A relay that doesn't use GitHub's timer, which ran hours late or not at all. Each run
+# waits 30 minutes (the environment's wait timer, no machine used), checks, starts the next.
+on:
+  workflow_dispatch:
+  # If the relay ever breaks, any of these picks it up. One run at a time, one queued.
+  schedule:
+    - cron: '23 */3 * * *'
+  workflow_run:
+    workflows: ["Daily LLM Research", "Daily Field News", "Daily Valuation", "Health Watch"]
+    types: [completed]
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: market-tick
+  cancel-in-progress: false
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    environment: half-hour-wait
+    timeout-minutes: 10
+    steps:
+      # First, so nothing after it can break the relay.
+      - name: Queue the next check
+        run: |
+          for i in 1 2 3 4 5; do
+            gh workflow run market_tick.yml --repo "$GITHUB_REPOSITORY" --ref main && exit 0
+            sleep 20
+          done
+          exit 1
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - uses: actions/checkout@v4
+        if: always()
+      - uses: actions/setup-python@v5
+        if: always()
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+        if: always()
+      - run: python scripts/market_tick.py
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
