@@ -32,3 +32,16 @@ def test_falls_back_when_statement_has_no_operating_income():
 def test_none_when_nothing_is_available():
     t = SimpleNamespace(quarterly_income_stmt=pd.DataFrame())
     assert _latest_op_margin(t, {}) is None
+
+
+def test_ttm_capex_is_positive_and_four_quarters():
+    from refresh_quotes import _ttm_capex
+    columns = pd.to_datetime(["2026-09-30", "2026-06-30", "2026-03-31", "2025-12-31", "2025-09-30"])
+    flows = pd.DataFrame({"Capital Expenditure": [-5, -4, -3, -2, -100]}, index=columns).T
+    assert _ttm_capex(SimpleNamespace(quarterly_cashflow=flows)) == 14.0
+
+
+def test_ttm_capex_needs_four_quarters():
+    from refresh_quotes import _ttm_capex
+    flows = pd.DataFrame({"Capital Expenditure": [-5, -4]}, index=pd.to_datetime(["2026-09-30", "2026-06-30"])).T
+    assert _ttm_capex(SimpleNamespace(quarterly_cashflow=flows)) is None

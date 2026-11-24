@@ -85,6 +85,19 @@ def _ttm_fcf(t) -> float | None:
     return float(quarters.iloc[:4].sum()) if len(quarters) >= 4 else None
 
 
+def _ttm_capex(t) -> float | None:
+    """Capital spending over the last four quarters, as a positive number.
+
+    Yahoo counts software and other spending some companies file under their own
+    names (IBM), so valuation.py uses it to catch spending the SEC fields miss.
+    """
+    try:
+        quarters = t.quarterly_cashflow.loc["Capital Expenditure"].dropna().sort_index(ascending=False)
+    except KeyError:
+        return None
+    return float(-quarters.iloc[:4].sum()) if len(quarters) >= 4 else None
+
+
 def _latest_op_margin(t, info: dict) -> float | None:
     """Reported operating margin of the latest quarter, as a percent.
 
@@ -213,6 +226,7 @@ def _fetch_with_retry(ticker: str) -> dict:
         "revenue_growth":       round(info.get("revenueGrowth", 0) * 100, 1) if info.get("revenueGrowth") else None,
         "gross_margin":         round(info.get("grossMargins", 0) * 100, 1) if info.get("grossMargins") else None,
         "op_margin":            _latest_op_margin(t, info),
+        "capex_ttm":            _ttm_capex(t) if fx == 1.0 else None,
         **money,
         **_latest_quarter(t, fx),
         "div_yield_pct":        div_yield_pct,
