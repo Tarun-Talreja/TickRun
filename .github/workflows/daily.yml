@@ -87,6 +87,10 @@ jobs:
       - name: Assemble dashboard.json
         run: python scripts/build_dashboard.py
 
+      - name: Home summary
+        run: python scripts/weekly_digest.py
+        continue-on-error: true
+
       - name: Daily brief (what changed since yesterday)
         run: python scripts/daily_brief.py
         continue-on-error: true
@@ -118,34 +122,12 @@ jobs:
             data/verdict_history.json
             output/dashboard.json
             output/daily_brief.json
+            output/weekly_digest.json
             data/brief_snapshot.json
             output/portfolio_analytics.json
             output/track_record.json
             output/alerts.json
             output/earnings_calendar.json
-
-      - name: AI summary, when prices have moved on
-        # After the commit, because a slow model must not hold up the prices.
-        id: summary
-        timeout-minutes: 12
-        env:
-          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API }}
-        run: python scripts/weekly_digest.py --if-needed
-        continue-on-error: true
-
-      - name: Rebuild with the summary
-        if: steps.summary.outcome == 'success'
-        run: |
-          bash scripts/sync_with_main.sh
-          python scripts/build_dashboard.py
-
-      - uses: stefanzweifel/git-auto-commit-action@v5
-        if: steps.summary.outcome == 'success'
-        with:
-          commit_message: "Auto: AI summary"
-          file_pattern: >-
-            output/weekly_digest.json
-            output/dashboard.json
 
       - name: Open issue on failure
         if: failure()

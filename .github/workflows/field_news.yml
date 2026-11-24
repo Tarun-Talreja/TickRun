@@ -45,9 +45,7 @@ jobs:
       - name: Rebuild dashboard
         run: python scripts/build_dashboard.py
 
-      - name: Daily AI summary
-        env:
-          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API }}
+      - name: Home summary
         run: python scripts/weekly_digest.py
 
       - name: Sync with remote before commit

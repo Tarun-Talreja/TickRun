@@ -9,8 +9,7 @@ Reads the assembled dashboard.json and produces a short, readable digest:
   - Any data warnings to be aware of
   - SEC ownership stakes (early smart-money)
 
-If an LLM key is set, it writes a 3-4 sentence narrative summary on top.
-Otherwise it produces a clean structured digest with no LLM.
+The narrative is built in code; no model is involved.
 
 Output:
   output/weekly_digest.json  — structured + narrative (read by dashboard/app)
@@ -21,33 +20,62 @@ Usage:
 
 import json
 import os
-import re
 import sys
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from fact_check import find_unsupported
 from io_utils import load_json as _load
-from llm_client import chat
+from market_time import session_date
 
 SCRIPT_DIR    = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DASHBOARD_PATH = os.path.join(SCRIPT_DIR, "output", "dashboard.json")
 OUTPUT_PATH    = os.path.join(SCRIPT_DIR, "output", "weekly_digest.json")
-FALLBACK_FIELDS = 3
-MAX_RADAR_FACTS = 5
-MIN_GAP = timedelta(hours=3)
+QUOTES_PATH   = os.path.join(SCRIPT_DIR, "data", "quotes_cache.json")
+INDEX_FUNDS = ("SPY", "QQQ")
+TOP_MOVERS = 4
+EARNINGS_DAYS = 10
 
 
-def narrative_is_grounded(text: str, facts: dict) -> bool:
-    """True if every figure in text is in the facts. Bare JSON numbers count as any unit."""
-    raw = json.dumps(facts)
-    numbers = re.findall(r"\d+\.?\d*", raw)
-    return not find_unsupported(text, raw + " " + " ".join(f"{n}% {n}x ${n}" for n in numbers))
+def _day(iso: str) -> str:
+    d = datetime.fromisoformat(iso)
+    return f"{d:%a %b} {d.day}"
 
 
-def narrative_facts(facts: dict) -> dict:
-    """Facts safe to summarise. A target is only the price when research ran."""
-    return {k: v for k, v in facts.items() if k != "buy_ready_at_target"}
+def _moved(pct: float) -> str:
+    return f"{'rose' if pct >= 0 else 'fell'} {abs(pct):.1f}%"
+
+
+def market_line(quotes: dict, prices_as_of: str | None) -> str | None:
+    spy = quotes.get("SPY", {}).get("pct_change_1d")
+    qqq = quotes.get("QQQ", {}).get("pct_change_1d")
+    if spy is None or qqq is None or not prices_as_of:
+        return None
+    day = session_date(datetime.fromisoformat(prices_as_of.replace("Z", "+00:00")))
+    return f"{_day(day.isoformat())}: the S&P 500 {_moved(spy)} and the Nasdaq 100 {_moved(qqq)}."
+
+
+def movers_line(movers: list[dict] | None) -> str | None:
+    stocks = [m for m in movers or [] if m["ticker"] not in INDEX_FUNDS and m.get("pct") is not None]
+    if not stocks:
+        return None
+    listed = ", ".join(f"{m['ticker']} {m['pct']:+.1f}%" for m in stocks[:TOP_MOVERS])
+    lead = next((m for m in stocks if "headline:" in (m.get("reason") or "")), None)
+    quote = f" {lead['ticker']}, {lead['reason'].split(' The whole market')[0]}" if lead else ""
+    return f"Biggest moves you follow: {listed}.{quote}"
+
+
+def earnings_line(earnings: list[dict]) -> str | None:
+    soon = [f"{e['ticker']} {_day(e['date'])}" for e in earnings
+            if e.get("date") and (e.get("days_until") or 0) <= EARNINGS_DAYS]
+    return f"Earnings next: {', '.join(soon)}." if soon else None
+
+
+def summary(quotes: dict, prices_as_of: str | None, movers: list[dict] | None,
+            earnings: list[dict]) -> str | None:
+    """Built in code from saved data. A model wrote this until 2026-11-23, when it said
+    no company headline explained any move on the day NVDA's CEO came back."""
+    lines = [market_line(quotes, prices_as_of), movers_line(movers), earnings_line(earnings)]
+    return " ".join(line for line in lines if line) or None
 
 
 def current_movers(sig: dict, prices_as_of: str | None) -> list[dict] | None:
@@ -59,48 +87,6 @@ def current_movers(sig: dict, prices_as_of: str | None) -> list[dict] | None:
             for m in sig.get("price_movers", [])[:6]]
 
 
-def already_written(previous: dict, prices_as_of: str | None, now: datetime) -> bool:
-    """This price is covered, or the day's summary is recent enough."""
-    covered = previous.get("prices_as_of")
-    if not covered or not prices_as_of:
-        return False
-    written = datetime.fromisoformat(previous["generated_at"].replace("Z", "+00:00"))
-    return covered == prices_as_of or (
-        covered[:10] == prices_as_of[:10] and now - written < MIN_GAP)
-
-
-def fallback_summary(fields: dict) -> str | None:
-    """Field summaries that already passed their own check, so the card is never empty."""
-    lines = [f"{f['name']}: {f['summary']}" for f in fields.values() if f.get("summary")]
-    return " ".join(lines[:FALLBACK_FIELDS]) or None
-
-
-def _narrative(facts: dict) -> str | None:
-    key = os.environ.get("NVIDIA_API_KEY") or os.environ.get("ANTHROPIC_API_KEY")
-    if not key:
-        print("⚠ summary skipped: no API key")
-        return None
-
-    prompt = (
-        "Based ONLY on these facts, write a 3-4 sentence plain-English summary of what "
-        "changed for someone following these stocks and fields. Lead with the most "
-        "important change. Give no advice to buy or sell, and do not add any fact or "
-        f"figure that isn't listed here. Say one thing caused another only if a listed "
-        f"headline says so. Movers are one-day moves.\n\n{json.dumps(facts, indent=2)}"
-    )
-    messages = [{"role": "system", "content": "detailed thinking off"},
-                {"role": "user", "content": prompt}]
-    try:
-        text, _ = chat(key, messages, max_tokens=1500, temperature=0.3, timeout=60)
-    except RuntimeError as exc:
-        print(f"⚠ summary skipped: {str(exc)[:160]}")
-        return None
-    if not narrative_is_grounded(text, facts):
-        print("⚠ summary dropped: it used a figure that isn't in the facts")
-        return None
-    return text
-
-
 def main():
     if not os.path.exists(DASHBOARD_PATH):
         print("No dashboard.json. Run build_dashboard.py first.")
@@ -109,12 +95,7 @@ def main():
     d = _load(DASHBOARD_PATH)
     sig = d.get("signals", {})
     prices_as_of = d.get("prices_as_of")
-    if "--if-needed" in sys.argv and already_written(
-            _load(OUTPUT_PATH), prices_as_of, datetime.now(timezone.utc)):
-        print("Summary already covers these prices.")
-        return
     wl  = d.get("watchlist", {})
-    fields = d.get("field_news", {}).get("fields", {})
 
     # Buy-ready: RESEARCH-WORTHY at or below buy target
     buy_ready = []
@@ -146,18 +127,7 @@ def main():
         c["ticker"] for c in wl.get("all", []) if c.get("data_ok") is False
     ]
 
-    facts = {
-        "buy_ready_at_target": [b["ticker"] for b in buy_ready if b["at_or_below_target"]],
-        "movers": movers or [],
-        "upcoming_earnings": earnings,
-        "sec_stakes": stakes,
-        "data_warnings": data_warnings,
-        "field_news": {f["name"]: f["summary"] for f in fields.values() if f.get("summary")},
-        "radar": [{"ticker": c["ticker"], "reasons": [r["text"] for r in c["reasons"]]}
-                  for c in d.get("radar", {}).get("cards", [])[:MAX_RADAR_FACTS]],
-    }
-
-    narrative = _narrative(narrative_facts(facts)) or fallback_summary(fields)
+    narrative = summary(_load(QUOTES_PATH).get("tickers", {}), prices_as_of, movers, earnings)
 
     digest = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -175,7 +145,6 @@ def main():
     print("📋 WEEKLY DIGEST")
     if narrative:
         print(f"\n{narrative}\n")
-    print(f"Buy-ready at target: {', '.join(facts['buy_ready_at_target']) or 'none'}")
     print(f"Movers: {', '.join(m['ticker'] for m in movers or []) or 'none'}")
     print(f"Earnings ahead: {', '.join(e['ticker'] for e in earnings) or 'none'}")
     if data_warnings:

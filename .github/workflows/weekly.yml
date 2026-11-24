@@ -49,8 +49,6 @@ jobs:
         run: python scripts/build_dashboard.py
 
       - name: Weekly plain-English digest
-        env:
-          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API }}
         run: python scripts/weekly_digest.py
         continue-on-error: true
 

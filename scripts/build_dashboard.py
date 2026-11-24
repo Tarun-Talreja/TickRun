@@ -133,7 +133,7 @@ def _content_counts(quotes: dict, news: dict, insiders: dict, funds: dict, mover
         "Movers": (movers.get("generated_at"), *_count(movers.get("movers", []), lambda m: m.get("news"))),
         "Radar": (radar.get("generated_at"), len(radar.get("cards", []))),
         "Screener": (screen.get("generated_at"), screen.get("qualified", 0)),
-        "AI summary": (digest.get("generated_at"), int(bool(digest.get("narrative")))),
+        "Home summary": (digest.get("generated_at"), int(bool(digest.get("narrative")))),
     }
 
 
