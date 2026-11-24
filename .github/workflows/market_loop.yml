@@ -1,0 +1,40 @@
+name: Market Hours Loop
+
+on:
+  schedule:
+    # Many chances to start, because GitHub delays or drops scheduled runs. A run that
+    # isn't needed stops at once, and only one loop runs at a time.
+    - cron: '11,41 9-20 * * 1-5'
+  # Any other job that does arrive can start the loop too.
+  workflow_run:
+    workflows:
+      - "Daily LLM Research"
+      - "Catalyst Lookahead and Alerts"
+      - "Daily Field News"
+      - "Daily Valuation"
+      - "Health Watch"
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: market-loop
+  cancel-in-progress: false
+
+jobs:
+  loop:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+      - run: python scripts/market_loop.py
+        env:
+          GH_TOKEN: ${{ github.token }}
