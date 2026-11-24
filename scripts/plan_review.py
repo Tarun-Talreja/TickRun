@@ -64,24 +64,26 @@ def conflicts(plan: dict, market: dict, today: date) -> list[dict]:
     if intl and not plan.get("international"):
         out.append(_conflict("International has nothing in it",
                              f"The target is {intl}% international, but no fund is listed. The ${deploy['cash_reserve']:,} left "
-                             f"over is called a cash reserve.", "Is that share meant to be international or cash?"))
+                             f"over is called a cash reserve.", "Undecided: international or cash?" if "international" in plan.get("undecided", [])
+                             else "Is that share meant to be international or cash?"))
     for g in groups:
         pct = sum(dollars[t] for t in g) / total * 100
-        if pct > cap:
+        if pct > cap and rules.get("count_linked_together", True):
             out.append(_conflict(
                 f"{' and '.join(g)} act like one bet",
                 f"Their weekly moves had a correlation of {market['corr'][g[0]].get(g[1], 0):.2f} over two years (1 means identical). Together they are "
                 f"{pct:.0f}% of the plan, above the {cap}% limit for one position.",
-                f"Does the {cap}% limit count linked stocks together?"))
-    stop = rules["stop_loss_pct"]
-    worst = {t: d for t, d in market.get("worst_fall", {}).items() if t in dollars and abs(d) >= stop}
+                f"Does the {cap}% limit count linked stocks together?" if "count_linked_together" not in rules
+                else "Which of them, if any, fits your limit?"))
+    stop = rules.get("stop_loss_pct")
+    worst = {t: d for t, d in market.get("worst_fall", {}).items() if stop and t in dollars and abs(d) >= stop}
     if worst:
         out.append(_conflict(
             f"The {stop}% stop-loss is inside normal swings",
             "Worst fall from a high in five years (or since listing): "
             + ", ".join(f"{t} {abs(d):.0f}%" for t, d in sorted(worst.items())) + ".",
             "What should make you sell: a price fall, or a change in the business?"))
-    if rules["trim_trigger_pct"] > cap:
+    if rules.get("trim_trigger_pct", cap) > cap:
         out.append(_conflict("Limit and trim rule differ",
                              f"No position may exceed {cap}%, but trimming starts at {rules['trim_trigger_pct']}%.",
                              f"What happens between {cap}% and {rules['trim_trigger_pct']}%?"))
@@ -91,8 +93,10 @@ def conflicts(plan: dict, market: dict, today: date) -> list[dict]:
                for t, f in market.get("now", {}).items() if t in dollars and f.get("forward_pe") and f.get("revenue_growth") is not None]
         out.append(_conflict(
             "The reasons are from another time",
-            f"Written {age} days ago, with steps dated “this week” and buy targets the app has since dropped. Now: "
-            + "; ".join(now) + ".", "Do these picks still belong, or should the steps be cleared?"))
+            f"Written {age} days ago, using buy targets the app has since dropped. "
+            + ("Its buying steps are on hold. Now: " if plan.get("steps_on_hold") else "Its buying steps say this week. Now: ")
+            + "; ".join(now) + ".", "Undecided: do you want single stocks, and if so which?" if "picks" in plan.get("undecided", [])
+            else "Do these picks still belong, or should the steps be cleared?"))
     return out
 
 

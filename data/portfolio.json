@@ -3,6 +3,9 @@
   "brokerage": "Robinhood Roth IRA",
   "total_cash": 14000,
   "money_already_in_account": true,
+  "rules_updated": "2026-11-24",
+  "steps_on_hold": true,
+  "undecided": ["international", "picks"],
   "core": [
     {
       "ticker": "VTI",
@@ -99,8 +102,9 @@
   },
   "rules": {
     "max_single_position_pct": 15,
-    "trim_trigger_pct": 20,
-    "stop_loss_pct": 30,
+    "count_linked_together": true,
+    "review_price_fall_pct": 30,
+    "review_business_change": true,
     "no_options": true,
     "no_margin": true,
     "no_leveraged_etfs": true,

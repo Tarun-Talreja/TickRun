@@ -27,6 +27,7 @@ from bear_check import RATING_VERSION
 from categories import category
 from fact_check import drop_unsupported
 from health import build_health
+from holding_flags import holding_flags
 from io_utils import load_json as _load
 from market_split import panel, split_move
 from market_time import price_due_at, prices_as_of
@@ -64,6 +65,7 @@ DAILY_BRIEF_PATH    = os.path.join(SCRIPT_DIR, "output", "daily_brief.json")
 RESEARCH_STATUS_PATH = os.path.join(SCRIPT_DIR, "data", "research_status.json")
 FUNDAMENTALS_PATH   = os.path.join(SCRIPT_DIR, "data", "fundamentals.json")
 EVENTS_PATH         = os.path.join(SCRIPT_DIR, "data", "company_events.json")
+PLAN_REVIEW_PATH    = os.path.join(SCRIPT_DIR, "data", "plan_review.json")
 VALUATIONS_PATH     = os.path.join(SCRIPT_DIR, "data", "valuations.json")
 OUTPUT_PATH         = os.path.join(SCRIPT_DIR, "output", "dashboard.json")
 os.makedirs(os.path.join(SCRIPT_DIR, "output"), exist_ok=True)
@@ -416,7 +418,10 @@ def main():
         "radar":           with_live_prices(_load(RADAR_PATH), quotes.get("tickers", {})),
         "asset_location":  _load(ASSET_LOCATION_PATH),
         "catalysts":       _load(CATALYSTS_PATH),
-        "plan_review":     _load(os.path.join(SCRIPT_DIR, "data", "plan_review.json")),
+        "holding_flags":   holding_flags([*[{**h, "core": True} for h in core_enriched], *thematic_enriched],
+                                         portfolio.get("rules", {}), _load(PLAN_REVIEW_PATH).get("groups", []),
+                                         {c["ticker"]: c["category"] for c in candidates_enriched}),
+        "plan_review":     _load(PLAN_REVIEW_PATH),
         "market_panel":    panel(quotes["tickers"], quotes.get("market", {}), SKIP_TICKERS),
         "summary_history": load_days(),
         "daily_brief":     _load(DAILY_BRIEF_PATH),

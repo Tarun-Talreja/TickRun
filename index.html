@@ -1704,12 +1704,13 @@ function renderPlan(data){
   const picks = data.portfolio.thematic, by = t=>data.watchlist.all.find(x=>x.ticker===t)||{};
   const own = t=>{const o=r.overlap.find(x=>x.ticker===t)||{};return o.pct!=null?`${o.pct}% of ${esc(r.core)}`:o.below_pct!=null?`under ${o.below_pct}% of ${esc(r.core)} if held`:'unknown'};
   const note = x=>`<div style="font-size:12px;color:var(--text2);margin-top:3px">${x}</div>`;
-  const conflicts = r.conflicts.map(c=>`<div style="padding:10px 0;border-bottom:1px solid var(--bg3)"><b>${esc(c.title)}</b>${note(esc(c.fact)+(c.url?` <a href="${esc(c.url)}" target="_blank" rel="noopener noreferrer" style="color:var(--cyan)">IRS page</a>`:''))}<div style="margin-top:4px;color:var(--amber);font-size:13px">You decide: ${esc(c.question)}</div></div>`).join('');
+  const conflicts = r.conflicts.map(c=>`<div style="padding:10px 0;border-bottom:1px solid var(--bg3)"><b>${esc(c.title)}</b>${note(esc(c.fact)+(c.url?` <a href="${esc(c.url)}" target="_blank" rel="noopener noreferrer" style="color:var(--cyan)">IRS page</a>`:''))}<div style="margin-top:4px;color:var(--amber);font-size:13px">${c.question.startsWith("Undecided")?"":"You decide: "}${esc(c.question)}</div></div>`).join('');
   const rows = picks.map(p=>{const s=by(p.ticker);const e=s.events||{};const m=s.move_split;
     const earn=((data.signals.upcoming_earnings||[]).find(x=>x.ticker===p.ticker)||{}).date;
     return `<div style="padding:10px 0;border-bottom:1px solid var(--bg3);cursor:pointer" onclick="openStock({ticker:'${esc(p.ticker)}'})"><b>${esc(p.ticker)}</b> ${cbadge(p.ticker)} <span style="float:right">${fp(s.price)}</span>${note(esc((s.category||{}).why||'No checks available'))}${note(`Already in the core fund: ${own(p.ticker)}${earn?` · Earnings ${fDate(earn)}`:''}${e.newer_results?` · Results from ${fDate(e.newer_results)} not in filed figures yet`:''}`)}</div>`}).join('');
   const stress = r.stress.map(x=>`<div style="display:flex;justify-content:space-between;padding:4px 0"><span>${x.names.map(esc).join(' + ')} halve${x.names.length>1?'':'s'}</span><span>−${x.pct}%</span></div>`).join('');
-  return `<div class="track-card" id="plan-conflicts"><div class="digest-label">⚠ ${r.conflicts.length} thing${r.conflicts.length===1?'':'s'} to settle in your plan (written ${fDate(r.plan_date)})</div>${conflicts||note('No conflicts found.')}</div>
+  const flags = (data.holding_flags||[]).map(f=>`<div style="padding:8px 0"><b>${f.names.map(esc).join(' + ')}</b> ${esc(f.text)}</div>`).join('');
+  return `${flags?`<div class="track-card" id="holding-flags"><div class="digest-label">⚠ On stocks you own</div>${flags}</div>`:''}<div class="track-card" id="plan-conflicts"><div class="digest-label">⚠ ${r.conflicts.length} thing${r.conflicts.length===1?'':'s'} to settle in your plan (written ${fDate(r.plan_date)})</div>${conflicts||note('No conflicts found.')}</div>
   <div class="track-card" id="plan-picks"><div class="digest-label">Stocks in your plan</div>${rows}${note('Checks describe the business. They aren’t a reason to buy.')}</div>
   <div class="track-card" id="plan-stress"><div class="digest-label">If one falls by half</div>${stress}${note('Effect on the whole plan if nothing else moved. In a real fall, others usually drop too.')}</div>`;
 }
@@ -1807,9 +1808,10 @@ function renderPortfolio(data){
 
   <div class="sec-head"><span class="sec-head-label">Portfolio Rules</span><span class="sec-head-line"></span></div>
   <div class="rules-section">
-    <div class="rule-item"><span class="ri-val">≤${rules.max_single_position_pct}%</span>max single position</div>
-    <div class="rule-item"><span class="ri-val">+${rules.trim_trigger_pct}%</span>trim trigger</div>
-    <div class="rule-item"><span class="ri-val">-${rules.stop_loss_pct}%</span>stop loss</div>
+    <div class="rule-item"><span class="ri-val">≤${rules.max_single_position_pct}%</span>max single position, warns above it</div>
+    <div class="rule-item"><span class="ri-val">Linked</span>stocks that move together count as one</div>
+    <div class="rule-item"><span class="ri-val">-${rules.review_price_fall_pct}%</span>from what you paid: warns you to review</div>
+    <div class="rule-item"><span class="ri-val">Business</span>failed checks or serious news: warns you to review</div>
     <div class="rule-item"><span class="ri-val">Long term</span>holding period depends on the stock</div>
     <div class="rule-item"><span class="ri-no">NO</span>options trading</div>
     <div class="rule-item"><span class="ri-no">NO</span>margin</div>
