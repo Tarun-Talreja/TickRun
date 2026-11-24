@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-11-24T09:32:12Z",
-  "quotes_updated": "2026-11-24T09:31:03Z",
+  "last_built": "2026-11-24T14:29:37Z",
+  "quotes_updated": "2026-11-24T14:13:22Z",
   "prices_as_of": "2026-11-23T21:00:01Z",
   "prices_due": "2026-11-24T16:30:00Z",
   "health": {
@@ -10,15 +10,15 @@
         "updated_at": "2026-11-23T21:00:01Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 12.5,
+        "age_hours": 17.5,
         "affects": "The market has traded since these prices"
       },
       {
         "name": "Research",
-        "updated_at": "2026-11-23T13:52:17Z",
+        "updated_at": "2026-11-24T14:29:30Z",
         "detail": "8/8 tickers",
         "status": "ok",
-        "age_hours": 19.7,
+        "age_hours": 0.0,
         "affects": "Ratings aren't being updated"
       },
       {
@@ -26,7 +26,7 @@
         "updated_at": "2026-11-24T01:10:45Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 8.4,
+        "age_hours": 13.3,
         "affects": "Upcoming earnings dates may be missing"
       },
       {
@@ -34,31 +34,31 @@
         "updated_at": "2026-11-24T08:38:28Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 0.9,
+        "age_hours": 5.9,
         "affects": "New SEC filings won't show"
       },
       {
         "name": "Prices",
-        "updated_at": "2026-11-24T09:31:03Z",
+        "updated_at": "2026-11-24T14:13:22Z",
         "detail": "59/59 have data",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.3,
         "affects": "Prices may be missing"
       },
       {
         "name": "Company figures",
-        "updated_at": "2026-11-24T09:31:03Z",
+        "updated_at": "2026-11-24T14:13:22Z",
         "detail": "59/59 have data",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.3,
         "affects": "Ratings can't check the numbers"
       },
       {
         "name": "News",
-        "updated_at": "2026-11-24T08:38:34Z",
-        "detail": "57/57 have data",
+        "updated_at": "2026-11-24T14:29:36Z",
+        "detail": "56/56 have data",
         "status": "ok",
-        "age_hours": 0.9,
+        "age_hours": 0.0,
         "affects": "Ratings and mover reasons can miss recent news"
       },
       {
@@ -66,7 +66,7 @@
         "updated_at": "2026-11-23T02:36:07Z",
         "detail": "50/59 have data",
         "status": "ok",
-        "age_hours": 30.9,
+        "age_hours": 35.9,
         "affects": "Insider buying won't show on stocks or the radar"
       },
       {
@@ -74,7 +74,7 @@
         "updated_at": "2026-11-15T19:48:08Z",
         "detail": "57/60 have data",
         "status": "ok",
-        "age_hours": 205.7,
+        "age_hours": 210.7,
         "affects": "Hedge fund holdings may be out of date"
       },
       {
@@ -82,7 +82,7 @@
         "updated_at": "2026-11-23T22:12:00Z",
         "detail": "16/16 have data",
         "status": "ok",
-        "age_hours": 11.3,
+        "age_hours": 16.3,
         "affects": "The field briefing may be out of date"
       },
       {
@@ -90,7 +90,7 @@
         "updated_at": "2026-11-24T08:38:52Z",
         "detail": "28/28 have data",
         "status": "ok",
-        "age_hours": 0.9,
+        "age_hours": 5.8,
         "affects": "Big moves may have no explanation"
       },
       {
@@ -98,7 +98,7 @@
         "updated_at": "2026-11-24T07:32:04Z",
         "detail": "12 found",
         "status": "ok",
-        "age_hours": 2.0,
+        "age_hours": 7.0,
         "affects": "The radar may be out of date"
       },
       {
@@ -106,7 +106,7 @@
         "updated_at": "2026-11-21T19:15:39Z",
         "detail": "430 found",
         "status": "ok",
-        "age_hours": 62.3,
+        "age_hours": 67.2,
         "affects": "New stock ideas may be out of date"
       },
       {
@@ -114,7 +114,7 @@
         "updated_at": "2026-11-24T08:38:53Z",
         "detail": "1 found",
         "status": "ok",
-        "age_hours": 0.9,
+        "age_hours": 5.8,
         "affects": "The summary may be out of date"
       },
       {
@@ -122,7 +122,7 @@
         "updated_at": "2026-11-24T09:31:53Z",
         "detail": "59 found",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 5.0,
         "affects": "Serious news and filings may be missed"
       },
       {
@@ -130,7 +130,7 @@
         "updated_at": "2026-11-24T09:32:09Z",
         "detail": "59 found",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 5.0,
         "affects": "Formula prices may be missing or out of date"
       },
       {
@@ -138,7 +138,7 @@
         "updated_at": "2026-11-24T00:06:42Z",
         "detail": "6 sources passed",
         "status": "ok",
-        "age_hours": 9.4,
+        "age_hours": 14.4,
         "affects": "One of the data sources failed its daily test"
       },
       {
@@ -1862,7 +1862,7 @@
         "data_flags": [
           {
             "level": "low",
-            "msg": "Reports in EUR; figures converted to USD at 1.0921. Trailing P/E may mix currencies \u2014 verify against filings"
+            "msg": "Reports in EUR; figures converted to USD at 1.0972. Trailing P/E may mix currencies \u2014 verify against filings"
           }
         ]
       },
@@ -1871,31 +1871,28 @@
         "name": "Taiwan Semiconductor Manufacturing Company",
         "theme": "edge_ai_silicon",
         "status": "research_complete",
-        "thesis": "Pure-play AI foundry at 13.6x forward earnings with 50%+ revenue growth, 65% gross margins, and $44B FCF, discounted 35% from highs on geopolitical fears not fundamentals.",
+        "thesis": "World's leading foundry at 15.5x forward earnings with 50%+ revenue growth driven by AI chip demand, net cash position, and irreplaceable technology moat.",
         "added": "2026-05-28",
         "verdict": "RESEARCH-WORTHY",
         "current_price": 363.6,
-        "next_action": "RESEARCH \u2014 Pure-play AI foundry at 13.6x forward earnings with 50%+ revenue growth, 65% gross margins, and $44B FCF, discounted 35% from highs on geopolitical fears not fundamentals. Worth a deep dive before any decision.",
-        "research_file": "output/research/TSM_2026-11-23.md",
-        "last_researched": "2026-11-23",
+        "next_action": "RESEARCH \u2014 World's leading foundry at 15.5x forward earnings with 50%+ revenue growth driven by AI chip demand, net cash position, and irreplaceable technology moat. Worth a deep dive before any decision.",
+        "research_file": "output/research/TSM_2026-11-24.md",
+        "last_researched": "2026-11-24",
         "llm_verdict": "RESEARCH-WORTHY",
         "bear_downgraded": false,
         "confidence": "MEDIUM",
-        "bear_check": "Additionally, the October 2026 U.S. chip export curbs on China may permanently eliminate 15\u201320% of TSMC's total addressable market if Chinese fabless customers are cut off, a structural demand hit not yet reflected in consensus estimates. This tail risk is binary and unhedgeable, making position sizing critical. WHY_IT_FELL: TSMC dropped ~20% in a week on Nvidia demand jitters and new U.S. chip export curbs targeting China. FALL_EVIDENCE: TSMC Sinks 20% in a Week on Nvidia Jitters and New US Chip Curbs on China. Time to Buy? (TIKR.com) BREAK: NONE EVIDENCE: none [1 sentence(s) removed: figures not in the source data.]",
+        "bear_check": "This single-point-of-failure risk is not priced as a remote tail event but as a persistent structural vulnerability that could render the moat irrelevant overnight. WHY_IT_FELL: US export controls on China chip access announced November 16 triggered geopolitical risk selling, compounded by profit-taking after blowout October earnings. FALL_EVIDENCE: [2026-11-16] Samsung Elec, TSMC shares fall after US announces curbs on China's chip access (Reuters) BREAK: NONE EVIDENCE: none [1 sentence(s) removed: figures not in the source data.]",
         "no_pullback_gate": false,
         "unsupported_figures": [
-          "30x",
           "25x",
-          "30%",
-          "25%",
-          "20x",
-          "90%"
+          "90%",
+          "100%"
         ],
         "rating_version": 4,
-        "fall_reason": "TSMC dropped ~20% in a week on Nvidia demand jitters and new US chip export curbs targeting China, per Reuters.",
+        "fall_reason": "US export controls on China chip access announced November 16 triggered geopolitical risk selling, compounded by profit-taking after blowout October earnings.",
         "rated_quarter_end": "2026-09-30",
         "rated_next_earnings": 1792067400,
-        "rated_price": 318.71,
+        "rated_price": 363.6,
         "price": 363.6,
         "pct_change_1d": 14.08,
         "market_cap": 1885801545728,
@@ -1923,10 +1920,7 @@
           "fund": "XSD",
           "own": 2.0
         },
-        "moved_since_rating": {
-          "pct": 14.1,
-          "span": "in one day"
-        },
+        "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
           "low": null,
@@ -2257,8 +2251,8 @@
         "verdict": "PASS",
         "current_price": 97.8,
         "next_action": "DROP \u2014 No summary: its figures weren't in the source data.",
-        "research_file": "output/research/NBIS_2026-11-14.md",
-        "last_researched": "2026-11-14",
+        "research_file": "output/research/NBIS_2026-11-24.md",
+        "last_researched": "2026-11-24",
         "llm_verdict": "PASS",
         "bear_downgraded": false,
         "confidence": "MEDIUM",
@@ -2267,13 +2261,13 @@
         "unsupported_figures": [
           "$12,421M",
           "$12.4B",
-          "$0.146B"
+          "35x"
         ],
         "bear_check": null,
-        "fall_reason": "Q3 2026 earnings beat estimates but management lowered 2026 revenue guidance due to GPU capacity delivery delays and signaled higher capex spend, triggering a selloff.",
+        "fall_reason": "The company lowered its 2026 revenue forecast due to GPU capacity delays and warned of increased capex spend, triggering financing concerns.",
         "rated_quarter_end": "2026-09-30",
         "rated_next_earnings": 1794490200,
-        "rated_price": 115.88,
+        "rated_price": 97.8,
         "price": 97.8,
         "pct_change_1d": 20.28,
         "market_cap": 28645855232,
@@ -2295,10 +2289,7 @@
           "fund": "RSPC",
           "own": 17.8
         },
-        "moved_since_rating": {
-          "pct": 20.3,
-          "span": "in one day"
-        },
+        "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
           "low": null,
@@ -2776,28 +2767,27 @@
         "name": "Marvell Technology, Inc.",
         "theme": "edge_ai_silicon",
         "status": "research_complete",
-        "thesis": "AI custom silicon leader at 23x forward earnings with 36% revenue growth, but Lumentum acquisition overhang keeps multiple depressed until integration risk clears",
+        "thesis": "AI infrastructure pure-play at 19.6x forward earnings with 36% revenue growth, positive FCF, and custom silicon design wins at multiple hyperscalers.",
         "added": "2026-06-08",
-        "verdict": "WATCHLIST",
+        "verdict": "RESEARCH-WORTHY",
         "current_price": 144.74,
-        "next_action": "WAIT \u2014 AI custom silicon leader at 23x forward earnings with 36% revenue growth, but Lumentum acquisition overhang keeps multiple depressed until integration risk clears",
-        "research_file": "output/research/MRVL_2026-11-12.md",
-        "last_researched": "2026-11-12",
-        "llm_verdict": "WATCHLIST",
+        "next_action": "RESEARCH \u2014 AI infrastructure pure-play at 19.6x forward earnings with 36% revenue growth, positive FCF, and custom silicon design wins at multiple hyperscalers. Worth a deep dive before any decision.",
+        "research_file": "output/research/MRVL_2026-11-24.md",
+        "last_researched": "2026-11-24",
+        "llm_verdict": "RESEARCH-WORTHY",
         "bear_downgraded": false,
-        "confidence": "LOW",
-        "bear_check": null,
+        "confidence": "MEDIUM",
+        "bear_check": "The 56% drawdown reflects a broad semiconductor selloff amplified by Nvidia\u2019s CEO departure and skepticism around the Lumentum optics acquisition, suggesting the decline may signal weakening AI infrastructure demand rather than a pure valuation reset. Even after the drop, the stock trades at 45\u00d7 EV/EBITDA, pricing in sustained hypergrowth that could stall if hyperscaler capex cycles normalize. WHY_IT_FELL: Broad semiconductor selloff intensified by Nvidia CEO departure concerns and mixed market reaction to the potential Lumentum optics acquisition. FALL_EVIDENCE: Marvell Technology stock falls 6% as chip selloff deepens after Nvidia CEO exit (Crypto Briefing) BREAK: NONE EVIDENCE: none [1 sentence(s) removed: figures not in the source data.]",
         "no_pullback_gate": false,
         "rating_version": 4,
         "unsupported_figures": [
-          "140%",
-          "30x",
-          "25%"
+          "50%",
+          "20%"
         ],
-        "fall_reason": null,
+        "fall_reason": "Broad semiconductor selloff intensified by Nvidia CEO departure concerns and mixed market reaction to the potential Lumentum optics acquisition.",
         "rated_quarter_end": "2026-07-31",
         "rated_next_earnings": 1796158800,
-        "rated_price": 168.8,
+        "rated_price": 144.74,
         "price": 144.74,
         "pct_change_1d": 18.37,
         "market_cap": 130232123392,
@@ -2825,10 +2815,7 @@
           "fund": "XSD",
           "own": 6.3
         },
-        "moved_since_rating": {
-          "pct": 18.4,
-          "span": "in one day"
-        },
+        "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
           "low": 16.64,
@@ -3058,29 +3045,31 @@
         "name": "Coherent Corp.",
         "theme": "networking_infra",
         "status": "research_complete",
-        "thesis": "Optical transceiver leader trading at 12x forward earnings with 50% revenue growth, but negative FCF and high leverage require monitoring.",
+        "thesis": "AI infrastructure pure-play at 13.7x forward earnings with 50% YoY revenue growth and multi-year backlog visibility, but negative FCF and high leverage require execution proof.",
         "added": "2026-06-08",
         "verdict": "RESEARCH-WORTHY",
         "current_price": 215.81,
-        "next_action": "RESEARCH \u2014 Optical transceiver leader trading at 12x forward earnings with 50% revenue growth, but negative FCF and high leverage require monitoring. Worth a deep dive before any decision.",
-        "research_file": "output/research/COHR_2026-11-22.md",
-        "last_researched": "2026-11-22",
+        "next_action": "RESEARCH \u2014 AI infrastructure pure-play at 13.7x forward earnings with 50% YoY revenue growth and multi-year backlog visibility, but negative FCF and high leverage require execution proof. Worth a deep dive before any decision.",
+        "research_file": "output/research/COHR_2026-11-24.md",
+        "last_researched": "2026-11-24",
         "llm_verdict": "RESEARCH-WORTHY",
         "bear_downgraded": false,
         "confidence": "MEDIUM",
         "no_pullback_gate": false,
-        "bear_check": "The forward multiple assumes near-tripling of EPS from depressed trailing levels, but this earnings inflection is not yet visible in cash flow and could evaporate if AI infrastructure spending decelerates. WHY_IT_FELL: The stock fell 58% from its high due to a broad AI chip rout and tech sector selling that dragged down optical suppliers, as highlighted by headlines citing Nvidia earnings impact and AI demand concerns. FALL_EVIDENCE: Coherent stock falls 15% as the AI chip rout hits optical suppliers BREAK: NONE EVIDENCE: none [2 sentence(s) removed: figures not in the source data.]",
+        "bear_check": "BREAK: NONE EVIDENCE: none WHY_IT_FELL: The stock fell sharply in November 2026 as the AI chip rout hit optical suppliers and broad tech selling pressure intensified. FALL_EVIDENCE: Coherent stock falls 15% as the AI chip rout hits optical suppliers (Startup Fortune) VERDICT: RESEARCH-WORTHY CONFIDENCE: MEDIUM [1 sentence(s) removed: figures not in the source data.]",
         "rating_version": 4,
         "unsupported_figures": [
-          "$1.84B",
-          "30%",
+          "$1,841M",
+          "20%",
+          "3x",
           "$1.8B",
-          "$2B"
+          "$1.8\u202fbillion",
+          "20\u202f%"
         ],
-        "fall_reason": "The stock fell 58% from its high due to a broad AI chip rout and tech sector selling that dragged down optical suppliers, as highlighted by headlines citing Nvidia earnings impact and AI demand concerns.",
+        "fall_reason": "The stock fell sharply in November 2026 as the AI chip rout hit optical suppliers and broad tech selling pressure intensified.",
         "rated_quarter_end": "2026-09-30",
         "rated_next_earnings": 1793826000,
-        "rated_price": 187.22,
+        "rated_price": 215.81,
         "price": 215.81,
         "pct_change_1d": 15.27,
         "market_cap": 42505650176,
@@ -3108,10 +3097,7 @@
           "fund": "RSPT",
           "own": 8.2
         },
-        "moved_since_rating": {
-          "pct": 15.3,
-          "span": "in one day"
-        },
+        "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
           "low": null,
@@ -3464,26 +3450,24 @@
         "name": "Vertiv Holdings Co",
         "theme": "power_grid",
         "status": "research_complete",
-        "thesis": "AI data center power/cooling pure-play at 16.8x forward earnings with 61% YoY revenue growth, $3.1B FCF, and net cash, but market prices in organic growth deceleration.",
+        "thesis": "AI data center power/cooling leader trading at 19x forward earnings with 60%+ revenue growth and $3.1B FCF, down 51% on sector rotation not fundamentals.",
         "added": "2026-05-28",
         "verdict": "RESEARCH-WORTHY",
         "current_price": 186.35,
-        "next_action": "RESEARCH \u2014 AI data center power/cooling pure-play at 16.8x forward earnings with 61% YoY revenue growth, $3.1B FCF, and net cash, but market prices in organic growth deceleration. Worth a deep dive before any decision.",
-        "research_file": "output/research/VRT_2026-11-23.md",
-        "last_researched": "2026-11-23",
+        "next_action": "RESEARCH \u2014 AI data center power/cooling leader trading at 19x forward earnings with 60%+ revenue growth and $3.1B FCF, down 51% on sector rotation not fundamentals. Worth a deep dive before any decision.",
+        "research_file": "output/research/VRT_2026-11-24.md",
+        "last_researched": "2026-11-24",
         "llm_verdict": "RESEARCH-WORTHY",
         "bear_downgraded": false,
         "confidence": "MEDIUM",
-        "bear_check": "The 61% YoY revenue growth may be inflated by acquisitions or backlog burn rather than sustainable organic demand, as highlighted by the \"organic growth softness\" headline; if hyperscaler capex cycles normalize, revenue could decline sharply from current levels, making the forward P/E of 16.8x a potential value trap.\n\nBREAK: NONE\nEVIDENCE: none\nWHY_IT_FELL: Market concerns about organic growth deceleration and technical selling pressure despite strong earnings and raised guidance.\nFALL_EVIDENCE: Vertiv Holdings Co (VRT) Declined on Organic Growth Softness Despite Upgraded Full-Year Guidance (Yahoo Finance)\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
+        "bear_check": "The strongest argument against buying VRT is that despite $3.1B in trailing free cash flow, the company holds only $355M net cash, indicating rapid 61% revenue growth is consuming cash via working capital expansion (inventory, receivables) that could reverse violently if AI infrastructure spending slows. Customer concentration among hyperscalers is unverified but likely extreme, creating revenue cliff risk if a major customer reduces orders. The 51% drawdown reflects sector rotation, but the balance sheet offers minimal margin of safety for a cyclical capital goods business.\n\nBREAK: NONE\nEVIDENCE: none\n\nWHY_IT_FELL: The stock fell due to a broad AI infrastructure sector selloff, not company-specific issues.\nFALL_EVIDENCE: Vertiv Shares Drop 10.1% as AI Infrastructure Stocks Sell Off\n\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
         "no_pullback_gate": false,
         "rating_version": 4,
-        "unsupported_figures": [
-          "30%"
-        ],
-        "fall_reason": "Market concerns about organic growth deceleration and technical selling pressure despite strong earnings and raised guidance.",
+        "unsupported_figures": [],
+        "fall_reason": "The stock fell due to a broad AI infrastructure sector selloff, not company-specific issues.",
         "rated_quarter_end": "2026-09-30",
         "rated_next_earnings": 1793190600,
-        "rated_price": 166.24,
+        "rated_price": 186.35,
         "price": 186.35,
         "pct_change_1d": 12.1,
         "market_cap": 71756013568,
@@ -3511,10 +3495,7 @@
           "fund": "RSPN",
           "own": 8.8
         },
-        "moved_since_rating": {
-          "pct": 12.1,
-          "span": "in one day"
-        },
+        "moved_since_rating": null,
         "valuation": {
           "status": "ok",
           "low": 51.73,
@@ -3889,27 +3870,27 @@
         "name": "Oklo Inc.",
         "theme": "nuclear_smr",
         "status": "research_complete",
-        "thesis": "Pre-revenue SMR developer with $2.5B cash runway betting on 2027+ commercial deployment for AI data center power; 77% drawdown reflects timeline risk not technology failure.",
+        "thesis": "Pre-revenue SMR pure-play with $2.5B cash runway and DOE site clearance, but no commercial revenue until late 2020s at earliest.",
         "added": "2026-05-28",
-        "verdict": "WATCHLIST",
+        "verdict": "PASS",
         "current_price": 20.77,
-        "next_action": "WAIT \u2014 Pre-revenue SMR developer with $2.5B cash runway betting on 2027+ commercial deployment for AI data center power; 77% drawdown reflects timeline risk not technology failure.",
-        "research_file": "output/research/OKLO_2026-11-10.md",
-        "last_researched": "2026-11-10",
-        "llm_verdict": "WATCHLIST",
+        "next_action": "DROP \u2014 Pre-revenue SMR pure-play with $2.5B cash runway and DOE site clearance, but no commercial revenue until late 2020s at earliest.",
+        "research_file": "output/research/OKLO_2026-11-24.md",
+        "last_researched": "2026-11-24",
+        "llm_verdict": "PASS",
         "bear_downgraded": false,
-        "confidence": "LOW",
+        "confidence": "MEDIUM",
         "rating_version": 4,
         "unsupported_figures": [
           "$453M",
-          "25%"
+          "$900M"
         ],
         "bear_check": null,
-        "fall_reason": null,
+        "fall_reason": "Post-SPAC hype unwind and broader nuclear sector sell-off despite positive licensing milestones.",
         "rated_quarter_end": "2026-09-30",
         "rated_next_earnings": 1793971800,
         "no_pullback_gate": false,
-        "rated_price": 26.84,
+        "rated_price": 20.77,
         "price": 20.77,
         "pct_change_1d": 4.63,
         "market_cap": 4056165120,
@@ -3937,10 +3918,7 @@
           "fund": "RSPU",
           "own": 3.0
         },
-        "moved_since_rating": {
-          "pct": -22.6,
-          "span": "since it was rated"
-        },
+        "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
           "low": null,
@@ -7513,32 +7491,30 @@
         "name": "Credo Technology Group Holding Ltd",
         "theme": "edge_ai_silicon",
         "status": "research_complete",
-        "thesis": "Profitable AI interconnect pure-play at 35x trailing earnings for 115% growth with net cash, but forward multiple assumes triple-digit EPS growth that may not materialize.",
+        "thesis": "No summary: its figures weren't in the source data.",
         "added": "2026-07-25",
         "verdict": "RESEARCH-WORTHY",
         "current_price": 122.46,
-        "next_action": "RESEARCH \u2014 Profitable AI interconnect pure-play at 35x trailing earnings for 115% growth with net cash, but forward multiple assumes triple-digit EPS growth that may not materialize. Worth a deep dive before any decision.",
-        "research_file": "output/research/CRDO_2026-11-22.md",
-        "last_researched": "2026-11-22",
+        "next_action": "RESEARCH \u2014 Worth a deep dive before any decision. [1 sentence(s) removed: figures not in the source data.]",
+        "research_file": "output/research/CRDO_2026-11-24.md",
+        "last_researched": "2026-11-24",
         "confidence": "MEDIUM",
         "research_source": "deep_research_2026-07-25",
         "no_pullback_gate": false,
         "llm_verdict": "RESEARCH-WORTHY",
         "bear_downgraded": false,
-        "bear_check": "Additionally, the business is heavily dependent on a few hyperscale customers and the Nvidia Blackwell ramp; losing a single major socket or a pause in AI capex would collapse the growth narrative and trigger a violent multiple re\u2011rate. BREAK: NONE EVIDENCE: none WHY_IT_FELL: The stock fell on a broad tech sector sell\u2011off, not company\u2011specific news. FALL_EVIDENCE: Tech slump pushes Credo Technology down 14% (CRDO:NASDAQ) (Seeking Alpha) VERDICT: RESEARCH-WORTHY CONFIDENCE: MEDIUM [1 sentence(s) removed: figures not in the source data.]",
+        "bear_check": "The 12.6\u00d7 forward P/E embeds a ~3.4\u00d7 earnings leap that assumes flawless execution on the AI capex wave, yet the TTM operating margin and FCF ($439M) do not yet substantiate that trajectory, leaving no margin of safety if growth decelerates. BREAK: NONE EVIDENCE: none WHY_IT_FELL: Broad tech-sector sell-off and profit-taking after a sharp run-up, not company-specific deterioration. FALL_EVIDENCE: Tech slump pushes Credo Technology down 14% (CRDO:NASDAQ) VERDICT: RESEARCH-WORTHY CONFIDENCE: MEDIUM \u2014 verdict rests on provided fundamentals and headlines, but key claims (customer concentration, 1.6T design-wins, peer valuation context) are unverified and require 10-K/transcript confirmation. [1 sentence(s) removed: figures not in the source data.]",
         "rating_version": 4,
         "unsupported_figures": [
-          "230%",
-          "$3.30 ",
-          "$9.70 ",
-          "100%",
-          "30%",
-          "20%"
+          "40%",
+          "3.4x",
+          "20%",
+          "100%"
         ],
-        "fall_reason": "The stock fell on a broad tech sector sell-off, not company-specific news.",
+        "fall_reason": "Broad tech-sector sell-off and profit-taking after a sharp run-up, not company-specific deterioration.",
         "rated_quarter_end": "2026-07-31",
         "rated_next_earnings": 1796158800,
-        "rated_price": 99.86,
+        "rated_price": 122.46,
         "price": 122.46,
         "pct_change_1d": 22.63,
         "market_cap": 23016591360,
@@ -7566,10 +7542,7 @@
           "fund": "XSD",
           "own": 10.5
         },
-        "moved_since_rating": {
-          "pct": 22.6,
-          "span": "in one day"
-        },
+        "moved_since_rating": null,
         "valuation": {
           "status": "no_reliable_price",
           "low": null,
@@ -7800,22 +7773,24 @@
         "added": "2026-11-14",
         "llm_verdict": "RESEARCH-WORTHY",
         "bear_downgraded": false,
-        "research_file": "output/research/FIX_2026-11-23.md",
-        "last_researched": "2026-11-23",
+        "research_file": "output/research/FIX_2026-11-24.md",
+        "last_researched": "2026-11-24",
         "rating_version": 4,
         "unsupported_figures": [
+          "16x",
+          "19.5%",
           "45%",
-          "15%"
+          "10%"
         ],
-        "fall_reason": "The stock dropped sharply after Q3 2026 earnings despite an earnings beat, likely due to CFO retirement and cautious forward guidance not fully reflected in the provided headlines.",
+        "fall_reason": "The stock slid after Q3 earnings despite reported strength, suggesting guidance or margin concerns not fully reflected in the headline numbers.",
         "rated_quarter_end": "2026-09-30",
         "rated_next_earnings": 1792699200,
         "confidence": "MEDIUM",
-        "bear_check": "The 50% drawdown from the 52-week high despite 53.7% YoY revenue growth and $2.4B TTM free cash flow signals market skepticism about the sustainability of the data-center-driven surge and fear of a cyclical construction downturn; the CFO retirement announced alongside the post-earnings drop adds governance uncertainty, and the decentralized model makes rapid cost reduction difficult if backlog deteriorates.\n\nBREAK: NONE\nEVIDENCE: none\nWHY_IT_FELL: The stock dropped sharply after Q3 2026 earnings despite an earnings beat, likely due to CFO retirement and cautious forward guidance not fully reflected in the provided headlines.\nFALL_EVIDENCE: Comfort Systems USA drops 9% after earnings, CFO retirement (FIX:NYSE) (Seeking Alpha)\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
-        "thesis": "Quality mechanical/electrical contractor with 50%+ revenue growth, 15.5x forward P/E, $2.4B FCF, and net cash, benefiting from data center build-out but exposed to construction cyclicality.",
-        "next_action": "RESEARCH \u2014 Quality mechanical/electrical contractor with 50%+ revenue growth, 15.5x forward P/E, $2.4B FCF, and net cash, benefiting from data center build-out but exposed to construction cyclicality. Worth a deep dive before any decision.",
+        "bear_check": "The 44% drawdown occurred after Q3 earnings despite 53.7% revenue growth, signaling the market sees deterioration in forward-looking indicators (backlog, margins, or guidance) that trailing data doesn't capture. As a cyclical contractor at peak non-residential construction cycles, buying at 17x forward earnings with unverified backlog sustainability risks catching a falling knife if construction starts roll over. The post-earnings slide despite headline strength suggests guidance or margin trajectory concerns that aren't reflected in the current multiples.\n\nBREAK: NONE\nEVIDENCE: none\nWHY_IT_FELL: The stock slid after Q3 earnings despite reported strength, suggesting guidance or margin concerns not fully reflected in the headline numbers.\nFALL_EVIDENCE: Comfort Systems USA (FIX) Stock Price Slides After Q3 Earnings Strength\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
+        "thesis": "No summary: its figures weren't in the source data.",
+        "next_action": "RESEARCH \u2014 Worth a deep dive before any decision. [1 sentence(s) removed: figures not in the source data.]",
         "no_pullback_gate": false,
-        "rated_price": 1042.47,
+        "rated_price": 1158.53,
         "price": 1158.53,
         "current_price": 1158.53,
         "pct_change_1d": 11.13,
@@ -7844,10 +7819,7 @@
           "fund": "RSPN",
           "own": 7.9
         },
-        "moved_since_rating": {
-          "pct": 11.1,
-          "span": "in one day"
-        },
+        "moved_since_rating": null,
         "valuation": {
           "status": "ok",
           "low": 694.53,
@@ -8460,16 +8432,16 @@
         "thesis": "10-year Treasury yield. High yield (>4.5%) compresses equity multiples; falling yield is a tailwind for growth stocks. Monitor as macro context for entry decisions.",
         "added": "2026-05-28",
         "verdict": "WATCHLIST",
-        "current_price": 4.918,
+        "current_price": 4.888,
         "next_action": "MACRO SIGNAL \u2014 current 4.48%. Watch for moves above 4.75% (equity headwind) or below 4.0% (equity tailwind).",
         "research_file": null,
         "last_researched": "2026-05-28",
         "rated_price": 4.48,
-        "price": 4.918,
-        "pct_change_1d": 0.12,
+        "price": 4.888,
+        "pct_change_1d": -0.61,
         "market_cap": null,
         "cap_tier": "unknown",
-        "drawdown_from_high": -8.3,
+        "drawdown_from_high": -8.9,
         "revenue_growth": null,
         "op_margin": null,
         "pe": null,
@@ -8477,17 +8449,9 @@
         "short_percent_float": null,
         "short_ratio": null,
         "high_proximity_warning": true,
-        "high_proximity_note": "Only 8.3% from 52-week high \u2014 entry timing risk",
+        "high_proximity_note": "Only 8.9% from 52-week high \u2014 entry timing risk",
         "bear_check": null,
-        "move_split": {
-          "session": "2026-11-23",
-          "pct": 0.1,
-          "market": 4.7,
-          "group": null,
-          "group_name": null,
-          "fund": null,
-          "own": -4.6
-        },
+        "move_split": null,
         "moved_since_rating": null,
         "valuation": null,
         "quality": null,
@@ -10281,149 +10245,6 @@
           "data_flags": []
         },
         {
-          "ticker": "MRVL",
-          "name": "Marvell Technology, Inc.",
-          "theme": "edge_ai_silicon",
-          "status": "research_complete",
-          "thesis": "AI custom silicon leader at 23x forward earnings with 36% revenue growth, but Lumentum acquisition overhang keeps multiple depressed until integration risk clears",
-          "added": "2026-06-08",
-          "verdict": "WATCHLIST",
-          "current_price": 144.74,
-          "next_action": "WAIT \u2014 AI custom silicon leader at 23x forward earnings with 36% revenue growth, but Lumentum acquisition overhang keeps multiple depressed until integration risk clears",
-          "research_file": "output/research/MRVL_2026-11-12.md",
-          "last_researched": "2026-11-12",
-          "llm_verdict": "WATCHLIST",
-          "bear_downgraded": false,
-          "confidence": "LOW",
-          "bear_check": null,
-          "no_pullback_gate": false,
-          "rating_version": 4,
-          "unsupported_figures": [
-            "140%",
-            "30x",
-            "25%"
-          ],
-          "fall_reason": null,
-          "rated_quarter_end": "2026-07-31",
-          "rated_next_earnings": 1796158800,
-          "rated_price": 168.8,
-          "price": 144.74,
-          "pct_change_1d": 18.37,
-          "market_cap": 130232123392,
-          "cap_tier": "mega",
-          "drawdown_from_high": -56.1,
-          "revenue_growth": 36.5,
-          "op_margin": 16.7,
-          "pe": 47.611843,
-          "forward_pe": 19.636173,
-          "short_percent_float": 3.48,
-          "short_ratio": 1.2,
-          "high_proximity_warning": false,
-          "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 12 sell(s) in past 6 months | $0 bought / $19,979,156 sold",
-          "insider_buys": 0,
-          "insider_sells": 12,
-          "conviction_holders": [],
-          "hf_new_positions": [],
-          "move_split": {
-            "session": "2026-11-23",
-            "pct": 18.4,
-            "market": 4.7,
-            "group": 7.4,
-            "group_name": "chip",
-            "fund": "XSD",
-            "own": 6.3
-          },
-          "moved_since_rating": {
-            "pct": 18.4,
-            "span": "in one day"
-          },
-          "valuation": {
-            "status": "no_reliable_price",
-            "low": 16.64,
-            "base": 16.64,
-            "high": 16.64,
-            "buy_below": null,
-            "reason": "only one valuation method could be used (no own multiple)",
-            "notes": [
-              "profit margins vary a lot, so they were averaged over every year on file"
-            ],
-            "methods": {
-              "cash_flow": 16.64
-            },
-            "inputs": {
-              "owner_cash_per_share": 1.02,
-              "cash_margin": 0.0977,
-              "growth_used": 0.15,
-              "discount_rate": 0.1492,
-              "beta": 2.33,
-              "cyclical": true,
-              "eps_normalised": 0.1,
-              "median_past_pe": null,
-              "fair_pe": null,
-              "terminal_share": 0.388,
-              "implied_growth": null,
-              "figures_as_of": "2026-08-01",
-              "sources": {
-                "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
-                "operating_income": "OperatingIncomeLoss",
-                "net_income": "NetIncomeLoss",
-                "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
-                "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
-                "software_capex": "PaymentsToAcquireIntangibleAssets",
-                "stock_comp": "ShareBasedCompensation",
-                "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
-              }
-            },
-            "valued_on": "2026-11-24",
-            "gap_pct": null
-          },
-          "quality": {
-            "checks": [
-              {
-                "name": "Profitable every year",
-                "ok": false,
-                "detail": "lost money in 2021, 2022, 2023, 2024, 2025",
-                "chronic": true
-              },
-              {
-                "name": "Profit turns into cash",
-                "ok": true,
-                "detail": "449% of three years' profit arrived as cash after spending"
-              },
-              {
-                "name": "Share count not swelling",
-                "ok": true,
-                "detail": "grew 0.5% a year"
-              },
-              {
-                "name": "Debt is manageable",
-                "ok": true,
-                "detail": "net debt is 0.6 years of operating cash flow (debt from Yahoo)"
-              },
-              {
-                "name": "Margins holding up",
-                "ok": null,
-                "detail": "lost money on average, so there is nothing to compare"
-              }
-            ],
-            "passed": 3,
-            "failed": 1,
-            "known": 4
-          },
-          "events": {
-            "serious": [],
-            "newer_results": "2026-11-02"
-          },
-          "category": {
-            "key": "weak",
-            "label": "Fails checks",
-            "why": "Fails 1 of 4 checks: profitable every year (lost money in 2021, 2022, 2023, 2024, 2025)"
-          },
-          "data_ok": true,
-          "data_flags": []
-        },
-        {
           "ticker": "IBM",
           "name": "International Business Machines Corporation",
           "theme": "mega_cap_ai",
@@ -10558,121 +10379,6 @@
             "key": "solid",
             "label": "Passes checks",
             "why": "Passes 5 of 5 checks"
-          },
-          "data_ok": true,
-          "data_flags": []
-        },
-        {
-          "ticker": "OKLO",
-          "name": "Oklo Inc.",
-          "theme": "nuclear_smr",
-          "status": "research_complete",
-          "thesis": "Pre-revenue SMR developer with $2.5B cash runway betting on 2027+ commercial deployment for AI data center power; 77% drawdown reflects timeline risk not technology failure.",
-          "added": "2026-05-28",
-          "verdict": "WATCHLIST",
-          "current_price": 20.77,
-          "next_action": "WAIT \u2014 Pre-revenue SMR developer with $2.5B cash runway betting on 2027+ commercial deployment for AI data center power; 77% drawdown reflects timeline risk not technology failure.",
-          "research_file": "output/research/OKLO_2026-11-10.md",
-          "last_researched": "2026-11-10",
-          "llm_verdict": "WATCHLIST",
-          "bear_downgraded": false,
-          "confidence": "LOW",
-          "rating_version": 4,
-          "unsupported_figures": [
-            "$453M",
-            "25%"
-          ],
-          "bear_check": null,
-          "fall_reason": null,
-          "rated_quarter_end": "2026-09-30",
-          "rated_next_earnings": 1793971800,
-          "no_pullback_gate": false,
-          "rated_price": 26.84,
-          "price": 20.77,
-          "pct_change_1d": 4.63,
-          "market_cap": 4056165120,
-          "cap_tier": "mid",
-          "drawdown_from_high": -82.1,
-          "revenue_growth": null,
-          "op_margin": -4430.3,
-          "pe": null,
-          "forward_pe": -18.27605,
-          "short_percent_float": 21.88,
-          "short_ratio": 4.1,
-          "high_proximity_warning": false,
-          "insider_signal": "SELLING",
-          "insider_note": "0 buy(s), 44 sell(s) in past 6 months | $0 bought / $90,220,051 sold",
-          "insider_buys": 0,
-          "insider_sells": 44,
-          "conviction_holders": [],
-          "hf_new_positions": [],
-          "move_split": {
-            "session": "2026-11-23",
-            "pct": 4.6,
-            "market": 4.7,
-            "group": -3.1,
-            "group_name": "utility",
-            "fund": "RSPU",
-            "own": 3.0
-          },
-          "moved_since_rating": {
-            "pct": -22.6,
-            "span": "since it was rated"
-          },
-          "valuation": {
-            "status": "no_reliable_price",
-            "low": null,
-            "base": null,
-            "high": null,
-            "buy_below": null,
-            "reason": "no recent revenue on file",
-            "notes": [],
-            "methods": {},
-            "inputs": {},
-            "valued_on": "2026-11-24",
-            "gap_pct": null
-          },
-          "quality": {
-            "checks": [
-              {
-                "name": "Profitable every year",
-                "ok": false,
-                "detail": "lost money in 2023, 2024, 2025",
-                "chronic": true
-              },
-              {
-                "name": "Profit turns into cash",
-                "ok": null,
-                "detail": "not enough filed figures"
-              },
-              {
-                "name": "Share count not swelling",
-                "ok": null,
-                "detail": "fewer than 3 years on file"
-              },
-              {
-                "name": "Debt is manageable",
-                "ok": true,
-                "detail": "more cash than debt"
-              },
-              {
-                "name": "Margins holding up",
-                "ok": null,
-                "detail": "not enough filed figures"
-              }
-            ],
-            "passed": 1,
-            "failed": 1,
-            "known": 2
-          },
-          "events": {
-            "serious": [],
-            "newer_results": null
-          },
-          "category": {
-            "key": "weak",
-            "label": "Fails checks",
-            "why": "Fails 1 of 2 checks: profitable every year (lost money in 2023, 2024, 2025)"
           },
           "data_ok": true,
           "data_flags": []
@@ -13763,16 +13469,16 @@
           "thesis": "10-year Treasury yield. High yield (>4.5%) compresses equity multiples; falling yield is a tailwind for growth stocks. Monitor as macro context for entry decisions.",
           "added": "2026-05-28",
           "verdict": "WATCHLIST",
-          "current_price": 4.918,
+          "current_price": 4.888,
           "next_action": "MACRO SIGNAL \u2014 current 4.48%. Watch for moves above 4.75% (equity headwind) or below 4.0% (equity tailwind).",
           "research_file": null,
           "last_researched": "2026-05-28",
           "rated_price": 4.48,
-          "price": 4.918,
-          "pct_change_1d": 0.12,
+          "price": 4.888,
+          "pct_change_1d": -0.61,
           "market_cap": null,
           "cap_tier": "unknown",
-          "drawdown_from_high": -8.3,
+          "drawdown_from_high": -8.9,
           "revenue_growth": null,
           "op_margin": null,
           "pe": null,
@@ -13780,17 +13486,9 @@
           "short_percent_float": null,
           "short_ratio": null,
           "high_proximity_warning": true,
-          "high_proximity_note": "Only 8.3% from 52-week high \u2014 entry timing risk",
+          "high_proximity_note": "Only 8.9% from 52-week high \u2014 entry timing risk",
           "bear_check": null,
-          "move_split": {
-            "session": "2026-11-23",
-            "pct": 0.1,
-            "market": 4.7,
-            "group": null,
-            "group_name": null,
-            "fund": null,
-            "own": -4.6
-          },
+          "move_split": null,
           "moved_since_rating": null,
           "valuation": null,
           "quality": null,
@@ -14190,7 +13888,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in EUR; figures converted to USD at 1.0921. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in EUR; figures converted to USD at 1.0972. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -14199,31 +13897,28 @@
           "name": "Taiwan Semiconductor Manufacturing Company",
           "theme": "edge_ai_silicon",
           "status": "research_complete",
-          "thesis": "Pure-play AI foundry at 13.6x forward earnings with 50%+ revenue growth, 65% gross margins, and $44B FCF, discounted 35% from highs on geopolitical fears not fundamentals.",
+          "thesis": "World's leading foundry at 15.5x forward earnings with 50%+ revenue growth driven by AI chip demand, net cash position, and irreplaceable technology moat.",
           "added": "2026-05-28",
           "verdict": "RESEARCH-WORTHY",
           "current_price": 363.6,
-          "next_action": "RESEARCH \u2014 Pure-play AI foundry at 13.6x forward earnings with 50%+ revenue growth, 65% gross margins, and $44B FCF, discounted 35% from highs on geopolitical fears not fundamentals. Worth a deep dive before any decision.",
-          "research_file": "output/research/TSM_2026-11-23.md",
-          "last_researched": "2026-11-23",
+          "next_action": "RESEARCH \u2014 World's leading foundry at 15.5x forward earnings with 50%+ revenue growth driven by AI chip demand, net cash position, and irreplaceable technology moat. Worth a deep dive before any decision.",
+          "research_file": "output/research/TSM_2026-11-24.md",
+          "last_researched": "2026-11-24",
           "llm_verdict": "RESEARCH-WORTHY",
           "bear_downgraded": false,
           "confidence": "MEDIUM",
-          "bear_check": "Additionally, the October 2026 U.S. chip export curbs on China may permanently eliminate 15\u201320% of TSMC's total addressable market if Chinese fabless customers are cut off, a structural demand hit not yet reflected in consensus estimates. This tail risk is binary and unhedgeable, making position sizing critical. WHY_IT_FELL: TSMC dropped ~20% in a week on Nvidia demand jitters and new U.S. chip export curbs targeting China. FALL_EVIDENCE: TSMC Sinks 20% in a Week on Nvidia Jitters and New US Chip Curbs on China. Time to Buy? (TIKR.com) BREAK: NONE EVIDENCE: none [1 sentence(s) removed: figures not in the source data.]",
+          "bear_check": "This single-point-of-failure risk is not priced as a remote tail event but as a persistent structural vulnerability that could render the moat irrelevant overnight. WHY_IT_FELL: US export controls on China chip access announced November 16 triggered geopolitical risk selling, compounded by profit-taking after blowout October earnings. FALL_EVIDENCE: [2026-11-16] Samsung Elec, TSMC shares fall after US announces curbs on China's chip access (Reuters) BREAK: NONE EVIDENCE: none [1 sentence(s) removed: figures not in the source data.]",
           "no_pullback_gate": false,
           "unsupported_figures": [
-            "30x",
             "25x",
-            "30%",
-            "25%",
-            "20x",
-            "90%"
+            "90%",
+            "100%"
           ],
           "rating_version": 4,
-          "fall_reason": "TSMC dropped ~20% in a week on Nvidia demand jitters and new US chip export curbs targeting China, per Reuters.",
+          "fall_reason": "US export controls on China chip access announced November 16 triggered geopolitical risk selling, compounded by profit-taking after blowout October earnings.",
           "rated_quarter_end": "2026-09-30",
           "rated_next_earnings": 1792067400,
-          "rated_price": 318.71,
+          "rated_price": 363.6,
           "price": 363.6,
           "pct_change_1d": 14.08,
           "market_cap": 1885801545728,
@@ -14251,10 +13946,7 @@
             "fund": "XSD",
             "own": 2.0
           },
-          "moved_since_rating": {
-            "pct": 14.1,
-            "span": "in one day"
-          },
+          "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
             "low": null,
@@ -14287,33 +13979,174 @@
           ]
         },
         {
+          "ticker": "MRVL",
+          "name": "Marvell Technology, Inc.",
+          "theme": "edge_ai_silicon",
+          "status": "research_complete",
+          "thesis": "AI infrastructure pure-play at 19.6x forward earnings with 36% revenue growth, positive FCF, and custom silicon design wins at multiple hyperscalers.",
+          "added": "2026-06-08",
+          "verdict": "RESEARCH-WORTHY",
+          "current_price": 144.74,
+          "next_action": "RESEARCH \u2014 AI infrastructure pure-play at 19.6x forward earnings with 36% revenue growth, positive FCF, and custom silicon design wins at multiple hyperscalers. Worth a deep dive before any decision.",
+          "research_file": "output/research/MRVL_2026-11-24.md",
+          "last_researched": "2026-11-24",
+          "llm_verdict": "RESEARCH-WORTHY",
+          "bear_downgraded": false,
+          "confidence": "MEDIUM",
+          "bear_check": "The 56% drawdown reflects a broad semiconductor selloff amplified by Nvidia\u2019s CEO departure and skepticism around the Lumentum optics acquisition, suggesting the decline may signal weakening AI infrastructure demand rather than a pure valuation reset. Even after the drop, the stock trades at 45\u00d7 EV/EBITDA, pricing in sustained hypergrowth that could stall if hyperscaler capex cycles normalize. WHY_IT_FELL: Broad semiconductor selloff intensified by Nvidia CEO departure concerns and mixed market reaction to the potential Lumentum optics acquisition. FALL_EVIDENCE: Marvell Technology stock falls 6% as chip selloff deepens after Nvidia CEO exit (Crypto Briefing) BREAK: NONE EVIDENCE: none [1 sentence(s) removed: figures not in the source data.]",
+          "no_pullback_gate": false,
+          "rating_version": 4,
+          "unsupported_figures": [
+            "50%",
+            "20%"
+          ],
+          "fall_reason": "Broad semiconductor selloff intensified by Nvidia CEO departure concerns and mixed market reaction to the potential Lumentum optics acquisition.",
+          "rated_quarter_end": "2026-07-31",
+          "rated_next_earnings": 1796158800,
+          "rated_price": 144.74,
+          "price": 144.74,
+          "pct_change_1d": 18.37,
+          "market_cap": 130232123392,
+          "cap_tier": "mega",
+          "drawdown_from_high": -56.1,
+          "revenue_growth": 36.5,
+          "op_margin": 16.7,
+          "pe": 47.611843,
+          "forward_pe": 19.636173,
+          "short_percent_float": 3.48,
+          "short_ratio": 1.2,
+          "high_proximity_warning": false,
+          "insider_signal": "SELLING",
+          "insider_note": "0 buy(s), 12 sell(s) in past 6 months | $0 bought / $19,979,156 sold",
+          "insider_buys": 0,
+          "insider_sells": 12,
+          "conviction_holders": [],
+          "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 18.4,
+            "market": 4.7,
+            "group": 7.4,
+            "group_name": "chip",
+            "fund": "XSD",
+            "own": 6.3
+          },
+          "moved_since_rating": null,
+          "valuation": {
+            "status": "no_reliable_price",
+            "low": 16.64,
+            "base": 16.64,
+            "high": 16.64,
+            "buy_below": null,
+            "reason": "only one valuation method could be used (no own multiple)",
+            "notes": [
+              "profit margins vary a lot, so they were averaged over every year on file"
+            ],
+            "methods": {
+              "cash_flow": 16.64
+            },
+            "inputs": {
+              "owner_cash_per_share": 1.02,
+              "cash_margin": 0.0977,
+              "growth_used": 0.15,
+              "discount_rate": 0.1492,
+              "beta": 2.33,
+              "cyclical": true,
+              "eps_normalised": 0.1,
+              "median_past_pe": null,
+              "fair_pe": null,
+              "terminal_share": 0.388,
+              "implied_growth": null,
+              "figures_as_of": "2026-08-01",
+              "sources": {
+                "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "operating_income": "OperatingIncomeLoss",
+                "net_income": "NetIncomeLoss",
+                "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+                "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+                "software_capex": "PaymentsToAcquireIntangibleAssets",
+                "stock_comp": "ShareBasedCompensation",
+                "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+              }
+            },
+            "valued_on": "2026-11-24",
+            "gap_pct": null
+          },
+          "quality": {
+            "checks": [
+              {
+                "name": "Profitable every year",
+                "ok": false,
+                "detail": "lost money in 2021, 2022, 2023, 2024, 2025",
+                "chronic": true
+              },
+              {
+                "name": "Profit turns into cash",
+                "ok": true,
+                "detail": "449% of three years' profit arrived as cash after spending"
+              },
+              {
+                "name": "Share count not swelling",
+                "ok": true,
+                "detail": "grew 0.5% a year"
+              },
+              {
+                "name": "Debt is manageable",
+                "ok": true,
+                "detail": "net debt is 0.6 years of operating cash flow (debt from Yahoo)"
+              },
+              {
+                "name": "Margins holding up",
+                "ok": null,
+                "detail": "lost money on average, so there is nothing to compare"
+              }
+            ],
+            "passed": 3,
+            "failed": 1,
+            "known": 4
+          },
+          "events": {
+            "serious": [],
+            "newer_results": "2026-11-02"
+          },
+          "category": {
+            "key": "weak",
+            "label": "Fails checks",
+            "why": "Fails 1 of 4 checks: profitable every year (lost money in 2021, 2022, 2023, 2024, 2025)"
+          },
+          "data_ok": true,
+          "data_flags": []
+        },
+        {
           "ticker": "COHR",
           "name": "Coherent Corp.",
           "theme": "networking_infra",
           "status": "research_complete",
-          "thesis": "Optical transceiver leader trading at 12x forward earnings with 50% revenue growth, but negative FCF and high leverage require monitoring.",
+          "thesis": "AI infrastructure pure-play at 13.7x forward earnings with 50% YoY revenue growth and multi-year backlog visibility, but negative FCF and high leverage require execution proof.",
           "added": "2026-06-08",
           "verdict": "RESEARCH-WORTHY",
           "current_price": 215.81,
-          "next_action": "RESEARCH \u2014 Optical transceiver leader trading at 12x forward earnings with 50% revenue growth, but negative FCF and high leverage require monitoring. Worth a deep dive before any decision.",
-          "research_file": "output/research/COHR_2026-11-22.md",
-          "last_researched": "2026-11-22",
+          "next_action": "RESEARCH \u2014 AI infrastructure pure-play at 13.7x forward earnings with 50% YoY revenue growth and multi-year backlog visibility, but negative FCF and high leverage require execution proof. Worth a deep dive before any decision.",
+          "research_file": "output/research/COHR_2026-11-24.md",
+          "last_researched": "2026-11-24",
           "llm_verdict": "RESEARCH-WORTHY",
           "bear_downgraded": false,
           "confidence": "MEDIUM",
           "no_pullback_gate": false,
-          "bear_check": "The forward multiple assumes near-tripling of EPS from depressed trailing levels, but this earnings inflection is not yet visible in cash flow and could evaporate if AI infrastructure spending decelerates. WHY_IT_FELL: The stock fell 58% from its high due to a broad AI chip rout and tech sector selling that dragged down optical suppliers, as highlighted by headlines citing Nvidia earnings impact and AI demand concerns. FALL_EVIDENCE: Coherent stock falls 15% as the AI chip rout hits optical suppliers BREAK: NONE EVIDENCE: none [2 sentence(s) removed: figures not in the source data.]",
+          "bear_check": "BREAK: NONE EVIDENCE: none WHY_IT_FELL: The stock fell sharply in November 2026 as the AI chip rout hit optical suppliers and broad tech selling pressure intensified. FALL_EVIDENCE: Coherent stock falls 15% as the AI chip rout hits optical suppliers (Startup Fortune) VERDICT: RESEARCH-WORTHY CONFIDENCE: MEDIUM [1 sentence(s) removed: figures not in the source data.]",
           "rating_version": 4,
           "unsupported_figures": [
-            "$1.84B",
-            "30%",
+            "$1,841M",
+            "20%",
+            "3x",
             "$1.8B",
-            "$2B"
+            "$1.8\u202fbillion",
+            "20\u202f%"
           ],
-          "fall_reason": "The stock fell 58% from its high due to a broad AI chip rout and tech sector selling that dragged down optical suppliers, as highlighted by headlines citing Nvidia earnings impact and AI demand concerns.",
+          "fall_reason": "The stock fell sharply in November 2026 as the AI chip rout hit optical suppliers and broad tech selling pressure intensified.",
           "rated_quarter_end": "2026-09-30",
           "rated_next_earnings": 1793826000,
-          "rated_price": 187.22,
+          "rated_price": 215.81,
           "price": 215.81,
           "pct_change_1d": 15.27,
           "market_cap": 42505650176,
@@ -14341,10 +14174,7 @@
             "fund": "RSPT",
             "own": 8.2
           },
-          "moved_since_rating": {
-            "pct": 15.3,
-            "span": "in one day"
-          },
+          "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
             "low": null,
@@ -14697,26 +14527,24 @@
           "name": "Vertiv Holdings Co",
           "theme": "power_grid",
           "status": "research_complete",
-          "thesis": "AI data center power/cooling pure-play at 16.8x forward earnings with 61% YoY revenue growth, $3.1B FCF, and net cash, but market prices in organic growth deceleration.",
+          "thesis": "AI data center power/cooling leader trading at 19x forward earnings with 60%+ revenue growth and $3.1B FCF, down 51% on sector rotation not fundamentals.",
           "added": "2026-05-28",
           "verdict": "RESEARCH-WORTHY",
           "current_price": 186.35,
-          "next_action": "RESEARCH \u2014 AI data center power/cooling pure-play at 16.8x forward earnings with 61% YoY revenue growth, $3.1B FCF, and net cash, but market prices in organic growth deceleration. Worth a deep dive before any decision.",
-          "research_file": "output/research/VRT_2026-11-23.md",
-          "last_researched": "2026-11-23",
+          "next_action": "RESEARCH \u2014 AI data center power/cooling leader trading at 19x forward earnings with 60%+ revenue growth and $3.1B FCF, down 51% on sector rotation not fundamentals. Worth a deep dive before any decision.",
+          "research_file": "output/research/VRT_2026-11-24.md",
+          "last_researched": "2026-11-24",
           "llm_verdict": "RESEARCH-WORTHY",
           "bear_downgraded": false,
           "confidence": "MEDIUM",
-          "bear_check": "The 61% YoY revenue growth may be inflated by acquisitions or backlog burn rather than sustainable organic demand, as highlighted by the \"organic growth softness\" headline; if hyperscaler capex cycles normalize, revenue could decline sharply from current levels, making the forward P/E of 16.8x a potential value trap.\n\nBREAK: NONE\nEVIDENCE: none\nWHY_IT_FELL: Market concerns about organic growth deceleration and technical selling pressure despite strong earnings and raised guidance.\nFALL_EVIDENCE: Vertiv Holdings Co (VRT) Declined on Organic Growth Softness Despite Upgraded Full-Year Guidance (Yahoo Finance)\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
+          "bear_check": "The strongest argument against buying VRT is that despite $3.1B in trailing free cash flow, the company holds only $355M net cash, indicating rapid 61% revenue growth is consuming cash via working capital expansion (inventory, receivables) that could reverse violently if AI infrastructure spending slows. Customer concentration among hyperscalers is unverified but likely extreme, creating revenue cliff risk if a major customer reduces orders. The 51% drawdown reflects sector rotation, but the balance sheet offers minimal margin of safety for a cyclical capital goods business.\n\nBREAK: NONE\nEVIDENCE: none\n\nWHY_IT_FELL: The stock fell due to a broad AI infrastructure sector selloff, not company-specific issues.\nFALL_EVIDENCE: Vertiv Shares Drop 10.1% as AI Infrastructure Stocks Sell Off\n\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
           "no_pullback_gate": false,
           "rating_version": 4,
-          "unsupported_figures": [
-            "30%"
-          ],
-          "fall_reason": "Market concerns about organic growth deceleration and technical selling pressure despite strong earnings and raised guidance.",
+          "unsupported_figures": [],
+          "fall_reason": "The stock fell due to a broad AI infrastructure sector selloff, not company-specific issues.",
           "rated_quarter_end": "2026-09-30",
           "rated_next_earnings": 1793190600,
-          "rated_price": 166.24,
+          "rated_price": 186.35,
           "price": 186.35,
           "pct_change_1d": 12.1,
           "market_cap": 71756013568,
@@ -14744,10 +14572,7 @@
             "fund": "RSPN",
             "own": 8.8
           },
-          "moved_since_rating": {
-            "pct": 12.1,
-            "span": "in one day"
-          },
+          "moved_since_rating": null,
           "valuation": {
             "status": "ok",
             "low": 51.73,
@@ -15795,32 +15620,30 @@
           "name": "Credo Technology Group Holding Ltd",
           "theme": "edge_ai_silicon",
           "status": "research_complete",
-          "thesis": "Profitable AI interconnect pure-play at 35x trailing earnings for 115% growth with net cash, but forward multiple assumes triple-digit EPS growth that may not materialize.",
+          "thesis": "No summary: its figures weren't in the source data.",
           "added": "2026-07-25",
           "verdict": "RESEARCH-WORTHY",
           "current_price": 122.46,
-          "next_action": "RESEARCH \u2014 Profitable AI interconnect pure-play at 35x trailing earnings for 115% growth with net cash, but forward multiple assumes triple-digit EPS growth that may not materialize. Worth a deep dive before any decision.",
-          "research_file": "output/research/CRDO_2026-11-22.md",
-          "last_researched": "2026-11-22",
+          "next_action": "RESEARCH \u2014 Worth a deep dive before any decision. [1 sentence(s) removed: figures not in the source data.]",
+          "research_file": "output/research/CRDO_2026-11-24.md",
+          "last_researched": "2026-11-24",
           "confidence": "MEDIUM",
           "research_source": "deep_research_2026-07-25",
           "no_pullback_gate": false,
           "llm_verdict": "RESEARCH-WORTHY",
           "bear_downgraded": false,
-          "bear_check": "Additionally, the business is heavily dependent on a few hyperscale customers and the Nvidia Blackwell ramp; losing a single major socket or a pause in AI capex would collapse the growth narrative and trigger a violent multiple re\u2011rate. BREAK: NONE EVIDENCE: none WHY_IT_FELL: The stock fell on a broad tech sector sell\u2011off, not company\u2011specific news. FALL_EVIDENCE: Tech slump pushes Credo Technology down 14% (CRDO:NASDAQ) (Seeking Alpha) VERDICT: RESEARCH-WORTHY CONFIDENCE: MEDIUM [1 sentence(s) removed: figures not in the source data.]",
+          "bear_check": "The 12.6\u00d7 forward P/E embeds a ~3.4\u00d7 earnings leap that assumes flawless execution on the AI capex wave, yet the TTM operating margin and FCF ($439M) do not yet substantiate that trajectory, leaving no margin of safety if growth decelerates. BREAK: NONE EVIDENCE: none WHY_IT_FELL: Broad tech-sector sell-off and profit-taking after a sharp run-up, not company-specific deterioration. FALL_EVIDENCE: Tech slump pushes Credo Technology down 14% (CRDO:NASDAQ) VERDICT: RESEARCH-WORTHY CONFIDENCE: MEDIUM \u2014 verdict rests on provided fundamentals and headlines, but key claims (customer concentration, 1.6T design-wins, peer valuation context) are unverified and require 10-K/transcript confirmation. [1 sentence(s) removed: figures not in the source data.]",
           "rating_version": 4,
           "unsupported_figures": [
-            "230%",
-            "$3.30 ",
-            "$9.70 ",
-            "100%",
-            "30%",
-            "20%"
+            "40%",
+            "3.4x",
+            "20%",
+            "100%"
           ],
-          "fall_reason": "The stock fell on a broad tech sector sell-off, not company-specific news.",
+          "fall_reason": "Broad tech-sector sell-off and profit-taking after a sharp run-up, not company-specific deterioration.",
           "rated_quarter_end": "2026-07-31",
           "rated_next_earnings": 1796158800,
-          "rated_price": 99.86,
+          "rated_price": 122.46,
           "price": 122.46,
           "pct_change_1d": 22.63,
           "market_cap": 23016591360,
@@ -15848,10 +15671,7 @@
             "fund": "XSD",
             "own": 10.5
           },
-          "moved_since_rating": {
-            "pct": 22.6,
-            "span": "in one day"
-          },
+          "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
             "low": null,
@@ -15944,22 +15764,24 @@
           "added": "2026-11-14",
           "llm_verdict": "RESEARCH-WORTHY",
           "bear_downgraded": false,
-          "research_file": "output/research/FIX_2026-11-23.md",
-          "last_researched": "2026-11-23",
+          "research_file": "output/research/FIX_2026-11-24.md",
+          "last_researched": "2026-11-24",
           "rating_version": 4,
           "unsupported_figures": [
+            "16x",
+            "19.5%",
             "45%",
-            "15%"
+            "10%"
           ],
-          "fall_reason": "The stock dropped sharply after Q3 2026 earnings despite an earnings beat, likely due to CFO retirement and cautious forward guidance not fully reflected in the provided headlines.",
+          "fall_reason": "The stock slid after Q3 earnings despite reported strength, suggesting guidance or margin concerns not fully reflected in the headline numbers.",
           "rated_quarter_end": "2026-09-30",
           "rated_next_earnings": 1792699200,
           "confidence": "MEDIUM",
-          "bear_check": "The 50% drawdown from the 52-week high despite 53.7% YoY revenue growth and $2.4B TTM free cash flow signals market skepticism about the sustainability of the data-center-driven surge and fear of a cyclical construction downturn; the CFO retirement announced alongside the post-earnings drop adds governance uncertainty, and the decentralized model makes rapid cost reduction difficult if backlog deteriorates.\n\nBREAK: NONE\nEVIDENCE: none\nWHY_IT_FELL: The stock dropped sharply after Q3 2026 earnings despite an earnings beat, likely due to CFO retirement and cautious forward guidance not fully reflected in the provided headlines.\nFALL_EVIDENCE: Comfort Systems USA drops 9% after earnings, CFO retirement (FIX:NYSE) (Seeking Alpha)\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
-          "thesis": "Quality mechanical/electrical contractor with 50%+ revenue growth, 15.5x forward P/E, $2.4B FCF, and net cash, benefiting from data center build-out but exposed to construction cyclicality.",
-          "next_action": "RESEARCH \u2014 Quality mechanical/electrical contractor with 50%+ revenue growth, 15.5x forward P/E, $2.4B FCF, and net cash, benefiting from data center build-out but exposed to construction cyclicality. Worth a deep dive before any decision.",
+          "bear_check": "The 44% drawdown occurred after Q3 earnings despite 53.7% revenue growth, signaling the market sees deterioration in forward-looking indicators (backlog, margins, or guidance) that trailing data doesn't capture. As a cyclical contractor at peak non-residential construction cycles, buying at 17x forward earnings with unverified backlog sustainability risks catching a falling knife if construction starts roll over. The post-earnings slide despite headline strength suggests guidance or margin trajectory concerns that aren't reflected in the current multiples.\n\nBREAK: NONE\nEVIDENCE: none\nWHY_IT_FELL: The stock slid after Q3 earnings despite reported strength, suggesting guidance or margin concerns not fully reflected in the headline numbers.\nFALL_EVIDENCE: Comfort Systems USA (FIX) Stock Price Slides After Q3 Earnings Strength\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
+          "thesis": "No summary: its figures weren't in the source data.",
+          "next_action": "RESEARCH \u2014 Worth a deep dive before any decision. [1 sentence(s) removed: figures not in the source data.]",
           "no_pullback_gate": false,
-          "rated_price": 1042.47,
+          "rated_price": 1158.53,
           "price": 1158.53,
           "current_price": 1158.53,
           "pct_change_1d": 11.13,
@@ -15988,10 +15810,7 @@
             "fund": "RSPN",
             "own": 7.9
           },
-          "moved_since_rating": {
-            "pct": 11.1,
-            "span": "in one day"
-          },
+          "moved_since_rating": null,
           "valuation": {
             "status": "ok",
             "low": 694.53,
@@ -16229,8 +16048,8 @@
           "verdict": "PASS",
           "current_price": 97.8,
           "next_action": "DROP \u2014 No summary: its figures weren't in the source data.",
-          "research_file": "output/research/NBIS_2026-11-14.md",
-          "last_researched": "2026-11-14",
+          "research_file": "output/research/NBIS_2026-11-24.md",
+          "last_researched": "2026-11-24",
           "llm_verdict": "PASS",
           "bear_downgraded": false,
           "confidence": "MEDIUM",
@@ -16239,13 +16058,13 @@
           "unsupported_figures": [
             "$12,421M",
             "$12.4B",
-            "$0.146B"
+            "35x"
           ],
           "bear_check": null,
-          "fall_reason": "Q3 2026 earnings beat estimates but management lowered 2026 revenue guidance due to GPU capacity delivery delays and signaled higher capex spend, triggering a selloff.",
+          "fall_reason": "The company lowered its 2026 revenue forecast due to GPU capacity delays and warned of increased capex spend, triggering financing concerns.",
           "rated_quarter_end": "2026-09-30",
           "rated_next_earnings": 1794490200,
-          "rated_price": 115.88,
+          "rated_price": 97.8,
           "price": 97.8,
           "pct_change_1d": 20.28,
           "market_cap": 28645855232,
@@ -16267,10 +16086,7 @@
             "fund": "RSPC",
             "own": 17.8
           },
-          "moved_since_rating": {
-            "pct": 20.3,
-            "span": "in one day"
-          },
+          "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
             "low": null,
@@ -16459,6 +16275,118 @@
             "key": "weak",
             "label": "Fails checks",
             "why": "Fails 2 of 5 checks: profitable every year (lost money in 2023); profit turns into cash (64% of three years' profit arrived as cash after spending)"
+          },
+          "data_ok": true,
+          "data_flags": []
+        },
+        {
+          "ticker": "OKLO",
+          "name": "Oklo Inc.",
+          "theme": "nuclear_smr",
+          "status": "research_complete",
+          "thesis": "Pre-revenue SMR pure-play with $2.5B cash runway and DOE site clearance, but no commercial revenue until late 2020s at earliest.",
+          "added": "2026-05-28",
+          "verdict": "PASS",
+          "current_price": 20.77,
+          "next_action": "DROP \u2014 Pre-revenue SMR pure-play with $2.5B cash runway and DOE site clearance, but no commercial revenue until late 2020s at earliest.",
+          "research_file": "output/research/OKLO_2026-11-24.md",
+          "last_researched": "2026-11-24",
+          "llm_verdict": "PASS",
+          "bear_downgraded": false,
+          "confidence": "MEDIUM",
+          "rating_version": 4,
+          "unsupported_figures": [
+            "$453M",
+            "$900M"
+          ],
+          "bear_check": null,
+          "fall_reason": "Post-SPAC hype unwind and broader nuclear sector sell-off despite positive licensing milestones.",
+          "rated_quarter_end": "2026-09-30",
+          "rated_next_earnings": 1793971800,
+          "no_pullback_gate": false,
+          "rated_price": 20.77,
+          "price": 20.77,
+          "pct_change_1d": 4.63,
+          "market_cap": 4056165120,
+          "cap_tier": "mid",
+          "drawdown_from_high": -82.1,
+          "revenue_growth": null,
+          "op_margin": -4430.3,
+          "pe": null,
+          "forward_pe": -18.27605,
+          "short_percent_float": 21.88,
+          "short_ratio": 4.1,
+          "high_proximity_warning": false,
+          "insider_signal": "SELLING",
+          "insider_note": "0 buy(s), 44 sell(s) in past 6 months | $0 bought / $90,220,051 sold",
+          "insider_buys": 0,
+          "insider_sells": 44,
+          "conviction_holders": [],
+          "hf_new_positions": [],
+          "move_split": {
+            "session": "2026-11-23",
+            "pct": 4.6,
+            "market": 4.7,
+            "group": -3.1,
+            "group_name": "utility",
+            "fund": "RSPU",
+            "own": 3.0
+          },
+          "moved_since_rating": null,
+          "valuation": {
+            "status": "no_reliable_price",
+            "low": null,
+            "base": null,
+            "high": null,
+            "buy_below": null,
+            "reason": "no recent revenue on file",
+            "notes": [],
+            "methods": {},
+            "inputs": {},
+            "valued_on": "2026-11-24",
+            "gap_pct": null
+          },
+          "quality": {
+            "checks": [
+              {
+                "name": "Profitable every year",
+                "ok": false,
+                "detail": "lost money in 2023, 2024, 2025",
+                "chronic": true
+              },
+              {
+                "name": "Profit turns into cash",
+                "ok": null,
+                "detail": "not enough filed figures"
+              },
+              {
+                "name": "Share count not swelling",
+                "ok": null,
+                "detail": "fewer than 3 years on file"
+              },
+              {
+                "name": "Debt is manageable",
+                "ok": true,
+                "detail": "more cash than debt"
+              },
+              {
+                "name": "Margins holding up",
+                "ok": null,
+                "detail": "not enough filed figures"
+              }
+            ],
+            "passed": 1,
+            "failed": 1,
+            "known": 2
+          },
+          "events": {
+            "serious": [],
+            "newer_results": null
+          },
+          "category": {
+            "key": "weak",
+            "label": "Fails checks",
+            "why": "Fails 1 of 2 checks: profitable every year (lost money in 2023, 2024, 2025)"
           },
           "data_ok": true,
           "data_flags": []
@@ -17572,8 +17500,8 @@
           "verdict": "PASS",
           "current_price": 97.8,
           "next_action": "DROP \u2014 No summary: its figures weren't in the source data.",
-          "research_file": "output/research/NBIS_2026-11-14.md",
-          "last_researched": "2026-11-14",
+          "research_file": "output/research/NBIS_2026-11-24.md",
+          "last_researched": "2026-11-24",
           "llm_verdict": "PASS",
           "bear_downgraded": false,
           "confidence": "MEDIUM",
@@ -17582,13 +17510,13 @@
           "unsupported_figures": [
             "$12,421M",
             "$12.4B",
-            "$0.146B"
+            "35x"
           ],
           "bear_check": null,
-          "fall_reason": "Q3 2026 earnings beat estimates but management lowered 2026 revenue guidance due to GPU capacity delivery delays and signaled higher capex spend, triggering a selloff.",
+          "fall_reason": "The company lowered its 2026 revenue forecast due to GPU capacity delays and warned of increased capex spend, triggering financing concerns.",
           "rated_quarter_end": "2026-09-30",
           "rated_next_earnings": 1794490200,
-          "rated_price": 115.88,
+          "rated_price": 97.8,
           "price": 97.8,
           "pct_change_1d": 20.28,
           "market_cap": 28645855232,
@@ -17610,10 +17538,7 @@
             "fund": "RSPC",
             "own": 17.8
           },
-          "moved_since_rating": {
-            "pct": 20.3,
-            "span": "in one day"
-          },
+          "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
             "low": null,
@@ -18057,7 +17982,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in EUR; figures converted to USD at 1.0921. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in EUR; figures converted to USD at 1.0972. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -18066,31 +17991,28 @@
           "name": "Taiwan Semiconductor Manufacturing Company",
           "theme": "edge_ai_silicon",
           "status": "research_complete",
-          "thesis": "Pure-play AI foundry at 13.6x forward earnings with 50%+ revenue growth, 65% gross margins, and $44B FCF, discounted 35% from highs on geopolitical fears not fundamentals.",
+          "thesis": "World's leading foundry at 15.5x forward earnings with 50%+ revenue growth driven by AI chip demand, net cash position, and irreplaceable technology moat.",
           "added": "2026-05-28",
           "verdict": "RESEARCH-WORTHY",
           "current_price": 363.6,
-          "next_action": "RESEARCH \u2014 Pure-play AI foundry at 13.6x forward earnings with 50%+ revenue growth, 65% gross margins, and $44B FCF, discounted 35% from highs on geopolitical fears not fundamentals. Worth a deep dive before any decision.",
-          "research_file": "output/research/TSM_2026-11-23.md",
-          "last_researched": "2026-11-23",
+          "next_action": "RESEARCH \u2014 World's leading foundry at 15.5x forward earnings with 50%+ revenue growth driven by AI chip demand, net cash position, and irreplaceable technology moat. Worth a deep dive before any decision.",
+          "research_file": "output/research/TSM_2026-11-24.md",
+          "last_researched": "2026-11-24",
           "llm_verdict": "RESEARCH-WORTHY",
           "bear_downgraded": false,
           "confidence": "MEDIUM",
-          "bear_check": "Additionally, the October 2026 U.S. chip export curbs on China may permanently eliminate 15\u201320% of TSMC's total addressable market if Chinese fabless customers are cut off, a structural demand hit not yet reflected in consensus estimates. This tail risk is binary and unhedgeable, making position sizing critical. WHY_IT_FELL: TSMC dropped ~20% in a week on Nvidia demand jitters and new U.S. chip export curbs targeting China. FALL_EVIDENCE: TSMC Sinks 20% in a Week on Nvidia Jitters and New US Chip Curbs on China. Time to Buy? (TIKR.com) BREAK: NONE EVIDENCE: none [1 sentence(s) removed: figures not in the source data.]",
+          "bear_check": "This single-point-of-failure risk is not priced as a remote tail event but as a persistent structural vulnerability that could render the moat irrelevant overnight. WHY_IT_FELL: US export controls on China chip access announced November 16 triggered geopolitical risk selling, compounded by profit-taking after blowout October earnings. FALL_EVIDENCE: [2026-11-16] Samsung Elec, TSMC shares fall after US announces curbs on China's chip access (Reuters) BREAK: NONE EVIDENCE: none [1 sentence(s) removed: figures not in the source data.]",
           "no_pullback_gate": false,
           "unsupported_figures": [
-            "30x",
             "25x",
-            "30%",
-            "25%",
-            "20x",
-            "90%"
+            "90%",
+            "100%"
           ],
           "rating_version": 4,
-          "fall_reason": "TSMC dropped ~20% in a week on Nvidia demand jitters and new US chip export curbs targeting China, per Reuters.",
+          "fall_reason": "US export controls on China chip access announced November 16 triggered geopolitical risk selling, compounded by profit-taking after blowout October earnings.",
           "rated_quarter_end": "2026-09-30",
           "rated_next_earnings": 1792067400,
-          "rated_price": 318.71,
+          "rated_price": 363.6,
           "price": 363.6,
           "pct_change_1d": 14.08,
           "market_cap": 1885801545728,
@@ -18118,10 +18040,7 @@
             "fund": "XSD",
             "own": 2.0
           },
-          "moved_since_rating": {
-            "pct": 14.1,
-            "span": "in one day"
-          },
+          "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
             "low": null,
@@ -18439,28 +18358,27 @@
           "name": "Marvell Technology, Inc.",
           "theme": "edge_ai_silicon",
           "status": "research_complete",
-          "thesis": "AI custom silicon leader at 23x forward earnings with 36% revenue growth, but Lumentum acquisition overhang keeps multiple depressed until integration risk clears",
+          "thesis": "AI infrastructure pure-play at 19.6x forward earnings with 36% revenue growth, positive FCF, and custom silicon design wins at multiple hyperscalers.",
           "added": "2026-06-08",
-          "verdict": "WATCHLIST",
+          "verdict": "RESEARCH-WORTHY",
           "current_price": 144.74,
-          "next_action": "WAIT \u2014 AI custom silicon leader at 23x forward earnings with 36% revenue growth, but Lumentum acquisition overhang keeps multiple depressed until integration risk clears",
-          "research_file": "output/research/MRVL_2026-11-12.md",
-          "last_researched": "2026-11-12",
-          "llm_verdict": "WATCHLIST",
+          "next_action": "RESEARCH \u2014 AI infrastructure pure-play at 19.6x forward earnings with 36% revenue growth, positive FCF, and custom silicon design wins at multiple hyperscalers. Worth a deep dive before any decision.",
+          "research_file": "output/research/MRVL_2026-11-24.md",
+          "last_researched": "2026-11-24",
+          "llm_verdict": "RESEARCH-WORTHY",
           "bear_downgraded": false,
-          "confidence": "LOW",
-          "bear_check": null,
+          "confidence": "MEDIUM",
+          "bear_check": "The 56% drawdown reflects a broad semiconductor selloff amplified by Nvidia\u2019s CEO departure and skepticism around the Lumentum optics acquisition, suggesting the decline may signal weakening AI infrastructure demand rather than a pure valuation reset. Even after the drop, the stock trades at 45\u00d7 EV/EBITDA, pricing in sustained hypergrowth that could stall if hyperscaler capex cycles normalize. WHY_IT_FELL: Broad semiconductor selloff intensified by Nvidia CEO departure concerns and mixed market reaction to the potential Lumentum optics acquisition. FALL_EVIDENCE: Marvell Technology stock falls 6% as chip selloff deepens after Nvidia CEO exit (Crypto Briefing) BREAK: NONE EVIDENCE: none [1 sentence(s) removed: figures not in the source data.]",
           "no_pullback_gate": false,
           "rating_version": 4,
           "unsupported_figures": [
-            "140%",
-            "30x",
-            "25%"
+            "50%",
+            "20%"
           ],
-          "fall_reason": null,
+          "fall_reason": "Broad semiconductor selloff intensified by Nvidia CEO departure concerns and mixed market reaction to the potential Lumentum optics acquisition.",
           "rated_quarter_end": "2026-07-31",
           "rated_next_earnings": 1796158800,
-          "rated_price": 168.8,
+          "rated_price": 144.74,
           "price": 144.74,
           "pct_change_1d": 18.37,
           "market_cap": 130232123392,
@@ -18488,10 +18406,7 @@
             "fund": "XSD",
             "own": 6.3
           },
-          "moved_since_rating": {
-            "pct": 18.4,
-            "span": "in one day"
-          },
+          "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
             "low": 16.64,
@@ -18734,32 +18649,30 @@
           "name": "Credo Technology Group Holding Ltd",
           "theme": "edge_ai_silicon",
           "status": "research_complete",
-          "thesis": "Profitable AI interconnect pure-play at 35x trailing earnings for 115% growth with net cash, but forward multiple assumes triple-digit EPS growth that may not materialize.",
+          "thesis": "No summary: its figures weren't in the source data.",
           "added": "2026-07-25",
           "verdict": "RESEARCH-WORTHY",
           "current_price": 122.46,
-          "next_action": "RESEARCH \u2014 Profitable AI interconnect pure-play at 35x trailing earnings for 115% growth with net cash, but forward multiple assumes triple-digit EPS growth that may not materialize. Worth a deep dive before any decision.",
-          "research_file": "output/research/CRDO_2026-11-22.md",
-          "last_researched": "2026-11-22",
+          "next_action": "RESEARCH \u2014 Worth a deep dive before any decision. [1 sentence(s) removed: figures not in the source data.]",
+          "research_file": "output/research/CRDO_2026-11-24.md",
+          "last_researched": "2026-11-24",
           "confidence": "MEDIUM",
           "research_source": "deep_research_2026-07-25",
           "no_pullback_gate": false,
           "llm_verdict": "RESEARCH-WORTHY",
           "bear_downgraded": false,
-          "bear_check": "Additionally, the business is heavily dependent on a few hyperscale customers and the Nvidia Blackwell ramp; losing a single major socket or a pause in AI capex would collapse the growth narrative and trigger a violent multiple re\u2011rate. BREAK: NONE EVIDENCE: none WHY_IT_FELL: The stock fell on a broad tech sector sell\u2011off, not company\u2011specific news. FALL_EVIDENCE: Tech slump pushes Credo Technology down 14% (CRDO:NASDAQ) (Seeking Alpha) VERDICT: RESEARCH-WORTHY CONFIDENCE: MEDIUM [1 sentence(s) removed: figures not in the source data.]",
+          "bear_check": "The 12.6\u00d7 forward P/E embeds a ~3.4\u00d7 earnings leap that assumes flawless execution on the AI capex wave, yet the TTM operating margin and FCF ($439M) do not yet substantiate that trajectory, leaving no margin of safety if growth decelerates. BREAK: NONE EVIDENCE: none WHY_IT_FELL: Broad tech-sector sell-off and profit-taking after a sharp run-up, not company-specific deterioration. FALL_EVIDENCE: Tech slump pushes Credo Technology down 14% (CRDO:NASDAQ) VERDICT: RESEARCH-WORTHY CONFIDENCE: MEDIUM \u2014 verdict rests on provided fundamentals and headlines, but key claims (customer concentration, 1.6T design-wins, peer valuation context) are unverified and require 10-K/transcript confirmation. [1 sentence(s) removed: figures not in the source data.]",
           "rating_version": 4,
           "unsupported_figures": [
-            "230%",
-            "$3.30 ",
-            "$9.70 ",
-            "100%",
-            "30%",
-            "20%"
+            "40%",
+            "3.4x",
+            "20%",
+            "100%"
           ],
-          "fall_reason": "The stock fell on a broad tech sector sell-off, not company-specific news.",
+          "fall_reason": "Broad tech-sector sell-off and profit-taking after a sharp run-up, not company-specific deterioration.",
           "rated_quarter_end": "2026-07-31",
           "rated_next_earnings": 1796158800,
-          "rated_price": 99.86,
+          "rated_price": 122.46,
           "price": 122.46,
           "pct_change_1d": 22.63,
           "market_cap": 23016591360,
@@ -18787,10 +18700,7 @@
             "fund": "XSD",
             "own": 10.5
           },
-          "moved_since_rating": {
-            "pct": 22.6,
-            "span": "in one day"
-          },
+          "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
             "low": null,
@@ -19446,22 +19356,24 @@
           "added": "2026-11-14",
           "llm_verdict": "RESEARCH-WORTHY",
           "bear_downgraded": false,
-          "research_file": "output/research/FIX_2026-11-23.md",
-          "last_researched": "2026-11-23",
+          "research_file": "output/research/FIX_2026-11-24.md",
+          "last_researched": "2026-11-24",
           "rating_version": 4,
           "unsupported_figures": [
+            "16x",
+            "19.5%",
             "45%",
-            "15%"
+            "10%"
           ],
-          "fall_reason": "The stock dropped sharply after Q3 2026 earnings despite an earnings beat, likely due to CFO retirement and cautious forward guidance not fully reflected in the provided headlines.",
+          "fall_reason": "The stock slid after Q3 earnings despite reported strength, suggesting guidance or margin concerns not fully reflected in the headline numbers.",
           "rated_quarter_end": "2026-09-30",
           "rated_next_earnings": 1792699200,
           "confidence": "MEDIUM",
-          "bear_check": "The 50% drawdown from the 52-week high despite 53.7% YoY revenue growth and $2.4B TTM free cash flow signals market skepticism about the sustainability of the data-center-driven surge and fear of a cyclical construction downturn; the CFO retirement announced alongside the post-earnings drop adds governance uncertainty, and the decentralized model makes rapid cost reduction difficult if backlog deteriorates.\n\nBREAK: NONE\nEVIDENCE: none\nWHY_IT_FELL: The stock dropped sharply after Q3 2026 earnings despite an earnings beat, likely due to CFO retirement and cautious forward guidance not fully reflected in the provided headlines.\nFALL_EVIDENCE: Comfort Systems USA drops 9% after earnings, CFO retirement (FIX:NYSE) (Seeking Alpha)\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
-          "thesis": "Quality mechanical/electrical contractor with 50%+ revenue growth, 15.5x forward P/E, $2.4B FCF, and net cash, benefiting from data center build-out but exposed to construction cyclicality.",
-          "next_action": "RESEARCH \u2014 Quality mechanical/electrical contractor with 50%+ revenue growth, 15.5x forward P/E, $2.4B FCF, and net cash, benefiting from data center build-out but exposed to construction cyclicality. Worth a deep dive before any decision.",
+          "bear_check": "The 44% drawdown occurred after Q3 earnings despite 53.7% revenue growth, signaling the market sees deterioration in forward-looking indicators (backlog, margins, or guidance) that trailing data doesn't capture. As a cyclical contractor at peak non-residential construction cycles, buying at 17x forward earnings with unverified backlog sustainability risks catching a falling knife if construction starts roll over. The post-earnings slide despite headline strength suggests guidance or margin trajectory concerns that aren't reflected in the current multiples.\n\nBREAK: NONE\nEVIDENCE: none\nWHY_IT_FELL: The stock slid after Q3 earnings despite reported strength, suggesting guidance or margin concerns not fully reflected in the headline numbers.\nFALL_EVIDENCE: Comfort Systems USA (FIX) Stock Price Slides After Q3 Earnings Strength\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
+          "thesis": "No summary: its figures weren't in the source data.",
+          "next_action": "RESEARCH \u2014 Worth a deep dive before any decision. [1 sentence(s) removed: figures not in the source data.]",
           "no_pullback_gate": false,
-          "rated_price": 1042.47,
+          "rated_price": 1158.53,
           "price": 1158.53,
           "current_price": 1158.53,
           "pct_change_1d": 11.13,
@@ -19490,10 +19402,7 @@
             "fund": "RSPN",
             "own": 7.9
           },
-          "moved_since_rating": {
-            "pct": 11.1,
-            "span": "in one day"
-          },
+          "moved_since_rating": null,
           "valuation": {
             "status": "ok",
             "low": 694.53,
@@ -20106,16 +20015,16 @@
           "thesis": "10-year Treasury yield. High yield (>4.5%) compresses equity multiples; falling yield is a tailwind for growth stocks. Monitor as macro context for entry decisions.",
           "added": "2026-05-28",
           "verdict": "WATCHLIST",
-          "current_price": 4.918,
+          "current_price": 4.888,
           "next_action": "MACRO SIGNAL \u2014 current 4.48%. Watch for moves above 4.75% (equity headwind) or below 4.0% (equity tailwind).",
           "research_file": null,
           "last_researched": "2026-05-28",
           "rated_price": 4.48,
-          "price": 4.918,
-          "pct_change_1d": 0.12,
+          "price": 4.888,
+          "pct_change_1d": -0.61,
           "market_cap": null,
           "cap_tier": "unknown",
-          "drawdown_from_high": -8.3,
+          "drawdown_from_high": -8.9,
           "revenue_growth": null,
           "op_margin": null,
           "pe": null,
@@ -20123,17 +20032,9 @@
           "short_percent_float": null,
           "short_ratio": null,
           "high_proximity_warning": true,
-          "high_proximity_note": "Only 8.3% from 52-week high \u2014 entry timing risk",
+          "high_proximity_note": "Only 8.9% from 52-week high \u2014 entry timing risk",
           "bear_check": null,
-          "move_split": {
-            "session": "2026-11-23",
-            "pct": 0.1,
-            "market": 4.7,
-            "group": null,
-            "group_name": null,
-            "fund": null,
-            "own": -4.6
-          },
+          "move_split": null,
           "moved_since_rating": null,
           "valuation": null,
           "quality": null,
@@ -20689,29 +20590,31 @@
           "name": "Coherent Corp.",
           "theme": "networking_infra",
           "status": "research_complete",
-          "thesis": "Optical transceiver leader trading at 12x forward earnings with 50% revenue growth, but negative FCF and high leverage require monitoring.",
+          "thesis": "AI infrastructure pure-play at 13.7x forward earnings with 50% YoY revenue growth and multi-year backlog visibility, but negative FCF and high leverage require execution proof.",
           "added": "2026-06-08",
           "verdict": "RESEARCH-WORTHY",
           "current_price": 215.81,
-          "next_action": "RESEARCH \u2014 Optical transceiver leader trading at 12x forward earnings with 50% revenue growth, but negative FCF and high leverage require monitoring. Worth a deep dive before any decision.",
-          "research_file": "output/research/COHR_2026-11-22.md",
-          "last_researched": "2026-11-22",
+          "next_action": "RESEARCH \u2014 AI infrastructure pure-play at 13.7x forward earnings with 50% YoY revenue growth and multi-year backlog visibility, but negative FCF and high leverage require execution proof. Worth a deep dive before any decision.",
+          "research_file": "output/research/COHR_2026-11-24.md",
+          "last_researched": "2026-11-24",
           "llm_verdict": "RESEARCH-WORTHY",
           "bear_downgraded": false,
           "confidence": "MEDIUM",
           "no_pullback_gate": false,
-          "bear_check": "The forward multiple assumes near-tripling of EPS from depressed trailing levels, but this earnings inflection is not yet visible in cash flow and could evaporate if AI infrastructure spending decelerates. WHY_IT_FELL: The stock fell 58% from its high due to a broad AI chip rout and tech sector selling that dragged down optical suppliers, as highlighted by headlines citing Nvidia earnings impact and AI demand concerns. FALL_EVIDENCE: Coherent stock falls 15% as the AI chip rout hits optical suppliers BREAK: NONE EVIDENCE: none [2 sentence(s) removed: figures not in the source data.]",
+          "bear_check": "BREAK: NONE EVIDENCE: none WHY_IT_FELL: The stock fell sharply in November 2026 as the AI chip rout hit optical suppliers and broad tech selling pressure intensified. FALL_EVIDENCE: Coherent stock falls 15% as the AI chip rout hits optical suppliers (Startup Fortune) VERDICT: RESEARCH-WORTHY CONFIDENCE: MEDIUM [1 sentence(s) removed: figures not in the source data.]",
           "rating_version": 4,
           "unsupported_figures": [
-            "$1.84B",
-            "30%",
+            "$1,841M",
+            "20%",
+            "3x",
             "$1.8B",
-            "$2B"
+            "$1.8\u202fbillion",
+            "20\u202f%"
           ],
-          "fall_reason": "The stock fell 58% from its high due to a broad AI chip rout and tech sector selling that dragged down optical suppliers, as highlighted by headlines citing Nvidia earnings impact and AI demand concerns.",
+          "fall_reason": "The stock fell sharply in November 2026 as the AI chip rout hit optical suppliers and broad tech selling pressure intensified.",
           "rated_quarter_end": "2026-09-30",
           "rated_next_earnings": 1793826000,
-          "rated_price": 187.22,
+          "rated_price": 215.81,
           "price": 215.81,
           "pct_change_1d": 15.27,
           "market_cap": 42505650176,
@@ -20739,10 +20642,7 @@
             "fund": "RSPT",
             "own": 8.2
           },
-          "moved_since_rating": {
-            "pct": 15.3,
-            "span": "in one day"
-          },
+          "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
             "low": null,
@@ -21097,27 +20997,27 @@
           "name": "Oklo Inc.",
           "theme": "nuclear_smr",
           "status": "research_complete",
-          "thesis": "Pre-revenue SMR developer with $2.5B cash runway betting on 2027+ commercial deployment for AI data center power; 77% drawdown reflects timeline risk not technology failure.",
+          "thesis": "Pre-revenue SMR pure-play with $2.5B cash runway and DOE site clearance, but no commercial revenue until late 2020s at earliest.",
           "added": "2026-05-28",
-          "verdict": "WATCHLIST",
+          "verdict": "PASS",
           "current_price": 20.77,
-          "next_action": "WAIT \u2014 Pre-revenue SMR developer with $2.5B cash runway betting on 2027+ commercial deployment for AI data center power; 77% drawdown reflects timeline risk not technology failure.",
-          "research_file": "output/research/OKLO_2026-11-10.md",
-          "last_researched": "2026-11-10",
-          "llm_verdict": "WATCHLIST",
+          "next_action": "DROP \u2014 Pre-revenue SMR pure-play with $2.5B cash runway and DOE site clearance, but no commercial revenue until late 2020s at earliest.",
+          "research_file": "output/research/OKLO_2026-11-24.md",
+          "last_researched": "2026-11-24",
+          "llm_verdict": "PASS",
           "bear_downgraded": false,
-          "confidence": "LOW",
+          "confidence": "MEDIUM",
           "rating_version": 4,
           "unsupported_figures": [
             "$453M",
-            "25%"
+            "$900M"
           ],
           "bear_check": null,
-          "fall_reason": null,
+          "fall_reason": "Post-SPAC hype unwind and broader nuclear sector sell-off despite positive licensing milestones.",
           "rated_quarter_end": "2026-09-30",
           "rated_next_earnings": 1793971800,
           "no_pullback_gate": false,
-          "rated_price": 26.84,
+          "rated_price": 20.77,
           "price": 20.77,
           "pct_change_1d": 4.63,
           "market_cap": 4056165120,
@@ -21145,10 +21045,7 @@
             "fund": "RSPU",
             "own": 3.0
           },
-          "moved_since_rating": {
-            "pct": -22.6,
-            "span": "since it was rated"
-          },
+          "moved_since_rating": null,
           "valuation": {
             "status": "no_reliable_price",
             "low": null,
@@ -21494,26 +21391,24 @@
           "name": "Vertiv Holdings Co",
           "theme": "power_grid",
           "status": "research_complete",
-          "thesis": "AI data center power/cooling pure-play at 16.8x forward earnings with 61% YoY revenue growth, $3.1B FCF, and net cash, but market prices in organic growth deceleration.",
+          "thesis": "AI data center power/cooling leader trading at 19x forward earnings with 60%+ revenue growth and $3.1B FCF, down 51% on sector rotation not fundamentals.",
           "added": "2026-05-28",
           "verdict": "RESEARCH-WORTHY",
           "current_price": 186.35,
-          "next_action": "RESEARCH \u2014 AI data center power/cooling pure-play at 16.8x forward earnings with 61% YoY revenue growth, $3.1B FCF, and net cash, but market prices in organic growth deceleration. Worth a deep dive before any decision.",
-          "research_file": "output/research/VRT_2026-11-23.md",
-          "last_researched": "2026-11-23",
+          "next_action": "RESEARCH \u2014 AI data center power/cooling leader trading at 19x forward earnings with 60%+ revenue growth and $3.1B FCF, down 51% on sector rotation not fundamentals. Worth a deep dive before any decision.",
+          "research_file": "output/research/VRT_2026-11-24.md",
+          "last_researched": "2026-11-24",
           "llm_verdict": "RESEARCH-WORTHY",
           "bear_downgraded": false,
           "confidence": "MEDIUM",
-          "bear_check": "The 61% YoY revenue growth may be inflated by acquisitions or backlog burn rather than sustainable organic demand, as highlighted by the \"organic growth softness\" headline; if hyperscaler capex cycles normalize, revenue could decline sharply from current levels, making the forward P/E of 16.8x a potential value trap.\n\nBREAK: NONE\nEVIDENCE: none\nWHY_IT_FELL: Market concerns about organic growth deceleration and technical selling pressure despite strong earnings and raised guidance.\nFALL_EVIDENCE: Vertiv Holdings Co (VRT) Declined on Organic Growth Softness Despite Upgraded Full-Year Guidance (Yahoo Finance)\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
+          "bear_check": "The strongest argument against buying VRT is that despite $3.1B in trailing free cash flow, the company holds only $355M net cash, indicating rapid 61% revenue growth is consuming cash via working capital expansion (inventory, receivables) that could reverse violently if AI infrastructure spending slows. Customer concentration among hyperscalers is unverified but likely extreme, creating revenue cliff risk if a major customer reduces orders. The 51% drawdown reflects sector rotation, but the balance sheet offers minimal margin of safety for a cyclical capital goods business.\n\nBREAK: NONE\nEVIDENCE: none\n\nWHY_IT_FELL: The stock fell due to a broad AI infrastructure sector selloff, not company-specific issues.\nFALL_EVIDENCE: Vertiv Shares Drop 10.1% as AI Infrastructure Stocks Sell Off\n\nVERDICT: RESEARCH-WORTHY\nCONFIDENCE: MEDIUM",
           "no_pullback_gate": false,
           "rating_version": 4,
-          "unsupported_figures": [
-            "30%"
-          ],
-          "fall_reason": "Market concerns about organic growth deceleration and technical selling pressure despite strong earnings and raised guidance.",
+          "unsupported_figures": [],
+          "fall_reason": "The stock fell due to a broad AI infrastructure sector selloff, not company-specific issues.",
           "rated_quarter_end": "2026-09-30",
           "rated_next_earnings": 1793190600,
-          "rated_price": 166.24,
+          "rated_price": 186.35,
           "price": 186.35,
           "pct_change_1d": 12.1,
           "market_cap": 71756013568,
@@ -21541,10 +21436,7 @@
             "fund": "RSPN",
             "own": 8.8
           },
-          "moved_since_rating": {
-            "pct": 12.1,
-            "span": "in one day"
-          },
+          "moved_since_rating": null,
           "valuation": {
             "status": "ok",
             "low": 51.73,
@@ -25009,9 +24901,9 @@
     },
     "counts": {
       "total": 62,
-      "research_worthy": 18,
-      "watchlist": 40,
-      "pass": 4,
+      "research_worthy": 19,
+      "watchlist": 38,
+      "pass": 5,
       "red_flag": 0
     }
   },
@@ -31707,14 +31599,14 @@
     }
   },
   "asset_location": {
-    "generated_at": "2026-11-24T08:38:52Z",
+    "generated_at": "2026-11-24T14:29:36Z",
     "rules": {
       "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
       "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
       "high_yield_threshold_pct": 3.0
     },
     "counts": {
-      "roth": 55,
+      "roth": 54,
       "taxable": 2
     },
     "roth": [
@@ -31857,6 +31749,16 @@
         "account": "ROTH",
         "priority": "high",
         "reason": "Highest-conviction growth pick (26% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
+      },
+      {
+        "ticker": "MRVL",
+        "name": "Marvell Technology, Inc.",
+        "theme": "edge_ai_silicon",
+        "verdict": "RESEARCH-WORTHY",
+        "div_yield_pct": 0.17,
+        "account": "ROTH",
+        "priority": "high",
+        "reason": "Highest-conviction growth pick (36% revenue growth) \u2014 the names most likely to compound hardest belong where the gain is never taxed."
       },
       {
         "ticker": "PAYX",
@@ -32139,16 +32041,6 @@
         "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
       },
       {
-        "ticker": "MRVL",
-        "name": "Marvell Technology, Inc.",
-        "theme": "edge_ai_silicon",
-        "verdict": "WATCHLIST",
-        "div_yield_pct": 0.17,
-        "account": "ROTH",
-        "priority": "medium",
-        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
-      },
-      {
         "ticker": "MSFT",
         "name": "Microsoft Corporation",
         "theme": "mega_cap_ai",
@@ -32194,16 +32086,6 @@
         "theme": "power_grid",
         "verdict": "WATCHLIST",
         "div_yield_pct": 0.75,
-        "account": "ROTH",
-        "priority": "medium",
-        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
-      },
-      {
-        "ticker": "OKLO",
-        "name": "Oklo Inc.",
-        "theme": "nuclear_smr",
-        "verdict": "WATCHLIST",
-        "div_yield_pct": null,
         "account": "ROTH",
         "priority": "medium",
         "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
@@ -32703,8 +32585,8 @@
     "nasdaq100": 7.0,
     "treasury": 4.92,
     "treasury_before": 4.91,
-    "up": 52,
-    "counted": 60,
+    "up": 51,
+    "counted": 59,
     "best": {
       "name": "chip",
       "pct": 12.08
@@ -34652,60 +34534,68 @@
     "target_approaching": [],
     "news": [
       {
-        "ticker": "META",
+        "ticker": "TSM",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Meta, Google Beat Liability Claims Over NY Mass Shooting",
-        "publisher": "Law360",
+        "title": "TSMC, SK Hynix, and Asian tech surge after Jensen Huang's return as Nvidia CEO (NVDA:NASDAQ)",
+        "publisher": "Seeking Alpha",
         "date": "2026-11-24",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQcDlIWExNMEMxRjViOTBMRmdfcUJnMllxYkVFeVdscGphbno4SVJiMEhUUkU3ZnZZNG5jV1hXZmIzeFJvTktLTHJUbjl5STVVa0pRcGdHRDJtVUpJS2FNNzVhSTdBOTRYOWVnVHZVSVF4QTIybHI1allqZTg5Skh3UzhNWGFqdWxmTEhiN01kdGF2eHFZcnBxSF9wZ9IBVkFVX3lxTE4yOXEzVGxvdE0wUWlmM3hvWEdrY2FNV09fbUR3WkdQNXdlWXBCRUMwanl2Q2Y1WHgwVW9sZDNYcHJkZWtkZGEzZWlkcWZjN0pvLXlsUFhn?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMlhJS3JlUm5rcHNSS09EV1VmTmMzclJMaDVYY0ZRQmh2UktXZHNLeFJZY1BSRVhuMTNJcER1VldEWEVUYmFCZVZMS0lXU3Z5TEh2MzRSTG5SVUFWLVZMQjRmZ0tYNzZyaExmUEdrNFZwM3V6NGxabE5BNzVRWGM0ZDZ3TzkwMC1SS2o5czRIdDJabEVta1lCMndGVFFkWUxULWtUa1p2b3ZrbHZpam1DQnVTaw?oc=5"
+      },
+      {
+        "ticker": "TSM",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "TSM Stock: TSMC Jumps 10% to Its NT$2,230 Limit as the Taiex Soars 9% on Huang\u2019s Return",
+        "publisher": "FinanceFeeds",
+        "date": "2026-11-24",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1LLVJ0ZFlQdXZGbExoUmo3Z3BfLW9jbW5zYkQzOEFVeGNjX2FZVzVXNURpMC1faTNSQjZ4TjFFUE1ZcFV3bkdhMVNWeTROSXh2X3ZfaUJ2S0hSUWM3QldMZlduVTBnSXc3dXVOelVKUURmN2k4?oc=5"
+      },
+      {
+        "ticker": "MRVL",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Marvell Technology (MRVL) Stock Price Prediction: Rebound attempt faces overhead supply ahead of December 1 earnings",
+        "publisher": "Blockchain News",
+        "date": "2026-11-24",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQajFReTFTMHc5eEFRTUxDT2Z6VXlaeFJxNmZyczJaSXhpb3NkRzhJZzVKaW42bHlOWm5tZnl3U21icnkzWjMtU3plN3JwN3NheGlqam1oWFJUVXl2LWhHM01XZmVmb2hZMnNmN2R5Q3BpVkFkZ3V4QkVfMVFFWmx4TE1kaE1wVUFrRUxwY0k4SjVKVi0zVFhhRU5HWDczM2NLeDF3bnRR?oc=5"
+      },
+      {
+        "ticker": "COHR",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Coherent Is Up 55% in a Year, and Its CEO Says 2027 Is \u201cBasically Booked Out.\u201d Time to Buy?",
+        "publisher": "TIKR.com",
+        "date": "2026-11-24",
+        "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNbmRSZ1JweS1WaGMxUXpWOFduZlpTdTR4azk2cDVwSmZNaUtjUl9uTXMyRmVkUU5tcnNfWmJkdnN1ZUs2X0Zya2s2UHNuZDJ5ODFQVlotamlCYzZPZDIyNm9NTC1RRmVDdk15NTVyX3pGX0NyTUhJQ2FXN05kWEY5djVrSG5SMlRRQ0xBZV9jY3QxWEM0b0hHRXlHeV9OR0M1UkpPME9WdXd1TDdnbTE1WTVzaEpWNkN0cEtrS2l0SFRWMkl2TTdTTUlMQjNoWUVOdkhFR2wySkRvcndkMHEtMi1mbHpGd1E?oc=5"
       },
       {
         "ticker": "TLN",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Form 4 Talen Energy Corp: Cole Muller (CFO) For: 23 November",
-        "publisher": "Investing.com UK",
+        "title": "Form 4 Talen Energy Corp: Cole Muller (CFO) For: 23 November By Investing.com",
+        "publisher": "Investing.com India",
         "date": "2026-11-24",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdVRxS1JsWVMxeWthbjFlQnpqU2M0UEx2dnVwczlNYUpPLWs3RE14cndVMEJWVTBndXhyODBiQzR4bXZmU3FBdEhEckdxVUlOTkY2Qnk0UTgwMzFWNkphQUdYR0hxVjd5WWlacnAzbkxaMlR5MXNDVGVxWWRpMlNsMExVZkoteEh6bV9kdGZ1TmpxNmFRS0FqYVRnZDVDTjBELTVwZFRoTTJLYjdkNVZPTk8xVVFfSjlS?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNX0thSm9DNHlhcFk4Y01wcGhhcmxnWGJtbVpBa3pJZlZxa0xhMkluLXFjZndRUXRldGZPWHhTd25DZFZuOTlDYk1WMFRVcHdrdGdsTktuRVQzVWZiMlc3ZjdBblNpcDBGTFQ2UUJCTzhmbVdGSkdlVU8xd3ppbVB1X0p6bHNmeE5oeGcwQm9JOUFMcGNXWVctNVdqSkY1ZWNHTHlSZlQxY2hZdlBlNEdkWVhDcVFKOUJl?oc=5"
       },
       {
-        "ticker": "FIX",
+        "ticker": "MRVL",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Comfort Systems USA Inc (FIX) Shares Surge 11.1% -- What GF Scor",
+        "title": "Marvell target lowered at Susquehanna ahead of earnings (MRVL:NASDAQ)",
+        "publisher": "Seeking Alpha",
+        "date": "2026-11-23",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObVY5SG9MRk5VZENRUXJrOWx2S3RwRnlGUmw0NGluNDctUjNCMEhVNFBRX0F1Wjg5WGY3al9ZY2hqUTFabndMUVA0N2MteHhwV29US0VyTWhSWU5Kdzd6V0t6VXpDUF9sNUxTVUVWWWoydzN2R1NCWVVKc19nT3czT3hibkFtM01UbTJ3YWE3dVFCVm1WbDNjVg?oc=5"
+      },
+      {
+        "ticker": "MRVL",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Marvell Q3: A $90 Billion AI Reckoning Is Coming (NASDAQ:MRVL)",
+        "publisher": "Seeking Alpha",
+        "date": "2026-11-23",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPckg5dmRLMnAzclVrVlVJWk81NkEtU1MwSXBPQjhKN1g4UktWanZGZlVwcFZzeUF0SmhtSWRhcFZIczNDNy1pcVNFWS1NbDJLUkRHMmRmWXBhOXppUUlDLWJ6TmQtM25RM3B3S2I1aHhSNEswTkxsSXd6T0VRcDBibW9Zb3RjMGg3YTY1VWRhNVk?oc=5"
+      },
+      {
+        "ticker": "MRVL",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Marvell Technology (MRVL) Surges 19% Amid Tech Rally; Valuation Remains Modestly Overvalued",
         "publisher": "GuruFocus",
-        "date": "2026-11-24",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNendWMUhvVjhFN0xTbTl4THJWbUdFdkh6WGVqRDBHMGVGcERQejVaQ09KQjFwMFljUUFyRWZpcl91Vm5SZ1E4UDBJaWpwNlNwbU1KRDhjZ1Myd3B6UlRWS2ttdW1XVm1lWVM5SlJZV3lKbXNQd2tncXlHUFdjOXFMQ1BEVU9hMnBOWGZVYWNHdUtwSWdnNngyV1BNd2ZIenFvMDZzRm1OYXNjTVMySDRnNUtUbTRBanc0VG9r?oc=5"
-      },
-      {
-        "ticker": "META",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Meta pauses Class C share issuance amid shareholder lawsuit",
-        "publisher": "Reuters",
         "date": "2026-11-23",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNN2g3TFJ5emdHN3NnLVJ6TTFuUThTVW42UmthQXkzLWtkaUUxN3hyOWRtZWttRGdaOVFZMjZoOFJwYmJfa1ZtX0RfZ0hEai14NXFBX0s5ei1EMDhiQmhDaTQ4WHNNNEJsLVNaS25fQVh5eGpnektkOG9xSTJncXVNRjI3U3ZRLVBFTUJuOVR4TGdSbllaZ29MRUxxcU1ZbUxYcDc3MHdEV2l0Q3ZzdlpBZV9kZFcwZw?oc=5"
-      },
-      {
-        "ticker": "META",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "What Explains The Fall In Meta Stock?",
-        "publisher": "Trefis",
-        "date": "2026-11-23",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQOGFiY1Nic3hFMjIxNWxSb1VGQXd2Q0x5VWxQLWJHUE9zTzIxOTNySGVlZVR1Q2tLWE1SVjhDMmlEb0wxQ3hXaHd5S0hiclNxNENTUjg3aXBIaUM0QS1wb0RFTEdkaVVnN0Rya2ZxOXRHQzhzVGhlbkRkQWtJLXlXN0k0ZWhlNnhndnplMFMxWVVXQzZCR1NZaFA3LURTQQ?oc=5"
-      },
-      {
-        "ticker": "TSM",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "History Says TSMC Stock Falls Before Its Sales",
-        "publisher": "Trefis",
-        "date": "2026-11-23",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUFFsQTg2cVZWZjh5R3RsUk1QbkdWTC1VazlPT25ONmVqZ3EyY3o2LU9Sa1BFN1VJZjRiOGF1bXJIZlNKYjYxX3lZdm5RTjE3aHRJUWMzcHg0UWJSYkxLaWJSTHo5VkllWGN1ZjRwX1NpWlhiOVBqNk9BdDFNWXNhRmU4UDZBQUtJckFHYlBPM3ZWOC1vNjVScVl0QUE2bG5RckpvT1E4Wm0xQQ?oc=5"
-      },
-      {
-        "ticker": "TSM",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Why TSMC Stock Soared Today",
-        "publisher": "The Motley Fool",
-        "date": "2026-11-23",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE92TkVUSlNHYU1SY3BsX3E1MWN3elI4c2hqQ0NONE5DOU5FVWl2cTZEVk1tb282dTE0TEJGU1RhRndzTTZhOU5rbXEyVVlRQzd2ckxua1dORnktSjljNG1KNnlrSVQtZEE2YUFxbDFoY0JRdXFRdnZ1UERn?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQcTBvQXNockNCZXA2cVh0TXRNYjMzV0VxbEtSVWN2U2hkY25mVEhKcjZsY0ZrQWd4d1k5dWFIbFhGZTF1TkRnckl6ZUVrQnB0M2I3NjVwRC16N0JVUURCN3pUNXZQVTlmQnNmWUxSSlBYd0dHdzQ3ZXNRbHJrV1lxWmNaY01FRWlCU3VTNlpQOWxQbFIteVNkSVltbnhWUzNYNmh4WmE5bGhsWjJ5NWdZS3NURHR3dktpX1g5cFNUMUV3TE5W?oc=5"
       },
       {
         "ticker": "COHR",
@@ -34716,20 +34606,12 @@
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZTRfUXB3WUUwa0RQYmNjZWVhYXBOTF9oNGFuN0t4VHVORmt4SklZbWN3ZV9KUER1a3dOY200VkVfMlhCelNISXNMMDNBOVhyTWlmYXRvN3BoclgwOGRqSWpfR1ZqOGdFMlhsUklRb3Y1N1phWGtLaUtocEVTMFM3cW5DWlBpQmJ3RXZzdktQWVZ5Zm1XYlFuWFdkRl9LYWVZTEJockRKYVBjZlBBdGpEMmxQMA?oc=5"
       },
       {
-        "ticker": "VST",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Vistra (VST) Stock Price Prediction: Bears still control the tape despite stronger earnings and buybacks",
-        "publisher": "Blockchain News",
-        "date": "2026-11-23",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaERuUDRxLTk1LU44aWlzY2tmSy0xTkEzNzBabVcwQzRaN3h4UktBOWpfTExkYWNlQ1B5RDhYbDd6MVBXbFRvRVo0bEFqa2RQR3hkcmtKRDFvalNqcVRhazUxLVlFelN5cnk4U2FtZ280ZU4xTGtSQUF4NUdtVkdRT1hvRVNya2pqSHpGM3RSMkI5X1psdGlPWWVMZw?oc=5"
-      },
-      {
         "ticker": "VRT",
         "verdict": "RESEARCH-WORTHY",
         "title": "What Is Behind The Fall In Vertiv Stock?",
-        "publisher": "Trefis",
+        "publisher": "Yahoo Finance",
         "date": "2026-11-23",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbk5vZkkyWmR1YWtlSE9NLWJnNmtoeVFzOTdueUd3S3VLSVJrNnpXSHNVRzBUc2t1enFyUWs4UW9maVljZ0I4MjFwaWdGbWlPdEVDZ244Mm9vdnJ1TEdFZF9KWjVuVzk4V0I5eXNPYm83Nk1OV1R5aVpSbWtCR01Bb1JaaGdfUGZuRFdHLTFZbzEwYkJRaHR6cnFZX1RqTDZV?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNWnZXQ0wwZVBWM0U1N2lVbGJTdjdjV1hyUDNlNHRDaHpFLUlfUWx0SlZCUUdqaEJ6TTluMGhmSG55VXlJSWRHMW5WRVdJcVg3N3Y0MDNGMHdZVW9rNXREbUMzdjduZTVoWHlzRnlCSXNFLUhFTm0wZU44anFyQzlTbno3SXFTbnV6c082UzVsRW1jMVE?oc=5"
       },
       {
         "ticker": "VRT",
@@ -34780,6 +34662,14 @@
         "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVU5Fd2t5Mm51a1Z2aFZ0dkpXZEtZcGxLV0lqeTlkTUZzY3pVWXZrbUE2djU4czFzbEUxcFlaRWhVbWJmLXVwY0JsTzVKVG1tY0x1czBRTVFIbGZTSTgxeUpVd2k2SlRuRnJMYXFqeGVCOEwxa0RabGNPZnpxUjVyWmFMSU1sLVRfbXRXOTdMWjFhTEtsOWNSajZyX2VqSEI0b2h4eE9GRUNMT3BMejlfb0pUcXBlTUQwM3VaenR1Q08?oc=5"
       },
       {
+        "ticker": "STZ",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Kimberly-Clark or Constellation Brands: The One Dividend Stock I\u2019d Hold for the Next 10 Years",
+        "publisher": "Yahoo Finance",
+        "date": "2026-11-23",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPM0NvaHBYMWFKNHRMSXNJVjV0ekgyZmRYMWd5N3M4QlVlZTJhYlZLeko2SHB1TjR3SkVIZVFOTUJwM2VVYWpIWlBuS25kOE45YS1UMENmUUJCRDhhSTBGQXlPSGd6OU5GRTZnT1piM2VVNzFTNER1NFNWUTZ6TllyQ2VGd2p2YklaWmhBY3o0YVVUdFVCQ2U3TjZpQUpMdEJYQXZRWEpHRQ?oc=5"
+      },
+      {
         "ticker": "ISRG",
         "verdict": "RESEARCH-WORTHY",
         "title": "Are Wall Street Analysts Predicting Intuitive Surgical Stock Will Climb or Sink?",
@@ -34796,20 +34686,12 @@
         "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdXN4ZlRxR2pmaGZTNzdyTEJSb0FBQ1hFbFZRd2Vsa3NIclFGN0xweGQ0Z19sdG1TLUItSk5aQnJjWm9Cd2lfRDVoV19jUG1yYmJPclY2R2F5UUQ5WWdjOGxTTE5vVS03R1Z2TmxsRjJmc2NJRzg4WVJiOFQ2bjdGa2t4Qko2aU8xZXdwOURoblRlaUhOa24wa0VtWGcyZVZTZ2RSakRrb0puOHAyZWlDakc3bVRWWEhPZlE?oc=5"
       },
       {
-        "ticker": "CRDO",
+        "ticker": "MRVL",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Credo Technology (CRDO) Surges Nearly 24% Amid Tech Sector Rally on November 23, 2026",
-        "publisher": "GuruFocus",
-        "date": "2026-11-23",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOREFZZFY4bzhlNjNqd1NtcVo0U2pNX0NQeGJMNzRwVnZlNkFCcWM4N3NsOHpVMk40eFd3VmFwb0JEd1FiZzc4S204dVk5c2VtdHMybW5HWDlPaGFiWEVncGxuZjZMOGRVMWw5Y3NxRTM3ODQweGxUQTRZdmdWc2R3R3FzVWlDOHV1UjZRSE5yUHNYSFZtZmh0dVBjc0drVG9UbzJQcnUxWjJJTUtMcGhybEZjSWNBcVhTUk9nUg?oc=5"
-      },
-      {
-        "ticker": "FIX",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Comfort Systems USA jumps as buyback expansion and bullish coverage appear to fuel rally",
-        "publisher": "Quiver Quantitative",
-        "date": "2026-11-23",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRE85REFYck44RDdPWGZ6SDlKakZ6Q053Vk1BRkRSX21BT2U3R1lFUjJ1RWJJSkhvc2VKdW5NNlEta2FOM0NKeFNaLVdfeG4wRE1vM2FCUFA4OWNYSE5TRE1XbUlwSEUyeldmMXhNSnl1QkdoOWRNMWJ3dlFzMndheUpaVkNOYW92MzFySlBMMnBwN3B0ZGJzdVdaY2ZTbjJxbURsU3BmVHFTTXJ2QmFoS0V4NlNncnJackVsZll3?oc=5"
+        "title": "Marvell Technology and Lumentum Selloff Raises Questions Over Pending Merger",
+        "publisher": "Benzinga",
+        "date": "2026-11-22",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQUG9rMlpETGVhQUZ2czVXNFdRLUtFb3NQVENUNGNCTksxcUJkTExtMWxtZ0tfVk1tRHJub1NLQWRSd0x0c0JQRU1XZWU0R3pmTDNtQ1FKQ1ROTnMwQzJOSHljNThaRVlLSU1SamZUMHB0bGpXdlBuUjh1X3g2SXFNSElSSDNPWXdyMHJzbGhKczlsOEdYaDltR0kzWlQxVmRSSVEtWmV4YjQ2dXg2Y1ItMENQQnNyS1BPNGE4Y25hNlo3VlFLUTlzVTdCWklFQQ?oc=5"
       },
       {
         "ticker": "COHR",
@@ -34818,38 +34700,6 @@
         "publisher": "Startup Fortune",
         "date": "2026-11-21",
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbTJCVjV6OUtoUHMydU9NcTRYZnRWemN1bHlDQVdCR0dFa1UzUk9TSUM3VnpZUl95RzVMSFRyb1c0T3IwbnZLdXRKcTVjRkdJeEgwdWl0aXowZ283dzBGSlVmdF8wWW1lQXBiU0dxR0RKckk2azVBdUhKWENSbWI1bE10X2d5YlN2NnZYcGM0RXpJV084UDNNUjVR?oc=5"
-      },
-      {
-        "ticker": "COHR",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Coherent Corp. (COHR) Stock forecasts",
-        "publisher": "Yahoo Finance UK",
-        "date": "2026-11-21",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPXzlLS3J0OHc3dDMtTjhlVjhpREl3bllFT2hMWDdUaUtfdXhsNF9sOUlXdGl6Z2Z5ODlvcldidEJBeEVMcy1nVnNuTk54QWs4dV9wTloyZjZSU1hZMzBfczNhZ2xpUmVIWHpqcDRyQ2dYb0NObFdvTFFJNFQzakxnNXh4RUI0MlgzeVFfaGNpTlU?oc=5"
-      },
-      {
-        "ticker": "VST",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Vistra Corp. (VST) Stock Forecasts",
-        "publisher": "Yahoo Finance",
-        "date": "2026-11-21",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTFhZNEJVR0VyNEN5bGVUS0E4WGpzNlZLVEZzc0V5dFRTVnBkaHJfMHZLbzdEaEc5WUdaRW5oSHZXbkpoeFJGRm1oMVFzVjBIWTgwamR1VUh6cWxKZHhDMVYyZElrY0RNWDZJMHVYR0tHb3JaMGRST2x2NHZNdDlOWGdMVWM3dURsUjhJcw?oc=5"
-      },
-      {
-        "ticker": "VST",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Is Vistra Corp (VST) a Bargain After 7.2% Drop? GF Value Says Un",
-        "publisher": "GuruFocus",
-        "date": "2026-11-21",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQWp6RlBOMlVVaDFCaXBpUFFNUXdsSXhTd2hmVTJZd2EzOGNuOGNiLWZ1cl9uN1lYeDVuYlBnN2pKTWtOZVFwU205Y0VSYjA1amFYLU1iQ2k2cGJySnNWakdNVmhWeU55eUtRbGhnN01JRFlqRGNyNUtwTXlpQmphaWJRZUNVMktWVjh5Znp2Nkx3T0o3UFZRS21CYkJjRXZwTC1HS2hqd2g4NWs?oc=5"
-      },
-      {
-        "ticker": "FIX",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Comfort Systems USA Inc (FIX) Shares Fall 6.4% -- What GF Score of 95 Tells Investors",
-        "publisher": "GuruFocus",
-        "date": "2026-11-21",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNb05aZjBWQ3l4bEMzVDRzN1BCSWxTQVYtRjhHcWNINkh1Rm80WE9Kck1HNkNhQjBwZEt6WkZnWGloQk80UWFyTVI1Z0xjYVl0UUsyeTltSmxVaDBjcnJoTjRoY1k1YjFOSXZDZ3RLdHMwbVlrdVBLYnRlSURpaUZWdWZudnlRb0JWNlI1ZkUwSURlQTllQzl3QjBQR0xuZmM5WUIyNHJPNExnN3dzcFlacTRSR0ptZHJY?oc=5"
       },
       {
         "ticker": "UNH",
@@ -34876,20 +34726,20 @@
         "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUVcyXzFBLThWR0JPU3Yzb3VaZkM0YmdnaEVRTnJ2X1pGRkJ5UElKUnJfS2pXWlp5cGxJZU1jZmNxczE4VXJ6NXdXNEg2NElxLWRjcUlTckUxZllGT1JlTXhhdmxndUJNZ2p5TExpV29WSTBQczdLcHJTd051UXhrY2IwdWNYbm9VY1U1QQ?oc=5"
       },
       {
+        "ticker": "COHR",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Coherent falls 12.90% in Friday's session",
+        "publisher": "Global Banking & Finance Review",
+        "date": "2026-11-20",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9ob0xldTVrZXp5TWxBMjV5Sk5qZHNoNU1kQVBMalh5U0F0djkzZ2lPOUJ3djg3d1NlcUJHdGtPQ0dQTmFXOVQxU3ItQmIxTFhFcXVveWpLd2xJNUdOQktYS1ViZTVKTW9kRUdGRHo3c1V0NmEwazJ5TEIwOA?oc=5"
+      },
+      {
         "ticker": "CEG",
         "verdict": "RESEARCH-WORTHY",
         "title": "Constellation Energy Sinks 10% in a Week as AI Stocks Slide, Giving Back Its Earnings Jump. Time to Buy?",
         "publisher": "Yahoo Finance",
         "date": "2026-11-20",
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUXFFcE5aQTEwZXdwRmlPRGZrR1lITkpILXEyR0dNRktvN2xKXzlCWmVHV3pkS3IwUGJWdkFEYU1KZFZWaFZtbVE5NGxzM2ZCY3ZKRjc5U1h5RTgzY1ItajdNcHY0RV9sYzJmZFExZWt6b29CcXI1cVk4c0luVWtudVFFb1g1MEt1NFV5YnpkX21vYnhCN3g4dmZhbTVuX1VF?oc=5"
-      },
-      {
-        "ticker": "VST",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Vistra (VST) Stock Price Prediction: Bulls defend a weak tape as earnings upgrades clash with a sharp technical reset",
-        "publisher": "Blockchain News",
-        "date": "2026-11-20",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObVhsSjhGVWtjN3hqRzdtRG45Vk1IdU12TWwxcHNXMmxoNTQ0RnJVdjhLR3pJRS14MnZCaUxKZVllSkJycTRoa19ocmN2RzFCRVdjZ0VTRlpQWHN0aUhoU3B0R1NqSUpRSDd2NzJ3cERPcEY5d29xbUdLZ3VWcWhsM18yQ3hLWl9aQkc4QldXWQ?oc=5"
       },
       {
         "ticker": "GEV",
@@ -34924,12 +34774,20 @@
         "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeEFFYm9SQ01wYXozVXNBMjhZbjdETnJia3JaOGk5US0zMFpXN2FVM1k2S2hISXlVTWlyb2NNNDN3enpaLU1sS18ySjRPU0VCUDNydjM4ekVEeDhtLUpfYU5YWGJXYUd6bzhsTll4cjF4SmtJc3BiOUQwTlRmMU0xQUhBQV9ZcTVX?oc=5"
       },
       {
+        "ticker": "TLN",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Talen Energy Corporation (TLN) Stock forecasts",
+        "publisher": "Yahoo Finance Singapore",
+        "date": "2026-11-20",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdkwzeEJ6aXpSbjdyclpHWU5GUmptUC1UdVFGVmljLV9iY2x1cC1xWEZ5c25zN0tnTWM0RUZMQy1YVkxTTTVnN0dEYXZkUnd4MGlIZWF0ZExYZElYSGJCTklEVFB3RzNoRlNaYmJBbVdjVml2YUMwMXFvS3ZKSWhZY3JqZGZhbm85OE5INEl6bm5IZkE?oc=5"
+      },
+      {
         "ticker": "STZ",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Constellation Brands (NYSE:STZ) Share Price, Forecast & Analysis",
-        "publisher": "Stocks Down Under",
+        "title": "What Is Constellation Brands No Longer Telling Shareholders?",
+        "publisher": "Yahoo Finance",
         "date": "2026-11-20",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE53azllQnpzS0JRTUY0b0Q4RFRkWGZLWnUyNDhhaUhxRG1kTFM2OVlQVnU3cjFISlJqWUhTbmlYTWtzbmNycUh5TXRWcW10VWZRZlJnS3d2QnJGNjd3eEMwSkFya2t3TFA2?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTGI5clBIbS1CTWRnd0ZfZDJyaWFMNnRQTk8wSnhZUkNSc2cwTXB5dWlIR0VEZi1VUDA5S3MybTJJRHBNd0ZJOUFjRUc0VUs5Y0JKa0RUUVJjZEgtWXBhOU1lck9sUnZ3LVlyMnpNdFlDSFM1a2ZOS2VHRXpjY3lhU2pOazJkeWJJck1OWWU4SkhoNC1COUhUUG9NMzRWekdPRTdjWFN3?oc=5"
       },
       {
         "ticker": "CLS",
@@ -34940,6 +34798,22 @@
         "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPdlBwQWJOV0kwbnpwajJ6eDJVcWJLLTMyNnpSY29vcTZTLU45NHdfaGxmV0RNVGNOY3h3ZVpXMHV0TkxZM0hDVkVlMkVyNEtfQlpNNjF6cS1JVy1QMUJ3N2RTaTZrRW1JaUVUVENybnA1Zk1Eelc0akMyRXVPdHEwcUlfaG5Oc01lOE1nQi1JanQ0UQ?oc=5"
       },
       {
+        "ticker": "CLS",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Celestica falls 16.38% in Friday's session",
+        "publisher": "Global Banking & Finance Review",
+        "date": "2026-11-20",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBoUlJrUXplTmszTVZ6NGczbkFpMjJ1Q0l1MzRLOGVvZHIwTUJQSjFqcnpOc2txWC0yNnFWVlg1SE5nUU5HdVNNcklhYjQ3RGxBRTVXT0xPYlJmMEY5M1Ixd3ZYUlhUaV9oWEU4UzY4ZThCRXpvNWFITWJVT0Z2QmM?oc=5"
+      },
+      {
+        "ticker": "CLS",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Celestica (CLS) Shares Drop 15% Amid Tech Selloff on November 20, 2026",
+        "publisher": "GuruFocus",
+        "date": "2026-11-20",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVXc3Q19IaXdBOUJXUHdoUzBsTGRyV1dvQ2o3b25HekNmNzhOcjV6OEYzUjdqQmZqOGgyal95dTl1U1hXeGZTNkpuNVVVT29WMjF5ZnVmNTQyTjlWaEp5cFcxVkItZkNLUERZVjZTQ1lxZDIxMXBab3JkS2lkYXBFSHFKaG9vbVJXWW0wWWtjaXlDc1l4SEJpb2lBd0c2SnJ2WDNGeVNEZ2w?oc=5"
+      },
+      {
         "ticker": "CRDO",
         "verdict": "RESEARCH-WORTHY",
         "title": "Tech slump pushes Credo Technology down 14% (CRDO:NASDAQ)",
@@ -34948,44 +34822,12 @@
         "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPSHF1YmJhbHdTc3ZTaWUwTzg5cllyTUN1MVlKY0VDMXkwUm1YTGFscTBDb055RHRFSWZlUDJLSDdXQzF5c1FnWnNYcnBYNklXUGlVTmstTlEwbGVoUC01RTc5enlWMl9hTmpiSGI0MW96bXF5OGlfWEQzVUJXMHBhUVFOVHpiMkE?oc=5"
       },
       {
-        "ticker": "CRDO",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Credo Technology Group (CRDO) Shares Plunge Nearly 14% Amid Tech Sector Sell-Off",
-        "publisher": "GuruFocus",
-        "date": "2026-11-20",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQLW1iVDI0eWwzTURrcDY3V0xrcVZES2NoNWxrZERUVnhTS2dLWE5wdHI2b1lPTWR4WXEzeUw5NEMtOGVscFlMSWZZWHlScDZ3TmZCN0NwN21la3J3QzdTRDN6TU13QS1FLUhMWWVXT0ozeFdjY1p6WHpaYXZFaXZsVFc5T3dKaEt5VmptdzAxc2Vxb3NCMjZDbjVxUmpleF85a01TZG5HV2pwbzU1THYzSzdqMmV1Zw?oc=5"
-      },
-      {
-        "ticker": "EME",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "EMCOR Group, Inc. (EME) Stock forecasts",
-        "publisher": "Yahoo Finance UK",
-        "date": "2026-11-20",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPeWs2VmhyRldsNGtIdG9Fb2FTR2xwSFZzZFMxT1AzSV9LaS0tblNoNjdRZXN3ZTN1Z3ZjVVNSRG1Zem8tMzY3bUhHOGJaRWhlZnB2MnBZR1BQdy05dXV4NTZNLUtMWHdhR3dqcE45dHkyMmV3OUlrS2tGcXVPZ0ZlZUd4MEhHZnJkOFRuVHBndGJyREE?oc=5"
-      },
-      {
-        "ticker": "META",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Mapping the Market: Meta shares may be about to deepen their slide",
-        "publisher": "Reuters",
-        "date": "2026-11-19",
-        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9PbGRpVWZIQ1NsV0s0SXhzRzdBZ0hqSVEySzJ3VmxrZFNqaU1QWnUtYVpJOWtrZzNZMUxKUlJnUk1YbTJHMF9pRnQ3TnZ4d1E3NTJQZUg0Y2VBRnBLRFcyR085enFGVExvSHRQaE5mNGp4c0ZMOGw4Vg?oc=5"
-      },
-      {
         "ticker": "UNH",
         "verdict": "RESEARCH-WORTHY",
         "title": "UnitedHealth Stock Continues Slide on Medicare for All Push. What Lies Ahead for Insurers.",
         "publisher": "Barron's",
         "date": "2026-11-19",
         "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPZnJCOXVwRThYMEVub1RDdkFkTldvai1QUmk1aWctZ21sVWpmVmxOVUJjdDlBSDdpM3p0YXM4bHA2TmNGcjBZU0owQnhsLW9WT0R5Q3RGaGp2V3JIU1ZCZE9aYzdGRVkwUDVnVkhic0xQY21CUlh1Q2NIRXhyUlhaVHYzXzBScFdsa0xjWGt4TTg?oc=5"
-      },
-      {
-        "ticker": "COHR",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Coherent Stocks Jump 10.78% After $2 Billion Buyback Authorization",
-        "publisher": "Yahoo Finance",
-        "date": "2026-11-19",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNMjhGMEtHV1BJbG5LRk8xSEdMY3FHWFpYWXYxMTlfalJYQkQwMUFLajBLcXU2al9taFJudDcyWWdIMnFaQ0liYTVCbE5YZlBmRW50WGdvdjRqVXM1M3NIcVVJQ3dmbkVHQmFSU2Z6R2NMRkNYbFF4UUR5cVRTS1VscG1tUHN0RDJKaVo5MEp4NW11QlpRbUE?oc=5"
       },
       {
         "ticker": "CEG",
@@ -35004,20 +34846,28 @@
         "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNckNMbW5Sa3owcUtERVE1TjhSNzhSckhTTkN1QldjYnhuV3gzYWp0Q05KQnEwOWJuWVVoTS1ESVZiZDJWNzNuUDNPV0FTbG9QVXNfaUJqb2YxcmMwcENOeDQwbklLdHZfSlNCYlI3S1g1VkpBSEd4dm9IR0M0U25yeGwyRTloa0hnNXc?oc=5"
       },
       {
-        "ticker": "VST",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Vistra (VST) Stock Price Prediction: Bears still control the tape, but analyst targets and Q3 results keep the longer setup intact",
-        "publisher": "Blockchain News",
-        "date": "2026-11-19",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRzQzTDFSb2hfWGRYVVVId0xrcjZNR2UxNjB2Uy16SmVSQUlIdEFLVzh6RzJYMDk2aXNnT2RhYmdjbk54dmt0MjJjX3FZME9rNXRoWmYybzJWamw1bDZDd2xRVEE3alBuSUJ1a2tmNzF1S1RMNms5TkFPMmNNdWV6V05kaXBUTFk2eXotTDYxVmNfbThBbmc?oc=5"
-      },
-      {
         "ticker": "POWL",
         "verdict": "RESEARCH-WORTHY",
         "title": "Powell Industries: Infrastructure Boom And Strong Backlog Support A Buy Upgrade",
         "publisher": "Seeking Alpha",
         "date": "2026-11-19",
         "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZ2RuOXNXdE9rRVBUelZHR21qemJiTkNrUlp0eFYtd3hKWWhSdVU5dGNrRzBlcW1Ra3hvNWNTNTRhTkUzVnpLVDRMOS1ldC1Ral9JZHR2MGlBV3JoWkpZZEZ0dUE2a0tLLTdaV1JnOFA2ODJQQjY1M3FJZmd0ZldBeUNuaDJKNE0wV3MzaWRGRThVOTRfcDlqR3QtcUdqTlhaMGRoejNvU25oWUZoYjJhTjNOejExSlVjTmdXVA?oc=5"
+      },
+      {
+        "ticker": "STZ",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Zachary Stern sells $10.88M Constellation Brands (STZ) class A shares",
+        "publisher": "Investing.com",
+        "date": "2026-11-19",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQdExkOUppZDBkWlhPSy1TalNJR1Q5UWRXNXEwbUJzT2JmYVhlUnR5RzB6UDBuR3JNSlZhT3ctWHloMWx3ZWxZT25xandRc0E2emR6VjBJWm1LdFdyZzJxSG9LOV9MdFY5Nll4UnB2MXNvR2d6dm1neEU3NjFXMVVjSWhKX0VqTHE0dUNCZWJtU1pyVDdiQ1VFVkc1bi02MFV5V3dtUTd5RDFyRlI0Q1N5SlpmaWtiWmdMekp2bzBvS24tcE5wT1F6MFZ3?oc=5"
+      },
+      {
+        "ticker": "STZ",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Constellation Brands 10% owner disposes of $21.75m in shares",
+        "publisher": "Investing.com",
+        "date": "2026-11-19",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVGlDd2FKelJRZDhLUmtjaGxtelc1TjZhZUszWHR2UXZneVdRYzAwV0htSzZPVGhvRUlOXzlZWDR4ZHFLLTVSN2xZcEJDbnVZTVN4QXVBQV9MNDhnUnF0WjVPRFhjUm1KMEl1YV9HVWJ6RnBWN0tBVDdoZ2JkR0c1NlJocTV1UDJMNUFBal9NbFVBRDFTNWg2QmdaX2E1ZFEzdnpKTzRoWXU2SngybVE2cHZMRmIxRXhicG5rUTA3aw?oc=5"
       },
       {
         "ticker": "ISRG",
@@ -35050,6 +34900,38 @@
         "publisher": "Seeking Alpha",
         "date": "2026-11-19",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNODFzVENvbEdsS0xOd0lEbUNGLTBqVnNxUWpPekhabnpGbURzcnFoRVZzYkdEMlhIU3BPRkEtOEdUWU1TNFd6Q2Y5S19uY3ZtZFdRTEhQQlJmNlE3a2Q2LU1qZkZZYnU3dXR1WXpGeWU2bEE2MThvaHNJUGVjNG5xVXVR?oc=5"
+      },
+      {
+        "ticker": "CLS",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Celestica Rises as Investors Revisit AI Growth Outlook and Buyback Support",
+        "publisher": "Quiver Quantitative",
+        "date": "2026-11-19",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQ2FNLWlvTUJrMHhrQUQtUVMwOHdOdm13eXFYbC1lNkF3T2xyVGFLa3pZXzdLVGx4QjloOU1zdkZISFBJQW1OeXV2X1JGRWMxbElmMk1PVkFHWW5ScndsRWdCNGRpaG5PQ3lnanRKcHctTXQ5TkNGLVlSMUFvQmdzWUc0SUZIaWg2LUMzMkJ4TUM4MjlOSzF3Wmw0OERwdHFYblJ3V0hueGxqLVE?oc=5"
+      },
+      {
+        "ticker": "FIX",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Comfort Systems: Cheaper With Greater EPS Growth (Rating Upgrade) (NYSE:FIX)",
+        "publisher": "Seeking Alpha",
+        "date": "2026-11-19",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQd0JDbzhpUi1NVlFrY1pXZmdHdlJGQ2RiSGEtMlI0bmxfZjdmeV9QWXp6aXBIM1Nlby1RbWhfVGUtU1pVZTVLTWlocDhPVXBmY19hUW9RTHUxZWllTWRwQ3ppRzNvcC1ZdmR6RVEweUF0c1BqNGNoaUFsX2o0SVpiQlVOcGJQU3Rycld2SGlPUHRzVHI0aGZWQ0RFdi0?oc=5"
+      },
+      {
+        "ticker": "FIX",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Comfort Systems USA falls 2.33% in Thursday's session",
+        "publisher": "Global Banking & Finance Review",
+        "date": "2026-11-19",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQa2NPM3g5M1NNRjBuM05OQ3V2YVZlWC0xMk1rNi1JY2xNcWRzc0gtM2RSVlh0RVFuWWFGUXpNY0hKLTRzVjF6OVdBdDJ4OGdFRWNmOGkyQW01MncxTlpzTU5jaXNQa0RlVWk0LWpFYkt5QUlPbnU1RkNfWkxmb1JSS2xSWmFIWUdj?oc=5"
+      },
+      {
+        "ticker": "META",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Meta pauses plans to create non-voting share class after investor lawsuit",
+        "publisher": "Financial Times",
+        "date": "2026-11-18",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTTBLRkFSZGlxVEtndFpScWRFck5nVXVLLXZiazBpMGxHQ1YwZG1FQVNvZXlVWEk2T0xhUWZNanhhSTN3aUF1WGZmbXFKU0xPQ3MtSUlPbkV5RlhYcFhVOFQ2WVhKMUo2ckNMeWs3TVVZa1FveEt4bTdLTVM5SDA4NU1URVU?oc=5"
       }
     ],
     "insider_alerts": [
@@ -35128,7 +35010,7 @@
         "name": "Oklo Inc.",
         "short_pct": 21.88,
         "short_ratio": 4.1,
-        "verdict": "WATCHLIST"
+        "verdict": "PASS"
       },
       {
         "ticker": "TLN",
@@ -35296,7 +35178,7 @@
         "pe": 23.564486,
         "forward_pe": 15.548236,
         "verdict": "RESEARCH-WORTHY",
-        "next_action": "RESEARCH \u2014 Pure-play AI foundry at 13.6x forward earnings with 50%+ revenue growth, 65% gross margins, and $44B FCF, discounted 35% from highs on geopolitical fears not fundamentals. Worth a deep dive before any decision."
+        "next_action": "RESEARCH \u2014 World's leading foundry at 15.5x forward earnings with 50%+ revenue growth driven by AI chip demand, net cash position, and irreplaceable technology moat. Worth a deep dive before any decision."
       },
       {
         "ticker": "AMD",
@@ -35325,8 +35207,8 @@
         "price": 144.74,
         "pe": 47.611843,
         "forward_pe": 19.636173,
-        "verdict": "WATCHLIST",
-        "next_action": "WAIT \u2014 AI custom silicon leader at 23x forward earnings with 36% revenue growth, but Lumentum acquisition overhang keeps multiple depressed until integration risk clears"
+        "verdict": "RESEARCH-WORTHY",
+        "next_action": "RESEARCH \u2014 AI infrastructure pure-play at 19.6x forward earnings with 36% revenue growth, positive FCF, and custom silicon design wins at multiple hyperscalers. Worth a deep dive before any decision."
       },
       {
         "ticker": "IBM",
