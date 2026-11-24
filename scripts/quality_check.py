@@ -1,10 +1,14 @@
 """Five yes/no checks on the business from filed figures. A missing figure is "unknown", never a pass."""
 from statistics import mean
 
+from valuation import cash_flow_is_distorted
+
 CASH_YEARS = 3
 MIN_CASH_SHARE = 0.8       # cash after equipment spending, as a share of reported profit
 MAX_SHARE_GROWTH = 0.02    # a year
 MAX_DEBT_YEARS = 4.0       # years of operating cash flow to repay debt net of cash
+LISTING_JUMP = 0.25        # a year; a listing or merger, not ordinary share issues
+DISTORTED = "operating cash flow was negative in a profitable year, so it isn't a fair measure"
 CHRONIC_LOSSES = 3         # this many loss years fails the business by itself
 MARGIN_DROP = 0.75         # latest margin against its own earlier average
 LENDERS = {"Financial Services", "Real Estate"}   # debt is the business, so that check says nothing
@@ -32,6 +36,8 @@ def _cash(annual: dict, quote: dict) -> dict:
                                                           ("operating_cash_flow", "capex", "net_income"))
     if quote.get("sector") in LENDERS:
         return _row(name, None, "doesn't apply to financial and property companies")
+    if cash_flow_is_distorted(ocf, profit):
+        return _row(name, None, DISTORTED)
     years = sorted(set(ocf) & set(capex) & set(profit))[-CASH_YEARS:]
     total = sum(profit[y] for y in years)
     if len(years) < CASH_YEARS or total <= 0:
@@ -45,15 +51,19 @@ def _shares(annual: dict) -> dict:
     if len(shares) < 3 or shares[0][1] <= 0:
         return _row("Share count not swelling", None, "fewer than 3 years on file")
     growth = (shares[-1][1] / shares[0][1]) ** (1 / (len(shares) - 1)) - 1
+    if growth > LISTING_JUMP:
+        return _row("Share count not swelling", None, "jumped, most likely from a listing or merger")
     word = "grew" if growth > 0 else "fell"
     return _row("Share count not swelling", growth <= MAX_SHARE_GROWTH, f"{word} {abs(growth):.1%} a year")
 
 
-def _debt(ttm: dict, quote: dict) -> dict:
+def _debt(annual: dict, ttm: dict, quote: dict) -> dict:
     name, cash_flow = "Debt is manageable", (ttm.get("operating_cash_flow") or {}).get("value")
     debt, cash = quote.get("total_debt"), quote.get("total_cash")
     if quote.get("sector") in LENDERS:
         return _row(name, None, "doesn't apply to lenders and property companies")
+    if cash_flow_is_distorted(annual.get("operating_cash_flow", {}), annual.get("net_income", {})):
+        return _row(name, None, DISTORTED)
     if debt is None or cash is None or cash_flow is None:
         return _row(name, None, "figures missing")
     if debt <= cash:
@@ -80,6 +90,6 @@ def quality(record: dict | None, quote: dict) -> dict | None:
     if not record or not record.get("annual"):
         return None
     annual, ttm = record["annual"], record.get("ttm", {})
-    checks = [_profit(annual), _cash(annual, quote), _shares(annual), _debt(ttm, quote), _margin(annual, ttm)]
+    checks = [_profit(annual), _cash(annual, quote), _shares(annual), _debt(annual, ttm, quote), _margin(annual, ttm)]
     return {"checks": checks, "passed": sum(c["ok"] is True for c in checks),
             "failed": sum(c["ok"] is False for c in checks), "known": sum(c["ok"] is not None for c in checks)}

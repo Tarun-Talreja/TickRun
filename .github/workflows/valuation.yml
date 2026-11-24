@@ -47,6 +47,10 @@ jobs:
       - name: Value each company
         run: python scripts/valuation.py
 
+      - name: Review the saved plan
+        run: python scripts/plan_review.py
+        continue-on-error: true
+
       - name: Rebuild dashboard
         run: python scripts/build_dashboard.py
 
@@ -66,6 +70,7 @@ jobs:
             data/company_measures.json
             data/valuations.json
             data/company_events.json
+            data/plan_review.json
             output/dashboard.json
 
       - name: Open issue on failure

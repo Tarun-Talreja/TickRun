@@ -416,6 +416,7 @@ def main():
         "radar":           with_live_prices(_load(RADAR_PATH), quotes.get("tickers", {})),
         "asset_location":  _load(ASSET_LOCATION_PATH),
         "catalysts":       _load(CATALYSTS_PATH),
+        "plan_review":     _load(os.path.join(SCRIPT_DIR, "data", "plan_review.json")),
         "market_panel":    panel(quotes["tickers"], quotes.get("market", {}), SKIP_TICKERS),
         "summary_history": load_days(),
         "daily_brief":     _load(DAILY_BRIEF_PATH),

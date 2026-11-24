@@ -1699,27 +1699,19 @@ function renderDailyBrief(data){
   </div>`;
 }
 
-function renderAssetLocation(data){
-  const al = data.asset_location||{};
-  const roth = al.roth||[], taxable = al.taxable||[], overrides = al.tax_drag_overrides||[];
-  if(!roth.length && !taxable.length) return '';
-  const chips = arr => arr.map(p=>`<span class="al-chip" title="${esc(p.reason||'')}">${esc(p.ticker)}</span>`).join('');
-  return `<div class="track-card">
-    <div class="digest-label">🏦 Asset Location — which account holds what</div>
-    <div class="al-block">
-      <div class="al-head"><span class="al-tag al-roth">ROTH</span><span class="al-note">tax-free growth — shelter what's taxed hardest</span></div>
-      <div class="al-chips">${chips(roth)}</div>
-    </div>
-    <div class="al-block">
-      <div class="al-head"><span class="al-tag al-tax">TAXABLE</span><span class="al-note">already tax-efficient · available before 59½</span></div>
-      <div class="al-chips">${chips(taxable)||'<span class="al-note">none</span>'}</div>
-    </div>
-    ${overrides.length?`<div class="al-warn">
-      <strong>⚠ ${overrides.length} names where tax drag beats the "boring → taxable" instinct</strong><br>
-      ${overrides.map(p=>`${esc(p.ticker)}${p.div_yield_pct?` (${p.div_yield_pct}% yield)`:' (REIT)'}`).join(' · ')}
-      <br><span class="al-note">A yield you can't defer is taxed every year you hold it — the criterion is taxability, not volatility.</span>
-    </div>`:''}
-  </div>`;
+function renderPlan(data){
+  const r = data.plan_review; if(!r||!r.conflicts) return '';
+  const picks = data.portfolio.thematic, by = t=>data.watchlist.all.find(x=>x.ticker===t)||{};
+  const own = t=>{const o=r.overlap.find(x=>x.ticker===t)||{};return o.pct!=null?`${o.pct}% of ${esc(r.core)}`:o.below_pct!=null?`under ${o.below_pct}% of ${esc(r.core)} if held`:'unknown'};
+  const note = x=>`<div style="font-size:12px;color:var(--text2);margin-top:3px">${x}</div>`;
+  const conflicts = r.conflicts.map(c=>`<div style="padding:10px 0;border-bottom:1px solid var(--bg3)"><b>${esc(c.title)}</b>${note(esc(c.fact)+(c.url?` <a href="${esc(c.url)}" target="_blank" rel="noopener noreferrer" style="color:var(--cyan)">IRS page</a>`:''))}<div style="margin-top:4px;color:var(--amber);font-size:13px">You decide: ${esc(c.question)}</div></div>`).join('');
+  const rows = picks.map(p=>{const s=by(p.ticker);const e=s.events||{};const m=s.move_split;
+    const earn=((data.signals.upcoming_earnings||[]).find(x=>x.ticker===p.ticker)||{}).date;
+    return `<div style="padding:10px 0;border-bottom:1px solid var(--bg3);cursor:pointer" onclick="openStock({ticker:'${esc(p.ticker)}'})"><b>${esc(p.ticker)}</b> ${cbadge(p.ticker)} <span style="float:right">${fp(s.price)}</span>${note(esc((s.category||{}).why||'No checks available'))}${note(`Already in the core fund: ${own(p.ticker)}${earn?` · Earnings ${fDate(earn)}`:''}${e.newer_results?` · Results from ${fDate(e.newer_results)} not in filed figures yet`:''}`)}</div>`}).join('');
+  const stress = r.stress.map(x=>`<div style="display:flex;justify-content:space-between;padding:4px 0"><span>${x.names.map(esc).join(' + ')} halve${x.names.length>1?'':'s'}</span><span>−${x.pct}%</span></div>`).join('');
+  return `<div class="track-card" id="plan-conflicts"><div class="digest-label">⚠ ${r.conflicts.length} thing${r.conflicts.length===1?'':'s'} to settle in your plan (written ${fDate(r.plan_date)})</div>${conflicts||note('No conflicts found.')}</div>
+  <div class="track-card" id="plan-picks"><div class="digest-label">Stocks in your plan</div>${rows}${note('Checks describe the business. They aren’t a reason to buy.')}</div>
+  <div class="track-card" id="plan-stress"><div class="digest-label">If one falls by half</div>${stress}${note('Effect on the whole plan if nothing else moved. In a real fall, others usually drop too.')}</div>`;
 }
 
 function renderPortfolio(data){
@@ -1743,7 +1735,6 @@ function renderPortfolio(data){
 
   const an = data.analytics||{};
   const funded = an.funded;
-  const tr = (data.track_record||{}).scoreboard||{};
 
   let html=`
   <div class="screen-header">
@@ -1765,20 +1756,11 @@ function renderPortfolio(data){
     <div class="ph-left">
       <div class="ph-label">Total Value</div>
       <div class="ph-val">$0</div>
-      <div class="ph-sub">Paper portfolio — deploy capital to activate</div>
+      <div class="ph-sub">Nothing owned yet, so this page shows the plan</div>
     </div>
   </div>`}
 
-  ${(tr['RESEARCH-WORTHY']&&tr['RESEARCH-WORTHY'].count)?`<div class="track-card">
-    <div class="digest-label">📈 App Track Record (since ${esc((data.track_record||{}).tracked_since||'')})</div>
-    <div class="track-row">
-      <div class="track-stat"><div class="track-val ${tr['RESEARCH-WORTHY'].avg_return>=0?'green':'red'}">${tr['RESEARCH-WORTHY'].avg_return>0?'+':''}${tr['RESEARCH-WORTHY'].avg_return}%</div><div class="track-lbl">Buy-ready avg</div></div>
-      <div class="track-stat"><div class="track-val">${tr['RESEARCH-WORTHY'].win_rate}%</div><div class="track-lbl">Win rate</div></div>
-      <div class="track-stat"><div class="track-val">${tr['RESEARCH-WORTHY'].count}</div><div class="track-lbl">Calls tracked</div></div>
-    </div>
-  </div>`:''}
-
-  ${renderAssetLocation(data)}
+  ${renderPlan(data)}
 
   <div class="alloc-section">
     <div class="sec-head-label" style="font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--text2);margin-bottom:14px">Target Allocation</div>
@@ -1817,14 +1799,11 @@ function renderPortfolio(data){
             ${h.drawdown_from_high!=null?`<div class="hc-price-dd" style="color:${Math.abs(h.drawdown_from_high)>=10?'var(--green)':'var(--text2)'}">${fpct(h.drawdown_from_high,1)} ATH</div>`:''}
           </div>
         </div>
-        ${h.notes?`<div class="hc-note">${esc(h.notes)}</div>`:''}
       </div>`;
     });
   }
 
   html+=`</div>
-  <div class="sec-head"><span class="sec-head-label">Thematic Positions</span><span class="sec-head-line"></span><span class="sec-head-count">${port.thematic.length}</span></div>
-  <div class="holdings-list">${port.thematic.length===0?`<div class="empty-state">Waiting for buy signals. Candidates are in the Watchlist.</div>`:''}</div>
 
   <div class="sec-head"><span class="sec-head-label">Portfolio Rules</span><span class="sec-head-line"></span></div>
   <div class="rules-section">

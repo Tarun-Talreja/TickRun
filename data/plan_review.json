@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-11-24T09:15:09Z",
+ "plan_date": "2026-06-08",
+ "core": "VTI",
+ "conflicts": [
+  {
+   "title": "More money than one year allows",
+   "fact": "The plan uses $14,000. The 2026 limit is $7,500 if you're under 50, or your taxable pay if that's less. Income limits apply too.",
+   "question": "Is the rest already in the account, from a rollover, or meant for another year or account?",
+   "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits"
+  },
+  {
+   "title": "International has nothing in it",
+   "fact": "The target is 5% international, but no fund is listed. The $700 left over is called a cash reserve.",
+   "question": "Is that share meant to be international or cash?",
+   "url": null
+  },
+  {
+   "title": "CEG and VST act like one bet",
+   "fact": "Their weekly moves had a correlation of 0.80 over two years (1 means identical). Together they are 21% of the plan, above the 15% limit for one position.",
+   "question": "Does the 15% limit count linked stocks together?",
+   "url": null
+  },
+  {
+   "title": "The 30% stop-loss is inside normal swings",
+   "fact": "Worst fall from a high in five years (or since listing): CEG 51%, MSFT 37%, RDDT 68%, VST 49%.",
+   "question": "What should make you sell: a price fall, or a change in the business?",
+   "url": null
+  },
+  {
+   "title": "Limit and trim rule differ",
+   "fact": "No position may exceed 15%, but trimming starts at 20%.",
+   "question": "What happens between 15% and 20%?",
+   "url": null
+  },
+  {
+   "title": "The reasons are from another time",
+   "fact": "Written 169 days ago, with steps dated \u201cthis week\u201d and buy targets the app has since dropped. Now: VST: 12.7x next-year earnings, sales +28%; CEG: 18.8x next-year earnings, sales +45%; MSFT: 20.3x next-year earnings, sales +19%; RDDT: 9.8x next-year earnings, sales +53%.",
+   "question": "Do these picks still belong, or should the steps be cleared?",
+   "url": null
+  }
+ ],
+ "overlap": [
+  {
+   "ticker": "VST",
+   "pct": null,
+   "below_pct": 1.6
+  },
+  {
+   "ticker": "CEG",
+   "pct": null,
+   "below_pct": 1.6
+  },
+  {
+   "ticker": "MSFT",
+   "pct": 5.3,
+   "below_pct": 1.6
+  },
+  {
+   "ticker": "RDDT",
+   "pct": null,
+   "below_pct": 1.6
+  }
+ ],
+ "stress": [
+  {
+   "names": [
+    "CEG",
+    "VST"
+   ],
+   "pct": 10.7
+  },
+  {
+   "names": [
+    "MSFT"
+   ],
+   "pct": 4.3
+  },
+  {
+   "names": [
+    "RDDT"
+   ],
+   "pct": 2.5
+  }
+ ],
+ "groups": [
+  [
+   "CEG",
+   "VST"
+  ]
+ ]
+}

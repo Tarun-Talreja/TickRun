@@ -73,3 +73,9 @@ def test_headlines_that_count():
 
 def test_years_of_losses_fail_alone():
     assert category(quality(changed(net_income={**dict.fromkeys(Y[:3], -5), Y[3]: 10}), QUOTE), {})["key"] == "weak"
+
+
+def test_distorted_cash_and_listing_jump_are_unknown():
+    r = quality(changed(operating_cash_flow={**dict.fromkeys(Y, 15), Y[2]: -9},
+                        diluted_shares={Y[1]: 10, Y[2]: 20, Y[3]: 40}), QUOTE)
+    assert [r["checks"][i]["ok"] for i in (1, 2, 3)] == [None, None, None]
