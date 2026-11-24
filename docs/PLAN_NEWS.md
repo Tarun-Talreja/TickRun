@@ -1,6 +1,6 @@
 # Plan: telling company news from market moves
 
-**Status:** proposed 2026-11-24, steps 1 and 5 built 2026-11-24. Replaces the order inside Phase 4 of PLAN_V2.md.
+**Status:** proposed 2026-11-24, steps 1 and 5 built 2026-11-24. Steps 2 to 4 replaced by SEC filing codes plus a short list of serious-headline words (scripts/company_events.py); the 100-headline labelling was not done. Replaces the order inside Phase 4 of PLAN_V2.md.
 
 ## What you would see
 

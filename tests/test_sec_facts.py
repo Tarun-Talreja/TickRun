@@ -106,3 +106,17 @@ def test_software_spending_is_read():
     facts = _facts(Revenues=[_row("2025-01-01", "2025-12-31", 100)],
                    PaymentsToDevelopSoftware=[_row("2025-01-01", "2025-12-31", 5)])
     assert extract(facts)["annual"]["software_capex"] == {"2025-12-31": 5}
+
+
+def test_figures_from_another_period_are_dropped():
+    from sec_facts import extract
+    facts = _facts(Revenues=[_row(f"{y}-01-01", f"{y}-12-31", 100) for y in range(2021, 2026)],
+                   NetIncomeLoss=[_row("2013-01-01", "2013-12-31", 7), _row("2024-12-01", "2025-11-30", 9)])
+    out = extract(facts)
+    assert out["annual"]["net_income"] == {"2025-11-30": 9} and out["ttm"]["net_income"] is None
+
+
+def test_quarter_ending_on_leap_day():
+    rows = [_row("2022-09-01", "2023-08-31", 100),
+            _row("2022-09-01", "2023-02-28", 40, form="10-Q"), _row("2023-09-01", "2024-02-29", 50, form="10-Q")]
+    assert ttm(rows) == {"end": "2024-02-29", "value": 110}

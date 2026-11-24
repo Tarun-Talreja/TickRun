@@ -55,6 +55,7 @@ def _current_state(d: dict) -> dict:
     sig = d.get("signals", {})
     return {
         "at_target":  sorted(h["ticker"] for h in sig.get("target_hits", [])),
+        "labels":     {c["ticker"]: (c.get("category") or {}).get("label") for c in d.get("watchlist", {}).get("all", [])},
         "verdicts":   {c["ticker"]: c.get("verdict") for c in d.get("watchlist", {}).get("all", [])},
         "sec_stakes": sorted(f"{f['ticker']}:{f.get('filed_date')}"
                              for f in sig.get("sec_ownership_stakes", [])),
@@ -86,7 +87,7 @@ def _mover_items(movers: list[dict], verdicts: dict, researched: dict | None = N
             "priority": 3, "kind": "mover", "ticker": m["ticker"],
             "headline": f"{m['ticker']} {arrow} {pct:+.1f}%",
             "detail": m.get("reason") or None,
-            "action": (f"Its rating is from {_day(rated)} and doesn't account for anything since."
+            "action": (f"Its AI opinion is from {_day(rated)} and doesn't account for anything since."
                        if rated else "Not researched since this move."),
         })
     hidden = len(big) - len(items)
@@ -167,15 +168,15 @@ def main():
 
     # 5. Verdict changes — research changed its mind
     if not first_run:
-        for ticker, v in cur["verdicts"].items():
-            old = prev.get("verdicts", {}).get(ticker)
-            if old and old != v:
+        why = {c["ticker"]: (c.get("category") or {}).get("why") for c in d.get("watchlist", {}).get("all", [])}
+        for ticker, v in cur["labels"].items():
+            old = prev.get("labels", {}).get(ticker)
+            if old and v and old != v:
                 items.append({
                     "priority": 5, "kind": "verdict_change", "ticker": ticker,
-                    "headline": f"{ticker} verdict changed: {old} → {v}",
-                    "detail": "Research reassessed this name since your last check.",
-                    "action": ("Now worth a deep dive — research is not a buy call." if v == "RESEARCH-WORTHY"
-                               else "No longer rated worth researching — re-read why."),
+                    "headline": f"{ticker} label changed: {old} → {v}",
+                    "detail": why.get(ticker),
+                    "action": None,
                 })
 
     # 6. Data warnings — never act on a number the app itself distrusts

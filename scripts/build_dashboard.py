@@ -24,11 +24,13 @@ import sys
 from datetime import datetime, timezone
 
 from bear_check import RATING_VERSION
+from categories import category
 from fact_check import drop_unsupported
 from health import build_health
 from io_utils import load_json as _load
 from market_split import panel, split_move
 from market_time import price_due_at, prices_as_of
+from quality_check import quality
 from rating_move import big_move
 from research_batch import SKIP_TICKERS
 from sec_filings import is_stake
@@ -60,6 +62,8 @@ ASSET_LOCATION_PATH = os.path.join(SCRIPT_DIR, "data", "asset_location.json")
 CATALYSTS_PATH      = os.path.join(SCRIPT_DIR, "data", "catalysts.json")
 DAILY_BRIEF_PATH    = os.path.join(SCRIPT_DIR, "output", "daily_brief.json")
 RESEARCH_STATUS_PATH = os.path.join(SCRIPT_DIR, "data", "research_status.json")
+FUNDAMENTALS_PATH   = os.path.join(SCRIPT_DIR, "data", "fundamentals.json")
+EVENTS_PATH         = os.path.join(SCRIPT_DIR, "data", "company_events.json")
 VALUATIONS_PATH     = os.path.join(SCRIPT_DIR, "data", "valuations.json")
 OUTPUT_PATH         = os.path.join(SCRIPT_DIR, "output", "dashboard.json")
 os.makedirs(os.path.join(SCRIPT_DIR, "output"), exist_ok=True)
@@ -140,6 +144,7 @@ def _content_counts(quotes: dict, news: dict, insiders: dict, funds: dict, mover
         "Radar": (radar.get("generated_at"), len(radar.get("cards", []))),
         "Screener": (screen.get("generated_at"), screen.get("qualified", 0)),
         "Home summary": (digest.get("generated_at"), int(bool(digest.get("narrative")))),
+        "Company events": (_load(EVENTS_PATH).get("generated_at"), len(_load(EVENTS_PATH).get("tickers", {}))),
         "Valuation": (_load(VALUATIONS_PATH).get("generated_at"), len(_load(VALUATIONS_PATH).get("tickers", {}))),
     }
 
@@ -330,12 +335,19 @@ def main():
         for c in watchlist.get("candidates", [])
     ]
     valuations = _load(VALUATIONS_PATH)
+    fundamentals, events = _load(FUNDAMENTALS_PATH).get("tickers", {}), _load(EVENTS_PATH).get("tickers", {})
+    checks = {t: quality(r, quotes["tickers"].get(t, {})) for t, r in fundamentals.items()}
     candidates_enriched = [
         {**without_made_up_figures(c),
          "move_split": split_move(quotes["tickers"].get(c["ticker"], {}), quotes.get("market", {})),
          "moved_since_rating": big_move(c, quotes["tickers"].get(c["ticker"], {})),
          "valuation": valuation_view(valuations.get("tickers", {}).get(c["ticker"]), c.get("price"),
-                                     valuations.get("generated_at"))}
+                                     valuations.get("generated_at"),
+                                     newer_results=events.get(c["ticker"], {}).get("newer_results")),
+         "quality": checks.get(c["ticker"]),
+         "events": events.get(c["ticker"]),
+         "category": None if c["ticker"] in SKIP_TICKERS or c["ticker"].startswith("^")
+         else category(checks.get(c["ticker"]), events.get(c["ticker"]))}
         for c in candidates_enriched
     ]
 

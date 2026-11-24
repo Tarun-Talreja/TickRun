@@ -6,7 +6,7 @@ KEPT = ("status", "low", "base", "high", "buy_below", "reason", "notes", "method
 
 
 def valuation_view(record: dict | None, price: float | None, generated_at: str | None,
-                   now: datetime | None = None) -> dict | None:
+                   now: datetime | None = None, newer_results: str | None = None) -> dict | None:
     if not record or not generated_at:
         return None
     now = now or datetime.now(timezone.utc)
@@ -14,6 +14,9 @@ def valuation_view(record: dict | None, price: float | None, generated_at: str |
     view = {**{k: record.get(k) for k in KEPT}, "valued_on": generated_at[:10], "gap_pct": None}
     if view["status"] != "ok":
         return view
+    if newer_results:
+        return {**view, "status": "no_reliable_price", "buy_below": None,
+                "reason": f"results announced {newer_results} aren't in the filed figures yet"}
     floor = record.get("no_growth_value")
     if (now - made).days > MAX_AGE_DAYS:
         return {**view, "status": "no_reliable_price", "buy_below": None,

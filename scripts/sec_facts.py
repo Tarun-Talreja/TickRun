@@ -22,7 +22,7 @@ import json
 import os
 import sys
 import time
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 
 import requests
 
@@ -129,7 +129,7 @@ def ttm(rows: list[dict]) -> dict | None:
         return {"end": fy_end, "value": annual[fy_end]}
     now = max(newer, key=lambda r: r["end"])
     length = _days(now["start"], now["end"])
-    year_ago = date.fromisoformat(now["end"]).replace(year=date.fromisoformat(now["end"]).year - 1)
+    year_ago = date.fromisoformat(now["end"]) - timedelta(days=365)   # safe on Feb 29
     prior = next((r for r in ytd if _near(r["end"], year_ago.isoformat())
                   and abs(_days(r["start"], r["end"]) - length) <= SAME_PERIOD_SLACK_DAYS), None)
     if prior is None:
@@ -169,7 +169,25 @@ def extract(facts: dict) -> dict:
         out["source"][concept] = name
         out["annual"][concept] = dict(sorted(years.items())[-YEARS_KEPT:]) if flow else years
         out["ttm"][concept] = ttm(rows) if flow else latest_value(rows)
-    return out
+    return _same_period(out)
+
+
+def _same_period(record: dict) -> dict:
+    """Only figures from the same years as revenue, and the same last twelve months.
+
+    AVGO's profit stopped in 2024 under the name found and was being divided by 2026
+    sales; PAYX's and TLN's series jumped back to 2013.
+    """
+    revenue_years = record["annual"].get("revenue", {})
+    end = (record["ttm"].get("revenue") or {}).get("end")
+    if not revenue_years or not end:
+        return record
+    first = min(revenue_years)
+    annual = {k: {y: v for y, v in years.items() if y >= first} if k in FLOW_CONCEPTS else years
+              for k, years in record["annual"].items()}
+    ttm_rows = {k: None if k in FLOW_CONCEPTS and v and not _near(v["end"], end) else v
+                for k, v in record["ttm"].items()}
+    return {**record, "annual": annual, "ttm": ttm_rows}
 
 
 def _cik_map() -> dict[str, str]:

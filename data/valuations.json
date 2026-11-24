@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T07:49:39Z",
+ "generated_at": "2026-11-24T08:33:21Z",
  "treasury_10y": 0.0492,
  "margin_of_safety": 0.25,
  "equity_premium": 0.05,
@@ -169,24 +169,23 @@
   },
   "APP": {
    "methods": {
-    "cash_flow": 106.69,
     "own_multiple": 217.77
    },
    "price": 373.92,
    "status": "no_reliable_price",
-   "low": 106.69,
-   "base": 162.23,
+   "low": 217.77,
+   "base": 217.77,
    "high": 217.77,
    "buy_below": null,
-   "no_growth_value": 51.06,
-   "reason": "the methods disagree too much to trust (cash flow $107, own multiple $218)",
+   "no_growth_value": null,
+   "reason": "only one valuation method could be used (no cash flow)",
    "notes": [
     "profit margins vary a lot, so they were averaged over every year on file",
     "past P/E of 69x cut to a 37x ceiling (growth above 12% isn't credited)"
    ],
    "inputs": {
-    "owner_cash_per_share": 6.53,
-    "cash_margin": 0.2889,
+    "owner_cash_per_share": 0.0,
+    "cash_margin": null,
     "growth_used": 0.15,
     "discount_rate": 0.1492,
     "beta": 2.5,
@@ -194,8 +193,8 @@
     "eps_normalised": 5.84,
     "median_past_pe": 69.1,
     "fair_pe": 37.3,
-    "terminal_share": 0.388,
-    "implied_growth": 0.4157,
+    "terminal_share": null,
+    "implied_growth": null,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -244,7 +243,7 @@
     "discount_rate": 0.1247,
     "beta": 1.51,
     "cyclical": true,
-    "eps_normalised": 4.2,
+    "eps_normalised": null,
     "median_past_pe": null,
     "fair_pe": null,
     "terminal_share": 0.466,
@@ -443,8 +442,8 @@
     "left out as out of date in the filings: operating_income"
    ],
    "inputs": {
-    "owner_cash_per_share": -4.01,
-    "cash_margin": -0.1025,
+    "owner_cash_per_share": -4.0,
+    "cash_margin": -0.1023,
     "growth_used": 0.15,
     "discount_rate": 0.1492,
     "beta": 2.23,
@@ -643,8 +642,8 @@
     "past P/E of 23x cut to a 11x ceiling (0% growth)"
    ],
    "inputs": {
-    "owner_cash_per_share": -7.24,
-    "cash_margin": -0.1509,
+    "owner_cash_per_share": -7.22,
+    "cash_margin": -0.1505,
     "growth_used": 0.0,
     "discount_rate": 0.0892,
     "beta": 0.55,
@@ -866,22 +865,22 @@
   },
   "GEV": {
    "methods": {
-    "cash_flow": 325.09
+    "cash_flow": 328.81
    },
    "price": 756.71,
    "status": "no_reliable_price",
-   "low": 325.09,
-   "base": 325.09,
-   "high": 325.09,
+   "low": 328.81,
+   "base": 328.81,
+   "high": 328.81,
    "buy_below": null,
-   "no_growth_value": 201.98,
+   "no_growth_value": 204.29,
    "reason": "only one valuation method could be used (no own multiple)",
    "notes": [
     "profit margins vary a lot, so they were averaged over every year on file"
    ],
    "inputs": {
-    "owner_cash_per_share": 16.63,
-    "cash_margin": 0.102,
+    "owner_cash_per_share": 16.82,
+    "cash_margin": 0.1031,
     "growth_used": 0.0868,
     "discount_rate": 0.1022,
     "beta": 1.06,
@@ -890,7 +889,7 @@
     "median_past_pe": null,
     "fair_pe": null,
     "terminal_share": 0.52,
-    "implied_growth": 0.2467,
+    "implied_growth": 0.2445,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",

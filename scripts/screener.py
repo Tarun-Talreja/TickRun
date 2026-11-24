@@ -69,7 +69,7 @@ MAX_PER_SECTOR  = 3
 MAX_WEEKS_SHOWN = 4
 REST_WEEKS      = 12
 
-HEADERS = {"User-Agent": "TickRun Screener tarun888099@gmail.com"}
+HEADERS = {"User-Agent": os.environ.get("SEC_USER_AGENT", "TickRun personal research tool")}
 
 
 # ── Universe ─────────────────────────────────────────────────────────────────

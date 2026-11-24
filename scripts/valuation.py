@@ -60,6 +60,7 @@ PE_YEARS = 5
 NORMALISE_YEARS = 3          # steady businesses: last three years plus the last twelve months
 CYCLE_YEARS = 6              # cyclical ones: every year on file, to span a cycle
 GROWTH_GAP = 0.03            # growth is never assumed within 3 points of the required return
+MUST_HAVE_YEARS = 2          # the latest fiscal years a margin can't do without
 MAX_SPREAD = 2.0             # methods further apart than this ratio don't agree
 CAP_GAP = 0.15               # price x shares must match the market value this closely
 SHARE_JUMP = 1.4             # a bigger share-count change within a year looks like a split
@@ -143,7 +144,10 @@ def normalised_margin(values: dict[str, float], revenue: dict[str, float], years
     Margins, not dollars: averaging dollars undervalues a fast grower, whose early
     years were much smaller. The margin is applied to current revenue instead.
     """
-    shared = sorted(y for y in values if revenue.get(y))[-years:]
+    recent = sorted(revenue)[-years:]
+    if any(y not in values for y in recent[-MUST_HAVE_YEARS:]):
+        return None   # older years would stand in for the missing ones
+    shared = [y for y in recent if y in values and revenue[y]]
     margins = [values[y] / revenue[y] for y in shared]
     if ttm is not None and ttm_revenue:
         margins.append(ttm / ttm_revenue)

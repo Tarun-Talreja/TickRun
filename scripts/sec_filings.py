@@ -34,7 +34,7 @@ WATCHLIST_PATH = os.path.join(SCRIPT_DIR, "data", "watchlist.json")
 OUTPUT_PATH    = os.path.join(SCRIPT_DIR, "data", "sec_filings.json")
 
 # SEC requires a descriptive User-Agent with contact info
-HEADERS = {"User-Agent": "TickRun Research tarun888099@gmail.com"}
+HEADERS = {"User-Agent": os.environ.get("SEC_USER_AGENT", "TickRun personal research tool")}
 
 TICKERS_URL = "https://www.sec.gov/files/company_tickers.json"
 SUBMISSIONS_URL = "https://data.sec.gov/submissions/CIK{cik}.json"

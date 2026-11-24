@@ -253,3 +253,8 @@ class TestOwnerCash:
         from valuation import _owner_cash
         _, now, note = _owner_cash(self.ANNUAL, self.TTM, yahoo_capex=19.0)
         assert now == 88.0 and note is None
+
+
+def test_margin_needs_the_latest_years():
+    revenue = {y: 100 for y in ("2022", "2023", "2024", "2025")}
+    assert normalised_margin({"2022": 10, "2023": 10, "2024": 10}, revenue, 3) is None

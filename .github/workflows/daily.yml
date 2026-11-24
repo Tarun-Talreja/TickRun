@@ -23,6 +23,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
+  SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
@@ -58,6 +59,10 @@ jobs:
 
       - name: Cache ticker news
         run: python scripts/news_feed.py
+        continue-on-error: true
+
+      - name: Serious news and filings
+        run: python scripts/company_events.py
         continue-on-error: true
 
       - name: Detect + explain price movers
@@ -121,6 +126,7 @@ jobs:
             data/target_alerts.json
             data/verdict_history.json
             data/summary_history.json
+            data/company_events.json
             output/dashboard.json
             output/daily_brief.json
             output/weekly_digest.json

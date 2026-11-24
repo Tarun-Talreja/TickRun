@@ -50,7 +50,7 @@ OUTPUT_DIR   = os.path.join(SCRIPT_DIR, "output", "filing_answers")
 os.makedirs(CACHE_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-HEADERS     = {"User-Agent": "TickRun Research tarun888099@gmail.com"}
+HEADERS     = {"User-Agent": os.environ.get("SEC_USER_AGENT", "TickRun personal research tool")}
 TICKERS_URL = "https://www.sec.gov/files/company_tickers.json"
 NVIDIA_BASE = "https://integrate.api.nvidia.com/v1"
 

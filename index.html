@@ -858,6 +858,13 @@ function vbadge(v){
   const[c,l]=m[v]||['vb-pass',v||'—'];
   return`<span class="vbadge ${c}">${l}</span>`;
 }
+const CATS = {solid:['vb-worthy','Passes checks'],weak:['vb-pass','Fails checks'],serious:['vb-pass','Serious news'],unknown:['vb-watch','Not enough data']};
+const catOf = s => (s.category||{}).key;
+function cbadge(ticker){
+  const s = DB ? DB.watchlist.all.find(x=>x.ticker===ticker) : null;
+  const c = s && CATS[catOf(s)];
+  return c ? `<span class="vbadge ${c[0]}">${c[1]}</span>` : '';
+}
 function acClass(a){if(!a)return'watch';if(a.startsWith('BUY'))return'buy';if(a.startsWith('WAIT'))return'wait';if(a.startsWith('DROP'))return'pass';return'watch'}
 function acColor(a){const c=acClass(a);return c==='buy'?'var(--green)':c==='wait'?'var(--amber)':c==='pass'?'var(--red)':'var(--cyan)'}
 
@@ -934,7 +941,8 @@ function renderHome(data){
   const sig = data.signals;
   const wl = data.watchlist;
   const earningsUrgent = (sig.upcoming_earnings||[]).filter(e=>e.days_until<=3);
-  const buyReady = wl.by_verdict['RESEARCH-WORTHY']||[];
+  const serious = wl.all.filter(s=>catOf(s)==='serious');
+  const buyReady = serious;
   const pullbacks = sig.pullback_alerts||[];
   const now = new Date();
   const hour = now.getHours();
@@ -962,8 +970,8 @@ function renderHome(data){
   <!-- Stat tiles -->
   <div class="stat-row">
     <div class="stat-tile" style="animation-delay:.1s">
-      <div class="stat-tile-val green">${buyReady.length}</div>
-      <div class="stat-tile-label">To Research</div>
+      <div class="stat-tile-val ${buyReady.length?'red':''}">${buyReady.length}</div>
+      <div class="stat-tile-label">Serious news</div>
     </div>
     <div class="stat-tile" style="animation-delay:.15s">
       <div class="stat-tile-val ${earningsUrgent.length>0?'red':''}">${earningsUrgent.length}</div>
@@ -996,11 +1004,11 @@ function renderHome(data){
   if(buyReady.length>0){
     const b = buyReady[0];
     html+=`<div class="focus-card buy s-anim" style="animation-delay:.28s" onclick="openStock(${JSON.stringify(b).replace(/"/g,'&quot;')})">
-      <span class="focus-icon">▲</span>
+      <span class="focus-icon">⚠</span>
       <div class="focus-content">
-        <div class="focus-label buy">Worth Researching</div>
+        <div class="focus-label urgent">Serious News</div>
         <div class="focus-title">${esc(b.ticker)} · ${fp(b.current_price??b.price)}</div>
-        <div class="focus-sub">${esc((b.next_action||'').substring(0,80))}</div>
+        <div class="focus-sub">${esc((b.category||{}).why||'')}</div>
       </div>
     </div>`;
   }
@@ -1019,7 +1027,7 @@ function renderHome(data){
   html+=`</div>
 
   <!-- Buy-ready stocks -->
-  <div class="sec-head"><span class="sec-head-label">Worth Researching</span><span class="sec-head-line"></span><span class="sec-head-count">${buyReady.length}</span></div>
+  <div class="sec-head"><span class="sec-head-label">Serious News</span><span class="sec-head-line"></span><span class="sec-head-count">${buyReady.length}</span></div>
   <div class="quick-section">`;
 
   buyReady.forEach((s,i)=>{
@@ -1031,7 +1039,6 @@ function renderHome(data){
       <span class="sr-ticker">${esc(s.ticker)}</span>
       <span class="sr-name">${esc(s.name)}</span>
       <span class="sr-price lp">${fp(price)}</span>
-      <span class="sr-action-chip sac-${ac}">${ac.toUpperCase()}</span>
     </div>`;
   });
 
@@ -1094,7 +1101,7 @@ function renderRadarCard(c){
     <div class="rd-top"><span class="disc-tk">${esc(c.ticker)}</span>
       ${c.new?'<span class="rd-tag">New</span>':''}
       ${c.tracked?'<span class="rd-tag">Tracked</span>':''}
-      ${c.rating?`<span class="rd-tag">${esc(c.rating)}</span>`:''}
+      ${cbadge(c.ticker)}
       <span class="rd-px">${c.price!=null?fp(c.price):''}${c.price_date?` on ${fDate(c.price_date)}`:''}</span></div>
     <div class="disc-nm">${esc(c.name||'')}</div>
     <ul class="rd-list">${reasons}</ul>
@@ -1143,7 +1150,7 @@ function renderWatchlist(data){
   const themeKeys = Object.keys(themeCounts).filter(t=>t!=='unknown').sort((a,b)=>themeCounts[b]-themeCounts[a]);
 
   function build(filter, searchQ='', theme='all'){
-    let base = filter==='all' ? all : filter==='buy' ? (data.watchlist.by_verdict['RESEARCH-WORTHY']||[]) : filter==='watch' ? (data.watchlist.by_verdict['WATCHLIST']||[]) : (data.watchlist.by_verdict['PASS']||[]);
+    let base = filter==='all' ? all : all.filter(s=>catOf(s)===filter);
     if(theme!=='all') base = base.filter(s=>(s.theme||'')===theme);
     const q = searchQ.trim().toLowerCase();
     let stocks = q ? base.filter(s=>(s.ticker||'').toLowerCase().includes(q)||(s.name||'').toLowerCase().includes(q)||(s.theme||'').toLowerCase().includes(q)) : base;
@@ -1160,9 +1167,7 @@ function renderWatchlist(data){
     </div>
     <div class="filter-row">
       <span class="filter-chip ${filter==='all'?'active':''}" onclick="setFilter('all')">All ${all.length}</span>
-      <span class="filter-chip ${filter==='buy'?'active':''}" onclick="setFilter('buy')">To Research ${(data.watchlist.by_verdict['RESEARCH-WORTHY']||[]).length}</span>
-      <span class="filter-chip ${filter==='watch'?'active':''}" onclick="setFilter('watch')">Watching ${(data.watchlist.by_verdict['WATCHLIST']||[]).length}</span>
-      <span class="filter-chip ${filter==='pass'?'active':''}" onclick="setFilter('pass')">Pass ${(data.watchlist.by_verdict['PASS']||[]).length}</span>
+      ${Object.entries(CATS).map(([k,c])=>`<span class="filter-chip ${filter===k?'active':''}" onclick="setFilter('${k}')">${c[1]} ${all.filter(s=>catOf(s)===k).length}</span>`).join('')}
     </div>
     <div class="filter-row theme-row">
       <span class="filter-chip theme-chip ${theme==='all'?'active':''}" onclick="setTheme('all')">All Themes</span>
@@ -1183,7 +1188,7 @@ function renderWatchlist(data){
             <div style="display:flex;align-items:center;gap:7px;margin-bottom:3px">
               <span style="width:8px;height:8px;border-radius:50%;background:${t.color};display:inline-block;flex-shrink:0"></span>
               <span class="wl-card-ticker">${esc(s.ticker)}</span>
-              ${vbadge(s.verdict)}
+              ${cbadge(s.ticker)}
               ${s.confidence?`<span class="conf-badge conf-${esc((s.confidence||'').toLowerCase())}">${esc(s.confidence)}</span>`:''}
               ${s.data_ok===false?`<span class="data-warn" title="${esc((s.data_flags||[]).map(f=>f.msg).join(' · '))}">⚠ DATA</span>`:''}
             </div>
@@ -1201,8 +1206,8 @@ function renderWatchlist(data){
           ${s.op_margin!=null?`<div class="wm"><div class="wm-label">Op Mgn</div><div class="wm-val ${s.op_margin>35?'hi':''}">${fn(s.op_margin,1)}%</div></div>`:''}
         </div>
         <div class="wl-action-row">
-          <span class="wl-action-icon" style="color:${acColor(s.next_action||'')}">${ac==='buy'?'▲':ac==='wait'?'◎':ac==='pass'?'✕':'→'}</span>
-          <span>${esc((s.next_action||'').substring(0,90))}${(s.next_action||'').length>90?'…':''}</span>
+          <span class="wl-action-icon">→</span>
+          <span>${esc((s.category||{}).why||'Benchmark, tracked for comparison')}</span>
         </div>
       </div>`;
     });
@@ -1227,10 +1232,18 @@ function openStock(s){
   navigateTo('stock', full);
 }
 
+function renderQuality(s){
+  const q = s.quality; if(!q) return '';
+  const icon = ok=>ok===true?'<span style="color:var(--green)">✓</span>':ok===false?'<span style="color:var(--red)">✕</span>':'<span style="color:var(--text2)">?</span>';
+  const rows = q.checks.map(c=>`<div style="padding:5px 0;border-bottom:1px solid var(--bg3)">${icon(c.ok)} ${esc(c.name)} <span style="color:var(--text2);font-size:12px">${esc(c.detail)}</span></div>`).join('');
+  const ev = ((s.events||{}).serious||[]).map(e=>{const u=(e.url||'').startsWith('http')?e.url:'';return `<div style="padding:5px 0;color:var(--amber)">⚠ ${u?`<a href="${esc(u)}" target="_blank" rel="noopener noreferrer" style="color:inherit">${esc(e.text)}</a>`:esc(e.text)} <span style="font-size:12px">(${esc(e.source)}, ${fDate(e.date)})</span></div>`}).join('');
+  return `<div class="detail-section"><div class="ds-title">Business Checks</div><div class="thesis-box" id="quality-box">${ev}${rows}<div style="margin-top:8px;font-size:11px;color:var(--text2)">From SEC filings. Describes the business, and hasn’t been tested as a way to pick stocks.</div></div></div>`;
+}
+
 function renderValuation(s){
   const v = s.valuation;
   const row = (a,b)=>`<div style="display:flex;justify-content:space-between;gap:12px;padding:5px 0;border-bottom:1px solid var(--bg3)"><span style="color:var(--text2)">${a}</span><span style="text-align:right">${b}</span></div>`;
-  const wrap = body=>`<div class="detail-section"><div class="ds-title">What It May Be Worth</div><div class="thesis-box" id="valuation-box">${body}</div></div>`;
+  const wrap = body=>`<div class="detail-section"><div class="ds-title">Formula Estimate (failed its test)</div><div class="thesis-box" id="valuation-box">${body}</div></div>`;
   if(!v) return wrap('No reliable price: this one hasn’t been valued.');
   const i = v.inputs||{};
   const names = {cash_flow:'From its cash flow',own_multiple:'From its own past P/E',company_measure:'From the company’s own guidance'};
@@ -1241,13 +1254,13 @@ function renderValuation(s){
   const notes = (v.notes||[]).map(n=>`<li>${esc(n)}</li>`).join('');
   const foot = `<div style="margin-top:8px;font-size:11px;color:var(--text2)">${v.status==='ok'?assume:''}${asOf} Valued ${fDate(v.valued_on)}. A rule-based estimate, not a forecast or advice.</div>${notes?`<ul style="margin:6px 0 0 16px;font-size:11px;color:var(--text2)">${notes}</ul>`:''}`;
   if(v.status!=='ok'){
-    const title = v.status==='market_expects_decline'?'No buy-below price: the market expects a decline':'No reliable price';
+    const title = v.status==='market_expects_decline'?'No formula price: the market expects a decline':'No reliable price';
     return wrap(`<b>${title}</b><div style="margin-top:4px">${esc(v.reason||'')}</div>${methods?`<details style="margin-top:8px"><summary style="cursor:pointer;color:var(--text2);font-size:12px">Figures not trusted</summary>${methods}</details>`:''}${foot}`);
   }
   const g = v.gap_pct;
   const line = g>0?`Today’s price is ${g.toFixed(0)}% above it.`:`Today’s price is ${Math.abs(g).toFixed(0)}% below it. Check for news these filed figures don’t include.`;
   const one = Object.keys(v.methods||{}).length===1?'<div style="margin-top:4px;color:var(--amber);font-size:12px">Only one method was used, so trust this less.</div>':'';
-  return wrap(`${row('Buy-below price','<b>'+fp(v.buy_below)+'</b>')}<div style="margin:4px 0">${line}</div>${one}${row('Estimated value (middle)',fp(v.base))}${methods}${foot}`);
+  return wrap(`${'<div style="color:var(--amber);font-size:12px;margin-bottom:6px">Don’t use this to choose. Tested on 2013–2025, stocks below this price did not reliably beat other stocks.</div>'}${row('Formula price',fp(v.buy_below))}<div style="margin:4px 0">${line}</div>${one}${row('Estimated value (middle)',fp(v.base))}${methods}${foot}`);
 }
 
 function renderStockDetail(s){
@@ -1278,7 +1291,7 @@ function renderStockDetail(s){
         <div class="detail-name">${esc(s.name)}</div>
       </div>
       <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px">
-        ${vbadge(s.verdict)}
+        ${cbadge(s.ticker)}
         <span style="font-size:9px;padding:2px 7px;border-radius:3px;background:var(--bg3);color:${t.color};border:1px solid ${t.color}33">${esc(t.label)}</span>
       </div>
     </div>
@@ -1288,9 +1301,9 @@ function renderStockDetail(s){
     </div>
     ${tags?`<div class="signal-tags">${tags}</div>`:''}
     <div class="detail-action-box ${dabClass}">
-      <div class="dab-label">${ac==='buy'?'▲ AI Rating':ac==='wait'?'◎ AI Rating: Wait':ac==='pass'?'✕ AI Rating: Pass':'→ AI Rating'}</div>
-      <div class="dab-action">${esc(s.next_action||'No action defined.')}</div>
-      ${s.moved_since_rating?`<div style="margin-top:8px;font-size:12px;color:var(--amber)">⚠ Out of date: the price moved ${s.moved_since_rating.pct>0?'+':''}${s.moved_since_rating.pct}% ${esc(s.moved_since_rating.span)}. This rating is from ${fDate(s.last_researched)} and is queued to be redone.</div>`:''}
+      <div class="dab-label">${esc((s.category||{}).label||'Benchmark')}</div>
+      <div class="dab-action">${esc((s.category||{}).why||'Tracked for comparison only.')}</div>
+      ${s.moved_since_rating?`<div style="margin-top:8px;font-size:12px;color:var(--amber)">⚠ The AI opinion below is out of date: the price moved ${s.moved_since_rating.pct>0?'+':''}${s.moved_since_rating.pct}% ${esc(s.moved_since_rating.span)}. It is from ${fDate(s.last_researched)} and is queued to be redone.</div>`:''}
     </div>
   </div>
 
@@ -1305,8 +1318,9 @@ function renderStockDetail(s){
     <div class="dm-tile"><div class="dmt-label">Short Ratio</div><div class="dmt-val">${s.short_ratio!=null?fn(s.short_ratio,1)+'d':'—'}</div></div>
   </div>
 
+  ${renderQuality(s)}
   <div class="detail-section">
-    <div class="ds-title">Investment Thesis</div>
+    <div class="ds-title">AI Opinion (background, not a rating)</div>
     <div class="thesis-box">${esc(s.thesis||'No thesis recorded yet.')}</div>
     ${(s.unsupported_figures||[]).length?`<div style="font-size:12px;color:var(--red);margin-top:8px">Figures in the full research note that weren’t in its source data (sentences using them are removed here): ${esc(s.unsupported_figures.join(', '))}</div>`:''}
     ${s.last_researched?`<div style="margin-top:8px;font-size:9px;color:var(--text2)">Last researched: ${fDate(s.last_researched)}${s.confidence?` · Confidence: ${esc(s.confidence)}`:''}</div>`:''}
@@ -1377,7 +1391,7 @@ function renderSignals(data){
       html+=`<div class="mover-card s-anim" style="animation-delay:${i*0.03}s;border-left:3px solid ${col}">
         <div class="news-head">
           <span class="news-ticker">${esc(e.ticker)}</span>
-          ${e.verdict?vbadge(e.verdict):''}
+          ${cbadge(e.ticker)}
           <span class="mover-pct" style="color:${col};margin-left:auto">${fDate(e.date)}</span>
         </div>
         <div class="mover-reason"><strong>${esc((e.type||'').replace('_',' '))}</strong> ${esc(e.date||'')}${est?` · ${est}`:''}</div>
@@ -1405,7 +1419,7 @@ function renderSignals(data){
       html+=`<div class="mover-card s-anim" style="animation-delay:${i*0.03}s;border-left:3px solid ${col}">
         <div class="news-head">
           <span class="news-ticker">${esc(m.ticker)}</span>
-          ${vbadge(m.verdict)}
+          ${cbadge(m.ticker)}
           <span class="mover-pct" style="color:${col};margin-left:auto">${up?'▲':'▼'} ${pct>0?'+':''}${fn(pct,1)}%</span>
         </div>
         <div class="mover-reason">${esc(m.reason||'')}</div>
@@ -1429,7 +1443,7 @@ function renderSignals(data){
       <div class="sig-card-head">
         <div style="display:flex;align-items:center;gap:8px">
           <span style="font-size:16px;font-weight:600;color:var(--text0)">${esc(e.ticker)}</span>
-          ${vbadge(e.verdict)}
+          ${cbadge(e.ticker)}
           <span style="font-size:9px;color:${tc(e.theme).color}">${esc(tc(e.theme).label)}</span>
         </div>
         <span class="sig-type-label ${cls}">📅 Earnings</span>
@@ -1456,7 +1470,7 @@ function renderSignals(data){
       <div class="sig-card-head">
         <div style="display:flex;align-items:center;gap:8px">
           <span style="font-size:16px;font-weight:600;color:var(--text0)">${esc(s.ticker)}</span>
-          ${vbadge(s.verdict)}
+          ${cbadge(s.ticker)}
         </div>
         <span class="sig-type-label stl-pullback">📉 Pullback</span>
       </div>
@@ -1484,7 +1498,7 @@ function renderSignals(data){
       <div class="sig-card-head">
         <div style="display:flex;align-items:center;gap:8px">
           <span style="font-size:16px;font-weight:600;color:var(--text0)">${esc(s.ticker)}</span>
-          ${vbadge(s.verdict)}
+          ${cbadge(s.ticker)}
         </div>
         <span class="sig-type-label stl-sale">💎 On Sale</span>
       </div>
@@ -1514,7 +1528,7 @@ function renderSignals(data){
       <div class="sig-card-head">
         <div style="display:flex;align-items:center;gap:8px">
           <span style="font-size:16px;font-weight:600;color:var(--text0)">${esc(s.ticker)}</span>
-          ${vbadge(s.verdict)}
+          ${cbadge(s.ticker)}
         </div>
         <span class="sig-type-label stl-short">⚠ Short</span>
       </div>
@@ -1571,7 +1585,7 @@ function renderSignals(data){
       html+=`<a class="news-card s-anim" href="${esc(safeUrl)}" target="_blank" rel="noopener noreferrer" style="animation-delay:${Math.min(i*0.02,0.5)}s">
         <div class="news-head">
           <span class="news-ticker">${esc(n.ticker)}</span>
-          ${vbadge(n.verdict)}
+          ${cbadge(n.ticker)}
           <span class="news-date">${esc(n.date||'')}</span>
         </div>
         <div class="news-title">${esc(n.title||'')}</div>
@@ -1847,7 +1861,7 @@ function renderResearch(data){
 
   const card = (s, sub, accent, expanded=false) => {
     const t = tc(s.theme);
-    const v = vbadge(s.verdict);
+    const v = cbadge(s.ticker);
     const accentBar = accent ? `style="border-left:3px solid ${accent}"` : '';
     const price = s.current_price ?? s.price;
     return `<div class="rsearch-card s-anim" ${accentBar} onclick='openStock(${JSON.stringify(s).replace(/'/g,"&#39;")})'>
@@ -1868,7 +1882,7 @@ function renderResearch(data){
           </div>` : ''}
         ${s.next_action ? `
           <div class="rs-block">
-            <div class="rs-block-label" style="color:var(--amber)">NEXT ACTION</div>
+            <div class="rs-block-label" style="color:var(--amber)">AI OPINION</div>
             <div class="rs-block-text" style="color:var(--text1)">${esc(s.next_action)}</div>
           </div>` : ''}
         <div class="rs-meta">
@@ -1964,7 +1978,7 @@ runIntro();
     $('dn-research').style.display = needsResearch>0?'flex':'none';
 
     // Watchlist badge
-    const wlCount=DB.watchlist.counts.research_worthy;
+    const wlCount=DB.watchlist.all.filter(s=>catOf(s)==='serious').length;
     $('nb-watchlist').textContent=wlCount;
     $('nb-watchlist').style.display=wlCount>0?'flex':'none';
     $('dn-watchlist').textContent=wlCount;

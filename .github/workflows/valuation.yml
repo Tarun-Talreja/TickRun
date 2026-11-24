@@ -15,6 +15,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
+  SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
@@ -39,6 +40,10 @@ jobs:
           python scripts/sec_facts.py
           python scripts/company_measures.py
 
+      - name: Serious news and filings
+        run: python scripts/company_events.py
+        continue-on-error: true
+
       - name: Value each company
         run: python scripts/valuation.py
 
@@ -60,6 +65,7 @@ jobs:
             data/fundamentals.json
             data/company_measures.json
             data/valuations.json
+            data/company_events.json
             output/dashboard.json
 
       - name: Open issue on failure
