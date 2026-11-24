@@ -54,3 +54,7 @@ def test_stress_and_overlap():
     assert stress(PLAN, [["CEG", "VST"]])[0] == {"names": ["CEG", "VST"], "pct": 10.7}
     rows = overlap(PLAN, {"MSFT": .0533, "TSLA": .0155})
     assert rows[2]["pct"] == 5.3 and rows[0]["pct"] is None and rows[0]["below_pct"] in (1.5, 1.6)
+
+
+def test_limit_does_not_apply_to_money_already_there():
+    assert not any("one year allows" in t for t in titles({**PLAN, "money_already_in_account": True}))

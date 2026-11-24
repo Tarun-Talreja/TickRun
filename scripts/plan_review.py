@@ -49,7 +49,9 @@ def conflicts(plan: dict, market: dict, today: date) -> list[dict]:
     groups = linked_groups(list(dollars), market.get("corr", {}))
     limit = IRA_LIMITS.get(today.year)
     out = []
-    if limit is None:
+    if plan.get("money_already_in_account"):
+        pass   # the limit is on new contributions, not on investing what is there
+    elif limit is None:
         out.append(_conflict("Yearly limit not checked", f"The {today.year} IRA limit isn't in the app yet.",
                              "Check the IRS page before adding money.", LIMIT_URL))
     elif rules.get("account_type") == "Roth IRA" and total > limit:
