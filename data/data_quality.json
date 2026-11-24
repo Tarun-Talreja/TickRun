@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T16:14:44Z",
+  "generated_at": "2026-11-24T16:30:38Z",
   "checked": 63,
   "flagged": 2,
   "quality": {
@@ -7,11 +7,11 @@
       "ok": true,
       "flags": []
     },
-    "ADP": {
+    "AAPL": {
       "ok": true,
       "flags": []
     },
-    "AAPL": {
+    "ADP": {
       "ok": true,
       "flags": []
     },
@@ -28,7 +28,7 @@
       "flags": [
         {
           "level": "low",
-          "msg": "Reports in EUR; figures converted to USD at 1.0977. Trailing P/E may mix currencies \u2014 verify against filings"
+          "msg": "Reports in EUR; figures converted to USD at 1.0975. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
     },
@@ -68,11 +68,11 @@
       "ok": true,
       "flags": []
     },
-    "DECK": {
+    "DHR": {
       "ok": true,
       "flags": []
     },
-    "DHR": {
+    "DECK": {
       "ok": true,
       "flags": []
     },
@@ -88,11 +88,11 @@
       "ok": true,
       "flags": []
     },
-    "FLUT": {
+    "FIX": {
       "ok": true,
       "flags": []
     },
-    "FIX": {
+    "FLUT": {
       "ok": true,
       "flags": []
     },
@@ -116,6 +116,10 @@
       "ok": true,
       "flags": []
     },
+    "ISRG": {
+      "ok": true,
+      "flags": []
+    },
     "INVH": {
       "ok": true,
       "flags": []
@@ -124,7 +128,7 @@
       "ok": true,
       "flags": []
     },
-    "ISRG": {
+    "LMB": {
       "ok": true,
       "flags": []
     },
@@ -132,15 +136,7 @@
       "ok": true,
       "flags": []
     },
-    "LMB": {
-      "ok": true,
-      "flags": []
-    },
     "LPLA": {
-      "ok": true,
-      "flags": []
-    },
-    "MA": {
       "ok": true,
       "flags": []
     },
@@ -148,15 +144,19 @@
       "ok": true,
       "flags": []
     },
+    "MA": {
+      "ok": true,
+      "flags": []
+    },
     "MKTX": {
       "ok": true,
       "flags": []
     },
-    "MSFT": {
+    "MRVL": {
       "ok": true,
       "flags": []
     },
-    "MRVL": {
+    "MSFT": {
       "ok": true,
       "flags": []
     },
@@ -172,15 +172,15 @@
       "ok": true,
       "flags": []
     },
+    "NVDA": {
+      "ok": true,
+      "flags": []
+    },
     "NOW": {
       "ok": true,
       "flags": []
     },
     "NVT": {
-      "ok": true,
-      "flags": []
-    },
-    "NVDA": {
       "ok": true,
       "flags": []
     },
@@ -192,19 +192,19 @@
       "ok": true,
       "flags": []
     },
-    "POWL": {
-      "ok": true,
-      "flags": []
-    },
     "PAYX": {
       "ok": true,
       "flags": []
     },
-    "RDDT": {
+    "POWL": {
       "ok": true,
       "flags": []
     },
     "QQQ": {
+      "ok": true,
+      "flags": []
+    },
+    "RDDT": {
       "ok": true,
       "flags": []
     },
