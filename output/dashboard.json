@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-11-24T08:36:51Z",
-  "quotes_updated": "2026-11-24T08:31:20Z",
+  "last_built": "2026-11-24T08:38:54Z",
+  "quotes_updated": "2026-11-24T08:38:20Z",
   "prices_as_of": "2026-11-23T21:00:01Z",
   "prices_due": "2026-11-24T16:30:00Z",
   "health": {
@@ -18,7 +18,7 @@
         "updated_at": "2026-11-23T13:52:17Z",
         "detail": "8/8 tickers",
         "status": "ok",
-        "age_hours": 18.7,
+        "age_hours": 18.8,
         "affects": "Ratings aren't being updated"
       },
       {
@@ -26,39 +26,39 @@
         "updated_at": "2026-11-24T01:10:45Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 7.4,
+        "age_hours": 7.5,
         "affects": "Upcoming earnings dates may be missing"
       },
       {
         "name": "SEC filings",
-        "updated_at": "2026-11-24T08:13:31Z",
+        "updated_at": "2026-11-24T08:38:28Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 0.4,
+        "age_hours": 0.0,
         "affects": "New SEC filings won't show"
       },
       {
         "name": "Prices",
-        "updated_at": "2026-11-24T08:31:20Z",
+        "updated_at": "2026-11-24T08:38:20Z",
         "detail": "59/59 have data",
         "status": "ok",
-        "age_hours": 0.1,
-        "affects": "Prices and buy targets may be missing"
+        "age_hours": 0.0,
+        "affects": "Prices may be missing"
       },
       {
         "name": "Company figures",
-        "updated_at": "2026-11-24T08:31:20Z",
+        "updated_at": "2026-11-24T08:38:20Z",
         "detail": "59/59 have data",
         "status": "ok",
-        "age_hours": 0.1,
+        "age_hours": 0.0,
         "affects": "Ratings can't check the numbers"
       },
       {
         "name": "News",
-        "updated_at": "2026-11-24T08:13:43Z",
+        "updated_at": "2026-11-24T08:38:34Z",
         "detail": "57/57 have data",
         "status": "ok",
-        "age_hours": 0.4,
+        "age_hours": 0.0,
         "affects": "Ratings and mover reasons can miss recent news"
       },
       {
@@ -87,10 +87,10 @@
       },
       {
         "name": "Movers",
-        "updated_at": "2026-11-24T08:13:44Z",
+        "updated_at": "2026-11-24T08:38:52Z",
         "detail": "28/28 have data",
         "status": "ok",
-        "age_hours": 0.4,
+        "age_hours": 0.0,
         "affects": "Big moves may have no explanation"
       },
       {
@@ -111,15 +111,15 @@
       },
       {
         "name": "Home summary",
-        "updated_at": "2026-11-24T08:13:45Z",
+        "updated_at": "2026-11-24T08:38:53Z",
         "detail": "1 found",
         "status": "ok",
-        "age_hours": 0.4,
+        "age_hours": 0.0,
         "affects": "The summary may be out of date"
       },
       {
         "name": "Company events",
-        "updated_at": "2026-11-24T08:36:50Z",
+        "updated_at": "2026-11-24T08:38:51Z",
         "detail": "59 found",
         "status": "ok",
         "age_hours": 0.0,
@@ -131,7 +131,7 @@
         "detail": "59 found",
         "status": "ok",
         "age_hours": 0.1,
-        "affects": "Buy-below prices may be missing or out of date"
+        "affects": "Formula prices may be missing or out of date"
       },
       {
         "name": "Self-test",
@@ -205,7 +205,7 @@
         "pct_change_1d": 6.03,
         "drawdown_from_high": -33.9,
         "pe": 20.234728,
-        "forward_pe": 18.809835
+        "forward_pe": 18.80208
       },
       {
         "ticker": "MSFT",
@@ -222,7 +222,7 @@
         "pct_change_1d": 1.65,
         "drawdown_from_high": -11.9,
         "pe": 25.704594,
-        "forward_pe": 20.348078
+        "forward_pe": 20.350533
       },
       {
         "ticker": "RDDT",
@@ -443,7 +443,7 @@
         "revenue_growth": 18.8,
         "op_margin": 49.8,
         "pe": 25.704594,
-        "forward_pe": 20.348078,
+        "forward_pe": 20.350533,
         "short_percent_float": 0.82,
         "short_ratio": 2.8,
         "high_proximity_warning": true,
@@ -582,7 +582,7 @@
         "revenue_growth": 24.7,
         "op_margin": 31.8,
         "pe": 14.731071,
-        "forward_pe": 18.443949,
+        "forward_pe": 18.441067,
         "short_percent_float": 1.49,
         "short_ratio": 2.7,
         "high_proximity_warning": false,
@@ -1114,7 +1114,7 @@
         "revenue_growth": 85.5,
         "op_margin": 54.3,
         "pe": 40.044697,
-        "forward_pe": 16.150682,
+        "forward_pe": 16.174044,
         "short_percent_float": 1.11,
         "short_ratio": 2.3,
         "high_proximity_warning": false,
@@ -1862,7 +1862,7 @@
         "data_flags": [
           {
             "level": "low",
-            "msg": "Reports in EUR; figures converted to USD at 1.0913. Trailing P/E may mix currencies \u2014 verify against filings"
+            "msg": "Reports in EUR; figures converted to USD at 1.0921. Trailing P/E may mix currencies \u2014 verify against filings"
           }
         ]
       },
@@ -1994,7 +1994,7 @@
         "revenue_growth": 20.5,
         "op_margin": 9.4,
         "pe": 65.98561,
-        "forward_pe": 19.087694,
+        "forward_pe": 19.099182,
         "short_percent_float": 2.62,
         "short_ratio": 1.7,
         "high_proximity_warning": false,
@@ -2134,7 +2134,7 @@
         "revenue_growth": 44.7,
         "op_margin": 21.2,
         "pe": 96.893166,
-        "forward_pe": 25.74175,
+        "forward_pe": 25.708899,
         "short_percent_float": 2.36,
         "short_ratio": 1.9,
         "high_proximity_warning": false,
@@ -3228,7 +3228,7 @@
         "revenue_growth": 45.4,
         "op_margin": 25.8,
         "pe": 20.234728,
-        "forward_pe": 18.809835,
+        "forward_pe": 18.80208,
         "short_percent_float": 3.34,
         "short_ratio": 2.5,
         "high_proximity_warning": false,
@@ -3638,7 +3638,7 @@
         "revenue_growth": 26.8,
         "op_margin": 11.0,
         "pe": 19.86637,
-        "forward_pe": 29.216965,
+        "forward_pe": 28.840828,
         "short_percent_float": 2.83,
         "short_ratio": 2.5,
         "high_proximity_warning": false,
@@ -5312,7 +5312,7 @@
         "drawdown_from_high": -18.3,
         "revenue_growth": 6.1,
         "op_margin": 32.5,
-        "pe": 12.338407,
+        "pe": 12.702305,
         "forward_pe": 11.372696,
         "short_percent_float": 6.03,
         "short_ratio": 3.4,
@@ -6423,7 +6423,7 @@
         "revenue_growth": 1.3,
         "op_margin": 22.7,
         "pe": 23.377193,
-        "forward_pe": 38.689915,
+        "forward_pe": 37.865334,
         "short_percent_float": 4.69,
         "short_ratio": 3.5,
         "high_proximity_warning": true,
@@ -7116,7 +7116,7 @@
         "revenue_growth": -15.0,
         "op_margin": 20.1,
         "pe": 6.6333685,
-        "forward_pe": 9.606373,
+        "forward_pe": 9.606076,
         "short_percent_float": 5.62,
         "short_ratio": 3.5,
         "high_proximity_warning": false,
@@ -8681,7 +8681,7 @@
           "revenue_growth": 18.8,
           "op_margin": 49.8,
           "pe": 25.704594,
-          "forward_pe": 20.348078,
+          "forward_pe": 20.350533,
           "short_percent_float": 0.82,
           "short_ratio": 2.8,
           "high_proximity_warning": true,
@@ -8820,7 +8820,7 @@
           "revenue_growth": 24.7,
           "op_margin": 31.8,
           "pe": 14.731071,
-          "forward_pe": 18.443949,
+          "forward_pe": 18.441067,
           "short_percent_float": 1.49,
           "short_ratio": 2.7,
           "high_proximity_warning": false,
@@ -9210,7 +9210,7 @@
           "revenue_growth": 85.5,
           "op_margin": 54.3,
           "pe": 40.044697,
-          "forward_pe": 16.150682,
+          "forward_pe": 16.174044,
           "short_percent_float": 1.11,
           "short_ratio": 2.3,
           "high_proximity_warning": false,
@@ -9747,7 +9747,7 @@
           "revenue_growth": 20.5,
           "op_margin": 9.4,
           "pe": 65.98561,
-          "forward_pe": 19.087694,
+          "forward_pe": 19.099182,
           "short_percent_float": 2.62,
           "short_ratio": 1.7,
           "high_proximity_warning": false,
@@ -9887,7 +9887,7 @@
           "revenue_growth": 44.7,
           "op_margin": 21.2,
           "pe": 96.893166,
-          "forward_pe": 25.74175,
+          "forward_pe": 25.708899,
           "short_percent_float": 2.36,
           "short_ratio": 1.9,
           "high_proximity_warning": false,
@@ -12568,7 +12568,7 @@
           "revenue_growth": 1.3,
           "op_margin": 22.7,
           "pe": 23.377193,
-          "forward_pe": 38.689915,
+          "forward_pe": 37.865334,
           "short_percent_float": 4.69,
           "short_ratio": 3.5,
           "high_proximity_warning": true,
@@ -14190,7 +14190,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in EUR; figures converted to USD at 1.0913. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in EUR; figures converted to USD at 1.0921. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -14461,7 +14461,7 @@
           "revenue_growth": 45.4,
           "op_margin": 25.8,
           "pe": 20.234728,
-          "forward_pe": 18.809835,
+          "forward_pe": 18.80208,
           "short_percent_float": 3.34,
           "short_ratio": 2.5,
           "high_proximity_warning": false,
@@ -14871,7 +14871,7 @@
           "revenue_growth": 26.8,
           "op_margin": 11.0,
           "pe": 19.86637,
-          "forward_pe": 29.216965,
+          "forward_pe": 28.840828,
           "short_percent_float": 2.83,
           "short_ratio": 2.5,
           "high_proximity_warning": false,
@@ -15433,7 +15433,7 @@
           "drawdown_from_high": -18.3,
           "revenue_growth": 6.1,
           "op_margin": 32.5,
-          "pe": 12.338407,
+          "pe": 12.702305,
           "forward_pe": 11.372696,
           "short_percent_float": 6.03,
           "short_ratio": 3.4,
@@ -16638,7 +16638,7 @@
           "revenue_growth": -15.0,
           "op_margin": 20.1,
           "pe": 6.6333685,
-          "forward_pe": 9.606373,
+          "forward_pe": 9.606076,
           "short_percent_float": 5.62,
           "short_ratio": 3.5,
           "high_proximity_warning": false,
@@ -16924,7 +16924,7 @@
           "revenue_growth": 18.8,
           "op_margin": 49.8,
           "pe": 25.704594,
-          "forward_pe": 20.348078,
+          "forward_pe": 20.350533,
           "short_percent_float": 0.82,
           "short_ratio": 2.8,
           "high_proximity_warning": true,
@@ -17063,7 +17063,7 @@
           "revenue_growth": 24.7,
           "op_margin": 31.8,
           "pe": 14.731071,
-          "forward_pe": 18.443949,
+          "forward_pe": 18.441067,
           "short_percent_float": 1.49,
           "short_ratio": 2.7,
           "high_proximity_warning": false,
@@ -17845,7 +17845,7 @@
           "revenue_growth": 85.5,
           "op_margin": 54.3,
           "pe": 40.044697,
-          "forward_pe": 16.150682,
+          "forward_pe": 16.174044,
           "short_percent_float": 1.11,
           "short_ratio": 2.3,
           "high_proximity_warning": false,
@@ -18057,7 +18057,7 @@
           "data_flags": [
             {
               "level": "low",
-              "msg": "Reports in EUR; figures converted to USD at 1.0913. Trailing P/E may mix currencies \u2014 verify against filings"
+              "msg": "Reports in EUR; figures converted to USD at 1.0921. Trailing P/E may mix currencies \u2014 verify against filings"
             }
           ]
         },
@@ -18186,7 +18186,7 @@
           "revenue_growth": 44.7,
           "op_margin": 21.2,
           "pe": 96.893166,
-          "forward_pe": 25.74175,
+          "forward_pe": 25.708899,
           "short_percent_float": 2.36,
           "short_ratio": 1.9,
           "high_proximity_warning": false,
@@ -20430,7 +20430,7 @@
           "revenue_growth": 20.5,
           "op_margin": 9.4,
           "pe": 65.98561,
-          "forward_pe": 19.087694,
+          "forward_pe": 19.099182,
           "short_percent_float": 2.62,
           "short_ratio": 1.7,
           "high_proximity_warning": false,
@@ -20861,7 +20861,7 @@
           "revenue_growth": 45.4,
           "op_margin": 25.8,
           "pe": 20.234728,
-          "forward_pe": 18.809835,
+          "forward_pe": 18.80208,
           "short_percent_float": 3.34,
           "short_ratio": 2.5,
           "high_proximity_warning": false,
@@ -21668,7 +21668,7 @@
           "revenue_growth": 26.8,
           "op_margin": 11.0,
           "pe": 19.86637,
-          "forward_pe": 29.216965,
+          "forward_pe": 28.840828,
           "short_percent_float": 2.83,
           "short_ratio": 2.5,
           "high_proximity_warning": false,
@@ -22232,7 +22232,7 @@
           "revenue_growth": -15.0,
           "op_margin": 20.1,
           "pe": 6.6333685,
-          "forward_pe": 9.606373,
+          "forward_pe": 9.606076,
           "short_percent_float": 5.62,
           "short_ratio": 3.5,
           "high_proximity_warning": false,
@@ -23653,7 +23653,7 @@
           "drawdown_from_high": -18.3,
           "revenue_growth": 6.1,
           "op_margin": 32.5,
-          "pe": 12.338407,
+          "pe": 12.702305,
           "forward_pe": 11.372696,
           "short_percent_float": 6.03,
           "short_ratio": 3.4,
@@ -24204,7 +24204,7 @@
           "revenue_growth": 1.3,
           "op_margin": 22.7,
           "pe": 23.377193,
-          "forward_pe": 38.689915,
+          "forward_pe": 37.865334,
           "short_percent_float": 4.69,
           "short_ratio": 3.5,
           "high_proximity_warning": true,
@@ -25206,7 +25206,7 @@
     }
   },
   "digest": {
-    "generated_at": "2026-11-24T08:13:45Z",
+    "generated_at": "2026-11-24T08:38:53Z",
     "narrative": "Mon Nov 23: the S&P 500 rose 4.7% and the Nasdaq 100 rose 7.0%. Biggest moves you follow: NVDA +31.5%, CRDO +22.6%, NBIS +20.3%, CBRS +19.2%. NVDA, Nov 23 headline: \u201cTrump sealed deal for Nvidia to rehire Jensen Huang as CEO\u201d (CNBC). Earnings next: CRDO Tue Dec 1, MRVL Tue Dec 1.",
     "buy_ready": [
       {
@@ -25381,7 +25381,7 @@
       {
         "ticker": "CRDO",
         "pct": 22.63,
-        "reason": "The whole market moved the same way (Nasdaq 100 +7.0%, S&P 500 +4.7%). No clear company headline found for this move."
+        "reason": "Nov 23 headline: \u201cCredo Technology (CRDO) Surges Nearly 24% Amid Tech Sector Rally on November 23, 2026\u201d (GuruFocus). The whole market moved the same way (Nasdaq 100 +7.0%, S&P 500 +4.7%)."
       },
       {
         "ticker": "NBIS",
@@ -25540,7 +25540,7 @@
     ]
   },
   "analytics": {
-    "generated_at": "2026-11-24T08:13:44Z",
+    "generated_at": "2026-11-24T08:38:52Z",
     "funded": false,
     "total_value": 0.0,
     "total_invested": 0.0,
@@ -25637,7 +25637,7 @@
     "concentration_warnings": []
   },
   "track_record": {
-    "generated_at": "2026-11-24T08:13:44Z",
+    "generated_at": "2026-11-24T08:38:52Z",
     "tracked_since": "2026-04-25",
     "scoreboard": {
       "RESEARCH-WORTHY": {
@@ -31707,7 +31707,7 @@
     }
   },
   "asset_location": {
-    "generated_at": "2026-11-24T08:13:44Z",
+    "generated_at": "2026-11-24T08:38:52Z",
     "rules": {
       "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
       "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
@@ -32629,7 +32629,7 @@
     }
   },
   "daily_brief": {
-    "generated_at": "2026-11-24T08:13:45Z",
+    "generated_at": "2026-11-24T08:38:53Z",
     "date": "2026-11-24",
     "first_run": false,
     "items": [
@@ -32639,15 +32639,15 @@
         "ticker": "NVDA",
         "headline": "NVDA \u25b2 +31.5%",
         "detail": "Nov 23 headline: \u201cTrump sealed deal for Nvidia to rehire Jensen Huang as CEO\u201d (CNBC). The whole market moved the same way (Nasdaq 100 +7.0%, S&P 500 +4.7%).",
-        "action": "Its rating is from Wed Nov 18 and doesn't account for anything since."
+        "action": "Its AI opinion is from Wed Nov 18 and doesn't account for anything since."
       },
       {
         "priority": 3,
         "kind": "mover",
         "ticker": "CRDO",
         "headline": "CRDO \u25b2 +22.6%",
-        "detail": "The whole market moved the same way (Nasdaq 100 +7.0%, S&P 500 +4.7%). No clear company headline found for this move.",
-        "action": "Its rating is from Sun Nov 22 and doesn't account for anything since."
+        "detail": "Nov 23 headline: \u201cCredo Technology (CRDO) Surges Nearly 24% Amid Tech Sector Rally on November 23, 2026\u201d (GuruFocus). The whole market moved the same way (Nasdaq 100 +7.0%, S&P 500 +4.7%).",
+        "action": "Its AI opinion is from Sun Nov 22 and doesn't account for anything since."
       },
       {
         "priority": 3,
@@ -32655,7 +32655,7 @@
         "ticker": "CBRS",
         "headline": "CBRS \u25b2 +19.2%",
         "detail": "Nov 23 headline: \u201cCerebras Systems (CBRS) Shares Surge 18% Amid Market Rally, High\u201d (GuruFocus). The whole market moved the same way (Nasdaq 100 +7.0%, S&P 500 +4.7%).",
-        "action": "Its rating is from Tue Nov 17 and doesn't account for anything since."
+        "action": "Its AI opinion is from Tue Nov 17 and doesn't account for anything since."
       },
       {
         "priority": 3,
@@ -33623,16 +33623,16 @@
             "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ab2habU9pTTllNmRCRDdqTjgwQ3hsVFZDX1hhVkJxaVVCWHNhYjRHLXFMaWtnME41NGZ1Z1REMkh1d2Y0NUJGamJSdVJQcV9rZEV1aW9nUlhHQWN1WkFSU3RRMnZrNEpobEp5bVBoY9IBdEFVX3lxTFBXNkNGSW1MaGlybGVOX0YtaVI0YVFfd3NYMi1BenZKN2Ewd1JJT3NMMjdpaElsRF9jSThyVzBHYlg4dUxocjBjYnV1dml4czdrWHR4akNId1g3SVJYa0oyRkdEUHJPMnRUVFpkbUpxWHRtWUxE?oc=5"
           },
           {
+            "title": "Analysts comment on market impact of Huang's return as Nvidia CEO",
+            "publisher": "Reuters",
+            "date": "2026-11-24",
+            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPc2ItQmQwVDh3N0RBcExzLXhjZTd2NkpzcXRYZS1pUVJLRzU4dXpNTW9mYkZReWpPTUxLR3VWZ1h5QjJSWUtaZlJjLXkteGxvQzdpTW1uNE5wbi1PekdNb3V3cFIxb3ViMDZxSlRTb05mcUZCV29PbWwtaWstR1BIZzBsX3hHYWhoc2VHSTd2Z3lJYnlueThLY3lFVmtVeEpfUEE?oc=5"
+          },
+          {
             "title": "Nvidia surge: What investors should do with the stock and the AI trade now",
             "publisher": "CNBC",
             "date": "2026-11-23",
             "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9uZWtBWk05Z2I0ZmRRLTdjRDYyTHJURXdFWTlSOHZ6aDR2R2xDeDk1S2xOUGJmYXdFbDg2dG5oVDJYN1h1VjhncmZIY0xWZGxhMlFlNms1TGFsRlQ0Z0pHZm5hSjFESnAzaXBRcDc2ZHlnVVJWRFJwNi1IY9IBgAFBVV95cUxNd19EVE9ZXzlHUDZUc3hSX1I5SnVEODhhT0Noa29RTHBhV0l2RnlheXhCRWdqRW5BbTc0SGxLblYwZTBfQVVub1d4eGdaWjZKM1BhRlUwTk43RnFpUWdEWTU5VzM2d1J0ODdHeGRGdlkyMW8xYlNJbG5MWUZRU003aA?oc=5"
-          },
-          {
-            "title": "Jensen Huang reinstated as Nvidia CEO. Stock skyrockets 31%",
-            "publisher": "CNBC",
-            "date": "2026-11-23",
-            "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9McnlkOWZjTEROTXNrdGgtS19oWmNzcTFQSFBwUUdmbzBkOVFYQWY4R2JSdloweTM0V0F1a1gyZExpV2ktdC0zcTExdGxlbVgzaFRGTFR0cjViMTZkeTdyQzMtQ0JYMmJPQUNReNIBckFVX3lxTE00WXNRTHAtbXVYeEpKUVFhaExjRzNtSVg4VWphUk04cWIxOUpRY0VQeWNtdHdCT0Y4dXRZc3pqbDRQWkZ0UFk3S3NVRTFXazFOY3pyLWgwcVZFcWFMZUQ0b2Qzd1dDQjZWV0lGd2tvaDhiQQ?oc=5"
           }
         ]
       },
@@ -33648,8 +33648,14 @@
         "triggers": [
           "+22.6% on the day"
         ],
-        "reason": "The whole market moved the same way (Nasdaq 100 +7.0%, S&P 500 +4.7%). No clear company headline found for this move.",
+        "reason": "Nov 23 headline: \u201cCredo Technology (CRDO) Surges Nearly 24% Amid Tech Sector Rally on November 23, 2026\u201d (GuruFocus). The whole market moved the same way (Nasdaq 100 +7.0%, S&P 500 +4.7%).",
         "news": [
+          {
+            "title": "Credo Technology (CRDO) Surges Nearly 24% Amid Tech Sector Rally on November 23, 2026",
+            "publisher": "GuruFocus",
+            "date": "2026-11-23",
+            "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOREFZZFY4bzhlNjNqd1NtcVo0U2pNX0NQeGJMNzRwVnZlNkFCcWM4N3NsOHpVMk40eFd3VmFwb0JEd1FiZzc4S204dVk5c2VtdHMybW5HWDlPaGFiWEVncGxuZjZMOGRVMWw5Y3NxRTM3ODQweGxUQTRZdmdWc2R3R3FzVWlDOHV1UjZRSE5yUHNYSFZtZmh0dVBjc0drVG9UbzJQcnUxWjJJTUtMcGhybEZjSWNBcVhTUk9nUg?oc=5"
+          },
           {
             "title": "Credo Technology (CRDO) Just Made a Stunning Comeback",
             "publisher": "Yahoo Finance",
@@ -33657,16 +33663,10 @@
             "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONmowVDZMUGZDT0ZBd0ZGQzduc01BYlFPYnlYNmNsOFU1d2YwOENyS29xNDhBRlF6RjBzTUtQT1JCOXNGcDhJN1RZSG82NmVFSlBnd0VoYVRuVFd6bjItYmpDdmpIdlc1bFVTNnBCekVDY0F6NXBTWDZsWUp0N3dFNzItQWxTTGY3Z2pEQlpvclpybzVLUDdBMlpoaVY?oc=5"
           },
           {
-            "title": "Credo Technology\u2019s AI rebound potential versus Broadcom",
-            "publisher": "Yahoo Finance",
-            "date": "2026-11-23",
-            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxObVZCejdnTHVVMFZmWko5M29WNDdfanFyRnR4anBFV1FMaG01ZzhMWkhEbjZsb1ptbnJBS2czS2hhMnhwa3BVNFRqOEJpUGdMNC1Kcm5CVkktZ3NwbmFNRzR5VV92emMwbi02cUZzLWFVd2NLQmp0OEJicm9oU2o2OFNkWlYtSEQxY2hJQ01CSHd5b3RELWJZZlZmcVR1Yy0wMlVJ?oc=5"
-          },
-          {
-            "title": "Tech rebound sends Credo Technology higher by 24% (CRDO:NASDAQ)",
-            "publisher": "Seeking Alpha",
-            "date": "2026-11-23",
-            "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPMU9WbzctM2NiNERQTkdnX19YanBHZkZoTTNRTkptYWNGNi1WQTdJZkJ1a3A5endkWGZScjBialdWMmwtMjVjb2xLYVRvbDVmamtpMFJoR1YzVG1fd29yN2dyT2NweWtkNDdnbjFtellxeEpXM1hSV2ZoWW5VNkVPVjkxS1pjem5yT21MUDJjSQ?oc=5"
+            "title": "A Look at Credo Technology Group Holding Ltd (CRDO) After 22.6% Gain -- GF Value $294.08 vs Price $122.46",
+            "publisher": "GuruFocus",
+            "date": "2026-11-24",
+            "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNTEdnY1dFMmN5SGZkSlNmNVd5dWxpdi1NYUtZaWFXMFo5QWlPMnYwS0hMSFVOVkFRWnpFcm4xMHdXWUQwM3ZUV1FRSms1cmxuU1o5YkZPbU1kUmJycFZqTW9YSWxaUUstRi1kZ2RYTm5TWUlNVVlOTEVoZ0FVa3ZtNGlvYl84SGtxd1ZrX0dRbEtjSDN5bU1hNm1nUS1OcHJ1ekExTVRGMnc0UlFvVW8zeFNNLW95WVZxREd3dWM2cF95dnA4eWx4S1d5N1hJUQ?oc=5"
           }
         ]
       },
@@ -33787,6 +33787,12 @@
         "reason": "The whole market moved the same way (Nasdaq 100 +7.0%, S&P 500 +4.7%). No clear company headline found for this move.",
         "news": [
           {
+            "title": "Marvell Technology (MRVL) Stock Price Prediction: Rebound attempt faces overhead supply ahead of December 1 earnings",
+            "publisher": "Blockchain News",
+            "date": "2026-11-24",
+            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQajFReTFTMHc5eEFRTUxDT2Z6VXlaeFJxNmZyczJaSXhpb3NkRzhJZzVKaW42bHlOWm5tZnl3U21icnkzWjMtU3plN3JwN3NheGlqam1oWFJUVXl2LWhHM01XZmVmb2hZMnNmN2R5Q3BpVkFkZ3V4QkVfMVFFWmx4TE1kaE1wVUFrRUxwY0k4SjVKVi0zVFhhRU5HWDczM2NLeDF3bnRR?oc=5"
+          },
+          {
             "title": "Marvell target lowered at Susquehanna ahead of earnings (MRVL:NASDAQ)",
             "publisher": "Seeking Alpha",
             "date": "2026-11-23",
@@ -33797,12 +33803,6 @@
             "publisher": "Seeking Alpha",
             "date": "2026-11-23",
             "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPckg5dmRLMnAzclVrVlVJWk81NkEtU1MwSXBPQjhKN1g4UktWanZGZlVwcFZzeUF0SmhtSWRhcFZIczNDNy1pcVNFWS1NbDJLUkRHMmRmWXBhOXppUUlDLWJ6TmQtM25RM3B3S2I1aHhSNEswTkxsSXd6T0VRcDBibW9Zb3RjMGg3YTY1VWRhNVk?oc=5"
-          },
-          {
-            "title": "Marvell Technology (MRVL) Surges 19% Amid Tech Rally; Valuation Remains Modestly Overvalued",
-            "publisher": "GuruFocus",
-            "date": "2026-11-23",
-            "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQcTBvQXNockNCZXA2cVh0TXRNYjMzV0VxbEtSVWN2U2hkY25mVEhKcjZsY0ZrQWd4d1k5dWFIbFhGZTF1TkRnckl6ZUVrQnB0M2I3NjVwRC16N0JVUURCN3pUNXZQVTlmQnNmWUxSSlBYd0dHdzQ3ZXNRbHJrV1lxWmNaY01FRWlCU3VTNlpQOWxQbFIteVNkSVltbnhWUzNYNmh4WmE5bGhsWjJ5NWdZS3NURHR3dktpX1g5cFNUMUV3TE5W?oc=5"
           }
         ]
       },
@@ -33861,16 +33861,16 @@
             "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZTRfUXB3WUUwa0RQYmNjZWVhYXBOTF9oNGFuN0t4VHVORmt4SklZbWN3ZV9KUER1a3dOY200VkVfMlhCelNISXNMMDNBOVhyTWlmYXRvN3BoclgwOGRqSWpfR1ZqOGdFMlhsUklRb3Y1N1phWGtLaUtocEVTMFM3cW5DWlBpQmJ3RXZzdktQWVZ5Zm1XYlFuWFdkRl9LYWVZTEJockRKYVBjZlBBdGpEMmxQMA?oc=5"
           },
           {
-            "title": "Coherent (COHR) Stock Price Prediction: Strong Q1 growth meets a bruised chart and mixed positioning",
-            "publisher": "Blockchain News",
-            "date": "2026-11-23",
-            "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUUt5UHJidEd5VVM3M1lnNjRDdWJDdUlNdkRXWGtyNjdFZ3dFSWZ6YzZFYTVZMTh6VE5YQi1wRFlxYlEwNS1jWkdYcHlsRTJLYldRM2RLMkJZQmVMRjZxMHRyeEFuQzRqR2hZMVhaVVlIZkVwUktfLUJPLXoyeWl2Z2kyOVYzSzdJLXloWVJaellFQzNSWEFV?oc=5"
+            "title": "Coherent stock falls 15% as the AI chip rout hits optical suppliers",
+            "publisher": "Startup Fortune",
+            "date": "2026-11-21",
+            "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbTJCVjV6OUtoUHMydU9NcTRYZnRWemN1bHlDQVdCR0dFa1UzUk9TSUM3VnpZUl95RzVMSFRyb1c0T3IwbnZLdXRKcTVjRkdJeEgwdWl0aXowZ283dzBGSlVmdF8wWW1lQXBiU0dxR0RKckk2azVBdUhKWENSbWI1bE10X2d5YlN2NnZYcGM0RXpJV084UDNNUjVR?oc=5"
           },
           {
-            "title": "Wall Street Analysts Think Coherent (COHR) Could Surge 70.08%: Read This Before Placing a Bet",
-            "publisher": "Zacks Investment Research",
-            "date": "2026-11-20",
-            "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQbFVMOFZxSF9nYi1nVHl1MGU2b1FzaVJySGRLaDVQZjRBOU9JZXFjME40enB1V29Va0kyenU4QUxtYXJiUFBNWjNxYmdERzZOYms3M0JzWUh3aDZEdC0yUG84UFpMd010cnpOR21lM0psOTVNNWV0UzMzazd4ZjdBMjQxYy1lQm8xZEtsMG1iYm04aGF6azlWSDJEYWVqbHBxUHdfZ2lrcnVXUjJKUDBSQXpXcUF5YmlWSjNhMmtETlRXMUFFTVJPNQ?oc=5"
+            "title": "Coherent Corp. (COHR) Stock forecasts",
+            "publisher": "Yahoo Finance UK",
+            "date": "2026-11-21",
+            "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPXzlLS3J0OHc3dDMtTjhlVjhpREl3bllFT2hMWDdUaUtfdXhsNF9sOUlXdGl6Z2Z5ODlvcldidEJBeEVMcy1nVnNuTk54QWs4dV9wTloyZjZSU1hZMzBfczNhZ2xpUmVIWHpqcDRyQ2dYb0NObFdvTFFJNFQzakxnNXh4RUI0MlgzeVFfaGNpTlU?oc=5"
           }
         ]
       },
@@ -33954,25 +33954,25 @@
         "triggers": [
           "+11.1% on the day"
         ],
-        "reason": "The whole market moved the same way (Nasdaq 100 +7.0%, S&P 500 +4.7%). No clear company headline found for this move.",
+        "reason": "Nov 23 headline: \u201cComfort Systems USA jumps as buyback expansion and bullish coverage appear to fuel rally\u201d (Quiver Quantitative). The whole market moved the same way (Nasdaq 100 +7.0%, S&P 500 +4.7%).",
         "news": [
+          {
+            "title": "Comfort Systems USA jumps as buyback expansion and bullish coverage appear to fuel rally",
+            "publisher": "Quiver Quantitative",
+            "date": "2026-11-23",
+            "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRE85REFYck44RDdPWGZ6SDlKakZ6Q053Vk1BRkRSX21BT2U3R1lFUjJ1RWJJSkhvc2VKdW5NNlEta2FOM0NKeFNaLVdfeG4wRE1vM2FCUFA4OWNYSE5TRE1XbUlwSEUyeldmMXhNSnl1QkdoOWRNMWJ3dlFzMndheUpaVkNOYW92MzFySlBMMnBwN3B0ZGJzdVdaY2ZTbjJxbURsU3BmVHFTTXJ2QmFoS0V4NlNncnJackVsZll3?oc=5"
+          },
+          {
+            "title": "Comfort Systems USA Inc (FIX) Shares Surge 11.1% -- What GF Scor",
+            "publisher": "GuruFocus",
+            "date": "2026-11-24",
+            "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNendWMUhvVjhFN0xTbTl4THJWbUdFdkh6WGVqRDBHMGVGcERQejVaQ09KQjFwMFljUUFyRWZpcl91Vm5SZ1E4UDBJaWpwNlNwbU1KRDhjZ1Myd3B6UlRWS2ttdW1XVm1lWVM5SlJZV3lKbXNQd2tncXlHUFdjOXFMQ1BEVU9hMnBOWGZVYWNHdUtwSWdnNngyV1BNd2ZIenFvMDZzRm1OYXNjTVMySDRnNUtUbTRBanc0VG9r?oc=5"
+          },
           {
             "title": "Comfort Systems USA stands out as the top industrial stock to own",
             "publisher": "Investing.com",
             "date": "2026-11-23",
             "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQajJyb0pYODNBNjZMbGZXMWVIXzAzalpCTWo3ZE9pRHZ0OEFRZmZRUnVJRkJib0o3SXFvb3ZhX00xVHdFTm9ZLUJVQ0lnZmVOb0N5Nk5XMTEyR3NDTkdWQlEwSGt0RHpETFFQaldkMVNyQU5OcnlHbUhpeHNidl9zLWhIaGVoMWJDalRsYWtVdl9OYVliWjdmNDdYbmlTcFU1M0ZQSlhPaVVnek1XZ196Z1ctM0ZmazJwQjRtYnV3N1VFU3o2clE?oc=5"
-          },
-          {
-            "title": "Comfort Systems USA Expands Stock Buyback Authorization",
-            "publisher": "Construction Owners",
-            "date": "2026-11-21",
-            "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZ3lrSkdEMnJ4eTNwMjZmcUJOLWtQdl9kcjlUQUhHUzg2MWx2T2RJSkhhQ0Nuc2tibUt2WGRaTDF5VHZ1QlVqUG0yMEtTamIyZ09HZEVEamR3dUNiUExRakpyUl9MX0g4eXI1bXNvZlNqeDJQUzlfbHBhRV9yRjFtR3NITzU1aTVibUFrakRrbzdWcnpVMEx4b09lTHJmZE80ZkhTdzl3Rmc1QkxoWnNSQXZaclFLZw?oc=5"
-          },
-          {
-            "title": "Is Comfort Systems USA Stock Increasing Your Market Risk?",
-            "publisher": "Trefis",
-            "date": "2026-11-20",
-            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNMlVUdVg1Mm41cHFMb25PTU9hWHN2WmxRclRKc1AwX0J1UmEwV1JGT3JycFhsUDdHVnMyaVZac3B1dUJwX3VMNlJSMldVRnYxU2VBQ1h5STRva21TdENUN2RlWXgxY2ozZXNiYlJra0RuR1pHYmJENllLdEJGRk5yaUhxX3RSODVIS3FPR0ZPNUlpQXgzeDduemt5WTVVUlYxaHRpSlhNTXE2TmVVSTV4ektvVE5PLVk?oc=5"
           }
         ]
       },
@@ -34031,16 +34031,16 @@
             "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdVRxS1JsWVMxeWthbjFlQnpqU2M0UEx2dnVwczlNYUpPLWs3RE14cndVMEJWVTBndXhyODBiQzR4bXZmU3FBdEhEckdxVUlOTkY2Qnk0UTgwMzFWNkphQUdYR0hxVjd5WWlacnAzbkxaMlR5MXNDVGVxWWRpMlNsMExVZkoteEh6bV9kdGZ1TmpxNmFRS0FqYVRnZDVDTjBELTVwZFRoTTJLYjdkNVZPTk8xVVFfSjlS?oc=5"
           },
           {
-            "title": "Talen Energy Corporation (TLN) Stock forecasts",
-            "publisher": "Yahoo Finance Singapore",
-            "date": "2026-11-20",
-            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdkwzeEJ6aXpSbjdyclpHWU5GUmptUC1UdVFGVmljLV9iY2x1cC1xWEZ5c25zN0tnTWM0RUZMQy1YVkxTTTVnN0dEYXZkUnd4MGlIZWF0ZExYZElYSGJCTklEVFB3RzNoRlNaYmJBbVdjVml2YUMwMXFvS3ZKSWhZY3JqZGZhbm85OE5INEl6bm5IZkE?oc=5"
+            "title": "Talen Energy (TLN) Locks In Long Term PJM Deals With Valuation Still In Focus",
+            "publisher": "Yahoo Finance",
+            "date": "2026-11-21",
+            "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNd3RzUUJJcHFQVm1rcFJPdmhkNmoyRFhnYi1SVmRiTFF1YTlCTnRoeW1KN1BkYmtaN25EZ1RhQmloYjg0ODhTcUtfX3Y0bWpkWDJzQjF0Wkx3Q0dWYnpzVEVOQXRDRndwUFEweFNmTTJlWmJfTEdPTjZBNFZMX2JxdEZWc1lIZmdOQnJFMg?oc=5"
           },
           {
-            "title": "Talen Energy Corporation (TLN) Stock Forecasts",
-            "publisher": "Yahoo! Finance Canada",
-            "date": "2026-11-18",
-            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPeDgtcktad25tbFV0aWhIYjBhckVZSGN3Q0RpVU8wNTg1V3VUSVhGeVJRYmprZkNteGljUVNGSGx4MkpDckdHUkRpTkMtMFRoNHYtWHRVYW9NRHl5alJ6cVI3eWJ5UGRDQTdJV1NsWjM0MGctTlFBckNqaGNKRVdBdFZ4UE05WDZucnlLcHFQRE9mNjQ?oc=5"
+            "title": "Talen Energy COO Brad Berryman sells $19.8M in stock",
+            "publisher": "Investing.com",
+            "date": "2026-11-20",
+            "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNXzdkZThvUGQ2NFRqUXhpT2dyZVFOZDBIb0U1UVhFbTRKWlJXQVowbTVGOXNjTUhEOVZrNnJNQlI0cVdRNy1TMTNsaHlQenQxNlk5U2U4OWZSeldLOE9rUUkwMFE1SlV5TjlHaE9yNUxkQ2tyMExxMDZjbmlMdjR6Q3FaeTdhZXA3TFNNbmJiQXkzZDJURElBakxnTndORnVtRWZHekRkZHhIMUV2UUVHdloxbUl5Zw?oc=5"
           }
         ]
       },
@@ -34071,10 +34071,10 @@
             "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZTYweVdsZXFyeGUxSldpLVRMUzlPU0Y4V2ZGR3l1SDhWMG5QQVh6dmFvUGJqV2pkWk43a3ZhSi1QNWZFVGhrQlRCMUFaZWxkR2ZMalpNMEl4bEE5ZW9ZeUhVTTR2M05YTlF5ejcwWV9kUXNLRGE5WTV4d0hjRkR0SzRIV21EWXp5eUZZSnVQMExMSHE5QXBIV3BzSzBNNGx6RXM2eGE0U1RXbE1YcEdUbjRrdWV0cFJNUnJHUQ?oc=5"
           },
           {
-            "title": "Powell Industries Q4 revenue rises 33% to $397 million",
-            "publisher": "Crypto Briefing",
+            "title": "Powell Industries Seeks Acquisitions",
+            "publisher": "www.marketscreener.com",
             "date": "2026-11-17",
-            "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPOGRkSnBJeF9vOGUwNS1WWlBiMEdwOVpNa0F6aEYwVVBGMGVIWHo2RENNb01jZkNJSlhLRVAyZGpKN0o0eHJqWUN1cXp6Q1lXQVR4X001dzFYOEItTW9iTnpEZW5zY2p4bmtZNWk2a25BVEpvMWZFSG5fclRTUDlYanRwSQ?oc=5"
+            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPYXl3RFNhU1VLd0JkZDJ2cktIZk9GNk9sOWJ2Z2hxdHZsci02YVAxdF9yOHJ6MTBFTTVKVnI4SGd2MEVHbEZxYTRiNW10cmZKb1ZSeUl0TjN3MDhSTEpINHhaZlRsNlZLZWJKa0RFUXRMQURzTEVIT2M0M2NWczk1czNMWHZQS0JBZzBWdmt0N3JzZ1E?oc=5"
           }
         ]
       },
@@ -34090,13 +34090,13 @@
         "triggers": [
           "+9.3% on the day"
         ],
-        "reason": "Nov 23 headline: \u201cASML Stock Quote Price and Forecast\u201d (CNN). The whole market moved the same way (Nasdaq 100 +7.0%, S&P 500 +4.7%).",
+        "reason": "Nov 23 headline: \u201cASML surges 9% as chip stocks rally (ASML:NASDAQ)\u201d (Seeking Alpha). The whole market moved the same way (Nasdaq 100 +7.0%, S&P 500 +4.7%).",
         "news": [
           {
-            "title": "ASML Stock Quote Price and Forecast",
-            "publisher": "CNN",
+            "title": "ASML surges 9% as chip stocks rally (ASML:NASDAQ)",
+            "publisher": "Seeking Alpha",
             "date": "2026-11-23",
-            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1qNThlRFUxU1lXM3hiUTdwc0M5T2t0cElFUkR1YTktNzFJMWRsNGhnMTNpYzJWZ19YS1J4aXJXUmkzNW5BSGRYTlhaVDZKY1o4?oc=5"
+            "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBDTHVWdFhBU1B6Y0RWNmxFZG13akZXdjZGUXkxb1F5cGY3cVExejRnNmQ1bi0tUGl1akRvNDR5Y0o3UmlPaFp4c1hfbEV5eWdyOVhrN3FXTzl0SThHeU9KeFVpNkJBRG54Rnp2THdTRk0za3hsUlI4eWtoWDk?oc=5"
           },
           {
             "title": "ASML Stock Fell 25% In The AI Selloff, But Its Outlook Hasn\u2019t Budged (NASDAQ:ASML)",
@@ -34105,10 +34105,10 @@
             "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNS0xMdThabnAwMURidkl0a3A3alJKVzN2bnJTdThoMUZFQWdaZEEyNGh6OXJmQWQzSXlKM0Y4ZTN0bmNUdmVxRDY2MUlXWmVnNVNuU1VYZEhUMHdKcXlQbHZzMDBER2hlTHhfd0NWVmRkQnA5cHhBb25FTHUwTkpnU3JhQzF5dlNKZ3ZPd1RSR09lZXZkZERYc1FORkhCSlZERlBQM2xPQkg5ai1YMHF1MGFGeV8?oc=5"
           },
           {
-            "title": "ASML surges 9% as chip stocks rally (ASML:NASDAQ)",
-            "publisher": "Seeking Alpha",
-            "date": "2026-11-23",
-            "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBDTHVWdFhBU1B6Y0RWNmxFZG13akZXdjZGUXkxb1F5cGY3cVExejRnNmQ1bi0tUGl1akRvNDR5Y0o3UmlPaFp4c1hfbEV5eWdyOVhrN3FXTzl0SThHeU9KeFVpNkJBRG54Rnp2THdTRk0za3hsUlI4eWtoWDk?oc=5"
+            "title": "ASML Stocks Fall 2.72% as New US Rule Tightens the Chip Supply Chain It Serves",
+            "publisher": "Yahoo Finance",
+            "date": "2026-11-17",
+            "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOUl9OTjV3ak52UDhNeENtTG9GOElJUF9fWWNtZ0dIN1Bzb0R5QUt4WG5tZHEwbHJmM0ZvQnVaWktvaGw5OW9YUFhvSGxodC1yM1B5RVRWNXFNSGJmT2lINGFHazkwSy1zWl9ya2FtVkJmbGJwSThnTmZCeWFraDAwdXE0TG45Q0lucGc?oc=5"
           }
         ]
       },
@@ -34263,6 +34263,12 @@
         "reason": "The whole market moved the same way (Nasdaq 100 +7.0%, S&P 500 +4.7%). No clear company headline found for this move.",
         "news": [
           {
+            "title": "AppLovin (APP) Stock Price Prediction: Earnings strength meets a still-fragile near-term tape",
+            "publisher": "Blockchain News",
+            "date": "2026-11-23",
+            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZDd2YlRLMzZzandvTnlVbll5QjlqeXVSbzVNMXAzQ3MzTDZIdEJlMUpMSWFpQ2FXazkyM3M0NVNFbl9MSldHelV2a3dkazdRMXM0cHhidkFzNUlRMjMxWmVqUFg1d1pLTm9NV0N4LWVkYzJ4YWhWVDE4MlV4S2xpUURjWjhPNWlSZzBnVU5jVHlhZ2F2TUZQT1VCTlJUX2M?oc=5"
+          },
+          {
             "title": "Applovin Corporation (APP) Stock Forecasts",
             "publisher": "Yahoo Finance",
             "date": "2026-11-21",
@@ -34273,12 +34279,6 @@
             "publisher": "Seeking Alpha",
             "date": "2026-11-19",
             "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNc1ZORWcyNzJ1Q0pxOTNXLWQxQU1BalVfVnJfVjkwMTBGc2JreG1ZT3JNZEJLYVRscWx3blZuSE83bWRlc2FscXcxNTRSSTF3OHVUOWVaWWo2dWludkdNU21fWkJBTE8tUzBhOTMxcFRBcENnMG13YndNYXl5MlQwSnAzMjVGdFhpLTBCcFZMS3JrbnZhbllqUE1aV014TUhGYmFvbUZfbE9YNFhM?oc=5"
-          },
-          {
-            "title": "AppLovin Pauses After Q3 Surge as Traders Test Range",
-            "publisher": "TradingPedia",
-            "date": "2026-11-19",
-            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOUG1lQ1VjX2RkNTVfZjhtS3Qtc2dZNUZOQnI5TERpbUNOcUxqcDQ2Snltb2loUjRlQjBDUFR5X3E5Rjc0LVUtMnhGeEluOTVnamJjdzRRSUlwVm9BWTFfZzBkdnY2Q2tYN0w1UHBmeVRGOUtWSFdjeEpFWDV6OTM3TFRLT0lXNk5pU1lnd0F5aDdPeGNDNWFBaA?oc=5"
           }
         ]
       },
@@ -34377,10 +34377,10 @@
             "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZzhybzVTZVUyUE84Z1l6bXRqUTZTODd4Q3AyRVU5bHN0N0RUM1RZdVJyYU1VYUgtSkZ0bDBkbUJ6MFRWdHREbGY5N2JaWGR3bGZkckY4R0Rud3ZDeWJvREg2NVpDVGJpVFhDVkI2X3FrdVNvemkzTUZBNlRaNlZlLWJHS2xzMHlhSGJreTB3UGhJaXRIUExYS2k5ZkhSMkRwTm5YaVJiLXNiczFGcHVZNG05WHNxb2Vu?oc=5"
           },
           {
-            "title": "BWX Technologies, Inc. (BWXT) Stock Price, News, Quote & History",
-            "publisher": "Yahoo! Finance Canada",
+            "title": "Westinghouse, BWXT Canada strike AP1000 component manufacturing deal",
+            "publisher": "StreetInsider",
             "date": "2026-11-23",
-            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9GLUp3Rlh5WTRhTEs3MWVOMlVUQXp5enRkUFFrS1NPZTU4QV9JM0VKRzQ3S0NKQ2JTQnBoVklXaVc2S2FndGZ2VkNXVzFsV0lYTWc?oc=5"
+            "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPRmhQNWdhU0l6dFgzYlJRbEcxMXJibUlPa3d2Y0tiZ04tTUkybTVrZW9ycC1sdmNtRHhRRHF4VnNLUGQ5ZnB3RTROMG9mTDRLcDJQa21yQUozWUJxdkVwdzFRZHh3TmpySmxXUW5YQzJiN29NMTRnUWtBdWx3cEw1SXZMOUVZQXFTcnhsWngtZFh1YWxpZ1BzTHhSX1psZm02X1l6VExYNVRVUElkV0NoOUpKNkZTSXNoOGtUc0RHNmphbldEcDE1dA?oc=5"
           }
         ]
       },
@@ -34396,25 +34396,25 @@
         "triggers": [
           "+6.5% on the day"
         ],
-        "reason": "The whole market moved the same way (Nasdaq 100 +7.0%, S&P 500 +4.7%). No clear company headline found for this move.",
+        "reason": "Nov 23 headline: \u201cMeta pauses Class C share issuance amid shareholder lawsuit\u201d (Reuters). The whole market moved the same way (Nasdaq 100 +7.0%, S&P 500 +4.7%).",
         "news": [
           {
-            "title": "Mapping the Market: Meta shares may be about to deepen their slide",
+            "title": "Meta pauses Class C share issuance amid shareholder lawsuit",
             "publisher": "Reuters",
-            "date": "2026-11-19",
-            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9PbGRpVWZIQ1NsV0s0SXhzRzdBZ0hqSVEySzJ3VmxrZFNqaU1QWnUtYVpJOWtrZzNZMUxKUlJnUk1YbTJHMF9pRnQ3TnZ4d1E3NTJQZUg0Y2VBRnBLRFcyR085enFGVExvSHRQaE5mNGp4c0ZMOGw4Vg?oc=5"
+            "date": "2026-11-23",
+            "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNN2g3TFJ5emdHN3NnLVJ6TTFuUThTVW42UmthQXkzLWtkaUUxN3hyOWRtZWttRGdaOVFZMjZoOFJwYmJfa1ZtX0RfZ0hEai14NXFBX0s5ei1EMDhiQmhDaTQ4WHNNNEJsLVNaS25fQVh5eGpnektkOG9xSTJncXVNRjI3U3ZRLVBFTUJuOVR4TGdSbllaZ29MRUxxcU1ZbUxYcDc3MHdEV2l0Q3ZzdlpBZV9kZFcwZw?oc=5"
           },
           {
-            "title": "Meta pauses plans to create non-voting share class after investor lawsuit",
-            "publisher": "Financial Times",
-            "date": "2026-11-18",
-            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTTBLRkFSZGlxVEtndFpScWRFck5nVXVLLXZiazBpMGxHQ1YwZG1FQVNvZXlVWEk2T0xhUWZNanhhSTN3aUF1WGZmbXFKU0xPQ3MtSUlPbkV5RlhYcFhVOFQ2WVhKMUo2ckNMeWs3TVVZa1FveEt4bTdLTVM5SDA4NU1URVU?oc=5"
+            "title": "Meta, Google Beat Liability Claims Over NY Mass Shooting",
+            "publisher": "Law360",
+            "date": "2026-11-24",
+            "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQcDlIWExNMEMxRjViOTBMRmdfcUJnMllxYkVFeVdscGphbno4SVJiMEhUUkU3ZnZZNG5jV1hXZmIzeFJvTktLTHJUbjl5STVVa0pRcGdHRDJtVUpJS2FNNzVhSTdBOTRYOWVnVHZVSVF4QTIybHI1allqZTg5Skh3UzhNWGFqdWxmTEhiN01kdGF2eHFZcnBxSF9wZ9IBVkFVX3lxTE4yOXEzVGxvdE0wUWlmM3hvWEdrY2FNV09fbUR3WkdQNXdlWXBCRUMwanl2Q2Y1WHgwVW9sZDNYcHJkZWtkZGEzZWlkcWZjN0pvLXlsUFhn?oc=5"
           },
           {
-            "title": "Meta seeks to raise up to $25 billion in debt sale as AI spending jumps",
-            "publisher": "CNBC",
-            "date": "2026-11-03",
-            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4xMlVlY0MtTHpoVEU4UlM3dk9mTzF4dl9pOUJWLUFuY2tPR3diQ3UzODhyYUN0aWctV3RDUF9Ba2RzR0k3QUw3ZXdLd013NlRSNEpEbl9jSWNMMUhRNEg3UGw1RGpObGxMTEVqenhfUdIBdEFVX3lxTE9jZzllUGdZQ2R0d1pmQ0cwNm9uWU5sZHV1dUx5dW5Oa1Y4TWZPaU9ZT0NQSVhKYWZYN0tJM2otdUh5dEhCMVB4dk9oZGdKUk1MQTVpX3RlZnZNblExaVNRLWpQT2FxX1BhX09NeTRYb0dLOXZk?oc=5"
+            "title": "What Explains The Fall In Meta Stock?",
+            "publisher": "Trefis",
+            "date": "2026-11-23",
+            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQOGFiY1Nic3hFMjIxNWxSb1VGQXd2Q0x5VWxQLWJHUE9zTzIxOTNySGVlZVR1Q2tLWE1SVjhDMmlEb0wxQ3hXaHd5S0hiclNxNENTUjg3aXBIaUM0QS1wb0RFTEdkaVVnN0Rya2ZxOXRHQzhzVGhlbkRkQWtJLXlXN0k0ZWhlNnhndnplMFMxWVVXQzZCR1NZaFA3LURTQQ?oc=5"
           }
         ]
       },
@@ -34501,22 +34501,22 @@
         "reason": "The whole market moved the same way (Nasdaq 100 +7.0%, S&P 500 +4.7%). No clear company headline found for this move.",
         "news": [
           {
-            "title": "Is It Too Late to Buy Celestica Inc (CLS) After 5.7% Rally? GF V",
-            "publisher": "GuruFocus",
-            "date": "2026-11-24",
-            "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQk1oVDc1dDNMWUF3dnVRS3BZTjN6dXl4RW9vSkpVZG1DZXJMUGc1TDZxN1JRM0VuVngwNjNCVHFVSkVNWlVxWE00Q0dSbGUyS3pEb29QOGZrQ0dqanFPY3dUY3JPaWRuZmNfZkJQSXNqNlZjblJ2dGUteGdmaTJPRzJLeUZERENmZ2U2S01uTlRZSV85QjFNTUFKMFEtVlpqaXNKd1p3MXhRb2NZZzczRW5zUUdRaUZxS3Uw?oc=5"
-          },
-          {
-            "title": "What Explains The Move In Celestica Stock?",
-            "publisher": "Yahoo Finance",
-            "date": "2026-11-23",
-            "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQN2pPVzU2MnQxdHVJQjVEblp0NmxZdWFuS0llc2R4S0hpWUdQRXZESGUwTnljaDhHdk1SeHd1dWd1aERneV9yOXNSb1V1VF8zbjBVTXMwQWVYektCczRBbVVDQkEyVUU1LVhzem9adUg3TWhEdTNLTjVpTG1nOTJEd2IxUUxHWTk4Sk8xdlpYRHdfUTZ3ZDdPMER3?oc=5"
-          },
-          {
             "title": "Celestica drops 15% amid broad tech selloff (CLS:NYSE)",
             "publisher": "Seeking Alpha",
             "date": "2026-11-20",
             "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPdlBwQWJOV0kwbnpwajJ6eDJVcWJLLTMyNnpSY29vcTZTLU45NHdfaGxmV0RNVGNOY3h3ZVpXMHV0TkxZM0hDVkVlMkVyNEtfQlpNNjF6cS1JVy1QMUJ3N2RTaTZrRW1JaUVUVENybnA1Zk1Eelc0akMyRXVPdHEwcUlfaG5Oc01lOE1nQi1JanQ0UQ?oc=5"
+          },
+          {
+            "title": "Celestica: Time To Buy Again (Rating Upgrade) (NYSE:CLS)",
+            "publisher": "Seeking Alpha",
+            "date": "2026-11-19",
+            "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNODFzVENvbEdsS0xOd0lEbUNGLTBqVnNxUWpPekhabnpGbURzcnFoRVZzYkdEMlhIU3BPRkEtOEdUWU1TNFd6Q2Y5S19uY3ZtZFdRTEhQQlJmNlE3a2Q2LU1qZkZZYnU3dXR1WXpGeWU2bEE2MThvaHNJUGVjNG5xVXVR?oc=5"
+          },
+          {
+            "title": "Celestica Raised Its 2027 Outlook After Sales Jumped 83%: Is It Too Late to Buy?",
+            "publisher": "Yahoo! Finance Canada",
+            "date": "2026-11-13",
+            "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNZHFFakxBV2t5M0N5UXFlLVFDVnNNbUZ0RmI4LUt6WjJjeERiVEt6QWVycEZPRHQ0Tlp3Z1lXSzE3ZkhUVnZUYkJaRTd1UFZiUnBZNFlHU1dXbnpQaUV5ZlBQZHBOS2U4dC1HblpsR1g4azRJenIyS2ZQS0xIdmtRR3d3YVpjU0tmQzdvRw?oc=5"
           }
         ]
       },
@@ -34535,16 +34535,16 @@
         "reason": "The whole market moved the same way (Nasdaq 100 +7.0%, S&P 500 +4.7%). No clear company headline found for this move.",
         "news": [
           {
+            "title": "LMB: Limbach Holdings Inc. filed SEC Form 8-K: Regulation FD Disclosure, Financial Statements and Exhibits",
+            "publisher": "Quantisnow",
+            "date": "2026-11-16",
+            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNOXVGS1BMLWYzc1gzNDJhSkg1OUtodFlhODJrbWNhYzJtUkFpWmVCVmM0NG1NRndnQ184SHlQRkh5N0dRWGRmTTM5c2UxZmFvWFE1Zk02MVd4MER2YTVocU1qdVVIeDgwMG9BcnVaVktvU1dfa3h4MFU1LWZLMU9tcVA2aVplRENGSG5sbVFzc1lNd3lpYkNDbTgzdUZwaUNLVjlVNkRhQV9ROWs?oc=5"
+          },
+          {
             "title": "Limbach Holdings: Stock Recovery Catalyzed By Q3 2026 Results (NASDAQ:LMB)",
             "publisher": "Seeking Alpha",
             "date": "2026-11-14",
             "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPemNYeEdqVDZhUVNpNjYxZzFCT3hBejN4Q200MmpjalJhZ05ZZ2U3LXVZOTdkUTFvWDEtU1RBSXBRTHNIcXN0Tmw3cEFDdGhnbmJPMUtiT25WaE14eThZZjZIV3BOY09KdjF1NXFKUDgtNW8zMi0xY3A2UzN2cEItX0FCemZEdUhCbTJEeDZiYjF4QjBJU2YtV3JPSWJWLUFTbWZV?oc=5"
-          },
-          {
-            "title": "Despite Fast-paced Momentum, Limbach (LMB) Is Still a Bargain Stock",
-            "publisher": "Yahoo Finance",
-            "date": "2026-11-06",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNXzBCM0t2Ymd3bTVMRFFvQ0NlWFdDc0h2R1hobDVidUY0d250eFNFSG5TckNHdnRoQVZCY25IcG5oczU2eTkyazNwOF9WWlQ3TVNlYXBid1hyekNIM2pVbWx1NVR4ZGhCckJLbzFPbTlYQm12XzA1NkN5OHZqSGFPa3RMMjhfV1d3Y05CZUROcWt2TmFKZFJudERlVVN2Tk9icmc?oc=5"
           },
           {
             "title": "Wall Street Analysts See a 37.61% Upside in Limbach (LMB): Can the Stock Really Move This High?",
@@ -34555,10 +34555,18 @@
         ]
       }
     ],
-    "movers_updated": "2026-11-24T08:13:44Z",
+    "movers_updated": "2026-11-24T08:38:52Z",
     "target_hits": [],
     "target_approaching": [],
     "news": [
+      {
+        "ticker": "META",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Meta, Google Beat Liability Claims Over NY Mass Shooting",
+        "publisher": "Law360",
+        "date": "2026-11-24",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQcDlIWExNMEMxRjViOTBMRmdfcUJnMllxYkVFeVdscGphbno4SVJiMEhUUkU3ZnZZNG5jV1hXZmIzeFJvTktLTHJUbjl5STVVa0pRcGdHRDJtVUpJS2FNNzVhSTdBOTRYOWVnVHZVSVF4QTIybHI1allqZTg5Skh3UzhNWGFqdWxmTEhiN01kdGF2eHFZcnBxSF9wZ9IBVkFVX3lxTE4yOXEzVGxvdE0wUWlmM3hvWEdrY2FNV09fbUR3WkdQNXdlWXBCRUMwanl2Q2Y1WHgwVW9sZDNYcHJkZWtkZGEzZWlkcWZjN0pvLXlsUFhn?oc=5"
+      },
       {
         "ticker": "TLN",
         "verdict": "RESEARCH-WORTHY",
@@ -34568,12 +34576,28 @@
         "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdVRxS1JsWVMxeWthbjFlQnpqU2M0UEx2dnVwczlNYUpPLWs3RE14cndVMEJWVTBndXhyODBiQzR4bXZmU3FBdEhEckdxVUlOTkY2Qnk0UTgwMzFWNkphQUdYR0hxVjd5WWlacnAzbkxaMlR5MXNDVGVxWWRpMlNsMExVZkoteEh6bV9kdGZ1TmpxNmFRS0FqYVRnZDVDTjBELTVwZFRoTTJLYjdkNVZPTk8xVVFfSjlS?oc=5"
       },
       {
-        "ticker": "ASML",
+        "ticker": "FIX",
         "verdict": "RESEARCH-WORTHY",
-        "title": "ASML Stock Quote Price and Forecast",
-        "publisher": "CNN",
+        "title": "Comfort Systems USA Inc (FIX) Shares Surge 11.1% -- What GF Scor",
+        "publisher": "GuruFocus",
+        "date": "2026-11-24",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNendWMUhvVjhFN0xTbTl4THJWbUdFdkh6WGVqRDBHMGVGcERQejVaQ09KQjFwMFljUUFyRWZpcl91Vm5SZ1E4UDBJaWpwNlNwbU1KRDhjZ1Myd3B6UlRWS2ttdW1XVm1lWVM5SlJZV3lKbXNQd2tncXlHUFdjOXFMQ1BEVU9hMnBOWGZVYWNHdUtwSWdnNngyV1BNd2ZIenFvMDZzRm1OYXNjTVMySDRnNUtUbTRBanc0VG9r?oc=5"
+      },
+      {
+        "ticker": "META",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Meta pauses Class C share issuance amid shareholder lawsuit",
+        "publisher": "Reuters",
         "date": "2026-11-23",
-        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1qNThlRFUxU1lXM3hiUTdwc0M5T2t0cElFUkR1YTktNzFJMWRsNGhnMTNpYzJWZ19YS1J4aXJXUmkzNW5BSGRYTlhaVDZKY1o4?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNN2g3TFJ5emdHN3NnLVJ6TTFuUThTVW42UmthQXkzLWtkaUUxN3hyOWRtZWttRGdaOVFZMjZoOFJwYmJfa1ZtX0RfZ0hEai14NXFBX0s5ei1EMDhiQmhDaTQ4WHNNNEJsLVNaS25fQVh5eGpnektkOG9xSTJncXVNRjI3U3ZRLVBFTUJuOVR4TGdSbllaZ29MRUxxcU1ZbUxYcDc3MHdEV2l0Q3ZzdlpBZV9kZFcwZw?oc=5"
+      },
+      {
+        "ticker": "META",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "What Explains The Fall In Meta Stock?",
+        "publisher": "Trefis",
+        "date": "2026-11-23",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQOGFiY1Nic3hFMjIxNWxSb1VGQXd2Q0x5VWxQLWJHUE9zTzIxOTNySGVlZVR1Q2tLWE1SVjhDMmlEb0wxQ3hXaHd5S0hiclNxNENTUjg3aXBIaUM0QS1wb0RFTEdkaVVnN0Rya2ZxOXRHQzhzVGhlbkRkQWtJLXlXN0k0ZWhlNnhndnplMFMxWVVXQzZCR1NZaFA3LURTQQ?oc=5"
       },
       {
         "ticker": "TSM",
@@ -34598,14 +34622,6 @@
         "publisher": "StreetInsider",
         "date": "2026-11-23",
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZTRfUXB3WUUwa0RQYmNjZWVhYXBOTF9oNGFuN0t4VHVORmt4SklZbWN3ZV9KUER1a3dOY200VkVfMlhCelNISXNMMDNBOVhyTWlmYXRvN3BoclgwOGRqSWpfR1ZqOGdFMlhsUklRb3Y1N1phWGtLaUtocEVTMFM3cW5DWlBpQmJ3RXZzdktQWVZ5Zm1XYlFuWFdkRl9LYWVZTEJockRKYVBjZlBBdGpEMmxQMA?oc=5"
-      },
-      {
-        "ticker": "COHR",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Coherent (COHR) Stock Price Prediction: Strong Q1 growth meets a bruised chart and mixed positioning",
-        "publisher": "Blockchain News",
-        "date": "2026-11-23",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUUt5UHJidEd5VVM3M1lnNjRDdWJDdUlNdkRXWGtyNjdFZ3dFSWZ6YzZFYTVZMTh6VE5YQi1wRFlxYlEwNS1jWkdYcHlsRTJLYldRM2RLMkJZQmVMRjZxMHRyeEFuQzRqR2hZMVhaVVlIZkVwUktfLUJPLXoyeWl2Z2kyOVYzSzdJLXloWVJaellFQzNSWEFV?oc=5"
       },
       {
         "ticker": "VST",
@@ -34672,20 +34688,52 @@
         "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVU5Fd2t5Mm51a1Z2aFZ0dkpXZEtZcGxLV0lqeTlkTUZzY3pVWXZrbUE2djU4czFzbEUxcFlaRWhVbWJmLXVwY0JsTzVKVG1tY0x1czBRTVFIbGZTSTgxeUpVd2k2SlRuRnJMYXFqeGVCOEwxa0RabGNPZnpxUjVyWmFMSU1sLVRfbXRXOTdMWjFhTEtsOWNSajZyX2VqSEI0b2h4eE9GRUNMT3BMejlfb0pUcXBlTUQwM3VaenR1Q08?oc=5"
       },
       {
-        "ticker": "STZ",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Kimberly-Clark or Constellation Brands: The One Dividend Stock I\u2019d Hold for the Next 10 Years",
-        "publisher": "Yahoo Finance",
-        "date": "2026-11-23",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPM0NvaHBYMWFKNHRMSXNJVjV0ekgyZmRYMWd5N3M4QlVlZTJhYlZLeko2SHB1TjR3SkVIZVFOTUJwM2VVYWpIWlBuS25kOE45YS1UMENmUUJCRDhhSTBGQXlPSGd6OU5GRTZnT1piM2VVNzFTNER1NFNWUTZ6TllyQ2VGd2p2YklaWmhBY3o0YVVUdFVCQ2U3TjZpQUpMdEJYQXZRWEpHRQ?oc=5"
-      },
-      {
         "ticker": "ISRG",
         "verdict": "RESEARCH-WORTHY",
         "title": "Are Wall Street Analysts Predicting Intuitive Surgical Stock Will Climb or Sink?",
         "publisher": "Barchart.com",
         "date": "2026-11-23",
         "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQc3poQk5qWVB0N3lrQjZ4OVdwQWNiRzRYNjNQbzhVN0RyOVI5eXZsaDNyVGxfTGhoQkpYRG9iX2ZTWmlUcEgtcWZQMVhUYXdNNFcxUHVQUzJWV1hqdkthbm1WY09Ec1ZCakQya213bzZBcVdYWEhjSV9oWHF2bXFIcDBPQWU3UHE2NnBmNzNQRURnYWJEWVNFTHVaQ0ZnRUdPOXQ4V1FSWHRkSmgzTlJmaWt3d3VZOXI4bVU5SFBvVm8?oc=5"
+      },
+      {
+        "ticker": "ISRG",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Intuitive Surgical Inc (ISRG) Shares Surge 4.3% -- What GF Score of 92 Tells Investors",
+        "publisher": "GuruFocus",
+        "date": "2026-11-23",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdXN4ZlRxR2pmaGZTNzdyTEJSb0FBQ1hFbFZRd2Vsa3NIclFGN0xweGQ0Z19sdG1TLUItSk5aQnJjWm9Cd2lfRDVoV19jUG1yYmJPclY2R2F5UUQ5WWdjOGxTTE5vVS03R1Z2TmxsRjJmc2NJRzg4WVJiOFQ2bjdGa2t4Qko2aU8xZXdwOURoblRlaUhOa24wa0VtWGcyZVZTZ2RSakRrb0puOHAyZWlDakc3bVRWWEhPZlE?oc=5"
+      },
+      {
+        "ticker": "CRDO",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Credo Technology (CRDO) Surges Nearly 24% Amid Tech Sector Rally on November 23, 2026",
+        "publisher": "GuruFocus",
+        "date": "2026-11-23",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOREFZZFY4bzhlNjNqd1NtcVo0U2pNX0NQeGJMNzRwVnZlNkFCcWM4N3NsOHpVMk40eFd3VmFwb0JEd1FiZzc4S204dVk5c2VtdHMybW5HWDlPaGFiWEVncGxuZjZMOGRVMWw5Y3NxRTM3ODQweGxUQTRZdmdWc2R3R3FzVWlDOHV1UjZRSE5yUHNYSFZtZmh0dVBjc0drVG9UbzJQcnUxWjJJTUtMcGhybEZjSWNBcVhTUk9nUg?oc=5"
+      },
+      {
+        "ticker": "FIX",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Comfort Systems USA jumps as buyback expansion and bullish coverage appear to fuel rally",
+        "publisher": "Quiver Quantitative",
+        "date": "2026-11-23",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRE85REFYck44RDdPWGZ6SDlKakZ6Q053Vk1BRkRSX21BT2U3R1lFUjJ1RWJJSkhvc2VKdW5NNlEta2FOM0NKeFNaLVdfeG4wRE1vM2FCUFA4OWNYSE5TRE1XbUlwSEUyeldmMXhNSnl1QkdoOWRNMWJ3dlFzMndheUpaVkNOYW92MzFySlBMMnBwN3B0ZGJzdVdaY2ZTbjJxbURsU3BmVHFTTXJ2QmFoS0V4NlNncnJackVsZll3?oc=5"
+      },
+      {
+        "ticker": "COHR",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Coherent stock falls 15% as the AI chip rout hits optical suppliers",
+        "publisher": "Startup Fortune",
+        "date": "2026-11-21",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbTJCVjV6OUtoUHMydU9NcTRYZnRWemN1bHlDQVdCR0dFa1UzUk9TSUM3VnpZUl95RzVMSFRyb1c0T3IwbnZLdXRKcTVjRkdJeEgwdWl0aXowZ283dzBGSlVmdF8wWW1lQXBiU0dxR0RKckk2azVBdUhKWENSbWI1bE10X2d5YlN2NnZYcGM0RXpJV084UDNNUjVR?oc=5"
+      },
+      {
+        "ticker": "COHR",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Coherent Corp. (COHR) Stock forecasts",
+        "publisher": "Yahoo Finance UK",
+        "date": "2026-11-21",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPXzlLS3J0OHc3dDMtTjhlVjhpREl3bllFT2hMWDdUaUtfdXhsNF9sOUlXdGl6Z2Z5ODlvcldidEJBeEVMcy1nVnNuTk54QWs4dV9wTloyZjZSU1hZMzBfczNhZ2xpUmVIWHpqcDRyQ2dYb0NObFdvTFFJNFQzakxnNXh4RUI0MlgzeVFfaGNpTlU?oc=5"
       },
       {
         "ticker": "VST",
@@ -34704,12 +34752,12 @@
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQWp6RlBOMlVVaDFCaXBpUFFNUXdsSXhTd2hmVTJZd2EzOGNuOGNiLWZ1cl9uN1lYeDVuYlBnN2pKTWtOZVFwU205Y0VSYjA1amFYLU1iQ2k2cGJySnNWakdNVmhWeU55eUtRbGhnN01JRFlqRGNyNUtwTXlpQmphaWJRZUNVMktWVjh5Znp2Nkx3T0o3UFZRS21CYkJjRXZwTC1HS2hqd2g4NWs?oc=5"
       },
       {
-        "ticker": "ISRG",
+        "ticker": "FIX",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Intuitive Surgical, Inc. (ISRG) Stock Forecasts",
-        "publisher": "Yahoo Finance",
+        "title": "Comfort Systems USA Inc (FIX) Shares Fall 6.4% -- What GF Score of 95 Tells Investors",
+        "publisher": "GuruFocus",
         "date": "2026-11-21",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPd1hvc0g3ZUp2VE9aMDEyMmRfN0Jfc0xMZng5aFdWN2dwOXp4MmxrbUNEcHhRZmJMVGFybXFlSnk5QTJIUlRUcEV5dTBzUzBUckZ3T3hXYVhVenRNRXBEMDlyM1h3Vk9NMzlFaXA0eVliLTJwOXJDeEJqTkhrOTlVdnpZNnBjNGlHT2c?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNb05aZjBWQ3l4bEMzVDRzN1BCSWxTQVYtRjhHcWNINkh1Rm80WE9Kck1HNkNhQjBwZEt6WkZnWGloQk80UWFyTVI1Z0xjYVl0UUsyeTltSmxVaDBjcnJoTjRoY1k1YjFOSXZDZ3RLdHMwbVlrdVBLYnRlSURpaUZWdWZudnlRb0JWNlI1ZkUwSURlQTllQzl3QjBQR0xuZmM5WUIyNHJPNExnN3dzcFlacTRSR0ptZHJY?oc=5"
       },
       {
         "ticker": "UNH",
@@ -34730,10 +34778,10 @@
       {
         "ticker": "COHR",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Coherent (COHR) Stock Price Prediction: Strong Q1 beats collide with a sharp technical reset",
-        "publisher": "Blockchain News",
+        "title": "Coherent sinks 14%, dragged down by tech selling (COHR:NYSE)",
+        "publisher": "Seeking Alpha",
         "date": "2026-11-20",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNN3NWbWs0RFJEMWpkSVVzbjVFcXF0OFh0SUNmZ19KMmgxcEN1UVgxdDkwdko1VWk5YkNONEE2b0dDZndUcVpBMmJXOWdGR25OX2hTOWhSUTB1dEFSdGNLUDdWb2dGc0I2SXUzMjRraXVSVDZIbnZkUWdOTmMtUDVDMUs5M2dCNTcwVXo2SWxadWp4V0c2?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUVcyXzFBLThWR0JPU3Yzb3VaZkM0YmdnaEVRTnJ2X1pGRkJ5UElKUnJfS2pXWlp5cGxJZU1jZmNxczE4VXJ6NXdXNEg2NElxLWRjcUlTckUxZllGT1JlTXhhdmxndUJNZ2p5TExpV29WSTBQczdLcHJTd051UXhrY2IwdWNYbm9VY1U1QQ?oc=5"
       },
       {
         "ticker": "CEG",
@@ -34784,20 +34832,12 @@
         "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeEFFYm9SQ01wYXozVXNBMjhZbjdETnJia3JaOGk5US0zMFpXN2FVM1k2S2hISXlVTWlyb2NNNDN3enpaLU1sS18ySjRPU0VCUDNydjM4ekVEeDhtLUpfYU5YWGJXYUd6bzhsTll4cjF4SmtJc3BiOUQwTlRmMU0xQUhBQV9ZcTVX?oc=5"
       },
       {
-        "ticker": "TLN",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Talen Energy Corporation (TLN) Stock forecasts",
-        "publisher": "Yahoo Finance Singapore",
-        "date": "2026-11-20",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdkwzeEJ6aXpSbjdyclpHWU5GUmptUC1UdVFGVmljLV9iY2x1cC1xWEZ5c25zN0tnTWM0RUZMQy1YVkxTTTVnN0dEYXZkUnd4MGlIZWF0ZExYZElYSGJCTklEVFB3RzNoRlNaYmJBbVdjVml2YUMwMXFvS3ZKSWhZY3JqZGZhbm85OE5INEl6bm5IZkE?oc=5"
-      },
-      {
         "ticker": "STZ",
         "verdict": "RESEARCH-WORTHY",
-        "title": "What Is Constellation Brands No Longer Telling Shareholders?",
-        "publisher": "Yahoo Finance",
+        "title": "Constellation Brands (NYSE:STZ) Share Price, Forecast & Analysis",
+        "publisher": "Stocks Down Under",
         "date": "2026-11-20",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTGI5clBIbS1CTWRnd0ZfZDJyaWFMNnRQTk8wSnhZUkNSc2cwTXB5dWlIR0VEZi1VUDA5S3MybTJJRHBNd0ZJOUFjRUc0VUs5Y0JKa0RUUVJjZEgtWXBhOU1lck9sUnZ3LVlyMnpNdFlDSFM1a2ZOS2VHRXpjY3lhU2pOazJkeWJJck1OWWU4SkhoNC1COUhUUG9NMzRWekdPRTdjWFN3?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE53azllQnpzS0JRTUY0b0Q4RFRkWGZLWnUyNDhhaUhxRG1kTFM2OVlQVnU3cjFISlJqWUhTbmlYTWtzbmNycUh5TXRWcW10VWZRZlJnS3d2QnJGNjd3eEMwSkFya2t3TFA2?oc=5"
       },
       {
         "ticker": "CLS",
@@ -34808,20 +34848,20 @@
         "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPdlBwQWJOV0kwbnpwajJ6eDJVcWJLLTMyNnpSY29vcTZTLU45NHdfaGxmV0RNVGNOY3h3ZVpXMHV0TkxZM0hDVkVlMkVyNEtfQlpNNjF6cS1JVy1QMUJ3N2RTaTZrRW1JaUVUVENybnA1Zk1Eelc0akMyRXVPdHEwcUlfaG5Oc01lOE1nQi1JanQ0UQ?oc=5"
       },
       {
-        "ticker": "CLS",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Celestica (CLS) Shares Drop 15% Amid Tech Selloff on November 20, 2026",
-        "publisher": "GuruFocus",
-        "date": "2026-11-20",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVXc3Q19IaXdBOUJXUHdoUzBsTGRyV1dvQ2o3b25HekNmNzhOcjV6OEYzUjdqQmZqOGgyal95dTl1U1hXeGZTNkpuNVVVT29WMjF5ZnVmNTQyTjlWaEp5cFcxVkItZkNLUERZVjZTQ1lxZDIxMXBab3JkS2lkYXBFSHFKaG9vbVJXWW0wWWtjaXlDc1l4SEJpb2lBd0c2SnJ2WDNGeVNEZ2w?oc=5"
-      },
-      {
         "ticker": "CRDO",
         "verdict": "RESEARCH-WORTHY",
         "title": "Tech slump pushes Credo Technology down 14% (CRDO:NASDAQ)",
         "publisher": "Seeking Alpha",
         "date": "2026-11-20",
         "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPSHF1YmJhbHdTc3ZTaWUwTzg5cllyTUN1MVlKY0VDMXkwUm1YTGFscTBDb055RHRFSWZlUDJLSDdXQzF5c1FnWnNYcnBYNklXUGlVTmstTlEwbGVoUC01RTc5enlWMl9hTmpiSGI0MW96bXF5OGlfWEQzVUJXMHBhUVFOVHpiMkE?oc=5"
+      },
+      {
+        "ticker": "CRDO",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Credo Technology Group (CRDO) Shares Plunge Nearly 14% Amid Tech Sector Sell-Off",
+        "publisher": "GuruFocus",
+        "date": "2026-11-20",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQLW1iVDI0eWwzTURrcDY3V0xrcVZES2NoNWxrZERUVnhTS2dLWE5wdHI2b1lPTWR4WXEzeUw5NEMtOGVscFlMSWZZWHlScDZ3TmZCN0NwN21la3J3QzdTRDN6TU13QS1FLUhMWWVXT0ozeFdjY1p6WHpaYXZFaXZsVFc5T3dKaEt5VmptdzAxc2Vxb3NCMjZDbjVxUmpleF85a01TZG5HV2pwbzU1THYzSzdqMmV1Zw?oc=5"
       },
       {
         "ticker": "EME",
@@ -34850,18 +34890,10 @@
       {
         "ticker": "COHR",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Coherent Soars 6% on New $2 Billion Buyback as Anthropic IPO Revives AI Trade",
-        "publisher": "TIKR.com",
+        "title": "Coherent Stocks Jump 10.78% After $2 Billion Buyback Authorization",
+        "publisher": "Yahoo Finance",
         "date": "2026-11-19",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNYlpjNWo4TXJESWtvc2RyNWZDMnc2WUFfSDhqazIyOFg2dU5oZ1FjWHp4R2szbFNXOVlsdk9oSm1QaWtrV0Z1c01wYlU2eTNoTjJTWlNLZXJfUDFVRmx4Sl9WNXRWaExyZzA5d19HOUJMejFYdldGdHFXWWpRNHRDeGF2eHFEYjhXMmxySjViSkNWU2UwaE9Hci0wWGpEXy1IUzk0Nw?oc=5"
-      },
-      {
-        "ticker": "COHR",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Seagate Soars 6%, Coherent Up 8% as AI Stocks Rebound on Anthropic IPO Day",
-        "publisher": "TIKR.com",
-        "date": "2026-11-19",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNb3RoN1NpckNWUl9DVnBxRlJDV25jbmw2b0hxOVBDMWNBS0k5Q1VHcDQtb2RKQzVNZEJYd0lJX1N1Z0NfVjJIckczOVc5V2RRN2ZMVk1WR3RLUGJkOEtTU0NHOThISUJQOS1fY2U3V3BWWkVpaWoyRTV6VmhiRkE1cGNXVUdMb1NKaEcyUzdtTWM4cFVueFJhUzJ3WFBfSzdqNlZ3?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNMjhGMEtHV1BJbG5LRk8xSEdMY3FHWFpYWXYxMTlfalJYQkQwMUFLajBLcXU2al9taFJudDcyWWdIMnFaQ0liYTVCbE5YZlBmRW50WGdvdjRqVXM1M3NIcVVJQ3dmbkVHQmFSU2Z6R2NMRkNYbFF4UUR5cVRTS1VscG1tUHN0RDJKaVo5MEp4NW11QlpRbUE?oc=5"
       },
       {
         "ticker": "CEG",
@@ -34896,22 +34928,6 @@
         "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZ2RuOXNXdE9rRVBUelZHR21qemJiTkNrUlp0eFYtd3hKWWhSdVU5dGNrRzBlcW1Ra3hvNWNTNTRhTkUzVnpLVDRMOS1ldC1Ral9JZHR2MGlBV3JoWkpZZEZ0dUE2a0tLLTdaV1JnOFA2ODJQQjY1M3FJZmd0ZldBeUNuaDJKNE0wV3MzaWRGRThVOTRfcDlqR3QtcUdqTlhaMGRoejNvU25oWUZoYjJhTjNOejExSlVjTmdXVA?oc=5"
       },
       {
-        "ticker": "STZ",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Zachary Stern sells $10.88M Constellation Brands (STZ) class A shares",
-        "publisher": "Investing.com",
-        "date": "2026-11-19",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQdExkOUppZDBkWlhPSy1TalNJR1Q5UWRXNXEwbUJzT2JmYVhlUnR5RzB6UDBuR3JNSlZhT3ctWHloMWx3ZWxZT25xandRc0E2emR6VjBJWm1LdFdyZzJxSG9LOV9MdFY5Nll4UnB2MXNvR2d6dm1neEU3NjFXMVVjSWhKX0VqTHE0dUNCZWJtU1pyVDdiQ1VFVkc1bi02MFV5V3dtUTd5RDFyRlI0Q1N5SlpmaWtiWmdMekp2bzBvS24tcE5wT1F6MFZ3?oc=5"
-      },
-      {
-        "ticker": "STZ",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Constellation Brands 10% owner disposes of $21.75m in shares",
-        "publisher": "Investing.com",
-        "date": "2026-11-19",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVGlDd2FKelJRZDhLUmtjaGxtelc1TjZhZUszWHR2UXZneVdRYzAwV0htSzZPVGhvRUlOXzlZWDR4ZHFLLTVSN2xZcEJDbnVZTVN4QXVBQV9MNDhnUnF0WjVPRFhjUm1KMEl1YV9HVWJ6RnBWN0tBVDdoZ2JkR0c1NlJocTV1UDJMNUFBal9NbFVBRDFTNWg2QmdaX2E1ZFEzdnpKTzRoWXU2SngybVE2cHZMRmIxRXhicG5rUTA3aw?oc=5"
-      },
-      {
         "ticker": "ISRG",
         "verdict": "RESEARCH-WORTHY",
         "title": "Intuitive Surgical (ISRG) Down 1.7% Since Last Earnings Report: Can It Rebound?",
@@ -34920,44 +34936,28 @@
         "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbU5oczE2MWNtNGtIY3Z3Snpya25DOThuVHYyNFBtNWQ1TUZlLU5ERGx4OHJTR2VpSktOWWFZWFEtZFRKaXBoQXlOSXVOR09HUHVwbGdCZU1YU2RNNmxfSi1ncUVwYjR6Tm5GU2xmd2JwelRUbHZlV1dTeEZxMmJwUW44T081MDBMQmFNcElzUEdaUEhUb0Q0U0ZHSQ?oc=5"
       },
       {
+        "ticker": "ISRG",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Intuitive Surgical falls 3.26% in Thursday's session",
+        "publisher": "Global Banking & Finance Review",
+        "date": "2026-11-19",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWkhaSUt2U3AzVzhYQTJxS1NJNzg4eWVaZW1uMktsalduOXctSHlnOWNpOG1haFlBZHlsTmlPR0xsaFpQM0wtQjlEV0EtbWJtZlNDVHo0UnlHVDM0SWNCM3lSY0VESHhFckNGTEtFYjNmZ28xeWc1TUdVbnZURWs5QW5YbFBxS1VB?oc=5"
+      },
+      {
+        "ticker": "ISRG",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Is Intuitive Surgical Inc (ISRG) a Bargain After 3.3% Drop? GF V",
+        "publisher": "GuruFocus",
+        "date": "2026-11-19",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQeS1GU2I2R1FmSFAzVjBoQ05FdllxVW5kZkR5WnlnNUZ2V1F6LUxMVUNaaFFuMTRabnhycFJOZFdTc0Y0MGhKTFBNWlhKYTNwdmtvTFZQWmFOWkFuNW8yWnhYMWE1ZFhRNWVmd2JQczhLamhqVVpzN2IxWk1rMDhZQW4zbjJzenhhSzd4M3ZVelF1NEN1anhsMi1LYW5zQV9UX2pPaDJqMDhsRUhzcGFiRU5GR0hVT3l2bVFJ?oc=5"
+      },
+      {
         "ticker": "CLS",
         "verdict": "RESEARCH-WORTHY",
         "title": "Celestica: Time To Buy Again (Rating Upgrade) (NYSE:CLS)",
         "publisher": "Seeking Alpha",
         "date": "2026-11-19",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNODFzVENvbEdsS0xOd0lEbUNGLTBqVnNxUWpPekhabnpGbURzcnFoRVZzYkdEMlhIU3BPRkEtOEdUWU1TNFd6Q2Y5S19uY3ZtZFdRTEhQQlJmNlE3a2Q2LU1qZkZZYnU3dXR1WXpGeWU2bEE2MThvaHNJUGVjNG5xVXVR?oc=5"
-      },
-      {
-        "ticker": "CLS",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Celestica Rises as Investors Revisit AI Growth Outlook and Buyback Support",
-        "publisher": "Quiver Quantitative",
-        "date": "2026-11-19",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQ2FNLWlvTUJrMHhrQUQtUVMwOHdOdm13eXFYbC1lNkF3T2xyVGFLa3pZXzdLVGx4QjloOU1zdkZISFBJQW1OeXV2X1JGRWMxbElmMk1PVkFHWW5ScndsRWdCNGRpaG5PQ3lnanRKcHctTXQ5TkNGLVlSMUFvQmdzWUc0SUZIaWg2LUMzMkJ4TUM4MjlOSzF3Wmw0OERwdHFYblJ3V0hueGxqLVE?oc=5"
-      },
-      {
-        "ticker": "FIX",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Comfort Systems: Cheaper With Greater EPS Growth (Rating Upgrade) (NYSE:FIX)",
-        "publisher": "Seeking Alpha",
-        "date": "2026-11-19",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQd0JDbzhpUi1NVlFrY1pXZmdHdlJGQ2RiSGEtMlI0bmxfZjdmeV9QWXp6aXBIM1Nlby1RbWhfVGUtU1pVZTVLTWlocDhPVXBmY19hUW9RTHUxZWllTWRwQ3ppRzNvcC1ZdmR6RVEweUF0c1BqNGNoaUFsX2o0SVpiQlVOcGJQU3Rycld2SGlPUHRzVHI0aGZWQ0RFdi0?oc=5"
-      },
-      {
-        "ticker": "FIX",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Comfort Systems USA falls 2.33% in Thursday's session",
-        "publisher": "Global Banking & Finance Review",
-        "date": "2026-11-19",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQa2NPM3g5M1NNRjBuM05OQ3V2YVZlWC0xMk1rNi1JY2xNcWRzc0gtM2RSVlh0RVFuWWFGUXpNY0hKLTRzVjF6OVdBdDJ4OGdFRWNmOGkyQW01MncxTlpzTU5jaXNQa0RlVWk0LWpFYkt5QUlPbnU1RkNfWkxmb1JSS2xSWmFIWUdj?oc=5"
-      },
-      {
-        "ticker": "META",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Meta pauses plans to create non-voting share class after investor lawsuit",
-        "publisher": "Financial Times",
-        "date": "2026-11-18",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTTBLRkFSZGlxVEtndFpScWRFck5nVXVLLXZiazBpMGxHQ1YwZG1FQVNvZXlVWEk2T0xhUWZNanhhSTN3aUF1WGZmbXFKU0xPQ3MtSUlPbkV5RlhYcFhVOFQ2WVhKMUo2ckNMeWs3TVVZa1FveEt4bTdLTVM5SDA4NU1URVU?oc=5"
       }
     ],
     "insider_alerts": [
@@ -35142,7 +35142,7 @@
         "drawdown_pct": -31.0,
         "price": 282.1,
         "pe": 14.731071,
-        "forward_pe": 18.443949,
+        "forward_pe": 18.441067,
         "verdict": "WATCHLIST",
         "next_action": "WAIT \u2014 Wide-moat compounder at 15x trailing earnings with 25% revenue growth and $115B net cash, but AI search disruption risk clouds durability."
       },
@@ -35172,7 +35172,7 @@
         "drawdown_pct": -36.7,
         "price": 313.55,
         "pe": 40.044697,
-        "forward_pe": 16.150682,
+        "forward_pe": 16.174044,
         "verdict": "WATCHLIST",
         "next_action": "WAIT \u2014 AI infrastructure leader at 15.7x forward earnings with 85% quarterly revenue growth, 75% gross margins, and FCF covering net debt in <1 year, but Google TPU cut risk creates customer-concentration overhang."
       },
@@ -35212,7 +35212,7 @@
         "drawdown_pct": -31.1,
         "price": 453.46,
         "pe": 96.893166,
-        "forward_pe": 25.74175,
+        "forward_pe": 25.708899,
         "verdict": "WATCHLIST",
         "next_action": "WAIT \u2014 AI infrastructure leader with 45% YoY revenue growth and $7B FCF, but trading at 71x EV/EBITDA with geopolitical risk from China exposure."
       },
@@ -35252,7 +35252,7 @@
         "drawdown_pct": -36.7,
         "price": 756.71,
         "pe": 19.86637,
-        "forward_pe": 29.216965,
+        "forward_pe": 28.840828,
         "verdict": "RESEARCH-WORTHY",
         "next_action": "RESEARCH \u2014 Worth a deep dive before any decision. [1 sentence(s) removed: figures not in the source data.]"
       },

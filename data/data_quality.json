@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T08:13:44Z",
+  "generated_at": "2026-11-24T08:38:52Z",
   "checked": 63,
   "flagged": 2,
   "quality": {
@@ -7,11 +7,11 @@
       "ok": true,
       "flags": []
     },
-    "ADP": {
+    "AMD": {
       "ok": true,
       "flags": []
     },
-    "AMD": {
+    "ADP": {
       "ok": true,
       "flags": []
     },
@@ -28,7 +28,7 @@
       "flags": [
         {
           "level": "low",
-          "msg": "Reports in EUR; figures converted to USD at 1.0913. Trailing P/E may mix currencies \u2014 verify against filings"
+          "msg": "Reports in EUR; figures converted to USD at 1.0921. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
     },
@@ -60,11 +60,11 @@
       "ok": true,
       "flags": []
     },
-    "CRDO": {
+    "COST": {
       "ok": true,
       "flags": []
     },
-    "COST": {
+    "CRDO": {
       "ok": true,
       "flags": []
     },
@@ -84,11 +84,11 @@
       "ok": true,
       "flags": []
     },
-    "FIX": {
+    "ETN": {
       "ok": true,
       "flags": []
     },
-    "ETN": {
+    "FIX": {
       "ok": true,
       "flags": []
     },
@@ -148,11 +148,11 @@
       "ok": true,
       "flags": []
     },
-    "MKTX": {
+    "MRVL": {
       "ok": true,
       "flags": []
     },
-    "MRVL": {
+    "MKTX": {
       "ok": true,
       "flags": []
     },
@@ -172,6 +172,10 @@
       "ok": true,
       "flags": []
     },
+    "NVDA": {
+      "ok": true,
+      "flags": []
+    },
     "NOW": {
       "ok": true,
       "flags": []
@@ -180,15 +184,11 @@
       "ok": true,
       "flags": []
     },
-    "NVDA": {
+    "PAYX": {
       "ok": true,
       "flags": []
     },
     "OKLO": {
-      "ok": true,
-      "flags": []
-    },
-    "PAYX": {
       "ok": true,
       "flags": []
     },
@@ -212,11 +212,11 @@
       "ok": true,
       "flags": []
     },
-    "STZ": {
+    "TLN": {
       "ok": true,
       "flags": []
     },
-    "TLN": {
+    "STZ": {
       "ok": true,
       "flags": []
     },
