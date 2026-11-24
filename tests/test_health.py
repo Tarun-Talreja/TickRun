@@ -11,7 +11,7 @@ from io_utils import load_json
 
 WEDNESDAY = datetime(2026, 11, 4, 18, 0, tzinfo=timezone.utc)
 SUNDAY = datetime(2026, 11, 8, 18, 0, tzinfo=timezone.utc)
-FRESH = "2026-11-04T17:00:00Z"
+FRESH = "2026-11-04T17:30:00Z"
 
 
 def _stages(now=WEDNESDAY, quotes=FRESH, research=None):

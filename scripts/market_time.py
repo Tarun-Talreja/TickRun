@@ -16,7 +16,7 @@ from pandas.tseries.offsets import CustomBusinessDay
 NEW_YORK = ZoneInfo("America/New_York")
 OPEN, CLOSE, EARLY_CLOSE = time(9, 30), time(16, 0), time(13, 0)
 BELL_SLACK = timedelta(minutes=1)   # a last trade this near the bell is the close
-GRACE = timedelta(hours=2)   # time for a refresh to run after the open or the close
+GRACE = timedelta(minutes=45)   # time for a refresh to run after the open or the close
 
 
 class _NyseHolidays(AbstractHolidayCalendar):
@@ -50,13 +50,15 @@ def previous_session(day: date) -> date:
 
 
 def price_due_at(as_of: datetime) -> datetime:
-    """When a price from `as_of` is out of date: two hours past the next open or close."""
+    """When a price from `as_of` is out of date: 45 minutes past it in a session, or past the next open."""
     local = as_of.astimezone(NEW_YORK)
     day = pd.Timestamp(local.date())
     close = _close(local.date())
     bell = datetime.combine(local.date(), close, NEW_YORK) - BELL_SLACK
     if _SESSION.is_on_offset(day) and local < bell:
-        moment = OPEN if local.time() < OPEN else close
+        if local.time() >= OPEN:
+            return (local + GRACE).astimezone(timezone.utc)
+        moment = OPEN
     else:
         day, moment = day + _SESSION, OPEN
     due = datetime.combine(day.date(), moment, NEW_YORK) + GRACE
