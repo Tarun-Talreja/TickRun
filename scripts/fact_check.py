@@ -76,7 +76,8 @@ def drop_unsupported(text: str | None, figures: list[str]) -> str | None:
     """The text without sentences that use a figure the source data never contained."""
     if not text or not figures:
         return text
-    patterns = [re.compile(rf"(?<![\d.,]){re.escape(f.strip(" ,."))}(?!\d)") for f in figures]
+    labels = [re.escape(f.strip(" ,.")) for f in figures]
+    patterns = [re.compile(rf"(?<![\d.,]){label}(?!\d)") for label in labels]
     sentences = [s for s in _SENTENCE_RE.split(text) if s.strip()]
     kept = [s for s in sentences if not any(p.search(s) for p in patterns)]
     if len(kept) == len(sentences):
