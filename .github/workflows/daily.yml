@@ -127,7 +127,7 @@ jobs:
       - name: AI summary, when prices have moved on
         # After the commit, because a slow model must not hold up the prices.
         id: summary
-        timeout-minutes: 8
+        timeout-minutes: 12
         env:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API }}
         run: python scripts/weekly_digest.py --if-needed
