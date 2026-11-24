@@ -90,8 +90,8 @@ def pick_headline(news: list[dict], pct: float, session: str, previous: str) -> 
     """The day's headline, else earnings from the session before (often released after its close)."""
     usable = [n for n in news if n.get("title") and not _OPINION_RE.search(n["title"])
               and _MATERIAL_RE.search(n["title"]) and not _contradicts(n["title"], pct)]
-    return next((n for n in usable if n["date"] >= session), None) or next(
-        (n for n in usable if n["date"] >= previous and _EARNINGS_RE.search(n["title"])), None)
+    return next((n for n in usable if n["date"] == session), None) or next(
+        (n for n in usable if previous <= n["date"] < session and _EARNINGS_RE.search(n["title"])), None)
 
 
 def _lead_first(news: list[dict], pct: float, session: str, previous: str) -> list[dict]:

@@ -52,3 +52,10 @@ def test_brief_says_how_old_the_rating_is():
 def test_dividends_are_never_urgent_or_a_reason_to_buy():
     assert _urgency(1, "ex_dividend", "WATCHLIST", None) == "low"
     assert "no reason to buy" in _plan({"type": "ex_dividend"}, {})
+
+
+def test_headline_after_the_move_is_not_quoted():
+    news = [{"title": "Analysts comment on Huang's return", "date": "2026-11-24"},
+            {"title": "Nvidia rehires Huang as CEO", "date": "2026-11-23"}]
+    assert pick_headline(news, 31.5, "2026-11-23", "2026-11-20")["date"] == "2026-11-23"
+    assert pick_headline(news[:1], 31.5, "2026-11-23", "2026-11-20") is None
