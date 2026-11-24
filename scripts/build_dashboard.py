@@ -140,6 +140,25 @@ def _content_counts(quotes: dict, news: dict, insiders: dict, funds: dict, mover
 _PULLBACK_RE = re.compile(r"\s*Revisit at \d+% below the 52-week high\.?\s*$")
 
 
+_FALL_RE = re.compile(r"\d+(?=% (?:below|from) its high)")
+
+
+def _live_card(card: dict, quote: dict, as_of: str | None) -> dict:
+    """The radar uses the weekly screen, so on 2026-11-23 NVDA showed $125 at $165."""
+    price, fall = quote.get("price"), quote.get("drawdown_from_high")
+    if price is None or fall is None:
+        return {**card, "price_date": (as_of or "")[:10] or None}
+    live = lambda text: _FALL_RE.sub(f"{abs(fall):.0f}", text)  # noqa: E731
+    return {**card, "price": price, "drawdown_pct": fall,
+            "reasons": [{**r, "text": live(r["text"])} for r in card.get("reasons", [])],
+            "watch_outs": [live(w) for w in card.get("watch_outs", [])]}
+
+
+def with_live_prices(radar: dict, quotes: dict) -> dict:
+    return {**radar, **{key: [_live_card(c, quotes.get(c["ticker"], {}), radar.get("universe_as_of"))
+                              for c in radar.get(key, [])] for key in ("cards", "on_sale") if key in radar}}
+
+
 def without_targets(stock: dict) -> dict:
     """The stock without its old target, until the valuation on v2-valuation replaces it.
 
@@ -357,7 +376,7 @@ def main():
         "track_record":    track_rec,
         "discovered":      _load(DISCOVERED_PATH),
         "field_news":      _load(FIELD_NEWS_PATH),
-        "radar":           _load(RADAR_PATH),
+        "radar":           with_live_prices(_load(RADAR_PATH), quotes.get("tickers", {})),
         "asset_location":  _load(ASSET_LOCATION_PATH),
         "catalysts":       _load(CATALYSTS_PATH),
         "daily_brief":     _load(DAILY_BRIEF_PATH),

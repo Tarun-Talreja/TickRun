@@ -1093,7 +1093,7 @@ function renderRadarCard(c){
       ${c.new?'<span class="rd-tag">New</span>':''}
       ${c.tracked?'<span class="rd-tag">Tracked</span>':''}
       ${c.rating?`<span class="rd-tag">${esc(c.rating)}</span>`:''}
-      <span class="rd-px">${c.price!=null?fp(c.price):''}</span></div>
+      <span class="rd-px">${c.price!=null?fp(c.price):''}${c.price_date?` on ${fDate(c.price_date)}`:''}</span></div>
     <div class="disc-nm">${esc(c.name||'')}</div>
     <ul class="rd-list">${reasons}</ul>
     ${cautions?`<div class="rd-warn">Watch out</div><ul class="rd-list">${cautions}</ul>`:''}
