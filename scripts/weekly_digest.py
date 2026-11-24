@@ -26,6 +26,7 @@ from datetime import datetime, timezone
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from io_utils import load_json as _load
 from market_time import session_date
+from summary_history import load_days, save_days, with_summary
 
 SCRIPT_DIR    = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DASHBOARD_PATH = os.path.join(SCRIPT_DIR, "output", "dashboard.json")
@@ -141,6 +142,10 @@ def main():
     }
     with open(OUTPUT_PATH, "w") as f:
         json.dump(digest, f, indent=2)
+
+    if narrative and digest["prices_as_of"]:
+        day = session_date(datetime.fromisoformat(prices_as_of.replace("Z", "+00:00"))).isoformat()
+        save_days(with_summary(load_days(), day, narrative, prices_as_of))
 
     print("📋 WEEKLY DIGEST")
     if narrative:

@@ -62,6 +62,7 @@ jobs:
           commit_message: "Auto: catalyst lookahead"
           file_pattern: >-
             data/catalysts.json
+            data/summary_history.json
             output/dashboard.json
             output/daily_brief.json
             data/brief_snapshot.json

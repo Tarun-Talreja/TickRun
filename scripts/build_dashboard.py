@@ -31,6 +31,7 @@ from market_time import price_due_at, prices_as_of
 from rating_move import big_move
 from research_batch import SKIP_TICKERS
 from sec_filings import is_stake
+from summary_history import load_days
 from valuation_view import valuation_view
 
 SCRIPT_DIR          = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -401,6 +402,7 @@ def main():
         "radar":           with_live_prices(_load(RADAR_PATH), quotes.get("tickers", {})),
         "asset_location":  _load(ASSET_LOCATION_PATH),
         "catalysts":       _load(CATALYSTS_PATH),
+        "summary_history": load_days(),
         "daily_brief":     _load(DAILY_BRIEF_PATH),
         "signals": {
             "pullback_alerts":    alerts.get("pullback_alerts", []),

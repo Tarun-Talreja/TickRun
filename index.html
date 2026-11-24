@@ -953,6 +953,7 @@ function renderHome(data){
     <div class="digest-text">${esc(digest.narrative)}</div>
   </div>`:''}
   ${renderDailyBrief(data)}
+  ${renderSummaryHistory(data)}
   ${renderRadar(data)}
   ${renderFieldNews(data)}
   ${renderHealth(data)}
@@ -1618,6 +1619,20 @@ function renderHealth(data){
     <summary style="cursor:pointer;font-size:12px;font-weight:600;color:${bad.length?'var(--amber)':'var(--text1)'}">
       ${bad.length?`System check: ${bad.length} need${bad.length===1?'s':''} attention (${esc(bad.map(s=>s.name).join(', '))})`:'System check: all stages working'}
     </summary><div style="margin-top:8px">${rows}</div></details>`;
+}
+
+function renderSummaryHistory(data){
+  const latest = data.digest||{};
+  const shown = (latest.prices_as_of||'').slice(0,10)===(data.prices_as_of||'').slice(0,10) ? latest.narrative : null;
+  const days = Object.entries(data.summary_history||{}).sort((a,b)=>b[0].localeCompare(a[0]));
+  const body = days.map(([day,d])=>{
+    const text = d.narrative && d.narrative!==shown ? `<div class="digest-text" style="font-size:13px">${esc(d.narrative)}</div>` : '';
+    const changes = (d.changes||[]).map(c=>`<li>${esc(c.headline)}${c.detail?`: ${esc(c.detail)}`:''}</li>`).join('');
+    if(!text && !changes) return '';
+    return `<details style="padding:8px 0;border-bottom:1px solid var(--bg3)"><summary style="cursor:pointer;color:var(--text1)">${fDate(day)}</summary><div style="margin-top:6px">${text}${changes?`<ul style="margin:6px 0 0 16px;font-size:12px;color:var(--text2)">${changes}</ul>`:''}</div></details>`;
+  }).join('');
+  return `<details class="digest-card s-anim" id="summary-history" style="animation-delay:.07s"><summary class="digest-label" style="cursor:pointer">🕘 Past summaries</summary>
+    ${body||'<div style="font-size:12px;color:var(--text2);margin-top:6px">None yet. Each day’s summary is saved here from Nov 23, for 60 days.</div>'}</details>`;
 }
 
 function renderDailyBrief(data){

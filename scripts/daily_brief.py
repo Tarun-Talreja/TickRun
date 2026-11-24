@@ -37,6 +37,7 @@ from datetime import datetime, timezone
 
 from io_utils import load_json as _load
 from market_time import session_date
+from summary_history import load_days, save_days, with_changes
 
 SCRIPT_DIR     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DASHBOARD_PATH = os.path.join(SCRIPT_DIR, "output", "dashboard.json")
@@ -99,6 +100,13 @@ def _mover_items(movers: list[dict], verdicts: dict, researched: dict | None = N
     return items
 
 
+def baseline(snapshot: dict, today: str) -> dict:
+    """The state before today. Comparing with the last run lost a change after 30 minutes."""
+    if snapshot.get("day") == today:
+        return snapshot.get("base", {})
+    return {k: v for k, v in snapshot.items() if k not in ("day", "base")}
+
+
 def main():
     d = _load(DASHBOARD_PATH)
     if not d:
@@ -106,12 +114,12 @@ def main():
         sys.exit(0)
 
     sig  = d.get("signals", {})
-    prev = _load(SNAPSHOT_PATH, {})
+    today = session_date(datetime.now(timezone.utc)).isoformat()
+    prev = baseline(_load(SNAPSHOT_PATH, {}), today)
     cur  = _current_state(d)
     first_run = not prev
 
     items = []
-    today = session_date(datetime.now(timezone.utc)).isoformat()
 
     # 1. Catalysts landing today/tomorrow — a fixed deadline outranks everything
     for e in (d.get("catalysts") or {}).get("imminent", []):
@@ -194,7 +202,9 @@ def main():
     with open(OUTPUT_PATH, "w") as f:
         json.dump(brief, f, indent=2)
     with open(SNAPSHOT_PATH, "w") as f:
-        json.dump(cur, f, indent=2)
+        json.dump({**cur, "day": today, "base": prev}, f, indent=2)
+    if not first_run:
+        save_days(with_changes(load_days(), today, items))
 
     print("☀️  DAILY BRIEF")
     if first_run:
