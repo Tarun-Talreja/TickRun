@@ -7,8 +7,7 @@ Instead of waiting for next-day research, this runs every refresh:
   2. Flags any name that moved more than MOVE_THRESHOLD since last check
      OR more than DAY_THRESHOLD on the day.
   3. Pulls recent news headlines for each mover (free, via news_feed).
-  4. If an LLM key is set, asks for a ONE-SENTENCE likely reason, grounded
-     ONLY in those headlines (no hallucinated causes).
+  4. Quotes the day's company headline and the market's move. No model is involved.
 
 Output:
   data/price_snapshot.json — last seen price per ticker (committed, for diffing)
@@ -20,8 +19,10 @@ Usage:
 
 import json
 import os
+import re
 import sys
-from datetime import datetime, timezone
+from concurrent.futures import ThreadPoolExecutor
+from datetime import date, datetime, timezone
 
 from io_utils import load_json as _load
 
@@ -36,18 +37,22 @@ MOVE_THRESHOLD = 3.0   # % change since last snapshot to flag (intraday spike)
 DAY_THRESHOLD  = 5.0   # % change on the day to flag regardless of snapshot
 MARKET_MOVE_PCT = 2.0  # an index move this big can explain a stock's move by itself
 
-# Cost/latency guards. On a broad market day 30+ names move >3%; one sequential
-# LLM call each blew past the workflow timeout. Only the biggest movers get an
-# LLM explanation — the rest still get headlines attached.
-MAX_LLM_EXPLANATIONS = 8
-LLM_TIMEOUT_SECONDS  = 25
+NEWS_WORKERS = 4
+NEWS_LIMIT = 15   # enough to reach the day's own headlines past the older ones
+NO_HEADLINE = "No clear company headline found for this move."
+_UP_RE = re.compile(r"\b(?:up|jump\w*|surg\w*|soar\w*|rall(?:y|ies|ied)|skyrocket\w*|rise[sn]?|rising|rose|"
+                    r"climb\w*|gain(?:s|ed)?|rebound\w*|upgrade[sd]?|pops?|spikes?)\b", re.IGNORECASE)
+_DOWN_RE = re.compile(r"\b(?:down|fall(?:s|ing|en)?|fell|drop(?:s|ped)?|plung\w*|plummet\w*|sinks?|sank|slid\w*|"
+                      r"slump\w*|tumbl\w*|crush\w*|crash\w*|lowered|cuts?|trims?|downgrade[sd]?|rout|"
+                      r"sell-?off|selloff|retreats?|loses?|lost)\b", re.IGNORECASE)
+# Opinion pieces and quote pages, not something that happened.
+_OPINION_RE = re.compile(r"\?|\((?:NYSE|NASDAQ):|stock forecasts?|price prediction|history says|"
+                         r"stock outlook|analyst ratings|is it time|here's why|valued\b|gf scor|earnings preview", re.IGNORECASE)
+_EARNINGS_RE = re.compile(r"\b(?:earnings|results|q[1-4]|quarter\w*|guidance)\b", re.IGNORECASE)
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-try:
-    from news_feed import fetch_news
-except Exception:
-    def fetch_news(ticker, limit=5):
-        return []
+from market_time import previous_session, prices_as_of, session_date
+from news_feed import _MATERIAL_RE, fetch_news
 
 
 def _verdict_map() -> dict:
@@ -72,42 +77,41 @@ def _market_reason(pct: float, quotes: dict) -> str | None:
     qqq = quotes.get("QQQ", {}).get("pct_change_1d")
     if qqq is None or abs(qqq) < MARKET_MOVE_PCT or qqq * pct <= 0:
         return None
-    return f"Moved with the broad market ({_market_note(quotes)}); no company-specific news found."
+    return f"The whole market moved the same way ({_market_note(quotes)})."
 
 
-def _llm_reason(ticker: str, pct: float, headlines: list[str], market_note: str = "") -> str | None:
-    """One-sentence reason grounded ONLY in the provided headlines."""
-    key = os.environ.get("NVIDIA_API_KEY") or os.environ.get("ANTHROPIC_API_KEY")
-    if not key or not headlines:
-        return None
+def _contradicts(title: str, pct: float) -> bool:
+    """A headline about the opposite move, such as Friday's fall on a Monday rally."""
+    same, opposite = (_UP_RE, _DOWN_RE) if pct > 0 else (_DOWN_RE, _UP_RE)
+    return bool(opposite.search(title)) and not same.search(title)
 
-    direction = "up" if pct > 0 else "down"
-    headlines_block = "\n".join(f"- {h}" for h in headlines)
-    prompt = (
-        f"{ticker} moved {direction} {abs(pct):.1f}% today. "
-        f"{'Market today: ' + market_note + '. ' if market_note else ''}Based ONLY on these "
-        f"headlines, give the single most likely reason in ONE sentence (max 20 words).\n\n"
-        f"A headline does NOT need to be ticker-specific to count as an answer. If the "
-        f"headlines describe a broader sector or market move (e.g. 'tech stocks selloff', "
-        f"'AI names down across the board', a peer-comparison article, a rate move), that "
-        f"IS the reason — say so explicitly, e.g. 'Part of a broader AI/tech selloff, "
-        f"not company-specific.' This is a MORE useful answer than a company-specific one, "
-        f"because it tells me whether to worry about this stock specifically or not at all.\n\n"
-        f"Only say 'No clear catalyst in current news.' if the headlines are unrelated to "
-        f"price action entirely (e.g. an old product review, an unrelated announcement).\n\n"
-        f"Headlines:\n{headlines_block}"
-    )
-    try:
-        from llm_client import chat
-        # 200 not 80: reasoning models in the chain can spend tokens before the
-        # answer; the prompt itself still caps the reply at ~20 words.
-        text, _ = chat(key, [{"role": "user", "content": prompt}],
-                       max_tokens=200, temperature=0.2,
-                       timeout=LLM_TIMEOUT_SECONDS)
-        return text
-    except Exception as exc:
-        print(f"   ⚠ {ticker}: no LLM reason ({str(exc)[:120]})")
-        return None
+
+def pick_headline(news: list[dict], pct: float, session: str, previous: str) -> dict | None:
+    """The day's headline, else earnings from the session before (often released after its close)."""
+    usable = [n for n in news if n.get("title") and not _OPINION_RE.search(n["title"])
+              and _MATERIAL_RE.search(n["title"]) and not _contradicts(n["title"], pct)]
+    return next((n for n in usable if n["date"] >= session), None) or next(
+        (n for n in usable if n["date"] >= previous and _EARNINGS_RE.search(n["title"])), None)
+
+
+def _lead_first(news: list[dict], pct: float, session: str, previous: str) -> list[dict]:
+    """The quoted headline leads, so the card links to it."""
+    lead = pick_headline(news, pct, session, previous)
+    return [lead, *(n for n in news if n is not lead)] if lead else news
+
+
+def explain(pct: float, news: list[dict], quotes: dict, session: str, previous: str) -> str:
+    """The headline itself, quoted and dated. Nothing here is written by a model, and
+    nothing claims the headline caused the move: on 2026-11-23 NVDA rose 31% on its CEO's
+    return and the app said "no company-specific news found"."""
+    headline = pick_headline(news, pct, session, previous)
+    market = _market_reason(pct, quotes)
+    if headline:
+        day = date.fromisoformat(headline["date"])
+        source = f" ({headline['publisher']})" if headline.get("publisher") else ""
+        told = f"{day:%b} {day.day} headline: \u201c{headline['title']}\u201d{source}."
+        return f"{told} {market}" if market else told
+    return f"{market} {NO_HEADLINE}" if market else NO_HEADLINE
 
 
 def main():
@@ -153,8 +157,6 @@ def main():
             default=0,
         )
 
-        # Detection only here — LLM explanations happen after ranking so we
-        # spend calls on the biggest movers, not the first 30 alphabetically.
         movers.append({
             "ticker":      ticker,
             "name":        q.get("name", ticker),
@@ -172,20 +174,15 @@ def main():
     # Sort by the size of the move that triggered the alert, biggest first
     movers.sort(key=lambda m: abs(m.get("primary_pct") or 0), reverse=True)
 
-    # Explain only the top N — bounded work keeps the workflow inside its timeout.
-    for i, m in enumerate(movers):
-        news = fetch_news(m["ticker"], 5)
-        m["news"] = news[:3]
-        pct = m.get("primary_pct") or 0
-        market_reason = _market_reason(pct, quotes)
-        if i < MAX_LLM_EXPLANATIONS:
-            headlines = [n["title"] for n in news if n.get("title")]
-            reason = _llm_reason(m["ticker"], pct, headlines, _market_note(quotes))
-            if not reason or reason.lower().startswith("no clear catalyst"):
-                reason = market_reason or "No clear catalyst in current news."
-            m["reason"] = reason
-        else:
-            m["reason"] = market_reason or "See headlines (explanation limited to top movers)."
+    as_of = prices_as_of(quotes)
+    now = datetime.fromisoformat(as_of.replace("Z", "+00:00")) if as_of else datetime.now(timezone.utc)
+    session = session_date(now)
+    days = (session.isoformat(), previous_session(session).isoformat())
+    with ThreadPoolExecutor(max_workers=NEWS_WORKERS) as pool:
+        found = list(pool.map(lambda m: fetch_news(m["ticker"], NEWS_LIMIT), movers))
+    movers = [{**m, "news": _lead_first(news, m["primary_pct"] or 0, *days)[:3],
+               "reason": explain(m["primary_pct"] or 0, news, quotes, *days)}
+              for m, news in zip(movers, found)]
 
     with open(MOVERS_PATH, "w") as f:
         json.dump({

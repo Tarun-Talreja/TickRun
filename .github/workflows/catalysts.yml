@@ -103,12 +103,12 @@ jobs:
               const est = (typeof e.eps_estimate === 'number')
                 ? ` · consensus EPS **${e.eps_estimate.toFixed(2)}**` : '';
               const px = e.price ? ` · $${e.price}` : '';
-              return `### ${mark} ${e.ticker} — ${e.type.replace('_', ' ')} in ${e.days_until}d\n` +
-                     `**${e.date}**${est}${px}${e.verdict ? ` · ${e.verdict}` : ''}\n\n${e.plan}\n`;
+              return `### ${mark} ${e.ticker} — ${e.type.replace('_', ' ')} on ${e.date}\n` +
+                     `${est}${px}${e.verdict ? ` · ${e.verdict}` : ''}\n\n${e.plan}\n`;
             };
 
             const body =
-              `**${imminent.length} catalyst(s) within 7 days.** Decide before the event, not after it.\n\n` +
+              `**${imminent.length} catalyst(s) within 7 days.**\n\n` +
               imminent.map(fmt).join('\n') +
               `\n---\n_A beat or miss only matters relative to the consensus above — that is the bar._\n` +
               `\n[Open dashboard](https://tarun-talreja.github.io/TickRun/)`;

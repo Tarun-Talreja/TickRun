@@ -40,6 +40,15 @@ def _close(day: date) -> time:
     return EARLY_CLOSE if early else CLOSE
 
 
+def session_date(as_of: datetime) -> date:
+    """The trading day a price belongs to, in New York."""
+    return as_of.astimezone(NEW_YORK).date()
+
+
+def previous_session(day: date) -> date:
+    return (pd.Timestamp(day) - _SESSION).date()
+
+
 def price_due_at(as_of: datetime) -> datetime:
     """When a price from `as_of` is out of date: two hours past the next open or close."""
     local = as_of.astimezone(NEW_YORK)

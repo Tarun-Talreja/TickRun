@@ -36,6 +36,7 @@ import sys
 from datetime import datetime, timezone
 
 from io_utils import load_json as _load
+from market_time import session_date
 
 SCRIPT_DIR     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DASHBOARD_PATH = os.path.join(SCRIPT_DIR, "output", "dashboard.json")
@@ -61,15 +62,17 @@ def _current_state(d: dict) -> dict:
     }
 
 
-def _mover_items(movers: list[dict], verdicts: dict) -> list[dict]:
+def _day(iso: str) -> str:
+    d = datetime.fromisoformat(iso)
+    return f"{d:%a %b} {d.day}"
+
+
+def _mover_items(movers: list[dict], verdicts: dict, researched: dict | None = None) -> list[dict]:
     """Big moves, names you still track first, the rest collapsed into one line.
 
     Listing by size alone filled the whole brief with PASS names on 2026-11-05
     and hid 19 others, including everything on the watchlist.
     """
-    NO_REASON = {"no clear catalyst in current news.",
-                 "see headlines (explanation limited to top movers).",
-                 ""}
     big = [m for m in movers if abs(m.get("primary_pct") or 0) >= MOVER_PCT]
     big.sort(key=lambda m: (verdicts.get(m["ticker"]) in ("PASS", "RED FLAG"),
                             -abs(m["primary_pct"])))
@@ -77,16 +80,13 @@ def _mover_items(movers: list[dict], verdicts: dict) -> list[dict]:
     for m in big[:MAX_MOVERS]:
         pct = m["primary_pct"]
         arrow = "▲" if pct > 0 else "▼"
-        reason = (m.get("reason") or "").strip()
-        has_reason = reason.lower() not in NO_REASON
+        rated = (researched or {}).get(m["ticker"])
         items.append({
             "priority": 3, "kind": "mover", "ticker": m["ticker"],
             "headline": f"{m['ticker']} {arrow} {pct:+.1f}%",
-            # A real reason IS the detail. With no reason, don't repeat a
-            # dead-end sentence — say what to actually do about it instead.
-            "detail": reason if has_reason else None,
-            "action": ("Verdict unaffected unless this breaks your thesis." if has_reason
-                       else "No catalyst found — check the ticker's news tab yourself before acting."),
+            "detail": m.get("reason") or None,
+            "action": (f"Its rating is from {_day(rated)} and doesn't account for anything since."
+                       if rated else "Not researched since this move."),
         })
     hidden = len(big) - len(items)
     if hidden:
@@ -111,18 +111,22 @@ def main():
     first_run = not prev
 
     items = []
+    today = session_date(datetime.now(timezone.utc)).isoformat()
 
     # 1. Catalysts landing today/tomorrow — a fixed deadline outranks everything
     for e in (d.get("catalysts") or {}).get("imminent", []):
+        if e.get("date", "") < today:   # the calendar is built daily and may be a day old
+            continue
         if e.get("days_until", 99) <= CATALYST_DAYS and e.get("urgency") != "low":
-            when = "TODAY" if e["days_until"] == 0 else f"in {e['days_until']}d"
+            when = _day(e["date"])   # a date stays true however old the page is
             est = e.get("eps_estimate")
             bar = f" · consensus EPS {est:.2f}" if isinstance(est, (int, float)) else ""
             items.append({
                 "priority": 1, "kind": "catalyst", "ticker": e["ticker"],
                 "headline": f"{e['ticker']} {str(e.get('type','')).replace('_',' ')} {when}{bar}",
                 "detail": e.get("plan", ""),
-                "action": "Decide your number before the print — not after.",
+                "action": "Wait for the results; the price can jump either way on them."
+                          if e.get("type") == "earnings" else None,
             })
 
     # 2. NEWLY at research target — the ones that crossed the line since yesterday
@@ -138,7 +142,9 @@ def main():
                 })
 
     # 3. Big movers — reason already attached by move_explainer
-    items.extend(_mover_items(sig.get("price_movers", []), cur["verdicts"]))
+    items.extend(_mover_items(sig.get("price_movers", []), cur["verdicts"],
+                              {c["ticker"]: c.get("last_researched")
+                               for c in d.get("watchlist", {}).get("all", [])}))
 
     # 4. New 5%+ ownership stakes — the early smart-money signal
     for s in sig.get("sec_ownership_stakes", []):

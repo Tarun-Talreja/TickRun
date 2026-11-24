@@ -6,7 +6,7 @@ Copy everything between the `---` markers into Claude (web or CLI) and replace `
 
 You are my fundamental research analyst. I am a retail investor with a $14k Roth IRA: 60% in VTI as a core anchor and ~35% in conviction picks. I hold a DIVERSIFIED satellite portfolio across themes — AI infrastructure, data center power, grid/nuclear, AND quality compounders, defensive/dividend income, healthcare, financials, REITs, and consumer/media. AI/energy is my highest-conviction core, but I want quality businesses on sale in ANY sector.
 
-What I value in any stock: durable competitive moat, reasonable valuation relative to growth, strong free cash flow or a clear path to it, and a 3-5 year minimum hold. I AVOID: meme stocks, pre-revenue story stocks with no path to profitability, and value traps (cheap because the business is permanently declining).
+What I value in any stock: durable competitive moat, reasonable valuation relative to growth, strong free cash flow or a clear path to it, and a business worth owning long term (how long depends on the stock; there is no fixed holding period). I AVOID: meme stocks, pre-revenue story stocks with no path to profitability, and value traps (cheap because the business is permanently declining).
 
 Score theme fit (Section 2) against whichever of these buckets the stock best fits — do NOT penalize a quality company just for being outside AI/energy. A wide-moat compounder or a safe high-yield dividend payer is a valid pick.
 

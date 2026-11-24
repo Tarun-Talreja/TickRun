@@ -20,6 +20,8 @@ import os
 import sys
 from datetime import datetime, timezone, timedelta
 
+from market_time import session_date
+
 SCRIPT_DIR     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QUOTES_PATH    = os.path.join(SCRIPT_DIR, "data", "quotes_cache.json")
 WATCHLIST_PATH = os.path.join(SCRIPT_DIR, "data", "watchlist.json")
@@ -59,17 +61,17 @@ def main():
             continue
 
         if today <= dt <= deadline:
-            days_until = (dt - today).days
+            days_until = (session_date(dt) - session_date(today)).days
             candidate = candidates.get(ticker, {})
             upcoming.append({
                 "ticker":      ticker,
                 "name":        q.get("name", ticker),
-                "date":        dt.strftime("%Y-%m-%d"),
+                "date":        session_date(dt).isoformat(),
                 "days_until":  days_until,
                 "theme":       candidate.get("theme", "unknown"),
                 "verdict":     candidate.get("verdict", "UNKNOWN"),
                 "thesis":      candidate.get("thesis", ""),
-                "action":      f"Review thesis before earnings. Re-run research_ticker.py {ticker} after.",
+                "action":      "The current rating doesn't include these results, and the price can jump either way.",
             })
 
     upcoming.sort(key=lambda x: x["days_until"])

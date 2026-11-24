@@ -830,7 +830,8 @@ const fp=v=>v==null?'—':'$'+Number(v).toFixed(2);
 const fn=(v,d=1)=>v==null?'—':Number(v).toFixed(d);
 const fpct=(v,d=1)=>v==null?'—':(v>0?'+':'')+Number(v).toFixed(d)+'%';
 const fBig=v=>{if(!v)return'—';if(v>=1e12)return'$'+(v/1e12).toFixed(2)+'T';if(v>=1e9)return'$'+(v/1e9).toFixed(1)+'B';if(v>=1e6)return'$'+(v/1e6).toFixed(1)+'M';return'$'+v};
-const fDate=s=>{if(!s)return'—';const d=new Date(s);return d.toLocaleDateString('en-US',{month:'short',day:'numeric'})};
+// A bare date parses as UTC midnight, which is the day before in the US.
+const fDate=s=>{if(!s)return'—';const d=new Date(/^\d{4}-\d{2}-\d{2}$/.test(s)?s+'T00:00':s);return d.toLocaleDateString('en-US',{month:'short',day:'numeric'})};
 
 const THEME={
   mega_cap_ai:{color:'#00d9f5',label:'Mega-Cap AI'},
@@ -984,7 +985,7 @@ function renderHome(data){
     html+=`<div class="focus-card urgent s-anim" style="animation-delay:.2s" onclick="navigateTo('signals')">
       <span class="focus-icon">📅</span>
       <div class="focus-content">
-        <div class="focus-label urgent">Earnings in ${e.days_until} day${e.days_until>1?'s':''}</div>
+        <div class="focus-label urgent">Earnings ${fDate(e.date)}</div>
         <div class="focus-title">${esc(e.ticker)} · ${esc(e.name)}</div>
         <div class="focus-sub">${esc(e.action)}</div>
       </div>
@@ -1339,7 +1340,7 @@ function renderSignals(data){
   const cat = ((data.catalysts||{}).imminent||[]).filter(e=>e.urgency!=='low');
   if(cat.length){
     const catCap = sigCap(cat, 'catalysts', 5);
-    html+=`<div class="sig-section-title">🔭 Catalysts Ahead <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text2);font-size:10px">· decide before the event</span></div>`;
+    html+=`<div class="sig-section-title">🔭 Catalysts Ahead</div>`;
     html+=`<div class="news-list">`;
     catCap.shown.forEach((e,i)=>{
       const hot = e.urgency==='high';
@@ -1349,7 +1350,7 @@ function renderSignals(data){
         <div class="news-head">
           <span class="news-ticker">${esc(e.ticker)}</span>
           ${e.verdict?vbadge(e.verdict):''}
-          <span class="mover-pct" style="color:${col};margin-left:auto">${e.days_until}d</span>
+          <span class="mover-pct" style="color:${col};margin-left:auto">${fDate(e.date)}</span>
         </div>
         <div class="mover-reason"><strong>${esc((e.type||'').replace('_',' '))}</strong> ${esc(e.date||'')}${est?` · ${est}`:''}</div>
         <div class="cat-plan">${esc(e.plan||'')}</div>
@@ -1363,7 +1364,7 @@ function renderSignals(data){
   const movers = sig.price_movers||[];
   if(movers.length){
     const movCap = sigCap(movers, 'movers', 5);
-    html+=`<div class="sig-section-title">⚡ Movers — Why It Moved</div>`;
+    html+=`<div class="sig-section-title">⚡ Movers and Their Headlines</div>`;
     html+=`<div class="news-list">`;
     movCap.shown.forEach((m,i)=>{
       const up = m.direction==='up';
@@ -1602,7 +1603,7 @@ function renderDailyBrief(data){
   if(b.quiet_day || !items.length){
     return `<div class="brief-card s-anim" style="animation-delay:.06s">
       <div class="brief-head"><span class="brief-label">☀️ Today</span></div>
-      <div class="brief-quiet">Nothing changed since yesterday. No action needed.</div>
+      <div class="brief-quiet">Nothing changed since yesterday.</div>
     </div>`;
   }
   return `<div class="brief-card s-anim" style="animation-delay:.06s">
@@ -1751,7 +1752,7 @@ function renderPortfolio(data){
     <div class="rule-item"><span class="ri-val">≤${rules.max_single_position_pct}%</span>max single position</div>
     <div class="rule-item"><span class="ri-val">+${rules.trim_trigger_pct}%</span>trim trigger</div>
     <div class="rule-item"><span class="ri-val">-${rules.stop_loss_pct}%</span>stop loss</div>
-    <div class="rule-item"><span class="ri-val">${rules.min_hold_years}yr+</span>minimum hold period</div>
+    <div class="rule-item"><span class="ri-val">Long term</span>holding period depends on the stock</div>
     <div class="rule-item"><span class="ri-no">NO</span>options trading</div>
     <div class="rule-item"><span class="ri-no">NO</span>margin</div>
     <div class="rule-item"><span class="ri-no">NO</span>leveraged ETFs</div>

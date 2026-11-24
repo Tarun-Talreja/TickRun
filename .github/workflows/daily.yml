@@ -61,8 +61,6 @@ jobs:
         continue-on-error: true
 
       - name: Detect + explain price movers
-        env:
-          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API }}
         run: python scripts/move_explainer.py
         continue-on-error: true
 

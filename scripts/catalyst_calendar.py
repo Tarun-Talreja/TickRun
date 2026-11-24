@@ -37,6 +37,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone, timedelta
 
 from io_utils import load_json as _load
+from market_time import session_date
 
 try:
     import yfinance as yf
@@ -108,7 +109,7 @@ def _urgency(days_until: int, ctype: str, verdict: str, drawdown) -> str:
             return "medium"
         return "low"
     if ctype == "ex_dividend":
-        return "medium" if days_until <= 3 else "low"
+        return "low"   # the price normally drops by the dividend, so no decision turns on it
     return "medium" if days_until <= IMMINENT_DAYS else "low"
 
 
@@ -119,14 +120,13 @@ def _plan(c: dict, cand: dict) -> str:
         est = c.get("eps_estimate")
         bar = f" Consensus EPS ~{est:.2f}." if isinstance(est, (int, float)) else ""
         if v == "RESEARCH-WORTHY":
-            return (f"Decide BEFORE the print.{bar} If you would buy on a beat, size the "
-                    f"order now; if a miss would break the thesis, write down what number "
-                    f"does that. Reacting after the move is how you end up chasing.")
+            return (f"Earnings report.{bar} The current rating doesn't include it, and the price "
+                    f"can jump either way.")
         return (f"Re-read the thesis against what is being reported.{bar} This is the "
                 f"quarter that either confirms the reason it is on the list or removes it.")
     if t == "ex_dividend":
-        return ("Ex-dividend date — buy before it to receive the dividend. Tax-free in "
-                "the Roth, which is where this name is routed.")
+        return ("From this date a buyer no longer gets the next dividend. The price normally "
+                "drops by about that amount, so it is no reason to buy sooner.")
     return "Review positioning ahead of this event."
 
 
@@ -149,7 +149,7 @@ def main():
             raw.extend(f.result())
             time.sleep(0.05)
 
-    today = datetime.now(timezone.utc).date()
+    today = session_date(datetime.now(timezone.utc))
     horizon = today + timedelta(days=args.horizon)
 
     events = []
