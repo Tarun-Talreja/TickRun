@@ -1327,7 +1327,7 @@ function renderStockDetail(s){
   </div>
   ${s.move_split?`<div class="detail-section"><div class="ds-title">What Moved It on ${fDate(s.move_split.session)}</div><div class="thesis-box">${moveSplit(s.move_split)}</div></div>`:''}
   ${renderValuation(s)}
-  ${s.fall_reason?`<div class="detail-section">
+  ${s.fall_reason&&!s.moved_since_rating?`<div class="detail-section">
     <div class="ds-title">Why It Fell</div>
     <div class="thesis-box">${esc(s.fall_reason)}</div>
   </div>`:''}
