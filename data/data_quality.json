@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T19:20:56Z",
+  "generated_at": "2026-11-24T19:42:26Z",
   "checked": 63,
   "flagged": 2,
   "quality": {
@@ -28,15 +28,15 @@
       "flags": [
         {
           "level": "low",
-          "msg": "Reports in EUR; figures converted to USD at 1.0971. Trailing P/E may mix currencies \u2014 verify against filings"
+          "msg": "Reports in EUR; figures converted to USD at 1.0969. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
     },
-    "AVGO": {
+    "BWXT": {
       "ok": true,
       "flags": []
     },
-    "BWXT": {
+    "AVGO": {
       "ok": true,
       "flags": []
     },
@@ -72,11 +72,11 @@
       "ok": true,
       "flags": []
     },
-    "DHR": {
+    "EIX": {
       "ok": true,
       "flags": []
     },
-    "EIX": {
+    "DHR": {
       "ok": true,
       "flags": []
     },
@@ -104,11 +104,11 @@
       "ok": true,
       "flags": []
     },
-    "GIS": {
+    "GOOGL": {
       "ok": true,
       "flags": []
     },
-    "GOOGL": {
+    "GIS": {
       "ok": true,
       "flags": []
     },
@@ -128,11 +128,15 @@
       "ok": true,
       "flags": []
     },
-    "LMB": {
+    "LLY": {
       "ok": true,
       "flags": []
     },
-    "LLY": {
+    "LPLA": {
+      "ok": true,
+      "flags": []
+    },
+    "LMB": {
       "ok": true,
       "flags": []
     },
@@ -144,19 +148,15 @@
       "ok": true,
       "flags": []
     },
-    "LPLA": {
-      "ok": true,
-      "flags": []
-    },
     "MKTX": {
       "ok": true,
       "flags": []
     },
-    "MSFT": {
+    "MRVL": {
       "ok": true,
       "flags": []
     },
-    "MRVL": {
+    "MSFT": {
       "ok": true,
       "flags": []
     },
@@ -180,15 +180,15 @@
       "ok": true,
       "flags": []
     },
+    "OKLO": {
+      "ok": true,
+      "flags": []
+    },
     "NVT": {
       "ok": true,
       "flags": []
     },
     "PAYX": {
-      "ok": true,
-      "flags": []
-    },
-    "OKLO": {
       "ok": true,
       "flags": []
     },
@@ -200,15 +200,15 @@
       "ok": true,
       "flags": []
     },
-    "RDDT": {
-      "ok": true,
-      "flags": []
-    },
     "QQQ": {
       "ok": true,
       "flags": []
     },
     "SPY": {
+      "ok": true,
+      "flags": []
+    },
+    "RDDT": {
       "ok": true,
       "flags": []
     },
@@ -224,18 +224,18 @@
       "ok": true,
       "flags": []
     },
-    "TW": {
-      "ok": true,
-      "flags": []
-    },
     "TSM": {
       "ok": false,
       "flags": [
         {
           "level": "low",
-          "msg": "Reports in TWD; figures converted to USD at 0.0303. Trailing P/E may mix currencies \u2014 verify against filings"
+          "msg": "Reports in TWD; figures converted to USD at 0.0304. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
+    },
+    "TW": {
+      "ok": true,
+      "flags": []
     },
     "UNH": {
       "ok": true,
