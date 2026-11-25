@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-25T20:34:34Z",
+  "generated_at": "2026-11-25T20:49:55Z",
   "checked": 63,
   "flagged": 2,
   "quality": {
-    "AAPL": {
+    "AMD": {
       "ok": true,
       "flags": []
     },
-    "AMD": {
+    "AAPL": {
       "ok": true,
       "flags": []
     },
@@ -15,11 +15,11 @@
       "ok": true,
       "flags": []
     },
-    "AMZN": {
+    "APP": {
       "ok": true,
       "flags": []
     },
-    "APP": {
+    "AMZN": {
       "ok": true,
       "flags": []
     },
@@ -28,7 +28,7 @@
       "flags": [
         {
           "level": "low",
-          "msg": "Reports in EUR; figures converted to USD at 1.0983. Trailing P/E may mix currencies \u2014 verify against filings"
+          "msg": "Reports in EUR; figures converted to USD at 1.0979. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
     },
@@ -36,19 +36,19 @@
       "ok": true,
       "flags": []
     },
-    "BWXT": {
-      "ok": true,
-      "flags": []
-    },
     "CBRS": {
       "ok": true,
       "flags": []
     },
-    "CEG": {
+    "BWXT": {
       "ok": true,
       "flags": []
     },
     "CLS": {
+      "ok": true,
+      "flags": []
+    },
+    "CEG": {
       "ok": true,
       "flags": []
     },
@@ -72,11 +72,11 @@
       "ok": true,
       "flags": []
     },
-    "EIX": {
+    "DHR": {
       "ok": true,
       "flags": []
     },
-    "DHR": {
+    "EIX": {
       "ok": true,
       "flags": []
     },
@@ -124,11 +124,11 @@
       "ok": true,
       "flags": []
     },
-    "LITE": {
+    "LLY": {
       "ok": true,
       "flags": []
     },
-    "LLY": {
+    "LITE": {
       "ok": true,
       "flags": []
     },
@@ -152,11 +152,11 @@
       "ok": true,
       "flags": []
     },
-    "MSFT": {
+    "MRVL": {
       "ok": true,
       "flags": []
     },
-    "MRVL": {
+    "MSFT": {
       "ok": true,
       "flags": []
     },
@@ -200,11 +200,11 @@
       "ok": true,
       "flags": []
     },
-    "RDDT": {
+    "QQQ": {
       "ok": true,
       "flags": []
     },
-    "QQQ": {
+    "RDDT": {
       "ok": true,
       "flags": []
     },
@@ -237,15 +237,19 @@
         }
       ]
     },
-    "UNH": {
-      "ok": true,
-      "flags": []
-    },
     "V": {
       "ok": true,
       "flags": []
     },
+    "UNH": {
+      "ok": true,
+      "flags": []
+    },
     "VRT": {
+      "ok": true,
+      "flags": []
+    },
+    "VST": {
       "ok": true,
       "flags": []
     },
@@ -254,10 +258,6 @@
       "flags": []
     },
     "ZBH": {
-      "ok": true,
-      "flags": []
-    },
-    "VST": {
       "ok": true,
       "flags": []
     },
