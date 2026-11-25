@@ -1,8 +1,12 @@
 {
-  "generated_at": "2026-11-25T17:18:45Z",
+  "generated_at": "2026-11-25T17:33:50Z",
   "checked": 63,
   "flagged": 2,
   "quality": {
+    "ADP": {
+      "ok": true,
+      "flags": []
+    },
     "AMD": {
       "ok": true,
       "flags": []
@@ -11,23 +15,11 @@
       "ok": true,
       "flags": []
     },
-    "ADP": {
-      "ok": true,
-      "flags": []
-    },
-    "APP": {
-      "ok": true,
-      "flags": []
-    },
     "AMZN": {
       "ok": true,
       "flags": []
     },
-    "BWXT": {
-      "ok": true,
-      "flags": []
-    },
-    "AVGO": {
+    "APP": {
       "ok": true,
       "flags": []
     },
@@ -40,15 +32,23 @@
         }
       ]
     },
+    "AVGO": {
+      "ok": true,
+      "flags": []
+    },
+    "BWXT": {
+      "ok": true,
+      "flags": []
+    },
     "CBRS": {
       "ok": true,
       "flags": []
     },
-    "CLS": {
+    "CEG": {
       "ok": true,
       "flags": []
     },
-    "CEG": {
+    "CLS": {
       "ok": true,
       "flags": []
     },
@@ -104,11 +104,11 @@
       "ok": true,
       "flags": []
     },
-    "GOOGL": {
+    "GIS": {
       "ok": true,
       "flags": []
     },
-    "GIS": {
+    "GOOGL": {
       "ok": true,
       "flags": []
     },
@@ -144,11 +144,11 @@
       "ok": true,
       "flags": []
     },
-    "META": {
+    "MKTX": {
       "ok": true,
       "flags": []
     },
-    "MKTX": {
+    "META": {
       "ok": true,
       "flags": []
     },
@@ -156,11 +156,11 @@
       "ok": true,
       "flags": []
     },
-    "MU": {
+    "MSFT": {
       "ok": true,
       "flags": []
     },
-    "MSFT": {
+    "MU": {
       "ok": true,
       "flags": []
     },
@@ -176,11 +176,11 @@
       "ok": true,
       "flags": []
     },
-    "NVT": {
+    "NVDA": {
       "ok": true,
       "flags": []
     },
-    "NVDA": {
+    "NVT": {
       "ok": true,
       "flags": []
     },
@@ -189,10 +189,6 @@
       "flags": []
     },
     "PAYX": {
-      "ok": true,
-      "flags": []
-    },
-    "PODD": {
       "ok": true,
       "flags": []
     },
@@ -221,6 +217,10 @@
       "flags": []
     },
     "TPL": {
+      "ok": true,
+      "flags": []
+    },
+    "PODD": {
       "ok": true,
       "flags": []
     },
