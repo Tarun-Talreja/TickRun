@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T19:04:08Z",
+  "generated_at": "2026-11-25T19:19:24Z",
   "checked": 63,
   "flagged": 2,
   "quality": {
@@ -7,19 +7,19 @@
       "ok": true,
       "flags": []
     },
-    "AAPL": {
-      "ok": true,
-      "flags": []
-    },
     "ADP": {
       "ok": true,
       "flags": []
     },
-    "APP": {
+    "AAPL": {
       "ok": true,
       "flags": []
     },
     "AMZN": {
+      "ok": true,
+      "flags": []
+    },
+    "APP": {
       "ok": true,
       "flags": []
     },
@@ -28,7 +28,7 @@
       "flags": [
         {
           "level": "low",
-          "msg": "Reports in EUR; figures converted to USD at 1.0988. Trailing P/E may mix currencies \u2014 verify against filings"
+          "msg": "Reports in EUR; figures converted to USD at 1.0989. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
     },
@@ -48,11 +48,11 @@
       "ok": true,
       "flags": []
     },
-    "CLS": {
+    "CMCSA": {
       "ok": true,
       "flags": []
     },
-    "CMCSA": {
+    "CLS": {
       "ok": true,
       "flags": []
     },
@@ -60,11 +60,11 @@
       "ok": true,
       "flags": []
     },
-    "CRDO": {
+    "COST": {
       "ok": true,
       "flags": []
     },
-    "COST": {
+    "CRDO": {
       "ok": true,
       "flags": []
     },
@@ -76,11 +76,11 @@
       "ok": true,
       "flags": []
     },
-    "EIX": {
+    "EME": {
       "ok": true,
       "flags": []
     },
-    "EME": {
+    "EIX": {
       "ok": true,
       "flags": []
     },
@@ -88,11 +88,11 @@
       "ok": true,
       "flags": []
     },
-    "FIX": {
+    "FLUT": {
       "ok": true,
       "flags": []
     },
-    "FLUT": {
+    "FIX": {
       "ok": true,
       "flags": []
     },
@@ -112,11 +112,11 @@
       "ok": true,
       "flags": []
     },
-    "IBM": {
+    "INVH": {
       "ok": true,
       "flags": []
     },
-    "INVH": {
+    "IBM": {
       "ok": true,
       "flags": []
     },
@@ -140,11 +140,11 @@
       "ok": true,
       "flags": []
     },
-    "META": {
+    "MA": {
       "ok": true,
       "flags": []
     },
-    "MA": {
+    "META": {
       "ok": true,
       "flags": []
     },
@@ -160,11 +160,11 @@
       "ok": true,
       "flags": []
     },
-    "NBIS": {
+    "MU": {
       "ok": true,
       "flags": []
     },
-    "MU": {
+    "NBIS": {
       "ok": true,
       "flags": []
     },
@@ -245,11 +245,11 @@
       "ok": true,
       "flags": []
     },
-    "VRT": {
+    "VST": {
       "ok": true,
       "flags": []
     },
-    "VST": {
+    "VRT": {
       "ok": true,
       "flags": []
     },
@@ -257,11 +257,11 @@
       "ok": true,
       "flags": []
     },
-    "ZBH": {
+    "^TNX": {
       "ok": true,
       "flags": []
     },
-    "^TNX": {
+    "ZBH": {
       "ok": true,
       "flags": []
     }
