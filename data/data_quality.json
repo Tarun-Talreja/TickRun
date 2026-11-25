@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-25T18:33:58Z",
+  "generated_at": "2026-11-25T18:49:16Z",
   "checked": 63,
   "flagged": 2,
   "quality": {
-    "AAPL": {
+    "AMD": {
       "ok": true,
       "flags": []
     },
-    "AMD": {
+    "AAPL": {
       "ok": true,
       "flags": []
     },
@@ -15,11 +15,11 @@
       "ok": true,
       "flags": []
     },
-    "APP": {
+    "AMZN": {
       "ok": true,
       "flags": []
     },
-    "AMZN": {
+    "APP": {
       "ok": true,
       "flags": []
     },
@@ -28,15 +28,15 @@
       "flags": [
         {
           "level": "low",
-          "msg": "Reports in EUR; figures converted to USD at 1.0990. Trailing P/E may mix currencies \u2014 verify against filings"
+          "msg": "Reports in EUR; figures converted to USD at 1.0988. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
     },
-    "BWXT": {
+    "AVGO": {
       "ok": true,
       "flags": []
     },
-    "AVGO": {
+    "BWXT": {
       "ok": true,
       "flags": []
     },
@@ -44,11 +44,11 @@
       "ok": true,
       "flags": []
     },
-    "CLS": {
+    "CEG": {
       "ok": true,
       "flags": []
     },
-    "CEG": {
+    "CLS": {
       "ok": true,
       "flags": []
     },
@@ -96,15 +96,11 @@
       "ok": true,
       "flags": []
     },
-    "GEHC": {
-      "ok": true,
-      "flags": []
-    },
     "GEV": {
       "ok": true,
       "flags": []
     },
-    "GIS": {
+    "GEHC": {
       "ok": true,
       "flags": []
     },
@@ -112,15 +108,19 @@
       "ok": true,
       "flags": []
     },
+    "GIS": {
+      "ok": true,
+      "flags": []
+    },
     "IBM": {
       "ok": true,
       "flags": []
     },
-    "INVH": {
+    "ISRG": {
       "ok": true,
       "flags": []
     },
-    "ISRG": {
+    "INVH": {
       "ok": true,
       "flags": []
     },
@@ -148,11 +148,11 @@
       "ok": true,
       "flags": []
     },
-    "MRVL": {
+    "MKTX": {
       "ok": true,
       "flags": []
     },
-    "MKTX": {
+    "MRVL": {
       "ok": true,
       "flags": []
     },
@@ -241,19 +241,19 @@
       "ok": true,
       "flags": []
     },
-    "VRT": {
-      "ok": true,
-      "flags": []
-    },
     "V": {
       "ok": true,
       "flags": []
     },
-    "VST": {
+    "VRT": {
       "ok": true,
       "flags": []
     },
     "VTI": {
+      "ok": true,
+      "flags": []
+    },
+    "VST": {
       "ok": true,
       "flags": []
     },
