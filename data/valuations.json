@@ -1,22 +1,22 @@
 {
- "generated_at": "2026-11-25T05:43:12Z",
- "treasury_10y": 0.049,
+ "generated_at": "2026-11-26T05:30:29Z",
+ "treasury_10y": 0.0485,
  "margin_of_safety": 0.25,
  "equity_premium": 0.05,
  "tickers": {
   "AAPL": {
    "methods": {
-    "cash_flow": 127.12,
-    "own_multiple": 308.73
+    "cash_flow": 127.93,
+    "own_multiple": 308.58
    },
-   "price": 354.07,
+   "price": 355.58,
    "status": "no_reliable_price",
-   "low": 127.12,
-   "base": 217.93,
-   "high": 308.73,
+   "low": 127.93,
+   "base": 218.25,
+   "high": 308.58,
    "buy_below": null,
-   "no_growth_value": 93.86,
-   "reason": "the methods disagree too much to trust (cash flow $127, own multiple $309)",
+   "no_growth_value": 94.42,
+   "reason": "the methods disagree too much to trust (cash flow $128, own multiple $309)",
    "notes": [
     "left out as out of date in the filings: software_capex",
     "past P/E of 37x cut to a 36x ceiling (growth above 7% isn't credited)"
@@ -25,14 +25,14 @@
     "owner_cash_per_share": 7.85,
     "cash_margin": 0.2414,
     "growth_used": 0.0553,
-    "discount_rate": 0.1035,
+    "discount_rate": 0.103,
     "beta": 1.09,
     "cyclical": false,
     "eps_normalised": 8.63,
     "median_past_pe": 37.4,
     "fair_pe": 35.8,
-    "terminal_share": 0.497,
-    "implied_growth": 0.2487,
+    "terminal_share": 0.499,
+    "implied_growth": 0.2481,
     "figures_as_of": "2026-09-26",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -47,16 +47,16 @@
   },
   "ADP": {
    "methods": {
-    "cash_flow": 224.96,
+    "cash_flow": 226.74,
     "own_multiple": 293.0
    },
-   "price": 310.79,
+   "price": 316.72,
    "status": "ok",
-   "low": 224.96,
-   "base": 258.98,
+   "low": 226.74,
+   "base": 259.87,
    "high": 293.0,
-   "buy_below": 194.24,
-   "no_growth_value": 159.02,
+   "buy_below": 194.9,
+   "no_growth_value": 160.21,
    "reason": null,
    "notes": [
     "growth cut from 7.9% to 6.1%, the latest quarter's pace"
@@ -65,14 +65,14 @@
     "owner_cash_per_share": 10.98,
     "cash_margin": 0.196,
     "growth_used": 0.061,
-    "discount_rate": 0.089,
+    "discount_rate": 0.0885,
     "beta": 0.79,
     "cyclical": false,
     "eps_normalised": 11.17,
     "median_past_pe": 26.2,
     "fair_pe": 26.2,
-    "terminal_share": 0.567,
-    "implied_growth": 0.1189,
+    "terminal_share": 0.569,
+    "implied_growth": 0.1209,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -87,16 +87,16 @@
   },
   "AMD": {
    "methods": {
-    "cash_flow": 38.24,
-    "own_multiple": 131.14
+    "cash_flow": 38.41,
+    "own_multiple": 131.08
    },
-   "price": 413.27,
+   "price": 406.03,
    "status": "no_reliable_price",
-   "low": 38.24,
-   "base": 84.69,
-   "high": 131.14,
+   "low": 38.41,
+   "base": 84.75,
+   "high": 131.08,
    "buy_below": null,
-   "no_growth_value": 18.3,
+   "no_growth_value": 18.36,
    "reason": "the methods disagree too much to trust (cash flow $38, own multiple $131)",
    "notes": [
     "profit margins vary a lot, so they were averaged over every year on file",
@@ -106,13 +106,13 @@
     "owner_cash_per_share": 2.34,
     "cash_margin": 0.0852,
     "growth_used": 0.15,
-    "discount_rate": 0.149,
+    "discount_rate": 0.1485,
     "beta": 2.54,
     "cyclical": true,
     "eps_normalised": 3.52,
     "median_past_pe": 124.9,
     "fair_pe": 37.3,
-    "terminal_share": 0.389,
+    "terminal_share": 0.39,
     "implied_growth": null,
     "figures_as_of": "2026-09-26",
     "sources": {
@@ -128,13 +128,13 @@
   },
   "AMZN": {
    "methods": {
-    "own_multiple": 207.89
+    "own_multiple": 207.8
    },
-   "price": 252.29,
+   "price": 244.43,
    "status": "no_reliable_price",
-   "low": 207.89,
-   "base": 207.89,
-   "high": 207.89,
+   "low": 207.8,
+   "base": 207.8,
+   "high": 207.8,
    "buy_below": null,
    "no_growth_value": null,
    "reason": "only one valuation method could be used (no cash flow)",
@@ -147,12 +147,12 @@
     "owner_cash_per_share": -1.65,
     "cash_margin": -0.0226,
     "growth_used": 0.121,
-    "discount_rate": 0.124,
+    "discount_rate": 0.1235,
     "beta": 1.5,
     "cyclical": true,
     "eps_normalised": 5.7,
     "median_past_pe": 39.7,
-    "fair_pe": 36.5,
+    "fair_pe": 36.4,
     "terminal_share": null,
     "implied_growth": null,
     "figures_as_of": "2026-09-30",
@@ -169,13 +169,13 @@
   },
   "APP": {
    "methods": {
-    "own_multiple": 217.73
+    "own_multiple": 217.63
    },
-   "price": 381.11,
+   "price": 378.95,
    "status": "no_reliable_price",
-   "low": 217.73,
-   "base": 217.73,
-   "high": 217.73,
+   "low": 217.63,
+   "base": 217.63,
+   "high": 217.63,
    "buy_below": null,
    "no_growth_value": null,
    "reason": "only one valuation method could be used (no cash flow)",
@@ -187,7 +187,7 @@
     "owner_cash_per_share": 0.0,
     "cash_margin": null,
     "growth_used": 0.15,
-    "discount_rate": 0.149,
+    "discount_rate": 0.1485,
     "beta": 2.5,
     "cyclical": true,
     "eps_normalised": 5.84,
@@ -210,7 +210,7 @@
   },
   "ASML": {
    "methods": {},
-   "price": 1336.06,
+   "price": 1303.08,
    "status": "no_reliable_price",
    "low": null,
    "base": null,
@@ -223,15 +223,15 @@
   },
   "AVGO": {
    "methods": {
-    "cash_flow": 142.2
+    "cash_flow": 142.99
    },
-   "price": 301.08,
+   "price": 300.86,
    "status": "no_reliable_price",
-   "low": 142.2,
-   "base": 142.2,
-   "high": 142.2,
+   "low": 142.99,
+   "base": 142.99,
+   "high": 142.99,
    "buy_below": null,
-   "no_growth_value": 65.42,
+   "no_growth_value": 65.73,
    "reason": "only one valuation method could be used (no own multiple)",
    "notes": [
     "profit margins vary a lot, so they were averaged over every year on file"
@@ -240,14 +240,14 @@
     "owner_cash_per_share": 6.82,
     "cash_margin": 0.374,
     "growth_used": 0.15,
-    "discount_rate": 0.1245,
+    "discount_rate": 0.124,
     "beta": 1.51,
     "cyclical": true,
     "eps_normalised": null,
     "median_past_pe": null,
     "fair_pe": null,
-    "terminal_share": 0.467,
-    "implied_growth": 0.3004,
+    "terminal_share": 0.469,
+    "implied_growth": 0.299,
     "figures_as_of": "2026-08-02",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -262,16 +262,16 @@
   },
   "BWXT": {
    "methods": {
-    "cash_flow": 78.85,
-    "own_multiple": 141.55
+    "cash_flow": 79.48,
+    "own_multiple": 141.49
    },
-   "price": 113.14,
+   "price": 113.55,
    "status": "ok",
-   "low": 78.85,
-   "base": 110.2,
-   "high": 141.55,
-   "buy_below": 82.65,
-   "no_growth_value": 48.6,
+   "low": 79.48,
+   "base": 110.49,
+   "high": 141.49,
+   "buy_below": 82.87,
+   "no_growth_value": 48.96,
    "reason": null,
    "notes": [
     "left out as out of date in the filings: software_capex",
@@ -281,14 +281,14 @@
     "owner_cash_per_share": 3.35,
     "cash_margin": 0.0857,
     "growth_used": 0.0854,
-    "discount_rate": 0.089,
+    "discount_rate": 0.0885,
     "beta": 0.72,
     "cyclical": false,
     "eps_normalised": 4.01,
     "median_past_pe": 36.3,
     "fair_pe": 35.3,
-    "terminal_share": 0.58,
-    "implied_growth": 0.1508,
+    "terminal_share": 0.583,
+    "implied_growth": 0.1499,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -303,7 +303,7 @@
   },
   "CBRS": {
    "methods": {},
-   "price": 88.78,
+   "price": 89.68,
    "status": "no_reliable_price",
    "low": null,
    "base": null,
@@ -316,15 +316,15 @@
   },
   "CEG": {
    "methods": {
-    "company_measure": 169.35
+    "company_measure": 170.37
    },
-   "price": 244.84,
+   "price": 235.28,
    "status": "ok",
-   "low": 169.35,
-   "base": 169.35,
-   "high": 169.35,
-   "buy_below": 127.01,
-   "no_growth_value": 147.71,
+   "low": 170.37,
+   "base": 170.37,
+   "high": 170.37,
+   "buy_below": 127.78,
+   "no_growth_value": 148.57,
    "reason": null,
    "notes": [
     "valued on Adjusted operating earnings per share (company guidance, used as a cash proxy), with no growth beyond inflation"
@@ -341,25 +341,25 @@
     "release_filed": "2026-11-09",
     "release_url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000116/ceg-20261109991.htm",
     "per_share": 12.65,
-    "discount_rate": 0.1055,
+    "discount_rate": 0.105,
     "growth_used": 0.025,
-    "implied_growth": 0.093,
+    "implied_growth": 0.0844,
     "beta": 1.13
    }
   },
   "CLS": {
    "methods": {
-    "cash_flow": 76.33,
+    "cash_flow": 76.79,
     "own_multiple": 186.38
    },
-   "price": 196.64,
+   "price": 191.95,
    "status": "no_reliable_price",
-   "low": 76.33,
-   "base": 131.35,
+   "low": 76.79,
+   "base": 131.59,
    "high": 186.38,
    "buy_below": null,
-   "no_growth_value": 34.61,
-   "reason": "the methods disagree too much to trust (cash flow $76, own multiple $186)",
+   "no_growth_value": 34.79,
+   "reason": "the methods disagree too much to trust (cash flow $77, own multiple $186)",
    "notes": [
     "profit margins vary a lot, so they were averaged over every year on file"
    ],
@@ -367,14 +367,14 @@
     "owner_cash_per_share": 3.32,
     "cash_margin": 0.0215,
     "growth_used": 0.15,
-    "discount_rate": 0.116,
+    "discount_rate": 0.1155,
     "beta": 1.34,
     "cyclical": true,
     "eps_normalised": 7.28,
     "median_past_pe": 25.6,
     "fair_pe": 25.6,
-    "terminal_share": 0.498,
-    "implied_growth": 0.3385,
+    "terminal_share": 0.5,
+    "implied_growth": 0.3322,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -389,16 +389,16 @@
   },
   "CMCSA": {
    "methods": {
-    "cash_flow": 57.18,
+    "cash_flow": 57.61,
     "own_multiple": 37.24
    },
-   "price": 25.38,
+   "price": 25.73,
    "status": "market_expects_decline",
    "low": 37.24,
-   "base": 47.21,
-   "high": 57.18,
+   "base": 47.42,
+   "high": 57.61,
    "buy_below": null,
-   "no_growth_value": 57.18,
+   "no_growth_value": 57.61,
    "reason": "today's price implies the business shrinks about 14% a year; find out why before trusting a higher value",
    "notes": [
     "growth cut from 0.6% to 0.0%, the latest quarter's pace"
@@ -407,14 +407,14 @@
     "owner_cash_per_share": 3.95,
     "cash_margin": 0.115,
     "growth_used": 0.0,
-    "discount_rate": 0.089,
+    "discount_rate": 0.0885,
     "beta": 0.71,
     "cyclical": false,
     "eps_normalised": 4.39,
     "median_past_pe": 8.5,
     "fair_pe": 8.5,
-    "terminal_share": 0.53,
-    "implied_growth": -0.1405,
+    "terminal_share": 0.532,
+    "implied_growth": -0.1392,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -430,7 +430,7 @@
   },
   "COHR": {
    "methods": {},
-   "price": 196.24,
+   "price": 196.19,
    "status": "no_reliable_price",
    "low": null,
    "base": null,
@@ -445,7 +445,7 @@
     "owner_cash_per_share": -4.0,
     "cash_margin": -0.1023,
     "growth_used": 0.15,
-    "discount_rate": 0.149,
+    "discount_rate": 0.1485,
     "beta": 2.23,
     "cyclical": false,
     "eps_normalised": 2.06,
@@ -467,16 +467,16 @@
   },
   "COST": {
    "methods": {
-    "cash_flow": 413.88,
-    "own_multiple": 719.52
+    "cash_flow": 417.11,
+    "own_multiple": 719.18
    },
-   "price": 1091.71,
+   "price": 1086.81,
    "status": "ok",
-   "low": 413.88,
-   "base": 566.7,
-   "high": 719.52,
-   "buy_below": 425.03,
-   "no_growth_value": 247.78,
+   "low": 417.11,
+   "base": 568.14,
+   "high": 719.18,
+   "buy_below": 426.11,
+   "no_growth_value": 249.55,
    "reason": null,
    "notes": [
     "past P/E of 52x cut to a 35x ceiling (growth above 6% isn't credited)"
@@ -485,14 +485,14 @@
     "owner_cash_per_share": 17.73,
     "cash_margin": 0.026,
     "growth_used": 0.0912,
-    "discount_rate": 0.0915,
+    "discount_rate": 0.091,
     "beta": 0.85,
     "cyclical": false,
     "eps_normalised": 20.33,
     "median_past_pe": 51.8,
     "fair_pe": 35.4,
-    "terminal_share": 0.571,
-    "implied_growth": 0.2724,
+    "terminal_share": 0.574,
+    "implied_growth": 0.2699,
     "figures_as_of": "2026-08-30",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -507,7 +507,7 @@
   },
   "CRDO": {
    "methods": {},
-   "price": 106.46,
+   "price": 106.795,
    "status": "no_reliable_price",
    "low": null,
    "base": null,
@@ -522,7 +522,7 @@
     "owner_cash_per_share": -2.01,
     "cash_margin": -0.2453,
     "growth_used": 0.15,
-    "discount_rate": 0.149,
+    "discount_rate": 0.1485,
     "beta": 3.29,
     "cyclical": true,
     "eps_normalised": -0.12,
@@ -544,16 +544,16 @@
   },
   "DECK": {
    "methods": {
-    "cash_flow": 112.05,
-    "own_multiple": 113.44
+    "cash_flow": 112.74,
+    "own_multiple": 114.26
    },
-   "price": 84.29,
+   "price": 85.56,
    "status": "market_expects_decline",
-   "low": 112.05,
-   "base": 112.75,
-   "high": 113.44,
+   "low": 112.74,
+   "base": 113.5,
+   "high": 114.26,
    "buy_below": null,
-   "no_growth_value": 92.49,
+   "no_growth_value": 93.04,
    "reason": "today's price implies the business shrinks about 2% a year; find out why before trusting a higher value",
    "notes": [
     "growth cut from 15.0% to 3.5%, the latest quarter's pace",
@@ -564,14 +564,14 @@
     "owner_cash_per_share": 7.83,
     "cash_margin": 0.1922,
     "growth_used": 0.035,
-    "discount_rate": 0.1045,
+    "discount_rate": 0.104,
     "beta": 1.11,
     "cyclical": false,
     "eps_normalised": 7.62,
     "median_past_pe": 17.7,
-    "fair_pe": 14.9,
-    "terminal_share": 0.48,
-    "implied_growth": -0.0169,
+    "fair_pe": 15.0,
+    "terminal_share": 0.482,
+    "implied_growth": -0.0152,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -586,16 +586,16 @@
   },
   "DHR": {
    "methods": {
-    "cash_flow": 124.8,
-    "own_multiple": 105.26
+    "cash_flow": 125.74,
+    "own_multiple": 106.15
    },
-   "price": 229.09,
+   "price": 227.35,
    "status": "ok",
-   "low": 105.26,
-   "base": 115.03,
-   "high": 124.8,
-   "buy_below": 86.27,
-   "no_growth_value": 111.5,
+   "low": 106.15,
+   "base": 115.94,
+   "high": 125.74,
+   "buy_below": 86.95,
+   "no_growth_value": 112.33,
    "reason": null,
    "notes": [
     "past P/E of 43x cut to a 17x ceiling (3% growth)"
@@ -604,14 +604,14 @@
     "owner_cash_per_share": 7.7,
     "cash_margin": 0.2129,
     "growth_used": 0.0197,
-    "discount_rate": 0.089,
+    "discount_rate": 0.0885,
     "beta": 0.8,
     "cyclical": false,
     "eps_normalised": 6.14,
     "median_past_pe": 43.4,
-    "fair_pe": 17.2,
-    "terminal_share": 0.542,
-    "implied_growth": 0.128,
+    "fair_pe": 17.3,
+    "terminal_share": 0.545,
+    "implied_growth": 0.1251,
     "figures_as_of": "2026-09-25",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -626,13 +626,13 @@
   },
   "EIX": {
    "methods": {
-    "own_multiple": 67.62
+    "own_multiple": 68.0
    },
-   "price": 62.22,
+   "price": 63.39,
    "status": "no_reliable_price",
-   "low": 67.62,
-   "base": 67.62,
-   "high": 67.62,
+   "low": 68.0,
+   "base": 68.0,
+   "high": 68.0,
    "buy_below": null,
    "no_growth_value": null,
    "reason": "only one valuation method could be used (no cash flow)",
@@ -645,12 +645,12 @@
     "owner_cash_per_share": -7.22,
     "cash_margin": -0.1505,
     "growth_used": 0.0,
-    "discount_rate": 0.089,
+    "discount_rate": 0.0885,
     "beta": 0.55,
     "cyclical": true,
     "eps_normalised": 6.02,
     "median_past_pe": 23.0,
-    "fair_pe": 11.2,
+    "fair_pe": 11.3,
     "terminal_share": null,
     "implied_growth": null,
     "figures_as_of": "2026-09-30",
@@ -667,16 +667,16 @@
   },
   "EME": {
    "methods": {
-    "cash_flow": 712.41,
+    "cash_flow": 717.11,
     "own_multiple": 487.37
    },
-   "price": 631.98,
+   "price": 628.72,
    "status": "ok",
    "low": 487.37,
-   "base": 599.89,
-   "high": 712.41,
-   "buy_below": 449.92,
-   "no_growth_value": 333.9,
+   "base": 602.24,
+   "high": 717.11,
+   "buy_below": 451.68,
+   "no_growth_value": 335.82,
    "reason": null,
    "notes": [
     "profit margins vary a lot, so they were averaged over every year on file",
@@ -686,14 +686,14 @@
     "owner_cash_per_share": 29.09,
     "cash_margin": 0.0653,
     "growth_used": 0.1407,
-    "discount_rate": 0.107,
+    "discount_rate": 0.1065,
     "beta": 1.16,
     "cyclical": true,
     "eps_normalised": 23.1,
     "median_past_pe": 21.1,
     "fair_pe": 21.1,
-    "terminal_share": 0.528,
-    "implied_growth": 0.1181,
+    "terminal_share": 0.53,
+    "implied_growth": 0.1159,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "Revenues",
@@ -707,16 +707,16 @@
   },
   "ETN": {
    "methods": {
-    "cash_flow": 199.22,
+    "cash_flow": 200.5,
     "own_multiple": 351.81
    },
-   "price": 319.27,
+   "price": 317.81,
    "status": "ok",
-   "low": 199.22,
-   "base": 275.51,
+   "low": 200.5,
+   "base": 276.15,
    "high": 351.81,
-   "buy_below": 206.63,
-   "no_growth_value": 122.32,
+   "buy_below": 207.11,
+   "no_growth_value": 123.03,
    "reason": null,
    "notes": [
     "left out as out of date in the filings: operating_income, stock_comp"
@@ -725,14 +725,14 @@
     "owner_cash_per_share": 10.54,
     "cash_margin": 0.1283,
     "growth_used": 0.0898,
-    "discount_rate": 0.106,
+    "discount_rate": 0.1055,
     "beta": 1.14,
     "cyclical": false,
     "eps_normalised": 11.54,
     "median_past_pe": 30.5,
     "fair_pe": 30.5,
-    "terminal_share": 0.506,
-    "implied_growth": 0.1787,
+    "terminal_share": 0.508,
+    "implied_growth": 0.1765,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -745,16 +745,16 @@
   },
   "FIX": {
    "methods": {
-    "cash_flow": 695.96,
+    "cash_flow": 699.57,
     "own_multiple": 794.08
    },
-   "price": 1096.56,
+   "price": 1099.58,
    "status": "ok",
-   "low": 695.96,
-   "base": 745.02,
+   "low": 699.57,
+   "base": 746.83,
    "high": 794.08,
-   "buy_below": 558.76,
-   "no_growth_value": 323.65,
+   "buy_below": 560.12,
+   "no_growth_value": 325.06,
    "reason": null,
    "notes": [
     "profit margins vary a lot, so they were averaged over every year on file"
@@ -763,14 +763,14 @@
     "owner_cash_per_share": 35.78,
     "cash_margin": 0.1005,
     "growth_used": 0.15,
-    "discount_rate": 0.131,
+    "discount_rate": 0.1305,
     "beta": 1.64,
     "cyclical": true,
     "eps_normalised": 27.35,
     "median_past_pe": 29.0,
     "fair_pe": 29.0,
-    "terminal_share": 0.445,
-    "implied_growth": 0.2412,
+    "terminal_share": 0.446,
+    "implied_growth": 0.2407,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "Revenues",
@@ -785,15 +785,15 @@
   },
   "FLUT": {
    "methods": {
-    "cash_flow": 44.49
+    "cash_flow": 44.75
    },
-   "price": 67.3,
+   "price": 70.76,
    "status": "no_reliable_price",
-   "low": 44.49,
-   "base": 44.49,
-   "high": 44.49,
+   "low": 44.75,
+   "base": 44.75,
+   "high": 44.75,
    "buy_below": null,
-   "no_growth_value": 39.66,
+   "no_growth_value": 39.89,
    "reason": "only one valuation method could be used (no own multiple)",
    "notes": [
     "profit margins vary a lot, so they were averaged over every year on file",
@@ -805,14 +805,14 @@
     "owner_cash_per_share": 3.42,
     "cash_margin": 0.0347,
     "growth_used": 0.021,
-    "discount_rate": 0.106,
+    "discount_rate": 0.1055,
     "beta": 1.14,
     "cyclical": true,
     "eps_normalised": null,
     "median_past_pe": null,
     "fair_pe": null,
-    "terminal_share": 0.465,
-    "implied_growth": 0.0974,
+    "terminal_share": 0.467,
+    "implied_growth": 0.1056,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerIncludingAssessedTax",
@@ -829,7 +829,7 @@
    "methods": {
     "own_multiple": 81.87
    },
-   "price": 82.52,
+   "price": 83.33,
    "status": "no_reliable_price",
    "low": 81.87,
    "base": 81.87,
@@ -844,7 +844,7 @@
     "owner_cash_per_share": 0.0,
     "cash_margin": null,
     "growth_used": 0.0407,
-    "discount_rate": 0.089,
+    "discount_rate": 0.0885,
     "beta": 0.77,
     "cyclical": false,
     "eps_normalised": 4.54,
@@ -865,15 +865,15 @@
   },
   "GEV": {
    "methods": {
-    "cash_flow": 329.69
+    "cash_flow": 331.9
    },
-   "price": 720.65,
+   "price": 715.0,
    "status": "no_reliable_price",
-   "low": 329.69,
-   "base": 329.69,
-   "high": 329.69,
+   "low": 331.9,
+   "base": 331.9,
+   "high": 331.9,
    "buy_below": null,
-   "no_growth_value": 204.79,
+   "no_growth_value": 206.04,
    "reason": "only one valuation method could be used (no own multiple)",
    "notes": [
     "profit margins vary a lot, so they were averaged over every year on file"
@@ -882,14 +882,14 @@
     "owner_cash_per_share": 16.82,
     "cash_margin": 0.1031,
     "growth_used": 0.0868,
-    "discount_rate": 0.102,
+    "discount_rate": 0.1015,
     "beta": 1.06,
     "cyclical": true,
     "eps_normalised": 9.87,
     "median_past_pe": null,
     "fair_pe": null,
-    "terminal_share": 0.521,
-    "implied_growth": 0.2344,
+    "terminal_share": 0.524,
+    "implied_growth": 0.2315,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -904,15 +904,15 @@
   },
   "GIS": {
    "methods": {
-    "cash_flow": 54.03
+    "cash_flow": 54.43
    },
-   "price": 35.59,
+   "price": 36.25,
    "status": "market_expects_decline",
-   "low": 54.03,
-   "base": 54.03,
-   "high": 54.03,
+   "low": 54.43,
+   "base": 54.43,
+   "high": 54.43,
    "buy_below": null,
-   "no_growth_value": 54.03,
+   "no_growth_value": 54.43,
    "reason": "today's price implies the business shrinks about 7% a year; find out why before trusting a higher value",
    "notes": [
     "profit margins vary a lot, so they were averaged over every year on file",
@@ -922,14 +922,14 @@
     "owner_cash_per_share": 3.73,
     "cash_margin": 0.1096,
     "growth_used": 0.0,
-    "discount_rate": 0.089,
+    "discount_rate": 0.0885,
     "beta": -0.01,
     "cyclical": true,
     "eps_normalised": 2.87,
     "median_past_pe": null,
     "fair_pe": null,
-    "terminal_share": 0.53,
-    "implied_growth": -0.0724,
+    "terminal_share": 0.532,
+    "implied_growth": -0.0704,
     "figures_as_of": "2026-08-30",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -944,30 +944,30 @@
   },
   "GOOGL": {
    "methods": {
-    "cash_flow": 92.34,
+    "cash_flow": 92.93,
     "own_multiple": 311.73
    },
-   "price": 279.05,
+   "price": 273.1,
    "status": "no_reliable_price",
-   "low": 92.34,
-   "base": 202.04,
+   "low": 92.93,
+   "base": 202.33,
    "high": 311.73,
    "buy_below": null,
-   "no_growth_value": 41.47,
-   "reason": "the methods disagree too much to trust (cash flow $92, own multiple $312)",
+   "no_growth_value": 41.69,
+   "reason": "the methods disagree too much to trust (cash flow $93, own multiple $312)",
    "notes": [],
    "inputs": {
     "owner_cash_per_share": 3.76,
     "cash_margin": 0.0983,
     "growth_used": 0.15,
-    "discount_rate": 0.1105,
+    "discount_rate": 0.11,
     "beta": 1.23,
     "cyclical": false,
     "eps_normalised": 12.94,
     "median_past_pe": 24.1,
     "fair_pe": 24.1,
-    "terminal_share": 0.519,
-    "implied_growth": 0.3699,
+    "terminal_share": 0.521,
+    "implied_growth": 0.3639,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "Revenues",
@@ -982,16 +982,16 @@
   },
   "IBM": {
    "methods": {
-    "cash_flow": 221.99,
-    "own_multiple": 243.99
+    "cash_flow": 223.71,
+    "own_multiple": 246.93
    },
-   "price": 235.62,
+   "price": 243.47,
    "status": "ok",
-   "low": 221.99,
-   "base": 232.99,
-   "high": 243.99,
-   "buy_below": 174.74,
-   "no_growth_value": 175.51,
+   "low": 223.71,
+   "base": 235.32,
+   "high": 246.93,
+   "buy_below": 176.49,
+   "no_growth_value": 176.81,
    "reason": null,
    "notes": [
     "capital spending raised 1.5x to match Yahoo; some is filed under company-specific names",
@@ -1001,14 +1001,14 @@
     "owner_cash_per_share": 12.11,
     "cash_margin": 0.1652,
     "growth_used": 0.0412,
-    "discount_rate": 0.089,
+    "discount_rate": 0.0885,
     "beta": 0.76,
     "cyclical": false,
     "eps_normalised": 9.79,
     "median_past_pe": 26.5,
-    "fair_pe": 24.9,
-    "terminal_share": 0.556,
-    "implied_growth": 0.0517,
+    "fair_pe": 25.2,
+    "terminal_share": 0.558,
+    "implied_growth": 0.0561,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "Revenues",
@@ -1022,13 +1022,13 @@
   },
   "INVH": {
    "methods": {
-    "own_multiple": 13.49
+    "own_multiple": 13.58
    },
-   "price": 27.24,
+   "price": 27.82,
    "status": "no_reliable_price",
-   "low": 13.49,
-   "base": 13.49,
-   "high": 13.49,
+   "low": 13.58,
+   "base": 13.58,
+   "high": 13.58,
    "buy_below": null,
    "no_growth_value": null,
    "reason": "only one valuation method could be used (no cash flow)",
@@ -1041,12 +1041,12 @@
     "owner_cash_per_share": 0.0,
     "cash_margin": null,
     "growth_used": 0.013,
-    "discount_rate": 0.0895,
+    "discount_rate": 0.089,
     "beta": 0.81,
     "cyclical": false,
     "eps_normalised": 1.02,
     "median_past_pe": 40.3,
-    "fair_pe": 13.2,
+    "fair_pe": 13.3,
     "terminal_share": null,
     "implied_growth": null,
     "figures_as_of": "2026-09-30",
@@ -1061,16 +1061,16 @@
   },
   "ISRG": {
    "methods": {
-    "cash_flow": 88.91,
-    "own_multiple": 316.1
+    "cash_flow": 89.42,
+    "own_multiple": 315.95
    },
-   "price": 434.46,
+   "price": 427.18,
    "status": "no_reliable_price",
-   "low": 88.91,
-   "base": 202.5,
-   "high": 316.1,
+   "low": 89.42,
+   "base": 202.69,
+   "high": 315.95,
    "buy_below": null,
-   "no_growth_value": 40.66,
+   "no_growth_value": 40.86,
    "reason": "the methods disagree too much to trust (cash flow $89, own multiple $316)",
    "notes": [
     "past P/E of 72x cut to a 36x ceiling (growth above 9% isn't credited)"
@@ -1079,14 +1079,14 @@
     "owner_cash_per_share": 4.1,
     "cash_margin": 0.1262,
     "growth_used": 0.15,
-    "discount_rate": 0.121,
+    "discount_rate": 0.1205,
     "beta": 1.44,
     "cyclical": false,
     "eps_normalised": 8.69,
     "median_past_pe": 71.9,
     "fair_pe": 36.4,
-    "terminal_share": 0.479,
-    "implied_growth": 0.477,
+    "terminal_share": 0.481,
+    "implied_growth": 0.4718,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -1101,15 +1101,15 @@
   },
   "LITE": {
    "methods": {
-    "cash_flow": 12.12
+    "cash_flow": 12.18
    },
-   "price": 487.12,
+   "price": 476.58,
    "status": "no_reliable_price",
-   "low": 12.12,
-   "base": 12.12,
-   "high": 12.12,
+   "low": 12.18,
+   "base": 12.18,
+   "high": 12.18,
    "buy_below": null,
-   "no_growth_value": 6.71,
+   "no_growth_value": 6.74,
    "reason": "only one valuation method could be used (no own multiple)",
    "notes": [
     "profit margins vary a lot, so they were averaged over every year on file"
@@ -1118,13 +1118,13 @@
     "owner_cash_per_share": 0.74,
     "cash_margin": 0.0202,
     "growth_used": 0.1158,
-    "discount_rate": 0.1315,
+    "discount_rate": 0.131,
     "beta": 1.65,
     "cyclical": true,
     "eps_normalised": -21.95,
     "median_past_pe": null,
     "fair_pe": null,
-    "terminal_share": 0.425,
+    "terminal_share": 0.427,
     "implied_growth": null,
     "figures_as_of": "2026-09-26",
     "sources": {
@@ -1141,17 +1141,17 @@
   },
   "LLY": {
    "methods": {
-    "cash_flow": 70.57,
-    "own_multiple": 873.86
+    "cash_flow": 71.16,
+    "own_multiple": 873.45
    },
-   "price": 1407.59,
+   "price": 1392.22,
    "status": "no_reliable_price",
-   "low": 70.57,
-   "base": 472.22,
-   "high": 873.86,
+   "low": 71.16,
+   "base": 472.31,
+   "high": 873.45,
    "buy_below": null,
-   "no_growth_value": 30.45,
-   "reason": "the methods disagree too much to trust (cash flow $71, own multiple $874)",
+   "no_growth_value": 30.67,
+   "reason": "the methods disagree too much to trust (cash flow $71, own multiple $873)",
    "notes": [
     "capital spending raised 1.7x to match Yahoo; some is filed under company-specific names",
     "left out as out of date in the filings: software_capex",
@@ -1161,13 +1161,13 @@
     "owner_cash_per_share": 2.1,
     "cash_margin": 0.0217,
     "growth_used": 0.15,
-    "discount_rate": 0.089,
+    "discount_rate": 0.0885,
     "beta": 0.39,
     "cyclical": false,
     "eps_normalised": 24.76,
     "median_past_pe": 65.9,
     "fair_pe": 35.3,
-    "terminal_share": 0.611,
+    "terminal_share": 0.613,
     "implied_growth": null,
     "figures_as_of": "2026-09-30",
     "sources": {
@@ -1182,16 +1182,16 @@
   },
   "LMB": {
    "methods": {
-    "cash_flow": 34.69,
+    "cash_flow": 34.87,
     "own_multiple": 53.83
    },
-   "price": 53.63,
+   "price": 54.23,
    "status": "ok",
-   "low": 34.69,
-   "base": 44.26,
+   "low": 34.87,
+   "base": 44.35,
    "high": 53.83,
-   "buy_below": 33.2,
-   "no_growth_value": 30.18,
+   "buy_below": 33.26,
+   "no_growth_value": 30.34,
    "reason": null,
    "notes": [
     "profit margins vary a lot, so they were averaged over every year on file"
@@ -1200,14 +1200,14 @@
     "owner_cash_per_share": 2.93,
     "cash_margin": 0.0483,
     "growth_used": 0.0262,
-    "discount_rate": 0.117,
+    "discount_rate": 0.1165,
     "beta": 1.36,
     "cyclical": true,
     "eps_normalised": 2.08,
     "median_past_pe": 25.9,
     "fair_pe": 25.9,
-    "terminal_share": 0.424,
-    "implied_growth": 0.1088,
+    "terminal_share": 0.426,
+    "implied_growth": 0.1098,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "Revenues",
@@ -1224,7 +1224,7 @@
    "methods": {
     "own_multiple": 461.77
    },
-   "price": 272.26,
+   "price": 275.47,
    "status": "no_reliable_price",
    "low": 461.77,
    "base": 461.77,
@@ -1239,7 +1239,7 @@
     "owner_cash_per_share": -2.8,
     "cash_margin": -0.0109,
     "growth_used": 0.15,
-    "discount_rate": 0.089,
+    "discount_rate": 0.0885,
     "beta": 0.54,
     "cyclical": false,
     "eps_normalised": 19.85,
@@ -1260,15 +1260,15 @@
   },
   "MA": {
    "methods": {
-    "cash_flow": 589.69
+    "cash_flow": 594.63
    },
-   "price": 647.44,
+   "price": 659.97,
    "status": "no_reliable_price",
-   "low": 589.69,
-   "base": 589.69,
-   "high": 589.69,
+   "low": 594.63,
+   "base": 594.63,
+   "high": 594.63,
    "buy_below": null,
-   "no_growth_value": 268.71,
+   "no_growth_value": 270.71,
    "reason": "only one valuation method could be used (no own multiple)",
    "notes": [
     "growth cut from 15.0% to 14.0%, the latest quarter's pace",
@@ -1279,14 +1279,14 @@
     "owner_cash_per_share": 18.55,
     "cash_margin": 0.4518,
     "growth_used": 0.14,
-    "discount_rate": 0.089,
+    "discount_rate": 0.0885,
     "beta": 0.77,
     "cyclical": false,
     "eps_normalised": null,
     "median_past_pe": null,
     "fair_pe": null,
-    "terminal_share": 0.607,
-    "implied_growth": 0.1571,
+    "terminal_share": 0.609,
+    "implied_growth": 0.1591,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "Revenues",
@@ -1300,30 +1300,30 @@
   },
   "META": {
    "methods": {
-    "cash_flow": 327.69,
+    "cash_flow": 329.72,
     "own_multiple": 739.61
    },
-   "price": 589.82,
+   "price": 609.89,
    "status": "no_reliable_price",
-   "low": 327.69,
-   "base": 533.65,
+   "low": 329.72,
+   "base": 534.66,
    "high": 739.61,
    "buy_below": null,
-   "no_growth_value": 147.8,
-   "reason": "the methods disagree too much to trust (cash flow $328, own multiple $740)",
+   "no_growth_value": 148.58,
+   "reason": "the methods disagree too much to trust (cash flow $330, own multiple $740)",
    "notes": [],
    "inputs": {
     "owner_cash_per_share": 13.75,
     "cash_margin": 0.1462,
     "growth_used": 0.15,
-    "discount_rate": 0.113,
+    "discount_rate": 0.1125,
     "beta": 1.28,
     "cyclical": false,
     "eps_normalised": 30.13,
     "median_past_pe": 24.5,
     "fair_pe": 24.5,
-    "terminal_share": 0.509,
-    "implied_growth": 0.2649,
+    "terminal_share": 0.511,
+    "implied_growth": 0.2703,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -1338,33 +1338,33 @@
   },
   "MKTX": {
    "methods": {
-    "cash_flow": 126.8,
-    "own_multiple": 100.24
+    "cash_flow": 127.76,
+    "own_multiple": 100.86
    },
-   "price": 165.42,
+   "price": 165.5,
    "status": "ok",
-   "low": 100.24,
-   "base": 113.52,
-   "high": 126.8,
-   "buy_below": 85.14,
-   "no_growth_value": 121.13,
+   "low": 100.86,
+   "base": 114.31,
+   "high": 127.76,
+   "buy_below": 85.73,
+   "no_growth_value": 122.03,
    "reason": null,
    "notes": [
     "growth cut from 4.2% to 0.8%, the latest quarter's pace",
-    "past P/E of 31x cut to a 12x ceiling (1% growth)"
+    "past P/E of 31x cut to a 13x ceiling (1% growth)"
    ],
    "inputs": {
     "owner_cash_per_share": 8.36,
     "cash_margin": 0.3386,
     "growth_used": 0.008,
-    "discount_rate": 0.089,
+    "discount_rate": 0.0885,
     "beta": 0.8,
     "cyclical": false,
     "eps_normalised": 8.06,
     "median_past_pe": 31.1,
-    "fair_pe": 12.4,
-    "terminal_share": 0.535,
-    "implied_growth": 0.0548,
+    "fair_pe": 12.5,
+    "terminal_share": 0.537,
+    "implied_growth": 0.0535,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -1380,15 +1380,15 @@
   },
   "MRVL": {
    "methods": {
-    "cash_flow": 16.67
+    "cash_flow": 16.75
    },
-   "price": 131.57,
+   "price": 130.93,
    "status": "no_reliable_price",
-   "low": 16.67,
-   "base": 16.67,
-   "high": 16.67,
+   "low": 16.75,
+   "base": 16.75,
+   "high": 16.75,
    "buy_below": null,
-   "no_growth_value": 7.98,
+   "no_growth_value": 8.01,
    "reason": "only one valuation method could be used (no own multiple)",
    "notes": [
     "profit margins vary a lot, so they were averaged over every year on file"
@@ -1397,14 +1397,14 @@
     "owner_cash_per_share": 1.02,
     "cash_margin": 0.0977,
     "growth_used": 0.15,
-    "discount_rate": 0.149,
+    "discount_rate": 0.1485,
     "beta": 2.33,
     "cyclical": true,
     "eps_normalised": 0.1,
     "median_past_pe": null,
     "fair_pe": null,
-    "terminal_share": 0.389,
-    "implied_growth": null,
+    "terminal_share": 0.39,
+    "implied_growth": 0.5992,
     "figures_as_of": "2026-08-01",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -1420,17 +1420,17 @@
   },
   "MSFT": {
    "methods": {
-    "cash_flow": 244.83,
-    "own_multiple": 637.74
+    "cash_flow": 246.57,
+    "own_multiple": 637.45
    },
-   "price": 496.13,
+   "price": 489.93,
    "status": "no_reliable_price",
-   "low": 244.83,
-   "base": 441.29,
-   "high": 637.74,
+   "low": 246.57,
+   "base": 442.01,
+   "high": 637.45,
    "buy_below": null,
-   "no_growth_value": 110.57,
-   "reason": "the methods disagree too much to trust (cash flow $245, own multiple $638)",
+   "no_growth_value": 111.25,
+   "reason": "the methods disagree too much to trust (cash flow $247, own multiple $637)",
    "notes": [
     "past P/E of 36x cut to a 36x ceiling (growth above 7% isn't credited)"
    ],
@@ -1438,14 +1438,14 @@
     "owner_cash_per_share": 8.97,
     "cash_margin": 0.1928,
     "growth_used": 0.1457,
-    "discount_rate": 0.101,
+    "discount_rate": 0.1005,
     "beta": 1.04,
     "cyclical": false,
     "eps_normalised": 17.86,
     "median_past_pe": 36.5,
     "fair_pe": 35.7,
-    "terminal_share": 0.556,
-    "implied_growth": 0.2815,
+    "terminal_share": 0.558,
+    "implied_growth": 0.2775,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -1460,17 +1460,17 @@
   },
   "MU": {
    "methods": {
-    "cash_flow": 158.81,
+    "cash_flow": 159.51,
     "own_multiple": 442.55
    },
-   "price": 629.79,
+   "price": 601.25,
    "status": "no_reliable_price",
-   "low": 158.81,
-   "base": 300.68,
+   "low": 159.51,
+   "base": 301.03,
    "high": 442.55,
    "buy_below": null,
-   "no_growth_value": 75.98,
-   "reason": "the methods disagree too much to trust (cash flow $159, own multiple $443)",
+   "no_growth_value": 76.26,
+   "reason": "the methods disagree too much to trust (cash flow $160, own multiple $443)",
    "notes": [
     "profit margins vary a lot, so they were averaged over every year on file"
    ],
@@ -1478,14 +1478,14 @@
     "owner_cash_per_share": 9.7,
     "cash_margin": 0.0832,
     "growth_used": 0.15,
-    "discount_rate": 0.149,
+    "discount_rate": 0.1485,
     "beta": 2.4,
     "cyclical": true,
     "eps_normalised": 27.53,
     "median_past_pe": 16.1,
     "fair_pe": 16.1,
-    "terminal_share": 0.389,
-    "implied_growth": 0.4431,
+    "terminal_share": 0.39,
+    "implied_growth": 0.4316,
     "figures_as_of": "2026-09-03",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -1500,7 +1500,7 @@
   },
   "NBIS": {
    "methods": {},
-   "price": 87.31,
+   "price": 84.99,
    "status": "no_reliable_price",
    "low": null,
    "base": null,
@@ -1513,16 +1513,16 @@
   },
   "NFLX": {
    "methods": {
-    "cash_flow": 38.55,
-    "own_multiple": 99.01
+    "cash_flow": 38.75,
+    "own_multiple": 98.96
    },
-   "price": 58.87,
+   "price": 59.41,
    "status": "no_reliable_price",
-   "low": 38.55,
-   "base": 68.78,
-   "high": 99.01,
+   "low": 38.75,
+   "base": 68.85,
+   "high": 98.96,
    "buy_below": null,
-   "no_growth_value": 21.04,
+   "no_growth_value": 21.13,
    "reason": "the methods disagree too much to trust (cash flow $39, own multiple $99)",
    "notes": [
     "growth cut from 12.6% to 11.8%, the latest quarter's pace",
@@ -1533,14 +1533,14 @@
     "owner_cash_per_share": 2.3,
     "cash_margin": 0.1962,
     "growth_used": 0.118,
-    "discount_rate": 0.1295,
+    "discount_rate": 0.129,
     "beta": 1.61,
     "cyclical": false,
     "eps_normalised": 2.7,
     "median_past_pe": 40.5,
     "fair_pe": 36.6,
-    "terminal_share": 0.433,
-    "implied_growth": 0.2019,
+    "terminal_share": 0.435,
+    "implied_growth": 0.2027,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "Revenues",
@@ -1555,16 +1555,16 @@
   },
   "NOW": {
    "methods": {
-    "cash_flow": 58.66,
-    "own_multiple": 49.73
+    "cash_flow": 59.09,
+    "own_multiple": 49.71
    },
-   "price": 91.74,
+   "price": 92.16,
    "status": "ok",
-   "low": 49.73,
-   "base": 54.19,
-   "high": 58.66,
-   "buy_below": 40.64,
-   "no_growth_value": 25.75,
+   "low": 49.71,
+   "base": 54.4,
+   "high": 59.09,
+   "buy_below": 40.8,
+   "no_growth_value": 25.91,
    "reason": null,
    "notes": [
     "profit margins vary a lot, so they were averaged over every year on file",
@@ -1574,14 +1574,14 @@
     "owner_cash_per_share": 2.01,
     "cash_margin": 0.1354,
     "growth_used": 0.15,
-    "discount_rate": 0.098,
+    "discount_rate": 0.0975,
     "beta": 0.98,
     "cyclical": true,
     "eps_normalised": 1.4,
     "median_past_pe": 91.7,
     "fair_pe": 35.6,
-    "terminal_share": 0.571,
-    "implied_growth": 0.2348,
+    "terminal_share": 0.573,
+    "implied_growth": 0.2342,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -1597,7 +1597,7 @@
   },
   "NVDA": {
    "methods": {},
-   "price": 155.38,
+   "price": 149.3,
    "status": "no_reliable_price",
    "low": null,
    "base": null,
@@ -1610,16 +1610,16 @@
   },
   "NVT": {
    "methods": {
-    "cash_flow": 96.02,
+    "cash_flow": 96.58,
     "own_multiple": 97.56
    },
-   "price": 104.58,
+   "price": 103.71,
    "status": "ok",
-   "low": 96.02,
-   "base": 96.79,
+   "low": 96.58,
+   "base": 97.07,
    "high": 97.56,
-   "buy_below": 72.59,
-   "no_growth_value": 45.37,
+   "buy_below": 72.8,
+   "no_growth_value": 45.6,
    "reason": null,
    "notes": [
     "profit margins vary a lot, so they were averaged over every year on file"
@@ -1628,14 +1628,14 @@
     "owner_cash_per_share": 4.44,
     "cash_margin": 0.1377,
     "growth_used": 0.1427,
-    "discount_rate": 0.118,
+    "discount_rate": 0.1175,
     "beta": 1.38,
     "cyclical": true,
     "eps_normalised": 4.13,
     "median_past_pe": 23.6,
     "fair_pe": 23.6,
-    "terminal_share": 0.487,
-    "implied_growth": 0.1592,
+    "terminal_share": 0.489,
+    "implied_growth": 0.1565,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -1650,7 +1650,7 @@
   },
   "OKLO": {
    "methods": {},
-   "price": 19.2,
+   "price": 19.47,
    "status": "no_reliable_price",
    "low": null,
    "base": null,
@@ -1663,16 +1663,16 @@
   },
   "PAYX": {
    "methods": {
-    "cash_flow": 116.12,
+    "cash_flow": 117.04,
     "own_multiple": 138.39
    },
-   "price": 115.08,
+   "price": 118.49,
    "status": "ok",
-   "low": 116.12,
-   "base": 127.25,
+   "low": 117.04,
+   "base": 127.72,
    "high": 138.39,
-   "buy_below": 95.44,
-   "no_growth_value": 83.01,
+   "buy_below": 95.79,
+   "no_growth_value": 83.63,
    "reason": null,
    "notes": [
     "growth cut from 9.9% to 5.9%, the latest quarter's pace"
@@ -1681,14 +1681,14 @@
     "owner_cash_per_share": 5.73,
     "cash_margin": 0.3095,
     "growth_used": 0.059,
-    "discount_rate": 0.089,
+    "discount_rate": 0.0885,
     "beta": 0.8,
     "cyclical": false,
     "eps_normalised": 5.38,
     "median_past_pe": 25.7,
     "fair_pe": 25.7,
-    "terminal_share": 0.566,
-    "implied_growth": 0.0574,
+    "terminal_share": 0.568,
+    "implied_growth": 0.0612,
     "figures_as_of": "2026-08-31",
     "sources": {
      "revenue": "Revenues",
@@ -1703,13 +1703,13 @@
   },
   "PODD": {
    "methods": {
-    "own_multiple": 134.36
+    "own_multiple": 134.29
    },
-   "price": 140.63,
+   "price": 142.68,
    "status": "no_reliable_price",
-   "low": 134.36,
-   "base": 134.36,
-   "high": 134.36,
+   "low": 134.29,
+   "base": 134.29,
+   "high": 134.29,
    "buy_below": null,
    "no_growth_value": null,
    "reason": "only one valuation method could be used (no cash flow)",
@@ -1721,7 +1721,7 @@
     "owner_cash_per_share": -0.68,
     "cash_margin": -0.0148,
     "growth_used": 0.15,
-    "discount_rate": 0.1015,
+    "discount_rate": 0.101,
     "beta": 1.05,
     "cyclical": true,
     "eps_normalised": 3.76,
@@ -1744,16 +1744,16 @@
   },
   "POWL": {
    "methods": {
-    "cash_flow": 123.56,
+    "cash_flow": 124.35,
     "own_multiple": 77.37
    },
-   "price": 153.88,
+   "price": 155.04,
    "status": "ok",
    "low": 77.37,
-   "base": 100.47,
-   "high": 123.56,
-   "buy_below": 75.35,
-   "no_growth_value": 55.48,
+   "base": 100.86,
+   "high": 124.35,
+   "buy_below": 75.64,
+   "no_growth_value": 55.79,
    "reason": null,
    "notes": [
     "profit margins vary a lot, so they were averaged over every year on file"
@@ -1762,14 +1762,14 @@
     "owner_cash_per_share": 5.03,
     "cash_margin": 0.1464,
     "growth_used": 0.15,
-    "discount_rate": 0.1105,
+    "discount_rate": 0.11,
     "beta": 1.23,
     "cyclical": true,
     "eps_normalised": 3.77,
     "median_past_pe": 20.5,
     "fair_pe": 20.5,
-    "terminal_share": 0.519,
-    "implied_growth": 0.1922,
+    "terminal_share": 0.521,
+    "implied_growth": 0.1924,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -1785,7 +1785,7 @@
   },
   "RDDT": {
    "methods": {},
-   "price": 90.34,
+   "price": 91.51,
    "status": "no_reliable_price",
    "low": null,
    "base": null,
@@ -1800,7 +1800,7 @@
     "owner_cash_per_share": -1.32,
     "cash_margin": -0.0862,
     "growth_used": 0.15,
-    "discount_rate": 0.149,
+    "discount_rate": 0.1485,
     "beta": 2.27,
     "cyclical": true,
     "eps_normalised": -0.49,
@@ -1822,7 +1822,7 @@
   },
   "STZ": {
    "methods": {},
-   "price": 137.33,
+   "price": 139.97,
    "status": "no_reliable_price",
    "low": null,
    "base": null,
@@ -1835,15 +1835,15 @@
   },
   "TLN": {
    "methods": {
-    "company_measure": 288.21
+    "company_measure": 289.55
    },
-   "price": 347.68,
+   "price": 351.61,
    "status": "ok",
-   "low": 288.21,
-   "base": 288.21,
-   "high": 288.21,
-   "buy_below": 216.16,
-   "no_growth_value": 253.26,
+   "low": 289.55,
+   "base": 289.55,
+   "high": 289.55,
+   "buy_below": 217.16,
+   "no_growth_value": 254.4,
    "reason": null,
    "notes": [
     "valued on Adjusted free cash flow (company guidance), with no growth beyond inflation"
@@ -1860,21 +1860,21 @@
     "release_filed": "2026-11-03",
     "release_url": "https://www.sec.gov/Archives/edgar/data/1622536/000162253626000084/a20261103q32026earningsrel.htm",
     "per_share": 27.27,
-    "discount_rate": 0.128,
+    "discount_rate": 0.1275,
     "growth_used": 0.025,
-    "implied_growth": 0.0613,
+    "implied_growth": 0.0626,
     "beta": 1.58
    }
   },
   "TPL": {
    "methods": {
-    "own_multiple": 308.83
+    "own_multiple": 308.68
    },
-   "price": 251.4,
+   "price": 261.37,
    "status": "no_reliable_price",
-   "low": 308.83,
-   "base": 308.83,
-   "high": 308.83,
+   "low": 308.68,
+   "base": 308.68,
+   "high": 308.68,
    "buy_below": null,
    "no_growth_value": null,
    "reason": "only one valuation method could be used (no cash flow)",
@@ -1886,7 +1886,7 @@
     "owner_cash_per_share": 0.0,
     "cash_margin": null,
     "growth_used": 0.15,
-    "discount_rate": 0.089,
+    "discount_rate": 0.0885,
     "beta": 0.58,
     "cyclical": false,
     "eps_normalised": 8.75,
@@ -1908,7 +1908,7 @@
   },
   "TSM": {
    "methods": {},
-   "price": 349.2,
+   "price": 342.34,
    "status": "no_reliable_price",
    "low": null,
    "base": null,
@@ -1921,16 +1921,16 @@
   },
   "TW": {
    "methods": {
-    "cash_flow": 159.23,
-    "own_multiple": 128.78
+    "cash_flow": 160.57,
+    "own_multiple": 128.72
    },
-   "price": 127.86,
+   "price": 128.05,
    "status": "ok",
-   "low": 128.78,
-   "base": 144.0,
-   "high": 159.23,
-   "buy_below": 108.0,
-   "no_growth_value": 69.07,
+   "low": 128.72,
+   "base": 144.64,
+   "high": 160.57,
+   "buy_below": 108.48,
+   "no_growth_value": 69.59,
    "reason": null,
    "notes": [
     "growth cut from 15.0% to 14.9%, the latest quarter's pace",
@@ -1940,14 +1940,14 @@
     "owner_cash_per_share": 4.77,
     "cash_margin": 0.4435,
     "growth_used": 0.149,
-    "discount_rate": 0.089,
+    "discount_rate": 0.0885,
     "beta": 0.56,
     "cyclical": false,
     "eps_normalised": 3.65,
     "median_past_pe": 53.0,
     "fair_pe": 35.3,
-    "terminal_share": 0.611,
-    "implied_growth": 0.1091,
+    "terminal_share": 0.613,
+    "implied_growth": 0.1079,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -1963,17 +1963,17 @@
   },
   "UNH": {
    "methods": {
-    "cash_flow": 420.16,
-    "own_multiple": 271.3
+    "cash_flow": 423.29,
+    "own_multiple": 272.83
    },
-   "price": 341.88,
+   "price": 346.19,
    "status": "market_expects_decline",
-   "low": 271.3,
-   "base": 345.73,
-   "high": 420.16,
+   "low": 272.83,
+   "base": 348.06,
+   "high": 423.29,
    "buy_below": null,
-   "no_growth_value": 420.16,
-   "reason": "today's price implies the business shrinks about 4% a year; find out why before trusting a higher value",
+   "no_growth_value": 423.29,
+   "reason": "today's price implies the business shrinks about 3% a year; find out why before trusting a higher value",
    "notes": [
     "profit margins vary a lot, so they were averaged over every year on file",
     "growth cut from 11.7% to 0.0%, the latest quarter's pace",
@@ -1983,14 +1983,14 @@
     "owner_cash_per_share": 29.0,
     "cash_margin": 0.0584,
     "growth_used": 0.0,
-    "discount_rate": 0.089,
+    "discount_rate": 0.0885,
     "beta": 0.52,
     "cyclical": true,
     "eps_normalised": 24.15,
     "median_past_pe": 24.9,
-    "fair_pe": 11.2,
-    "terminal_share": 0.53,
-    "implied_growth": -0.0358,
+    "fair_pe": 11.3,
+    "terminal_share": 0.532,
+    "implied_growth": -0.0349,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "Revenues",
@@ -2005,7 +2005,7 @@
   },
   "V": {
    "methods": {},
-   "price": 416.78,
+   "price": 424.39,
    "status": "no_reliable_price",
    "low": null,
    "base": null,
@@ -2018,16 +2018,16 @@
   },
   "VRT": {
    "methods": {
-    "cash_flow": 51.82,
-    "own_multiple": 67.94
+    "cash_flow": 52.05,
+    "own_multiple": 67.91
    },
-   "price": 173.82,
+   "price": 173.37,
    "status": "ok",
-   "low": 51.82,
-   "base": 59.88,
-   "high": 67.94,
-   "buy_below": 44.91,
-   "no_growth_value": 24.79,
+   "low": 52.05,
+   "base": 59.98,
+   "high": 67.91,
+   "buy_below": 44.98,
+   "no_growth_value": 24.88,
    "reason": null,
    "notes": [
     "profit margins vary a lot, so they were averaged over every year on file",
@@ -2037,14 +2037,14 @@
     "owner_cash_per_share": 3.16,
     "cash_margin": 0.0947,
     "growth_used": 0.15,
-    "discount_rate": 0.149,
+    "discount_rate": 0.1485,
     "beta": 2.11,
     "cyclical": true,
     "eps_normalised": 1.82,
     "median_past_pe": 47.5,
     "fair_pe": 37.3,
-    "terminal_share": 0.389,
-    "implied_growth": 0.406,
+    "terminal_share": 0.39,
+    "implied_growth": 0.4042,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -2060,15 +2060,15 @@
   },
   "VST": {
    "methods": {
-    "company_measure": 154.4
+    "company_measure": 155.2
    },
-   "price": 120.72,
+   "price": 121.32,
    "status": "market_expects_decline",
-   "low": 154.4,
-   "base": 154.4,
-   "high": 154.4,
+   "low": 155.2,
+   "base": 155.2,
+   "high": 155.2,
    "buy_below": null,
-   "no_growth_value": 135.24,
+   "no_growth_value": 135.92,
    "reason": "today's price implies the business shrinks about 2% a year; find out why before trusting a higher value",
    "notes": [
     "valued on Adjusted free cash flow before growth (company guidance), with no growth beyond inflation"
@@ -2085,7 +2085,7 @@
     "release_filed": "2026-11-06",
     "release_url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000023/vistra-20260930xearningsre.htm",
     "per_share": 13.25,
-    "discount_rate": 0.118,
+    "discount_rate": 0.1175,
     "growth_used": 0.025,
     "implied_growth": -0.0214,
     "beta": 1.38
@@ -2093,17 +2093,17 @@
   },
   "ZBH": {
    "methods": {
-    "cash_flow": 122.78,
-    "own_multiple": 56.37
+    "cash_flow": 123.72,
+    "own_multiple": 56.86
    },
-   "price": 108.99,
+   "price": 110.06,
    "status": "no_reliable_price",
-   "low": 56.37,
-   "base": 89.58,
-   "high": 122.78,
+   "low": 56.86,
+   "base": 90.29,
+   "high": 123.72,
    "buy_below": null,
-   "no_growth_value": 102.86,
-   "reason": "the methods disagree too much to trust (cash flow $123, own multiple $56)",
+   "no_growth_value": 103.63,
+   "reason": "the methods disagree too much to trust (cash flow $124, own multiple $57)",
    "notes": [
     "profit margins vary a lot, so they were averaged over every year on file",
     "growth cut from 6.1% to 3.1%, the latest quarter's pace",
@@ -2113,14 +2113,14 @@
     "owner_cash_per_share": 7.1,
     "cash_margin": 0.1602,
     "growth_used": 0.031,
-    "discount_rate": 0.089,
+    "discount_rate": 0.0885,
     "beta": 0.47,
     "cyclical": true,
     "eps_normalised": 3.17,
     "median_past_pe": 24.9,
-    "fair_pe": 17.8,
-    "terminal_share": 0.549,
-    "implied_growth": 0.0101,
+    "fair_pe": 17.9,
+    "terminal_share": 0.552,
+    "implied_growth": 0.0105,
     "figures_as_of": "2026-09-30",
     "sources": {
      "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
