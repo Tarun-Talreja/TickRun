@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T04:07:22Z",
+  "generated_at": "2026-11-26T22:17:06Z",
   "hits": [
     {
       "ticker": "CBRS",
@@ -79,17 +79,6 @@
       "next_action": "WAIT \u2014 High-margin mobile ad platform growing 55% YoY at 20x forward earnings, but securities fraud lawsuits create headline risk. Revisit at 30% below the 52-week high."
     },
     {
-      "ticker": "GEV",
-      "name": "GE Vernova Inc.",
-      "verdict": "RESEARCH-WORTHY",
-      "confidence": "MEDIUM",
-      "theme": "power_grid",
-      "price": 715.0,
-      "buy_target": 956.75,
-      "gap_pct": -25.3,
-      "next_action": "RESEARCH \u2014 Cyclical industrial at peak earnings (18x trailing P/E, 27x forward P/E) with 27% revenue growth, 39% FCF conversion, net cash, and 130 GW backlog from AI power demand \u2014 cheap if supercycle extends, risky if 2025-2026 is the peak. Worth a deep dive before any decision."
-    },
-    {
       "ticker": "AVGO",
       "name": "Broadcom Inc.",
       "verdict": "WATCHLIST",
@@ -99,6 +88,17 @@
       "buy_target": 396.0,
       "gap_pct": -24.0,
       "next_action": "WAIT \u2014 AI infrastructure leader at 15.7x forward earnings with 85% quarterly revenue growth, 75% gross margins, and FCF covering net debt in <1 year, but Google TPU cut risk creates customer-concentration overhang. Revisit at 20% below the 52-week high."
+    },
+    {
+      "ticker": "GEV",
+      "name": "GE Vernova Inc.",
+      "verdict": "RESEARCH-WORTHY",
+      "confidence": "MEDIUM",
+      "theme": "power_grid",
+      "price": 715.0,
+      "buy_target": 777.36,
+      "gap_pct": -8.0,
+      "next_action": "RESEARCH \u2014 Cheapest large-cap AI power play at 19x trailing earnings with 27% revenue growth, $17B FCF, and net cash, but Wind drag and forward P/E premium warrant scrutiny. Worth a deep dive before any decision."
     },
     {
       "ticker": "VRT",
@@ -134,15 +134,15 @@
       "next_action": "RESEARCH \u2014 Quality contractor with 53% revenue growth, 19.5% FCF margin, net cash balance, trading at 17x forward earnings after a 44% drawdown. Worth a deep dive before any decision."
     },
     {
-      "ticker": "CLS",
-      "name": "Celestica Inc.",
+      "ticker": "CEG",
+      "name": "Constellation Energy Corporation",
       "verdict": "RESEARCH-WORTHY",
       "confidence": "MEDIUM",
-      "theme": "datacenter_infra",
-      "price": 191.95,
-      "buy_target": 201.94,
+      "theme": "nuclear_smr",
+      "price": 235.28,
+      "buy_target": 247.51,
       "gap_pct": -4.9,
-      "next_action": "RESEARCH \u2014 EMS leader capturing AI server/netscale buildout at 9x forward earnings with 80%+ revenue growth and net cash. Worth a deep dive before any decision."
+      "next_action": "RESEARCH \u2014 Largest U.S. nuclear fleet at 17.6x forward earnings with 45% revenue growth from AI data-center PPAs, but 17.5x net-debt/FCF and license-renewal overhang warrant deep dive. Worth a deep dive before any decision."
     },
     {
       "ticker": "MU",
@@ -200,15 +200,70 @@
       "next_action": "RESEARCH \u2014 Quality alcohol compounder with 50%+ gross margins, 6% revenue growth, and 10x EV/EBITDA, fitting defensive/dividend theme. Worth a deep dive before any decision."
     },
     {
-      "ticker": "CEG",
-      "name": "Constellation Energy Corporation",
+      "ticker": "VST",
+      "name": "Vistra Corp.",
       "verdict": "RESEARCH-WORTHY",
       "confidence": "LOW",
       "theme": "nuclear_smr",
-      "price": 235.28,
-      "buy_target": 237.23,
-      "gap_pct": -0.8,
-      "next_action": "RESEARCH \u2014 Nuclear pure-play benefiting from AI data center power demand at 17.7x forward earnings with 45% quarterly revenue growth and rising guidance. Worth a deep dive before any decision."
+      "price": 121.32,
+      "buy_target": 121.4,
+      "gap_pct": -0.1,
+      "next_action": "RESEARCH \u2014 Cheap AI power play at 8x EV/EBITDA with 27% revenue growth, nuclear optionality, and $2.6B FCF, discounted for Texas merchant risk and high leverage. Worth a deep dive before any decision."
+    },
+    {
+      "ticker": "POWL",
+      "name": "Powell Industries, Inc.",
+      "verdict": "RESEARCH-WORTHY",
+      "confidence": "LOW",
+      "theme": "power_grid",
+      "price": 155.04,
+      "buy_target": 155.14,
+      "gap_pct": -0.1,
+      "next_action": "RESEARCH \u2014 Cheap data center power play at 16x forward earnings with 33% revenue growth, $2.7B backlog, and net cash position. Worth a deep dive before any decision."
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "verdict": "RESEARCH-WORTHY",
+      "confidence": "MEDIUM",
+      "theme": "mega_cap_ai",
+      "price": 609.89,
+      "buy_target": 609.82,
+      "gap_pct": 0.0,
+      "next_action": "RESEARCH \u2014 Wide-moat digital advertising compounder trading at 17x forward earnings with 26% revenue growth, investing heavily in AI infrastructure that could extend its moat but risks near-term FCF compression. Worth a deep dive before any decision."
+    },
+    {
+      "ticker": "ETN",
+      "name": "Eaton Corporation plc",
+      "verdict": "RESEARCH-WORTHY",
+      "confidence": "MEDIUM",
+      "theme": "power_grid",
+      "price": 317.81,
+      "buy_target": 317.87,
+      "gap_pct": -0.0,
+      "next_action": "RESEARCH \u2014 Wide-moat electrical equipment leader trading at 19x forward earnings with 28% YoY revenue growth, direct AI data center power exposure, and 33% drawdown from highs. Worth a deep dive before any decision."
+    },
+    {
+      "ticker": "CLS",
+      "name": "Celestica Inc.",
+      "verdict": "RESEARCH-WORTHY",
+      "confidence": "LOW",
+      "theme": "datacenter_infra",
+      "price": 191.95,
+      "buy_target": 191.98,
+      "gap_pct": -0.0,
+      "next_action": "RESEARCH \u2014 AI infrastructure EMS play at 8.6x forward earnings with 80%+ revenue growth and net cash, but low margins and customer concentration risk. Worth a deep dive before any decision."
+    },
+    {
+      "ticker": "EME",
+      "name": "EMCOR Group, Inc.",
+      "verdict": "RESEARCH-WORTHY",
+      "confidence": "MEDIUM",
+      "theme": "uncategorized",
+      "price": 628.72,
+      "buy_target": 628.29,
+      "gap_pct": 0.1,
+      "next_action": "RESEARCH \u2014 Construction services firm with 28% revenue growth trading at 15x forward earnings, benefiting from data center power build-out and grid modernization. Worth a deep dive before any decision."
     },
     {
       "ticker": "CRDO",
@@ -231,17 +286,6 @@
       "buy_target": 342.06,
       "gap_pct": 1.2,
       "next_action": "RESEARCH \u2014 Wide-moat healthcare compounder at 14.6x forward earnings with $22.8B FCF, down 26% on Medicare Advantage regulatory headlines. Worth a deep dive before any decision."
-    },
-    {
-      "ticker": "ETN",
-      "name": "Eaton Corporation plc",
-      "verdict": "RESEARCH-WORTHY",
-      "confidence": "MEDIUM",
-      "theme": "power_grid",
-      "price": 317.81,
-      "buy_target": 311.18,
-      "gap_pct": 2.1,
-      "next_action": "RESEARCH \u2014 Quality power management leader trading at 19x forward earnings with 28% revenue growth from AI data center buildout, 35% below 52-week high. Worth a deep dive before any decision."
     },
     {
       "ticker": "NVDA",
@@ -279,17 +323,6 @@
       "next_action": "RESEARCH \u2014 Nuclear-powered AI data center play with 96% revenue growth and contracted cash flows, but 36x EV/EBITDA and 6% FCF conversion demand scrutiny of debt service and contract durability. Worth a deep dive before any decision."
     },
     {
-      "ticker": "EME",
-      "name": "EMCOR Group, Inc.",
-      "verdict": "RESEARCH-WORTHY",
-      "confidence": "MEDIUM",
-      "theme": "uncategorized",
-      "price": 628.72,
-      "buy_target": 603.54,
-      "gap_pct": 4.2,
-      "next_action": "RESEARCH \u2014 Solid infrastructure contractor with 28% revenue growth, 12x EV/EBITDA, and $1.5B FCF, but only moderate exposure to AI/data center power tailwinds. Worth a deep dive before any decision."
-    },
-    {
       "ticker": "IBM",
       "name": "International Business Machines Corporation",
       "verdict": "WATCHLIST",
@@ -299,17 +332,6 @@
       "buy_target": 232.72,
       "gap_pct": 4.6,
       "next_action": "WAIT \u2014 Quality compounder with 6% FCF yield and AI/quantum optionality, but 21x P/E for 5% growth requires margin expansion or multiple rerating to justify. Revisit at 30% below the 52-week high."
-    },
-    {
-      "ticker": "POWL",
-      "name": "Powell Industries, Inc.",
-      "verdict": "RESEARCH-WORTHY",
-      "confidence": "LOW",
-      "theme": "power_grid",
-      "price": 155.04,
-      "buy_target": 148.26,
-      "gap_pct": 4.6,
-      "next_action": "RESEARCH \u2014 Electrical equipment compounder at 15x forward earnings with 33% quarterly growth, 33% FCF margin, and 16% net cash/market cap, benefiting from data center power build-out. Worth a deep dive before any decision."
     },
     {
       "ticker": "NOW",
@@ -323,17 +345,6 @@
       "next_action": "WAIT \u2014 Wide-moat enterprise workflow platform trading at 21x forward earnings with 20%+ growth and 31% FCF margins, but AI agent disruption risk clouds durability of moat. Revisit at 50% below the 52-week high."
     },
     {
-      "ticker": "VST",
-      "name": "Vistra Corp.",
-      "verdict": "RESEARCH-WORTHY",
-      "confidence": "LOW",
-      "theme": "nuclear_smr",
-      "price": 121.32,
-      "buy_target": 115.2,
-      "gap_pct": 5.3,
-      "next_action": "RESEARCH \u2014 Cheap integrated power generator at 7.7x EV/EBITDA with 27% revenue growth, nuclear exposure, and $2.6B FCF benefiting from data center demand. Worth a deep dive before any decision."
-    },
-    {
       "ticker": "NFLX",
       "name": "NFLX",
       "verdict": "WATCHLIST",
@@ -343,17 +354,6 @@
       "buy_target": 54.87,
       "gap_pct": 8.3,
       "next_action": "WAIT \u2014 Quality streaming compounder at 16.5x forward earnings with 12% revenue growth and $11.4B FCF, but advertising monetization stumble clouds near-term outlook. Revisit at 50% below the 52-week high."
-    },
-    {
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "verdict": "RESEARCH-WORTHY",
-      "confidence": "MEDIUM",
-      "theme": "mega_cap_ai",
-      "price": 609.89,
-      "buy_target": 560.69,
-      "gap_pct": 8.8,
-      "next_action": "RESEARCH \u2014 Quality compounder with 26% revenue growth, 81% gross margins, and 15.7x forward P/E, but AI capex intensity and copyright litigation create near-term FCF uncertainty. Worth a deep dive before any decision."
     },
     {
       "ticker": "PAYX",
