@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T15:18:19Z",
+  "generated_at": "2026-11-27T15:33:49Z",
   "checked": 65,
   "flagged": 2,
   "quality": {
@@ -15,15 +15,11 @@
       "ok": true,
       "flags": []
     },
-    "AMZN": {
-      "ok": true,
-      "flags": []
-    },
     "ANT": {
       "ok": true,
       "flags": []
     },
-    "APP": {
+    "AMZN": {
       "ok": true,
       "flags": []
     },
@@ -36,9 +32,13 @@
       "flags": [
         {
           "level": "low",
-          "msg": "Reports in EUR; figures converted to USD at 1.0943. Trailing P/E may mix currencies \u2014 verify against filings"
+          "msg": "Reports in EUR; figures converted to USD at 1.0946. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
+    },
+    "APP": {
+      "ok": true,
+      "flags": []
     },
     "BWXT": {
       "ok": true,
@@ -56,11 +56,11 @@
       "ok": true,
       "flags": []
     },
-    "CMCSA": {
+    "COHR": {
       "ok": true,
       "flags": []
     },
-    "COHR": {
+    "CMCSA": {
       "ok": true,
       "flags": []
     },
@@ -80,19 +80,19 @@
       "ok": true,
       "flags": []
     },
-    "EIX": {
-      "ok": true,
-      "flags": []
-    },
     "EME": {
       "ok": true,
       "flags": []
     },
-    "FIX": {
+    "EIX": {
       "ok": true,
       "flags": []
     },
     "ETN": {
+      "ok": true,
+      "flags": []
+    },
+    "FIX": {
       "ok": true,
       "flags": []
     },
@@ -104,11 +104,11 @@
       "ok": true,
       "flags": []
     },
-    "GIS": {
+    "GEV": {
       "ok": true,
       "flags": []
     },
-    "GEV": {
+    "GIS": {
       "ok": true,
       "flags": []
     },
@@ -140,15 +140,19 @@
       "ok": true,
       "flags": []
     },
-    "LPLA": {
-      "ok": true,
-      "flags": []
-    },
     "MA": {
       "ok": true,
       "flags": []
     },
+    "LPLA": {
+      "ok": true,
+      "flags": []
+    },
     "META": {
+      "ok": true,
+      "flags": []
+    },
+    "MRVL": {
       "ok": true,
       "flags": []
     },
@@ -160,7 +164,7 @@
       "ok": true,
       "flags": []
     },
-    "MRVL": {
+    "NBIS": {
       "ok": true,
       "flags": []
     },
@@ -168,19 +172,15 @@
       "ok": true,
       "flags": []
     },
-    "NBIS": {
-      "ok": true,
-      "flags": []
-    },
     "NFLX": {
       "ok": true,
       "flags": []
     },
-    "NOW": {
+    "NVDA": {
       "ok": true,
       "flags": []
     },
-    "NVDA": {
+    "NOW": {
       "ok": true,
       "flags": []
     },
@@ -200,11 +200,11 @@
       "ok": true,
       "flags": []
     },
-    "QQQ": {
+    "POWL": {
       "ok": true,
       "flags": []
     },
-    "POWL": {
+    "QQQ": {
       "ok": true,
       "flags": []
     },
@@ -249,11 +249,11 @@
       "ok": true,
       "flags": []
     },
-    "VRT": {
+    "V": {
       "ok": true,
       "flags": []
     },
-    "V": {
+    "VRT": {
       "ok": true,
       "flags": []
     },
