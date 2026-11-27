@@ -1,12 +1,8 @@
 {
-  "generated_at": "2026-11-27T16:48:27Z",
+  "generated_at": "2026-11-27T17:03:34Z",
   "checked": 65,
   "flagged": 2,
   "quality": {
-    "ADP": {
-      "ok": true,
-      "flags": []
-    },
     "AMD": {
       "ok": true,
       "flags": []
@@ -15,11 +11,7 @@
       "ok": true,
       "flags": []
     },
-    "ANT": {
-      "ok": true,
-      "flags": []
-    },
-    "AMZN": {
+    "ADP": {
       "ok": true,
       "flags": []
     },
@@ -27,11 +19,19 @@
       "ok": true,
       "flags": []
     },
-    "AVGO": {
+    "AMZN": {
+      "ok": true,
+      "flags": []
+    },
+    "ANT": {
       "ok": true,
       "flags": []
     },
     "BWXT": {
+      "ok": true,
+      "flags": []
+    },
+    "AVGO": {
       "ok": true,
       "flags": []
     },
@@ -80,10 +80,6 @@
       "ok": true,
       "flags": []
     },
-    "EIX": {
-      "ok": true,
-      "flags": []
-    },
     "EME": {
       "ok": true,
       "flags": []
@@ -92,11 +88,7 @@
       "ok": true,
       "flags": []
     },
-    "FLUT": {
-      "ok": true,
-      "flags": []
-    },
-    "GEHC": {
+    "EIX": {
       "ok": true,
       "flags": []
     },
@@ -104,15 +96,27 @@
       "ok": true,
       "flags": []
     },
+    "GEHC": {
+      "ok": true,
+      "flags": []
+    },
+    "FLUT": {
+      "ok": true,
+      "flags": []
+    },
     "GEV": {
       "ok": true,
       "flags": []
     },
-    "GOOGL": {
+    "GIS": {
       "ok": true,
       "flags": []
     },
-    "GIS": {
+    "IBM": {
+      "ok": true,
+      "flags": []
+    },
+    "GOOGL": {
       "ok": true,
       "flags": []
     },
@@ -121,10 +125,6 @@
       "flags": []
     },
     "ISRG": {
-      "ok": true,
-      "flags": []
-    },
-    "IBM": {
       "ok": true,
       "flags": []
     },
@@ -152,10 +152,6 @@
       "ok": true,
       "flags": []
     },
-    "MSFT": {
-      "ok": true,
-      "flags": []
-    },
     "MRVL": {
       "ok": true,
       "flags": []
@@ -164,15 +160,19 @@
       "ok": true,
       "flags": []
     },
+    "MSFT": {
+      "ok": true,
+      "flags": []
+    },
+    "MU": {
+      "ok": true,
+      "flags": []
+    },
     "NBIS": {
       "ok": true,
       "flags": []
     },
     "NFLX": {
-      "ok": true,
-      "flags": []
-    },
-    "MU": {
       "ok": true,
       "flags": []
     },
@@ -188,6 +188,10 @@
       "ok": true,
       "flags": []
     },
+    "PAYX": {
+      "ok": true,
+      "flags": []
+    },
     "OKLO": {
       "ok": true,
       "flags": []
@@ -196,15 +200,11 @@
       "ok": true,
       "flags": []
     },
-    "PAYX": {
+    "POWL": {
       "ok": true,
       "flags": []
     },
     "QQQ": {
-      "ok": true,
-      "flags": []
-    },
-    "POWL": {
       "ok": true,
       "flags": []
     },
@@ -224,11 +224,15 @@
       "ok": true,
       "flags": []
     },
+    "TLN": {
+      "ok": true,
+      "flags": []
+    },
     "TPL": {
       "ok": true,
       "flags": []
     },
-    "TLN": {
+    "TW": {
       "ok": true,
       "flags": []
     },
@@ -240,10 +244,6 @@
           "msg": "Reports in TWD; figures converted to USD at 0.0303. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
-    },
-    "TW": {
-      "ok": true,
-      "flags": []
     },
     "UNH": {
       "ok": true,
@@ -265,11 +265,11 @@
       "ok": true,
       "flags": []
     },
-    "ZBH": {
+    "^TNX": {
       "ok": true,
       "flags": []
     },
-    "^TNX": {
+    "ZBH": {
       "ok": true,
       "flags": []
     }
