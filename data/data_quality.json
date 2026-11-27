@@ -1,12 +1,8 @@
 {
-  "generated_at": "2026-11-27T14:33:28Z",
+  "generated_at": "2026-11-27T14:48:18Z",
   "checked": 65,
   "flagged": 2,
   "quality": {
-    "AMD": {
-      "ok": true,
-      "flags": []
-    },
     "AAPL": {
       "ok": true,
       "flags": []
@@ -15,15 +11,19 @@
       "ok": true,
       "flags": []
     },
+    "AMD": {
+      "ok": true,
+      "flags": []
+    },
+    "APP": {
+      "ok": true,
+      "flags": []
+    },
     "ANT": {
       "ok": true,
       "flags": []
     },
     "AMZN": {
-      "ok": true,
-      "flags": []
-    },
-    "APP": {
       "ok": true,
       "flags": []
     },
@@ -40,15 +40,15 @@
       "flags": [
         {
           "level": "low",
-          "msg": "Reports in EUR; figures converted to USD at 1.0953. Trailing P/E may mix currencies \u2014 verify against filings"
+          "msg": "Reports in EUR; figures converted to USD at 1.0955. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
     },
-    "CBRS": {
+    "CEG": {
       "ok": true,
       "flags": []
     },
-    "CEG": {
+    "CBRS": {
       "ok": true,
       "flags": []
     },
@@ -68,11 +68,11 @@
       "ok": true,
       "flags": []
     },
-    "DECK": {
+    "CRDO": {
       "ok": true,
       "flags": []
     },
-    "CRDO": {
+    "DECK": {
       "ok": true,
       "flags": []
     },
@@ -84,11 +84,11 @@
       "ok": true,
       "flags": []
     },
-    "EIX": {
+    "ETN": {
       "ok": true,
       "flags": []
     },
-    "ETN": {
+    "EIX": {
       "ok": true,
       "flags": []
     },
@@ -100,15 +100,7 @@
       "ok": true,
       "flags": []
     },
-    "GEHC": {
-      "ok": true,
-      "flags": []
-    },
     "GEV": {
-      "ok": true,
-      "flags": []
-    },
-    "GOOGL": {
       "ok": true,
       "flags": []
     },
@@ -116,11 +108,19 @@
       "ok": true,
       "flags": []
     },
-    "IBM": {
+    "GOOGL": {
       "ok": true,
       "flags": []
     },
     "INVH": {
+      "ok": true,
+      "flags": []
+    },
+    "IBM": {
+      "ok": true,
+      "flags": []
+    },
+    "GEHC": {
       "ok": true,
       "flags": []
     },
@@ -132,11 +132,11 @@
       "ok": true,
       "flags": []
     },
-    "LMB": {
+    "LLY": {
       "ok": true,
       "flags": []
     },
-    "LLY": {
+    "LMB": {
       "ok": true,
       "flags": []
     },
@@ -172,11 +172,11 @@
       "ok": true,
       "flags": []
     },
-    "NOW": {
+    "NFLX": {
       "ok": true,
       "flags": []
     },
-    "NFLX": {
+    "NOW": {
       "ok": true,
       "flags": []
     },
@@ -208,11 +208,11 @@
       "ok": true,
       "flags": []
     },
-    "SNDK": {
+    "RDDT": {
       "ok": true,
       "flags": []
     },
-    "RDDT": {
+    "SNDK": {
       "ok": true,
       "flags": []
     },
@@ -245,11 +245,11 @@
         }
       ]
     },
-    "V": {
+    "UNH": {
       "ok": true,
       "flags": []
     },
-    "UNH": {
+    "V": {
       "ok": true,
       "flags": []
     },
