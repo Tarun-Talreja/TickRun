@@ -35,6 +35,7 @@ from quality_check import quality
 from rating_move import big_move
 from research_batch import SKIP_TICKERS
 from sec_filings import is_stake
+from summary_check import CHECKS_PATH, status as summary_check_status
 from summary_history import load_days
 from valuation_view import valuation_view
 
@@ -123,6 +124,12 @@ def _count(items, has_data) -> tuple[int, int]:
     return sum(1 for item in items if has_data(item)), len(items)
 
 
+def _summary_check_content() -> tuple:
+    """Checked recently, and the last run found nothing wrong."""
+    latest = summary_check_status(_load(CHECKS_PATH).get("days", {}))["latest"] or {}
+    return (latest.get("checked_at"), 0 if latest.get("failures") else latest.get("claims", 0), None)
+
+
 def _content_counts(quotes: dict, news: dict, insiders: dict, funds: dict, movers: dict) -> dict:
     """How much real data each part produced, for System Check."""
     field = _load(FIELD_NEWS_PATH)
@@ -146,6 +153,7 @@ def _content_counts(quotes: dict, news: dict, insiders: dict, funds: dict, mover
         "Radar": (radar.get("generated_at"), len(radar.get("cards", []))),
         "Screener": (screen.get("generated_at"), screen.get("qualified", 0)),
         "Home summary": (digest.get("generated_at"), int(bool(digest.get("narrative")))),
+        "Summary check": _summary_check_content(),
         "Company events": (_load(EVENTS_PATH).get("generated_at"), len(_load(EVENTS_PATH).get("tickers", {}))),
         "Valuation": (_load(VALUATIONS_PATH).get("generated_at"), len(_load(VALUATIONS_PATH).get("tickers", {}))),
     }
@@ -423,6 +431,7 @@ def main():
                                          {c["ticker"]: c["category"] for c in candidates_enriched}),
         "plan_review":     _load(PLAN_REVIEW_PATH),
         "market_panel":    panel(quotes["tickers"], quotes.get("market", {}), SKIP_TICKERS),
+        "summary_check":   summary_check_status(_load(CHECKS_PATH).get("days", {})),
         "summary_history": load_days(),
         "daily_brief":     _load(DAILY_BRIEF_PATH),
         "signals": {

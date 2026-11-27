@@ -959,7 +959,9 @@ function renderHome(data){
   ${(digest.narrative&&(digest.prices_as_of||'').slice(0,10)===(data.prices_as_of||'').slice(0,10))?`<div class="digest-card s-anim" style="animation-delay:.05s">
     <div class="digest-label">📋 Summary, prices from ${new Date(digest.prices_as_of).toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})}</div>
     <div class="digest-text">${esc(digest.narrative)}</div>
+    ${checkLine(data.summary_check)}
   </div>`:''}
+  ${digest.withheld?`<div class="digest-card s-anim" style="border-left:3px solid var(--red)"><div class="digest-label">📋 Summary withheld</div><div class="digest-text">It failed its own check against the data, so it isn’t shown: ${esc(digest.withheld.slice(0,3).join('; '))}</div></div>`:''}
   ${renderMarketPanel(data)}
   ${renderDailyBrief(data)}
   ${renderSummaryHistory(data)}
@@ -1658,6 +1660,12 @@ function renderMarketPanel(data){
       ${cell('Followed stocks up',`${p.up} of ${p.counted}`)}
       ${p.best?cell('Best group',`${esc(p.best.name)} ${pct(p.best.pct)}`):''}${p.worst?cell('Worst group',`${esc(p.worst.name)} ${pct(p.worst.pct)}`):''}
     </div></div>`;
+}
+
+function checkLine(sc){
+  const l = sc && sc.latest; if(!l) return '';
+  const earlier = l.failed_runs ? ` ${l.failed_runs} earlier check${l.failed_runs>1?'s':''} on ${fDate(sc.day)} failed, so that day doesn’t count.` : '';
+  return `<div style="margin-top:8px;font-size:11px;color:var(--text2)" id="summary-check">✓ Checked against its sources: ${l.claims} claims. Error-free days in a row: ${sc.streak} of ${sc.needed} needed to call it proven.${earlier}</div>`;
 }
 
 function renderSummaryHistory(data){

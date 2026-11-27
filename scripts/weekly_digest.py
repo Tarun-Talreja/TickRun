@@ -26,12 +26,14 @@ from datetime import datetime, timezone
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from io_utils import load_json as _load
 from market_time import session_date
+from summary_check import run as check_summary
 from summary_history import load_days, save_days, with_summary
 
 SCRIPT_DIR    = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DASHBOARD_PATH = os.path.join(SCRIPT_DIR, "output", "dashboard.json")
 OUTPUT_PATH    = os.path.join(SCRIPT_DIR, "output", "weekly_digest.json")
 QUOTES_PATH   = os.path.join(SCRIPT_DIR, "data", "quotes_cache.json")
+NEWS_PATH     = os.path.join(SCRIPT_DIR, "data", "news_cache.json")
 INDEX_FUNDS = ("SPY", "QQQ")
 TOP_MOVERS = 4
 EARNINGS_DAYS = 10
@@ -144,8 +146,16 @@ def main():
         json.dump(digest, f, indent=2)
 
     if narrative and digest["prices_as_of"]:
-        day = session_date(datetime.fromisoformat(prices_as_of.replace("Z", "+00:00"))).isoformat()
-        save_days(with_summary(load_days(), day, narrative, prices_as_of))
+        _, failures = check_summary(digest, _load(QUOTES_PATH), _load(NEWS_PATH))
+        if failures:
+            # A summary that fails its own check isn't shown, and isn't kept in the history.
+            digest = {**digest, "narrative": None, "withheld": failures, "rejected_text": narrative}
+            with open(OUTPUT_PATH, "w") as f:
+                json.dump(digest, f, indent=2)
+            narrative = None
+        else:
+            day = session_date(datetime.fromisoformat(prices_as_of.replace("Z", "+00:00"))).isoformat()
+            save_days(with_summary(load_days(), day, narrative, prices_as_of))
 
     print("📋 WEEKLY DIGEST")
     if narrative:
