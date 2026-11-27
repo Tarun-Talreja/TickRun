@@ -977,7 +977,7 @@
       "thesis": "Quality payroll/HCM compounder with 26%+ operating margins, $4.8B FCF, and recurring revenue, trading at 22x forward earnings for ~6% growth.",
       "added": "2026-06-08",
       "verdict": "WATCHLIST",
-      "buy_target": 271.64,
+      "buy_target": 271.66,
       "current_price": null,
       "next_action": "WAIT \u2014 Quality payroll/HCM compounder with 26%+ operating margins, $4.8B FCF, and recurring revenue, trading at 22x forward earnings for ~6% growth. Revisit at 15% below the 52-week high.",
       "research_file": "output/research/ADP_2026-11-07.md",
@@ -1817,7 +1817,8 @@
       "rated_price": 82.79,
       "confidence": "LOW",
       "bear_check": null,
-      "buy_trigger_drawdown_pct": -50.0
+      "buy_trigger_drawdown_pct": -50.0,
+      "no_pullback_gate": false
     },
     {
       "ticker": "SNDK",
@@ -1847,7 +1848,8 @@
       "rated_price": 73.61,
       "confidence": "MEDIUM",
       "bear_check": null,
-      "buy_trigger_drawdown_pct": -75.0
+      "buy_trigger_drawdown_pct": -75.0,
+      "no_pullback_gate": false
     },
     {
       "ticker": "SPY",
