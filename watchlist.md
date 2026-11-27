@@ -84,6 +84,10 @@ EME
 TPL
 APP
 
+## Added by request (2026-11-27)
+ANT
+SNDK
+
 ## Index benchmarks (always include)
 SPY
 QQQ
