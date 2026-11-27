@@ -30,6 +30,7 @@ from health import build_health
 from holding_flags import holding_flags
 from io_utils import load_json as _load
 from market_split import panel, split_move
+from news_history import as_rows, read as read_news_history, recent as recent_news
 from market_time import price_due_at, prices_as_of
 from quality_check import quality
 from rating_move import big_move
@@ -431,6 +432,9 @@ def main():
                                          {c["ticker"]: c["category"] for c in candidates_enriched}),
         "plan_review":     _load(PLAN_REVIEW_PATH),
         "market_panel":    panel(quotes["tickers"], quotes.get("market", {}), SKIP_TICKERS),
+        # One copy by ticker: candidates appear three times in the file and in every card.
+        "news_timelines":  {c["ticker"]: rows for c in candidates_enriched if (rows := as_rows(
+            recent_news(read_news_history(c["ticker"]), datetime.now(timezone.utc).date())))},
         "summary_check":   summary_check_status(_load(CHECKS_PATH).get("days", {})),
         "summary_history": load_days(),
         "daily_brief":     _load(DAILY_BRIEF_PATH),

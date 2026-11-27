@@ -17,7 +17,7 @@ import os
 import re
 import subprocess
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from io_utils import load_json
@@ -61,6 +61,20 @@ def merge(existing: list[dict], items: list[dict], seen_on: str) -> tuple[list[d
             fresh.append({**item, "seen_on": seen_on})
     merged = sorted([*existing, *fresh], key=lambda i: (i["date"], i["title"]), reverse=True)
     return merged, len(fresh)
+
+
+def recent(items: list[dict], today, days: int = 30, limit: int = 12) -> list[dict]:
+    """The newest headlines from the last `days` days, for the stock page. Newest first."""
+    first, last = (today - timedelta(days=days)).isoformat(), (today + timedelta(days=1)).isoformat()
+    keep = [i for i in items if first <= i["date"] <= last]
+    keep.sort(key=lambda i: (i["date"], i["title"]), reverse=True)
+    return [{k: i.get(k, "") for k in ("date", "title", "publisher", "url")} for i in keep[:limit]]
+
+
+def as_rows(items: list[dict]) -> list[list[str]]:
+    """[date, title, publisher, url] per headline: the dashboard file is pretty-printed, so
+    named fields cost twice the space."""
+    return [[i["date"], i["title"], i["publisher"], i["url"]] for i in items]
 
 
 def _path(ticker: str, directory: str) -> str | None:

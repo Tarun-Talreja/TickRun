@@ -1234,6 +1234,17 @@ function openStock(s){
   navigateTo('stock', full);
 }
 
+function renderTimeline(s){
+  const items = ((DB||{}).news_timelines||{})[s.ticker]||[]; if(!items.length) return '';
+  const row = ([date,headline,publisher,url])=>{
+    const u=(url||'').startsWith('https://')?url:'';
+    const title = u?`<a href="${esc(u)}" target="_blank" rel="noopener noreferrer" style="color:var(--text0)">${esc(headline)}</a>`:esc(headline);
+    return `<div style="padding:7px 0;border-bottom:1px solid var(--bg3);display:flex;gap:10px"><span style="flex:none;width:46px;font-size:11px;color:var(--text2)">${fDate(date)}</span><span style="min-width:0;font-size:13px;line-height:1.4">${title} <span style="font-size:11px;color:var(--text2)">${esc(publisher)}</span></span></div>`;
+  };
+  const rest = items.slice(8);
+  return `<div class="detail-section" id="news-timeline"><div class="ds-title">News, Last 30 Days</div><div class="thesis-box">${items.slice(0,8).map(row).join('')}${rest.length?`<details><summary style="cursor:pointer;padding:8px 0;font-size:12px;color:var(--cyan)">Show ${rest.length} older</summary>${rest.map(row).join('')}</details>`:''}<div style="margin-top:8px;font-size:11px;color:var(--text2)">Headlines as published, newest first. A headline near a price move is not proof of its cause.</div></div></div>`;
+}
+
 function renderQuality(s){
   const q = s.quality; if(!q) return '';
   const icon = ok=>ok===true?'<span style="color:var(--green)">✓</span>':ok===false?'<span style="color:var(--red)">✕</span>':'<span style="color:var(--text2)">?</span>';
@@ -1328,6 +1339,7 @@ function renderStockDetail(s){
     ${s.last_researched?`<div style="margin-top:8px;font-size:9px;color:var(--text2)">Last researched: ${fDate(s.last_researched)}${s.confidence?` · Confidence: ${esc(s.confidence)}`:''}</div>`:''}
   </div>
   ${s.move_split?`<div class="detail-section"><div class="ds-title">What Moved It on ${fDate(s.move_split.session)}</div><div class="thesis-box">${moveSplit(s.move_split)}</div></div>`:''}
+  ${renderTimeline(s)}
   ${renderValuation(s)}
   ${s.fall_reason&&!s.moved_since_rating?`<div class="detail-section">
     <div class="ds-title">Why It Fell</div>

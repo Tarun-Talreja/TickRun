@@ -55,3 +55,16 @@ def test_curly_quotes_and_case_do_not_make_a_new_headline():
     merged, added = nh.merge([], [item("How to protect your portfolio if you\u2019re worried"),
                                    item("how to protect your  portfolio if you're worried")], "d")
     assert added == 1
+
+
+def test_recent_keeps_the_last_30_days_newest_first_and_capped():
+    from datetime import date
+    items = [item("old", "2026-10-01"), item("a", "2026-11-20"), item("b", "2026-11-25"), item("future", "2026-12-20")]
+    out = nh.recent(items, date(2026, 11, 26))
+    assert [i["title"] for i in out] == ["b", "a"] and set(out[0]) == {"date", "title", "publisher", "url"}
+    many = [item(f"t{n}", "2026-11-25") for n in range(40)]
+    assert len(nh.recent(many, date(2026, 11, 26))) == 12
+
+
+def test_rows_are_date_title_publisher_url():
+    assert nh.as_rows([item("a", "2026-11-25", "CNBC", "https://x")]) == [["2026-11-25", "a", "CNBC", "https://x"]]
