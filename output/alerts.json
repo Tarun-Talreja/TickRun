@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T22:16:39Z",
+  "generated_at": "2026-11-27T04:10:45Z",
   "pullback_alerts": [
     {
       "ticker": "CBRS",
@@ -472,23 +472,23 @@
   ],
   "stale_research": [
     {
-      "ticker": "SPY",
-      "last_researched": "2026-05-28",
-      "days_since": 182,
-      "verdict": "WATCHLIST",
-      "action": "Re-run: python3 scripts/research_ticker.py SPY"
-    },
-    {
       "ticker": "QQQ",
       "last_researched": "2026-05-28",
-      "days_since": 182,
+      "days_since": 183,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py QQQ"
     },
     {
+      "ticker": "SPY",
+      "last_researched": "2026-05-28",
+      "days_since": 183,
+      "verdict": "WATCHLIST",
+      "action": "Re-run: python3 scripts/research_ticker.py SPY"
+    },
+    {
       "ticker": "^TNX",
       "last_researched": "2026-05-28",
-      "days_since": 182,
+      "days_since": 183,
       "verdict": "WATCHLIST",
       "action": "Re-run: python3 scripts/research_ticker.py ^TNX"
     }
