@@ -263,7 +263,7 @@ def _problems(record: dict, quote: dict, today: date) -> list[str]:
     ttm, problems = record.get("ttm", {}), []
     revenue = (ttm.get("revenue") or {})
     if not record.get("annual"):
-        return ["no filed US figures (foreign companies file differently)"]
+        return ["no annual figures on file with the SEC (a foreign company, which files differently, or a new listing)"]
     if not revenue.get("end"):
         return ["no recent revenue on file"]
     age = (today - date.fromisoformat(revenue["end"])).days
