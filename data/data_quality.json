@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-27T16:18:31Z",
+  "generated_at": "2026-11-27T16:33:30Z",
   "checked": 65,
   "flagged": 2,
   "quality": {
-    "ADP": {
+    "AMD": {
       "ok": true,
       "flags": []
     },
@@ -11,7 +11,7 @@
       "ok": true,
       "flags": []
     },
-    "AMD": {
+    "ADP": {
       "ok": true,
       "flags": []
     },
@@ -31,10 +31,6 @@
       "ok": true,
       "flags": []
     },
-    "BWXT": {
-      "ok": true,
-      "flags": []
-    },
     "ASML": {
       "ok": false,
       "flags": [
@@ -44,11 +40,11 @@
         }
       ]
     },
-    "CBRS": {
+    "BWXT": {
       "ok": true,
       "flags": []
     },
-    "CLS": {
+    "CBRS": {
       "ok": true,
       "flags": []
     },
@@ -56,11 +52,15 @@
       "ok": true,
       "flags": []
     },
-    "CMCSA": {
+    "CLS": {
       "ok": true,
       "flags": []
     },
     "COHR": {
+      "ok": true,
+      "flags": []
+    },
+    "CMCSA": {
       "ok": true,
       "flags": []
     },
@@ -80,11 +80,11 @@
       "ok": true,
       "flags": []
     },
-    "EME": {
+    "EIX": {
       "ok": true,
       "flags": []
     },
-    "EIX": {
+    "EME": {
       "ok": true,
       "flags": []
     },
@@ -100,11 +100,11 @@
       "ok": true,
       "flags": []
     },
-    "GEHC": {
+    "GEV": {
       "ok": true,
       "flags": []
     },
-    "GEV": {
+    "GEHC": {
       "ok": true,
       "flags": []
     },
@@ -116,11 +116,11 @@
       "ok": true,
       "flags": []
     },
-    "INVH": {
+    "IBM": {
       "ok": true,
       "flags": []
     },
-    "IBM": {
+    "INVH": {
       "ok": true,
       "flags": []
     },
@@ -148,11 +148,11 @@
       "ok": true,
       "flags": []
     },
-    "MKTX": {
+    "META": {
       "ok": true,
       "flags": []
     },
-    "META": {
+    "MKTX": {
       "ok": true,
       "flags": []
     },
@@ -212,11 +212,11 @@
       "ok": true,
       "flags": []
     },
-    "SPY": {
+    "SNDK": {
       "ok": true,
       "flags": []
     },
-    "SNDK": {
+    "SPY": {
       "ok": true,
       "flags": []
     },
