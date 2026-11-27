@@ -1,8 +1,12 @@
 {
-  "generated_at": "2026-11-27T16:03:25Z",
+  "generated_at": "2026-11-27T16:18:31Z",
   "checked": 65,
   "flagged": 2,
   "quality": {
+    "ADP": {
+      "ok": true,
+      "flags": []
+    },
     "AAPL": {
       "ok": true,
       "flags": []
@@ -11,15 +15,11 @@
       "ok": true,
       "flags": []
     },
-    "ADP": {
+    "AMZN": {
       "ok": true,
       "flags": []
     },
     "ANT": {
-      "ok": true,
-      "flags": []
-    },
-    "AMZN": {
       "ok": true,
       "flags": []
     },
@@ -31,24 +31,20 @@
       "ok": true,
       "flags": []
     },
+    "BWXT": {
+      "ok": true,
+      "flags": []
+    },
     "ASML": {
       "ok": false,
       "flags": [
         {
           "level": "low",
-          "msg": "Reports in EUR; figures converted to USD at 1.0942. Trailing P/E may mix currencies \u2014 verify against filings"
+          "msg": "Reports in EUR; figures converted to USD at 1.0940. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
     },
-    "BWXT": {
-      "ok": true,
-      "flags": []
-    },
     "CBRS": {
-      "ok": true,
-      "flags": []
-    },
-    "CEG": {
       "ok": true,
       "flags": []
     },
@@ -56,7 +52,7 @@
       "ok": true,
       "flags": []
     },
-    "COHR": {
+    "CEG": {
       "ok": true,
       "flags": []
     },
@@ -64,11 +60,11 @@
       "ok": true,
       "flags": []
     },
-    "COST": {
+    "COHR": {
       "ok": true,
       "flags": []
     },
-    "CRDO": {
+    "COST": {
       "ok": true,
       "flags": []
     },
@@ -76,15 +72,19 @@
       "ok": true,
       "flags": []
     },
+    "CRDO": {
+      "ok": true,
+      "flags": []
+    },
     "DHR": {
       "ok": true,
       "flags": []
     },
-    "EIX": {
+    "EME": {
       "ok": true,
       "flags": []
     },
-    "EME": {
+    "EIX": {
       "ok": true,
       "flags": []
     },
@@ -108,19 +108,19 @@
       "ok": true,
       "flags": []
     },
-    "GOOGL": {
-      "ok": true,
-      "flags": []
-    },
     "GIS": {
       "ok": true,
       "flags": []
     },
-    "IBM": {
+    "GOOGL": {
       "ok": true,
       "flags": []
     },
     "INVH": {
+      "ok": true,
+      "flags": []
+    },
+    "IBM": {
       "ok": true,
       "flags": []
     },
@@ -148,11 +148,11 @@
       "ok": true,
       "flags": []
     },
-    "META": {
+    "MKTX": {
       "ok": true,
       "flags": []
     },
-    "MKTX": {
+    "META": {
       "ok": true,
       "flags": []
     },
@@ -164,11 +164,11 @@
       "ok": true,
       "flags": []
     },
-    "NBIS": {
+    "MU": {
       "ok": true,
       "flags": []
     },
-    "MU": {
+    "NBIS": {
       "ok": true,
       "flags": []
     },
@@ -176,11 +176,11 @@
       "ok": true,
       "flags": []
     },
-    "NVDA": {
+    "NOW": {
       "ok": true,
       "flags": []
     },
-    "NOW": {
+    "NVDA": {
       "ok": true,
       "flags": []
     },
@@ -192,11 +192,11 @@
       "ok": true,
       "flags": []
     },
-    "PODD": {
+    "PAYX": {
       "ok": true,
       "flags": []
     },
-    "PAYX": {
+    "PODD": {
       "ok": true,
       "flags": []
     },
@@ -216,11 +216,11 @@
       "ok": true,
       "flags": []
     },
-    "STZ": {
+    "SNDK": {
       "ok": true,
       "flags": []
     },
-    "SNDK": {
+    "STZ": {
       "ok": true,
       "flags": []
     },
