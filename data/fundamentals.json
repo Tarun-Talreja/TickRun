@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T05:23:54Z",
+ "generated_at": "2026-11-27T06:37:55Z",
  "tickers": {
   "AAPL": {
    "annual": {
@@ -398,6 +398,14 @@
    "stale": [],
    "cik": "0001018724",
    "name": "AMAZON.COM, INC."
+  },
+  "ANT": {
+   "annual": {},
+   "ttm": {},
+   "source": {},
+   "stale": [],
+   "cik": "0002130357",
+   "name": "Anthropic, PBC"
   },
   "APP": {
    "annual": {
@@ -4532,6 +4540,93 @@
    "cik": "0001713445",
    "name": "Reddit, Inc."
   },
+  "SNDK": {
+   "annual": {
+    "revenue": {
+     "2023-06-30": 6086000000,
+     "2024-06-28": 6663000000,
+     "2025-06-27": 7355000000,
+     "2026-07-03": 20248000000
+    },
+    "operating_income": {
+     "2023-06-30": -2035000000,
+     "2024-06-28": -468000000,
+     "2025-06-27": -1377000000,
+     "2026-07-03": 12389000000
+    },
+    "net_income": {
+     "2023-06-30": -2143000000,
+     "2024-06-28": -672000000,
+     "2025-06-27": -1641000000,
+     "2026-07-03": 11433000000
+    },
+    "operating_cash_flow": {
+     "2023-06-30": -713000000,
+     "2024-06-28": -309000000,
+     "2025-06-27": 84000000,
+     "2026-07-03": 11671000000
+    },
+    "capex": {
+     "2023-06-30": 219000000,
+     "2024-06-28": 166000000,
+     "2025-06-27": 204000000,
+     "2026-07-03": 177000000
+    },
+    "stock_comp": {
+     "2023-06-30": 165000000,
+     "2024-06-28": 149000000,
+     "2025-06-27": 182000000,
+     "2026-07-03": 232000000
+    },
+    "diluted_shares": {
+     "2024-06-28": 145000000,
+     "2025-06-27": 145000000,
+     "2026-07-03": 155000000
+    }
+   },
+   "ttm": {
+    "revenue": {
+     "end": "2026-10-02",
+     "value": 28971000000
+    },
+    "operating_income": {
+     "end": "2026-10-02",
+     "value": 20993000000
+    },
+    "net_income": {
+     "end": "2026-10-02",
+     "value": 19422000000
+    },
+    "operating_cash_flow": {
+     "end": "2026-10-02",
+     "value": 17546000000
+    },
+    "capex": {
+     "end": "2026-10-02",
+     "value": 181000000
+    },
+    "stock_comp": {
+     "end": "2026-10-02",
+     "value": 270000000
+    },
+    "diluted_shares": {
+     "end": "2026-10-02",
+     "value": 154000000
+    }
+   },
+   "source": {
+    "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "operating_income": "OperatingIncomeLoss",
+    "net_income": "NetIncomeLoss",
+    "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+    "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "stock_comp": "ShareBasedCompensation",
+    "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
+   },
+   "stale": [],
+   "cik": "0002023554",
+   "name": "Sandisk Corporation"
+  },
   "STZ": {
    "annual": {
     "revenue": {
@@ -5445,6 +5540,7 @@
   }
  },
  "missing": [
+  "ANT",
   "QQQ",
   "SPY",
   "TSM"

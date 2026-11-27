@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T05:24:29Z",
+ "generated_at": "2026-11-27T06:38:30Z",
  "treasury_10y": 0.0485,
  "margin_of_safety": 0.25,
  "equity_premium": 0.05,
@@ -166,6 +166,19 @@
      "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
     }
    }
+  },
+  "ANT": {
+   "methods": {},
+   "price": 82.79,
+   "status": "no_reliable_price",
+   "low": null,
+   "base": null,
+   "high": null,
+   "buy_below": null,
+   "no_growth_value": null,
+   "reason": "no filed US figures (foreign companies file differently)",
+   "notes": [],
+   "inputs": {}
   },
   "APP": {
    "methods": {
@@ -1819,6 +1832,19 @@
      "diluted_shares": "WeightedAverageNumberOfDilutedSharesOutstanding"
     }
    }
+  },
+  "SNDK": {
+   "methods": {},
+   "price": 73.61,
+   "status": "no_reliable_price",
+   "low": null,
+   "base": null,
+   "high": null,
+   "buy_below": null,
+   "no_growth_value": null,
+   "reason": "the filed share count doesn't match its market value (off by 86%)",
+   "notes": [],
+   "inputs": {}
   },
   "STZ": {
    "methods": {},
