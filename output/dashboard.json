@@ -1,5 +1,5 @@
 {
-  "last_built": "2026-11-27T06:38:34Z",
+  "last_built": "2026-11-27T06:41:04Z",
   "quotes_updated": "2026-11-27T06:37:29Z",
   "prices_as_of": "2026-11-25T21:00:02Z",
   "prices_due": "2026-11-27T15:15:00Z",
@@ -10,15 +10,15 @@
         "updated_at": "2026-11-25T21:00:02Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 33.6,
+        "age_hours": 33.7,
         "affects": "The market has traded since these prices"
       },
       {
         "name": "Research",
-        "updated_at": "2026-11-26T13:28:06Z",
-        "detail": "8/8 tickers",
+        "updated_at": "2026-11-27T06:40:57Z",
+        "detail": "2/2 tickers",
         "status": "ok",
-        "age_hours": 17.2,
+        "age_hours": 0.0,
         "affects": "Ratings aren't being updated"
       },
       {
@@ -34,7 +34,7 @@
         "updated_at": "2026-11-27T06:37:31Z",
         "detail": null,
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "New SEC filings won't show"
       },
       {
@@ -42,7 +42,7 @@
         "updated_at": "2026-11-27T06:37:29Z",
         "detail": "61/61 have data",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "Prices may be missing"
       },
       {
@@ -50,13 +50,13 @@
         "updated_at": "2026-11-27T06:37:29Z",
         "detail": "61/61 have data",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "Ratings can't check the numbers"
       },
       {
         "name": "News",
-        "updated_at": "2026-11-27T06:37:37Z",
-        "detail": "59/59 have data",
+        "updated_at": "2026-11-27T06:41:03Z",
+        "detail": "57/57 have data",
         "status": "ok",
         "age_hours": 0.0,
         "affects": "Ratings and mover reasons can miss recent news"
@@ -66,7 +66,7 @@
         "updated_at": "2026-11-23T02:36:07Z",
         "detail": "50/59 have data",
         "status": "ok",
-        "age_hours": 100.0,
+        "age_hours": 100.1,
         "affects": "Insider buying won't show on stocks or the radar"
       },
       {
@@ -74,7 +74,7 @@
         "updated_at": "2026-11-15T19:48:08Z",
         "detail": "57/60 have data",
         "status": "ok",
-        "age_hours": 274.8,
+        "age_hours": 274.9,
         "affects": "Hedge fund holdings may be out of date"
       },
       {
@@ -90,7 +90,7 @@
         "updated_at": "2026-11-27T06:37:56Z",
         "detail": "2/2 have data",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "Big moves may have no explanation"
       },
       {
@@ -98,7 +98,7 @@
         "updated_at": "2026-11-26T19:47:36Z",
         "detail": "12 found",
         "status": "ok",
-        "age_hours": 10.8,
+        "age_hours": 10.9,
         "affects": "The radar may be out of date"
       },
       {
@@ -114,7 +114,7 @@
         "updated_at": "2026-11-27T06:37:57Z",
         "detail": "1 found",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "The summary may be out of date"
       },
       {
@@ -122,7 +122,7 @@
         "updated_at": "2026-11-27T06:37:57Z",
         "detail": "14 found",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "The Home summary failed its check against the data and is hidden"
       },
       {
@@ -130,7 +130,7 @@
         "updated_at": "2026-11-27T06:37:55Z",
         "detail": "59 found",
         "status": "ok",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "affects": "Serious news and filings may be missed"
       },
       {
@@ -153,8 +153,8 @@
         "name": "Ratings",
         "updated_at": null,
         "age_hours": null,
-        "detail": "59/61 on current logic",
-        "status": "stale",
+        "detail": "61/61 on current logic",
+        "status": "ok",
         "affects": "Some ratings still use older logic"
       }
     ]
@@ -8327,14 +8327,33 @@
         "ticker": "ANT",
         "name": "Anthropic, PBC",
         "theme": "mega_cap_ai",
-        "status": "monitoring",
-        "thesis": "",
+        "status": "research_complete",
+        "thesis": "No summary: its figures weren't in the source data.",
         "added": "2026-11-27",
-        "verdict": "WATCHLIST",
+        "verdict": "PASS",
         "current_price": 82.79,
-        "next_action": "Run research_ticker.py to generate thesis and verdict.",
-        "research_file": null,
-        "last_researched": null,
+        "next_action": "DROP \u2014 No summary: its figures weren't in the source data.",
+        "research_file": "output/research/ANT_2026-11-27.md",
+        "last_researched": "2026-11-27",
+        "llm_verdict": "PASS",
+        "bear_downgraded": false,
+        "rating_version": 4,
+        "unsupported_figures": [
+          "31x",
+          "20x",
+          "$1.38B",
+          "48%",
+          "$67B",
+          "$7.9B",
+          "50%",
+          "11x"
+        ],
+        "fall_reason": null,
+        "rated_quarter_end": "2026-09-30",
+        "rated_next_earnings": null,
+        "rated_price": 82.79,
+        "confidence": "LOW",
+        "bear_check": null,
         "price": 82.79,
         "pct_change_1d": 1.08,
         "market_cap": 1106624380928,
@@ -8347,7 +8366,6 @@
         "short_percent_float": null,
         "short_ratio": null,
         "high_proximity_warning": false,
-        "bear_check": null,
         "move_split": {
           "session": "2026-11-25",
           "pct": 1.1,
@@ -8385,14 +8403,29 @@
         "ticker": "SNDK",
         "name": "Sandisk Corporation",
         "theme": "edge_ai_silicon",
-        "status": "monitoring",
-        "thesis": "",
+        "status": "research_complete",
+        "thesis": "Cyclical NAND memory supplier at trough multiples (2.1x forward P/E) with artificially inflated margins from spin-off accounting; 75% drawdown reflects rational fear of commodity price collapse, not mispricing.",
         "added": "2026-11-27",
-        "verdict": "WATCHLIST",
+        "verdict": "PASS",
         "current_price": 73.61,
-        "next_action": "Run research_ticker.py to generate thesis and verdict.",
-        "research_file": null,
-        "last_researched": null,
+        "next_action": "DROP \u2014 Cyclical NAND memory supplier at trough multiples (2.1x forward P/E) with artificially inflated margins from spin-off accounting; 75% drawdown reflects rational fear of commodity price collapse, not mispricing.",
+        "research_file": "output/research/SNDK_2026-11-27.md",
+        "last_researched": "2026-11-27",
+        "llm_verdict": "PASS",
+        "bear_downgraded": false,
+        "rating_version": 4,
+        "unsupported_figures": [
+          "50%",
+          "40%",
+          "$17B",
+          "1%"
+        ],
+        "fall_reason": "NAND flash memory price declines triggered a 75% crash despite strong reported earnings, as the market prices in a commodity downcycle.",
+        "rated_quarter_end": "2026-09-30",
+        "rated_next_earnings": 1793304000,
+        "rated_price": 73.61,
+        "confidence": "MEDIUM",
+        "bear_check": null,
         "price": 73.61,
         "pct_change_1d": -5.57,
         "market_cap": 83791355904,
@@ -8405,7 +8438,6 @@
         "short_percent_float": 3.75,
         "short_ratio": 0.5,
         "high_proximity_warning": false,
-        "bear_check": null,
         "move_split": {
           "session": "2026-11-25",
           "pct": -5.6,
@@ -13646,154 +13678,6 @@
           "data_flags": []
         },
         {
-          "ticker": "ANT",
-          "name": "Anthropic, PBC",
-          "theme": "mega_cap_ai",
-          "status": "monitoring",
-          "thesis": "",
-          "added": "2026-11-27",
-          "verdict": "WATCHLIST",
-          "current_price": 82.79,
-          "next_action": "Run research_ticker.py to generate thesis and verdict.",
-          "research_file": null,
-          "last_researched": null,
-          "price": 82.79,
-          "pct_change_1d": 1.08,
-          "market_cap": 1106624380928,
-          "cap_tier": "mega",
-          "drawdown_from_high": -28.1,
-          "revenue_growth": 1126.9,
-          "op_margin": -3.3,
-          "pe": null,
-          "forward_pe": 161.60136,
-          "short_percent_float": null,
-          "short_ratio": null,
-          "high_proximity_warning": false,
-          "bear_check": null,
-          "move_split": {
-            "session": "2026-11-25",
-            "pct": 1.1,
-            "market": -0.3,
-            "group": 0.9,
-            "group_name": "technology",
-            "fund": "RSPT",
-            "own": 0.5
-          },
-          "moved_since_rating": null,
-          "valuation": {
-            "status": "no_reliable_price",
-            "low": null,
-            "base": null,
-            "high": null,
-            "buy_below": null,
-            "reason": "no filed US figures (foreign companies file differently)",
-            "notes": [],
-            "methods": {},
-            "inputs": {},
-            "valued_on": "2026-11-27",
-            "gap_pct": null
-          },
-          "quality": null,
-          "events": null,
-          "category": {
-            "key": "unknown",
-            "label": "Not enough data",
-            "why": "No US filings with the figures needed"
-          },
-          "data_ok": true,
-          "data_flags": []
-        },
-        {
-          "ticker": "SNDK",
-          "name": "Sandisk Corporation",
-          "theme": "edge_ai_silicon",
-          "status": "monitoring",
-          "thesis": "",
-          "added": "2026-11-27",
-          "verdict": "WATCHLIST",
-          "current_price": 73.61,
-          "next_action": "Run research_ticker.py to generate thesis and verdict.",
-          "research_file": null,
-          "last_researched": null,
-          "price": 73.61,
-          "pct_change_1d": -5.57,
-          "market_cap": 83791355904,
-          "cap_tier": "large",
-          "drawdown_from_high": -75.0,
-          "revenue_growth": 377.9,
-          "op_margin": 79.6,
-          "pe": 4.7065215,
-          "forward_pe": 2.051192,
-          "short_percent_float": 3.75,
-          "short_ratio": 0.5,
-          "high_proximity_warning": false,
-          "bear_check": null,
-          "move_split": {
-            "session": "2026-11-25",
-            "pct": -5.6,
-            "market": -0.3,
-            "group": 0.9,
-            "group_name": "technology",
-            "fund": "RSPT",
-            "own": -6.2
-          },
-          "moved_since_rating": null,
-          "valuation": {
-            "status": "no_reliable_price",
-            "low": null,
-            "base": null,
-            "high": null,
-            "buy_below": null,
-            "reason": "the filed share count doesn't match its market value (off by 86%)",
-            "notes": [],
-            "methods": {},
-            "inputs": {},
-            "valued_on": "2026-11-27",
-            "gap_pct": null
-          },
-          "quality": {
-            "checks": [
-              {
-                "name": "Profitable every year",
-                "ok": false,
-                "detail": "lost money in 2023, 2024, 2025",
-                "chronic": true
-              },
-              {
-                "name": "Profit turns into cash",
-                "ok": true,
-                "detail": "120% of three years' profit arrived as cash after spending"
-              },
-              {
-                "name": "Share count not swelling",
-                "ok": false,
-                "detail": "grew 3.4% a year"
-              },
-              {
-                "name": "Debt is manageable",
-                "ok": true,
-                "detail": "more cash than debt"
-              },
-              {
-                "name": "Margins holding up",
-                "ok": null,
-                "detail": "lost money on average, so there is nothing to compare"
-              }
-            ],
-            "passed": 2,
-            "failed": 2,
-            "known": 4
-          },
-          "events": null,
-          "category": {
-            "key": "weak",
-            "label": "Fails checks",
-            "why": "Fails 2 of 4 checks: profitable every year (lost money in 2023, 2024, 2025); share count not swelling (grew 3.4% a year)"
-          },
-          "data_ok": true,
-          "data_flags": []
-        },
-        {
           "ticker": "SPY",
           "name": "SPDR S&P 500 ETF",
           "theme": "uncategorized",
@@ -16942,6 +16826,186 @@
           },
           "data_ok": true,
           "data_flags": []
+        },
+        {
+          "ticker": "ANT",
+          "name": "Anthropic, PBC",
+          "theme": "mega_cap_ai",
+          "status": "research_complete",
+          "thesis": "No summary: its figures weren't in the source data.",
+          "added": "2026-11-27",
+          "verdict": "PASS",
+          "current_price": 82.79,
+          "next_action": "DROP \u2014 No summary: its figures weren't in the source data.",
+          "research_file": "output/research/ANT_2026-11-27.md",
+          "last_researched": "2026-11-27",
+          "llm_verdict": "PASS",
+          "bear_downgraded": false,
+          "rating_version": 4,
+          "unsupported_figures": [
+            "31x",
+            "20x",
+            "$1.38B",
+            "48%",
+            "$67B",
+            "$7.9B",
+            "50%",
+            "11x"
+          ],
+          "fall_reason": null,
+          "rated_quarter_end": "2026-09-30",
+          "rated_next_earnings": null,
+          "rated_price": 82.79,
+          "confidence": "LOW",
+          "bear_check": null,
+          "price": 82.79,
+          "pct_change_1d": 1.08,
+          "market_cap": 1106624380928,
+          "cap_tier": "mega",
+          "drawdown_from_high": -28.1,
+          "revenue_growth": 1126.9,
+          "op_margin": -3.3,
+          "pe": null,
+          "forward_pe": 161.60136,
+          "short_percent_float": null,
+          "short_ratio": null,
+          "high_proximity_warning": false,
+          "move_split": {
+            "session": "2026-11-25",
+            "pct": 1.1,
+            "market": -0.3,
+            "group": 0.9,
+            "group_name": "technology",
+            "fund": "RSPT",
+            "own": 0.5
+          },
+          "moved_since_rating": null,
+          "valuation": {
+            "status": "no_reliable_price",
+            "low": null,
+            "base": null,
+            "high": null,
+            "buy_below": null,
+            "reason": "no filed US figures (foreign companies file differently)",
+            "notes": [],
+            "methods": {},
+            "inputs": {},
+            "valued_on": "2026-11-27",
+            "gap_pct": null
+          },
+          "quality": null,
+          "events": null,
+          "category": {
+            "key": "unknown",
+            "label": "Not enough data",
+            "why": "No US filings with the figures needed"
+          },
+          "data_ok": true,
+          "data_flags": []
+        },
+        {
+          "ticker": "SNDK",
+          "name": "Sandisk Corporation",
+          "theme": "edge_ai_silicon",
+          "status": "research_complete",
+          "thesis": "Cyclical NAND memory supplier at trough multiples (2.1x forward P/E) with artificially inflated margins from spin-off accounting; 75% drawdown reflects rational fear of commodity price collapse, not mispricing.",
+          "added": "2026-11-27",
+          "verdict": "PASS",
+          "current_price": 73.61,
+          "next_action": "DROP \u2014 Cyclical NAND memory supplier at trough multiples (2.1x forward P/E) with artificially inflated margins from spin-off accounting; 75% drawdown reflects rational fear of commodity price collapse, not mispricing.",
+          "research_file": "output/research/SNDK_2026-11-27.md",
+          "last_researched": "2026-11-27",
+          "llm_verdict": "PASS",
+          "bear_downgraded": false,
+          "rating_version": 4,
+          "unsupported_figures": [
+            "50%",
+            "40%",
+            "$17B",
+            "1%"
+          ],
+          "fall_reason": "NAND flash memory price declines triggered a 75% crash despite strong reported earnings, as the market prices in a commodity downcycle.",
+          "rated_quarter_end": "2026-09-30",
+          "rated_next_earnings": 1793304000,
+          "rated_price": 73.61,
+          "confidence": "MEDIUM",
+          "bear_check": null,
+          "price": 73.61,
+          "pct_change_1d": -5.57,
+          "market_cap": 83791355904,
+          "cap_tier": "large",
+          "drawdown_from_high": -75.0,
+          "revenue_growth": 377.9,
+          "op_margin": 79.6,
+          "pe": 4.7065215,
+          "forward_pe": 2.051192,
+          "short_percent_float": 3.75,
+          "short_ratio": 0.5,
+          "high_proximity_warning": false,
+          "move_split": {
+            "session": "2026-11-25",
+            "pct": -5.6,
+            "market": -0.3,
+            "group": 0.9,
+            "group_name": "technology",
+            "fund": "RSPT",
+            "own": -6.2
+          },
+          "moved_since_rating": null,
+          "valuation": {
+            "status": "no_reliable_price",
+            "low": null,
+            "base": null,
+            "high": null,
+            "buy_below": null,
+            "reason": "the filed share count doesn't match its market value (off by 86%)",
+            "notes": [],
+            "methods": {},
+            "inputs": {},
+            "valued_on": "2026-11-27",
+            "gap_pct": null
+          },
+          "quality": {
+            "checks": [
+              {
+                "name": "Profitable every year",
+                "ok": false,
+                "detail": "lost money in 2023, 2024, 2025",
+                "chronic": true
+              },
+              {
+                "name": "Profit turns into cash",
+                "ok": true,
+                "detail": "120% of three years' profit arrived as cash after spending"
+              },
+              {
+                "name": "Share count not swelling",
+                "ok": false,
+                "detail": "grew 3.4% a year"
+              },
+              {
+                "name": "Debt is manageable",
+                "ok": true,
+                "detail": "more cash than debt"
+              },
+              {
+                "name": "Margins holding up",
+                "ok": null,
+                "detail": "lost money on average, so there is nothing to compare"
+              }
+            ],
+            "passed": 2,
+            "failed": 2,
+            "known": 4
+          },
+          "events": null,
+          "category": {
+            "key": "weak",
+            "label": "Fails checks",
+            "why": "Fails 2 of 4 checks: profitable every year (lost money in 2023, 2024, 2025); share count not swelling (grew 3.4% a year)"
+          },
+          "data_ok": true,
+          "data_flags": []
         }
       ]
     },
@@ -18009,14 +18073,33 @@
           "ticker": "ANT",
           "name": "Anthropic, PBC",
           "theme": "mega_cap_ai",
-          "status": "monitoring",
-          "thesis": "",
+          "status": "research_complete",
+          "thesis": "No summary: its figures weren't in the source data.",
           "added": "2026-11-27",
-          "verdict": "WATCHLIST",
+          "verdict": "PASS",
           "current_price": 82.79,
-          "next_action": "Run research_ticker.py to generate thesis and verdict.",
-          "research_file": null,
-          "last_researched": null,
+          "next_action": "DROP \u2014 No summary: its figures weren't in the source data.",
+          "research_file": "output/research/ANT_2026-11-27.md",
+          "last_researched": "2026-11-27",
+          "llm_verdict": "PASS",
+          "bear_downgraded": false,
+          "rating_version": 4,
+          "unsupported_figures": [
+            "31x",
+            "20x",
+            "$1.38B",
+            "48%",
+            "$67B",
+            "$7.9B",
+            "50%",
+            "11x"
+          ],
+          "fall_reason": null,
+          "rated_quarter_end": "2026-09-30",
+          "rated_next_earnings": null,
+          "rated_price": 82.79,
+          "confidence": "LOW",
+          "bear_check": null,
           "price": 82.79,
           "pct_change_1d": 1.08,
           "market_cap": 1106624380928,
@@ -18029,7 +18112,6 @@
           "short_percent_float": null,
           "short_ratio": null,
           "high_proximity_warning": false,
-          "bear_check": null,
           "move_split": {
             "session": "2026-11-25",
             "pct": 1.1,
@@ -19115,14 +19197,29 @@
           "ticker": "SNDK",
           "name": "Sandisk Corporation",
           "theme": "edge_ai_silicon",
-          "status": "monitoring",
-          "thesis": "",
+          "status": "research_complete",
+          "thesis": "Cyclical NAND memory supplier at trough multiples (2.1x forward P/E) with artificially inflated margins from spin-off accounting; 75% drawdown reflects rational fear of commodity price collapse, not mispricing.",
           "added": "2026-11-27",
-          "verdict": "WATCHLIST",
+          "verdict": "PASS",
           "current_price": 73.61,
-          "next_action": "Run research_ticker.py to generate thesis and verdict.",
-          "research_file": null,
-          "last_researched": null,
+          "next_action": "DROP \u2014 Cyclical NAND memory supplier at trough multiples (2.1x forward P/E) with artificially inflated margins from spin-off accounting; 75% drawdown reflects rational fear of commodity price collapse, not mispricing.",
+          "research_file": "output/research/SNDK_2026-11-27.md",
+          "last_researched": "2026-11-27",
+          "llm_verdict": "PASS",
+          "bear_downgraded": false,
+          "rating_version": 4,
+          "unsupported_figures": [
+            "50%",
+            "40%",
+            "$17B",
+            "1%"
+          ],
+          "fall_reason": "NAND flash memory price declines triggered a 75% crash despite strong reported earnings, as the market prices in a commodity downcycle.",
+          "rated_quarter_end": "2026-09-30",
+          "rated_next_earnings": 1793304000,
+          "rated_price": 73.61,
+          "confidence": "MEDIUM",
+          "bear_check": null,
           "price": 73.61,
           "pct_change_1d": -5.57,
           "market_cap": 83791355904,
@@ -19135,7 +19232,6 @@
           "short_percent_float": 3.75,
           "short_ratio": 0.5,
           "high_proximity_warning": false,
-          "bear_check": null,
           "move_split": {
             "session": "2026-11-25",
             "pct": -5.6,
@@ -25313,8 +25409,8 @@
     "counts": {
       "total": 64,
       "research_worthy": 19,
-      "watchlist": 41,
-      "pass": 4,
+      "watchlist": 39,
+      "pass": 6,
       "red_flag": 0
     }
   },
@@ -32185,14 +32281,14 @@
     }
   },
   "asset_location": {
-    "generated_at": "2026-11-27T06:37:56Z",
+    "generated_at": "2026-11-27T06:41:03Z",
     "rules": {
       "roth": "Highest-growth convictions, REITs, and high-yield payers \u2014 shelter what is taxed hardest.",
       "taxable": "Broad-market index ETFs and anything you may need before 59.5.",
       "high_yield_threshold_pct": 3.0
     },
     "counts": {
-      "roth": 57,
+      "roth": 55,
       "taxable": 2
     },
     "roth": [
@@ -32467,16 +32563,6 @@
         "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
       },
       {
-        "ticker": "ANT",
-        "name": "Anthropic, PBC",
-        "theme": "mega_cap_ai",
-        "verdict": "WATCHLIST",
-        "div_yield_pct": null,
-        "account": "ROTH",
-        "priority": "medium",
-        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
-      },
-      {
         "ticker": "APP",
         "name": "AppLovin Corporation",
         "theme": "uncategorized",
@@ -32710,16 +32796,6 @@
         "ticker": "RDDT",
         "name": "Reddit, Inc.",
         "theme": "platform_network",
-        "verdict": "WATCHLIST",
-        "div_yield_pct": null,
-        "account": "ROTH",
-        "priority": "medium",
-        "reason": "Individual stock held for long-term gains \u2014 capital gains and any dividends go untaxed in the Roth. Default for single-name picks."
-      },
-      {
-        "ticker": "SNDK",
-        "name": "Sandisk Corporation",
-        "theme": "edge_ai_silicon",
         "verdict": "WATCHLIST",
         "div_yield_pct": null,
         "account": "ROTH",
@@ -38811,10 +38887,10 @@
       {
         "ticker": "CRDO",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Credo Technology Group Holding (CRDO) Could Be 50% Below Fair Value After Marvell Settlement",
-        "publisher": "Yahoo Finance",
+        "title": "Credo Technology Ahead of Q2 Earnings: How to Approach the Stock Now?",
+        "publisher": "The Globe and Mail",
         "date": "2026-11-27",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNWFU1bVNqZldOTk4wRGxzT0ZpSEhzbUFUa0NTX3ljSmd5dnN5WGlBcmJOV1B3OHdLMFk4VDUwaGlmVGNvQ3NtVUVIUE01NVVrTmJCejFlYS1OTzZhYVBEaHhxWUFJSHNqVDRzaUNHWFRSeWRuUkJWQ3hYOENnV2U0UGpwNnJCTklYSFVsb1JYdmpEdzNOYjZ2di1UbXZtVVlSdnc?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNeUVrcUktQ0lHc2d4QnBraVJmMlZiMUlEY2diN3RuR2ZUOGpDUkhjOElrRjQwVE12LUFoa01SLURzRmdKdy1kMmJRRW1rQjVKN2d5UGRvVFo3SXVlX1ZSM0FDNG85Z1BlT09Za0RyUG5GZFRicy1QU1ZqWTNsbVZVU1Ezb0lrTDRhQW44UXFXRGh0TE9kQWVXeG5TM09vOHBtQ3hhOGJJczJETVRWczNpUi1ZSEY4YzRyZFgwNDdxUTZ4ai12SUlNcmZObms4T0x6YTRUckQ3Qm9IWDJ2a0ZDUE9PLUJRM3lEM1E?oc=5"
       },
       {
         "ticker": "META",
@@ -38867,14 +38943,6 @@
       {
         "ticker": "CRDO",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Credo Technology Ahead of Q2 Earnings: How to Approach the Stock Now?",
-        "publisher": "Yahoo! Finance Canada",
-        "date": "2026-11-26",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTzV2dE1PUjg5bUNOaHJqMVpDXzJoY3NDcU16Xzk3NmZNOWdYUVlxQmVnS180X1RxdlJ4T3hHb2gwNVRENFJRTE9nSHd6aGNFdHB2UFpUWExocER0NVZleVpfV0swcnZJejBxc19IVmNrVHJ2aXp2NmpTQzRsQ2NwUWNjNUIycUFBYXB3?oc=5"
-      },
-      {
-        "ticker": "CRDO",
-        "verdict": "RESEARCH-WORTHY",
         "title": "CRDO Targets $600M Optical Sales; 22.6% Jump Unconfirmed",
         "publisher": "shattered.io",
         "date": "2026-11-26",
@@ -38887,6 +38955,22 @@
         "publisher": "The Motley Fool",
         "date": "2026-11-25",
         "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPLXV6TXZPNHNaNm9MZHpYY0dpOS1GZUFQaHVtSUpMNTFORUZSUldyTkZqY2lmYlJWVzJEV0d5WjhLUHBHUUZtUktTOHFRMVhEZlAwc0FNV3V5cEt0YjltaGowOGwzRlVqZVRnWXNqcGNGaTVPc3hkMlpNVFNfZjd2YXVEamVPMHEzX2FacTJzUWhsUmhJQkFacFhkQnlNQTNDQWlkS183RnlqckRqdWdNWVM4WFFfdG1UeHhmNDR3bjRFMkplQUk1N1RYdFQ4S29YMzJEbENMZXdMbTNZb1ZOZ1pVdjUxR2ZtdDEySg?oc=5"
+      },
+      {
+        "ticker": "MRVL",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "MRVL Stock Quote Price and Forecast",
+        "publisher": "CNN",
+        "date": "2026-11-25",
+        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE40VFZrblZ3RzNzZVM3Y01XNVNTV3hNTGpjbGRhZ1dHUGRSNDMwOVh4VC12Z0FKeDdlOTVxcnlPX25Pb1hYZ3c2RXlJWTVKUzh6?oc=5"
+      },
+      {
+        "ticker": "MRVL",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Form 4 Marvell Technology Inc: Matthew J. Murphy (Director, Chairman of the Board and CEO) For: 22 November",
+        "publisher": "Investing.com India",
+        "date": "2026-11-25",
+        "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNR3B4WHMweHo1RmgxcHdZQ3JvSUpiZzJqMGt0WUJGYi02VjBDbnJyUjJFOENUY0xDZHlaZ2hDNEtDSm93cjFUd3kxT2xnUTZvRFVpZmF0aXNCTDYtanNNQUQ0UlBGSm1FUzNHU1p6RXktMjNabGFTcHZBMlhVOFN2dE82N3BEejRGMzZLMHF3NUJGVnI2WnJkM00zaUFrM1MydGVhSGpLb1RZMTRrX1BFQWpNNjNtSzdkeGpKWmdYcmlJVkFPd01pR2VMbEtBMkIza2UxX19QU1JkTHZocVYySEVxYWJBZGtmcEx4RjgydlBoelZC?oc=5"
       },
       {
         "ticker": "CEG",
@@ -38907,10 +38991,10 @@
       {
         "ticker": "VRT",
         "verdict": "RESEARCH-WORTHY",
-        "title": "Vertiv jumps 17 spots on the Roundtable 100",
+        "title": "Vertiv Holdings, LLC (VRT) Stock Forecasts",
         "publisher": "Yahoo Finance",
         "date": "2026-11-25",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQUpQUUFFZXRRLVRnTm5odEp3cTVibXV4LU1rUU9RblRoWDU0WE5OQ1BJdkc3ajR1RHRxeUhGVVZldFRZaVdFMktHUm9ZVHoyZGd3WVNEOGNrRUUyTjRRT19tRDNvcWNJTy1EbmhiRkh6Wkh6T3VqNWxIdTlkdkJydlNuQmU5QVpndGVFX0pCZ1oxQWpEN2FwOA?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONUJnbHZaMDhzLTVWMWw1MmlVcl9qaU9iaURucno3bHM3WlR0WXF1bFcxenVxdXB4cGk4NjBtaTZDUkx3dkkzZFpueFg4N1M3ZS05eGUyQmI4eUw4dHJHb3hDM3A0b0trSHh6M2V0RFhiZXhubUlzUUVUWl9XWm1IZ2U4UWZOaURhQXFmNHk4aw?oc=5"
       },
       {
         "ticker": "VRT",
@@ -38919,6 +39003,14 @@
         "publisher": "StreetInsider",
         "date": "2026-11-25",
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPYlJkSVEwS3V3QzJoeXJqa21oWEZEVUVkYjdUVWR1eGlZQUxfQXpQaUlWaXUzelhGUThLT2xjQkM2Vm5waUUyZ1l3ay1KZjNxUlZQMnlJOWpjdjJMNDJ0dTk1TVNoR3BJUW41UXJ3RUEwMi1aQUpfRm9GRnlyanNnNkwwMTJzeXN6ZzdXZ0w5WVJScC0wamlXQkFCM3MtRHNkYjNNX1paY3A0QXp2WHJhd25R?oc=5"
+      },
+      {
+        "ticker": "VRT",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Vertiv Lost 11% in a Month. Evercore Cut Its Target, but Still Sees 58% Upside",
+        "publisher": "TIKR.com",
+        "date": "2026-11-25",
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQYjMyTjFUUC16SUpJY04xZmsxa29CeTUwSHpFcWQtSG9OVWM4WGlhNnlYVFFid3BxSFRqYXcwWVpqYlhkbmJtTUtoRDJJV08wS0pqY1YzWU16dk1lWUpMb1JhSzhfM1VIZHVPMklDTDNHRW84T1R2dm1ZN1VVT0Z0TVBJNzQ4VTc1a2otUkxKcENhOG9SUHJYcTNUTm1JM3l3STJnNzBVMXdBSWhJQ0RHcmZINEx4MHVaM1NKeU9QTFRCbjFBaEg3cllyajJTMWhvVlZxSUJSdDRSUEJjam9hdklOanVnUQ?oc=5"
       },
       {
         "ticker": "GEV",
@@ -38931,26 +39023,10 @@
       {
         "ticker": "GEV",
         "verdict": "RESEARCH-WORTHY",
-        "title": "AI Data Centers Need Power, Yet GE Vernova Sank 13% This Week",
-        "publisher": "Investing.com",
-        "date": "2026-11-25",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNMDduRkZyQ1ZlVWFGVUszSk1abHFTaUVXRS1wWC1rLUNnLWxVOURLeFhMY1RBT0pjQXFOQ1hyQ0pqWTFKN0VwRGVZTGdOYTh6VEM0ZTJqTHdfVWFsR09ZUjVQZTRQRnBad2hhV2g2LUJfTVBWTzZlYlVadFBqblV1YzlPWjFUTkkwNHg2RlJyQ3JsMmxqeWFlTWtkSGVhTkhkLVAyWEoydjU2eVBJaDlScnAtYm1lc28?oc=5"
-      },
-      {
-        "ticker": "GEV",
-        "verdict": "RESEARCH-WORTHY",
         "title": "Can GE Vernova's Trench Deal Accelerate Its Electrification Growth?",
-        "publisher": "Zacks Investment Research",
+        "publisher": "Yahoo! Finance Canada",
         "date": "2026-11-25",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQUlc0SzIwM05TYTNpaFFwbWpPRE41LXR4b19MRXlFaUdYQWVMY2lNWFdSSTB3M2MwZlJzeDRtNHJubF9fZnBDaGJLSXJrc29WTnUzUGlkeE5VX0dvaHJVbElUbHJQMVp3b1B6WDVtbWM4eE9tZVdkQ0I3X2hsdmd3Nk1OQkNZM25Na2kydkFUdElNRjlOajBQWFE2VFExTXluYnpnSUp5Zlh1UQ?oc=5"
-      },
-      {
-        "ticker": "GEV",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "GE Vernova stock slides 4.8% to $720.65 as Monday\u2019s rally fades",
-        "publisher": "JournalArta",
-        "date": "2026-11-25",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxON0hObmJ6dDBMd2c0VXM3bjk2Z3lIVV9kelhYUkJ0R2E4Tmh4RkU5UV9ZWGdlejFVR1ZLUDY2M1ZKLTFMMU01Q0hJX2x1QV9XWjc5ZVVYWXpQZXI3Rng3VzNROUpIWHNMd1dfTGJrZ0trTVFPX3hNQVFNRU5MWFk1dlU0TE5fbGp1cEpoc1oyLTEzX2xwY05WcGpOVGUxck5V?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOTjJqcTlrOHFwYWE4NS1WS1Q3TE9ZZ2JpbURXNnpXOTc3VzgwVTlnTjktODFYcDBELXRZa0hRWFc4dko5dG5kdzVGWDNMTEZZbGc1d29JYkdUb2UtYTU4VXBjYVhLRWJLck5DZGJpemRrT1BsRlRUQUJrRGZsU2NYQnlKXy0zUzNkTDY4?oc=5"
       },
       {
         "ticker": "TLN",
@@ -38959,6 +39035,14 @@
         "publisher": "Yahoo Finance",
         "date": "2026-11-25",
         "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNTVRGZHVyUXlQSTlha00zRzlzRVF2WV9PYzgzeFNqY3VxOVptVXU2U2pSV0JIdTVmMll5a3Azc2xkNEZDanJqNHBHTlU1NjBkS1VNSUpSM2wwRVItbzdxMl9xSzNmZGhtYkg2eEE4NUdpeTh6SzNCZUl4UjJvRWZRNzRVNEVKbnY4Z3JELTFjZw?oc=5"
+      },
+      {
+        "ticker": "POWL",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Powell Industries, Inc. (POWL) Stock forecasts",
+        "publisher": "Yahoo Finance UK",
+        "date": "2026-11-25",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdFhUdlVnaW82eUxndGdqcXZ2Z3VTczgxQ0s3MWxOVzRaUmRMNkl6T2lGSUdSSWRobDlxWDZxV0Ryb3JvRWlfZG42ZVRjZ2pzdmRBRlE1eEw5US1nN1V3M0t6cC01b0h5OGhqZ1FQUFlYZEpOTmdTSFNrUUJkRUNjTHJpajVwMmJXclVfVHFGUVl6VDNJ?oc=5"
       },
       {
         "ticker": "POWL",
@@ -39025,6 +39109,14 @@
         "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZGp2Tm5XR1pfUUJPVXhMYkJsQXI5V2ZJb3hmZ1pUNk9haHdWNmhEQmhIaS12TGZPUFJ4WHR4OWhTVnVBVm84Y2dZTkNJQzYweEFWT0h4elRaMGhDS242N1dJZEFySmFHSFM2QVc5Nlc1WE1MY1JyamVUUWxkVWl6S0llMktVMkxUUmxtOU5RZTJZYzRVYWE4?oc=5"
       },
       {
+        "ticker": "CRDO",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Credo Technology Group (CRDO) Shares Drop 10% Amid Tech Sector W",
+        "publisher": "GuruFocus",
+        "date": "2026-11-25",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQaWFQRGZUaGd0aHFmbzJpc00tdkRCclpZUE9BVk9VUTNFaDVzVGhDSXh3SkdmV3NjaWVPV1otR3I4MmNwbnhLNVoxYmI4QWxUY2c1NG1yRDhtdW9nYTIxWE1TNjN2YkFaRnU3LXdHYlVTQnlyV21ScldMdkZSSEh0a2tFVUM0VTBkVzdQcTBJa2lZMHpKd1lUclRHY3g4aDNGaGF2V3NFSGZlWVgtT3N4SzFDbnZiMHZDcDJqbUNUT09rMDZXZ1E?oc=5"
+      },
+      {
         "ticker": "TSM",
         "verdict": "RESEARCH-WORTHY",
         "title": "SK hynix vs. TSMC: One Chipmaker's Revenue Is Exploding, but Is It the Better Buy for 2027?",
@@ -39036,9 +39128,17 @@
         "ticker": "MRVL",
         "verdict": "RESEARCH-WORTHY",
         "title": "Marvell Technology (MRVL) Suffers a Larger Drop Than the General Market: Key Insights",
-        "publisher": "Yahoo Finance",
+        "publisher": "Yahoo! Finance Canada",
         "date": "2026-11-24",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQR3lvNFk2bjRRRGxvcFRqalQ1cnh3c0pfblJ0RDJPM2VUWnJXRExuaGpmSy10dWFQa0t6cnZtMEFBeHdlbGZ6Q2hnYlYxYm9OeE1FbVVrV3FKSkkzUGoxWFN1V1h5NlVWZHpTck1IWjJ3Y2hEcXBBR3FkYmNQUVJnWEY2U1ozcnBUMjlNczJ0UVhmWmp0NXlNZXBFa09mdEJwRERWMjh3?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNU3NtM1VLUFdjUnFfLXZIaGJIRlctTU5IRWZIM3BkZG9pdXVLekdOaGphSWkzSEwtLTN3bmdJaHBxVmNVdDN2bmlQN3k2MWx1TjJ3Wl9RbnRsODhPRHE4UDlwR1YwMUNPN2JaazF1VzFuYXhZby12ZlpwcVo5cUlQUnhodV9rZVFab3ZkM1hjN0w?oc=5"
+      },
+      {
+        "ticker": "MRVL",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Marvell Technology (MRVL) Stock Price Prediction: Rebound attempt faces overhead supply ahead of December 1 earnings",
+        "publisher": "Blockchain News",
+        "date": "2026-11-24",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQajFReTFTMHc5eEFRTUxDT2Z6VXlaeFJxNmZyczJaSXhpb3NkRzhJZzVKaW42bHlOWm5tZnl3U21icnkzWjMtU3plN3JwN3NheGlqam1oWFJUVXl2LWhHM01XZmVmb2hZMnNmN2R5Q3BpVkFkZ3V4QkVfMVFFWmx4TE1kaE1wVUFrRUxwY0k4SjVKVi0zVFhhRU5HWDczM2NLeDF3bnRR?oc=5"
       },
       {
         "ticker": "CEG",
@@ -39055,6 +39155,14 @@
         "publisher": "MarketWatch",
         "date": "2026-11-24",
         "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcnU5dHVEV0xmOTFmTy1BR2tmQlB5ZW53WENsZlBpR012WmV5M25NaUxHek9tVDB4eGx4Y3J3M1YwenFBUHA0OXpObEJucU9JWWd1cVNKd0REeFhHSnNUYklpN0VGaWxOVGl3emN3YklOY0pEQnFNRjdMYTBicktYbFNYYlpXdVh0SU02SE1XaTdYeldBNUQzcFZzWUxqajRkcVJyUkZ4Z3N2MDZpSExIYzhMTEw2RFVOR0Z6OVl5UWVoY0Zx?oc=5"
+      },
+      {
+        "ticker": "GEV",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "GE Vernova Inc. stock falls Tuesday, underperforms market",
+        "publisher": "MarketWatch",
+        "date": "2026-11-24",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPRmlwUWM3YVhFR1lJekphRHB4am5pWnVUV1V5QmFsRWxSVEhYTERZYXpDUzJKQ0YyVjlkN215elJnbk1Hb0lCRVNqLTFuNDlpbVd6c0R5bnZUWHJlaHgwbTJZTzZKMjlKUEVSZ25NOEJnNFEzUU5KNVdXS2o5UjdFVUMxWHcweHJhRlp4d1dvdkZDMTdiS3B2ZDNUakstNUZFck9uRnFQNElWMVNKSXhzZ3lXQWZFa2tfZXJOLTBBQzhkbE9MOUhaMVJrTVdsZw?oc=5"
       },
       {
         "ticker": "TLN",
@@ -39079,6 +39187,14 @@
         "publisher": "Investing.com",
         "date": "2026-11-24",
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQY2t2RDNKdzZvZTdLT0hOdzlJd2pzQkFQV3o3UUMyekt2aF81VTJDeGlKSUEtNDZzUGFLVWtub0VrblNOcHo0YWJzSWlvc2RhaUFNS0prQVNIb2h3QmxBT3ZzanY0UTU2aXhvX2F6TUZRdWp0dEIwdmFVMnJOc2ZJbWFyVmFfZ0c5NXNNdXl1c2pXcVJ5bTk4Z1NTREgyY3ByenB5MS14OXBYNWZIeHF3TERn?oc=5"
+      },
+      {
+        "ticker": "CRDO",
+        "verdict": "RESEARCH-WORTHY",
+        "title": "Credo Technology options imply 13% move on earnings By Investing.com",
+        "publisher": "Investing.com South Africa",
+        "date": "2026-11-24",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPeUdsMTRyVW5mZjdfbkpXckVvX3dsWXM2SGdaRTY1cU9YbkxvSFAyM0E1NjdtQXpKZUVkdHdQaEF6eXViVkNGN3oxQXpBRmFqTE9FZk5wdk9pX3BEQUlpd2c2WlI1RTZ5dlhhMjcxR25RdDlwcnhzZUN2RVZscmlFOS0ya3FtdHVJSXNtUjYzNjZya19Rb093ay1lVzYtcnpOS3l0WVFrcmNxNDdyOGdzdg?oc=5"
       },
       {
         "ticker": "FIX",
@@ -39129,22 +39245,6 @@
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbk5vZkkyWmR1YWtlSE9NLWJnNmtoeVFzOTdueUd3S3VLSVJrNnpXSHNVRzBUc2t1enFyUWs4UW9maVljZ0I4MjFwaWdGbWlPdEVDZ244Mm9vdnJ1TEdFZF9KWjVuVzk4V0I5eXNPYm83Nk1OV1R5aVpSbWtCR01Bb1JaaGdfUGZuRFdHLTFZbzEwYkJRaHR6cnFZX1RqTDZV?oc=5"
       },
       {
-        "ticker": "VRT",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "13 Big Funds Bought Vertiv Holdings Co Last Quarter, While 17 Sold. Who\u2019s Right?",
-        "publisher": "Yahoo Finance",
-        "date": "2026-11-23",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQMjltYXRwNUMyTXdGMUpzb01mTTVPZ21HZE00VmlCbnd3QVFZYkhCVmNtUDFuSC1GV3gxWEhnbW5pd1NkZmFTNFg3T1FtRFlvV0g4Qi1IbVU4R3RmOWNweG1yeHNIRWhiTzVaTGZ5OTR0S2poa2JWYWtxN01fS25NTTJyZXNNeGlmaHJpM0YtSFRYZGZtRHc?oc=5"
-      },
-      {
-        "ticker": "VRT",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Vertiv Slides as Solid Earnings Clash With Technicals",
-        "publisher": "TradingPedia",
-        "date": "2026-11-23",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQX0gtRHpMVEtyYnhDU3lDMGpfbUh2T2psVHZaQXNfWURJM0ZRdGRSVVJ4S2hKNE1CLW84WWp4NlFyUjZSUEFZcVhJRENhYjg3ckg5cEFNRTdSWFI1b0x3ak9ycWwyU3hSenprNFNhM0tWNEpZbkx5T1hjQ3RBUkhrb2NJanZvREJ0dHJqLWRHMkxnckFjMERCTmtn?oc=5"
-      },
-      {
         "ticker": "STZ",
         "verdict": "RESEARCH-WORTHY",
         "title": "Constellation Brands shares slide as investors weigh insider sales, cautious beer trends",
@@ -39159,30 +39259,6 @@
         "publisher": "Barchart.com",
         "date": "2026-11-23",
         "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQc3poQk5qWVB0N3lrQjZ4OVdwQWNiRzRYNjNQbzhVN0RyOVI5eXZsaDNyVGxfTGhoQkpYRG9iX2ZTWmlUcEgtcWZQMVhUYXdNNFcxUHVQUzJWV1hqdkthbm1WY09Ec1ZCakQya213bzZBcVdYWEhjSV9oWHF2bXFIcDBPQWU3UHE2NnBmNzNQRURnYWJEWVNFTHVaQ0ZnRUdPOXQ4V1FSWHRkSmgzTlJmaWt3d3VZOXI4bVU5SFBvVm8?oc=5"
-      },
-      {
-        "ticker": "FIX",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Comfort Systems USA jumps as buyback expansion and bullish coverage appear to fuel rally",
-        "publisher": "Quiver Quantitative",
-        "date": "2026-11-23",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRE85REFYck44RDdPWGZ6SDlKakZ6Q053Vk1BRkRSX21BT2U3R1lFUjJ1RWJJSkhvc2VKdW5NNlEta2FOM0NKeFNaLVdfeG4wRE1vM2FCUFA4OWNYSE5TRE1XbUlwSEUyeldmMXhNSnl1QkdoOWRNMWJ3dlFzMndheUpaVkNOYW92MzFySlBMMnBwN3B0ZGJzdVdaY2ZTbjJxbURsU3BmVHFTTXJ2QmFoS0V4NlNncnJackVsZll3?oc=5"
-      },
-      {
-        "ticker": "COHR",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Coherent stock falls 15% as the AI chip rout hits optical suppliers",
-        "publisher": "Startup Fortune",
-        "date": "2026-11-21",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbTJCVjV6OUtoUHMydU9NcTRYZnRWemN1bHlDQVdCR0dFa1UzUk9TSUM3VnpZUl95RzVMSFRyb1c0T3IwbnZLdXRKcTVjRkdJeEgwdWl0aXowZ283dzBGSlVmdF8wWW1lQXBiU0dxR0RKckk2azVBdUhKWENSbWI1bE10X2d5YlN2NnZYcGM0RXpJV084UDNNUjVR?oc=5"
-      },
-      {
-        "ticker": "COHR",
-        "verdict": "RESEARCH-WORTHY",
-        "title": "Coherent Corp (COHR) Shares Fall 12.9% -- What GF Score of 78 Te",
-        "publisher": "GuruFocus",
-        "date": "2026-11-21",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMzhrck5CdGVwQVo3SzY4bV8wSFBFcHJHWUNjSDhuSUZNRU1Md1MybVoxdy00bEREUXRsZ3doOTN3S2MxU2poSGQ1amY4ZC1pd2R5YXdHcFFNWWNBLUlyNUNrVmxTTmlxTTkzZjdvT0M0MlU4VVEzV01Oa1kxQ09iREZfcTY5U3BqcWN2WEFlTzNLWGJGLS1lVkprOHZJdHBMTlZOaFFTOUo4NU1OY3c?oc=5"
       }
     ],
     "insider_alerts": [
@@ -39528,8 +39604,8 @@
         "price": 82.79,
         "pe": null,
         "forward_pe": 161.60136,
-        "verdict": "WATCHLIST",
-        "next_action": "Run research_ticker.py to generate thesis and verdict."
+        "verdict": "PASS",
+        "next_action": "DROP \u2014 No summary: its figures weren't in the source data."
       }
     ]
   }
