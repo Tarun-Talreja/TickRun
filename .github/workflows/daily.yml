@@ -61,6 +61,10 @@ jobs:
         run: python scripts/news_feed.py
         continue-on-error: true
 
+      - name: Keep news history
+        run: python scripts/news_history.py
+        continue-on-error: true
+
       - name: Serious news and filings
         run: python scripts/company_events.py
         continue-on-error: true
@@ -119,6 +123,7 @@ jobs:
             data/watchlist.json
             data/sec_filings.json
             data/news_cache.json
+            data/news_history/*.json
             data/movers.json
             data/price_snapshot.json
             data/data_quality.json
