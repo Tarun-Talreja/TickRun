@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T03:52:10Z",
+  "generated_at": "2026-11-28T12:38:40Z",
   "checked": 65,
   "flagged": 2,
   "quality": {
@@ -15,11 +15,11 @@
       "ok": true,
       "flags": []
     },
-    "AMZN": {
+    "ANT": {
       "ok": true,
       "flags": []
     },
-    "ANT": {
+    "AMZN": {
       "ok": true,
       "flags": []
     },
@@ -92,11 +92,11 @@
       "ok": true,
       "flags": []
     },
-    "FIX": {
+    "FLUT": {
       "ok": true,
       "flags": []
     },
-    "FLUT": {
+    "FIX": {
       "ok": true,
       "flags": []
     },
@@ -120,11 +120,11 @@
       "ok": true,
       "flags": []
     },
-    "ISRG": {
+    "IBM": {
       "ok": true,
       "flags": []
     },
-    "IBM": {
+    "ISRG": {
       "ok": true,
       "flags": []
     },
@@ -140,10 +140,6 @@
       "ok": true,
       "flags": []
     },
-    "MA": {
-      "ok": true,
-      "flags": []
-    },
     "LPLA": {
       "ok": true,
       "flags": []
@@ -152,7 +148,11 @@
       "ok": true,
       "flags": []
     },
-    "MRVL": {
+    "MA": {
+      "ok": true,
+      "flags": []
+    },
+    "MKTX": {
       "ok": true,
       "flags": []
     },
@@ -160,7 +160,7 @@
       "ok": true,
       "flags": []
     },
-    "MKTX": {
+    "MRVL": {
       "ok": true,
       "flags": []
     },
@@ -232,10 +232,6 @@
       "ok": true,
       "flags": []
     },
-    "TW": {
-      "ok": true,
-      "flags": []
-    },
     "TSM": {
       "ok": false,
       "flags": [
@@ -244,6 +240,10 @@
           "msg": "Reports in TWD; figures converted to USD at 0.0304. Trailing P/E may mix currencies \u2014 verify against filings"
         }
       ]
+    },
+    "TW": {
+      "ok": true,
+      "flags": []
     },
     "UNH": {
       "ok": true,
